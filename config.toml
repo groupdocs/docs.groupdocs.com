@@ -1,0 +1,21 @@
+baseURL = "http://docs.groupdocs.com/"
+languageCode = "en-us"
+title = "Documentation"
+theme = "hugo-book"
+
+
+# Markup configure section
+# See https://gohugo.io/getting-started/configuration-markup/
+[markup]
+    defaultMarkdownHandler = "goldmark"
+    [markup.goldmark.renderer]
+        unsafe= true
+    [markup.tableOfContents]
+        startLevel = 2
+        endLevel = 4
+        ordered = false
+
+
+
+        
+  

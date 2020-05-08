@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <main>
+    {{ .Content }}    
+        {{ if not (.Params.hideChildren) }}      
+          <ul class="contents">
+          {{ $pages := .Paginator.Pages | append .Sections }}    
+          {{ range sort $pages.ByWeight }}
+              <li>
+                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </li>
+          {{ end }}
+          
+          </ul>         
+  {{ end }}    
+  </main>
+{{ end }}
