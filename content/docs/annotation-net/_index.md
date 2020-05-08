@@ -12,24 +12,69 @@ hideChildren: True
 
 #  Home 
 
+# Cheat Sheet
 
-![](/annotation-net/_index/67338254)
+*Italic*
+**Bold**
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+[Link](http://www.groupdocs.com)
+![Image](https://www.nuget.org/profiles/groupdocs/avatar?imageSize=128)
 
-**Welcome to the GroupDocs.Annotation for .NET**
+> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
 
-GroupDocs.Annotation for .NET API allows developers to seamlessly enhance their applications with the capability to annotate text or images in a document. Annotation can be applied in form of comments, explanations with highlighted notes, watermark, polyline and much more. Annotator API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX documents.
+* List item 1
+* List item 2
+* List item 3
+ 
+1. One
+2. Two
+3. Three
 
-## GroupDocs.Annotation for .NET Resources
+Horizontal Rule
 
-Following are the links to some useful resources you may need to accomplish your tasks.
+---
+`Inline code` with backticks
 
-*   [GroupDocs.Annotation for .NET Online Documentation](https://docs.groupdocs.com/display/annotationnet/)
-*   [GroupDocs.Annotation for .NET Features](https://docs.groupdocs.com/display/annotationnet/Features+Overview)
-*   [GroupDocs.Annotation for .NET Limitations](https://docs.groupdocs.com/display/annotationnet/Evaluation+Limitations+and+Licensing+of+GroupDocs.Annotation)
-*   [GroupDocs.Annotation for .NET Release Notes](https://docs.groupdocs.com/display/annotationnet/Release+Notes)
-*   [GroupDocs.Annotation for .NET Product Page](https://products.groupdocs.com/annotation/net)
-*   [Install GroupDocs.Annotation for .NET NuGet Package](https://www.nuget.org/packages/GroupDocs.Annotation/)
-*   [GroupDocs.Annotation for .NET API Reference Guide](https://apireference.groupdocs.com/net/annotation)
-*   [GroupDocs.Annotation for .NET Free Support Forum](https://forum.groupdocs.com/c/annotation)
-*   [GroupDocs.Annotation for .NET Paid Support Helpdesk](https://helpdesk.groupdocs.com/)
+code block for CSharp 
+``` csharp
+using (Viewer viewer = new Viewer("sample.pdf"))
+{
+    ViewInfoOptions viewInfoOptions = ViewInfoOptions.ForHtmlView();
+    ViewInfo viewInfo = viewer.GetViewInfo(viewInfoOptions);
+}
+```
+
+code block for Java 
+``` java
+ViewInfoOptions viewInfoOptions = ViewInfoOptions.forHtmlView();
+         
+Viewer viewer = new Viewer("sample.pdf");
+ViewInfo info = viewer.getViewInfo(viewInfoOptions);
+viewer.close();   
+```
+
+
+  
+Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the 
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3  
 
