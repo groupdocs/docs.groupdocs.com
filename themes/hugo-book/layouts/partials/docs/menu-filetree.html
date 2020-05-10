@@ -1,7 +1,10 @@
-{{ $bookSection := default "docs" .Site.Params.BookSection  }}
+<!-- All site sections are displayed by default-->
+<!--{{ $bookSection := default "annotation-net" .Site.Params.BookSection  }}-->
+
+{{ $bookSection := default "annotation-net" .Section  }}
 {{ if eq $bookSection "*" }}
   {{ $bookSection = "/" }}{{/* Backward compatibility */}}
-{{ end }}
+{{ end }} 
 
 {{ with .Site.GetPage $bookSection }}
   {{ template "book-section-children" (dict "Section" . "CurrentPage" $) }}
