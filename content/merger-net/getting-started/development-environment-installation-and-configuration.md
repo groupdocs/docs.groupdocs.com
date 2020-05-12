@@ -31,7 +31,7 @@ Follow these steps to reference GroupDocs.Merger using Package Manager GUI:
 *   Select Browse tab and type “GroupDocs.Merger” in the search text box.
     
 *   Click the Install button to install the latest version of the API into your project as shown in the following screenshot.  
-![](/merger-net/getting-started/development-environment-installation-and-configuration/85426394.png)
+![](merger-net/getting-started/development-environment-installation-and-configuration/85426394.png)
     
 
 #### Using Package Manager Console
@@ -45,7 +45,7 @@ You can follow the steps below to reference GroupDocs.Merger for .NET using the 
 *   Type the command “Install-Package GroupDocs.Merger” and press enter to install the latest release into your application.
     
 *   After successful installation, GroupDocs.Merger will be referenced in your application.  
-![](/merger-net/getting-started/development-environment-installation-and-configuration/85426395.png)
+![](merger-net/getting-started/development-environment-installation-and-configuration/85426395.png)
     
 
   

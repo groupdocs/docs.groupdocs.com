@@ -14,7 +14,7 @@ hideChildren: False
 
 **Arrow annotation** draws an arrow on the document like shown at the picture below. 
 
-![](/annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-arrow-annotation/87359506.png)
+![](annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-arrow-annotation/87359506.png)
 
 There is an ability to specify the next properties for [ArrowAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/arrowannotation) type:
 

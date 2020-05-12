@@ -14,7 +14,7 @@ hideChildren: False
 
 GroupDocs.Viewer does not include notes in the rendering results. However, you can choose between to show or hide the notes in the output. If you want to see notes in your rendering result, use [RenderNotes](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/baseviewoptions/properties/rendernotes) property of the [HtmlViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions) (or [JpgViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/jpgviewoptions), or [PngViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pngviewoptions), or [PdfViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pdfviewoptions)) class and pass it to [Viewer 's](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer) object [View](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/view) method*.*
 
-![](/viewer-net/developer-guide/advanced-usage/viewing/common-rendering-options/show-document-notes/85918022.png)
+![](viewer-net/developer-guide/advanced-usage/viewing/common-rendering-options/show-document-notes/85918022.png)
 
 The following are the steps to include the notes in the rendering result.
 

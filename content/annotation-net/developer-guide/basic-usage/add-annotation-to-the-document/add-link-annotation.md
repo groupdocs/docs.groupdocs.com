@@ -14,7 +14,7 @@ hideChildren: False
 
 **Link** annotation adds a hyper link to document  like shown at the picture below. 
 
-![](/annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-link-annotation/87359520.png)
+![](annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-link-annotation/87359520.png)
 
 There is an ability to specify the next properties for [LinkAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/linkannotation) type:
 

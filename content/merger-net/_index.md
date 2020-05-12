@@ -13,7 +13,7 @@ hideChildren: True
 #  Home 
 
 
-![](/merger-net/_index/67338353)
+![](merger-net/_index/67338353)
 
 **Welcome to the GroupDocs.Merger for .NET**
 

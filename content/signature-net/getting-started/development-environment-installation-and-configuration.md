@@ -34,7 +34,7 @@ Follow these steps to reference GroupDocs.Signature using Package Manager GUI:
       
     
 
-![](/signature-net/getting-started/development-environment-installation-and-configuration/85426196.png)
+![](signature-net/getting-started/development-environment-installation-and-configuration/85426196.png)
 
 #### Using Package Manager Console
 
@@ -50,7 +50,7 @@ You can follow the steps below to reference GroupDocs.Signature for .NET using t
       
     
 
-![](/signature-net/getting-started/development-environment-installation-and-configuration/85426195.png)
+![](signature-net/getting-started/development-environment-installation-and-configuration/85426195.png)
 
 ## Install from official GroupDocs website
 

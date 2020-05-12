@@ -14,7 +14,7 @@ hideChildren: False
 
 **Resource redaction** annotation fills black rectangle with fixed position (used if you want to hide some text) like shown at the picture below. 
 
-![](/annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-resource-redaction-annotation/87359510.png)
+![](annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-resource-redaction-annotation/87359510.png)
 
 There is an ability to specify the next properties for [ResourcesRedactionAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/resourcesredactionannotation)type:
 

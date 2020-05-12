@@ -12,7 +12,7 @@ hideChildren: False
 
 # Adjust output image size
 
-![](/viewer-net/developer-guide/advanced-usage/viewing/view-options-by-document-type/view-cad-drawings/adjust-output-image-size/85426194.jpg)
+![](viewer-net/developer-guide/advanced-usage/viewing/view-options-by-document-type/view-cad-drawings/adjust-output-image-size/85426194.jpg)
 
 When CAD drawings are rendered, the size of the render result is adjusted by API automatically, the biggest side (width or height depending on which one is bigger) is set 2000 px, another side is set value based on width-to-length ratio. You may adjust the size of resulting document by setting [CadOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/cadoptions) as show in example.
 

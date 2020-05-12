@@ -13,7 +13,7 @@ hideChildren: True
 #  Home 
 
 
-![](/editor-net/_index/67338256)
+![](editor-net/_index/67338256)
 
 **Welcome to the GroupDocs.Editor for .NET**
 

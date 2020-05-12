@@ -20,7 +20,7 @@ This article explains how to adjust text-overflow in cells when viewing Spreadsh
 
 ## Introduction
 
-![](/viewer-net/developer-guide/advanced-usage/viewing/view-options-by-document-type/view-excel-files/adjust-text-overflow-in-cells/85918016.png)
+![](viewer-net/developer-guide/advanced-usage/viewing/view-options-by-document-type/view-excel-files/adjust-text-overflow-in-cells/85918016.png)
 
 When Spreadsheet is rendered overflowed text inside the cell overlays subsequent cells until it meets non-empty cell. GroupDocs.Viewer provides a setting to configure the mode which will be used for rendering overflowed text:
 

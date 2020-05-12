@@ -13,7 +13,7 @@ hideChildren: True
 #  Home 
 
 
-![](/comparison-net/_index/67338245)
+![](comparison-net/_index/67338245)
 
 **Welcome to the GroupDocs.Comparison for .NET**
 

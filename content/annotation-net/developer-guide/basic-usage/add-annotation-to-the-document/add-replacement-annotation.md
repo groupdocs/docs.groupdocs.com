@@ -14,7 +14,7 @@ hideChildren: False
 
 **Replacement** annotation replaces original text with other provided text fragment. Please check the picture below to know how replacement annotation may look like. 
 
-![](/annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-replacement-annotation/85426291.png)
+![](annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-replacement-annotation/85426291.png)
 
 There is an ability to specify the next properties for [ReplacementAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation)type:
 

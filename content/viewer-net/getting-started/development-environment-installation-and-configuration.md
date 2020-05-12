@@ -61,7 +61,7 @@ Follow these steps to reference GroupDocs.Viewer using Package Manager GUI:
       
     
 
-![](/viewer-net/getting-started/development-environment-installation-and-configuration/85426192.png)
+![](viewer-net/getting-started/development-environment-installation-and-configuration/85426192.png)
 
 #### Using Package Manager Console
 
@@ -75,7 +75,7 @@ You can follow the steps below to reference GroupDocs.Viewer for .NET using the 
     
 *   After successful installation, GroupDocs.Viewer will be referenced in your application.  
       
-![](/viewer-net/getting-started/development-environment-installation-and-configuration/85426193.png)
+![](viewer-net/getting-started/development-environment-installation-and-configuration/85426193.png)
     
 
   

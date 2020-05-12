@@ -31,7 +31,7 @@ Follow these steps to reference GroupDocs.Annotation using Package Manager GUI:
 *   Select Browse tab and type “GroupDocs.Annotation” in the search text box.
     
 *   Click the Install button to install the latest version of the API into your project as shown in the following screenshot.  
-![](/annotation-net/getting-started/development-environment-installation-and-configuration/85426243.png)
+![](annotation-net/getting-started/development-environment-installation-and-configuration/85426243.png)
     
 
 #### Using Package Manager Console
@@ -46,7 +46,7 @@ You can follow the steps below to reference GroupDocs.Annotation for .NET using 
     
 *   After successful installation, GroupDocs.Annotation will be referenced in your application.  
     
-![](/annotation-net/getting-started/development-environment-installation-and-configuration/85426243.png)
+![](annotation-net/getting-started/development-environment-installation-and-configuration/85426243.png)
     
 
 ## Install from official GroupDocs website

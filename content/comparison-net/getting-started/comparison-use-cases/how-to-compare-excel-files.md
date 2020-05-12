@@ -23,16 +23,16 @@ Let's say you have two Excel workbooks, or maybe two versions of the same workbo
 To compare two Excel workbooks with Office Professional Plus 2013 you should:
 
 *   Click **Home > Compare Files**. The Compare Files dialog box appears.  
-![](/comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342543.jpg)
+![](comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342543.jpg)
 *   Click the blue folder icon next to the **Compare** box to browse to the location of the earlier version of your workbook.  
       
-![](/comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342544.jpg)
+![](comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342544.jpg)
       
     
 *   Click the green folder icon next to the **To** box to browse to the location of the workbook that you want to compare to the earlier version, and then click **OK**.
 *   In the left pane, choose the options you want to see in the results of the workbook comparison by checking or unchecking the options, such as **Formulas**, **Macros**, or **Cell Format**. Or, just **Select All**.  
       
-![](/comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342545.png)
+![](comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342545.png)
 *   Click **OK** to run the comparison.
 
 ## How to compare Excel files using GroupDocs.Comparison
@@ -51,11 +51,11 @@ Price List for 2019
 
 Price List for 2020
 
-![](/comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342546.png)
+![](comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342546.png)
 
-![](/comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342547.png)
+![](comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342547.png)
 
-![](/comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342548.png)
+![](comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342548.png)
 
 Here is the code that is used to compare three price lists.
 
@@ -83,7 +83,7 @@ As a result, we get a XSLX file where the deleted elements are marked in **red**
 
 Result Price List
 
-![](/comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342549.png)
+![](comparison-net/getting-started/comparison-use-cases/how-to-compare-excel-files/88342549.png)
 
 ## More resources
 

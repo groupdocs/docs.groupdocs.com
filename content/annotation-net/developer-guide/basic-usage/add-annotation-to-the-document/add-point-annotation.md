@@ -14,7 +14,7 @@ hideChildren: False
 
 **Point** annotationsticks comments to any point in a document like shown at the picture below. 
 
-![](/annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-point-annotation/87359521.png)
+![](annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-point-annotation/87359521.png)
 
 There is an ability to specify the next properties for [PointAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) type:
 

@@ -14,7 +14,7 @@ hideChildren: False
 
 **Text field** annotation adds rectangle with a text inside, like shown at the picture below. 
 
-![](/annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-text-field-annotation/87359512.png)
+![](annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-text-field-annotation/87359512.png)
 
 There is an ability to specify the next properties for [TextFieldAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textfieldannotation) type:
 
