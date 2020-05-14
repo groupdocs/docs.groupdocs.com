@@ -13,7 +13,6 @@ hideChildren: False
 # Load WordProcessing document with options
 
 
-
 # Load and convert Word document with options
 
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) provides [WordProcessingLoadOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/wordprocessingloadoptions)to give you control over how original Microsoft Word document will be converted. The following options could be set: 
@@ -31,6 +30,7 @@ hideChildren: False
 
 Microsoft Word provides a Comment feature that allows multiple authors or reviewers to discuss a document when they are not working at it simultaneously. All added comments are displayed in an area from the right of document text. After DOCX document with comments is converted to another format Comments pane is also present in a resultant document. If it's required to hide comments in a converted document programmatically you can use the following code sample that shows how to do this in a couple lines of C# code:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new WordProcessingLoadOptions
 {
     HideComments = true
@@ -40,6 +40,7 @@ using (Converter converter = new Converter("sample.docx", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ## Hide tracked changes
 
@@ -47,6 +48,7 @@ Track Changes is another feature of Microsoft Word that provides a handy way to 
 
 The following code sample shows how to convert DOCX document to PDF and hide tracked changes pane:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new WordProcessingLoadOptions
 {
     HideWordTrackedChanges = true
@@ -56,6 +58,7 @@ using (Converter converter = new Converter("sample.docx", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ## Specify font substitution
 
@@ -65,6 +68,7 @@ Of course GroupDocs.Conversion for .NET will try to select the most appropriate 
 
 The following code sample shows how to convert DOCX document with font substitution for missing fonts:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new WordProcessingLoadOptions
 {
     AutoFontSubstitution = false,
@@ -80,6 +84,7 @@ using (Converter converter = new Converter("sample.docx", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ## More resources
 
@@ -108,4 +113,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

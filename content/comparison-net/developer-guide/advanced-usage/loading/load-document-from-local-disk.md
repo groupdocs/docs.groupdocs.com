@@ -18,6 +18,7 @@ For loading target document located on the local disk you should use [Add](http
 
 Following code snippet shows how to load documents from local disk.
 
+```csharp
 string sourcePath = “source.docx”;
 using (Comparer comparer = new Comparer(sourcePath))
 {
@@ -25,6 +26,7 @@ using (Comparer comparer = new Comparer(sourcePath))
     comparer.Add(“targetPath”);
     comparer.Compare(“result.docx”);
 }
+```
 
 ## More resources
 
@@ -50,4 +52,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
-

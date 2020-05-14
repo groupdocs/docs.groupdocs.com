@@ -12,7 +12,6 @@ hideChildren: False
 
 # Migration Notes
 
-
 ### Why To Migrate?
 
   
@@ -34,8 +33,9 @@ Here is a brief comparison of how to convert document into PDF format using old 
 
 **Old coding style**
 
+```csharp
 string documentPath = "sample.docx";
-string outputPath = @"C:\\output\\converted.pdf";
+string outputPath = @"C:\output\converted.pdf";
 
 //Instantiating the conversion handler
 ConversionHandler conversionHandler = Common.getConversionHandler();
@@ -44,18 +44,20 @@ var saveOptions = new GroupDocs.Conversion.Converter.Option.PdfSaveOptions();
 saveOptions.ConvertFileType = PdfSaveOptions.PdfFileType.Pdf;
  
 var convertedDocumentPath = conversionHandler.Convert(documentPath , saveOptions);
-convertedDocumentPath.Save(@"C:\\output\\converted.pdf");
+convertedDocumentPath.Save(@"C:\output\converted.pdf");
+```
 
 **New coding style**
 
-string documentPath = @"C:\\sample.docx"; 
-string outputPath = @"C:\\output\\converted.pdf";
+```csharp
+string documentPath = @"C:\sample.docx"; 
+string outputPath = @"C:\output\converted.pdf";
  
 using (Converter converter = new Converter(documentPath))
 {
     PdfConvertOptions convertOptions = new PdfConvertOptions();
     converter.Convert(outputPath, convertOptions);
 }
+```
 
 For more code examples and specific use cases please refer to our [Developer Guide](https://docs.groupdocs.com/display/conversionnet/Developer+Guide) documentation or [GitHub](https://github.com/groupdocs-conversion/GroupDocs.Conversion-for-.NET) samples and showcases.
-

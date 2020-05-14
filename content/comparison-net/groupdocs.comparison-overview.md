@@ -12,7 +12,6 @@ hideChildren: False
 
 # GroupDocs.Comparison Overview
 
-
 ## What Is GroupDocs.Comparison?
 
 GroupDocs.Comparison is a flexible and feature rich library which allows you to compare documents for all popular document formats such as:
@@ -45,5 +44,3 @@ Compare documents, retrieve list of changes between source and target document(s
 *   Content structure, styling and formatting changes detection.
     
 *   Ability to apply or reject detected changes and save resultant document.
-    
-

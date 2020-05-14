@@ -12,7 +12,6 @@ hideChildren: False
 
 # Migration Notes
 
-
 ### Why To Migrate?
 
   
@@ -34,11 +33,12 @@ Here is a brief comparison of how to sign document with text signature using old
 
 **Old coding style**
 
+```csharp
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
-    StoragePath = @"c:\\Aspose\\Test\\Storage",
-    OutputPath = @"c:\\Aspose\\Test\\Output"
+    StoragePath = @"c:\Aspose\Test\Storage",
+    OutputPath = @"c:\Aspose\Test\Output"
 };
 // instantiating the signature handler
 SignatureHandler handler = new SignatureHandler(signConfig);
@@ -55,9 +55,11 @@ SaveOptions saveOptions = new SaveOptions { OutputType = OutputType.String, Outp
 // sign document
 string signedPath = handler.Sign<string>("test.pdf", signOptions,saveOptions);
 Console.WriteLine("Signed file path is: " + signedPath);
+```
 
 **New coding style**
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -71,8 +73,6 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("signed.pdf", options);
 }
+```
 
 For more code examples and specific use cases please refer to our [Developer Guide](https://docs.groupdocs.com/display/signaturenet/Developer+Guide) documentation or [GitHub](https://github.com/groupdocs-signature/GroupDocs.Signature-for-.NET/) samples and showcases.
-
-  
-

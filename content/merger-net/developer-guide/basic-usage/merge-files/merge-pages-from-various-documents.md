@@ -13,7 +13,6 @@ hideChildren: False
 # Merge pages from various documents
 
 
-
 # Merge document pages
 
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to merge the source document with specific document pages from joined document into one resultant document by specifying desired page numbers or page ranges. Joined documents should be of the same format.
@@ -27,9 +26,10 @@ hideChildren: False
 
 The following code sample demonstrates how to join document parts:
 
-string filePath = @"c:\\sample.docx";
-string filePath2 = @"c:\\sample2.docx";
-string filePathOut = @"c:\\output\\result.docx";
+```csharp
+string filePath = @"c:\sample.docx";
+string filePath2 = @"c:\sample2.docx";
+string filePathOut = @"c:\output\result.docx";
 
 JoinOptions joinOptions = new JoinOptions(1, 4, RangeMode.OddPages);
 
@@ -38,6 +38,7 @@ using (Merger merger = new Merger(filePath, loadOptions))
     merger.Join(filePath2, joinOptions);
     merger.Save(filePathOut);
 }
+```
 
 ## More resources
 
@@ -59,4 +60,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

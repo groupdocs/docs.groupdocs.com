@@ -42,20 +42,25 @@ private static void OnSignStarted(Signature signature, ProcessStartEventArgs arg
 
 ## Implement method for SignProgress event
 
+```csharp
  private static void OnSignProgress(Signature signature, ProcessProgressEventArgs args)
  {
      Console.WriteLine("Sign progress. Processed {0} signatures. Time spent {1} mlsec", args.ProcessedSignatures, args.Ticks);
  }
+```
 
 ## Implement method for SignCompleted event
 
+```csharp
 private static void OnSignCompleted(Signature signature, ProcessCompleteEventArgs args)
 {
     Console.WriteLine("Sign process completed at {0} with {1} total signatures. Process took {2} mlsec", args.Completed, args.TotalSignatures, args.Ticks);
 }
+```
 
 ## Subscribing for signing process events
 
+```csharp
 private static void OnSignStarted(Signature signature, ProcessStartEventArgs args)
 {
     Console.WriteLine("Sign process started at {0} with {1} total signatures to be put in document", args.Started, args.TotalSignatures);
@@ -89,6 +94,7 @@ public static void Run()
         signature.Sign("SignedSample", options);
     }
 }
+```
 
 ## More resources
 
@@ -114,4 +120,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

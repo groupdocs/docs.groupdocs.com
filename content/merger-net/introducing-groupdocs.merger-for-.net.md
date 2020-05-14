@@ -1,6 +1,6 @@
 ---
-id: introducing-groupdocs-merger-for--net
-url: merger-net/introducing-groupdocs-merger-for--net
+id: introducing-groupdocs-merger-for-net
+url: merger-net/introducing-groupdocs-merger-for-net
 title: Introducing GroupDocs.Merger for .NET
 weight: 1
 description: 
@@ -11,7 +11,6 @@ hideChildren: False
 ---
 
 # Introducing GroupDocs.Merger for .NET
-
 
 ## What Is GroupDocs.Merger?
 
@@ -51,6 +50,4 @@ GroupDocs.Merger allows you to merge documents and manipulate document structur
         
 *   Document information extraction - file type, page count etc.;
     
-*   Generate document preview for easy document structure display. 
-    
-
+*   Generate document preview for easy document structure display.

@@ -13,7 +13,6 @@ hideChildren: False
 # View specific pages
 
 
-
 # View specific pages
 
 GroupDocs.Viewer also provides the features to render only the selected page numbers. You can specify a list of the document pages to be rendered. Follow the below steps to achieve this functionality. 
@@ -56,4 +55,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

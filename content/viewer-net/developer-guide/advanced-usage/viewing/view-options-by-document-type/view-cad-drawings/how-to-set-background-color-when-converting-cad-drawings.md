@@ -13,7 +13,6 @@ hideChildren: False
 # How to set background color when converting CAD Drawings
 
 
-
 ## Introduction
 
 When converting CAD drawings with GroupDocs.Viewer there is no background color set by default but we proved an option that enables you to set any background color.
@@ -32,12 +31,14 @@ To set background color you need to specify the [BackgroundColor](https://apire
 
 The following code snippet shows how to set background color.
 
+```csharp
 using (Viewer viewer = new Viewer("input.dwg"))
 {
     PngViewOptions options = new PngViewOptions(pageFilePathFormat);
     options.CadOptions.BackgroundColor = System.Drawing.Color.Blue;
     viewer.View(options);
 }
+```
 
 And here is output image with blue background color:
 
@@ -67,4 +68,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

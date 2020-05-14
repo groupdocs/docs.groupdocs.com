@@ -13,7 +13,6 @@ hideChildren: False
 # Convert to Html
 
 
-
 # Convert to Html
 
 **[GroupDocs.Conversion](https://products.groupdocs.com/conversion/net)** can convert any source document to a markup format which in general is a HTML conformable format. You can control either to generate fixed positioned DOM elements or flow positioned DOM elements.
@@ -26,11 +25,13 @@ Conversion to markup format could be triggered by following below steps:
 
 The following code show how to convert any document to HTML. 
 
+```csharp
 using (Converter converter = new Converter("sample.docx"))
 {
     MarkupConvertOptions options = new MarkupConvertOptions();
     converter.Convert("converted.html", options);
 }
+```
 
 ## More resources
 
@@ -63,4 +64,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

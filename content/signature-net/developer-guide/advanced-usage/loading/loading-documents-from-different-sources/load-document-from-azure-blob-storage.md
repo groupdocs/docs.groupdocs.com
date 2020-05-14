@@ -14,6 +14,7 @@ hideChildren: False
 
 Following example demonstrates how to process documents from Azure Blob Storage.
 
+```csharp
 public static void Run()
 {
     string blobName = "sample.docx";
@@ -32,7 +33,7 @@ public static void Run()
             signature.Sign(outputFilePath, options);
         }
     }
-    Console.WriteLine("\\nSource document signed successfully.\\nFile saved at " + outputFilePath);
+    Console.WriteLine("\nSource document signed successfully.\nFile saved at " + outputFilePath);
 }
         
 public static Stream DownloadFile(string blobName)
@@ -48,10 +49,10 @@ public static Stream DownloadFile(string blobName)
 
 private static CloudBlobContainer GetContainer()
 {
-    string accountName = "\*\*\*";
-    string accountKey = "\*\*\*";
+    string accountName = "***";
+    string accountKey = "***";
     string endpoint = $"https://{accountName}.blob.core.windows.net/";
-    string containerName = "\*\*\*";
+    string containerName = "***";
 
     StorageCredentials storageCredentials = new StorageCredentials(accountName, accountKey);
     CloudStorageAccount cloudStorageAccount = new CloudStorageAccount(
@@ -63,6 +64,7 @@ private static CloudBlobContainer GetContainer()
 
     return container;
 }
+```
 
 ## More resources
 
@@ -88,4 +90,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

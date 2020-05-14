@@ -12,7 +12,6 @@ hideChildren: False
 
 # Migration Notes
 
-
 ### Why To Migrate?
 
 Here are the key reasons to use the new updated API provided by GroupDocs.Editor for .NET since version 19.9:
@@ -58,7 +57,8 @@ Here is a brief comparison of how to edit document in HTML form using old and ne
 
 **New coding style**
 
-string documentPath = @"C:\\sample.docx"; 
+```csharp
+string documentPath = @"C:\sample.docx"; 
 using (Editor editor = new Editor(documentPath))
 {
     // Obtain editable document from original DOCX document
@@ -69,10 +69,8 @@ using (Editor editor = new Editor(documentPath))
  
     // Save edited EditableDocument object to some WordProcessing format - DOC for example
     WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(Formats.WordProcessingFormats.Docx);
-    editor.Save(editableDocument, @"C:\\output\\edited.docx", saveOptions);
+    editor.Save(editableDocument, @"C:\output\edited.docx", saveOptions);
 }
+```
 
 For more code examples and specific use cases please refer to our [Developer Guide](https://docs.groupdocs.com/display/editornet/Developer+Guide) documentation or [GitHub](https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET) samples and showcases.
-
-  
-

@@ -13,7 +13,6 @@ hideChildren: False
 # Adjusting comparison sensitivity
 
 
-
 # Adjusting comparison sensitivity
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) allows to adjust comparison sensitivity to achieve the necessary balance between document comparison speed and accuracy. Possible comparison sensitivity values range is from **0** to **100**.  
@@ -59,12 +58,14 @@ The following code snippet demonstrates how compare documents with specific sens
 
 ## Compare documents with sensitivity adjustment
 
+```csharp
 using (Comparer comparer = new Comparer(“source.docx”))
 {
 	comparer.Add(“target.docx”);
     CompareOptions options = new CompareOptions() { SensitivityOfComparison = 100 };
 	comparer.Compare(“result.docx”, options);
 }
+```
 
 ## More resources
 
@@ -90,4 +91,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
-

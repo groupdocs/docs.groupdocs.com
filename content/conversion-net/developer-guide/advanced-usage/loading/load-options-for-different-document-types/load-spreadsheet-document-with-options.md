@@ -33,6 +33,7 @@ hideChildren: False
 
 The following code sample shows how to convert Spreadsheet document and hide comments:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new SpreadsheetLoadOptions
 {
     HideComments = true,
@@ -43,11 +44,13 @@ using (Converter converter = new Converter("sample.xlsx", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ### Show grid lines
 
 The following code sample shows how to convert Spreadsheet document and show grid lines:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new SpreadsheetLoadOptions
 {
     ShowGridLines = true,
@@ -58,11 +61,13 @@ using (Converter converter = new Converter("sample.xlsx", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ### Skip empty rows and columns
 
 The following code sample shows how to convert Spreadsheet document and skip empty rows and columns:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new SpreadsheetLoadOptions
 {
     SkipEmptyRowsAndColumns = true,
@@ -73,11 +78,13 @@ using (Converter converter = new Converter("sample.xlsx", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ### Specify font substitution
 
 The following code sample shows how to convert Spreadsheet document and specify font substitution for missing fonts:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new SpreadsheetLoadOptions
 {
     DefaultFont = "Helvetica",
@@ -93,11 +100,13 @@ using (Converter converter = new Converter("sample.xlsx", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ### Specify range
 
 The following code sample shows how to convert Spreadsheet document and specify exact range of rows and columns to be converted
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new SpreadsheetLoadOptions
 {
     ConvertRange = "10:30",
@@ -108,11 +117,13 @@ using (Converter converter = new Converter("sample.xlsx", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ### Include hidden sheets
 
 The following code sample shows how to convert Spreadsheet document including the hidden sheets
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new SpreadsheetLoadOptions
 {
     ShowHiddenSheets = true,
@@ -123,6 +134,7 @@ using (Converter converter = new Converter("sample.xlsx", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ## More resources
 
@@ -151,4 +163,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

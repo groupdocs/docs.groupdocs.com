@@ -13,7 +13,6 @@ hideChildren: False
 # How to view PLT files
 
 
-
 ## Introduction
 
 [PLT](https://wiki.fileformat.com/cad/plt/) and HPG formats are based on the plotter language developed by Hewlett-Packard (HP-GL). These formats are designed for sending information to plotter printers, contain text/binary instructions on HPGL language to draw vector images on paper.
@@ -28,6 +27,7 @@ In case you need to view a PLT/HPG file in a browser or in a standard image or P
 
 To convert PLT/HPG files to HTML with GroupDocs.Viewer for .NET use following code:
 
+```csharp
 using (Viewer viewer = new Viewer("sample.plt"))
 {
        HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output.html");
@@ -38,6 +38,7 @@ using (Viewer viewer = new Viewer("sample.plt"))
 
        viewer.View(options);
 }
+```
 
 The following screenshot shows the output HTML file opened in a browser.
 
@@ -47,6 +48,7 @@ The following screenshot shows the output HTML file opened in a browser.
 
 To convert PLT/HPG files to JPG with GroupDocs.Viewer for .NET use following code: 
 
+```csharp
 using (Viewer viewer = new Viewer("sample.plt"))
 {
        JpgViewOptions options = new JpgViewOptions("output.html");
@@ -57,6 +59,7 @@ using (Viewer viewer = new Viewer("sample.plt"))
 
        viewer.View(options);
 }
+```
 
 The following screenshot shows the output JPG file opened in a Windows Photo Viewer application.
 
@@ -66,6 +69,7 @@ The following screenshot shows the output JPG file opened in a Windows Photo Vie
 
 To convert PLT/HPG files to PNG with GroupDocs.Viewer for .NET use following code: 
 
+```csharp
 using (Viewer viewer = new Viewer("sample.plt"))
 {
        PngViewOptions options = new PngViewOptions("output.html");
@@ -76,6 +80,7 @@ using (Viewer viewer = new Viewer("sample.plt"))
 
        viewer.View(options);
 }
+```
 
 The following screenshot shows the output PNG file opened in a Windows Photo Viewer application.
 
@@ -85,6 +90,7 @@ The following screenshot shows the output PNG file opened in a Windows Photo Vie
 
 To convert PLT/HPG files to PDF with GroupDocs.Viewer for .NET use following code: 
 
+```csharp
 using (Viewer viewer = new Viewer("sample.plt"))
 {
        PdfViewOptions options = new PdfViewOptions("output.pdf");
@@ -95,6 +101,7 @@ using (Viewer viewer = new Viewer("sample.plt"))
 
        viewer.View(options);
 }
+```
 
 The following screenshot shows the output PDF file opened in a browser.
 
@@ -124,4 +131,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

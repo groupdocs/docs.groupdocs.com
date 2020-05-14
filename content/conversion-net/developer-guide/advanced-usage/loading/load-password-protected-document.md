@@ -23,15 +23,17 @@ Here are the steps to follow to load and convert a password protected document:
 
 The following code sample shows how to convert password protected document:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new WordProcessingLoadOptions
 {
     Password = "12345"
 };
-using (Converter converter = new Converter("sample\_with\_password.docx", getLoadOptions))
+using (Converter converter = new Converter("sample_with_password.docx", getLoadOptions))
 {
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf, options);
 }
+```
 
 ## More resources
 
@@ -60,4 +62,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

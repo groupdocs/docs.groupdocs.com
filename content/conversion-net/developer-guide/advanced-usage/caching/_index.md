@@ -13,7 +13,6 @@ hideChildren: False
 # Caching
 
 
-
 # Caching conversion results
 
 In some cases document conversion may be a time-consuming operation (dependent on source document content, structure and complexity). For such situations caching can be a solution - converted document is stored into cache (for example at the local drive) and in a case of repetitive conversions of the document*, *[**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) uses cached representation. 
@@ -26,7 +25,8 @@ To enable caching you have to:
 
 Here is a code that demonstrates how to enable caching for GroupDocs.Conversion*.*
 
-string cachePath = "c:\\output\\cache";
+```csharp
+string cachePath = "c:\output\cache";
 FileCache cache = new FileCache(cachePath);
 Contracts.Func<ConverterSettings> settingsFactory = () => new ConverterSettings
 {
@@ -44,6 +44,7 @@ using (Converter converter = new Converter("sample.docx", settingsFactory))
     stopWatch.Stop();
     Console.WriteLine("Time taken on second call to Convert method {0} (ms).", stopWatch.ElapsedMilliseconds);
 }
+```
 
 ## More resources
 
@@ -72,4 +73,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

@@ -13,7 +13,6 @@ hideChildren: False
 # View options by document type
 
 
-
 # View options by document type
 
 Please refer to the following articles that show how to use options for rendering specific document types.
@@ -42,4 +41,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

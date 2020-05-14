@@ -14,10 +14,11 @@ hideChildren: False
 
 Following code snippet shows how to convert a document from Azure Blob Storage:
 
+```csharp
 public static void Run()
 {
     string blobName = "sample.docx";
-    string outputFile = Path.Combine("c:\\output", "converted.pdf");
+    string outputFile = Path.Combine("c:\output", "converted.pdf");
     using (Converter converter = new Converter(() => DownloadFile(blobName)))
     {
         PdfConvertOptions options = new PdfConvertOptions();
@@ -36,10 +37,10 @@ public static Stream DownloadFile(string blobName)
 }
 private static CloudBlobContainer GetContainer()
 {
-    string accountName = "\*\*\*";
-    string accountKey = "\*\*\*";
+    string accountName = "***";
+    string accountKey = "***";
     string endpoint = $"https://{accountName}.blob.core.windows.net/";
-    string containerName = "\*\*\*";
+    string containerName = "***";
     StorageCredentials storageCredentials = new StorageCredentials(accountName, accountKey);
     CloudStorageAccount cloudStorageAccount = new CloudStorageAccount(
         storageCredentials, new Uri(endpoint), null, null, null);
@@ -48,6 +49,7 @@ private static CloudBlobContainer GetContainer()
     container.CreateIfNotExists();
     return container;
 }
+```
 
 ## More resources
 
@@ -76,4 +78,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

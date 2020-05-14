@@ -16,6 +16,7 @@ When document is located on the local disk [**GroupDocs.Signature**](https://pro
 
 Following code snippet shows how to load document from local disk.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -24,6 +25,7 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("sampleSigned", options);
 }
+```
 
 ## More resources
 
@@ -49,4 +51,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

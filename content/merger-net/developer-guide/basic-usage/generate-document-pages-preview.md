@@ -52,18 +52,21 @@ private static Stream CreatePageStream(int pageNumber)
 
 ## ReleasePageStream delegate implementation
 
+```csharp
 private static void ReleasePageStream(int pageNumber, Stream pageStream)
 {
      pageStream.Dispose();
      string imageFilePath = Path.Combine("GeneratePreviewFolder", "image-" + pageNumber.ToString() + ".jpg");
      Console.WriteLine("Image file {0} is ready for preview", imageFilePath);
 }
+```
 
 ## Generate document preview from file on local disk
 
+```csharp
 public static void GetPreview()
 {   
-    string filePath = @"c:\\sample.xlsx";
+    string filePath = @"c:\sample.xlsx";
     using (Merger merger = new Merger(filePath))
     {
         IPreviewOptions previewOption = new PreviewOptions(CreatePageStream, PreviewMode.JPEG);
@@ -81,12 +84,14 @@ private static Stream CreatePageStream(int pageNumber)
     }
     return new System.IO.FileStream(imageFilePath, FileMode.Create);
 }
+```
 
 ## Generate document preview from stream with custom stream releasing delegate
 
+```csharp
 public static void GetPreview()
 {
-    string filePath = @"c:\\sample.xlsx";
+    string filePath = @"c:\sample.xlsx";
     using (Merger merger = new Merger(filePath))
     {
         IPreviewOptions previewOption = new PreviewOptions(CreatePageStream, ReleasePageStream, PreviewMode.JPEG);
@@ -111,6 +116,7 @@ private static void ReleasePageStream(int pageNumber, Stream pageStream)
      string imageFilePath = Path.Combine("GeneratePreviewFolder", "image-" + pageNumber.ToString() + ".jpg");
      Console.WriteLine("Image file {0} is ready for preview", imageFilePath);
 }
+```
 
 NOTE: Stream that was created over [CreatePageStream](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain.common/createpagestream) delegate will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument [ReleasePageStream](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain.common/releasepagestream) to clean up resources.
 
@@ -134,4 +140,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

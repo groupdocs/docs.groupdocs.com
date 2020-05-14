@@ -35,6 +35,7 @@ Here is a brief comparison of how to display document into HTML form using old a
 
 **Old coding style**
 
+```csharp
 //Get Configurations
 ViewerConfig config = Utilities.GetConfigurations();
 
@@ -60,16 +61,19 @@ List<PageHtml> pages = htmlHandler.GetPages(guid, options);
 foreach (PageHtml page in pages)
 {
     //Save each page at disk
-    Utilities.SaveAsHtml(page.PageNumber + "\_" + DocumentName, page.HtmlContent);
+    Utilities.SaveAsHtml(page.PageNumber + "_" + DocumentName, page.HtmlContent);
 }
+```
 
 **New coding style**
 
+```csharp
 using (Viewer viewer = new Viewer("sample.docx"))
 {
    HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("page-{0}.html");
    viewer.View(options);
 }
+```
 
 ## More resources
 
@@ -95,6 +99,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-
-  
-

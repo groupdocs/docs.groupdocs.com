@@ -11,5 +11,3 @@ hideChildren: False
 ---
 
 # Delete signatures from documents
-
-

@@ -13,7 +13,6 @@ hideChildren: False
 # Development Environment, Installation and Configuration
 
 
-
   
 
 ## Install from Nuget
@@ -68,4 +67,3 @@ You can follow the steps below to reference GroupDocs.Editor for .NET downloaded
     You have referenced GroupDocs.Editor and it should appear in the **SelectedComponents** pane of the dialog box.
 7.  Click **OK**.   
     GroupDocs.Editor reference appears under the **References** node of the project.
-

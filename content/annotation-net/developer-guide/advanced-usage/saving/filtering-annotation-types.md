@@ -13,7 +13,6 @@ hideChildren: False
 # Filtering annotation types
 
 
-
 # Filter annotation types during saving document
 
 This feature can be using when need to save only specific annotation types and ignore others.
@@ -26,6 +25,7 @@ The following are the steps how to filter exported annotations to document:
 
 Following code snippet shows how to save only pages with specific annotation type
 
+```csharp
 using (Annotator annotator = new Annotator(“input.pdf”))
 {
 	AreaAnnotation area = new AreaAnnotation()
@@ -45,16 +45,19 @@ using (Annotator annotator = new Annotator(“input.pdf”))
 	//Result file will contains only ellipse annotations.
     annotator.Save(“result.pdf” new SaveOptions { AnnotationTypes = AnnotationType.Ellipse});
 }
+```
 
 If you need to add more than one annotation filter, you can using logical operator "OR" ("|"):
 
 Following code snippet shows how to save pages with specific multiple annotation types
 
+```csharp
 using (Annotator annotator = new Annotator(“input.pdf”))
 {
 	...
     annotator.Save(“result.pdf” new SaveOptions { AnnotationTypes = AnnotationType.Ellipse|AnnotationType.Watermark});
 }
+```
 
 ## More resources
 
@@ -80,4 +83,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

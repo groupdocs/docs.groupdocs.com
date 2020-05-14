@@ -53,17 +53,19 @@ The following code snippet demonstrates how to generate document previews.
 
 ## Get document page previews 
 
+```csharp
 using (Annotator annotator = new Annotator(“input.pdf”))
 {
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-        var pagePath = $"D:/result\_{pageNumber}.png";
+        var pagePath = $"D:/result_{pageNumber}.png";
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.PageNumbers = new int\[\] { 1, 2, 3, 4 };
+    previewOptions.PageNumbers = new int[] { 1, 2, 3, 4 };
     annotator.Document.GeneratePreview(previewOptions);
 }
+```
 
 ## Set specific size for preview images
 
@@ -71,24 +73,28 @@ In some cases it may be useful to set specific image size during document pages 
 
 The following code snippet demonstrates how to set specific size for preview images.
 
+```csharp
 using (Annotator annotator = new Annotator(“input.pdf”))
 {
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-        var pagePath = $"D:/result\_{pageNumber}.png";
+        var pagePath = $"D:/result_{pageNumber}.png";
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.PageNumbers = new int\[\] { 1, 2, 3, 4 };
+    previewOptions.PageNumbers = new int[] { 1, 2, 3, 4 };
 	previewOptions.Height = 100;
     previewOptions.Width = 80;
     annotator.Document.GeneratePreview(previewOptions);   
 }
 
+```
+
 ## Get page previews with manual resource cleaning
 
 By default, after generating and rendering document page preview  image stream will be immediately disposed. However there is an ability to implement custom method for handling this operation.
 
+```csharp
 // Method should match with ReleasePageStream delegate signature
 private void UserReleaseStreamMethod(int pageNumber, Stream stream)
 {
@@ -100,11 +106,11 @@ using (Annotator annotator = new Annotator(“input.pdf”))
 {
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-        var pagePath = $"D:/result\_{pageNumber}.png";
+        var pagePath = $"D:/result_{pageNumber}.png";
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.PageNumbers = new int\[\] { 1, 2, 3, 4 };
+    previewOptions.PageNumbers = new int[] { 1, 2, 3, 4 };
 	previewOptions.Height = 100;
     previewOptions.Width = 80;
  
@@ -112,6 +118,7 @@ using (Annotator annotator = new Annotator(“input.pdf”))
     previewOptions.ReleasePageStream = UserReleaseStreamMethod;
     annotator.Document.GeneratePreview(previewOptions);   
 }
+```
 
 ## Show\\hide replies for WordsProcessing documents
 
@@ -157,4 +164,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

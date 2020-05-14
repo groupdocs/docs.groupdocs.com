@@ -17,20 +17,23 @@ hideChildren: False
 First of all the input document, which should be accessible as a byte stream or through valid file path, should be loaded into the GroupDocs.Editor by creating an instance of the `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor) `class through one of the constructor overloads.   
 If the input document is presented as a stream, it should be loaded through delegate. Source code below shows two ways of loading documents: from path and from stream.
 
+```csharp
 //through path
-string inputFilePath = "C:\\\\input\_path\\\\document.docx"; //path to some document
+string inputFilePath = "C:\\input_path\\document.docx"; //path to some document
 Editor editor = new Editor(inputFilePath);
 
 //through stream
 FileStream inputStream = System.IO.File.OpenRead(inputFilePath);
 Editor editor = new Editor(delegate { return inputStream; });
+```
 
 When two overloads from example above are used, GroupDocs.Editor automatically detects the format of input document and applies the most appropriate default loading options for the input document.   
 However, it is possible and even recommended to specify correct loading options explicitly using constructor overloads, which accept two parameters. Like streams, loading options should be specified through delegates.   
 Source code below shows using such options.
 
+```csharp
 //through path
-string inputFilePath = "C:\\\\input\_path\\\\document.docx"; //path to some document
+string inputFilePath = "C:\\input_path\\document.docx"; //path to some document
 WordProcessingLoadOptions wordLoadOptions = new WordProcessingLoadOptions();
 Editor editor = new Editor(inputFilePath, delegate { return wordLoadOptions; }); //passing path and load options (via delegate) to the constructor
 
@@ -38,6 +41,7 @@ Editor editor = new Editor(inputFilePath, delegate { return wordLoadOptions; });
 MemoryStream inputStream = new MemoryStream();//obtained from somewhere
 SpreadsheetLoadOptions spreadsheetLoadOptions = new SpreadsheetLoadOptions();
 Editor editor = new Editor(delegate { return inputStream; }, delegate { return spreadsheetLoadOptions; });
+```
 
 Please note that not all document formats have appropriate classes, that represent load options. As for version 19.10, only WordProcessing, Spreadsheet and Presentation family formats have load options. For other document types, such as DSV, TXT or XML, there are no load options.
 
@@ -73,10 +77,12 @@ Using load options is the only way for working with password-protected input doc
 
 Example below shows specifying password for opening some password-protected WordProcessing document.
 
+```csharp
 Stream inputStream = GetDocumentStreamFromSomewhere();
 WordProcessingLoadOptions wordLoadOptions = new WordProcessingLoadOptions();
-wordLoadOptions.Password = "correct\_password";
+wordLoadOptions.Password = "correct_password";
 Editor editor = new Editor(inputFilePath, delegate { return wordLoadOptions; });
+```
 
 Same approach is applicable for Spreadsheet and Presentation documents too.
 
@@ -108,4 +114,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

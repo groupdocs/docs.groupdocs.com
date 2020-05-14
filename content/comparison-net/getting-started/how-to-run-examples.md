@@ -12,7 +12,6 @@ hideChildren: False
 
 # How to Run Examples
 
-
 Before running an example make sure that GroupDocs.Comparison has been installed successfully.
 
 We offer multiple solutions on how you can run GroupDocs.Comparison examples, by building your own or using our back-end or front-end examples out-of-the-box.
@@ -92,4 +91,3 @@ docker run -p 8080:8080 --env application.hostAddress=localhost -v \`pwd\`/Docum
 
 If you like to add or improve an example, we encourage you to contribute to the project. All examples in this repository are open source and can be freely used in your own applications.  
 To contribute, you can fork the repository, edit the code and create a pull request. We will review the changes and include it in the repository if found helpful.
-

@@ -13,7 +13,6 @@ hideChildren: False
 # Sign Pdf documents with special appearance
 
 
-
 # Sign PDF document with special appearance
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) contains classes that implements for Pdf document special signature appearances.
@@ -143,4 +142,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

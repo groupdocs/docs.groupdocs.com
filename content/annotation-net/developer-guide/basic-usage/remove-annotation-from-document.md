@@ -21,38 +21,46 @@ There are the steps to remove annotations from document:
 
 1) Following code demonstrates how to remove annotation from document using annotation index:
 
+```csharp
 using (Annotator annotator = new Annotator("result.xlsx"))
 {
 	annotator.Remove(0);
 	annotator.Save("removed.xlsx");
 }
+```
 
 2) Following code demonstrates how to remove annotation from document using annotation Object:
 
+```csharp
 using (Annotator annotator = new Annotator("result.xlsx"))
 {
 	var tmp = annotator.Get();
-	annotator.Remove(tmp\[0\]);
+	annotator.Remove(tmp[0]);
 	annotator.Save("removed.xlsx");
 }
+```
 
 3) Following code demonstrates how to remove some annotations from document using list of Id’s:
 
+```csharp
 using (Annotator annotator = new Annotator("result.xlsx"))
 {
 	var idList = new List<int>{1, 2, 3};
 	annotator.Remove(idList);
 	annotator.Save("removed.xlsx");
 }
+```
 
 4) Following code demonstrates how to remove some annotations from document using list of annotations:
 
+```csharp
 using (Annotator annotator = new Annotator("result.xlsx"))
 {
 	var tmp = annotator.Get();
 	annotator.Remove(tmp);
 	annotator.Save("removed.xlsx");
 }
+```
 
 ## More Resources
 
@@ -82,4 +90,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

@@ -13,7 +13,6 @@ hideChildren: False
 # Installation
 
 
-
   
 
 # Install from Nuget
@@ -60,4 +59,3 @@ You can follow the steps below to reference GroupDocs.Comparison for .NET downlo
     You have referenced GroupDocs.Comparison and it should appear in the **SelectedComponents** pane of the dialog box.
 7.  Click **OK**.   
     GroupDocs.Comparison reference appears under the **References** node of the project.
-

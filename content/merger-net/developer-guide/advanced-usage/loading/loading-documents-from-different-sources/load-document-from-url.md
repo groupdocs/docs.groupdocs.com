@@ -14,6 +14,7 @@ hideChildren: False
 
 Following example demonstrates how to load document from URL.
 
+```csharp
  		public static void Run()
         {
             string url = "https://github.com/groupdocs-merger/GroupDocs.Merger-for-.NET/blob/master/Examples/Resources/SampleFiles/Pdf/example.pdf?raw=true";
@@ -47,6 +48,7 @@ Following example demonstrates how to load document from URL.
             fileStream.Position = 0;
             return fileStream;
         }
+```
 
 ## More resources
 
@@ -64,4 +66,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

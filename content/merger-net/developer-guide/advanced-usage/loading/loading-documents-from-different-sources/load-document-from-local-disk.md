@@ -15,11 +15,13 @@ hideChildren: False
 When the source document is located on the local disk **[GroupDocs.Merger](https://products.groupdocs.com/merger/net) **allows you to load it via *[Merger ](https://apireference.groupdocs.com/net/merger/groupdocs.merger/merger)*class constructor specifying absolute or relative path to it.  
 The following code snippet shows how to load documents from local disk.
 
-string filePath = @"c:\\sample.docx";
+```csharp
+string filePath = @"c:\sample.docx";
 using (Merger merger = new Merger(filePath))
 {
 	Console.WriteLine($"Document loaded from local disk successfully.");
 }
+```
 
 ## More resources
 
@@ -37,4 +39,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

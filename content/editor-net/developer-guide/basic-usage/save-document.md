@@ -90,13 +90,14 @@ N/A
 
 Source code below shows creating an instance of `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` class and consequent saving a two versions of the document: one to the file and second — to the stream.
 
-string inputHtmlPath = "C:\\input\\document.html";
+```csharp
+string inputHtmlPath = "C:\input\document.html";
 EditableDocument document = EditableDocument.FromFile(inputHtmlPath, null);
 
-Editor editor = new Editor("C:\\path\\original.docx");
+Editor editor = new Editor("C:\path\original.docx");
 
 //save 1st version to file through path
-string outputPath = "C:\\\\output\_path\\\\document.rtf";
+string outputPath = "C:\\output_path\\document.rtf";
 WordProcessingSaveOptions saveOptions1 = new WordProcessingSaveOptions(WordProcessingFormats.Rtf);
 editor.Save(document, outputPath, saveOptions1);
 
@@ -104,6 +105,7 @@ editor.Save(document, outputPath, saveOptions1);
 MemoryStream outputStream = new MemoryStream();
 WordProcessingSaveOptions saveOptions2 = new WordProcessingSaveOptions(WordProcessingFormats.Docm);
 editor.Save(document, outputStream, saveOptions2);
+```
 
 As you can see from example above, it is possible to create multiple output documents from a single `EditableDocument` with different save options and different formats. And these output formats should not be strictly same as format of input document.
 
@@ -137,4 +139,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

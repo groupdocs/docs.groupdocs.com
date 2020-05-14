@@ -13,7 +13,6 @@ hideChildren: False
 # System Requirements
 
 
-
 ## Overview
 
 GroupDocs.Comparison for .NET does not require any external software or third party tool to be installed. Just follow one of the way as described in [Installation](Installation.html).
@@ -93,4 +92,3 @@ GroupDocs.Comparison for .NET can be used to develop applications in any devel
 *   Xamarin.IOS
 *   Xamarin.Mac
 *   MonoDevelop 2.4 and later
-

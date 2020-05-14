@@ -14,6 +14,7 @@ hideChildren: False
 
 Following example demonstrates how to render document from Azure Blob Storage.
 
+```csharp
  		string blobName = "sample.docx";
 
         using (Viewer viewer = new Viewer(() => DownloadFile(blobName)))
@@ -35,10 +36,10 @@ Following example demonstrates how to render document from Azure Blob Storage.
 
         private static CloudBlobContainer GetContainer()
         {
-            string accountName = "\*\*\*";
-            string accountKey = "\*\*\*";
+            string accountName = "***";
+            string accountKey = "***";
             string endpoint = $"https://{accountName}.blob.core.windows.net/";
-            string containerName = "\*\*\*";
+            string containerName = "***";
             StorageCredentials storageCredentials = new StorageCredentials(accountName, accountKey);
             CloudStorageAccount cloudStorageAccount = new CloudStorageAccount(
                 storageCredentials, new Uri(endpoint), null, null, null);
@@ -47,6 +48,7 @@ Following example demonstrates how to render document from Azure Blob Storage.
             container.CreateIfNotExists();
             return container;
         }
+```
 
 ## More resources
 
@@ -72,4 +74,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

@@ -12,7 +12,6 @@ hideChildren: False
 
 # Features Overview
 
-
 ## Add, edit and remove annotations
 
 GroupDocs.Annotation for .NET main feature is document annotation which supports over 13 different annotation types for over 50 file formats with full control for your annotations such as adding annotations, editing annotations and removing annotations.
@@ -61,4 +60,3 @@ GroupDocs.Annotation for .NET offers a feature to render document pages as image
 ## Cache results
 
 By default cache is stored to a local disk, however GroupDocs.Annotation offers custom cache feature which can be used by implementing appropriate interfaces – Amazon S3, Dropbox, Google Drive, Windows Azure, Reddis or any other.
-

@@ -24,30 +24,34 @@ hideChildren: False
 
 The following code sample shows how to convert cad document and convert only certain layouts:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new CadLoadOptions
 {
-    LayoutNames = new \[\]{ "Layout1", "Layout3" }
+    LayoutNames = new []{ "Layout1", "Layout3" }
 };
-using (Converter converter = new Converter("with\_layers\_and\_layouts.dwg", getLoadOptions))
+using (Converter converter = new Converter("with_layers_and_layouts.dwg", getLoadOptions))
 {
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ### Specify width and height
 
 The following code sample shows how to convert cad document and specify width and height
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new CadLoadOptions
 {
     Width = 1920,
     Height = 1080
 };
-using (Converter converter = new Converter("with\_layers\_and\_layouts.dwg", getLoadOptions))
+using (Converter converter = new Converter("with_layers_and_layouts.dwg", getLoadOptions))
 {
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ## More resources
 
@@ -76,4 +80,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

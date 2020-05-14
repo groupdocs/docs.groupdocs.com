@@ -14,6 +14,7 @@ hideChildren: False
 
 Following example demonstrates how to process with documents from Amazon S3 Storage.
 
+```csharp
 public static void Run()
 {
     string key = "sample.docx";
@@ -32,7 +33,7 @@ public static void Run()
             signature.Sign(outputFilePath, options);
         }
     }
-    Console.WriteLine("\\nSource document signed successfully.\\nFile saved at " + outputFilePath);
+    Console.WriteLine("\nSource document signed successfully.\nFile saved at " + outputFilePath);
 }
         
 public static Stream DownloadFile(string key)
@@ -52,6 +53,7 @@ public static Stream DownloadFile(string key)
         return stream;
     }
 }
+```
 
 ## More resources
 
@@ -77,4 +79,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

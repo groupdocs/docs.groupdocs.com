@@ -14,6 +14,7 @@ hideChildren: False
 
 Following example demonstrates how to render document from Amazon S3 Storage.
 
+```csharp
  		string key = "sample.docx";
 
         using (Viewer viewer = new Viewer(() => DownloadFile(key)))
@@ -40,6 +41,7 @@ Following example demonstrates how to render document from Amazon S3 Storage.
                 return stream;
             }
         }
+```
 
 ## More resources
 
@@ -65,4 +67,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

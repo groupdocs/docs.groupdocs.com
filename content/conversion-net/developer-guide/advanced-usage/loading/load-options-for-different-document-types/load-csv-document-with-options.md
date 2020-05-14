@@ -26,6 +26,7 @@ hideChildren: False
 
 The following code sample shows how to convert csv document and control the way the date/time and numeric data have been processed:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new CsvLoadOptions
 {
     ConvertDateTimeData = true,
@@ -36,11 +37,13 @@ using (Converter converter = new Converter("sample.csv", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ### Specify delimiter
 
 The following code sample shows how to convert csv document and specify the delimiter
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new CsvLoadOptions
 {
     Separator = ','
@@ -50,20 +53,23 @@ using (Converter converter = new Converter("sample.csv", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ### Specify encoding
 
 The following code sample shows how to convert csv document and specify the encoding
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new CsvLoadOptions
 {
-    Encoding = Encoding.GetEncoding("shift\_jis")
+    Encoding = Encoding.GetEncoding("shift_jis")
 };
 using (Converter converter = new Converter("sample.csv", getLoadOptions))
 {
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ## More resources
 
@@ -92,4 +98,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

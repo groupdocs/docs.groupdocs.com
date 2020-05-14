@@ -15,6 +15,7 @@ hideChildren: False
 When the source document is located on the local disk [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows you to load it via [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator)class constructor specifying absolute or relative path to it.   
 Following code snippet shows how to load documents from local disk.
 
+```csharp
 using (Annotator annotator = new Annotator(“source.docx”))
 {
 	AreaAnnotation area = new AreaAnnotation()
@@ -25,6 +26,8 @@ using (Annotator annotator = new Annotator(“source.docx”))
        annotator.Add(area);
        annotator.Save("result.pdf", new SaveOptions());
 }
+
+```
 
 ## More resources
 
@@ -50,4 +53,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

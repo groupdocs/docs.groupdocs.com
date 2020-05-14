@@ -30,22 +30,27 @@ The following code demonstrates how to set resultant document metadata.
 
 ## Set metadata from source file
 
+```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
 	comparer.Add("target.docx");
     comparer.Compare("result.docx", new SaveOptions() { CloneMetadataType = MetadataType.Source });
 }
+```
 
 ## Set metadata from target file
 
+```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
 	comparer.Add("target.docx");
     comparer.Compare("result.docx", new SaveOptions() { CloneMetadataType = MetadataType.Target });
 }
+```
 
 ## Set user-defined metadata 
 
+```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
 	comparer.Add("target.docx");
@@ -61,6 +66,7 @@ using (Comparer comparer = new Comparer("source.docx"))
     };
     comparer.Compare("result.docx", saveOptions);
 }
+```
 
 ## More resources
 
@@ -86,4 +92,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
-

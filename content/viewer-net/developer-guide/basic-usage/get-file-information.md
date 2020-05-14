@@ -27,6 +27,7 @@ For the following document types GroupDocs.Viewer provides additional informatio
 
 ## Get file information for the file from local disk
 
+```csharp
 using (Viewer viewer = new Viewer("sample.pdf"))
 {
 	ViewInfoOptions viewInfoOptions = ViewInfoOptions.ForHtmlView();
@@ -35,9 +36,11 @@ using (Viewer viewer = new Viewer("sample.pdf"))
     Console.WriteLine("Document type is: " + viewInfo.FileType);
     Console.WriteLine("Pages count: " + viewInfo.Pages.Count);
 }
+```
 
 ## Get file information for the file from stream
 
+```csharp
 using (Viewer viewer = new Viewer(() => File.OpenRead("sample.pdf")))
 {
 	ViewInfoOptions viewInfoOptions = ViewInfoOptions.ForHtmlView();
@@ -46,6 +49,7 @@ using (Viewer viewer = new Viewer(() => File.OpenRead("sample.pdf")))
     Console.WriteLine("Document type is: " + viewInfo.FileType);
     Console.WriteLine("Pages count: " + viewInfo.Pages.Count);
 }
+```
 
 ## More resources
 
@@ -75,4 +79,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

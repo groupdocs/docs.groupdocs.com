@@ -13,7 +13,6 @@ hideChildren: False
 # Extract pages
 
 
-
 # Extract pages 
 
 **GroupDocs.Merger** allows to extract pages from source document. The result is a new document that contains only specified pages from the source document.
@@ -27,21 +26,24 @@ Here are the steps to extract document pages:
 
 The following code sample demonstrates how to extract document pages **by specifying exact page numbers**:
 
-string filePath = @"c:\\sample.pdf";
-string filePathOut = @"c:\\output\\result.pdf";
+```csharp
+string filePath = @"c:\sample.pdf";
+string filePathOut = @"c:\output\result.pdf";
 
-ExtractOptions extractOptions = new ExtractOptions(new int\[\] { 1, 4 }); // Resultant document will contain pages 1 and 4
+ExtractOptions extractOptions = new ExtractOptions(new int[] { 1, 4 }); // Resultant document will contain pages 1 and 4
 
 using (Merger merger = new Merger(filePath))
 {
     merger.ExtractPages(extractOptions);
     merger.Save(filePathOut);
 }
+```
 
 The following code sample demonstrates how to extract document pages **by specifying page numbers range**:
 
-string filePath = @"c:\\sample.pdf";
-string filePathOut = @"c:\\output\\result.pdf";
+```csharp
+string filePath = @"c:\sample.pdf";
+string filePathOut = @"c:\output\result.pdf";
 
 ExtractOptions extractOptions = new ExtractOptions(1, 3, RangeMode.EvenPages); // Resultant document will contain page 2
 using (Merger merger = new Merger(filePath))
@@ -49,6 +51,7 @@ using (Merger merger = new Merger(filePath))
 	merger.ExtractPages(extractOptions);
     merger.Save(filePathOut);
 }
+```
 
 ## More resources
 
@@ -70,4 +73,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to extract document pages with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

@@ -16,14 +16,16 @@ When document is located on the local disk [**GroupDocs.Conversion**](https://pr
 
 Following code snippet shows how to load document from local disk:
 
+```csharp
 public static void Run()
 {
-    using (Converter converter = new Converter("c:\\files\\sample.docx")) 
+    using (Converter converter = new Converter("c:\files\sample.docx")) 
     {
         PdfConvertOptions options = new PdfConvertOptions();
         converter.Convert("converted.pdf", options);
     }
 }
+```
 
 ## More resources
 
@@ -52,4 +54,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

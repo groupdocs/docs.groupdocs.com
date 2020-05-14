@@ -12,11 +12,8 @@ hideChildren: False
 
 # Rendering PDF Documents
 
-
 # Rendering PDF Documents
 
 This page describes specific use cases for PDF Document rendering.
 
-####   
-  
-
+####

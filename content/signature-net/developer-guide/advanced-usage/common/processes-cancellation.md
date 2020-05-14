@@ -78,6 +78,7 @@ Here are the steps to provide cancellation for verification process with [**Grou
       
     
 
+```csharp
 private static void OnVerifyProgress(Signature sender, ProcessProgressEventArgs args)
 {
     // check if process takes more than 1 second (1000 milliseconds) processing cancellation
@@ -100,6 +101,7 @@ public static void Run()
         VerificationResult result = signature.Verify(options);
     }
 }
+```
 
 ## Cancel search process
 
@@ -118,6 +120,7 @@ Here are the steps to provide cancellation of searching process with GroupDocs.S
 *     
     
 
+```csharp
 private static void OnSearchProgress(Signature sender, ProcessProgressEventArgs args)
 {
     // check if process takes more than 1 second (1000 milliseconds) processing cancellation
@@ -138,13 +141,14 @@ public static void Run()
         };
         // search for signatures in document
         List<QRCodeSignature> signatures = signature.Search<QRCodeSignature>(options);
-        Console.WriteLine("\\nSource document contains following signatures.");
+        Console.WriteLine("\nSource document contains following signatures.");
         foreach (var QRCodeSignature in signatures)
         {
             Console.WriteLine("QRCode signature found at page {0} with type {1} and text {2}", QRCodeSignature.PageNumber, QRCodeSignature.EncodeType, QRCodeSignature.Text);
         }
     }
 }
+```
 
 ## More resources
 
@@ -174,4 +178,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

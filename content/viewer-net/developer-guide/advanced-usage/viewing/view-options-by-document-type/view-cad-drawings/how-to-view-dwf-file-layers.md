@@ -13,7 +13,6 @@ hideChildren: False
 # How to view DWF file layers
 
 
-
 ## Introduction
 
 Design Web Format File (.dwf) consists of various user layers. Layers represent various parts of the entire drawing, for example, this drawing describes a plan of a building and it's parts like stairs, walls, doors located in different layers.
@@ -34,6 +33,7 @@ If you want to view only specific layers you can set [CadOptions.Layers](https:
 
 Let's view only "Doors", "Stairs", "Walls" layers, to do that use following code, 
 
+```csharp
 using (Viewer viewer = new Viewer("sample.dwf"))
 {
     PngViewOptions viewOptions = new PngViewOptions();
@@ -44,6 +44,7 @@ using (Viewer viewer = new Viewer("sample.dwf"))
 
     viewer.View(viewOptions);
 }
+```
 
 Now GroupDocs.Viewer will render only these layers:
 
@@ -73,4 +74,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

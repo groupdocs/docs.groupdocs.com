@@ -13,7 +13,6 @@ hideChildren: False
 # Versioning of documents
 
 
-
 # Versions of Annotated files
 
 Every time you are saving file using [Annotator.Save()](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/save/index) method - you implicitly create a new version of the annotated file. Versions list stores not document, it keeps annotations that you add, remove, and change. So you can easy swap between different changes made with GroupDocs.Annotation. And of course you can set your version names.
@@ -31,11 +30,13 @@ If you want to swap between versions easily you might need to have ability to se
   
 Here the code that demonstrates how to save version with custom name:
 
+```csharp
 using (Annotator annotator = new Annotator("input.pdf"))
 {
 	annotator.Update(new AreaAnnotation{ Box = new Rectangle(100, 100, 100, 100) });
-	annotator.Save("result.pdf", new SaveOptions { Version = "CUSTOM\_VERSION" });
+	annotator.Save("result.pdf", new SaveOptions { Version = "CUSTOM_VERSION" });
 }
+```
 
 Type of [Version](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/saveoptions/properties/version) property is object, so it support any type, and you can use any variable as version variable
 
@@ -106,4 +107,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

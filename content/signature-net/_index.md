@@ -1,6 +1,6 @@
 ---
 id: home
-url: signature-net/home
+url: signature-net
 title: GroupDocs.Signature for .NET
 weight: 1
 description: 
@@ -11,7 +11,6 @@ hideChildren: True
 ---
 
 #  Home 
-
 
 ![](signature-net/_index/84869123)
 
@@ -32,4 +31,3 @@ Following are the links to some useful resources you may need to accomplish your
 *   [GroupDocs.Signature for .NET API Reference Guide](https://apireference.groupdocs.com/net/signature)
 *   [GroupDocs.Signature for .NET Free Support Forum](https://forum.groupdocs.com/c/signature)
 *   [GroupDocs.Signature for .NET Paid Support Helpdesk](https://helpdesk.groupdocs.com/)
-

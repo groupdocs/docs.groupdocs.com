@@ -22,9 +22,11 @@ In some situations it is required to grab meta info from the document before act
 
 In order to grab the meta info from the document, it should firstly be loaded into the `Editor` class. Then `[GetDocumentInfo](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/getdocumentinfo)()` should be called. This method obtains one parameter — password as a string. If document is encoded and user knows the password, he can specify it here. For other cases the null or empty string can be passed. Code example below demonstrates the usage:
 
+```csharp
 Editor editor = new Editor("C://input/document.docx");
 IDocumentInfo infoDocxWithoutPassword = editorDocx.GetDocumentInfo(null);
 IDocumentInfo infoDocxWithPassword = editorDocx.GetDocumentInfo("password"); 
+```
 
 There can be several scenarios here regarding whether document is encoded or not, and did user specified a password:
 
@@ -85,4 +87,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

@@ -12,7 +12,6 @@ hideChildren: False
 
 # Working with EditableDocument
 
-
 # Working with EditableDocument
 
 `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` class represents an input document of any supportable format, that was converted to internal intermediate format in accordance to edit options and is ready for editing in HTML WYSIWYG editors. For doing this an `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` contains a plenty of methods for emitting HTML markup, stylesheets and resources with different settings.
@@ -32,4 +31,3 @@ When input document of some format is converted to [`EditableDocument` ](https
 #### [Creating new EditableDocument instances](https://docs.groupdocs.com/display/editornet/Create+EditableDocument+from+file+or+markup)
 
 Opening document for edit implies creating instances of `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` class, which are returned from the `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor).[Edit()](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/edit)` method. However, when HTML content of the document was sent to the WYSIWYG HTML-editor and edited by the end-user, in order to save it back to output format user firstly need to create new instance of `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` class. For achieving this `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` class has three static methods, that allows to create instances from HTML documents, saved on disk (as \*.html file with resource folder), in memory (as HTML markup with resource classes), or emitted directly by WYSIWYG HTML-editor (as inner-BODY HTML markup an resource folder).
-

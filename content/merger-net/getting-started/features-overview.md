@@ -13,7 +13,6 @@ hideChildren: False
 # Features Overview
 
 
-
 GroupDocs.Merger allows you to join multiple documents and manipulate single document structure across wide range of [supported document types](https://docs.groupdocs.com/display/mergernet/Supported+Document+Types). Below, the short list of possible actions: 
 
 ## Multiple document operations
@@ -80,4 +79,3 @@ Supported image formats for document preview are:
 ## Logging while processing document 
 
 GroupDocs.Merger allows to log document manipulation processes info through [ILogger](https://apireference.groupdocs.com/net/merger/groupdocs.merger.logging/ilogger) interface. There is ability to use built-in [ConsoleLogger](https://apireference.groupdocs.com/net/merger/groupdocs.merger.logging/consolelogger) or implement own logging logic.
-

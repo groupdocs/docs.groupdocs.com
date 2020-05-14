@@ -22,6 +22,7 @@ The following are the steps how to export to resultant document only annotated 
 
 Following code snippet shows how to save only annotated pages of document
 
+```csharp
 // for this example input file ("input.pdf") must have at least 10 pages
 using (Annotator annotator = new Annotator(“input.pdf”))
 {
@@ -41,6 +42,7 @@ using (Annotator annotator = new Annotator(“input.pdf”))
     annotator.Add(new List<AnnotationBase>() { area, ellipse });
     annotator.Save(“result.pdf” new SaveOptions { OnlyAnnotatedPages = true});
 }
+```
 
 ## More resources
 
@@ -66,4 +68,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

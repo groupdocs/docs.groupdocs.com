@@ -12,6 +12,4 @@ hideChildren: False
 
 # Developer Guide
 
-
 This section describes some basic and advanced use cases of GroupDocs.Editor. Please refer to [GitHub repository](https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET) for more examples and samples.
-

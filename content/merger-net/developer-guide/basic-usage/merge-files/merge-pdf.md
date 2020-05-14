@@ -25,11 +25,13 @@ GroupDocs.Merger API provides several overloads of **[Join](https://apireferenc
 
 The following example demonstrates how to merge PDF files with several lines of code:
 
-using (Merger merger = new Merger(@"c:\\document1.pdf"))
+```csharp
+using (Merger merger = new Merger(@"c:\document1.pdf"))
 {
-    merger.Join(@"c:\\document2.pdf");
-    merger.Save(@"c:\\merged.pdf");
+    merger.Join(@"c:\document2.pdf");
+    merger.Save(@"c:\merged.pdf");
 }
+```
 
 ## More resources
 
@@ -51,4 +53,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge PDF files with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

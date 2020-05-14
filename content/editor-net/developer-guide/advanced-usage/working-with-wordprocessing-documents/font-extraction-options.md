@@ -26,9 +26,11 @@ GroupDocs.Editor has an ability to extract fonts from WordProcessing document an
 
 There are two public properties, responsible for working with fonts, all of them are located in the [`WordProcessingEditOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions) class:
 
+```csharp
 public FontExtractionOptions FontExtraction {get; set;}
 
 public bool ExtractOnlyUsedFont { get; set; }
+```
 
 `[FontExtractionOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/fontextractionoptions)` is a public enum, located in the `[GroupDocs.Editor.Options](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/)` namespace. By default, when an instance of the [`WordProcessingEditOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions) class is created, this enum has a default value `NotExtract`, which means do not extract any fonts: neither from document nor from the system. Other values are the next:
 
@@ -69,4 +71,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

@@ -13,7 +13,6 @@ hideChildren: False
 # Search for encrypted objects Metadata signatures
 
 
-
 # Search for encrypted objects in Metadata signatures
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to search for embedded objects in Metadata signatures with standard or custom encryption. Standard encryption is implemented over class [SymmetricEncryption](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricencryption) class. Creation of this object expects 3 arguments like encryption algorithm enumeration [SymmetricAlgorithmType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricalgorithmtype) with one of following values (DES, TripleDES, RC2, Rijndael), string value key and string value salt.
@@ -115,4 +114,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

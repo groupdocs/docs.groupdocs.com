@@ -24,14 +24,16 @@ GroupDocs.Annotation allows to get document information which includes.
 
 The following code sample demonstrates how to get information about document and Width and Height of its pages:
 
+```csharp
 //Get file info for the file from local disk
 using (Annotator annotator = new Annotator(“input.docx”))
 {
 	IDocumentInfo info = annotator.Document.GetDocumentInfo();
-    int width = info.PagesInfo\[0\].Width;
-    int height = info.PagesInfo\[0\].Height;
-    Console.WriteLine("\\nFile type: {0}\\nNumber of pages: {1}\\nDocument size: {2} bytes", info.FileType, info.PageCount, info.Size);
+    int width = info.PagesInfo[0].Width;
+    int height = info.PagesInfo[0].Height;
+    Console.WriteLine("\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes", info.FileType, info.PageCount, info.Size);
 }
+```
 
 ## More resources
 
@@ -61,4 +63,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

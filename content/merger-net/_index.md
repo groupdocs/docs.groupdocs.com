@@ -1,6 +1,6 @@
 ---
 id: home
-url: merger-net/home
+url: merger-net
 title: GroupDocs.Merger for .NET
 weight: 1
 description: 
@@ -11,7 +11,6 @@ hideChildren: True
 ---
 
 #  Home 
-
 
 ![](merger-net/_index/67338353)
 
@@ -32,4 +31,3 @@ Following are the links to some useful resources you may need to accomplish your
 *   [GroupDocs.Merger for .NET API Reference Guide](https://apireference.groupdocs.com/net/merger)
 *   [GroupDocs.Merger for .NET Free Support Forum](https://forum.groupdocs.com/c/merger)
 *   [GroupDocs.Merger for .NET Paid Support Helpdesk](https://helpdesk.groupdocs.com/)
-

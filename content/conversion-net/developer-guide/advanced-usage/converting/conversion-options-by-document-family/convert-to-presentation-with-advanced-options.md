@@ -20,6 +20,7 @@ GroupDocs.Conversion provides [PresentationConvertOptions](https://apireference
 
 Following code snippet shows how to convert to Presentation with advanced options.
 
+```csharp
 using (Converter converter = new Converter("sample.docx"))
 {
     PresentationConvertOptions options = new PresentationConvertOptions
@@ -30,6 +31,7 @@ using (Converter converter = new Converter("sample.docx"))
     };
     converter.Convert("converted.ppt", options);
 }
+```
 
 ## More resources
 
@@ -58,4 +60,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

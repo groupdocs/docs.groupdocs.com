@@ -14,10 +14,11 @@ hideChildren: False
 
 Following code snippet shows how to convert a document from Amazon S3 Storage:
 
+```csharp
 public static void Run()
 {
     string key = "sample.docx";
-    string outputFile = Path.Combine("c:\\output" , "converted.pdf");
+    string outputFile = Path.Combine("c:\output" , "converted.pdf");
     using (Converter converter = new Converter(() => DownloadFile(key)))
     {
         PdfConvertOptions options = new PdfConvertOptions();
@@ -42,6 +43,7 @@ public static Stream DownloadFile(string key)
         return stream;
     }
 }
+```
 
 ## More resources
 
@@ -70,4 +72,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

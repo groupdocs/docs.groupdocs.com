@@ -13,7 +13,6 @@ hideChildren: False
 # Supported Document Formats
 
 
-
 ## Supported File Formats
 
 The list of supported by GroupDocs.Annotation document formats and types
@@ -227,4 +226,3 @@ Drawing Interchange Format
 Digital Imaging and Communications in Medicine (DICOM)
 
 ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-

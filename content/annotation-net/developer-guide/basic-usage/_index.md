@@ -12,9 +12,7 @@ hideChildren: False
 
 # Basic usage
 
-
 ## Quick Start section for GroupDocs.Annotation API
 
 Annotate your documents fast and easy with our intuitive and powerful API just with few lines of code.  
 Let’s review common usage scenarios when documents are stored at a local drive and you want to annotate them using GroupDocs.Annotation API.
-

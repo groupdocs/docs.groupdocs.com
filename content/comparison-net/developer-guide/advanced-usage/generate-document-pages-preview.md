@@ -57,35 +57,41 @@ The following code snippet demonstrates how to generate document previews.
 
 ## Get page previews for source document
 
+```csharp
 using (Comparer comparer = new Comparer(“source.docx”))
 {
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine(“C:\\”, $"result\_{pageNumber}.png");
+    	var pagePath = Path.Combine(“C:\”, $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.PageNumbers = new int\[\] { 1, 2 };
+    previewOptions.PageNumbers = new int[] { 1, 2 };
     comparer.Source.GeneratePreview(previewOptions);
 }
 
+```
+
 ## Get page previews for target document
 
+```csharp
 using (Comparer comparer = new Comparer(“source.docx”))
 {
 	comparer.Add(“target.docx”);
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine(“C:\\”, $"result\_{pageNumber}.png");
+    	var pagePath = Path.Combine(“C:\”, $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.PageNumbers = new int\[\] { 1, 2 };
-    comparer.Targets\[0\].GeneratePreview(previewOptions);
+    previewOptions.PageNumbers = new int[] { 1, 2 };
+    comparer.Targets[0].GeneratePreview(previewOptions);
 }
+```
 
 ## Get page previews for resultant document
 
+```csharp
 using (Comparer comparer = new Comparer(“source.docx”))
 {
 	comparer.Add(“target.docx”);
@@ -93,13 +99,14 @@ using (Comparer comparer = new Comparer(“source.docx”))
     Document document = new Document(File.OpenRead(“result.docx”));
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine(“C:\\”, $"result\_{pageNumber}.png");
+    	var pagePath = Path.Combine(“C:\”, $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.PageNumbers = new int\[\] { 1, 2 };
+    previewOptions.PageNumbers = new int[] { 1, 2 };
     document.GeneratePreview(previewOptions);
 }
+```
 
 ## Set specific size for preview images
 
@@ -107,6 +114,7 @@ In some cases it may be useful to set specific image size during document pages 
 
 The following code snippet demonstrates how to set specific size for preview images.
 
+```csharp
 using (Comparer comparer = new Comparer(“source.pptx”))
 {
 	comparer.Add(“target.pptx”);
@@ -114,15 +122,17 @@ using (Comparer comparer = new Comparer(“source.pptx”))
     Document document = new Document(File.OpenRead(“result.pptx”));
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine(“C:\\”, $"result\_{pageNumber}.png");
+    	var pagePath = Path.Combine(“C:\”, $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.PageNumbers = new int\[\] { 1, 2 };
+    previewOptions.PageNumbers = new int[] { 1, 2 };
     previewOptions.Height = 1000;
     previewOptions.Width = 1000;
     document.GeneratePreview(previewOptions);
 }
+
+```
 
 NOTE: This feature is not supported for WordProcessing documents yet.
 
@@ -130,6 +140,7 @@ NOTE: This feature is not supported for WordProcessing documents yet.
 
 By default, after generating and rendering document page preview  image stream will be immediately disposed. However there is an ability to implement custom method for handling this operation.
 
+```csharp
 // Method should match with ReleasePageStream delegate signature
 private void UserReleaseStreamMethod(int pageNumber, Stream stream)
 {
@@ -144,15 +155,16 @@ using (Comparer comparer = new Comparer(“source.docx”))
     Document document = new Document(File.OpenRead(“result.docx”));
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine(“C:\\”, $"result\_{pageNumber}.png");
+    	var pagePath = Path.Combine(“C:\”, $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.PageNumbers = new int\[\] { 1, 2 };
+    previewOptions.PageNumbers = new int[] { 1, 2 };
     // here we set delegate target method
     previewOptions.ReleasePageStream = UserReleaseStreamMethod;
     document.GeneratePreview(previewOptions);
 }
+```
 
 ## More resources
 
@@ -178,4 +190,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
-

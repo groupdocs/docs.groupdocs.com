@@ -28,11 +28,13 @@ Every resource type has its own distinct class with metadata, constructors and o
 
 Let's prepare an `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instance by loading and editing some input WordProcessing document, as always (using directive is omitted for the sake of simplification):
 
+```csharp
 string inputDocxPath = "C://input/document.docx";
 Editor editor = new Editor(inputDocxPath, delegate { return new WordProcessingLoadOptions(); });
 WordProcessingEditOptions editOptions = new WordProcessingEditOptions();
 editOptions.FontExtraction = FontExtractionOptions.ExtractAll;// Enable max font extraction - ExtractAll
 EditableDocument beforeEdit = editor.Edit(editOptions);// Create EditableDocument instance
+```
 
 #### Obtaining resources
 
@@ -48,14 +50,17 @@ Secondly, completely all resources may be obtained with a single property `[Edi
 
 Here is a source code:
 
+```csharp
 List<IImageResource> images = beforeEdit.Images;
 List<FontResourceBase> fonts = beforeEdit.Fonts;
 List<CssText> stylesheets = beforeEdit.Css;
 List<IHtmlResource> allTogether = beforeEdit.AllResources;
+```
 
 If user wants to manually save instance of` [EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` as HTML file with resources, he may use something like this:
 
-string outputFolder = "C://output/document\_resources/";
+```csharp
+string outputFolder = "C://output/document_resources/";
 foreach (IImageResource oneImage in images)
 {
     oneImage.Save(Path.Combine(outputFolder, oneImage.FilenameWithExtension));
@@ -69,15 +74,18 @@ foreach (CssText oneStylesheet in stylesheets)
     oneStylesheet.Save(Path.Combine(outputFolder, oneStylesheet.FilenameWithExtension));
 }
 System.IO.File.WriteAllText("c://output/document.html", beforeEdit.GetContent());
+```
 
 #### CSS resources
 
 There also is a third way, that is designed especially for the stylesheets. The reason is that stylesheets can contain external resources too, which are presented as links with urls. For example, it can be images, fonts, and other stylesheets. In such case it is necessary to adjust such link. For coping with this `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` contains two overloads of the `[GetCssContent()](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument/methods/getcsscontent/index)` method.[ First overload](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument/methods/getcsscontent) is parameterless and returns a `List` of strings, each one represents one stylesheet. In most cases document has only one stylesheet, so such list will have only one item. [Second overload](https://apireference.groupdocs.com/net/editor/groupdocs.editor.editabledocument/getcsscontent/methods/1) obtains two string parameters: `externalImagesPrefix` and `externalFontsPrefix`. First parameter is designated for images, while second - for fonts. Both overloads are shown in example below:
 
+```csharp
 List<string> stylesheetsWithoutPrefixes = beforeEdit.GetCssContent();
 string externalImagesPrefix = "http://www.mywebsite.com/images/id=";
 string externalFontsPrefix = "http://www.mywebsite.com/fonts/id=";
 List<string> stylesheetsWithPrefixes = beforeEdit.GetCssContent(externalImagesPrefix, externalFontsPrefix);
+```
 
 ## More resources
 
@@ -103,4 +111,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

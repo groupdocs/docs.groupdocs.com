@@ -12,6 +12,4 @@ hideChildren: False
 
 # Rendering Word Processing Documents
 
-
 This page describes specific use cases for Word Processing document rendering.
-

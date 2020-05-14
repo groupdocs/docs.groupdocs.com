@@ -13,11 +13,11 @@ hideChildren: False
 # Load document from URL
 
 
-
 # Load a document from URL
 
 Following example demonstrates how to render document from URL.
 
+```csharp
  		public static void LoadDocumentFromUrl()
         {
             string url = "https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-.NET/blob/master/Examples/Resources/SampleFiles/sample.docx?raw=true";
@@ -44,6 +44,7 @@ Following example demonstrates how to render document from URL.
             fileStream.Position = 0;
             return fileStream;
         }
+```
 
 ## More resources
 
@@ -69,4 +70,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

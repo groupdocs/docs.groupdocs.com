@@ -33,33 +33,37 @@ There is a quick and convenient way to remove specific or even all replies for s
 
 The easiest way for removing specific annotation reply is to delete by its index inside Replies collection. The following code sample demonstrates how to remove first annotation reply:
 
+```csharp
 // NOTE: Input document already contain annotations with replies
 using (Annotator annotator = new Annotator("result.pdf", new LoadOptions { ImportAnnotations = true }))
 {
     // Obtain annotations collection from document
     List<AnnotationBase> annotations = annotator.Get();               
 	// Remove first reply 
-	annotations\[0\].Replies.RemoveAt(0);
+	annotations[0].Replies.RemoveAt(0);
 	// Save changes
 	annotator.Update(annotations);
 	annotator.Save("result.pdf");
 }
+```
 
 ## Remove annotation replies by criteria
 
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net)** API also provides a way to remove multiple annotation replies that match some criteria. The following code demonstrates how to remove replies that were added by user with name Tom:
 
+```csharp
 // NOTE: Input document already contain annotations with replies
-using (Annotator annotator = new Annotator("annotated\_file\_with\_replies.pdf", new LoadOptions { ImportAnnotations = true }))
+using (Annotator annotator = new Annotator("annotated_file_with_replies.pdf", new LoadOptions { ImportAnnotations = true }))
 {
     // Obtain annotations collection from document
     List<AnnotationBase> annotations = annotator.Get();
     // Remove all replies where author name is "Tom"
-    annotations\[0\].Replies.RemoveAll(x => x.User.Name == "Tom");
+    annotations[0].Replies.RemoveAll(x => x.User.Name == "Tom");
     // Save changes
     annotator.Update(annotations);
     annotator.Save("result.pdf");
 }
+```
 
 ## More resources
 
@@ -89,4 +93,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

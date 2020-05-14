@@ -13,7 +13,6 @@ hideChildren: False
 # Swap pages
 
 
-
 # Swap document pages
 
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net) **allows to swap two pages positions within the source document. The result is a new document where two pages have their positions exchanged.
@@ -27,8 +26,9 @@ Here are the steps to swap document pages:
 
 The following code sample demonstrates how to split document:
 
-string filePath = @"c:\\sample.pptx";
-string filePathOut = @"c:\\output\\result.pptx";
+```csharp
+string filePath = @"c:\sample.pptx";
+string filePathOut = @"c:\output\result.pptx";
 
 int pageNumber1 = 3;
 int pageNumber2 = 6;
@@ -39,6 +39,7 @@ using (Merger merger = new Merger(filePath))
     merger.SwapPages(swapOptions);
     merger.Save(filePathOut);
 }
+```
 
 ## More resources
 
@@ -60,4 +61,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to swap pages in your documents and organize document structure in different ways with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

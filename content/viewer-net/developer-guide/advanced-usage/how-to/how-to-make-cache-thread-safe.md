@@ -13,7 +13,6 @@ hideChildren: False
 # How to make cache thread-safe
 
 
-
 # How to make cache thread-safe 
 
 This tutorial will explain how to make cache thread-safe by using [C# lock](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/lock-statement) and [ConcurrentDictionary<,> class](https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentdictionary-2).
@@ -32,44 +31,47 @@ The GroupDocs.Viewer enables users to use caching to improve the performance of 
 
 The FileCache class uses a local disk to read and write output file copies, so we need to make reads and writes to disk thread-safe. To do so we need some kind of the list where we can store key or file ID and associated object that we'll lock around. The simplest way is using [ConcurrentDictionary<,> class](https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentdictionary-2) that has been [introduced with .NET Framework 4.0](https://docs.microsoft.com/en-us/dotnet/standard/collections/thread-safe/). The ConcurrentDictionary is a thread-safe implementation of a dictionary of key-value pairs. Let's implement a class that will wrap around not thread-safe class that implements the ICache interface.
 
+```csharp
 internal class ThreadSafeCache : ICache
 {
-    private readonly ICache \_cache;
-    private readonly IKeyLockerStore \_keyLockerStore;
+    private readonly ICache _cache;
+    private readonly IKeyLockerStore _keyLockerStore;
 
     public ThreadSafeCache(ICache cache, IKeyLockerStore keyLockerStore)
     {
-        \_cache = cache;
-        \_keyLockerStore = keyLockerStore;
+        _cache = cache;
+        _keyLockerStore = keyLockerStore;
     }
 
     public void Set(string key, object value)
     {
-        lock (\_keyLockerStore.GetLockerFor(key))
+        lock (_keyLockerStore.GetLockerFor(key))
         {
-            \_cache.Set(key, value);
+            _cache.Set(key, value);
         }
     }
 
     public bool TryGetValue<TEntry>(string key, out TEntry value)
     {
-        lock (\_keyLockerStore.GetLockerFor(key))
+        lock (_keyLockerStore.GetLockerFor(key))
         {
-            return \_cache.TryGetValue(key, out value);
+            return _cache.TryGetValue(key, out value);
         }
     }
 
     public IEnumerable<string> GetKeys(string filter)
     {
-        lock (\_keyLockerStore.GetLockerFor("get\_keys"))
+        lock (_keyLockerStore.GetLockerFor("get_keys"))
         {
-            return \_cache.GetKeys(filter);
+            return _cache.GetKeys(filter);
         }
     }
 }
+```
 
 As you can see the all the ThreadSafeCache class methods use locks to make calls to the methods thread-safe. Let's see at ConcurrentDictionaryKeyLockerStore implementation. This class keeps uses ConcurrentDictionary to create a locker object or to retrieve it when it already exists. It also creates a unique key that identifies a cached file.
 
+```csharp
 interface IKeyLockerStore
 {
     object GetLockerFor(string key);
@@ -77,29 +79,31 @@ interface IKeyLockerStore
 
 class ConcurrentDictionaryKeyLockerStore : IKeyLockerStore
 {
-    private readonly ConcurrentDictionary<string, object> \_keyLockerMap;
-    private readonly string \_uniqueKeyPrefix;
+    private readonly ConcurrentDictionary<string, object> _keyLockerMap;
+    private readonly string _uniqueKeyPrefix;
 
     public ConcurrentDictionaryKeyLockerStore(ConcurrentDictionary<string, object> keyLockerMap, string uniqueKeyPrefix)
     {
-        \_keyLockerMap = keyLockerMap;
-        \_uniqueKeyPrefix = uniqueKeyPrefix;
+        _keyLockerMap = keyLockerMap;
+        _uniqueKeyPrefix = uniqueKeyPrefix;
     }
 
     public object GetLockerFor(string key)
     {
         string uniqueKey = GetUniqueKey(key);
-        return \_keyLockerMap.GetOrAdd(uniqueKey, k => new object());
+        return _keyLockerMap.GetOrAdd(uniqueKey, k => new object());
     }
 
     private string GetUniqueKey(string key)
     {
-        return $"{\_uniqueKeyPrefix}\_{key}";
+        return $"{_uniqueKeyPrefix}_{key}";
     }
 }
+```
 
 Let's see the whole program listing with ThreadSafeCache and ConcurrentDictionaryKeyLockerStore.
 
+```csharp
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
@@ -117,7 +121,7 @@ namespace ThreadSaveCacheExample
         static void Main()
         {
             string fileName = "sample.pdf";
-            string cacheFolder = fileName.Replace('.', '\_');
+            string cacheFolder = fileName.Replace('.', '_');
             string cachePath = Path.Combine("cache", cacheFolder);
             string uniqueKeyPrefix = cachePath;
 
@@ -139,36 +143,36 @@ namespace ThreadSaveCacheExample
 
     class ThreadSafeCache : ICache
     {
-        private readonly ICache \_cache;
-        private readonly IKeyLockerStore \_keyLockerStore;
+        private readonly ICache _cache;
+        private readonly IKeyLockerStore _keyLockerStore;
 
         public ThreadSafeCache(ICache cache, IKeyLockerStore keyLockerStore)
         {
-            \_cache = cache;
-            \_keyLockerStore = keyLockerStore;
+            _cache = cache;
+            _keyLockerStore = keyLockerStore;
         }
 
         public void Set(string key, object value)
         {
-            lock (\_keyLockerStore.GetLockerFor(key))
+            lock (_keyLockerStore.GetLockerFor(key))
             {
-                \_cache.Set(key, value);
+                _cache.Set(key, value);
             }
         }
 
         public bool TryGetValue<TEntry>(string key, out TEntry value)
         {
-            lock (\_keyLockerStore.GetLockerFor(key))
+            lock (_keyLockerStore.GetLockerFor(key))
             {
-                return \_cache.TryGetValue(key, out value);
+                return _cache.TryGetValue(key, out value);
             }
         }
 
         public IEnumerable<string> GetKeys(string filter)
         {
-            lock (\_keyLockerStore.GetLockerFor("get\_keys"))
+            lock (_keyLockerStore.GetLockerFor("get_keys"))
             {
-                return \_cache.GetKeys(filter);
+                return _cache.GetKeys(filter);
             }
         }
     }
@@ -180,40 +184,40 @@ namespace ThreadSaveCacheExample
 
     class ConcurrentDictionaryKeyLockerStore : IKeyLockerStore
     {
-        private readonly ConcurrentDictionary<string, object> \_keyLockerMap;
-        private readonly string \_uniqueKeyPrefix;
+        private readonly ConcurrentDictionary<string, object> _keyLockerMap;
+        private readonly string _uniqueKeyPrefix;
 
         public ConcurrentDictionaryKeyLockerStore(ConcurrentDictionary<string, object> keyLockerMap, string uniqueKeyPrefix)
         {
-            \_keyLockerMap = keyLockerMap;
-            \_uniqueKeyPrefix = uniqueKeyPrefix;
+            _keyLockerMap = keyLockerMap;
+            _uniqueKeyPrefix = uniqueKeyPrefix;
         }
 
         public object GetLockerFor(string key)
         {
             string uniqueKey = GetUniqueKey(key);
-            return \_keyLockerMap.GetOrAdd(uniqueKey, k => new object());
+            return _keyLockerMap.GetOrAdd(uniqueKey, k => new object());
         }
 
         private string GetUniqueKey(string key)
         {
-            return $"{\_uniqueKeyPrefix}\_{key}";
+            return $"{_uniqueKeyPrefix}_{key}";
         }
     }
 
     class MemoryPageStreamFactory : IPageStreamFactory
     {
-        private readonly List<MemoryStream> \_pages;
+        private readonly List<MemoryStream> _pages;
 
         public MemoryPageStreamFactory(List<MemoryStream> pages)
         {
-            \_pages = pages;
+            _pages = pages;
         }
 
         public Stream CreatePageStream(int pageNumber)
         {
             MemoryStream pageStream = new MemoryStream();
-            \_pages.Add(pageStream);
+            _pages.Add(pageStream);
 
             return pageStream;
         }
@@ -224,6 +228,7 @@ namespace ThreadSaveCacheExample
         }
     }
 }
+```
 
 ## Conclusion
 
@@ -253,4 +258,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

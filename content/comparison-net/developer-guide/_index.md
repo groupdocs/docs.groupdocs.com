@@ -12,6 +12,4 @@ hideChildren: False
 
 # Developer Guide
 
-
 This section describes some basic and advanced use cases of GroupDocs.Comparison for .NET. Please refer to [GitHub repository](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET) for more examples and samples.
-

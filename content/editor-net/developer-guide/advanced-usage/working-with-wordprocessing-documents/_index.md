@@ -29,26 +29,32 @@ In counterpart to this, when paged mode is enabled, document content is divided 
 
 First of all user must open a document by loading it into the `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class instance. This example demonstrates how to load the password-protected document from the stream. So, let's suppose we have an encoded DOCX, and user knows its password. First of all, you need to create a load options.
 
+```csharp
 Options.WordProcessingLoadOptions loadOptions = new WordProcessingLoadOptions();
-loadOptions.Password = "some\_password\_to\_open\_a\_document";
+loadOptions.Password = "some_password_to_open_a_document";
+```
 
 Please note that if document has no protection, the password will be ignored. However, if document is protected, but user has not specified a password, a [PasswordRequiredException](https://apireference.groupdocs.com/net/editor/groupdocs.editor/passwordrequiredexception) will be thrown during document editing.
 
 Next step is to load the document from stream into the `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class. For loading documents from streams `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` uses delegates. In other words, you need to pass the delegate instance, that points to the method, that returns a stream.   
 Same with load options — they are passed via delegate.
 
-FileStream inputStream = File.OpenRead("C:\\\\input\_path\\\\document.docx");
+```csharp
+FileStream inputStream = File.OpenRead("C:\\input_path\\document.docx");
 Editor editor = new Editor(delegate { return inputStream; }, delegate { return loadOptions; });
+```
 
 ### Editing WordProcessing documents
 
 When document is loaded, it can be edited (transformed to `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` class), and this process can be adjusted with edit options. Let's create them:
 
+```csharp
 Options.WordProcessingEditOptions editOptions = new WordProcessingEditOptions(); //#1
 editOptions.FontExtraction = FontExtractionOptions.ExtractEmbeddedWithoutSystem; //#2
 editOptions.EnableLanguageInformation = true; //#3
 //5.3. Switch to pagination mode instead of default float mode
 editOptions.EnablePagination = true; //#4
+```
 
 Let's describe the code above line by line.   
 *Line #1* - every supported document family format has its own options class. So for all WordProcessing formats you need to apply the `[WordProcessingEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions)`. The same for other formats — `[SpreadsheetEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheeteditoptions)` for all spreadsheet-based formats (like XLS, ODS etc.) and so on.   
@@ -57,12 +63,16 @@ Let's describe the code above line by line. 
 
 After preparing options the previously loaded document can be edited:
 
+```csharp
 EditableDocument beforeEdit = editor.Edit(editOptions);
+```
 
 Unlike previous example let's extract HTML markup and resources separately:
 
+```csharp
 string originalContent = beforeEdit.GetContent();
 List<IHtmlResource> allResources = beforeEdit.AllResources;
+```
 
 First string contains all HTML markup without resources, while second `List` contains all resources (images, fonts, and stylesheets).
 
@@ -71,8 +81,10 @@ First string contains all HTML markup without resources, while second `List` c
 Let's imagine that user passed HTML markup and resources, obtained from `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instance, to the WYSIWYG-editor, edited the document on client-side and obtained back a modified HTML markup.   
 Now user needs to create new `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instance from this modified markup.
 
+```csharp
 string editedContent = originalContent.Replace("document", "edited document");
 EditableDocument afterEdit = EditableDocument.FromMarkup(editedContent, allResources);
+```
 
 We passed the same `List` with resources to the edited `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)`, however it can be a completely new `List` with other resources.
 
@@ -80,13 +92,15 @@ We passed the same `List` with resources to the edited `[EditableDocument](ht
 
 Before saving the document user must create saving options.
 
+```csharp
 WordProcessingFormats docmFormat = WordProcessingFormats.Docm; //#1
 Options.WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(docmFormat); //#2
 saveOptions.Password = "password"; //#3
 saveOptions.EnablePagination = true; //#4
 saveOptions.Locale = System.Globalization.CultureInfo.GetCultureInfo("en-US"); //#5
 saveOptions.OptimizeMemoryUsage = true; //#6
-saveOptions.Protection = new WordProcessingProtection(WordProcessingProtectionType.ReadOnly, "write\_password"); //#7
+saveOptions.Protection = new WordProcessingProtection(WordProcessingProtectionType.ReadOnly, "write_password"); //#7
+```
 
 Let's describe a piece of code above line by line:
 
@@ -100,14 +114,18 @@ Let's describe a piece of code above line by line:
 
 Finally, user should save an edited document into the stream with prepared save options.
 
+```csharp
 MemoryStream outputStream = new memorySream();
 editor.Save(afterEdit, outputStream, saveOptions);
+```
 
 And don't forget to dispose all resources:
 
+```csharp
 beforeEdit.Dispose();
 afterEdit.Dispose();
 editor.Dispose();
+```
 
 ### Conclusion
 
@@ -137,4 +155,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

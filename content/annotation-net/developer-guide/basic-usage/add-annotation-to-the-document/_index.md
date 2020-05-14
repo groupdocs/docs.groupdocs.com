@@ -12,7 +12,6 @@ hideChildren: False
 
 # Add annotation to the document
 
-
 # What is a document annotation?
 
 **Annotation** is a textual or graphic notes, comments and remarks attached to a specific part of a document content - sections, paragraphs, sentences or even words. Annotations are often used by a group of collaborators to edit and review documents in a quick and handy manner - the document is shared with reviewers who then mark it up and add notes. Then assigned team members read these annotations and modify document content accordingly.
@@ -92,4 +91,3 @@ Make selected text underline. Applicable only for text.
 Add text watermark. PageNumber for this annotation is ignored, because annotation adds to all document pages. For some document formats can set Angle property, that determines annotation angle rotation.
 
 For detailed explanation about how to apply different annotation types to a document, please check these guides:
-

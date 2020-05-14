@@ -12,7 +12,6 @@ hideChildren: False
 
 # System Requirements
 
-
 **Contents Summary**
 
 
@@ -91,4 +90,3 @@ GroupDocs.Viewer for .NET can be used to develop applications in any developme
 *   Xamarin.IOS
 *   Xamarin.Mac
 *   MonoDevelop 2.4 and later
-

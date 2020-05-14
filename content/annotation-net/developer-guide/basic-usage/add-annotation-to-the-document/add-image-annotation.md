@@ -12,7 +12,6 @@ hideChildren: False
 
 # Add image annotation
 
-
 # Add image annotation
 
 **[Image annotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/imageannotation)** allows to add image within document page like shown at the picture below.
@@ -45,6 +44,7 @@ Follow these steps to add Highlight annotation to document:
 
 The following code demonstrates how to add [ImageAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/imageannotation) to the document:
 
+```csharp
 using (Annotator annotator = new Annotator("input.pdf"))
             {
                 ImageAnnotation area = new ImageAnnotation
@@ -52,11 +52,13 @@ using (Annotator annotator = new Annotator("input.pdf"))
                     Box = new Rectangle(100, 100, 100, 100),
                     Opacity = 0.7,
                     PageNumber = 0,
-                    ImagePath = "www.google.com.ua/images/branding/googlelogo/2x/googlelogo\_color\_92x30dp.png"
+                    ImagePath = "www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
                 };
                 annotator.Add(area);
                 annotator.Save("result.pdf");
             }
+
+```
 
 ## More resources
 
@@ -86,4 +88,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

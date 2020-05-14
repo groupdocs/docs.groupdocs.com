@@ -13,7 +13,6 @@ hideChildren: False
 # Set timeout for loading external resources contained by a document
 
 
-
 # Set timeout for loading external document resources
 
 The documents may contain external resources such as graphics that should be loaded during document rendering. 
@@ -65,4 +64,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

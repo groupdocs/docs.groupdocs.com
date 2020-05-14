@@ -10,10 +10,6 @@ productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
 
-# How to Compare Contracts, Drafts and Legal Documents
-
-
-
 # How to compare contracts, drafts and legal documents
 
 An ordinary employee is often faced with the need to compare two versions of the same document. For example, upon receipt of a signed version of an agreement, it is important to ensure that the counterparty has not made major changes affecting the terms of the transaction. And on the next round of approval of the draft document within the company, you only need to look at the changed sections so as not to waste time re-reading the entire text.  
@@ -65,11 +61,13 @@ Target File\- Contract signed in 2019
 
 Here is the code that is used to compare two contracts.
 
+```csharp
 using (Comparer comparer = new Comparer("source-contract.docx"))
 {
-   comparer.Add("target\_contract.docx");
+   comparer.Add("target_contract.docx");
    comparer.Compare("result-contract.docx");
 }
+```
 
 As a result, we get a DOCX file where the deleted elements are marked in **red**, the added – in **blue**, and the modified – in **green. **
 
@@ -103,4 +101,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online [GroupDocs Comparison App](https://products.groupdocs.app/comparison).
-

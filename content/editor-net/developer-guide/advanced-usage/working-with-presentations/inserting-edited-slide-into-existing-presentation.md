@@ -12,7 +12,6 @@ hideChildren: False
 
 # Inserting edited slide into existing presentation
 
-
 By default the full presentation editing pipeline (cycle) is the next:
 
 1.  Load presentation in a form of a file or stream into constructor of the [`Editor`](https://apireference.groupdocs.com/editor/net/groupdocs.editor/editor) class.
@@ -32,8 +31,10 @@ Starting from version 20.4, the 10th step of described pipeline can be altered �
 
 [`PresentationSaveOptions`](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions) class now contains two new properties: integer [`SlideNumber`](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions/properties/slidenumber) and boolean flag `[InsertAsNewSlide](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions/properties/insertasnewslide)`. Both of them have "usual" default values: [`SlideNumber`](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions/properties/slidenumber) has '`0`' and `[InsertAsNewSlide](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions/properties/insertasnewslide)` is set to `'false'`.
 
+```csharp
 public int SlideNumber { get; set; }
 public bool InsertAsNewSlide { get; set; }
+```
 
 By default, when these properties are not touched or at least [`SlideNumber`](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions/properties/slidenumber) has a default value '`0`', GroupDocs.Editor will generate new single-slide presentation, as in previous versions. However, if [`SlideNumber`](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions/properties/slidenumber) property contains number, distinct from '`0`', and valid presentation is loaded into [`Editor`](https://apireference.groupdocs.com/editor/net/groupdocs.editor/editor) class (it is expected to be the original presentation, which was edited, but it actually can be any presentation, even those, which has no relation to the original), then edited slide will be **inserted** into given presentation.
 
@@ -47,6 +48,7 @@ Along with positive slide numbers, the `SlideNumber` property also supports nega
 
 Part of source code below explains this numbering system:
 
+```csharp
 PresentationSaveOptions saveOptions = new PresentationSaveOptions(Formats.PresentationFormats.Pptx)
 
 //let's say we have presentation with 5 slides
@@ -68,6 +70,7 @@ saveOptions.SlideNumber = -3;  // third slide, which is third from end
 saveOptions.SlideNumber = -4;  // second slide, which is fourth from end
 saveOptions.SlideNumber = -5;  // first slide, which is fifth from end
 saveOptions.SlideNumber = -6;  // first slide, because value '-6' exceeds the slides amount '5' and thus is adjusted to the closest
+```
 
 ### InsertAsNewSlide property
 
@@ -78,6 +81,7 @@ saveOptions.SlideNumber = -6;  // first slide, because value '-6' exceeds the sl
 
 Source code below shows, how slide number is treated when `InsertAsNewSlide` property is enabled:
 
+```csharp
 PresentationSaveOptions saveOptions = new PresentationSaveOptions(Formats.PresentationFormats.Pptx)
 
 //let's say we have presentation with 5 slides
@@ -104,7 +108,4 @@ saveOptions.SlideNumber = -4;  // new slide is inject as fourth from end (it bec
 saveOptions.SlideNumber = -5;  // new slide is inject as fifth from end (it becomes second if starting from beginning), four following slides are shifting to the end
 saveOptions.SlideNumber = -6;  // new slide is inject as sixth from end (it becomes first if starting from beginning), five following slides are shifting to the end
 saveOptions.SlideNumber = -7;  // same as previous
-
-  
-  
-
+```

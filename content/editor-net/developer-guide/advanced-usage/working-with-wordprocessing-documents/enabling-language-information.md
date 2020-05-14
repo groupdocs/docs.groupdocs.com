@@ -14,7 +14,9 @@ hideChildren: False
 
 Documents of all WordProcessing formats can contain text in different languages. But, unlike the plain text documents (TXT), WordProcessing documents also contain a metadata about specific language (locale) of every piece of text. [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net) allows to extract and export this language information. For achieving this the [`WordProcessingEditOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions) class contains the [`EnableLanguageInformation`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions/properties/enablelanguageinformation) public boolean property:
 
+```csharp
 public bool EnableLanguageInformation {get; set;}
+```
 
 By default its value is `false`, which means that language metadata will not be extracted. But when this option is manually enabled, GroupDocs.Editor extracts locale info for every piece of textual content and preserves it in the `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instance, when document is edited. Finally, when user have obtained the `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instance and is generating the HTML markup for transferring it to the WYSIWYG HTML-editor in order to make document editable in the browser, this language information is represented as the 'lang' HTML attributes with appropriate values inside the SPAN HTML elements.
 
@@ -49,4 +51,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

@@ -14,6 +14,7 @@ hideChildren: False
 
 Following example demonstrates how to process documents from FTP.
 
+```csharp
 public static void Run()
 {
     string filePath = "ftp://localhost/sample.doc";
@@ -60,6 +61,7 @@ private static Stream GetFileStream(WebResponse response)
     fileStream.Position = 0;
     return fileStream;
 }
+```
 
 ## More resources
 
@@ -85,4 +87,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

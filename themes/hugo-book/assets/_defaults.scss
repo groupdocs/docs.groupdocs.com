@@ -3,11 +3,16 @@ $padding-1: 1px !default;
 $padding-4: 0.25rem !default;
 $padding-8: 0.5rem !default;
 $padding-16: 1rem !default;
+$padding-17: 1.1rem !default;
+$padding-18: 1.2rem !default;
+$padding-20: 1.4rem !default;
 
 $font-size-base: 16px !default;
 $font-size-12: 0.75rem !default;
 $font-size-14: 0.875rem !default;
 $font-size-16: 1rem !default;
+$font-size-17: 1.1rem !default;
+$font-size-18: 1.2rem !default;
 
 $border-radius: $padding-4 !default;
 
@@ -27,7 +32,7 @@ $black: #000 !default;
 $color-link: #05b !default;
 $color-visited-link: #8440f1 !default;
 
-$body-background: white !default;
+$body-background: $white !default;
 $body-font-color: $black !default;
 $body-font-weight: normal !default;
 

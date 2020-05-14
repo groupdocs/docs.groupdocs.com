@@ -63,7 +63,8 @@ Second overload is parameterless — it chooses the most appropriate default edi
 
 `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instance holds a version of input document, converted to internal intermediate format according to edit options. When it is ready, it can emit HTML, CSS and other appropriate content, that can be passed directly to the WYSIWYG-editor. This is demonstrated below.
 
-string inputFilePath = "C:\\\\input\_path\\\\document.docx"; //path to some document
+```csharp
+string inputFilePath = "C:\\input_path\\document.docx"; //path to some document
 Editor editor = new Editor(inputFilePath, delegate { return new WordProcessingLoadOptions(); });
 EditableDocument openedDocument = editor.Edit();//with default edit options
 
@@ -72,9 +73,11 @@ editOptions.EnableLanguageInformation = true;
 editOptions.EnablePagination = true;
 
 EditableDocument anotherOpenedDocument = editor.Edit(editOptions);
+```
 
 There can be generated several `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instances from a single `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` instance with different edit options. For example, for WordProcessing document, first time user can call `[Edit()](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/edit)` method with disabled paged mode, and for the second time — with enabled. In other words, there can be generated several different `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` representations of the single original document. Other example — there can be multiple `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instances for a single input Spreadsheet document, where each instance represents different tab of the Spreadsheet document. Such example is shown below.
 
+```csharp
 string inputXlsxPath = "C://input/spreadsheet.xlsx";
 Editor editor = new Editor(inputXlsxPath, delegate { return new SpreadsheetLoadOptions(); });
 
@@ -88,13 +91,16 @@ editOptions2.ExcludeHiddenWorksheets = false;
  
 EditableDocument firstTab = editor.Edit(editOptions1);
 EditableDocument secondTab = editor.Edit(editOptions2);
+```
 
 When `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instance is ready, it can emit HTML-markup, CSS-markup and other resources in different forms for passing them to the client-side WYSIWYG HTML-editor or any other application, that can edit HTML documents. It is briefly shown in the example below.
 
+```csharp
 EditableDocument document = editor.Edit();
 string bodyContent = document.GetBodyContent();
 List<IImageResource> onlyImages = document.Images;
 List<IHtmlResource> allResourcesTogether = document.AllResources;
+```
 
 For more information about obtaining HTML markup and resources from `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` please visit "[Get HTML markup in different forms](https://docs.groupdocs.com/display/editornet/Get+HTML+markup+in+different+forms)", "[Working with resources](https://docs.groupdocs.com/display/editornet/Working+with+resources)", and "[Save HTML to folder](https://docs.groupdocs.com/display/editornet/Save+HTML+to+folder)" articles..
 
@@ -126,4 +132,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

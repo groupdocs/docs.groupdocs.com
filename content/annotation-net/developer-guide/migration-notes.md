@@ -12,7 +12,6 @@ hideChildren: False
 
 # Migration Notes
 
-
 ### Why To Migrate?
 
 Here are the key reasons to use the new updated API provided by GroupDocs.Annotation for .NET since version 19.8:
@@ -30,6 +29,7 @@ Here is a brief comparison of how to annotate document and save it using old and
 
 #### Old coding style
 
+```csharp
 // Creating annotation list
 List<AnnotationInfo> annotations = new List<AnnotationInfo>()
 {
@@ -62,9 +62,11 @@ using (FileStream fs = new FileStream("input.pdf", FileMode.Open))
     // Export annotations and save result
     Stream result = annotator.ExportAnnotationsToDocument(fs, annotations);
 }
+```
 
 #### New coding style
 
+```csharp
 // Create list of annotations
 List<AnnotationBase> annotations = new List<AnnotationBase>()
 {
@@ -91,7 +93,7 @@ using  (Annotator annotator = new Annotator("input.pdf"))
     // Save result to "result.pdf"
     annotator.Save("result.pdf", new SaveOptions());
 }
+```
 
   
-For more code examples and specific use cases please refer to our Developer Guide documentation or [GitHub](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET) samples and showcases. 
-
+For more code examples and specific use cases please refer to our Developer Guide documentation or [GitHub](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET) samples and showcases.

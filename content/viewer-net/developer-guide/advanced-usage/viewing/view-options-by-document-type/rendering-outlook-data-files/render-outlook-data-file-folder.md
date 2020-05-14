@@ -13,7 +13,6 @@ hideChildren: False
 # Render Outlook Data File Folder
 
 
-
 # Render folder
 
 GroupDocs.Viewer renders messages from all folders (including nested folders) by default. When you need to render items from a specific folder, set [Folder](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/outlookoptions/properties/folder) property of the [OutlookOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/outlookoptions) class as shown in the example below. Please note that you should use the following convention for naming folders and subfolders to specify it in [FolderName](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/outlookoptions/properties/folder) option: **{Parent folder name}\\\\{Sub folder name}**. Thus, if you need to render items from Inbox folder just specify `*Folder = "Inbox";   
@@ -52,4 +51,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

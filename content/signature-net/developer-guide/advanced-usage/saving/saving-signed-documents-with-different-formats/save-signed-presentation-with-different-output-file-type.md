@@ -12,11 +12,6 @@ hideChildren: False
 
 # Save signed Presentation with different output file type
 
-
- div.rbtoc1588849575935 { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }div.rbtoc1588849575935 ul { list-style-type: disc; list-style-image: none; margin-left: 0px; }div.rbtoc1588849575935 li { margin-left: 0px; padding-left: 0px; }
-
-# Save signed Presentation with different output file type
-
 [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature)class supports saving of Presentation signed documents with different formats. Each of document type has list of compatible saving type. These values are listed in enum [PresentationSaveFileFormat](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/presentationsavefileformat).
 
 Here are the steps to save signed Presentation document to different output type with [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net):
@@ -76,4 +71,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

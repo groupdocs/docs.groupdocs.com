@@ -13,7 +13,6 @@ hideChildren: False
 # Features Overview
 
 
-
 ## Electronic signature
 
 **Electronic Signature** is an abstract concept that means data in electronic form associated with a certain document and expressing the consent of the signatory with the information contained in the document.   
@@ -67,4 +66,3 @@ Supported image formats for document preview are:
 *   PNG;
 *   JPG;
 *   BMP.
-

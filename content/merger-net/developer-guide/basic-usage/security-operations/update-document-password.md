@@ -23,17 +23,19 @@ Here are the steps to update document password:
 
 The following code sample demonstrates how to update document password:
 
-string filePath = @"c:\\sample.xlsx";
-string filePathOut = @"c:\\output\\result.xlsx";
+```csharp
+string filePath = @"c:\sample.xlsx";
+string filePathOut = @"c:\output\result.xlsx";
 
-ILoadOptions loadOptions = new LoadOptions("SAMPLE\_PASSWORD");
-IUpdatePasswordOptions updateOptions = new UpdatePasswordOptions("NEW\_SAMPLE\_PASSWORD");
+ILoadOptions loadOptions = new LoadOptions("SAMPLE_PASSWORD");
+IUpdatePasswordOptions updateOptions = new UpdatePasswordOptions("NEW_SAMPLE_PASSWORD");
 
 using (Merger merger = new Merger(filePath, loadOptions))
 {
     merger.UpdatePassword(updateOptions);
     merger.Save(filePathOut);
 }
+```
 
 ## More resources
 
@@ -55,4 +57,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

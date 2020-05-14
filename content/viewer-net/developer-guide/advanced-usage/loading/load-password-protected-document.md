@@ -13,7 +13,6 @@ hideChildren: False
 # Load password-protected document
 
 
-
 # Load password-protected document
 
 GroupDocs.Viewer supports rendering documents that are protected with a password.
@@ -26,6 +25,7 @@ The following are the steps to render password-protected documents.
 
 The following code sample shows how to render password-protected documents.
 
+```csharp
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.Password = "123456";
 
@@ -34,6 +34,7 @@ using (Viewer viewer = new Viewer(@"sample.docx", loadOptions))
     HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
     viewer.View(viewOptions);
 }
+```
 
 ## More resources
 
@@ -59,4 +60,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

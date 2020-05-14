@@ -13,7 +13,6 @@ hideChildren: False
 # Get default ConvertOptions for specific target format
 
 
-
 # Get default convert options for specific target format
 
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) allows to get default convert options for specific target format by following the below steps:
@@ -26,16 +25,18 @@ hideChildren: False
 
 The following code sample demonstrates how to get possible conversions of the source document:
 
+```csharp
 using (var converter = new Converter("source.docx"))
 {
     var possibleConversions = converter.GetPossibleConversions();
-    var targetConversion = possibleConversions\["pdf"\];
+    var targetConversion = possibleConversions["pdf"];
     var convertOptions = targetConversion?.ConvertOptions;
     if (convertOptions != null)
     {
         converter.Convert("converted.pdf", convertOptions);
     }
 }
+```
 
 ## More resources
 
@@ -68,4 +69,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

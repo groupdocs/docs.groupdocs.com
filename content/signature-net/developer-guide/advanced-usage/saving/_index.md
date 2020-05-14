@@ -12,8 +12,6 @@ hideChildren: False
 
 # Saving
 
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides different ways of saving signed document -  save with password, save as images, save to another format.
 
 For more details please refer to the following guides:
-

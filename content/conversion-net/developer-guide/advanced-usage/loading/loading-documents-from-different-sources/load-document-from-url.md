@@ -14,10 +14,11 @@ hideChildren: False
 
 Following code snippet shows how to convert a document from URL:
 
+```csharp
 public static void Run()
 {
     string url = "https://github.com/groupdocs-conversion/GroupDocs.Conversion-for-.NET/blob/master/Examples/Resources/SampleFiles/sample.docx?raw=true";
-    string outputFile = Path.Combine("c:\\output", "converted.pdf");
+    string outputFile = Path.Combine("c:\output", "converted.pdf");
     using (Converter converter = new Converter(() => GetRemoteFile(url)))
     {
         PdfConvertOptions options = new PdfConvertOptions();
@@ -39,6 +40,7 @@ private static Stream GetFileStream(WebResponse response)
     fileStream.Position = 0;
     return fileStream;
 }
+```
 
 ## More resources
 
@@ -67,4 +69,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

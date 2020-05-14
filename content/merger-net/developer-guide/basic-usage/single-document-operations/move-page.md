@@ -22,15 +22,17 @@ This can be done by following the steps below:
 
 The following code sample demonstrates on how to move page to a new position:
 
+```csharp
 int pageNumber = 6;
 int newPageNumber = 1;
 MoveOptions moveOptions = new MoveOptions(pageNumber, newPageNumber);
 
-using (Merger merger = new Merger(@"c:\\sample.xlsx"))
+using (Merger merger = new Merger(@"c:\sample.xlsx"))
 {
     merger.MovePage(moveOptions);
-    merger.Save(@"c:\\result.xlsx");
+    merger.Save(@"c:\result.xlsx");
 }
+```
 
 ## More resources
 
@@ -52,4 +54,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to organize your documents structure with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

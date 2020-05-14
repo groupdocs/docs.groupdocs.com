@@ -13,7 +13,6 @@ hideChildren: False
 # Features Overview
 
 
-
 ## Document editing
 
 The main feature of GroupDocs.Editor is an ability to edit most popular document formats using front-end WYSIWYG editors without any additional applications. No Open Office or MS Office is required to edit a Word Processing documents, Spreadsheets or Presentations. You can just load document via GroupDocs.Editor into any WYSIWYG editor, edit document in a way you want and save it back to original document format.
@@ -38,5 +37,4 @@ GroupDocs.Editor provides an ability to extract basic information about edited d
 *   Document type;
 *   Document size;
 *   Pages count;
-*   etc. 
-
+*   etc.

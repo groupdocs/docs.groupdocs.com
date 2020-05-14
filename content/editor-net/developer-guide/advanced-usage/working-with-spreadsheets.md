@@ -27,10 +27,12 @@ As WordProcessing documents, Spreadsheet documents can have password-protection 
 In order to load spreadsheet to the `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class, user should use the `[SpreadsheetLoadOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheetloadoptions)` class. It is not necessary in some general cases — even without `[SpreadsheetLoadOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheetloadoptions)` the GroupDocs.Editor is able to recognize spreadsheet format and apply appropriate default load options automatically. But when spreadsheet is encoded, the `[SpreadsheetLoadOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheetloadoptions)` is the only way to set a password and load the document properly.   
 Example below shows such situation: loading the password-protected spreadsheet:
 
+```csharp
 string inputXlsxPath = "C://input/spreadsheet.xlsx";
 SpreadsheetLoadOptions loadOptions = new SpreadsheetLoadOptions();
 loadOptions.Password = "password";
 Editor editor = new Editor(inputXlsxPath, delegate { return loadOptions; });
+```
 
 There can be several scenarios here:
 
@@ -42,6 +44,7 @@ There can be several scenarios here:
 
 `[SpreadsheetEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheeteditoptions)` should be used for editing Spreadsheet documents. If parameterless overload of the `Editor.Edit` method is used, the first tab will be opened for editing. `[SpreadsheetEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheeteditoptions)` allows to specify the tab for opening by 0-based index and a boolean flag that indicates whether it is necessary to process hidden worksheets. This is demonstrated below:
 
+```csharp
 SpreadsheetEditOptions editOptions1 = new SpreadsheetEditOptions();
 editOptions1.WorksheetIndex = 0;//index is 0-based, so this is 1st tab
 editOptions1.ExcludeHiddenWorksheets = true;
@@ -52,14 +55,17 @@ editOptions2.ExcludeHiddenWorksheets = false;
 
 EditableDocument firstTab = editor.Edit(editOptions1);
 EditableDocument secondTab = editor.Edit(editOptions2);
+```
 
 #### Saving Spreadsheet documents
 
 `[SpreadsheetSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheetsaveoptions)` class is designed for saving the Spreadsheet documents. Its constructor contains one mandatory parameter: document type, that is represented by the `[SpreadsheetFormats](https://apireference.groupdocs.com/net/editor/groupdocs.editor.formats/spreadsheetformats)` struct. With this option class user can also specify password; in such case output document will be encoded. Another possibility — to set the write protection for the document, also with the password. All these features are shown in the code below:
 
+```csharp
 SpreadsheetSaveOptions saveOptions = new SpreadsheetSaveOptions(SpreadsheetFormats.Xlsm);
 saveOptions.Password = "new password";
 saveOptions.WorksheetProtection = new WorksheetProtection(WorksheetProtectionType.All, "write password");
+```
 
 ## More resources
 
@@ -85,4 +91,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

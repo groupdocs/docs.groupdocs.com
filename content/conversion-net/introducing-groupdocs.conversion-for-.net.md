@@ -1,6 +1,6 @@
 ---
-id: introducing-groupdocs-conversion-for--net
-url: conversion-net/introducing-groupdocs-conversion-for--net
+id: introducing-groupdocs-conversion-for-net
+url: conversion-net/introducing-groupdocs-conversion-for-net
 title: Introducing GroupDocs.Conversion for .NET
 weight: 1
 description: 
@@ -11,7 +11,6 @@ hideChildren: False
 ---
 
 # Introducing GroupDocs.Conversion for .NET
-
 
 ## What Is GroupDocs.Conversion?
 
@@ -30,5 +29,3 @@ GroupDocs.Conversion for .NET is a powerful and intuitive library used for docum
 *   Increase conversion performance by caching conversion results. Convert document once and use it fast and efficient;
     
 *   Customizable caching. Caching to local disk is implemented by default and any type of storage can be supported by implementing caching interfaces – Amazon S3, Dropbox, Google Drive, Windows Azure and others.
-    
-

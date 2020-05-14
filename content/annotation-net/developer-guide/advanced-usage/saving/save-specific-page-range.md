@@ -22,12 +22,14 @@ The following are the steps how to export resultant specific page range:
 
 The following code demonstrates how to save the range of document page:
 
+```csharp
 // for this example input document ("input.pdf") must have at least 4 pages
 using (Annotator annotator = new Annotator(“input.pdf”))
 {
 	//Result file will be contain only 3 pages (2, 3 and 4 page)
 	annotator.Save(“result.pdf”, new SaveOptions { FirstPage = 2, LastPage = 4 });
 }
+```
 
 ## More resources
 
@@ -53,4 +55,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

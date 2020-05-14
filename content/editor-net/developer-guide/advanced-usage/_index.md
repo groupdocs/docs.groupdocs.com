@@ -12,8 +12,6 @@ hideChildren: False
 
 # Advanced usage
 
-
 # Advanced section for GroupDocs.Editor API
 
 Learn about advanced [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net) usage and its powerful features - editing and saving processes customisation, loading documents form different sources etc.
-

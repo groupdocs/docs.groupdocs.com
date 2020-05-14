@@ -12,6 +12,4 @@ hideChildren: False
 
 # Converting
 
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) allows you to convert documents with a huge amount of additional options to customize output document. For more details please refer to the following guides:
-

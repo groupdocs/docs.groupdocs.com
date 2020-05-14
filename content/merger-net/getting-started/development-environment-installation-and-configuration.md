@@ -13,7 +13,6 @@ hideChildren: False
 # Development Environment, Installation and Configuration
 
 
-
   
 
 ## Install from Nuget
@@ -63,4 +62,3 @@ You can follow the steps below to reference GroupDocs.Merger for .NET downloaded
     You have referenced GroupDocs.Merger and it should appear in the **SelectedComponents** pane of the dialog box.
 7.  Click **OK**.   
     GroupDocs.Merger reference appears under the **References** node of the project.
-

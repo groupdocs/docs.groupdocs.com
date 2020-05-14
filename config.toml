@@ -15,7 +15,7 @@ enableGitInfo = true
     [markup.goldmark.renderer]
         unsafe= true
     [markup.tableOfContents]
-        startLevel = 2
+        startLevel = 1
         endLevel = 4
         ordered = false
 
@@ -30,8 +30,21 @@ enableGitInfo = true
     # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.    
     BookEditPath = 'edit/master'    #https://github.com/groupdocs/docs/blob/master/content/docs/annotation-net/getting-started/supported-document-formats.md
                                      
-        
-       
+    ProductFamilies = [ 
+            { Key ="annotation", Name = "GroupDocs.Annotation", Description = "Powerful document annotator component that helps you to boost your applications with document annotation, commenting and collaboration features." },
+            { Key ="comparison", Name = "GroupDocs.Comparison", Description = "Document comparison API that detects document text, styling and formating changes quickly and with a high accuracy." },
+            { Key ="conversion", Name = "GroupDocs.Conversion", Description = "Huge conversion API that supports over 7400 document conversion pairs. With innumerous conversion options you will get hight quality result fast." },
+            { Key ="editor",     Name = "GroupDocs.Editor", Description = "Modern document editor API that allows you to edit various documents inside your applications without additional software installed." },
+            { Key ="merger",     Name = "GroupDocs.Merger", Description = "Powerful API to merge PDF, Word, Excel, PowerPoint documents and many other formats, move, reorder or remove document pages in different ways and with flexible options." },
+            { Key ="signature",  Name = "GroupDocs.Signature", Description = "Outstanding electronic signature API that allows you to esign your documents with digital certificate, image, text and hand-written signatures, QR-Code or BarCodes and many more!" },
+            { Key ="viewer",     Name = "GroupDocs.Viewer", Description = "Excellent file viewer component that empowers your C#, ASP.NET ?and other .NET-based applications with document viewing features across more than 100+ supported file formats!" }
+    ]
 
-        
-  
+    MoreServices = [ 
+            { Name = "API Reference", CssClass = "fas fa-book", Href = "https://apireference.groupdocs.com" },
+            { Name = "Code Samples", CssClass = "fas fa-code", Href = "https://groupdocs.github.io" },
+            { Name = "Live Demos", CssClass = "fas fa-desktop", Href = "https://groupdocsapp.github.io" },
+            { Name = "Free Consulting", CssClass = "fas fa-headset", Href = "https://groupdocs-free-consulting.github.io" },
+            { Name = "Free Support", CssClass = "fas fa-user", Href = "https://forum.groupdocs.com" },
+            { Name = "Paid Support", CssClass = "fas fa-user-tie", Href = "https://helpdesk.groupdocs.com" }
+    ]

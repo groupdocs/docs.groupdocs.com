@@ -22,12 +22,14 @@ Please note that all merged documents should be of the same format.
 
 The following code sample demonstrates how to merge documents:
 
-using (Merger merger = new Merger(@"c:\\sample1.docx"))
+```csharp
+using (Merger merger = new Merger(@"c:\sample1.docx"))
 {
-    merger.Join(@"c:\\sample2.docx");
-    merger.Join(@"c:\\sample3.docx");
-    merger.Save(@"c:\\merged.docx");
+    merger.Join(@"c:\sample2.docx");
+    merger.Join(@"c:\sample3.docx");
+    merger.Save(@"c:\merged.docx");
 }
+```
 
   
 Please learn more about how to merge PDF, Microsoft Word, Microsoft PowerPoint or Open Document documents from the articles listed below:
@@ -52,4 +54,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

@@ -13,7 +13,6 @@ hideChildren: False
 # How to use custom cache implementation
 
 
-
 # Custom Cache Implementation
 
 Despite the fact that GroupDocs.Viewerimplements caching to local drive out of the box, it also allows you to cache rendering result in your own way. You can do this by using *ICache* interface implementation.  
@@ -196,4 +195,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

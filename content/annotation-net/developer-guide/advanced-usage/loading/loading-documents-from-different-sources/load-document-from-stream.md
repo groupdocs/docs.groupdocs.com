@@ -21,6 +21,7 @@ The following are the steps to be followed:
 
 Following code snippet describes this case.
 
+```csharp
 using (documentStream = File.OpenRead(“input.pdf”))
 using (Annotator annotator = new Annotator(documentStream))
 {
@@ -32,6 +33,8 @@ using (Annotator annotator = new Annotator(documentStream))
        annotator.Add(area);
        annotator.Save("result.pdf", new SaveOptions());
 }
+
+```
 
 ## More resources
 
@@ -57,4 +60,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

@@ -13,7 +13,6 @@ hideChildren: False
 # Supported Document Types
 
 
-
 The following table indicates the file formats that GroupDocs.Merger can work with.
 
 Format
@@ -903,16 +902,3 @@ Tab Separated Values File
 ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
 
 ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-

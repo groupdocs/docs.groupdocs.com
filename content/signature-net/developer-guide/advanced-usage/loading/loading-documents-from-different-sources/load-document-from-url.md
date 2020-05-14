@@ -13,11 +13,11 @@ hideChildren: False
 # Load document from URL
 
 
-
 # Load a document from URL
 
 Following example demonstrates how to work with documents from URL.
 
+```csharp
 public static void Run()
 {
     string url = "https://github.com/groupdocs-signature/GroupDocs.Signature-for-.NET/blob/api-v2/Examples/Resources/SampleFiles/sample.pdf?raw=true";
@@ -37,7 +37,7 @@ public static void Run()
             signature.Sign("SampleSigned", options);
         }
     }
-    Console.WriteLine("\\nSource document signed successfully.\\nFile saved at " + outputFilePath);
+    Console.WriteLine("\nSource document signed successfully.\nFile saved at " + outputFilePath);
 }
         
 private static Stream GetRemoteFile(string url)
@@ -58,6 +58,7 @@ private static Stream GetFileStream(WebResponse response)
     fileStream.Position = 0;
     return fileStream;
 }
+```
 
 ## More resources
 
@@ -83,4 +84,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

@@ -14,6 +14,7 @@ hideChildren: False
 
 Following example demonstrates how to annotate document from Azure Blob Storage.
 
+```csharp
 string blobName = "sample.pdf";
 using (Annotator annotator = new Annotator(DownloadFile(blobName)))
 {
@@ -38,10 +39,10 @@ public static Stream DownloadFile(string blobName)
 
 private static CloudBlobContainer GetContainer()
 {
-	string accountName = "\*\*\*";
-	string accountKey = "\*\*\*";
+	string accountName = "***";
+	string accountKey = "***";
 	string endpoint = $"https://{accountName}.blob.core.windows.net/";
-	string containerName = "\*\*\*";
+	string containerName = "***";
 	StorageCredentials storageCredentials = new StorageCredentials(accountName, accountKey);
 	CloudStorageAccount cloudStorageAccount = new CloudStorageAccount(
 		storageCredentials, new Uri(endpoint), null, null, null);
@@ -50,6 +51,7 @@ private static CloudBlobContainer GetContainer()
 	container.CreateIfNotExists();
 	return container;
 }
+```
 
 NOTE: Package WindowsAzure.Storage version 9.3.3 should be referenced
 
@@ -77,4 +79,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

@@ -20,7 +20,9 @@ This constructor is mandatory, because it is unacceptable to create a [`WordProc
 
 Almost all WordProcessing formats, especially with binary nature, support file encoding with the password. If such document is encoded, it is required to specify a password for opening it. [`WordProcessingSaveOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingsaveoptions) class has the [next property](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingsaveoptions/properties/password), which allows to set a password:
 
+```csharp
 public string Password { get; set; }
+```
 
 By default the value of this property is NULL, which means that password will not be applied. If user specifies a string in this property, the output document will be encoded and protected with this string as a password. If user had specified some password in this property at some step, but then wants to dismiss password and do not encode the document, he can set the value to NULL or empty string, — both these values will be interpreted as "do not set a password" when calling the [`editor.Save()`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/save) method.
 
@@ -48,4 +50,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

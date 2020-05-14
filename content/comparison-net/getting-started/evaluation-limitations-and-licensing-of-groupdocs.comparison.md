@@ -13,7 +13,6 @@ hideChildren: False
 # Evaluation Limitations and Licensing of GroupDocs.Comparison
 
 
-
 You can use GroupDocs.Comparison without the license. The usage and functionalities are pretty much same as the licensed one but you will face few limitations while using the non-licensed API.
 
 ## Evaluation Limitations
@@ -86,4 +85,3 @@ Console.WriteLine("Amount (MB) consumed: " + amountConsumed);
 // Get count of credits consumed
 decimal creditsConsumed = GroupDocs.Comparison.Metered.GetConsumptionCredit();
 Console.WriteLine("Credits consumed: " + creditsConsumed);
-

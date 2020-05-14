@@ -1,6 +1,6 @@
 ---
 id: home
-url: editor-net/home
+url: editor-net
 title: GroupDocs.Editor for .NET
 weight: 1
 description: 
@@ -11,7 +11,6 @@ hideChildren: True
 ---
 
 #  Home 
-
 
 ![](editor-net/_index/67338256)
 
@@ -32,4 +31,3 @@ Following are the links to some useful resources you may need to accomplish your
 *   [GroupDocs.Editor for .NET API Reference Guide](https://apireference.groupdocs.com/net/editor)
 *   [GroupDocs.Editor for .NET Free Support Forum](https://forum.groupdocs.com/c/editor)
 *   [GroupDocs.Editor for .NET Paid Support Helpdesk](https://helpdesk.groupdocs.com/)
-

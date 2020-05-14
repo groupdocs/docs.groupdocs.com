@@ -16,6 +16,7 @@ When passing file path or [FileStream](https://docs.microsoft.com/en-us/dotnet/
 
 The following code sample shows how to pass the file type when loading a document.
 
+```csharp
 LoadOptions loadOptions = new LoadOptions(FileType.DOCX);
  
 using (Viewer viewer = new Viewer(() => GetFile("sample.docx"), () => loadOptions))
@@ -23,6 +24,7 @@ using (Viewer viewer = new Viewer(() => GetFile("sample.docx"), () => loadOption
     HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
     viewer.View(viewOptions);
 }            
+```
 
 ## More resources
 
@@ -48,4 +50,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

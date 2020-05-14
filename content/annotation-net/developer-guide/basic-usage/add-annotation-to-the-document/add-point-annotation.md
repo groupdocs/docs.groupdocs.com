@@ -30,6 +30,7 @@ Follow these steps to add Point annotation to document::
 
 The following code demonstrates how to add [PointAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) to the document:
 
+```csharp
 //Add point annotation to the document from local disk
 using (Annotator annotator = new Annotator("input.pdf"))
 {
@@ -56,6 +57,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
     annotator.Add(point);
     annotator.Save("result.pdf"));
 } 
+```
 
 ## More resources
 
@@ -85,4 +87,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

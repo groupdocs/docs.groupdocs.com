@@ -13,7 +13,6 @@ hideChildren: False
 # Add document password
 
 
-
 # Add document password 
 
 **GroupDocs.Merger** allows to add document password. Here are the steps to add document password:
@@ -25,16 +24,18 @@ hideChildren: False
 
 The following code sample demonstrates how to add document password.
 
-string filePath = @"c:\\sample.pptx";
-string filePathOut = @"c:\\output\\result.pptx";
+```csharp
+string filePath = @"c:\sample.pptx";
+string filePathOut = @"c:\output\result.pptx";
 
-AddPasswordOptions addOptions = new AddPasswordOptions("SAMPLE\_PASSWORD");
+AddPasswordOptions addOptions = new AddPasswordOptions("SAMPLE_PASSWORD");
 
 using (Merger merger = new Merger(filePath))
 {
     merger.AddPassword(addOptions);
     merger.Save(filePathOut);
 }
+```
 
 ## More resources
 
@@ -56,4 +57,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

@@ -13,7 +13,6 @@ hideChildren: False
 # Load Markup document with options
 
 
-
 ## MarkupLoadOptions
 
 GroupDocs.Conversion provides [MarkupLoadOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/markuploadoptions)to give you control over how source Note document will be processed. The following options could be set:
@@ -26,6 +25,7 @@ GroupDocs.Conversion provides [MarkupLoadOptions](https://apireference.groupdoc
 
 The following code sample shows how to convert Note document and specify font substitution for missing fonts:
 
+```csharp
 var source = "sample.html";
 var loadOptions = new MarkupLoadOptions
 {
@@ -36,6 +36,6 @@ using (var converter = new Converter(source, () => loadOptions))
     var options = new WordProcessingConvertOptions();
     converter.Convert("converted.docx" , options);
 }
+```
 
 This functionality is introduced in v20.3
-

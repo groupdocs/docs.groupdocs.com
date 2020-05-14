@@ -12,6 +12,4 @@ hideChildren: False
 
 # Developer Guide
 
-
 This section describes some basic and advanced use cases of GroupDocs.Viewer for .NET. Please refer to [GitHub repository](https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-.NET) for more examples and samples.
-

@@ -13,7 +13,6 @@ hideChildren: False
 # Features Overview
 
 
-
   
 
 ## Document viewer
@@ -117,5 +116,3 @@ For the following document formats additional information can also be extracted:
 *   PDF – information about document printing restrictions;
     
 *   Project Management – project start and end dates.
-    
-

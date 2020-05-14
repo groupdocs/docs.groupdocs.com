@@ -24,11 +24,13 @@ GroupDocs.Merger API provides different overloads of **[Join](https://apirefere
 
 The following example demonstrates how to merge presentations with several lines of code:
 
-using (Merger merger = new Merger(@"c:\\presentation1.ppt"))
+```csharp
+using (Merger merger = new Merger(@"c:\presentation1.ppt"))
 {
-    merger.Join(@"c:\\presentation2.ppt");
-    merger.Save(@"c:\\merged.ppt");
+    merger.Join(@"c:\presentation2.ppt");
+    merger.Save(@"c:\merged.ppt");
 }
+```
 
 ## More resources
 
@@ -50,4 +52,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge PPT, PPTX, PPS, PPSX and ODP, OTP files with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

@@ -93,6 +93,7 @@ Also annotation could be updated using Id. Note, that for using this case is ne
 
 The following code demonstrates how to update annotations using Id:
 
+```csharp
 using (Annotator annotator = new Annotator("input.pdf"))
             {
                 AreaAnnotation original = new AreaAnnotation
@@ -151,6 +152,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
                 annotator.Update(updated);
                 annotator.Save("result.pdf");
             }
+```
 
 ##   
 More resources
@@ -181,4 +183,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

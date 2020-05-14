@@ -11,5 +11,3 @@ hideChildren: False
 ---
 
 # Update signatures in documents
-
-

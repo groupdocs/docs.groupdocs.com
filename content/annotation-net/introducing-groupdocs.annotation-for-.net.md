@@ -1,6 +1,6 @@
 ---
-id: introducing-groupdocs-annotation-for--net
-url: annotation-net/introducing-groupdocs-annotation-for--net
+id: introducing-groupdocs-annotation-for-net
+url: annotation-net/introducing-groupdocs-annotation-for-net
 title: Introducing GroupDocs.Annotation for .NET
 weight: 1
 description: 
@@ -11,7 +11,6 @@ hideChildren: False
 ---
 
 # Introducing GroupDocs.Annotation for .NET
-
 
 ## What Is GroupDocs.Annotation?
 
@@ -29,4 +28,3 @@ Along with ability to annotate documents multiple users can collaborate via ann
 *   Generate document preview for precise placing annotations inside the document;
 *   Ability to export/import added annotations to/from documents;
 *   User-friendly public API and easy start.
-

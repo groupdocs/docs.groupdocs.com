@@ -12,7 +12,6 @@ hideChildren: False
 
 # Sign document with embedded and encrypted data in QR-code signatures
 
-
 GroupDocs.Signature provides ability to put into QR-code signature encrypted text or embed custom data objects. This feature is implemented over data serialization and encryption. Also there is ability to provide custom data serialization and encryption to secure your signature data the most. Here are feature summary
 
 *   ability to encrypt QR-code signature text
@@ -25,4 +24,3 @@ GroupDocs.Signature provides ability to put into QR-code signature encrypted tex
     
 
 Please find in topics below examples and details for each of these features
-

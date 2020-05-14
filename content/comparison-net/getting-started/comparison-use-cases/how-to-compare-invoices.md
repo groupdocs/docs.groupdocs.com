@@ -13,7 +13,6 @@ hideChildren: False
 # How to Compare Invoices
 
 
-
 # How to Compare Two Invoices using GroupDocs.Comparison
 
 Sometimes you need to achieve maximum accuracy in comparing files. Suppose you have two versions of an important document and you need to find differences character-by-character or the opposite case, you need to compare the documents, but the details are not important to you, and you only need words that have changes. **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides the ability to compare documents with sensitivity settings  
@@ -105,4 +104,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.  
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online [GroupDocs Comparison App](https://products.groupdocs.app/comparison).
-

@@ -1,6 +1,6 @@
 ---
 id: home
-url: comparison-net/home
+url: comparison-net
 title: GroupDocs.Comparison for .NET
 weight: 1
 description: 
@@ -11,7 +11,6 @@ hideChildren: True
 ---
 
 #  Home 
-
 
 ![](comparison-net/_index/67338245)
 
@@ -32,4 +31,3 @@ Following are the links to some useful resources you may need to accomplish your
 *   [GroupDocs.Comparison for .NET API Reference Guide](https://apireference.groupdocs.com/net/comparison)
 *   [GroupDocs.Comparison for .NET Free Support Forum](https://forum.groupdocs.com/c/comparison)
 *   [GroupDocs.Comparison for .NET Paid Support Helpdesk](https://helpdesk.groupdocs.com/)
-

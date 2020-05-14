@@ -30,14 +30,18 @@ in the "document.html", and "document\_resources" folder actually contains "styl
 
 In that case creating the `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instance is the most simple:
 
+```csharp
 string inputHtmlPath = "C://input/document.html";
 EditableDocument document = EditableDocument.FromFile(inputHtmlPath, null);
+```
 
 The `[FromFile](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument/methods/fromfile)` method accepts two parameters, where first is a path to HTML file, while second is a path to resource folder. If HTML file contains correct links, as it is described above, second parameter is not necessary: GroupDocs.Editor will scan the links and automatically find the resource folder and correct resources. However, if path to resource folder doesn't match to the links in HTML file, it is possible to specify a resource folder forcibly, what is illustrated in code below:
 
+```csharp
 string inputHtmlPath = "C://input/document.html";
-string inputResourceFolderPath = "C://input/document\_resources/";
+string inputResourceFolderPath = "C://input/document_resources/";
 EditableDocument document = EditableDocument.FromFile(inputHtmlPath, inputResourceFolderPath);
+```
 
 If HTML file contains a link to same resource, that is not present in the resource folder, it will be omitted.
 
@@ -50,9 +54,10 @@ In some cases edited HTML document is not present as a file. It may be stored in
 
 The code example below demonstrates this approach.
 
+```csharp
 string inputHtmlMarkup = "<HTML><HEAD><TITLE>Edited document</TITLE>.....";
-JpegImage image1 = new JpegImage("image1.jpg", /\* stream or base64 text\*/);
-PngImage image2 = new PngImage("image2.png", /\* stream or base64 text\*/);
+JpegImage image1 = new JpegImage("image1.jpg", /* stream or base64 text*/);
+PngImage image2 = new PngImage("image2.png", /* stream or base64 text*/);
 CssText stylesheet = new CssText("stylesheet.css", "p {color: black; text-align: left; }......", System.Text.Encoding.UTF8);
 
 List<IHtmlResource> allResources = new List<IHtmlResource>();
@@ -61,6 +66,7 @@ allResources.Add(image2);
 allResources.Add(stylesheet);
 
 EditableDocument document = EditableDocument.FromMarkup(inputHtmlMarkup, allResources);
+```
 
 #### Opening from inner-BODY HTML content and folder with resources
 
@@ -97,4 +103,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

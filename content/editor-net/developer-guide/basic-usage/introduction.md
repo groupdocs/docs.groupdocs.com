@@ -24,8 +24,10 @@ From the GroupDocs.Editor perspective, this pipeline can be conditionally divide
 
 On the *[loading document](https://docs.groupdocs.com/display/editornet/Load+document) stage* user should create an instance of `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class and pass an input document (through file path or byte stream) along with document load options. Loading options are not required and GroupDocs.Editor can automatically detect document format and select the most appropriate default options for the given format. But it is recommended to specify them explicitly. They are inevitable when trying to load password-protected documents.
 
-string inputFilePath = "C:\\\\input\_path\\\\document.docx"; //path to some document
+```csharp
+string inputFilePath = "C:\\input_path\\document.docx"; //path to some document
 Editor editor = new Editor(inputFilePath); //passing path to the constructor, default WordProcessingLoadOptions will be applied automatically
+```
 
 After this stage document is ready to be opened and edited.
 
@@ -37,10 +39,12 @@ by calling an `[Edit()](https://apireference.groupdocs.com/net/editor/groupdocs
 
 Like with loading, `[Edit()](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/edit)` method obtains optional `[IEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/ieditoptions)` inheritors, that controls how exactly the document will be opened for edit.
 
+```csharp
 WordProcessingEditOptions editOptions = new WordProcessingEditOptions();
 editOptions.EnableLanguageInformation = true;
 
 EditableDocument readyToEdit = editor.Edit(editOptions);
+```
 
 After this stage document is ready to be passed to the WYSIWYG HTML-editor and its content can be edited by the end-user.
 
@@ -48,10 +52,12 @@ After this stage document is ready to be passed to the WYSIWYG HTML-editor and i
 
 *[Saving a document](https://docs.groupdocs.com/display/editornet/Save+document)* is a final stage, which occurs when document content was edited in the WYSIWYG HTML-editor (or any other software, this has no difference for GroupDocs.Editor) and should be saved back as a document of some format (like DOCX, PDF, or XLSX, for example). At this stage user should create a new instance of [`EditableDocument`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) class with HTML-markup and resources of edited version of the original document, that was obtained from end-user. [`EditableDocument`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) class contains several static methods, that allows to create its instances from HTML documents, that may be presented in different forms. And when [`EditableDocument`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) instance is ready, it is possible to save it as an ordinary document using a `[Save()](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/save)` method of `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class.
 
+```csharp
 EditableDocument afterEdit = EditableDocument.FromMarkup("<body>HTML content of the document...</body>", null);
-string outputFilePath = "C:\\\\output\_path\\\\document.rtf";
+string outputFilePath = "C:\\output_path\\document.rtf";
 Options.WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Rtf);
 editor.Save(afterEdit, outputFilePath, saveOptions);
+```
 
 Unlike with previous load options and edit options, save options are mandatory, because GroupDocs.Editor needs to know exact document format for saving.
 
@@ -269,4 +275,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

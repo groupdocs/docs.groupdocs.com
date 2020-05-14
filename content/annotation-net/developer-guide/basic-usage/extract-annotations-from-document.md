@@ -24,6 +24,7 @@ To achieve this you should:
 
 The following code demonstrates how to extract annotation metadata from document:
 
+```csharp
 // for using this example input file ("annotated.pdf") must be with annotations
 using (Annotator annotator = new Annotator(“annotated.pdf”, new LoadOptions() { ImportAnnotations = true }))
 {
@@ -35,6 +36,7 @@ using (Annotator annotator = new Annotator(“annotated.pdf”, new LoadOptions(
         formatter.Serialize(fs, annotations);
     }
 }
+```
 
 ## More resources
 
@@ -64,4 +66,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
-

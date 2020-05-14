@@ -13,7 +13,6 @@ hideChildren: False
 # Advanced search for QR-code signatures
 
 
-
 # Advanced search for QR-code signatures in the document
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [QrCodeSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/qrcodesearchoptions) class to specify different options to search for QR-code signatures.
@@ -99,4 +98,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

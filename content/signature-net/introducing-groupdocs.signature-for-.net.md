@@ -1,6 +1,6 @@
 ---
-id: introducing-groupdocs-signature-for--net
-url: signature-net/introducing-groupdocs-signature-for--net
+id: introducing-groupdocs-signature-for-net
+url: signature-net/introducing-groupdocs-signature-for-net
 title: Introducing GroupDocs.Signature for .NET
 weight: 1
 description: 
@@ -11,7 +11,6 @@ hideChildren: False
 ---
 
 # Introducing GroupDocs.Signature for .NET
-
 
 ## What Is GroupDocs.Signature?
 
@@ -36,4 +35,3 @@ GroupDocs.Signature for .NET is an electronic signature library that provides a
 *   Additional options set to customize signature, search and verification processes, apply signature styling, manage appearance etc.;
 *   Document information extraction API;
 *   Document preview API.
-

@@ -12,7 +12,6 @@ hideChildren: False
 
 # Electronic signature types
 
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) for .NET supportswide range of electronic signature types that are listed below:
 
 *   Barcode signatures;
@@ -27,4 +26,3 @@ hideChildren: False
     
 
 The following articles containing examples how to eSign documents with each supported signature type.
-

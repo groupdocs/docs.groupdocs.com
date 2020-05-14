@@ -12,7 +12,6 @@ hideChildren: False
 
 # Saving
 
-
 # Saving
 
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides different ways of saving resultant document - with specific annotations type only, save only annotated pages, save specific page range from resultant document, set password on saving resultant document etc.
@@ -28,5 +27,4 @@ The [SaveOptions](https://apireference.groupdocs.com/annotation/net/groupdocs.a
 *   [OnlyAnnotatedPages](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/saveoptions/properties/onlyannotatedpages) - indicates whether to save only annotated pages or not;
     
 
-For more details please refer to the following guides: 
-
+For more details please refer to the following guides:

@@ -13,7 +13,6 @@ hideChildren: False
 # Load password-protected document
 
 
-
 # Load password-protected document
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) supports processing documents that are protected with a password.
@@ -26,6 +25,7 @@ The following are the steps to work with password protected documents.
 
 The following code sample shows how to process password protected documents.
 
+```csharp
 LoadOptions loadOptions = new LoadOptions()
 {
     Password = "1234567890"
@@ -41,6 +41,7 @@ using (Signature signature = new Signature("sampleProtected.pdf", loadOptions))
     // sign document to file
     signature.Sign("SignedSampleProtected", options);
 }
+```
 
 ## More resources
 
@@ -66,4 +67,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

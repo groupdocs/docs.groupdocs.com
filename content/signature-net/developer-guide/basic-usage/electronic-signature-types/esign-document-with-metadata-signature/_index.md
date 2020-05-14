@@ -66,8 +66,3 @@ Here are the steps to add Metadata signatures into document with GroupDocs.Signa
   
 
 Please refer to the specific examples provided below:
-
-  
-
-  
-

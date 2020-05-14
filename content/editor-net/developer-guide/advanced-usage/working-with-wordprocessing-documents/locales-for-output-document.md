@@ -14,9 +14,11 @@ hideChildren: False
 
 [`WordProcessingSaveOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingsaveoptions) class contains 3 very similar properties of the same type `System.Globalization.CultureInfo`:
 
+```csharp
 public System.Globalization.CultureInfo Locale { get; set; }
 public System.Globalization.CultureInfo LocaleBi { get; set; }
 public System.Globalization.CultureInfo LocaleFarEast { get; set; }
+```
 
 In most cases the output WordProcessing document, which is generated from the `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instance by the [`editor.Save()`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/save) method, contains valid locales for the textual content. But in some cases it is necessary to forcibly and explicitly set a some specific locale for the output document. These three options provide such possibility. However keep in mind that they are suitable only when document should have some single locale. If document is multi-language and contains, for example, English and Spanish text, setting the locale to English ("en-GB", for example) will mark the Spanish text as English too, so spell checking in MS Word, for example, will not work properly for such text.
 
@@ -52,4 +54,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online** [GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

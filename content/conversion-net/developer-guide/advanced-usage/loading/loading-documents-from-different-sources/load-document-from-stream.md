@@ -10,10 +10,6 @@ productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
 
-# Load document from Stream
-
-
-
 # Load document from stream
 
 There might be the case when your document is not physically located on the disk. Instead, you have the document in the form of a stream. In this case, to avoid the overhead of saving stream as a file on disk, [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) enables you to convert the file streams directly.
@@ -25,6 +21,7 @@ The following are the steps to be followed:
 
 Following code snippet serves this purpose:
 
+```csharp
 public static void Run()
 {
     using (Converter converter = new Converter(GetFileStream)) 
@@ -34,6 +31,7 @@ public static void Run()
     }
 }
 private static Stream GetFileStream() => File.OpenRead("sample.docx");
+```
 
 ## More resources
 
@@ -62,4 +60,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

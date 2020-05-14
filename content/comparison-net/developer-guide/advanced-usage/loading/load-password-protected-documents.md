@@ -24,6 +24,7 @@ The following are the steps to compare password-protected documents.
 
 The following code sample shows how to compare password protected documents.
 
+```csharp
 LoadOptions sourceLoadOptions = new LoadOptions(){ Password = "1234" };
  
 using (Comparer comparer = new Comparer(“source.docx”, sourceLoadOptions))
@@ -32,6 +33,7 @@ using (Comparer comparer = new Comparer(“source.docx”, sourceLoadOptions))
     comparer.Add(“target.docx”, targetLoadOptions);
     comparer.Compare(“result.docx”);
 }
+```
 
 ## More resources
 
@@ -57,4 +59,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
-

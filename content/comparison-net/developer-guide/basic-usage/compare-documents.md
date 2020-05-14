@@ -13,7 +13,6 @@ hideChildren: False
 # Compare documents
 
 
-
 # Documents comparison features
 
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to compare documents and save resultant document that shows changes between source and target document(s). Full list of supported document formats can be found [here](https://docs.groupdocs.com/display/comparisonnet/Supported+Document+Formats).  
@@ -44,19 +43,23 @@ The following code snippet demonstrates the simplest case of documents compariso
 
 ## Compare documents from local file
 
+```csharp
 using (Comparer comparer = new Comparer(“source.docx”))
 {
 	comparer.Add(“target.docx”);
 	comparer.Compare(“result.docx”);
 }
+```
 
 ## Compare documents from stream
 
+```csharp
 using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”)))
 {
 	comparer.Add(File.OpenRead(“target.docx”));
 	comparer.Compare(File.Create(“result.docx”));
 }
+```
 
 ## More resources
 
@@ -86,4 +89,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
-

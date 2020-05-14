@@ -22,19 +22,23 @@ The following code samples demonstrate how to get document information.
 
 ## Get file info for the file from local disk
 
+```csharp
 using (Comparer comparer = new Comparer(“source.docx”))
 {
 	IDocumentInfo info = comparer.Source.GetDocumentInfo();
-    Console.WriteLine("\\nFile type: {0}\\nNumber of pages: {1}\\nDocument size: {2} bytes", info.FileType, info.PageCount, info.Size);
+    Console.WriteLine("\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes", info.FileType, info.PageCount, info.Size);
 }
+```
 
 ## Get file for the file from stream
 
+```csharp
 using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”))
 {
 	IDocumentInfo info = comparer.Source.GetDocumentInfo();
-    Console.WriteLine("\\nFile type: {0}\\nNumber of pages: {1}\\nDocument size: {2} bytes", info.FileType, info.PageCount, info.Size);
+    Console.WriteLine("\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes", info.FileType, info.PageCount, info.Size);
 }
+```
 
 ## More resources
 
@@ -64,4 +68,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
-

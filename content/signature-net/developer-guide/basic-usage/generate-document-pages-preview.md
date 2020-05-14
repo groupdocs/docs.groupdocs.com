@@ -52,15 +52,18 @@ private static Stream CreatePageStream(int pageNumber)
 
 ## ReleasePageStream delegate implementation
 
+```csharp
 private static void ReleasePageStream(int pageNumber, Stream pageStream)
 {
      pageStream.Dispose();
      string imageFilePath = Path.Combine("GeneratePreviewFolder", "image-" + pageNumber.ToString() + ".jpg");
      Console.WriteLine("Image file {0} is ready for preview", imageFilePath);
 }
+```
 
 ## Generate document preview from file on local disk
 
+```csharp
 public static void GetPreview()
 {
     using (Signature signature = new Signature("sample.pdf"))
@@ -85,9 +88,11 @@ private static Stream CreatePageStream(int pageNumber)
     }
     return new System.IO.FileStream(imageFilePath, FileMode.Create);
 }
+```
 
 ## Generate document preview from stream with custom stream releasing delegate
 
+```csharp
 public static void GetPreview()
 {
   using (var stream = File.OpenRead("sample.pdf"))
@@ -122,6 +127,7 @@ private static void ReleasePageStream(int pageNumber, Stream pageStream)
      string imageFilePath = Path.Combine("GeneratePreviewFolder", "image-" + pageNumber.ToString() + ".jpg");
      Console.WriteLine("Image file {0} is ready for preview", imageFilePath);
 }
+```
 
 ## More resources 
 
@@ -151,4 +157,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

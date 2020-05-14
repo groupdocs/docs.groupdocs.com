@@ -13,7 +13,6 @@ hideChildren: False
 # Customize changes styles
 
 
-
 # Using customized styles of changes
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) provides compare options set with some default values that provides both - appropriate comparison speed and quality. However it is possible to customize comparison options from wide range of parameters and their values to fulfill some specific needs.   
@@ -30,6 +29,7 @@ The following code snippet demonstrates how to compare documents with specific o
 
 ## Compare documents from local disk with custom change styles
 
+```csharp
 using (Comparer comparer = new Comparer(“source.docx”))
 {
 	comparer.Add(“target.docx”);
@@ -65,9 +65,11 @@ using (Comparer comparer = new Comparer(“source.docx”))
 	};
 comparer.Compare(“result.docx”, compareOptions);
 }
+```
 
 ## Compare documents from stream with custom change styles
 
+```csharp
 using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”)))
 {
 	comparer.Add(File.OpenRead(“target.docx”));
@@ -103,6 +105,7 @@ using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”)))
 	};
 comparer.Compare(File.Create(“result.docx”), compareOptions);
 }
+```
 
 ## More resources
 
@@ -128,4 +131,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
-

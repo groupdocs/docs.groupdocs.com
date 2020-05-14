@@ -12,7 +12,6 @@ hideChildren: False
 
 # Using Signature Appearances
 
-
 GroupDocs.Signature contains several signature appearance classes that implements document oriented special signature representation.
 
 Base signature options [SignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/signoptions) contains property [SignOptions.Appearance](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/signoptions/properties/appearance) that expects instance of the following classes
@@ -24,4 +23,3 @@ Base signature options [SignOptions](https://apireference.groupdocs.com/net/sig
     
 
 Following examples demonstrates using these classes
-

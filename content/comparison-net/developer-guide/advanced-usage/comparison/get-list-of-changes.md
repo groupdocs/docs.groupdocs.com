@@ -25,21 +25,25 @@ The following code sample shows demonstrates how to get list of all changes.
 
 ## Get list of changes from local disk
 
+```csharp
 using (Comparer comparer = new Comparer(“source.docx”))
 {
 	comparer.Add(“target.docx);
     comparer.Compare();
-    ChangeInfo\[\] changes = comparer.GetChanges();
+    ChangeInfo[] changes = comparer.GetChanges();
 }
+```
 
 ## Get list of changes from stream
 
+```csharp
 using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”)))
 {
 	comparer.Add(File.OpenRead(“target.docx));
     comparer.Compare();
-    ChangeInfo\[\] changes = comparer.GetChanges();
+    ChangeInfo[] changes = comparer.GetChanges();
 }
+```
 
 ## More resources
 
@@ -65,4 +69,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
-

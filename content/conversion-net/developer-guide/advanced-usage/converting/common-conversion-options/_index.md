@@ -12,7 +12,6 @@ hideChildren: False
 
 # Common conversion options
 
-
 # Common conversion options
 
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) has many different [ConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/convertoptions)which gives control over required conversion result. All [ConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/convertoptions)have some common properties which are:
@@ -23,4 +22,3 @@ hideChildren: False
 *   [Watermark](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/convertoptions/properties/watermark) - watermark options
 
 The samples below shows how each of these options could be used:
-

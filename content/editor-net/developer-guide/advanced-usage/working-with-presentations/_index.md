@@ -13,7 +13,6 @@ hideChildren: False
 # Working with Presentations
 
 
-
 ## Working with Presentations
 
 > This example demonstrates standard open-edit-save cycle with Presentation documents, using different options on every step.
@@ -34,10 +33,12 @@ If document is encoded, but password is not set in the `[PresentationLoadOptions
 
 Below is an example of loading a presentation document from file path with load options and password.
 
+```csharp
 string inputPptxPath = "C://input/presentation.pptx";
 PresentationLoadOptions loadOptions = new PresentationLoadOptions();
 loadOptions.Password = "password";
 Editor editor = new Editor(inputPptxPath, delegate { return loadOptions; });
+```
 
 #### Editing Presentation documents
 
@@ -51,6 +52,7 @@ If parameterless overload of the `[Editor](https://apireference.groupdocs.com/ne
 
 Code example below demonstrates all options, described above. Let's assume, that Presentation document with at least 3 slides is already loaded into the `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class.
 
+```csharp
 //parameterless overload is used => default PresentationEditOptions is applied, which means 1st slide
 EditableDocument firstSlide = editor.Edit();
 
@@ -62,6 +64,7 @@ PresentationEditOptions editOptions3 = new PresentationEditOptions();
 editOptions3.SlideNumber = 2; //index is 0-based, so this is 3rd slide
 editOptions3.ShowHiddenSlides = true; //if 3rd slide is hidden, it will be opened anyway
 EditableDocument thirdSlide = editor.Edit(editOptions3);
+```
 
 #### Saving Presentation documents
 
@@ -69,14 +72,17 @@ EditableDocument thirdSlide = editor.Edit(editOptions3);
 
 Along with format, user is able to specify a password through the[`Password`](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions/properties/password) string property — in this case output document will be encoded and protected with this password. By default password is not set, which implies that output document will be unprotected. This is shown in example below, where it is supposed that a user has an `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instance with edited slide.
 
+```csharp
 PresentationSaveOptions saveOptions = new PresentationSaveOptions(PresentationFormats.Pptm);
 saveOptions.Password = "new password";
 
-EditableDocument afterEdit = /\* obtain it from somewhere \*/;
-FileStream outputStream = /\* obtain it from somewhere \*/;
+EditableDocument afterEdit = /* obtain it from somewhere */;
+FileStream outputStream = /* obtain it from somewhere */;
 
 //saving edited slide to specified stream in PPTM format and with password encoding
 editor.Save(afterEdit, outputStream, saveOptions);
+
+```
 
 Starting from version 20.4, `[PresentationSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/presentationsaveoptions)` class contains two new properties — `[SlideNumber](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions/properties/slidenumber)` and `[InsertAsNewSlide](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions/properties/insertasnewslide)`, — which are highly coupled together. These properties allow to insert edited slide into existing presentation instead of creating new presentation with single edited slide, which remains the default behavior. They are explained in detail in [separate article](Inserting%2Bedited%2Bslide%2Binto%2Bexisting%2Bpresentation.html).
 
@@ -104,4 +110,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

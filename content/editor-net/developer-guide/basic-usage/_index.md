@@ -12,10 +12,8 @@ hideChildren: False
 
 # Basic usage
 
-
 # Quick Start section for GroupDocs.Editor API
 
 Edit your documents in an easy and  intuitive way with [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net) API and with just several lines of code.
 
 Let’s learn common usage scenarios when source document "sample.docx" is stored at a local drive and you want to edit it in HTML form via some 3rd party WYSIWYG-editor.
-

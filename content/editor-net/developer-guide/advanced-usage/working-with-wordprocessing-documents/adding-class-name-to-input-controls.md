@@ -16,12 +16,16 @@ Almost all formats within WordProcessing format family, like DOC(X/M), ODT etc.,
 
 In some specific use-cases end-user may require not to edit the entire document content, but only edit and/or gather data, entered into input controls, on a client-side. For such case it is required to identify all these input controls in some way in order to fetching them, to distinguish them from all other HTML elements, when working on client-side. For achieving this purpose the GroupDocs.Editor has an ability to set an unique user-provided CSS class name for all such input controls in HTML markup. Starting from version 20.2 there is an option `InputControlsClassName` in the [`WordProcessingEditOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions) class. It has the next appearance:
 
+```csharp
 public string InputControlsClassName {get; set;}
+```
 
 By default it has a NULL value — class names are not applied to the HTML elements. However, if user will set a valid class name, all the input control elements (like INPUT, BUTTON, SELECT etc.) will have a "class" HTML attribute with specified class name. For example:
 
+```csharp
 WordProcessingEditOptions editOptions = new WordProcessingEditOptions();
 editOptions.InputControlsClassName = "myClass1";
+```
 
 Finally, when "class" attribute with specified class name is applied to all HTML elements, that represent input controls, client code is able to work with them by, for example, traversing the HTML DOM and gathering and/or manipulating with data.
 
@@ -49,4 +53,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

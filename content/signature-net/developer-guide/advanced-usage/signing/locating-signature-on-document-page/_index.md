@@ -11,5 +11,3 @@ hideChildren: False
 ---
 
 # Locating signature on document page
-
-

@@ -12,7 +12,6 @@ hideChildren: False
 
 # Convert document
 
-
 # Convert documents to different formats
 
 **[GroupDocs.Conversion](https://products.groupdocs.com/conversion/net)** provides quick and easy way to convert a document to most popular formats.
@@ -24,4 +23,3 @@ Conversion to any format could be triggered by following 3 unified steps:
 *   Call [Convert](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion/converter/methods/convert/2) method of [Converter](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion/converter)class instance and pass name of the converted document and the instance of convert options from the previous step
 
 Following the above 3 steps any source document you can:
-

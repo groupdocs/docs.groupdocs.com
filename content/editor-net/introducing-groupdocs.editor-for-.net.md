@@ -1,6 +1,6 @@
 ---
-id: introducing-groupdocs-editor-for--net
-url: editor-net/introducing-groupdocs-editor-for--net
+id: introducing-groupdocs-editor-for-net
+url: editor-net/introducing-groupdocs-editor-for-net
 title: Introducing GroupDocs.Editor for .NET
 weight: 1
 description: 
@@ -11,7 +11,6 @@ hideChildren: False
 ---
 
 # Introducing GroupDocs.Editor for .NET
-
 
 ## What Is GroupDocs.Editor?
 
@@ -32,5 +31,3 @@ GroupDocs.Editor is a .NET class library (DLL), that is designed to allow users 
 *   Plenty of additional options to customize editing process - edit password protected documents, extract document fonts, export document language information (useful for spell-checkers), specify document encoding or write-protection during saving etc.
     
 *   Document information extraction - page count, size, encrypted flag etc.
-    
-

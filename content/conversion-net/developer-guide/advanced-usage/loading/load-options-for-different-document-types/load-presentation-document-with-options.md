@@ -26,6 +26,7 @@ hideChildren: False
 
 Like many other Microsoft Office applications PowerPoint provides “Comments” feature to simplify the presentation review. By default Comments pane will be present in a converted document. In case you want to hide comments set [HideComments](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/presentationloadoptions/properties/hidecomments) to *true *as shown in a code sample below:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new PresentationLoadOptions
 {
     HideComments = true
@@ -35,6 +36,7 @@ using (Converter converter = new Converter("sample.pptx", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ## Specify font substitutions
 
@@ -42,6 +44,7 @@ Original PowerPoint presentations may use some specific and non-standard fonts f
 
 The following code sample shows how to convert PPTX presentation and specify substitutions for missing fonts:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new PresentationLoadOptions
 {
     DefaultFont = "Helvetica",
@@ -56,6 +59,7 @@ using (Converter converter = new Converter("sample.pptx", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ## Include hidden slides
 
@@ -63,6 +67,7 @@ Just like you are able to show or hide slides in a Microsoft PowerPoint presenta
 
 The following code sample shows how to convert PPTX presentation including the hidden slides:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new PresentationLoadOptions
 {
     ShowHiddenSlides = true
@@ -72,6 +77,7 @@ using (Converter converter = new Converter("sample.pptx", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ## More resources
 
@@ -100,4 +106,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

@@ -12,7 +12,6 @@ hideChildren: False
 
 # Migration Notes
 
-
 ### Why To Migrate?
 
   
@@ -31,6 +30,7 @@ Here is a brief comparison of how to join documents using old and new API.
 
 **Old coding style**
 
+```csharp
 string sourceFile1 = CommonUtilities.fileOne + fileOne;
 string sourceFile2 = CommonUtilities.fileTwo + fileTwo;
 
@@ -55,16 +55,16 @@ Stream documentStream = result.Stream;
 var fileStream = File.Create(CommonUtilities.outputPath + "OutPut." + FileFormat.Docx);
 documentStream.CopyTo(fileStream);
 documentStream.Close();
+```
 
 **New coding style**
 
-using (Merger merger = new Merger(@"c:\\sample1.docx"))
+```csharp
+using (Merger merger = new Merger(@"c:\sample1.docx"))
 {
-    merger.Join(@"c:\\sample2.docx");
-    merger.Save(@"c:\\output\\result.docx");
+    merger.Join(@"c:\sample2.docx");
+    merger.Save(@"c:\output\result.docx");
 }
+```
 
 For more code examples and specific use cases please refer to our [Developer Guide](https://docs.groupdocs.com/display/mergernet/Developer+Guide) documentation or [GitHub](https://github.com/groupdocs-merger/GroupDocs.Merger-for-.NET) samples and showcases.
-
-  
-

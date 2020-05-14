@@ -19,12 +19,14 @@ hideChildren: False
 
 The following code sample demonstrates how to get supported file formats list.
 
+```csharp
 IEnumerable<FileType> supportedFileTypes = FileType
 	.GetSupportedFileTypes()
 	.OrderBy(f => f.Extension);
 
 foreach (FileType fileType in supportedFileTypes)
 	Console.WriteLine(fileType);
+```
 
 ## More resources
 
@@ -46,4 +48,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

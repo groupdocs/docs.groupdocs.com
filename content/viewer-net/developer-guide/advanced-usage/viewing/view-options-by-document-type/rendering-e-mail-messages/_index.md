@@ -12,8 +12,6 @@ hideChildren: False
 
 # Rendering E-Mail Messages
 
-
 # Rendering E-Mail Messages
 
 This page describes specific use cases of E-Mail Messages rendering
-

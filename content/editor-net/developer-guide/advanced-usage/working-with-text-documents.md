@@ -22,8 +22,10 @@ Textual documents are simple Plain Text flat files (TXT), that contain no images
 
 Unlike WordProcessing and Spreadsheet documents, DSV documents are loaded into the `Editor` class without any loading options. They are simple text files by their nature, so it is nothing to adjust:
 
+```csharp
 string inputTxtPath = "C://input/file.txt";
 Editor editor = new Editor(inputTxtPath);
+```
 
 #### Editing text documents
 
@@ -38,6 +40,7 @@ In order to open a text document for edit by creating the [EditableDocument](ht
 
 Source code below demonstrates using this option class and opening input text document for editing. Then, when [EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocumenthttps://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) instance is ready, example below demonstrates, how to emit HTML markup from it, edit it and create new [EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) instance from edited content:
 
+```csharp
 TextEditOptions editOptions = new TextEditOptions();
 editOptions.Encoding = System.Text.Encoding.UTF8;
 editOptions.RecognizeLists = true;
@@ -53,6 +56,7 @@ List<IHtmlResource> allResources = beforeEdit.AllResources; // Get resources (on
 
 //Finally, create new EditableDocument
 EditableDocument afterEdit = EditableDocument.FromMarkup(updatedTextContent, allResources);
+```
 
 #### Saving text documents
 
@@ -64,17 +68,19 @@ After being edited, text document can be saved back as TXT or as WordProcessing.
 
 Source code below shows how to save  [EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) to both TXt and WordProcessing formats:
 
+```csharp
 TextSaveOptions txtSaveOptions = new TextSaveOptions();
 txtSaveOptions.AddBidiMarks = true;
 txtSaveOptions.PreserveTableLayout = true;
 
 WordProcessingSaveOptions wordSaveOptions = new WordProcessingSaveOptions(WordProcessingFormats.Docm);
 
-string outputTxtPath = "C:\\output\\document.txt";
-string outputWordPath = "C:\\output\\document.docm";
+string outputTxtPath = "C:\output\document.txt";
+string outputWordPath = "C:\output\document.docm";
 
 editor.Save(afterEdit, outputTxtPath, txtSaveOptions);
 editor.Save(afterEdit, outputWordPath, wordSaveOptions);
+```
 
 As a result, after running this example user will have two versions of the edited document: in TXT and DOCM formats.
 
@@ -102,4 +108,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

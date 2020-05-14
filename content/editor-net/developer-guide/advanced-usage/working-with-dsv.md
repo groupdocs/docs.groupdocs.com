@@ -31,8 +31,10 @@ GroupDocs.Editor supports DSV with any separator, which can be character or a se
 
 Unlike WordProcessing and Spreadsheet documents, DSV documents are loaded into the `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class without any loading options. They are simple text files by their nature, so it is nothing to adjust:
 
+```csharp
 string inputCsvPath = "C://input/spreadsheet.csv";
 Editor editor = new Editor(inputCsvPath);
+```
 
 #### Editing DSV documents
 
@@ -42,6 +44,7 @@ Last property — `[OptimizeMemoryUsage](https://apireference.groupdocs.com/net
 
 Example below demonstrates using the `[DelimitedTextEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/delimitedtexteditoptions)` for editing CSV document, where comma character is a delimiter:
 
+```csharp
 DelimitedTextEditOptions editOptions = new DelimitedTextEditOptions(",");
 editOptions.ConvertDateTimeData = false;
 editOptions.ConvertNumericData = true;
@@ -49,6 +52,7 @@ editOptions.TreatConsecutiveDelimitersAsOne = true;
 editOptions.OptimizeMemoryUsage = true;
 
 EditableDocument document = editor.Edit(editOptions);
+```
 
 #### Saving DSV documents
 
@@ -62,13 +66,14 @@ There are also other properties:
 
 Example below demonstrates loading CSV, opening it to the [EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) instance, and saving to TSV and XLSM.
 
+```csharp
 string inputCsvPath = "C://input/spreadsheet.csv";
 Editor editor = new Editor(inputCsvPath);
 
 DelimitedTextEditOptions editOptions = new DelimitedTextEditOptions(",");
 EditableDocument document = editor.Edit(editOptions);
 
-DelimitedTextSaveOptions tsvSaveOptions = new DelimitedTextSaveOptions("\\t");
+DelimitedTextSaveOptions tsvSaveOptions = new DelimitedTextSaveOptions("\t");
 tsvSaveOptions.TrimLeadingBlankRowAndColumn = true;
 tsvSaveOptions.KeepSeparatorsForBlankRow = false;
 
@@ -79,6 +84,7 @@ string xlsmSavePath = "C://output/spreadsheet.xlsm";
 
 editor.Save(document, tsvSavePath, tsvSaveOptions);
 editor.Save(document, xlsmSavePath, xlsmSaveOptions);
+```
 
 In this example output "'spreadsheet.tsv" will have a UTF-8 encoding.
 
@@ -106,4 +112,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

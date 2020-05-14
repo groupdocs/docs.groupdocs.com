@@ -11,5 +11,3 @@ hideChildren: False
 ---
 
 # Getting Started
-
-

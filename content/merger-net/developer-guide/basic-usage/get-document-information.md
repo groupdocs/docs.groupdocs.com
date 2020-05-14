@@ -13,7 +13,6 @@ hideChildren: False
 # Get document information
 
 
-
 # Get document information
 
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to get document information which includes:
@@ -24,11 +23,13 @@ hideChildren: False
 
 The following code sample demonstrates how to get document information.
 
-using (Merger merger = new Merger(@"c:\\sample.vsdx"))
+```csharp
+using (Merger merger = new Merger(@"c:\sample.vsdx"))
 {
     IDocumentInfo info = merger.GetDocumentInfo();
     Console.WriteLine(info);
 }
+```
 
 ## More resources
 
@@ -50,4 +51,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

@@ -13,7 +13,6 @@ hideChildren: False
 # How to use custom cache implementation
 
 
-
 # Implementation of Custom Cache
 
 **[GroupDocs.Conversion](https://products.groupdocs.com/conversion/net)**implements caching to local drive out of the box. For flexibility GroupDocs.Conversion provides and extension point which allows you to cache conversion result in your own way. You can do this by using [ICache](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.caching/icache) interface implementation.  
@@ -197,4 +196,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

@@ -26,6 +26,7 @@ hideChildren: False
 
 The following code snippet demonstrates how to obtain information about document form fields, signatures and analyze them.
 
+```csharp
 using (Signature signature = new Signature("sampleSigned.pdf"))
 {
     IDocumentInfo documentInfo = signature.GetDocumentInfo();
@@ -81,6 +82,7 @@ using (Signature signature = new Signature("sampleSigned.pdf"))
         Console.WriteLine($" - #{formFieldSignature.SignatureId} Type {formFieldSignature.Type}: Name: {formFieldSignature.Name} Value: {formFieldSignature.Value}");
     }
 }
+```
 
 ## More resources
 
@@ -106,4 +108,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

@@ -39,7 +39,8 @@ Here are the steps to search for signatures and exclude external components of t
 
 **Using SearchOptions SkipExternal property to exclude non actual signatures from search**
 
-using (Signature signature = new Signature("sample\_signed.pdf"))
+```csharp
+using (Signature signature = new Signature("sample_signed.pdf"))
 {
     TextSearchOptions options = new TextSearchOptions()
     {
@@ -50,17 +51,18 @@ using (Signature signature = new Signature("sample\_signed.pdf"))
     };
     // search for text signatures in document
     List<TextSignature> signatures = signature.Search<TextSignature>(options);
-    Console.WriteLine("\\nSource document contains following text signature(s).");
+    Console.WriteLine("\nSource document contains following text signature(s).");
     // enumerate all signature for output                
     foreach (TextSignature textSignature in signatures)
     {
         if (textSignature != null)
         {
-            Console.WriteLine($"Found Text signature at page {textSignature.PageNumber} with type \[{textSignature.SignatureImplementation}\] and text '{textSignature.Text}'.");
+            Console.WriteLine($"Found Text signature at page {textSignature.PageNumber} with type [{textSignature.SignatureImplementation}] and text '{textSignature.Text}'.");
             Console.WriteLine($"Location at {textSignature.Left}-{textSignature.Top}. Size is {textSignature.Width}x{textSignature.Height}.");
         }
     }
 }
+```
 
 ## Updating signatures from GroupDocs.Signature 19.11 and below
 
@@ -68,8 +70,9 @@ Following examples shows the way to mark signatures in document as actual signat
 
 **How to mark signatures in document as actual signatures**
 
+```csharp
  // initialize Signature instance
- using (Signature signature = new Signature("sample\_signed.pdf"))
+ using (Signature signature = new Signature("sample_signed.pdf"))
  {
      // define search options to select required signatures om the document
      BarcodeSearchOptions barcodeOptions = new BarcodeSearchOptions();
@@ -84,7 +87,7 @@ Following examples shows the way to mark signatures in document as actual signat
      SearchResult result = signature.Search(listOptions);
      if (result.Signatures.Count > 0)
      {
-         Console.WriteLine("\\nTrying to update all signatures...");
+         Console.WriteLine("\nTrying to update all signatures...");
          // mark all signatures as actual Signatures
          foreach(BaseSignature baseSignature in result.Signatures)
          {
@@ -94,14 +97,14 @@ Following examples shows the way to mark signatures in document as actual signat
          UpdateResult updateResult = signature.Update(result.Signatures);
          if(updateResult.Succeeded.Count == result.Signatures.Count)
          {
-             Console.WriteLine("\\nAll signatures were successfully updated!");                        
+             Console.WriteLine("\nAll signatures were successfully updated!");                        
          }
          else
          {
              Console.WriteLine($"Successfully updated signatures : {updateResult.Succeeded.Count}");
              Console.WriteLine($"Not updated signatures : {updateResult.Failed.Count}");
          }
-         Console.WriteLine("\\nList of updated signatures:");
+         Console.WriteLine("\nList of updated signatures:");
          int number = 1;
          foreach(BaseSignature temp in updateResult.Succeeded)
          {
@@ -113,6 +116,7 @@ Following examples shows the way to mark signatures in document as actual signat
          Console.WriteLine("No one signature was found.");
      }
  }
+```
 
 ## More resources
 
@@ -138,4 +142,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

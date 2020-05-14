@@ -20,6 +20,7 @@ GroupDocs.Conversion provides [SpreadsheetConvertOptions](https://apireference.
 
 Following code snippet shows how to convert to Spreadsheet with advanced options.
 
+```csharp
 using (Converter converter = new Converter("sample.docx", getLoadOptions))
 {
     SpreadsheetConvertOptions options = new SpreadsheetConvertOptions
@@ -31,6 +32,7 @@ using (Converter converter = new Converter("sample.docx", getLoadOptions))
     };
     converter.Convert("converted.xls", options);
 }
+```
 
 ## More resources
 
@@ -59,4 +61,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

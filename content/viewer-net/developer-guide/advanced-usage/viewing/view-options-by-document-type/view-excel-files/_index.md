@@ -12,6 +12,4 @@ hideChildren: False
 
 # View Excel files
 
-
 This page describes specific use cases for Excel files rendering.
-

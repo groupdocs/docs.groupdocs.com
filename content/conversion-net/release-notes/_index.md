@@ -12,6 +12,4 @@ hideChildren: False
 
 # Release Notes
 
-
 ### Release Notes
-

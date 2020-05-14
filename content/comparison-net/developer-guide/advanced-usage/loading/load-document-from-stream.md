@@ -20,6 +20,7 @@ The following are the steps to be followed:
 
 Following code snippet describes this case.
 
+```csharp
 using (Stream sourceStream = File.OpenRead(“source.docx”))
 using (Stream targetStream = File.OpenRead(“target.docx”))
 {
@@ -29,6 +30,7 @@ using (Stream targetStream = File.OpenRead(“target.docx”))
     	comparer.Compare(File.Create(“result.docx”));
 	}
 }
+```
 
 ## More resources
 
@@ -54,4 +56,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
-

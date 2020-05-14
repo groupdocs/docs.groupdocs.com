@@ -13,7 +13,6 @@ hideChildren: False
 # Supported Platforms
 
 
-
 ## Overview
 
 GroupDocs.Annotation for .NET does not require any external software or third party tool to be installed. Just follow one of the way as described in [Development Environment, Installation and Configuration](Development%2BEnvironment%252C%2BInstallation%2Band%2BConfiguration.html).
@@ -93,4 +92,3 @@ GroupDocs.Annotation for .NET can be used to develop applications in any devel
 *   Xamarin.IOS
 *   Xamarin.Mac
 *   MonoDevelop 2.4 and later
-

@@ -12,10 +12,8 @@ hideChildren: False
 
 # Basic usage
 
-
 # Quick Start section for GroupDocs.Conversion API
 
 Convert documents fast and easy with our intuitive and powerful API just with few lines of code.
 
 Let’s review common usage scenarios when source documentis stored at a local drive and you want to convert it to some other format.
-

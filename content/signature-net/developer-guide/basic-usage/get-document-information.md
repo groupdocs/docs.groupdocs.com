@@ -23,6 +23,7 @@ hideChildren: False
 
 The following code snippet demonstrates how to obtain information about document stored on local disk.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     IDocumentInfo documentInfo = signature.GetDocumentInfo();
@@ -36,11 +37,13 @@ using (Signature signature = new Signature("sample.pdf"))
         Console.WriteLine(" - page-{0} Width {1}, Height {2}", pageInfo.PageNumber, pageInfo.Width, pageInfo.Height);
     }
 }
+```
 
 ## Get document information from a stream
 
 The following code snippet demonstrates how to obtain information about document provided as a stream. 
 
+```csharp
 using (var stream = File.OpenRead("sample.pdf"))
 {
     using (Signature signature = new Signature(stream))
@@ -57,6 +60,7 @@ using (var stream = File.OpenRead("sample.pdf"))
         }
     }
 }
+```
 
 **GroupDocs.Signature** also provides an abilityto obtain extended information of document form fields and existing signatures.  
 To learn more about please refer to the following guides:
@@ -91,4 +95,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

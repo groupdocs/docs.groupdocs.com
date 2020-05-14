@@ -13,7 +13,6 @@ hideChildren: False
 # How to Compare PowerPoint Presentations
 
 
-
 # How to Compare Two Presentations
 
 You may need to compare two versions of a PowerPoint Presentation to see the differences between them (e.g., if a colleague has edited it directly without noting the changes). And the quickest way to do this is with PowerPoint’s built-in Compare function. To use this:
@@ -111,4 +110,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.  
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online [GroupDocs Comparison App](https://products.groupdocs.app/comparison).
-

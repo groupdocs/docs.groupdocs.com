@@ -13,7 +13,6 @@ hideChildren: False
 # Rotate pages
 
 
-
 # Rotate document pages
 
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to change page rotation angle by setting it to 90,180 or 270 degrees for specific or all document pages.  
@@ -26,16 +25,18 @@ Here are the steps to change page rotation:
 
 The following code sample demonstrates how to change page rotation:
 
-string filePath = @"c:\\sample.pdf";
-string filePathOut = @"c:\\output\\result.pdf";
+```csharp
+string filePath = @"c:\sample.pdf";
+string filePathOut = @"c:\output\result.pdf";
 
-RotateOptions rotateOptions = new RotateOptions(RotateMode.Rotate180, new int\[\] { 2, 3, 6 });
+RotateOptions rotateOptions = new RotateOptions(RotateMode.Rotate180, new int[] { 2, 3, 6 });
 
 using (Merger merger = new Merger(filePath))
 {
     merger.RotatePages(rotateOptions);
     merger.Save(filePathOut);
 }
+```
 
 ## More resources
 
@@ -57,4 +58,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

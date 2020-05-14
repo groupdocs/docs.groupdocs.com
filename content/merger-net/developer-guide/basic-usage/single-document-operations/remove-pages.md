@@ -13,7 +13,6 @@ hideChildren: False
 # Remove pages
 
 
-
 # Remove document pages
 
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** provides an ability to remove single page or a collection of specific page numbers from the source document.   
@@ -26,16 +25,19 @@ Here are the steps to remove document page(s):
 
 The following code sample demonstrates how to remove document pages:
 
-string filePath = @"c:\\sample.one";
-string filePathOut = @"c:\\output\\result.one";
+```csharp
+string filePath = @"c:\sample.one";
+string filePathOut = @"c:\output\result.one";
 
-RemoveOptions removeOptions = new RemoveOptions(new int\[\] { 3, 5 });
+RemoveOptions removeOptions = new RemoveOptions(new int[] { 3, 5 });
 
 using (Merger merger = new Merger(filePath))
 {
     merger.RemovePages(removeOptions);
     merger.Save(filePathOut);
 }
+
+```
 
 ## More resources
 
@@ -57,4 +59,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to remove pages from your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

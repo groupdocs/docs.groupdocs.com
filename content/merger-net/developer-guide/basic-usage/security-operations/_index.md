@@ -12,8 +12,6 @@ hideChildren: False
 
 # Security operations
 
-
 # Security operations
 
 [**GroupDocs.Merger**](https://products.groupdocs.com/merger/net) provides subset of features to manage document security - it allows you to add, update and remove password for documents from different sources. For more details please refer to the following guides:
-

@@ -37,15 +37,17 @@ The steps to split document to multiple on-page documents are the following:
 
 The following code sample demonstrates how to split document to three one-page documents with 3rd, 6th and 8th pages:
 
-string filePath = @"c:\\sample.docx";
-string filePathOut = @"c:\\output\\document\_{0}.{1}";
+```csharp
+string filePath = @"c:\sample.docx";
+string filePathOut = @"c:\output\document_{0}.{1}";
 
-SplitOptions splitOptions = new SplitOptions(filePathOut, new int\[\] { 3, 6, 8 });
+SplitOptions splitOptions = new SplitOptions(filePathOut, new int[] { 3, 6, 8 });
            
 using (Merger merger = new Merger(filePath))
 {
      merger.Split(splitOptions);
 }  
+```
 
 This code snippet will  produce:
 
@@ -69,8 +71,9 @@ document\_2
 
 The following code sample demonstrates how to split document to several one-page documents starting from 3rd and ending at 7th page number:
 
-string filePath = @"c:\\sample.docx";
-string filePathOut = @"c:\\output\\document\_{0}.{1}";
+```csharp
+string filePath = @"c:\sample.docx";
+string filePathOut = @"c:\output\document_{0}.{1}";
 
 SplitOptions splitOptions = new SplitOptions(filePathOut, 3, 7);
            
@@ -78,6 +81,7 @@ using (Merger merger = new Merger(filePath))
 {
      merger.Split(splitOptions);
 }  
+```
 
 This code snippet will  produce:
 
@@ -109,8 +113,9 @@ document\_4
 
 The following code sample demonstrates how to split document to several one-page documents for odd pages starting from 3rd and ending at 7th page number:
 
-string filePath = @"c:\\sample.docx";
-string filePathOut = @"c:\\output\\document\_{0}.{1}";
+```csharp
+string filePath = @"c:\sample.docx";
+string filePathOut = @"c:\output\document_{0}.{1}";
 
 SplitOptions splitOptions = new SplitOptions(filePathOut, 3, 7, RangeMode.OddPages);
            
@@ -119,6 +124,7 @@ using (Merger merger = new Merger(filePath))
      merger.Split(splitOptions);
 }  
  
+```
 
 This code snippet will  produce:
 
@@ -142,15 +148,17 @@ document\_2
 
 The following code sample demonstrates how to split document to several multi-page documents:
 
-string filePath = @"c:\\sample.docx";
-string filePathOut = @"c:\\output\\document\_{0}.{1}";
+```csharp
+string filePath = @"c:\sample.docx";
+string filePathOut = @"c:\output\document_{0}.{1}";
 
-SplitOptions splitOptions = new SplitOptions(filePathOut, new int\[\] { 3, 6, 8 }, SplitMode.Interval);
+SplitOptions splitOptions = new SplitOptions(filePathOut, new int[] { 3, 6, 8 }, SplitMode.Interval);
            
 using (Merger merger = new Merger(filePath))
 {
      merger.Split(splitOptions);
 }  
+```
 
 This code snippet will  produce:
 
@@ -194,4 +202,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to split your documents with our free online **[GroupDocs Splitter App](https://products.groupdocs.app/splitter)**.
-

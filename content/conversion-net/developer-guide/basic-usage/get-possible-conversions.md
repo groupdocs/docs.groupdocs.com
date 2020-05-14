@@ -29,6 +29,7 @@ When you need to know possible conversions for a provided source document you c
 
 The following code sample demonstrates how to get possible conversions of the source document:
 
+```csharp
 using (Converter converter = new Converter("sample.docx"))
 {
     PossibleConversions conversions = converter.GetPossibleConversions();
@@ -36,9 +37,10 @@ using (Converter converter = new Converter("sample.docx"))
 
     foreach (var conversion in conversions.All)
     {
-        Console.WriteLine("\\t {0} as {1} conversion.", conversion.Format, conversion.IsPrimary ? "primary" : "secondary");
+        Console.WriteLine("\t {0} as {1} conversion.", conversion.Format, conversion.IsPrimary ? "primary" : "secondary");
     }    
 }
+```
 
 ## Get all available conversions 
 
@@ -46,19 +48,21 @@ If it is required to programmatically obtain collection of all supported convers
 
 The following code sample demonstrates how to get all possible conversions:
 
+```csharp
 var allPossibleConversions = Converter.GetAllPossibleConversions();
 foreach (var possibleConversions in allPossibleConversions)
 {
     Console.WriteLine($"Source format: {possibleConversions.Source.Description}");
     foreach (var primary in possibleConversions.Primary)
     {
-        Console.WriteLine($"\\t...can be converted to {primary.Description}");
+        Console.WriteLine($"\t...can be converted to {primary.Description}");
     }
     foreach (var secondary in possibleConversions.Secondary)
     {
-        Console.WriteLine($"\\t...can be converted to {secondary.Description}");
+        Console.WriteLine($"\t...can be converted to {secondary.Description}");
     }
 }
+```
 
 ## More resources
 
@@ -91,4 +95,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

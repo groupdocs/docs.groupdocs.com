@@ -14,7 +14,9 @@ hideChildren: False
 
 WordProcessing module of [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net), that is responsible for converting all WordProcessing formats to `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instances and backward (from `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` to some of WordProcessing format), contains two modes: *float* and *paginal* (also known as *paged*), where first one — float, is default. These modes are presented by two properties with the same name and type:
 
+```csharp
 public bool EnablePagination {get; set;}
+```
 
 At first, such property is present in the [`WordProcessingEditOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions) class and is doubled in the [overload of class constructor](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions/constructors/1), which obtains one boolean parameter of the same name. In this case this option is responsible for selected mode during forward (WordProcessing to `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)`) conversion.
 
@@ -59,4 +61,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

@@ -20,13 +20,15 @@ The following are the steps to be followed:
 
 Following code snippet describes this case.
 
-using (Stream stream = File.OpenRead(@"c:\\sample.docx"))
+```csharp
+using (Stream stream = File.OpenRead(@"c:\sample.docx"))
 {
 	using (Merger merger = new Merger(stream))
     {
     	Console.WriteLine($"Document loaded from stream successfully.");
 	}
 }
+```
 
 ## More resources
 
@@ -44,4 +46,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

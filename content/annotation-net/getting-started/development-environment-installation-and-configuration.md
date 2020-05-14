@@ -13,7 +13,6 @@ hideChildren: False
 # Development Environment, Installation and Configuration
 
 
-
   
 
 ## Install from Nuget
@@ -62,4 +61,3 @@ You can follow the steps below to reference GroupDocs.Annotation for .NET downlo
     You have referenced GroupDocs.Annotation and it should appear in the **SelectedComponents** pane of the dialog box.
 7.  Click **OK**.   
     GroupDocs.Annotation reference appears under the **References** node of the project.
-

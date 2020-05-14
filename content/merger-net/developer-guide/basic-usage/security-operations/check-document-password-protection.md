@@ -21,13 +21,15 @@ Here are the steps to check document password-protection:
 
 The following code sample demonstrates how to check document password-protection.
 
+```csharp
 bool isPasswordSet = false;
-string filePath = @"C:\\sample.xlsx";
+string filePath = @"C:\sample.xlsx";
 
 using (Merger merger = new Merger(filePath))
 {
 	isPasswordSet = merger.IsPasswordSet();
 }
+```
 
 ## More resources
 
@@ -49,4 +51,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

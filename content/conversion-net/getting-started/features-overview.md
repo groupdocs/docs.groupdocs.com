@@ -13,7 +13,6 @@ hideChildren: False
 # Features Overview
 
 
-
 ## Document conversion
 
 GroupDocs.Conversion main feature is an ability to convert any document from wide list of supported source document formats into any supported target format (check full list of supported conversions [here](https://docs.groupdocs.com/display/conversionnet/Supported+Document+Formats)). All these conversions are possible without any additional software installed (like MS Office, Apache Open Office, Adobe Acrobat Reader and others).   
@@ -43,5 +42,3 @@ GroupDocs.Conversion allows to obtain basic information about source document - 
 *   PDF – information about document printing restrictions;
     
 *   Project Management – project start and end dates.
-    
-

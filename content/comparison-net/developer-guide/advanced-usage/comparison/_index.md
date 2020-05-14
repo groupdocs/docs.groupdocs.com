@@ -12,7 +12,6 @@ hideChildren: False
 
 # Comparison
 
-
 # Comparison 
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) provides many ways to customize changes detection algorithm logic and produced results via changing [CompareOptions](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) class properties.   
@@ -35,4 +34,3 @@ Here are the list of settings that can be customized during comparison process:
 *   [WordsSeparatorChars](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/wordsseparatorchars) - Sets an array of delimiters to split text into words;
 
 For more details about described options please refer to the following guides:
-

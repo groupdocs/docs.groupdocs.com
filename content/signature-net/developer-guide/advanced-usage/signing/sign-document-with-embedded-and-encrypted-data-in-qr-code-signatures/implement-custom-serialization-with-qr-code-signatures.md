@@ -13,7 +13,6 @@ hideChildren: False
 # Implement custom serialization with QR-Code signatures
 
 
-
 # Implementation of custom data serialization
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to embed into QR-code signature custom objects. This feature is implemented over object serialization to string and further encryption. There is ability to provide custom encryption. This procedure requires implementation of interface [IDataEncryption](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/idataencryption) with two methods to encrypt and decrypt data.
@@ -127,4 +126,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

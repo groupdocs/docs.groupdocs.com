@@ -16,6 +16,7 @@ hideChildren: False
 
 When CAD drawings are rendered, the size of the render result is adjusted by API automatically, the biggest side (width or height depending on which one is bigger) is set 2000 px, another side is set value based on width-to-length ratio. You may adjust the size of resulting document by setting [CadOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/cadoptions) as show in example.
 
+```csharp
             using (Viewer viewer = new Viewer("sample.dwg"))
             {
                 HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
@@ -23,6 +24,7 @@ When CAD drawings are rendered, the size of the render result is adjusted by API
                 viewer.View(viewOptions);
             }
  
+```
 
 When rendering CAD drawings GroupDocs.Viewer provides following options:
 
@@ -68,4 +70,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

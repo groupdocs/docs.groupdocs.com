@@ -12,7 +12,6 @@ hideChildren: False
 
 # Migration Notes
 
-
 ### Why To Migrate?
 
   
@@ -35,6 +34,7 @@ Here is a brief comparison of how to compare document with old and new API.
 
 **Old coding style**
 
+```csharp
 Comparer comparer = new Comparer();
 ComparisonSettings settings = new ComparisonSettings() 
 { 
@@ -42,9 +42,11 @@ ComparisonSettings settings = new ComparisonSettings()
 };
 ICompareResult result = comparer.Compare("source.docx", @"target.docx", settings);
 result.SaveDocument("result.docx");
+```
 
 **New coding style**
 
+```csharp
 using (Comparer comparer = new Comparer(“source.docx”))
 {
     comparer.Add(“target.docx”);
@@ -54,4 +56,4 @@ using (Comparer comparer = new Comparer(“source.docx”))
     };
 	comparer.Compare(“result.docx”, compareOptions);
 }
-
+```

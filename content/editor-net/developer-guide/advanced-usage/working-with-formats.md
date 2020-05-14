@@ -34,6 +34,7 @@ All these types are immutable structs, all of them have text properties, which r
 
 Example below demonstrates all main features for the `[WordProcessingFormats](https://apireference.groupdocs.com/net/editor/groupdocs.editor.formats/wordprocessingformats)` struct; same is applicable for all other structs.
 
+```csharp
 //fetching one format
 WordProcessingFormats dotm = Formats.WordProcessingFormats.Dotm;
 Console.WriteLine("DOT MAcro-enabled: Name is {0}, extension is {1}", dotm.Name, dotm.Extension);
@@ -44,6 +45,7 @@ foreach (WordProcessingFormats oneFormat in Formats.WordProcessingFormats.All)
 }
 //Parsing from extension
 Formats.WordProcessingFormats expectedDocm = WordProcessingFormats.FromExtension(".docm");
+```
 
 ## More resources
 
@@ -69,4 +71,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to edit your Microsoft Word (DOC, DOCX, RTF etc.), Microsoft Excel (XLS, XLSX, CSV etc.), Open Document (ODT, OTT, ODS) and other documents with free to use online **[GroupDocs Editor App](https://products.groupdocs.app/editor)**.
-

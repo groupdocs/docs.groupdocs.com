@@ -12,9 +12,7 @@ hideChildren: False
 
 # Single document operations
 
-
 ## Single document operations
 
 This documentation explains how to perform single document operations: move document pages, remove document pages, split document into separate pages, swap document pages positions, extract specific pages from document, change page orientation and rotation angle using GroupDocs.Merger API.  
 Please check the following articles for more details:
-

@@ -23,16 +23,18 @@ Here are the steps to change page orientation:
 
 The following code sample demonstrates how to change page orientation:
 
-string filePath = @"c:\\sample.docx";
-string filePathOut = @"c:\\output\\result.docx";
+```csharp
+string filePath = @"c:\sample.docx";
+string filePathOut = @"c:\output\result.docx";
 
-OrientationOptions orientationOptions = new OrientationOptions(OrientationMode.Landscape, new int\[\] { 3, 4 });
+OrientationOptions orientationOptions = new OrientationOptions(OrientationMode.Landscape, new int[] { 3, 4 });
 
 using (Merger merger = new Merger(filePath))
 {
     merger.ChangeOrientation(orientationOptions);
     merger.Save(filePathOut);
 }
+```
 
 ## More resources
 
@@ -54,4 +56,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge your documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

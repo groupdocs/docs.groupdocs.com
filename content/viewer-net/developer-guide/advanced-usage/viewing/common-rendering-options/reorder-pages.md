@@ -22,6 +22,7 @@ To reorder the pages:
 
 The following code snippet shows how to reorder pages. 
 
+```csharp
 using (Viewer viewer = new Viewer("sample.docx"))            
 {     
 	PdfViewOptions viewOptions = new PdfViewOptions();
@@ -29,6 +30,7 @@ using (Viewer viewer = new Viewer("sample.docx"))
     // Pass page numbers in the order you want to render them                                       
     viewer.View(viewOptions, 2, 1);
 }
+```
 
 ## More resources
 
@@ -54,4 +56,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

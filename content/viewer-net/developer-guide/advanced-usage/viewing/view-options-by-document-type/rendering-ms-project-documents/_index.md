@@ -12,8 +12,6 @@ hideChildren: False
 
 # Rendering MS Project Documents
 
-
 # Rendering MS Project Documents
 
 This page describes specific use cases for MS Project documents rendering.
-

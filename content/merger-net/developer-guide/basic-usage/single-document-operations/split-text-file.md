@@ -23,15 +23,17 @@ Here are the steps on how to split text file as described:
 
 The following code sample demonstrates how to split text file to two one-page documents with 3rd, 6th lines from source file:
 
-string filePath = @"c:\\sample.txt";
-string filePathOut = @"c:\\output\\line\_{0}.{1}";
+```csharp
+string filePath = @"c:\sample.txt";
+string filePathOut = @"c:\output\line_{0}.{1}";
 
-TextSplitOptions splitOptions = new TextSplitOptions(filePathOut, new int\[\] { 3, 6 });
+TextSplitOptions splitOptions = new TextSplitOptions(filePathOut, new int[] { 3, 6 });
 
 using (Merger merger = new Merger(filePath))
 {
     merger.Split(splitOptions);
 }
+```
 
 This code snippet will produce:
 
@@ -51,15 +53,17 @@ line\_1
 
 The following code sample demonstrates how to split text file to several multi-line files starting from 3rd and ending at 6th line numbers:
 
-string filePath = @"c:\\sample.txt";
-string filePathOut = @"c:\\output\\text\_{0}.{1}";
+```csharp
+string filePath = @"c:\sample.txt";
+string filePathOut = @"c:\output\text_{0}.{1}";
 
-TextSplitOptions splitOptions = new TextSplitOptions(filePathOut, TextSplitMode.Interval, new int\[\] { 3, 6 });
+TextSplitOptions splitOptions = new TextSplitOptions(filePathOut, TextSplitMode.Interval, new int[] { 3, 6 });
 
 using (Merger merger = new Merger(filePath))
 {
     merger.Split(splitOptions);
 }
+```
 
 This code snippet will produce:
 
@@ -99,4 +103,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to split your text files with our free online **[GroupDocs Splitter App](https://products.groupdocs.app/splitter)**.
-

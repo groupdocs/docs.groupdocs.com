@@ -13,7 +13,6 @@ hideChildren: False
 # Advanced usage
 
 
-
 # Advanced section for GroupDocs.Viewer API
 
 Learn about GroupDocs.Viewer advanced usage and its multiple powerful features including configuring custom caching, loading documents from different sources and customizing document viewing output.
@@ -42,4 +41,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

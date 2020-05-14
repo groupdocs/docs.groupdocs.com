@@ -13,7 +13,6 @@ hideChildren: False
 # Loading
 
 
-
 # Loading documents
 
 GroupDocs.Viewer allows you to load password-protected documents and load documents from different sources. For more details please refer to the following guides:
@@ -42,4 +41,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

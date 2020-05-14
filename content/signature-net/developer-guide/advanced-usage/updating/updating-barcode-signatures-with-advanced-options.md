@@ -13,7 +13,6 @@ hideChildren: False
 # Updating Barcode signatures with advanced options
 
 
-
 # Updating Barcode signatures - advanced
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [BarcodeSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/barcodesignature) class to manipulate barcode signatures location, size, textual content and encode type over [Update](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/update/) method of [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) class. This method returns [UpdateResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/updateresult) object to analyze if signatures were successfully processed.
@@ -242,4 +241,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

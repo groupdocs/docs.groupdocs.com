@@ -12,7 +12,6 @@ hideChildren: False
 
 # Loading documents from different sources
 
-
 # Loading documents from different sources
 
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) also enables you to convert remotely located documents. The conversion of a remote document would be similar to [Load document from Stream](https://docs.groupdocs.com/display/conversionnet/Load+document+from+Stream). In order to convert a remotely located document you must:
@@ -21,4 +20,3 @@ hideChildren: False
 *   Pass method's name to  [Converter](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion/converter) class constructor.
 
 Following examples demonstrates how to render document from different sources:
-

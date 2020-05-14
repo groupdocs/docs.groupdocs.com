@@ -13,14 +13,14 @@ hideChildren: False
 # Load document from FTP
 
 
-
 # Load a document from FTP
 
 Following code snippet shows how to convert a document from FTP:
 
+```csharp
 public static void Run()
 {
-    string outputFile = Path.Combine("c:\\output", "converted.pdf");
+    string outputFile = Path.Combine("c:\output", "converted.pdf");
     string filePath = "ftp://localhost/sample.doc";
     using (Converter converter = new Converter(() => GetFileFromFtp(filePath)))
     {
@@ -49,6 +49,7 @@ private static Stream GetFileStream(WebResponse response)
     fileStream.Position = 0;
     return fileStream;
 }
+```
 
 ## More resources
 
@@ -77,4 +78,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

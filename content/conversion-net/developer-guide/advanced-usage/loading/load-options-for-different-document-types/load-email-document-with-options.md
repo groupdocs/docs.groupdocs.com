@@ -13,7 +13,6 @@ hideChildren: False
 # Load Email document with options
 
 
-
 ## Load Email document with options
 
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) provides [EmailLoadOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/emailloadoptions)to give you control over how source email document will be processed. The following options could be set:
@@ -31,6 +30,7 @@ hideChildren: False
 
 The following code sample shows how to convert Email document and control the fields visibility:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new EmailLoadOptions
 {
     DisplayHeader = false,
@@ -45,11 +45,13 @@ using (Converter converter = new Converter("sample.msg", getLoadOptions))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ### Converting email attachments
 
 The following code sample shows how to convert Email document and all attachments:
 
+```csharp
 var source = "sample-with-attachment.eml";
 var loadOptions = new EmailLoadOptions {ConvertAttachments = true};
 using (var converter = new Converter(source, () => loadOptions))
@@ -59,11 +61,13 @@ using (var converter = new Converter(source, () => loadOptions))
     // Note: index = 1 is the email itself, all following indexes are attachments
     converter.Convert(() => new FileStream($"converted-{index++}.pdf", FileMode.Create) , options);
 }
+```
 
 ### Localize email fields captions
 
 The following code sample shows how to convert Email document and localize email fields
 
+```csharp
 var source = "sample.eml";
 var loadOptions = new EmailLoadOptions
 {
@@ -80,12 +84,16 @@ using (var converter = new Converter(source, () => loadOptions))
     converter.Convert("converted.pdf" , options);
 }
 
+
+```
+
 This functionality is introduced in v20.3
 
 ### Control date/time format
 
 The following code sample shows how to convert Email document and modify date/time format
 
+```csharp
 var source = "sample.eml";
 CultureInfo.CurrentCulture = new CultureInfo("fr-FR");
 using (var converter = new Converter(source))
@@ -93,6 +101,7 @@ using (var converter = new Converter(source))
     var options = new PdfConvertOptions();
     converter.Convert("converted.pdf" , options);
 }
+```
 
 This functionality is introduced in v20.3
 
@@ -123,4 +132,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

@@ -12,7 +12,6 @@ hideChildren: False
 
 # Saving
 
-
 # Saving
 
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides different ways of saving resultant document -  save with password, select document metadata source etc.
@@ -25,5 +24,4 @@ The [SaveOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.c
       
     
 
-For more details please refer to the following guides: 
-
+For more details please refer to the following guides:

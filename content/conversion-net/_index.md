@@ -1,6 +1,6 @@
 ---
 id: home
-url: conversion-net/home
+url: conversion-net
 title: GroupDocs.Conversion for .NET
 weight: 1
 description: 
@@ -11,7 +11,6 @@ hideChildren: True
 ---
 
 #  Home 
-
 
 ![](conversion-net/_index/84508675)
 
@@ -32,4 +31,3 @@ Following are the links to some useful resources you may need to accomplish your
 *   [GroupDocs.Conversion for .NET API Reference Guide](https://apireference.groupdocs.com/net/conversion)
 *   [GroupDocs.Conversion for .NET Free Support Forum](https://forum.groupdocs.com/c/conversion)
 *   [GroupDocs.Conversion for .NET Paid Support Helpdesk](https://helpdesk.groupdocs.com/)
-

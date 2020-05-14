@@ -25,6 +25,7 @@ hideChildren: False
 
 The following code sample shows how to convert PDF document and flatten all fields:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new PdfLoadOptions
 {
     FlattenAllFields = true
@@ -34,11 +35,13 @@ using (Converter converter = new Converter("sample.pdf", getLoadOptions))
     WordProcessingConvertOptions options = new WordProcessingConvertOptions();
     converter.Convert("converted.docx", options);
 }
+```
 
 ### Hide annotations
 
 The following code sample shows how to convert PDF document and hide annotations:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new PdfLoadOptions
 {
     HidePdfAnnotations = true
@@ -48,11 +51,13 @@ using (Converter converter = new Converter("sample.pdf", getLoadOptions))
     WordProcessingConvertOptions options = new WordProcessingConvertOptions();
     converter.Convert("converted.docx", options);
 }
+```
 
 ### Remove embedded files
 
 The following code sample shows how to convert PDF document and remove embedded files:
 
+```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new PdfLoadOptions
 {
     RemoveEmbeddedFiles = true
@@ -62,6 +67,7 @@ using (Converter converter = new Converter("sample.pdf", getLoadOptions))
     WordProcessingConvertOptions options = new WordProcessingConvertOptions();
     converter.Convert("converted.docx", options);
 }
+```
 
 ## More resources
 
@@ -90,4 +96,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

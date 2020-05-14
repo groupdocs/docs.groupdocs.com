@@ -22,11 +22,13 @@ GroupDocs.Merger API provides different overloads of **[Join](https://apirefere
 
 This code sample shows how to merge Microsoft Word documents:
 
-using (Merger merger = new Merger(@"c:\\document1.docx"))
+```csharp
+using (Merger merger = new Merger(@"c:\document1.docx"))
 {
-    merger.Join(@"c:\\document2.docx");
-    merger.Save(@"c:\\merged.docx");
+    merger.Join(@"c:\document2.docx");
+    merger.Save(@"c:\merged.docx");
 }
+```
 
 ## More resources
 
@@ -48,4 +50,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to merge DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF  and ODT, OTT  documents with our free online **[GroupDocs Merger App](https://products.groupdocs.app/merger)**.
-

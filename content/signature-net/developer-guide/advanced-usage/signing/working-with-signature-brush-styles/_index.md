@@ -11,5 +11,3 @@ hideChildren: False
 ---
 
 # Working with signature brush styles
-
-

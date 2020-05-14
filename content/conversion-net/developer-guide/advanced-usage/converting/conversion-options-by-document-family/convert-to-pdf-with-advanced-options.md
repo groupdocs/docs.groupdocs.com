@@ -28,6 +28,7 @@ GroupDocs.Conversion provides [PdfConvertOptions](https://apireference.groupdoc
 
 Following code snippet shows how to convert to PDF with advanced options.
 
+```csharp
 using (Converter converter = new Converter("sample.docx"))
 {
     PdfConvertOptions options = new PdfConvertOptions
@@ -41,6 +42,7 @@ using (Converter converter = new Converter("sample.docx"))
     };
     converter.Convert("converted.pdf", options);
 }
+```
 
 ### PdfOptions
 
@@ -106,4 +108,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

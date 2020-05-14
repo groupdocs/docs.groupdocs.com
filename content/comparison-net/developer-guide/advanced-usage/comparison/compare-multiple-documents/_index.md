@@ -13,7 +13,6 @@ hideChildren: False
 # Compare multiple documents
 
 
-
 NOTE: This feature is available only for Word documents, PowerPoint and Open Document presentations.
 
 # Compare multiple documents
@@ -30,6 +29,7 @@ The following code sample shows how to compare multiple documents with specific
 
 ## Compare multiple documents from local disk
 
+```csharp
 using (Comparer comparer = new Comparer(“source.docx”)
 {
 	comparer.Add(“target1.docx”);
@@ -37,9 +37,11 @@ using (Comparer comparer = new Comparer(“source.docx”)
     comparer.Add(“target3.docx”);
     comparer.Compare(“result.docx”);
 }
+```
 
 ## Compare multiple documents from stream
 
+```csharp
 using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”))
 {
 	comparer.Add(File.OpenRead(“target1.docx”));
@@ -47,6 +49,7 @@ using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”))
     comparer.Add(File.OpenRead(“target3.docx”));
     comparer.Compare(File.Create(“result.docx”));
 }
+```
 
 ## More resources
 
@@ -72,4 +75,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
-

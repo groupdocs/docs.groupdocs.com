@@ -13,7 +13,6 @@ hideChildren: False
 # Listening
 
 
-
 # Listening to conversion process events
 
 In some cases there is the need to monitor conversion process and to receive update for start, progress and completion of a conversion. For such situations [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) expose extension point where the client application may hook up and receive updates.. 
@@ -27,6 +26,7 @@ To enable listening you have to:
 
 Here is a code that demonstrates how to enable listening for GroupDocs.Conversion*.*
 
+```csharp
 public class ConverterListener : IConverterListener
 {
     public void Started()
@@ -42,7 +42,9 @@ public class ConverterListener : IConverterListener
         Console.WriteLine("... conversion completed");
     }
 }
+```
 
+```csharp
 IConverterListener listener = new ConverterListener();
 Contracts.Func<ConverterSettings> settingsFactory = () => new ConverterSettings
 {
@@ -53,6 +55,7 @@ using (Converter converter = new Converter("sample.docx", settingsFactory))
     PdfConvertOptions options = new PdfConvertOptions();
     converter.Convert("converted.pdf", options);
 }
+```
 
 ## More resources
 
@@ -81,4 +84,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

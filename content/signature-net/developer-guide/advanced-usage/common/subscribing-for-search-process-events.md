@@ -37,20 +37,25 @@ private static void OnSearchStarted(Signature signature, ProcessStartEventArgs a
 
 ## Implement method for SearchProgress event
 
+```csharp
  private static void OnSearchProgress(Signature signature, ProcessProgressEventArgs args)
  {
      Console.WriteLine("Search progress. Processed {0} signatures. Time spent {1} mlsec", args.ProcessedSignatures, args.Ticks);
  }
+```
 
 ## Implement method for SearchCompleted event
 
+```csharp
 private static void OnSearchCompleted(Signature signature, ProcessCompleteEventArgs args)
 {
     Console.WriteLine("Search process completed at {0} with {1} total signatures. Process took {2} mlsec", args.Completed, args.TotalSignatures, args.Ticks);
 }
+```
 
 ## Subscribing for search process events
 
+```csharp
 private static void OnSearchStarted(Signature sender, ProcessStartEventArgs args)
 {
     Console.WriteLine("Search process started at {0} with {1} total signatures to be put in document", args.Started, args.TotalSignatures);
@@ -80,7 +85,7 @@ public static void Run()
         };
         // search for signatures in document
         List<BarcodeSignature> signatures = signature.Search<BarcodeSignature>(options);
-        Console.WriteLine("\\nSource document contains following signatures.");
+        Console.WriteLine("\nSource document contains following signatures.");
         foreach (var barcodeSignature in signatures)
         {
             Console.WriteLine("Barcode signature found at page {0} with type {1} and text {2}", 
@@ -88,6 +93,7 @@ public static void Run()
         }
     }
 }
+```
 
 ## More resources
 
@@ -113,4 +119,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

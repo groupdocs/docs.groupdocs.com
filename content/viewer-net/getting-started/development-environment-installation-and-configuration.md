@@ -12,7 +12,6 @@ hideChildren: False
 
 # Development Environment, Installation and Configuration
 
-
 **Contents Summary**
 
 
@@ -93,4 +92,3 @@ You can follow the steps below to reference GroupDocs.Viewer for .NET downloaded
     You have referenced GroupDocs.Viewer and it should appear in the **SelectedComponents** pane of the dialog box.
 7.  Click **OK**.   
     GroupDocs.Viewer reference appears under the **References** node of the project.
-

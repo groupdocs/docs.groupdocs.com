@@ -1,6 +1,6 @@
 ---
-id: introducing-groupdocs-viewer-for--net
-url: viewer-net/introducing-groupdocs-viewer-for--net
+id: introducing-groupdocs-viewer-for-net
+url: viewer-net/introducing-groupdocs-viewer-for-net
 title: Introducing GroupDocs.Viewer for .NET
 weight: 1
 description: 
@@ -11,7 +11,6 @@ hideChildren: False
 ---
 
 # Introducing GroupDocs.Viewer for .NET
-
 
 ## What Is GroupDocs.Viewer?
 
@@ -30,5 +29,3 @@ GroupDocs.Viewer is a powerful [file viewer](https://en.wikipedia.org/wiki/Fi
 *   Increase rendering performance by caching rendering results. Render document once and display it fast and efficient;
     
 *   Customizable caching. Caching to local disk is implemented by default and any type of storage can be supported by implementing caching interfaces – Amazon S3, Dropbox, Google Drive, Windows Azure and others.
-    
-

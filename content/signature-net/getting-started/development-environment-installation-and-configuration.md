@@ -13,7 +13,6 @@ hideChildren: False
 # Development Environment, Installation and Configuration
 
 
-
   
 
 ## Install from Nuget
@@ -66,4 +65,3 @@ You can follow the steps below to reference GroupDocs.Signature for .NET downloa
 7.  Click **OK**. 
 
 GroupDocs.Signature reference appears under the **References** node of the project.
-

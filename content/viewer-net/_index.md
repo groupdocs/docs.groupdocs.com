@@ -1,6 +1,6 @@
 ---
 id: home
-url: viewer-net/home
+url: viewer-net
 title: GroupDocs.Viewer for .NET
 weight: 1
 description: 
@@ -11,7 +11,6 @@ hideChildren: True
 ---
 
 #  Home 
-
 
 ![](viewer-net/_index/83263531)
 
@@ -34,4 +33,3 @@ Following are the links to some useful resources you may need to accomplish your
 *   [GroupDocs.Viewer for .NET API Reference Guide](https://apireference.groupdocs.com/net/viewer)
 *   [GroupDocs.Viewer for .NET Free Support Forum](https://forum.groupdocs.com/c/viewer)
 *   [GroupDocs.Viewer for .NET Paid Support Helpdesk](https://helpdesk.groupdocs.com/)
-

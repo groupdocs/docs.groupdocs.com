@@ -31,25 +31,29 @@ The following code sample shows how to accept/reject detected changes.
 
 ## Accept or Reject changes for documents stored at local disk
 
+```csharp
 using (Comparer comparer = new Comparer(“source.docx”))
 {
 	comparer.Add(“target.docx”);
     comparer.Compare();
-    ChangeInfo\[\] changes = comparer.GetChanges();
-    changes\[0\].ComparisonAction = ComparisonAction.Reject;
+    ChangeInfo[] changes = comparer.GetChanges();
+    changes[0].ComparisonAction = ComparisonAction.Reject;
     comparer.ApplyChanges(File.Create(“result.docx”), new SaveOptions(), new ApplyChangeOptions() { Changes = changes });
 }
+```
 
 ## Accept or Reject changes for documents provided as a stream
 
+```csharp
 using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”)))
 {
 	comparer.Add(File.OpenRead(“target.docx”));
     comparer.Compare(new SaveOptions(), new CompareOptions());
-    ChangeInfo\[\] changes = comparer.GetChanges(new GetChangeOptions());
-    changes\[0\].ComparisonAction = ComparisonAction.Reject;
+    ChangeInfo[] changes = comparer.GetChanges(new GetChangeOptions());
+    changes[0].ComparisonAction = ComparisonAction.Reject;
     comparer.ApplyChanges(File.Create(“result.docx”), new SaveOptions(), new ApplyChangeOptions() { Changes = changes });
 }
+```
 
 ## More resources
 
@@ -75,4 +79,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
-

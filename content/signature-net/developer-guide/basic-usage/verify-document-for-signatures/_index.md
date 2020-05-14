@@ -11,5 +11,3 @@ hideChildren: False
 ---
 
 # Verify document for signatures
-
-

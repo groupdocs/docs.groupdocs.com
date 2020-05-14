@@ -30,6 +30,7 @@ What we need to do is to implement one or two of the interfaces listed above. 
 
 In this example, we'll render into HTML with embedded resources so we need to implement only [IPageStreamFactory](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.interfaces/ipagestreamfactory) interface.
 
+```csharp
 // Create the list to store output pages
 List<MemoryStream> pages = new List<MemoryStream>();
 
@@ -47,18 +48,18 @@ using (Viewer viewer = new Viewer("sample.docx"))
  
 internal class MemoryPageStreamFactory : IPageStreamFactory
 {
-    private readonly List<MemoryStream> \_pages;
+    private readonly List<MemoryStream> _pages;
 
     public MemoryPageStreamFactory(List<MemoryStream> pages)
     {
-        \_pages = pages;
+        _pages = pages;
     }
 
     public Stream CreatePageStream(int pageNumber)
     {
         MemoryStream pageStream = new MemoryStream();
 
-        \_pages.Add(pageStream);
+        _pages.Add(pageStream);
 
         return pageStream;
     }
@@ -68,6 +69,7 @@ internal class MemoryPageStreamFactory : IPageStreamFactory
         //Do not release page stream as we'll need to keep the stream open
     }
 }
+```
 
 ## More resources
 
@@ -93,4 +95,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to view Word, PDF, Excel, PowerPoint documents with free to use online **[GroupDocs Viewer App](https://products.groupdocs.app/viewer)**.
-

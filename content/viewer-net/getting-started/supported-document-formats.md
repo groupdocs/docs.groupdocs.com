@@ -13,7 +13,6 @@ hideChildren: False
 # Supported Document Formats
 
 
-
 ## Supported File Formats
 
 With GroupDocs.Viewer for .NET you can view over 140 different document types and auto-detect over 90 file formats.
@@ -2139,6 +2138,3 @@ StarOffice Calc Spreadsheet
 ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
 
 ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
- 
-

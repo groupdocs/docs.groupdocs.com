@@ -21,6 +21,7 @@ GroupDocs.Conversion provides [MarkupConvertOptions](https://apireference.group
 
 Following code snippet shows how to convert to HTML with advanced options
 
+```csharp
 using (Converter converter = new Converter("sample.docx"))
 {
     MarkupConvertOptions options = new MarkupConvertOptions
@@ -31,11 +32,13 @@ using (Converter converter = new Converter("sample.docx"))
     };
     converter.Convert("converted.html", options);
 }
+```
 
 ### Control page borders visibility
 
 The following code sample shows how to convert to Html and control page borders visibility
 
+```csharp
 var source = "sample.docx";
 using (var converter = new Converter(source))
 {
@@ -45,6 +48,7 @@ using (var converter = new Converter(source))
     };
     converter.Convert("converted.html" , options);
 }
+```
 
 This functionality is introduced in v20.3
 
@@ -75,4 +79,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

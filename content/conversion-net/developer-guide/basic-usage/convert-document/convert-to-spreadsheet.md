@@ -22,11 +22,13 @@ Conversion to spreadsheet format could be triggered by following below steps:
 
 The following code show how to convert any document to spreadsheet. 
 
+```csharp
 using (Converter converter = new Converter("sample.docx"))
 {
     SpreadsheetConvertOptions options = new SpreadsheetConvertOptions();
     converter.Convert("converted.xlsx", options);
 }
+```
 
 ## More resources
 
@@ -59,4 +61,3 @@ In order to see a full potential of GroupDocs.Conversion, you are welcome to con
 
 **Please note** that more [premium features](https://conholdate.app/features), advanced options and enhanced document management experience is available for signed-in users at [conholdate.app](https://conholdate.app/) for **FREE**.  
 If you don't own an account yet, register it now for free! No credit card is required!
-

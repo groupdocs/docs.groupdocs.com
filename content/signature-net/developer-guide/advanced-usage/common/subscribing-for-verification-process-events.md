@@ -42,20 +42,25 @@ private static void OnVerifyStarted(Signature signature, ProcessStartEventArgs a
 
 ## Implement method for VerifyProgress event
 
+```csharp
  private static void OnVerifyProgress(Signature signature, ProcessProgressEventArgs args)
  {
      Console.WriteLine("Verify progress. Processed {0} signatures. Time spent {1} mlsec", args.ProcessedSignatures, args.Ticks);
  }
+```
 
 ## Implement method for VerifyCompleted event
 
+```csharp
 private static void OnVerifyCompleted(Signature signature, ProcessCompleteEventArgs args)
 {
     Console.WriteLine("Verify process completed at {0} with {1} total signatures. Process took {2} mlsec", args.Completed, args.TotalSignatures, args.Ticks);
 }
+```
 
 ## Subscribing for verification process events
 
+```csharp
 private static void OnVerifyStarted(Signature sender, ProcessStartEventArgs args)
 {
     Console.WriteLine("Verify process started at {0} with {1} total signatures to be put in document", args.Started, args.TotalSignatures);
@@ -84,7 +89,7 @@ private static void OnVerifyCompleted(Signature sender, ProcessCompleteEventArgs
 public static void Run()
 {
     // The path to the documents directory.
-    string filePath = Constants.SAMPLE\_PDF;
+    string filePath = Constants.SAMPLE_PDF;
     using (Signature signature = new Signature(filePath))
     {
         signature.VerifyStarted += OnVerifyStarted;
@@ -98,14 +103,15 @@ public static void Run()
         VerificationResult result = signature.Verify(options);
         if (result.IsValid)
         {
-            Console.WriteLine("\\nDocument was verified successfully!");
+            Console.WriteLine("\nDocument was verified successfully!");
         }
         else
         {
-            Console.WriteLine("\\nDocument failed verification process.");
+            Console.WriteLine("\nDocument failed verification process.");
         }
     }
 }
+```
 
 ## More resources
 
@@ -131,4 +137,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-

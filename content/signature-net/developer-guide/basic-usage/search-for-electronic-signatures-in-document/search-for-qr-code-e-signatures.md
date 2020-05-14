@@ -10,10 +10,6 @@ productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
 
-# Search for QR-Code e-signatures
-
-
-
 # Search for QR-code e-signatures
 
 When you search for electronic signatures of QR-Code type inside document with [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) it's only needed to [QrCodeSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/qrcodesearchoptions) object to Search method.   
@@ -68,4 +64,3 @@ You may easily run the code above and see the feature in action in our GitHub e
 Along with full-featured .NET library we provide simple, but powerful free Apps.
 
 You are welcome to eSign PDF, Word, Excel, PowerPoint documents with free to use online **[GroupDocs Signature App](https://products.groupdocs.app/signature)**.
-
