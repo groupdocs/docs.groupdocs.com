@@ -18,7 +18,7 @@ This article explains how to view Spreadsheet print areas with GroupDocs.Viewer 
 
 Spreadsheet document allows to set a print area if you want to print a specific section on a worksheet. There can be the case when you want to render only the print area of the worksheet using GroupDocs.Viewer. 
 
-![](viewer-net/developer-guide/advanced-usage/viewing/view-options-by-document-type/view-excel-files/render-print-areas/86179852.png)
+![](images/viewer-net/render-print-areas_0.png)
 
 ## The Solution
 

@@ -33,7 +33,7 @@ Follow these steps to reference GroupDocs.Editor using Package Manager GUI:
       
     
 
-![](editor-net/getting-started/development-environment-installation-and-configuration/85426214.png)
+![](images/editor-net/development-environment-installation-and-configuration_0.png)
 
 #### Using Package Manager Console
 
@@ -50,7 +50,7 @@ You can follow the steps below to reference GroupDocs.Editor for .NET using the 
 
   
 
-![](editor-net/getting-started/development-environment-installation-and-configuration/85426215.png)
+![](images/editor-net/development-environment-installation-and-configuration_1.png)
 
   
 

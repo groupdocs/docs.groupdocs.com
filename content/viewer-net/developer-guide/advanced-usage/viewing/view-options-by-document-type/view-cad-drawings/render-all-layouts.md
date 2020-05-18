@@ -12,7 +12,7 @@ hideChildren: False
 
 # Render all layouts
 
-![](viewer-net/developer-guide/advanced-usage/viewing/view-options-by-document-type/view-cad-drawings/render-all-layouts/85918018.jpg)
+![](images/viewer-net/render-all-layouts_0.jpg)
 
 When GroupDocs.Viewer renders CAD drawings we get only Model representation. In order to render Model and all non-empty Layouts within CAD drawing, the property [CadOptions.RenderLayouts](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/cadoptions/properties/renderlayouts) of [HtmlViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions)class* (*or [PngViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pngviewoptions)*, *or [JpgViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/jpgviewoptions)*, *or [PdfViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pdfviewoptions)*) *is used.
 

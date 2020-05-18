@@ -14,7 +14,7 @@ hideChildren: False
 
 **Distance annotation** measures a distance between objects in a document like shown at the picture below. 
 
-![](annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-distance-annotation/87359508.png)
+![](images/annotation-net/add-distance-annotation_0.png)
 
 There is an ability to specify the next properties for [DistanceAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/distanceannotation) type:
 

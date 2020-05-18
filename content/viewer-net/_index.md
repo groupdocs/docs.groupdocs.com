@@ -12,7 +12,7 @@ hideChildren: True
 
 #  Home 
 
-![](viewer-net/_index/83263531)
+![](images/viewer-net/home_0.png)
 
 **Welcome to the GroupDocs.Viewer for .NET**
 

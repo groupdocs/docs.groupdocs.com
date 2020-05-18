@@ -12,7 +12,7 @@ hideChildren: True
 
 #  Home 
 
-![](merger-net/_index/67338353)
+![](images/merger-net/home_0.png)
 
 **Welcome to the GroupDocs.Merger for .NET**
 

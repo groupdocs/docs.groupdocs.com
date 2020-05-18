@@ -12,7 +12,7 @@ hideChildren: True
 
 #  Home 
 
-![](comparison-net/_index/67338245)
+![](images/comparison-net/home_0.png)
 
 **Welcome to the GroupDocs.Comparison for .NET**
 

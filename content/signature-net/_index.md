@@ -12,7 +12,7 @@ hideChildren: True
 
 #  Home 
 
-![](signature-net/_index/84869123)
+![](images/signature-net/home_0.png)
 
 **Welcome to the GroupDocs.Signature for .NET**
 

@@ -18,7 +18,7 @@ This article explains how to show hidden rows and cells when viewing Spreadsheet
 
 Sometimes Excel document may contain hidden columns and rows (as shown in the image below). GroupDocs.Viewer doesn't render hidden columns and rows by default. However, there may be the case when you want to control the inclusion of hidden content in the rendering results. 
 
-![](viewer-net/developer-guide/advanced-usage/viewing/view-options-by-document-type/view-excel-files/render-hidden-columns-and-rows/85918017.png)
+![](images/viewer-net/render-hidden-columns-and-rows_0.png)
 
 ## The Solution
 

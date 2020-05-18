@@ -12,7 +12,7 @@ hideChildren: True
 
 #  Home 
 
-![](editor-net/_index/67338256)
+![](images/editor-net/home_0.png)
 
 **Welcome to the GroupDocs.Editor for .NET**
 

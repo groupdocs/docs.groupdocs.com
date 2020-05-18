@@ -30,7 +30,7 @@ Follow these steps to reference GroupDocs.Conversion using Package Manager GUI:
 *   Select Browse tab and type “GroupDocs.Conversion” in the search text box.
     
 *   Click the Install button to install the latest version of the API into your project as shown in the following screenshot.  
-![](conversion-net/getting-started/development-environment-installation-and-configuration/85426228.png)
+![](images/conversion-net/development-environment-installation-and-configuration_0.png)
     
 
 #### Using Package Manager Console
@@ -45,7 +45,7 @@ You can follow the steps below to reference GroupDocs.Conversion for .NET using
     
 *   After successful installation, GroupDocs.Conversion will be referenced in your application.  
     
-![](conversion-net/getting-started/development-environment-installation-and-configuration/85426229.png)
+![](images/conversion-net/development-environment-installation-and-configuration_1.png)
     
 
 ## Install from official GroupDocs website

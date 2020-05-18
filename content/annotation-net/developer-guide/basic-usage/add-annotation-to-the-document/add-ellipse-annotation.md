@@ -14,7 +14,7 @@ hideChildren: False
 
 **Ellipse annotation** draws elliptic annotation in a document page like shown at the picture below.
 
-![](annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-ellipse-annotation/87359516.png)
+![](images/annotation-net/add-ellipse-annotation_0.png)
 
 There is an ability to specify the next properties for [EllipseAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/ellipseannotation) type*:* 
 

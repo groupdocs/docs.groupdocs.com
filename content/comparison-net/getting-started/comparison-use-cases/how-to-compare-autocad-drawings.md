@@ -41,9 +41,9 @@ Source drawing
 
 Target drawing
 
-![](comparison-net/getting-started/comparison-use-cases/how-to-compare-autocad-drawings/88342552.png)
+![](images/comparison-net/how-to-compare-autocad-drawings_0.png)
 
-![](comparison-net/getting-started/comparison-use-cases/how-to-compare-autocad-drawings/88342550.png)
+![](images/comparison-net/how-to-compare-autocad-drawings_1.png)
 
 Here are the steps to compare two DWG files:
 

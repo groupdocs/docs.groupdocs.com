@@ -14,7 +14,7 @@ hideChildren: False
 
 **Area annotation** allows to mark up an area within the document page with a rectangle like shown at the picture below. 
 
-![](annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-area-annotation/87359504.png)
+![](images/annotation-net/add-area-annotation_0.png)
 
 There is an ability to specify the next properties for [AreaAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/areaannotation) type:
 

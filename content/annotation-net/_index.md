@@ -12,7 +12,7 @@ hideChildren: True
 
 #  Home 
 
-![](annotation-net/_index/67338254)
+![](images/annotation-net/home_0.png)
 
 **Welcome to the GroupDocs.Annotation for .NET**
 
