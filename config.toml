@@ -1,7 +1,9 @@
 baseURL = "http://lisbon.dynabic.com/com/"
 languageCode = "en-us"
 title = "Documentation"
-theme = "hugo-book"
+#theme = "hugo-book"
+theme = "ace-documentation"
+
 
 
 # (Optional) Set this to true to enable 'Last Modified by' date and git author
