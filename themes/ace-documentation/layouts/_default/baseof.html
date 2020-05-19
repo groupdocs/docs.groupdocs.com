@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
+    {{- partial "groupdocs-header.html" . -}}
     <body>
 
         {{- partial "header.html" . -}}
@@ -20,8 +21,14 @@
                 {{else}}
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3">
                 {{end}}
-
+                    
                     {{- block "main" . }}{{- end }}
+
+                    <div class="row justify-content-between">
+                        {{- if .GitInfo -}}                       
+                        {{- partial "github-info.html" . -}}                                     
+                        {{- end -}}
+                    </div> <!-- /end of row -->
                     
                     <div class="row">
                         {{- if and (ne .Site.Params.disableReadmoreNav true) (ne .Params.disableReadmoreNav true) -}}
@@ -35,9 +42,10 @@
 
             </div> <!-- /end of row -->
 
-        </div> <!-- /end of container -->
+        </div> <!-- /end of container -->        
 
         {{- partial "footer.html" . -}}
 
     </body>
+    <footer >{{- partial "groupdocs-footer.html" . -}}</footer>
 </html>

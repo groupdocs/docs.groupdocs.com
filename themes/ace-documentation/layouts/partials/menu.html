@@ -17,9 +17,9 @@
                {{- template "section-tree-nav" dict "sect" . "currentnode" $currentNode}}
                {{- end}}
              {{- else}}
-               <!-- {{- range .Site.Home.Sections.ByWeight}} -->
+               {{- range .Site.Home.Sections.ByWeight}}
                {{- template "section-tree-nav" dict "sect" . "currentnode" $currentNode}}
-               <!-- {{- end}} -->
+               {{- end}}
              {{- end}}
         </ul>
     </div>
@@ -29,9 +29,11 @@
 {{- define "section-tree-nav" }}
 {{- $currentNode := .currentnode }}
 {{- with .sect}}
+ 
+<!-- Sections with child items template -->
 {{- if and .IsSection (or (not .Params.hidden) $.showhidden)}}
     {{- $numberOfPages := (add (len .Pages) (len .Sections)) }}
-    {{- safeHTML .Params.head}}
+    {{- safeHTML .Params.head}}   
     <li data-nav-id="{{.RelPermalink}}" class="nav-item my-1
         {{- if .IsAncestor $currentNode}} parent{{end}}
         {{- if eq .RelPermalink $currentNode.RelPermalink}} active{{end}}
@@ -66,6 +68,7 @@
         </ul>
       {{- end}}
     </li>
+<!-- Simple page template -->    
 {{- else}}
     {{- if not .Params.Hidden }}
         <li data-nav-id="{{.RelPermalink}}" class="nav-item my-1 {{- if eq .RelPermalink $currentNode.RelPermalink}} active{{end -}}">

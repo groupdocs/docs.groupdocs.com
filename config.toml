@@ -26,12 +26,14 @@ enableGitInfo = true
     contentDir = "content"
     # Set source repository location.
     # Used for 'Last Modified' and 'Edit this page' links.
-    BookRepo = 'https://github.com/groupdocs/docs'
+    GitHubRepo = 'https://github.com/groupdocs/docs'
     
     # Enable 'Edit this page' links for 'doc' page type.
-    # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.    
-    BookEditPath = 'edit/master'    #https://github.com/groupdocs/docs/blob/master/content/docs/annotation-net/getting-started/supported-document-formats.md
-                                     
+    # Disabled by default. Uncomment to enable. Requires 'GitHubRepo' param.    
+    GitHubEditPath = 'edit/master'    #https://github.com/groupdocs/docs/blob/master/content/docs/annotation-net/getting-started/supported-document-formats.md
+
+    GitHubDateFormat = 'January 2, 2006'
+
     ProductFamilies = [ 
             { Key ="annotation", Name = "GroupDocs.Annotation", Description = "Powerful document annotator component that helps you to boost your applications with document annotation, commenting and collaboration features." },
             { Key ="comparison", Name = "GroupDocs.Comparison", Description = "Document comparison API that detects document text, styling and formating changes quickly and with a high accuracy." },
