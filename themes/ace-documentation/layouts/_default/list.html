@@ -2,7 +2,18 @@
 
 <h1>{{ .Title }}</h1>
 
-{{ .Content }}
+    {{ .Content }}
+    
+    {{ if not (.Params.hideChildren) }}      
+        <ul class="contents">
+        {{ $pages := .Paginator.Pages | append .Sections }}    
+        {{ range sort $pages.ByWeight }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+        {{ end }}        
+        </ul>         
+    {{ end }}         
 
     {{ if .IsTranslated }}
         <h4>{{ i18n "translations" }}</h4>

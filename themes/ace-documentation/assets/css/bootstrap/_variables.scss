@@ -44,6 +44,8 @@ $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
+$bluedark:  #205081 !default;
+            
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -61,7 +63,8 @@ $colors: map-merge(
     "cyan":       $cyan,
     "white":      $white,
     "gray":       $gray-600,
-    "gray-dark":  $gray-800
+    "gray-dark":  $gray-800,
+    "blue-dark":  $bluedark
   ),
   $colors
 );
@@ -726,7 +729,7 @@ $navbar-padding-x:                  $spacer !default;
 
 $navbar-nav-link-padding-x:         .5rem !default;
 
-$navbar-brand-font-size:            $font-size-lg !default;
+$navbar-brand-font-size:            $font-size-base !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 $nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 2 !default;
 $navbar-brand-height:               $navbar-brand-font-size * $line-height-base !default;

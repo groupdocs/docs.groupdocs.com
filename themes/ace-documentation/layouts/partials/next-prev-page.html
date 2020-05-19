@@ -1,5 +1,5 @@
 <!-- <div class="bg-primary overflow-hidden p-3 mt-5 shadow"> -->
-    <div class="bg-primary overflow-hidden p-3 mt-5 shadow">
+    <div class="p-3 mt-5">
 
     <!-- <h4 class="text-white text-center">Read more</h4> -->
 
@@ -36,12 +36,12 @@
         {{- end -}}
     {{- end -}}
 
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-between">
         {{- with ($.Scratch.Get "prevPage") -}}
-            <a class="p-1 mr-3 d-inline-block text-white" href="{{.RelPermalink}}" title="{{.Title}}"><i class="fas fa-chevron-left p-1"></i>{{.Title}}</a>
+            <a class="p-0 mr-1 d-inline-block text-gray" href="{{.RelPermalink}}" title="{{.Title}}"><i class="fas fa-chevron-left p-1"></i>{{.Title}}</a>
         {{ end -}}
         {{- with ($.Scratch.Get "nextPage") -}}
-            <a class="p-1 ml-3 d-inline-block text-white text-right" href="{{.RelPermalink}}" title="{{.Title}}">{{.Title}}<i class="fas fa-chevron-right p-1"></i></a>
+            <a class="p-0 ml-1 d-inline-block text-gray text-right" href="{{.RelPermalink}}" title="{{.Title}}">{{.Title}}<i class="fas fa-chevron-right p-1"></i></a>
         {{- end }}
     </div>
 </div>
