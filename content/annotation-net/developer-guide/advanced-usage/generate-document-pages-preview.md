@@ -54,7 +54,7 @@ The following code snippet demonstrates how to generate document previews.
 ## Get document page previews 
 
 ```csharp
-using (Annotator annotator = new Annotator(“input.pdf”))
+using (Annotator annotator = new Annotator("input.pdf"))
 {
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
@@ -74,7 +74,7 @@ In some cases it may be useful to set specific image size during document pages 
 The following code snippet demonstrates how to set specific size for preview images.
 
 ```csharp
-using (Annotator annotator = new Annotator(“input.pdf”))
+using (Annotator annotator = new Annotator("input.pdf"))
 {
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
@@ -102,7 +102,7 @@ private void UserReleaseStreamMethod(int pageNumber, Stream stream)
     stream.Close();
 }
  
-using (Annotator annotator = new Annotator(“input.pdf”))
+using (Annotator annotator = new Annotator("input.pdf"))
 {
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {

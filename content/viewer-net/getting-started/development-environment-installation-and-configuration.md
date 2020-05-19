@@ -54,7 +54,7 @@ Follow these steps to reference GroupDocs.Viewer using Package Manager GUI:
     
 *   Click Tools -> NuGet Package Manager -> Manage NuGet Packages for Solution. You can also access the same option through the Solution Explorer. Right-click the solution or project and select Manage NuGet Packages from the context menu
     
-*   Select Browse tab and type “GroupDocs.Viewer” in the search text box.
+*   Select Browse tab and type "GroupDocs.Viewer" in the search text box.
     
 *   Click the Install button to install the latest version of the API into your project as shown in the following screenshot.  
       
@@ -70,7 +70,7 @@ You can follow the steps below to reference GroupDocs.Viewer for .NET using the 
     
 *   Select Tools -> NuGet Package Manager -> Package Manager Console from the menu to open package manager console.
     
-*   Type the command “Install-Package GroupDocs.Viewer” and press enter to install the latest release into your application.
+*   Type the command "Install-Package GroupDocs.Viewer" and press enter to install the latest release into your application.
     
 *   After successful installation, GroupDocs.Viewer will be referenced in your application.  
       

@@ -30,9 +30,9 @@ The following code snippet demonstrates how to compare documents with specific o
 ## Compare documents from local disk with custom change styles
 
 ```csharp
-using (Comparer comparer = new Comparer(“source.docx”))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add(“target.docx”);
+	comparer.Add("target.docx");
 	CompareOptions compareOptions = new CompareOptions()
 	{
     	InsertedItemStyle = new StyleSettings()
@@ -63,16 +63,16 @@ using (Comparer comparer = new Comparer(“source.docx”))
 			IsItalic = true
         }
 	};
-comparer.Compare(“result.docx”, compareOptions);
+comparer.Compare("result.docx", compareOptions);
 }
 ```
 
 ## Compare documents from stream with custom change styles
 
 ```csharp
-using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”)))
+using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
-	comparer.Add(File.OpenRead(“target.docx”));
+	comparer.Add(File.OpenRead("target.docx"));
 	CompareOptions compareOptions = new CompareOptions()
 	{
     	InsertedItemStyle = new StyleSettings()
@@ -103,7 +103,7 @@ using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”)))
 			IsItalic = true
         }
 	};
-comparer.Compare(File.Create(“result.docx”), compareOptions);
+comparer.Compare(File.Create("result.docx"), compareOptions);
 }
 ```
 

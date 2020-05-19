@@ -21,13 +21,13 @@ The following are the steps to be followed:
 Following code snippet describes this case.
 
 ```csharp
-using (Stream sourceStream = File.OpenRead(“source.docx”))
-using (Stream targetStream = File.OpenRead(“target.docx”))
+using (Stream sourceStream = File.OpenRead("source.docx"))
+using (Stream targetStream = File.OpenRead("target.docx"))
 {
 	using (Comparer comparer = new Comparer(sourceStream))
 	{
 	    comparer.Add(targetStream);
-    	comparer.Compare(File.Create(“result.docx”));
+    	comparer.Compare(File.Create("result.docx"));
 	}
 }
 ```

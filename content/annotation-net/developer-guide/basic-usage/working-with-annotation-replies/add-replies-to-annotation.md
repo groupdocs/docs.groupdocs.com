@@ -24,7 +24,7 @@ Here are the steps to add annotation replies:
     
 *   Instantiate annotation object of desired type. Available annotation types are listed [here](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels);
     
-*   Assign [User](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models/user) object to Reply.User property (or by default will be “Guest”);
+*   Assign [User](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models/user) object to Reply.User property (or by default will be "Guest");
     
 *   Assign [Reply](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models/reply) object(s) to Replies collection of an annotation object created at previous steps;
     

@@ -22,7 +22,7 @@ The following are the steps to be followed:
 Following code snippet describes this case.
 
 ```csharp
-using (documentStream = File.OpenRead(“input.pdf”))
+using (documentStream = File.OpenRead("input.pdf"))
 using (Annotator annotator = new Annotator(documentStream))
 {
      	AreaAnnotation area = new AreaAnnotation()

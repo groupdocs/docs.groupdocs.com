@@ -14,15 +14,15 @@ hideChildren: False
 
 An ordinary employee is often faced with the need to compare two versions of the same document. For example, upon receipt of a signed version of an agreement, it is important to ensure that the counterparty has not made major changes affecting the terms of the transaction. And on the next round of approval of the draft document within the company, you only need to look at the changed sections so as not to waste time re-reading the entire text.  
   
-The “**Document Comparison**” solution automatically compares two versions and generates a report with convenient visualization of differences. As a result, labor costs for comparing documents are reduced and the likelihood of error due to the human factor is reduced.
+The "**Document Comparison**" solution automatically compares two versions and generates a report with convenient visualization of differences. As a result, labor costs for comparing documents are reduced and the likelihood of error due to the human factor is reduced.
 
 ## How to compare Microsoft Word documents
 
   
 As a result of creating a text file, we have to subject it to multiple changes. And it is noteworthy that some non-final version of the document may be agreed upon by the interested person. The final text file, which is agreed by another person, may differ significantly from the previously agreed upon original version. And such situations can be repeated every day. To partially automate the process of comparing files, you can use Microsoft Word resources
 
-*   First, open the Microsoft Word. Go to the “**Review**” tab, in the “**Comparison**” section, click “**Compare**”.
-*   “**Version comparison**” pop-up window appears in front of which you now need to load two types of documents: the original and the modified one.  
+*   First, open the Microsoft Word. Go to the "**Review**" tab, in the "**Comparison**" section, click "**Compare**".
+*   "**Version comparison**" pop-up window appears in front of which you now need to load two types of documents: the original and the modified one.  
       
 ![](images/comparison-net/how-to-compare-contracts-drafts-and-legal-documents_0.png)
     
@@ -34,10 +34,10 @@ As a result of creating a text file, we have to subject it to multiple changes. 
       
 ![](images/comparison-net/how-to-compare-contracts-drafts-and-legal-documents_2.png)
     
-*   In the highlighted square with the number “1”, all deleted and inserted words will appear. To the right, the zone with the number "2" Shows the document being compared with the presence in the text and the words deleted and inserted in their place.  
-    The workspace with the number “3” shows us the source document (before making changes), while the space with the number “4” shows us the changed document with the changes made.  
+*   In the highlighted square with the number "1", all deleted and inserted words will appear. To the right, the zone with the number "2" Shows the document being compared with the presence in the text and the words deleted and inserted in their place.  
+    The workspace with the number "3" shows us the source document (before making changes), while the space with the number "4" shows us the changed document with the changes made.  
     The remaining working field with the number "5" is a set of tools necessary for editing the final version of the document being developed.
-*   By pressing “**Accept**” / “**Reject**” for the first time, you select the word that you accept or reject, the second time you click, you will change to one of the proposed options.
+*   By pressing "**Accept**" / "**Reject**" for the first time, you select the word that you accept or reject, the second time you click, you will change to one of the proposed options.
 *   Red crossed out words are marked for deletion, while red underlined words will be replaced.  
     
 

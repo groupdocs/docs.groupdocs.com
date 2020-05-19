@@ -23,7 +23,7 @@ The following code samples demonstrate how to get document information.
 ## Get file info for the file from local disk
 
 ```csharp
-using (Comparer comparer = new Comparer(“source.docx”))
+using (Comparer comparer = new Comparer("source.docx"))
 {
 	IDocumentInfo info = comparer.Source.GetDocumentInfo();
     Console.WriteLine("\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes", info.FileType, info.PageCount, info.Size);
@@ -33,7 +33,7 @@ using (Comparer comparer = new Comparer(“source.docx”))
 ## Get file for the file from stream
 
 ```csharp
-using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”))
+using (Comparer comparer = new Comparer(File.OpenRead("source.docx"))
 {
 	IDocumentInfo info = comparer.Source.GetDocumentInfo();
     Console.WriteLine("\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes", info.FileType, info.PageCount, info.Size);

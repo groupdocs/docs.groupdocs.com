@@ -16,7 +16,7 @@ When the source document is located on the local disk [**GroupDocs.Annotation**]
 Following code snippet shows how to load documents from local disk.
 
 ```csharp
-using (Annotator annotator = new Annotator(“source.docx”))
+using (Annotator annotator = new Annotator("source.docx"))
 {
 	AreaAnnotation area = new AreaAnnotation()
        {

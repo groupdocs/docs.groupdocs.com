@@ -24,7 +24,7 @@ hideChildren: False
 
 ## Hide comments
 
-Like many other Microsoft Office applications PowerPoint provides “Comments” feature to simplify the presentation review. By default Comments pane will be present in a converted document. In case you want to hide comments set [HideComments](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/presentationloadoptions/properties/hidecomments) to *true *as shown in a code sample below:
+Like many other Microsoft Office applications PowerPoint provides "Comments" feature to simplify the presentation review. By default Comments pane will be present in a converted document. In case you want to hide comments set [HideComments](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/presentationloadoptions/properties/hidecomments) to *true *as shown in a code sample below:
 
 ```csharp
 Contracts.Func<LoadOptions> getLoadOptions = () => new PresentationLoadOptions

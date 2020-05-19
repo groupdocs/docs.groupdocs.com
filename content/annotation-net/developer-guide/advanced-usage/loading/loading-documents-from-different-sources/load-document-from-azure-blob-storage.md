@@ -24,7 +24,7 @@ using (Annotator annotator = new Annotator(DownloadFile(blobName)))
 		BackgroundColor = 65535,
 	};
 	annotator.Add(area);
-	annotator.Save(“result.pdf”);
+	annotator.Save("result.pdf");
 }
 
 public static Stream DownloadFile(string blobName)

@@ -24,10 +24,10 @@ The following code demonstrates how to save the range of document page:
 
 ```csharp
 // for this example input document ("input.pdf") must have at least 4 pages
-using (Annotator annotator = new Annotator(“input.pdf”))
+using (Annotator annotator = new Annotator("input.pdf"))
 {
 	//Result file will be contain only 3 pages (2, 3 and 4 page)
-	annotator.Save(“result.pdf”, new SaveOptions { FirstPage = 2, LastPage = 4 });
+	annotator.Save("result.pdf", new SaveOptions { FirstPage = 2, LastPage = 4 });
 }
 ```
 

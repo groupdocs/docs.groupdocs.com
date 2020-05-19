@@ -26,7 +26,7 @@ The following are the steps how to filter exported annotations to document:
 Following code snippet shows how to save only pages with specific annotation type
 
 ```csharp
-using (Annotator annotator = new Annotator(“input.pdf”))
+using (Annotator annotator = new Annotator("input.pdf"))
 {
 	AreaAnnotation area = new AreaAnnotation()
     {
@@ -43,7 +43,7 @@ using (Annotator annotator = new Annotator(“input.pdf”))
     annotator.Add(new List<AnnotationBase>() { area, ellipse });
 	
 	//Result file will contains only ellipse annotations.
-    annotator.Save(“result.pdf” new SaveOptions { AnnotationTypes = AnnotationType.Ellipse});
+    annotator.Save("result.pdf" new SaveOptions { AnnotationTypes = AnnotationType.Ellipse});
 }
 ```
 
@@ -52,10 +52,10 @@ If you need to add more than one annotation filter, you can using logical operat
 Following code snippet shows how to save pages with specific multiple annotation types
 
 ```csharp
-using (Annotator annotator = new Annotator(“input.pdf”))
+using (Annotator annotator = new Annotator("input.pdf"))
 {
 	...
-    annotator.Save(“result.pdf” new SaveOptions { AnnotationTypes = AnnotationType.Ellipse|AnnotationType.Watermark});
+    annotator.Save("result.pdf" new SaveOptions { AnnotationTypes = AnnotationType.Ellipse|AnnotationType.Watermark});
 }
 ```
 

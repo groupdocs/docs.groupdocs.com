@@ -157,15 +157,15 @@ Now GroupDocs.Editor supports bidirectional content: paragraphs, lists and table
 
 ### Export language metadata
 
-Now GroupDocs.Editor has a new option in the “WordToHtmlOptions” class: ExportLanguageInformation. By default it is disabled, but if enabled, GroupDocs.Editor extracts information about locale for each piece of the document and exports it to the resultant HTML markup in a form of “lang” HTML attributes. This is especially useful for multi-language documents, where different paragraphs or even text in one sentence may contain words on different languages.
+Now GroupDocs.Editor has a new option in the "WordToHtmlOptions" class: ExportLanguageInformation. By default it is disabled, but if enabled, GroupDocs.Editor extracts information about locale for each piece of the document and exports it to the resultant HTML markup in a form of "lang" HTML attributes. This is especially useful for multi-language documents, where different paragraphs or even text in one sentence may contain words on different languages.
 
 When saving such HTML-document back to the Words format, this metadata will be written to the output document. As a result, when opening in the MS Word or other software, all languages will be preserved and properly handled; otherwise, the MS Word tries to recognize the language by itself and often fails to do this 100% correct.
 
-This option also may be useful for some spell-checking plugins for HTML editors, which can handle multi-language documents through “lang” HTML attributes.
+This option also may be useful for some spell-checking plugins for HTML editors, which can handle multi-language documents through "lang" HTML attributes.
 
 ### Export fonts
 
-Now the “WordToHtmlOptions” class contains a new “ExtractFontOption” member, which allows to extract font regarding specified option. By default GroupDocs.Editor doesn’t extract any font resources from input Words document. But with this option it is possible to specify, which font resources should be extracted:
+Now the "WordToHtmlOptions" class contains a new "ExtractFontOption" member, which allows to extract font regarding specified option. By default GroupDocs.Editor doesn’t extract any font resources from input Words document. But with this option it is possible to specify, which font resources should be extracted:
 
 1.  Only those, which are embedded inside input document, regardless of what they are: custom or system. In other words, all font resources, which are embedded inside Words document, will be extracted.
 2.   Only embedded, but excluding the system. As in previous case, GroupDocs.Editor extracts embedded fonts. But at this time it analyzes each font and tries to figure out, is it a system font or not, and extracts font, only if it is not a system. GroupDocs.Editor obtains a list of system fonts by looking into Windows Registry and system folders on the machine, where it is launched. 
@@ -175,7 +175,7 @@ Along with this feature a support of different font types was also improved.
 
 ### Export to PDF
 
-In the previous version users were able to select the type of saved document only in range of Words format family (DOC, DOCX, RTF, ODT etc.). Now it is possible to save the document in the PDF format. In order to do this user needs to pass the “PdfSaveOptions” instance into the “EditorHandler.ToDocument” method. Users are also able to specify the password: if it is set, the output PDF will be password-protected and encoded with RC4 encryption algorithm.
+In the previous version users were able to select the type of saved document only in range of Words format family (DOC, DOCX, RTF, ODT etc.). Now it is possible to save the document in the PDF format. In order to do this user needs to pass the "PdfSaveOptions" instance into the "EditorHandler.ToDocument" method. Users are also able to specify the password: if it is set, the output PDF will be password-protected and encoded with RC4 encryption algorithm.
 
 ### Support of background textures and shadings
 
@@ -183,11 +183,11 @@ With Words format and MS Word it is possible to apply a texture of specified typ
 
 ### Support of SVG image format
 
-Previous version of GroupDocs.Editor supported only raster image formats: JPEG, PNG, BMP, GIF, ICO. Now it also supports a vector format SVG. As a result, the public API was slightly modified. All types, which represent raster formats, were moved from “GroupDocs.Editor.HtmlCss.Resources.Images” namespace into the “GroupDocs.Editor.HtmlCss.Resources.Images.Raster” namespace, while “SvgImage” class is located in the “GroupDocs.Editor.HtmlCss.Resources.Images.Vector” namespace.
+Previous version of GroupDocs.Editor supported only raster image formats: JPEG, PNG, BMP, GIF, ICO. Now it also supports a vector format SVG. As a result, the public API was slightly modified. All types, which represent raster formats, were moved from "GroupDocs.Editor.HtmlCss.Resources.Images" namespace into the "GroupDocs.Editor.HtmlCss.Resources.Images.Raster" namespace, while "SvgImage" class is located in the "GroupDocs.Editor.HtmlCss.Resources.Images.Vector" namespace.
 
 ### Other features and improvements
 
-A lot of smaller features and improvements also were implemented in the 17.9.0 version of GroupDocs.Editor. All of them are “internal”, i.e. they don’t affect the public API:
+A lot of smaller features and improvements also were implemented in the 17.9.0 version of GroupDocs.Editor. All of them are "internal", i.e. they don’t affect the public API:
 
 1.  Significantly improved footnote, endnote processing and preserving their state, when converting back from HTML to Words. 
 2.  Greatly improved the field processing and conversion algorithms. 
@@ -197,7 +197,7 @@ A lot of smaller features and improvements also were implemented in the 17.9.0 v
 
 ### Other public API changes
 
-Along with listed above, we replaced an interface “GroupDocs.Editor.HtmlCss.Resources.Fonts.IFontResource” with abstract class “GroupDocs.Editor.HtmlCss.Resources.Fonts.FontResourceBase”.
+Along with listed above, we replaced an interface "GroupDocs.Editor.HtmlCss.Resources.Fonts.IFontResource" with abstract class "GroupDocs.Editor.HtmlCss.Resources.Fonts.FontResourceBase".
 
 ### New demo project, which utilizes CKEditor
 

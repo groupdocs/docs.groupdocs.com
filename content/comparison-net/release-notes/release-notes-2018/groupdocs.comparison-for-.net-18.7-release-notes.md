@@ -72,7 +72,7 @@ Bug
 
 This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 18.7. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
 
-1.  Use “DiagramMasterSetting” to manage masters of the Comparison.Diagram.
+1.  Use "DiagramMasterSetting" to manage masters of the Comparison.Diagram.
     
     MasterPath = string;// - User set custom master path
     UseSourceMaster = bool;// - true – use master from source and target together, false – use default or custom master
@@ -83,7 +83,7 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     *   UseSourceMaster – false with MasterPath - use custom master path
     *   UseSourceMaster – true - use master from source and target documents together
     
-    Use “OriginalSize” to set document size when comparing image with different formats, this size will be used when document is converted to the picture.
+    Use "OriginalSize" to set document size when comparing image with different formats, this size will be used when document is converted to the picture.
     
     OriginalSize.Width;// int
     OriginalSize.Heigth;// int;

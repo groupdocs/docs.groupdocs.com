@@ -32,26 +32,26 @@ The following code sample shows how to accept/reject detected changes.
 ## Accept or Reject changes for documents stored at local disk
 
 ```csharp
-using (Comparer comparer = new Comparer(“source.docx”))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add(“target.docx”);
+	comparer.Add("target.docx");
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
     changes[0].ComparisonAction = ComparisonAction.Reject;
-    comparer.ApplyChanges(File.Create(“result.docx”), new SaveOptions(), new ApplyChangeOptions() { Changes = changes });
+    comparer.ApplyChanges(File.Create("result.docx"), new SaveOptions(), new ApplyChangeOptions() { Changes = changes });
 }
 ```
 
 ## Accept or Reject changes for documents provided as a stream
 
 ```csharp
-using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”)))
+using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
-	comparer.Add(File.OpenRead(“target.docx”));
+	comparer.Add(File.OpenRead("target.docx"));
     comparer.Compare(new SaveOptions(), new CompareOptions());
     ChangeInfo[] changes = comparer.GetChanges(new GetChangeOptions());
     changes[0].ComparisonAction = ComparisonAction.Reject;
-    comparer.ApplyChanges(File.Create(“result.docx”), new SaveOptions(), new ApplyChangeOptions() { Changes = changes });
+    comparer.ApplyChanges(File.Create("result.docx"), new SaveOptions(), new ApplyChangeOptions() { Changes = changes });
 }
 ```
 

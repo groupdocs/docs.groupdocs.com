@@ -26,7 +26,7 @@ The following code sample demonstrates how to get information about document and
 
 ```csharp
 //Get file info for the file from local disk
-using (Annotator annotator = new Annotator(“input.docx”))
+using (Annotator annotator = new Annotator("input.docx"))
 {
 	IDocumentInfo info = annotator.Document.GetDocumentInfo();
     int width = info.PagesInfo[0].Width;

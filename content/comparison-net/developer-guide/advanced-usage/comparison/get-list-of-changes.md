@@ -26,9 +26,9 @@ The following code sample shows demonstrates how to get list of all changes.
 ## Get list of changes from local disk
 
 ```csharp
-using (Comparer comparer = new Comparer(“source.docx”))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add(“target.docx);
+	comparer.Add("target.docx);
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
 }
@@ -37,9 +37,9 @@ using (Comparer comparer = new Comparer(“source.docx”))
 ## Get list of changes from stream
 
 ```csharp
-using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”)))
+using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
-	comparer.Add(File.OpenRead(“target.docx));
+	comparer.Add(File.OpenRead("target.docx));
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
 }

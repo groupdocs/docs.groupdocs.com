@@ -47,13 +47,13 @@ result.SaveDocument("result.docx");
 **New coding style**
 
 ```csharp
-using (Comparer comparer = new Comparer(“source.docx”))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-    comparer.Add(“target.docx”);
+    comparer.Add("target.docx");
     CompareOptions compareOptions = new CompareOptions()
     {
         DetectStyleChanges = true
     };
-	comparer.Compare(“result.docx”, compareOptions);
+	comparer.Compare("result.docx", compareOptions);
 }
 ```

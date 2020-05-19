@@ -24,7 +24,7 @@ Following code snippet shows how to save only annotated pages of document
 
 ```csharp
 // for this example input file ("input.pdf") must have at least 10 pages
-using (Annotator annotator = new Annotator(“input.pdf”))
+using (Annotator annotator = new Annotator("input.pdf"))
 {
 	AreaAnnotation area = new AreaAnnotation()
     {
@@ -40,7 +40,7 @@ using (Annotator annotator = new Annotator(“input.pdf”))
     };
     //Result file will be contain only two pages (1 and 9)
     annotator.Add(new List<AnnotationBase>() { area, ellipse });
-    annotator.Save(“result.pdf” new SaveOptions { OnlyAnnotatedPages = true});
+    annotator.Save("result.pdf" new SaveOptions { OnlyAnnotatedPages = true});
 }
 ```
 

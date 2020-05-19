@@ -59,11 +59,11 @@ The following code snippet demonstrates how compare documents with specific sens
 ## Compare documents with sensitivity adjustment
 
 ```csharp
-using (Comparer comparer = new Comparer(“source.docx”))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add(“target.docx”);
+	comparer.Add("target.docx");
     CompareOptions options = new CompareOptions() { SensitivityOfComparison = 100 };
-	comparer.Compare(“result.docx”, options);
+	comparer.Compare("result.docx", options);
 }
 ```
 

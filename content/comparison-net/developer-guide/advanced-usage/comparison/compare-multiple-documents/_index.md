@@ -30,24 +30,24 @@ The following code sample shows how to compare multiple documents with specific
 ## Compare multiple documents from local disk
 
 ```csharp
-using (Comparer comparer = new Comparer(“source.docx”)
+using (Comparer comparer = new Comparer("source.docx")
 {
-	comparer.Add(“target1.docx”);
-    comparer.Add(“target2.docx”);
-    comparer.Add(“target3.docx”);
-    comparer.Compare(“result.docx”);
+	comparer.Add("target1.docx");
+    comparer.Add("target2.docx");
+    comparer.Add("target3.docx");
+    comparer.Compare("result.docx");
 }
 ```
 
 ## Compare multiple documents from stream
 
 ```csharp
-using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”))
+using (Comparer comparer = new Comparer(File.OpenRead("source.docx"))
 {
-	comparer.Add(File.OpenRead(“target1.docx”));
-    comparer.Add(File.OpenRead(“target2.docx”));
-    comparer.Add(File.OpenRead(“target3.docx”));
-    comparer.Compare(File.Create(“result.docx”));
+	comparer.Add(File.OpenRead("target1.docx"));
+    comparer.Add(File.OpenRead("target2.docx"));
+    comparer.Add(File.OpenRead("target3.docx"));
+    comparer.Compare(File.Create("result.docx"));
 }
 ```
 

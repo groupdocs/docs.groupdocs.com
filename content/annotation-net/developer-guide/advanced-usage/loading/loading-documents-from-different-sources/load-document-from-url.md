@@ -26,7 +26,7 @@ using (Annotator annotator = new Annotator(GetRemoteFile(url)))
 		BackgroundColor = 65535,
 	};
 	annotator.Add(area);
-	annotator.Save(“result.pdf”);
+	annotator.Save("result.pdf");
 }
 
 private static Stream GetRemoteFile(string url)

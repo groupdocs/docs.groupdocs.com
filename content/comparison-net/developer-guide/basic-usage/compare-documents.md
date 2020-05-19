@@ -44,20 +44,20 @@ The following code snippet demonstrates the simplest case of documents compariso
 ## Compare documents from local file
 
 ```csharp
-using (Comparer comparer = new Comparer(“source.docx”))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add(“target.docx”);
-	comparer.Compare(“result.docx”);
+	comparer.Add("target.docx");
+	comparer.Compare("result.docx");
 }
 ```
 
 ## Compare documents from stream
 
 ```csharp
-using (Comparer comparer = new Comparer(File.OpenRead(“source.docx”)))
+using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
-	comparer.Add(File.OpenRead(“target.docx”));
-	comparer.Compare(File.Create(“result.docx”));
+	comparer.Add(File.OpenRead("target.docx"));
+	comparer.Compare(File.Create("result.docx"));
 }
 ```
 

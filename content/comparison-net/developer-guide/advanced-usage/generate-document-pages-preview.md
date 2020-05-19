@@ -58,11 +58,11 @@ The following code snippet demonstrates how to generate document previews.
 ## Get page previews for source document
 
 ```csharp
-using (Comparer comparer = new Comparer(“source.docx”))
+using (Comparer comparer = new Comparer("source.docx"))
 {
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine(“C:\”, $"result_{pageNumber}.png");
+    	var pagePath = Path.Combine("C:\", $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
@@ -75,12 +75,12 @@ using (Comparer comparer = new Comparer(“source.docx”))
 ## Get page previews for target document
 
 ```csharp
-using (Comparer comparer = new Comparer(“source.docx”))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add(“target.docx”);
+	comparer.Add("target.docx");
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine(“C:\”, $"result_{pageNumber}.png");
+    	var pagePath = Path.Combine("C:\", $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
@@ -92,14 +92,14 @@ using (Comparer comparer = new Comparer(“source.docx”))
 ## Get page previews for resultant document
 
 ```csharp
-using (Comparer comparer = new Comparer(“source.docx”))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add(“target.docx”);
-    comparer.Compare(“result.docx”);
-    Document document = new Document(File.OpenRead(“result.docx”));
+	comparer.Add("target.docx");
+    comparer.Compare("result.docx");
+    Document document = new Document(File.OpenRead("result.docx"));
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine(“C:\”, $"result_{pageNumber}.png");
+    	var pagePath = Path.Combine("C:\", $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
@@ -115,14 +115,14 @@ In some cases it may be useful to set specific image size during document pages 
 The following code snippet demonstrates how to set specific size for preview images.
 
 ```csharp
-using (Comparer comparer = new Comparer(“source.pptx”))
+using (Comparer comparer = new Comparer("source.pptx"))
 {
-	comparer.Add(“target.pptx”);
-    comparer.Compare(“result.pptx”);
-    Document document = new Document(File.OpenRead(“result.pptx”));
+	comparer.Add("target.pptx");
+    comparer.Compare("result.pptx");
+    Document document = new Document(File.OpenRead("result.pptx"));
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine(“C:\”, $"result_{pageNumber}.png");
+    	var pagePath = Path.Combine("C:\", $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
@@ -148,14 +148,14 @@ private void UserReleaseStreamMethod(int pageNumber, Stream stream)
     stream.Close();
 }
  
-using (Comparer comparer = new Comparer(“source.docx”))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add(“target.docx”);
-    comparer.Compare(“result.docx”);
-    Document document = new Document(File.OpenRead(“result.docx”));
+	comparer.Add("target.docx");
+    comparer.Compare("result.docx");
+    Document document = new Document(File.OpenRead("result.docx"));
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine(“C:\”, $"result_{pageNumber}.png");
+    	var pagePath = Path.Combine("C:\", $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;

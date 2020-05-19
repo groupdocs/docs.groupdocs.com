@@ -19,12 +19,12 @@ For loading target document located on the local disk you should use [Add](http
 Following code snippet shows how to load documents from local disk.
 
 ```csharp
-string sourcePath = “source.docx”;
+string sourcePath = "source.docx";
 using (Comparer comparer = new Comparer(sourcePath))
 {
-	string targetPath = “target.docx”;
-    comparer.Add(“targetPath”);
-    comparer.Compare(“result.docx”);
+	string targetPath = "target.docx";
+    comparer.Add("targetPath");
+    comparer.Compare("result.docx");
 }
 ```
 
