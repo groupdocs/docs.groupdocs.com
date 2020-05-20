@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 19.4 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 19.4
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 19.4{{< /alert >}}
 
 ## Major Features
 
@@ -58,21 +55,24 @@ New Feature
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.4. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.4. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  Public class **PdfMetadataSignature **was extended with new public property **DataEncryption **of type **IDataEncryption**
     
     **DataEncryption property**
     
+    ```csharp
     /// <summary>
     /// Gets or sets implementation of <see cref="IDataEncryption"/> interface to encode and decode signature Value properties.
     /// </summary>
     public IDataEncryption DataEncryption { get; set; }
+    ```
     
     and overloaded method **public T GetData<T>()**. These methods return object of type T over de-erialization and decryption from Metadata Value.
     
     **GetData<T>() method**
     
+    ```csharp
     /// <summary>
     /// Obtain object from Metadata Signature Value over de-serialization and decryption
     /// </summary>
@@ -87,11 +87,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// <param name="dataEncryption">Set custom data encryption implementation</param>
     /// <returns></returns>
     public T GetData<T>(IDataEncryption dataEncryption) where T : class
+    ```
     
     Following example demonstrates signing Pdf document with Metadata signature with value of  **DocumentSignature **object:
     
     **Sign Document with custom object**
     
+    ```csharp
     // setup key and passphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -100,8 +102,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -126,33 +128,37 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedMedataDataEncrypted.pdf" });
     Console.WriteLine("Signed file path is: " + signedPath); 
+    ```
     
     Class **DocumentSignature **written by user:
     
     **Example of custom class**
     
+    ```csharp
     public class DocumentSignature
     {
         // specify SkipSerialization attribute to skip this field on serialization
-        \[SkipSerialization\]
+        [SkipSerialization]
         public string Version { get; set; }
         // specify SkipSerialization attribute to skip this field on serialization
-        \[SkipSerialization\]
+        [SkipSerialization]
         public bool IsProcessed { get; set; }
-        \[Format("SignatureID")\]
+        [Format("SignatureID")]
         public string ID { get; set; }
-        \[Format("Author")\]
+        [Format("Author")]
         public string Author { get; set; }
-        \[Format("SignatureDate","yyyy-MM-dd")\]
+        [Format("SignatureDate","yyyy-MM-dd")]
         public DateTime Signed { get; set; }
-        \[Format("Factor", "N2")\]
+        [Format("Factor", "N2")]
         public decimal DataFactor { get; set; }
     }
+    ```
     
     Example how to retrieve signed Pdf file with **DocumentSignature **Metadata Value (see examples above how to sign Document with custom data objects)
     
     **Search for custom objects**
     
+    ```csharp
     // setup key and pasphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -161,8 +167,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-    	StoragePath = @"c:\\Aspose\\Test\\Storage",
-    	OutputPath = @"c:\\Aspose\\Test\\Output"
+    	StoragePath = @"c:\Aspose\Test\Storage",
+    	OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -184,3 +190,4 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     		}
     	}
     }
+    ```

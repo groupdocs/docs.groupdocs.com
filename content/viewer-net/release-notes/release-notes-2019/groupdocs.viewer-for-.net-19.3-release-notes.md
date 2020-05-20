@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 19.3 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 19.3.
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 19.3.{{< /alert >}}
 
 ## Major Features
 
@@ -90,7 +87,7 @@ Document corrupted exception
 
 Bug
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 19.3. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 19.3. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### GroupDocs.Viewer.Config.ViewerConfig
 
@@ -152,6 +149,7 @@ ArchiveOptions class allows specifying archive documents specific rendering opti
 
 #### public class PdfDocumentInfoContainer class has been added
 
+```csharp
 /// <summary>
 /// Represents a container for PDF document description.
 /// </summary>
@@ -165,6 +163,7 @@ public class PdfDocumentInfoContainer : DocumentInfoContainer
         get; internal set;
     }
 }
+```
 
 ####   
 Check if source PDF document has restriction on printing
@@ -204,10 +203,11 @@ ArchiveOptions class allows specifying archive documents specific rendering opti
 
 #### public enum PdfFilePermissions enumeration has been added
 
+```csharp
 /// <summary>
 /// PDF file permissions
 /// </summary>
-\[Flags\]
+[Flags]
 public enum PdfFilePermissions
 {
     /// <summary>
@@ -235,9 +235,11 @@ public enum PdfFilePermissions
     /// </summary>
     All = Printing | Modification | DataExtraction
 }
+```
 
 #### public class PdfFileSecurity class has been added
 
+```csharp
 /// <summary>
 /// Enables to specify owner password, user password and PDF file permissions
 /// </summary>
@@ -275,9 +277,11 @@ public class PdfFileSecurity
         PdfFilePermissions = pdfFilePermissions;
     }
 }
+```
 
 #### PdfFileSecurity PdfFileSecurity { get; set; } property has been added to PdfFileOptions class
 
+```csharp
 /// <summary>
 /// Enables to specify owner password, user password and PDF file permissions
 /// </summary>
@@ -293,6 +297,7 @@ public class PdfFileSecurity
 /// </code>
 /// </example>
 public PdfFileSecurity PdfFileSecurity { get; set; }
+```
 
 #### Specify owner password, user password and permissions when rendering into PDF
 

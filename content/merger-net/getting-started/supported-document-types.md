@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Supported Document Types
-
-
 The following table indicates the file formats that GroupDocs.Merger can work with.
 
 Format

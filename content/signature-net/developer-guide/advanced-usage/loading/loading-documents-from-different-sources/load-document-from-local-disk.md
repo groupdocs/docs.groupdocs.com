@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Load document from local disk
-
 When document is located on the local disk [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) enables you to work with document over the file [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature)class constructor. [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) instance will open file for reading only when any method of [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) will be called.
 
 Following code snippet shows how to load document from local disk.

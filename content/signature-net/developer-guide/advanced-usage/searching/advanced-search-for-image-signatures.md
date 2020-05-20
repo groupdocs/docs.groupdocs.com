@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Advanced search for Image signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [ImageSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/imagesearchoptions) class to specify different options to search for Image Signatures
 
 *   bool ReturnContent property allows to return in the image signature its content;
@@ -33,6 +30,7 @@ Here are the steps to search for image signatures within the document with Group
 
 This example shows how to make advanced search for Image signature in the document and further image signatures analyzes with saving image content
 
+```csharp
 using (Signature signature = new Signature("sampleSignaed.docx"))
 {
     // setup search options
@@ -49,7 +47,7 @@ using (Signature signature = new Signature("sampleSignaed.docx"))
     };
     // search document
     List<ImageSignature> signatures = signature.Search<ImageSignature>(searchOptions);
-    Console.WriteLine($"\\nSource document \['{fileName}'\] contains following image signature(s).");
+    Console.WriteLine($"\nSource document ['{fileName}'] contains following image signature(s).");
     // output signatures
     foreach (ImageSignature imageSignature in signatures)
     {
@@ -75,6 +73,7 @@ using (Signature signature = new Signature("sampleSignaed.docx"))
         i++;
     }
 }
+```
 
 ## More resources
 

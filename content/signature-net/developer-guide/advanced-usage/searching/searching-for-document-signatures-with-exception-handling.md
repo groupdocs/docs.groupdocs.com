@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Searching for document signatures with exception handling
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides different error messages due to validation issues, missing required data, files etc. For handling these exceptions class [GroupDocsSignatureException](https://apireference.groupdocs.com/net/signature/groupdocs.signature/groupdocssignatureexception) should be used.
 
 Here are the steps to handle exceptions from GroupDocs.Signature while searching for document signatures:
@@ -23,6 +20,7 @@ Here are the steps to handle exceptions from GroupDocs.Signature while searching
 
 This example shows how to handle GroupDocs.Signature exceptions.
 
+```csharp
 try
 {
     // dont specify Password on protected document
@@ -44,6 +42,7 @@ catch (Exception ex)
 {
     Console.WriteLine("System Exception: " + ex.Message);
 }
+```
 
 ## More resources
 

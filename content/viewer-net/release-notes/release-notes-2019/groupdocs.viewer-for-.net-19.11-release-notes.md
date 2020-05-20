@@ -9,16 +9,13 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 19.11 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 19.11
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 19.11{{< /alert >}}
 
 ## Major Features
 
 There are 5 improvements and bug-fixes in this release.
 
-In this version, we have changed the unique identifier that OS uses to identify the application installed with an MSI package. Please manually uninstall the previous installation of GropuDocs.Viewer for .NET before installing GroupDocs.Viewer for .NET 19.11.
+{{< alert style="danger" >}}In this version, we have changed the unique identifier that OS uses to identify the application installed with an MSI package. Please manually uninstall the previous installation of GropuDocs.Viewer for .NET before installing GroupDocs.Viewer for .NET 19.11.{{< /alert >}}
 
 ## Full List of Issues Covering all Changes in this Release
 

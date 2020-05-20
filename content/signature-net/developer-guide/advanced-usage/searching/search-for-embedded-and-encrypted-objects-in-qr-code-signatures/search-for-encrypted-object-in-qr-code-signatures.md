@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for encrypted object in QR-code signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to search for embedded data objects in QR-code signatures ([QrCodeSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/qrcodesignature)) with standard or custom encryption. Standard encryption is implemented over class [SymmetricEncryption](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricencryption) class. Creation of this object expects 3 arguments like encryption algorithm enumeration [SymmetricAlgorithmType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricalgorithmtype)with one of following values ([DES, TripleDES, RC2, Rijndael](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricalgorithmtype)), string value key and string value salt.
 
 Here are the steps to search for embedded objects in QR-code with standard encryption with GroupDocs.Signature:
@@ -27,24 +24,27 @@ Here are the steps to search for embedded objects in QR-code with standard encry
 
 ## Definition of class that was embedded into into QR-Code signature
 
+```csharp
 public class DocumentSignatureData
 {
-    \[Format("SignID")\]
+    [Format("SignID")]
     public string ID { get; set; }
-    \[Format("SAuth")\]
+    [Format("SAuth")]
     public string Author { get; set; }
-    \[Format("SDate", "yyyy-MM-dd")\]
+    [Format("SDate", "yyyy-MM-dd")]
     public DateTime Signed { get; set; }
-    \[Format("SDFact", "N2")\]
+    [Format("SDFact", "N2")]
     public decimal DataFactor { get; set; }
-    \[SkipSerialization\]
+    [SkipSerialization]
     public string Comments { get; set; }
 }
+```
 
 ## Searching for embedded object in QR-code signature
 
 This example shows how to search for embedded object in QR-code signatures.
 
+```csharp
 using (Signature signature = new Signature("QRCodeEncryptedObject.pdf"))
 {
     // setup key and pasphrase
@@ -65,18 +65,19 @@ using (Signature signature = new Signature("QRCodeEncryptedObject.pdf"))
     };
     // search for signatures in document
     List<QrCodeSignature> signatures = signature.Search<QrCodeSignature>(options);
-    Console.WriteLine("\\nSource document contains following signatures.");
+    Console.WriteLine("\nSource document contains following signatures.");
     foreach (var qrCodeSignature in signatures)
     {
         Console.WriteLine("QRCode signature found at page {0} with type {1}.", qrCodeSignature.PageNumber,qrCodeSignature.EncodeType);
         DocumentSignatureData documentSignatureData = qrCodeSignature.GetData<DocumentSignatureData>();
         if(documentSignatureData != null)
         {
-            Console.WriteLine("QRCode signature has DocumentSignatureData object:\\n ID = {0}, Author = {1}, Signed = {2}, DataFactor {3}",
+            Console.WriteLine("QRCode signature has DocumentSignatureData object:\n ID = {0}, Author = {1}, Signed = {2}, DataFactor {3}",
                 documentSignatureData.ID, documentSignatureData.Author, documentSignatureData.Signed.ToShortDateString(), documentSignatureData.DataFactor);
         }
     }
 }
+```
 
 ## More resources
 

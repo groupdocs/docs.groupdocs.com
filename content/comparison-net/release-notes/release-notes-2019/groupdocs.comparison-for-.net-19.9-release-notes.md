@@ -9,16 +9,11 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Comparison for .NET 19.9 Release Notes
-
-This page contains release notes for GroupDocs.Comparison for .NET 19.9
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for .NET 19.9{{< /alert >}}
 
 ## Major Features
 
-Breaking changes
-
-In this version we're introducing new public API which was designed to be simple and easy to use. For more details about new API please check **[Public Docs](Home.html)** section. The legacy API have been moved into **Legacy** namespace so after update to this version it is required to make project-wide replacement of namespace usages from **GroupDocs.Comparison.** to **GroupDocs.Comparison.Legacy.** to resolve build issues.
+{{< alert style="danger" >}}In this version we're introducing new public API which was designed to be simple and easy to use. For more details about new API please check Public Docs section. The legacy API have been moved into Legacy namespace so after update to this version it is required to make project-wide replacement of namespace usages from GroupDocs.Comparison. to GroupDocs.Comparison.Legacy. to resolve build issues.{{< /alert >}}
 
 # Public API and Backward Incompatible Change
 

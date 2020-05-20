@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign document with QR-code signature - advanced
-
-
 # Sign document with QR-code signature and additional settings
 
 GroupDocs.Signature provides [QrCodeSignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/qrcodesignoptions) class to specify additional options for QR-code signature with following signature appearance
@@ -36,6 +32,7 @@ Here are the steps to add QR-code signature into document with GroupDocs.Signatu
 
 This example shows how to add Barcode signature to document. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
  using (Signature signature = new Signature("sample.docx"))
  {
      // create QRCode option with predefined QRCode text
@@ -77,13 +74,14 @@ This example shows how to add Barcode signature to document. See [SignResult](
      };
      // sign document to file
      SignResult signResult = signature.Sign("signed.docx", options);
-     Console.WriteLine("\\nList of newly created signatures:");
+     Console.WriteLine("\nList of newly created signatures:");
      int number = 1;
      foreach (BaseSignature temp in signResult.Succeeded)
      {
          Console.WriteLine($"Signature #{number++}: Type: {temp.SignatureType} Id:{temp.SignatureId}, Location: {temp.Left}x{temp.Top}. Size: {temp.Width}x{temp.Height}");
      }
  }
+```
 
 ## More resources
 

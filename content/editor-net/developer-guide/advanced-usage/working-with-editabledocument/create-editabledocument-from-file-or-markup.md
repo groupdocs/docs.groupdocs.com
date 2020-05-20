@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Create EditableDocument from file or markup
-
 > This demonstration shows how to create instance of the EditableDocument class from HTML files from disk or from HTML markup with resources
 
 #### Introduction

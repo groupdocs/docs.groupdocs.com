@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Verify Digital signatures in the document
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [DigitalVerifyOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/digitalverifyoptions) class to specify different options for digital signatures verification.
 
 Here are the steps to verify Digital signature within the document with GroupDocs.Signature:
@@ -26,6 +23,7 @@ Here are the steps to verify Digital signature within the document with GroupDoc
 
 This example shows how to verify Digital signature in the document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     DigitalVerifyOptions options = new DigitalVerifyOptions("certificate.pfx")
@@ -36,13 +34,14 @@ using (Signature signature = new Signature("sample.pdf"))
     VerificationResult result = signature.Verify(options);
     if (result.IsValid)
     {
-        Console.WriteLine("\\nDocument was verified successfully!");
+        Console.WriteLine("\nDocument was verified successfully!");
     }
     else
     {
-        Console.WriteLine("\\nDocument failed verification process.");
+        Console.WriteLine("\nDocument failed verification process.");
     }
 }
+```
 
 ## More resources
 

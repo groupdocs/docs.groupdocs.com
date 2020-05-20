@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Load password-protected document
-
-
 # Load password-protected document
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) supports processing documents that are protected with a password.

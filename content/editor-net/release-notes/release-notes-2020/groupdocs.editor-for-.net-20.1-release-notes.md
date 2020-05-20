@@ -9,14 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Editor for .NET 20.1 Release Notes
-
-This page contains release notes for GroupDocs.Editor for .NET 20.1
-
-Breaking changes
-
-In this version we will remove Legacy API of GroupDocs.Editor. So from version 20.1 **GroupDocs.Editor.Legacy. **does not exist anymore
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Editor for .NET 20.1{{< /alert >}}{{< alert style="danger" >}}In this version we will remove Legacy API of GroupDocs.Editor. So from version 20.1 GroupDocs.Editor.Legacy. does not exist anymore{{< /alert >}}
 
 ## Major Features
 
@@ -101,7 +94,7 @@ Bug
 
 # Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Editor for .NET 20.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Editor for .NET 20.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **GroupDocs.Editor.Legacy**
     

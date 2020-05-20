@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Viewing
-
 GroupDocs.Viewer allows you to render documents with a huge set of additional options to customize output document appearance. For more details please refer to the following guides:
 
 ## More resources

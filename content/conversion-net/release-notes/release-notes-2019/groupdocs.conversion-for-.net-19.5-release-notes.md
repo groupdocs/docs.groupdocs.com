@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion for .NET 19.5 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 19.5
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 19.5{{< /alert >}}
 
 ## Major Features
 
@@ -74,12 +71,13 @@ Implement conversion from Pot
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 19.5. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 19.5. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **Convert to Emf**
     
     **Usage**
     
+    ```csharp
     ...
     var config = new ConversionConfig();
     var conversionHandler = new ConversionHandler(config);
@@ -90,11 +88,13 @@ This section lists public API changes that were introduced in GroupDocs.Conversi
     var convertedDocument = conversionHandler.Convert(source, saveOptions);
     convertedDocument.Save("result");
     ...
+    ```
     
 2.  **Convert to Wmf**
     
     **Usage**
     
+    ```csharp
     ...
     var config = new ConversionConfig();
     var conversionHandler = new ConversionHandler(config);
@@ -105,13 +105,16 @@ This section lists public API changes that were introduced in GroupDocs.Conversi
     var convertedDocument = conversionHandler.Convert(source, saveOptions);
     convertedDocument.Save("result");
     ...
+    ```
     
 3.  **Property JpegQuality from ImageSaveOptions class is removed**  
     Replaced by ImageSaveOptions.JpegOptions.Quality property
 4.  **Set Metered license**  
     Alternatively to license from file, you may set Metered license
     
+    ```csharp
     string PublicKey = ""; // Your public license key
     string PrivateKey = ""; // Your private license key
     Metered metered = new Metered();
     metered.SetMeteredKey(PublicKey, PrivateKey);
+    ```

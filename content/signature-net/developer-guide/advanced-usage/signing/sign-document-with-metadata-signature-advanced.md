@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign document with Metadata signature - advanced
-
-
 # Sign document with Metadata signature (advanced)
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to secure Metadata signatures, same as embed into it data objects. These feature are implemented over data serialization and encryption. Also there is ability to provide custom data serialization and encryption to secure your signature data the most. Here are feature summary

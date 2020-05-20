@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Merge Word documents
-
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** provides an easy way to merge Microsoft Word documents of DOC, DOCX, DOCM, DOT, DOTX, DOTM, RTF formats and Open Document formats like ODT, OTT etc. It takes just single line of code to append one document to another preserving all content - page setup, headers and footers, formatting, styles and other content. There is no third-party applications required (like Microsoft Word and Open Office).   
 GroupDocs.Merger API provides different overloads of **[Join](https://apireference.groupdocs.com/net/merger/groupdocs.merger/merger/methods/join/index)** method to combine presentations with the source document loaded into **[Merger](https://apireference.groupdocs.com/net/merger/groupdocs.merger/merger)** object. 
 

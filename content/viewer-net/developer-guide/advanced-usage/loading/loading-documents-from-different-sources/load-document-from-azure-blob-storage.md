@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Load document from Azure Blob Storage
-
 Following example demonstrates how to render document from Azure Blob Storage.
 
 ```csharp

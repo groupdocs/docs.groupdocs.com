@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign document with Form Field signature - advanced
-
-
 # Sign document with various Form Field signatures and advanced options
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [FormFieldSignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/formfieldsignoptions) class to specify different options for Form Field signature. The Form Field signature is special document predefined input field control with unique name inside the document content that expects some input from user.
@@ -55,6 +51,7 @@ Following examples show different scenarios of using form fields on document pag
 
 This example shows how to add various Form Field signature to document. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     List<SignOptions> listOptions = new List<SignOptions>();
@@ -99,11 +96,13 @@ using (Signature signature = new Signature("sample.pdf"))
     signature.Sign("signedSample.pdf", listOptions);
 
 }
+```
 
 ## Sign PDF document with Combobox Form Field signature  
 
 This example shows how to add combo box Form Field signature to PDF document. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)  
 
+```csharp
 // initialize Signature instance
 using (Signature signature = new Signature(filePath))
 {
@@ -122,11 +121,13 @@ using (Signature signature = new Signature(filePath))
     // sign document to file
     SignResult signResult = signature.Sign("sampleSigned.pdf", options);
 }
+```
 
 ## Sign PDF document with Radio buttons Form Field signature  
 
 This example shows how to add radio buttons Form Field signature to PDF document. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)  
 
+```csharp
 // initialize Signature instance
 using (Signature signature = new Signature(filePath))
 {
@@ -145,6 +146,7 @@ using (Signature signature = new Signature(filePath))
     // sign document to file
     SignResult signResult = signature.Sign("sampleSigned.pdf", options );
 }
+```
 
 ## More resources
 

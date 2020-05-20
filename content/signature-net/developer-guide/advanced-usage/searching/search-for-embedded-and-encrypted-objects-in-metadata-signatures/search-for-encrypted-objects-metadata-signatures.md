@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for encrypted objects Metadata signatures
-
-
 # Search for encrypted objects in Metadata signatures
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to search for embedded objects in Metadata signatures with standard or custom encryption. Standard encryption is implemented over class [SymmetricEncryption](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricencryption) class. Creation of this object expects 3 arguments like encryption algorithm enumeration [SymmetricAlgorithmType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricalgorithmtype) with one of following values (DES, TripleDES, RC2, Rijndael), string value key and string value salt.
@@ -33,24 +29,27 @@ Here are the steps to search for embedded Metadata signature with standard encry
 
 This example shows how to define custom class with serialization and encryption properties and setup Format attributes for properties.
 
+```csharp
 public class DocumentSignatureData
 {
-    \[Format("SignID")\]
+    [Format("SignID")]
     public string ID { get; set; }
-    \[Format("SAuth")\]
+    [Format("SAuth")]
     public string Author { get; set; }
-    \[Format("SDate", "yyyy-MM-dd")\]
+    [Format("SDate", "yyyy-MM-dd")]
     public DateTime Signed { get; set; }
-    \[Format("SDFact", "N2")\]
+    [Format("SDFact", "N2")]
     public decimal DataFactor { get; set; }
-    \[SkipSerialization\]
+    [SkipSerialization]
     public string Comments { get; set; }
 }
+```
 
 ## Search for embedded object in Metadata signatures
 
 This example shows how to search for embedded objects in Metadata signatures.
 
+```csharp
 using (Signature signature = new Signature("MetadataEncryptedObject.docx"))
 {
     // setup key and passphrase
@@ -64,7 +63,7 @@ using (Signature signature = new Signature("MetadataEncryptedObject.docx"))
     };
     // search for signatures in document
     List<WordProcessingMetadataSignature> signatures = signature.Search<WordProcessingMetadataSignature>(options);
-    Console.WriteLine("\\nSource document contains following signatures.");
+    Console.WriteLine("\nSource document contains following signatures.");
     // get required metadata signatures
     WordProcessingMetadataSignature mdSignature = signatures.FirstOrDefault(p => p.Name == "Signature");
     if (mdSignature != null)
@@ -72,7 +71,7 @@ using (Signature signature = new Signature("MetadataEncryptedObject.docx"))
         DocumentSignatureData documentSignatureData = mdSignature.GetData<DocumentSignatureData>();
         if (documentSignatureData != null)
         {
-            Console.WriteLine("Signature has DocumentSignatureData object:\\n ID = {0}, Author = {1}, Signed = {2}, DataFactor {3}",
+            Console.WriteLine("Signature has DocumentSignatureData object:\n ID = {0}, Author = {1}, Signed = {2}, DataFactor {3}",
                 documentSignatureData.ID, documentSignatureData.Author, documentSignatureData.Signed.ToShortDateString(), documentSignatureData.DataFactor);
         }
     }
@@ -89,6 +88,7 @@ using (Signature signature = new Signature("MetadataEncryptedObject.docx"))
         Console.WriteLine("Metadata signature found. Name : {0}. Value: {1}", mdDocId.Name, mdDocId.GetData<string>());
     }
 }
+```
 
 ## More resources
 

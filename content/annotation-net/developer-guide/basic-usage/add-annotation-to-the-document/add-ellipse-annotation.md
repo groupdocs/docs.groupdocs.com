@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add ellipse annotation
-
 **Ellipse annotation** draws elliptic annotation in a document page like shown at the picture below.
 
 ![](images/annotation-net/add-ellipse-annotation_0.png)

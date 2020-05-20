@@ -9,12 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load Note document with options
-
-
-## Load Note document with options
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) provides [NoteLoadOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/noteloadoptions)to give you control over how source Note document will be processed. The following options could be set:
 
 *   **[DefaultFont](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/noteloadoptions/properties/defaultfont) **\- default font for Note document. The specified font will be used if a font is missing

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Load document from Azure Blob Storage
-
 Following example demonstrates how to annotate document from Azure Blob Storage.
 
 ```csharp
@@ -53,7 +50,7 @@ private static CloudBlobContainer GetContainer()
 }
 ```
 
-NOTE: Package WindowsAzure.Storage version 9.3.3 should be referenced
+{{< alert style="info" >}}NOTE: Package WindowsAzure.Storage version 9.3.3 should be referenced{{< /alert >}}
 
 ## More resources
 

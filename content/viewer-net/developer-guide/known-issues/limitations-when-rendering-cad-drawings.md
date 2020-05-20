@@ -9,14 +9,11 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Limitations when rendering CAD drawings
-
-
 # Rendering CAD drawings requires adding assembly binding redirect 
 
 When rendering CAD drawings using **GroupDocs.Viewer **it is required to add the following [assembly binding redirect](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/redirect-assembly-versions) to your project **app.config **or **web.config **files. The next example shows the required assembly binding redirect when rendering CAD drawings with GroupDocs.Viewer for .NET 20.3.
 
+```csharp
 <configuration>
     <!--...-->
     <runtime>
@@ -31,6 +28,7 @@ When rendering CAD drawings using **GroupDocs.Viewer **it is required to add 
         </assemblyBinding>
     </runtime>
 </configuration>
+```
 
 ## More resources
 

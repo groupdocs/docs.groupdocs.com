@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add strikeout annotation
-
 **Strikeout** annotation marks text fragment with a strikethrough styling like shown at the picture below.
 
 ![](images/annotation-net/add-strikeout-annotation_0.png)

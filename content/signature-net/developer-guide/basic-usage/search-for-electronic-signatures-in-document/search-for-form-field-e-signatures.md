@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for Form Field e-signatures
-
 To search for Form Fields e-signatures inside document you should pass instance of [FormFieldSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/formfieldsearchoptions) class to a Search method of [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net).  
 Here are the guide for searching Form Field e-signatures :
 
@@ -24,6 +21,7 @@ Here are the guide for searching Form Field e-signatures :
 
 This example shows how to search for Form Field signatures in the document.
 
+```csharp
 using (Signature signature = new Signature("signed.pdf"))
 {
     // search for signatures in document
@@ -34,6 +32,7 @@ using (Signature signature = new Signature("signed.pdf"))
         Console.WriteLine("FormField signature found. Name : {0}. Value: {1}", formFieldSignature.Name, formFieldSignature.Value);
     }
 }
+```
 
 ## More resources
 

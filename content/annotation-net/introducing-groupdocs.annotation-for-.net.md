@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Introducing GroupDocs.Annotation for .NET
-
 ## What Is GroupDocs.Annotation?
 
 GroupDocs.Annotation is a lightweight and powerful library which allows developers to seamlessly enhance their applications with the capability to annotate documents from wide range of [supported formats](https://docs.groupdocs.com/display/annotationnet/Supported+Document+Formats).   

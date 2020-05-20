@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
 # Rendering E-Mail Messages
 
-# Rendering E-Mail Messages
-
-This page describes specific use cases of E-Mail Messages rendering
+{{< alert style="info" >}}This page describes specific use cases of E-Mail Messages rendering{{< /alert >}}

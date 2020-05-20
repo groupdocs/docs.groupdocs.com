@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Saving
-
 # Saving
 
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides different ways of saving resultant document -  save with password, select document metadata source etc.

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 18.6 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 18.6
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 18.6{{< /alert >}}
 
 ## Major Features
 
@@ -119,7 +116,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  Introduced ability to locate Signatures for Cells documents with pixel coordinates for all signature types. Cells signature options for all types support both properties to specify horizontal coordinate **ColumnNumber** and **Left**. These properties are mutually exclusive. This means when **ColumnNumber** is set to value the **Left** property will be reset to 0. When **Left** property is set the **ColumnNumber** property will be reset to zero value. Same behavior implemented for **RowNumber** and **Top** properties.
     
@@ -127,13 +124,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Setting top and left of Cells Text signature**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -145,21 +143,23 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
          options.Left = 22;
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", options,
-             new SaveOptions { OutputType = OutputType.String, OutputFileName = "OtherOperations\_CellsTopLeftPixels" });
+             new SaveOptions { OutputType = OutputType.String, OutputFileName = "OtherOperations_CellsTopLeftPixels" });
          Console.WriteLine("Signed file path is: " + signedPath);
     }
+    ```
     
     Following example demonstrates using **Top**  and **Left**  properties to set a QR-code signature position in pixels on a Cells worksheet.
     
     **C#**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -171,23 +171,25 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
          options.Left = 22;
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", options,
-             new SaveOptions { OutputType = OutputType.String, OutputFileName = "OtherOperations\_CellsTopLeftPixels" });
+             new SaveOptions { OutputType = OutputType.String, OutputFileName = "OtherOperations_CellsTopLeftPixels" });
          Console.WriteLine("Signed file path is: " + signedPath);
     }
+    ```
     
     Following example demonstrates using **Top**  and **Left**  properties to set a Digital signature position in pixels on a Cells worksheet.
     
     **C#**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output",
-             ImagesPath = @"c:\\Aspose\\Test\\Images",
-             CertificatesPath = @"c:\\Aspose\\Test\\Certificates"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output",
+             ImagesPath = @"c:\Aspose\Test\Images",
+             CertificatesPath = @"c:\Aspose\Test\Certificates"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -200,22 +202,24 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
          options.Left = 22;
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", options,
-             new SaveOptions { OutputType = OutputType.String, OutputFileName = "OtherOperations\_CellsTopLeftPixels" });
+             new SaveOptions { OutputType = OutputType.String, OutputFileName = "OtherOperations_CellsTopLeftPixels" });
          Console.WriteLine("Signed file path is: " + signedPath);
     }
+    ```
     
     Following example demonstrates using **Top**  and **Left**  properties to set an Image signature position in pixels on a Cells worksheet.
     
     **C#**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             ImagesPath = @"c:\\Aspose\\Test\\Images",
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             ImagesPath = @"c:\Aspose\Test\Images",
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -227,21 +231,23 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
          options.Left = 22;
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", options,
-             new SaveOptions { OutputType = OutputType.String, OutputFileName = "OtherOperations\_CellsTopLeftPixels" });
+             new SaveOptions { OutputType = OutputType.String, OutputFileName = "OtherOperations_CellsTopLeftPixels" });
          Console.WriteLine("Signed file path is: " + signedPath);
     }
+    ```
     
     Following example demonstrates using **Top**  and **Left**  properties to set a Text signature position in pixels on a Cells worksheet.
     
     **C#**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -253,21 +259,23 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
          options.Left = 22;
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", options,
-             new SaveOptions{OutputType = OutputType.String,OutputFileName = "OtherOperations\_CellsTopLeftPixels" });
+             new SaveOptions{OutputType = OutputType.String,OutputFileName = "OtherOperations_CellsTopLeftPixels" });
          Console.WriteLine("Signed file path is: " + signedPath);
     }
+    ```
     
     Following example demonstrates using **Top**  and **Left**  properties to set a Stamp signature position in pixels on a Cells worksheet.
     
     **C#**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -300,15 +308,17 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
          options.InnerLines.Add(line1);
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", options,
-             new SaveOptions { OutputType = OutputType.String, OutputFileName = "OtherOperations\_CellsTopLeftPixels" });
+             new SaveOptions { OutputType = OutputType.String, OutputFileName = "OtherOperations_CellsTopLeftPixels" });
          Console.WriteLine("Signed file path is: " + signedPath);
     }
+    ```
     
 2.  Implemented ability to align Text inside Text Signature area for all supported Document types.  
     New enumeration types **TextHorizontalAlignment** and **TextVerticalAlignment** were added to provide ability to specify Text alignment.
     
     **Text Horizontal Alignment enumeration**
     
+    ```csharp
     /// <summary>
     /// Specifies text horizontal alignment inside a Signature.
     /// </summary>
@@ -327,9 +337,11 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         Right = 3
     }
+    ```
     
     **Text Vertical Alignment enumeration**
     
+    ```csharp
     /// <summary>
     /// Specifies text vertical alignment inside a Signature.
     /// </summary>
@@ -348,11 +360,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         Bottom = 3
     }
+    ```
     
     New public interface **ITextAlignment **defines alignment of Text inside Signature area.
     
     **ITextAlignment**
     
+    ```csharp
     /// <summary>
     /// Interface defines Alignment properties for text on Text Signatures.
     /// </summary>
@@ -368,6 +382,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         TextVerticalAlignment TextVerticalAlignment
     }
+    ```
     
     Document Text Signature Options (**PdfTextSignOptions**, **CellsSignTextOptions**, **SlidesSignTextOptions**, **WordsSignTextOptions**) implement this interface with these properties **TextHorizontalAlignment** and **TextVerticalAlignment**
     
@@ -375,13 +390,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Setting text alignment in text signature**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
      
          // instantiating the signature handler
@@ -400,20 +416,22 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", signOptions, 
-             new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells\_Documents\_Simple"});
+             new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells_Documents_Simple"});
     }
+    ```
     
     Following example demonstrates using **TextHorizontalAlignment**  and **TextVerticalAlignment**  to set text alignment in text signature for Pdf document.
     
     **C#**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -429,21 +447,23 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
          signOptions.TextVerticalAlignment = TextVerticalAlignment.Center;
          // sign document
          string signedPath = handler.Sign<string>("test.pdf", signOptions,
-             new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf\_TextSignatureAsImage" });
+             new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf_TextSignatureAsImage" });
          Console.WriteLine("Signed file path is: " + signedPath);
     }
+    ```
     
     Following example demonstrates using **TextHorizontalAlignment**  and **TextVerticalAlignment**  to set text alignment in text signature for Slides document.
     
     **C#**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -456,21 +476,23 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
          signOptions.TextVerticalAlignment = TextVerticalAlignment.Center;
          // sign document
          string signedPath = handler.Sign<string>("test.pptx", signOptions,
-             new SaveOptions { OutputType = OutputType.String, OutputFileName = "Slides\_Documents\_Simple" });
+             new SaveOptions { OutputType = OutputType.String, OutputFileName = "Slides_Documents_Simple" });
          Console.WriteLine("Signed file path is: " + signedPath);
     }
+    ```
     
     Following example demonstrates using **TextHorizontalAlignment**  and **TextVerticalAlignment**  to set text alignment in text signature for Words document.
     
     **C#**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -485,28 +507,32 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
          signOptions.TextVerticalAlignment = TextVerticalAlignment.Center;
          // sign document
          string signedPath = handler.Sign<string>("test.docx", signOptions,
-             new SaveOptions { OutputType = OutputType.String, OutputFileName = "Words\_TextSignatureAsImage" });
+             new SaveOptions { OutputType = OutputType.String, OutputFileName = "Words_TextSignatureAsImage" });
          Console.WriteLine("Signed file path is: " + signedPath);
     }
+    ```
     
 3.  QR-Code Verification process was improved to use QR-Code encode type as optional not required property. Setting up **QRCodeVerifyOptions** will no longer require **EncodeType** property to be setup.
     
     **VerifyQRCodeOptions EncodeType**
     
+    ```csharp
     /// <summary>
     /// Get or set QR-code Type verification. This property is optional.
     /// </summary>
     public QRCodeType EncodeType { get; set; }
+    ```
     
     Following example demonstrates using of verification options without **EncodeType** property was set.
     
     **Verification of PDF Document without EncodeType**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -517,12 +543,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     //verify document
     VerificationResult result = handler.Verify("SignedQRCode.pdf", verifyOptions);
     Console.WriteLine("Verification result is: " + result.IsValid);
+    ```
     
 4.  Public class **VerifyQRCodeOptions **was extended with new property **public IDataEncryption DataEncryption { get; set; }**. This property allows users to specify custom or standard encryption algorithm for QR-Code Signatures to verify encrypted QR-Code Text.  
     Following example demonstrates verification of previously signed document with encrypted QR-Code Signature.
     
     **Verification encrypted QR-Code Signature**
     
+    ```csharp
     // setup key and pasphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -531,8 +559,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -545,18 +573,20 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // verify document
     VerificationResult result = handler.Verify("SignedQRCodeTextEncrypted.pdf", verifyOptions);
     Console.WriteLine("Verification result: " + result.IsValid);
+    ```
     
 5.  Signature library was updated to generate **GroupDocsSignatureException**. This solution allows to catch selected exceptions from library. Following example demonstrates this.
     
     **Using GroupDocs Signature Exception**
     
+    ```csharp
     try
     {
         // setup Signature configuration
         SignatureConfig signConfig = new SignatureConfig
         {
-            StoragePath = @"c:\\Aspose\\Test\\Storage",
-            OutputPath = @"c:\\Aspose\\Test\\Output"
+            StoragePath = @"c:\Aspose\Test\Storage",
+            OutputPath = @"c:\Aspose\Test\Output"
         };
         // instantiating the signature handler
         SignatureHandler handler = new SignatureHandler(signConfig);
@@ -578,3 +608,4 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     {
         Console.WriteLine("System Exception: " + ex.Message);
     }
+    ```

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign document with Stamp signature - advanced
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [StampSIgnOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/stampsignoptions) class with additional properties to specify different options for Stamp Signature. This signature type implements stamps with different implementation, forms, lines etc. Each Stamp option contains inner and outer lines. Inner lines represent vertical lines inside the stamp, when outer lines represent circles (or rectangles based on stamp type) around stamp with own text, border settings, background etc
 
 Here are the steps to add Stamp signature into document with GroupDocs.Signature:
@@ -27,6 +24,7 @@ Here are the steps to add Stamp signature into document with GroupDocs.Signature
 
 This example shows how to add Stamp signature to document. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
 using (Signature signature = new Signature(filePath))
 {
     // setup options with text of signature
@@ -47,7 +45,7 @@ using (Signature signature = new Signature(filePath))
     signOptions.OuterLines.Add(
         new StampLine()
         {
-            Text = "\* European Union \*",
+            Text = "* European Union *",
             TextRepeatType = StampTextRepeatType.FullTextRepeat,
             Font = new SignatureFont() { Size = 12 },
             Height = 22,
@@ -66,7 +64,7 @@ using (Signature signature = new Signature(filePath))
     signOptions.OuterLines.Add(
         new StampLine()
         {
-            Text = "\* Entrepreneur \*",
+            Text = "* Entrepreneur *",
             TextRepeatType = StampTextRepeatType.FullTextRepeat,
             TextColor = Color.DarkSlateBlue,
             Font = new SignatureFont() { Size = 15 },
@@ -105,8 +103,9 @@ using (Signature signature = new Signature(filePath))
         }
     );
     // sign document
-    string signedPath = @"C:\\GroupDocs\\Output\\Pdf\_Documents\_Stamp.pdf";
+    string signedPath = @"C:\GroupDocs\Output\Pdf_Documents_Stamp.pdf";
     signature.Sign(signedPath, signOptions);
+```
 
 ## More resources
 

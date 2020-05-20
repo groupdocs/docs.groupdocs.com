@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for multiple e-signature types
-
 Sometimes you may want to search for electronic signatures of different types simultaneously. [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) allows searching documents for different signature types in an easy and intuitive way. In common words the idea is to pass collection of desired signature types to Search method.
 
 Here are the steps to search for multiple signatures types within the document with GroupDocs.Signature:
@@ -39,6 +36,7 @@ Here are the steps to search for multiple signatures types within the document w
 
 This example shows how to search for multiple electronic signature types in the document.
 
+```csharp
 using (Signature signature = new Signature("SingedSample.pdf"))
 {
     // define few search options
@@ -67,7 +65,7 @@ using (Signature signature = new Signature("SingedSample.pdf"))
     SearchResult result = signature.Search(listOptions);
     if (result.Signatures.Count > 0)
     {
-        Console.WriteLine("\\nSource document contains following signatures.");
+        Console.WriteLine("\nSource document contains following signatures.");
         foreach (var resSignature in result.Signatures)
         {
             Console.WriteLine("Signature found at page {0} with type {1}", resSignature.PageNumber, resSignature.SignatureType);
@@ -78,6 +76,7 @@ using (Signature signature = new Signature("SingedSample.pdf"))
         Console.WriteLine("Signatures was not found.");
     }
 }
+```
 
 ## More resources
 

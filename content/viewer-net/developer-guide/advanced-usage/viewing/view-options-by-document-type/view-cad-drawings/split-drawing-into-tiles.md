@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Split drawing into tiles
-
 This article explains how to split CAD drawing into tiles with GroupDocs.Viewer within your .NET applications.
 
 ## Introduction
@@ -31,14 +28,15 @@ Overall size of the document is 650px height and 750px width. The selected tile 
 You can add as many tiles as you need.  
 The following code sample demonstrates how to render DWG drawing into an image by dividing into four equal parts.
 
+```csharp
 using (Viewer viewer = new Viewer("sample.dwg"))
 {                
     ViewInfoOptions viewInfoOptions = ViewInfoOptions.ForPngView(false);
     ViewInfo viewInfo = viewer.GetViewInfo(viewInfoOptions);
      
     // Get width and height
-    int width = viewInfo.Pages\[0\].Width;
-    int height = viewInfo.Pages\[0\].Height;
+    int width = viewInfo.Pages[0].Width;
+    int height = viewInfo.Pages[0].Height;
      
     // Set tile width and height as a half of image total width
     int tileWidth = width / 2;
@@ -64,6 +62,7 @@ using (Viewer viewer = new Viewer("sample.dwg"))
     viewer.View(viewOptions);
 }
             
+```
 
 ## More resources
 

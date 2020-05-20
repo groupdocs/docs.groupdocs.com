@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# View specific pages
-
-
 # View specific pages
 
 GroupDocs.Viewer also provides the features to render only the selected page numbers. You can specify a list of the document pages to be rendered. Follow the below steps to achieve this functionality. 
@@ -25,11 +21,13 @@ GroupDocs.Viewer also provides the features to render only the selected page num
 
 The following code sample shows how to render the first and third pages of a document.
 
+```csharp
             using (Viewer viewer = new Viewer("sample.docx"))
             {
                 HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
                 viewer.View(viewOptions, 1, 3);
             }
+```
 
 ## More resources
 

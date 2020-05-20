@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Update annotation replies
-
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides and ability to programmatically update annotation replies by accessing them by their index inside [Replies](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/replies) collection.
 
 Here is a steps to update annotation reply (considered that we already have some reply added to annotation)
@@ -29,6 +26,7 @@ Here is a steps to update annotation reply (considered that we already have some
 
 The following code demonstrates how to update reply by index: 
 
+```csharp
 // NOTE: Input document already contain annotations with replies
 using (Annotator annotator = new Annotator("result.pdf", new LoadOptions { ImportAnnotations = true }))
 {
@@ -36,12 +34,13 @@ using (Annotator annotator = new Annotator("result.pdf", new LoadOptions { Impor
 	List<AnnotationBase> annotations = annotator.Get();
                 
 	// Update first annotation first reply
-	annotations\[0\].Replies\[0\].Comment = "Updated reply";
+	annotations[0].Replies[0].Comment = "Updated reply";
                 
 	// Save changes
 	annotator.Update(annotations);
 	annotator.Save("result.pdf");
 }
+```
 
 ## More resources
 

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Comparison For .NET 3.0.0 Release Notes
-
-This page contains release notes for GroupDocs.Comparison for .NET 3.0.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for .NET 3.0.0{{< /alert >}}
 
 ## Major Features
 

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign document with XML Advanced Electronic Signature
-
-XML Advanced Electronic Signature feature is now supported under .Net Framework only for Spreadsheet documents
+{{< alert style="info" >}}XML Advanced Electronic Signature feature is now supported under .Net Framework only for Spreadsheet documents{{< /alert >}}
 
 **GroupDocs.Signature** provides [DigitalSignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/digitalsignoptions) class to specify different amount of settings for Digital signature. One of these properties is the field of enumeration type [XAdESType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/xadestype)
 
@@ -33,6 +30,7 @@ Here are the steps to add XML Advanced Electronic Signature with GroupDocs.Sign
 
 This example shows how to add Digital signature to document.
 
+```csharp
 using (Signature signature = new Signature("sample.xlsx"))
 {
     DigitalSignOptions options = new DigitalSignOptions("certificate.pfx")
@@ -47,8 +45,9 @@ using (Signature signature = new Signature("sample.xlsx"))
         Location = "Office1"
     };
     SignResult signResult = signature.Sign(outputFilePath, options);
-    Console.WriteLine($"\\nSource document was signed successfully with {signResult.Succeeded.Count} signature(s).\\nFile saved at {outputFilePath}.");
+    Console.WriteLine($"\nSource document was signed successfully with {signResult.Succeeded.Count} signature(s).\nFile saved at {outputFilePath}.");
 }
+```
 
 ## More resources
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign document with extensions
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides with [SignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/signoptions) property Extensions that expects list of different extensions classes. At this moment here are few of them
 
 *   [SpreadsheetPosition](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/spreadsheetposition) that allows to specify for Spreadsheet documents signature position as Row and Column numbers
@@ -32,6 +29,7 @@ Here are the steps to add extensions to signature into document with GroupDocs.S
 
 This example shows how to add Text signature to document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -91,6 +89,7 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("signed.pdf", options);
 }
+```
 
 ## More resources
 

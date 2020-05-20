@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Set password for resultant document
-
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to protect resultant document with password.
 
 The following are the steps to protect resultant document:

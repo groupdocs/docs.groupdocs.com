@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Searching for document signatures excluding external components
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides boolean property [SkipExternal](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/searchoptions/properties/skipexternal) of [SearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/searchoptions) class to specify if searching process should exclude external signatures (external signatures are the signatures that were added with an 3rd party software and not with GroupDocs.Signature).
 
 Since 19.12 version every time when document is being signed information about document signatures are stored in document's metadata. Which means that all created signatures by GroupDocs.Signature can be distinguished from an actual document content and [IsSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/basesignature/properties/issignature) flag will be set as true. [IsSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/basesignature/properties/issignature) property specifies if document component (text/image/barcode/qr-code) is the actual signature or element of document content.

@@ -9,14 +9,9 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: True
 ---
-
 #  Home 
 
-![](images/annotation-net/home_0.png)
-
-**Welcome to the GroupDocs.Annotation for .NET**
-
-GroupDocs.Annotation for .NET API allows developers to seamlessly enhance their applications with the capability to annotate text or images in a document. Annotation can be applied in form of comments, explanations with highlighted notes, watermark, polyline and much more. Annotator API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX documents.
+{{< alert style="info" >}}Welcome to the GroupDocs.Annotation for .NETGroupDocs.Annotation for .NET API allows developers to seamlessly enhance their applications with the capability to annotate text or images in a document. Annotation can be applied in form of comments, explanations with highlighted notes, watermark, polyline and much more. Annotator API supports PDF, Microsoft Word DOCX, Excel XLSX and PowerPoint PPTX documents.{{< /alert >}}
 
 ## GroupDocs.Annotation for .NET Resources
 

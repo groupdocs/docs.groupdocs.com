@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Migration Notes
-
 ### Why To Migrate?
 
 Here are the key reasons to use the new updated API provided by GroupDocs.Editor for .NET since version 19.9:
@@ -29,7 +26,8 @@ Here is a brief comparison of how to edit document in HTML form using old and ne
 
 **Old coding style**
 
-			string documentPath = @"C:\\sample.docx"; 
+```csharp
+			string documentPath = @"C:\sample.docx"; 
      		// Obtain document stream
             Stream sourceStream = File.Open(documentPath, FileMode.Open, FileAccess.Read);
 
@@ -44,7 +42,7 @@ Here is a brief comparison of how to edit document in HTML form using old and ne
 				// Save edited html to original document format
                 using (OutputHtmlDocument editedHtmlDoc = OutputHtmlDocument.FromMarkup(htmlContent, Path.Combine(Common.sourcePath, Common.resultResourcesFolder)))
                 {
-                    using (System.IO.FileStream outputStream = System.IO.File.Create(@"C:\\output\\edited.docx"))
+                    using (System.IO.FileStream outputStream = System.IO.File.Create(@"C:\output\edited.docx"))
                     {
                         WordProcessingSaveOptions  saveOptions = new WordProcessingSaveOptions();
                         EditorHandler.ToDocument(editedHtmlDoc, outputStream, saveOptions);
@@ -54,6 +52,7 @@ Here is a brief comparison of how to edit document in HTML form using old and ne
 
             // close stream object to release file for other methods.
             sourceStream.Close();
+```
 
 **New coding style**
 

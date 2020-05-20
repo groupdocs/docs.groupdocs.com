@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Electronic signature types
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) for .NET supportswide range of electronic signature types that are listed below:
 
 *   Barcode signatures;

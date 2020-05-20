@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Introducing GroupDocs.Editor for .NET
-
 ## What Is GroupDocs.Editor?
 
 GroupDocs.Editor is a powerful and lightweight library which allows you to edit most popular document formats using 3rd party front-end WYSIWYG HTML-editors without any additional applications. No Open Office or MS Office is required to edit a WordProcessing, Spreadsheet, text or other document of supportable format.

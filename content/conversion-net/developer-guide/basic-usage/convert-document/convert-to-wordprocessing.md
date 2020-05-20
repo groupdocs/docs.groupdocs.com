@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Convert to WordProcessing
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) can convert any source document to the following WordProcessing formats: *Doc, Docm, Docx, Dot, Dotx, Rtf, Odt, Ott, Mobi, Txt**. *When just instantiate the [WordProcessingConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/wordprocessingconvertoptions)class without specifying the target format explicitly, *Docx* will be used as a default format.
 
 Conversion to WordProcessing format could be triggered by following below steps:

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Load document from local disk
-
 When the source document is located on the local disk [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) allows you to load it via [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer)class constructor specifying absolute or relative path to it. 
 
 For loading target document located on the local disk you should use [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index)method that accepts absolute or relative path as parameter. 

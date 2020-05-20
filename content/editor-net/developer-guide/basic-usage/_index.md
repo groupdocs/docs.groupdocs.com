@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Basic usage
-
 # Quick Start section for GroupDocs.Editor API
 
 Edit your documents in an easy and  intuitive way with [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net) API and with just several lines of code.

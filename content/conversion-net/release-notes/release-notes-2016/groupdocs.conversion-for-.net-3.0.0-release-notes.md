@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion For .NET 3.0.0 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 3.0.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 3.0.0{{< /alert >}}
 
 ## Major Features
 

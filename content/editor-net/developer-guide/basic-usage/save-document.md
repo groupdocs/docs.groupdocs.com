@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Save document
-
 > This article describes how to obtain edited document content from client, process it and save to the resultant document of some specified format.
 
 When end-user has finished document editing in the WYSIWYG HTML-editor (this is usually a pure client-side application, written on JavaScript), he submits the editing operation, and HTML markup with stylesheets, images, and maybe other resources are passed to the server-side. In order to generate a document of some output format, these resources should be passed to the `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)`.

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Save attachments
-
 You can save/export attachments from Email documents, Outlook data files, Archives and PDF documents with only a few lines of code using GroupDocs.Viewer for .NET API.
 
 Follow these steps to get and save (export) attachments:
@@ -22,8 +19,9 @@ Follow these steps to get and save (export) attachments:
 
 Following example demonstrates on how to get and save attachments from MSG files.
 
-string outputPath = @"C:\\output";
-using (Viewer viewer = new Viewer("with\_attachments.msg"))
+```csharp
+string outputPath = @"C:\output";
+using (Viewer viewer = new Viewer("with_attachments.msg"))
 {
     IList<Attachment> attachments = viewer.GetAttachments();
     foreach(Attachment attachment in attachments)
@@ -32,8 +30,9 @@ using (Viewer viewer = new Viewer("with\_attachments.msg"))
         viewer.SaveAttachment(attachment, File.OpenWrite(filePath)); 
     }
 }          
+```
 
-NOTE: provided code example is actual for all document types that support attachments - Email documents, Outlook data files, Archives and PDF documents.
+{{< alert style="info" >}}NOTE: provided code example is actual for all document types that support attachments - Email documents, Outlook data files, Archives and PDF documents.{{< /alert >}}
 
 ## More resources
 

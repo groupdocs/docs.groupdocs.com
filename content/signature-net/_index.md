@@ -9,14 +9,9 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: True
 ---
-
 #  Home 
 
-![](images/signature-net/home_0.png)
-
-**Welcome to the GroupDocs.Signature for .NET**
-
-GroupDocs.Signature for .NET allows developers to write applications with the ability to significantly sign electronic docs of various file formats. This e-signing API permits the users to add different types of signatures like text, image or digital signatures on electronic documents. The quite captivating fact about the API is, its UI less and independent calls can be made.
+{{< alert style="info" >}}Welcome to the GroupDocs.Signature for .NETGroupDocs.Signature for .NET allows developers to write applications with the ability to significantly sign electronic docs of various file formats. This e-signing API permits the users to add different types of signatures like text, image or digital signatures on electronic documents. The quite captivating fact about the API is, its UI less and independent calls can be made.{{< /alert >}}
 
 ## GroupDocs.Signature for .NET Resources
 

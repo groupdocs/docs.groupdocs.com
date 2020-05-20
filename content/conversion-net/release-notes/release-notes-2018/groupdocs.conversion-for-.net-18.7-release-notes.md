@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion for .NET 18.7 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 18.7
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 18.7{{< /alert >}}
 
 ## Major Features
 
@@ -76,10 +73,11 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 18.7. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 18.7. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Explicit font substitution when converting from Cells
 
+```csharp
 /// <summary>
 /// Default font for Cells document. The following font will be used if a font is missing.
 /// </summary>
@@ -88,10 +86,12 @@ public string DefaultFont { get; set; }
 /// Substitute specific fonts when converting Cells document.
 /// </summary>
 public IList<KeyValuePair<string, string>> FontSubstitutes { get; private set; }
+```
 
 Usage
 
-const string sourceDocument = "international\_characters.xls";
+```csharp
+const string sourceDocument = "international_characters.xls";
 var config = new ConversionConfig
 {
     StoragePath = ".",
@@ -107,9 +107,11 @@ loadOptions.FontSubstitutes.Add(new KeyValuePair<string, string>("Calibri", "Tah
 var options = new PdfSaveOptions();
              
 var converted = handler.Convert(sourceDocument, loadOptions, options);
+```
 
 ### Explicit font substitution when converting from Slides
 
+```csharp
 /// <summary>
 /// Default font for rendering the presentation. The following font will be used if a presentation font is missing.
 /// </summary>
@@ -118,10 +120,12 @@ public string DefaultFont { get; set; }
 /// Substitute specific fonts when converting Slides document.
 /// </summary>
 public IList<KeyValuePair<string, string>> FontSubstitutes { get; private set; }
+```
 
 Usage
 
-const string sourceDocument = "international\_characters.pptx";
+```csharp
+const string sourceDocument = "international_characters.pptx";
 var config = new ConversionConfig
 {
     StoragePath = ".",
@@ -137,9 +141,11 @@ loadOptions.FontSubstitutes.Add(new KeyValuePair<string, string>("Calibri", "Tah
 var options = new PdfSaveOptions();
              
 var converted = handler.Convert(sourceDocument, loadOptions, options);
+```
 
 ### Explicit font substitution when converting from Words
 
+```csharp
 /// <summary>
 /// Default font for Words document. The following font will be used if a font is missing.
 /// </summary>
@@ -154,10 +160,12 @@ public bool AutoFontSubstitution { get; set; }
 /// Substitute specific fonts when converting Words document.
 /// </summary>
 public IList<KeyValuePair<string, string>> FontSubstitutes { get; private set; }
+```
 
 Usage
 
-const string sourceDocument = "international\_characters.docx";
+```csharp
+const string sourceDocument = "international_characters.docx";
 var config = new ConversionConfig
 {
     StoragePath = ".",
@@ -172,16 +180,20 @@ loadOptions.AutoFontSubstitution = false;
 var options = new PdfSaveOptions();
              
 var converted = handler.Convert(sourceDocument, loadOptions, options);
+```
 
 ### New property EmailOptions in SaveOptions class
 
+```csharp
 /// <summary>
 /// Email specific convert options
 /// </summary>
 public EmailOptions EmailOptions { get; set; }
+```
 
 Usage
 
+```csharp
 const string sourceDocument = "message.eml";
 var config = new ConversionConfig
 {
@@ -203,3 +215,4 @@ var options = new PdfSaveOptions
 };
              
 var converted = handler.Convert(sourceDocument, options);
+```

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Introduction
-
 > This article explains the most common and fundamental principles of GroupDocs.Editor, how it works, what is its purpose, and how it should be used.
 
 [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net) is a .NET GUI-less class library, which means that it has only programmatic interface (API). This fact means that in order to edit a document user must use GroupDocs.Editor in conjunction with some 3rd-party editor application, through which GUI the end-user is able to edit document content. For GroupDocs.Editor it is not important which exactly editor software is used. But because GroupDocs.Editor is aimed on web-development, it has the only requirement — 3rd-party editor should be compatible with HTML documents.

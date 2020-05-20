@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Loading documents from different sources
-
 # Loading documents from different sources
 
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows you to annotate remotely located documents. The document processing would be similar to [Load document from stream](https://wiki.lisbon.dynabic.com/display/annotation/Load+document+from+Stream).   

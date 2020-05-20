@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Annotation for .NET 19.1 Release Notes
-
-This page contains release notes for GroupDocs.Annotation for .NET 19.1
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Annotation for .NET 19.1{{< /alert >}}
 
 ## Major Features
 
@@ -120,15 +117,17 @@ Bug
 
 ## Public API and Backward Incompatible Change
 
-This section lists public API changes that were introduced in GroupDocs.Annotation for .NET 19.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Annotation which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Annotation for .NET 19.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Annotation which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **ImageOptions for GetPages() method**
     
     You can get image representation of pages of your PDF document by using *GetPages* method of *AnnotationImageHandler* class.
     
+    ```csharp
     List<PageImage> GetPages(Stream fileStream, ImageOptions options)
     List<PageImage> GetPages(string guid, ImageOptions options)
     List<PageImage> GetPages(string guid)
+    ```
     
     **Parameter**
     
@@ -225,12 +224,13 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
     **  
     Note:**
     
-    In order to optimize *GetPages* performance method, we do not check if *PageNumber* or *PageNumbersToConver*t elements < number of document pages, because this is additional computing costs per every *GetPages* method call. So, if *PageNumber* or *PageNumbersToConvert* will be > number of document pages, then you will get ArgumentOutOfRange or IndexOutOfRange exception. So, you must control this outside GetPages call.
+    {{< alert style="warning" >}}In order to optimize GetPages performance method, we do not check if PageNumber or PageNumbersToConvert elements < number of document pages, because this is additional computing costs per every GetPages method call. So, if PageNumber or PageNumbersToConvert will be > number of document pages, then you will get ArgumentOutOfRange or IndexOutOfRange exception. So, you must control this outside GetPages call.{{< /alert >}}
     
     Following example demonstrates how to use *GetPages* method:
     
     **C#**
     
+    ```csharp
     using System.Collections.Generic;
     using System.IO;
     using GroupDocs.Annotation.Config;
@@ -243,7 +243,7 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
     {
         class Program
         {
-            static void Main(string\[\] args)
+            static void Main(string[] args)
             {
                 Stream document = new FileStream("../../Clear.pdf", FileMode.Open);
                 AnnotationConfig cfg = new AnnotationConfig();
@@ -256,18 +256,21 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
                 // Save result stream to file.
                 using(FileStream fileStream = new FileStream("../../image.png", FileMode.Create))
                 {
-                    byte\[\] buffer = new byte\[images\[0\].Stream.Length\];
-                    images\[0\].Stream.Seek(0, SeekOrigin.Begin);
-                    images\[0\].Stream.Read(buffer, 0, buffer.Length);
+                    byte[] buffer = new byte[images[0].Stream.Length];
+                    images[0].Stream.Seek(0, SeekOrigin.Begin);
+                    images[0].Stream.Read(buffer, 0, buffer.Length);
                     fileStream.Write(buffer, 0, buffer.Length);
                     fileStream.Close();        
                 }
             }
         }
     }
+    ```
     
 2.  **Enabling caching for opening same document pages**
     
+    ```csharp
     ImageOptions imageOptions = new ImageOptions();
     imageOptions.CacheStoragePath = AnnotationImageHandler.GetFileDataStore().TempPath;
     imageOptions.EnableCaching = true;
+    ```

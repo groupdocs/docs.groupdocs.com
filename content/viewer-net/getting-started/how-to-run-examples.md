@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# How to Run Examples
-
-Before running an example make sure that GroupDocs.Viewer has been installed successfully.
+{{< alert style="warning" >}}Before running an example make sure that GroupDocs.Viewer has been installed successfully.{{< /alert >}}
 
 We offer multiple solutions on how you can run GroupDocs.Viewer examples, by building your own or using our back-end or front-end examples out-of-the-box.
 
@@ -26,14 +23,16 @@ Please choose one from the following list:
 *   Install **GroupDocs.Viewer for .NET **from Nuget or official GroupDocs website following this guide.
 *   Code your first application with **GroupDocs.Viewer for .NET **like this
     
-    string documentPath = @"C:\\sample.docx"; // NOTE: Put here actual path for your document
+    ```csharp
+    string documentPath = @"C:\sample.docx"; // NOTE: Put here actual path for your document
     using (Viewer viewer = new Viewer(documentPath))
     {
-       // The file path format e.g. 'page\_{0}.html'
-       string filePathFormat = @"C:\\output\\page-{0}.html";
+       // The file path format e.g. 'page_{0}.html'
+       string filePathFormat = @"C:\output\page-{0}.html";
        HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(filePathFormat);
        viewer.View(options);
     }
+    ```
     
 *   Build and Run your project. 
 *   Rendered document pages will appear inside "*C:\\output\\" *directory*.*
@@ -57,7 +56,9 @@ You can run [GroupDocs.Viewer for .NET MVC Example](https://github.com/groupdoc
 
 *   Download [source code](https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-.NET-MVC/archive/master.zip) from GitHub or clone this repository
     
+    ```csharp
     git clone https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-.NET-MVC
+    ```
     
 *   Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
 *   Open [http://localhost:8080/viewer](http://localhost:8080/viewer) in your favorite browser
@@ -70,7 +71,9 @@ You can run [GroupDocs.Viewer for .NET Web.Forms Example](https://github.com/gr
 
 *   Download [source code](https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-.NET-WebForms/archive/master.zip) from GitHub or clone this repository
     
+    ```csharp
     git clone https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-.NET-WebForms
+    ```
     
 *   Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
 *   Open [http://localhost:8080/viewer](http://localhost:8080/viewer) in your favorite browser
@@ -81,10 +84,12 @@ For more details about project configuration please refer to this [guide](https
 
 Use [Docker](https://www.docker.com/) image to try GroupDocs.Viewer for .NET features in an easy way. Here are the command to run GroupDocs.Viewer for .NET from docker image.
 
+```csharp
 mkdir DocumentSamples
 mkdir Licenses
-docker run -p 8080:8080 --env application.hostAddress=localhost -v \`pwd\`/DocumentSamples:/home/groupdocs/app/DocumentSamples -v \`pwd\`/Licenses:/home/groupdocs/app/Licenses groupdocs/viewer
+docker run -p 8080:8080 --env application.hostAddress=localhost -v `pwd`/DocumentSamples:/home/groupdocs/app/DocumentSamples -v `pwd`/Licenses:/home/groupdocs/app/Licenses groupdocs/viewer
 ## Open http://localhost:8080/viewer in your favorite browser.
+```
 
 ## Contribute
 

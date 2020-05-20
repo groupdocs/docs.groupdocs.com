@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Get file information
-
 GroupDocs.Viewer for .NET API allows you to extract file information from different document types through [ViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.results/viewinfo) class which will include following properties:
 
 *   [FileType](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.results/viewinfo/properties/filetype)

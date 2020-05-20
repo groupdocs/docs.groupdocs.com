@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Adjust text overflow in cells
-
-
 # Adjust text-overflow in cells
 
 This article explains how to adjust text-overflow in cells when viewing Spreadsheets with GroupDocs.Viewer within you .NET applications.
@@ -40,12 +36,14 @@ The following steps are required to manage text-overflow:
 
 The following code sample shows how to hide text in case it overflows cell.
 
+```csharp
             using (Viewer viewer = new Viewer("sample.xlsx"))
             {
                 HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
                 viewOptions.SpreadsheetOptions.TextOverflowMode = TextOverflowMode.HideText;
                 viewer.View(viewOptions);
             }
+```
 
 ## More resources
 

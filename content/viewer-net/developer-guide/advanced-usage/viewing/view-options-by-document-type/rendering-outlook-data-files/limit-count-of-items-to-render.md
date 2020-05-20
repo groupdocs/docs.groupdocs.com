@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Limit count of items to render
-
 GroupDocs.Viewer allows rendering the items in Outlook Data Files (OST/PST). [OutlookOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/outlookoptions) is used to set rendering options for OST and PST formats. The following steps are to be followed when rendering the items in Outlook Data Files.
 
 *   Create [Viewer](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer) object;
@@ -21,12 +18,14 @@ GroupDocs.Viewer allows rendering the items in Outlook Data Files (OST/PST). [
 
 The following code samples show how to render the items in an Outlook Data File by setting a maximum limit.
 
+```csharp
             using (Viewer viewer = new Viewer("sample.ost"))
             {
                 HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
                 viewOptions.OutlookOptions.MaxItemsInFolder = 1000;
                 viewer.View(viewOptions);
             }
+```
 
 ## More resources
 

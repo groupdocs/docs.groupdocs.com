@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Updating multiple signatures of different types
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides different classes of signatures to manipulate them by changing its properties over [Update](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/update/) method of [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) class. This method returns [UpdateResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/updateresult) object to analyze if signatures were successfully processed.
 
 Please be aware that[Update](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/update/) method modifies the same document that was passed to constructor of [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) class. The [UpdateResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/updateresult) contains list of successfully updated signatures and ones that failed. The signature could be failed to update due to several reasons:
@@ -39,6 +36,7 @@ Here are the steps to update multiple signature in the document with GroupDocs.S
 
 This example shows how to update signature that was found using [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1) method.
 
+```csharp
 // initialize Signature instance
 using (Signature signature = new Signature("signed.pptx"))
 {
@@ -53,7 +51,7 @@ using (Signature signature = new Signature("signed.pptx"))
     SearchResult result = signature.Search(listOptions);
     if (result.Signatures.Count > 0)
     {
-        Console.WriteLine("\\nTrying to update all signatures...");
+        Console.WriteLine("\nTrying to update all signatures...");
         // mark all signatures as actual Signatures
         foreach (BaseSignature baseSignature in result.Signatures)
         {
@@ -63,14 +61,14 @@ using (Signature signature = new Signature("signed.pptx"))
         UpdateResult updateResult = signature.Update(result.Signatures);
         if (updateResult.Succeeded.Count == result.Signatures.Count)
         {
-            Console.WriteLine("\\nAll signatures were successfully updated!");
+            Console.WriteLine("\nAll signatures were successfully updated!");
         }
         else
         {
             Console.WriteLine($"Successfully updated signatures : {updateResult.Succeeded.Count}");
             Console.WriteLine($"Not updated signatures : {updateResult.Failed.Count}");
         }
-        Console.WriteLine("\\nList of updated signatures:");
+        Console.WriteLine("\nList of updated signatures:");
         int number = 1;
         foreach (BaseSignature temp in updateResult.Succeeded)
         {
@@ -82,6 +80,7 @@ using (Signature signature = new Signature("signed.pptx"))
         Console.WriteLine("No one signature was found.");
     }
 }
+```
 
 ## More resources
 

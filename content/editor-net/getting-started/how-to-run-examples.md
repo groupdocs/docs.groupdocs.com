@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# How to Run Examples
-
-Before running an example make sure that GroupDocs.Editor has been installed successfully.
+{{< alert style="warning" >}}Before running an example make sure that GroupDocs.Editor has been installed successfully.{{< /alert >}}
 
 We offer multiple solutions on how you can run GroupDocs.Editor examples, by building your own or using our back-end or front-end examples out-of-the-box.
 
@@ -26,7 +23,8 @@ Please choose one from the following list:
 *   Install **GroupDocs.Editor for .NET **from Nuget or official GroupDocs website following this [guide](https://docs.groupdocs.com/display/editornet/Development+Environment%2C+Installation+and+Configuration).
 *   Code your first application with **GroupDocs.**Editor **for .NET **like this
     
-     			string documentPath = @"C:\\sample.docx"; // NOTE: Put here actual path for your document
+    ```csharp
+     			string documentPath = @"C:\sample.docx"; // NOTE: Put here actual path for your document
                 using (Editor editor = new Editor(documentPath))
                 {
                     // Obtain editable document from original DOCX document
@@ -38,8 +36,9 @@ Please choose one from the following list:
     
                     // Save edited EditableDocument object to some WordProcessing format - DOC for example
                     WordProcessingSaveOptions saveOptions = new WordProcessingSaveOptions(Formats.WordProcessingFormats.Docx);
-                    editor.Save(editableDocument, @"C:\\output\\edited.docx", saveOptions);
+                    editor.Save(editableDocument, @"C:\output\edited.docx", saveOptions);
                 }
+    ```
     
 *   Build and Run your project. 
 *   Rendered document pages will appear inside "*C:\\output\\" *directory*.*
@@ -63,7 +62,9 @@ You can run [GroupDocs.Editor for .NET MVC Example](https://github.com/groupdoc
 
 *   Download [source code](https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET-MVC/archive/master.zip) from GitHub or clone this repository
     
+    ```csharp
     git clone https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET-MVC
+    ```
     
 *   Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
 *   Open [http://localhost:8080/editor](http://localhost:8080/editor) in your favorite browser
@@ -76,7 +77,9 @@ You can run [GroupDocs.Editor for .NET Web.Forms Example](https://github.com/gr
 
 *   Download [source code](https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET-WebForms/archive/master.zip) from GitHub or clone this repository
     
+    ```csharp
     git clone https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET-WebForms
+    ```
     
 *   Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
 *   Open [http://localhost:8080/editor](http://localhost:8080/editor) in your favorite browser
@@ -87,10 +90,12 @@ For more details about project configuration please refer to this [guide](https
 
 Use [Docker](https://www.docker.com/) image to try GroupDocs.Editor features in an easy way. Here are the command to run GroupDocs.Editor from docker image.
 
+```csharp
 mkdir DocumentSamples
 mkdir Licenses
-docker run -p 8080:8080 --env application.hostAddress=localhost -v \`pwd\`/DocumentSamples:/home/groupdocs/app/DocumentSamples -v \`pwd\`/Licenses:/home/groupdocs/app/Licenses groupdocs/Editor
+docker run -p 8080:8080 --env application.hostAddress=localhost -v `pwd`/DocumentSamples:/home/groupdocs/app/DocumentSamples -v `pwd`/Licenses:/home/groupdocs/app/Licenses groupdocs/Editor
 ## Open http://localhost:8080/editor in your favorite browser.
+```
 
 ## Contribute
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add text field annotation
-
 **Text field** annotation adds rectangle with a text inside, like shown at the picture below. 
 
 ![](images/annotation-net/add-text-field-annotation_0.png)

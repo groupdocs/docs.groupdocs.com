@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for Barcode e-signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides an easy and straightforward way to find all Barcode signatures that are present in a document.  
 For the most simpler use case - just find all Barcode signatures within document its only needed to instantiate [BarcodeSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/barcodesearchoptions) class and pass it to [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1) method.
 
@@ -26,18 +23,20 @@ Here are the exact steps to search for Barcode signatures within the document wi
 
 This example shows how to search for Barcode signature in the document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {       
         // search for signatures in document
         List<BarcodeSignature> signatures = signature.Search<BarcodeSignature>(SignatureType.Barcode);
 
-        Console.WriteLine("\\nSource document contains following signatures.");
+        Console.WriteLine("\nSource document contains following signatures.");
         foreach (var barcodeSignature in signatures)
         {
             Console.WriteLine("Barcode signature found at page {0} with type {1} and text {2}", 
                 barcodeSignature.PageNumber, barcodeSignature.EncodeType, barcodeSignature.Text);
         }
 }
+```
 
 ## More resources
 

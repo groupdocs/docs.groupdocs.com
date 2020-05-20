@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Memory optimization option
-
 By default [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net) tries to perform computations and complete the task as fast as possible, and if this challenge requires a lot of memory to be used, GroupDocs.Editor does it. However, in some very specific cases, when processing document is very huge, and GroupDocs.Editor works in 32-bit application, which is limited to 2GiB per process, or user machine has very limited amount of free memory, the SystemOutOfMemoryException may occur. In order to solve such problem the [`WordProcessingSaveOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingsaveoptions) class contains the [`OptimizeMemoryUsage`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingsaveoptions/properties/optimizememoryusage) property:
 
 ```csharp

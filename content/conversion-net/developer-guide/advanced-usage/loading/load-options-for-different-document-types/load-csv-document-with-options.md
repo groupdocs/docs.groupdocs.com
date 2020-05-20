@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load CSV document with options
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) provides [CsvLoadOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/csvloadoptions)to give you control over how source CSV document will be processed. The following options could be set:
 
 *   **[Separator](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/csvloadoptions/properties/separator) **\- specifies the delimiter 

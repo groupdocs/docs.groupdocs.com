@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer For .NET 3.5.0 Release Notes
-
-This page contains release notes for [GroupDocs.Viewer for .NET 3.5.0](http://downloads.groupdocs.com/viewer/net/new-releases/groupdocs.viewer-for-.net-3.5.0/).
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 3.5.0.{{< /alert >}}
 
 ## Major Features
 
@@ -169,13 +166,13 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 3.5.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 3.5.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Implemented GetPdfFile from stream or remote file public methods.
 
 **Get original file in Pdf format without transformations**
 
-The **GetPdfFile(PdfFileOptions)** method was marked as obsolate in v3.5.0, please use overloaded GetPdfFile methods that are available starting from v3.5.0.
+{{< alert style="info" >}}The GetPdfFile(PdfFileOptions) method was marked as obsolate in v3.5.0, please use overloaded GetPdfFile methods that are available starting from v3.5.0.{{< /alert >}}
 
 **v3.5.0 and higher (C#)**
 
@@ -200,7 +197,7 @@ Console.WriteLine("Stream lenght: {0}", container.Stream.Length);
 
 Add watermark to Pdf document by setting **Watermark** property of **PdfFileOptions**.
 
-The **GetPdfFile(PdfFileOptions)** method was marked as obsolate in v3.5.0, please use overloaded GetPdfFile methods that are available starting from v3.5.0.
+{{< alert style="info" >}}The GetPdfFile(PdfFileOptions) method was marked as obsolate in v3.5.0, please use overloaded GetPdfFile methods that are available starting from v3.5.0.{{< /alert >}}
 
 **v3.5.0 and higher (C#)**
 
@@ -235,7 +232,7 @@ Console.WriteLine("Stream lenght: {0}", container.Stream.Length);
 Add watermark to Pdf document by setting **Watermark** property of **PdfFileOptions**.  
 Specify watermark font name by setting **FontName** property of Watermark.
 
-This feature is available starting from v3.5.0.
+{{< alert style="info" >}}This feature is available starting from v3.5.0.{{< /alert >}}
 
 **v3.5.0 and higher (C#)**
 
@@ -271,7 +268,7 @@ Console.WriteLine("Stream lenght: {0}", container.Stream.Length);
 
 Add watermark to Pdf document by setting **AddPrintAction** property to True of **PdfFileOptions**.
 
-The **GetPdfFile(PdfFileOptions)** method was marked as obsolate in v3.5.0, please use overloaded GetPdfFile methods that are available starting from v3.5.0.
+{{< alert style="info" >}}The GetPdfFile(PdfFileOptions) method was marked as obsolate in v3.5.0, please use overloaded GetPdfFile methods that are available starting from v3.5.0.{{< /alert >}}
 
 **v3.5.0 and higher (C#)**
 
@@ -300,9 +297,7 @@ Console.WriteLine("Stream lenght: {0}", container.Stream.Length);
 
 Add watermark to Pdf document by setting **Transformations** property of **PdfFileOptions**.
 
-**Transformation.AddPrintAction** feature is supported starting from v3.4.0.
-
-The **GetPdfFile(PdfFileOptions)** method was marked as obsolate in v3.5.0, please use overloaded GetPdfFile methods that are available starting from v3.5.0.
+{{< alert style="info" >}}Transformation.AddPrintAction feature is supported starting from v3.4.0.{{< /alert >}}{{< alert style="info" >}}The GetPdfFile(PdfFileOptions) method was marked as obsolate in v3.5.0, please use overloaded GetPdfFile methods that are available starting from v3.5.0.{{< /alert >}}
 
 **v3.5.0 and higher (C#)**
 

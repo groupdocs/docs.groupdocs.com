@@ -9,5 +9,3 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Release Notes - 2020

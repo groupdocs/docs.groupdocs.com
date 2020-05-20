@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 20.3 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 20.3
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 20.3{{< /alert >}}
 
 ## Major Features
 

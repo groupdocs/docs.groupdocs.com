@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load document from URL
-
 Following code snippet shows how to convert a document from URL:
 
 ```csharp

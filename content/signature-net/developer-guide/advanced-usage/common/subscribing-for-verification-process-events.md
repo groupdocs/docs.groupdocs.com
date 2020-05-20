@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Subscribing for verification process events
-
 [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature)class contains several events that are being called for different verification process stages
 
 *   [VerifyStarted](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/events/verifystarted) to handle process start event. This event is occur once [Verify](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/verify) method is called
@@ -35,10 +32,12 @@ Here are the steps to subscribe for verification process with GroupDocs.Signatur
 
 GroupDocs.Signature expects [ProcessStartEventHandler](https://apireference.groupdocs.com/net/signature/groupdocs.signature/processstarteventhandler) delegate to subscribe for [VerifyStarted](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/events/verifystarted) event
 
+```csharp
 private static void OnVerifyStarted(Signature signature, ProcessStartEventArgs args)
 {
     Console.WriteLine("Verify process started at {0} with {1} total signatures to be put in document", args.Started, args.TotalSignatures);
 }
+```
 
 ## Implement method for VerifyProgress event
 

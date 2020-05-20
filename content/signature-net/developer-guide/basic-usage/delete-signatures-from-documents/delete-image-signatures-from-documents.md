@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Delete Image signatures from documents
-
-
 # Delete Image signatures from document
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [ImageSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/imagesignature) class to manipulate image signatures and delete them from the documents over [Delete](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/delete) method.  
@@ -33,6 +29,7 @@ Here are the steps to delete Image signature from the document with GroupDocs.Si
 
 This example shows how to delete Image signature that was found using [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1) method.
 
+```csharp
 using (Signature signature = new Signature("signed.pptx"))
 {
     ImageSearchOptions options = new ImageSearchOptions();
@@ -40,11 +37,11 @@ using (Signature signature = new Signature("signed.pptx"))
     List<ImageSignature> signatures = signature.Search<ImageSignature>(options);
     if (signatures.Count > 0)
     {
-        ImageSignature imageSignature = signatures\[3\];
+        ImageSignature imageSignature = signatures[3];
         bool result = signature.Delete(imageSignature);
         if (result)
         {
-            Console.WriteLine($"Image signature at location {imageSignature.Left}x{imageSignature.Top} and Size {imageSignature.Size}' was deleted from document \['{fileName}'\].");
+            Console.WriteLine($"Image signature at location {imageSignature.Left}x{imageSignature.Top} and Size {imageSignature.Size}' was deleted from document ['{fileName}'].");
         }
         else
         {
@@ -52,6 +49,7 @@ using (Signature signature = new Signature("signed.pptx"))
         }
     }
 }
+```
 
 ## More resources
 

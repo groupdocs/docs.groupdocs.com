@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Comparison for .NET 19.6 Release Notes
-
-This page contains release notes for GroupDocs.Comparison for .NET 19.6
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for .NET 19.6{{< /alert >}}
 
 ## Major Features
 
@@ -96,7 +93,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 19.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 19.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  ### **Setting Comparison Detail level**
     
@@ -119,23 +116,31 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     
     **For instance, we have two words**
     
+    ```csharp
     1)oneSource
      
     2)twoTarget
+    ```
     
     This two words have very small a common subsequence.Therefore, when comparing them at 70% accuracy, it is not taken into account and we get a completely removed and inserted word:  
     
-    (twoTarget)\[oneSource\]
+    ```csharp
+    (twoTarget)[oneSource]
+    ```
     
     But at 100% accuracy, we take into account this subsequence, despite the fact that it consists of two letters
     
-    (tw)o\[n\](Targ)e\[Source\](t)
+    ```csharp
+    (tw)o[n](Targ)e[Source](t)
+    ```
     
     Code snippet:
     
+    ```csharp
     string source = "source.txt";
     string target = "target.txt";
     ComparisonSettings settings = new ComparisonSettings();
     settings.SensitivityOfComparison = 100;
     Comparer compare = new Comparer();
     ICompareResult result = compare.Compare(source, target, settings);
+    ```

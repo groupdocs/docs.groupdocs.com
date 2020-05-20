@@ -9,7 +9,4 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Developer Guide
-
-This section describes some basic and advanced use cases of GroupDocs.Conversion for .NET. Please refer to [GitHub repository](https://github.com/groupdocs-conversion/GroupDocs.Conversion-for-.NET) for more examples and samples.
+{{< alert style="info" >}}This section describes some basic and advanced use cases of GroupDocs.Conversion for .NET. Please refer to GitHub repository for more examples and samples.{{< /alert >}}

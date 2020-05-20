@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Working with WordProcessing documents
-
 > This example demonstrates standard open-edit-save cycle with WordProcessing documents, using different options on every step.
 
 ### Introduction

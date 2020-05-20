@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion for .NET 19.1 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 19.1
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 19.1{{< /alert >}}
 
 ## Major Features
 
@@ -88,7 +85,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 19.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 19.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Removed obsolete namespace GroupDocs.Conversion.Converter.Option
 
@@ -97,6 +94,7 @@ This section lists public API changes that were introduced in GroupDocs.Conversi
 
 ### Save converted document returns saved file name and size
 
+```csharp
 /// <summary>
 /// Class for handling converted document
 /// </summary>
@@ -117,9 +115,11 @@ public sealed class ConvertedDocument
     public SaveInfo Save(string fileName, int page)
     ...
 }
+```
 
 Usage
 
+```csharp
 ...
 var config = new ConversionConfig();
 var conversionHandler = new ConversionHandler(config);
@@ -130,3 +130,4 @@ var saveInfo = convertedDocument.Save("converted", 1);
 Console.WriteLine("Page 1 file size: {0}", saveInfo.Size);
 Console.WriteLine("Page 1 saved path: {0}", saveInfo.FileName);
 ...
+```

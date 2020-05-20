@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Change page orientation
-
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to set **Portrait **or **Landscape **page orientation for specific or all document pages.
 
 Here are the steps to change page orientation:

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Introducing GroupDocs.Viewer for .NET
-
 ## What Is GroupDocs.Viewer?
 
 GroupDocs.Viewer is a powerful [file viewer](https://en.wikipedia.org/wiki/File_viewer)API that allows you to display over 140 document types in your applications. The main purpose of GroupDocs.Viewer product is an ability to render documents into HTML, Image or PDF representations fast and with high quality.

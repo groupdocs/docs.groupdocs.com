@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 20.3 Release Notes
-
-
 ## Release notes for GroupDocs.Viewer for .NET 20.3
 
 This page contains release notes for GroupDocs.Viewer for .NET 20.3.
@@ -114,6 +110,7 @@ public class FileName class added
 
 This class represents the name of the file.
 
+```csharp
 /// <summary>
 /// The filename.
 /// </summary>
@@ -152,6 +149,7 @@ public class FileName
         return Text;
     }
 }
+```
 
 ### Changes in GroupDocs.Viewer.Results.Attachment class
 
@@ -159,12 +157,14 @@ public Attachment(string fileName) constructor added
 
 Initializes new instance of Attachment class.
 
+```csharp
 /// <summary>
 /// Initializes new instance of <see cref="Attachment"/> class.
 /// </summary>
 /// <param name="fileName">Attachment file name.</param>
 /// <exception cref="System.ArgumentException">Thrown when <paramref name="fileName"/> is null or empty.</exception>
 public Attachment(string fileName)
+```
 
 ### Changes in GroupDocs.Viewer.Viewer class
 
@@ -184,6 +184,7 @@ public void SaveAttachment(Attachment attachment, Stream destination) method ad
 
 Saves attachment file to the destination stream.
 
+```csharp
 /// <summary>
 /// Saves attachment file to <paramref name="destination"/> stream.
 /// </summary>
@@ -195,6 +196,7 @@ Saves attachment file to the destination stream.
 /// <exception cref="Exceptions.IncorrectPasswordException">Thrown when password that was specified is incorrect.</exception>
 /// <exception cref="Exceptions.GroupDocsViewerException">Thrown when attachment could not be found.</exception>
 public void SaveAttachment(Attachment attachment, Stream destination)
+```
 
 ## More resources
 

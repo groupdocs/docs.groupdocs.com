@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Extracting document metainfo
-
 > This demonstration shows and explains usage of the `[GetDocumentInfo](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/getdocumentinfo)` method, that extracts meta info from the document.
 
 #### Introduction

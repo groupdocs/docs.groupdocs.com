@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add underline annotation
-
 **Underline **annotation marks text with a underline styling like shown at the picture below. 
 
 ![](images/annotation-net/add-underline-annotation_0.png)

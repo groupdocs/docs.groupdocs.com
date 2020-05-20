@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Reorder pages
-
 GroupDocs.Viewer allows you to reorder the document pages. The order of the pages in the source document is never changed, instead, the API applies reordering to the resultant PDF document.
 
 To reorder the pages:

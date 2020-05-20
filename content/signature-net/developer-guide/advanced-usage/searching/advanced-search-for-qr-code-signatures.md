@@ -9,12 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Advanced search for QR-code signatures
-
-
-# Advanced search for QR-code signatures in the document
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [QrCodeSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/qrcodesearchoptions) class to specify different options to search for QR-code signatures.
 
 Here are the steps to search for barcode signatures within the document with GroupDocs.Signature:
@@ -28,6 +22,7 @@ Here are the steps to search for barcode signatures within the document with Gro
 
 This example shows how to make advanced search for QR-code signature in the document with enabled options of grabbing QR-code image content.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     QrCodeSearchOptions options = new QrCodeSearchOptions()
@@ -49,7 +44,7 @@ using (Signature signature = new Signature("sample.pdf"))
     };
     // search for signatures in document
     List<QrCodeSignature> signatures = signature.Search<QrCodeSignature>(options); //For evaluation version is 0
-    Console.WriteLine("\\nSource document contains following signatures.");
+    Console.WriteLine("\nSource document contains following signatures.");
     foreach (QrCodeSignature qrCodeSignature in signatures)
     {
         Console.WriteLine("QRCode signature found at page {0} with type {1} and text {2}", qrCodeSignature.PageNumber, qrCodeSignature.EncodeType, qrCodeSignature.Text);
@@ -73,6 +68,7 @@ using (Signature signature = new Signature("sample.pdf"))
         i++;
     }
 }
+```
 
 ## More resources
 

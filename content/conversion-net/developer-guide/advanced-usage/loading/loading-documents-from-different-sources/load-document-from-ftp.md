@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load document from FTP
-
-
 # Load a document from FTP
 
 Following code snippet shows how to convert a document from FTP:

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Image Viewer - Add text overlay over images
-
 GroupDocs.Viewer provides feature that allows to add text overlays over images. This feature is useful if you want to add selectable text over the image or implement a text search in image-based rendering.
 
 **Please note** that due to Image Viewer's architecture rendering results with text extraction enabled and disabled are different. 
@@ -20,12 +17,14 @@ The [ExtractText ](https://apireference.groupdocs.com/net/viewer/groupdocs.vie
 
 This example demonstrates how to render document for display with text.
 
+```csharp
             using (Viewer viewer = new Viewer("sample.docx"))
             {
                	PngViewOptions viewOptions = new PngViewOptions();
                 viewOptions.ExtractText = true;
                 viewer.View(viewOptions);
             }
+```
 
 ## More resources
 

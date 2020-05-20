@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load password-protected document
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) supports conversion of documents that are protected with a password.
 
 Here are the steps to follow to load and convert a password protected document:

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Handling password required exception
-
 [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) class supports handling required password exception when opening protected documents over class [PasswordRequiredException](https://apireference.groupdocs.com/net/signature/groupdocs.signature/passwordrequiredexception).
 
 Here are the steps to handle incorrect password exception when working with protected documents with GroupDocs.Signature:
@@ -22,6 +19,7 @@ Here are the steps to handle incorrect password exception when working with prot
 
 Following example demonstrates how to handle required password exception.
 
+```csharp
 // skip initialization of LoadOptions with Password 
 // LoadOptions loadOptions = new LoadOptions(){ Password  = "1234567890" }            
 using (Signature signature = new Signature("protectedPwd.pdf"))
@@ -36,7 +34,7 @@ using (Signature signature = new Signature("protectedPwd.pdf"))
         };
         // try to sign document to file, we expect for PasswordRequiredException
         signature.Sign(outputFilePath, options);
-        Console.WriteLine("\\nSource document signed successfully.\\nFile saved at " + outputFilePath);
+        Console.WriteLine("\nSource document signed successfully.\nFile saved at " + outputFilePath);
     }
     catch(PasswordRequiredException ex)
     {
@@ -54,6 +52,7 @@ using (Signature signature = new Signature("protectedPwd.pdf"))
     {
     }
 }
+```
 
 ## More resources
 

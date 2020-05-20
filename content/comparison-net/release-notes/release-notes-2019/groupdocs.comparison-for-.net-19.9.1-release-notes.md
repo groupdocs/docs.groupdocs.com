@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Comparison for .NET 19.9.1 Release Notes
-
-This page contains release notes for GroupDocs.Comparison for .NET 19.9.1
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for .NET 19.9.1{{< /alert >}}
 
 ## Major Features
 
@@ -38,6 +35,6 @@ Bug
 
 # Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 19.9.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 19.9.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 *   None

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 17.7.0 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 17.7.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 17.7.0{{< /alert >}}
 
 ## Major Features
 
@@ -111,7 +108,7 @@ Issue Type
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.7.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.7.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 *   Added new static variables to BarcodeTypes static class that describe new Barcode types.
     
@@ -135,13 +132,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup text signature options
     var signOptions = new PdfStampSignOptions();
      
     // OuterLines property contains list of StampLine object that describe Ring with Height, colored, borders
     // setup first external line of Stamp
     var line0 = new StampLine();
-    line0.Text = " \* European Union \* European Union  \* European Union  \* European Union  \* European Union  \* ";
+    line0.Text = " * European Union * European Union  * European Union  * European Union  * European Union  * ";
     line0.Font.FontSize = 12;
     line0.Height = 22;
     line0.TextBottomIntent = 6;
@@ -156,7 +154,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // add another Stamp ring
     var line2 = new StampLine();
-    line2.Text = "\* Entrepreneur \* Entrepreneur \*\* Entrepreneur \* Entrepreneur \*";
+    line2.Text = "* Entrepreneur * Entrepreneur ** Entrepreneur * Entrepreneur *";
     line2.TextColor = Color.DarkSlateBlue;
     line2.Font.FontSize = 15;
     line2.Height = 30;
@@ -195,8 +193,9 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.SignAllPages = true;
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf\_Documents\_Stamp" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf_Documents_Stamp" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 
 *   Added new classes **PdfStampSignOptions**, **CellsStampSignOptions**, **Words****StampSignOptions** and **Slides****StampSignOptions** for corresponding document type. Examples demonstrate how to use them with different options properties
@@ -206,10 +205,11 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     //All examples for Cells, PDF, Slides and Words Stamp Signatures are different
     //You can find another examples in help topics for other document types
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -248,17 +248,19 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.SignAllPages = true;
     // sign document
     string signedPath = handler.Sign<string>("test.xlsx", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells\_Documents\_Stamp" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells_Documents_Stamp" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     **Signing PDF document with Stamp Signature**
     
     **C#**
     
+    ```csharp
     //All examples for Cells, PDF, Slides and Words Stamp Signatures are different
     //You can find another examples in help topics for other document types
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -273,7 +275,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.Width = 300;
     //Outer round lines
     StampLine line0 = new StampLine();
-    line0.Text = " \* European Union \* European Union  \* European Union  \* European Union  \* European Union  \* ";
+    line0.Text = " * European Union * European Union  * European Union  * European Union  * European Union  * ";
     line0.Font.FontSize = 12;
     line0.Height = 22;
     line0.TextBottomIntent = 6;
@@ -285,7 +287,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     line1.BackgroundColor = Color.White;
     signOptions.OuterLines.Add(line1);
     StampLine line2 = new StampLine();
-    line2.Text = "\* Entrepreneur \* Entrepreneur \*\* Entrepreneur \* Entrepreneur \*";
+    line2.Text = "* Entrepreneur * Entrepreneur ** Entrepreneur * Entrepreneur *";
     line2.TextColor = Color.DarkSlateBlue;
     line2.Font.FontSize = 15;
     line2.Height = 30;
@@ -320,17 +322,19 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.SignAllPages = true;
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf\_Documents\_Stamp" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf_Documents_Stamp" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     **Signing Slides document with Stamp Signature**
     
     **C#**
     
+    ```csharp
     //All examples for Cells, PDF, Slides and Words Stamp Signatures are different
     //You can find another examples in help topics for other document types
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -345,7 +349,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.Width = 400;
     //Outer round lines
     StampLine line0 = new StampLine();
-    line0.Text = " \* John \* Smith  \* John \* Smith  \* John \* Smith  \* John \* Smith  \* John \* Smith \* John \* Smith \*  John \* Smith \* ";
+    line0.Text = " * John * Smith  * John * Smith  * John * Smith  * John * Smith  * John * Smith * John * Smith *  John * Smith * ";
     line0.Font.FontSize = 12;
     line0.Height = 22;
     line0.TextBottomIntent = 6;
@@ -365,17 +369,19 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.Opacity = 0.8;
     // sign document
     string signedPath = handler.Sign<string>("test.pptx", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Slides\_Documents\_Stamp" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Slides_Documents_Stamp" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     **Signing Words document with Stamp Signature**
     
     **C#**
     
+    ```csharp
     //All examples for Cells, PDF, Slides and Words Stamp Signatures are different
     //You can find another examples in help topics for other document types
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -388,7 +394,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     WordsStampSignOptions signOptions = new WordsStampSignOptions();
     signOptions.Height = 300;
     signOptions.Width = 300;
-    signOptions.ImageGuid = @"C:\\Aspose\\Test\\Images\\200.png";
+    signOptions.ImageGuid = @"C:\Aspose\Test\Images\200.png";
     signOptions.BackgroundColor = Color.Aqua;
      
     //Inner square lines
@@ -411,5 +417,6 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // sign document
     string signedPath = handler.Sign<string>("test.docx", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Words\_Documents\_Stamp" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Words_Documents_Stamp" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```

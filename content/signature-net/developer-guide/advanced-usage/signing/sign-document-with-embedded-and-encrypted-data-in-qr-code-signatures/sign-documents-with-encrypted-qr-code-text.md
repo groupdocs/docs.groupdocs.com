@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign documents with encrypted QR-code text
-
-
 # Implementation of secure QR-code encrypted text
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to secure QR-code signature text with standard or custom encryption. Standard encryption is implemented over class [SymmetricEncryption](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricencryption) class. Creation of this object expects 3 arguments like encryption algorithm enumeration [SymmetricAlgorithmType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricalgorithmtype) with one of following values ([DES, TripleDES, RC2, Rijndael](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricalgorithmtype)), string value key and string value salt.
@@ -30,6 +26,7 @@ Here are the steps to secure QR-code text with standard encryption with GroupDoc
 
 This example shows how to sign document with secure QR-code signature text.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // setup key and passphrase
@@ -55,6 +52,7 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("QRCodeEncryptedText.pdf", options);
 }
+```
 
 ## More resources
 

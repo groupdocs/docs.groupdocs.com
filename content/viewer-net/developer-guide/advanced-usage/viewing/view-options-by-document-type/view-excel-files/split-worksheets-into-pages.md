@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Split worksheets into pages
-
 There might be the case when you do not want to render the whole Spreadsheet on a single page and limit the number of rows that would be rendered on each output page. In this situation, the GroupDocs.Viewer allows you to specify the number of rows in an Spreadsheet to be rendered on each page.
 
 The following steps are required for partial rendering of large Excel sheets.
@@ -20,12 +17,14 @@ The following steps are required for partial rendering of large Excel sheets.
 *   Instantiate [SpreadsheetOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/spreadsheetoptions) object by calling [SpreadsheetOptions.ForSplitSheetIntoPages](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/spreadsheetoptions/methods/forsplitsheetintopages) method and specifying desired *countRowsPerPage *parameter.
 *   Call [View](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/view) method.
 
+```csharp
             using (Viewer viewer = new Viewer("sample.xlsx"))
             {
                 HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
                 viewOptions.SpreadsheetOptions = SpreadsheetOptions.ForSplitSheetIntoPages(45);
                 viewer.View(viewOptions);
             }
+```
 
 ## More resources
 

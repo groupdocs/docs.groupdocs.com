@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 18.12 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 18.12
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 18.12{{< /alert >}}
 
 ## Major Features
 
@@ -70,12 +67,13 @@ Improvement
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.12. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.12. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **New public class ImageMetadataSignature **was added to support Metadata signatures for Image Documents**. **Image Metadata signatures are based on Exchangeable image file format (Exif) specification. The Exif data references are specified standard and custom image properties of various type of data.
     
     **ImageMetadataSignature**
     
+    ```csharp
     /// <summary>
     /// Contains Image Metadata Signature properties.
     /// </summary>
@@ -95,6 +93,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     	/// </summary>
     	public string Description { get; private set; }
     }
+    ```
     
     **FormField Signature properties:**
     
@@ -128,6 +127,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **ImagesSearchMetadataOptions**
     
+    ```csharp
     /// <summary>
     /// Represents the Metadata Signature Search Options for Images Documents.
     /// </summary>
@@ -146,16 +146,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         public ImagesSearchMetadataOptions()
     }
+    ```
     
     Following example demonstrates how to search for Image Metadata Signatures:
     
     **Search for Image Metadata Signatures**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -169,12 +171,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     {
         Console.WriteLine("Image Metadata. #{0}. {1}. Value = {2}", signature.Name, signature.Description, signature.ToString());
     }
+    ```
     
 3.  Existing base class **MetadataSignature **was updated with virtual methods for conversion.  
     Following public methods were marked as virtual:
     
     **MetadataSignature virtual methods**
     
+    ```csharp
     public virtual bool ToBoolean()
     public virtual int ToInteger()
     public virtual double ToDouble()
@@ -183,3 +187,4 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     public virtual DateTime ToDateTime(IFormatProvider provider)
     public virtual string ToString(string format) 
     public virtual string ToString(string format, IFormatProvider provider)
+    ```

@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Updating Image signatures with advanced options
-
-
 # Updating Image signatures - advanced
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [ImageSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/imagesignature) class to manipulate image signatures location, and size over [Update](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/update/) method of [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) class. This method returns [UpdateResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/updateresult) object to analyze if signatures were successfully processed.
@@ -137,6 +133,7 @@ Word Processing
 
 This example shows how to update Image signature that was found using [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1) method.
 
+```csharp
 using (Signature signature = new Signature("sampleSigned.xlsx"))
 {
     ImageSearchOptions options = new ImageSearchOptions();
@@ -170,16 +167,18 @@ using (Signature signature = new Signature("sampleSigned.xlsx"))
         Console.WriteLine($"Signature# Id:{temp.SignatureId}, Location: {temp.Left}x{temp.Top}. Size: {temp.Width}x{temp.Height}");
     }
 }
+```
 
 ## Update Image signature in document by known signature Identifier  
 
 This example shows how to update Image signature in the document by known signature Id (that was obtained by [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1) or [Sign](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/sign) method previously).
 
+```csharp
 // initialize Signature instance
 using (Signature signature = new Signature("sampleSigned.pdf"))
 {
     // read from some data source signature Id value
-    string\[\] signatureIdList = new string\[\]
+    string[] signatureIdList = new string[]
     {
         "1dd21cf3-b904-4da9-9413-1ff1dab51974",
         "9e386726-a773-4971-b2fc-eaadfce65ffd"
@@ -204,6 +203,7 @@ using (Signature signature = new Signature("sampleSigned.pdf"))
         Console.WriteLine($"Signature# Id:{temp.SignatureId}, Location: {temp.Left}x{temp.Top}. Size: {temp.Width}x{temp.Height}");
     }
 }
+```
 
 ## More resources
 

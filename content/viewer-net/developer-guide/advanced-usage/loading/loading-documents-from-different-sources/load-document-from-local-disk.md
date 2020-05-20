@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Load document from local disk
-
 When document is located on the local disk GroupDocs.Viewer enables you to render the by passing path to the file [Viewer](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer)class constructor. Viewer will open file for reading only when any method of [Viewer](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer) will be called.
 
 Following code snippet shows how to load document from local disk.

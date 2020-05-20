@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion for .NET 18.6 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 18.6
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 18.6{{< /alert >}}
 
 ## Major Features
 
@@ -52,12 +49,13 @@ Improvement
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 18.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 18.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### v18.6 New ITempDataHandler abstraction for providing custom implementation for providing temp stream
 
 #### New ITempDataHandler
 
+```csharp
 /// <summary>
 /// Implement this interface to provide custom way of handling temporary files
 /// </summary>
@@ -69,15 +67,17 @@ public interface ITempDataHandler
      /// <returns></returns>
      Stream CreateTempStream();
 }
+```
 
 Usage
 
+```csharp
 // custom implementation of ITempDataHandler
 internal class MyTempDataHandler : ITempDataHandler
 {
      public Stream CreateTempStream()
      {
-         return new FileStream(string.Format(@"c:\\temp\\gd-{0:N}.tmp", Guid.NewGuid()), FileMode.Create);
+         return new FileStream(string.Format(@"c:\temp\gd-{0:N}.tmp", Guid.NewGuid()), FileMode.Create);
      }
 }
  
@@ -98,6 +98,7 @@ result.Save("converted.pdf");
  
 Console.WriteLine("Done!");
 Console.ReadKey();
+```
 
 ### v18.6 New properties in ConversionConfig for providing custom DataHandlers instances
 
@@ -105,6 +106,7 @@ Console.ReadKey();
 
 All constructors listed below are obsolete
 
+```csharp
 /// <summary>
 /// Custom implementation of <see cref="IInputDataHandler" /> interface
 /// </summary>
@@ -126,9 +128,11 @@ public ICacheDataHandler CacheDataHandler { get; set; }
 /// Custom implementation of <see cref="ITempDataHandler" /> interface
 /// </summary>
 public ITempDataHandler TempDataHandler { get; set; }
+```
 
 Usage
 
+```csharp
 var config = new ConversionConfig
             {
                 TempDataHandler = new MyTempDataHandler(),
@@ -137,11 +141,13 @@ var config = new ConversionConfig
             };
              
 var handler = new ConversionHandler(config);
+```
 
 ### v18.6 Obsolete ConversionHandler constructors 
 
 All constructors listed below are obsolete
 
+```csharp
 public ConversionHandler(ConversionConfig conversionConfig, IInputDataHandler inputDataHandler);
 public ConversionHandler(ConversionConfig conversionConfig, ICacheDataHandler cacheDataHandler);
 public ConversionHandler(ConversionConfig conversionConfig, IOutputDataHandler outputDataHandler);
@@ -149,13 +155,17 @@ public ConversionHandler(ConversionConfig conversionConfig, IInputDataHandler in
 public ConversionHandler(ConversionConfig conversionConfig, IInputDataHandler inputDataHandler, ICacheDataHandler cacheDataHandler);
 public ConversionHandler(ConversionConfig conversionConfig, IOutputDataHandler outputDataHandler, ICacheDataHandler cacheDataHandler);
 public ConversionHandler(ConversionConfig conversionConfig, IInputDataHandler inputDataHandler, IOutputDataHandler outputDataHandler, ICacheDataHandler cacheDataHandler);
+```
 
 There is only one constructor left:
 
+```csharp
 public ConversionHandler(ConversionConfig conversionConfig)
+```
 
 Usage
 
+```csharp
 var config = new ConversionConfig
             {
                 TempDataHandler = new MyTempDataHandler(),
@@ -164,3 +174,4 @@ var config = new ConversionConfig
             };
              
 var handler = new ConversionHandler(config);
+```

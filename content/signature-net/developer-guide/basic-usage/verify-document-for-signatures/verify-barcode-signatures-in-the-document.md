@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Verify Barcode signatures in the document
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [BarcodeVerifyOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/barcodeverifyoptions) class to specify different options for verification of Barcode signatures.
 
 Here are the steps to verify Barcode signature within the document with GroupDocs.Signature:
@@ -26,6 +23,7 @@ Here are the steps to verify Barcode signature within the document with GroupDoc
   
 This example shows how to verify Barcode signature in the document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     BarcodeVerifyOptions options = new BarcodeVerifyOptions()
@@ -42,13 +40,14 @@ using (Signature signature = new Signature("sample.pdf"))
     VerificationResult result = signature.Verify(options);
     if (result.IsValid)
     {
-        Console.WriteLine("\\nDocument was verified successfully!");
+        Console.WriteLine("\nDocument was verified successfully!");
     }
     else
     {
-        Console.WriteLine("\\nDocument failed verification process.");
+        Console.WriteLine("\nDocument failed verification process.");
     }
 }
+```
 
 ## More resources
 

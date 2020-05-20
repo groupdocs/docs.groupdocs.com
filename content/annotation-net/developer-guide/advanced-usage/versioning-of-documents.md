@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Versioning of documents
-
-
 # Versions of Annotated files
 
 Every time you are saving file using [Annotator.Save()](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/save/index) method - you implicitly create a new version of the annotated file. Versions list stores not document, it keeps annotations that you add, remove, and change. So you can easy swap between different changes made with GroupDocs.Annotation. And of course you can set your version names.
@@ -38,7 +34,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
 }
 ```
 
-Type of [Version](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/saveoptions/properties/version) property is object, so it support any type, and you can use any variable as version variable
+{{< alert style="info" >}}Type of Version property is object, so it support any type, and you can use any variable as version variable{{< /alert >}}
 
 # Get List of All version keys on a document
 
@@ -46,11 +42,13 @@ If you don't know what versions were added earlier or want to know versions coun
 
 Here the code that demonstrates how to get list of versions keys, you could do this calling [GetVersionsList](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/getversionslist) method of [Annotator](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator):
 
+```csharp
 using (Annotator annotator = new Annotator("result.pdf")) { 
       List<object> versionKeys = annotator.GetVersionsList();
 }
+```
 
-[Annotator.GetVersionList()](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/getversionslist) returns list of objects because it supports any type of key. But if you used some specified keys as string - you can convert it.
+{{< alert style="info" >}}Annotator.GetVersionList() returns list of objects because it supports any type of key. But if you used some specified keys as string - you can convert it.{{< /alert >}}
 
 # Get List of Annotations using version key
 
@@ -66,7 +64,7 @@ Here code that demonstrates how to get list of annotations from specific version
 
 `}`
 
-[GetVersion](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/getversionslist) supports any type, and you can use any variable as version.
+{{< alert style="info" >}}GetVersion supports any type, and you can use any variable as version.{{< /alert >}}
 
 # Load Document of custom Version
 
@@ -74,10 +72,12 @@ Using [LoadOptions.Version](https://apireference.groupdocs.com/annotation/net/gr
 
 Here the code that demonstrates how load version using version property:
 
- using (Annotator annotator = new Annotator($"result.{ext}", new LoadOptions { Version = "CUSTOM\_VERSION" }))
+```csharp
+ using (Annotator annotator = new Annotator($"result.{ext}", new LoadOptions { Version = "CUSTOM_VERSION" }))
 {
-	annotator.Save("result\_loaded.pdf");
+	annotator.Save("result_loaded.pdf");
 }
+```
 
 ## More resources
 

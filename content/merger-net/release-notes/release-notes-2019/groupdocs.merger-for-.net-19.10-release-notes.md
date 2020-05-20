@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Merger for .NET 19.10 Release Notes
-
-This page contains release notes for GroupDocs.Merger for .NET 19.10
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Merger for .NET 19.10{{< /alert >}}
 
 ## Major Features
 
@@ -62,22 +59,24 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Merger for .NET 19.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Merger which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Merger for .NET 19.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Merger which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **LoadOptions Encoding usage for the text splitting**  
     The following example demonstrates how to use Encoding for the text splitting:
     
     **Split method**
     
+    ```csharp
     // Variables.
-    string filePath = @"c:\\sample.txt";
-    string filePathOut = @"c:\\output\\line\_{0}.{1}";
+    string filePath = @"c:\sample.txt";
+    string filePathOut = @"c:\output\line_{0}.{1}";
       
     // Options.
     LoadOptions loadOptions = new LoadOptions(FileType.Txt, Encoding.Unicode);
-    TextSplitOptions splitOptions = new TextSplitOptions(filePathOut, new int\[\] { 3, 6 });
+    TextSplitOptions splitOptions = new TextSplitOptions(filePathOut, new int[] { 3, 6 });
       
     using (Merger merger = new Merger(filePath, loadOptions))
     {
         merger.Split(splitOptions);
     }
+    ```

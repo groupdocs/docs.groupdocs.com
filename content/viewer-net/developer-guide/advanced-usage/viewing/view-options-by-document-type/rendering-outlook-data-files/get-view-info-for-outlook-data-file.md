@@ -9,13 +9,11 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Get View Info for Outlook Data File
-
 GroupDocs.Viewer provides additional information for Outlook Data Files when calling [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo)method. To retrieve view information for Outlook Data File call [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo)method and cast output result to [OutlookViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.results/outlookviewinfo) type.
 
 Following example demonstrates how to retrieve view information for Outlook Data File.
 
+```csharp
 using (Viewer viewer = new Viewer("sample.ost"))
 {
     ViewInfoOptions viewInfoOptions = ViewInfoOptions.ForHtmlView();
@@ -28,6 +26,8 @@ using (Viewer viewer = new Viewer("sample.ost"))
         Console.WriteLine(folder);
 }      
       
+
+```
 
 ## More resources
 

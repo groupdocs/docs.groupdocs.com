@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Advanced search for Text signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [TextSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/textsearchoptions) class to specify different options to search for Text Signatures.
 
 Here are the steps to search for text signatures within the document with GroupDocs.Signature:
@@ -25,6 +22,7 @@ Here are the steps to search for text signatures within the document with GroupD
 
 This example shows how to make advanced search for Text signature in the document.
 
+```csharp
 using (Signature signature = new Signature(sample.pdf))
 {
     // setup search options
@@ -55,6 +53,7 @@ using (Signature signature = new Signature(sample.pdf))
         }
     }
 }
+```
 
 ## More resources
 

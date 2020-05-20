@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load CAD document with options
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) provides [CadLoadOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/cadloadoptions)to give you control over how source CAD document will be processed. The following options could be set:
 
 *   **[Format](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/cadloadoptions/properties/format) **\- the source document type is auto detected, but you could set the source document format explicitly with this property. Available options are: Dxf, Dwg, Dgn, Dwf, Stl, Ifc, Plt, Igs, Dwt

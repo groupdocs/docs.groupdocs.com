@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Comparison for .NET 19.11 Release Notes
-
-This page contains release notes for GroupDocs.Comparison for .NET 19.11
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for .NET 19.11{{< /alert >}}
 
 ## Major Features
 
@@ -108,11 +105,12 @@ Bug
 
 Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 19.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 19.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **Multicomparing for Email documents**  
     You have ability to compare more than one target email (eml) documents.
     
+    ```csharp
     string sourcePath = "source.eml";
     string target1Path = "target1.eml";
     string target2Path = "target2.eml";
@@ -126,10 +124,12 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     comparer.Add(target3Path);
      
     comparer.Compare(File.Create(resultPath), new SaveOptions(), new CompareOptions());
+    ```
     
 2.  **Multicomparing for Text documents**  
     You have ability to compare more than one target text files.
     
+    ```csharp
     string sourcePath = "source.txt";
     string target1Path = "target1.txt";
     string target2Path = "target2.txt";
@@ -143,6 +143,7 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     comparer.Add(target3Path);
      
     comparer.Compare(File.Create(resultPath), new SaveOptions(), new CompareOptions());
+    ```
     
 3.  **Option that allows to set output format of document (paper size)**  
     
@@ -152,6 +153,7 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     
     If user doesn’t set *PaperSize*, it has a default value - paper size in the resulting document is the same as in the target.
     
+    ```csharp
     string sourcePath = "source.docx";
     string targetPath = "target.docx";
     string resultPath = "result.docx";
@@ -162,6 +164,7 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     Comparer comparer = new Comparer(sourcePath);
     comparer.Add(targetPath);
     comparer.Compare(File.Create(resultPath), new SaveOptions(), compareOptions);
+    ```
     
 4.  **Option to switch header/footer comparison**  
     
@@ -169,6 +172,7 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     
     By default, this property is true. To ignore the comparison of headers and footers, you should set it to false.
     
+    ```csharp
     string sourcePath = "source.pdf";
     string targetPath = "target.pdf";
     string resultPath = "source.pdf";
@@ -180,3 +184,4 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     Comparer comparer = new Comparer(sourcePath);
     comparer.Add(targetPath);
     comparer.Compare(File.Create(resultPath), new SaveOptions(), compareOptions);
+    ```

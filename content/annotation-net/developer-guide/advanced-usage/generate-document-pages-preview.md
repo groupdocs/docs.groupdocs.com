@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Generate document pages preview
-
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows to generate document page previews using [GeneratePreview ](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/document/methods/generatepreview)method of a [Document ](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/properties/document)class.  
 [PreviewOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions)class is used to manage preview generation process - specify desired page numbers, image format etc.
 
@@ -31,7 +28,7 @@ Here are the steps to generate document preview with GroupDocs.Annotation API:
         
     *   custom size of preview images (if needed).   
         
-        Stream that were created by [**CreatePageStream**](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/createpagestream) delegate will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument [**ReleasePageStream** ](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/releasepagestream)to clean up resources.  
+        {{< alert style="info" >}}Stream that were created by CreatePageStream delegate will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument ReleasePageStream to clean up resources.{{< /alert >}}
         
           
         
@@ -124,12 +121,13 @@ using (Annotator annotator = new Annotator("input.pdf"))
 
 If you need not to generate comments on image preview you may use *RenderComments* property
 
-Supported for WordProcessign documents
+{{< alert style="info" >}}Supported for WordProcessign documents{{< /alert >}}
 
 Default State is true. If needed not to generate replies and comments - set it as false. Please notice, that it concerns any comments it doesn't matter if they were added by GroupDocs.Annotation or  somewhere else, they won’t be on the preview. But that still be present on the document.
 
 Here the code that demonstrates how render image preview without comments:
 
+```csharp
 Annotator annotator = new Annotator(File.OpenRead(MakeStoragePath(inputPath)));
            PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
            {
@@ -139,6 +137,7 @@ Annotator annotator = new Annotator(File.OpenRead(MakeStoragePath(inputPath)));
 previewOptions.PreviewFormat = PreviewFormats.PNG;
 previewOptions.RenderComments = false;
 annotator.Document.GeneratePreview(previewOptions);
+```
 
 ## More resources
 

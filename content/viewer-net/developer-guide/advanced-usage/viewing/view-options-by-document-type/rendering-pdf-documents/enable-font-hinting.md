@@ -9,13 +9,11 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Enable font hinting
-
 To adjust the display of an outline font([learn more about font hinting](https://en.wikipedia.org/wiki/Font_hinting)) when rendering PDF documents into image GroupDocs.Viewer provides [PdfOptions.EnableFontHinting](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pdfoptions/properties/enablefonthinting) setting as shown below:
 
 NOTE: this option is supported when rendering into PNG and JPG.
 
+```csharp
             using (Viewer viewer = new Viewer("sample.pdf"))
             {
                 PngViewOptions viewOptions = new PngViewOptions();
@@ -23,6 +21,7 @@ NOTE: this option is supported when rendering into PNG and JPG.
                 
                 viewer.View(viewOptions);
             }
+```
 
 ## More resources
 

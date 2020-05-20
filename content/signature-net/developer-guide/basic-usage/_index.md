@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Basic usage
-
-
   
 
 [**GroupDocs Signature**](https://products.groupdocs.com/signature/net) library provides ability to manipulate with different electronic signature types such as Text, Image, Digital, Barcode, QR-code, Stamp, Form Field, Metadata. These e-signatures could be added to document, updated, deleted, verified or searched inside already signed documents. Our product also provides information about document type and structure - file type, size, pages count, etc. and generates document pages preview based on provided options.  
@@ -30,10 +26,12 @@ Here are main GroupDocs Signature API concepts:
 
 The following code shows how to include required namespace for all code examples.  
 
+```csharp
 using GroupDocs.Signature;
 using GroupDocs.Signature.Domain;
 using GroupDocs.Signature.Options;
 using GroupDocs.Signature.Domain.Extensions;
+```
 
   
 
@@ -41,11 +39,14 @@ using GroupDocs.Signature.Domain.Extensions;
 
 The following code shows most used code pattern to define [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) object and call its methods.  
 
+```csharp
 // Sign document with text signature.
 using (Signature signature = new Signature("sample.docx"))
 {
    TextSignOptions textSignOptions = new TextSignOptions("John Smith");
    signature.Sign("SampleSigned.docx", textSignOptions);
 }
+
+```
 
 Please check detailed examples of how to eSign documents, search and verify document signatures in the following guides:

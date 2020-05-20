@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Advanced usage
-
 ## Advanced section for GroupDocs.Merger API
 
 Learn about GroupDocs.Merger advanced usage and its multiple powerful features like customizing document merging process, loading documents from different sources etc.

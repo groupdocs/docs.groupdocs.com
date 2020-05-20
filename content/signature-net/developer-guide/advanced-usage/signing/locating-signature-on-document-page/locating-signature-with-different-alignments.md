@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Locating signature with different alignments
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to align signature on page with horizontal and vertical alignment settings. Signature options that implement interface [IAlignment](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/ialignment) contain following properties:
 
 *   [HorizontalAlignment](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/imagesignoptions/properties/horizontalalignment) - property of enumeration type [HorizontalAlignment](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/horizontalalignment) to specify horizontal alignment of signature. Values are [None, Left, Center, Right](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/horizontalalignment)
@@ -36,6 +33,7 @@ Here are the steps to align signature on page with GroupDocs.Signature:
 
 This example shows how to locate signature with different alignments.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // define qr-code size
@@ -67,6 +65,7 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("signed.pdf", listOptions);
 }
+```
 
 ## More resources
 

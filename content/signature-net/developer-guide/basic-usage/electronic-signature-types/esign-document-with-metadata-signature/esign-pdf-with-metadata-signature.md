@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# eSign PDF with Metadata signature
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [PdfMetadataSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/pdfmetadatasignature) class to specify different Metadata signature objects for [MetadataSignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/metadatasignoptions) instance.   
 PDF document metadata is hidden attributes, some of them are visible only over viewing standard document properties like Author, Creation Date, Producer, Entry, Keywords etc.  
 PDF document metadata contains 3 fields: Name, Value and TagPrefix, combination of Name and Tag prefix should be unique.
@@ -33,12 +30,13 @@ Here are the steps to add metadata signatures into PDF document with GroupDocs
 
 This example shows how to sign PDF document with several e-signatures as metadata.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     MetadataSignOptions options = new MetadataSignOptions();
 
     // Create few Pdf Metadata signatures with different data types
-    PdfMetadataSignature\[\] signatures = new PdfMetadataSignature\[\]
+    PdfMetadataSignature[] signatures = new PdfMetadataSignature[]
     {
         new PdfMetadataSignature("Author", "Mr.Scherlock Holmes"),
         new PdfMetadataSignature("DateCreated", DateTime.Now),
@@ -49,16 +47,18 @@ using (Signature signature = new Signature("sample.pdf"))
     options.Signatures.AddRange(signatures);
     signature.Sign("SampleSigned.pdf", options);
 }
+```
 
 ## How to eSign PDF with standard metadata signatures
 
 This example shows how to sign PDF document with standard standard embedded PDF document metadata signatures. If PDF metadata signature already exists with same name its value will be overwritten.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     MetadataSignOptions options = new MetadataSignOptions();
     // Using standard Pdf Metadata Signatures with new values
-    MetadataSignature\[\] signatures = new MetadataSignature\[\]
+    MetadataSignature[] signatures = new MetadataSignature[]
     {
         PdfMetadataSignatures.Author.Clone("Mr.Scherlock Holmes"),
         PdfMetadataSignatures.CreateDate.Clone(DateTime.Now.AddDays(-1)),
@@ -75,8 +75,9 @@ using (Signature signature = new Signature("sample.pdf"))
     };
     options.Signatures.AddRange(signatures);
     // sign document to file
-    signature.Sign("sample\_signed.pdf", options);
+    signature.Sign("sample_signed.pdf", options);
 }
+```
 
 ## More resources
 

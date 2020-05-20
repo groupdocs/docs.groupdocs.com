@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# HTML Viewer - Responsive layout
-
-
 # Render to responsive HTML
 
 ![](images/viewer-net/html-viewer-responsive-layout_0.jpg)

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Load password-protected documents
-
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) allows to compare documents that are protected with a password.
 
 The following are the steps to compare password-protected documents.

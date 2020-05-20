@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add distance annotation
-
 **Distance annotation** measures a distance between objects in a document like shown at the picture below. 
 
 ![](images/annotation-net/add-distance-annotation_0.png)

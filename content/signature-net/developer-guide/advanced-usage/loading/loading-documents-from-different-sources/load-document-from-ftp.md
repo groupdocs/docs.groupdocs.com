@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Load document from FTP
-
 Following example demonstrates how to process documents from FTP.
 
 ```csharp

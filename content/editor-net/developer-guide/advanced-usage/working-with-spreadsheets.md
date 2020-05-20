@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Working with Spreadsheets
-
 > This demonstration shows and explains all necessary moments and options regarding processing the Spreadsheet documents.
 
 #### Introduction

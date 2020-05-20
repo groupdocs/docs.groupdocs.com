@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 18.7 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 18.7
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 18.7{{< /alert >}}
 
 ## Major Features
 
@@ -107,26 +104,30 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.7. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.7. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  ****Process Events arguments were updated with properties to set and check cancellation of progression.** **  
     Public class **ProcessProgressEventArgs **was updated with Boolean property **Cancel **and now **supports cancellation of different processes like signing, verification and searching**. Public class **ProcessCompleteEventArgs **was updated with read only Boolean property **Canceled **that **indicates if process (signing, verification and searching) was canceled**.
     
     **ProcessProgressEventArgs proeprties**
     
+    ```csharp
     /// <summary>
     /// Gets or sets a value indicating whether the process should be canceled.
     /// </summary>
     public bool Cancel { get; set; }
+    ```
     
     The property **Cancel** should be set to true value in corresponding event for singing, verification or searching in case when process requires cancellation.
     
     **ProcessProgressEventArgs proeprties**
     
+    ```csharp
     /// <summary>
     /// Represents flag if process was canceled.
     /// </summary>
     public bool Canceled { get; private set; }
+    ```
     
     The property **Canceled** will be set to true value in case when user discarded/ canceled process over Progress event with **Cancel **property.
     
@@ -134,20 +135,21 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
          // setup signature option
          PdfSignTextOptions signOptions = new PdfSignTextOptions("John Smith",10,10,100,100);
          signOptions.SignAllPages = true;
-         SaveOptions saveOptions = new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells\_Events" };
+         SaveOptions saveOptions = new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells_Events" };
          handler.SignatureStarted += delegate (object sender, ProcessStartEventArgs args)
          {
              Console.WriteLine("Processing of {0} signatures for {1} started at {2}", args.TotalSignatures, args.Guid, args.Started.ToString("f"));
@@ -175,6 +177,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
          // sign document
          string signedPath = handler.Sign<string>("pages12Images.pdf", signOptions, saveOptions);
     } 
+    ```
     
 2.  ****Signature Cells Documents Options**** were updated with supporting different measure types.** **  
     
@@ -184,6 +187,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Measure Type**
     
+    ```csharp
     /// <summary>
     /// Measure type (pixels, percents or millimeters) for Left and Top properties.
     /// If measure type is percents signature location is calculated according to worksheet 
@@ -204,18 +208,20 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// area where cells with data or style are located.
     /// </summary>
     public override MeasureType MarginMeasureType 
+    ```
     
     Following example demonstrates using **Measure Type** properties to set a QR-code signature position in the center by horizontal and in 25% by vertical of worksheet filled area. Height and width are 10% of worksheet filled area.
     
     **Measure Type properties to set a QR-code signature position**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -237,22 +243,24 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
          SaveOptions exSaveOptions = new SaveOptions();
          exSaveOptions.OutputType = OutputType.String;
-         exSaveOptions.OutputFileName = "Cells\_QrCode\_Measure\_ReleaseExample";
+         exSaveOptions.OutputFileName = "Cells_QrCode_Measure_ReleaseExample";
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", signOptions, exSaveOptions);
     }
+    ```
     
     Following example demonstrates using **Measure Type** properties to set a Barcode signature position in the center by horizontal and in 25% by vertical of worksheet filled area. Height and width are 10% of worksheet filled area.
     
     **Measure Type properties to set a Barcode signature position**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -274,24 +282,26 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
          SaveOptions exSaveOptions = new SaveOptions();
          exSaveOptions.OutputType = OutputType.String;
-         exSaveOptions.OutputFileName = "Cells\_BarCode\_Measure\_ReleaseExample";
+         exSaveOptions.OutputFileName = "Cells_BarCode_Measure_ReleaseExample";
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", signOptions, exSaveOptions);
     }
+    ```
     
     Following example demonstrates using **Measure Type** properties to set a digital signature position in the center by horizontal and in 25% by vertical of worksheet filled area. Height and width are 10% of worksheet filled area.
     
     **C#**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             ImagesPath = @"c:\\Aspose\\Test\\Images",
-             CertificatesPath = @"c:\\Aspose\\Test\\Certificates",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             ImagesPath = @"c:\Aspose\Test\Images",
+             CertificatesPath = @"c:\Aspose\Test\Certificates",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -315,24 +325,26 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
          SaveOptions exSaveOptions = new SaveOptions();
          exSaveOptions.OutputType = OutputType.String;
-         exSaveOptions.OutputFileName = "Cells\_Digital\_Measure\_ReleaseExample";
+         exSaveOptions.OutputFileName = "Cells_Digital_Measure_ReleaseExample";
      
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", signOptions, exSaveOptions);
     }
+    ```
     
     Following example demonstrates using **Measure Type** properties to set a image signature position in the center by horizontal and in 25% by vertical of worksheet filled area. Height and width are 10% of worksheet filled area.
     
     **C#**
     
+    ```csharp
     ublic static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             ImagesPath = @"c:\\Aspose\\Test\\Images",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             ImagesPath = @"c:\Aspose\Test\Images",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -354,22 +366,24 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
          SaveOptions exSaveOptions = new SaveOptions();
          exSaveOptions.OutputType = OutputType.String;
-         exSaveOptions.OutputFileName = "Cells\_Image\_Measure\_ReleaseExample";
+         exSaveOptions.OutputFileName = "Cells_Image_Measure_ReleaseExample";
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", signOptions, exSaveOptions);
     }
+    ```
     
     Following example demonstrates using **Measure Type** properties to set a text signature position in the center by horizontal and in 25% by vertical of worksheet filled area. Height and width are 10% of worksheet filled area.
     
     **C#**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -391,22 +405,24 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
          SaveOptions exSaveOptions = new SaveOptions();
          exSaveOptions.OutputType = OutputType.String;
-         exSaveOptions.OutputFileName = "Cells\_Text\_Measure\_ReleaseExample";
+         exSaveOptions.OutputFileName = "Cells_Text_Measure_ReleaseExample";
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", signOptions, exSaveOptions);
     }
+    ```
     
     Following example demonstrates using **Measure Type** properties to set a stamp signature position in the center by horizontal and in 25% by vertical of worksheet filled area. Height and width are 10% of worksheet filled area.
     
     **C#**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
          // instantiating the signature handler
          SignatureHandler handler = new SignatureHandler(signConfig);
@@ -417,7 +433,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
          signOptions.VerticalAlignment = VerticalAlignment.Top;
          signOptions.BackgroundColor = Color.Blue;
          signOptions.BackgroundColorCropType = StampBackgroundCropType.None;
-         signOptions.OuterLines.Add(new StampLine() { Text = "Stamp\_Size\_Pixels", BackgroundColor = Color.Blue, TextColor = Color.Chartreuse });
+         signOptions.OuterLines.Add(new StampLine() { Text = "Stamp_Size_Pixels", BackgroundColor = Color.Blue, TextColor = Color.Chartreuse });
      
          // size
          signOptions.SizeMeasureType = MeasureType.Percents;
@@ -435,10 +451,11 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
          SaveOptions exSaveOptions = new SaveOptions();
          exSaveOptions.OutputType = OutputType.String;
-         exSaveOptions.OutputFileName = "Cells\_Stamp\_Measure\_ReleaseExample";
+         exSaveOptions.OutputFileName = "Cells_Stamp_Measure_ReleaseExample";
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", signOptions, exSaveOptions);
     }
+    ```
     
 3.  ** **Digital Search Options for Cells and Words Documents were updated with few properties.****  
     
@@ -448,6 +465,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **WordsSearchDigitalOptions properties**
     
+    ```csharp
     /// <summary>
     /// Comments of Digital Signature to search.
     /// </summary>
@@ -468,13 +486,15 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// For non empty values specifies distinguished name of the certificate isuuer to search.
     /// </summary>
     public string IssuerName { get; }
+    ```
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage"
+        StoragePath = @"c:\Aspose\Test\Storage"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -485,7 +505,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     searchOptions.SignDateTimeFrom = new DateTime(DateTime.Now.Year, 1, 1);
     searchOptions.IssuerName = "John";
     // Search Document for Signatures
-    string guid = "test\_digitalsigned.docx";
+    string guid = "test_digitalsigned.docx";
     SearchResult searchResult = handler.Search(guid, searchOptions);
     Console.WriteLine("Source file {0} contains {1} digital signature(s)", guid, searchResult.Signatures.Count);
     foreach (BaseSignature signature in searchResult.Signatures)
@@ -493,9 +513,10 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         WordsDigitalSignature WordsSign = (signature as WordsDigitalSignature);
         if (WordsSign != null)
         {
-            Console.WriteLine("\\t >> Digital signature from {0}. Comments: {1}. Valid {2}", WordsSign.SignTime, WordsSign.Comments, WordsSign.IsValid);
+            Console.WriteLine("\t >> Digital signature from {0}. Comments: {1}. Valid {2}", WordsSign.SignTime, WordsSign.Comments, WordsSign.IsValid);
         }
     }
+    ```
     
       
     Public class **CellsSearchDigitalOptions **was extended with new properties to specify additional search criteria.
@@ -504,6 +525,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **CellsSearchDigitalOptions properties**
     
+    ```csharp
     /// <summary>
     /// Comments of Digital Signature to search.
     /// </summary>
@@ -516,13 +538,15 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// Date and time range of Digital Signature to search. Nullable value will be ignored.
     /// </summary>
     public DateTime? SignDateTimeTo { get; set; }
+    ```
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage"
+        StoragePath = @"c:\Aspose\Test\Storage"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -532,7 +556,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     searchOptions.Comments = "test comment";
     searchOptions.SignDateTimeFrom = new DateTime(DateTime.Now.Year, 1, 1);
     // Search Document for Signatures
-    string guid = "test\_digitalsigned.xls";
+    string guid = "test_digitalsigned.xls";
     SearchResult searchResult = handler.Search(guid, searchOptions);
     Console.WriteLine("Source file {0} contains {1} digital signature(s)", guid, searchResult.Signatures.Count);
     foreach (BaseSignature signature in searchResult.Signatures)
@@ -540,14 +564,16 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         CellsDigitalSignature cellsSign = (signature as CellsDigitalSignature);
         if (cellsSign != null)
         {
-            Console.WriteLine("\\t >> Digital signature from {0}. Comments: {1}. Valid {2}", cellsSign.SignTime, cellsSign.Comments, cellsSign.IsValid);
+            Console.WriteLine("\t >> Digital signature from {0}. Comments: {1}. Valid {2}", cellsSign.SignTime, cellsSign.Comments, cellsSign.IsValid);
         }
     }
+    ```
     
 4.  Public interface **ITextAlignment **was implemented to define signature position by specifying worksheet row or column number.
     
     **ICellsPosition**
     
+    ```csharp
     /// <summary>
     /// Interface defines signature position for Cells documents.
     /// </summary>
@@ -562,18 +588,20 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         int ColumnNumber { get; set; }
     }
+    ```
     
     Following example demonstrates using interface **ICellsPosition** to set signature position by specifying worksheet row or column number for Cells document.
     
     **Setting text alignment in text signature**
     
+    ```csharp
     public static void Main()
      {
          // setup Signature configuration
          SignatureConfig signConfig = new SignatureConfig
          {
-             StoragePath = @"c:\\Aspose\\Test\\Storage",
-             OutputPath = @"c:\\Aspose\\Test\\Output"
+             StoragePath = @"c:\Aspose\Test\Storage",
+             OutputPath = @"c:\Aspose\Test\Output"
          };
      
          // instantiating the signature handler
@@ -592,13 +620,15 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
          // sign document
          string signedPath = handler.Sign<string>("test.xlsx", signOptions, 
-             new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells\_Documents\_Simple"});
+             new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells_Documents_Simple"});
     }
+    ```
     
 5.  Properties **DocumentPageNumber**, **PagesSetup** and **SearchAllPages** in public class **SearchDigitalOptions **were marked as obsolete because they are not used in digital search workflow.
     
     **SearchDigitalOptions**
     
+    ```csharp
     /// <summary>
     /// Gets or sets Document page number for searching.
     /// </summary>
@@ -616,11 +646,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// </summary>
     // This property is obsolete and not supported for digital search.
     public bool SearchAllPages 
+    ```
     
 6.  Properties **DocumentPageNumber** and **PagesSetup** in public class **VerifyDigitalOptions **were marked as obsolete because they are not used in digital verification workflow.
     
     **VerifyDigitalOptions**
     
+    ```csharp
     /// <summary>
     /// Document Page Number to be verified.
     /// </summary>
@@ -632,3 +664,4 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// </summary>
     //This property is obsolete and not supported for digital verification.
     public PagesSetup PagesSetup
+    ```

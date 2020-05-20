@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Common rendering options
-
 Please refer to the following articles that show how to use common rendering options that can be applied to most of the supported file types.
 
 ## More resources

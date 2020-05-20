@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 18.10 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 18.10
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 18.10{{< /alert >}}
 
 ## Major Features
 
@@ -96,12 +93,13 @@ Improvement
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  New public class **CellsMetadataSignature **was added to implement Metadata signature features for Cells Documents. This class derives base **MetadataSignature **, overloads virtual methods (IClonable implementation).
     
     **CellsMetadataSignature**
     
+    ```csharp
     /// <summary>
     /// Contains Cells Metadata Signature properties.
     /// </summary>
@@ -133,6 +131,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <returns>Returns cloned Metadata Signature instance.</returns>
         public override MetadataSignature Clone(object value);
     }
+    ```
     
     **Cells Metadata Signature properties**
     
@@ -180,6 +179,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Cells Metadata Sign Options properties**
     
+    ```csharp
     /// <summary>
     /// Represents the Metadata Signature Options for Cells Documents.
     /// </summary>
@@ -196,16 +196,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="collection">Signature Metadata</param>
         public CellsMetadataSignOptions(IEnumerable<MetadataSignature> collection);
     }
+    ```
     
     Following example demonstrates using **CellsMetadataSignOptions** to add Metadata signatures to Cells Document.
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -213,29 +215,31 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     CellsMetadataSignOptions signOptions = new CellsMetadataSignOptions();
     // Specify different Metadata Signatures and add them to options sigature collection
     // setup Author property
-    CellsMetadataSignature mdSign\_Author = new CellsMetadataSignature("Author", "Mr.Scherlock Holmes");
-    signOptions.MetadataSignatures.Add(mdSign\_Author);
+    CellsMetadataSignature mdSign_Author = new CellsMetadataSignature("Author", "Mr.Scherlock Holmes");
+    signOptions.MetadataSignatures.Add(mdSign_Author);
     // setup data of document id
-    CellsMetadataSignature mdSign\_DocId = new CellsMetadataSignature("DocumentId", Guid.NewGuid().ToString());
-    signOptions.MetadataSignatures.Add(mdSign\_DocId);
+    CellsMetadataSignature mdSign_DocId = new CellsMetadataSignature("DocumentId", Guid.NewGuid().ToString());
+    signOptions.MetadataSignatures.Add(mdSign_DocId);
     // setup data of sign date
-    CellsMetadataSignature mdSign\_Date = new CellsMetadataSignature("SignDate", DateTime.Now);
-    signOptions.MetadataSignatures.Add(mdSign\_Date);
+    CellsMetadataSignature mdSign_Date = new CellsMetadataSignature("SignDate", DateTime.Now);
+    signOptions.MetadataSignatures.Add(mdSign_Date);
     // setup some integer value
-    CellsMetadataSignature mdSign\_Days = new CellsMetadataSignature("DocDays", 12345);
-    signOptions.MetadataSignatures.Add(mdSign\_Days);
+    CellsMetadataSignature mdSign_Days = new CellsMetadataSignature("DocDays", 12345);
+    signOptions.MetadataSignatures.Add(mdSign_Days);
     // setup data of sign date
-    CellsMetadataSignature mdSign\_Koeff = new CellsMetadataSignature("SignKoeff", 2.345M);
-    signOptions.MetadataSignatures.Add(mdSign\_Koeff);
+    CellsMetadataSignature mdSign_Koeff = new CellsMetadataSignature("SignKoeff", 2.345M);
+    signOptions.MetadataSignatures.Add(mdSign_Koeff);
     // sign document
     string signedPath = handler.Sign<string>("test.xlsx", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells\_Documents\_Metadata" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells_Documents_Metadata" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 3.  New public class **WordsMetadataSignature **was added to implement Metadata signature features for Words Documents. This class derives base **MetadataSignature**, overloads virtual methods (IClonable implementation).
     
     **WordsMetadataSignature**
     
+    ```csharp
     /// <summary>
     /// Contains Words Metadata Signature properties.
     /// </summary>
@@ -267,6 +271,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <returns>Returns cloned Metadata Signature instance.</returns>
         public override MetadataSignature Clone(object value);
     }
+    ```
     
     **Words Metadata Signature properties**
     
@@ -314,6 +319,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Words Metadata Sign Options properties**
     
+    ```csharp
     /// <summary>
     /// Represents the Metadata Signature Options for Words Documents.
     /// </summary>
@@ -330,16 +336,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="collection">Signature Metadata</param>
         public WordsMetadataSignOptions(IEnumerable<MetadataSignature> collection);
     }
+    ```
     
     Following example demonstrates using **WordsMetadataSignOptions** to add Metadata signatures to Words Document.
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -347,29 +355,31 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     WordsMetadataSignOptions signOptions = new WordsMetadataSignOptions();
     // Specify different Metadata Signatures and add them to options sigature collection
     // setup Author property
-    WordsMetadataSignature mdSign\_Author = new WordsMetadataSignature("Author", "Mr.Scherlock Holmes");
-    signOptions.MetadataSignatures.Add(mdSign\_Author);
+    WordsMetadataSignature mdSign_Author = new WordsMetadataSignature("Author", "Mr.Scherlock Holmes");
+    signOptions.MetadataSignatures.Add(mdSign_Author);
     // setup data of document id
-    WordsMetadataSignature mdSign\_DocId = new WordsMetadataSignature("DocumentId", Guid.NewGuid().ToString());
-    signOptions.MetadataSignatures.Add(mdSign\_DocId);
+    WordsMetadataSignature mdSign_DocId = new WordsMetadataSignature("DocumentId", Guid.NewGuid().ToString());
+    signOptions.MetadataSignatures.Add(mdSign_DocId);
     // setup data of sign date
-    WordsMetadataSignature mdSign\_Date = new WordsMetadataSignature("SignDate", DateTime.Now);
-    signOptions.MetadataSignatures.Add(mdSign\_Date);
+    WordsMetadataSignature mdSign_Date = new WordsMetadataSignature("SignDate", DateTime.Now);
+    signOptions.MetadataSignatures.Add(mdSign_Date);
     // setup some integer value
-    WordsMetadataSignature mdSign\_Days = new WordsMetadataSignature("DocDays", 12345);
-    signOptions.MetadataSignatures.Add(mdSign\_Days);
+    WordsMetadataSignature mdSign_Days = new WordsMetadataSignature("DocDays", 12345);
+    signOptions.MetadataSignatures.Add(mdSign_Days);
     // setup data of sign date
-    WordsMetadataSignature mdSign\_Koeff = new WordsMetadataSignature("SignKoeff", 2.345M);
-    signOptions.MetadataSignatures.Add(mdSign\_Koeff);
+    WordsMetadataSignature mdSign_Koeff = new WordsMetadataSignature("SignKoeff", 2.345M);
+    signOptions.MetadataSignatures.Add(mdSign_Koeff);
     // sign document
     string signedPath = handler.Sign<string>("test.docx", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Words\_Documents\_Metadata" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Words_Documents_Metadata" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 5.  New public class **CellsSearchMetadataOptions **was added to provide options to search for Cells Metadata signatures within the Cells Documents. This class derives base **SearchMetadataOptions**.
     
     **Cells Metadata Search Options properties**
     
+    ```csharp
     /// <summary>
     /// Represents the Metadata Signature Search Options for Cells Documents.
     /// </summary>
@@ -392,16 +402,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public CellsSearchMetadataOptions(bool includeBuiltinProperties);
      
     }
+    ```
     
     Following example demonstrates using **SearchMetadataOptions** to search for Cells Metadata signatures in the Cells Documents.
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -418,11 +430,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Cells Metadata: {0} = {1}", signature.Name, signature.ToString());
         }
     }
+    ```
     
 6.  New public class **WordsSearchMetadataOptions** was added to provide options to search for Words Metadata signatures within the Words Documents. This class derives base **SearchMetadataOptions**.
     
     **Words Metadata Search Options properties**
     
+    ```csharp
     /// <summary>
     /// Represents the Metadata Signature Search Options for Words Documents.
     /// </summary>
@@ -445,16 +459,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public WordsSearchMetadataOptions(bool includeBuiltinProperties);
      
     }
+    ```
     
     Following example demonstrates using **SearchMetadataOptions** to search for Words Metadata signatures in the Words Documents.
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -472,11 +488,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Words Metadata: {0} = {1}", metadataSignature.Name, metadataSignature.ToString());
         }
     }
+    ```
     
 7.  Public class **SearchResult** was updated with generic method **ToList<T>()** to provide ability for typed list conversion.
     
     **C#**
     
+    ```csharp
     // search document
     SearchResult result = handler.Search("SignedMetadata.docx", searchOptions);
     // output signatures
@@ -489,3 +507,4 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Words Metadata: {0} = {1}", metadataSignature.Name, metadataSignature.ToString());
         }
     }
+    ```

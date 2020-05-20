@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Comparison for .NET 19.5 Release Notes
-
-This page contains release notes for GroupDocs.Comparison for .NET 19.5
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for .NET 19.5{{< /alert >}}
 
 ## Major Features
 
@@ -120,19 +117,21 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 19.5. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 19.5. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **Extended PageImage properties**  
     For now PageImage class was extended by adding 2 public properties *Width* and *Height*
     
+    ```csharp
     Comparer comparer = new Comparer();
      
      
     // get the list of pages as images
     List<PageImage> sourceImages = comparer.ConvertToImages(sourcePath);
     // getting sizes of first page
-    int h = sourceImages\[0\].Height;
-    int w = sourceImages\[0\].Width;
+    int h = sourceImages[0].Height;
+    int w = sourceImages[0].Width;
+    ```
     
 2.  **Getting coordinates of changes**  
     
@@ -140,22 +139,27 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     
     To use this feature you should specify in *ComparisonSettings CalculateComponentCoordinates *property
     
+    ```csharp
     ComparisonSetting settings = new ComparisonSetting
     {
        ...
        CalculateComponentCoordinates = true;
        ...
     }
+    ```
     
     The coordinates of changes will be stored in *Box* property of *ChangeInfo* class
     
+    ```csharp
     List<ChangeInfo> changes = new List<ChangeInfo>(result.GetChanges());
-    chages\[0\].Box // coordinates of first change
+    chages[0].Box // coordinates of first change
+    ```
     
     Example of further using this option:
     
     **C#**
     
+    ```csharp
     ComparisonSettings comparisonsettings = new ComparisonSettings();
     comparisonSettings.StyleChangeDetection = true;
     //this setting specify that we want to have change coordinates
@@ -191,9 +195,10 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     				graphics.DrawRectangle(new Pen(Color.Green), changeInfo.Box.X, changeInfo.Box.Y, changeInfo.Box.Width, changeInfo.Box.Height);
     		}
     	}
-    	bitmap.Save(savePath + @"/Result\_Pages/result\_" + image.PageNumber + ".png");
+    	bitmap.Save(savePath + @"/Result_Pages/result_" + image.PageNumber + ".png");
     	bitmap.Dispose();
     }
+    ```
     
 3.  **New DocumentInfo class**  
     
@@ -206,6 +211,8 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     Width - the width of page  
     Height - the height of page
     
+    ```csharp
     Informer informer = new Informer();
     //get information about document from filePath
     DocumentInfo documentInfo = informer.GetDocumentInfo(filePath);
+    ```

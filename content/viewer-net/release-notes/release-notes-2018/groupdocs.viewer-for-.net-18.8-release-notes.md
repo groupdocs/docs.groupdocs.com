@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 18.8 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 18.8.
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 18.8.{{< /alert >}}
 
 ## Major Features
 
@@ -122,7 +119,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 18.8. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 18.8. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Rendering part of the MS Project with the specified time interval
 
@@ -183,6 +180,7 @@ Since the version 18.8, it is possible to set ForcePasswordValidation property o
 
 **Sample app.config with correct GroupDocs.Viewer configurations**
 
+```csharp
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
     <configSections>
@@ -192,19 +190,20 @@ Since the version 18.8, it is possible to set ForcePasswordValidation property o
       <supportedRuntime version="v2.0.50727"/>
     </startup>
     <groupdocs.viewer>
-      <storagePath value="C:\\storage"/>
+      <storagePath value="C:\storage"/>
       <cacheFolderName value="cachefolder"/>
-      <cachePath value="C:\\cache"/>
+      <cachePath value="C:\cache"/>
       <enableCaching value="true"/>
-      <localesPath value="C:\\locales"/>
+      <localesPath value="C:\locales"/>
       <pageNamePrefix value="prefix"/>
       <forcePasswordValidation value="true"/>
       <fontDirectories>
-        <add path="C:\\fonts" />
-        <add path="C:\\more\_fonts" />
+        <add path="C:\fonts" />
+        <add path="C:\more_fonts" />
       </fontDirectories>
     </groupdocs.viewer>
 </configuration>
+```
 
 ### List of Changes in v18.8
 

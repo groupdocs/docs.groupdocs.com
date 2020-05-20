@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for QR-code e-signatures
-
 When you search for electronic signatures of QR-Code type inside document with [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) it's only needed to [QrCodeSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/qrcodesearchoptions) object to Search method.   
 Here are the quick guide of how to search for QR-code signatures:
 
@@ -24,17 +21,19 @@ Here are the quick guide of how to search for QR-code signatures:
 
 The code snippet below demonstrates search for QR-code signature in the document.
 
+```csharp
  			using (Signature signature = new Signature("sample.pdf"))
             {
                 // search for signatures in document
                 List<QRCodeSignature> signatures = signature.Search<QRCodeSignature>(SignatureType.QrCode);
                
-     			Console.WriteLine("\\nSource document contains following signatures.");
+     			Console.WriteLine("\nSource document contains following signatures.");
                 foreach (var QRCodeSignature in signatures)
                 {
                     Console.WriteLine("QRCode signature found at page {0} with type {1} and text {2}", QRCodeSignature.PageNumber, QRCodeSignature.EncodeType, QRCodeSignature.Text);
                 }
             }
+```
 
 ## More resources
 

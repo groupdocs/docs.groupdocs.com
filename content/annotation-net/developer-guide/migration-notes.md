@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Migration Notes
-
 ### Why To Migrate?
 
 Here are the key reasons to use the new updated API provided by GroupDocs.Annotation for .NET since version 19.8:

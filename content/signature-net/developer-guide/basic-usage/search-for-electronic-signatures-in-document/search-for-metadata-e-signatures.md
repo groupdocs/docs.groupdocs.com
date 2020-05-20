@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for Metadata e-signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides a [MetadataSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/metadatasearchoptions) class to search Metadata electronic signatures within document.  
 Here are the steps to search for Metadata signatures using GroupDocs.Signature API:
 
@@ -24,6 +21,7 @@ Here are the steps to search for Metadata signatures using GroupDocs.Signature A
 
 This code snippet demonstrates how to search for Metadata e-signature in the document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     MetadataSearchOptions options = new MetadataSearchOptions();
@@ -34,6 +32,7 @@ using (Signature signature = new Signature("sample.pdf"))
         Console.WriteLine("Metadata signature found. Name : {0}. Value: {1}", metadataSignature.Name, metadataSignature.Value);
     }
 }
+```
 
 ## More resources
 

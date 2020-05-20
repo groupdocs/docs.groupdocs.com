@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 17.5.0 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 17.5.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 17.5.0{{< /alert >}}
 
 ## Major Features
 
@@ -124,7 +121,7 @@ New Feature
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.5.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.5.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 *   Added new enumeration value **Millimeters** for enumeration **MeasureType** to specify measure units in millimeters for location, size of margins.
     
@@ -134,11 +131,12 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the conversion handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -160,6 +158,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "DifferentMeasureUnitTypes" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 
 *   Following static method of SignatureHandler are marked as Obsolete attribute and will be deprecated after next 3 Releases
@@ -168,10 +167,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     public static DocumentDescription GetPageDescriptions(string guid);
-    public static byte\[\] GetDocumentPageImage(string guid, int? width, int? quality, int pageIndex);
+    public static byte[] GetDocumentPageImage(string guid, int? width, int? quality, int pageIndex);
     public static System.Drawing.Size GetPageSize(string guid, int signaturePageNumber, double signatureLocationX,
                 double signatureLocationY, PositionInCellsDocument positionInCellsDocument);
+    
+    ```
     
 *   Introduced non static methods to obtain Document information to SignatureHandler class. More examples are located here
     
@@ -179,31 +181,33 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {    
-        StoragePath = @"c:\\Aspose\\Test\\Storage",    
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",    
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the conversion handler
     SignatureHandler handler = new SignatureHandler(signConfig);
     // Document description
-    DocumentDescription docInfo = handler.GetDocumentDescription(@"c:\\Aspose\\Test\\Storage\\test.pdf");
+    DocumentDescription docInfo = handler.GetDocumentDescription(@"c:\Aspose\Test\Storage\test.pdf");
     Console.WriteLine("Document " + docInfo.Guid + " contains " + docInfo.PageCount + " pages");
     Console.WriteLine("Width of first page is " + docInfo.Pages.FirstOrDefault().Width);
     // Image from specified page
-    byte\[\] bytesImage = handler.GetPageImage(@"c:\\Aspose\\Test\\Storage\\test.pdf", 1);
+    byte[] bytesImage = handler.GetPageImage(@"c:\Aspose\Test\Storage\test.pdf", 1);
     MemoryStream memoryStream = new MemoryStream(bytesImage);
     using (Image image = Image.FromStream(memoryStream))
     {    
         // Make something with image   
         Console.WriteLine("Height of image is " + image.Height);    
-        image.Save(@"c:\\Aspose\\Test\\Output\\ImageFromPage.png", ImageFormat.Png);
+        image.Save(@"c:\Aspose\Test\Output\ImageFromPage.png", ImageFormat.Png);
     }
     memoryStream.Dispose();
     // Page size
-    Size pageSize = handler.GetDocumentPageSize(@"c:\\Aspose\\Test\\Storage\\test.pdf", 1);
+    Size pageSize = handler.GetDocumentPageSize(@"c:\Aspose\Test\Storage\test.pdf", 1);
     Console.WriteLine("Page size is " + pageSize.Height + " x " + pageSize.Width); 
+    ```
     
 *   Added new enumeration for Text Signature Implementation for each enumeration type like CellsTextSignatureImplementation, PdfTextSignatureImplementation, WordsTextSignatureImplementation and SlidesTextSignatureImplementation - **Watermark**.
     
@@ -211,11 +215,12 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the conversion handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -225,8 +230,9 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.SignatureImplementation = PdfTextSignatureImplementation.Watermark;
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf\_TextSignatureWatermark" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf_TextSignatureWatermark" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 *   Added new enumeration for Text Signature Implementation for Words Documents WordsTextSignatureImplementation **TextToFormField.  
     **
@@ -235,11 +241,12 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
      // setup Signature configuration
                 SignatureConfig signConfig = new SignatureConfig
                 {
-                    StoragePath = @"c:\\Aspose\\Test\\Storage",
-                    OutputPath = @"c:\\Aspose\\Test\\Output"
+                    StoragePath = @"c:\Aspose\Test\Storage",
+                    OutputPath = @"c:\Aspose\Test\Output"
                 };
                 // instantiating the conversion handler
                 SignatureHandler handler = new SignatureHandler(signConfig);
@@ -250,17 +257,20 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
                 signOptions.FormTextFieldTitle = "RT";
                 // sign document
                 string signedPath = handler.Sign<string>("Forms.docx", signOptions,
-                    new SaveOptions { OutputType = OutputType.String, OutputFileName = "Words\_FormFields" });
+                    new SaveOptions { OutputType = OutputType.String, OutputFileName = "Words_FormFields" });
+    
+    ```
     
     **Verification of Words Document signed with Text Signature to form text field**
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the conversion handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -274,5 +284,6 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // title of text field
     verifyOptions.FormTextFieldTitle = "RT";
     //verify document
-    VerificationResult result = handler.Verify("Forms\_signed.docx", verifyOptions);
+    VerificationResult result = handler.Verify("Forms_signed.docx", verifyOptions);
     Console.WriteLine("Signed file verification result: " + result.IsValid);
+    ```

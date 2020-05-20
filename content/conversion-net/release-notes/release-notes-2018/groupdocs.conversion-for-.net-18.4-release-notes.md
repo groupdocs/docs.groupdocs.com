@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion for .NET 18.4 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 18.4
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 18.4{{< /alert >}}
 
 ## Major Features
 
@@ -80,54 +77,69 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 18.4. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 18.4. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Introduced new property in WatemarkOptions
 
+```csharp
 /// <summary>
 /// Image watermark
 /// </summary>
-public byte\[\] Image { get; set; }
+public byte[] Image { get; set; }
+```
 
 Usage
 
-byte\[\] image = System.IO.File.ReadAllBytes ( "image.jpg" );
+```csharp
+byte[] image = System.IO.File.ReadAllBytes ( "image.jpg" );
 var saveOptions = new PdfSaveOptions();
 saveOptions.WatermarkOptions.Image = image;
+```
 
 ### Introduced new property in PdfOptions
 
+```csharp
 /// <summary>
 /// Convert a PDF from RGB colorspace to Grayscale
 /// </summary>
 public bool Grayscale { get; set; } 
+```
 
 Usage
 
+```csharp
 var saveOptions = new PdfSaveOptions();
 saveOptions.PdfOptions.Grayscale = true;
+```
 
 ### Introduced new property in PdfOptions
 
+```csharp
 /// <summary>
 /// Linearize PDF Document for the Web
 /// </summary>
 public bool Linearize { get; set; } 
+```
 
 Usage
 
+```csharp
 var saveOptions = new PdfSaveOptions();
 saveOptions.PdfOptions.Linearize = true;
+```
 
 ### Introduced new property in PdfOptions
 
+```csharp
 /// <summary>
 /// Pdf optimization options
 /// </summary>
 public PdfOptimizationOptions OptimizationOptions { get; }
+```
 
 Usage
 
+```csharp
 var saveOptions = new PdfSaveOptions();
  
 // all images in the document are re-compressed. The compression is defined by the ImageQuality property.
@@ -147,17 +159,22 @@ saveOptions.PdfOptions.OptimizationOptions.RemoveUnusedStreams = true;
  
 // Make fonts not embedded if set to true
 saveOptions.PdfOptions.OptimizationOptions.UnembedFonts = true;
+```
 
 ### Introduced new property WordBookmarkOptions in PdfSaveOptions
 
+```csharp
 /// <summary>
 /// If the input document is Word the conversion will handle the word bookmarks regarding this option.
 /// </summary>
 public WordBookmarksOptions WordBookmarkOptions { get; }
+```
 
 Usage
 
+```csharp
 var saveOptions = new PdfSaveOptions();
 saveOptions.WordBookmarkOptions.BookmarksOutlineLevel = 5;
 saveOptions.WordBookmarkOptions.HeadingsOutlineLevels = 5;
 saveOptions.WordBookmarkOptions.ExpandedOutlineLevels = 9;
+```

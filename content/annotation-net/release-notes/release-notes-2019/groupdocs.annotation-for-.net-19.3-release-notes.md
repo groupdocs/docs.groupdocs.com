@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Annotation for .NET 19.3 Release Notes
-
-This page contains release notes for GroupDocs.Annotation for .NET 19.3
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Annotation for .NET 19.3{{< /alert >}}
 
 ## Major Features
 
@@ -155,20 +152,23 @@ Bug
 
 ## Public API and Backward Incompatible Change
 
-This section lists public API changes that were introduced in GroupDocs.Annotation for .NET 19.3. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Annotation which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Annotation for .NET 19.3. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Annotation which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  Adding Ellipse annotation.
     
+    ```csharp
     // minimal set of parameters
     AnnotationInfo ellipse= new AnnotationInfo()
     {   
         Box = new Rectangle(100, 100.0, 50, 50),
         Type = AnnotationType.Ellipse;
     };
+    ```
     
 2.  GetThumbnail method returns JPEG image stream.  
     Assume we are getting pages from document:
     
+    ```csharp
     List<PageImage> pages = annotationHandler.GetPages(document);
      
     //Then if we want get thumbnail we call GetThumbnail() method of PageImage item:
@@ -185,13 +185,16 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
        Stream stream = pageImage.GetThumbnail(100, 100); 
        // do something with stream 
     }
+    ```
     
 3.  Added ability to set text watermarks angle.  
     The same as adding Watermark annotation, but you should additionally set Watermark rotation angle by setting AnnotationInfo.Angle property (in degrees)
     
+    ```csharp
     AnnotationInfo annotation = new AnnotationInfo
     {
         Type = AnnotationType.Watermark,
         Angle = 45,                
         // another properties
     };
+    ```

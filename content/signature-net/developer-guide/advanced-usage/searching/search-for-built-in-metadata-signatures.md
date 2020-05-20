@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for built-in Metadata signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [MetadataSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/metadatasearchoptions) class to specify different options to search for Metadata signatures.
 
 Most document types such as Word Processing, Spreadsheet and Presentation contains built-in metadata properties. Using property [IncludeBuiltinProperties](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/metadatasearchoptions/properties/includebuiltinproperties) of [MetadataSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/metadatasearchoptions) allows to collect all supported built-in metadata properties of document. These properties are like document author, creation date, document keywords, titles, etc.
@@ -28,6 +25,7 @@ Here are the steps to search for metadata signatures within the document with Gr
 
 This example shows how to get built in Metadata signatures.
 
+```csharp
 using (Signature signature = new Signature("sample.xlsx"))
 {
     MetadataSearchOptions options = new MetadataSearchOptions()
@@ -38,12 +36,13 @@ using (Signature signature = new Signature("sample.xlsx"))
     };
     // search for signatures in document
     List<SpreadsheetMetadataSignature> signatures = signature.Search<SpreadsheetMetadataSignature>(options);
-    Console.WriteLine("\\nSource document contains following signatures.");
+    Console.WriteLine("\nSource document contains following signatures.");
     foreach (var metadataSignature in signatures)
     {
         Console.WriteLine("Metadata signature found. Name : {0}. Value: {1}", metadataSignature.Name, metadataSignature.Value);
     }
 }
+```
 
 ## More resources
 

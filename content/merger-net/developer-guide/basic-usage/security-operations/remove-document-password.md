@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Remove document password
-
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to remove password from password-protected document. Here are the steps to remove document password:
 
 *   Initialize [LoadOptions](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain.options/loadoptions) class specifying current password;

@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign Pdf documents with special appearance
-
-
 # Sign PDF document with special appearance
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) contains classes that implements for Pdf document special signature appearances.
@@ -39,6 +35,7 @@ Here are the steps to setup special Pdf  document Text signature appearance wit
 
 This example shows how to add Text signature to Pdf document with annotation look. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -78,11 +75,13 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("signedAnnotation.pdf", options);
 }
+```
 
 ## Sign Pdf document with Text signature Sticker appearance
 
 This example shows how to add Text signature to Pdf document with sticker look. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
 using (Signature signature = new Signature(filePath))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -117,6 +116,7 @@ using (Signature signature = new Signature(filePath))
     // sign document to file
     signature.Sign(outputFilePath, options);
 }
+```
 
 ## More resources
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Inserting edited slide into existing presentation
-
 By default the full presentation editing pipeline (cycle) is the next:
 
 1.  Load presentation in a form of a file or stream into constructor of the [`Editor`](https://apireference.groupdocs.com/editor/net/groupdocs.editor/editor) class.

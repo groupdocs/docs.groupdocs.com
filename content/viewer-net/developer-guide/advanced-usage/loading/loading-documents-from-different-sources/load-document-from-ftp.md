@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Load document from FTP
-
 Following example demonstrates how to render a document from FTP.
 
 ```csharp

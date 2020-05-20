@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion for .NET 19.10 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 19.10
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 19.10{{< /alert >}}
 
 ## Major Features
 
@@ -64,17 +61,21 @@ Exception stream is not expandable when converting to html
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 19.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 19.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **GroupDocs.Conversion.Options.Load.EmailLoadOptions**  
     Introduced new property TimeZoneOffset
     
+    ```csharp
     /// <summary>
     /// Gets or sets the Coordinated Universal Time (UTC) offset for the message dates. This property defines the time zone difference, between the local time and UTC.
     /// </summary>
     public TimeSpan TimeZoneOffset { get; set; }
+    ```
     
     Usage
     
+    ```csharp
     var loadOptions = new EmailLoadOptions();
     loadOptions.TimeZoneOffset = TimeSpan.FromHours(5);
+    ```

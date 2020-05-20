@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 19.6 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 19.6
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 19.6{{< /alert >}}
 
 ## Major Features
 
@@ -118,16 +115,18 @@ Improvement
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  Public abstract class **BaseSignature **was extended with new property **PageNumber** to specify documentpage number where signature object was found over Search method.
     
     **PageNumber property**
     
+    ```csharp
     /// <summary>
     /// Specifies the page signature was found on  
     /// </summary>
     public int? PageNumber { get; }
+    ```
     
     This field is supported for BarcodeSignature, QRCodeSignature and Pdf Digital Signature types. The rest signature types are not related to specific page but only to Document. This is true for Digital and Metadata Signatures.
     
@@ -135,11 +134,12 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -156,11 +156,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     {
         Console.WriteLine("Found QRCode signature: {0} with text {1} on page {2}", signature.EncodeType.TypeName, signature.Text, signature.PageNumber);
     }
+    ```
     
 2.  Public class **ImageMetadataSignOptions **was extended with new public method **AddSignature**. Method creates new Image Metadata Signature with passed arguments (id and value), adds signature to list of metadata signatures and returns newly created object as result.
     
     **AddSignature method**
     
+    ```csharp
     /// <summary>
     /// Creates new ImageMetadataSignature with passed arguments and adds it to collection.
     /// </summary>
@@ -168,16 +170,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// <param name="value">Metadata value</param>
     /// <returns>Newly created signature that was added to MetadataSignatures collection</returns>
     public ImageMetadataSignature AddSignature(ushort id, object value)
+    ```
     
     Following example demonstrates singing Image document with Metadata signature using this new method:
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -187,32 +191,36 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // set start id
     ushort imgsMetadataId = 41996;
     // setup int value
-    ImageMetadataSignature mdSign\_DocId = signOptions.AddSignature(imgsMetadataId++, 123456); // int
+    ImageMetadataSignature mdSign_DocId = signOptions.AddSignature(imgsMetadataId++, 123456); // int
     // setup Author property
-    ImageMetadataSignature mdSign\_Author = signOptions.AddSignature(imgsMetadataId++, "Mr.Scherlock Holmes"); // string
+    ImageMetadataSignature mdSign_Author = signOptions.AddSignature(imgsMetadataId++, "Mr.Scherlock Holmes"); // string
     // setup data of sign date
-    ImageMetadataSignature mdSign\_Date = signOptions.AddSignature(imgsMetadataId++, DateTime.Now); // DateTime
+    ImageMetadataSignature mdSign_Date = signOptions.AddSignature(imgsMetadataId++, DateTime.Now); // DateTime
     // setup double
-    ImageMetadataSignature mdSign\_Amnt = signOptions.AddSignature(imgsMetadataId++, 123.456M); //decimal value
+    ImageMetadataSignature mdSign_Amnt = signOptions.AddSignature(imgsMetadataId++, 123.456M); //decimal value
      
     // sign document
     string signedPath = handler.Sign<string>(@"SignedMetadata.jpg", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedMetadata2.jpg" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 3.  Public base abstract class **MetadataSignature, **ImageMetadataSignature ** **was extended with new public property **DataEncryption **of type **IDataEncryption **
     
     **DataEncryption property**
     
+    ```csharp
     /// <summary>
     /// Gets or sets implementation of <see cref="IDataEncryption"/> interface to encode and decode signature Value properties.
     /// </summary>
     public IDataEncryption DataEncryption { get; set; }
+    ```
     
     and virtual method **public T GetData<T>()**. This method returns object of type T over de-serialization and decryption from Metadata Value.
     
     **GetData<T>() method**
     
+    ```csharp
     /// <summary>
     /// Obtain object from Metadata Signature Value over de-serialization and decryption
     /// </summary>
@@ -227,6 +235,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// <param name="dataEncryption">Set custom data encryption implementation</param>
     /// <returns></returns>
     public T GetData<T>(IDataEncryption dataEncryption) where T : class 
+    ```
     
     With these changes all derived classes, same as **ImageMetadataSignature** will support this functionality.
     
@@ -234,6 +243,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup key and passphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -242,8 +252,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -267,33 +277,37 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>(@"SignedMetadata.jpg", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedMedataDataEncrypted.jpg" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     Class **DocumentSignature **written by user
     
     **Example of custom class**
     
+    ```csharp
     public class DocumentSignature
     {
         // specify SkipSerialization attribute to skip this field on serialization
-        \[SkipSerialization\]
+        [SkipSerialization]
         public string Version { get; set; }
         // specify SkipSerialization attribute to skip this field on serialization
-        \[SkipSerialization\]
+        [SkipSerialization]
         public bool IsProcessed { get; set; }
-        \[Format("SignatureID")\]
+        [Format("SignatureID")]
         public string ID { get; set; }
-        \[Format("Author")\]
+        [Format("Author")]
         public string Author { get; set; }
-        \[Format("SignatureDate","yyyy-MM-dd")\]
+        [Format("SignatureDate","yyyy-MM-dd")]
         public DateTime Signed { get; set; }
-        \[Format("Factor", "N2")\]
+        [Format("Factor", "N2")]
         public decimal DataFactor { get; set; }
     }
+    ```
     
     Following example shows how to retrieve signed Cells file with **DocumentSignature **Metadata Value:
     
     **C#**
     
+    ```csharp
     // setup key and pasphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -302,8 +316,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -325,11 +339,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             }
         }
     }
+    ```
     
     Following example shows how to retrieve signed Image with **DocumentSignature **Metadata Value (see examples above how to sign Document with custom data objects):
     
     **C#**
     
+    ```csharp
     // setup key and pasphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -338,8 +354,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -362,3 +378,4 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             }
         }
     }
+    ```

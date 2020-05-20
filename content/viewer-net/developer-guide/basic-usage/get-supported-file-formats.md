@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Get supported file formats
-
 GroupDocs.Viewer allows to get the list of all [supported file formats](Supported%2BDocument%2BFormats.html) by following the below steps:
 
 *   Call [GetSupportedFileTypes](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/filetype/methods/getsupportedfiletypes) methodof [FileType](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/filetype) class;

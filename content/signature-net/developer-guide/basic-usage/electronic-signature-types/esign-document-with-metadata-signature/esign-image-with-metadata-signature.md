@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# eSign Image with Metadata signature
-
 Metadata signature for Image document is an electronic signature based on image metadata standard. Most image formats support metadata specification or [EXIF](https://en.wikipedia.org/wiki/Exif). Image metadata is dictionary map with unique whole short identifier in range 0-65535, Some identifiers are reserved by [EXIF specification.](https://www.exiv2.org/tags.html) From signature perspective image metadata may content any hidden value of standard (int,char, string) or custom type (user defined class), be encrypted and decrypted back by known key over Search method.
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [ImageMetadataSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/imagemetadatasignature) class to specify Metadata e-signature for image documents. Image document metadata contains pair with unique identifier Id and its Value.  
@@ -34,6 +31,7 @@ Here are the steps to add metadata signatures into Image with GroupDocs.Signatur
 
 This example shows how to sign png image with metadata e-signatures
 
+```csharp
 using (Signature signature = new Signature("sample.png"))
 {
     // create Metadata option with predefined Metadata text
@@ -41,7 +39,7 @@ using (Signature signature = new Signature("sample.png"))
     // Specify different Metadata Signatures and add them to options signature collection
     ushort imgsMetadataId = 41996;
     // Create several Image Metadata signatures with different types
-    ImageMetadataSignature\[\] signatures = new ImageMetadataSignature\[\]
+    ImageMetadataSignature[] signatures = new ImageMetadataSignature[]
     {
         new ImageMetadataSignature(imgsMetadataId++, 123456), // int
         new ImageMetadataSignature(imgsMetadataId++, "Mr.Scherlock Holmes"), // string
@@ -53,6 +51,7 @@ using (Signature signature = new Signature("sample.png"))
     options.Signatures.AddRange(signatures);
     signature.Sign("SampleSigned.png", options);
 }
+```
 
 ## More resources
 

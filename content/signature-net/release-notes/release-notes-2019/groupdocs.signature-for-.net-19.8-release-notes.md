@@ -9,16 +9,11 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 19.8 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 19.8
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 19.8{{< /alert >}}
 
 ## Major Features
 
-Breaking changes
-
-In this version we're introducing new public API which was designed to be simple and easy to use. For more details about new API please check **[Public Docs](https://docs.groupdocs.com/display/signaturenet/Home)**. The legacy API have been moved into **Legacy** namespace so after update to this version it is required to make project-wide replacement of namespace usages from **GroupDocs.Signature.** to **GroupDocs.Signature.Legacy.** to resolve build issues.
+{{< alert style="danger" >}}In this version we're introducing new public API which was designed to be simple and easy to use. For more details about new API please check Public Docs. The legacy API have been moved into Legacy namespace so after update to this version it is required to make project-wide replacement of namespace usages from GroupDocs.Signature. to GroupDocs.Signature.Legacy. to resolve build issues.{{< /alert >}}
 
   
 Other notable features:
@@ -62,7 +57,7 @@ Improvement
 
 # Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.8. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.8. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  ### All public types from GroupDocs.Signature namespace are moved and marked as obsolete
     

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
 # Rendering Outlook Data Files
 
-# Rendering Outlook Data Files
-
-This page describes specific use cases of Outlook data files rendering.
+{{< alert style="info" >}}This page describes specific use cases of Outlook data files rendering.{{< /alert >}}

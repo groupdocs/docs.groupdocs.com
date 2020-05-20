@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Processes cancellation
-
 [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) class supports cancellation for each of document processing (Sign, Verify, Search). The process cancellation happens over setting property [Cancel](https://apireference.groupdocs.com/net/signature/groupdocs.signature/processprogresseventargs/properties/cancel) of [ProcessProgressEventArgs](https://apireference.groupdocs.com/net/signature/groupdocs.signature/processprogresseventargs) property in proper event handler.
 
 *   for [Sign](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/sign) process this flag should be set to true in handler of [SignProgress](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/events/signprogress) event. This event occurs each time on signing each signature was completed.
@@ -35,6 +32,7 @@ Here are the steps to provide cancellation for signing process with GroupDocs.Si
       
     
 
+```csharp
 private static void OnSignProgress(Signature sender, ProcessProgressEventArgs args)
 {
     // check if process takes more than 1 second (1000 milliseconds) processing cancellation
@@ -60,6 +58,7 @@ public static void Run()
         signature.Sign("signedSample", options);
     }
 }
+```
 
 ## Cancel verification process
 

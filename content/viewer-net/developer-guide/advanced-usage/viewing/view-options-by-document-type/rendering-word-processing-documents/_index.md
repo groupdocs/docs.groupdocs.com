@@ -9,7 +9,4 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Rendering Word Processing Documents
-
-This page describes specific use cases for Word Processing document rendering.
+{{< alert style="info" >}}This page describes specific use cases for Word Processing document rendering.{{< /alert >}}

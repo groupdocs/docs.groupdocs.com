@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for encrypted text in QR-code signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to search over secure QR-code signature with standard or custom encryption. Standard encryption is implemented over class **SymmetricEncryption** class. Creation of this object expects 3 arguments like encryption algorithm enumeration **SymmetricAlgorithmType **with one of following values (DES, TripleDES, RC2, Rijndael), string value **key** and string value **salt**.
 
 Here are the steps to search for secure QR-code text with standard encryption with GroupDocs.Signature:
@@ -27,6 +24,7 @@ Here are the steps to search for secure QR-code text with standard encryption wi
 
 This example shows how to search for secure QR-code signature text.
 
+```csharp
 using (Signature signature = new Signature("QRCodeEncryptedText.pdf"))
 {
     // setup key and pasphrase
@@ -45,13 +43,14 @@ using (Signature signature = new Signature("QRCodeEncryptedText.pdf"))
     };
     // search for signatures in document
     List<QrCodeSignature> signatures = signature.Search<QrCodeSignature>(options);
-    Console.WriteLine("\\nSource document contains following signatures.");
+    Console.WriteLine("\nSource document contains following signatures.");
     foreach (var qrCodeSignature in signatures)
     {
         Console.WriteLine("QRCode signature found at page {0} with type {1} and text '{2}'", qrCodeSignature.PageNumber,
             qrCodeSignature.EncodeType.TypeName, qrCodeSignature.Text);
     }
 }
+```
 
 ## More resources
 

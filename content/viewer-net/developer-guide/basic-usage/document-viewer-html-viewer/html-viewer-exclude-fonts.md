@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# HTML Viewer - Exclude fonts
-
 When rendering documents into HTML, by default the fonts that are used in the document are added to HTML content. This ensures fonts availability so that you can be pretty sure that the text from the original document will appear similar in the HTML, regardless of whether the fonts are installed on the viewer's device or not. Depending on type of Html rendering (with embedded or with external resources) the fonts are added inline as base64-encoded fonts or as external resources.   
   
 The following document types support adding fonts into HTML:
@@ -71,12 +68,14 @@ SVG 
 Embedding fonts increase the size of the rendered result. In order to prevent adding specific fonts (that are commonly available on most of the devices) into HTML, add excluded font name into [FontsToExclude](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions/properties/fontstoexclude) collection of [HtmlViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions) class as shown in the code sample below.   
 *NOTE:  *Currently, it works only for Presentation documents only. However, the support for this feature will be extended for all document types where it is applicable in the upcoming releases.
 
+```csharp
             using (Viewer viewer = new Viewer("sample.docx"))
             {
                 HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
                 viewOptions.FontsToExclude.Add("Times New Roman");
                 viewer.View(viewOptions);
             }
+```
 
 ## More resources
 

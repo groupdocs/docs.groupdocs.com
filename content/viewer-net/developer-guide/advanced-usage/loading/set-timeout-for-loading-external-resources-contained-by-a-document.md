@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Set timeout for loading external resources contained by a document
-
-
 # Set timeout for loading external document resources
 
 The documents may contain external resources such as graphics that should be loaded during document rendering. 
@@ -29,6 +25,7 @@ This feature is supported for:
 
 The following code snippet shows how to set a timeout for loading external resources:
 
+```csharp
             LoadOptions loadOptions = LoadOptions 
 			{
 				ResourceLoadingTimeout = TimeSpan.FromSeconds(5)
@@ -39,6 +36,7 @@ The following code snippet shows how to set a timeout for loading external resou
                 HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
                 viewer.View(viewOptions);
             }
+```
 
 ## More resources
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Save signed images with various output types
-
 [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature)class supports saving of Image signed documents with various image format types and extended options.
 
 Following classes are inherited from base class [SaveOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/saveoptions) and allows to specify additional output image format settings**.**
@@ -37,6 +34,7 @@ Here are the steps to save signed Image document to special image output type wi
 
 ## Save signed image as BMP
 
+```csharp
 using (Signature signature = new Signature("sample.jpg"))
 {   
     QRCodeSignOptions signOptions = new QRCodeSignOptions("JohnSmith")
@@ -57,9 +55,11 @@ using (Signature signature = new Signature("sample.jpg"))
     // sign document to file
     signature.Sign("signedSample", signOptions, saveOptions);    
 }
+```
 
 ## Save signed image as GIF
 
+```csharp
 using (Signature signature = new Signature("sample.jpg"))
 {   
     QRCodeSignOptions signOptions = new QRCodeSignOptions("JohnSmith")
@@ -82,9 +82,11 @@ using (Signature signature = new Signature("sample.jpg"))
     // sign document to file
     signature.Sign("SignedSample", signOptions, saveOptions);    
 }
+```
 
 ## Save signed image as JPEG
 
+```csharp
 using (Signature signature = new Signature("sample.jpg"))
 {   
     QRCodeSignOptions signOptions = new QRCodeSignOptions("JohnSmith")
@@ -106,9 +108,11 @@ using (Signature signature = new Signature("sample.jpg"))
     // sign document to file
     signature.Sign("SignedSample", signOptions, saveOptions);    
 }
+```
 
 ## Save signed image as PNG
 
+```csharp
 using (Signature signature = new Signature("sample.jpg"))
 {   
     QRCodeSignOptions signOptions = new QRCodeSignOptions("JohnSmith")
@@ -129,9 +133,11 @@ using (Signature signature = new Signature("sample.jpg"))
     // sign document to file
     signature.Sign("SignedSample", signOptions, saveOptions);
 }
+```
 
 ## Save signed image as TIFF
 
+```csharp
 using (Signature signature = new Signature("sample.jpg"))
 {   
     QRCodeSignOptions signOptions = new QRCodeSignOptions("JohnSmith")
@@ -148,6 +154,7 @@ using (Signature signature = new Signature("sample.jpg"))
     // sign document to file
     signature.Sign("SignedSample", signOptions, saveOptions);
 }
+```
 
 ## More resources
 

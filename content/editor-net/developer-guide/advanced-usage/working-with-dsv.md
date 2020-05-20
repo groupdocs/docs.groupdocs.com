@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Working with DSV
-
 > This demonstration shows and explains all necessary moments and options regarding processing DSV spreadsheets (Delimiter-separated values)
 
 #### Introduction

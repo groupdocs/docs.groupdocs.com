@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Convert to Image
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) can convert any source document to the following image formats: *Tiff, Tif, Jpg, Jpeg, Png, Gig, Bmp, Ico, Psd, Wmf, Emf, Dcm, Webp, Dng, Svg, Jp2, Odg, J2c, J2k, Jpx, Jpf, Jpm, Eps, Cgm, Cdr, Cmx, Dib, Jpc, Jls, DjVu. *When just instantiate the [ImageConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/imageconvertoptions) class without specifying the target format explicitly, *Jpg *will be used as a default format*.*
 
 Conversion to image format could be triggered by following below steps:

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Save signed Image with different output file type
-
 [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature)class supports saving of Image signed documents with different formats. Each of document type has list of compatible saving type. These values are listed in enum [ImageSaveFileFormat](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/imagesavefileformat).
 
 Here are the steps to save signed Image document to different output type with [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net):
@@ -27,6 +24,7 @@ Here are the steps to save signed Image document to different output type with [
 
 Following example demonstrates how to save signed Image document with different output type
 
+```csharp
 using (Signature signature = new Signature("sample.jpg"))
 {
     // create QRCode option with predefined QRCode text
@@ -46,6 +44,7 @@ using (Signature signature = new Signature("sample.jpg"))
     // sign document to file
     signature.Sign("signed.svg", signOptions, saveOptions);
 }
+```
 
 ## More resources
 

@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Load password-protected document
-
-
 # Load password-protected document
 
 GroupDocs.Viewer supports rendering documents that are protected with a password.

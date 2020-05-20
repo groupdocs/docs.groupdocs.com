@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Convert to Image with advanced options
-
 GroupDocs.Conversion provides [ImageConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/imageconvertoptions)to give you control over conversion result when convert to image.  Along with [common convert options](https://docs.groupdocs.com/display/conversionnet/Common+conversion+options) from base class [ImageConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/imageconvertoptions) has the following additional options:
 
 *   **[Format](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert.convertoptions/1/properties/format)** - desired result document type. Available options are: *Tiff, Tif, Jpg, Jpeg, Png, Gig, Bmp, Ico, Psd, Wmf, Emf, Dcm, Webp, Dng, Svg, Jp2, Odg, J2c, J2k, Jpx, Jpf, Jpm, Eps, Cgm, Cdr, Cmx, Dib, Jpc, Jls, DjVu*

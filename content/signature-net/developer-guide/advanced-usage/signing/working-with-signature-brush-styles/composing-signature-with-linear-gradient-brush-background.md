@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Composing signature with linear gradient brush background
-
-
   
 
 # Composing signature with linear gradient brush background 
@@ -31,6 +27,7 @@ Here are the steps to use Linear gradient brush with GroupDocs.Signature:
 
 This example shows how to use Texture brush for signature background. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
 using (Signature signature = new Signature("sample.docx"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -55,6 +52,7 @@ using (Signature signature = new Signature("sample.docx"))
     // sign document to file
     signature.Sign("signed.docx", options);
 }
+```
 
 ## More resources
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Convert to PDF
-
 Conversion to PDF format could be triggered by following below steps:
 
 *   Create new instance of [Converter](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion/converter)class and pass source document path as a constructor parameter

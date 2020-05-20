@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Delete Barcode signatures from documents
-
-
 # Delete Barcode signature from the document
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [BarcodeSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/barcodesignature) class to manipulate barcode signatures and delete them from the documents over [Delete](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/delete) method.  
@@ -33,6 +29,7 @@ Here are the steps to delete Barcode signature from the document with GroupDocs.
 
 This example shows how to delete Barcode signature that was found using [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1) method.
 
+```csharp
 using (Signature signature = new Signature("signed.docx"))
 {
     BarcodeSearchOptions options = new BarcodeSearchOptions();
@@ -40,11 +37,11 @@ using (Signature signature = new Signature("signed.docx"))
     List<BarcodeSignature> signatures = signature.Search<BarcodeSignature>(options);
     if (signatures.Count > 0)
     {
-        BarcodeSignature barcodeSignature = signatures\[0\];
+        BarcodeSignature barcodeSignature = signatures[0];
         bool result = signature.Delete(barcodeSignature);
         if (result)
         {
-            Console.WriteLine($"Signature with Barcode '{barcodeSignature.Text}' and encode type '{barcodeSignature.EncodeType.TypeName}' was deleted from document \['{fileName}'\].");
+            Console.WriteLine($"Signature with Barcode '{barcodeSignature.Text}' and encode type '{barcodeSignature.EncodeType.TypeName}' was deleted from document ['{fileName}'].");
         }
         else
         {
@@ -52,6 +49,7 @@ using (Signature signature = new Signature("signed.docx"))
         }
     }
 }
+```
 
 ## More resources
 

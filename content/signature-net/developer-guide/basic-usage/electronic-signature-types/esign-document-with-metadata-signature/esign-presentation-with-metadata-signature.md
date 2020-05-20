@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# eSign Presentation with Metadata signature
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [PresentationMetadataSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/presentationmetadatasignature) class to specify different Metadata signature objects for [MetadataSignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/metadatasignoptions) instance to sign Presentation document files.   
 Presentation document metadata is hidden attributes, some of them are visible only over viewing standard document properties like Author, Creation Date, Producer, Entry, Keywords etc.  
 Presentation document metadata contains pair of Name and Value, Name should be unique within the document.  
@@ -32,12 +29,13 @@ Here are the steps to add metadata signatures into Presentation document with Gr
 
 This example shows how to add Metadata signature to Presentation document.
 
+```csharp
 using (Signature signature = new Signature("sample.ppsx"))
 {
     MetadataSignOptions options = new MetadataSignOptions();
    
     // Create few Presentation Metadata signatures
-    PresentationMetadataSignature\[\] signatures = new PresentationMetadataSignature\[\]
+    PresentationMetadataSignature[] signatures = new PresentationMetadataSignature[]
     {
         new PresentationMetadataSignature("Author", "Mr.Scherlock Holmes"),
         new PresentationMetadataSignature("DateCreated", DateTime.Now),
@@ -47,6 +45,7 @@ using (Signature signature = new Signature("sample.ppsx"))
     options.Signatures.AddRange(signatures);
     signature.Sign("SampleSigned.ppsx", options);
 }
+```
 
 ## More resources
 

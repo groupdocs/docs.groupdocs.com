@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for standard entries in the QR-Code signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides additional features when searching for[QrCode Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/qrcodesignature)  that were previously added to document with embedded standard entry objects. Following standard entries are supported to search for and receive object back from Qr-Code
 
 *   [Email](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/email) that keeps in the QR-code standard email information with recipient, subject and body.
@@ -26,6 +23,7 @@ hideChildren: False
 
 This example shows how to search for QR-code signature and obtain [Email](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/email) object.  
 
+```csharp
 // instantiating the signature object
 using (Signature signature = new Signature("signed.pdf"))
 {
@@ -42,10 +40,13 @@ using (Signature signature = new Signature("signed.pdf"))
     }
 }
 
+```
+
 ## Search for QR-code signatures and extract Address object
 
 This example shows how to search for QR-code signature and obtain [Address](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/address) object.  
 
+```csharp
 // instantiating the signature object
 using (Signature signature = new Signature("signed.pdf"))
 {
@@ -62,10 +63,13 @@ using (Signature signature = new Signature("signed.pdf"))
      }
 }
 
+```
+
 ## Search for QR-code signatures and extract VCard object
 
 This example shows how to obtain [V-Card](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/vcard) entry from QR-Code electronic signatures.
 
+```csharp
 // instantiating the signature object
 using (Signature signature = new Signature("signed.pdf"))
 {
@@ -82,11 +86,13 @@ using (Signature signature = new Signature("signed.pdf"))
     }
 
 }
+```
 
 ## Search for QR-code with MeCard object
 
 This example shows how to obtain [Me-Card](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/mecard) entry from QR-Code electronic signature.
 
+```csharp
 // instantiating the signature object
 using (Signature signature = new Signature("sample.pdf"))
 {
@@ -109,17 +115,19 @@ using (Signature signature = new Signature("sample.pdf"))
     }
     catch
     {
-        Console.WriteError("\\nThis example requires license to properly run. " +
-                      "\\nVisit the GroupDocs site to obtain either a temporary or permanent license. " +
-                      "\\nLearn more about licensing at https://purchase.groupdocs.com/faqs/licensing. " +
-                      "\\nLear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
+        Console.WriteError("\nThis example requires license to properly run. " +
+                      "\nVisit the GroupDocs site to obtain either a temporary or permanent license. " +
+                      "\nLearn more about licensing at https://purchase.groupdocs.com/faqs/licensing. " +
+                      "\nLear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
     }
 }
+```
 
 ## Search for QR-code with EPC/SEPA object
 
 This example shows how to obtain [EPC/SEPA](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/epc) entry from QR-Code electronic signatures.
 
+```csharp
 // instantiating the signature object
 using (Signature signature = new Signature("sample.pdf"))
 {
@@ -142,17 +150,21 @@ using (Signature signature = new Signature("sample.pdf"))
     }
     catch
     {
-        Console.WriteError("\\nThis example requires license to properly run. " +
-                      "\\nVisit the GroupDocs site to obtain either a temporary or permanent license. " +
-                      "\\nLearn more about licensing at https://purchase.groupdocs.com/faqs/licensing. " +
-                      "\\nLear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
+        Console.WriteError("\nThis example requires license to properly run. " +
+                      "\nVisit the GroupDocs site to obtain either a temporary or permanent license. " +
+                      "\nLearn more about licensing at https://purchase.groupdocs.com/faqs/licensing. " +
+                      "\nLear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
     }
 }
+
+
+```
 
 ## Search for QR-code with Event object
 
 This example shows how to obtain [Event](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/event) entry from QR-Code electronic signatures.
 
+```csharp
 // instantiating the signature object
 using (Signature signature = new Signature("sample.pdf"))
 {
@@ -175,12 +187,13 @@ using (Signature signature = new Signature("sample.pdf"))
     }
     catch
     {
-        Console.WriteError("\\nThis example requires license to properly run. " +
-                      "\\nVisit the GroupDocs site to obtain either a temporary or permanent license. " +
-                      "\\nLearn more about licensing at https://purchase.groupdocs.com/faqs/licensing. " +
-                      "\\nLear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
+        Console.WriteError("\nThis example requires license to properly run. " +
+                      "\nVisit the GroupDocs site to obtain either a temporary or permanent license. " +
+                      "\nLearn more about licensing at https://purchase.groupdocs.com/faqs/licensing. " +
+                      "\nLear how to request temporary license at https://purchase.groupdocs.com/temporary-license.");
     }
 }
+```
 
   
 

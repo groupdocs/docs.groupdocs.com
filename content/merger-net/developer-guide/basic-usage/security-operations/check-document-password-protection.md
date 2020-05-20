@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Check document password-protection
-
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to check document for password-protection. The result will be **true** if document has password for opening set, in other case **false** will be returned.
 
 Here are the steps to check document password-protection:

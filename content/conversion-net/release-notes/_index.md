@@ -9,7 +9,4 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Release Notes
-
 ### Release Notes

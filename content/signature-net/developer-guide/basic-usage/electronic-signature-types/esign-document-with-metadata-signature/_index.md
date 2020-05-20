@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# eSign document with Metadata signature
-
 ## What is a Metadata?
 
 A **metadata **is an information about resource or another data. From the document perspective **metadata** is a** hidden document layer** that contains dictionary based map with unique names and its values. Metadata name is a string based unique name, the value of metadata may contain various types like whole values, decimal values, array of data, strings etc. Each document type has custom metadata specification with predefined records and custom metadata rows.

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Loading documents from different sources
-
 GroupDocs.Viewer also enables you to render of remotely located documents. The rendering of the document would be similar to [Load document from Stream](https://wiki.lisbon.dynabic.com/display/viewer/Load+document+from+Stream). In order to render a remotely located document, below steps can be followed.
 
 *   Specify the method to obtain remotely located document stream; 

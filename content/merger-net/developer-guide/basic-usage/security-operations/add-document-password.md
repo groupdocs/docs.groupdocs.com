@@ -9,12 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Add document password
-
-
-# Add document password 
-
 **GroupDocs.Merger** allows to add document password. Here are the steps to add document password:
 
 *   Initialize [AddPasswordOptions](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain.options/addpasswordoptions)class with new document password;

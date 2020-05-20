@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Add text watermark
-
-
 # Add text watermark
 
 GroupDocs.Viewer enables you to apply a watermark on the output pages (HTML / Image / PDF). 

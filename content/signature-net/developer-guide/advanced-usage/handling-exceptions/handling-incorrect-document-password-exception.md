@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Handling incorrect document password exception
-
 [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) class supports handling incorrect password passed to open protected documents over class [IncorrectPasswordException](https://apireference.groupdocs.com/net/signature/groupdocs.signature/incorrectpasswordexception).
 
 Here are the steps to handle incorrect password exception when working with protected documents with GroupDocs.Signature:
@@ -24,6 +21,7 @@ Here are the steps to handle incorrect password exception when working with prot
 
 Following example demonstrates how to handle incorrect password exception.
 
+```csharp
 // initialize LoadOptions with incorrect Password 
 LoadOptions loadOptions = new LoadOptions() { Password = "1" };
 using (Signature signature = new Signature("ProtectedPwd.pdf", loadOptions))
@@ -38,7 +36,7 @@ using (Signature signature = new Signature("ProtectedPwd.pdf", loadOptions))
         };
         // try to sign document to file, we expect for PasswordRequiredException
         signature.Sign(outputFilePath, options);
-        Console.WriteLine("\\nSource document signed successfully.\\nFile saved at " + outputFilePath);
+        Console.WriteLine("\nSource document signed successfully.\nFile saved at " + outputFilePath);
     }
     catch (IncorrectPasswordException ex)
     {
@@ -56,6 +54,7 @@ using (Signature signature = new Signature("ProtectedPwd.pdf", loadOptions))
     {
     }
 }
+```
 
 ## More resources
 

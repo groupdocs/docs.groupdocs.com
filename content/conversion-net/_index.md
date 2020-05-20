@@ -9,14 +9,9 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: True
 ---
-
 #  Home 
 
-![](images/conversion-net/home_0.png)
-
-**Welcome to the GroupDocs.Conversion for .NET**
-
-GroupDocs.Conversion for .NET is an advanced document conversion API developed to convert document formats from within any .NET application. This features-rich API empowers you to work with document conversion operations back and forth over 50 documents and image file formats. Using the document converter API is very simple as it used just one method with set of options to convert between different formats.
+{{< alert style="info" >}} Welcome to the GroupDocs.Conversion for .NETGroupDocs.Conversion for .NET is an advanced document conversion API developed to convert document formats from within any .NET application. This features-rich API empowers you to work with document conversion operations back and forth over 50 documents and image file formats. Using the document converter API is very simple as it used just one method with set of options to convert between different formats.{{< /alert >}}
 
 ## GroupDocs.Conversion for .NET Resources
 

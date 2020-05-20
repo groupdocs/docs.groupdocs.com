@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load PDF document with options
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) provides [PdfLoadOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/pdfloadoptions)to give you control over how source PDF document will be processed. The following options could be set:
 
 *   **[Format](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/pdfloadoptions/properties/format)**\- the document type is auto detected during loading, however you can specify explicitly the type of the source document. Available options are: *Pdf, Epub, Xps, Tex, Ps, Pcl*

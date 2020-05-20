@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Comparison for .NET 20.2 Release Notes
-
-This page contains release notes for GroupDocs.Comparison for .NET 20.2
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for .NET 20.2{{< /alert >}}
 
 ##   
 Major Features
@@ -168,7 +165,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 20.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 20.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **Compare more than two Note documents**
     
@@ -176,6 +173,7 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     
     Following code snippet shows how to do this, here we are comparing 3 Note files
     
+    ```csharp
     string sourcePath = "source.one";
     string target1Path = "target1.one";
     string target2Path = "target2.one";
@@ -188,6 +186,7 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     comparer.Add(target3Path);
      
     comparer.Compare(File.Create(resultPath), new SaveOptions(), new CompareOptions());
+    ```
     
 2.  **Compare more than two SpreadSheet documents**
     
@@ -197,6 +196,7 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     
     Following code snippet shows how to do this, here we are comparing 3 Excell files
     
+    ```csharp
     string sourcePath = "source.xlsx";
     string target1Path = "target1.xlsx";
     string target2Path = "target2.xlsx";
@@ -209,3 +209,4 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     comparer.Add(target3Path);
      
     comparer.Compare(File.Create(resultPath), new SaveOptions(), new CompareOptions());
+    ```

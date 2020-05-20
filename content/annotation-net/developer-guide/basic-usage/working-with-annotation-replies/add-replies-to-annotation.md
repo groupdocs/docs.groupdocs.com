@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add replies to annotation
-
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides an ability for several users to collaborate over document via annotations and annotation replies. Adding reply to an annotation via code is as easy as specifying reply content and related user object.  
   
 Here are the steps to add annotation replies:

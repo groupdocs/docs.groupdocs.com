@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# eSign document with Barcode signature
-
 ## What is a Barcode?
 
 A **barcode** or **bar code **is a way of presenting data in a visual, machine-readable form. Generally speaking, barcode is an image of rectangular form that consists of parallel black lines and white spaces of different widths.  
@@ -41,6 +38,7 @@ Here are the steps to eSign document with Barcode signature using GroupDocs.Sign
 
 This example shows how to sign PDF document with Barcode signature.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     BarcodeSignOptions options = new BarcodeSignOptions("JohnSmith")
@@ -53,6 +51,7 @@ using (Signature signature = new Signature("sample.pdf"))
     };
     signature.Sign("SampleSigned.pdf", options);
 }
+```
 
 ## More resources
 

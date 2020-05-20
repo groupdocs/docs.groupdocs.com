@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 17.12 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 17.12
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 17.12{{< /alert >}}
 
 ## Major Features
 
@@ -113,10 +110,11 @@ Improvement
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.12. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.12. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### New enumeration type CodeTextAlignment was added to specify Text alignment of Barcodes and QRCodes text appearance
 
+```csharp
 /// <summary>
 ///  Alignment of code text for Bar-codes and QR-codes.
 /// </summary>
@@ -131,6 +129,7 @@ public enum CodeTextAlignment
     /// <summary>Text is on the right of the code.</summary>
     Right = 3,
 }
+```
 
 ### Public static method DocumentDescription GetPageDescriptions(string guid) was removed
 
@@ -146,25 +145,29 @@ Using non static method allows to use custom implementation of InputDataHandler 
 
 **Since v17.12 C#**
 
+```csharp
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
-    StoragePath = @"c:\\Aspose\\Test\\Storage",
-    OutputPath = @"c:\\Aspose\\Test\\Output"
+    StoragePath = @"c:\Aspose\Test\Storage",
+    OutputPath = @"c:\Aspose\Test\Output"
 };
 // instantiating the signature handler
 SignatureHandler handler = new SignatureHandler(signConfig);
 // Document description
-DocumentDescription docInfo = handler.GetDocumentDescription(@"c:\\Aspose\\Test\\Storage\\test.pdf");
+DocumentDescription docInfo = handler.GetDocumentDescription(@"c:\Aspose\Test\Storage\test.pdf");
 Console.WriteLine("Document " + docInfo.Guid + " contains " + docInfo.PageCount + " pages");
 Console.WriteLine("Width of first page is " + docInfo.Pages.FirstOrDefault().Width); 
+```
 
 **Before v17.12 C#**
 
+```csharp
 // Get Document description using removed static method
-DocumentDescription docInfo = SignatureHandler.GetDocumentDescription(@"c:\\Aspose\\Test\\Storage\\test.pdf");
+DocumentDescription docInfo = SignatureHandler.GetDocumentDescription(@"c:\Aspose\Test\Storage\test.pdf");
 Console.WriteLine("Document " + docInfo.Guid + " contains " + docInfo.PageCount + " pages");
 Console.WriteLine("Width of first page is " + docInfo.Pages.FirstOrDefault().Width);
+```
 
 ### Public static method byte\[\] GetDocumentPageImage(string guid, int? width, int? quality, int pageIndex) was removed
 
@@ -180,39 +183,43 @@ Using non static method allows to use custom implementation of InputDataHandler 
 
 **Since v17.12 C#**
 
+```csharp
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
-    StoragePath = @"c:\\Aspose\\Test\\Storage",
-    OutputPath = @"c:\\Aspose\\Test\\Output"
+    StoragePath = @"c:\Aspose\Test\Storage",
+    OutputPath = @"c:\Aspose\Test\Output"
 };
 // instantiating the signature handler
 SignatureHandler handler = new SignatureHandler(signConfig);
 // Image from specified page
-byte\[\] bytesImage = handler.GetPageImage(@"c:\\Aspose\\Test\\Storage\\test.pdf", 1);
+byte[] bytesImage = handler.GetPageImage(@"c:\Aspose\Test\Storage\test.pdf", 1);
 using (MemoryStream memoryStream = new MemoryStream(bytesImage))
 {
     using (Image image = Image.FromStream(memoryStream))
     {
         // Make something with image
         Console.WriteLine("Height of image is " + image.Height);
-        image.Save(@"c:\\Aspose\\Test\\Output\\ImageFromPage.png", ImageFormat.Png);
+        image.Save(@"c:\Aspose\Test\Output\ImageFromPage.png", ImageFormat.Png);
     }
 }
+```
 
 **Before v17.12 C#**
 
+```csharp
 // Image from specified page
-byte\[\] bytesImage = SignatureHandler.GetPageImage(@"c:\\Aspose\\Test\\Storage\\test.pdf", 1);
+byte[] bytesImage = SignatureHandler.GetPageImage(@"c:\Aspose\Test\Storage\test.pdf", 1);
 using (MemoryStream memoryStream = new MemoryStream(bytesImage))
 {
     using (Image image = Image.FromStream(memoryStream))
     {
         // Make something with image
         Console.WriteLine("Height of image is " + image.Height);
-        image.Save(@"c:\\Aspose\\Test\\Output\\ImageFromPage.png", ImageFormat.Png);
+        image.Save(@"c:\Aspose\Test\Output\ImageFromPage.png", ImageFormat.Png);
     }
 }
+```
 
 ### Public static method System.Drawing.Size GetPageSize(string guid, int signaturePageNumber, double signatureLocationX, double signatureLocationY, PositionInCellsDocument positionInCellsDocument) was removed
 
@@ -228,26 +235,31 @@ Using non static method allows to use custom implementation of InputDataHandler 
 
 **Since v17.12 C#**
 
+```csharp
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
-    StoragePath = @"c:\\Aspose\\Test\\Storage",
-    OutputPath = @"c:\\Aspose\\Test\\Output"
+    StoragePath = @"c:\Aspose\Test\Storage",
+    OutputPath = @"c:\Aspose\Test\Output"
 };
 // instantiating the signature handler
 SignatureHandler handler = new SignatureHandler(signConfig);
 // Page size
-Size pageSize = handler.GetDocumentPageSize(@"c:\\Aspose\\Test\\Storage\\test.pdf", 1);
+Size pageSize = handler.GetDocumentPageSize(@"c:\Aspose\Test\Storage\test.pdf", 1);
 Console.WriteLine("Page size is " + pageSize.Height + " x " + pageSize.Width);
+```
 
 **Before v17.12 C#**
 
+```csharp
 // Page size
-Size pageSize = SignatureHandler.GetPageSize(@"c:\\Aspose\\Test\\Storage\\test.pdf", 1);
+Size pageSize = SignatureHandler.GetPageSize(@"c:\Aspose\Test\Storage\test.pdf", 1);
 Console.WriteLine("Page size is " + pageSize.Height + " x " + pageSize.Width);
+```
 
 ### Public class BarcodeSignOptions was extended with following properties
 
+```csharp
 /// <summary>
 /// Gets or sets the space between Barcode elements and result image borders.
 /// </summary>
@@ -258,6 +270,7 @@ public Padding InnerMargins { get; set; }
 /// Default value is None.
 /// </summary>
 public CodeTextAlignment CodeTextAlignment { get; set; }
+```
 
 See examples below how to use them
 
@@ -265,11 +278,12 @@ See examples below how to use them
 
 **C#**
 
+```csharp
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
-    StoragePath = @"c:\\Aspose\\Test\\Storage",
-    OutputPath = @"c:\\Aspose\\Test\\Output"
+    StoragePath = @"c:\Aspose\Test\Storage",
+    OutputPath = @"c:\Aspose\Test\Output"
 };
 // instantiating the signature handler
 SignatureHandler handler = new SignatureHandler(signConfig);
@@ -285,18 +299,20 @@ signOptions.BackgroundColor = Color.OrangeRed;
 signOptions.ForeColor = Color.Green; 
 // sign document
 string signedPath = handler.Sign<string>("test.pdf", signOptions,
-    new SaveOptions { OutputType = OutputType.String, OutputFileName = "BarCode\_Colors" });
+    new SaveOptions { OutputType = OutputType.String, OutputFileName = "BarCode_Colors" });
 Console.WriteLine("Signed file path is: " + signedPath);
+```
 
 #### Set inner margins and text alignments for Barcode signatures
 
 **C#**
 
+```csharp
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
-    StoragePath = @"c:\\Aspose\\Test\\Storage",
-    OutputPath = @"c:\\Aspose\\Test\\Output"
+    StoragePath = @"c:\Aspose\Test\Storage",
+    OutputPath = @"c:\Aspose\Test\Output"
 };
 // instantiating the signature handler
 SignatureHandler handler = new SignatureHandler(signConfig);
@@ -310,45 +326,51 @@ signOptions.InnerMargins = new Padding(5, 25, 20, 10); //This feature is support
 signOptions.CodeTextAlignment = CodeTextAlignment.Right; //This feature is supported starting from version 17.12
 // sign document
 string signedPath = handler.Sign<string>("test.pdf", signOptions,
-    new SaveOptions { OutputType = OutputType.String, OutputFileName = "BarCode\_Margins\_Alignments" });
+    new SaveOptions { OutputType = OutputType.String, OutputFileName = "BarCode_Margins_Alignments" });
 Console.WriteLine("Signed file path is: " + signedPath);
+```
 
 ### Public class GroupDocs.Signature.Options.CellsQRCodeSignOptions was updated - obsolete properties and methods were removed
 
+```csharp
 /// <summary>
 /// Left intent columns (works if horizontal alignment is not specified).
 /// </summary>
-\[Obsolete("This property is obsolete. Use ColumnNumber instead.", false)\]
+[Obsolete("This property is obsolete. Use ColumnNumber instead.", false)]
 public new int Left { get; set; }
  
 /// <summary>
 /// Top intent rows (works if vertical alignment is not specified).
 /// </summary>
-\[Obsolete("This property is obsolete. Use RowNumber instead.", false)\]
+[Obsolete("This property is obsolete. Use RowNumber instead.", false)]
 public new int Top { get; set; }
+```
 
 ### Following properties were removed in class CellsSignDigitalOptions
 
+```csharp
 /// <summary>
 /// Left intent columns (works if horizontal alignment is not specified).
 /// </summary>
-\[Obsolete("This property is obsolete and will be removed in 17.12 version. Use ColumnNumber instead.", false)\]
+[Obsolete("This property is obsolete and will be removed in 17.12 version. Use ColumnNumber instead.", false)]
 public new int Left { get; set; }
  
 /// <summary>
 /// Top intent rows (works if vertical alignment is not specified).
 /// </summary>
-\[Obsolete("This property is obsolete and will be removed in 17.12 version. Use RowNumber instead.", false)\]
+[Obsolete("This property is obsolete and will be removed in 17.12 version. Use RowNumber instead.", false)]
 public new int Top { get; set; }
+```
 
 ### Following constructors were removed
 
+```csharp
 /// <summary>
         /// Initializes a new instance of the CellsSignDigitalOptions class with certificate file and image file.
         /// </summary>
         /// <param name="pfxFileName">File Description of Digital Certificate</param>
         /// <param name="appearenceImageGuid">Signature Appearance image file GUID</param>
-        \[Obsolete("This constructor is obsolete and will be removed in 17.12 version. Use CellsSignDigitalOptions(string certificateGuid, string appearenceImageGuid)", false)\]
+        [Obsolete("This constructor is obsolete and will be removed in 17.12 version. Use CellsSignDigitalOptions(string certificateGuid, string appearenceImageGuid)", false)]
         public CellsSignDigitalOptions(FileDescription pfxFileName, string appearenceImageGuid)
  
         /// <summary>
@@ -356,36 +378,40 @@ public new int Top { get; set; }
         /// </summary>
         /// <param name="pfxFileName">File Description of Digital Certificate</param>
         /// <param name="appearenceImageStream">Signature Appearance image stream</param>
-        \[Obsolete("This constructor is obsolete and will be removed in 17.12 version. Use CellsSignDigitalOptions(string certificateGuid, Stream appearenceImageStream)", false)\]
+        [Obsolete("This constructor is obsolete and will be removed in 17.12 version. Use CellsSignDigitalOptions(string certificateGuid, Stream appearenceImageStream)", false)]
         public CellsSignDigitalOptions(FileDescription pfxFileName, Stream appearenceImageStream)
+```
 
 ### Public class GroupDocs.Signature.Options.CellsSignImageOptions was updated - obsolete members and properties were removed
 
+```csharp
 /// <summary>
 /// Left intent columns (works if horizontal alignment is not specified).
 /// </summary>
-\[Obsolete("This property is obsolete. Use ColumnNumber instead.", false)\]
+[Obsolete("This property is obsolete. Use ColumnNumber instead.", false)]
 public new int Left { get; set; }
  
 /// <summary>
 /// Top intent rows (works if vertical alignment is not specified).
 /// </summary>
-\[Obsolete("This property is obsolete. Use RowNumber instead.", false)\]
+[Obsolete("This property is obsolete. Use RowNumber instead.", false)]
 public new int Top { get; set; }
+```
 
 ### Following properties and methods of class PdfSignDigitalOptions were removed
 
+```csharp
 /// <summary>
 /// Rotation angle of signature on document page (clockwise).  
 /// </summary>      
-\[Obsolete("This property is obsolete and will be removed in 17.12 version. PDF digital signature does not support rotation", false)\]
+[Obsolete("This property is obsolete and will be removed in 17.12 version. PDF digital signature does not support rotation", false)]
 public new int RotationAngle { get; set; }
         
 /// <summary>
 /// Initializes a new instance of the PdfSignDigitalOptions class with certificate file.
 /// </summary>
 /// <param name="certificateFileDescription">Digital certificate File Description</param>     
-\[Obsolete("This constructor is obsolete. Use PdfSignDigitalOptions(string certificateGuid)", false)\]
+[Obsolete("This constructor is obsolete. Use PdfSignDigitalOptions(string certificateGuid)", false)]
 public PdfSignDigitalOptions(FileDescription certificateFileDescription)
         
 /// <summary>
@@ -393,17 +419,19 @@ public PdfSignDigitalOptions(FileDescription certificateFileDescription)
 /// </summary>
 /// <param name="certificateFileName">Digital certificate file description</param>
 /// <param name="appearenceImageGuid">Signature Appearance image file GUID</param>
-\[Obsolete("This constructor is obsolete. Use PdfSignDigitalOptions(string certificateGuid, string appearenceImageGuid)", false)\]
+[Obsolete("This constructor is obsolete. Use PdfSignDigitalOptions(string certificateGuid, string appearenceImageGuid)", false)]
 public PdfSignDigitalOptions(FileDescription certificateFileName, string appearenceImageGuid)
       
 /// <summary>
 /// Indicates if Signature is Certificate or Approval.
 /// </summary>
-\[Obsolete("This property is obsolete and will be removed in 17.12 version.", false)\]
+[Obsolete("This property is obsolete and will be removed in 17.12 version.", false)]
 public bool IsCertificate { get; set; }
+```
 
 ### Public class QRCodeSignOptions was extended with following properties
 
+```csharp
 /// <summary>
 /// Gets or sets the space between Barcode elements and result image borders.
 /// </summary>
@@ -414,16 +442,18 @@ public Padding InnerMargins { get; set; }
 /// Default value is None.
 /// </summary>
 public CodeTextAlignment CodeTextAlignment { get; set; }
+```
 
 See examples below how to use them
 
 #### **Set various colors and logo for QRcode signatures**
 
+```csharp
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
-    StoragePath = @"c:\\Aspose\\Test\\Storage",
-    OutputPath = @"c:\\Aspose\\Test\\Output"
+    StoragePath = @"c:\Aspose\Test\Storage",
+    OutputPath = @"c:\Aspose\Test\Output"
 };
 // instantiating the signature handler
 SignatureHandler handler = new SignatureHandler(signConfig);
@@ -436,19 +466,21 @@ signOptions.BackgroundColor = Color.OrangeRed; //This feature is supported start
 // set fore color (optionally)
 signOptions.ForeColor = Color.Green; //This feature is supported starting from version 17.12
 //set logo image (optionally)
-signOptions.LogoGuid = @"C:\\Aspose\\Test\\Images\\Twitter\_logo.png"; //This feature is supported starting from version 17.12
+signOptions.LogoGuid = @"C:\Aspose\Test\Images\Twitter_logo.png"; //This feature is supported starting from version 17.12
 // sign document
 string signedPath = handler.Sign<string>("test.pdf", signOptions,
-    new SaveOptions { OutputType = OutputType.String, OutputFileName = "QRCode\_Colors" });
+    new SaveOptions { OutputType = OutputType.String, OutputFileName = "QRCode_Colors" });
 Console.WriteLine("Signed file path is: " + signedPath);
+```
 
 #### Set inner margins and text alignments for QRcode signatures
 
+```csharp
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
-    StoragePath = @"c:\\Aspose\\Test\\Storage",
-    OutputPath = @"c:\\Aspose\\Test\\Output"
+    StoragePath = @"c:\Aspose\Test\Storage",
+    OutputPath = @"c:\Aspose\Test\Output"
 };
 // instantiating the signature handler
 SignatureHandler handler = new SignatureHandler(signConfig);
@@ -462,14 +494,17 @@ signOptions.InnerMargins = new Padding(5, 25, 20, 10); //This feature is support
 signOptions.CodeTextAlignment = CodeTextAlignment.Right; //This feature is supported starting from version 17.12
 // sign document
 string signedPath = handler.Sign<string>("test.pdf", signOptions,
-    new SaveOptions { OutputType = OutputType.String, OutputFileName = "QRCode\_Margins\_Alignments" });
+    new SaveOptions { OutputType = OutputType.String, OutputFileName = "QRCode_Margins_Alignments" });
 Console.WriteLine("Signed file path is: " + signedPath);
+```
 
 ### Public class** GroupDocs.Signature.Options.SearchOptionsCollection** was updated and now implements interface **IEnumerable<SearchOptions>**
 
 Definition
 
+```csharp
 public class SearchOptionsCollection : ICloneable, IEnumerable<SearchOptions>
+```
 
 See examples below how to use them
 
@@ -477,13 +512,14 @@ See examples below how to use them
 
 **C#**
 
+```csharp
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
-    StoragePath = @"c:\\Aspose\\Test\\Storage",
-    OutputPath = @"c:\\Aspose\\Test\\Output",
-    ImagesPath = @"c:\\Aspose\\Test\\Images",
-    CertificatesPath = @"c:\\Aspose\\Test\\Certificates"
+    StoragePath = @"c:\Aspose\Test\Storage",
+    OutputPath = @"c:\Aspose\Test\Output",
+    ImagesPath = @"c:\Aspose\Test\Images",
+    CertificatesPath = @"c:\Aspose\Test\Certificates"
 };
 // instantiating the signature handler
 SignatureHandler handler = new SignatureHandler(signConfig);
@@ -510,43 +546,47 @@ foreach (SignOptions signOptions in collection)
 { 
     // do special code here to change signOptions
 } 
+```
 
 ### Public class GroupDocs.Signature.Options.SignImageOptions was updated  - obsolete properties were removed
 
+```csharp
 /// <summary>
 /// Set signature image with image file.
 /// </summary>
 /// <param name="imageFileGuid">Image file GUID</param>
-\[Obsolete("This property is obsolete and will be removed in 17.12 version. Use property ImageFileName.", false)\]
+[Obsolete("This property is obsolete and will be removed in 17.12 version. Use property ImageFileName.", false)]
 public void SetImage(string imageFileGuid)
  
 /// <summary>
 /// Set signature image with image stream.
 /// </summary>
 /// <param name="imageStream">Image stream</param>
-\[Obsolete("This property is obsolete. Use property ImageStream.", false)\]
+[Obsolete("This property is obsolete. Use property ImageStream.", false)]
 public void SetImage(System.IO.Stream imageStream)
  
 /// <summary>
 /// Gets or sets the signature image file name.
 /// This property is used only if ImageStream is not specified.
 /// </summary>
-\[Obsolete("This property is obsolete. Use property ImageGuid.", false)\]
+[Obsolete("This property is obsolete. Use property ImageGuid.", false)]
 public string ImageFileName { get { return ImageHelper.Guid; } set { ImageHelper.Guid = value; } }
+```
 
 ### Public class GroupDocs.Signature.Options.SlidesSignDigitalOptions was updated with removed following properties and methods
 
+```csharp
 /// <summary>
 /// Gets or sets the sign image file name.
 /// </summary>
-\[Obsolete("This property is obsolete. Use method SetImage(string guid)", false)\]
+[Obsolete("This property is obsolete. Use method SetImage(string guid)", false)]
 public FileDescription SignatureImageFile { get; set; }
  
 /// <summary>
 /// Initializes a new instance of the SlidesSignDigitalOptions class with certificate file.
 /// </summary>
 /// <param name="certificateFileDescription">File Description of Digital Certificate</param>
-\[Obsolete("This constructor is obsolete. Use SlidesSignDigitalOptions(string certificateGuid)", false)\]
+[Obsolete("This constructor is obsolete. Use SlidesSignDigitalOptions(string certificateGuid)", false)]
 public SlidesSignDigitalOptions(FileDescription certificateFileDescription)
  
 /// <summary>
@@ -554,15 +594,19 @@ public SlidesSignDigitalOptions(FileDescription certificateFileDescription)
 /// </summary>
 /// <param name="certificateFileDescription">File Description of Digital Certificate</param>
 /// <param name="appearenceFileDescription">File Description of Signature Appearance</param>
-\[Obsolete("This constructor is obsolete. Use SlidesSignDigitalOptions(string certificateGuid, string appearenceImageGuid)", false)\]
+[Obsolete("This constructor is obsolete. Use SlidesSignDigitalOptions(string certificateGuid, string appearenceImageGuid)", false)]
 public SlidesSignDigitalOptions(FileDescription certificateFileDescription, FileDescription appearenceFileDescription)
+```
 
 ### Public class GroupDocs.Signature.Options.VerifyOptionsCollection was updated to implement
 
+```csharp
 public class VerifyOptionsCollection : ICloneable, IEnumerable<VerifyOptions>
+```
 
 #### Enumerate all Options inside collection
 
+```csharp
 // define Signature Options Collection
 VerifyOptionsCollection collection = new VerifyOptionsCollection ();
 // adding some VerifyOptions to collection
@@ -571,28 +615,35 @@ foreach (VerifyOptions verifyOptions in collection)
 { 
     // do special code here to change verifyOptions 
 } 
+```
 
 ### Public class was updated with removed obsolete constructors
 
+```csharp
 /// <summary>
 /// Initializes a new instance of the WordsSignDigitalOptions class with certificate file.
 /// </summary>
 /// <param name="certificateFileDescription">File description of digital certificate</param>
-\[Obsolete("This constructor is obsolete. Use WordsSignDigitalOptions(string certificateGuid)", false)\]
+[Obsolete("This constructor is obsolete. Use WordsSignDigitalOptions(string certificateGuid)", false)]
 public WordsSignDigitalOptions(FileDescription certificateFileDescription)
+```
 
 ### Public class GroupDocs.Signature.Options.WordsSignImageOptions was updated  - removed obsolete property DocumentPart DocumentPart
 
+```csharp
 /// <summary>
 /// Gets or sets the part of document to put sign.
 /// </summary>
-\[Obsolete("This property is no more supported for Words image signature. Use alignment properties instead.", false)\]
+[Obsolete("This property is no more supported for Words image signature. Use alignment properties instead.", false)]
 public DocumentPart DocumentPart { get; set; }
+```
 
 ### Public class GroupDocs.Signature.Options.WordsSignTextOptions was updated- obsolete property was removed
 
+```csharp
 /// <summary>
 /// Gets or sets the part of document to put sign.
 /// </summary>
-\[Obsolete("This property is no more supported for Words image signature and will be removed in 17.12 version. Use alignment properties instead.", false)\]
+[Obsolete("This property is no more supported for Words image signature and will be removed in 17.12 version. Use alignment properties instead.", false)]
 public DocumentPart DocumentPart { get; set; }
+```

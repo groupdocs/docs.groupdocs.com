@@ -9,12 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Loading
-
-
-# Loading documents
-
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net)** allows you to load password-protected documents and load documents from different sources. For more details please refer to the following guides:
 
 ## More resources

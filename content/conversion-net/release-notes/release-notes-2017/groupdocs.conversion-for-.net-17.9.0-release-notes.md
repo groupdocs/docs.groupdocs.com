@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion for .NET 17.9.0 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 17.9.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 17.9.0{{< /alert >}}
 
 ## Major Features
 
@@ -84,7 +81,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 17.9.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 17.9.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### GroupDocs.Conversion.Handler.ConversionHandler.Convert<T>
 
@@ -92,6 +89,7 @@ This section lists public API changes that were introduced in GroupDocs.Conversi
 
 **C#**
 
+```csharp
 const string sourceFileName = "sample.docx"; //TODO: Put the source filename here with more than 5 pages
 // Setup Conversion configuration
 var conversionConfig = new ConversionConfig
@@ -103,11 +101,13 @@ var conversionHandler = new ConversionHandler(conversionConfig);
 var options = new PdfSaveOptions();
 var convertedDocument = conversionHandler.Convert(sourceFileName, options);
 convertedDocument.Save("result.pdf");
+```
 
 #### Convert a document to stream
 
 **C#**
 
+```csharp
 const string sourceFileName = "sample.docx"; //TODO: Put the source filename here with more than 5 pages
 // Setup Conversion configuration
 var conversionConfig = new ConversionConfig
@@ -121,11 +121,13 @@ var convertedDocument = conversionHandler.Convert(sourceFileName, options);
 using(MemoryStream targetStream = new MemoryStream) {
     convertedDocument.Save(targetStream);
 } 
+```
 
 ### GroupDocs.Conversion.Handler.ConversionHandler.GetDocumentPagesCount
 
 **C#**
 
+```csharp
 const string sourceFileName = "sample.docx"; //TODO: Put the source filename here with more than 5 pages
 // Setup Conversion configuration
 var conversionConfig = new ConversionConfig
@@ -136,11 +138,13 @@ var conversionConfig = new ConversionConfig
 var conversionHandler = new ConversionHandler(conversionConfig);
 var documentInfo = conversionHandler.GetDocumentInfo(sourceFileName);
 var result = documentInfo.PageCount 
+```
 
 ### GroupDocs.Conversion.Handler.ConversionHandler.GetDocumentType
 
 **C#**
 
+```csharp
 // Setup Conversion configuration
 var conversionConfig = new ConversionConfig
 {
@@ -151,3 +155,4 @@ var conversionHandler = new ConversionHandler(conversionConfig);
 //sourceStream should contain the document content
 var documentInfo = conversionHandler.GetDocumentInfo(sourceStream);
 var result = documentInfo.FileType
+```

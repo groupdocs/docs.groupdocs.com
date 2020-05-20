@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Working with text documents
-
 > This demonstration shows how to load, open for editing and save textual documents, explains edit and save options and their destination.
 
 #### Introduction

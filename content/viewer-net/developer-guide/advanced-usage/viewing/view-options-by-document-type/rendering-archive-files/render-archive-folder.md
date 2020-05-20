@@ -9,19 +9,19 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Render Archive Folder
-
 GroupDocs.Viewer renders items from the root of the archive by default.
 
 When rendering of a specified folder is required, it can be achieved as shown in the examples below.
 
+```csharp
             using (Viewer viewer = new Viewer("sample.zip"))
             {              
                 HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
                 viewOptions.ArchiveOptions.Folder = "ThirdFolderWithItems";
                 viewer.View(viewOptions);
             }
+
+```
 
 ## More resources
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Adjust image quality
-
 GroupDocs.Viewer enables you to adjust quality of output images contained by the source PDF document. To adjust image quality use [PdfOptions.ImageQuality](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pdfoptions/properties/imagequality)option of [HtmlViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions) *class.*
 
 [PdfOptions.ImageQuality](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pdfoptions/properties/imagequality)can be set to:
@@ -24,6 +21,7 @@ NOTE: this option is supported when rendering to HTML only.
 
 Following code snippet shows how to adjust image quality when rendering to HTML.
 
+```csharp
             using (Viewer viewer = new Viewer("sample.docx"))
             {
                 HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
@@ -31,6 +29,7 @@ Following code snippet shows how to adjust image quality when rendering to HTML.
                                
                 viewer.View(viewOptions);
             }
+```
 
 ## More resources
 

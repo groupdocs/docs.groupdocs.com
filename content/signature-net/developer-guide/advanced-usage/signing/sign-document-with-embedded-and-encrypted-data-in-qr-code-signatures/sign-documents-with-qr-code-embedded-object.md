@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign documents with QR-code embedded object
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to embed into QR-code signature custom objects. This feature is implemented over object serialization to string and further encryption. By default library uses json format serialization and symmetric encryption, the class [SymmetricEncryption](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricencryption) class. Creation of this encryption expects 3 arguments like encryption algorithm enumeration [SymmetricAlgorithmType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricalgorithmtype)with one of following values ([DES, TripleDES, RC2, Rijndael](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricalgorithmtype)), string value key and string value salt.
 
 Here are the steps to embed into QR-code text with standard encryption with GroupDocs.Signature:  
@@ -34,24 +31,27 @@ Here are the steps to embed into QR-code text with standard encryption with Grou
 
 This example shows how to define custom class with serialization and encryption properties and setup Format attributes for properties.
 
+```csharp
 public class DocumentSignatureData
 {
-    \[Format("SignID")\]
+    [Format("SignID")]
     public string ID { get; set; }
-    \[Format("SAuth")\]
+    [Format("SAuth")]
     public string Author { get; set; }
-    \[Format("SDate", "yyyy-MM-dd")\]
+    [Format("SDate", "yyyy-MM-dd")]
     public DateTime Signed { get; set; }
-    \[Format("SDFact", "N2")\]
+    [Format("SDFact", "N2")]
     public decimal DataFactor { get; set; }
-    \[SkipSerialization\]
+    [SkipSerialization]
     public string Comments { get; set; }
 }
+```
 
 ## Implementation of embedding custom object into QR-code signature
 
 This example shows how to embed custom object into QR-code signature.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // setup key and passphrase
@@ -86,6 +86,7 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("QrCodeEncryptedObject.pdf", options);
 }
+```
 
 ## More resources
 

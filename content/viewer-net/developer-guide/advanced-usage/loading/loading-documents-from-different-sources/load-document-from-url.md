@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Load document from URL
-
-
 # Load a document from URL
 
 Following example demonstrates how to render document from URL.

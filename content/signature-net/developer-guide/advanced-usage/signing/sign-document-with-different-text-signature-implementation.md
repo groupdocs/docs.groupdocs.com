@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign document with different Text signature implementation
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [TextSignOptions](https://apireference-qa.groupdocs.com/signature/net/groupdocs.signature.options/textsignoptions) class with property [SignatureImplementation](https://apireference-qa.groupdocs.com/signature/net/groupdocs.signature.options/textsignoptions/properties/signatureimplementation) of enumeration type [TextSignatureImplementation](https://apireference-qa.groupdocs.com/signature/net/groupdocs.signature.domain/textsignatureimplementation) to specify various implementations of Text Signatures with following values and its meaning
 
 *   [TextSignatureImplementation.Stamp](https://apireference-qa.groupdocs.com/signature/net/groupdocs.signature.domain/textsignatureimplementation) - text stamp component (label) on the document page.
@@ -37,6 +34,7 @@ Here are the steps to add Text signature into document with various text signatu
 
 This example shows how to add Text signature with Stamp signature implementation to document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -60,11 +58,13 @@ using (Signature signature = new Signature("sample.pdf"))
             Location: {temp.Left}x{temp.Top}. Size: {temp.Width}x{temp.Height}");
     }
 }
+```
 
 ## Sign document with Text signature and Annotation implementation type
 
 This example shows how to add Text signature with Annotation signature implementation to document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -105,11 +105,13 @@ using (Signature signature = new Signature("sample.pdf"))
             Location: {temp.Left}x{temp.Top}. Size: {temp.Width}x{temp.Height}");
     }
 }
+```
 
 ## Sign document with Text signature and Image implementation type
 
 This example shows how to add Text signature with Image signature implementation to document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -133,11 +135,13 @@ using (Signature signature = new Signature("sample.pdf"))
             Location: {temp.Left}x{temp.Top}. Size: {temp.Width}x{temp.Height}");
     }
 }
+```
 
 ## Sign document with Text signature and Sticker implementation type
 
 This example shows how to add Text signature with Sticker signature implementation to document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -162,11 +166,13 @@ using (Signature signature = new Signature("sample.pdf"))
             Location: {temp.Left}x{temp.Top}. Size: {temp.Width}x{temp.Height}");
     }
 }
+```
 
 ## Sign document with Text signature and Form Field implementation type
 
 This example shows how to add Text signature with FormField signature implementation to document.
 
+```csharp
 using (Signature signature = new Signature("sample.docx"))
 {
     TextSignOptions ffOptions1 = new TextSignOptions("John Smith")
@@ -197,6 +203,7 @@ using (Signature signature = new Signature("sample.docx"))
             Location: {temp.Left}x{temp.Top}. Size: {temp.Width}x{temp.Height}");
     }
 }
+```
 
 ## More resources
 

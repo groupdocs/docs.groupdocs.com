@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 17.11 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 17.11
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 17.11{{< /alert >}}
 
 ## Major Features
 
@@ -160,12 +157,13 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.11. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.11. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.   Added new enumeration type **ProcessStatus** with values that specify Signature or Verification process status. 
     
     **ProcessStatus enumeration**
     
+    ```csharp
     public enum ProcessStatus
     {
         /// <summary>
@@ -188,11 +186,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         Completed = 2
     }
+    ```
     
 2.  Added new event argument types to describe process events. Base class **ProcessEventArgs**  
     
     **class ProcessEventArgs**
     
+    ```csharp
     public class ProcessEventArgs : EventArgs
     {
         /// <summary>
@@ -205,11 +205,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         public ProcessStatus Status { get; set; }
     }
+    ```
     
     Class **ProcessStartEventArgs** that describes start of Signing or Verification process that is derived from base **ProcessEventArgs** and contains additional date time property Started -date/time mark of process start.
     
     Class **ProcessProgressEventArgs **describes progress event. Property **Progress **\- keeps percentage of progress in 0-100 value range, **Ticks - **time in milliseconds spent from start of process
     
+    ```csharp
     public class ProcessProgressEventArgs : ProcessEventArgs
     {
         /// <summary>
@@ -222,14 +224,17 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         public long Ticks { get; set; }
     }
+    ```
     
     Class **ProcessCompleteEventArgs** with properties DateTime **Completed**  - date/time of completed event and long **Ticks **time in milliseconds spent from start of process
     
     Added new delegates **ProcessStartEventHandler**, **ProcessProgressEventHandler** and **ProcessCompleteEventHandler** to use in corresponding events
     
+    ```csharp
     public delegate void ProcessStartEventHandler(object sender, ProcessStartEventArgs args);
     public delegate void ProcessProgressEventHandler(object sender, ProcessProgressEventArgs args);
     public delegate void ProcessCompleteEventHandler(object sender, ProcessCompleteEventArgs args);
+    ```
     
 3.  Class **SignatureHandler** was extended with following events  
       
@@ -240,11 +245,12 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
      public event ProcessCompleteEventHandler **SignatureCompleted** - event occurs when singing process completes
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-    StoragePath = @"c:\\Aspose\\Test\\Storage",
-    OutputPath = @"c:\\Aspose\\Test\\Output"
+    StoragePath = @"c:\Aspose\Test\Storage",
+    OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -255,7 +261,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.Width = 100;
     signOptions.SignAllPages = true;
     //
-    SaveOptions saveOptions = new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells\_Events" };
+    SaveOptions saveOptions = new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells_Events" };
     //
     handler.SignatureStarted += delegate(object sender, ProcessStartEventArgs args)
     {
@@ -271,6 +277,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     };
     // sign document
     string signedPath = handler.Sign<string>("pages12Images.pdf", signOptions, saveOptions);
+    ```
     
 4.  Class SignatureHandler was extended with following events  
       
@@ -283,11 +290,12 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -311,6 +319,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // sign document
     VerificationResult result = handler.Verify("pages12Images.pdf", verifyOptions);
     Console.WriteLine("Verification result: " + result.IsValid);
+    ```
     
 5.  New ability to search signature in Documents was provided with following new options classes
     
@@ -322,19 +331,22 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Overload Search Siganture methods**
     
+    ```csharp
     public SearchResult Search(string guid, SearchOptions searchOptions)
     public SearchResult Search(string guid, SearchOptions searchOptions, LoadOptions loadOptions)
     public SearchResult Search(string guid, SearchOptionsCollection collection, LoadOptions loadOptions)
     public SearchResult Search(Stream stream, SearchOptions searchOptions)
     public SearchResult Search(Stream stream, SearchOptions searchOptions, LoadOptions loadOptions)
     public SearchResult Search(Stream stream, SearchOptionsCollection collection, LoadOptions loadOptions)
+    ```
     
     **C# Searching Digital Signatures in Pdf Documents**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage"
+        StoragePath = @"c:\Aspose\Test\Storage"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -349,19 +361,21 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         PDFDigitalSignature pdfSign = (signature as PDFDigitalSignature);
         if (pdfSign != null)
         {
-            Console.WriteLine("\\t >> Digital signature from {0}. Contact: {1}. Valid {2}", pdfSign.SignTime, pdfSign.ContactInfo, pdfSign.IsValid);
+            Console.WriteLine("\t >> Digital signature from {0}. Contact: {1}. Valid {2}", pdfSign.SignTime, pdfSign.ContactInfo, pdfSign.IsValid);
         }
     }
+    ```
     
     Following example demonstrates how to get digital certificates from system
     
     **C# Searching Digital Signatures in system**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // load Digital Signature registered in system
     List<DigitalSignature> signatures = DigitalSignature.LoadDigitalSignatures();
@@ -370,19 +384,21 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         if (signature.Certificate != null)
         {
             var certificate = signature.Certificate;
-            Console.WriteLine("\\nCertificate: {0}, {1}, {2}", certificate.Subject, certificate.SerialNumber, certificate.Version);
+            Console.WriteLine("\nCertificate: {0}, {1}, {2}", certificate.Subject, certificate.SerialNumber, certificate.Version);
         }
     }
+    ```
     
 6.  Introduced new enumeration types for Office Document Text Signature appearances. New types are **CellsTextShapeType**, **SlidesTextShapeType** and **WordsTextShapeType**.
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -424,5 +440,6 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // sign document
     string signedPath = handler.Sign<string>("test.xls", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells\_TextSignatureFontBackgroundAndColorOptions" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells_TextSignatureFontBackgroundAndColorOptions" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Get file info
-
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to get document information which includes:
 
 *   [FileType](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/filetype) - document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.);

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Enabling language information
-
 Documents of all WordProcessing formats can contain text in different languages. But, unlike the plain text documents (TXT), WordProcessing documents also contain a metadata about specific language (locale) of every piece of text. [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net) allows to extract and export this language information. For achieving this the [`WordProcessingEditOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions) class contains the [`EnableLanguageInformation`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions/properties/enablelanguageinformation) public boolean property:
 
 ```csharp

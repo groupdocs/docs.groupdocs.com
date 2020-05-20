@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 17.1.0 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 17.1.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 17.1.0{{< /alert >}}
 
 ## Major Features
 
@@ -230,7 +227,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.1.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.1.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 *   Updated public classes for Text Signature Options (PdfTextSignatuteOptions, CellsTextSignatuteOptions, WordsTextSignatuteOptions and SlidesTextSignatuteOptions). Text Signature Options classes were extended with Signature Implementation enumeration types per each Document Types, like PdfTextSignatureImplementation, CellsTextSignatureImplementation, WordsTextSignatureImplementation and SlidesTextSignatureImplementation.
 
@@ -240,8 +237,9 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -266,15 +264,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.SignatureImplementation = PdfTextSignatureImplementation.Image;
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf\_TextSignatureAsImage" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf_TextSignatureAsImage" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    
+    ```
     
     **Sign Pdf document with Text Signature as Annotation**
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -315,8 +316,10 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.Appearance = appearance;
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf\_TextSignatureAsAnnotation" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf_TextSignatureAsAnnotation" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    
+    ```
     
 *   Added new classes for verification options: VerifyOptions, VerifyTextOptions, VerifyDigitalOptions, PdfVerifyTextOptions, PdfVerifyDigitalOptions, CellsVerifyDigitalOptions, WordsVerifyDigitalOptions, SlidesVerifyDigitalOptions.
 *   Save signed file with different file name
@@ -325,8 +328,9 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -346,14 +350,17 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("test.xls", signOptions, loadOptions, saveOptions);
     Console.WriteLine("Signed file path is: " + signedPath);
     
+    ```
+    
 *   Verification PDF Documents signed with Text Signature
     
     **Text Verification of PDF Document**
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -370,7 +377,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.DocumentPageNumber = 1;
     // sign document
     string signedPath = handler.Sign<string>("test2pages.pdf", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf\_Documents\_Verification\_Text" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf_Documents_Verification_Text" });
     // setup digital verification options
     PDFVerifyTextOptions verifyOptions = new PDFVerifyTextOptions(text);
     verifyOptions.DocumentPageNumber = 1;
@@ -379,16 +386,19 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     VerificationResult result = handler.Verify(signedPath, verifyOptions);
     Console.WriteLine("Verification result: " + result.IsValid);
     
+    ```
+    
 *   Verification Cells Documents signed with digital certificates
     
     **Digital Verification of Cells Document with .cer certificate container**
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
-    string imagePath = @"c:\\Aspose\\Test\\Images";
-    string certificatesPath = @"c:\\Aspose\\Test\\Certificates";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
+    string imagePath = @"c:\Aspose\Test\Images";
+    string certificatesPath = @"c:\Aspose\Test\Certificates";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -406,17 +416,20 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     verifyOptions.SignDateTimeTo = new DateTime(2017, 1, 26, 14, 55, 09);
     
     //verify document
-    VerificationResult result = handler.Verify("test\_digitalsigned.xls", verifyOptions);
+    VerificationResult result = handler.Verify("test_digitalsigned.xls", verifyOptions);
     Console.WriteLine("Signed file verification result: " + result.IsValid);
+    
+    ```
     
     **Digital Verification of Cells Document with .pfx certificate container**
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
-    string imagePath = @"c:\\Aspose\\Test\\Images";
-    string certificatesPath = @"c:\\Aspose\\Test\\Certificates";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
+    string imagePath = @"c:\Aspose\Test\Images";
+    string certificatesPath = @"c:\Aspose\Test\Certificates";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -436,8 +449,10 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         new VerifyOptionsCollection(new List<VerifyOptions>() { verifyOptions1, verifyOptions2 });
     
     //verify document
-    VerificationResult result = handler.Verify("test\_digitalsigned.xls", verifyOptionsCollection);
+    VerificationResult result = handler.Verify("test_digitalsigned.xls", verifyOptionsCollection);
     Console.WriteLine("Signed file verification result: " + result.IsValid);
+    
+    ```
     
 *   Verification PDF Documents signed with digital certificates
     
@@ -445,10 +460,11 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
-    string imagePath = @"c:\\Aspose\\Test\\Images";
-    string certificatesPath = @"c:\\Aspose\\Test\\Certificates";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
+    string imagePath = @"c:\Aspose\Test\Images";
+    string certificatesPath = @"c:\Aspose\Test\Certificates";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -465,17 +481,20 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     verifyOptions.Contact = "Test contact";
     verifyOptions.Location = "Test location";
     //verify document
-    VerificationResult result = handler.Verify("test\_digitalsigned.pdf", verifyOptions);
+    VerificationResult result = handler.Verify("test_digitalsigned.pdf", verifyOptions);
     Console.WriteLine("Signed file verification result: " + result.IsValid);
+    
+    ```
     
     **Digital Verification of PDF Document with .pfx certificate container**
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
-    string imagePath = @"c:\\Aspose\\Test\\Images";
-    string certificatesPath = @"c:\\Aspose\\Test\\Certificates";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
+    string imagePath = @"c:\Aspose\Test\Images";
+    string certificatesPath = @"c:\Aspose\Test\Certificates";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -494,8 +513,10 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     VerifyOptionsCollection verifyOptionsCollection =
         new VerifyOptionsCollection(new List<VerifyOptions>() { verifyOptions1, verifyOptions2 });
     //verify document
-    VerificationResult result = handler.Verify("test\_digitalsigned.pdf", verifyOptionsCollection);
+    VerificationResult result = handler.Verify("test_digitalsigned.pdf", verifyOptionsCollection);
     Console.WriteLine("Signed file verification result: " + result.IsValid);
+    
+    ```
     
 
 *   Verification Words Documents signed with digital certificates
@@ -504,10 +525,11 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
-    string imagePath = @"c:\\Aspose\\Test\\Images";
-    string certificatesPath = @"c:\\Aspose\\Test\\Certificates";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
+    string imagePath = @"c:\Aspose\Test\Images";
+    string certificatesPath = @"c:\Aspose\Test\Certificates";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -526,17 +548,20 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     verifyOptions.SignDateTimeFrom = new DateTime(2017, 1, 26, 14, 55, 57);
     verifyOptions.SignDateTimeTo = new DateTime(2017, 1, 26, 14, 55, 59);
     //verify document
-    VerificationResult result = handler.Verify("test\_digitalsigned.Docx", verifyOptions);
+    VerificationResult result = handler.Verify("test_digitalsigned.Docx", verifyOptions);
     Console.WriteLine("Signed file verification result: " + result.IsValid);
+    
+    ```
     
     **Digital Verification of Words Document with .pfx certificate container**
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
-    string imagePath = @"c:\\Aspose\\Test\\Images";
-    string certificatesPath = @"c:\\Aspose\\Test\\Certificates";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
+    string imagePath = @"c:\Aspose\Test\Images";
+    string certificatesPath = @"c:\Aspose\Test\Certificates";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -555,5 +580,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     VerifyOptionsCollection verifyOptionsCollection =
         new VerifyOptionsCollection(new List<VerifyOptions>() { verifyOptions1, verifyOptions2 });
     //verify document
-    VerificationResult result = handler.Verify("test\_digitalsigned.Docx", verifyOptionsCollection);
+    VerificationResult result = handler.Verify("test_digitalsigned.Docx", verifyOptionsCollection);
     Console.WriteLine("Signed file verification result: " + result.IsValid);
+    
+    ```

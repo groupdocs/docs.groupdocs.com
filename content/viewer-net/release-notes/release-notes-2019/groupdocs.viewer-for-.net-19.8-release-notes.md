@@ -9,16 +9,11 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 19.8 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 19.8
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 19.8{{< /alert >}}
 
 ## Major Features
 
-Breaking changes
-
-In this version we're introducing new public API which was designed to be simple and easy to use. For more details about new API please check **[Public Docs](https://docs.groupdocs.com/display/viewernet)** section. The legacy API have been moved into **Legacy** namespace so after update to this version it is required to make project-wide replacement of namespace usages from **GroupDocs.Viewer.** to **GroupDocs.Viewer.Legacy.** to resolve build issues.
+{{< alert style="danger" >}}In this version we're introducing new public API which was designed to be simple and easy to use. For more details about new API please check Public Docs section. The legacy API have been moved into Legacy namespace so after update to this version it is required to make project-wide replacement of namespace usages from GroupDocs.Viewer. to GroupDocs.Viewer.Legacy. to resolve build issues.{{< /alert >}}
 
   
 Other notable features:

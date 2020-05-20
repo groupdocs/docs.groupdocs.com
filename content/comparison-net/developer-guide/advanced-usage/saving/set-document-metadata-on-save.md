@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Set document metadata on save
-
 Usually documents can contain some metadata information, such as author, organization, etc. [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) provides an ability to select metadata source when saving resultant document.  
 Possible metadata sources are:
 

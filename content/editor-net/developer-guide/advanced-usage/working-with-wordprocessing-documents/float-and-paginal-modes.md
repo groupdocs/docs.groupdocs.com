@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Float and paginal modes
-
 WordProcessing module of [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net), that is responsible for converting all WordProcessing formats to `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` instances and backward (from `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` to some of WordProcessing format), contains two modes: *float* and *paginal* (also known as *paged*), where first one — float, is default. These modes are presented by two properties with the same name and type:
 
 ```csharp

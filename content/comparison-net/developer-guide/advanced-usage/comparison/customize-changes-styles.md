@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Customize changes styles
-
-
 # Using customized styles of changes
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) provides compare options set with some default values that provides both - appropriate comparison speed and quality. However it is possible to customize comparison options from wide range of parameters and their values to fulfill some specific needs.   

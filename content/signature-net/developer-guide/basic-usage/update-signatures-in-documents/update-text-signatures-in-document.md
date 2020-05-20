@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Update Text signatures in document
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [TextSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/textsignature) class to manipulate text signatures location, size and textual content.   
 Please be aware that[Update](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/update/) method modifies the same document that was passed to constructor of [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) class.
 
@@ -31,6 +28,7 @@ Here are the steps to update Text signature in the document with GroupDocs.Signa
 
 This example shows how to update Text signature that was found using  [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1) method.
 
+```csharp
 using (Signature signature = new Signature("sampleSigned.pdf"))
 {
     TextSearchOptions options = new TextSearchOptions();
@@ -38,7 +36,7 @@ using (Signature signature = new Signature("sampleSigned.pdf"))
     List<TextSignature> signatures = signature.Search<TextSignature>(options);
     if(signatures.Count > 0)
     {
-        TextSignature textSignature = signatures\[0\];
+        TextSignature textSignature = signatures[0];
         // change Text property
         textSignature.Text = "John Walkman";
         // change position
@@ -50,7 +48,7 @@ using (Signature signature = new Signature("sampleSigned.pdf"))
         bool result = signature.Update(textSignature);
         if(result)
         {
-            Console.WriteLine($"Signature with Text '{textSignature.Text}' was updated in the document \['{fileName}'\].");
+            Console.WriteLine($"Signature with Text '{textSignature.Text}' was updated in the document ['{fileName}'].");
         }
         else
         {
@@ -58,6 +56,7 @@ using (Signature signature = new Signature("sampleSigned.pdf"))
         }
     }
 }
+```
 
 ## More resources
 

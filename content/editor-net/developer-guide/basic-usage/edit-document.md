@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Edit document
-
 > This article describes how to open for editing a previously loaded document, which options should be applied, and how to send document content to the WYSIWYG HTML-editor or any other editing application.
 
 When document is loaded into the instance of the `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class, it is possible to open it for editing. In terms of [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net), open a document for edit implies creating an instance of `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` class by calling an `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor).[Edit()](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/edit)` instance method. There are two overloads of the [Edit](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/edit) method. First one obtains a single parameter — inheritor of `[IEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/ieditoptions)` interface.  

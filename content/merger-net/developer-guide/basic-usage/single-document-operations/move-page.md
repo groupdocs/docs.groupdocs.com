@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Move page
-
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** provides a move page feature which allows you to manipulate page ordering by moving any page(s) to new position within a document.   
 This can be done by following the steps below:
 

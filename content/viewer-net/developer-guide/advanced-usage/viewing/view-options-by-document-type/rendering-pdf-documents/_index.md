@@ -9,11 +9,8 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
 # Rendering PDF Documents
 
-# Rendering PDF Documents
-
-This page describes specific use cases for PDF Document rendering.
+{{< alert style="info" >}}This page describes specific use cases for PDF Document rendering.{{< /alert >}}
 
 ####

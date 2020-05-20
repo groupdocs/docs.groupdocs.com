@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Supported Document Formats
-
-
 ## Supported Document Formats
 
 The following table indicates the file formats that GroupDocs.Editor can edit.

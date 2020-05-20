@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign documents with exception handling
-
-
 # Exception handling while singing document
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides different error messages due to validation issues, missing required data, files etc. For exception class [GroupDocsSignatureException](https://apireference.groupdocs.com/net/signature/groupdocs.signature/groupdocssignatureexception) is being used.
@@ -25,6 +21,7 @@ Here are the steps to handle exceptions from GroupDocs.Signature:
 
 This example shows how to handle GroupDocs.Signature exceptions.
 
+```csharp
 try
 {
     using (Signature signature = new Signature("sample.xlsx"))
@@ -48,6 +45,7 @@ catch (Exception ex)
 {
     Console.WriteLine("System Exception: " + ex.Message);
 }
+```
 
 ## More resources
 

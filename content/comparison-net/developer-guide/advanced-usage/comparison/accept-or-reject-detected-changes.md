@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Accept or Reject detected changes
-
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides an ability to apply or discard specific changes between source and target documents and save resultant document with (or without) selected changes. 
 
 The following are the steps to apply/reject changes to resultant document.

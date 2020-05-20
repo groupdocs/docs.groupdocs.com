@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer For .NET 3.4.0 Release Notes
-
 # GroupDocs.Viewer for .NET 3.4.0
 
 This page contains release notes for GroupDocs.Viewer for .NET 3.4.0
@@ -196,7 +193,7 @@ The PdfFileOptions AddPrintAction property is obsolete in version 3.4.0, pleas
 
 Add watermark to Pdf document by setting AddPrintAction property to True of PdfFileOptions.
 
-The PdfFileOptions AddPrintAction property is obsolete in version 3.4.0, please use PdfFileOptions Transformations property and Transformation.AddPringAction enumeration.
+{{< alert style="info" >}}The PdfFileOptions AddPrintAction property is obsolete in version 3.4.0, please use PdfFileOptions Transformations property and Transformation.AddPringAction enumeration.{{< /alert >}}
 
 **C#**
 
@@ -225,7 +222,7 @@ Console.WriteLine("Stream lenght: {0}", container.Stream.Length);
 
 Add watermark to Pdf document by setting Transformations property of PdfFileOptions.
 
-Transformation.AddPrintAction feature is supported starting from version 3.4.0
+{{< alert style="info" >}}Transformation.AddPrintAction feature is supported starting from version 3.4.0{{< /alert >}}
 
 **C#**
 

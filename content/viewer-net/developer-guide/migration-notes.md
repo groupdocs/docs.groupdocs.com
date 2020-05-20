@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Migration Notes
-
 This article contains information about migration from the legacy API.
 
 ## Why To Migrate?

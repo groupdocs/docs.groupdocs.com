@@ -9,12 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load Email document with options
-
-
-## Load Email document with options
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) provides [EmailLoadOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/emailloadoptions)to give you control over how source email document will be processed. The following options could be set:
 
 *   **[Format](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/emailloadoptions/properties/format) **\- the document type is auto detected during loading, however you can specify explicitly the type of the source email document. Available options are: Msg, Eml, Emlx, Pst, Ost, Vcf, Mht 
@@ -87,7 +81,7 @@ using (var converter = new Converter(source, () => loadOptions))
 
 ```
 
-This functionality is introduced in v20.3
+{{< alert style="warning" >}}This functionality is introduced in v20.3{{< /alert >}}
 
 ### Control date/time format
 
@@ -103,7 +97,7 @@ using (var converter = new Converter(source))
 }
 ```
 
-This functionality is introduced in v20.3
+{{< alert style="warning" >}}This functionality is introduced in v20.3{{< /alert >}}
 
 ## More resources
 

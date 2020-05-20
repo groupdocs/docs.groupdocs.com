@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Convert to Presentation
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net)can convert any source document to the following presentation formats: *Ppt, Pps, Pptx, Ppsx, Odp, Otp, Potx,  Pot, Potm, Pptm, Ppsm**. *When just instantiate the [PresentationConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/presentationconvertoptions)class without specifying the target format explicitly, *Pptx *will be used as a  default format.
 
 Conversion to presentation format could be triggered by following below steps:

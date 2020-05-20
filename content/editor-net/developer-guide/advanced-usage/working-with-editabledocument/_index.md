@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Working with EditableDocument
-
 # Working with EditableDocument
 
 `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` class represents an input document of any supportable format, that was converted to internal intermediate format in accordance to edit options and is ready for editing in HTML WYSIWYG editors. For doing this an `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` contains a plenty of methods for emitting HTML markup, stylesheets and resources with different settings.

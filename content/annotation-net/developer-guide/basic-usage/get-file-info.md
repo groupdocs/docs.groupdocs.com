@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Get file info
-
 GroupDocs.Annotation allows to get document information which includes.
 
 *   [FileType](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/idocumentinfo/properties/filetype) - document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.);

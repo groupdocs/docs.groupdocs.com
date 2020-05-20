@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Composing signature with texture brush background
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [TextureBrush](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/texturebrush) class to specify filling signature background with image for Text and Image signature types
 
  Here are the steps to use Texture brush with GroupDocs.Signature:
@@ -28,6 +25,7 @@ hideChildren: False
 
 This example shows how to use Texture brush for signature background. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -52,6 +50,7 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("signed.pdf", options);
 }
+```
 
 ## More resources
 

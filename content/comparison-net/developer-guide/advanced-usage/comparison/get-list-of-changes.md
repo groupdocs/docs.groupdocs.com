@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Get list of changes
-
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) allows to obtain list of changes between source and target documents.
 
 The following are the steps to obtain changes list.

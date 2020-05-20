@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# System Requirements
-
-
 ## Overview
 
 GroupDocs.Merger for .NET does not require any external software or third party tool to be installed. Just follow one of the way as described in [Development Environment, Installation and Configuration](Development%2BEnvironment%252C%2BInstallation%2Band%2BConfiguration.html).

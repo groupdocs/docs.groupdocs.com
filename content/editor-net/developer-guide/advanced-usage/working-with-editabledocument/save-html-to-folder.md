@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Save HTML to folder
-
 > This demonstration shows how to open input document, convert it to intermediate [EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument), and save to disk as HTML file with resource folder.
 
 Almost all HTML WYSIWYG client-side editors are able to open HTML document from disk (from path). [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net) allows to open any supportable document, convert it to HTML and save to disk, which may be very useful for the subsequent editing it in some WYSIWYG editor. The code below demonstrates such example.

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 17.12 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 17.12.
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 17.12.{{< /alert >}}
 
 ## Major Features
 
@@ -92,7 +89,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.12. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.12. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### ODG (OpenDocument Graphics) file format support
 
@@ -145,7 +142,7 @@ foreach (PageHtml page in pages)
 }
 ```
 
-Please note that currently minification is not applied to CSS, this future will be added in coming releases.
+{{< alert style="info" >}}Please note that currently minification is not applied to CSS, this future will be added in coming releases.{{< /alert >}}
 
 While these settings will not compress the content as significantly as this might be achieved using Gzip compression (that should be enabled and configured from your web server), however, still it might be valuable and can be used as an additional optimization in combination with Gzip compression.
 

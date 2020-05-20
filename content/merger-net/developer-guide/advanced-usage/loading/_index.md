@@ -9,7 +9,4 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Loading
-
 [**GroupDocs.Merger**](https://products.groupdocs.com/merger/net) allows you to load password-protected documents and load documents from different sources. For more details please refer to the following guides:

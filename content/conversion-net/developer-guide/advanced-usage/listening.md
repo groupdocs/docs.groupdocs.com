@@ -9,12 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Listening
-
-
-# Listening to conversion process events
-
 In some cases there is the need to monitor conversion process and to receive update for start, progress and completion of a conversion. For such situations [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) expose extension point where the client application may hook up and receive updates.. 
 
 To enable listening you have to:

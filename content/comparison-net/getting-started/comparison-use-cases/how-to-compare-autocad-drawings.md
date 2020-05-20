@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# How to Compare AutoCAD drawings
-
 It becomes increasingly difficult to remember what has been changed from one revision to another as your design develops, especially when working in a remotely distributed team. The **DWG Compare** feature by AutoDesk provides a way to perform a visual comparison between two drawings - it identifies objects that have been modified, added, or removed from the two drawings and uses color and revision clouds to show the differences. The result displays in a new drawing called the *comparison drawing*. 
 
 Three colors in the comparison drawing highlight the common objects and the differences. You can specify colors to identify the following:

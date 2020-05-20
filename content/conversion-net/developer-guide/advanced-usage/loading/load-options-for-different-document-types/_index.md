@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load options for different document types
-
 ## Load options for different document types
 
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) allows you to convert documents with a huge set of additional options to customize the way the source document will be processed. For more details please refer to the following guides:

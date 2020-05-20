@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 18.4 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 18.4.
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 18.4.{{< /alert >}}
 
 ## Major Features
 
@@ -145,7 +142,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 18.4. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 18.4. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Managing Text Overflow when Rendering Cells Documents to HTML
 
@@ -1055,7 +1052,7 @@ public struct FileInfo : IFileInfo
 }
 ```
 
-Next example requires [AWSSDK.S3 NuGet package](https://www.nuget.org/packages/AWSSDK.S3/).
+{{< alert style="danger" >}}Next example requires AWSSDK.S3 NuGet package.{{< /alert >}}
 
 **Amazon S3 File Storage (C#)**
 

@@ -9,12 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Working with Presentations
-
-
-## Working with Presentations
-
 > This example demonstrates standard open-edit-save cycle with Presentation documents, using different options on every step.
 
 #### Introduction

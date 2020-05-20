@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load Spreadsheet document with options
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) provides [SpreadsheetLoadOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/spreadsheetloadoptions)to give you control over how source spreadsheet document will be processed. The following options could be set:
 
 *   **[Format](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/spreadsheetloadoptions/properties/format) **\- the document type is auto detected during loading, however you can specify explicitly the type of the source spreadsheet document. Available options are: *Xls, Xlsx, Xlsm, Xlsb, Ods, Ots, Xltx, Xlt, Xltm, Tsv, Xlam, Csv*

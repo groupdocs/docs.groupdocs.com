@@ -9,14 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Comparison for .NET 20.1 Release Notes
-
-This page contains release notes for GroupDocs.Comparison for .NET 20.1
-
-Breaking changes
-
-In this version we will remove Legacy API of GroupDocs.Comparison. So from version 20.1 **GroupDocs.Comparison.Legacy.** does not exist anymore
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for .NET 20.1{{< /alert >}}{{< alert style="danger" >}}In this version we will remove Legacy API of GroupDocs.Comparison. So from version 20.1 GroupDocs.Comparison.Legacy. does not exist anymore{{< /alert >}}
 
 ## Major Features
 
@@ -63,11 +56,12 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 20.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 20.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 *   **Multicomparing for Diagrams documents**  
     You have ability to compare more than one target diagram (vsdx) documents
     
+    ```csharp
     string sourcePath = "source.vsdx";
     string target1Path = "target1.vsdx";
     string target2Path = "target2.vsdx";
@@ -80,11 +74,13 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     comparer.Add(target3Path);
      
     comparer.Compare(File.Create(resultPath), new SaveOptions(), new CompareOptions());
+    ```
     
 *   **Multicomparing for PDF documents**
     
     You have ability to compare more than one target PDF documents
     
+    ```csharp
     string sourcePath = "source.pdf";
     string target1Path = "target1.pdf";
     string target2Path = "target2.pdf";
@@ -97,3 +93,4 @@ This section lists public API changes that were introduced in GroupDocs.Comparis
     comparer.Add(target3Path);
      
     comparer.Compare(File.Create(resultPath), new SaveOptions(), new CompareOptions());
+    ```

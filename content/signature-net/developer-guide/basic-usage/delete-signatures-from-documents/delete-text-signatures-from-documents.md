@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Delete Text signatures from documents
-
-
 # Delete Text signatures from document
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [TextSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/textsignature) class to manipulate text signatures and delete them from the documents.   
@@ -34,6 +30,7 @@ Here are the steps to delete Text signature from the document with GroupDocs.Sig
 
 This example shows how to delete Text signature that was found using [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1) method.
 
+```csharp
 using (Signature signature = new Signature("signed.pptx"))
 {
     TextSearchOptions options = new TextSearchOptions();
@@ -41,7 +38,7 @@ using (Signature signature = new Signature("signed.pptx"))
     List<TextSignature> signatures = signature.Search<TextSignature>(options);
     if(signatures.Count > 0)
     {
-        TextSignature textSignature = signatures\[0\];
+        TextSignature textSignature = signatures[0];
         bool result = signature.Delete(textSignature);
         if(result)
         {
@@ -53,6 +50,7 @@ using (Signature signature = new Signature("signed.pptx"))
         }
     }
 }
+```
 
 ## More resources
 

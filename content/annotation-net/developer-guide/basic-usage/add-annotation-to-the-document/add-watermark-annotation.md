@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add watermark annotation
-
 **Watermark** annotation adds text watermark like shown at the picture below. 
 
 ![](images/annotation-net/add-watermark-annotation_0.png)

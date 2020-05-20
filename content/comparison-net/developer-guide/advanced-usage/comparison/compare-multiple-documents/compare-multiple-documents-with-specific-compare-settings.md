@@ -9,11 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Compare multiple documents with specific compare settings
-
-
-NOTE: This feature available only for Microsoft Word documents, Microsoft PowerPoint and Open Document presentations.
+{{< alert style="info" >}}NOTE: This feature available only for Microsoft Word documents, Microsoft PowerPoint and Open Document presentations.{{< /alert >}}
 
 # Compare multiple documents with specific compare settings
 

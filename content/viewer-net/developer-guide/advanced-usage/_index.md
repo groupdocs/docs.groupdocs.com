@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Advanced usage
-
-
 # Advanced section for GroupDocs.Viewer API
 
 Learn about GroupDocs.Viewer advanced usage and its multiple powerful features including configuring custom caching, loading documents from different sources and customizing document viewing output.

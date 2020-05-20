@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load Presentation document with options
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) provides [PresentationLoadOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/presentationloadoptions)to give you control over how Microsoft PowerPoint or Open Document presentation will be converted into target format. The following options could be set:
 
 *   **[Format](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/presentationloadoptions/properties/format) **\- the document type is auto detected during loading, however you can specify explicitly the type of the source presentation document. Available options are: *Ppt, Pps, Pptx, Ppsx, Odp, Otp, Potx, Pot, Potm, Pptm, Ppsm*

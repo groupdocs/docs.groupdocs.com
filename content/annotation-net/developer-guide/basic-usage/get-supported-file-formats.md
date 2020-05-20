@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Get supported file formats
-
 **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net)** allows to get the list of all supported file formats by following the below steps:
 
 *   Call [GetSupportedFileTypes](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/filetype/methods/getsupportedfiletypes)of [FileType](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/filetype) class;

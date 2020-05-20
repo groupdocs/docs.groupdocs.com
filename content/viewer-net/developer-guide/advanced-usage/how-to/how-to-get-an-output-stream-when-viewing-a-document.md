@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# How to get an output stream when viewing a document
-
 By default GroupDocs.Viewer saves output results to the local disk but we also provide a way to save output results into a stream. 
 
 There are three interfaces that we can utilize:

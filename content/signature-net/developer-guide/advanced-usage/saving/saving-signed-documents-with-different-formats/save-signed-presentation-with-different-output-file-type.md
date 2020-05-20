@@ -9,6 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
+ div.rbtoc1588849575935 { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }div.rbtoc1588849575935 ul { list-style-type: disc; list-style-image: none; margin-left: 0px; }div.rbtoc1588849575935 li { margin-left: 0px; padding-left: 0px; }
 
 # Save signed Presentation with different output file type
 
@@ -27,6 +28,7 @@ Here are the steps to save signed Presentation document to different output ty
 
 Following example demonstrates how to save signed Presentation document with different output type
 
+```csharp
 using (Signature signature = new Signature("sample.ppsx"))
 {
     // create QRCode option with predefined QRCode text
@@ -46,6 +48,7 @@ using (Signature signature = new Signature("sample.ppsx"))
     // sign document to file
     signature.Sign("SignedPPsx", signOptions, saveOptions);
 }
+```
 
 ## More resources
 

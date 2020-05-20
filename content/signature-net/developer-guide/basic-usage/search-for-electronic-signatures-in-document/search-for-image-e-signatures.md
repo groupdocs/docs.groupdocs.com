@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for Image e-signatures
-
-
 # Search for Image signatures in the document 
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [ImageSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/imagesearchoptions) class to specify different options to search for Image e-signatures.
@@ -28,17 +24,19 @@ hideChildren: False
 
 The code snippet below demonstrates how to search for Image electronic signature in the document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // search document
     List<ImageSignature> signatures = signature.Search<ImageSignature>(SignatureType.Image);
-    Console.WriteLine($"\\nSource document \['{fileName}'\] contains following image signature(s).");
+    Console.WriteLine($"\nSource document ['{fileName}'] contains following image signature(s).");
     // output signatures
     foreach (ImageSignature imageSignature in signatures)
     {
         Console.WriteLine($"Image signature found at page {imageSignature.PageNumber} with size {imageSignature.Size}. Created {imageSignature.CreatedOn}, modified {imageSignature.ModifiedOn}");
     }
 }
+```
 
 ## More resources
 

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Editor for .NET 18.9 Release Notes
-
-This page contains release notes for GroupDocs.Editor for .NET 18.9
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Editor for .NET 18.9{{< /alert >}}
 
 ## Major features
 
@@ -110,7 +107,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Editor for .NET 18.9. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Editor for .NET 18.9. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Improvements and new features in Cells module
 
@@ -118,6 +115,7 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
     
     **GroupDocs.Editor** supports different Cells formats when converting document to HTML. Some of Cells formats are binary, like XLSX, while some have textual nature, like CSV, TabDelimited and some other. CellsToHtmlOptions class contains an inner class TextLoadOptions, which is designed especially for such text-based Cells formats. In v18.9 version we have added two new public options to this class: *ConvertDateTimeData* and *ConvertNumericData*. Both options are boolean and are *false* by default.
     
+    ```csharp
     /// <summary>
     /// Gets or sets a value that indicates whether the string in text file is converted to the date data. Default is false.
     /// </summary>
@@ -127,6 +125,7 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
     /// Gets or sets a value that indicates whether the string in text file is converted to numeric data. Default is false.
     /// </summary>
     public bool ConvertNumericData { get; set; }
+    ```
     
     By default the GroupDocs.Editor, when opening text-based Cells document, interpret all content from any cell as textual. With this option users can specify, whether GroupDocs.Editor needs to parse such content and tries to convert it to the numeric or datetime data.
     
@@ -134,17 +133,20 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
     
     By default GroupDocs.Editor works with Cells document with maximum performance; in other words, it tries to perform the work in the least possible time. The drawback of such approach is that in some cases, especially when processed document is huge, memory consumption may be a problem. In such cases, when you're facing OutOfMemoryException, you big memory consumption is unacceptable, you may turn on the *OptimizeMemoryUsage* option by setting it to *true*. In this case GroupDocs.Editor will significantly decrease memory usage, but this will degrade performance. The *OptimizeMemoryUsage *boolean option is disabled by default and is located in the *CellsToHtmlOptions* class.
     
+    ```csharp
     /// <summary>
     /// Enables memory optimization mechanisms during input document processing, which may degrade performance in some special cases, 
     /// but on the other hand decrease memory usage. Useful when processing huge documents and facing OutOfMemoryException. 
     /// Default is false (memory optimization is disabled for the sake of better performance).
     /// </summary>
     public bool OptimizeMemoryUsage { get; set; }
+    ```
     
 3.  #### New option to exclude hidden worksheets
     
     Almost any Cells document (excluding the text-based) along with any spreadsheet-processing software (like MS Excel) supports multiple worksheets (tabs). GroupDocs.Editor can process only single tab at once, the *WorksheetIndex* option is responsible for selecting such tab. Several binary Cells formats (like XLSX) support hidden worksheets (tabs) concept. Hidden worksheet means that when opening document with such tabs, you will not see them usually unless you manually will make them visible (normal). GroupDocs.Editor by default completely ignores visibility status of worksheets, i.e. it processes all tabs usually. But now, with the new option *ExcludeHiddenWorksheets*, it is allowed to exclude hidden tabs from processing. When enabled, GroupDocs.Editor will completely ignore them, like they are not existing. In such scenario the *WorksheetIndex* option "covers" only visible tabs. For example, when document has three tabs, where first tab is hidden, while two consequent (second and third) are visible, the *ExcludeHiddenWorksheets* = 1 will select the last (third) tabs, because it is second visible. So, we may say that *ExcludeHiddenWorksheets* option, when turned on, modifies the behavior of the *WorksheetIndex* option.
     
+    ```csharp
     /// <summary>
     /// Allows to exclude hidden worksheets in the input Cells document, so they will be totally ignored. 
     /// Default is false - hidden worksheets are available and processed as normal.
@@ -157,6 +159,7 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
     /// '<see cref="WorksheetIndex"/>' property.
     /// </remarks>
     public bool ExcludeHiddenWorksheets { get; set; }
+    ```
     
     ExcludeHiddenWorksheets is a boolean property, which is disabled (false) by default, and is located in the *CellsToHtmlOptions* class.
     
@@ -164,15 +167,18 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
     
     Most of binary Cells formats support the document protection feature — when the document is protected from modifications of specific type with the password. Most of spreadsheet-processing software (like MS Excel) also supports this feature. And now, with the v18.9, such feature is also supported by the GroupDocs.Editor. When saving edited document in HTML format into Cells format, you are able to apply a document protection. Of course, it will not work in case when you select Cells format, which doesn't support this feature; for example, any of text-based, like CSV.
     
+    ```csharp
     /// <summary>
     /// Allows to enable a worksheet protection for the output document. By default is NULL - protection is not applied.
     /// </summary>
     public WorksheetProtection WorksheetProtection { get; set; }
+    ```
     
     Document protection is regulated by the *WorksheetProtection* property in the *CellsSaveOptions* class. By default it is NULL — document protection is disabled. In order to apply the protection you need to create an instance of the *WorksheetProtection* class, fill it with necessary values, and set to the *WorksheetProtection*property.
     
     The *WorksheetProtection* class is listed below:
     
+    ```csharp
     /// <summary>
     /// Encapsulates worksheet protection options, which allow to protect a worksheet in the output Cells document from modification of specified type 
     /// with a specified password.
@@ -191,6 +197,7 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
         /// </summary>
         public string Password { get; set; }
     }
+    ```
     
     It has two properties — protection type (level) and password. By default the *ProtectionType* property is set to *None* — protection is not applied (default value). *Password* is set to NULL — protection is not applied too. So in order to truly apply the document protection, you need to create an instance of the *WorksheetProtection* class, set non-null and non-empty password, select valid *ProtectionType*, and assign this instance to the *CellsSaveOptions*.WorksheetProtection* *property.
     
@@ -210,14 +217,17 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
     
     Most of Words formats, like DOCX and ODT, support a document protection; when user can protect the document from modification of specific type with a password. GroupDocs.Editor, starting from v18.9, also supports this feature. When saving edited document to some of Words formats, you are able to apply a some level of protection to the resultant document with the *Protection* property in the *WordsSaveOptions* class.
     
+    ```csharp
     /// <summary>
     /// Allows to control and apply the document protection options for the Words document of any format, which supports document protection. 
     /// By default is NULL - document protection will not be used.
     /// </summary>
     public DocumentProtection Protection { get; set; }
+    ```
     
     By default this property is NULL — no protection is applied. In order to apply the protection, you need to create an instance of the *DocumentProtection* class and assign it to this property.
     
+    ```csharp
     /// <summary>
     /// Encapsulates document protection options for the Words document, which is generated from HTML
     /// </summary>
@@ -250,6 +260,7 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
         /// </summary>
         public string Password { get; set; }
     }
+    ```
     
     The *DocumentProtection* class contains two properties, which both are vital for protecting the document — *Password *and *ProtectionType*. By default the *ProtectionType* property is set to *NoProtection *— protection is not applied (default value). *Password* is set to NULL — protection is not applied too. So in order to truly apply the document protection, you need to create an instance of the *DocumentProtection* class, set non-null and non-empty password, select valid *ProtectionType*, and assign this instance to the **WordsSaveOptions*.**Protection* property.
     
@@ -267,21 +278,25 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
     
     When saving edited documents in HTML to some of Words formats, GroupDocs.Editor works with maximum performance, trying to save the document during the least possible time. But such approach may require a huge amount of memory when the document is big. When high memory consumption is not suitable for you, or you're facing the OutOfMemoryException, you can enable the option *OptimizeMemoryUsage* from the *WordsSaveOptions* class. By default this boolean option is set to *false* — memory optimization is turned off for the sake of the best performance. When turning on, this will significantly decrease memory consumption while generating large documents at the cost of slower saving time.
     
+    ```csharp
     /// <summary>
     /// Enables memory optimization mechanisms during document generation from HTML, which degrades performance in as a cost of decreasing memory usage. 
     /// Setting this option to true can significantly decrease memory consumption while generating large documents at the cost of slower saving time.
     /// Default is false (memory optimization is disabled for the sake of better performance).
     /// </summary>
     public bool OptimizeMemoryUsage { get; set; }
+    ```
     
 4.  #### PDF compliance
     
     When opening Words document, editing it in HTML editor and saving back to some of formats, you may select not only the Words formats, but also PDF using the *PdfSaveOptions* class. Now we added a new option *Compliance *into this class, which is responsible for the PDF compliance of generated PDF document.
     
+    ```csharp
     /// <summary>
     /// Specifies the PDF standards compliance level for output documents. Default is PdfCompliance.Pdf15.
     /// </summary>
     public PdfCompliance Compliance { get; set; }
+    ```
     
     This property is of *PdfCompliance* type, which is enumeration. By default all documents are generated in PDF 1.5 standard. However, with this new option you also may select:
     

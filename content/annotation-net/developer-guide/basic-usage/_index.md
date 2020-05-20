@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Basic usage
-
 ## Quick Start section for GroupDocs.Annotation API
 
 Annotate your documents fast and easy with our intuitive and powerful API just with few lines of code.  

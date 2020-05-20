@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Advanced search for Form Field signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [FormFieldSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/formfieldsearchoptions) class to specify different options to search for Form Field Signatures.
 
 Here are the steps to search for Form Field signatures within the document with GroupDocs.Signature:
@@ -26,6 +23,7 @@ Here are the steps to search for Form Field signatures within the document with 
 
 This example shows how to make advanced search for Form Field signatures in the document.
 
+```csharp
 using (Signature signature = new Signature("signed.pdf"))
 {
     FormFieldSearchOptions options = new FormFieldSearchOptions()
@@ -37,12 +35,13 @@ using (Signature signature = new Signature("signed.pdf"))
     };
     // search for signatures in document
     List<FormFieldSignature> signatures = signature.Search<FormFieldSignature>(options);
-    Console.WriteLine("\\nSource document contains following signatures.");
+    Console.WriteLine("\nSource document contains following signatures.");
     foreach (var formFieldSignature in signatures)
     {
         Console.WriteLine("FormField signature found. Name : {0}. Value: {1}", formFieldSignature.Name, formFieldSignature.Value);
     }
 }
+```
 
 ## More resources
 

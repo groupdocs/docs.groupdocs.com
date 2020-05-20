@@ -9,13 +9,11 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Get View Info for MS Project Document
-
 GroupDocs.Viewer provides additional information such as project start and end dates for MS Project documents when calling [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo) method. To retrieve view information for MS Project document call [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo)method and cast output result to [ProjectManagementViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.results/projectmanagementviewinfo) type.
 
 Following example demonstrates how to retrieve view information for MS Project document.
 
+```csharp
      
 using (Viewer viewer = new Viewer("sample.mpp"))
 {
@@ -28,6 +26,8 @@ using (Viewer viewer = new Viewer("sample.mpp"))
     Console.WriteLine("Project end date: {0}", viewInfo.EndDate); 
 }   
       
+
+```
 
 ## More resources
 

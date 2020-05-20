@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Remove pages
-
-
 # Remove document pages
 
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** provides an ability to remove single page or a collection of specific page numbers from the source document.   

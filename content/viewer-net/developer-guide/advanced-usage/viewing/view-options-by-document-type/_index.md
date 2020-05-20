@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# View options by document type
-
-
 # View options by document type
 
 Please refer to the following articles that show how to use options for rendering specific document types.

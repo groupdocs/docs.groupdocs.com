@@ -9,12 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# How to make cache thread-safe
-
-
-# How to make cache thread-safe 
-
 This tutorial will explain how to make cache thread-safe by using [C# lock](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/lock-statement) and [ConcurrentDictionary<,> class](https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentdictionary-2).
 
 ## Introduction

@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Compare documents
-
-
 # Documents comparison features
 
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to compare documents and save resultant document that shows changes between source and target document(s). Full list of supported document formats can be found [here](https://docs.groupdocs.com/display/comparisonnet/Supported+Document+Formats).  

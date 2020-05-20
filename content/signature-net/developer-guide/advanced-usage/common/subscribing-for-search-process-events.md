@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Subscribing for search process events
-
 [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature)class contains several events that are being called for different search process stages
 
 *   [SearchStarted](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/events/searchstarted) to handle process start event. This event is occur once [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1)method is called
@@ -30,10 +27,12 @@ Here are the steps to subscribe for searching process with GroupDocs.Signature:
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) expects ProcessStartEventHandler delegate to subscribe for SearchStarted event
 
+```csharp
 private static void OnSearchStarted(Signature signature, ProcessStartEventArgs args)
 {
     Console.WriteLine("Search process started at {0} with {1} total signatures to be put in document", args.Started, args.TotalSignatures);
 }
+```
 
 ## Implement method for SearchProgress event
 

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 19.10 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 19.10
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 19.10{{< /alert >}}
 
 ## Major Features
 
@@ -57,13 +54,14 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **GroupDocs.Signature.Domain.ImageSignature**  
     Public class **ImageSignature **was added to describe image signatures from the document.
     
     **New public class ImageSignature**
     
+    ```csharp
     /// <summary>
     /// Contains Image signature properties.
     /// </summary>
@@ -74,11 +72,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         public int Size { get; set; }
     }
+    ```
     
     Following example demonstrates using search for Image signature inside document:
     
     **Search document for Image Signatures**
     
+    ```csharp
     // instantiating the signature object
     using (Signature signature = new Signature("signed.pdf"))
     {
@@ -99,12 +99,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             }
         }
     }
+    ```
     
 2.  **GroupDocs.Signature.Domain.TextSignature**  
     Public class **TextSignature **was added to describe text signatures inside the document.
     
     **New public class TextSignature**
     
+    ```csharp
     /// <summary>
     /// Contains Text signature properties.
     /// </summary>
@@ -120,6 +122,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         public TextSignatureImplementation SignatureImplementation { get; set; }
     }
+    ```
     
     *   property **Text** contains text of signature inside the document.
     *   property **SignatureImplementation** specifies implementation of text. Possible values are described in enumeration. Values are Stamp, Image, Annotation, Sticker, FormField, Watermark.
@@ -128,6 +131,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Search document for Text Signatures**
     
+    ```csharp
     // instantiating the signature object
     using (Signature signature = new Signature("signed.docx"))
     {
@@ -155,12 +159,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             }
          }
     }
+    ```
     
 3.  **GroupDocs.Signature.Options.ImageSearchOptions**  
     Public class **ImageSearchOptions **was added to specify different options to search for image signatures inside the document.
     
     **New public class ImageSearchOptions**
     
+    ```csharp
     /// <summary>
     /// Represents search options for Image signatures.
     /// </summary>
@@ -171,6 +177,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         public ImageSearchOptions();
     }
+    ```
     
     This options is supported for all document types except Image documents.
     
@@ -178,6 +185,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // instantiating the signature object
     using (Signature signature = new Signature("signed.pdf"))
     {
@@ -198,12 +206,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             }
         }
     }
+    ```
     
 4.  **GroupDocs.Signature.Options.TextSearchOptions**  
     Public class **TextSearchOptions **was added to specify different options to search for text signatures inside the document.
     
     **New public class TextSearchOptions**
     
+    ```csharp
     /// <summary>
     /// Represents search options for Text signatures.
     /// </summary>
@@ -231,6 +241,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="text">Set Text of Text signature.</param>
         public TextSearchOptions(string text);
     }
+    ```
     
     This options is supported for all document types except Image documents.
     
@@ -238,6 +249,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // instantiating the signature object
     using (Signature signature = new Signature("signedFile.pdf"))
     {
@@ -249,7 +261,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             //// specify as true to search all pages of a document
             AllPages = true,
             // specify text to search
-            Text = "JS\_",
+            Text = "JS_",
             // specify text math type
             MatchType = TextMatchType.Contains
         };
@@ -265,12 +277,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             }
         }
     }
+    ```
     
 5.  **GroupDocs.Signature.Signature.Domain.BaseSignature**  
     Public class **BaseSignature **was extended with few new integer properties to specify signature position on document page if it was located. Some signature classes like **MetadataSignature** and **DigitalSignature** have these properties always zero.
     
     **New properties of Signature location on document page**
     
+    ```csharp
     /// <summary>
     /// Specifies top position of signature.
     /// </summary>
@@ -287,6 +301,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// Specifies height of signature.
     /// </summary>
     public int Height { get; private set; } = 0;
+    ```
     
     These properties are not supported for metadata and digital signatures.
     
@@ -294,6 +309,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // instantiating the signature object
     using (Signature signature = new Signature("signedFile.pdf"))
     {
@@ -305,7 +321,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             //// specify as true to search all pages of a document
             AllPages = true,
             // specify text to search
-            Text = "JS\_",
+            Text = "JS_",
             // specify text math type
             MatchType = TextMatchType.Contains
         };
@@ -321,3 +337,4 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             }
         }
     }
+    ```

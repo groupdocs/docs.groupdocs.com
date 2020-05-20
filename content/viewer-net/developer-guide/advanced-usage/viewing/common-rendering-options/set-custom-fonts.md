@@ -9,17 +9,14 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Set custom fonts
-
-
 # Set custom fonts
 
 GroupDocs.Viewer provides the feature to add custom font sources. 
 
 Following code snippet shows how to set a custom font source.
 
-FolderFontSource fontSource = new FolderFontSource(@"C:\\custom\_fonts", Fonts.SearchOption.TopFolderOnly);
+```csharp
+FolderFontSource fontSource = new FolderFontSource(@"C:\custom_fonts", Fonts.SearchOption.TopFolderOnly);
 FontSettings.SetFontSources(fontSource);                       
  
 using (Viewer viewer = new Viewer("sample.docx"))
@@ -27,6 +24,7 @@ using (Viewer viewer = new Viewer("sample.docx"))
     HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
     viewer.View(viewOptions);
 }
+```
 
 ## More resources
 

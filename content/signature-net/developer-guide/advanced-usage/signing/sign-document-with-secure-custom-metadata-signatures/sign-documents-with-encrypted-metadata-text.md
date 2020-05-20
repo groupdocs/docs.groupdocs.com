@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign documents with encrypted metadata text
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to secure Metadata signatures with standard or custom encryption. Standard encryption is implemented over class [SymmetricEncryption](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricencryption) class. Creation of this object expects 3 arguments like encryption algorithm enumeration [SymmetricAlgorithmType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricalgorithmtype) with one of following values ([DES, TripleDES, RC2, Rijndael](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricalgorithmtype)), string value key and string value salt.
 
 Here are the steps to secure Metadata string values with standard encryption with GroupDocs.Signature:
@@ -32,6 +29,7 @@ Here are the steps to secure Metadata string values with standard encryption wit
 
 This example shows how to sign document with encrypted Metadata signatures over .
 
+```csharp
 using (Signature signature = new Signature("sample.docx"))
 {
     // setup key and passphrase
@@ -60,11 +58,13 @@ using (Signature signature = new Signature("sample.docx"))
     signature.Sign("MetadataEncryptedText.docx", options);
 
 }
+```
 
 ## Implementation of encrypted Metadata signature over MetadataSignOptions encryption
 
 This example shows how to sign document with encrypted Metadata signatures over .
 
+```csharp
 using (Signature signature = new Signature("sample.docx"))
 {
     // setup key and passphrase
@@ -92,6 +92,7 @@ using (Signature signature = new Signature("sample.docx"))
     signature.Sign("MetadataEncryptedText.docx", options);
 
 }
+```
 
 ## More resources
 

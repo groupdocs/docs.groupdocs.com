@@ -9,12 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Advanced search for Digital signatures
-
-
-# Advanced search for Digital signatures in the document
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [DigitalSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/digitalsearchoptions) class to specify different options to search for Digital Signatures.
 
 Here are the steps to search for digital signatures within the document with GroupDocs.Signature:
@@ -28,6 +22,7 @@ Here are the steps to search for digital signatures within the document with Gro
 
 This example shows how to make advanced search for Digital signature in the document.
 
+```csharp
 using (Signature signature = new Signature("signed.pdf"))
 {
     DigitalSearchOptions options = new DigitalSearchOptions()
@@ -45,13 +40,14 @@ using (Signature signature = new Signature("signed.pdf"))
     };
     // search for signatures in document
     List<DigitalSignature> signatures = signature.Search<DigitalSignature>(options);
-    Console.WriteLine("\\nSource document contains following signatures.");
+    Console.WriteLine("\nSource document contains following signatures.");
     foreach (var digitalSignature in signatures)
     {
         Console.WriteLine("Digital signature found from {0} with validation flag {1}. Certificate SN {2}", 
             digitalSignature.SignTime, digitalSignature.IsValid, digitalSignature.Certificate?.SerialNumber);
     }
 }
+```
 
 ## More resources
 

@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Document viewer - PDF Viewer
-
-
   
 
 # Document Viewer - PDF Viewer
@@ -34,13 +30,15 @@ Here are the steps for rendering to PDF with GroupDocs.Viewer:
 
 The following code sample shows how to get **PDF** representation of the document.
 
+```csharp
 using (Viewer viewer = new Viewer("sample.docx"))
 {
    PdfViewOptions viewOptions = new PdfViewOptions();
    viewer.View(viewOptions);
 }
+```
 
-GroupDocs.Viewer also provides an abilityto customize rendering to PDF by setting additional options. To learn more about caching customization please refer to the following guides:
+{{< alert style="info" >}}GroupDocs.Viewer also provides an ability to customize rendering to PDF by setting additional options. To learn more about caching customization please refer to the following guides:PDF Viewer - Adjust quality for JPG imagesPDF Viewer - Protect PDF document{{< /alert >}}
 
 ## More resources
 

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Annotation for .NET 17.7.0 Release Notes
-
-This page contains release notes for GroupDocs.Annotation for .NET 17.7.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Annotation for .NET 17.7.0{{< /alert >}}
 
 ## Major Features
 
@@ -105,7 +102,7 @@ New Feature
 
 # Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Annotation for .NET 17.7.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Annotation which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Annotation for .NET 17.7.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Annotation which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  #### 2\. How to use Opacity
     
@@ -133,6 +130,7 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
     ####   
     Import annotations from Diagram documents
     
+    ```csharp
     using System.IO;
     using System.Linq;
     using System.Reflection;
@@ -144,7 +142,7 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
     {
         class Program
         {
-            static void Main(string\[\] args)
+            static void Main(string[] args)
             {
                 AnnotationConfig cfg = new AnnotationConfig();
                 cfg.StoragePath = "StorageFolder";
@@ -153,16 +151,16 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
                 {
                     Directory.CreateDirectory(cfg.StoragePath);
                 }
-                new License().SetLicense(@"path\_to\_licence");
+                new License().SetLicense(@"path_to_licence");
                 Stream input = new FileStream("../../testImportArrow.vsdx", FileMode.Open,FileAccess.ReadWrite); 
      
-                AnnotationInfo\[\] annotations = annotator.ImportAnnotations(input, DocumentType.Diagram);
+                AnnotationInfo[] annotations = annotator.ImportAnnotations(input, DocumentType.Diagram);
                 Stream clearDocument = new FileStream("../../testClear.vsd", FileMode.Open,FileAccess.ReadWrite); 
                 Stream output = annotator.ExportAnnotationsToDocument(clearDocument, annotations.ToList(), DocumentType.Diagram);
     
                 using (FileStream fileStream = new FileStream("../../testDiagramExported.vsdx", FileMode.Create))
                 {
-                    byte\[\] buffer = new byte\[output.Length\];
+                    byte[] buffer = new byte[output.Length];
                     output.Seek(0L, SeekOrigin.Begin);
                     output.Read(buffer, 0, buffer.Length);
                     fileStream.Write(buffer, 0, buffer.Length);
@@ -171,3 +169,4 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
             }
         }
     }
+    ```

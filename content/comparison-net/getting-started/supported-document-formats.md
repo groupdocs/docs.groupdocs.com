@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Supported Document Formats
-
-
 The following table indicates the file formats that GroupDocs.Comparison can work with.
 
 Format

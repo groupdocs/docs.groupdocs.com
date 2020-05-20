@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# eSign document with Form Field signature
-
 ## What is a Form Field?
 
 A **form field** is the interactive element located on document page that allows user data input through various control types like free input text box, multi-line text box, check boxes, drop down lists etc. Different document types support specific list of form field types. These elements are used to collect information from user on template form. Each Form Field element has an unique name, settings and value field. Form Fields should have unique names within the form. Picture below demonstrates possible document page with form fields.
@@ -50,11 +47,12 @@ Here are the steps to add Form Field signatures into document with GroupDocs.Sig
 
 This example shows how to sign PDF document with Form Field electronic signature on document page. 
 
+```csharp
             // The path to the documents directory.
             string filePath = "sample.pdf";
             string fileName = Path.GetFileName(filePath);
 
-            string outputFilePath = Path.Combine("C:\\output", fileName);
+            string outputFilePath = Path.Combine("C:\output", fileName);
             
 			using (Signature signature = new Signature(filePath))
             {
@@ -73,6 +71,7 @@ This example shows how to sign PDF document with Form Field electronic signature
                 // Sign document and save to the file
                 signature.Sign(outputFilePath, options);
             }
+```
 
 ## How to eSign document with existing Form Field signatures
 
@@ -101,11 +100,12 @@ Here are the steps to update existing form field signature within the document w
 
 This example shows how to e sign PDF document with existing Form Field electronic signature on document page and update its value. 
 
+```csharp
 // The path to the documents directory.
 string filePath = "sample.pdf";
 string fileName = Path.GetFileName(filePath);
 
-string outputFilePath = Path.Combine("C:\\output", fileName);
+string outputFilePath = Path.Combine("C:\output", fileName);
             
 using (Signature signature = new Signature(filePath))
 {
@@ -128,6 +128,7 @@ using (Signature signature = new Signature(filePath))
     // sign document to file
     SignResult signResult = signature.Sign(outputFilePath, listOptions);
 }
+```
 
 ## More resources
 

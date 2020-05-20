@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Add watermark
-
 **[GroupDocs.Conversion](https://products.groupdocs.com/conversion/net)** allows you to apply a watermark to the converted document.  You can set the following options for controlling how the watermark will be stamped in the converted document:
 
 ### WatermarkOptions

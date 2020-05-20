@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Replace missing font
-
 GroupDocs.Viewer enables you to set default font name which may be useful in following cases:
 
 1.  You want to generally specify the default font to fall back on if a particular font in a document cannot be found during rendering;
@@ -19,12 +16,14 @@ GroupDocs.Viewer enables you to set default font name which may be useful in fol
 
 Following code snippet shows how to set default font name.
 
+```csharp
 using (Viewer viewer = new Viewer(@"sample.pptx"))
 {
     HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
     viewOptions.DefaultFontName = "Courier New";
     viewer.View(viewOptions);
 }          
+```
 
 .
 

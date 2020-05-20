@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 20.2 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 20.2
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 20.2{{< /alert >}}
 
 ## Major Features
 

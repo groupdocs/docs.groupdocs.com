@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion for .NET 17.11 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 17.11
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 17.11{{< /alert >}}
 
 ## Major Features
 
@@ -96,14 +93,14 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 17.11. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 17.11. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Introduced new property
 
+```csharp
 public List<string> FontDirectories { get; }
+```
 
 ### Usage
 
-`var config =` `new` `ConversionConfig();`
-
-`config.FontDirectories.Add(``@"c:\custom-fonts"``);`
+{{< alert style="info" >}}var config = new ConversionConfig();config.FontDirectories.Add(@"c:\custom-fonts");{{< /alert >}}

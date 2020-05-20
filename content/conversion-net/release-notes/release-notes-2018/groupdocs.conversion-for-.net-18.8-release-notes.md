@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion for .NET 18.8 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 18.8
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 18.8{{< /alert >}}
 
 ## Major Features
 
@@ -84,10 +81,11 @@ Bug
 ##   
 Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 18.8. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 18.8. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Following obsolete constructors are removed from ConversionHandler
 
+```csharp
 /// <summary>
 /// Instantiate the ConversionHandler with default <see cref="IOutputDataHandler"/>, <see cref="ICacheDataHandler"/> and custom <see cref="IInputDataHandler"/> implementation
 /// </summary>
@@ -140,18 +138,22 @@ public ConversionHandler(ConversionConfig conversionConfig, IOutputDataHandler o
 /// <param name="outputDataHandler">Custom implementation of <see cref="IOutputDataHandler" /> interface</param>
 /// <param name="cacheDataHandler">Custom implementation of <see cref="ICacheDataHandler" /> interface</param>
 public ConversionHandler(ConversionConfig conversionConfig, IInputDataHandler inputDataHandler, IOutputDataHandler outputDataHandler, ICacheDataHandler cacheDataHandler)
+```
 
 ### Usage
 
+```csharp
 var config = new ConversionConfig
 {
     StoragePath = ".",
     OutputPath = "." 
 };
 var handler = new ConversionHandler(config);
+```
 
 ### Introduced PdfFormatingOptions when converting to PDF
 
+```csharp
 /// <summary>
 /// Define Pdf formating options
 /// </summary>
@@ -201,9 +203,11 @@ public sealed class PdfFormatingOptions
     /// </summary>
     public PdfPageMode PageMode { get; set; }
 }
+```
 
 ### Usage
 
+```csharp
 var config = new ConversionConfig();
 var conversionHandler = new ConversionHandler(config);
              
@@ -213,9 +217,11 @@ saveOptions.PdfOptions.FormatingOptions.PageMode = PdfFormatingOptions.PdfPageMo
 saveOptions.PdfOptions.FormatingOptions.PageLayout = PdfFormatingOptions.PdfPageLayout.SinglePage;
 var convertedDocument = conversionHandler.Convert(source, saveOptions);
 convertedDocument.Save("result");
+```
 
 ### Introduced TxtLoadOptions for conversions from TXT documents
 
+```csharp
 /// <summary>
 /// Txt document load options
 /// </summary>
@@ -226,7 +232,7 @@ public class TxtLoadOptions : LoadOptions
     /// The default value is true.</summary>
     /// <remarks>
     /// <para> If this option is set to false, lists recognition algorithm detects list paragraphs, when list numbers ends with
-    /// either dot, right bracket or bullet symbols (such as "•", "\*", "-" or "o").</para>
+    /// either dot, right bracket or bullet symbols (such as "•", "*", "-" or "o").</para>
     /// <para> If this option is set to true, whitespaces are also used as list number delimeters:
     /// list recognition algorithm for Arabic style numbering (1., 1.1.2.) uses both whitespaces and dot (".") symbols.</para>
     /// </remarks>
@@ -249,9 +255,11 @@ public class TxtLoadOptions : LoadOptions
     /// </summary>
     public Encoding Encoding { get; set; }
 }
+```
 
 ### Usage
 
+```csharp
 var config = new ConversionConfig();
 var conversionHandler = new ConversionHandler(config);
              
@@ -265,3 +273,4 @@ var loadOptions = new TxtLoadOptions
 var saveOptions = new PdfSaveOptions();
 var convertedDocument = conversionHandler.Convert(source, loadOptions, saveOptions);
  convertedDocument.Save("result");
+```

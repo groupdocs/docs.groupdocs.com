@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Supported Document Formats
-
-
 The following table indicates the file formats that GroupDocs.Signature can work with.
 
 Format

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 18.5 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 18.5
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 18.5{{< /alert >}}
 
 ## Major Features
 
@@ -98,12 +95,13 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.5. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.5. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **Introduced ability to provide custom serialization of objects into QR-Code Signature** for all supported Document types. Objects of any class can be used to embedded it to QRCode Signature. Optional few attributes can be used to specify names and format of data for objects serialization. New interface **IDataSerializer** was added to provide ability for custom serialization. This interface currently supported by attributes of class. Custom serialization requires  implementation of IDataSerializer interface into Attribute class.
     
     **IDataSerializer implementation**
     
+    ```csharp
     /// <summary>
     /// Serialization interface to provide object serialization and deserialization methods.
     /// </summary>
@@ -123,11 +121,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <returns></returns>
         T Deserialize<T>(string source) where T : class;
     }
+    ```
     
     1\. Following example demonstrates using interface ****IDataSerializer **** to provide custom serialization of QR-Code objects. As an example class implements IDataSerializer interface over JSON.Net third party library.
     
     **C#**
     
+    ```csharp
     public class JsonSerializerAttribute: Attribute, IDataSerializer
     {
         public string Serialize(object data)
@@ -139,35 +139,39 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             return JsonConvert.DeserializeObject<T>(source);
         }
     }
+    ```
     
     2\. Using this Attribute on class will allow to serialize and deserialize object of this class into QR-Code Signature
     
     **Serialization attribute, Format and SkipSerialization attributes**
     
+    ```csharp
     // Specify Attribute with implementation of custom serialization
-    \[JsonSerializer\]
+    [JsonSerializer]
     public class DocumentSignature
     {
         // specify SkipSerialization attribute to skip this field on serialization
-        \[SkipSerialization\]
+        [SkipSerialization]
         public string Version { get; set; }
         // specify SkipSerialization attribute to skip this field on serialization
-        \[SkipSerialization\]
+        [SkipSerialization]
         public bool IsProcessed { get; set; }
-        \[Format("SignatureID")\]
+        [Format("SignatureID")]
         public string ID { get; set; }
-        \[Format("Author")\]
+        [Format("Author")]
         public string Author { get; set; }
-        \[Format("SignatureDate","yyyy-MM-dd")\]
+        [Format("SignatureDate","yyyy-MM-dd")]
         public DateTime Signed { get; set; }
-        \[Format("Factor", "N2")\]
+        [Format("Factor", "N2")]
         public decimal DataFactor { get; set; }
     }
+    ```
     
 2.  QR-Code Signature could be encrypted with standard or custom encryption algorithms. There are several solutions to encrypt Text or Data properties of QR-Code Signature. When using Text property the property **DataEncryption** of **QRCodeSignOptions** should be used to specify encryption algorithm.
     
     **IDataEncryption**
     
+    ```csharp
     //// <summary>
     /// Encryption interface to provide object encoding and decoding methods.
     /// </summary>
@@ -186,15 +190,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <returns>Returns decrypted string</returns>
         string Decode(string source);
     }
+    ```
     
     1\. This interface is used to specify over **QRCodeSignature** property DataEncryption the way to secure data in QR-Code on documents.
     
     **C#**
     
+    ```csharp
     /// <summary>
     /// Gets or sets implementation of <see cref="IDataEncryption"/> interface to encode and decode QR-Code Signature Text or Data properties.
     /// </summary>
     public IDataEncryption DataEncryption { get; set; }
+    ```
     
       
     2\. By default Signature library contains implementation of standard symmetric encryption algorithms - DES, TripleDES, RC2 and Rijndael. 
@@ -203,6 +210,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Symmetric algorithm type enumeration**
     
+    ```csharp
     /// <summary>
     /// Represents symmetric encryption algorithm type.
     /// </summary>
@@ -217,11 +225,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <summary>Represents Rijndael symmetric encryption algorithm.</summary>
         Rijndael = 3,
     }
+    ```
     
     3\. New public class **SymmetricEncryption **implements methods of interface **IDataEncryption** and contains property to specify type of encryption algorithm.
     
     **SymmetricEncryption**
     
+    ```csharp
     namespace GroupDocs.Signature.Domain.Extensions
     {
         /// <summary>
@@ -274,6 +284,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             public string Decode(string source);
         }
     }
+    ```
     
 3.  **Encryption of Text property of QR-Code Signature**
     
@@ -281,6 +292,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Encrypt Text property of QR-Code Signature**
     
+    ```csharp
     // setup key and passphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -290,8 +302,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -305,11 +317,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedQRCodeTextEncrypted.pdf" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     Search original Text from encrypted QR-Code Signature in signed Document
     
     **Search encrypted Text**
     
+    ```csharp
     // setup key and pasphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -319,8 +333,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -341,6 +355,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Found QRCode signature: {0} with text {1}", qrCodeSignature.EncodeType.TypeName, qrCodeSignature.Text);
         }
     }
+    ```
     
 4.  **Custom data object encryption. Using Data property of QR-Code Signature**
     
@@ -348,34 +363,37 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     public class DocumentSignature
     {
         // specify SkipSerialization attribute to skip this field on serialization
-        \[SkipSerialization\]
+        [SkipSerialization]
         public string Version { get; set; }
      
         // specify SkipSerialization attribute to skip this field on serialization
-        \[SkipSerialization\]
+        [SkipSerialization]
         public bool IsProcessed { get; set; }
      
-        \[Format("SignatureID")\]
+        [Format("SignatureID")]
         public string ID { get; set; }
      
-        \[Format("Author")\]
+        [Format("Author")]
         public string Author { get; set; }
      
-        \[Format("SignatureDate","yyyy-MM-dd")\]
+        [Format("SignatureDate","yyyy-MM-dd")]
         public DateTime Signed { get; set; }
      
-        \[Format("Factor", "N2")\]
+        [Format("Factor", "N2")]
         public decimal DataFactor { get; set; }
     }
+    ```
     
 5.  ** Custom encryption implementation for signing and search**  
     Custom implementation requires class that implements GroupDocs.Signature.Domain.Extensions.IDataEncryption interface. Following example demonstrates simple XOR encryption method to encrypt and decrypt data.
     
     **IDataEncryption implementation**
     
+    ```csharp
     public class CustomXOREncryption : IDataEncryption
     {
         /// <summary>
@@ -414,25 +432,27 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             char chKey;
             for (int index = 0; index < src.Length; ++index)
             {
-                chTmp = src\[index\];
+                chTmp = src[index];
                 chTmp = (char)(chTmp ^ this.Key);
                 dst.Append(chTmp);
             }
             return dst.ToString();
         }
     }
+    ```
     
     Using this class allows to specify custom encryption when using **Text** property of QR-Code Signature
     
     **C#**
     
+    ```csharp
     // create data encryption
     IDataEncryption encrypter = new CustomXOREncryption();
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -446,33 +466,37 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedQRCodeTextCustomEncrypted.pdf" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     Using same algorithm on custom data object as Attribute of class definition or **DataEncryption** property
     
     **Custom Data Object**
     
-    \[SymmetricEncryption(SymmetricAlgorithmType.Rijndael, "1234567890", "1234567890")\]
+    ```csharp
+    [SymmetricEncryption(SymmetricAlgorithmType.Rijndael, "1234567890", "1234567890")]
     public class DocumentSignature
     {
-        \[Format("SignID")\]
+        [Format("SignID")]
         public string ID { get; set; }
-        \[Format("SAuth")\]
+        [Format("SAuth")]
         public string Author { get; set; }
-        \[Format("SDate", "yyyy-MM-dd")\]
+        [Format("SDate", "yyyy-MM-dd")]
         public DateTime Signed { get; set; }
-        \[Format("SDFact", "N2")\]
+        [Format("SDFact", "N2")]
         public decimal DataFactor { get; set; }
     }
+    ```
     
     Creating QR-Code Signature with Encryption attribute or setup encryption dynamically
     
     **Setup Custom Encryption**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -495,3 +519,4 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedQRCodeDataEncrypted.pdf" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```

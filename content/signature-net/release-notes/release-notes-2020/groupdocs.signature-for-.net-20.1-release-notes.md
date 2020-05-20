@@ -9,14 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 20.1 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 20.1
-
-Breaking changes
-
-In this version we're removed Legacy API from product. **GroupDocs.Signature.Legacy** namespace does not exist anymore.
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 20.1{{< /alert >}}{{< alert style="danger" >}}In this version we're removed Legacy API from product. GroupDocs.Signature.Legacy namespace does not exist anymore.{{< /alert >}}
 
 ## Major Features
 
@@ -72,7 +65,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 20.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 20.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  GroupDocs.Signature.Domain.XAdESType
     
@@ -82,6 +75,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Enumeration of XML Advanced Electronic Signatures types**
     
+    ```csharp
     /// <summary>
     /// Type of XML Advanced Electronic Signature (XAdES).
     /// </summary>
@@ -96,6 +90,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         XAdES = 1
     }
+    ```
     
 2.  GroupDocs.Signature.Options.DigitalSignOptions  
     Public class [DigitalSignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/digitalsignoptions) was extended with new enumeration property** XAdESType** to specify if digital signature should be XAdES type. See enumeration type [XAdESType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/xadestype).

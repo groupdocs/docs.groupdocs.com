@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Get attachments
-
 GroupDocs.Viewer for .NET API enables you to to retrieve a list of document attachments from your emails, Outlook data files, archives and PDF documents.
 
 Follow these steps to get a list of all attachments:
@@ -22,16 +19,18 @@ Follow these steps to get a list of all attachments:
 
 Following example demonstrates on how to get all attachments from MSG file.
 
+```csharp
 			using (Viewer viewer = new Viewer("sample.msg"))
             {
                 IList<Attachment> attachments = viewer.GetAttachments();
 
-                Console.WriteLine("\\nAttachments:");
+                Console.WriteLine("\nAttachments:");
                 foreach(Attachment attachment in attachments)
                     Console.WriteLine(attachment);
             }
+```
 
-NOTE: provided code example is actual for all document types that support attachments - Email documents, Outlook data files, Archives and PDF documents.
+{{< alert style="info" >}}NOTE: provided code example is actual for all document types that support attachments - Email documents, Outlook data files, Archives and PDF documents.{{< /alert >}}
 
 ## More resources
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for Digital e-signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) offers an ability to find Digital signatures that are applied to document and returns its digital signature certificate.  
 Please follow these steps to search for Digital signatures within the document:
 
@@ -24,18 +21,20 @@ Please follow these steps to search for Digital signatures within the document:
 
 This example shows how to search for Digital signature in the document and analyze digital signature certificate.
 
+```csharp
             using (Signature signature = new Signature("spreadsheet.xlsx"))
             {
                 // search for signatures in document
                 List<DigitalSignature> signatures = signature.Search<DigitalSignature>(SignatureType.Digital);
 
-                Console.WriteLine("\\nSource document contains following signatures.");
+                Console.WriteLine("\nSource document contains following signatures.");
                 foreach (var digitalSignature in signatures)
                 {
                     Console.WriteLine("Digital signature found from {0} with validation flag {1}. Certificate SN {2}", 
 					digitalSignature.SignTime, digitalSignature.IsValid, digitalSignature.Certificate?.SerialNumber);
                 }
             }
+```
 
 ## More resources
 

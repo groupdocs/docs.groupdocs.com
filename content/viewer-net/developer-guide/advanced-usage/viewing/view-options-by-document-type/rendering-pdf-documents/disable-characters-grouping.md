@@ -9,11 +9,9 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Disable characters grouping
-
 To improve content positioning when rendering into PDF GroupDocs.Viewer provides [PdfOptions.DisableCharsGrouping](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pdfoptions/properties/disablecharsgrouping) as shown below:
 
+```csharp
             using (Viewer viewer = new Viewer("sample.pdf"))
             {
                 HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
@@ -21,6 +19,7 @@ To improve content positioning when rendering into PDF GroupDocs.Viewer provid
                 
                 viewer.View(viewOptions);
             }
+```
 
 ## More resources
 

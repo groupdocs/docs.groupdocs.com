@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 20.4 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 20.4
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 20.4{{< /alert >}}
 
 ## Major Features
 
@@ -187,17 +184,19 @@ Since 20.4 version there's ability to grab content of Barcode signatures. To ena
 
 Following example demonstrates how to check signature dates of creation and modification
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // search document
     List<ImageSignature> signatures = signature.Search<ImageSignature>(SignatureType.Image);
-    Console.WriteLine($"\\nSource document \['{fileName}'\] contains following image signature(s).");
+    Console.WriteLine($"\nSource document ['{fileName}'] contains following image signature(s).");
     // output signatures
     foreach (ImageSignature imageSignature in signatures)
     {
         Console.WriteLine($"Image signature found at page {imageSignature.PageNumber} with size {imageSignature.Size}. Created {imageSignature.CreatedOn}, modified {imageSignature.ModifiedOn}");
     }
 }
+```
 
 #### Public class [QrCodeSignature](https://apireference.groupdocs.com/signature/net/groupdocs.signature.domain/qrcodesignature) was updated with new properties and ability to contain QrCode image content.
 

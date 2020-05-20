@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 17.4.0 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 17.4.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 17.4.0{{< /alert >}}
 
 ## Major Features
 
@@ -107,7 +104,7 @@ New Feature
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.4.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.4.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 *   Added new public class ImageAppearance to specify extended properties for Image Signatures. This class contains properties to specify Gray scale filter, Brightness, Contrast and Gamma filters. When signing Document with Image Signature options assign instance of ImageAppearance to Appearance property of options. Also ImageAppearance can be applied for Text Signature with TextAsImage Implementation selection.
     
@@ -117,9 +114,10 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
-    string imagePath = @"c:\\Aspose\\Test\\Images";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
+    string imagePath = @"c:\Aspose\Test\Images";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -150,8 +148,9 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // sign document
     string signedPath = handler.Sign<string>("test.docx", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Words\_Image\_Rotation\_Opacity" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Words_Image_Rotation_Opacity" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 
 *   Introduced password protection saving. SaveOptions class was extended with Password string property to specify output password for signed document and UseOriginalPassword Boolean property to specify if original password of document should not be changed.
@@ -162,14 +161,15 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
-    string password\_1 = "1234567890";
-    string password\_2 = "0987654321";
+    string password_1 = "1234567890";
+    string password_2 = "0987654321";
     // instantiating the conversion handler
     SignatureHandler handler = new SignatureHandler(signConfig);
     // setup options with text of signature
@@ -181,22 +181,22 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     //Sign document and save it without password
     //Set signed document name
-    saveOptions.OutputFileName = "WorkWithPasswordProtectedDocuments\_WithoutPassword";
+    saveOptions.OutputFileName = "WorkWithPasswordProtectedDocuments_WithoutPassword";
     string signedDocumentWithoutPassword = handler.Sign<string>("test.xls", signOptions, loadOptions, saveOptions);
      
     //Sign document and save it with new password
     //Set signed document name
-    saveOptions.OutputFileName = "WorkWithPasswordProtectedDocuments\_NewPassword";
+    saveOptions.OutputFileName = "WorkWithPasswordProtectedDocuments_NewPassword";
     //Add password to save options
-    saveOptions.Password = password\_1;
+    saveOptions.Password = password_1;
     //Sign document with new password
     string signedDocumentWithPassword = handler.Sign<string>(signedDocumentWithoutPassword, signOptions, loadOptions, saveOptions);
      
     //Sign document and save it with original password
     //Set signed document name
-    saveOptions.OutputFileName = "WorkWithPasswordProtectedDocuments\_OriginalPassword";
+    saveOptions.OutputFileName = "WorkWithPasswordProtectedDocuments_OriginalPassword";
     //Add password to load options to have ability to open document
-    loadOptions.Password = password\_1;
+    loadOptions.Password = password_1;
     //Set saveOptions to use password from loadOptions
     saveOptions.UseOriginalPassword = true;
     saveOptions.Password = String.Empty;
@@ -205,24 +205,27 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     //Sign document and save it with another password
     //Set signed document name
-    saveOptions.OutputFileName = "WorkWithPasswordProtectedDocuments\_AnotherPassword";
+    saveOptions.OutputFileName = "WorkWithPasswordProtectedDocuments_AnotherPassword";
     //Add password to load options to have ability to open document
-    loadOptions.Password = password\_1;
+    loadOptions.Password = password_1;
     //Set saveOptions to use another password
     saveOptions.UseOriginalPassword = false;
-    saveOptions.Password = password\_2;
+    saveOptions.Password = password_2;
     //Sign document with another password
     string signedDocumentWithAnotherPassword = handler.Sign<string>(signedDocumentWithOriginalPassword, signOptions, loadOptions, saveOptions);
      
     //Sign document and save it without password
     //Set signed document name
-    saveOptions.OutputFileName = "WorkWithPasswordProtectedDocuments\_RemovedPassword";
+    saveOptions.OutputFileName = "WorkWithPasswordProtectedDocuments_RemovedPassword";
     //Add password to load options to have ability to open document
-    loadOptions.Password = password\_2;
+    loadOptions.Password = password_2;
     //Set saveOptions with empty password
     saveOptions.UseOriginalPassword = false;
     saveOptions.Password = String.Empty;
     //Sign document with removed password
     string signedDocumentWithRemovedPassword = handler.Sign<string>(signedDocumentWithAnotherPassword, signOptions, loadOptions, saveOptions);
+    
+    
+    ```
     
 *   Updated XML comments of public API methods and classes with more detailed information.

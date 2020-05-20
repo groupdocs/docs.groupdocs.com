@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Render hidden columns and rows
-
 This article explains how to show hidden rows and cells when viewing Spreadsheets with GroupDocs.Viewer within your .NET applications.
 
 ## Background
@@ -24,6 +21,7 @@ Sometimes Excel document may contain hidden columns and rows (as shown in the im
 
 GroupDocs.Viewer provides [RenderHiddenRows](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/spreadsheetoptions/properties/renderhiddenrows)and [RenderHiddenColumns](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/spreadsheetoptions/properties/renderhiddencolumns)options in [SpreadsheetOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/spreadsheetoptions)class which enables rendering hidden rows and columns as shown in the following code samples. 
 
+```csharp
             using (Viewer viewer = new Viewer("sample.xlsx"))
             {
                 HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
@@ -31,6 +29,7 @@ GroupDocs.Viewer provides [RenderHiddenRows](https://apireference.groupdocs.com
                 viewOptions.SpreadsheetOptions.RenderHiddenRows = true;
                 viewer.View(viewOptions);
             }
+```
 
 ## More resources
 

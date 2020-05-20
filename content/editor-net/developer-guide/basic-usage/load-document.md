@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Load document
-
 > This article describes how to load input document to the [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net) and how to apply load options.
 
 First of all the input document, which should be accessible as a byte stream or through valid file path, should be loaded into the GroupDocs.Editor by creating an instance of the `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor) `class through one of the constructor overloads.   
@@ -84,7 +81,7 @@ wordLoadOptions.Password = "correct_password";
 Editor editor = new Editor(inputFilePath, delegate { return wordLoadOptions; });
 ```
 
-Same approach is applicable for Spreadsheet and Presentation documents too.
+{{< alert style="info" >}}Same approach is applicable for Spreadsheet and Presentation documents too.{{< /alert >}}
 
 ## More resources
 

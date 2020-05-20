@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add polyline annotation
-
 **Polyline** annotation allows to draw shapes and freehand lines like shown at the picture below. 
 
 ![](images/annotation-net/add-polyline-annotation_0.png)

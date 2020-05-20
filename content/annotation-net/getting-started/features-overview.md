@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Features Overview
-
 ## Add, edit and remove annotations
 
 GroupDocs.Annotation for .NET main feature is document annotation which supports over 13 different annotation types for over 50 file formats with full control for your annotations such as adding annotations, editing annotations and removing annotations.

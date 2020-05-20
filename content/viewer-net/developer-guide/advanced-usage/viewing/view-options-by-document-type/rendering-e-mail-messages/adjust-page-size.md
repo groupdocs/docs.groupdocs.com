@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Adjust page size
-
 GroupDocs.Viewer allows setting output page size for rendering Email messages into HTML, PDF, and images. To enable this feature, the [PageSize](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/emailoptions/properties/pagesize)property of the [EmailOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/emailoptions) class is used. The following are the pages sizes that are supported and provided in [PageSize](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/emailoptions/properties/pagesize) enumeration:
 
 *   *Unspecified *\- The default, unspecified page size
@@ -29,12 +26,14 @@ The following are the steps to set size for email message:
 *   Set [EmailOptions.PageSize](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/emailoptions/properties/pagesize) value;
 *   Call [View](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/view)method.
 
+```csharp
             using (Viewer viewer = new Viewer("sample.msg"))
             {
                 PdfViewOptions viewOptions = new PdfViewOptions();
                 viewOptions.EmailOptions.PageSize = PageSize.A4;
                 viewer.View(viewOptions);
             }
+```
 
 ## More resources
 

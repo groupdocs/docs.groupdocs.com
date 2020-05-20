@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Convert to HTML with advanced options
-
 GroupDocs.Conversion provides [MarkupConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/markupconvertoptions)to give you control over conversion result. The following options could be set:
 
 *   [FixedLayout](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/markupconvertoptions/properties/fixedlayout)\- controls the html generation. If it's set to *true*, fixed layout will be used e.g. absolutely positioned html element
@@ -50,7 +47,7 @@ using (var converter = new Converter(source))
 }
 ```
 
-This functionality is introduced in v20.3
+{{< alert style="warning" >}}This functionality is introduced in v20.3{{< /alert >}}
 
 ## More resources
 

@@ -9,12 +9,9 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# How to compare Excel files
-
 Let's say you have two Excel workbooks, or maybe two versions of the same workbook, that you want to compare. Or maybe you want to find potential problems, like manually-entered (instead of calculated) totals, or broken formulas. If you have Microsoft Office Professional Plus 2013, you can use Microsoft Spreadsheet Compare to run a report on the differences and problems it finds.
 
-**Important:**  Spreadsheet Compare is only available with Office Professional Plus 2013 or Office 365 ProPlus.
+{{< alert style="info" >}}Important:  Spreadsheet Compare is only available with Office Professional Plus 2013 or Office 365 ProPlus.{{< /alert >}}
 
 To compare two Excel workbooks with Office Professional Plus 2013 you should:
 

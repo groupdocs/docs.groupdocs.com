@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for encrypted text in Metadata signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to search encrypted Metadata signatures with standard or custom encryption. Standard encryption is implemented over class [SymmetricEncryption](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricencryption) class. Creation of this object expects 3 arguments like encryption algorithm enumeration [SymmetricAlgorithmType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/symmetricalgorithmtype) with one of following values (DES, TripleDES, RC2, Rijndael), string value key and string value salt.
 
 Here are the steps to search for encrypted Metadata signature with standard encryption with GroupDocs.Signature:
@@ -30,6 +27,7 @@ Here are the steps to search for encrypted Metadata signature with standard encr
 
 This example shows how to search for secure Metadata signature text.
 
+```csharp
 using (Signature signature = new Signature("MetadataEncryptedText.docx"))
 {
     // setup key and passphrase
@@ -43,7 +41,7 @@ using (Signature signature = new Signature("MetadataEncryptedText.docx"))
     };
     // search for signatures in document
     List<WordProcessingMetadataSignature> signatures = signature.Search<WordProcessingMetadataSignature>(options);
-    Console.WriteLine("\\nSource document contains following signatures.");
+    Console.WriteLine("\nSource document contains following signatures.");
     // get required metadata signatures
     WordProcessingMetadataSignature mdAuthor = signatures.FirstOrDefault(p => p.Name == "Author");
     if(mdAuthor != null)
@@ -57,6 +55,7 @@ using (Signature signature = new Signature("MetadataEncryptedText.docx"))
         Console.WriteLine("Metadata signature found. Name : {0}. Value: {1}", mdDocId.Name, mdDocId.GetData<string>());
     }
 }
+```
 
 ## More resources
 

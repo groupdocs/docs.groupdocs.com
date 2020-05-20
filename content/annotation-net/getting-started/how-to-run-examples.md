@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# How to Run Examples
-
-Before running an example make sure that GroupDocs.Annotation has been installed successfully.
+{{< alert style="warning" >}}Before running an example make sure that GroupDocs.Annotation has been installed successfully.{{< /alert >}}
 
 We offer multiple solutions on how you can run GroupDocs.Annotation examples, by building your own or using our back-end or front-end examples out-of-the-box.
 
@@ -26,6 +23,7 @@ Please choose one from the following list:
 *   Install **GroupDocs.Annotation for .NET **from Nuget or official GroupDocs website following this [guide](https://docs.groupdocs.com/display/annotationnet/Development+Environment%2C+Installation+and+Configuration).
 *   Code your first application with **GroupDocs.Annotation for .NET **like this
     
+    ```csharp
      // Create list of annotations
     List<AnnotationBase> annotations = new List<AnnotationBase>()
     {
@@ -45,13 +43,14 @@ Please choose one from the following list:
     };
     
     // Create annotator
-    using  (Annotator annotator = new Annotator("C:\\output\\input.pdf"))
+    using  (Annotator annotator = new Annotator("C:\output\input.pdf"))
     {
         // Add annotations
         annotator.Add(annotations);
-        // Save result to "C:\\output\\result.pdf"
-        annotator.Save("C:\\output\\result.pdf", new SaveOptions());
+        // Save result to "C:\output\result.pdf"
+        annotator.Save("C:\output\result.pdf", new SaveOptions());
     }
+    ```
     
 *   Build and Run your project. 
 *   Rendered document pages will appear inside "*C:\\output\\" *directory*.*

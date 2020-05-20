@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Get changes coordinates
-
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to detect changes between source and target documents and obtain changes coordinates at document preview images. These coordinates can be quite useful for highlighting detected changes at document preview images with some graphics (for example, place a red rectangle around each detected change).
 
 The following are the steps to obtain changes coordinates.

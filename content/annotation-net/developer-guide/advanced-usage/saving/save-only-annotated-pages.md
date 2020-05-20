@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Save only annotated pages
-
 Result document will contains only pages, which contains any annotation.
 
 The following are the steps how to export to resultant document only annotated pages:

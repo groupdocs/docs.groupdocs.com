@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 18.3 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 18.3
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 18.3{{< /alert >}}
 
 ## Major Features
 
@@ -78,7 +75,7 @@ New Feature
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.3. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.3. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **Introduced ability to encode custom objects to QR-Code Signature** for all supported Document types. Any class can be used to embedded it to QRCode Signature. Optional few attributes can be used to specify names and format of data for objects serialization. New attributes allow to specify format and names of object fields/properties serialization. By default serialization format to QR-Code is Json format. Future versions will include ability to specify custom serialization and de-serialization of objects. New attribute **FormatAttribute** allows to specify name and data format for class property. Attribute **SkipSerializationAttribute** allows to skip member of class for serialization. These attributes are optional.  
       
@@ -87,10 +84,11 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **FormatAttriute class implementation**
     
+    ```csharp
     /// <summary>
     /// Instructs for objects serialization to serialize the member with the specified name and format
     /// </summary>
-    \[AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Parameter, AllowMultiple = false)\]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Parameter, AllowMultiple = false)]
     public sealed class FormatAttribute : Attribute
     {
         /// <summary>
@@ -116,31 +114,35 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="propertyFormat">The format of property</param>
         public FormatAttribute(string propertyName, string propertyFormat)
     }
+    ```
     
     ** Create custom class with required properties or field**
     
     **C#**
     
+    ```csharp
     public class DocumentSignature
     {
-        \[Format("SignatureID")\]
+        [Format("SignatureID")]
         public string ID { get; set; }
-        \[Format("Author")\]
+        [Format("Author")]
         public string Author { get; set; }
-        \[Format("SignatureDate","yyyy-MM-dd")\]
+        [Format("SignatureDate","yyyy-MM-dd")]
         public DateTime Signed { get; set; }
-        \[Format("Factor", "N2")\]
+        [Format("Factor", "N2")]
         public decimal DataFactor { get; set; }
     }
+    ```
     
     2.Public class **SkipSerializationAttribute **was added to GroupDocs.Signature.Domain.Extensions namespace to represent attribute for fields, variables or properties of class to be skipped while serialization to embedded QR-Code object. This attribute can be used for custom classes fields and properties to skip its property from serialization
     
     **SkipSerializationAttribute**
     
+    ```csharp
     /// <summary>
     /// Instructs the serialization to skip the member
     /// </summary>
-    \[AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Parameter, AllowMultiple = false)\]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property | AttributeTargets.Parameter, AllowMultiple = false)]
     public sealed class SkipSerializationAttribute : Attribute
     {
         /// <summary>
@@ -151,37 +153,42 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         {
         }
     }
+    ```
     
     **Create custom class with required properties or field and specify fields that should not be serialized into embedded QR-Code Signature Text**
     
     **C#**
     
+    ```csharp
     public class DocumentSignature
     {
         // specify SkipSerialization attribute to skip this field on serialization
-        \[SkipSerialization\]
+        [SkipSerialization]
         public string Version { get; set; }
         // specify SkipSerialization attribute to skip this field on serialization
-        \[SkipSerialization\]
+        [SkipSerialization]
         public bool IsProcessed { get; set; }
-        \[Format("SignatureID")\]
+        [Format("SignatureID")]
         public string ID { get; set; }
-        \[Format("Author")\]
+        [Format("Author")]
         public string Author { get; set; }
-        \[Format("SignatureDate","yyyy-MM-dd")\]
+        [Format("SignatureDate","yyyy-MM-dd")]
         public DateTime Signed { get; set; }
-        \[Format("Factor", "N2")\]
+        [Format("Factor", "N2")]
         public decimal DataFactor { get; set; }
     }
+    ```
     
     3.New property of **QRCodeSignOptions** of type object **Data** was added to pass objects for QR-Code Signature
     
     **QRCodeSignOptions**
     
+    ```csharp
     /// <summary>
     /// Gets or sets custom object to serialize to QR-Code content.
     /// </summary>
     public object Data { get; set; }
+    ```
     
     It allows to pass custom data objects for QR-Code Signature.
     
@@ -189,11 +196,12 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Sign document with custom QR-Code data**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // setup custom object instance with required data
     DocumentSignature docSignature = new DocumentSignature()
@@ -217,28 +225,32 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions, saveOptions);
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     By default current implementation of serialization format uses base Json format. For object above QR-Code Signature will keep following text content - fields marked with SkipSerialization attribute will be missing in output content.
     
     **Example of serialized custom object to QR-Code text**
     
+    ```csharp
     {
     "SignatureID": "6ba54e34-f215-4dc0-be3e-b8ec552ec7fb",
     "Author": "Mr.Sherlock",
     "SignatureDate": "2018-03-18",
     "Factor": "0.67"
     }
+    ```
     
 2.  New classes where added to support standard QRCode embedded objects.   
     Class **VCard** implements standard of VCard contact details for QRCodes. Following example demonstrates using this to embedded VCard object to QR-Code Signature.
     
     **Composing VCard object**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
      
     // Setup VCard object
@@ -284,16 +296,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions, saveOptions);
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     Class **Email** implements standard QRCode email message. Here's how it can be used
     
     **Composing Email object**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
      
     // Setup Email object
@@ -322,6 +336,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions, saveOptions);
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 3.  **Search features** was updated to support custom objects deserialization. New method of QRCodeSignature was added to support obtaining object from Signature.
     
@@ -329,11 +344,12 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Search for custom object from signed document**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -358,16 +374,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             }
         }
     }
+    ```
     
     Also this feature supports retrieving standard VCard and Email object types.
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -393,11 +411,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             }
         }
     }
+    ```
     
 4.  **New Stamp type **was implemented. Class **StampType** contains description of Stamp Type. 
     
     **StampType**
     
+    ```csharp
     /// <summary>
     /// Specify stamp type properties.
     /// </summary>
@@ -448,11 +468,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         }
      
     }
+    ```
     
     Options **StampSignOptions **was updated with new property **StampType** that allows to specify type of Stamp. New implemented Stamp type was Square.
     
     **StampSignOptions**
     
+    ```csharp
      /// <summary>
        /// Represents the Stamp Signature Options.
        /// </summary>
@@ -464,14 +486,16 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
            /// </summary>
            public StampType StampType
     }
+    ```
     
     **Example**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -487,7 +511,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.Height = 150;
     signOptions.Width = 250;
     signOptions.StampType = StampTypes.Round;
-    signOptions.ImageGuid = @"C:\\Aspose\\Test\\Images\\300x200plane.png";
+    signOptions.ImageGuid = @"C:\Aspose\Test\Images\300x200plane.png";
      
     //Outer round lines
     StampLine line00 = new StampLine();
@@ -529,11 +553,12 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // sign document with round stamp
     string signedPath = handler.Sign<string>("invoice.png", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "DocImages\_StampRound" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "DocImages_StampRound" });
      
     //change type of stamp
     signOptions.StampType = StampTypes.Square;
      
     // sign document with square stamp
     signedPath = handler.Sign<string>("invoice.png", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "DocImages\_StampSquare" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "DocImages_StampSquare" });
+    ```

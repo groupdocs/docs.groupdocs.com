@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 17.8.0 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 17.8.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 17.8.0{{< /alert >}}
 
 ## Major Features
 
@@ -156,11 +153,11 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.8.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.8.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Ignoring resource prefix for HTML resources
 
-Since the version 17.8.0, *IgnoreResourcePrefixForCss* setting is set obsolete and has been replaced by *IgnorePrefixInResources* which applies to all resource types.
+{{< alert style="info" >}}Since the version 17.8.0, IgnoreResourcePrefixForCss setting is set obsolete and has been replaced by IgnorePrefixInResources which applies to all resource types.{{< /alert >}}
 
 **Ignoring resource prefix using IgnorePrefixInResources**
 
@@ -174,7 +171,7 @@ htmlOptions.IgnorePrefixInResources = true;
 
 ### Rendering documents with Comments
 
-Since the version 17.8.0, rendering comments into HTML and PDF is supported for Microsoft Power Point documents and rendering comments into HTML is supported for Spreadsheet documents (MS Excel and OpenDocument spreadsheet).
+{{< alert style="info" >}}Since the version 17.8.0, rendering comments into HTML and PDF is supported for Microsoft Power Point documents and rendering comments into HTML is supported for Spreadsheet documents (MS Excel and OpenDocument spreadsheet).{{< /alert >}}
 
 **Rendering document with comments.**
 
@@ -258,7 +255,7 @@ foreach (PageHtml page in pages)
 
 ### Single naming convention for HTML resources
 
-Starting from 17.8.0, GroupDocs.Viewer for .NET uses the single naming convention for HTML resources.
+{{< alert style="info" >}}Starting from 17.8.0, GroupDocs.Viewer for .NET uses the single naming convention for HTML resources.{{< /alert >}}
 
 *   Image resources (resources with extensions .png, .jpg, .jpeg, .bmp, .emf, .wmf) 
     *   for the first resource: image + extension e.g. image.png
@@ -302,7 +299,7 @@ foreach (PageHtml page in pages)
 }
 ```
 
-Currently this option works for most document types, however, there are few (listed below) that are not supported yet. It is planned to extend support for this option in coming releases.
+{{< alert style="info" >}}Currently this option works for most document types, however, there are few (listed below) that are not supported yet. It is planned to extend support for this option in coming releases.{{< /alert >}}
 
 **List of document types that do not support responsive rendering**
 

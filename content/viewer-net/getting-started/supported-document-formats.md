@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Supported Document Formats
-
-
 ## Supported File Formats
 
 With GroupDocs.Viewer for .NET you can view over 140 different document types and auto-detect over 90 file formats.

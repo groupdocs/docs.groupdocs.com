@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Load password-protected documents
-
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows to annotate documents that are protected with a password.
 
 The following are the steps to process password-protected documents.

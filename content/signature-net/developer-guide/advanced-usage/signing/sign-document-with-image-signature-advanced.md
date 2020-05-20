@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign document with Image signature - advanced
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [ImageSignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/imagesignoptions) class to specify different options for Image signature as follow
 
 *   signature alignment ([HorizontalAlignment](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/imagesignoptions/properties/horizontalalignment), [VerticalAlignment](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/imagesignoptions/properties/verticalalignment))
@@ -31,6 +28,7 @@ Here are the steps to add Image signature into document with GroupDocs.Signature
 
 This example shows how to specify different Image signature options. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
 using (Signature signature = new Signature("sample.xlsx"))
 {
     ImageSignOptions options = new ImageSignOptions("sample.jpg")
@@ -75,6 +73,7 @@ using (Signature signature = new Signature("sample.xlsx"))
         Console.WriteLine($"Signature #{number++}: Type: {temp.SignatureType} Id:{temp.SignatureId}, Location: {temp.Left}x{temp.Top}. Size: {temp.Width}x{temp.Height}");
     }
  }
+```
 
 ## More resources
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Load document from Amazon S3 Storage
-
 Following example demonstrates how to process with documents from Amazon S3 Storage.
 
 ```csharp

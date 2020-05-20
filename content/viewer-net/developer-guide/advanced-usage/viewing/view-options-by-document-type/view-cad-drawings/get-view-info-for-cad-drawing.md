@@ -9,13 +9,11 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Get View Info for CAD Drawing
-
 GroupDocs.Viewer provides additional information about CAD drawings such as list of layouts and layers when calling [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo)method. To retrieve view information for CAD drawing call [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo)method and cast output result to [CadViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.results/cadviewinfo) type.
 
 Following example demonstrates how to retrieve view information for CAD drawing.
 
+```csharp
 using (Viewer viewer = new Viewer("sample.dwg"))
 {
     ViewInfoOptions viewInfoOptions = ViewInfoOptions.ForHtmlView();
@@ -31,6 +29,8 @@ using (Viewer viewer = new Viewer("sample.dwg"))
         Console.WriteLine(layer);
 }    
       
+
+```
 
 ## More resources
 

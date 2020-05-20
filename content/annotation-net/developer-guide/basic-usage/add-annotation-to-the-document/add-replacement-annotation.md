@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add replacement annotation
-
 **Replacement** annotation replaces original text with other provided text fragment. Please check the picture below to know how replacement annotation may look like. 
 
 ![](images/annotation-net/add-replacement-annotation_0.png)

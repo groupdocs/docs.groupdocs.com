@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Get document info
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) allows to get basic document information (like pages count) for every supported document type, which may be useful for converting part of source document or per-page conversion.  
 Along with this GroupDocs.Conversion provides additional information for the following document types:
 

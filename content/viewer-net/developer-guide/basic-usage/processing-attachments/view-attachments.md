@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# View attachments
-
 View email/file attachments in the same way as you would view any other documents.
 
 There are many different use cases when you need to view/preview attachments form an emails, save attachments to specific location, parse or extract attachments. So we made this process easy and simple with GroupDocs.Viewer for .NET API.
@@ -33,6 +30,7 @@ To view attachments just follow steps below:
 
 Following code snippet demonstrates on how to view attachments from MSG file.
 
+```csharp
  			Attachment attachment = new Attachment("attachment-word.doc");           
 			MemoryStream attachmentStream = new MemoryStream();
             
@@ -46,8 +44,9 @@ Following code snippet demonstrates on how to view attachments from MSG file.
                 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources();
                 viewer.View(options);
             }
+```
 
-NOTE: provided code example is actual for all document types that support attachments - Email documents, Outlook data files, Archives and PDF documents.
+{{< alert style="info" >}}NOTE: provided code example is actual for all document types that support attachments - Email documents, Outlook data files, Archives and PDF documents.{{< /alert >}}
 
 ## More resources
 

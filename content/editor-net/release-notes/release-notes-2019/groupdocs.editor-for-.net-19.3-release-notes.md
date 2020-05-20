@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Editor for .NET 19.3 Release Notes
-
-This page contains release notes for GroupDocs.Editor for .NET 19.3
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Editor for .NET 19.3{{< /alert >}}
 
 ## Major features
 
@@ -68,7 +65,7 @@ Improvement
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Editor for .NET 19.3. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Editor for .NET 19.3. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### XML support
 
@@ -76,6 +73,7 @@ From this version GroupDocs.Editor introduces support of XML format — ability 
 
 In order to open XML document simply pass it to the EditorHadler class as a stream, and also pass an instance of XmlToHtmlOptions class. It has the next structure:
 
+```csharp
 /// <summary>
 /// Allows to specify custom options for loading XML (eXtensible Markup Language) documents
 /// </summary>
@@ -152,6 +150,7 @@ public sealed class XmlToHtmlOptions : IDocumentLoadOptions
     /// </summary>
     public System.Drawing.Color CDataFontColor { get; set; }
 }
+```
 
 Let's review all these properties step-by-step:
 
@@ -176,11 +175,12 @@ Need to emphasize, that in this version of GroupDocs.Editor only import of XML d
 
 This version contains new advanced options for opening plain text (TXT) documents. The TextToHtmlOptions class now contains 3 new properties:
 
+```csharp
 /// <summary>
 /// Allows to specify how numbered list items are recognized when document is imported from plain text format. The default value is true.
 /// </summary>
 /// <remarks>
-/// If this option is set to false, lists recognition algorithm detects list paragraphs, when list numbers ends with either dot, right bracket or bullet symbols (such as "•", "\*", "-" or "o").
+/// If this option is set to false, lists recognition algorithm detects list paragraphs, when list numbers ends with either dot, right bracket or bullet symbols (such as "•", "*", "-" or "o").
 /// If this option is set to true, whitespaces are also used as list number delimeters: list recognition algorithm for Arabic style numbering (1., 1.1.2.) uses both whitespaces and dot (".") symbols.
 /// </remarks>
 public bool DetectNumberingWithWhitespaces { get; set; }
@@ -194,6 +194,7 @@ public TextLeadingSpacesOptions LeadingSpacesOptions { get; set; }
 /// Gets or sets preferred option of a trailing space handling. By default truncates all trailing spaces.
 /// </summary>
 public TextTrailingSpacesOptions TrailingSpacesOptions { get; set; }
+```
 
 1.  *DetectNumberingWithWhitespaces*. By default GroupDocs.Editor tries to recognize lists in the content of the plain text files by several specific templates of list formatting. For example, several line breaks, which start with consecutive numbering or same bullet characters, will be recognized as lists, and output HTML will have the corresponding list structure. However, in several scenarios, it is hard to determine whether some text configuration implies list or not. This option enables list recognition, when list item marks are succeeded not only by special bullet marks, but also with whitespaces.
 2.  *LeadingSpacesOptions*. This option allows to choose one of three available strategies of processing leading spaces in text lines. By default leading whitespaces are converted to the text indent in the resultant HTML document. Other options are: preserve these spaces without touching them or completely remove this.

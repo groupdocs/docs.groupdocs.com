@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# PDF Viewer - Protect PDF document
-
 GroupDocs.Viewer enables you to protect PDF document by setting permissions, password for opening and password for changing permissions.
 
 The following steps are to be followed in order to set PDF document permissions.
@@ -27,6 +24,7 @@ The following steps are to be followed in order to set PDF document permissions.
 
 Following example demonstrates how to protect output PDF document.
 
+```csharp
  			using (Viewer viewer = new Viewer("sample.docx"))
             {
                 Security security = new Security();
@@ -39,6 +37,7 @@ Following example demonstrates how to protect output PDF document.
                                 
                 viewer.View(viewOptions);
             }
+```
 
 ## More resources
 

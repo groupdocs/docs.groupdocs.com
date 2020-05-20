@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Swap pages
-
-
 # Swap document pages
 
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net) **allows to swap two pages positions within the source document. The result is a new document where two pages have their positions exchanged.

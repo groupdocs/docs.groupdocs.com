@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Save signed Spreadsheet with different output file type
-
 [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) class supports saving of Spreadsheet signed documents with different output file types. Each document type has list of compatible saving type. These values are listed in enum [SpreadsheetSaveFileFormat.](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/spreadsheetsavefileformat)
 
 Here are the steps to save signed Spreadsheet document to different output type with [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net):
@@ -27,6 +24,7 @@ Here are the steps to save signed Spreadsheet document to different output type 
 
 Following example demonstrates how to save signed Spreadsheet document with different output type
 
+```csharp
 using (Signature signature = new Signature("sample.xlsx"))
 {
     // create QRCode option with predefined QRCode text
@@ -46,6 +44,7 @@ using (Signature signature = new Signature("sample.xlsx"))
     // sign document to file
     signature.Sign("SignedXlsx.pdf", signOptions, saveOptions);
 }
+```
 
 ## More resources
 

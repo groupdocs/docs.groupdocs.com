@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Generate document pages preview
-
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** provides [PreviewOptions](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain.options/previewoptions) class to specify different options to manage preview of document pages.  
   
 Here are the steps to generate document preview with GroupDocs.Merger:
@@ -28,7 +25,7 @@ Here are the steps to generate document preview with GroupDocs.Merger:
         
     *   custom size of preview images (if needed).   
         
-        Stream that were created by [CreatePageStream](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain.common/createpagestream) delegate will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument [ReleasePageStream](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain.common/releasepagestream) to clean up resources.  
+        {{< alert style="info" >}}Stream that were created by CreatePageStream delegate will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument ReleasePageStream to clean up resources.{{< /alert >}}
         
           
         
@@ -39,6 +36,7 @@ Here are the steps to generate document preview with GroupDocs.Merger:
 
 GroupDocs.Merger expects [CreatePageStream](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain.common/createpagestream) delegate to obtain each page stream for image preview generation process
 
+```csharp
 private static Stream CreatePageStream(int pageNumber)
 {
     string imageFilePath = Path.Combine("GeneratePreviewFolder", "image-" + pageNumber.ToString() + ".jpg");
@@ -49,6 +47,7 @@ private static Stream CreatePageStream(int pageNumber)
     }
     return new System.IO.FileStream(imageFilePath, FileMode.Create);
 }
+```
 
 ## ReleasePageStream delegate implementation
 
@@ -118,7 +117,7 @@ private static void ReleasePageStream(int pageNumber, Stream pageStream)
 }
 ```
 
-NOTE: Stream that was created over [CreatePageStream](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain.common/createpagestream) delegate will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument [ReleasePageStream](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain.common/releasepagestream) to clean up resources.
+{{< alert style="info" >}}NOTE: Stream that was created over CreatePageStream delegate will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument ReleasePageStream to clean up resources.{{< /alert >}}
 
 ## More resources
 

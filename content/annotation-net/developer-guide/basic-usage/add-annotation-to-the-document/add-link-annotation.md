@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add link annotation
-
 **Link** annotation adds a hyper link to document  like shown at the picture below. 
 
 ![](images/annotation-net/add-link-annotation_0.png)

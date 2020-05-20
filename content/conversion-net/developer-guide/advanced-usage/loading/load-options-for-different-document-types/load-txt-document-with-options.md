@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load TXT document with options
-
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) provides [TxtLoadOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/txtloadoptions)to give you control over how source text document will be processed. The following options could be set: 
 
 *   **[DetectNumberingWithWhitespaces](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/txtloadoptions/properties/detectnumberingwithwhitespaces)** - allows to specify how numbered list items are recognized when plain text document is converted. If this option is set to false, lists recognition algorithm detects list paragraphs, when list numbers ends with either dot, right bracket or bullet symbols (such as "•", "\*", "-" or "o"). If this option is set to true, white spaces are also used as list number delimiters: list recognition algorithm for Arabic style numbering (1., 1.1.2.) uses both white spaces and dot (".") symbols

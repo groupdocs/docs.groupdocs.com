@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Editor for .NET 19.12 Release Notes
-
-This page contains release notes for GroupDocs.Editor for .NET 19.12
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Editor for .NET 19.12{{< /alert >}}
 
 ## Major Features
 
@@ -91,7 +88,7 @@ Bug
 
 # Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Editor for .NET 19.12. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Editor for .NET 19.12. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 *   Two main features of GroupDocs.Editor for .NET version 19.12 are extended formats support and ability to create an EditableDocument instance from inner content of HTML->BODY element and corresponding resource folder.
     
@@ -178,6 +175,7 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
       
     Second feature is representing by only one new method in the EditableDocument class:
     
+    ```csharp
     /// <summary>
     /// Static factory, that creates an instance of EditableDocument from a specified HTML markup,
     /// that doesn't contain an HTML header, but only inner markup of HTML BODY element, and from resources, located in the folder, specified by the full path
@@ -187,3 +185,4 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
     /// <param name="resourceFolderPath">Mandatory path to the folder with resources. All stylesheets, which are located in this folder, will be used.</param>
     /// <returns>New non-null instance of EditableDocument</returns>
     public static EditableDocument FromBodyMarkupAndResourceFolder(string htmlBodyContent, string resourceFolderPath)
+    ```

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 18.2 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 18.2
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 18.2{{< /alert >}}
 
 ## Major Features
 
@@ -158,7 +155,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.2. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.2. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **Introduced Search of Barcode Signatures** in supported Document types. Added scope of classes to specify search barcode options. Base abstract class **SearchBarcodeOptions** derives base **SearchOptions** and describes properties to specify criteria for Barcode search like encode type, text and text match type. For each Document type few inherited classes were added like **PdfSearchBarcodeOptions**, **CellsSearchBarcodeOptions**, **ImagesSearchBarcodeOptions**, **SlidesSearchBarcodeOptions** and **WordsSearchBarcodeOptions**
     
@@ -166,6 +163,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **SearchBarcodeOptions**
     
+    ```csharp
     /// <summary>
     /// Represents abstract search Options for Bar-code Signatures.
     /// </summary>
@@ -206,6 +204,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public SearchBarcodeOptions(BarcodeType encodeType, string text)
      
     }
+    ```
     
     1\. Property **EncodeType** is optional, if this field is set Search method of Signature Handler will collect only Barcodes with specified Encode type inside the Document.
     
@@ -215,10 +214,11 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **MatchType**
     
+    ```csharp
     /// <summary>
     /// Specifies Text Match type in string - Exact, StartsWith, EndsWith, Contains
     /// </summary>
-    \[Obfuscation(Feature = "internalization", Exclude = true, ApplyToMembers = true)\]
+    [Obfuscation(Feature = "internalization", Exclude = true, ApplyToMembers = true)]
     public enum TextMatchType
     {
         /// <summary>
@@ -238,11 +238,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         Contains = 3
     }
+    ```
     
     New class **PdfSearchBarcodeOptions** was added to provide Search Barcode properties for Pdf Documents. Class derives base SearchBarcodeOptions and contains different constructors.
     
     **PdfSearchBarcodeOptions**
     
+    ```csharp
     /// <summary>
     /// Represents the Bar-code Signature Search Options for Pdf Documents.
     /// </summary>
@@ -267,16 +269,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public PdfSearchBarcodeOptions(BarcodeType encodeType, string text)
      
     }
+    ```
     
     Following example demonstrates how to search Barcode Signatures in Pdf Documents
     
     **Search Barcode Signatures in Pdf Documents**
     
+    ```csharp
      // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -308,11 +312,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Found Barcode signature: {0} with text {1}", bcSignature.EncodeType.TypeName, bcSignature.Text);
         }
     }
+    ```
     
     New class **CellsSearchBarcodeOptions** was added to provide Search Barcode properties for Cells Documents. Class derives base SearchBarcodeOptions and contains different constructors.
     
     **CellsSearchBarcodeOptions**
     
+    ```csharp
     /// <summary>
     /// Represents the Bar-code Signature Search Options for Cells Documents.
     /// </summary>
@@ -334,16 +340,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     	/// <param name="text">Set Text of Barcode signature to search for.</param>
     	public CellsSearchBarcodeOptions(BarcodeType encodeType, string text)
     }
+    ```
     
     Following example demonstrates how to search Barcode Signatures in Cells Documents
     
     **Search Barcode Signatures in Cells Documents**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -375,11 +383,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Found Barcode signature: {0} with text {1}", bcSignature.EncodeType.TypeName, bcSignature.Text);
         }
     }
+    ```
     
     New class **ImagesSearchBarcodeOptions **was added to provide Search Barcode properties for Images. Class derives base SearchBarcodeOptions and contains different constructors.
     
     **ImagesSearchBarcodeOptions**
     
+    ```csharp
     /// <summary>
     /// Represents the Bar-code Signature Search Options for Images Documents.
     /// </summary>
@@ -404,16 +414,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public ImagesSearchBarcodeOptions(BarcodeType encodeType, string text)
      
     }
+    ```
     
     Following example demonstrates how to search Barcode Signatures in Images
     
     **Search Barcode Signatures in Images Documents**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -445,11 +457,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Found Barcode signature: {0} with text {1}", bcSignature.EncodeType.TypeName, bcSignature.Text);
         }
     }
+    ```
     
     New class **SlidesSearchBarcodeOptions **was added to provide Search Barcode properties for Slides Documents. Class derives base SearchBarcodeOptions and contains different constructors.
     
     **SlidesSearchBarcodeOptions**
     
+    ```csharp
     /// <summary>
     /// Represents the Bar-code Signature Search Options for Slides Documents.
     /// </summary>
@@ -474,16 +488,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public SlidesSearchBarcodeOptions(BarcodeType encodeType, string text)
      
     }
+    ```
     
     Following example demonstrates how to search Barcode Signatures in Slides Documents
     
     **Search Barcode Signatures in Slides Documents**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -515,11 +531,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Found Barcode signature: {0} with text {1}", bcSignature.EncodeType.TypeName, bcSignature.Text);
         }
     }
+    ```
     
     New class **WordsSearchBarcodeOptions **was added to provide Search Barcode properties for Words Documents. Class derives base SearchBarcodeOptions and contains different constructors.
     
     **WordsSearchBarcodeOptions**
     
+    ```csharp
     /// <summary>
     /// Represents the Bar-code Signature Search Options for Words Documents.
     /// </summary>
@@ -544,16 +562,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public WordsSearchBarcodeOptions(BarcodeType encodeType, string text)
      
     }
+    ```
     
     Following example demonstrates how to search Barcode Signatures in Words Documents
     
     **Search Barcode Signatures in Words Documents**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -585,6 +605,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Found Barcode signature: {0} with text {1}", bcSignature.EncodeType.TypeName, bcSignature.Text);
         }
     }
+    ```
     
 2.  New classes to keep Barcode Signatures were added. Base class **BarcodeSignature** that keeps properties of Barcode Signature like Barcode encode type, coded text. Added derived classes **PdfBarcodeSignature**, **ImagesBarcodeSignature**, **CellsBarcodeSignature**, **SlidesBarcodeSignature** and **WordsBarcodeSignature**
     
@@ -592,6 +613,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **BarcodeSignature**
     
+    ```csharp
     /// <summary>
     /// Contains Barcode Signature properties.
     /// </summary>
@@ -616,11 +638,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     	/// <param name="text">Barcode text property.</param>
     	public BarcodeSignature(BarcodeType encodeType, string text)
     }
+    ```
     
     New class **PdfBarcodeSignature **was added to specify properties of Barcode Signature from Pdf Documents. Class inherits base BarcodeSignature properties and contains few constructors.
     
     **PdfBarcodeSignature**
     
+    ```csharp
     /// <summary>
     /// Describes Barcode Signature of Pdf Documents.
     /// </summary>
@@ -638,11 +662,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="text">Barcode text property.</param>
         public PdfBarcodeSignature(BarcodeType encodeType, string text)
     }
+    ```
     
     New class **ImagesBarcodeSignature **was added to specify properties of Barcode Signature from Images. Class inherits base BarcodeSignature properties and contains few constructors.
     
     **ImagesBarcodeSignature**
     
+    ```csharp
     // <summary>
     /// Describes Barcode Signature of Images Documents.
     /// </summary>
@@ -660,11 +686,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="text">Barcode text property.</param>
         public ImagesBarcodeSignature(BarcodeType encodeType, string text)
     }
+    ```
     
     New class **CellsBarcodeSignature **was added to specify properties of Barcode Signature from Cells Documents. Class inherits base BarcodeSignature properties and contains few constructors.
     
     **CellsBarcodeSignature**
     
+    ```csharp
     /// <summary>
     /// Describes Barcode Signature of Cells Documents.
     /// </summary>
@@ -682,11 +710,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="text">Barcode text property.</param>
         public CellsBarcodeSignature(BarcodeType encodeType, string text)
     }
+    ```
     
     New class **SlidesBarcodeSignature **was added to specify properties of Barcode Signature from Slides Documents. Class inherits base BarcodeSignature properties and contains few constructors.
     
     **SlidesBarcodeSignature**
     
+    ```csharp
     /// <summary>
     /// Describes Barcode Signature of Slides Documents.
     /// </summary>
@@ -705,11 +735,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public SlidesBarcodeSignature(BarcodeType encodeType, string text)
      
     }
+    ```
     
     New class **WordsBarcodeSignature **was added to specify properties of Barcode Signature from Words Documents. Class inherits base BarcodeSignature properties and contains few constructors.
     
     **WordsBarcodeSignature**
     
+    ```csharp
     /// <summary>
     /// Describes Barcode Signature of Words Documents.
     /// </summary>
@@ -727,6 +759,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="text">Barcode Text property</param> 
         public WordsBarcodeSignature(BarcodeType encodeType, string text)
     }
+    ```
     
 3.  **Introduced Search of QR-Code Signatures** in supported Document types. Added scope of classes to specify search QR-Code options. Base abstract class **SearchQRCodeOptions** derives base **SearchOptions** and describes properties to specify criteria for QR-Code search like encode type, text and text match type. For each Document type few inherited classes were added like **PdfSearchQRCodeOptions**, **CellsSearchQRCodeOptions**, **ImagesQRCodeSignature**, **SlidesSearchQRCodeOptions** and **WordsSearchQRCodeOptions**
     
@@ -734,6 +767,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **SearchQRCodeOptions**
     
+    ```csharp
     /// <summary>
     /// Represents abstract search Options for QR-Code Signatures.
     /// </summary>
@@ -774,6 +808,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public SearchQRCodeOptions(QRCodeType encodeType, string text)
      
     }
+    ```
     
     1\. Property **EncodeType** is optional, if this field is set Search method of Signature Handler will collect only QR-Codes with specified Encode type inside the Document
     
@@ -785,6 +820,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **PdfSearchQRCodeOptions**
     
+    ```csharp
     /// <summary>
     /// Represents the QR-code Signature Search Options for Pdf Documents.
     /// </summary>
@@ -809,16 +845,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public PdfSearchQRCodeOptions(QRCodeType encodeType, string text)
      
     }
+    ```
     
     Following example demonstrates how to search QR-Code Signatures in Pdf Documents
     
     **Search QR-Code Signatures in Pdf Documents**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
      
     // instantiating the signature handler
@@ -860,11 +898,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Found QRCode signature: {0} with text {1}", bcSignature.EncodeType.TypeName, bcSignature.Text);
         }
     }
+    ```
     
     New class **CellsSearchQRCodeOptions** was added to provide Search QR-Code properties for Cells Documents. Class derives base SearchQRCodeOptions and contains different constructors.
     
     **CellsSearchQRCodeOptions**
     
+    ```csharp
      /// <summary>
     /// Represents the QR-code Signature Search Options for Cells Documents.
     /// </summary>
@@ -889,16 +929,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public CellsSearchQRCodeOptions(QRCodeType encodeType, string text)
      
     }
+    ```
     
     Following example demonstrates how to search QR-Code Signatures in Cells Documents
     
     **Search QR-Code Signatures in Cells Documents**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -939,11 +981,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Found QRCode signature: {0} with text {1}", bcSignature.EncodeType.TypeName, bcSignature.Text);
         }
     }
+    ```
     
     New class **ImagesSearchQRCodeOptions** was added to provide Search QR-Code properties for Images Documents. Class derives base SearchQRCodeOptions and contains different constructors.
     
     **ImagesSearchQRCodeOptions**
     
+    ```csharp
     /// <summary>
     /// Represents the QR-code Signature Search Options for Images Documents.
     /// </summary>
@@ -968,16 +1012,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public ImagesSearchQRCodeOptions(QRCodeType encodeType, string text)
      
     }
+    ```
     
     Following example demonstrates how to search QR-Code Signatures in Images Documents
     
     **Search QR-Code Signatures in Images Documents**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
      
     // instantiating the signature handler
@@ -1019,11 +1065,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Found QRCode signature: {0} with text {1}", bcSignature.EncodeType.TypeName, bcSignature.Text);
         }
     }
+    ```
     
     New class **SlidesSearchQRCodeOptions** was added to provide Search QR-Code properties for Slides Documents. Class derives base SearchQRCodeOptions and contains different constructors.
     
     **SlidesSearchQRCodeOptions**
     
+    ```csharp
     /// <summary>
     /// Represents the QR-code Signature Search Options for Slides Documents.
     /// </summary>
@@ -1048,16 +1096,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public SlidesSearchQRCodeOptions(QRCodeType encodeType, string text)
      
     }
+    ```
     
     Following example demonstrates how to search QR-Code Signatures in Slides Documents
     
     **Search QR-Code Signatures in Slides Documents**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
      
     // instantiating the signature handler
@@ -1099,11 +1149,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Found QRCode signature: {0} with text {1}", bcSignature.EncodeType.TypeName, bcSignature.Text);
         }
     }
+    ```
     
     New class **WordsSearchQRCodeOptions ** was added to provide Search QR-Code properties for Words Documents. Class derives base SearchQRCodeOptions and contains different constructors.
     
     **WordsSearchQRCodeOptions**
     
+    ```csharp
     /// <summary>
     /// Represents the QR-code Signature Search Options for Words Documents.
     /// </summary>
@@ -1128,16 +1180,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public WordsSearchQRCodeOptions(QRCodeType encodeType, string text)
      
     }
+    ```
     
     Following example demonstrates how to search QR-Code Signatures in Words Documents
     
     **Search QR-Code Signatures in Words Documents**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
      
     // instantiating the signature handler
@@ -1179,12 +1233,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Found QRCode signature: {0} with text {1}", bcSignature.EncodeType.TypeName, bcSignature.Text);
         }
     }
+    ```
     
 4.  New classes to keep QR-Code Signatures were added. Base class **QRCodeSignature** that keeps properties of QR-Code Signature like QR-Code encode type, coded text. Added derived classes **PdfQRCodeSignature**, **ImagesQRCodeSignature**, **CellsQRCodeSignature**, **SlidesQRCodeSignature** and **WordsQRCodeSignature**  
     New abstract class **QRCodeSignature **was added to specify base properties of QR-code Signature like QR-code encode type, coded text.
     
     **QRCodeSignature**
     
+    ```csharp
     /// <summary>
     /// Contains QR-Code Signature properties.
     /// </summary>
@@ -1213,11 +1269,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public QRCodeSignature(QRCodeType encodeType, string text)
      
     }
+    ```
     
     New class **PdfQRCodeSignature **was added to specify properties of QR-Code Signature from Pdf Documents. Class inherits base QRCodeSignature properties and contains few constructors.
     
     **PdfQRCodeSignature**
     
+    ```csharp
     /// <summary>
     /// Describes QR-Code Signature of Pdf Documents.
     /// </summary>
@@ -1236,11 +1294,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public PdfQRCodeSignature(QRCodeType encodeType, string text)
      
     }
+    ```
     
     New class **ImagesQRCodeSignature **was added to specify properties of QR-Code Signature from Images Documents. Class inherits base QRCodeSignature properties and contains few constructors.
     
     **ImagesQRCodeSignature**
     
+    ```csharp
     /// <summary>
     /// Describes QR-Code Signature of Images Documents.
     /// </summary>
@@ -1259,11 +1319,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public ImagesQRCodeSignature(QRCodeType encodeType, string text)
      
     }
+    ```
     
     New class **CellsQRCodeSignature **was added to specify properties of QR-Code Signature from Cells Documents. Class inherits base QRCodeSignature properties and contains few constructors.
     
     **CellsQRCodeSignature**
     
+    ```csharp
     /// <summary>
     /// Describes QR-Code Signature of Cells Documents.
     /// </summary>
@@ -1280,11 +1342,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
        /// <param name="text">QR-Code text property.</param>
        public CellsQRCodeSignature(QRCodeType encodeType, string text)
     }
+    ```
     
     New class **WordsQRCodeSignature **was added to specify properties of QR-code Signature from Words Documents. Class inherits base QRCodeSignature properties and contains few constructors.
     
     **WordsQRCodeSignature**
     
+    ```csharp
     /// <summary>
     /// Describes QR-Code Signature of Words Documents.
     /// </summary>
@@ -1303,6 +1367,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public WordsQRCodeSignature(QRCodeType encodeType, string text)
      
     }
+    ```
     
 5.  Class **SignatureHandler** was extended with following events
     
@@ -1314,11 +1379,12 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Working with Search process Events**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -1360,21 +1426,25 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
                 bcSignature.EncodeType.TypeName, bcSignature.Text);
         }
     }
+    ```
     
 6.  New set of classes in Extensions namespace was added to support different Brush styles. Base class **Brush.** Derived classes **SolidBrush**, **LinearGradientBrush**, **RadialGradientBrush** and **TextureBrush**. These Brush styles could be applied for Text Signature with Text as Image implementation, for Stamp signature to specify different background for Stamp line.  
     **Brush**, a base class for setting background options.
     
     **Brush**
     
+    ```csharp
     /// Represents base class for various brushes.
     public abstract class Brush
     {
     }
+    ```
     
     **SolidBrush** class for setting solid brush as signature background.
     
     **SolidBrush**
     
+    ```csharp
     /// Represents solid brush.
     /// It could be used instead background color property.
      
@@ -1397,16 +1467,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     }
      
     }
+    ```
     
     Working with **SolidBrush**:
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-    StoragePath = @"c:\\Aspose\\Test\\Storage",
-    OutputPath = @"c:\\Aspose\\Test\\Output"
+    StoragePath = @"c:\Aspose\Test\Storage",
+    OutputPath = @"c:\Aspose\Test\Output"
     };
      
     // instantiating the signature handler
@@ -1425,12 +1497,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
-    new SaveOptions { OutputType = OutputType.String, OutputFileName = "Solid\_Brush" });
+    new SaveOptions { OutputType = OutputType.String, OutputFileName = "Solid_Brush" });
+    ```
     
     **LinearGrdiantBrush** class for setting linear gradient brush as signature background.
     
     **LinearGradientBrush**
     
+    ```csharp
     /// <summary>
     /// Represents linear gradient brush.
     /// </summary>
@@ -1464,16 +1538,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     	/// <param name="angle">Angle. Default value is 0.</param>
     	public LinearGradientBrush(Color startColor, Color endColor, float angle = 0)
     }
+    ```
     
     Working with **LinearGradientBrush**:
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -1492,13 +1568,15 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.BackgroundBrushStyle = userBrushStyle;
     // sign document
     string signedPath = handler.Sign<string>("test.xlsx", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells\_Gradient\_Brash" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells_Gradient_Brash" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     **RadialGradientBrush** class for setting radial gradient brush as signature background.  
     
     **RadialGradientBrush**
     
+    ```csharp
      /// <summary>
     /// Represents radial gradient brush.
     /// </summary>
@@ -1526,16 +1604,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="outerColor">Outer color.</param>
         public RadialGradientBrush(Color innerColor, Color outerColor)
     }
+    ```
     
     Working with **RadialGradientBrush**:
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
      
     // instantiating the signature handler
@@ -1554,12 +1634,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
-    new SaveOptions { OutputType = OutputType.String, OutputFileName = "RadialGradient\_Brush" }); 
+    new SaveOptions { OutputType = OutputType.String, OutputFileName = "RadialGradient_Brush" }); 
+    ```
     
     **TextureBrush** class for setting image texture brush as signature background.  
     
     **TextureBrush**
     
+    ```csharp
     /// <summary>
     /// Represents texture brush.
     /// </summary>
@@ -1596,16 +1678,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public TextureBrush(Stream imageStream)
          
     } 
+    ```
     
     Working with **TextureBrush**:
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-    StoragePath = @"c:\\Aspose\\Test\\Storage",
-    OutputPath = @"c:\\Aspose\\Test\\Output"
+    StoragePath = @"c:\Aspose\Test\Storage",
+    OutputPath = @"c:\Aspose\Test\Output"
     };
      
     // instantiating the signature handler
@@ -1617,10 +1701,11 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.Height = 100;
      
      
-    var userBrushStyle = new TextureBrush(@"C:\\Aspose\\Test\\Images\\200.png");
+    var userBrushStyle = new TextureBrush(@"C:\Aspose\Test\Images\200.png");
      
     signOptions.BackgroundBrushStyle = userBrushStyle;
      
     // sign document
     string signedPath = handler.Sign<string>("test.pptx", signOptions,
-    new SaveOptions { OutputType = OutputType.String, OutputFileName = "Texture\_Brush" });
+    new SaveOptions { OutputType = OutputType.String, OutputFileName = "Texture_Brush" }); 
+    ```

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 17.9 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 17.9.
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 17.9.{{< /alert >}}
 
 ## Major Features
 
@@ -117,7 +114,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.9. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.9. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Excluding fonts when rendering to HTML
 
@@ -148,13 +145,11 @@ foreach (PageHtml page in pages)
 }
 ```
 
-Please note, that the option for excluding fonts, is available **since the version 17.9** and currently **works only for email documents**. We are planning to extend support for this feature for all document types where it is applicable in the upcoming releases.
-
-Please note that, currently, not all document types support adding fonts into HTML, but we are planning to extend this feature to work with every document where it is applicable, in the upcoming releases.
+{{< alert style="info" >}}Please note, that the option for excluding fonts, is available since the version 17.9 and currently works only for email documents. We are planning to extend support for this feature for all document types where it is applicable in the upcoming releases.{{< /alert >}}{{< alert style="info" >}}Please note that, currently, not all document types support adding fonts into HTML, but we are planning to extend this feature to work with every document where it is applicable, in the upcoming releases.{{< /alert >}}
 
 ### Rendering Document into Responsive HTML
 
-Since the version 17.9, this feature is extended to support MS Visio documents, SVG images, MS Word, Open Office Text and Rich Text Format documents.
+{{< alert style="info" >}}Since the version 17.9, this feature is extended to support MS Visio documents, SVG images, MS Word, Open Office Text and Rich Text Format documents.{{< /alert >}}
 
 Set **EnableResponsiveRendering****\= true** to get responsive html representations.
 
@@ -360,18 +355,4 @@ There is no replacement for this property.
 
 This method is obsolete and will be removed in the next version.
 
-**NuGet package name changed**  
-The NuGet package name was changed from **groupdocs-viewer-dotnet** to **GroupDocs.Viewer**.
-
-**File extension field does not include period**  
-There is a breaking change in the version 17.9 related to the file extensions, this change is especially relevant to users who have implemented their own custom ICacheDataHandler. All file extensions from now on will come with the leading dot.
-
-  
-Following public members are affected:
-
-*   FileExtension property of ImageOptions class
-*   Extension property of the AttachmentBase abstract class 
-*   SupportedDocumentFormats property of the DocumentFormatsContainer class
-*   Extension property of the FileDescription class
-*   Extension property of DocumentInfoContainer class
-*   OutputExtension property of the CachedDocumentDescription and CachedPageDescription classes.
+{{< alert style="danger" >}}NuGet package name changedThe NuGet package name was changed from groupdocs-viewer-dotnet to GroupDocs.Viewer.{{< /alert >}}{{< alert style="danger" >}}File extension field does not include periodThere is a breaking change in the version 17.9 related to the file extensions, this change is especially relevant to users who have implemented their own custom ICacheDataHandler. All file extensions from now on will come with the leading dot.Following public members are affected:FileExtension property of ImageOptions classExtension property of the AttachmentBase abstract class SupportedDocumentFormats property of the DocumentFormatsContainer classExtension property of the FileDescription classExtension property of DocumentInfoContainer classOutputExtension property of the CachedDocumentDescription and CachedPageDescription classes.{{< /alert >}}

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Flip or rotate pages
-
 ![](https://wiki.lisbon.dynabic.com/download/attachments/31000453/image2020-2-28%2014%3A41%3A45.png?version=1&modificationDate=1582894917000&api=v2)
 
 The GroupDocs.Viewer enables you to rotate individual pages when viewing documents in HTML/PDF/JPG/PNG formats. To flip/rotate pages use the [RotatePage](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/viewoptions/methods/rotatepage) method of [ViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/viewoptions) class.  The method accepts page number as the first parameter and rotation angle as the second parameter. There are three options that you can pass as the second parameter into [RotatePage](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/viewoptions/methods/rotatepage) method:
@@ -22,6 +19,7 @@ The GroupDocs.Viewer enables you to rotate individual pages when viewing documen
 
 The following code snippet shows how to rotate output pages when viewing a document as PDF (t[his example](https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-.NET/blob/master/Examples/GroupDocs.Viewer.Examples.CSharp/AdvancedUsage/Rendering/CommonRenderingOptions/FlipRotatePages.cs) can be also found in our public [GitHub repository](https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-.NET).)
 
+```csharp
 using (Viewer viewer = new Viewer("sample.docx"))
 {
     PdfViewOptions viewOptions = new PdfViewOptions();
@@ -29,6 +27,7 @@ using (Viewer viewer = new Viewer("sample.docx"))
 
     viewer.View(viewOptions);
 }
+```
 
 ## More resources
 

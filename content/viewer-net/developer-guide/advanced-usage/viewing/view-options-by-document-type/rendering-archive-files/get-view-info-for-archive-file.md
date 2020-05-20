@@ -9,13 +9,11 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Get View Info for Archive File
-
 GroupDocs.Viewer provides additional information such as list of folders when calling [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo) method. To retrieve view information for Archive File call [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo) method and cast output result to [ArchiveViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.results/archiveviewinfo) type.
 
 Following example demonstrates how to print out archive contents.
 
+```csharp
         public static void PrintViewInfo()
         {
             using (Viewer viewer = new Viewer("sample.zip"))
@@ -46,6 +44,8 @@ Following example demonstrates how to print out archive contents.
                 PrintFolders(viewer, subFolder);
             }
         }
+
+```
 
 ## More resources
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add area annotation
-
 **Area annotation** allows to mark up an area within the document page with a rectangle like shown at the picture below. 
 
 ![](images/annotation-net/add-area-annotation_0.png)

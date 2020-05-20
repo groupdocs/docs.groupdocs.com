@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 17.2.0 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 17.2.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 17.2.0{{< /alert >}}
 
 ## Major Features
 
@@ -200,7 +197,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.2.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.2.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 *   Added new public interfaces. IRectangle interface describes Signature Area with Left, Top, Width and Height. IAlignment interface describes Alignment and Margins of Signature Area. IRotation interface describes Rotation property of Signature Area. IOpacity interface describes opacity value for Signature appearance Existing Signature Options like SignTextOptions, SignImageOptions and SignDigitalOptions implement these interfaces.
 
@@ -212,8 +209,9 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -242,16 +240,19 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // set extensions to verification options
     verifyOptions.Extensions = extensions;
     //verify document
-    VerificationResult result = handler.Verify("test\_text\_sticker.pdf", verifyOptions);
+    VerificationResult result = handler.Verify("test_text_sticker.pdf", verifyOptions);
     Assert.IsTrue(result.IsValid, "Verification fails");
     Console.WriteLine("Verification result is: " + result.IsValid);
+    
+    ```
     
 *   **Verification of PDF Document signed with Text Signature Annotation**
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -269,19 +270,21 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // verify all pages of a document if true
     verifyOptions.VerifyAllPages = true;
     //If verify option Text is set, it will be searched in Title, Subject and Contents
-    verifyOptions.Text = "John Smith\_1";
+    verifyOptions.Text = "John Smith_1";
     // create Verify Extensions
     PdfTextAnnotationVerifyExtensions extensions = new PdfTextAnnotationVerifyExtensions();
     //If verify option is set, then appropriate property of Annotation must be equals
-    extensions.Contents = "John Smith\_1";
-    extensions.Subject = "John Smith\_2";
-    extensions.Title = "John Smith\_3";
+    extensions.Contents = "John Smith_1";
+    extensions.Subject = "John Smith_2";
+    extensions.Title = "John Smith_3";
     // set extensions to verification options
     verifyOptions.Extensions = extensions;
     //verify document
-    VerificationResult result = handler.Verify("test\_text\_annotation.pdf", verifyOptions);
+    VerificationResult result = handler.Verify("test_text_annotation.pdf", verifyOptions);
     Assert.IsTrue(result.IsValid, "Verification fails");
     Console.WriteLine("Verification result is: " + result.IsValid);
+    
+    ```
     
 
 *   Base class for Text Signature SignTextOptions was extended with Location and Size Adjustment features. New properties LocationMeasureType and SizeMeasureType describe ability to specify position of signature area in pixel or in percents per page size.
@@ -292,8 +295,9 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -334,8 +338,10 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     //PdfTextStickerAppearance.DefaultAppearance.Icon = PdfTextStickerIcon.Note;
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf\_TextSignatureAsSticker" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf_TextSignatureAsSticker" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    
+    ```
     
 *   Add Rotation to Text Signature appearance
     
@@ -343,8 +349,9 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -364,8 +371,10 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.RotationAngle = 48;
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf\_Text\_Rotation" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf_Text_Rotation" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    
+    ```
     
 
 *   Add Transparency and Rotation to Text Signature appearance
@@ -374,8 +383,9 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -401,8 +411,10 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.BorderTransparency = 0.8;
     // sign document
     string signedPath = handler.Sign<string>("test.ppt", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Slides\_Text\_Transparency\_Rotation" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Slides_Text_Transparency_Rotation" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    
+    ```
     
 
 *   Add Rotation to Image Signature appearance
@@ -411,9 +423,10 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
-    string imagePath = @"c:\\Aspose\\Test\\Images";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
+    string imagePath = @"c:\Aspose\Test\Images";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -433,5 +446,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.RotationAngle = 48;
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf\_Image\_Rotation" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf_Image_Rotation" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    
+    ```

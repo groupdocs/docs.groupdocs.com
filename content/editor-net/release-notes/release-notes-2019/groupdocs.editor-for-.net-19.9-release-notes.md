@@ -9,16 +9,11 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Editor for .NET 19.9 Release Notes
-
-This page contains release notes for GroupDocs.Editor for .NET 19.9
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Editor for .NET 19.9{{< /alert >}}
 
 ## Major Features
 
-Breaking changes
-
-In this version we're introducing new public API which was designed to be simple and easy to use. For more details about new API please check **[Public Docs](https://wiki.lisbon.dynabic.com/display/editor/Public+Docs)** section. The legacy API have been moved into **Legacy** namespace so after update to this version it is required to make project-wide replacement of namespace usages from **GroupDocs.Editor.** to **GroupDocs.Editor.Legacy.** to resolve build issues.
+{{< alert style="danger" >}}In this version we're introducing new public API which was designed to be simple and easy to use. For more details about new API please check Public Docs section. The legacy API have been moved into Legacy namespace so after update to this version it is required to make project-wide replacement of namespace usages from GroupDocs.Editor. to GroupDocs.Editor.Legacy. to resolve build issues.{{< /alert >}}
 
 #### New GetDocumentInfo method
 
@@ -68,13 +63,15 @@ Feature
 
 # Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Editor for .NET 19.9. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Editor for .NET 19.9. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ## New GetDocumentInfo method
 
 The new `Editor` class, which supersedes deprecated `EditorHandler`, contains a new instance method `GetDocumentInfo` with the next signature:
 
+```csharp
 public IDocumentInfo GetDocumentInfo(string password)
+```
 
   
 Once the document was loaded into the `Editor` class, this method can be called to obtain metainfo about the loaded document without actual opening it for editing.
@@ -83,6 +80,7 @@ Once the document was loaded into the `Editor` class, this method can be calle
 
 The `Options` namespace now contains a new `TextSaveOptions` class, that is responsible for saving `EditableDocument` with edited document content to the plain text format. It has the next signature:
 
+```csharp
 /// <summary>
 /// Allows to specify custom options for generating and saving plain text (TXT) documents
 /// </summary>
@@ -103,6 +101,7 @@ public sealed class TextSaveOptions : ISaveOptions
     /// </summary>
     public bool PreserveTableLayout { get; set; }
 }
+```
 
 ## Old API is moved to Legacy namespace
 

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion for .NET 18.11 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 18.11
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 18.11{{< /alert >}}
 
 ## Major Features
 
@@ -127,10 +124,11 @@ Feature
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 18.11. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 18.11. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ## Measure conversion time and return it as property of ConvertedDocument class
 
+```csharp
 /// <summary>
 /// Class for handling converted document
 /// </summary>
@@ -143,9 +141,11 @@ public sealed class ConvertedDocument
     public long Elapsed { get; private set; }
     ...
 }
+```
 
 Usage
 
+```csharp
 ...
 var config = new ConversionConfig();
 var conversionHandler = new ConversionHandler(config);
@@ -154,9 +154,11 @@ var saveOptions = new PdfSaveOptions();
 var convertedDocument = conversionHandler.Convert(source, saveOptions);
 Console.WriteLine("Elapsed time: {0}ms", convertedDocument.Elapsed);
 ...
+```
 
 ## Option for including hidden slides in converted document when converting from Slides
 
+```csharp
 /// <summary>
 /// Slide document load options
 /// </summary>
@@ -169,9 +171,11 @@ public class SlidesLoadOptions: LoadOptions
     public bool ShowHiddenSlides { get; set; }
     ...
 }
+```
 
 Usage
 
+```csharp
 ...
 var config = new ConversionConfig();
 var conversionHandler = new ConversionHandler(config);
@@ -184,9 +188,11 @@ var saveOptions = new PdfSaveOptions();
 var convertedDocument = conversionHandler.Convert(source, loadOptions, saveOptions);
 convertedDocument.Save("result");
 ...
+```
 
 ## Option for page rotation when converting to Pdf
 
+```csharp
 /// <summary>
 /// Options for to PDF conversion
 /// </summary>
@@ -222,9 +228,11 @@ public class PdfSaveOptions : SaveOptions
     public Rotation Rotate { get; set; }
     ...
 }
+```
 
 Usage
 
+```csharp
 ...
 var config = new ConversionConfig();
 var conversionHandler = new ConversionHandler(config);
@@ -235,9 +243,11 @@ var saveOptions = new PdfSaveOptions {
 var convertedDocument = conversionHandler.Convert(source, saveOptions);
 convertedDocument.Save("result");
 ...
+```
 
 ## Option to flatten all form fields when converting Pdf
 
+```csharp
 /// <summary>
 /// Pdf document load options
 /// </summary>
@@ -250,9 +260,11 @@ public class PdfLoadOptions : LoadOptions
     public bool FlattenAllFields { get; set; }
     ...
 }
+```
 
 Usage
 
+```csharp
 ...
 var config = new ConversionConfig();
 var conversionHandler = new ConversionHandler(config);
@@ -265,9 +277,11 @@ var saveOptions = new WordsSaveOptions();
 var convertedDocument = conversionHandler.Convert(source, loadOptions, saveOptions);
 convertedDocument.Save("result");
 ...
+```
 
 ## Rotation feature when converting to image
 
+```csharp
 /// <summary>
 /// Options for to Image conversion
 /// </summary>
@@ -280,9 +294,11 @@ public class ImageSaveOptions : SaveOptions
     public int RotateAngle { get; set; }
     ...
 }
+```
 
 Usage
 
+```csharp
 ...
 var config = new ConversionConfig();
 var conversionHandler = new ConversionHandler(config);
@@ -293,9 +309,11 @@ var saveOptions = new ImageSaveOptions {
 var convertedDocument = conversionHandler.Convert(source, saveOptions);
 convertedDocument.Save("result");
 ...
+```
 
 ## Set default font and font substitution options when converting One document
 
+```csharp
 /// <summary>
 /// One document load options
 /// </summary>
@@ -314,9 +332,11 @@ public class OneLoadOptions: LoadOptions
     /// </summary>
     public new string Password { get; set; }
 }
+```
 
 Usage
 
+```csharp
 ...
 var config = new ConversionConfig();
 var conversionHandler = new ConversionHandler(config);
@@ -331,9 +351,11 @@ var saveOptions = new PdfSaveOptions();
 var convertedDocument = conversionHandler.Convert(source, loadOptions, saveOptions);
 convertedDocument.Save("result");
 ...
+```
 
 ## Set default font when converting from Diagram
 
+```csharp
 /// <summary>
 /// Diagram document load options
 /// </summary>
@@ -344,9 +366,11 @@ public class DiagramLoadOptions: LoadOptions
     /// </summary>
     public string DefaultFont { get; set; }
 }
+```
 
 Usage
 
+```csharp
 ...
 var config = new ConversionConfig();
 var conversionHandler = new ConversionHandler(config);
@@ -359,9 +383,11 @@ var saveOptions = new PdfSaveOptions();
 var convertedDocument = conversionHandler.Convert(source, loadOptions, saveOptions);
 convertedDocument.Save("result");
 ...
+```
 
 ## Set default font when converting Psd, Emf, Wmf documents
 
+```csharp
 /// <summary>
 /// Image document load options
 /// </summary>
@@ -372,9 +398,11 @@ public class ImageLoadOptions
     /// </summary>
     public string DefaultFont { get; set; }
 }
+```
 
 Usage
 
+```csharp
 ...
 var config = new ConversionConfig();
 var conversionHandler = new ConversionHandler(config);
@@ -387,3 +415,4 @@ var saveOptions = new PdfSaveOptions();
 var convertedDocument = conversionHandler.Convert(source, loadOptions, saveOptions);
 convertedDocument.Save("result"); 
 ...
+```

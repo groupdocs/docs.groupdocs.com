@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Set filename when viewing archive files
-
 ![](https://wiki.lisbon.dynabic.com/download/attachments/31002025/image2020-3-10%2015%3A28%3A22.png?version=1&modificationDate=1583849334000&api=v2)
 
 When viewing the archive files GroupDocs.Viewer displays an archive filename in the header of each page, like it is shown on the screenshot above. By default, the name of the original file is used. The GroupDocs.Viewer enables you to change or hide filename by setting [FileName](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/archiveoptions/properties/filename) option of the [ArchiveOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/archiveoptions) class. The [FileName](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/archiveoptions/properties/filename) option can be set to: 
@@ -22,6 +19,7 @@ When viewing the archive files GroupDocs.Viewer displays an archive filename in 
 
 The following code snippet shows how to set "my filename" instead of source filename when viewing an archive file.
 
+```csharp
 using (Viewer viewer = new Viewer("sample.zip"))
 {
     PdfViewOptions viewOptions = new PdfViewOptions();
@@ -29,6 +27,7 @@ using (Viewer viewer = new Viewer("sample.zip"))
 
     viewer.View(viewOptions);
 }
+```
 
 ## More resources
 

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer For .NET 3.7.0 Release Notes
-
-This page contains release notes for [GroupDocs.Viewer for .NET 3.7.0](http://downloads.groupdocs.com/viewer/net/new-releases/groupdocs.viewer-for-.net-3.7.0/).
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 3.7.0.{{< /alert >}}
 
 ## Major Features
 
@@ -155,7 +152,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 3.7.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 3.7.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  Mark CachedPageDescription redundant constructor as Obsolete
     1.  Class GroupDocs.Viewer.Domain.CachedPageDescription constructor public CachedPageDescription(string guid, CacheFileType cacheFileType) marked as 'obsolete'
@@ -198,14 +195,19 @@ For example Pdf document has layer with name "Backgroung" so output html will co
 
 **HTML**
 
+```csharp
 <div data-pdflayer="Backgroung"> .... </div>
+
+
+```
 
 This layer can be easily accessed with javascript, see the example how to access and hide layer with help of [JQuery](https://jquery.com/).
 
 **JavaScript**
 
+```csharp
 // get layer
-var layer = $("\[data-pdflayer='Backgroung'\]");
+var layer = $("[data-pdflayer='Backgroung']");
 
 // hide layer
 layer.hide();
@@ -214,9 +216,11 @@ layer.hide();
 layer.show();
 
 // get all layers
-var allLayers = $("\[data-pdflayer\]");
+var allLayers = $("[data-pdflayer]");
 
 // go throught all layers and print layer name
 allLayers.each(function(index) {
     console.log(index + ": " + $(this).data("pdflayer"));
 });
+
+```

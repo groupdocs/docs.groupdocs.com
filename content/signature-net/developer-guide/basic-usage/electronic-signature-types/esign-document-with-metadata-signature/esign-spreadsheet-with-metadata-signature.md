@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# eSign Spreadsheet with Metadata signature
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [SpreadsheetMetadataSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/spreadsheetmetadatasignature) class to specify different Metadata signature objects for [MetadataSignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/metadatasignoptions) instance to sign Spreadsheet document files.   
 Spreadsheet document metadata is hidden attributes, some of them are visible only over viewing standard document properties like Author, Creation Date, Producer, Entry, Keywords etc.  
 Spreadsheet document metadata contains pair of Name and Value, Name should be unique within the document.  
@@ -32,12 +29,13 @@ Here are the steps to add metadata signatures into Spreadsheet document with G
 
 This example shows how to add Metadata e-signature to a Spreadsheet document.
 
+```csharp
 using (Signature signature = new Signature("sample.xlsx"))
 {
     MetadataSignOptions options = new MetadataSignOptions();
 
     // Create few Spreadsheet Metadata signatures
-    SpreadsheetMetadataSignature\[\] signatures = new SpreadsheetMetadataSignature\[\]
+    SpreadsheetMetadataSignature[] signatures = new SpreadsheetMetadataSignature[]
     {
         new SpreadsheetMetadataSignature("Author", "Mr.Scherlock Holmes"),
         new SpreadsheetMetadataSignature("DateCreated", DateTime.Now),
@@ -49,6 +47,7 @@ using (Signature signature = new Signature("sample.xlsx"))
     options.Signatures.AddRange(signatures);
     signature.Sign("SampleSigned.xlsx", options);
 }
+```
 
 ## More resources
 

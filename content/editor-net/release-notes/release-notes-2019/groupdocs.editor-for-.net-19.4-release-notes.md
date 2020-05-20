@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Editor for .NET 19.4 Release Notes
-
-This page contains release notes for GroupDocs.Editor for .NET 19.4
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Editor for .NET 19.4{{< /alert >}}
 
 ## Major features
 
@@ -68,7 +65,7 @@ Improvement
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Editor for .NET 19.4. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Editor for .NET 19.4. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Improved and expanded XML module
 
@@ -90,11 +87,13 @@ From its first release in 19.3 version the XML converter was able to show any XM
 
 This feature is represented as an option, which is located in the `XmlToHtmlOptions` class. It has the next form:
 
+```csharp
 /// <summary>
 /// Allows to enable or disable mechanism for fixing corrupted XML structure. By default is disabled (false).
 /// </summary>
 /// <remarks>By default only proper valid well-formed XML documents are acceptable. When this option is enabled, GroupDocs.Editor will try to fix corrupted XML structure if possible.</remarks>
 public bool FixIncorrectStructure { get; set; }
+```
 
 By default it is disabled — XML correctness algorithm is not applied.
 
@@ -104,10 +103,12 @@ In previous version XML converter processed any URIs as an ordinary text. It was
 
 This feature is represented as an option, which is located in the `XmlToHtmlOptions` class. It has the next form:
 
+```csharp
 /// <summary>
 /// Allows to enable URI recognition algorithm
 /// </summary>
 public bool RecognizeUris { get; set; }
+```
 
 By default it is disabled — URIs will not be recognized. But take a note, that enabling URI detection will significantly decrease the performance, because the detection algorithm should check every piece of text over all of the document.
 
@@ -117,10 +118,12 @@ Along with URI recognition, 19.4 release also contains a mechanism for detection
 
 This feature is represented as an option, which is located in the `XmlToHtmlOptions` class. It has the next form:
 
+```csharp
 /// <summary>
 /// Allows to enable recognition algorithm for email addresses in attribute values
 /// </summary>
 public bool RecognizeEmails { get; set; }
+```
 
 And, as in all previous cases, this option is disabled by default.
 
@@ -130,10 +133,12 @@ XML standard defines two quote types, that can be used for delimiting attribute 
 
 This feature is represented as an option, which is located in the `XmlToHtmlOptions` class. It has the next form:
 
+```csharp
 /// <summary>
 /// Allows to specify quote type (single or double quotes) for attribute values. Double quotes are default.
 /// </summary>
 public HtmlCss.Serialization.QuoteType AttributeValuesQuoteType { get; set; }
+```
 
 By default double quotes will be apllied.
 

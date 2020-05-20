@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for embedded and encrypted objects in Metadata signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides additional features when searching for Metadata Signatures ([MetadataSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/metadatasignature)) that were previously encrypted or contains custom data objects. 
 
 *   Ability to search for embedded custom objects into metadata and decrypt them to original source values.
@@ -34,6 +31,7 @@ Here are the steps to search and decrypt previously encrypted text of metadata a
 
 This example shows how to specify custom serialization class. This class should be implemented as Attribute and [IDataSerializer](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/idataserializer) interface.
 
+```csharp
 /// <summary>
 /// Creates class that implements IDataSerializer interface
 /// It cam support common serialization like JSon or custom data format
@@ -43,7 +41,7 @@ class CustomSerializationAttribute : Attribute, IDataSerializer
     public T Deserialize<T>(string source) where T : class
     {
         DocumentSignatureData result = new DocumentSignatureData();
-        byte\[\] bytes = Encoding.UTF8.GetBytes(source);
+        byte[] bytes = Encoding.UTF8.GetBytes(source);
         using (MemoryStream stream = new MemoryStream(bytes))
         {
             stream.Seek(0, SeekOrigin.Begin);
@@ -79,11 +77,13 @@ class CustomSerializationAttribute : Attribute, IDataSerializer
         return result;
     }
 }
+```
 
 ## Implementation of custom data encryption
 
 This example shows how to specify custom serialization class. This class could be implemented also as Attribute (optional) to specify as class attribute.
 
+```csharp
 // Define class that implements IDataEncryption interface
 private class CustomXOREncryptionAttribute : Attribute, IDataEncryption
 {
@@ -121,35 +121,38 @@ private class CustomXOREncryptionAttribute : Attribute, IDataEncryption
         char chTmp;
         for (int index = 0; index < src.Length; ++index)
         {
-            chTmp = src\[index\];
+            chTmp = src[index];
             chTmp = (char)(chTmp ^ this.Key);
             dst.Append(chTmp);
         }
         return dst.ToString();
     }
 }
+```
 
 ## Definition of class
 
 This example shows how to define custom class with serialization and encryption properties and setup Format attributes for properties.
 
+```csharp
 // setup CustomSerialization Attribute to setup customer serialization(see example above)
-\[CustomSerialization\]
+[CustomSerialization]
 // setup CustomXOREncryption Attribute for custom encryption (see example above)
-\[CustomXOREncryption\]
+[CustomXOREncryption]
 private class DocumentSignatureData
 {
-    \[Format("SignID")\]
+    [Format("SignID")]
     public string ID { get; set; }
-    \[Format("SAuth")\]
+    [Format("SAuth")]
     public string Author { get; set; }
-    \[Format("SDate", "yyyy-MM-dd")\]
+    [Format("SDate", "yyyy-MM-dd")]
     public DateTime Signed { get; set; }
-    \[Format("SDFact", "N2")\]
+    [Format("SDFact", "N2")]
     public decimal DataFactor { get; set; }
-    \[SkipSerialization\]
+    [SkipSerialization]
     public string Comments { get; set; }
 }
+```
 
   
 
@@ -157,6 +160,7 @@ private class DocumentSignatureData
 
  This example shows how to decrypt previously embedded encrypted custom objects into metadata signature. MetadataSignature contains method [GetData](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/metadatasignature/methods/getdata/_1) to retrieve object
 
+```csharp
 // instantiating the signature object
 using (Signature signature = new Signature("signed.pdf"))
 {
@@ -179,6 +183,7 @@ using (Signature signature = new Signature("signed.pdf"))
         }
     }
 }
+```
 
 ## More resources
 

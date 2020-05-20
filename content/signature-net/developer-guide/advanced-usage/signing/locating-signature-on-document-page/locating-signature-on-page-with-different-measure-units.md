@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Locating signature on page with different measure units
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) supports locating signature on document page with different measure units. Enumeration [MeasureType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/measuretype) handles following types 
 
 *   [MeasureType.Pixels](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/measuretype) allows to locate signature position and size with pixels (default value)
@@ -31,6 +28,7 @@ Here are the steps to locate and size signature area with different measure unit
 
 This example shows how to specify positioning in millimeters.
 
+```csharp
  using (Signature signature = new Signature("sample.docx"))
  {
      // create barcode option with predefined barcode text
@@ -53,11 +51,13 @@ This example shows how to specify positioning in millimeters.
      // sign document to file
      signature.Sign("signedSample.docx", options);
  }
+```
 
 ## Set signature positioning in percents
 
 This example shows how to set different positioning properties in percentage.
 
+```csharp
  using (Signature signature = new Signature("sample.pdf"))
  {
      // create barcode option with predefined barcode text
@@ -80,6 +80,7 @@ This example shows how to set different positioning properties in percentage.
      // sign document to file
      signature.Sign("signed.docx", options);
  }
+```
 
 ## More resources
 

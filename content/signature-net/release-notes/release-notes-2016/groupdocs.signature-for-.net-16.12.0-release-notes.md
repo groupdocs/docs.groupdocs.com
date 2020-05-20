@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 16.12.0 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 16.12.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 16.12.0{{< /alert >}}
 
 ## Major Features
 
@@ -152,7 +149,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 16.12.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 16.12.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 *   Updated public classes for Text Signature Options (PdfTextSignatuteOptions, CellsTextSignatuteOptions, WordsTextSignatuteOptions and SlidesTextSignatuteOptions) were extended with VerticalAlignment, HorizontalAlignment and Margins properties
 *   Added new class SignatureOptionsCollection to keep collection of Signature Options
@@ -163,10 +160,11 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
 
 **C#**
 
-var storagePath = @"c:\\Aspose\\Test\\Storage";
-var outputPath = @"c:\\Aspose\\Test\\Output";
-var imagesPath = @"c:\\Aspose\\Test\\Images";
-var certificatesPath = @"c:\\Aspose\\Test\\Certificates";
+```csharp
+var storagePath = @"c:\Aspose\Test\Storage";
+var outputPath = @"c:\Aspose\Test\Output";
+var imagesPath = @"c:\Aspose\Test\Images";
+var certificatesPath = @"c:\Aspose\Test\Certificates";
 // setup Signature configuration
 var signConfig = new SignatureConfig
 {
@@ -202,14 +200,17 @@ collection.Add(signDigitalOptions);
 var signedPath = handler.Sign<string>("test.pdf", collection, new SaveOptions { OutputType = OutputType.String });
 Console.WriteLine("Signed file path is: " + signedPath);
 
+```
+
 *   The ability to adjust Text Signature appearance
 
 **Setup Font and Text Color options**
 
 **C#**
 
-var storagePath = @"c:\\Aspose\\Test\\Storage";
-var outputPath = @"c:\\Aspose\\Test\\Output";
+```csharp
+var storagePath = @"c:\Aspose\Test\Storage";
+var outputPath = @"c:\Aspose\Test\Output";
 // setup Signature configuration
 var signConfig = new SignatureConfig
 {
@@ -234,12 +235,16 @@ signOptions.Font.FontSize = 15;
 var signedPath = handler.Sign<string>("test.pdf", signOptions, new SaveOptions { OutputType = OutputType.String });
 Console.WriteLine("Signed file path is: " + signedPath);
 
+
+```
+
 **Setup Background and Border settings**
 
 **C#**
 
-var storagePath = @"c:\\Aspose\\Test\\Storage";
-var outputPath = @"c:\\Aspose\\Test\\Output";
+```csharp
+var storagePath = @"c:\Aspose\Test\Storage";
+var outputPath = @"c:\Aspose\Test\Output";
 // setup Signature configuration
 var signConfig = new SignatureConfig
 {
@@ -262,14 +267,17 @@ signOptions.BorderTransparency = 0.5;
 var signedPath = handler.Sign<string>("test.docx", signOptions, new SaveOptions { OutputType = OutputType.String });
 Console.WriteLine("Signed file path is: " + signedPath);
 
+```
+
 *   The ability to adjust Image Signature appearance
 
 **Setup Image Signature Rectangle and Margins**
 
 **C#**
 
-var storagePath = @"c:\\Aspose\\Test\\Storage";
-var outputPath = @"c:\\Aspose\\Test\\Output";
+```csharp
+var storagePath = @"c:\Aspose\Test\Storage";
+var outputPath = @"c:\Aspose\Test\Output";
 // setup Signature configuration
 var signConfig = new SignatureConfig
 {
@@ -293,13 +301,16 @@ signOptions.Margin.Left = 20;
 var signedPath = handler.Sign<string>("test.docx", signOptions, new SaveOptions { OutputType = OutputType.String });
 Console.WriteLine("Signed file path is: " + signedPath);
 
+```
+
 **Setup Signature area alignment**
 
 **C#**
 
-var storagePath = @"c:\\Aspose\\Test\\Storage";
-var outputPath = @"c:\\Aspose\\Test\\Output";
-var imagePath = @"c:\\Aspose\\Test\\Images";
+```csharp
+var storagePath = @"c:\Aspose\Test\Storage";
+var outputPath = @"c:\Aspose\Test\Output";
+var imagePath = @"c:\Aspose\Test\Images";
 // setup Signature configuration
 var signConfig = new SignatureConfig
 {
@@ -318,3 +329,5 @@ signOptions.VerticalAlignment = VerticalAlignment.Bottom;
 // sign document
 var signedPath = handler.Sign<string>("test.pdf", signOptions, new SaveOptions { OutputType = OutputType.String });
 Console.WriteLine("Signed file path is: " + signedPath);
+
+```

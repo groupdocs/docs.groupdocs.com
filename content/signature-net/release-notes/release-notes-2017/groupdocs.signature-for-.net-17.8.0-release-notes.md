@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 17.8.0 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 17.8.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 17.8.0{{< /alert >}}
 
 ## Major Features
 
@@ -123,7 +120,7 @@ Issue Type
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.8.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.8.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 *   Added scope of Options classes to support Image documents signature processing. New classes describes target properties for different Signature type of Image files - **ImagesSignTextOptions** - Text Signature properties, **ImagesSignImageOptions** - Image Signature, **ImagesBarcodeSignOptions** - keeps Barcode Options for Image files, **ImagesQRCodeSignOptions** \- QR-Code Signature options, **ImagesStampSignOptions** - Stamp Signature Options for Image files. See public API examples to work with Image files.
     
@@ -131,12 +128,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        ImagesPath = @"c:\\Aspose\\Test\\Images",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        ImagesPath = @"c:\Aspose\Test\Images",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
      
     // instantiating the conversion handler
@@ -173,18 +171,20 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // sign document
     string signedPath = handler.Sign<string>("test.png", signOptions, 
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Images\_Text\_AsImage"});
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Images_Text_AsImage"});
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     **Signing Images document with Barcode Signature**
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -215,18 +215,20 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // sign document
     string signedPath = handler.Sign<string>("test.png", collection,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "DocImages\_BarCode" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "DocImages_BarCode" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     **Signing Images document with QR-code Signature**
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -257,20 +259,22 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // sign document
     string signedPath = handler.Sign<string>("test.png", collection,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "DocImages\_QRCode" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "DocImages_QRCode" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     **Signing Images document with Stamp Signature**
     
     **C#**
     
+    ```csharp
     //All examples for Cells, PDF, Slides, Words and Images Stamp Signatures are different
     //You can find another examples in help topics for other document types
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the conversion handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -280,12 +284,12 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.Width = 300;
     signOptions.BackgroundColor = Color.DarkOrange;
     signOptions.BackgroundColorCropType = StampBackgroundCropType.OuterArea; //This feature is supported starting from version 17.08
-    signOptions.ImageGuid = @"C:\\Aspose\\Test\\Images\\300.png";
+    signOptions.ImageGuid = @"C:\Aspose\Test\Images\300.png";
     signOptions.BackgroundImageCropType = StampBackgroundCropType.InnerArea; //This feature is supported starting from version 17.08
      
     //Outer round lines
     StampLine line0 = new StampLine();
-    line0.Text = "\* European Union \*";
+    line0.Text = "* European Union *";
     line0.TextRepeatType = StampTextRepeatType.FullTextRepeat; //This feature is supported starting from version 17.08
     line0.Font.FontSize = 12;
     line0.Height = 22;
@@ -300,7 +304,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.OuterLines.Add(line1);
      
     StampLine line2 = new StampLine();
-    line2.Text = "\* Entrepreneur \*";
+    line2.Text = "* Entrepreneur *";
     line2.TextRepeatType = StampTextRepeatType.FullTextRepeat; //This feature is supported starting from version 17.08
     line2.TextColor = Color.DarkSlateBlue;
     line2.Font.FontSize = 15;
@@ -338,8 +342,9 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // sign document
     string signedPath = handler.Sign<string>("test.png", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "DocImages\_Stamp" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "DocImages_Stamp" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 *   For Verification purposes following Options classes were added to support verification of Image Files. **ImagesVerifyBarcodeOptions** - keeps options to verify Barcode Signature on Image files, **ImagesVerifyQRCodeOptions** - keeps options to verify QRcode Signature, Following examples demonstrates how to use Verification Options for Image Documents.
     
@@ -347,11 +352,12 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -381,16 +387,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     //verify document
     VerificationResult result = handler.Verify("SignedBarCode.png", collection);
     Console.WriteLine("Verification result is: " + result.IsValid);
+    ```
     
     **Verification Images Documents signed with QR-code Signature**
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the  handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -420,6 +428,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     //verify document
     VerificationResult result = handler.Verify("SignedQRCode.png", collection);
     Console.WriteLine("Verification result is: " + result.IsValid);
+    ```
     
 *   Added new enumeration type **StampBackgroundCropType** that specifies crop type of background layer on Stamp elements. **StampSignOptions** class was updated with two properties of this enumeration type **BackgroundColorCropType** to specify background color cropping on Stamp elements and **BackgroundImageCropType** to specify background image intersection with another elements.
 *   Added new enumeration type **StampTextRepeatType** to specify text repeating along Stamp line length.  **StampLine** class was updated with **StampTextRepeatType **property to setup Text repeat type.
@@ -436,12 +445,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        ImagesPath = @"c:\\Aspose\\Test\\Images",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        ImagesPath = @"c:\Aspose\Test\Images",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the conversion handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -452,7 +462,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     ImagesSaveOptions optionsWebp = new ImagesSaveOptions();
     optionsWebp.OutputType = OutputType.String;
     optionsWebp.FileFormat = ImagesSaveFileFormat.Webp;
-    optionsWebp.OutputFileName = "Images\_WithDifferentOutputFileType\_Webp";
+    optionsWebp.OutputFileName = "Images_WithDifferentOutputFileType_Webp";
     string signedPath = handler.Sign<string>("test.png", signOptions, optionsWebp);
      
     // save to Jpeg format with specific options
@@ -460,7 +470,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     saveOptionsJpeg.OutputType = OutputType.String;
     saveOptionsJpeg.ColorType = JpegCompressionColorMode.Cmyk;
     saveOptionsJpeg.CompressionType = JpegCompressionMode.Progressive;
-    saveOptionsJpeg.OutputFileName = "Images\_WithDifferentOutputFileType\_Jpeg";
+    saveOptionsJpeg.OutputFileName = "Images_WithDifferentOutputFileType_Jpeg";
     signedPath = handler.Sign<string>("test.png", signOptions, saveOptionsJpeg);
      
     // save to Bmp format with specific options
@@ -469,27 +479,29 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     saveOptionsBmp.Compression = BitmapCompression.Rgb;
     saveOptionsBmp.HorizontalResolution = 120;
     saveOptionsBmp.VerticalResolution = 120;
-    saveOptionsBmp.OutputFileName = "Images\_WithDifferentOutputFileType\_Bmp";
+    saveOptionsBmp.OutputFileName = "Images_WithDifferentOutputFileType_Bmp";
     signedPath = handler.Sign<string>("test.png", signOptions, saveOptionsBmp);
      
     // save to Tiff format with specific options
     TiffSaveOptions saveOptionsTiff = new TiffSaveOptions();
     saveOptionsTiff.OutputType = OutputType.String;
     saveOptionsTiff.ExpectedTiffFormat = TiffFormat.TiffCcitRle;
-    saveOptionsTiff.OutputFileName = "Images\_WithDifferentOutputFileType\_Tiff";
+    saveOptionsTiff.OutputFileName = "Images_WithDifferentOutputFileType_Tiff";
     signedPath = handler.Sign<string>("test.png", signOptions, saveOptionsTiff);
+    ```
     
 
 *   #### Add Transparency and Rotation to Text Signature appearance
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        ImagesPath = @"c:\\Aspose\\Test\\Images",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        ImagesPath = @"c:\Aspose\Test\Images",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
      
     // instantiating the conversion handler
@@ -512,19 +524,21 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // sign document
     string signedPath = handler.Sign<string>("test.png", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Images\_Text\_Transparency\_Rotation" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Images_Text_Transparency_Rotation" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     **Signing Images Documents with Text Signature As Watermark**
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        ImagesPath = @"c:\\Aspose\\Test\\Images",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        ImagesPath = @"c:\Aspose\Test\Images",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
      
     // instantiating the conversion handler
@@ -540,4 +554,5 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // type of implementation
     signOptions.SignatureImplementation = ImagesTextSignatureImplementation.Watermark; 
     // sign document
-    string signedPath = handler.Sign<string>("test.png", signOptions,    new SaveOptions { OutputType = OutputType.String, OutputFileName = "Images\_TextSignatureWatermark"});Console.WriteLine("Signed file path is: " + signedPath);
+    string signedPath = handler.Sign<string>("test.png", signOptions,    new SaveOptions { OutputType = OutputType.String, OutputFileName = "Images_TextSignatureWatermark"});Console.WriteLine("Signed file path is: " + signedPath);
+    ```

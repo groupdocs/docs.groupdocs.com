@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Load document from local disk
-
 When the source document is located on the local disk **[GroupDocs.Merger](https://products.groupdocs.com/merger/net) **allows you to load it via *[Merger ](https://apireference.groupdocs.com/net/merger/groupdocs.merger/merger)*class constructor specifying absolute or relative path to it.  
 The following code snippet shows how to load documents from local disk.
 

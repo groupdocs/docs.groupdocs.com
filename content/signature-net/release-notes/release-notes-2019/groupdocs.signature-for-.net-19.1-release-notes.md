@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 19.1 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 19.1
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 19.1{{< /alert >}}
 
 ## Major Features
 
@@ -69,12 +66,13 @@ Improvement
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **New public class ImageMetadataSignatureOptions **was added to support Metadata signatures for Image Documents**. **Image Metadata signatures are based on Exchangeable image file format (Exif) specification. The Exif data references are specified standard and custom image properties of various type of data. Current version starts to support adding exit metadata signatures. Please read Exif tags specifications carefully to ensure when using different metadata identifiers that could be reserved for standard Exif tag properties.
     
     **ImagesMetadataSignOptions class properties**
     
+    ```csharp
     /// <summary>
     /// Represents the Metadata Signature Options for Image Documents.
     /// </summary>
@@ -92,23 +90,27 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public ImagesMetadataSignOptions(IEnumerable<MetadataSignature> collection);
      
     }
+    ```
     
 2.  **Class ImagesMetadataSignature **was updated with constructor and conversion methods.  
     Public sealed class **ImageMetadataSignature **was updated with constructor that expects identifier and value. Class supports any standard data types, same as methods to convert. Please carefully read Exif tags specifications to clarify what Id values are acceptable for your scenarios of using Image Metadata signature.
     
     **Image Metadata Signature class properties**
     
+    ```csharp
     /// <summary>
     /// Creates Image Metadata Signature with Id and value
     /// </summary>
     /// <param name="id">Unique identifier Image Metadata Signature name. See references for Exif tags specifications for possible id values</param>
     /// <param name="value">Metadata value</param>
     public ImageMetadataSignature(ushort id, object value);
+    ```
     
     Several methods were added for Metadata value conversion to any supported standard type.
     
     **Image Metadata methods**
     
+    ```csharp
     /// <summary>
     /// Converts to long.
     /// </summary>
@@ -191,16 +193,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// <param name="provider">Format data provider to use with data conversion operations.</param>
     /// <remarks>Converts a boolean property into "True" or "False".</remarks>
     public override string ToString(string format, IFormatProvider provider);
+    ```
     
     Following example demonstrates using different Image Metadata signatures to be posted on Image Document.
     
     **Sing Image document with Metadata Signatures**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -209,22 +213,23 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // Specify different Metadata Signatures and add them to options sigature collection
     ushort imgsMetadataId = 41996;
     // setup int value
-    ImageMetadataSignature mdSign\_DocId = new ImageMetadataSignature(imgsMetadataId++, 123456); // int
-    signOptions.MetadataSignatures.Add(mdSign\_DocId);
+    ImageMetadataSignature mdSign_DocId = new ImageMetadataSignature(imgsMetadataId++, 123456); // int
+    signOptions.MetadataSignatures.Add(mdSign_DocId);
     // setup Author property
-    ImageMetadataSignature mdSign\_Author = new ImageMetadataSignature(imgsMetadataId++, "Mr.Scherlock Holmes"); // string
-    signOptions.MetadataSignatures.Add(mdSign\_Author);                        
+    ImageMetadataSignature mdSign_Author = new ImageMetadataSignature(imgsMetadataId++, "Mr.Scherlock Holmes"); // string
+    signOptions.MetadataSignatures.Add(mdSign_Author);                        
     // setup data of sign date
-    ImageMetadataSignature mdSign\_Date = new ImageMetadataSignature(imgsMetadataId++, DateTime.Now); // DateTime
-    signOptions.MetadataSignatures.Add(mdSign\_Date);
+    ImageMetadataSignature mdSign_Date = new ImageMetadataSignature(imgsMetadataId++, DateTime.Now); // DateTime
+    signOptions.MetadataSignatures.Add(mdSign_Date);
     // setup double
-    ImageMetadataSignature mdSign\_Amnt = new ImageMetadataSignature(imgsMetadataId++, 123.456M); //decimal value
-    signOptions.MetadataSignatures.Add(mdSign\_Amnt);
+    ImageMetadataSignature mdSign_Amnt = new ImageMetadataSignature(imgsMetadataId++, 123.456M); //decimal value
+    signOptions.MetadataSignatures.Add(mdSign_Amnt);
      
     // sign document
     string signedPath = handler.Sign<string>(@"SignedMetadata.jpg", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedMetadata2.jpg" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 3.  New public class **SquareBorderLine** inherits **BorderLine** and was added to implement square signature with rounded corners.
     
@@ -232,6 +237,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **SquareBorderLine class properties**
     
+    ```csharp
     /// <summary>
     /// Instance to keep Border line properties for square stamp line.
     /// </summary>
@@ -254,16 +260,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
        public SquareBorderLine(Corners corners);
      
     }
+    ```
     
     **SquareBorderLine Example**
     
+    ```csharp
     //All examples for Cells, PDF, Slides, Words and Images Stamp Signatures are different
     //You can find another examples in help topics for other document types
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -290,8 +298,9 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // sign document
     string signedPath = handler.Sign<string>("test.png", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "DocImages\_Stamp\_RoundedCorners" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "DocImages_Stamp_RoundedCorners" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 4.  New public class **Corners **was added to implement storage for square corners radius values. Zero value means no rounded corner.
     
@@ -299,6 +308,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Corners class properties**
     
+    ```csharp
     /// <summary>
     /// Represents corners of a square graphical object.
     /// </summary>
@@ -350,3 +360,4 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="bottomRight">Bottom right corner value.</param>
         public Corners(double topLeft, double topRight, double bottomLeft, double bottomRight)
     }
+    ```

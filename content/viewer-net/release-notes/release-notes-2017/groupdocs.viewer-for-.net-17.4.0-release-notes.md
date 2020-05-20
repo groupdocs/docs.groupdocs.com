@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 17.4.0 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 17.4.0.
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 17.4.0.{{< /alert >}}
 
 ## Major Features
 
@@ -153,7 +150,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.4.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.4.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Support of ONE and DjVu File Formats
 
@@ -738,7 +735,7 @@ RotatePageOptions rotateOptions = new RotatePageOptions(1, 90);
 imageHandler.RotatePage(guid, rotateOptions);
 ```
 
-To get final rotation angle of the document, please use GetDocumentInfo method of corresponding ViewerHandler class
+{{< alert style="info" >}}To get final rotation angle of the document, please use GetDocumentInfo method of corresponding ViewerHandler class{{< /alert >}}
 
 ### GroupDocs.Viewer.Domain.Options.WordsDocumentInfoOptions
 

@@ -9,12 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Caching
-
-
-# Caching conversion results
-
 In some cases document conversion may be a time-consuming operation (dependent on source document content, structure and complexity). For such situations caching can be a solution - converted document is stored into cache (for example at the local drive) and in a case of repetitive conversions of the document*, *[**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) uses cached representation. 
 
 To enable caching you have to:

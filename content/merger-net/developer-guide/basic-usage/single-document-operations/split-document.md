@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Split document
-
 **GroupDocs.Merger** allows to split source document into several resultant documents. Document splitting can be performed in different ways by specifying page numbers array or start/end page numbers and setting different [SplitOptions](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain.options/splitoptions) modes.  
 Here are the possible use cases:
 

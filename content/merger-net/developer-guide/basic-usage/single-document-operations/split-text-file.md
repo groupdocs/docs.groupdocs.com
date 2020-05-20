@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Split text file
-
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to split text file into several resultant text files. The default behaviour is to split each line into separate file.  
 Here are the steps on how to split text file as described:
 

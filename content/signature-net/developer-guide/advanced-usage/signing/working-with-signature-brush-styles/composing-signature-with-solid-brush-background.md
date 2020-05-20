@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Composing signature with solid brush background
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [SolidBrush](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/solidbrush) class to specify solid filling signature background for Text and Stamp signature types
 
 Here are the steps to add Text signature into document with GroupDocs.Signature:
@@ -28,6 +25,7 @@ Here are the steps to add Text signature into document with GroupDocs.Signature:
 
 This example shows how to add Text signature with solid brush background. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -54,6 +52,7 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("signed.pdf", options);
 }
+```
 
 ## More resources
 

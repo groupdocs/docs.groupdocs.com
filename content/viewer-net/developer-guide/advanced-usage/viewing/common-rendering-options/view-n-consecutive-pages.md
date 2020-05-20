@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# View N consecutive pages
-
 GroupDocs.Viewer provides the feature to render N consecutive pages. You will have to provide the starting page number and the number of pages to be rendered. Follow the below steps to render N consecutive pages.
 
 *   Instantiate the [Viewer](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer)object;
@@ -21,13 +18,15 @@ GroupDocs.Viewer provides the feature to render N consecutive pages. You will ha
 
 The following code sample shows how to render N consecutive pages of a document.
 
-            int\[\] pageNumbers = new int\[\] { 1, 2, 3 };
+```csharp
+            int[] pageNumbers = new int[] { 1, 2, 3 };
             
 			using (Viewer viewer = new Viewer("sample.docx"))
             {
                 HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
                 viewer.View(viewOptions, pageNumbers);
             }
+```
 
 ## More resources
 

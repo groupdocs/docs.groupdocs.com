@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Update Barcode signatures in document
-
-
 # Update Barcode signature in the document
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [BarcodeSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/barcodesignature) class to manipulate barcode signatures location, size and textual content.   
@@ -34,6 +30,7 @@ Here are the steps to update Barcode signature in the document with GroupDocs.Si
 
 This example shows how to update Barcode signature that was found using  [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1) method.
 
+```csharp
 // initialize Signature instance
 using (Signature signature = new Signature("sampleSigned.pdf"))
 {
@@ -41,7 +38,7 @@ using (Signature signature = new Signature("sampleSigned.pdf"))
     List<BarcodeSignature> signatures = signature.Search<BarcodeSignature>(options);
     if (signatures.Count > 0)
     {
-        BarcodeSignature barcodeSignature = signatures\[0\];
+        BarcodeSignature barcodeSignature = signatures[0];
         // change position
         barcodeSignature.Left = 100;
         barcodeSignature.Top = 100;
@@ -56,6 +53,7 @@ using (Signature signature = new Signature("sampleSigned.pdf"))
         }
     }
 }
+```
 
 ## More resources
 

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 17.3.0 Release Notes
-
- This page contains release notes for GroupDocs.Viewer for .NET 17.3.0.
+{{< alert style="info" >}} This page contains release notes for GroupDocs.Viewer for .NET 17.3.0.{{< /alert >}}
 
 ## Major Features
 
@@ -111,7 +108,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.3.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.3.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Support of VSTX and VSSX File Formats
 
@@ -149,14 +146,7 @@ foreach (PageImage page in pages)
 }
 ```
 
-The following logic for sizing Cad document rendering is applied:
-
-1.  If both CadOptions.Height and CadOptions.Width properties are set, the resulting image will have the same size in pixels.
-2.  If only one of CadOptions.Height and CadOptions.Width is set, the value of another side will be calculated from ratio in the original document. If  CadOptions.Height is set as 600 and the ratio of the height to width in original cad document is 6 to 5, then the width of the resulting image will be 500 px.
-3.  If none of CadOptions.Height and CadOptions.Width is set, or set as 0, the CadOptions.ScaleFactor will be used to form resulting image size. The data type of this property is float, values higher than 1 will enlarge resulting image and values between 0 and 1 will make image smaller. If the render result image size is equal to 200 px to 200 px, when CadOptions.ScaleFactor is equal to 1, then setting this value to 0.1 will provide image with 20 px to 20 px dimension.
-4.  When CadOptions are not set size of resulting image is set by API.
-
-      The same logic is applied when rendering to HTML. When rendering to pdf, generally only height to width ratio matters.
+{{< alert style="warning" >}}The following logic for sizing Cad document rendering is applied:If both CadOptions.Height and CadOptions.Width properties are set, the resulting image will have the same size in pixels.If only one of CadOptions.Height and CadOptions.Width is set, the value of another side will be calculated from ratio in the original document. If  CadOptions.Height is set as 600 and the ratio of the height to width in original cad document is 6 to 5, then the width of the resulting image will be 500 px.If none of CadOptions.Height and CadOptions.Width is set, or set as 0, the CadOptions.ScaleFactor will be used to form resulting image size. The data type of this property is float, values higher than 1 will enlarge resulting image and values between 0 and 1 will make image smaller. If the render result image size is equal to 200 px to 200 px, when CadOptions.ScaleFactor is equal to 1, then setting this value to 0.1 will provide image with 20 px to 20 px dimension.When CadOptions are not set size of resulting image is set by API.      The same logic is applied when rendering to HTML. When rendering to pdf, generally only height to width ratio matters.{{< /alert >}}
 
 ### Integrate Metered licensing
 
@@ -164,12 +154,13 @@ The following logic for sizing Cad document rendering is applied:
 
 **C#**
 
+```csharp
 // Create new instance of GroupDocs.Viewer.Metered class
 GroupDocs.Viewer.Metered metered = new GroupDocs.Viewer.Metered();
  
 // Set public and private keys
-string publicKey = "\*\*\*";
-string privateKey = "\*\*\*";
+string publicKey = "***";
+string privateKey = "***";
  
 // Set public and private keys to metered instance
 metered.SetMeteredKey(publicKey, privateKey);
@@ -187,6 +178,7 @@ List<GroupDocs.Viewer.Domain.Html.PageHtml> pages = htmlHandler.GetPages("input.
 decimal amountAfter = GroupDocs.Viewer.Metered.GetConsumptionQuantity();
  
 Console.WriteLine("Amount (MB) consumed after: " + amountAfter);
+```
 
 ### Rendering pdf documents without Annotations
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Load document from Amazon S3 Storage
-
 Following example demonstrates how to annotate document from Amazon S3 Storage.
 
 ```csharp
@@ -46,7 +43,7 @@ private static Stream DownloadFile(string key)
 }
 ```
 
-NOTE: Packages AWSSDK.S3 version 3.3.104.30 and AWSSDK.Core version 3.3.103.42 should be referenced
+{{< alert style="info" >}}NOTE: Packages AWSSDK.S3 version 3.3.104.30 and AWSSDK.Core version 3.3.103.42 should be referenced{{< /alert >}}
 
 ## More resources
 

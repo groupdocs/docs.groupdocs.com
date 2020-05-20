@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign documents with extra Digital Signature properties
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) contains [DigitalSignatureAppearance](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options.appearances/digitalsignatureappearance)class that implements extra settings for digital signature of Word Processing and Spreadsheets documents
 
 Base signature options [SignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/signoptions) property [SignOptions.Appearance](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/signoptions/properties/appearance) should be set with instance of [DigitalSignatureAppearance](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options.appearances/digitalsignatureappearance)class to provide additional digital signature look
@@ -32,6 +29,7 @@ Here are the steps to setup extra image appearance with GroupDocs.Signature:
 
 This example shows how to setup extra digital signature look. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
 using (Signature signature = new Signature("sample.docs"))
 {
     DigitalSignOptions options = new DigitalSignOptions("certificate.pfx")
@@ -61,10 +59,14 @@ using (Signature signature = new Signature("sample.docs"))
     signature.Sign("signed.docx", options);
 }
 
+
+```
+
 ## Sign Pdf document with Text signature Sticker appearance
 
 This example shows how to add Text signature to Pdf document with sticker look. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
 using (Signature signature = new Signature("sample.docx"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -99,6 +101,7 @@ using (Signature signature = new Signature("sample.docx"))
     // sign document to file
     signature.Sign("signed.docx", options);
 }
+```
 
 ## More resources
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign documents with additional image adjustments
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) contains [ImageAppearance](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options.appearances/imageappearance) class that implements extra image adjustment setting like
 
 *   gray-scale ([Grayscale](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options.appearances/imageappearance/properties/grayscale))
@@ -38,6 +35,7 @@ Here are the steps to setup extra image appearance with GroupDocs.Signature:
 
 This example shows how to specify extra image appearances. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     ImageSignOptions options = new ImageSignOptions("sample.jpg")
@@ -72,11 +70,13 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("signed.pdf", options);
 }
+```
 
 ## Sign PDF document with Text signature Sticker appearance
 
 This example shows how to add Text signature to Pdf document with sticker look. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
 using (Signature signature = new Signature("sample.docx"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -111,6 +111,7 @@ using (Signature signature = new Signature("sample.docx"))
     // sign document to file
     signature.Sign("signed.docx", options);
 }
+```
 
 ## More resources
 

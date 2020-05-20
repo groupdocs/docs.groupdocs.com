@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add arrow annotation
-
 **Arrow annotation** draws an arrow on the document like shown at the picture below. 
 
 ![](images/annotation-net/add-arrow-annotation_0.png)

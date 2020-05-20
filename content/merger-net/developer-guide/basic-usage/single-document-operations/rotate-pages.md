@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Rotate pages
-
-
 # Rotate document pages
 
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to change page rotation angle by setting it to 90,180 or 270 degrees for specific or all document pages.  

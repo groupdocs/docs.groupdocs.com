@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# eSign document with Image signature
-
 ## What is a Image Signature?
 
 An** image **as signature is alternative way to put any presenting data in a visual form. This electronic signature type allows to create custom image with company logo, sender' initials, names or make a company stamp icon in it,  
@@ -34,6 +31,7 @@ Here are the steps to create Image signature on document page:
 
 This example shows how to sign PDF with Image signature.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     ImageSignOptions options = new ImageSignOptions("signature.jpg")
@@ -46,6 +44,7 @@ using (Signature signature = new Signature("sample.pdf"))
     };
     signature.Sign("SampleSigned.pdf", options);
 }
+```
 
 ## More resources
 

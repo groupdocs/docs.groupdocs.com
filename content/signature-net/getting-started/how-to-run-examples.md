@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# How to Run Examples
-
-Before running an example make sure that GroupDocs.Signature has been installed successfully.
+{{< alert style="warning" >}}Before running an example make sure that GroupDocs.Signature has been installed successfully.{{< /alert >}}
 
 We offer multiple solutions on how you can run GroupDocs.Signature examples, by building your own or using our back-end or front-end examples out-of-the-box.
 
@@ -26,10 +23,11 @@ Please choose one from the following list:
 *   Install **GroupDocs.Signature for .NET **from Nuget or official GroupDocs website following this [guide](Development%2BEnvironment%252C%2BInstallation%2Band%2BConfiguration.html).
 *   Code your first application with **GroupDocs.Signature for .NET **like this
     
+    ```csharp
     // The path to the documents directory.
-    string filePath = @"C:\\sample.docx"; // NOTE: Put here actual path for your document
+    string filePath = @"C:\sample.docx"; // NOTE: Put here actual path for your document
     string fileName = Path.GetFileName(filePath);
-    string outputFilePath = Path.Combine(@"C:\\output", fileName);
+    string outputFilePath = Path.Combine(@"C:\output", fileName);
     
     
     // Sign document with text signature.
@@ -38,6 +36,7 @@ Please choose one from the following list:
     	TextSignOptions textSignOptions = new TextSignOptions("John Smith");
     	signature.Sign(outputFilePath, textSignOptions);
     }
+    ```
     
 *   Build and Run your project. 
 *   Signed document will appear inside "*C:\\output\\" *directory*.*
@@ -61,7 +60,9 @@ You can run [GroupDocs.Signature for .NET MVC Example](https://github.com/group
 
 *   Download [source code](https://github.com/groupdocs-signature/GroupDocs.https://github.com/groupdocs-signature/GroupDocs.Signature-for-.NET-MVC-for-.NET-MVC/archive/master.zip) from GitHub or clone this repository
     
+    ```csharp
     git clone https://github.com/groupdocs-signature/GroupDocs.Signature-for-.NET-MVC
+    ```
     
 *   Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
 *   Open [http://localhost:8080/signature](http://localhost:8080/signature) in your favorite browser
@@ -74,7 +75,9 @@ You can run [GroupDocs.Signature for .NET Web.Forms Example](https://github.com
 
 *   Download [source code](https://github.com/groupdocs-signature/GroupDocs.Signature-for-.NET-WebForms/archive/master.zip) from GitHub or clone this repository
     
+    ```csharp
     git clone https://github.com/groupdocs-signature/GroupDocs.Signature-for-.NET-WebForms
+    ```
     
 *   Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
 *   Open [http://localhost:8080/signature](http://localhost:8080/signature) in your favorite browser
@@ -85,10 +88,12 @@ For more details about project configuration please refer to this [guide](https
 
 Use [Docker](https://www.docker.com/) image to try GroupDocs.Signature for .NET features in an easy way. Here are the command to run GroupDocs.Signature for .NET from docker image.
 
+```csharp
 mkdir DocumentSamples
 mkdir Licenses
-docker run -p 8080:8080 --env application.hostAddress=localhost -v \`pwd\`/DocumentSamples:/home/groupdocs/app/DocumentSamples -v \`pwd\`/Licenses:/home/groupdocs/app/Licenses groupdocs/signature
+docker run -p 8080:8080 --env application.hostAddress=localhost -v `pwd`/DocumentSamples:/home/groupdocs/app/DocumentSamples -v `pwd`/Licenses:/home/groupdocs/app/Licenses groupdocs/signature
 ## Open http://localhost:8080/signature in your favorite browser.
+```
 
 ## Contribute
 

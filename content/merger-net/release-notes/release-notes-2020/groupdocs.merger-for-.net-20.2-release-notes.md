@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Merger for .NET 20.2 Release Notes
-
-This page contains release notes for GroupDocs.Merger for .NET 20.2
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Merger for .NET 20.2{{< /alert >}}
 
 ## Major Features
 
@@ -36,7 +33,7 @@ Feature
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Merger for .NET 20.2. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Merger which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Merger for .NET 20.2. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Merger which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### New MHTML file type was added
 

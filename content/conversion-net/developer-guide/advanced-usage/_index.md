@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Advanced usage
-
 # Advanced section for GroupDocs.Conversion API
 
 Learn about advanced [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) features including configuring custom caching, loading documents from different sources and customizing converted document output.

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Comparison for .NET 18.8 Release Notes
-
-This page contains release notes for GroupDocs.Comparison for .NET 18.8
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for .NET 18.8{{< /alert >}}
 
 ## Major Features
 
@@ -87,21 +84,27 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 18.8. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Comparison for .NET 18.8. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Comparison which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  Inserted, deleted and style changed items styles setting used for set font color, highlight color , styles(bold, italic, underline, strike through) and tags for marked changes in result document:
     
+    ```csharp
     settings.InsertedItemsStyle.FontColor = System.Drawing.Color.Brown;
     settings.InsertedItemsStyle.HighlightColor = System.Drawing.Color.Red;
     settings.InsertedItemsStyle.BeginSeparatorString = "<inserted>";
     settings.InsertedItemsStyle.EndSeparatorString = "</inserted>";
+    ```
     
+    ```csharp
     settings.DeletedItemsStyle.FontColor = System.Drawing.Color.Aquamarine;
     settings.DeletedItemsStyle.HighlightColor = System.Drawing.Color.Blue;
     settings.DeletedItemsStyle.BeginSeparatorString = "<deleted>";
     settings.DeletedItemsStyle.EndSeparatorString = "</deleted>";
+    ```
     
+    ```csharp
     settings.StyleChangedItemsStyle.FontColor = System.Drawing.Color.Aqua;
     settings.StyleChangedItemsStyle.HighlightColor = System.Drawing.Color.Green;
     settings.StyleChangedItemsStyle.BeginSeparatorString = "<style>";
     settings.StyleChangedItemsStyle.EndSeparatorString = "</style>";
+    ```

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# eSign document with Stamp signature
-
 ## What is a Stamp signature?
 
 A **stamp** signature is a special type of electronic signature that have visual appearance of round seal and its visual parameters can be set programmatically.   
@@ -41,6 +38,7 @@ Here are the steps to add Stamp signature into document with GroupDocs.Signature
 
 This example shows how to add Stamp signature to document.
 
+```csharp
 using (Signature signature = new Signature("sample.docx"))
 {
     StampSignOptions options = new StampSignOptions()
@@ -51,7 +49,7 @@ using (Signature signature = new Signature("sample.docx"))
     };
     // setup first external line of Stamp
     StampLine outerLine = new StampLine();
-    outerLine.Text = " \* European Union \* European Union  \* European Union  \*";
+    outerLine.Text = " * European Union * European Union  * European Union  *";
     outerLine.Font.FontSize = 12;
     outerLine.Height = 22;
     outerLine.TextBottomIntent = 6;
@@ -69,6 +67,7 @@ using (Signature signature = new Signature("sample.docx"))
    
     signature.Sign("SampleSigned.docx", options);
 }
+```
 
 ## More resources
 

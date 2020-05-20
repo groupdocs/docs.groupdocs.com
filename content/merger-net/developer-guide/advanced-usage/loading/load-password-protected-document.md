@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Load password-protected document
-
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to manipulate with documents that are protected with a password.
 
 The following are the steps to load password-protected documents.

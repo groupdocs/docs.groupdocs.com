@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Specify encoding when loading documents
-
 GroupDocs.Viewer enables users to pass encoding when rendering text documents or email messages.
 
 This feature is supported for:
@@ -23,14 +20,16 @@ This feature is supported for:
 
 Following code snippet sets the document encoding.
 
+```csharp
 LoadOptions loadOptions = new LoadOptions();
-loadOptions.Encoding = Encoding.GetEncoding("shift\_jis");
+loadOptions.Encoding = Encoding.GetEncoding("shift_jis");
 
 using (Viewer viewer = new Viewer("sample.txt", loadOptions))
 {
     HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
     viewer.View(viewOptions);
 }
+```
 
 ## More resources
 

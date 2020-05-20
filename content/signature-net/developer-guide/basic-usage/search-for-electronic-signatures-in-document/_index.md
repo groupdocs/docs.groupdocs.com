@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for electronic signatures in document
-
 ## Search for electronic signatures in document
 
 Electronically signed documents can be searched for specific signatures for different purposes, such as signature properties review, etc.

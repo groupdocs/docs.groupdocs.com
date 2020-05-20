@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Load document from URL
-
-
 # Load a document from URL
 
 Following example demonstrates how to work with documents from URL.

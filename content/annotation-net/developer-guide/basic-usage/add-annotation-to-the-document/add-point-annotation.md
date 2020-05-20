@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add point annotation
-
 **Point** annotationsticks comments to any point in a document like shown at the picture below. 
 
 ![](images/annotation-net/add-point-annotation_0.png)

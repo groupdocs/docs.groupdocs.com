@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Show hidden pages
-
 Hidden pages are not rendered by default. In order to include them into the rendering GroupDocs.Viewer provides [RenderHiddenPages](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/baseviewoptions/properties/renderhiddenpages)property of the [HtmlViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions) (or [JpgViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/jpgviewoptions), or [PngViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pngviewoptions), or [PdfViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pdfviewoptions)) class*,* to enable rendering document with notes set value of [RenderHiddenPages](http://renderhiddenpages/)[to true as shown in the example below.](http://renderhiddenpages/)
 
 This feature is supported for:

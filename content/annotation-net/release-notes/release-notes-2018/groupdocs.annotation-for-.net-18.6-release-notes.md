@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Annotation for .NET 18.6 Release Notes
-
-This page contains release notes for GroupDocs.Annotation for .NET 18.6
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Annotation for .NET 18.6{{< /alert >}}
 
 ## Major Features
 
@@ -76,12 +73,13 @@ New Feature
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Annotation for .NET 18.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Annotation which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Annotation for .NET 18.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Annotation which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  Added new types of annotations for Diagrams (Watermark, Point)
     
     **C#**
     
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.IO;
@@ -198,7 +196,7 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
                 // Save result stream to file.
                 using (FileStream fileStream = new FileStream("../../Annotated.vsdx", FileMode.Create))
                 {
-                    byte\[\] buffer = new byte\[result.Length\];
+                    byte[] buffer = new byte[result.Length];
                     result.Seek(0, SeekOrigin.Begin);
                     result.Read(buffer, 0, buffer.Length);
                     fileStream.Write(buffer, 0, buffer.Length);
@@ -207,11 +205,13 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
             }
         }
     }
+    ```
     
 2.  Added new types of annotations for Words (Polyline, Watermark, Point)
     
     **C#**
     
+    ```csharp
     using System.Collections.Generic;
     using System.IO;
     using System.Reflection;
@@ -224,14 +224,14 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
     {
         class Program
         {
-            static void Main(string\[\] args)
+            static void Main(string[] args)
             {
                 AnnotationConfig cfg = new AnnotationConfig();
                 cfg.StoragePath = "StorageFolder";
                 AnnotationImageHandler annotator = new AnnotationImageHandler(cfg);
      
      
-                new License().SetLicense("proper\_path\_to\_license");
+                new License().SetLicense("proper_path_to_license");
      
      
                 Stream cleanDoc = new FileStream("../../AddAnnotationsWords.TestData.Clear.docx", FileMode.Open, FileAccess.ReadWrite);
@@ -241,7 +241,7 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
                 AnnotationInfo textAnnotation = new AnnotationInfo
                 {
                     PageNumber = 0,
-                    SvgPath = "\[{\\"x\\":186.698,\\"y\\":706.196},{\\"x\\":318.41201,\\"y\\":706.196},{\\"x\\":186.698,\\"y\\":697.196},{\\"x\\":318.41201,\\"y\\":697.196}\]",
+                    SvgPath = "[{\"x\":186.698,\"y\":706.196},{\"x\":318.41201,\"y\":706.196},{\"x\":186.698,\"y\":697.196},{\"x\":318.41201,\"y\":697.196}]",
                     Type = AnnotationType.Text
                 };
                  
@@ -258,7 +258,7 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
                     Box = new Rectangle(87.9f, 276.5f, 435.7f, 87f),
                     PageNumber = 0,
                     PenColor = 1201033,
-                    SvgPath = "\[{\\"x\\":208.392,\\"y\\":313.088},{\\"x\\":519.659,\\"y\\":313.088},{\\"x\\":208.392,\\"y\\":304.088},{\\"x\\":519.659,\\"y\\":304.088}\]",
+                    SvgPath = "[{\"x\":208.392,\"y\":313.088},{\"x\":519.659,\"y\":313.088},{\"x\":208.392,\"y\":304.088},{\"x\":519.659,\"y\":304.088}]",
                     Type = AnnotationType.TextStrikeout
                 };
                  
@@ -274,9 +274,9 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
                  
                 AnnotationInfo textReplacementAnnotation = new AnnotationInfo
                 {
-                    FieldText = " \\"REPLACED TEXT\\" ",
+                    FieldText = " \"REPLACED TEXT\" ",
                     FontSize = 10,
-                    SvgPath = "\[{\\"x\\":251.224,\\"y\\":637.20401},{\\"x\\":327.89,\\"y\\":637.20401},{\\"x\\":251.224,\\"y\\":628.20401},{\\"x\\":327.89,\\"y\\":628.20401}\]",
+                    SvgPath = "[{\"x\":251.224,\"y\":637.20401},{\"x\":327.89,\"y\":637.20401},{\"x\":251.224,\"y\":628.20401},{\"x\":327.89,\"y\":628.20401}]",
                     PageNumber = 0,
                     Type = AnnotationType.TextReplacement,
                 };
@@ -290,7 +290,7 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
                 AnnotationInfo textRedactionAnnotation = new AnnotationInfo
                 {
                     PageNumber = 1,
-                    SvgPath = "\[{\\"x\\":72,\\"y\\":676.07},{\\"x\\":196.427,\\"y\\":676.074},{\\"x\\":72,\\"y\\":662.674},{\\"x\\":196.427,\\"y\\":662.674}\]",
+                    SvgPath = "[{\"x\":72,\"y\":676.07},{\"x\":196.427,\"y\":676.074},{\"x\":72,\"y\":662.674},{\"x\":196.427,\"y\":662.674}]",
                     Type = AnnotationType.TextRedaction,
                 };
      
@@ -304,7 +304,7 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
                 AnnotationInfo underlineAnnotation = new AnnotationInfo
                 {
                     PageNumber = 1,
-                    SvgPath = "\[{\\"x\\":415.17499,\\"y\\":628.874},{\\"x\\":511.85101,\\"y\\":628.874},{\\"x\\":415.17499,\\"y\\":619.874},{\\"x\\":511.85101,\\"y\\":619.874}\]",
+                    SvgPath = "[{\"x\":415.17499,\"y\":628.874},{\"x\":511.85101,\"y\":628.874},{\"x\":415.17499,\"y\":619.874},{\"x\":511.85101,\"y\":619.874}]",
                     Type = AnnotationType.TextUnderline
                 };
      
@@ -362,7 +362,7 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
                 // Save result stream to file.
                 using(FileStream fileStream = new FileStream("../../Annotated.docx", FileMode.Create))
                 {
-                    byte\[\] buffer = new byte\[result.Length\];
+                    byte[] buffer = new byte[result.Length];
                     result.Seek(0, SeekOrigin.Begin);
                     result.Read(buffer, 0, buffer.Length);
                     fileStream.Write(buffer, 0, buffer.Length);
@@ -371,3 +371,4 @@ This section lists public API changes that were introduced in GroupDocs.Annotati
             }
         }
     }
+    ```

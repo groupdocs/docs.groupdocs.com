@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 18.9 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 18.9
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 18.9{{< /alert >}}
 
 ## Major Features
 
@@ -102,7 +99,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.9. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.9. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **New Metadata type of Signature is the abstract class MetadataSignature**  
     
@@ -112,6 +109,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Metadata Signature class properties**
     
+    ```csharp
     /// <summary>
     /// Contains Metadata Signature properties.
     /// </summary>
@@ -202,6 +200,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="value">Value of Metadata signature</param>
         public MetadataSignature(string name, object value);
     }
+    ```
     
     **Metadata Signature properties**
     
@@ -266,6 +265,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Metadata Signature Collection properties**
     
+    ```csharp
     public class MetadataSignatureCollection : IEnumerable<MetadataSignature>, IEnumerable, ICloneable
     {
         /// <summary>
@@ -278,14 +278,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="name">The case-insensitive name of the property to retrieve.</param>
         /// <returns>Returns a MetadataSignature <see cref="MetadataSignature"/> object by the name of the property.</returns>
         /// <remarks>Returns null if a property with the specified name is not found.</remarks>
-        public MetadataSignature this\[string name\] { get; }
+        public MetadataSignature this[string name] { get; }
         /// <summary>
         /// Returns a MetadataSignature object by index.
         /// </summary>
         /// <param name="index">Zero-based index of the MetadataSignature to retrieve.</param>
         /// <returns>Returns a MetadataSignature <see cref="MetadataSignature"/> object by the index of collection.</returns>
         /// <remarks>Returns null if a property with the specified index does not exist.</remarks>
-        public MetadataSignature this\[int index\] { get; }
+        public MetadataSignature this[int index] { get; }
         /// <summary>
         /// Gets number of items in the collection.
         /// </summary>
@@ -329,6 +329,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <returns>Returns copied instance with cloned Signature Items</returns>
         public Object Clone();
     }
+    ```
     
     **Metadata Signature Collection properties**
     
@@ -405,6 +406,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **PdfMetadataSignature**
     
+    ```csharp
     /// <summary>
     /// Contains Pdf Document Metadata Signature properties.
     /// </summary>
@@ -427,6 +429,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="value">Value of Metadata signature</param>
         public PdfMetadataSignature(string name, object value);
     }
+    ```
     
     **Pdf Metadata Signature properties**
     
@@ -488,6 +491,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Compose Pdf Metadata Signature Options**
     
+    ```csharp
     PdfMetadataSignOptions result = new PdfMetadataSignOptions();
     result.MetadataSignatures.Add(new PdfMetadataSignature("Author", "Mr.Sherlock Holmes"));
     result.MetadataSignatures.Add(new PdfMetadataSignature("CreationDate", DateTime.Now));
@@ -501,12 +505,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     result.MetadataSignatures.Add(new PdfMetadataSignature("SignatureId", 112233));
     result.MetadataSignatures.Add(new PdfMetadataSignature("Amount", 123.456));
     return result;
+    ```
     
 4.  **New static class PdfMetadataSignatures **contains static Pdf Metadata instances with predefined standard metadata names and prefix  
     New public static class **PdfMetadataSignatures **was added to provide list of Pdf Metadata Signatures that support standard Pdf format specifications.
     
     **PdfMetadataSignatures**
     
+    ```csharp
     /// <summary>
     /// Contains standard Metadata Signatures to be used for Pdf Document Metadata Signature Options.
     /// </summary>
@@ -563,23 +569,25 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         public static PdfMetadataSignature Creator { get; private set; } = new PdfMetadataSignature("creator", string.Empty, "dc");
     }
+    ```
     
     Following example demonstrate using static Metadata Signatures to compose collection of signatures based method Clone(value) with given value of Signature to make clone of original instance.
     
     **Sign Pdf Document with Standard Metadata Signatures**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
     // setup options with text of signature
     PdfMetadataSignOptions signOptions = new PdfMetadataSignOptions();
     // Using standard Pdf Metadata Signatures with new values
-    MetadataSignature\[\] signatures = new MetadataSignature\[\]
+    MetadataSignature[] signatures = new MetadataSignature[]
     {
         PdfMetadataSignatures.Author.Clone("Mr.Scherlock Holmes"),
         PdfMetadataSignatures.CreateDate.Clone(DateTime.Now.AddDays(-1)),
@@ -597,13 +605,15 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.MetadataSignatures.AddRange(signatures);
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf\_Documents\_StdMetadata" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf_Documents_StdMetadata" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 5.  **New class MetadataSignOptions **derives base SignOptions class and implement base properties and methods to specify Metadata Signature Options. It keeps collection of signatures and methods to manipulate signatures.
     
     **Metadata Sign Options properties**
     
+    ```csharp
     /// <summary>
     /// Represents abstract class of the Metadata Signature Options.
     /// </summary>
@@ -624,17 +634,19 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         /// <param name="signatures">Collection of Metadata Signatures <see cref="MetadataSignature"/>.</param>
         protected MetadataSignOptions(IEnumerable<MetadataSignature> signatures);
+    ```
     
     Following example demonstrates using this options for Pdf Documents
     
     **Sign Pdf Document with Metadata Sign Options**
     
+    ```csharp
     // setup Signature configuration
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -642,18 +654,19 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     PdfMetadataSignOptions signOptions = new PdfMetadataSignOptions();
     // Specify different Metadata Signatures and add them to options sigature collection
     // setup Author property
-    PdfMetadataSignature mdSign\_Author = new PdfMetadataSignature("Author", "Mr.Scherlock Holmes");
-    signOptions.MetadataSignatures.Add(mdSign\_Author);
+    PdfMetadataSignature mdSign_Author = new PdfMetadataSignature("Author", "Mr.Scherlock Holmes");
+    signOptions.MetadataSignatures.Add(mdSign_Author);
     // setup data of document id
-    PdfMetadataSignature mdSign\_DocId = new PdfMetadataSignature("DocumentId", Guid.NewGuid().ToString());
-    signOptions.MetadataSignatures.Add(mdSign\_DocId);
+    PdfMetadataSignature mdSign_DocId = new PdfMetadataSignature("DocumentId", Guid.NewGuid().ToString());
+    signOptions.MetadataSignatures.Add(mdSign_DocId);
     // setup data of sign date
-    PdfMetadataSignature mdSign\_Date = new PdfMetadataSignature("SignDate", DateTime.Now, "pdf");
-    signOptions.MetadataSignatures.Add(mdSign\_Date);
+    PdfMetadataSignature mdSign_Date = new PdfMetadataSignature("SignDate", DateTime.Now, "pdf");
+    signOptions.MetadataSignatures.Add(mdSign_Date);
     // sign document
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf\_Documents\_Metadata" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf_Documents_Metadata" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 6.  **New abstract class SearchMetadataOptions **derives base SearchOptions class to specify criteria to search for Metadata Signatures inside the Documents.
     
@@ -661,6 +674,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Metadata Search Options properties**
     
+    ```csharp
     //// <summary>
     /// Represents abstract search Options for Metadata Signatures.
     /// </summary>
@@ -681,12 +695,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         protected SearchMetadataOptions();
          
     }
+    ```
     
 7.  **New class PdfSearchMetadataOptions **derives base SearchMetadataOptions class to specify criteria to search for Metadata Signatures inside the Pdf Documents.  
     New public class **PdfSearchMetadataOptions **was added to provide options to search for Metadata signatures within the Documents. This class derives base **SearchOptions**.
     
     **PdfSearchMetadataOptions**
     
+    ```csharp
     /// <summary>
     /// Represents the Bar-code Signature Search Options for Pdf Documents.
     /// </summary>
@@ -697,16 +713,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         public PdfSearchMetadataOptions();
     }
+    ```
     
     Following example demonstrates searching for Metadata Signature inside the Pdf Documents
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -724,3 +742,4 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Pdf Metadata: {0}:{1}  = {2}", metadataSignature.TagPrefix, metadataSignature.Name, metadataSignature.ToString());
         }
     }
+    ```

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add highlight annotation
-
 **Highlight** annotation highlights and comments selected text  like shown at the picture below. 
 
 ![](images/annotation-net/add-highlight-annotation_0.png)

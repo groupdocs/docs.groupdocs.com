@@ -9,16 +9,11 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Annotation for .NET 19.9 Release Notes
-
-This page contains release notes for GroupDocs.Annotation for .NET 19.9
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Annotation for .NET 19.9{{< /alert >}}
 
 ## Major Features
 
-Breaking changes
-
-In this version we're introducing new public API which was designed to be simple and easy to use. For more details about new API please check **[Developer Guide](https://docs.groupdocs.com/display/annotationnet/Developer+Guide)** section. The legacy API have been moved into **Legacy** namespace so after update to this version it is required to make project-wide replacement of namespace usages from **GroupDocs.Annotation.** to **GroupDocs.Annotation.Legacy.** to resolve build issues.
+{{< alert style="danger" >}}In this version we're introducing new public API which was designed to be simple and easy to use. For more details about new API please check Developer Guide section. The legacy API have been moved into Legacy namespace so after update to this version it is required to make project-wide replacement of namespace usages from GroupDocs.Annotation. to GroupDocs.Annotation.Legacy. to resolve build issues.{{< /alert >}}
 
 # Public API and Backward Incompatible Changes
 

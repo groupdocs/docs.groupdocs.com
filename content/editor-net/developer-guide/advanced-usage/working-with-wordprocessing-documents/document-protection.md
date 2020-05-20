@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Document protection
-
 The `[Password](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingsaveoptions/properties/password)` property, if set, enables document protection from opening by encrypting it with specified password. However, almost all WordProcessing formats support a document protection from writing, which is completely different from opening. Document protection, like document encoding, also implies a password as a form of key, but it also supports different levels of protection: some of them allow only read-only mode, other allow to edit form-fields etc.
 
 [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net) allows to apply the document protection via the `[Protection](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingsaveoptions/properties/protection)` property in the [`WordProcessingSaveOptions`](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingsaveoptions) class. By default this property has a NULL value, which means that GroupDocs.Editor will not apply the protection to the document.

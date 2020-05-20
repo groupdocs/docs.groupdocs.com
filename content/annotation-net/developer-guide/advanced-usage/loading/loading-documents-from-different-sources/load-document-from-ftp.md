@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Load document from FTP
-
 Following example demonstrates how to annotate document from FTP.
 
 ```csharp

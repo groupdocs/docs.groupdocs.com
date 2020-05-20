@@ -9,13 +9,11 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Get View Info for PDF Document
-
 GroupDocs.Viewer provides additional information for PDF documents when calling [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo)method. To retrieve view information for PDF document call [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo)method and cast output result to [PdfViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.results/pdfviewinfo) type.
 
 Following example demonstrates how to retrieve view information for PDF document.
 
+```csharp
             using (Viewer viewer = new Viewer("sample.pdf"))
             {
                 ViewInfoOptions viewInfoOptions = ViewInfoOptions.ForHtmlView();
@@ -26,6 +24,8 @@ Following example demonstrates how to retrieve view information for PDF document
                 Console.WriteLine("Printing allowed: " + viewInfo.PrintingAllowed);
             }
       
+
+```
 
 ## More resources
 

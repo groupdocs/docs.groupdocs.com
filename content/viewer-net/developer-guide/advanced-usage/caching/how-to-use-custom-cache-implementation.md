@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# How to use custom cache implementation
-
-
 # Custom Cache Implementation
 
 Despite the fact that GroupDocs.Viewerimplements caching to local drive out of the box, it also allows you to cache rendering result in your own way. You can do this by using *ICache* interface implementation.  
@@ -30,6 +26,7 @@ The following steps should be followed.
 
 Below is the code that demonstrates how to use custom caching for GroupDocs.Viewer:
 
+```csharp
 using GroupDocs.Viewer.Caching;
 using System;
 using System.Collections.Generic;
@@ -50,13 +47,13 @@ namespace GroupDocs.Viewer.Examples.CSharp.AdvancedUsage.Common
         /// </summary>
         public static void Run()
         {
-            string outputDirectory = @"C:\\output";
-            string pageFilePathFormat = Path.Combine(outputDirectory, "page\_{0}.html");
+            string outputDirectory = @"C:\output";
+            string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
            
- RedisCache cache = new RedisCache("sample\_");
+ RedisCache cache = new RedisCache("sample_");
             ViewerSettings settings = new ViewerSettings(cache);
 
-            using (Viewer viewer = new Viewer(@"C:\\sample.docx", settings))
+            using (Viewer viewer = new Viewer(@"C:\sample.docx", settings))
             {
                 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
                 Stopwatch stopWatch = Stopwatch.StartNew();
@@ -68,20 +65,20 @@ namespace GroupDocs.Viewer.Examples.CSharp.AdvancedUsage.Common
                 stopWatch.Stop();
                 Console.WriteLine("Time taken on second call to View method {0} (ms).", stopWatch.ElapsedMilliseconds);
             }
-            Console.WriteLine($"\\nSource document rendered successfully.\\nCheck output in {outputDirectory}.");
+            Console.WriteLine($"\nSource document rendered successfully.\nCheck output in {outputDirectory}.");
         }
     }
     public class RedisCache : ICache, IDisposable
     {
-        private readonly string \_cacheKeyPrefix;
-        private readonly ConnectionMultiplexer \_redis;
-        private readonly IDatabase \_db;
-        private readonly string \_host = "192.168.0.13:6379";
+        private readonly string _cacheKeyPrefix;
+        private readonly ConnectionMultiplexer _redis;
+        private readonly IDatabase _db;
+        private readonly string _host = "192.168.0.13:6379";
         public RedisCache(string cacheKeyPrefix)
         {
-            \_cacheKeyPrefix = cacheKeyPrefix;
-            \_redis = ConnectionMultiplexer.Connect(\_host);
-            \_db = \_redis.GetDatabase();
+            _cacheKeyPrefix = cacheKeyPrefix;
+            _redis = ConnectionMultiplexer.Connect(_host);
+            _db = _redis.GetDatabase();
         }
         public void Set(string key, object data)
         {
@@ -90,13 +87,13 @@ namespace GroupDocs.Viewer.Examples.CSharp.AdvancedUsage.Common
             string prefixedKey = GetPrefixedKey(key);
             using (MemoryStream stream = GetStream(data))
             {
-                \_db.StringSet(prefixedKey, RedisValue.CreateFrom(stream));
+                _db.StringSet(prefixedKey, RedisValue.CreateFrom(stream));
             }
         }
         public bool TryGetValue<TEntry>(string key, out TEntry value)
         {
             var prefixedKey = GetPrefixedKey(key);
-            var redisValue = \_db.StringGet(prefixedKey);
+            var redisValue = _db.StringGet(prefixedKey);
             if (redisValue.HasValue)
             {
                 var data = typeof(TEntry) == typeof(Stream)
@@ -111,13 +108,13 @@ namespace GroupDocs.Viewer.Examples.CSharp.AdvancedUsage.Common
         }
         public IEnumerable<string> GetKeys(string filter)
         {
-            return \_redis.GetServer(\_host).Keys(pattern: $"\*{filter}\*")
-                .Select(x => x.ToString().Replace(\_cacheKeyPrefix, string.Empty))
+            return _redis.GetServer(_host).Keys(pattern: $"*{filter}*")
+                .Select(x => x.ToString().Replace(_cacheKeyPrefix, string.Empty))
                 .Where(x => x.StartsWith(filter, StringComparison.InvariantCultureIgnoreCase))
                 .ToList();
         }
         private string GetPrefixedKey(string key)
-            => $"{\_cacheKeyPrefix}{key}";
+            => $"{_cacheKeyPrefix}{key}";
         private object ReadStream(RedisValue redisValue)
         {
             return new MemoryStream(redisValue);
@@ -157,7 +154,7 @@ namespace GroupDocs.Viewer.Examples.CSharp.AdvancedUsage.Common
         }
         public void Dispose()
         {
-            \_redis.Dispose();
+            _redis.Dispose();
         }
         private class IgnoreAssemblyVersionSerializationBinder : SerializationBinder
         {
@@ -170,6 +167,11 @@ namespace GroupDocs.Viewer.Examples.CSharp.AdvancedUsage.Common
         }
     }
 }
+
+
+
+
+```
 
 ## More resources
 

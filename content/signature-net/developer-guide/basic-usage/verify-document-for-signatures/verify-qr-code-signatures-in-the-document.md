@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Verify QR-code signatures in the document
-
-
   
 
 # Verify QR-code signatures in the document
@@ -31,6 +27,7 @@ Here are the steps to verify qr-code signature within the document with GroupDoc
 
 This example shows how to verify QR-code signature in the document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     QrCodeVerifyOptions options = new QrCodeVerifyOptions()
@@ -46,13 +43,14 @@ using (Signature signature = new Signature("sample.pdf"))
     VerificationResult result = signature.Verify(options);
     if (result.IsValid)
     {
-        Console.WriteLine("\\nDocument was verified successfully!");
+        Console.WriteLine("\nDocument was verified successfully!");
     }
     else
     {
-        Console.WriteLine("\\nDocument failed verification process.");
+        Console.WriteLine("\nDocument failed verification process.");
     }
 }
+```
 
 ## More resources
 

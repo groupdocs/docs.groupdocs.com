@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Save signed Pdf with different output file type
-
-
   
 
 # Save signed Pdf with different output file type
@@ -32,6 +28,7 @@ Here are the steps to save signed Pdf document to different output type with [**
 
 Following example demonstrates how to save signed PDF document with different output type
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // create QRCode option with predefined QRCode text
@@ -49,6 +46,7 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("SignedPdf.docx", signOptions, pdfSaveOptions);
 }
+```
 
 ## More resources
 

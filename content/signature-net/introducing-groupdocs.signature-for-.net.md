@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Introducing GroupDocs.Signature for .NET
-
 ## What Is GroupDocs.Signature?
 
 GroupDocs.Signature for .NET is an electronic signature library that provides an ability to add stamps, barcodes, QR-codes, text, image, metadata, form fields and digital signatures to various document formats such as PDF, DOCX/DOC, PPTX/PPT, XLSX/XLS, JPG, PNG, TIFF, HTML and many others. With GroupDocs.Signature for .NET you can sign, search and verify document signatures using different signing option sets to suit all your needs.

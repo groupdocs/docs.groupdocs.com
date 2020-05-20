@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Document viewer - Image Viewer
-
-
   
 
 # Document viewer - Image Viewer
@@ -34,23 +30,27 @@ Here are the steps for rendering into image with GroupDocs.Viewer API:
 
 This example shows how to render each document page into PNG image.
 
+```csharp
 using (Viewer viewer = new Viewer("sample.docx"))
 {
     PngViewOptions viewOptions = new PngViewOptions();
     viewer.View(viewOptions);
 }
+```
 
 ## Document Viewer - Image Viewer (JPG)
 
 This example shows how to render each document page into JPG image.
 
+```csharp
 using (Viewer viewer = new Viewer("sample.docx"))
 {
     JpgViewOptions viewOptions= new JpgViewOptions();                  
     viewer.View(viewOptions);
 }
+```
 
-GroupDocs.Viewer also provides an abilityto customize rendering to image by setting additional options. To learn more about caching customization please refer to the following guides:
+{{< alert style="info" >}}GroupDocs.Viewer also provides an ability to customize rendering to image by setting additional options. To learn more about caching customization please refer to the following guides:Image Viewer - Add text overlay over imagesImage Viewer - Adjust image sizeImage Viewer - Adjust quality for JPGImage Viewer - Get text coordinates{{< /alert >}}
 
 ## More resources
 

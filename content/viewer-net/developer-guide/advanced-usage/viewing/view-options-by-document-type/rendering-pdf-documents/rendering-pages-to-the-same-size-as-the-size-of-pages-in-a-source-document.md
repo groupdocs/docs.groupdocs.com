@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Rendering pages to the same size as the size of pages in a source document
-
-This option is supported when rendering to JPG and PNG only.
+{{< alert style="info" >}}This option is supported when rendering to JPG and PNG only.{{< /alert >}}
 
   
 ![](images/viewer-net/rendering-pages-to-the-same-size-as-the-size-of-pages-in-a-source-document_0.png)
@@ -21,6 +18,7 @@ When viewing PDF documents in JPG and PNG formats by default GroupDocs.Viewer ca
 
 The following code snippet shows how to convert pages to the same size as the size of pages in a source document ([This example](https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-.NET/blob/master/Examples/GroupDocs.Viewer.Examples.CSharp/AdvancedUsage/Rendering/RenderingOptionsByDocumentType/RenderingPdfDocuments/RenderOriginalPageSize.cs) can be also found in our public [GitHub repository](https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-.NET).)
 
+```csharp
 using (Viewer viewer = new Viewer("sample.pdf"))
 {
     PngViewOptions viewOptions = new PngViewOptions();
@@ -28,6 +26,7 @@ using (Viewer viewer = new Viewer("sample.pdf"))
                    
     viewer.View(viewOptions);
 }
+```
 
 ## More resources
 

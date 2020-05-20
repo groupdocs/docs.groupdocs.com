@@ -9,14 +9,9 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: True
 ---
-
 #  Home 
 
-![](images/comparison-net/home_0.png)
-
-**Welcome to the GroupDocs.Comparison for .NET**
-
-It compares and merges Microsoft Word, Excel, PowerPoint, openDocument ODT, PDF, Text and HTML documents. Document comparison API compares content to detect changes for words, paragraphs and characters. It also compares style changes like font size, bold, italic etc. Differences summary saved in a separate result file
+{{< alert style="info" >}} Welcome to the GroupDocs.Comparison for .NETIt compares and merges Microsoft Word, Excel, PowerPoint, openDocument ODT, PDF, Text and HTML documents. Document comparison API compares content to detect changes for words, paragraphs and characters. It also compares style changes like font size, bold, italic etc. Differences summary saved in a separate result file{{< /alert >}}
 
 ## GroupDocs.Comparison for .NET Resources
 

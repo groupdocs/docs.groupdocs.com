@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Deleting multiple signatures of different types
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides different classes of signatures to manipulate and delete them from the documents over [Delete](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/delete) method.
 
 Please be aware that[Delete](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/delete) method modifies the same document that was passed to constructor of [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) class. This method returns [DeleteResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/deleteresult) object that contains list of successfully updated signatures and ones that failed. The signature could be failed to delete due to several reasons:
@@ -39,6 +36,7 @@ Here are the steps to delete multiple signature in the document with GroupDocs.S
 
 This example shows how to delete multiple signatures that was found using [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1) method.
 
+```csharp
 // initialize Signature instance
 using (Signature signature = new Signature("signed.docx"))
 {
@@ -85,6 +83,7 @@ using (Signature signature = new Signature("signed.docx"))
         Console.WriteLine("No one signature was found.");
     }
 }
+```
 
 ## More resources
 

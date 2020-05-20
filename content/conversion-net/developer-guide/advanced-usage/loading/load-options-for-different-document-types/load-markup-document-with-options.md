@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load Markup document with options
-
-
 ## MarkupLoadOptions
 
 GroupDocs.Conversion provides [MarkupLoadOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/markuploadoptions)to give you control over how source Note document will be processed. The following options could be set:
@@ -38,4 +34,4 @@ using (var converter = new Converter(source, () => loadOptions))
 }
 ```
 
-This functionality is introduced in v20.3
+{{< alert style="warning" >}}This functionality is introduced in v20.3{{< /alert >}}

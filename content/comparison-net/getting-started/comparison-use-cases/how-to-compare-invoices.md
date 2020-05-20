@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# How to Compare Invoices
-
-
 # How to Compare Two Invoices using GroupDocs.Comparison
 
 Sometimes you need to achieve maximum accuracy in comparing files. Suppose you have two versions of an important document and you need to find differences character-by-character or the opposite case, you need to compare the documents, but the details are not important to you, and you only need words that have changes. **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides the ability to compare documents with sensitivity settings  

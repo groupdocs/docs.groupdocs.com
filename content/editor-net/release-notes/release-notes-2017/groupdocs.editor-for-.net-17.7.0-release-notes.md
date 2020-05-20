@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Editor for .NET 17.7.0 Release Notes
-
-This page contains release notes for GroupDocs.Editor for .NET 17.7.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Editor for .NET 17.7.0{{< /alert >}}
 
 ## Major Features
 

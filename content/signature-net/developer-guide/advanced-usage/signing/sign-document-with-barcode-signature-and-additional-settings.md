@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign document with Barcode signature and additional settings
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [BarcodeSignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/barcodesignoptions) class to specify additional options for Barcode signature to specify following signature appearance
 
 *   signature alignment ([HorizontalAlignment](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/textsignoptions/properties/horizontalalignment), [VerticalAlignment](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/textsignoptions/properties/verticalalignment))
@@ -33,6 +30,7 @@ Here are the steps to add Barcode signature into document with GroupDocs.Signatu
 
 This example shows how to add Barcode signature to document. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult).
 
+```csharp
 using (Signature signature = new Signature("sample.docx"))
 {
     // create barcode option with predefined barcode text
@@ -84,6 +82,7 @@ using (Signature signature = new Signature("sample.docx"))
         Console.WriteLine($"Signature #{number++}: Type: {temp.SignatureType} Id:{temp.SignatureId}, Location: {temp.Left}x{temp.Top}. Size: {temp.Width}x{temp.Height}");
     }
  }
+```
 
 ## More resources
 

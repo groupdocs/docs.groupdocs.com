@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Supported Document Formats
-
-
 ## Supported File Formats
 
 The list of supported by GroupDocs.Annotation document formats and types

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Subscribing for signing process events
-
 [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) class contains several events that are being called for different process stages
 
 *   [SignStarted](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/events/signstarted) to handle process start event. This event is occur once [Sign](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/sign) method is called
@@ -35,10 +32,12 @@ Here are the steps to subscribe for signing process with [**GroupDocs.Signature*
 
 GroupDocs.Signature expects [ProcessStartEventHandler](https://apireference.groupdocs.com/net/signature/groupdocs.signature/processstarteventhandler) delegate to subscribe for [SignStarted](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/events/signstarted) event
 
+```csharp
 private static void OnSignStarted(Signature signature, ProcessStartEventArgs args)
 {
     Console.WriteLine("Sign process started at {0} with {1} total signatures to be put in document", args.Started, args.TotalSignatures);
 }
+```
 
 ## Implement method for SignProgress event
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Composing signature with radial gradient brush background
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [RadialGradientBrush](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/radialgradientbrush) class to specify filling signature background with radial gradients
 
 Here are the steps to use Radial gradient brush with GroupDocs.Signature:
@@ -28,6 +25,7 @@ Here are the steps to use Radial gradient brush with GroupDocs.Signature:
 
 This example shows how to use Radial gradient brush for signature background. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult)
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -52,6 +50,7 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("signed.pdf", options);
 }
+```
 
 ## More resources
 

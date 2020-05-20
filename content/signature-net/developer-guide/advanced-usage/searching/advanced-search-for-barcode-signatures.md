@@ -9,12 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Advanced search for Barcode signatures
-
-
-# Advanced search for Barcode signatures in the document
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [BarcodeSearchOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/barcodesearchoptions) class to specify different options to search for Barcode Signatures.
 
 Here are the steps to search for barcode signatures within the document with GroupDocs.Signature:
@@ -28,6 +22,7 @@ Here are the steps to search for barcode signatures within the document with Gro
 
 This example shows how to make advanced search for Barcode signature in the document with enabled options to grab barcode electronic signature context.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     BarcodeSearchOptions options = new BarcodeSearchOptions()
@@ -51,7 +46,7 @@ using (Signature signature = new Signature("sample.pdf"))
     };
     // search for signatures in document
     List<BarcodeSignature> signatures = signature.Search<BarcodeSignature>(options);
-    Console.WriteLine("\\nSource document contains following signatures.");
+    Console.WriteLine("\nSource document contains following signatures.");
     foreach (var barcodeSignature in signatures)
     {
         Console.WriteLine("Barcode signature found at page {0} with type {1} and text {2}", barcodeSignature.PageNumber, barcodeSignature.EncodeType, barcodeSignature.Text);
@@ -78,6 +73,7 @@ using (Signature signature = new Signature("sample.pdf"))
         i++;
     }
 }
+```
 
 ## More resources
 

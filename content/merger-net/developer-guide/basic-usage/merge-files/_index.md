@@ -9,16 +9,13 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Merge files
-
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to merge multiple documents into single document nice and easy. The result will contain the content of all source documents with all data, styles and formatting. Here are the simple steps to merge several documents of any [supported format](Supported%2BDocument%2BTypes.html):
 
 *   Instantiate [Merger](https://apireference.groupdocs.com/net/merger/groupdocs.merger/merger) objectwith source document path or stream;
 *   Call [Join](https://apireference.groupdocs.com/net/merger/groupdocs.merger.merger/join/methods/2) method and pass next merged document file path or stream to it*. *Repeat this step for every merged document.
 *   Call [Save](https://apireference.groupdocs.com/net/merger/groupdocs.merger.merger/save/methods/1) method specifying file path to save resultant document.
 
-Please note that all merged documents should be of the same format.
+{{< alert style="info" >}}Please note that all merged documents should be of the same format.{{< /alert >}}
 
 The following code sample demonstrates how to merge documents:
 

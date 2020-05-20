@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Locating signature with stretch mode
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to stretch signature area along page width or height. Use enumeration [StretchMode](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/stretchmode) contains following values
 
 *   [None](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/stretchmode) - no stretch will be applied
@@ -32,6 +29,7 @@ Here are the steps to use stretch mode with adding text or images signatures int
 
 This example shows how to locate signature with stretch mode.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // define several signature options of different types and settings
@@ -66,6 +64,7 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("signed.pdf", listOptions);
 }
+```
 
 ## More resources
 

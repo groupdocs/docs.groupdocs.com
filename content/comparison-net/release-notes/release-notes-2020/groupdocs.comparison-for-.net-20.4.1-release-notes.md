@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Comparison for .NET 20.4.1 Release Notes
-
-This page contains release notes for GroupDocs.Comparison for .NET 20.4.1
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for .NET 20.4.1{{< /alert >}}
 
 ##   
 Major Features

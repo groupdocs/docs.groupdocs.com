@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 19.5 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 19.5
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 19.5{{< /alert >}}
 
 ## Major Features
 
@@ -95,13 +92,14 @@ Improvement
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.5. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.5. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **GroupDocs.Signature.Options.WordsMetadataSignOptions**  
     Public class **WordsMetadataSignOptions **was extended with new public method** AddSignature. **Method creates new Words Metadata Signature with passed arguments (name and value), adds signature to list of metadata signatures and returns newly created object as result.
     
     **AddSignature method**
     
+    ```csharp
     /// <summary>
     /// Creates new WordsMetadataSignature with passed arguments and adds it to collection.
     /// </summary>
@@ -109,16 +107,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// <param name="value">The value of new metadata signature</param>
     /// <returns>Newly created signature that was added to MetadataSignatures collection</returns>
     public WordsMetadataSignature AddSignature(string name, object value)
+    ```
     
     Following example demonstrates signing Words document with Metadata signature using this new method:
     
     **Sign Document with metadata signatures**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -141,12 +141,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("test.docx", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedMetadata" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 2.  **GroupDocs.Signature.Options.SlidesMetadataSignOptions**  
     Public class **SlidesMetadataSignOptions **was extended with new public method** AddSignature. **Method creates new Slides Metadata Signature with passed arguments (name and value), adds signature to list of metadata signatures and returns newly created object as result.
     
     **AddSignature method**
     
+    ```csharp
     /// <summary>
     /// Creates new SlidesMetadataSignature with passed arguments and adds it to collection.
     /// </summary>
@@ -154,16 +156,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// <param name="value">The value of new metadata signature</param>
     /// <returns>Newly created signature that was added to MetadataSignatures collection</returns>
     public SlidesMetadataSignature AddSignature(string name, object value)
+    ```
     
     Following example demonstrates signing Slides document with Metadata signature using this new method:
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -186,12 +190,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("test.pptx", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedMetadata" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 3.  **GroupDocs.Signature.Options.PdfMetadataSignOptions**  
     Public class **PdfMetadataSignOptions **was extended with new public method** AddSignature. **Method creates new Pdf Metadata Signature with passed arguments (name and value), adds signature to list of metadata signatures and returns newly created object as result.
     
     **AddSignature method**
     
+    ```csharp
     /// <summary>
     /// Creates new PdfMetadataSignature with passed arguments and adds it to collection.
     /// </summary>
@@ -199,16 +205,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// <param name="value">The value of new metadata signature</param>
     /// <returns>Newly created signature that was added to MetadataSignatures collection</returns>
     public PdfMetadataSignature AddSignature(string name, object value)
+    ```
     
     Following example demonstrates signing Pdf document with Metadata signature using this new method:
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -231,12 +239,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("test.pdf", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedMetadata" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 4.  GroupDocs.Signature.Options.CellsMetadataSignOptions  
     Public class **CellsMetadataSignOptions **was extended with new public method** AddSignature. **Method creates new Cells Metadata Signature with passed arguments (name and value), adds signature to list of metadata signatures and returns newly created object as result.
     
     **AddSignature method**
     
+    ```csharp
     /// <summary>
     /// Creates new CellsMetadataSignature with passed arguments and adds it to collection.
     /// </summary>
@@ -244,16 +254,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// <param name="value">The value of new metadata signature</param>
     /// <returns>Newly created signature that was added to MetadataSignatures collection</returns>
     public CellsMetadataSignature AddSignature(string name, object value)
+    ```
     
     Following example demonstrates signing Cells document with Metadata signature using this new method:
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -276,20 +288,24 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("test.xlsx", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedMetadata" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 5.  Public classes **CellsMetadataSignature, SlidesMetadataSignature, WordsMetadataSignature** were extended with new public property **DataEncryption **of type **IDataEncryption**
     
     **DataEncryption property**
     
+    ```csharp
     /// <summary>
     /// Gets or sets implementation of <see cref="IDataEncryption"/> interface to encode and decode signature Value property.
     /// </summary>
     public IDataEncryption DataEncryption { get; set; }
+    ```
     
     and overloaded method **public T GetData<T>()**. These methods return object of type T over de-serialization and decryption from Metadata Value.
     
     **GetData<T>() method**
     
+    ```csharp
     /// <summary>
     /// Obtain object from Metadata Signature Value over de-serialization and decryption
     /// </summary>
@@ -304,33 +320,37 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// <param name="dataEncryption">Set custom data encryption implementation</param>
     /// <returns></returns>
     public T GetData<T>(IDataEncryption dataEncryption) where T : class 
+    ```
     
     Custom data class **DocumentSignature **
     
     **Example of custom class**
     
+    ```csharp
     public class DocumentSignature
     {
         // specify SkipSerialization attribute to skip this field on serialization
-        \[SkipSerialization\]
+        [SkipSerialization]
         public string Version { get; set; }
         // specify SkipSerialization attribute to skip this field on serialization
-        \[SkipSerialization\]
+        [SkipSerialization]
         public bool IsProcessed { get; set; }
-        \[Format("SignatureID")\]
+        [Format("SignatureID")]
         public string ID { get; set; }
-        \[Format("Author")\]
+        [Format("Author")]
         public string Author { get; set; }
-        \[Format("SignatureDate","yyyy-MM-dd")\]
+        [Format("SignatureDate","yyyy-MM-dd")]
         public DateTime Signed { get; set; }
-        \[Format("Factor", "N2")\]
+        [Format("Factor", "N2")]
         public decimal DataFactor { get; set; }
     }
+    ```
     
      Following example demonstrates signing Words document with Metadata signature with value of custom class **DocumentSignature **object:
     
     **Sign Words Document with custom objects in Metadata**
     
+    ```csharp
     // setup key and passphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -339,8 +359,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -363,11 +383,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("test.docx", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedMedataDataEncrypted.docx" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     Example how to retrieve signed Words document file with **DocumentSignature **Metadata Value (see examples above how to sign Document with custom data objects)
     
     **Search custom object in Metadata**
     
+    ```csharp
     // setup key and pasphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -376,8 +398,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -399,11 +421,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             }
         }
     }
+    ```
     
     Following example demonstrates signing Cells document with Metadata signature with value of  DocumentSignature object:
     
     **Sign Cells Document with custom objects in Metadata**
     
+    ```csharp
     // setup key and passphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -412,8 +436,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -437,11 +461,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("test.xlsx", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedMedataDataEncrypted.xlsx" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     Example how to retrieve signed Cells document file with **DocumentSignature **Metadata Value (see examples above how to sign Document with custom data objects)
     
     **Search custom object in Metadata**
     
+    ```csharp
     // setup key and pasphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -450,8 +476,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -473,11 +499,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             }
         }
     }
+    ```
     
     Following example demonstrates signing Slides document with Metadata signature with value of  DocumentSignature object:
     
     **Sign Cells Document with custom objects in Metadata**
     
+    ```csharp
     // setup key and passphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -486,8 +514,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -511,11 +539,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("test.pptx", signOptions,
         new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignedMedataDataEncrypted.pptx" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
     Example how to retrieve signed Slides document file with **DocumentSignature **Metadata Value (see examples above how to sign Document with custom data objects)
     
     **Search custom object in Metadata**
     
+    ```csharp
     // setup key and pasphrase
     string key = "1234567890";
     string salt = "1234567890";
@@ -524,8 +554,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -547,3 +577,4 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             }
         }
     }
+    ```

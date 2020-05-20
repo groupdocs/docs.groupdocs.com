@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# eSign document with Text signature
-
 ## What is a Text signature?
 
 A** Text** electronic signature is an arbitrary text that is added to a document in a native way dependent on document type. GroupDocs.Signature provides text signature feature and allows to customize wide range of text settings - from font name, size and color to alignment, borders, shadow effects etc. This is how text signature may look like:  
@@ -31,6 +28,7 @@ To manipulate with text signatures programmatically [**GroupDocs.Signature**](h
 
 This example shows how to add Text signature to document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     TextSignOptions options = new TextSignOptions("John Smith")
@@ -46,8 +44,9 @@ using (Signature signature = new Signature("sample.pdf"))
         Font = new SignatureFont { Size = 12, FamilyName = "Comic Sans MS" }
     };
     // sign document to file
-    signature.Sign("sample\_signed.pdf", options);
+    signature.Sign("sample_signed.pdf", options);
 }
+```
 
 ## More resources
 

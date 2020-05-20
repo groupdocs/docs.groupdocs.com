@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Font extraction options
-
 ### Introduction
 
 WordProcessing documents contain usually text content, while every piece of text should be represented with some font. There may be used system fonts (installed in the operating system), but also custom fonts, which are not installed in the system. On the other hand, lots of WordProcessing formats like DOCX and ODT have an ability to store fonts inside the document itself; such fonts, stored as the binary resources inside WordProcessing files, are called *embedded*. Embedded fonts are the only choice for the end-user to use some specific fonts, which are not installed in the system. But any font can be embedded into the document. This means, that, for example, there can be a situation, when the same font is installed in the system, and at the same time embedded in the WordProcessing document.

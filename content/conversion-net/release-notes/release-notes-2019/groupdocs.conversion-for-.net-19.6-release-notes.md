@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion for .NET 19.6 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 19.6
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 19.6{{< /alert >}}
 
 ## Major Features
 
@@ -91,12 +88,13 @@ PowerPoint with black SmartArt Text gets changed into white text when converted 
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 19.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 19.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  Added GetConsumptionCredit in GroupDocs.Conversion.Metered
     
     This method returns count of credits which were consumed in case of Metered licensing is used.
     
+    ```csharp
     /// <summary>
     /// Retrieves count of credits consumed.
     /// </summary>
@@ -105,9 +103,11 @@ This section lists public API changes that were introduced in GroupDocs.Conversi
     {
         return MeteredBillingService.Instance.GetCustomerCredit();
     }
+    ```
     
     Following example demonstrates how to retrieve count of credits consumed:
     
+    ```csharp
     ...
     string publicKey = "Public Key";
     string privateKey = "Private Key";
@@ -117,3 +117,4 @@ This section lists public API changes that were introduced in GroupDocs.Conversi
      
     decimal creditsConsumed = Metered.GetConsumptionCredit();
     ...
+    ```

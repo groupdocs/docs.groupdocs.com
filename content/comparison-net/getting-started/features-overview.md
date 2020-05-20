@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Features Overview
-
-
 # File comparison
 
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides an ability to detect differences between source and target files for changes at paragraphs, words and characters levels. Can identify styling and formatting changes - like bold, italic, underlines, strike-troughs, font types, etc.

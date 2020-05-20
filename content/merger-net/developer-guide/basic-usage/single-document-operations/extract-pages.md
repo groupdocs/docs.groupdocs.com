@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Extract pages
-
-
 # Extract pages 
 
 **GroupDocs.Merger** allows to extract pages from source document. The result is a new document that contains only specified pages from the source document.

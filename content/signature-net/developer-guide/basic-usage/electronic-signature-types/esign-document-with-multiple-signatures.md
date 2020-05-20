@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# eSign document with multiple signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) allows to sign document with several signatures simultaneously and even apply signatures of different types to the same document.   
 Doing this is as simple as:
 
@@ -34,6 +31,7 @@ Doing this is as simple as:
 
 This code snippet below demonstrates how to eSign PDF document with multiple signatures at the same time.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // define several signature options of different types and settings
@@ -71,6 +69,7 @@ using (Signature signature = new Signature("sample.pdf"))
     
     // sign document to file
     signature.Sign("signed.pdf", listOptions);
+```
 
 ## More resources
 

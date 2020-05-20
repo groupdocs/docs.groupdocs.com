@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer For .NET 3.3.0 Release Notes
-
 # GroupDocs.Viewer for .NET 3.3.0
 
 This page contains release notes for GroupDocs.Viewer for .NET 3.3.0

@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Update QR-code signatures in document
-
-
 # Update QR-code signature in the document
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [QrCodeSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/qrcodesignature) class to manipulate QR-code signatures location, size, encode type and textual content.   
@@ -34,6 +30,7 @@ Here are the steps to update QR-code signature in the document with GroupDocs.Si
 
 This example shows how to update QR-code signature that was found using  [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1) method.
 
+```csharp
 // initialize Signature instance
 using (Signature signature = new Signature("signed.pdf"))
 {
@@ -42,7 +39,7 @@ using (Signature signature = new Signature("signed.pdf"))
     List<QrCodeSignature> signatures = signature.Search<QrCodeSignature>(options);
     if (signatures.Count > 0)
     {
-        QrCodeSignature qrCodeSignature = signatures\[0\];
+        QrCodeSignature qrCodeSignature = signatures[0];
         // change position
         qrCodeSignature.Left = 100;
         qrCodeSignature.Top = 100;
@@ -57,6 +54,7 @@ using (Signature signature = new Signature("signed.pdf"))
         }
     }
 }
+```
 
 ## More resources
 

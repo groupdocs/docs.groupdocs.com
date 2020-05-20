@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign document with Digital signature - advanced
-
-
 # Sign document with Digital signature and advanced options
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [DigitalSignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/digitalsignoptions) class to specify different amount of settings for Digital signature
@@ -37,6 +33,7 @@ Here are the steps to add Digital signature into document with GroupDocs.Signatu
 
 This example shows how to add Digital signature to document. See [SignResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/signresult) 
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {    
     // initialize digital option with certificate file path
@@ -60,6 +57,7 @@ using (Signature signature = new Signature("sample.pdf"))
     };
     signature.Sign("signed.pdf", options);
 }
+```
 
 ## More resources
 

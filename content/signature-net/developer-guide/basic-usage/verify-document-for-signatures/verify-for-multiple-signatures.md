@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Verify for multiple signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) supports verification of documents for different signature types. This approach requires to add all required verification options to list.
 
 Here are the steps to verify document for multiple signatures with GroupDocs.Signature:
@@ -27,6 +24,7 @@ Here are the steps to verify document for multiple signatures with GroupDocs.Sig
 
 This example shows how to search for different signature types in the document.
 
+```csharp
 using (Signature signature = new Signature("sampleSigned.pdf"))
 {
     TextVerifyOptions textVerifyOptions = new TextVerifyOptions()
@@ -61,13 +59,14 @@ using (Signature signature = new Signature("sampleSigned.pdf"))
     VerificationResult result = signature.Verify(listOptions);
     if (result.IsValid)
     {
-        Console.WriteLine("\\nDocument was verified successfully!");
+        Console.WriteLine("\nDocument was verified successfully!");
     }
     else
     {
-        Console.WriteLine("\\nDocument failed verification process.");
+        Console.WriteLine("\nDocument failed verification process.");
     }
 }
+```
 
 ## More resources
 

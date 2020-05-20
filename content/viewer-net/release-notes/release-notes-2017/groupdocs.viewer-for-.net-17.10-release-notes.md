@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 17.10 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 17.10
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 17.10{{< /alert >}}
 
 ## Major Features
 
@@ -116,7 +113,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### How to enable rendering hidden sheets, slides or pages
 
@@ -184,7 +181,7 @@ foreach (PageHtml page in pages)
 
 ### Rendering worksheets by dividing into pages
 
-This feature is supported starting from 17.10 for rendering the document as PDF and as image with enabled text extraction.
+{{< alert style="info" >}}This feature is supported starting from 17.10 for rendering the document as PDF and as image with enabled text extraction.{{< /alert >}}
 
   
 GroupDocs.Viewer provides two options which allow controlling worksheets dividing: **CellsOptions.OnePagePerSheet** and **CellsOptions.CountRowsPerPage**. By default **CellsOptions.OnePagePerSheet** is set to true so Viewer will render the whole worksheet into single HTML/Image page or into a single page in PDF document. To enable dividing worksheet into pages **CellsOptions.OnePagePerSheet** should be disabled. In the next code snippet, it is shown how to render document which contains one sheet with 1000 rows into 10 pages.
@@ -387,5 +384,4 @@ This constructor is obsolete and will be removed after 17.11.0. Please use overl
 
 This interface is obsolete and will be removed after 17.11.0.
 
-**Rendering documents into HTML from stream does not create external resources**  
-In order to save HTML resources (styles, images, and fonts) in separate files with HtmlOptions.IsResourcesEmbedded property set to false, document name should be passed. In the case when we are rendering from the stream, and do not provide document name, before the version 17.10, API was suppressing saving resources separately and has been embedding resources into HTML regardless of IsResourcesEmbedded setting. Since the version 17.10, when document name is not provided, API tries to generate document name from the stream, when that stream is rendered again, API will generate the same name. Try to avoid not passing document name, in cases when document name is known, because API does not guarantee that document type can be detected and that document name will be unique for the stream(in some case, API may generate the same name for two different streams).
+{{< alert style="info" >}}Rendering documents into HTML from stream does not create external resourcesIn order to save HTML resources (styles, images, and fonts) in separate files with HtmlOptions.IsResourcesEmbedded property set to false, document name should be passed. In the case when we are rendering from the stream, and do not provide document name, before the version 17.10, API was suppressing saving resources separately and has been embedding resources into HTML regardless of IsResourcesEmbedded setting. Since the version 17.10, when document name is not provided, API tries to generate document name from the stream, when that stream is rendered again, API will generate the same name. Try to avoid not passing document name, in cases when document name is known, because API does not guarantee that document type can be detected and that document name will be unique for the stream(in some case, API may generate the same name for two different streams).{{< /alert >}}

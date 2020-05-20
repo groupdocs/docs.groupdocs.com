@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Convert to PDF with advanced options
-
 GroupDocs.Conversion provides [PdfConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfconvertoptions)to give you control over conversion result when convert to PDF. Along with [common convert options](https://docs.groupdocs.com/display/conversionnet/Common+conversion+options) [PdfConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfconvertoptions)has the following additional options:
 
 *   ****[Format](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert.convertoptions/1/properties/format)****\- desired result document type. Available options are: *Pdf, Epub, Xps, Tex, Ps, Pcl, *

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# eSign document with Digital signature
-
 ## What is a Digital Signature?
 
 A digital electronic signature is a scheme for verifying the document's authenticity. A valid digital signature gives a recipient very strong reason to believe that the document was created or updated by a known sender and that the document was not altered by unknown source. For documents, the digital signature is represented by certificate with private (to sign) and public (to verify) keys. Most often certificates of various public key cryptography standards are used for this purpose, for example PFX format (see specification [here](https://en.wikipedia.org/wiki/PKCS_12)). These digital signature certificates could be obtained from the operation system or generated manually with proper tools or trusted sources. 
@@ -41,6 +38,7 @@ Here are the steps to add Digital signature into document with GroupDocs.Signatu
 
 This example shows how to sign PDF document with digital e-signature.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {    
     // initialize digital option with certificate file path
@@ -58,6 +56,7 @@ using (Signature signature = new Signature("sample.pdf"))
     };
     signature.Sign("sampleSigned.pdf", options);
 }
+```
 
 ## More resources 
 

@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Get document information
-
-
 # Get document information
 
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to get document information which includes:

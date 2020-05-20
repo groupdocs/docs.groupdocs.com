@@ -6,7 +6,6 @@ weight: 1
 bookCollapseSection: false
 showMenu: false
 ---
-
 # Cheat Sheet
 
 *Italic*

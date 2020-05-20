@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
 # Rendering MS Project Documents
 
-# Rendering MS Project Documents
-
-This page describes specific use cases for MS Project documents rendering.
+{{< alert style="info" >}}This page describes specific use cases for MS Project documents rendering.{{< /alert >}}

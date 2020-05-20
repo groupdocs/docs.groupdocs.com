@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 17.3.0 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 17.3.0
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 17.3.0{{< /alert >}}
 
 ## Major Features
 
@@ -135,7 +132,7 @@ New Feature
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.3.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.3.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 *   Added new public class PagesSetup to specify arbitrary pages of Document for processing signature or verification. This class allows to specify First, Last, Odd, Even pages or arbitrary pages added to List of Page numbers.
     
@@ -145,12 +142,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        ImagesPath = @"c:\\Aspose\\Test\\Images",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        ImagesPath = @"c:\Aspose\Test\Images",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the conversion handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -174,6 +172,8 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     string signedPath = handler.Sign<string>("pages15.pdf", signOptions, loadOptions, saveOptions);
     Console.WriteLine("Signed file path is: " + signedPath);
     
+    ```
+    
 
 *   Added new Text Signature Verification classes for Cells Documents CellsVerifyTextOptions, Words Documents WordsVerifyTextOptions, Slides Documents SlidesVerifyTextOptions. These classes allow user to pass verification options object for required Document Type to find Text Signature with given Text.
     
@@ -181,13 +181,14 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        ImagesPath = @"c:\\Aspose\\Test\\Images",
-        OutputPath = @"c:\\Aspose\\Test\\Output",
-        CertificatesPath = @"c:\\Aspose\\Test\\Certificates"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        ImagesPath = @"c:\Aspose\Test\Images",
+        OutputPath = @"c:\Aspose\Test\Output",
+        CertificatesPath = @"c:\Aspose\Test\Certificates"
     };
     // instantiating the conversion handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -195,20 +196,23 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     CellsVerifyTextOptions verifyOptions = new CellsVerifyTextOptions("John Smith");
     verifyOptions.PagesSetup.LastPage = true;
     //verify document
-    VerificationResult result = handler.Verify("test\_textsigned.xls", verifyOptions);
+    VerificationResult result = handler.Verify("test_textsigned.xls", verifyOptions);
     Console.WriteLine("Signed file verification result: " + result.IsValid);
+    
+    ```
     
     **Verification of Words Document signed with Text Signature**
     
     **C#**
     
+    ```csharp
     // setup Signature configuration 
     SignatureConfig signConfig = new SignatureConfig
     {
-     StoragePath = @"c:\\Aspose\\Test\\Storage",
-     ImagesPath = @"c:\\Aspose\\Test\\Images",
-     OutputPath = @"c:\\Aspose\\Test\\Output",
-     CertificatesPath = @"c:\\Aspose\\Test\\Certificates"
+     StoragePath = @"c:\Aspose\Test\Storage",
+     ImagesPath = @"c:\Aspose\Test\Images",
+     OutputPath = @"c:\Aspose\Test\Output",
+     CertificatesPath = @"c:\Aspose\Test\Certificates"
     };
     // instantiating the conversion handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -216,20 +220,22 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     WordsVerifyTextOptions verifyOptions = new WordsVerifyTextOptions("John Smith");
     verifyOptions.PagesSetup.FirstPage = true;
     //verify document
-    VerificationResult result = handler.Verify("test\_textsigned.docx", verifyOptions);
+    VerificationResult result = handler.Verify("test_textsigned.docx", verifyOptions);
     Console.WriteLine("Signed file verification result: " + result.IsValid);
+    ```
     
     **Verification of Slides Document signed with Text Signature**
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        ImagesPath = @"c:\\Aspose\\Test\\Images",
-        OutputPath = @"c:\\Aspose\\Test\\Output",
-        CertificatesPath = @"c:\\Aspose\\Test\\Certificates"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        ImagesPath = @"c:\Aspose\Test\Images",
+        OutputPath = @"c:\Aspose\Test\Output",
+        CertificatesPath = @"c:\Aspose\Test\Certificates"
     };
     // instantiating the conversion handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -237,8 +243,9 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     SlidesVerifyTextOptions verifyOptions = new SlidesVerifyTextOptions("John Smith");
     verifyOptions.PagesSetup.FirstPage = true;
     //verify document
-    VerificationResult result = handler.Verify("test\_textsigned.Pps", verifyOptions);
+    VerificationResult result = handler.Verify("test_textsigned.Pps", verifyOptions);
     Console.WriteLine("Signed file verification result: " + result.IsValid);
+    ```
     
 *   Extended CellsSignDigitalOptions class with ability to specify Signature Image appearance on Document, added overloaded constructors to specify Certificate source over guid or stream.
     
@@ -246,10 +253,11 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
-    string imagePath = @"c:\\Aspose\\Test\\Images";
-    string certificatesPath = @"c:\\Aspose\\Test\\Certificates";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
+    string imagePath = @"c:\Aspose\Test\Images";
+    string certificatesPath = @"c:\Aspose\Test\Certificates";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -263,7 +271,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     // setup digital signature options
     // FileStream blocks opened file while it is not disposed so, before 
     // using .pfx file for another purposes FileStream should be disposed
-    Stream certificateStream = new FileStream(@"c:\\Aspose\\Test\\Certificates\\SherlockHolmes.pfx",
+    Stream certificateStream = new FileStream(@"c:\Aspose\Test\Certificates\SherlockHolmes.pfx",
         FileMode.Open);
     // setup digital signature options with image appearance
     CellsSignDigitalOptions signOptions = new CellsSignDigitalOptions(certificateStream, "signature.jpg");
@@ -285,15 +293,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     certificateStream.Dispose();
     Console.WriteLine("Signed file path is: " + signedPath);
     
+    ```
+    
 *   Added Opacity property for Image Signature for all supported types
     
     **Set Opacity to Image Signature appearance for Words Documents**
     
     **C#**
     
-    string storagePath = @"c:\\Aspose\\Test\\Storage";
-    string outputPath = @"c:\\Aspose\\Test\\Output";
-    string imagePath = @"c:\\Aspose\\Test\\Images";
+    ```csharp
+    string storagePath = @"c:\Aspose\Test\Storage";
+    string outputPath = @"c:\Aspose\Test\Output";
+    string imagePath = @"c:\Aspose\Test\Images";
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
@@ -315,8 +326,10 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.Opacity = 0.28;
     // sign document
     string signedPath = handler.Sign<string>("test.docx", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Words\_Image\_Rotation\_Opacity" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Words_Image_Rotation_Opacity" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    
+    ```
     
 *   SignImageOptions class was updated with new properties ImageGuid and ImageStream to replace old properties ImageFileName.  
     ImageFileName property of SignImageOptions is marked as Obsolete  

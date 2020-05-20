@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Add text redaction annotation
-
 **Text redaction** annotation fills part of text with black rectangle (used if you want to hide some text) like shown at the picture below.
 
 ![](images/annotation-net/add-text-redaction-annotation_0.png)

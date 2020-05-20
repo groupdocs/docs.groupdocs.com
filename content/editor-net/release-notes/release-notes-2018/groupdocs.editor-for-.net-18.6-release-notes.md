@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Editor for .NET 18.6 Release Notes
-
-This page contains release notes for GroupDocs.Editor for .NET 18.6
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Editor for .NET 18.6{{< /alert >}}
 
 ## Major Features
 
@@ -114,7 +111,7 @@ Improvement
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Editor for .NET 18.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Editor for .NET 18.6. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Editor which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  Now supports Metered license system along with usual licensing system from previous versions. This means that, instead of specifying license file, you can now switch GroupDocs.Editor from trial into licensing mode using Metered keys. Class *Metered* contains two methods and is responsible for setting keys.
     
@@ -122,6 +119,7 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
     
     **C#**
     
+    ```csharp
     /// <summary>
     /// Provides methods to set metered key.
     /// </summary>
@@ -138,6 +136,7 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
         /// <returns>consumption quantity</returns>
         public static decimal GetConsumptionQuantity()
     }
+    ```
     
 2.  The main feature of GroupDocs.Editor 18.6 is a full support of all variety of Cells documents, which includes XLS, XLSX, CSV, ODS and others. The *EditorHandler*class supports new document formats automatically. This means that when you invoke *ToHtml* method with Cells document stream, GroupDocs.Editor will detect the type of the document properly. There are also option classes, which allow to tune up conversion process.  
       
@@ -152,6 +151,7 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
     
     **CellsToHtmlOptions**
     
+    ```csharp
     /// <summary>
     /// Allows to specify custom options for loading documents of all supportable Cells (Excel-compatible) formats
     /// </summary>
@@ -163,12 +163,14 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
      
         public TextLoadOptions TextOptions { get; set; }
     }
+    ```
     
       
     2. *TextLoadOptions* class contains only one string property, which allows to specify a separator (delimited) for text-based Cells documents. This may be a single character (like comma, semicolon, whitespace, tab, or anything else) or even a custom string. GroupDocs.Editor will apply this separator for representing the input text-based Cells document in a proper view.
     
     **TextLoadOptions**
     
+    ```csharp
     /// <summary>
     /// Subclass for loading text-based Cells documents (CSV, Tab-based etc.)
     /// </summary>
@@ -179,12 +181,14 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
         /// </summary>
         public string Separator { get; set; }
     }
+    ```
     
       
     3\. Class CellsSaveOptions is designed for tuning the backward process of conversion from HTML to one of output Cells formats.
     
     **CellsSaveOptions**
     
+    ```csharp
     /// <summary>
     /// Allows to specify custom options for generating and saving MS Excel-compliant documents
     /// </summary>
@@ -194,5 +198,6 @@ This section lists public API changes that were introduced in GroupDocs.Editor f
      
         public CellFormats OutputFormat { get; set; }
     }
+    ```
     
     The *Password* property, if set to not-null and not-empty string, allows to protect the generated output document with the password. The *OutputFormat* property is an enumeration, which provides ability to specify output document format. The default value is XLSX. If output format is a text-based document (like CSV), then password, even being specified, will be ignored.

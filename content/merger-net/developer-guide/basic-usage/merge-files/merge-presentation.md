@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Merge Presentation
-
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** exposes powerful and easy to use API to merge PowerPoint and Open Document presentations of PPT, PPTX, PPS, PPSX and ODP, OTP formats. Presentations can be combined as a whole or on a page by page basis depending on your requirements. The big advantage of GroupDocs.Merger is that presentations can be merged programmatically without any third-party software installed (like Microsoft PowerPoint or Open Office) or manual work.  
 GroupDocs.Merger combines presentations with all their content with no quality and data loss - text formatting, comments, animations, smart arts, shapes, etc.  
   

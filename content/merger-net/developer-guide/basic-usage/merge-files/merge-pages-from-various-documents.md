@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Merge pages from various documents
-
-
 # Merge document pages
 
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to merge the source document with specific document pages from joined document into one resultant document by specifying desired page numbers or page ranges. Joined documents should be of the same format.

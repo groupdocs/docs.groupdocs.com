@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 17.11 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 17.11.
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 17.11.{{< /alert >}}
 
 ## Major Features
 
@@ -122,7 +119,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.11. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.11. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Specifying Render Options while Rotating Documents
 
@@ -285,6 +282,4 @@ This constructor is obsolete and has been removed. Please use overload without '
 
 This interface has been removed. If you need your own implementation for storing file data, please refer to the documentation and implement the ICacheDataHandler interface instead.
 
-Drop support of caching based on render options
-
-Starting from 17.11 caching based on render options feature was disabled. It is recommended to clear your cache folder after update to 17.11 in the case when default implementation of ICacheDataHandler shipped with GroupDocs.Viewer for .NET is used.
+{{< alert style="info" >}}Starting from 17.11 caching based on render options feature was disabled. It is recommended to clear your cache folder after update to 17.11 in the case when default implementation of ICacheDataHandler shipped with GroupDocs.Viewer for .NET is used. {{< /alert >}}

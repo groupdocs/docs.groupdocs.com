@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for embedded object with custom encryption of QR-Code signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides following abilities to search for embedded data objects in QR-code signatures ([QrCodeSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/qrcodesignature)) that were encrypted with custom encryption.  
 
 *   ability to search for embedded custom objects into metadata and decrypt them to original source values
@@ -32,6 +29,7 @@ Here are the steps to search and decrypt previously encrypted text of QR-Code an
 
 This example shows how to specify custom serialization class. This class could be implemented also as Attribute (optional) to specify as class attribute.
 
+```csharp
 // Define class that implements IDataEncryption interface
 // Class could inherits Attribute to use it with class definition
 
@@ -71,36 +69,40 @@ public class CustomXOREncryption : IDataEncryption
         char chTmp;
         for (int index = 0; index < src.Length; ++index)
         {
-            chTmp = src\[index\];
+            chTmp = src[index];
             chTmp = (char)(chTmp ^ this.Key);
             dst.Append(chTmp);
         }
         return dst.ToString();
     }
 }
+```
 
 ## Definition of class
 
 This example shows how to define custom class for serialization.
 
+```csharp
 public class DocumentSignatureData
 {
-    \[Format("SignID")\]
+    [Format("SignID")]
     public string ID { get; set; }
-    \[Format("SAuth")\]
+    [Format("SAuth")]
     public string Author { get; set; }
-    \[Format("SDate", "yyyy-MM-dd")\]
+    [Format("SDate", "yyyy-MM-dd")]
     public DateTime Signed { get; set; }
-    \[Format("SDFact", "N2")\]
+    [Format("SDFact", "N2")]
     public decimal DataFactor { get; set; }
-    \[SkipSerialization\]
+    [SkipSerialization]
     public string Comments { get; set; }
 }
+```
 
 ## Search for embedded custom objects in QR-code signatures
 
 This example shows how to decrypt previously embedded encrypted custom objects into [QrCodeSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/qrcodesignature) contains method [GetData](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/qrcodesignature/methods/getdata/_1) to retrieve object
 
+```csharp
 // instantiating the signature object
 using (Signature signature = new Signature("signed.pdf"))
 {
@@ -125,6 +127,7 @@ using (Signature signature = new Signature("signed.pdf"))
         }
     }
 }
+```
 
 ## More resources
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Generate document pages preview
-
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) allows to generate page previews for source, target and resultant document(s) using [GeneratePreview](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/document/methods/generatepreview)method of a [Document](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/document)class.
 
 [PreviewOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions)class is used to manage preview generation process - specify desired page numbers, image format etc.
@@ -35,7 +32,7 @@ The following are the steps to generate document preview with GroupDocs.Compari
         
     *   custom size of preview images (if needed).   
         
-        Stream that were created by [CreatePageStream](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/fields/createpagestream) delegate will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument [ReleasePageStream](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/fields/releasepagestream) to clean up resources.
+        {{< alert style="info" >}}Stream that were created by CreatePageStream delegate will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument ReleasePageStream to clean up resources.{{< /alert >}}
         
           
         
@@ -134,7 +131,7 @@ using (Comparer comparer = new Comparer("source.pptx"))
 
 ```
 
-NOTE: This feature is not supported for WordProcessing documents yet.
+{{< alert style="info" >}}NOTE: This feature is not supported for WordProcessing documents yet.{{< /alert >}}
 
 ## Get page previews with manual resource cleaning
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Comparison
-
 # Comparison 
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) provides many ways to customize changes detection algorithm logic and produced results via changing [CompareOptions](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) class properties.   

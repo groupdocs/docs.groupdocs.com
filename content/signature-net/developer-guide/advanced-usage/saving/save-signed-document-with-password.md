@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Save signed document with password
-
 [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) class supports saving signed document with password protection. This ability is supported over [Password](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/saveoptions/properties/password) property of [SaveOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/saveoptions) class that should be passed to [Sign](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/sign) method.
 
 Here are the steps to protect signed document with password with [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net):
@@ -27,6 +24,7 @@ Here are the steps to protect signed document with password with [**GroupDocs.Si
 
 Following example demonstrates how to save signed document with password.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // create QRCode option with predefined QRCode text
@@ -46,6 +44,7 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("SignedProtected.pdf", signOptions, saveOptions);
 }
+```
 
 ## More resources
 

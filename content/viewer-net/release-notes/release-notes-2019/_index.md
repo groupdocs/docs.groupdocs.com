@@ -9,7 +9,4 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Release Notes - 2019
-
 #### Articles in this section

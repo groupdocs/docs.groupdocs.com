@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Deleting Text signatures - advanced
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [TextSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/textsignature) class to manipulate text signatures and delete them from the documents over [Delete](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/delete) method.  
 Please be aware that[Delete](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/delete) method modifies the same document that was passed to constructor of [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) class.
 
@@ -43,6 +40,7 @@ Here are the alternative steps to delete Text signature from the document with G
 
 This example shows how to delete Text signature that was found using [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1) method.
 
+```csharp
 // initialize Signature instance
 using (Signature signature = new Signature("signed.pdf"))
 {
@@ -74,16 +72,18 @@ using (Signature signature = new Signature("signed.pdf"))
         Console.WriteLine($"Signature# Id:{temp.SignatureId}, Location: {temp.Left}x{temp.Top}. Size: {temp.Width}x{temp.Height}");
     }
 }
+```
 
 ## Delete Text signature from the document by known signature Identifier  
 
 This example shows how to delete Text signature in the document by known signature Id (that was obtained by [Search](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/search/_1) or [Sign](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature/methods/sign) method previously).
 
+```csharp
 // initialize Signature instance
 using (Signature signature = new Signature("signed.xlsx"))
 {
     // read from some data source signature Id value
-    string\[\] signatureIdList = new string\[\]
+    string[] signatureIdList = new string[]
     {
         "1dd21cf3-b904-4da9-9413-1ff1dab51974",
         "9e386726-a773-4971-b2fc-eaadfce65ffd"
@@ -108,6 +108,7 @@ using (Signature signature = new Signature("signed.xlsx"))
         Console.WriteLine($"Signature# Id:{temp.SignatureId}, Location: {temp.Left}x{temp.Top}. Size: {temp.Width}x{temp.Height}");
     }
 }
+```
 
 ## More resources
 

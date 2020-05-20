@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Extract annotations from document
-
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides an ability to extract annotations from document and serializing to XML format.  
 To achieve this you should:
 

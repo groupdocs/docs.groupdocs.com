@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 18.1 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 18.1
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 18.1{{< /alert >}}
 
 ## Major Features
 
@@ -118,12 +115,13 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.1. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
  Added new namespace **GroupDocs.Signature.Domain.Appearances** that will contain additional appearance options.
 
 1.  New class  **AdditionalOptions** was added to specify base class for additional appearance options. It will be used for additional appearances features for Signature object. We plan to use for Text Shadow features, for gradient backgrounds in future etc.
     
+    ```csharp
     /// <summary>
     /// Represents base class for signatures appearance options.
     /// </summary>
@@ -137,25 +135,31 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             return this.MemberwiseClone();
         }
     }
+    ```
     
     Class **SignOptions** was updated with **AdditionalOptions** property
     
+    ```csharp
     /// <summary>
     /// Additional signature options.
     /// </summary>
     public List<AdditionalOption> AdditionalOptions { get; private set; }
+    ```
     
     New List<**SignatureExtension**\> Extensions was added in  to provide ability for specifying additional appearance options for various types of signatures same special features to extend signature.
     
+    ```csharp
     /// <summary>
     /// Signature Extensions
     /// </summary>
     public List<SignatureExtension> Extensions { get; private set; }
+    ```
     
 2.  Added new class **TextShadow**. It's recommended for using with text as image signature for all supported document types, also with simple text signature and text signature as watermark for Cells (.xslx) and Slides (.pptx). Simple text signature for Words (.docx) is recommended too, but has limited functionality.
     
     **TextShadow**
     
+    ```csharp
     /// <summary>
     /// Represents text shadow properties for text signatures.
     /// The result may vary depending on the signature type and document format.
@@ -199,16 +203,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         {
             Initialization();
         }
+    ```
     
     Here's example of using
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -232,8 +238,9 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
     // sign document
     string signedPath = handler.Sign<string>("test.pptx", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "AdditionalOptions\_TextShadow" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "AdditionalOptions_TextShadow" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 3.  Process Events Arguments were extended with additional properties to specify Total Signatures count and current processed Signature quantity. Following example demonstrates using of these properties on Signature method. Same arguments can be used for Verification process. New properties **TotalSignatures** and **ProcessedSignature** were added to **ProcessCompleteEventArgs**, **ProcessProgressEventArgs **and **ProcessStartEventArgs**
     
@@ -241,29 +248,34 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **TotalSignatures**
     
+    ```csharp
     /// <summary>
     /// Represents total quantity of signatures to be processed.
     /// </summary>
     public int TotalSignatures { get; set; }
+    ```
     
     ProcessedSignatures added to provide ability for representation quantity of processed signatures.
     
     **ProcessedSignatures**
     
+    ```csharp
     /// <summary>
     /// Represents quantity of processed signatures.
     /// </summary>
     public int ProcessedSignatures { get; set; }
+    ```
     
     ##### Working with Signature process Events
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -273,7 +285,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     signOptions.Height = 100;
     signOptions.Width = 100;
     signOptions.SignAllPages = true;
-    SaveOptions saveOptions = new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells\_Events" };
+    SaveOptions saveOptions = new SaveOptions { OutputType = OutputType.String, OutputFileName = "Cells_Events" };
     handler.SignatureStarted += delegate(object sender, ProcessStartEventArgs args)
     {
         Console.WriteLine("Processing of {0} signatures for {1} started at {2}", args.TotalSignatures, args.Guid, args.Started.ToString("f"));
@@ -288,6 +300,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     };
     // sign document
     string signedPath = handler.Sign<string>("pages12Images.pdf", signOptions, saveOptions);
+    ```
     
     Methods **GetDocumentDescription** of **SignatureHandler** class was improved when Document provided by URL
     
@@ -295,11 +308,12 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **C#**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -314,6 +328,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     Console.WriteLine("Password to open file is " + docInfo.Password);
     Console.WriteLine("File size in bytes is " + docInfo.Size);
     Console.WriteLine("Width of first page is " + docInfo.Pages.FirstOrDefault().Width); 
+    ```
     
       
     
@@ -321,6 +336,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **SignatureExtension**
     
+    ```csharp
     //// <summary>
     /// Represents base class for signatures extensions.
     /// </summary>
@@ -334,3 +350,4 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             return this.MemberwiseClone();
         }
     }
+    ```

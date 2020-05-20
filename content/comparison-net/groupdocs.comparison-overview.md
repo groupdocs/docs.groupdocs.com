@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Comparison Overview
-
 ## What Is GroupDocs.Comparison?
 
 GroupDocs.Comparison is a flexible and feature rich library which allows you to compare documents for all popular document formats such as:

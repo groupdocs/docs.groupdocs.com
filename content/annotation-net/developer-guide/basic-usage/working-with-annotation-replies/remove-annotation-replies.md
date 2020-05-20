@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Remove annotation replies
-
 There is a quick and convenient way to remove specific or even all replies for some document annotation using **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net)** API. It is as easy as removing items from generic [List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) collection. In common case you have to follow these steps to delete replies:
 
 *   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) objectwith input document path or stream with instantiated [LoadOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/loadoptions) with [ImportAnnotations](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions/properties/importannotations) property set to *true*;

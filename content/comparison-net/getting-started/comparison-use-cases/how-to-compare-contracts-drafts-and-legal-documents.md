@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# How to compare contracts, drafts and legal documents
-
 An ordinary employee is often faced with the need to compare two versions of the same document. For example, upon receipt of a signed version of an agreement, it is important to ensure that the counterparty has not made major changes affecting the terms of the transaction. And on the next round of approval of the draft document within the company, you only need to look at the changed sections so as not to waste time re-reading the entire text.  
   
 The "**Document Comparison**" solution automatically compares two versions and generates a report with convenient visualization of differences. As a result, labor costs for comparing documents are reduced and the likelihood of error due to the human factor is reduced.

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Update document password
-
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net) **allows to update password from password-protected document. The resultant document will have new password.  
 Here are the steps to update document password:
 

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 17.1.0 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 17.1.0.
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 17.1.0.{{< /alert >}}
 
 ## Major Features
 
@@ -123,7 +120,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.1.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 17.1.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Implement setting to prevent glyphs grouping when rendering pdf documents
 
@@ -204,9 +201,7 @@ To configurate ViewerConfig class public properties you will have to follow this
 4.  If you want to add font directory to FontDirectories collection property, create <fontDirectories> section inside <groupdocs.viewer> and append an <add> configuration element with the required path attribute for each font directory.
 5.  Initialize ViewerConfig object using parameterless constructor.
 
-Please note that configuration files are using camel case (lower camel case), so section names, element names and key names should obey this rule. Therefore, element name for the StoragePath property of ViewerConfig class should be storagePath.
-
-Please also note that in the app.config or web.config file, <configSections> must be the first thing to appear in the <configuration> section, otherwise an error will be thrown at runtime.
+{{< alert style="info" >}}Please note that configuration files are using camel case (lower camel case), so section names, element names and key names should obey this rule. Therefore, element name for the StoragePath property of ViewerConfig class should be storagePath.{{< /alert >}}{{< alert style="info" >}}Please also note that in the app.config or web.config file, <configSections> must be the first thing to appear in the <configuration> section, otherwise an error will be thrown at runtime.{{< /alert >}}
 
 **XML**
 

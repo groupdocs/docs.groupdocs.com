@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Working with formats
-
 > This article describes classes and interfaces of [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net), which represent all supportable family formats and individual formats.
 
 GroupDocs.Editor supports different document formats, all of them are conditionally divided onto several family formats:

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Merger for .NET 19.7 Release Notes
-
-This page contains release notes for GroupDocs.Merger for .NET 19.7
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Merger for .NET 19.7{{< /alert >}}
 
 ## Major Features
 
@@ -50,12 +47,13 @@ New Feature
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Merger for .NET 19.7. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Merger which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Merger for .NET 19.7. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Merger which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  The **DocumentHandler** class was extended with a new **GetDocumentInfo** method
     
     **GetDocumentInfo method**
     
+    ```csharp
     /// <summary>
     /// Get information about document.
     /// </summary>
@@ -70,16 +68,19 @@ This section lists public API changes that were introduced in GroupDocs.Merger f
     /// Get information about document.
     /// </summary>
     public DocumentInfo GetDocumentInfo(Stream stream, Options options)
+    ```
     
     Following example demonstrates how to use a new **GetDocumentInfo** method:
     
     **C#**
     
+    ```csharp
     // Variables.
-    string sourceFile = "C:\\testfiles\\filename";
+    string sourceFile = "C:\testfiles\filename";
      
     // Preparing.
     Stream documentExample = new FileStream(sourceFile, FileMode.Open);
      
     // Main method.
     DocumentInfo resultInfo = new DocumentHandler().GetDocumentInfo(documentExample);
+    ```

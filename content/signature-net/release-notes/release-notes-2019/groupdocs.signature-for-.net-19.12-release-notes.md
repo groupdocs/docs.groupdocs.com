@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 19.12 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 19.12
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 19.12{{< /alert >}}
 
 ## Major Features
 
@@ -151,7 +148,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.12. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 19.12. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **GroupDocs.Signature.Domain.BarcodeSignature**
     
@@ -1000,6 +997,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         
         **Updated overload method Sign definition**
         
+        ```csharp
         public SignResult Sign(Stream document, SignOptions signOptions);
         
         public SignResult Sign(Stream document, SignOptions signOptions, SaveOptions saveOptions);
@@ -1015,20 +1013,25 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public SignResult Sign(string filePath, List<SignOptions> signOptionsList);
         
         public SignResult Sign(string filePath, List<SignOptions> signOptionsList, SaveOptions saveOptions);
+        ```
         
     *   added new overload method **Update **that expects one signature or list of signatures to update in the document. Method with one signature argument returns Boolean value as indicator if process went successfully. Method with list of signatures returns instance of **UpdateResult**. Each of passed signature should be identified with existing signatures in the document. This identification could be provided in two ways. First way when signature was searched right pass to **Update** method by **Search** method. See first example 2 *How to update signatures after Search*. The second way works over unique signature identifier **SignatureId**. This **SignatureId** could be obtained after **Sign** result as unique signature identifier stored at document metadata layer. The very important thing here that this method applies changes in same document file or stream. See second example  *How to update signatures by known Id*
         
         **New overload method Update definition**
         
+        ```csharp
         public bool Update(BaseSignature signature);
         
         public UpdateResult Update(List<BaseSignature> signatures);
+        ```
         
     *   added new overload method **Delete **that that expects one signature or list of signatures to delete from the document. Method with one signature argument returns Boolean value as indicator if process went successfully. Method with list of signatures returns instance of **DeleteResult**. Same as method **Update** each of passed signature should be identified with existing signatures in the document. This identification could be provided by two ways. First way when signature was searched right pass to **Update** method by **Search** method. See first example *How to update signatures after Search*. The second way works over unique signature identifier **SignatureId**. This **SignatureId** could be obtained after **Sign** result as unique signature identifier stored at document metadata layer. The very important thing here that this method applies changes in same document file or stream.
         
+        ```csharp
         public bool Delete(BaseSignature signature);
         
         public DeleteResult Delete(List<BaseSignature> signatures);
+        ```
         
     
     **Examples:**

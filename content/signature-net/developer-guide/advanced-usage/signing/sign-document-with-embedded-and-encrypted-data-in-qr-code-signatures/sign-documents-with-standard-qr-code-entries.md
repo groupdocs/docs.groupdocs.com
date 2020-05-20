@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Sign documents with standard QR-code entries
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to embed into QR-code signature standard entries like email, contact v-card, address etc. This feature supports standard QR-code representation of entries. At this moment following standard QR-code entries are supported
 
 *   [Email](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/email) entry that allows to specify in QR-code standard email information with recipient, subject and body.
@@ -38,6 +35,7 @@ Here are the steps to embed standard entry into QR-code with GroupDocs.Signature
 
 This example shows how to esign PDF with Email QR-code object.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // create Email object
@@ -66,10 +64,14 @@ using (Signature signature = new Signature("sample.pdf"))
     signature.Sign("output.pdf", options);
 }
 
+
+```
+
 ## Sign PDF with Address inside the QR-Code image
 
 This example shows how to esign PDF with address inside the QR-code image.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // create Address object
@@ -97,11 +99,13 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("output.pdf", options);
 }
+```
 
 ## Sign PDF with V-Card (VCF) information in the QR-Code image
 
 This example shows how to esign PDF with V-Card inside the QR-code image.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // create VCard object
@@ -144,11 +148,13 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("output.pdf", options);
 }
+```
 
 ## Sign PDF with Me-Card information in the QR-Code image
 
 This example shows how to esign PDF with Me-Card inside the QR-code image.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // create MeCard object
@@ -189,11 +195,13 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("output.pdf", options);
 }
+```
 
 ## Sign PDF with EPC payment in the QR-Code image
 
 This example shows how to esign PDF with EPC / SEPA payment inside the QR-code image.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // create EPC object
@@ -223,11 +231,13 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("output.pdf", options);
 }
+```
 
 ## Sign PDF with Event information in the QR-Code image
 
 This example shows how to esign PDF with event data inside the QR-code image.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // create Event object
@@ -255,6 +265,7 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("output.pdf", options);
 }
+```
 
 ## More resources
 

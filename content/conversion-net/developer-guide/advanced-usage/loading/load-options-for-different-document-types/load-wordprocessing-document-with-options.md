@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# Load WordProcessing document with options
-
-
 # Load and convert Word document with options
 
 [**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/net) provides [WordProcessingLoadOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.load/wordprocessingloadoptions)to give you control over how original Microsoft Word document will be converted. The following options could be set: 

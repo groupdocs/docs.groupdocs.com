@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Obtain document form fields and signatures information
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) allows to get extended document information which includes:
 
 *   list of all existing [Form Field Signatures](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/formfieldsignature) in the document. This list will contain all Form Fields elements in the document no matter if these components were added by GroupDocs Signature or any other third party software. Please be aware only Pdf and Word processing documents support these elements.

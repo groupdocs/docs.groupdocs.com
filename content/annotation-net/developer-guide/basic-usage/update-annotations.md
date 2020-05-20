@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Update annotations
-
 Sometimes it's needed to change different annotation properties - move annotation to another position within document, change annotation size, color, text or even select different annotation type. You can easily do this using [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net)by specifying annotation [Id property](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/id) (which is unique for each annotation object within document) and other updated annotation properties. Another way is to update multiple annotations at once - you just need to provide collection of updated annotation objects which will replace all existing document annotations.  
 
 *   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) objectwith input document path or stream with instantiated [LoadOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/loadoptions) with ImportAnnotations = true;
@@ -25,6 +22,7 @@ Sometimes it's needed to change different annotation properties - move annotatio
 
 The following code demonstrates how to update annotations:
 
+```csharp
 using (Annotator annotator = new Annotator("input.pdf"))
             {
                 AreaAnnotation original = new AreaAnnotation
@@ -83,6 +81,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
                 annotator.Update(updated);
                 annotator.Save("result.pdf");
             }
+```
 
 Also annotation could be updated using Id. Note, that for using this case is necessary need to set annotation Id property. It’s need because GroupDocs.Annotation must know which annotation must be changed. Or you can pass list of annotations. In that case all previous annotations will be replaced by new list.
 

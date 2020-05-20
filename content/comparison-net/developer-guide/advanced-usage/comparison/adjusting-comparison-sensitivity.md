@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Adjusting comparison sensitivity
-
-
 # Adjusting comparison sensitivity
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) allows to adjust comparison sensitivity to achieve the necessary balance between document comparison speed and accuracy. Possible comparison sensitivity values range is from **0** to **100**.  

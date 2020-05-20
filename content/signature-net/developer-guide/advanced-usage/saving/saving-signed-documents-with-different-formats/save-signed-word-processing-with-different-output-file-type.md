@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Save signed Word Processing with different output file type
-
-
   
 
 # Save signed Word documents with different output file type
@@ -32,6 +28,7 @@ Here are the steps to save signed Word Processing document to different output t
 
 Following example demonstrates how to save signed Word processing document with different output type
 
+```csharp
 using (Signature signature = new Signature("sample.docx"))
 {
     // create QRCode option with predefined QRCode text
@@ -51,6 +48,7 @@ using (Signature signature = new Signature("sample.docx"))
     // sign document to file
     signature.Sign("SignedDocx.odt", signOptions, saveOptions);
 }
+```
 
 ## More resources
 

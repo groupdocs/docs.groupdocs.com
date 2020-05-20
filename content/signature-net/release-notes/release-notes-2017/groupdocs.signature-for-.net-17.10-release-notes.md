@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 17.10 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 17.10
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 17.10{{< /alert >}}
 
 ## Major Features
 
@@ -122,12 +119,13 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 17.10. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  Added new enumeration type **StretchMode** with values that specify different options to stretch Signature Area across page width, height or both.
 
 **StretchMode enumeration**
 
+```csharp
 public enum StretchMode
     {
         /// <summary>Default value. No stretch mode will be applied.</summary>
@@ -139,6 +137,7 @@ public enum StretchMode
         /// <summary>Represents a dash-dot-dot line. Margin property will be used to apply required offfset values.</summary>
         PageArea = 3,
     }
+```
 
 Interface IRectangle was updated with property** StretchMode Stretch { get; set; }**
 
@@ -148,10 +147,11 @@ See example 
 
 **Specify different Stretch mode to locate Signature Area along page width or height**
 
-string storagePath = @"c:\\Aspose\\Test\\Storage";
-string outputPath = @"c:\\Aspose\\Test\\Output";
-string imagePath = @"c:\\Aspose\\Test\\Images";
-string certificatesPath = @"c:\\Aspose\\Test\\Certificates";
+```csharp
+string storagePath = @"c:\Aspose\Test\Storage";
+string outputPath = @"c:\Aspose\Test\Output";
+string imagePath = @"c:\Aspose\Test\Images";
+string certificatesPath = @"c:\Aspose\Test\Certificates";
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
@@ -197,14 +197,16 @@ string signedPath = handler.Sign<string>("test.pdf", collection,
     new SaveOptions
     {
         OutputType = OutputType.String,
-        OutputFileName = "OtherOperations\_StretchingOnDocumentPage"
+        OutputFileName = "OtherOperations_StretchingOnDocumentPage"
     });
 Console.WriteLine("Signed file path is: " + signedPath);
+```
 
 2\. Introduced new Signature appearance class **DigitalSignatureAppearance**. This class describes alternative Digital Signature appearance on Office documents (Words and Cells) as rectangle area with background images and horizontal lines with few additional messages
 
 **DigitalSignatureAppearance class**
 
+```csharp
 namespace GroupDocs.Signature.Options
 {
     public sealed class DigitalSignatureAppearance : SignatureAppearance
@@ -223,6 +225,7 @@ namespace GroupDocs.Signature.Options
         public string Email { get; set; }
     }
 }
+```
 
 See examples   
 Signing Words Documents with digital certificates  
@@ -234,20 +237,15 @@ Export documents as image
 
 ## Specify different Stretch mode to locate Signature Area along page width or height
 
-New Stretch property is supported starting from version 17.10
-
-When appearance of Signature should be located along page width or height you can use Stretch property of any Signature options type.  
-Enumeration has following values  
-PageWdith - the width of Signature will be defined from Page width and specified Margin.Left and Margin.Right values.  
-PageHeight - the height of Signature will be defined from Page height and specified Margin.Top and Margin.Bottom values.  
-PageArea - the width and height of Signature will be defined from Page width and height and specified Margin values.
+{{< alert style="info" >}}New Stretch property is supported starting from version 17.10{{< /alert >}}{{< alert style="info" >}}When appearance of Signature should be located along page width or height you can use Stretch property of any Signature options type.Enumeration has following valuesPageWdith - the width of Signature will be defined from Page width and specified Margin.Left and Margin.Right values.PageHeight - the height of Signature will be defined from Page height and specified Margin.Top and Margin.Bottom values.PageArea - the width and height of Signature will be defined from Page width and height and specified Margin values.{{< /alert >}}
 
 **C#**
 
-string storagePath = @"c:\\Aspose\\Test\\Storage";
-string outputPath = @"c:\\Aspose\\Test\\Output";
-string imagePath = @"c:\\Aspose\\Test\\Images";
-string certificatesPath = @"c:\\Aspose\\Test\\Certificates";
+```csharp
+string storagePath = @"c:\Aspose\Test\Storage";
+string outputPath = @"c:\Aspose\Test\Output";
+string imagePath = @"c:\Aspose\Test\Images";
+string certificatesPath = @"c:\Aspose\Test\Certificates";
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
@@ -292,29 +290,31 @@ string signedPath = handler.Sign<string>("test.pdf", collection,
 	new SaveOptions
 	{
 		OutputType = OutputType.String,
-		OutputFileName = "OtherOperations\_StretchingOnDocumentPage"
+		OutputFileName = "OtherOperations_StretchingOnDocumentPage"
 	});
 Console.WriteLine("Signed file path is: " + signedPath);
+```
 
 ## Digital signing Words Documents with Signature Line
 
-This feature is supported starting from version 17.10
+{{< alert style="info" >}}This feature is supported starting from version 17.10{{< /alert >}}
 
 **C#**
 
+```csharp
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
-	StoragePath = @"c:\\Aspose\\Test\\Storage",
-	OutputPath = @"c:\\Aspose\\Test\\Output",
-	ImagesPath = @"c:\\Aspose\\Test\\Images",
-	CertificatesPath = @"c:\\Aspose\\Test\\Certificates"
+	StoragePath = @"c:\Aspose\Test\Storage",
+	OutputPath = @"c:\Aspose\Test\Output",
+	ImagesPath = @"c:\Aspose\Test\Images",
+	CertificatesPath = @"c:\Aspose\Test\Certificates"
 };
 // instantiating the conversion handler
 SignatureHandler handler = new SignatureHandler(signConfig);
 // setup digital signature options with image appearance
 WordsSignDigitalOptions signOptions =
-	new WordsSignDigitalOptions(@"c:\\Aspose\\Test\\Certificates\\SherlockHolmes.pfx", "signature.jpg");
+	new WordsSignDigitalOptions(@"c:\Aspose\Test\Certificates\SherlockHolmes.pfx", "signature.jpg");
 signOptions.Signature.Comments = "Test comment";
 signOptions.Signature.SignTime = DateTime.Now;
 signOptions.Password = "1234567890";
@@ -326,18 +326,20 @@ signOptions.Appearance = new DigitalSignatureAppearance("John Smith", "Title", "
 string signedPath = handler.Sign<string>("test.docx", signOptions,
 	new SaveOptions { OutputType = OutputType.String, OutputFileName = "SignatureLineWords" });
 Console.WriteLine("Signed file path is: " + signedPath);
+```
 
-This feature is supported starting from version 17.10
+{{< alert style="info" >}}This feature is supported starting from version 17.10{{< /alert >}}
 
 ## Export Cells document as image
 
 **C#**
 
+```csharp
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
-	StoragePath = @"c:\\Aspose\\Test\\Storage",
-	OutputPath = @"c:\\Aspose\\Test\\Output"
+	StoragePath = @"c:\Aspose\Test\Storage",
+	OutputPath = @"c:\Aspose\Test\Output"
 };
 // instantiating the conversion handler
 SignatureHandler handler = new SignatureHandler(signConfig);
@@ -362,18 +364,20 @@ exSaveOptions.PageColumns = 3;
 // sign document
 string signedPath = handler.Sign<string>("pages15.xlsx", signOptions, exSaveOptions);
 Console.WriteLine("Signed file path is: " + signedPath);
+```
 
-This feature is supported starting from version 17.10
+{{< alert style="info" >}}This feature is supported starting from version 17.10{{< /alert >}}
 
 ## Export Cells Document as multi-page Tiff image
 
 **C#**
 
+```csharp
 // setup Signature configuration
 SignatureConfig signConfig = new SignatureConfig
 {
-	StoragePath = @"c:\\Aspose\\Test\\Storage",
-	OutputPath = @"c:\\Aspose\\Test\\Output"
+	StoragePath = @"c:\Aspose\Test\Storage",
+	OutputPath = @"c:\Aspose\Test\Output"
 };
 // instantiating the conversion handler
 SignatureHandler handler = new SignatureHandler(signConfig);
@@ -394,3 +398,4 @@ exSaveOptions.TiffMultipage = true;
 // sign document
 string signedPath = handler.Sign<string>("pages15.xlsx", signOptions, exSaveOptions);
 Console.WriteLine("Signed file path is: " + signedPath);
+```

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Load document from Stream
-
 There might be the case when your document is not physically located on the disk. Instead, you have the document in the form of a stream. In this case, to avoid the overhead of saving stream as a file on disk, [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) enables you to work with document from streams directly. Please be aware that [Signature](https://apireference.groupdocs.com/net/signature/groupdocs.signature/signature) object does not dispose passed stream.
 
 The following are the steps to be followed:

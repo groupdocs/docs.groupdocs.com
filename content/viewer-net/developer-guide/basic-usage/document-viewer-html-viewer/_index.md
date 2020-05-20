@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Document viewer - HTML Viewer
-
-
   
 
 # Document viewer - HTML Viewer
@@ -50,11 +46,13 @@ With GroupDocs.Viewer for .NET API HTML rendering became simple and intuitive.
 
 The following code shows how to render document to HTML with embedded resources.  
 
+```csharp
 using (Viewer viewer = new Viewer("sample.docx"))
 {
    HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
    viewer.View(viewOptions);
 }
+```
 
   
 
@@ -62,13 +60,15 @@ using (Viewer viewer = new Viewer("sample.docx"))
 
 The following code shows how to render document to HTML with external resources.  
 
+```csharp
 using (Viewer viewer = new Viewer("sample.docx"))
 {
 	HtmlViewOptions viewOptions = HtmlViewOptions.ForExternalResources();
 	viewer.View(viewOptions);
 }
+```
 
-GroupDocs.Vieweralso provides an abilityto customize rendering to HTML by setting additional options. To learn more about caching customization please refer to the following guides:
+{{< alert style="info" >}}GroupDocs.Viewer also provides an ability to customize rendering to HTML by setting additional options. To learn more about caching customization please refer to the following guides:HTML Viewer - Exclude fontsHTML Viewer - Minify HTMLHTML Viewer - Responsive layout{{< /alert >}}
 
 ## More resources
 

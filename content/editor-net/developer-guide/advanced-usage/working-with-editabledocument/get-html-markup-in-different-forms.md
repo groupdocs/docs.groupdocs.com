@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Get HTML markup in different forms
-
 > This demonstration shows how to open input document, convert it to intermediate [EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument), and get HTML markup in different forms depending on client requirements.
 
 #### Preparations
@@ -41,8 +38,10 @@ string htmlContent = document.GetContent();
 
 If document has external resources (stylesheets, fonts, images), they are referenced via different HTML elements: stylesheets are specified through LINK elements, while images — through IMG. When using the `[GetContent()](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument/methods/getcontent)` method, such external resources will be referenced by external links. For example:
 
+```csharp
 <link href="stylesheet.css" rel="stylesheet"/>
 <IMG src="image.png"/"> 
+```
 
 Quite often on the web-server, where such HTML will be edited, resources are processed by specific HTTP handler. In such cases it is required to adjust paths to such endpoints. More advanced overload of the `[GetContent()](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument/methods/getcontent)` method can help:
 
@@ -54,8 +53,10 @@ string prefixedHtmlContent = document.GetContent(externalImagesPrefix, externalC
 
 In the example above specified prefixes will be added to every external link in the document's markup. For example, with the code above link will be the next:
 
+```csharp
 <link href="http://www.mywebsite.com/css/id=stylesheet.css" rel="stylesheet"/>
 <IMG src="http://www.mywebsite.com/css/id=image.png"/"> 
+```
 
 #### Getting HTML BODY content
 

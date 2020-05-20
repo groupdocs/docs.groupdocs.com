@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Get supported file types
-
 **[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to get the list of all [supported file types](https://docs.groupdocs.com/display/mergernet/Supported+Document+Types) by following the below steps:
 
 *   Call [GetSupportedFileTypes](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain/filetype/methods/getsupportedfiletypes)of [FileType](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain/filetype) class;

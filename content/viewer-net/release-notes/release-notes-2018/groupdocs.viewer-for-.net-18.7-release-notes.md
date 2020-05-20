@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 18.7 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 18.7.
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 18.7.{{< /alert >}}
 
 ## Major Features
 
@@ -86,9 +83,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 18.7. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
-
-**IMPORTANT:** Please note that due to the change in the structure of *GroupDocs.Viewer.Domain.AttachmentBase* class, it is necessary to clear the cache after upgrading to the version 18.7 if you were using cache based rendering before and working with document attachments (that may exist in email and PDF document formats)
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 18.7. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}{{< alert style="warning" >}}IMPORTANT: Please note that due to the change in the structure of GroupDocs.Viewer.Domain.AttachmentBase class, it is necessary to clear the cache after upgrading to the version 18.7 if you were using cache based rendering before and working with document attachments (that may exist in email and PDF document formats){{< /alert >}}
 
 ### List of Changes in v18.7
 

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Viewer for .NET 20.1 Release Notes
-
-This page contains release notes for GroupDocs.Viewer for .NET 20.1
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 20.1{{< /alert >}}
 
 ## Major Features
 
@@ -63,7 +60,7 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-Starting from this version the Legacy API (GroupDocs.Viewer.Legacy) is not available.
+{{< alert style="danger" >}}Starting from this version the Legacy API (GroupDocs.Viewer.Legacy) is not available.{{< /alert >}}
 
 ### Public API Changes
 

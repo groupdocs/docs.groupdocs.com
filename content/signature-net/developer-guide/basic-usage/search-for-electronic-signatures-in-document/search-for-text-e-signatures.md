@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Search for Text e-signatures
-
-
   
 
 # Search for Text e-signatures
@@ -30,6 +26,7 @@ Here are the steps to search for Text e-signatures using GroupDocs.Signature AP
 
 This example shows how to search for Text e-signature in the document.
 
+```csharp
 using (Signature signature = new Signature(sample.pdf))
 {
     // setup search options
@@ -40,7 +37,7 @@ using (Signature signature = new Signature(sample.pdf))
         // specify as true to search all pages of a document
         AllPages = true,
         // specify text to search
-        Text = "JS\_",
+        Text = "JS_",
         // specify text math type
         MatchType = TextMatchType.Contains
     };
@@ -56,6 +53,7 @@ using (Signature signature = new Signature(sample.pdf))
         }
     }
 }
+```
 
 ## More resources
 

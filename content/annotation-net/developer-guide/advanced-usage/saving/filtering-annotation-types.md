@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# Filtering annotation types
-
-
 # Filter annotation types during saving document
 
 This feature can be using when need to save only specific annotation types and ignore others.

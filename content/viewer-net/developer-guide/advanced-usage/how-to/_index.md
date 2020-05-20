@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# How To
-
   
 This article contains use-cases of GroupDocs.Viewer in your .NET applications.
 

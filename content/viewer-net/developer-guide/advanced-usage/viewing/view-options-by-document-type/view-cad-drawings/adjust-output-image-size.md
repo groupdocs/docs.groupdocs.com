@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Adjust output image size
-
 ![](images/viewer-net/adjust-output-image-size_0.jpg)
 
 When CAD drawings are rendered, the size of the render result is adjusted by API automatically, the biggest side (width or height depending on which one is bigger) is set 2000 px, another side is set value based on width-to-length ratio. You may adjust the size of resulting document by setting [CadOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/cadoptions) as show in example.
@@ -32,7 +29,7 @@ When rendering CAD drawings GroupDocs.Viewer provides following options:
 2.  When rendering by width and height ([CadOptions.ForRenderingByWidthAndHeigh](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/cadoptions/methods/forrenderingbywidthandheight)*) - *the resulting image will have the same size in pixels.
 3.  When rendering by scale factory ([CadOptions.ForRenderingByScaleFactor](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/cadoptions/methods/forrenderingbyscalefactor)) - the accepted value *ScaleFactor* type is float, values higher than 1 will enlarge resulting image and values between 0 and 1 will make image smaller. If the render result image size is equal to 200 px to 200 px, when *ScaleFactor* is equal to 1, then setting this value to 0.1 will provide image with 20 px to 20 px dimension.
 
-The same logic is applied when rendering to JPG/PNG/HTML. When rendering to PDF, generally only height to width ratio matters.
+{{< alert style="info" >}}The same logic is applied when rendering to JPG/PNG/HTML. When rendering to PDF, generally only height to width ratio matters. {{< /alert >}}
 
 ## How sizing works for Sheets and Layouts
 

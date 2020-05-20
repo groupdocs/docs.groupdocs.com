@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Generate document pages preview
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [PreviewOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/previewoptions) class to specify different options to manage document pages preview generation process.  
   
 Here are the steps to generate document preview with GroupDocs.Signature:
@@ -28,7 +25,7 @@ Here are the steps to generate document preview with GroupDocs.Signature:
         
     *   custom size of preview images (if needed).   
         
-        Stream that were created by [CreatePageStream](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/createpagestream) delegate will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument [ReleaseStream](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/releasepagestream) to clean up resources.  
+        {{< alert style="info" >}}Stream that were created by CreatePageStream delegate will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument ReleaseStream to clean up resources.{{< /alert >}}
         
           
         
@@ -39,6 +36,7 @@ Here are the steps to generate document preview with GroupDocs.Signature:
 
 GroupDocs.Signature expects [CreatePageStream](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/createpagestream) delegate to obtain each page stream for image preview generation process
 
+```csharp
 private static Stream CreatePageStream(int pageNumber)
 {
     string imageFilePath = Path.Combine("GeneratePreviewFolder", "image-" + pageNumber.ToString() + ".jpg");
@@ -49,6 +47,7 @@ private static Stream CreatePageStream(int pageNumber)
     }
     return new System.IO.FileStream(imageFilePath, FileMode.Create);
 }
+```
 
 ## ReleasePageStream delegate implementation
 

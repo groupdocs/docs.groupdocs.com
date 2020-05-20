@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Get document information
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) allows to get document information which includes:
 
 *   [FileType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/documentinfo/properties/filetype)
@@ -62,10 +59,7 @@ using (var stream = File.OpenRead("sample.pdf"))
 }
 ```
 
-**GroupDocs.Signature** also provides an abilityto obtain extended information of document form fields and existing signatures.  
-To learn more about please refer to the following guides:
-
-[Obtain document form fields and signatures information](https://docs.groupdocs.com/display/signaturenet/Obtain+document+form+fields+and+signatures+information)
+{{< alert style="info" >}}GroupDocs.Signature also provides an ability to obtain extended information of document form fields and existing signatures.To learn more about please refer to the following guides:Obtain document form fields and signatures information{{< /alert >}}
 
 ## More resources
 

@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Editor for .NET 20.2 Release Notes
-
-This page contains release notes for GroupDocs.Editor for .NET 20.2
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Editor for .NET 20.2{{< /alert >}}
 
 ## Major Features
 

@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
-
-# Working with resources
-
 > This demonstration shows and explains different operations with resources, including retrieving, adjusting and saving them in different scenarios.
 
 #### Introduction

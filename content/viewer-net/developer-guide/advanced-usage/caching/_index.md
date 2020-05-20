@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Caching
-
 In some cases document rendering may be a time-consuming operation (dependent on source document content, structure and complexity). For such situations caching can be a solution - rendered document representation is stored into cache (for example at the local drive) and in a case of repetitive rendering of the document*, *GroupDocs.Viewer uses cached representation. This thing helps to avoid the processing of the same document again and again.  
 To enable caching you have to:
 
@@ -22,14 +19,15 @@ To enable caching you have to:
 
 Here is a code that demonstrates how to enable caching for GroupDocs.Viewer*.*
 
-			string outputDirectory = @"C:\\output";
+```csharp
+			string outputDirectory = @"C:\output";
             string cachePath = Path.Combine(outputDirectory, "cache");
-            string pageFilePathFormat = Path.Combine(outputDirectory, "page\_{0}.html");
+            string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
 
             FileCache cache = new FileCache(cachePath);
             ViewerSettings settings = new ViewerSettings(cache);
 
-            using (Viewer viewer = new Viewer(@"C:\\sample.docx", settings))
+            using (Viewer viewer = new Viewer(@"C:\sample.docx", settings))
             {
                 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
 
@@ -44,8 +42,9 @@ Here is a code that demonstrates how to enable caching for GroupDocs.Viewer*.*
                 stopWatch.Stop();
                 Console.WriteLine("Time taken on second call to View method {0} (ms).", stopWatch.ElapsedMilliseconds);
             }
+```
 
-GroupDocs.Viewer also provides an ability  to customize caching behavior. To learn more about caching customization please refer to [Caching](Caching.html) guide.
+{{< alert style="info" >}}GroupDocs.Viewer also provides an ability to customize caching behavior. To learn more about caching customization please refer to Caching guide.{{< /alert >}}
 
 ## More resources
 

@@ -9,11 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# Compare multiple documents protected by password
-
-
-NOTE: This feature is available only for Word documents, PowerPoint and Open Document presentations.
+{{< alert style="info" >}}NOTE: This feature is available only for Word documents, PowerPoint and Open Document presentations.{{< /alert >}}
 
 # Compare multiple protected documents
 

@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Verify Text signatures in the document
-
-
   
 
 # Verify Text signatures in the document
@@ -31,6 +27,7 @@ Here are the steps to verify Text signature within the document with GroupDocs.S
 
 This example shows how to verify Text signature in the document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
         TextVerifyOptions options = new TextVerifyOptions()
@@ -44,13 +41,14 @@ using (Signature signature = new Signature("sample.pdf"))
         VerificationResult result = signature.Verify(options);
         if(result.IsValid)
         {
-            Console.WriteLine("\\nDocument was verified successfully!");
+            Console.WriteLine("\nDocument was verified successfully!");
         }
         else
         {
-            Console.WriteLine("\\nDocument failed verification process.");
+            Console.WriteLine("\nDocument failed verification process.");
         }
 }
+```
 
 ## More resources
 

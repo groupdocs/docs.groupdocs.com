@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Verify QR-code signatures
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides different properties in [QrCodeVerifyOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/qrcodeverifyoptions) class to specify verification of QR-code signatures.
 
 Here are the steps to verify QR-code signature within the document with GroupDocs.Signature:
@@ -27,6 +24,7 @@ Here are the steps to verify QR-code signature within the document with GroupDo
   
 This example shows how to verify QR-code signature in the document. See [VerificationResult](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/verificationresult)
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     QrCodeVerifyOptions options = new QrCodeVerifyOptions()
@@ -45,13 +43,14 @@ using (Signature signature = new Signature("sample.pdf"))
     VerificationResult result = signature.Verify(options);
     if (result.IsValid)
     {
-        Console.WriteLine("\\nDocument was verified successfully!");
+        Console.WriteLine("\nDocument was verified successfully!");
     }
     else
     {
-        Console.WriteLine("\\nDocument failed verification process.");
+        Console.WriteLine("\nDocument failed verification process.");
     }
 }
+```
 
 ## More resources
 

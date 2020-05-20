@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Get supported file formats
-
 With [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) you can get the [list of file formats](Get%2Bsupported%2Bfile%2Bformats.html) that allow adding electronic signatures by following the below steps: 
 
 *   Call static function [GetSupportedFileTypes](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/filetype/methods/getsupportedfiletypes) of [FileType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/filetype) class;

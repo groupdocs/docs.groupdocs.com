@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-
-# Load document from URL
-
 Following example demonstrates how to load document from URL.
 
 ```csharp

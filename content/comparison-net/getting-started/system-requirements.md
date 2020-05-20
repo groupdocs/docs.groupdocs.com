@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-
-# System Requirements
-
-
 ## Overview
 
 GroupDocs.Comparison for .NET does not require any external software or third party tool to be installed. Just follow one of the way as described in [Installation](Installation.html).

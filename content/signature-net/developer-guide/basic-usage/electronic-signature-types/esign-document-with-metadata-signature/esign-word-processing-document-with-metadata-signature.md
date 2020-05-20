@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# eSign Word Processing document with Metadata signature
-
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides [WordProcessingMetadataSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/wordprocessingmetadatasignature) class to specify different Metadata signature objects for [MetadataSignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/metadatasignoptions) instance to sign Word Processing document files.   
 Word Processing document metadata is hidden attributes, some of them are visible only over viewing standard document properties like Author, Creation Date, Producer, Entry, Keywords etc.  
 Word Processing document metadata contains pair of Name and Value, Name should be unique within the document.  
@@ -32,12 +29,13 @@ Here are the steps to add metadata signatures into Word Processing document with
 
 This example shows how to sign Word Processing document with Metadata e-signature.
 
+```csharp
 using (Signature signature = new Signature("sample.docx"))
 {
     MetadataSignOptions options = new MetadataSignOptions();
 
     // Create few WordProcessing Metadata signatures
-    WordProcessingMetadataSignature\[\] signatures = new WordProcessingMetadataSignature\[\]
+    WordProcessingMetadataSignature[] signatures = new WordProcessingMetadataSignature[]
     {
         new WordProcessingMetadataSignature("Author", "Mr.Scherlock Holmes"),
         new WordProcessingMetadataSignature("DateCreated", DateTime.Now),
@@ -50,6 +48,7 @@ using (Signature signature = new Signature("sample.docx"))
     options.Signatures.AddRange(signatures);
     signature.Sign("SampleSigned.docx", options);
 }
+```
 
 ## More resources
 

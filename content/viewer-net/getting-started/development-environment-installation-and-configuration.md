@@ -9,7 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
 # Development Environment, Installation and Configuration
 
 **Contents Summary**

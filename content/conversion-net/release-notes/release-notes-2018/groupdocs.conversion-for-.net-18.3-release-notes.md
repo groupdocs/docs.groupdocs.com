@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion for .NET 18.3 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 18.3
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 18.3{{< /alert >}}
 
 ## Major Features
 
@@ -102,33 +99,40 @@ Bug
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 18.3. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Conversion for .NET 18.3. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Conversion which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ### Getting document info to detect page orientation for the supported formats
 
 #### Introduced new property PageOrientation in DocumentInfo class
 
+```csharp
 /// <summary>
 /// Get page orientation
 /// </summary>
 public PageOrientationType PageOrientation { get; }
+```
 
 Usage
 
+```csharp
 var documentInfo = conversionHandler.GetDocumentInfo("source.docx");
 Console.Write(documentInfo.PageOrientation);
+```
 
 ### Set default font to replace all missing fonts when converting Cells document
 
 #### Introduced new property DefaultFont in CellsLoadOptions class
 
+```csharp
 /// <summary>
 /// Default font for Cells document. The following font will be used if a font is missing.
 /// </summary>
 public string DefaultFont { get; set; }
+```
 
 Usage
 
+```csharp
 var config = new ConversionConfig();
 var conversionHandler = new ConversionHandler(config);
  
@@ -138,18 +142,22 @@ loadOptions.DefaultFont = "Verdana";
 var saveOptions = new PdfSaveOptions();
  
 var convertedDocument = conversionHandler.Convert("source.xlsx", loadOptions, saveOptions);
+```
 
 ### Set default font to replace all missing fonts when converting Words document
 
 #### Introduced new property DefaultFont in WordsLoadOptions class
 
+```csharp
 /// <summary>
 /// Default font for Words document. The following font will be used if a font is missing.
 /// </summary>
 public string DefaultFont { get; set; }
+```
 
 Usage
 
+```csharp
 var config = new ConversionConfig();
 var conversionHandler = new ConversionHandler(config);
  
@@ -159,17 +167,22 @@ loadOptions.DefaultFont = "Verdana";
 var saveOptions = new PdfSaveOptions();
  
 var convertedDocument = conversionHandler.Convert("source.docx", loadOptions, saveOptions);
+```
 
 ### Show watermark behind the text
 
 #### Introduced new property Background in WatermarkOptions class
 
+```csharp
 /// <summary>
 /// Indicates that the watermark is stamped as background. If the value is true, the watermark is layed at the bottom. By default is false and the watermark is layed on top.
 /// </summary>
 public bool Background { get; set; }
+```
 
 Usage
 
+```csharp
 var saveOptions = new PdfSaveOptions();
 saveOptions.WatermarkOptions.Background = true;
+```

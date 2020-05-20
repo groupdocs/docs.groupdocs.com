@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Conversion for .NET 20.4 Release Notes
-
-This page contains release notes for GroupDocs.Conversion for .NET 20.4
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Conversion for .NET 20.4{{< /alert >}}
 
 ## Major Features
 

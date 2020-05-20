@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Signature for .NET 18.11 Release Notes
-
-This page contains release notes for GroupDocs.Signature for .NET 18.11
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Signature for .NET 18.11{{< /alert >}}
 
 ## Major Features
 
@@ -71,13 +68,14 @@ New Feature
 
 ## Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.11. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for .NET 18.11. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  **New Form-field type **of signature is the abstract class** FormFieldSignature **and enumeration** FormFieldType.**  
     Many documents support special elements Form Fields that allow user to input data into standard form elements like text input, extended multi line text, check box, radio buttons, digital certificate holders etc. This version we implemented support of these signatures for Pdf documents. New enumeration type **FormFieldType **specifies type of form-field element like Text, CheckBox, Signature.
     
     **FormFieldType**
     
+    ```csharp
     /// <summary>
     /// Specifies Form Field type.
     /// </summary>
@@ -98,6 +96,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         DigitalSignature
     }
+    ```
     
     New public abstract class **FormFieldSignature **was added to implement Form Field signature features for documents. The Form Field Signature is a input control which is placed on a document page. Some types of documents supports various input controls like Check-box or Text.
     
@@ -105,6 +104,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **FormFieldSignature**
     
+    ```csharp
     /// <summary>
     /// Contains Form Field Signature properties.
     /// </summary>
@@ -125,6 +125,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         public object Value { get; set; }        
     }
+    ```
     
     **FormField Signature properties:**
     
@@ -161,6 +162,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **PdfTextFormFieldSignature**
     
+    ```csharp
     /// <summary>
     /// Contains text input form field signature properties for Pdf document
     /// </summary>
@@ -177,6 +179,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="name">Name of form field object.</param>
         public PdfTextFormFieldSignature(string name);
     }
+    ```
     
     **Pdf Text FormField Signature properties:**
     
@@ -196,6 +199,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **PdfCheckboxFormFieldSignature**
     
+    ```csharp
     /// <summary>
     /// Contains check-box input form field signature properties.
     /// </summary>
@@ -219,6 +223,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="isChecked">Value if check box is checked</param>
         public PdfCheckboxFormFieldSignature(string name, bool isChecked);
     }
+    ```
     
     **Pdf Text FormField Signature properties:**
     
@@ -238,6 +243,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **PdfDigitalFormFieldSignature**
     
+    ```csharp
     /// <summary>
     /// Contains digital signature input form field properties for Pdf documents.
     /// </summary>
@@ -255,6 +261,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         public PdfDigitalFormFieldSignature(string name);
      
     }
+    ```
     
     **Pdf Text FormField Signature properties:**
     
@@ -274,6 +281,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **PdfFormFieldSignOptions**
     
+    ```csharp
     /// <summary>
     /// Represents class of the FormField Signature Options for Pdf documents.
     /// </summary>
@@ -289,17 +297,19 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         public PdfFormFieldSignOptions(FormFieldSignature signature)
     }
+    ```
     
     Following example demonstrates using **PdfFormFieldSignOptions** to add form field signature on PDF document page:
     
     **Signing with form field in PDF document**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        CertificatesPath = @"c:\\Aspose\\Test\\Certificates",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        CertificatesPath = @"c:\Aspose\Test\Certificates",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -349,14 +359,16 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     };
     collection.Add(digitalOptions);
     // sign document
-    string signedPath = handler.Sign<string>("02\_pages.pdf", collection,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf\_FormFields" });
+    string signedPath = handler.Sign<string>("02_pages.pdf", collection,
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Pdf_FormFields" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 4.  New abstract class **SearchFormFieldOptions **represents base class to specify search options for field-form signatures.
     
     **SearchFormFieldOptions class properties**
     
+    ```csharp
     /// <summary>
     /// Represents abstract search Options for Form-field Signatures.
     /// </summary>
@@ -369,7 +381,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
      
         /// <summary>
         /// Specifies regular expression pattern of form field signature name if it should be searched. 
-        /// You can use it simple as "text" or regular expression like "abc\\d+". Default value is empty string.
+        /// You can use it simple as "text" or regular expression like "abc\d+". Default value is empty string.
         /// </summary>
         public string Name
      
@@ -378,6 +390,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// </summary>
         public object Value
     }
+    ```
     
     Nullable property **Type** allows optionally specify type of form-field to search, string property **Name** allows to specify regular expression pattern for form-field name, property **Value** allows to specify optionally value of control.
     
@@ -387,6 +400,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **PdfSearchFormFieldOptions class properties**
     
+    ```csharp
     /// <summary>
     /// Represents the Form-field Signature Search Options for Pdf documents.
     /// </summary>
@@ -399,16 +413,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         {
         }
     }
+    ```
     
     Following example demonstrates using **SearchFormFieldOptions** to search for form field signatures on PDF document page:
     
     **Searching for form field in PDF document**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
      
     // instantiating the signature handler
@@ -421,7 +437,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     searchOptions.Value = @"Value1";
          
     // search document
-    SearchResult result = handler.Search("Pdf\_FormFields\_Signed.pdf", searchOptions);
+    SearchResult result = handler.Search("Pdf_FormFields_Signed.pdf", searchOptions);
      
     // output signatures
     foreach (FormFieldSignature formFieldSignature in result.ToList<FormFieldSignature>())
@@ -431,11 +447,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Pdf FormField: {0}:{1}  = {2}", formFieldSignature.Name, formFieldSignature.Value, formFieldSignature.ToString());
         }
     }
+    ```
     
 6.  New public class **SlidesMetadataSignature **was added to implement Metadata signature features for Slides documents. This class derives base **MetadataSignature **, overloads virtual methods (IClonable implementation).
     
     **Slides Metadata Signature class properties**
     
+    ```csharp
     /// <summary>
     /// Contains Slides Metadata Signature properties.
     /// </summary>
@@ -454,6 +472,7 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="value">Value of Metadata signature</param>
         public SlidesMetadataSignature(string name, object value);
     }
+    ```
     
     **Slides Metadata Signature methods:**
     
@@ -499,29 +518,32 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     
     **Compose Slides Metadata Signature Options**
     
+    ```csharp
     // setup options with text of signature
     SlidesMetadataSignOptions signOptions = new SlidesMetadataSignOptions();
     // Specify different Metadata Signatures and add them to options sigature collection
     // setup Author property
-    SlidesMetadataSignature mdSign\_Author = new SlidesMetadataSignature("Author", "Mr.Scherlock Holmes");
-    signOptions.MetadataSignatures.Add(mdSign\_Author);
+    SlidesMetadataSignature mdSign_Author = new SlidesMetadataSignature("Author", "Mr.Scherlock Holmes");
+    signOptions.MetadataSignatures.Add(mdSign_Author);
     // setup data of document id
-    SlidesMetadataSignature mdSign\_DocId = new SlidesMetadataSignature("DocumentId", Guid.NewGuid().ToString());
-    signOptions.MetadataSignatures.Add(mdSign\_DocId);
+    SlidesMetadataSignature mdSign_DocId = new SlidesMetadataSignature("DocumentId", Guid.NewGuid().ToString());
+    signOptions.MetadataSignatures.Add(mdSign_DocId);
     // setup data of sign date
-    SlidesMetadataSignature mdSign\_Date = new SlidesMetadataSignature("SignDate", DateTime.Now);
-    signOptions.MetadataSignatures.Add(mdSign\_Date);
+    SlidesMetadataSignature mdSign_Date = new SlidesMetadataSignature("SignDate", DateTime.Now);
+    signOptions.MetadataSignatures.Add(mdSign_Date);
     // setup some integer value
-    SlidesMetadataSignature mdSign\_Days = new SlidesMetadataSignature("DocDays", 12345);
-    signOptions.MetadataSignatures.Add(mdSign\_Days);
+    SlidesMetadataSignature mdSign_Days = new SlidesMetadataSignature("DocDays", 12345);
+    signOptions.MetadataSignatures.Add(mdSign_Days);
     // setup data of sign date
-    SlidesMetadataSignature mdSign\_Koeff = new SlidesMetadataSignature("SignKoeff", 2.345M);
-    signOptions.MetadataSignatures.Add(mdSign\_Koeff);
+    SlidesMetadataSignature mdSign_Koeff = new SlidesMetadataSignature("SignKoeff", 2.345M);
+    signOptions.MetadataSignatures.Add(mdSign_Koeff);
+    ```
     
 7.  New public class **SlidesMetadataSignOptions **was added to provide options to support Metadata signature features for Slides/Presentation documents. This class derives base **MetadataSignOptions.**
     
     **Slides Metadata Sign Options properties**
     
+    ```csharp
     /// <summary>
     /// Represents the Metadata Signature Options for Slides documents.
     /// </summary>
@@ -538,16 +560,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="collection">Signature Metadata</param>
         public SlidesMetadataSignOptions(IEnumerable<MetadataSignature> collection);
     }
+    ```
     
     Following example demonstrates using **SlidesMetadataSignOptions **to add Metadata signatures to Slides document:
     
     **Sign Slides document with Metadata Signature**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -555,29 +579,31 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     SlidesMetadataSignOptions signOptions = new SlidesMetadataSignOptions();
     // Specify different Metadata Signatures and add them to options sigature collection
     // setup Author property
-    SlidesMetadataSignature mdSign\_Author = new SlidesMetadataSignature("Author", "Mr.Scherlock Holmes");
-    signOptions.MetadataSignatures.Add(mdSign\_Author);
+    SlidesMetadataSignature mdSign_Author = new SlidesMetadataSignature("Author", "Mr.Scherlock Holmes");
+    signOptions.MetadataSignatures.Add(mdSign_Author);
     // setup data of document id
-    SlidesMetadataSignature mdSign\_DocId = new SlidesMetadataSignature("DocumentId", Guid.NewGuid().ToString());
-    signOptions.MetadataSignatures.Add(mdSign\_DocId);
+    SlidesMetadataSignature mdSign_DocId = new SlidesMetadataSignature("DocumentId", Guid.NewGuid().ToString());
+    signOptions.MetadataSignatures.Add(mdSign_DocId);
     // setup data of sign date
-    SlidesMetadataSignature mdSign\_Date = new SlidesMetadataSignature("SignDate", DateTime.Now);
-    signOptions.MetadataSignatures.Add(mdSign\_Date);
+    SlidesMetadataSignature mdSign_Date = new SlidesMetadataSignature("SignDate", DateTime.Now);
+    signOptions.MetadataSignatures.Add(mdSign_Date);
     // setup some integer value
-    SlidesMetadataSignature mdSign\_Days = new SlidesMetadataSignature("DocDays", 12345);
-    signOptions.MetadataSignatures.Add(mdSign\_Days);
+    SlidesMetadataSignature mdSign_Days = new SlidesMetadataSignature("DocDays", 12345);
+    signOptions.MetadataSignatures.Add(mdSign_Days);
     // setup data of sign date
-    SlidesMetadataSignature mdSign\_Koeff = new SlidesMetadataSignature("SignKoeff", 2.345M);
-    signOptions.MetadataSignatures.Add(mdSign\_Koeff);
+    SlidesMetadataSignature mdSign_Koeff = new SlidesMetadataSignature("SignKoeff", 2.345M);
+    signOptions.MetadataSignatures.Add(mdSign_Koeff);
     // sign document
     string signedPath = handler.Sign<string>("test.pptx", signOptions,
-        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Slides\_Documents\_Metadata" });
+        new SaveOptions { OutputType = OutputType.String, OutputFileName = "Slides_Documents_Metadata" });
     Console.WriteLine("Signed file path is: " + signedPath);
+    ```
     
 8.  New public class **SlidesSearchMetadataOptions **was added to provide options to search for Metadata Signatures within the Slides/Presentation documents. This class derives base **SearchMetadataOptions**.
     
     **Slides Metadata Search Options properties**
     
+    ```csharp
     /// <summary>
     /// Represents the Metadata Signature Search Options for Slides documents.
     /// </summary>
@@ -598,16 +624,18 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
         /// <param name="includeBuiltinProperties">Indicates if buil-in properties should be included into search results.</param>
         public SlidesSearchMetadataOptions(bool includeBuiltinProperties);
     }
+    ```
     
     Following example demonstrates using **SlidesSearchMetadataOptions** to search for Slides Metadata signatures in the Slides/Presentation documents:
     
     **Search for Slides Metadata Signatures in documents**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -631,11 +659,13 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
             Console.WriteLine("Slides Metadata: {0} = {1}", metadataSignature.Name, metadataSignature.ToString());
         }
     }
+    ```
     
 9.  Public class **WordsVerifyDigitalOptions** was updated with new string properties **SubjectName **and **IssuerName**. These fields could be used as additional criteria to verify Digital Signatures of Words documents. If these properties are specified verification process will check for Digital Signature properties (SubjectName, IssuerName) to be equal or contain passed strings. These values are case sensitive.
     
     **WordsVerifyDigitalOptions**
     
+    ```csharp
     /// <summary>
     /// Subject distinguished name of the certificate to validate. Value is case sensitive.
     /// If this property is set verification will check if Signature subject name contains or equals passed value
@@ -646,18 +676,20 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     /// If this property is set verification will check if Signature's issuer name contains or equals passed value
     /// </summary>        
     public string IssuerName { get; set; }
+    ```
     
     Following example demonstrates using these properties to verify Digital signatures in the Words documents:
     
     **Verify Digital signatures in the Words documents**
     
+    ```csharp
     // setup Signature configuration
     SignatureConfig signConfig = new SignatureConfig
     {
-        StoragePath = @"c:\\Aspose\\Test\\Storage",
-        OutputPath = @"c:\\Aspose\\Test\\Output",
-        ImagesPath = @"c:\\Aspose\\Test\\Images",
-        CertificatesPath = @"c:\\Aspose\\Test\\Certificates"
+        StoragePath = @"c:\Aspose\Test\Storage",
+        OutputPath = @"c:\Aspose\Test\Output",
+        ImagesPath = @"c:\Aspose\Test\Images",
+        CertificatesPath = @"c:\Aspose\Test\Certificates"
     };
     // instantiating the signature handler
     SignatureHandler handler = new SignatureHandler(signConfig);
@@ -673,3 +705,6 @@ This section lists public API changes that were introduced in GroupDocs.Signatur
     //verify document
     VerificationResult result = handler.Verify("digital signatures.docx", verifyOptions);
     Console.WriteLine("Signed file verification result: " + result.IsValid);
+    
+    
+    ```

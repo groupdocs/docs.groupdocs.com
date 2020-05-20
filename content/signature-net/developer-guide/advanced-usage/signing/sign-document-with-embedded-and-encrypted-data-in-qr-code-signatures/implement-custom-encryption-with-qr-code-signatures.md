@@ -9,10 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-
-# Implement custom encryption with QR-Code signatures
-
-
 # Implement custom encryption for QR-Code signatures
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) provides ability to embed into QR-code signature custom objects. This feature is implemented over object serialization to string and further encryption. There is ability to provide custom encryption. This procedure requires implementation of interface [IDataEncryption](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain.extensions/idataencryption) with two methods to encrypt and decrypt data.
@@ -33,6 +29,7 @@ Here are the steps to embed into QR-code text with custom encryption with GroupD
 
 This example shows how to specify custom serialization class. This class could be implemented also as Attribute (optional) to specify as class attribute.
 
+```csharp
 // Define class that implements IDataEncryption interface
 private class CustomXOREncryption : IDataEncryption
 {
@@ -70,36 +67,40 @@ private class CustomXOREncryption : IDataEncryption
         char chTmp;
         for (int index = 0; index < src.Length; ++index)
         {
-            chTmp = src\[index\];
+            chTmp = src[index];
             chTmp = (char)(chTmp ^ this.Key);
             dst.Append(chTmp);
         }
         return dst.ToString();
     }
 }
+```
 
 ## Definition of class
 
 This example shows how to define custom class with serialization and encryption properties and setup Format attributes for properties.
 
+```csharp
 public class DocumentSignatureData
 {
-    \[Format("SignID")\]
+    [Format("SignID")]
     public string ID { get; set; }
-    \[Format("SAuth")\]
+    [Format("SAuth")]
     public string Author { get; set; }
-    \[Format("SDate", "yyyy-MM-dd")\]
+    [Format("SDate", "yyyy-MM-dd")]
     public DateTime Signed { get; set; }
-    \[Format("SDFact", "N2")\]
+    [Format("SDFact", "N2")]
     public decimal DataFactor { get; set; }
-    \[SkipSerialization\]
+    [SkipSerialization]
     public string Comments { get; set; }
 }
+```
 
 ## Sign documents with custom encrypted objects and values into QR-code signatures
 
 This example shows how to add custom object into metadata signature to Image document.
 
+```csharp
 using (Signature signature = new Signature("sample.pdf"))
 {
     // create data encryption
@@ -131,6 +132,7 @@ using (Signature signature = new Signature("sample.pdf"))
     // sign document to file
     signature.Sign("QRCodeCustomEncryption.pdf", options);
 }
+```
 
 ## More resources
 

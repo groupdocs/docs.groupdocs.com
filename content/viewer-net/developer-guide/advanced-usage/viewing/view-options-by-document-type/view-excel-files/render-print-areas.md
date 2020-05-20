@@ -9,9 +9,6 @@ bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-
-# Render print areas
-
 This article explains how to view Spreadsheet print areas with GroupDocs.Viewer within your .NET applications.
 
 ## Introduction
@@ -24,12 +21,14 @@ Spreadsheet document allows to set a print area if you want to print a specific 
 
 GroupDocs.Viewerprovides an option to render sections of the worksheet(s) defined as the "print area". It renders each print area in a worksheet as a separate page. The following code samples show how to render only the print areas from worksheets.
 
+```csharp
             using (Viewer viewer = new Viewer("sample.xlsx"))
             {
                 HtmlViewOptions viewOptions = HtmlViewOptions.ForEmbeddedResources();
                 viewOptions.SpreadsheetOptions = SpreadsheetOptions.ForRenderingPrintArea();
                 viewer.View(viewOptions);
             }
+```
 
 ## More resources
 

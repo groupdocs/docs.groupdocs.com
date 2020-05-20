@@ -9,10 +9,7 @@ bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-
-# GroupDocs.Annotation for .NET 20.4 Release Notes
-
-This page contains release notes for GroupDocs.Annotation for .NET 20.4
+{{< alert style="info" >}}This page contains release notes for GroupDocs.Annotation for .NET 20.4{{< /alert >}}
 
 ##   
 Major Features
@@ -80,7 +77,7 @@ Bug
 
 # Public API and Backward Incompatible Changes
 
-This section lists public API changes that were introduced in GroupDocs.Annotation for .NET 20.4. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Annotation which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
+{{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Annotation for .NET 20.4. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Annotation which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 ## 1\. Versions of Annotated files
 
@@ -106,7 +103,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
 }
 ```
 
-Version Property type is object, so it support any type, and you can use any variable as version variable
+{{< alert style="info" >}}Version Property type is object, so it support any type, and you can use any variable as version variable{{< /alert >}}
 
 ### Get List of All version keys on a document
 
@@ -114,11 +111,13 @@ If you don't know what versions were added earlier or want to know versions coun
 
 Here the code that demonstrates how to get list of versions keys:
 
+```csharp
 using (Annotator annotator = new Annotator("result.pdf")) { 
       List<object> versionKeys = annotator.GetVersionsList();
 }
+```
 
-Annotator.GetVersionList() returns list of objects because it supports any type of key. But if you used some specified keys as string - you can convert it.
+{{< alert style="info" >}}Annotator.GetVersionList() returns list of objects because it supports any type of key. But if you used some specified keys as string - you can convert it.{{< /alert >}}
 
 ### Get List of Annotations using version key
 
@@ -126,12 +125,14 @@ If you need to get List of Annotations you can use Annotator.GetVersion() method
 
 Here code that demonstrates how to get list of annotations from individual version
 
+```csharp
 using (Annotator annotator = new Annotator("result.pdf"))
 {
-    List<AnnotationBase> annotations = annotator.GetVersion("CUSTOM\_VERSION");
+    List<AnnotationBase> annotations = annotator.GetVersion("CUSTOM_VERSION");
 }
+```
 
-GetVersion method supports any type, and you can use any variable as version variable.
+{{< alert style="info" >}}GetVersion method supports any type, and you can use any variable as version variable.{{< /alert >}}
 
 ### Load Document of custom Version
 
@@ -139,24 +140,27 @@ Using LoadOptions.Version you can load previous versions of annotated document.
 
 Here the code that demonstrates how load version using version name:
 
-using (Annotator annotator = new Annotator($"result.{ext}", new LoadOptions { Version = "CUSTOM\_VERSION" }))
+```csharp
+using (Annotator annotator = new Annotator($"result.{ext}", new LoadOptions { Version = "CUSTOM_VERSION" }))
 {
-  annotator.Save("result\_loaded.pdf");
+  annotator.Save("result_loaded.pdf");
 }
+```
 
-Version Property type is object, so it support any type, and you can use any variable as a version.
+{{< alert style="info" >}}Version Property type is object, so it support any type, and you can use any variable as a version.{{< /alert >}}
 
 ## 2\. Added RenderComments Property to PreviewOptions
 
 If you need not to generate comments on image preview you may use *RenderComments* property
 
-This feature is only supported for Word processing documents.
+{{< alert style="info" >}}This feature is only supported for Word processing documents.{{< /alert >}}
 
 Default value is *true*. If it is not needed to display replies and comments at the page preview - set *RenderComments* property to *false* ( replies and comments still will be stored inside document).  
 Please notice, that *RenderComments* value will impact any document comments (doesn't matter if they were added by GroupDocs.Annotation or  some other application). 
 
 Here the code that demonstrates how display image preview without comments:
 
+```csharp
 Annotator annotator = new Annotator(File.OpenRead(MakeStoragePath(inputPath)));
            PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
            {
@@ -166,6 +170,7 @@ Annotator annotator = new Annotator(File.OpenRead(MakeStoragePath(inputPath)));
 previewOptions.PreviewFormat = PreviewFormats.PNG;
 previewOptions.RenderComments = false;
 annotator.Document.GeneratePreview(previewOptions);
+```
 
 ## 3\. Add PagesInfo property to IDocumentInfo
 
@@ -175,7 +180,9 @@ Now *PageInfo* have two properties - *Width* and *Height* in pixels. This proper
 
 Here code that demonstrates how to get Document width and Height:
 
+```csharp
 Annotator annotator = new Annotator("input.docx");
 IDocumentInfo info = annotator.Document.GetDocumentInfo();
-int width = info.PagesInfo\[0\].Width;
-int height = info.PagesInfo\[0\].Height;
+int width = info.PagesInfo[0].Width;
+int height = info.PagesInfo[0].Height;
+```
