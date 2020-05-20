@@ -53,7 +53,8 @@
               {{ end }}
 
               {{ define "page-link" }}
-              {{ if .Page.Content }}
+              {{/* if .Page.Content */}}
+              {{ if true }}
                 <a href="{{ .Page.RelPermalink }}" class="nav-link p-0
                     {{- if and .Page.Params.bookCollapseSection .Page.IsSection }} collapsed {{ end }}
                     {{- if eq .CurrentPage .Page }} active {{ end }}">

@@ -45,7 +45,9 @@ $dark:          #343a40;
     padding:15px;
 }
 
-
+.docs-sidenav{ 
+    overflow-y: auto; // CUSTOM
+}
 /* Side navigation menus */
 .docs-sidenav span.badge.badge-primary, .docs-toc span.badge.badge-primary{
     font-size: 10px;
