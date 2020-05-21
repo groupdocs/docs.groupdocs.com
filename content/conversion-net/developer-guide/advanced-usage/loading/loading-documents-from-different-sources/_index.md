@@ -1,11 +1,10 @@
 ---
 id: loading-documents-from-different-sources
-url: conversion-net/loading-documents-from-different-sources
+url: conversion/net/loading-documents-from-different-sources
 title: Loading documents from different sources
 weight: 1
 description: Following this guide you will learn how to load PDF, Word, Excel, PowerPoint documents by local file path, stream or URL for further processing with GroupDocs.Conversion for .NET API.
 keywords: Load document from file path, Load document from URL, Load document from stream
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: features-overview
-url: merger-net/features-overview
+url: merger/net/features-overview
 title: Features Overview
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

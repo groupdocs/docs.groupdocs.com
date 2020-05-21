@@ -1,11 +1,10 @@
 ---
 id: sign-pdf-documents-with-special-appearance
-url: signature-net/sign-pdf-documents-with-special-appearance
+url: signature/net/sign-pdf-documents-with-special-appearance
 title: Sign Pdf documents with special appearance
 weight: 3
 description:  This article explains how to use PDF digital electronic signature features on document page.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

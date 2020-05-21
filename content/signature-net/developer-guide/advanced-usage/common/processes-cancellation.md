@@ -1,11 +1,10 @@
 ---
 id: processes-cancellation
-url: signature-net/processes-cancellation
+url: signature/net/processes-cancellation
 title: Processes cancellation
 weight: 2
 description: This article explains how to control signature processing (cancellation) for large documents with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

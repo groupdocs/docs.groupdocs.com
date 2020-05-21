@@ -1,11 +1,10 @@
 ---
 id: set-filename-when-viewing-archive-files
-url: viewer-net/set-filename-when-viewing-archive-files
+url: viewer/net/set-filename-when-viewing-archive-files
 title: Set filename when viewing archive files
 weight: 3
 description: This article explains how to specify a filename when viewing archive files GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

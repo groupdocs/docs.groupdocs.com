@@ -1,11 +1,10 @@
 ---
 id: set-custom-fonts
-url: viewer-net/set-custom-fonts
+url: viewer/net/set-custom-fonts
 title: Set custom fonts
 weight: 5
 description: This article explains how to set custom fonts when viewing documents with GroupDocs.Viewer within your .NET applications.
 keywords: Setting custom fonts with GroupDocs.Viewer for .NET API
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

@@ -1,17 +1,16 @@
 ---
 id: add-resource-redaction-annotation
-url: annotation-net/add-resource-redaction-annotation
+url: annotation/net/add-resource-redaction-annotation
 title: Add resource redaction annotation
 weight: 11
 description: Learn what is a resource redaction annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is a resource redaction annotation, how to add annotation, add resource redaction annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Resource redaction** annotation fills black rectangle with fixed position (used if you want to hide some text) like shown at the picture below. 
 
-![](images/annotation-net/add-resource-redaction-annotation_0.png)
+![](annotation-net/images/add-resource-redaction-annotation.png)
 
 There is an ability to specify the next properties for [ResourcesRedactionAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/resourcesredactionannotation)type:
 

@@ -1,11 +1,10 @@
 ---
 id: inserting-edited-slide-into-existing-presentation
-url: editor-net/inserting-edited-slide-into-existing-presentation
+url: editor/net/inserting-edited-slide-into-existing-presentation
 title: Inserting edited slide into existing presentation
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

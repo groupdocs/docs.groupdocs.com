@@ -1,11 +1,10 @@
 ---
 id: load-spreadsheet-document-with-options
-url: conversion-net/load-spreadsheet-document-with-options
+url: conversion/net/load-spreadsheet-document-with-options
 title: Load Spreadsheet document with options
 weight: 8
 description: Learn this article and check how to load and convert Microsoft Excel and Open Document spreadsheets with advanced options using GroupDocs.Conversion for .NET API.
 keywords: Load and convert document, Load and convert Microsoft Excel workbook, Load and convert XLSX document, Load and convert XLS spreadsheet
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: sign-documents-with-standard-qr-code-entries
-url: signature-net/sign-documents-with-standard-qr-code-entries
+url: signature/net/sign-documents-with-standard-qr-code-entries
 title: Sign documents with standard QR-code entries
 weight: 5
 description: This article explains how to create QR-code electronic signature with standard encoded entries like Address, Email, V-Card, MeCard, EPC/SEPA, Event etc
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

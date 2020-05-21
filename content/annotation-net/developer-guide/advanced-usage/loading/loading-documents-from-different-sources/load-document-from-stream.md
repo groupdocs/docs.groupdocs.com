@@ -1,11 +1,10 @@
 ---
 id: load-document-from-stream
-url: annotation-net/load-document-from-stream
+url: annotation/net/load-document-from-stream
 title: Load document from stream
 weight: 2
 description: This article explains how to load PDF, Word, Excel, PowerPoint documents from stream when using GroupDocs.Annotation for .NET.
 keywords: Load document from stream, Load document with GroupDocs.Annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

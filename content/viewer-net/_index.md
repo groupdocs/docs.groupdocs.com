@@ -1,11 +1,10 @@
 ---
 id: home
-url: viewer-net
+url: viewer/net
 title: GroupDocs.Viewer for .NET
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: True
 ---

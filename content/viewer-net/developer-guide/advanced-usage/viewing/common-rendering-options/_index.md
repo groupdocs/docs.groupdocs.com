@@ -1,11 +1,10 @@
 ---
 id: common-rendering-options
-url: viewer-net/common-rendering-options
+url: viewer/net/common-rendering-options
 title: Common rendering options
 weight: 1
 description: How to use common rendering options that can be applied to most of the supported file types.
 keywords: GroupDocs.Viewer Common Rendering Options, GroupDocs.Viewer .NET Common Rendering Options
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

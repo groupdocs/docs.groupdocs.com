@@ -1,11 +1,10 @@
 ---
 id: update-image-signatures-in-document
-url: signature-net/update-image-signatures-in-document
+url: signature/net/update-image-signatures-in-document
 title: Update Image signatures in document
 weight: 2
 description: This article explains how to update Image electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: updating-qr-code-signatures-with-advanced-options
-url: signature-net/updating-qr-code-signatures-with-advanced-options
+url: signature/net/updating-qr-code-signatures-with-advanced-options
 title: Updating QR-code signatures with advanced options
 weight: 4
 description:  This article explains how to provide advanced options when updating QR-code electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

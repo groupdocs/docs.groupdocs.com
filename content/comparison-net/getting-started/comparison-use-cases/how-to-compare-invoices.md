@@ -1,11 +1,10 @@
 ---
 id: how-to-compare-invoices
-url: comparison-net/how-to-compare-invoices
+url: comparison/net/how-to-compare-invoices
 title: How to Compare Invoices
 weight: 4
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

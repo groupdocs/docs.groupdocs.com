@@ -1,11 +1,10 @@
 ---
 id: load-document-from-stream
-url: comparison-net/load-document-from-stream
+url: comparison/net/load-document-from-stream
 title: Load document from stream
 weight: 2
 description: This article explains how to load PDF, Word, Excel, PowerPoint documents from stream when using GroupDocs.Comparison for .NET.
 keywords: Load document from stream, Load document with GroupDocs.Comparison
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

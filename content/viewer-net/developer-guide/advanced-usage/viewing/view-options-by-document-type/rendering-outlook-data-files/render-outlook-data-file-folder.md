@@ -1,11 +1,10 @@
 ---
 id: render-outlook-data-file-folder
-url: viewer-net/render-outlook-data-file-folder
+url: viewer/net/render-outlook-data-file-folder
 title: Render Outlook Data File Folder
 weight: 4
 description: This article explains how to view a specific folder of Outlook Data File with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

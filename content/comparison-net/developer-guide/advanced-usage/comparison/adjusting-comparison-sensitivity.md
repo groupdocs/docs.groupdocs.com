@@ -1,11 +1,10 @@
 ---
 id: adjusting-comparison-sensitivity
-url: comparison-net/adjusting-comparison-sensitivity
+url: comparison/net/adjusting-comparison-sensitivity
 title: Adjusting comparison sensitivity
 weight: 2
 description: Learn more about document comparison sensitivity and how to adjust it to achieve best performance and accuracy when compare documents with GroupDocs.Comparison for .NET.
 keywords: Comparison sensitivity, comparison detalisation level, compare documents, file comparison
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

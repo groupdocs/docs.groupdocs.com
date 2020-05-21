@@ -1,11 +1,10 @@
 ---
 id: features-overview
-url: annotation-net/features-overview
+url: annotation/net/features-overview
 title: Features Overview
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

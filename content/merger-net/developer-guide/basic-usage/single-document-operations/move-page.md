@@ -1,11 +1,10 @@
 ---
 id: move-page
-url: merger-net/move-page
+url: merger/net/move-page
 title: Move page
 weight: 1
 description: This article demonstrates how to move document page to another position within PDF, Word, Excel, PowerPoint document using GroupDocs.Merger API.
 keywords: Move document page, Move PDF page, Move Word document page, Move page to another position
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

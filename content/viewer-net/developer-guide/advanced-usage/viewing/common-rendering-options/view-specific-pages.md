@@ -1,11 +1,10 @@
 ---
 id: view-specific-pages
-url: viewer-net/view-specific-pages
+url: viewer/net/view-specific-pages
 title: View specific pages
 weight: 10
 description: This article explains how to view specific pages when processing documents with GroupDocs.Viewer within your .NET applications.
 keywords: View specific pages with GroupDocs.Viewer for .NET API
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

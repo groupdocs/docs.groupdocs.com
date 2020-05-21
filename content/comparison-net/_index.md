@@ -1,11 +1,10 @@
 ---
 id: home
-url: comparison-net
+url: comparison/net
 title: GroupDocs.Comparison for .NET
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: True
 ---

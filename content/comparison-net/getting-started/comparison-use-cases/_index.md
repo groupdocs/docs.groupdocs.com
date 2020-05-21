@@ -1,11 +1,10 @@
 ---
 id: comparison-use-cases
-url: comparison-net/comparison-use-cases
+url: comparison/net/comparison-use-cases
 title: Comparison Use Cases
 weight: 7
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

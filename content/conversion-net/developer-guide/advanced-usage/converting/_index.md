@@ -1,11 +1,10 @@
 ---
 id: converting
-url: conversion-net/converting
+url: conversion/net/converting
 title: Converting
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

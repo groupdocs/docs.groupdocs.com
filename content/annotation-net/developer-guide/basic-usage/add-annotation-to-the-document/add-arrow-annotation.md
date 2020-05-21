@@ -1,17 +1,16 @@
 ---
 id: add-arrow-annotation
-url: annotation-net/add-arrow-annotation
+url: annotation/net/add-arrow-annotation
 title: Add arrow annotation
 weight: 2
 description: Learn what is arrow annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is arrow annotation, how to add annotation, add arrow annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Arrow annotation** draws an arrow on the document like shown at the picture below. 
 
-![](images/annotation-net/add-arrow-annotation_0.png)
+![](annotation-net/images/add-arrow-annotation.png)
 
 There is an ability to specify the next properties for [ArrowAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/arrowannotation) type:
 

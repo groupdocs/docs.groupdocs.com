@@ -1,11 +1,10 @@
 ---
 id: how-to-compare-autocad-drawings
-url: comparison-net/how-to-compare-autocad-drawings
+url: comparison/net/how-to-compare-autocad-drawings
 title: How to Compare AutoCAD drawings
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
@@ -38,9 +37,9 @@ Source drawing
 
 Target drawing
 
-![](images/comparison-net/how-to-compare-autocad-drawings_0.png)
+![](comparison-net/images/how-to-compare-autocad-drawings.png)
 
-![](images/comparison-net/how-to-compare-autocad-drawings_1.png)
+![](comparison-net/images/how-to-compare-autocad-drawings_1.png)
 
 Here are the steps to compare two DWG files:
 

@@ -1,11 +1,10 @@
 ---
 id: how-to-compare-powerpoint-presentations
-url: comparison-net/how-to-compare-powerpoint-presentations
+url: comparison/net/how-to-compare-powerpoint-presentations
 title: How to Compare PowerPoint Presentations
 weight: 5
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

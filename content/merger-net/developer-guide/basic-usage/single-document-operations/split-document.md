@@ -1,11 +1,10 @@
 ---
 id: split-document
-url: merger-net/split-document
+url: merger/net/split-document
 title: Split document
 weight: 3
 description: This guide describes how to split document of PDF, Word, Excel, PowerPoint and many other formats into several resultant documents using GroupDocs.Merger API.
 keywords: Split document, Split PDF, Split Word, Split DOC, Split Presentation, Split Excel
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

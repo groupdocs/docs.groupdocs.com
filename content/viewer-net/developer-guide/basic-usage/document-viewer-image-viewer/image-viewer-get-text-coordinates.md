@@ -1,11 +1,10 @@
 ---
 id: image-viewer-get-text-coordinates
-url: viewer-net/image-viewer-get-text-coordinates
+url: viewer/net/image-viewer-get-text-coordinates
 title: Image Viewer - Get text coordinates
 weight: 4
 description: Learn how to obtain text coordinates when viewing your documents with Image Viewer by GroupDocs and place text over rendered document page image.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

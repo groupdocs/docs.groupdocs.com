@@ -1,11 +1,10 @@
 ---
 id: get-attachments
-url: viewer-net/get-attachments
+url: viewer/net/get-attachments
 title: Get attachments
 weight: 1
 description: This guide describes how to get attachment from PDF document, Outlook data file or email and view it with file viewer by GroupDocs.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

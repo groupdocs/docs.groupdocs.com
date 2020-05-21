@@ -1,11 +1,10 @@
 ---
 id: get-supported-file-formats
-url: viewer-net/get-supported-file-formats
+url: viewer/net/get-supported-file-formats
 title: Get supported file formats
 weight: 5
 description: This article explains how to obtain supported file formats list when viewing documents with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

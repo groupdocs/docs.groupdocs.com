@@ -1,11 +1,10 @@
 ---
 id: remove-annotation-replies
-url: annotation-net/remove-annotation-replies
+url: annotation/net/remove-annotation-replies
 title: Remove annotation replies
 weight: 2
 description: Check this guide to learn how to remove all or specific annotation replies when collaborate over document using GroupDocs.Annotation for .NET API.
 keywords: How to remove annotation reply, remove annotation reply, remove reply, reply to annotation, remove annotation comment
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

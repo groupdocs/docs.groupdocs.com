@@ -1,11 +1,10 @@
 ---
 id: home
-url: signature-net
+url: signature/net
 title: GroupDocs.Signature for .NET
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: True
 ---

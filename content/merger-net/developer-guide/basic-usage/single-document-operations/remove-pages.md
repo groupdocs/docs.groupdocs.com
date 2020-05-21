@@ -1,11 +1,10 @@
 ---
 id: remove-pages
-url: merger-net/remove-pages
+url: merger/net/remove-pages
 title: Remove pages
 weight: 2
 description: Follow this guide and learn how to remove page from PDF or Word document, delete worksheet from Excel file or remove slides from PowerPoint presentations with GroupDocs.Merger API.
 keywords: Remove page from document, Delete page from document, Remove page, Delete page
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

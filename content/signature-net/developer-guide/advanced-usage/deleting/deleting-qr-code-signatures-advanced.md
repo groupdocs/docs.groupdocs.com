@@ -1,11 +1,10 @@
 ---
 id: deleting-qr-code-signatures-advanced
-url: signature-net/deleting-qr-code-signatures-advanced
+url: signature/net/deleting-qr-code-signatures-advanced
 title: Deleting QR-code signatures - advanced
 weight: 4
 description: This article shows how to delete QR-code electronic signatures different ways with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

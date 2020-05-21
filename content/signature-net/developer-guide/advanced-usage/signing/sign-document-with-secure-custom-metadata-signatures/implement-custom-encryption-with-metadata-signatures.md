@@ -1,11 +1,10 @@
 ---
 id: implement-custom-encryption-with-metadata-signatures
-url: signature-net/implement-custom-encryption-with-metadata-signatures
+url: signature/net/implement-custom-encryption-with-metadata-signatures
 title: Implement custom encryption with Metadata signatures
 weight: 1
 description: This article explains how to implement custom encryption for Metadata electronic signatures.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

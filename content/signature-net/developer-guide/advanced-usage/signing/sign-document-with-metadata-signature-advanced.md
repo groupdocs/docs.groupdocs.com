@@ -1,11 +1,10 @@
 ---
 id: sign-document-with-metadata-signature-advanced
-url: signature-net/sign-document-with-metadata-signature-advanced
+url: signature/net/sign-document-with-metadata-signature-advanced
 title: Sign document with Metadata signature - advanced
 weight: 10
 description:  This article explains how to sign document with Metadata electronic signatures using extended options with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

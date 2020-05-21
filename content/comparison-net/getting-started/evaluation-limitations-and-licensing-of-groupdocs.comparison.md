@@ -1,11 +1,10 @@
 ---
 id: evaluation-limitations-and-licensing-of-groupdocs-comparison
-url: comparison-net/evaluation-limitations-and-licensing-of-groupdocs-comparison
+url: comparison/net/evaluation-limitations-and-licensing-of-groupdocs-comparison
 title: Evaluation Limitations and Licensing of GroupDocs.Comparison
 weight: 5
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

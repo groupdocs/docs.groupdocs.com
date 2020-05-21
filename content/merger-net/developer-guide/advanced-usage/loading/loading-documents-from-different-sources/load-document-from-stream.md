@@ -1,11 +1,10 @@
 ---
 id: load-document-from-stream
-url: merger-net/load-document-from-stream
+url: merger/net/load-document-from-stream
 title: Load document from stream
 weight: 2
 description: This article explains how to load PDF, Word, Excel, PowerPoint documents from stream when using GroupDocs.Merger for .NET.
 keywords: Load document from stream, Load document with GroupDocs.Merger
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

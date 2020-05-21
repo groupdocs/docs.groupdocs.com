@@ -1,11 +1,10 @@
 ---
 id: sign-documents-with-exception-handling
-url: signature-net/sign-documents-with-exception-handling
+url: signature/net/sign-documents-with-exception-handling
 title: Sign documents with exception handling
 weight: 2
 description:  This article explains how to use exceptions handling when adding electronic signatures to document with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: compare-multiple-documents
-url: comparison-net/compare-multiple-documents
+url: comparison/net/compare-multiple-documents
 title: Compare multiple documents
 weight: 3
 description: Learn more about how to compare multiple Word documents or PowerPoint presentations simultaneously with GroupDocs.Comparison for .NET.
 keywords: Compare multiple documents, documents multi-comparison, compare more than two documents 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: get-supported-file-formats
-url: annotation-net/get-supported-file-formats
+url: annotation/net/get-supported-file-formats
 title: Get supported file formats
 weight: 1
 description: This article explains how to obtain supported file formats list when annotate documents and images with GroupDocs.Annotation within your .NET applications.
 keywords: supported image formats, supported file formats, annotation, Groupdocs annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

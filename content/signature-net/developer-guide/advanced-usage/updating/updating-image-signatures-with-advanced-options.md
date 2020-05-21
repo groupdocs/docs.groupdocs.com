@@ -1,11 +1,10 @@
 ---
 id: updating-image-signatures-with-advanced-options
-url: signature-net/updating-image-signatures-with-advanced-options
+url: signature/net/updating-image-signatures-with-advanced-options
 title: Updating Image signatures with advanced options
 weight: 2
 description:  This article explains how to provide advanced options when updating Image electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

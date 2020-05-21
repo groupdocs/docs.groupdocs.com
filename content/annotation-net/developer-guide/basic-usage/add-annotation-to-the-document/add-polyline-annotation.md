@@ -1,17 +1,16 @@
 ---
 id: add-polyline-annotation
-url: annotation-net/add-polyline-annotation
+url: annotation/net/add-polyline-annotation
 title: Add polyline annotation
 weight: 9
 description: Learn what is a polyline annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is a polyline annotation, how to add annotation, add polyline annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Polyline** annotation allows to draw shapes and freehand lines like shown at the picture below. 
 
-![](images/annotation-net/add-polyline-annotation_0.png)
+![](annotation-net/images/add-polyline-annotation.png)
 
 There is an ability to specify the next properties for [PolylineAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/polylineannotation) type:
 

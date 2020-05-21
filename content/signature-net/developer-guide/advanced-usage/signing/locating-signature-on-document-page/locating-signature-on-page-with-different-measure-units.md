@@ -1,11 +1,10 @@
 ---
 id: locating-signature-on-page-with-different-measure-units
-url: signature-net/locating-signature-on-page-with-different-measure-units
+url: signature/net/locating-signature-on-page-with-different-measure-units
 title: Locating signature on page with different measure units
 weight: 1
 description:  This article explains using measure units to locate signature and its size on document page with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: introducing-groupdocs-annotation-for-net
-url: annotation-net/introducing-groupdocs-annotation-for-net
+url: annotation/net/introducing-groupdocs-annotation-for-net
 title: Introducing GroupDocs.Annotation for .NET
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

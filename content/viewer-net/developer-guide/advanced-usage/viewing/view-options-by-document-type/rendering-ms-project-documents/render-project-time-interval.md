@@ -1,11 +1,10 @@
 ---
 id: render-project-time-interval
-url: viewer-net/render-project-time-interval
+url: viewer/net/render-project-time-interval
 title: Render project time interval
 weight: 3
 description: This article explains how to view the specific time interval of MS Project Document with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

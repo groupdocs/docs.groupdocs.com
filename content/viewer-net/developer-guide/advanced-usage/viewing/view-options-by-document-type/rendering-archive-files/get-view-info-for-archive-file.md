@@ -1,11 +1,10 @@
 ---
 id: get-view-info-for-archive-file
-url: viewer-net/get-view-info-for-archive-file
+url: viewer/net/get-view-info-for-archive-file
 title: Get View Info for Archive File
 weight: 1
 description: This article explains how to get information about an archive with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

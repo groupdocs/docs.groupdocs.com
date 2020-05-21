@@ -1,11 +1,10 @@
 ---
 id: how-to-run-examples
-url: signature-net/how-to-run-examples
+url: signature/net/how-to-run-examples
 title: How to Run Examples
 weight: 6
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
@@ -46,13 +45,13 @@ Please choose one from the following list:
 The complete examples package of **GroupDocs.Signature **is hosted on [GitHub](https://github.com/groupdocs-signature/GroupDocs.Signature-for-.NET). You can either download the ZIP file from [here](https://github.com/groupdocs-signature/GroupDocs.Signature-for-.NET/archive/master.zip) or clone the repository of GitHub using your favourite git client.  
 In case you download the ZIP file, extract the folders on your local disk. The extracted files and folders will look like following image:
 
-![](images/signature-net/how-to-run-examples_0.png)
+![](signature-net/images/how-to-run-examples.png)
 
 In extracted files and folders, you can find CSharp solution file. The project is created in **Microsoft Visual Studio 2019**. The **Resources **folder contains all the sample document and image files used in the examples.  
 To run the examples, open the solution file in Visual Studio and build the project. To add missing references of **GroupDocs.Signature** see [Development Environment, Installation and Configuration](https://docs.groupdocs.com/display/signaturenet/Development+Environment%2C+Installation+and+Configuration). All the functions are called from **RunExamples.cs**.   
 Un-comment the function you want to run and comment the rest.
 
-![](images/signature-net/how-to-run-examples_1.png)
+![](signature-net/images/how-to-run-examples_1.png)
 
 ## Run MVC examples
 

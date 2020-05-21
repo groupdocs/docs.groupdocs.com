@@ -1,11 +1,10 @@
 ---
 id: merge-word-documents
-url: merger-net/merge-word-documents
+url: merger/net/merge-word-documents
 title: Merge Word documents
 weight: 3
 description: Follow this guide and learn how to merge Word documents, combine several DOCX or DOC files into one using GroupDocs.Merger.
 keywords: Merge Word, Merge DOCX, Merge DOC, Join DOCX, Combine DOC
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

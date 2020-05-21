@@ -1,17 +1,16 @@
 ---
 id: add-area-annotation
-url: annotation-net/add-area-annotation
+url: annotation/net/add-area-annotation
 title: Add area annotation
 weight: 1
 description: Learn what is area annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is area annotation, how to add annotation, add area annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Area annotation** allows to mark up an area within the document page with a rectangle like shown at the picture below. 
 
-![](images/annotation-net/add-area-annotation_0.png)
+![](annotation-net/images/add-area-annotation.png)
 
 There is an ability to specify the next properties for [AreaAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/areaannotation) type:
 

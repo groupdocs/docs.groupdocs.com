@@ -1,11 +1,10 @@
 ---
 id: load-document-from-azure-blob-storage
-url: signature-net/load-document-from-azure-blob-storage
+url: signature/net/load-document-from-azure-blob-storage
 title: Load document from Azure Blob Storage
 weight: 2
 description: This section explains how to load document from Azure Blob Storage with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

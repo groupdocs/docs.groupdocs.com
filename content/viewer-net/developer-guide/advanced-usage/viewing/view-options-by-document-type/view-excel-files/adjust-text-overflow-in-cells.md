@@ -1,11 +1,10 @@
 ---
 id: adjust-text-overflow-in-cells
-url: viewer-net/adjust-text-overflow-in-cells
+url: viewer/net/adjust-text-overflow-in-cells
 title: Adjust text overflow in cells
 weight: 1
 description: This article explains how to adjust text-overflow in cells when viewing Spreadsheets with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
@@ -15,7 +14,7 @@ This article explains how to adjust text-overflow in cells when viewing Spreadsh
 
 ## Introduction
 
-![](images/viewer-net/adjust-text-overflow-in-cells_0.png)
+![](viewer-net/images/adjust-text-overflow-in-cells.png)
 
 When Spreadsheet is rendered overflowed text inside the cell overlays subsequent cells until it meets non-empty cell. GroupDocs.Viewer provides a setting to configure the mode which will be used for rendering overflowed text:
 

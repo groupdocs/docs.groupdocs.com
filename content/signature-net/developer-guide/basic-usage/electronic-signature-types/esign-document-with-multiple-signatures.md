@@ -1,11 +1,10 @@
 ---
 id: esign-document-with-multiple-signatures
-url: signature-net/esign-document-with-multiple-signatures
+url: signature/net/esign-document-with-multiple-signatures
 title: eSign document with multiple signatures
 weight: 9
 description: This article explains how to sign document with multiple signatures of various type by GroupDocs.Signature API
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

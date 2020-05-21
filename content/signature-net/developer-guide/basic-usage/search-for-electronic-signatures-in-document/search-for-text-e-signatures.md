@@ -1,11 +1,10 @@
 ---
 id: search-for-text-e-signatures
-url: signature-net/search-for-text-e-signatures
+url: signature/net/search-for-text-e-signatures
 title: Search for Text e-signatures
 weight: 6
 description: This topic explains how to search for text electronic signatures within the document pages by GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

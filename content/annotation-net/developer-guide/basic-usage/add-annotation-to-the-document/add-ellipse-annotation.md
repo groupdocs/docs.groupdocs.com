@@ -1,17 +1,16 @@
 ---
 id: add-ellipse-annotation
-url: annotation-net/add-ellipse-annotation
+url: annotation/net/add-ellipse-annotation
 title: Add ellipse annotation
 weight: 4
 description: Learn what is an ellipse annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is a ellipse annotation, how to add annotation, add ellipse annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Ellipse annotation** draws elliptic annotation in a document page like shown at the picture below.
 
-![](images/annotation-net/add-ellipse-annotation_0.png)
+![](annotation-net/images/add-ellipse-annotation.png)
 
 There is an ability to specify the next properties for [EllipseAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/ellipseannotation) type*:* 
 

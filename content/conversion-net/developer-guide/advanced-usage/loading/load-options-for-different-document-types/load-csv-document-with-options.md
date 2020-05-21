@@ -1,11 +1,10 @@
 ---
 id: load-csv-document-with-options
-url: conversion-net/load-csv-document-with-options
+url: conversion/net/load-csv-document-with-options
 title: Load CSV document with options
 weight: 2
 description: Learn this article and check how to load and convert CSV documents with advanced options using GroupDocs.Conversion for .NET API.
 keywords: Load document, Load CSV document
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

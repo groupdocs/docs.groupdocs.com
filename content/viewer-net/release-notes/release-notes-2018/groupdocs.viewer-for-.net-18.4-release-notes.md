@@ -1,11 +1,10 @@
 ---
 id: groupdocs-viewer-for-net-18-4-release-notes
-url: viewer-net/groupdocs-viewer-for-net-18-4-release-notes
+url: viewer/net/groupdocs-viewer-for-net-18-4-release-notes
 title: GroupDocs.Viewer for .NET 18.4 Release Notes
 weight: 11
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

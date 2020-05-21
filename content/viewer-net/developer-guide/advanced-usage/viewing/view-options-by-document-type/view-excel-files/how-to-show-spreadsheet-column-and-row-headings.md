@@ -1,11 +1,10 @@
 ---
 id: how-to-show-spreadsheet-column-and-row-headings
-url: viewer-net/how-to-show-spreadsheet-column-and-row-headings
+url: viewer/net/how-to-show-spreadsheet-column-and-row-headings
 title: How to show spreadsheet column and row headings
 weight: 2
 description: This article explains how to adjust text-overflow in cells when viewing Spreadsheets with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

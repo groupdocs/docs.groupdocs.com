@@ -1,17 +1,16 @@
 ---
 id: add-highlight-annotation
-url: annotation-net/add-highlight-annotation
+url: annotation/net/add-highlight-annotation
 title: Add highlight annotation
 weight: 5
 description: Learn what is a highlight annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is a highlight annotation, how to add annotation, add highlight annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Highlight** annotation highlights and comments selected text  like shown at the picture below. 
 
-![](images/annotation-net/add-highlight-annotation_0.png)
+![](annotation-net/images/add-highlight-annotation.png)
 
 There is an ability to specify the next properties for [HighlightAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/highlightannotation) type:
 

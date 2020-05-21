@@ -1,17 +1,16 @@
 ---
 id: add-text-redaction-annotation
-url: annotation-net/add-text-redaction-annotation
+url: annotation/net/add-text-redaction-annotation
 title: Add text redaction annotation
 weight: 14
 description: Learn what is a text redaction annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is a text redaction annotation, how to add annotation, add text redaction annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Text redaction** annotation fills part of text with black rectangle (used if you want to hide some text) like shown at the picture below.
 
-![](images/annotation-net/add-text-redaction-annotation_0.png)
+![](annotation-net/images/add-text-redaction-annotation.png)
 
 There is an ability to specify the next properties for [TextRedactionAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textredactionannotation)type
 

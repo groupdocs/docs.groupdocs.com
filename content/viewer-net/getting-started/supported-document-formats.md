@@ -1,11 +1,10 @@
 ---
 id: supported-document-formats
-url: viewer-net/supported-document-formats
+url: viewer/net/supported-document-formats
 title: Supported Document Formats
 weight: 2
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

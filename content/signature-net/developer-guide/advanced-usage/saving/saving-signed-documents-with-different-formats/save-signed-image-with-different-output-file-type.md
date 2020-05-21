@@ -1,11 +1,10 @@
 ---
 id: save-signed-image-with-different-output-file-type
-url: signature-net/save-signed-image-with-different-output-file-type
+url: signature/net/save-signed-image-with-different-output-file-type
 title: Save signed Image with different output file type
 weight: 1
 description: This article explains how to save signed image with various image formats by GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

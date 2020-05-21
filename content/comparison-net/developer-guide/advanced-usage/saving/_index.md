@@ -1,11 +1,10 @@
 ---
 id: saving
-url: comparison-net/saving
+url: comparison/net/saving
 title: Saving
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

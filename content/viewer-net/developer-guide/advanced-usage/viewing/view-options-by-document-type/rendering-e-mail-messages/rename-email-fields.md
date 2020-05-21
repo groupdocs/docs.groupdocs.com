@@ -1,11 +1,10 @@
 ---
 id: rename-email-fields
-url: viewer-net/rename-email-fields
+url: viewer/net/rename-email-fields
 title: Rename email fields
 weight: 2
 description: This article explains how to translate fields when viewing E-Mail Messages with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: image-viewer-add-text-overlay-over-images
-url: viewer-net/image-viewer-add-text-overlay-over-images
+url: viewer/net/image-viewer-add-text-overlay-over-images
 title: Image Viewer - Add text overlay over images
 weight: 1
 description: Implement selectable text and text search features by adding text overlay over document page images with GroupDocs.Viewer component.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

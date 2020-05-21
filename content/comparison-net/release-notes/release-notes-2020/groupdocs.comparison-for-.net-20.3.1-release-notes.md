@@ -1,11 +1,10 @@
 ---
 id: groupdocs-comparison-for-net-20-3-1-release-notes
-url: comparison-net/groupdocs-comparison-for-net-20-3-1-release-notes
+url: comparison/net/groupdocs-comparison-for-net-20-3-1-release-notes
 title: GroupDocs.Comparison for .NET 20.3.1 Release Notes
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

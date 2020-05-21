@@ -1,11 +1,10 @@
 ---
 id: advanced-search-for-qr-code-signatures
-url: signature-net/advanced-search-for-qr-code-signatures
+url: signature/net/advanced-search-for-qr-code-signatures
 title: Advanced search for QR-code signatures
 weight: 3
 description:  This article explains how to provide advanced search for QR-code electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

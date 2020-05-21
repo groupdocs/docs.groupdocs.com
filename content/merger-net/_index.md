@@ -1,11 +1,10 @@
 ---
 id: home
-url: merger-net
+url: merger/net
 title: GroupDocs.Merger for .NET
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: True
 ---

@@ -1,11 +1,10 @@
 ---
 id: convert-specific-pages
-url: conversion-net/convert-specific-pages
+url: conversion/net/convert-specific-pages
 title: Convert specific pages
 weight: 3
 description: This article demonstrates how to convert specific document pages by page number using GroupDocs.Conversion for .NET API.
 keywords: Convert page, Convert pages, Convert specific pages
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

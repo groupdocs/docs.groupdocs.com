@@ -1,11 +1,10 @@
 ---
 id: get-file-info
-url: annotation-net/get-file-info
+url: annotation/net/get-file-info
 title: Get file info
 weight: 2
 description: This article explains how to detect document file type, size and calculate pages count when annotate documents or images with GroupDocs.Annotation.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

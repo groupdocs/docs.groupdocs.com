@@ -1,11 +1,10 @@
 ---
 id: sign-documents-with-additional-image-adjustments
-url: signature-net/sign-documents-with-additional-image-adjustments
+url: signature/net/sign-documents-with-additional-image-adjustments
 title: Sign documents with additional image adjustments
 weight: 1
 description:  This article explains how to use different image adjustment with electronic signatures on document page.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

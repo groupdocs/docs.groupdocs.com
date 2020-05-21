@@ -1,11 +1,10 @@
 ---
 id: get-supported-file-types
-url: merger-net/get-supported-file-types
+url: merger/net/get-supported-file-types
 title: Get supported file types
 weight: 1
 description: This article explains how to obtain supported file formats list when merge PDF, Word, Excel, PowerPoint documents with GroupDocs.Merger within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: load-document-from-local-disk
-url: comparison-net/load-document-from-local-disk
+url: comparison/net/load-document-from-local-disk
 title: Load document from local disk
 weight: 1
 description: This article explains how to load PDF, Word, Excel, PowerPoint documents from local disk when using GroupDocs.Comparison for .NET.
 keywords: Load document from local disk, Load document from file path, Load document with GroupDocs.Comparison
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

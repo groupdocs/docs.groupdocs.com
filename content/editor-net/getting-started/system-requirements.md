@@ -1,11 +1,10 @@
 ---
 id: system-requirements
-url: editor-net/system-requirements
+url: editor/net/system-requirements
 title: System Requirements
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

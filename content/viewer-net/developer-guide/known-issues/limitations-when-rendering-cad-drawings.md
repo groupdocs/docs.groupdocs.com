@@ -1,11 +1,10 @@
 ---
 id: limitations-when-rendering-cad-drawings
-url: viewer-net/limitations-when-rendering-cad-drawings
+url: viewer/net/limitations-when-rendering-cad-drawings
 title: Limitations when rendering CAD drawings
 weight: 2
 description: This article is about the limitations of GroupDocs.Viewer of rendering CAD Drawings.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

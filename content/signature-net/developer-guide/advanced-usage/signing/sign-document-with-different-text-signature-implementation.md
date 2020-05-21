@@ -1,11 +1,10 @@
 ---
 id: sign-document-with-different-text-signature-implementation
-url: signature-net/sign-document-with-different-text-signature-implementation
+url: signature/net/sign-document-with-different-text-signature-implementation
 title: Sign document with different Text signature implementation
 weight: 4
 description:  This article explains how to sign document with Text electronic signatures using extended options with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

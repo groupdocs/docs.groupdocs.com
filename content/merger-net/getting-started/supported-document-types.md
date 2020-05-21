@@ -1,11 +1,10 @@
 ---
 id: supported-document-types
-url: merger-net/supported-document-types
+url: merger/net/supported-document-types
 title: Supported Document Types
 weight: 2
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

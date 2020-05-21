@@ -1,17 +1,16 @@
 ---
 id: html-viewer-responsive-layout
-url: viewer-net/html-viewer-responsive-layout
+url: viewer/net/html-viewer-responsive-layout
 title: HTML Viewer - Responsive layout
 weight: 3
 description: Learn how to render and display your document with responsive HTML layout that looks great on mobile and desktop devices.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
 # Render to responsive HTML
 
-![](images/viewer-net/html-viewer-responsive-layout_0.jpg)
+![](viewer-net/images/html-viewer-responsive-layout.jpg)
 
 GroupDocs.Viewer also enables you to make your rendering into HTML look well across all types of devices. To achieve this, the API provides [RenderResponsive](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions/properties/renderresponsive) property of [HtmlViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions)class as shown in below sample code.
 

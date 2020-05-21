@@ -1,11 +1,10 @@
 ---
 id: development-environment-installation-and-configuration
-url: viewer-net/development-environment-installation-and-configuration
+url: viewer/net/development-environment-installation-and-configuration
 title: Development Environment Installation and Configuration
 weight: 4
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
@@ -59,7 +58,7 @@ Follow these steps to reference GroupDocs.Viewer using Package Manager GUI:
       
     
 
-![](images/viewer-net/development-environment-installation-and-configuration_0.png)
+![](viewer-net/images/development-environment-installation-and-configuration.png)
 
 #### Using Package Manager Console
 
@@ -73,7 +72,7 @@ You can follow the steps below to reference GroupDocs.Viewer for .NET using the 
     
 *   After successful installation, GroupDocs.Viewer will be referenced in your application.  
       
-![](images/viewer-net/development-environment-installation-and-configuration_1.png)
+![](viewer-net/images/development-environment-installation-and-configuration_1.png)
     
 
   

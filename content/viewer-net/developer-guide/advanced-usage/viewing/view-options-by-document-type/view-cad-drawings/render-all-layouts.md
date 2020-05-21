@@ -1,15 +1,14 @@
 ---
 id: render-all-layouts
-url: viewer-net/render-all-layouts
+url: viewer/net/render-all-layouts
 title: Render all layouts
 weight: 6
 description: This article explains how to view all CAD drawing layouts with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-![](images/viewer-net/render-all-layouts_0.jpg)
+![](viewer-net/images/render-all-layouts.jpg)
 
 When GroupDocs.Viewer renders CAD drawings we get only Model representation. In order to render Model and all non-empty Layouts within CAD drawing, the property [CadOptions.RenderLayouts](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/cadoptions/properties/renderlayouts) of [HtmlViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/htmlviewoptions)class* (*or [PngViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pngviewoptions)*, *or [JpgViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/jpgviewoptions)*, *or [PdfViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pdfviewoptions)*) *is used.
 

@@ -1,11 +1,10 @@
 ---
 id: get-document-info
-url: conversion-net/get-document-info
+url: conversion/net/get-document-info
 title: Get document info
 weight: 2
 description: This article explains how to detect document file type and calculate pages count when convert file with GroupDocs.Conversion for .NET.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

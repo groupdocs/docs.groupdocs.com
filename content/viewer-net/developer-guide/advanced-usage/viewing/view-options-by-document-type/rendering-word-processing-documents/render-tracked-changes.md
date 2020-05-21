@@ -1,11 +1,10 @@
 ---
 id: render-tracked-changes
-url: viewer-net/render-tracked-changes
+url: viewer/net/render-tracked-changes
 title: Render tracked changes
 weight: 1
 description: This article explains how to show tracked changes when viewing Word Processing Documents with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

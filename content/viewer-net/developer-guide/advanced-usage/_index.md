@@ -1,11 +1,10 @@
 ---
 id: advanced-usage
-url: viewer-net/advanced-usage
+url: viewer/net/advanced-usage
 title: Advanced usage
 weight: 2
 description: Learn about GroupDocs.Viewer advanced usage and its multiple powerful features like customizing document viewing output, loading documents from different sources, etc.
 keywords: GroupDocs.Viewer Advanced Features, GroupDocs.Viewer Customization, GroupDocs.Viewer Advanced Features C#
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: load-document-from-local-disk
-url: annotation-net/load-document-from-local-disk
+url: annotation/net/load-document-from-local-disk
 title: Load document from local disk
 weight: 1
 description: This article explains how to load PDF, Word, Excel, PowerPoint documents from local disk when using GroupDocs.Annotation for .NET.
 keywords: Load document from local disk, Load document from file path, Load document with GroupDocs.Annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

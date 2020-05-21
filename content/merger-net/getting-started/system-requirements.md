@@ -1,11 +1,10 @@
 ---
 id: system-requirements
-url: merger-net/system-requirements
+url: merger/net/system-requirements
 title: System Requirements
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

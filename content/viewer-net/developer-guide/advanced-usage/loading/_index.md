@@ -1,11 +1,10 @@
 ---
 id: loading
-url: viewer-net/loading
+url: viewer/net/loading
 title: Loading
 weight: 3
 description: This article document loading use cases with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

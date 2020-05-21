@@ -1,11 +1,10 @@
 ---
 id: migration-notes
-url: comparison-net/migration-notes
+url: comparison/net/migration-notes
 title: Migration Notes
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

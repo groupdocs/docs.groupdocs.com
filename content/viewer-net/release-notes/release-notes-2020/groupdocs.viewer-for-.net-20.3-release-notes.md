@@ -1,11 +1,10 @@
 ---
 id: groupdocs-viewer-for-net-20-3-release-notes
-url: viewer-net/groupdocs-viewer-for-net-20-3-release-notes
+url: viewer/net/groupdocs-viewer-for-net-20-3-release-notes
 title: GroupDocs.Viewer for .NET 20.3 Release Notes
 weight: 3
 description: This page contains release notes for GroupDocs.Viewer for .NET 20.3.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

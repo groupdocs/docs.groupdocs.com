@@ -1,11 +1,10 @@
 ---
 id: esign-document-with-stamp-signature
-url: signature-net/esign-document-with-stamp-signature
+url: signature/net/esign-document-with-stamp-signature
 title: eSign document with Stamp signature
 weight: 8
 description: This article explains how to sign document electronically with generated Stamp signatures by GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

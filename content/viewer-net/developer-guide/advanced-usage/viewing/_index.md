@@ -1,11 +1,10 @@
 ---
 id: viewing
-url: viewer-net/viewing
+url: viewer/net/viewing
 title: Viewing
 weight: 1
 description: Viewing documents with GroupDocs.Viewer for .NET in your .NET / C# applications.
 keywords: GroupDocs.Viewer Rendering, GroupDocs.Viewer .NET Rendering
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

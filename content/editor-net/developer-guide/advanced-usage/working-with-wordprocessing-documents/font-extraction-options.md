@@ -1,11 +1,10 @@
 ---
 id: font-extraction-options
-url: editor-net/font-extraction-options
+url: editor/net/font-extraction-options
 title: Font extraction options
 weight: 5
 description: Learn this guide to know about extracting and embedding fonts into Word document when editing with GroupDocs.Editor API.
 keywords: Edit document with fonts, Font extraction
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

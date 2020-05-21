@@ -1,11 +1,10 @@
 ---
 id: extract-pages
-url: merger-net/extract-pages
+url: merger/net/extract-pages
 title: Extract pages
 weight: 6
 description: Following this guide you will learn how to extract pages from PDF, Word, Excel, PowerPoint and many other file types using GroupDocs.Merger for .NET.
 keywords: Extract page from PDF, Extract page from Word, Extract worksheet from Excel, Extract slide from PowerPoint, Extract document pages
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

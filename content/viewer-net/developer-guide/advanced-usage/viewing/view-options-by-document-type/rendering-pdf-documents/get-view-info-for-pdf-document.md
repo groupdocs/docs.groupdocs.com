@@ -1,11 +1,10 @@
 ---
 id: get-view-info-for-pdf-document
-url: viewer-net/get-view-info-for-pdf-document
+url: viewer/net/get-view-info-for-pdf-document
 title: Get View Info for PDF Document
 weight: 5
 description: This article explains how to retrieve information about PDF Documents with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

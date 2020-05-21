@@ -1,11 +1,10 @@
 ---
 id: getting-started
-url: signature-net/getting-started
+url: signature/net/getting-started
 title: Getting Started
 weight: 2
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

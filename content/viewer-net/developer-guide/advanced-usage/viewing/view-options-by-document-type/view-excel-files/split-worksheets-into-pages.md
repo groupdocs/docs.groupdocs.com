@@ -1,11 +1,10 @@
 ---
 id: split-worksheets-into-pages
-url: viewer-net/split-worksheets-into-pages
+url: viewer/net/split-worksheets-into-pages
 title: Split worksheets into pages
 weight: 8
 description: This article explains how to split worksheets into pages when viewing Spreadsheets with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

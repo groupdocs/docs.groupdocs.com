@@ -1,11 +1,10 @@
 ---
 id: features-overview
-url: signature-net/features-overview
+url: signature/net/features-overview
 title: Features Overview
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

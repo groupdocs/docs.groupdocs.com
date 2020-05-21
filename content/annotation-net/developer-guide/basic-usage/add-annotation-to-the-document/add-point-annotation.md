@@ -1,17 +1,16 @@
 ---
 id: add-point-annotation
-url: annotation-net/add-point-annotation
+url: annotation/net/add-point-annotation
 title: Add point annotation
 weight: 8
 description: Learn what is a point annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is a point annotation, how to add annotation, add point annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Point** annotationsticks comments to any point in a document like shown at the picture below. 
 
-![](images/annotation-net/add-point-annotation_0.png)
+![](annotation-net/images/add-point-annotation.png)
 
 There is an ability to specify the next properties for [PointAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/pointannotation) type:
 

@@ -1,11 +1,10 @@
 ---
 id: split-text-file
-url: merger-net/split-text-file
+url: merger/net/split-text-file
 title: Split text file
 weight: 4
 description: Follow this guide and learn how to split text file into several resultant files using GroupDocs.Merger for .NET API.
 keywords: Split file, Split text file, Split text by line number
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

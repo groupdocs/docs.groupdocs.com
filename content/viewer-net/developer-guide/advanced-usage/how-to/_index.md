@@ -1,11 +1,10 @@
 ---
 id: how-to
-url: viewer-net/how-to
+url: viewer/net/how-to
 title: How To
 weight: 4
 description: This article contains use-cases of GroupDocs.Viewer in your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

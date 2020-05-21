@@ -1,11 +1,10 @@
 ---
 id: working-with-spreadsheets
-url: editor-net/working-with-spreadsheets
+url: editor/net/working-with-spreadsheets
 title: Working with Spreadsheets
 weight: 2
 description: This guide demonstrates how to edit XLS, XLSX, XLSM, XLSB, ODS, SXC spreadsheets with hidden worksheets, protect edited spreadsheet with password and many other powerful features of GroupDocs.Editor for .NET.
 keywords: Edit Excel, Edit spreadsheet, Edit XLS, Edit XLSX, Edit XLSM, Edit XLSB, Edit ODS, Edit SXC
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

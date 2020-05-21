@@ -1,11 +1,10 @@
 ---
 id: esign-presentation-with-metadata-signature
-url: signature-net/esign-presentation-with-metadata-signature
+url: signature/net/esign-presentation-with-metadata-signature
 title: eSign Presentation with Metadata signature
 weight: 3
 description: This article explains how to add metadata signatures to Presentation document with GroupDocs.Signature
 keywords: Presentation metadata, Presentation metadata signature
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

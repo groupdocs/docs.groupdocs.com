@@ -1,11 +1,10 @@
 ---
 id: groupdocs-comparison-overview
-url: comparison-net/groupdocs-comparison-overview
+url: comparison/net/groupdocs-comparison-overview
 title: GroupDocs.Comparison Overview
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

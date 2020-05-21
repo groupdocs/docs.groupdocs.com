@@ -1,11 +1,10 @@
 ---
 id: search-for-multiple-e-signature-types
-url: signature-net/search-for-multiple-e-signature-types
+url: signature/net/search-for-multiple-e-signature-types
 title: Search for multiple e-signature types
 weight: 8
 description: This article explains how to search for multiple electronic signatures across document pages with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

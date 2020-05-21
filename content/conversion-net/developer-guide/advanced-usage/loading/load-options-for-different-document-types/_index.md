@@ -1,11 +1,10 @@
 ---
 id: load-options-for-different-document-types
-url: conversion-net/load-options-for-different-document-types
+url: conversion/net/load-options-for-different-document-types
 title: Load options for different document types
 weight: 2
 description: This article demonstrates how to load and convert PDF. Word, Excel, PowerPoint documents and Images using GroupDocs.Conversion for .NET API.
 keywords: Load PDF, Load Word, Load Excel, Load PowerPoint, Load CAD, Load Image
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

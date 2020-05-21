@@ -1,11 +1,10 @@
 ---
 id: features-overview
-url: editor-net/features-overview
+url: editor/net/features-overview
 title: Features Overview
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

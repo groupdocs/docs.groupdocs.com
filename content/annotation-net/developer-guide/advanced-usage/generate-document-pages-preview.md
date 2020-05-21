@@ -1,11 +1,10 @@
 ---
 id: generate-document-pages-preview
-url: annotation-net/generate-document-pages-preview
+url: annotation/net/generate-document-pages-preview
 title: Generate document pages preview
 weight: 3
 description: Following this guide you will learn how to generate PDF, Word, Excel, PowerPoint documents thumbnails and preview document pages using GroupDocs.Annotation for .NET API.
 keywords: Preview document pages, Document pages as PNG, document pages as JPG, Document preview
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

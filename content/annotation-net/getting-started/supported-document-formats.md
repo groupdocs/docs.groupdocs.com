@@ -1,11 +1,10 @@
 ---
 id: supported-document-formats
-url: annotation-net/supported-document-formats
+url: annotation/net/supported-document-formats
 title: Supported Document Formats
 weight: 2
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: groupdocs-annotation-for-net-20-4-release-notes
-url: annotation-net/groupdocs-annotation-for-net-20-4-release-notes
+url: annotation/net/groupdocs-annotation-for-net-20-4-release-notes
 title: GroupDocs.Annotation for .NET 20.4 Release Notes
 weight: 4
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

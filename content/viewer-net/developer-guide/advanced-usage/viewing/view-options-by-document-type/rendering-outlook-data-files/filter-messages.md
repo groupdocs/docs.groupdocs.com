@@ -1,17 +1,16 @@
 ---
 id: filter-messages
-url: viewer-net/filter-messages
+url: viewer/net/filter-messages
 title: Filter messages
 weight: 1
 description: This article explains how to filter messages when viewing Outlook Data Files with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
  MS Outlook allows to filter messages inside folders by some text value from message content and by part of the sender's or recipient's address.
 
-![](images/viewer-net/filter-messages_0.png)
+![](viewer-net/images/filter-messages.png)
 
 GroupDocs.Viewer also allows filtering the rendered messages using the following filters:
 

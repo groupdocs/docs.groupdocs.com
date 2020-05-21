@@ -1,11 +1,10 @@
 ---
 id: common-conversion-options
-url: conversion-net/common-conversion-options
+url: conversion/net/common-conversion-options
 title: Common conversion options
 weight: 1
 description: This documentation sections describe how to customize document conversion process - convert specific document pages, apply watermarks etc. when using GroupDocs.Conversion for .NET.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: handling-incorrect-document-password-exception
-url: signature-net/handling-incorrect-document-password-exception
+url: signature/net/handling-incorrect-document-password-exception
 title: Handling incorrect document password exception
 weight: 1
 description: This article shows how to handle incorrect document password exception with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

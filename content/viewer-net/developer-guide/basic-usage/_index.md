@@ -1,11 +1,10 @@
 ---
 id: basic-usage
-url: viewer-net/basic-usage
+url: viewer/net/basic-usage
 title: Basic usage
 weight: 1
 description: Quick Start section about main features of GroupDocs.Viewer API, describes how to view documents with just couple lines of code. 
 keywords: GroupDocs.Viewer Quick Start, GroupDocs.Viewer .NET Basic Usage, GroupDocs.Viewer Quick Start C#, GroupDocs.Viewer Get Started
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

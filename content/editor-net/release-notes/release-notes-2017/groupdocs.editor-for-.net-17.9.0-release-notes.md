@@ -1,11 +1,10 @@
 ---
 id: groupdocs-editor-for-net-17-9-0-release-notes
-url: editor-net/groupdocs-editor-for-net-17-9-0-release-notes
+url: editor/net/groupdocs-editor-for-net-17-9-0-release-notes
 title: GroupDocs.Editor for .NET 17.9.0 Release Notes
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

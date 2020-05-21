@@ -1,11 +1,10 @@
 ---
 id: pdf-viewer-adjust-quality-for-jpg-images
-url: viewer-net/pdf-viewer-adjust-quality-for-jpg-images
+url: viewer/net/pdf-viewer-adjust-quality-for-jpg-images
 title: PDF Viewer - Adjust quality for JPG images
 weight: 1
 description: Check this guide and learn how to adjust JPG images quality and size when displaying documents with PDF Viewer by GroupDocs.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

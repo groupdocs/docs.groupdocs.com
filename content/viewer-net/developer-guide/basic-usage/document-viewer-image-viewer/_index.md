@@ -1,11 +1,10 @@
 ---
 id: document-viewer-image-viewer
-url: viewer-net/document-viewer-image-viewer
+url: viewer/net/document-viewer-image-viewer
 title: Document viewer - Image Viewer
 weight: 2
 description: Image Viewer component by GroupDocs allows you to display 100+ file formats as PNG or JPG images in your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

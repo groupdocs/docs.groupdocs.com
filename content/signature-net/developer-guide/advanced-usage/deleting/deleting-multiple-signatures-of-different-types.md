@@ -1,11 +1,10 @@
 ---
 id: deleting-multiple-signatures-of-different-types
-url: signature-net/deleting-multiple-signatures-of-different-types
+url: signature/net/deleting-multiple-signatures-of-different-types
 title: Deleting multiple signatures of different types
 weight: 3
 description: This article shows how to delete multiple electronic signatures different ways with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

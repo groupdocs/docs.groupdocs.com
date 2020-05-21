@@ -1,11 +1,10 @@
 ---
 id: adjust-page-size
-url: viewer-net/adjust-page-size
+url: viewer/net/adjust-page-size
 title: Adjust page size
 weight: 1
 description: This article explains how to adjust page size when viewing E-Mail Messages with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

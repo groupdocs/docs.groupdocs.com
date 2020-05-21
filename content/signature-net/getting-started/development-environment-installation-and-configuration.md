@@ -1,11 +1,10 @@
 ---
 id: development-environment-installation-and-configuration
-url: signature-net/development-environment-installation-and-configuration
+url: signature/net/development-environment-installation-and-configuration
 title: Development Environment Installation and Configuration
 weight: 4
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
@@ -32,7 +31,7 @@ Follow these steps to reference GroupDocs.Signature using Package Manager GUI:
       
     
 
-![](images/signature-net/development-environment-installation-and-configuration_0.png)
+![](signature-net/images/development-environment-installation-and-configuration.png)
 
 #### Using Package Manager Console
 
@@ -48,7 +47,7 @@ You can follow the steps below to reference GroupDocs.Signature for .NET using t
       
     
 
-![](images/signature-net/development-environment-installation-and-configuration_1.png)
+![](signature-net/images/development-environment-installation-and-configuration_1.png)
 
 ## Install from official GroupDocs website
 

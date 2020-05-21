@@ -1,17 +1,16 @@
 ---
 id: add-link-annotation
-url: annotation-net/add-link-annotation
+url: annotation/net/add-link-annotation
 title: Add link annotation
 weight: 7
 description: Learn what is a link annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is a link annotation, how to add annotation, add link annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Link** annotation adds a hyper link to document  like shown at the picture below. 
 
-![](images/annotation-net/add-link-annotation_0.png)
+![](annotation-net/images/add-link-annotation.png)
 
 There is an ability to specify the next properties for [LinkAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/linkannotation) type:
 

@@ -1,11 +1,10 @@
 ---
 id: delete-image-signatures-from-documents
-url: signature-net/delete-image-signatures-from-documents
+url: signature/net/delete-image-signatures-from-documents
 title: Delete Image signatures from documents
 weight: 2
 description: This article explains how to delete Image electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

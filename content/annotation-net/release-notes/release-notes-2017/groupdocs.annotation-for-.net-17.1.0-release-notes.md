@@ -1,11 +1,10 @@
 ---
 id: groupdocs-annotation-for-net-17-1-0-release-notes
-url: annotation-net/groupdocs-annotation-for-net-17-1-0-release-notes
+url: annotation/net/groupdocs-annotation-for-net-17-1-0-release-notes
 title: GroupDocs.Annotation for .NET 17.1.0 Release Notes
 weight: 11
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

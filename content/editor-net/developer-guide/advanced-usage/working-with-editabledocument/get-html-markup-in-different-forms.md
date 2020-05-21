@@ -1,11 +1,10 @@
 ---
 id: get-html-markup-in-different-forms
-url: editor-net/get-html-markup-in-different-forms
+url: editor/net/get-html-markup-in-different-forms
 title: Get HTML markup in different forms
 weight: 1
 description: Learn this article to know how to get edited document HTML markup - body without head tag, content in a raw and base64 form and other using GroupDocs.Editor for .NET API.
 keywords: Get html content, get html body, get html markup
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

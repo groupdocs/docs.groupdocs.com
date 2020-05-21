@@ -1,11 +1,10 @@
 ---
 id: features-overview
-url: comparison-net/features-overview
+url: comparison/net/features-overview
 title: Features Overview
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

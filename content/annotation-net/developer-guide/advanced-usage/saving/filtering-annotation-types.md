@@ -1,11 +1,10 @@
 ---
 id: filtering-annotation-types
-url: annotation-net/filtering-annotation-types
+url: annotation/net/filtering-annotation-types
 title: Filtering annotation types
 weight: 1
 description: Learn this guide to check how to filter annotation types during saving document using GroupDocs.Annotation for .NET API.
 keywords: save specific annotation types, save annotations
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: groupdocs-annotation-for-net-20-1-release-notes
-url: annotation-net/groupdocs-annotation-for-net-20-1-release-notes
+url: annotation/net/groupdocs-annotation-for-net-20-1-release-notes
 title: GroupDocs.Annotation for .NET 20.1 Release Notes
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
@@ -70,7 +69,7 @@ Bug
     
     **Image annotation** allows to add image within document page like shown at the picture below.
     
-![](images/annotation-net/groupdocs-annotation-for-net-20-1-release-notes_0.png)
+![](annotation-net/images/groupdocs-annotation-for-net-20-1-release-notes.png)
     
     {{< alert style="info" >}}IMPORTANT: On version 20.1 Image Annotation supported only in PDF, Words, Slides, Cells, Images documents.{{< /alert >}}
     
@@ -126,4 +125,4 @@ Bug
     
     The result would be 
     
-![](images/annotation-net/groupdocs-annotation-for-net-20-1-release-notes_1.png)
+![](annotation-net/images/groupdocs-annotation-for-net-20-1-release-notes_1.png)

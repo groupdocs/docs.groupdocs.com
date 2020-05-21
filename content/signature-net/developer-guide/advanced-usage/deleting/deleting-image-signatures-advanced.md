@@ -1,11 +1,10 @@
 ---
 id: deleting-image-signatures-advanced
-url: signature-net/deleting-image-signatures-advanced
+url: signature/net/deleting-image-signatures-advanced
 title: Deleting Image signatures - advanced
 weight: 2
 description: This article shows how to delete Image electronic signatures different ways with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

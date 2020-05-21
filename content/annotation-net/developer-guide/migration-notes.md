@@ -1,11 +1,10 @@
 ---
 id: migration-notes
-url: annotation-net/migration-notes
+url: annotation/net/migration-notes
 title: Migration Notes
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

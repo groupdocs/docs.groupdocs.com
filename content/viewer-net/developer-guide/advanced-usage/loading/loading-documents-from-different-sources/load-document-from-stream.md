@@ -1,11 +1,10 @@
 ---
 id: load-document-from-stream
-url: viewer-net/load-document-from-stream
+url: viewer/net/load-document-from-stream
 title: Load document from Stream
 weight: 5
 description: This article explains how to load a document from a Stream with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

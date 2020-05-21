@@ -1,11 +1,10 @@
 ---
 id: how-to-view-dwf-file-layers
-url: viewer-net/how-to-view-dwf-file-layers
+url: viewer/net/how-to-view-dwf-file-layers
 title: How to view DWF file layers
 weight: 4
 description: This article explains how to view a specific DWF file layers with GroupDocs.Viewer within your .NET / C# applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

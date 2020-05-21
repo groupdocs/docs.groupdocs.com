@@ -1,11 +1,10 @@
 ---
 id: locating-signature-with-different-alignments
-url: signature-net/locating-signature-with-different-alignments
+url: signature/net/locating-signature-with-different-alignments
 title: Locating signature with different alignments
 weight: 2
 description:  This article explains how to use different alignment values to locate signature on document page with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

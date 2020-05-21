@@ -1,11 +1,10 @@
 ---
 id: sign-documents-with-qr-code-embedded-object
-url: signature-net/sign-documents-with-qr-code-embedded-object
+url: signature/net/sign-documents-with-qr-code-embedded-object
 title: Sign documents with QR-code embedded object
 weight: 4
 description: This article explains how to create encrypted QR-code electronic signature with embedded custom object
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

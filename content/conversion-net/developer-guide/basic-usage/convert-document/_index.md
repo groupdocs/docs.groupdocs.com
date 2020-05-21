@@ -1,11 +1,10 @@
 ---
 id: convert-document
-url: conversion-net/convert-document
+url: conversion/net/convert-document
 title: Convert document
 weight: 3
 description: This documentation explains how to convert document to PDF, Word, Excel, PowerPoint, Email, JPG, PNG, TIFF and many other formats with just couple of lines of .NET code.
 keywords: Convert PDF, Convert Word, Convert Excel, Convert Email, Convert Presentation
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

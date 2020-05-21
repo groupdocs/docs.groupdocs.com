@@ -1,11 +1,10 @@
 ---
 id: get-document-information
-url: merger-net/get-document-information
+url: merger/net/get-document-information
 title: Get document information
 weight: 2
 description: This article explains how to detect document file type and calculate pages count when merge PDF, Word, Excel, PowerPoint files with GroupDocs.Merger.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

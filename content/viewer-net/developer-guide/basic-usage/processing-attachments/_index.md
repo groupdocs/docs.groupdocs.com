@@ -1,11 +1,10 @@
 ---
 id: processing-attachments
-url: viewer-net/processing-attachments
+url: viewer/net/processing-attachments
 title: Processing attachments
 weight: 6
 description: This documentation section describes how to view, print or extract PDF, Outlook email and Archive document attachments with file viewer y GroupDocs.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: pdf-viewer-protect-pdf-document
-url: viewer-net/pdf-viewer-protect-pdf-document
+url: viewer/net/pdf-viewer-protect-pdf-document
 title: PDF Viewer - Protect PDF document
 weight: 2
 description: Check this guide and learn how to view protected PDF documents inside your .NET application using PDF Viewer by GroupDocs.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

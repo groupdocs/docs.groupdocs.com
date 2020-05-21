@@ -1,11 +1,10 @@
 ---
 id: introducing-groupdocs-editor-for-net
-url: editor-net/introducing-groupdocs-editor-for-net
+url: editor/net/introducing-groupdocs-editor-for-net
 title: Introducing GroupDocs.Editor for .NET
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

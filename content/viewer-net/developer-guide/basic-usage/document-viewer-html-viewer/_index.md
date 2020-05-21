@@ -1,11 +1,10 @@
 ---
 id: document-viewer-html-viewer
-url: viewer-net/document-viewer-html-viewer
+url: viewer/net/document-viewer-html-viewer
 title: Document viewer - HTML Viewer
 weight: 1
 description: HTML Viewer component by GroupDocs allows to render and display documents of PDF, Word, Excel, PowerPoint and many other file formats within .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

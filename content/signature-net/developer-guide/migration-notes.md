@@ -1,11 +1,10 @@
 ---
 id: migration-notes
-url: signature-net/migration-notes
+url: signature/net/migration-notes
 title: Migration Notes
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

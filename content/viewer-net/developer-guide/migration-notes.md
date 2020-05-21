@@ -1,11 +1,10 @@
 ---
 id: migration-notes
-url: viewer-net/migration-notes
+url: viewer/net/migration-notes
 title: Migration Notes
 weight: 3
 description: This article contains information about migration from the legacy API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

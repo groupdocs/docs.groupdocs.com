@@ -1,11 +1,10 @@
 ---
 id: system-requirements
-url: comparison-net/system-requirements
+url: comparison/net/system-requirements
 title: System Requirements
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

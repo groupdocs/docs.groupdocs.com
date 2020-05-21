@@ -1,17 +1,16 @@
 ---
 id: html-viewer-minify-html
-url: viewer-net/html-viewer-minify-html
+url: viewer/net/html-viewer-minify-html
 title: HTML Viewer - Minify HTML
 weight: 2
 description: Learn how to minify HTML markup and CSS when rendering of documents into HTML and make your HTML documents load faster with GroupDocs.Viewer.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
 When you are looking for the ways to optimize the rendering of documents into HTML, one of the solutions you might want to use is the compression of the output content (HTML, CSS, and SVG). This solution is suitable in case you are providing your content from the web server over the internet. The lower the content user has to download, the faster he will see the rendered document.
 
-![](images/viewer-net/html-viewer-minify-html_0.jpg)
+![](viewer-net/images/html-viewer-minify-html.jpg)
 
 ## The Solution
 

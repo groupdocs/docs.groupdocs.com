@@ -1,11 +1,10 @@
 ---
 id: loading-documents-from-different-sources
-url: viewer-net/loading-documents-from-different-sources
+url: viewer/net/loading-documents-from-different-sources
 title: Loading documents from different sources
 weight: 4
 description: This article contains document loading use-cases with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

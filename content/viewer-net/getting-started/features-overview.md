@@ -1,11 +1,10 @@
 ---
 id: features-overview
-url: viewer-net/features-overview
+url: viewer/net/features-overview
 title: Features Overview
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

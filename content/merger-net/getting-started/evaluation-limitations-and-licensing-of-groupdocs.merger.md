@@ -1,11 +1,10 @@
 ---
 id: evaluation-limitations-and-licensing-of-groupdocs-merger
-url: merger-net/evaluation-limitations-and-licensing-of-groupdocs-merger
+url: merger/net/evaluation-limitations-and-licensing-of-groupdocs-merger
 title: Evaluation Limitations and Licensing of GroupDocs.Merger
 weight: 5
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

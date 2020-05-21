@@ -1,11 +1,10 @@
 ---
 id: using-signature-appearances
-url: signature-net/using-signature-appearances
+url: signature/net/using-signature-appearances
 title: Using Signature Appearances
 weight: 16
 description:  This sections contains explanation about various electronic signature visual appearances on document page.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

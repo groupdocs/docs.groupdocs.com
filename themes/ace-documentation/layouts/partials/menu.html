@@ -26,7 +26,7 @@
               {{ define "section-children" }}
                 {{ $self := eq .CurrentPage .Section }}
                 {{ $ancestor := .Section.IsAncestor .CurrentPage }}
-                {{ $collapsed := .Section.Params.bookCollapseSection }}
+                {{ $collapsed := true }}
 
                 {{ if or $self $ancestor (not $collapsed) }}
                 <ul class="list-unstyled ml-2">
@@ -53,10 +53,9 @@
               {{ end }}
 
               {{ define "page-link" }}
-              {{/* if .Page.Content */}}
               {{ if true }}
                 <a href="{{ .Page.RelPermalink }}" class="nav-link p-0
-                    {{- if and .Page.Params.bookCollapseSection .Page.IsSection }} collapsed {{ end }}
+                    {{- if .Page.IsSection }} collapsed {{ end }}
                     {{- if eq .CurrentPage .Page }} active {{ end }}">
                     {{- if .Page.IsSection }} <h6> {{ end }}
                       {{- partial "title" .Page -}}

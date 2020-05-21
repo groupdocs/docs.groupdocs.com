@@ -1,11 +1,10 @@
 ---
 id: get-view-info-for-ms-project-document
-url: viewer-net/get-view-info-for-ms-project-document
+url: viewer/net/get-view-info-for-ms-project-document
 title: Get View Info for MS Project Document
 weight: 2
 description: This article explains how to retrieve information about MS Project Documents into tiles with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: basic-usage
-url: annotation-net/basic-usage
+url: annotation/net/basic-usage
 title: Basic usage
 weight: 1
 description: Quick Start section about main features of GroupDocs.Annotation API, describes how to annotate documents with just couple lines of code.
 keywords: GroupDocs.Annotation Quick Start, GroupDocs.Annotation .NET Basic Usage, GroupDocs.Annotation Quick Start C#, GroupDocs.Annotation Get Started
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

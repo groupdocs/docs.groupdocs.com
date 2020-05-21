@@ -25,6 +25,12 @@
     color: $nav-link-disabled-color;
     pointer-events: none;
     cursor: default;
+  }  
+  
+  &.collapsed::after {
+    content: "▸";
+    position: absolute;
+    right: 0;
   }
 }
 

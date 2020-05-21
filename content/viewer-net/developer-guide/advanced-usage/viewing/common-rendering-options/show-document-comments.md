@@ -1,11 +1,10 @@
 ---
 id: show-document-comments
-url: viewer-net/show-document-comments
+url: viewer/net/show-document-comments
 title: Show document comments
 weight: 6
 description: This article explains how to show comments when viewing documents with GroupDocs.Viewer within your .NET applications.
 keywords: Show document comments when viewing documents with GroupDocs.Viewer .NET API
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

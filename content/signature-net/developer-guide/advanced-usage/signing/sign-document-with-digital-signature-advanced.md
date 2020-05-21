@@ -1,11 +1,10 @@
 ---
 id: sign-document-with-digital-signature-advanced
-url: signature-net/sign-document-with-digital-signature-advanced
+url: signature/net/sign-document-with-digital-signature-advanced
 title: Sign document with Digital signature - advanced
 weight: 5
 description:  This article explains how to sign document with Digital electronic signatures using advanced options with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

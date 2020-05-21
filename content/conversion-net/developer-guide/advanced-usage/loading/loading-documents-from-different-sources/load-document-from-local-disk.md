@@ -1,11 +1,10 @@
 ---
 id: load-document-from-local-disk
-url: conversion-net/load-document-from-local-disk
+url: conversion/net/load-document-from-local-disk
 title: Load document from local disk
 weight: 4
 description: This article demonstrates how to convert document stored at local disk using GroupDocs.Conversion for .NET API.
 keywords: Convert document from local disk, Convert file
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

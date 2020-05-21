@@ -1,11 +1,10 @@
 ---
 id: sign-document-with-stamp-signature-advanced
-url: signature-net/sign-document-with-stamp-signature-advanced
+url: signature/net/sign-document-with-stamp-signature-advanced
 title: Sign document with Stamp signature - advanced
 weight: 13
 description:  This article explains how to sign document with generated Stamp electronic signatures using advanced options with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

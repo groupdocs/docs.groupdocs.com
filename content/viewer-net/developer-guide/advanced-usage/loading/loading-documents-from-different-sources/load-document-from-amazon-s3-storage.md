@@ -1,11 +1,10 @@
 ---
 id: load-document-from-amazon-s3-storage
-url: viewer-net/load-document-from-amazon-s3-storage
+url: viewer/net/load-document-from-amazon-s3-storage
 title: Load document from Amazon S3 Storage
 weight: 1
 description: This article explains how to load a document from Amazon S3 Storage with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

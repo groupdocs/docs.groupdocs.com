@@ -1,11 +1,10 @@
 ---
 id: development-environment-installation-and-configuration
-url: conversion-net/development-environment-installation-and-configuration
+url: conversion/net/development-environment-installation-and-configuration
 title: Development Environment Installation and Configuration
 weight: 4
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
@@ -26,7 +25,7 @@ Follow these steps to reference GroupDocs.Conversion using Package Manager GUI:
 *   Select Browse tab and type "GroupDocs.Conversion" in the search text box.
     
 *   Click the Install button to install the latest version of the API into your project as shown in the following screenshot.  
-![](images/conversion-net/development-environment-installation-and-configuration_0.png)
+![](conversion-net/images/development-environment-installation-and-configuration.png)
     
 
 #### Using Package Manager Console
@@ -41,7 +40,7 @@ You can follow the steps below to reference GroupDocs.Conversion for .NET using
     
 *   After successful installation, GroupDocs.Conversion will be referenced in your application.  
     
-![](images/conversion-net/development-environment-installation-and-configuration_1.png)
+![](conversion-net/images/development-environment-installation-and-configuration_1.png)
     
 
 ## Install from official GroupDocs website

@@ -1,11 +1,10 @@
 ---
 id: customize-changes-styles
-url: comparison-net/customize-changes-styles
+url: comparison/net/customize-changes-styles
 title: Customize changes styles
 weight: 4
 description: Following this guide you will learn how to customize document comparison report and modify appearance of detected changes when use GroupDocs.Comparison for .NET.
 keywords: Style change detection, Compare document styles, Document comparison
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

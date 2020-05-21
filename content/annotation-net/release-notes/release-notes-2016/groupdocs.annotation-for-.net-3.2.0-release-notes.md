@@ -1,11 +1,10 @@
 ---
 id: groupdocs-annotation-for-net-3-2-0-release-notes
-url: annotation-net/groupdocs-annotation-for-net-3-2-0-release-notes
+url: annotation/net/groupdocs-annotation-for-net-3-2-0-release-notes
 title: GroupDocs.Annotation for .NET 3.2.0 Release Notes
 weight: 4
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: developer-guide
-url: signature-net/developer-guide
+url: signature/net/developer-guide
 title: Developer Guide
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: adjust-time-unit
-url: viewer-net/adjust-time-unit
+url: viewer/net/adjust-time-unit
 title: Adjust time unit
 weight: 1
 description: This article explains how to adjust a time unit when viewing MS Project Documents with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

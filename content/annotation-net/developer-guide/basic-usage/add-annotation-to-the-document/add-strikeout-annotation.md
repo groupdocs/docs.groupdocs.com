@@ -1,17 +1,16 @@
 ---
 id: add-strikeout-annotation
-url: annotation-net/add-strikeout-annotation
+url: annotation/net/add-strikeout-annotation
 title: Add strikeout annotation
 weight: 12
 description: Learn what is a strikeout annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is a strikeout annotation, how to add annotation, add strikeout annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Strikeout** annotation marks text fragment with a strikethrough styling like shown at the picture below.
 
-![](images/annotation-net/add-strikeout-annotation_0.png)
+![](annotation-net/images/add-strikeout-annotation.png)
 
 There is an ability to specify the next properties for [StrikeoutAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/strikeoutannotation) type:
 

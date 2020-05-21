@@ -1,11 +1,10 @@
 ---
 id: convert-to-presentation-with-advanced-options
-url: conversion-net/convert-to-presentation-with-advanced-options
+url: conversion/net/convert-to-presentation-with-advanced-options
 title: Convert to Presentation with advanced options
 weight: 4
 description: Follow this guide and learn how to convert documents to PowerPoint presentations of PPT, PPTX formats with height, width, DPI, margins and other customizations using GroupDocs.Conversion for .NET.
 keywords: Convert to Presentation, Convert Presentation
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

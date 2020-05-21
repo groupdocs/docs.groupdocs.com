@@ -1,11 +1,10 @@
 ---
 id: document-viewer-pdf-viewer
-url: viewer-net/document-viewer-pdf-viewer
+url: viewer/net/document-viewer-pdf-viewer
 title: Document viewer - PDF Viewer
 weight: 3
 description: Following this guide you will to learn how to display documents of more than 100 types in PDF format with PDF Viewer by GroupDocs.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

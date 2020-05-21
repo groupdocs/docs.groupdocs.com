@@ -1,11 +1,10 @@
 ---
 id: system-requirements
-url: signature-net/system-requirements
+url: signature/net/system-requirements
 title: System Requirements
 weight: 2
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

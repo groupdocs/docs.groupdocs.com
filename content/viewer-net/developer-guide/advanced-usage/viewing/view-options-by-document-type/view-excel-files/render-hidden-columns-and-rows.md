@@ -1,11 +1,10 @@
 ---
 id: render-hidden-columns-and-rows
-url: viewer-net/render-hidden-columns-and-rows
+url: viewer/net/render-hidden-columns-and-rows
 title: Render hidden columns and rows
 weight: 4
 description: This article explains how to show hidden rows and cells when viewing Spreadsheets with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
@@ -15,7 +14,7 @@ This article explains how to show hidden rows and cells when viewing Spreadsheet
 
 Sometimes Excel document may contain hidden columns and rows (as shown in the image below). GroupDocs.Viewer doesn't render hidden columns and rows by default. However, there may be the case when you want to control the inclusion of hidden content in the rendering results. 
 
-![](images/viewer-net/render-hidden-columns-and-rows_0.png)
+![](viewer-net/images/render-hidden-columns-and-rows.png)
 
 ## The Solution
 

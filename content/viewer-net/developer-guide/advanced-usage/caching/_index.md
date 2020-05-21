@@ -1,11 +1,10 @@
 ---
 id: caching
-url: viewer-net/caching
+url: viewer/net/caching
 title: Caching
 weight: 2
 description: This article contains caching use-cases with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

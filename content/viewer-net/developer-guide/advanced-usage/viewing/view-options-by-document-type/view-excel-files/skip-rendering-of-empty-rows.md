@@ -1,11 +1,10 @@
 ---
 id: skip-rendering-of-empty-rows
-url: viewer-net/skip-rendering-of-empty-rows
+url: viewer/net/skip-rendering-of-empty-rows
 title: Skip rendering of empty rows
 weight: 7
 description: This article explains how to hide empty rows when viewing Spreadsheets with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

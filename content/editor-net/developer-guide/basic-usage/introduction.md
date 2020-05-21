@@ -1,11 +1,10 @@
 ---
 id: introduction
-url: editor-net/introduction
+url: editor/net/introduction
 title: Introduction
 weight: 1
 description: This article explains main principles and stages of editing documents programmatically with GroupDocs.Editor for .NET API.
 keywords: Edit document programmatically, Edit document C#, Edit document principles
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

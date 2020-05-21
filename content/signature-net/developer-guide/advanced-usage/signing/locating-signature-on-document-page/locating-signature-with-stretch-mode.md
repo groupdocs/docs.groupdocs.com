@@ -1,11 +1,10 @@
 ---
 id: locating-signature-with-stretch-mode
-url: signature-net/locating-signature-with-stretch-mode
+url: signature/net/locating-signature-with-stretch-mode
 title: Locating signature with stretch mode
 weight: 3
 description:  This article explains how to use stretch mode values to adjust signature area positions on document page with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: load-document-from-local-disk
-url: viewer-net/load-document-from-local-disk
+url: viewer/net/load-document-from-local-disk
 title: Load document from local disk
 weight: 4
 description: This article explains how to load a document from local disk with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

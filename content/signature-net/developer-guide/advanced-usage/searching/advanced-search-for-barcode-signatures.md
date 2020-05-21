@@ -1,11 +1,10 @@
 ---
 id: advanced-search-for-barcode-signatures
-url: signature-net/advanced-search-for-barcode-signatures
+url: signature/net/advanced-search-for-barcode-signatures
 title: Advanced search for Barcode signatures
 weight: 1
 description:  This article explains how to make advanced search for Barcode electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

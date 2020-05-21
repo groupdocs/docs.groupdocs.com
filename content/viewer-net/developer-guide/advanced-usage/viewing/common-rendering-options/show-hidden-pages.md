@@ -1,11 +1,10 @@
 ---
 id: show-hidden-pages
-url: viewer-net/show-hidden-pages
+url: viewer/net/show-hidden-pages
 title: Show hidden pages
 weight: 8
 description: This article explains how to show hidden pages when viewing documents with GroupDocs.Viewer within your .NET applications.
 keywords: Show hidden pages with GroupDocs.Viewer for .NET
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: search-for-image-e-signatures
-url: signature-net/search-for-image-e-signatures
+url: signature/net/search-for-image-e-signatures
 title: Search for Image e-signatures
 weight: 7
 description: This article explains how to search for Image electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

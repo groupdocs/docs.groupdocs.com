@@ -1,11 +1,10 @@
 ---
 id: flip-or-rotate-pages
-url: viewer-net/flip-or-rotate-pages
+url: viewer/net/flip-or-rotate-pages
 title: Flip or rotate pages
 weight: 2
 description: This article explains how to flip or rotate pages when viewing documents with GroupDocs.Viewer within your .NET applications.
 keywords: Flip rotate pages with GroupDocs.Viewer for .NET API
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

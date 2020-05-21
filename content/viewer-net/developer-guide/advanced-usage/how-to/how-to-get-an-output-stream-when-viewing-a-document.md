@@ -1,11 +1,10 @@
 ---
 id: how-to-get-an-output-stream-when-viewing-a-document
-url: viewer-net/how-to-get-an-output-stream-when-viewing-a-document
+url: viewer/net/how-to-get-an-output-stream-when-viewing-a-document
 title: How to get an output stream when viewing a document
 weight: 1
 description: This article explains how to get an output stream when viewing a document with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

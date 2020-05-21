@@ -1,11 +1,10 @@
 ---
 id: update-text-signatures-in-document
-url: signature-net/update-text-signatures-in-document
+url: signature/net/update-text-signatures-in-document
 title: Update Text signatures in document
 weight: 4
 description: This article explains how to update Text electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

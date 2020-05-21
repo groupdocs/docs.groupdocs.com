@@ -1,11 +1,10 @@
 ---
 id: development-environment-installation-and-configuration
-url: merger-net/development-environment-installation-and-configuration
+url: merger/net/development-environment-installation-and-configuration
 title: Development Environment Installation and Configuration
 weight: 4
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
@@ -29,7 +28,7 @@ Follow these steps to reference GroupDocs.Merger using Package Manager GUI:
 *   Select Browse tab and type "GroupDocs.Merger" in the search text box.
     
 *   Click the Install button to install the latest version of the API into your project as shown in the following screenshot.  
-![](images/merger-net/development-environment-installation-and-configuration_0.png)
+![](merger-net/images/development-environment-installation-and-configuration.png)
     
 
 #### Using Package Manager Console
@@ -43,7 +42,7 @@ You can follow the steps below to reference GroupDocs.Merger for .NET using the 
 *   Type the command "Install-Package GroupDocs.Merger" and press enter to install the latest release into your application.
     
 *   After successful installation, GroupDocs.Merger will be referenced in your application.  
-![](images/merger-net/development-environment-installation-and-configuration_1.png)
+![](merger-net/images/development-environment-installation-and-configuration_1.png)
     
 
   

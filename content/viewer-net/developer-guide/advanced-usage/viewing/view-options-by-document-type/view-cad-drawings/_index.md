@@ -1,11 +1,10 @@
 ---
 id: view-cad-drawings
-url: viewer-net/view-cad-drawings
+url: viewer/net/view-cad-drawings
 title: View CAD Drawings
 weight: 7
 description: This article contains use-cases of viewing CAD drawings with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

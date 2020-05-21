@@ -1,11 +1,10 @@
 ---
 id: groupdocs-signature-for-net-19-10-release-notes
-url: signature-net/groupdocs-signature-for-net-19-10-release-notes
+url: signature/net/groupdocs-signature-for-net-19-10-release-notes
 title: GroupDocs.Signature for .NET 19.10 Release Notes
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

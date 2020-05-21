@@ -1,11 +1,10 @@
 ---
 id: verifying-documents-with-exception-handling
-url: signature-net/verifying-documents-with-exception-handling
+url: signature/net/verifying-documents-with-exception-handling
 title: Verifying documents with exception handling
 weight: 1
 description:  This article explains how to handle exceptions when verifying document electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

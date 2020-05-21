@@ -1,11 +1,10 @@
 ---
 id: groupdocs-annotation-for-net-19-11-release-notes
-url: annotation-net/groupdocs-annotation-for-net-19-11-release-notes
+url: annotation/net/groupdocs-annotation-for-net-19-11-release-notes
 title: GroupDocs.Annotation for .NET 19.11 Release Notes
 weight: 2
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

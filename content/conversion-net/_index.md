@@ -1,11 +1,10 @@
 ---
 id: home
-url: conversion-net
+url: conversion/net
 title: GroupDocs.Conversion for .NET
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: True
 ---

@@ -1,11 +1,10 @@
 ---
 id: compare-documents
-url: comparison-net/compare-documents
+url: comparison/net/compare-documents
 title: Compare documents
 weight: 3
 description: This article demonstrates how to compare Word, Excel, PowerPoint, Outlook, OneNote, PDF, Image, HTML, AutoCAD, Visio, OpenDocument, OneNote documents using GroupDocs.Comparison for .NET.
 keywords: Compare documents, document comparison in C#
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

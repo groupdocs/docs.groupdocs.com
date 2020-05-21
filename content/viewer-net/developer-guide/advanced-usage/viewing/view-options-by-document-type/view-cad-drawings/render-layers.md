@@ -1,11 +1,10 @@
 ---
 id: render-layers
-url: viewer-net/render-layers
+url: viewer/net/render-layers
 title: Render layers
 weight: 7
 description: This article explains how to view CAD drawing layers with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

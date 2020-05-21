@@ -1,11 +1,10 @@
 ---
 id: limit-count-of-items-to-render
-url: viewer-net/limit-count-of-items-to-render
+url: viewer/net/limit-count-of-items-to-render
 title: Limit count of items to render
 weight: 3
 description: This article explains how to set a limit for items to view of Outlook Data Files with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

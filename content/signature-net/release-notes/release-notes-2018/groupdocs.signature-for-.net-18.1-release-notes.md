@@ -1,11 +1,10 @@
 ---
 id: groupdocs-signature-for-net-18-1-release-notes
-url: signature-net/groupdocs-signature-for-net-18-1-release-notes
+url: signature/net/groupdocs-signature-for-net-18-1-release-notes
 title: GroupDocs.Signature for .NET 18.1 Release Notes
 weight: 13
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

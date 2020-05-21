@@ -1,11 +1,10 @@
 ---
 id: how-to-make-cache-thread-safe
-url: viewer-net/how-to-make-cache-thread-safe
+url: viewer/net/how-to-make-cache-thread-safe
 title: How to make cache thread-safe
 weight: 2
 description: This article explains how to make cache thread-safe with GroupDocs.Viewer within your .NET applications.
 keywords: GroupDocs.Viewer, thread-safe, cache
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

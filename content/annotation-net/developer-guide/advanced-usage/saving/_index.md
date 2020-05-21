@@ -1,11 +1,10 @@
 ---
 id: saving
-url: annotation-net/saving
+url: annotation/net/saving
 title: Saving
 weight: 2
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

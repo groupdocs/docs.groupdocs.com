@@ -1,11 +1,10 @@
 ---
 id: home
-url: annotation-net
+url: annotation/net
 title: GroupDocs.Annotation for .NET
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: True
 ---

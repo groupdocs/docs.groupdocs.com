@@ -1,17 +1,16 @@
 ---
 id: add-distance-annotation
-url: annotation-net/add-distance-annotation
+url: annotation/net/add-distance-annotation
 title: Add distance annotation
 weight: 3
 description: Learn what is a distance annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is a distance annotation, how to add annotation, add distance annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Distance annotation** measures a distance between objects in a document like shown at the picture below. 
 
-![](images/annotation-net/add-distance-annotation_0.png)
+![](annotation-net/images/add-distance-annotation.png)
 
 There is an ability to specify the next properties for [DistanceAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/distanceannotation) type:
 

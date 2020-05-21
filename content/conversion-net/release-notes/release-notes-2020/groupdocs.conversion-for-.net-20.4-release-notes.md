@@ -1,11 +1,10 @@
 ---
 id: groupdocs-conversion-for-net-20-4-release-notes
-url: conversion-net/groupdocs-conversion-for-net-20-4-release-notes
+url: conversion/net/groupdocs-conversion-for-net-20-4-release-notes
 title: GroupDocs.Conversion for .NET 20.4 Release Notes
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

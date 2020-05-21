@@ -1,11 +1,10 @@
 ---
 id: get-view-info-for-outlook-data-file
-url: viewer-net/get-view-info-for-outlook-data-file
+url: viewer/net/get-view-info-for-outlook-data-file
 title: Get View Info for Outlook Data File
 weight: 2
 description: This article explains how to retrieve information about Outlook Data File with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

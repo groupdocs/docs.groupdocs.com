@@ -1,11 +1,10 @@
 ---
 id: system-requirements
-url: viewer-net/system-requirements
+url: viewer/net/system-requirements
 title: System Requirements
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

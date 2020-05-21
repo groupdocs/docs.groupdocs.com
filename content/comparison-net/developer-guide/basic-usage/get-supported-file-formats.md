@@ -1,11 +1,10 @@
 ---
 id: get-supported-file-formats
-url: comparison-net/get-supported-file-formats
+url: comparison/net/get-supported-file-formats
 title: Get supported file formats
 weight: 1
 description: This article explains how to obtain supported file formats list when viewing documents with GroupDocs.Comparison within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

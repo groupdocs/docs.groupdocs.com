@@ -1,11 +1,10 @@
 ---
 id: delete-qr-code-signatures-from-documents
-url: signature-net/delete-qr-code-signatures-from-documents
+url: signature/net/delete-qr-code-signatures-from-documents
 title: Delete QR-code signatures from documents
 weight: 3
 description: This article explains how to delete QR-code electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

@@ -1,17 +1,16 @@
 ---
 id: add-replacement-annotation
-url: annotation-net/add-replacement-annotation
+url: annotation/net/add-replacement-annotation
 title: Add replacement annotation
 weight: 10
 description: Learn what is a replacement annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is a replacement annotation, how to add annotation, add replacement annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Replacement** annotation replaces original text with other provided text fragment. Please check the picture below to know how replacement annotation may look like. 
 
-![](images/annotation-net/add-replacement-annotation_0.png)
+![](annotation-net/images/add-replacement-annotation.png)
 
 There is an ability to specify the next properties for [ReplacementAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/replacementannotation)type:
 

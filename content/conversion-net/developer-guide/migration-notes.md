@@ -1,11 +1,10 @@
 ---
 id: migration-notes
-url: conversion-net/migration-notes
+url: conversion/net/migration-notes
 title: Migration Notes
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

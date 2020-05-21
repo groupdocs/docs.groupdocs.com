@@ -1,11 +1,10 @@
 ---
 id: enable-font-hinting
-url: viewer-net/enable-font-hinting
+url: viewer/net/enable-font-hinting
 title: Enable font hinting
 weight: 3
 description: This article explains how to enable font hinting when viewing PDF Documents with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

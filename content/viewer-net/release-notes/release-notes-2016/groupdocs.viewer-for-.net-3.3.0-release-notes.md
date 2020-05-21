@@ -1,11 +1,10 @@
 ---
 id: groupdocs-viewer-for-net-3-3-0-release-notes
-url: viewer-net/groupdocs-viewer-for-net-3-3-0-release-notes
+url: viewer/net/groupdocs-viewer-for-net-3-3-0-release-notes
 title: GroupDocs.Viewer For .NET 3.3.0 Release Notes
 weight: 8
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

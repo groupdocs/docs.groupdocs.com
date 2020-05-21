@@ -1,11 +1,10 @@
 ---
 id: updating-multiple-signatures-of-different-types
-url: signature-net/updating-multiple-signatures-of-different-types
+url: signature/net/updating-multiple-signatures-of-different-types
 title: Updating multiple signatures of different types
 weight: 3
 description:  This article explains how to provide advanced options when updating different multiple electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

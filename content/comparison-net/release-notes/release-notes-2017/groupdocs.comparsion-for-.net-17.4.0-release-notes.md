@@ -1,11 +1,10 @@
 ---
 id: groupdocs-comparsion-for-net-17-4-0-release-notes
-url: comparison-net/groupdocs-comparsion-for-net-17-4-0-release-notes
+url: comparison/net/groupdocs-comparsion-for-net-17-4-0-release-notes
 title: GroupDocs.Comparsion for .NET 17.4.0 Release Notes
 weight: 8
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

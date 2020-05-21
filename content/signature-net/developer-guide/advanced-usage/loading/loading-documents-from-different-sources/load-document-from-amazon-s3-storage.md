@@ -1,11 +1,10 @@
 ---
 id: load-document-from-amazon-s3-storage
-url: signature-net/load-document-from-amazon-s3-storage
+url: signature/net/load-document-from-amazon-s3-storage
 title: Load document from Amazon S3 Storage
 weight: 1
 description: This section explains how to load document from Amazon S3 Storage with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: search-for-embedded-object-with-custom-encryption-of-qr-code-signatures
-url: signature-net/search-for-embedded-object-with-custom-encryption-of-qr-code-signatures
+url: signature/net/search-for-embedded-object-with-custom-encryption-of-qr-code-signatures
 title: Search for embedded object with custom encryption of QR-Code signatures
 weight: 1
 description:  This article explains how to search for embedded electronic signatures with custom encryption in QR-code electronic signatures. This topic contains example of custom encryption, class definition and search for encrypted objects in the QR-codes with GroupDocs.Signature.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: migration-notes
-url: editor-net/migration-notes
+url: editor/net/migration-notes
 title: Migration Notes
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: groupdocs-editor-for-net-18-6-release-notes
-url: editor-net/groupdocs-editor-for-net-18-6-release-notes
+url: editor/net/groupdocs-editor-for-net-18-6-release-notes
 title: GroupDocs.Editor for .NET 18.6 Release Notes
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

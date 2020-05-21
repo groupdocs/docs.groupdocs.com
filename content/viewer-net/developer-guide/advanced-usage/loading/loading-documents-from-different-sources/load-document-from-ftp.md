@@ -1,11 +1,10 @@
 ---
 id: load-document-from-ftp
-url: viewer-net/load-document-from-ftp
+url: viewer/net/load-document-from-ftp
 title: Load document from FTP
 weight: 3
 description: This article explains how to load a document from FTP storage with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

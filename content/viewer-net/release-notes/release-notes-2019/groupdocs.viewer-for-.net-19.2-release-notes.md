@@ -1,11 +1,10 @@
 ---
 id: groupdocs-viewer-for-net-19-2-release-notes
-url: viewer-net/groupdocs-viewer-for-net-19-2-release-notes
+url: viewer/net/groupdocs-viewer-for-net-19-2-release-notes
 title: GroupDocs.Viewer for .NET 19.2 Release Notes
 weight: 11
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

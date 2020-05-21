@@ -1,11 +1,10 @@
 ---
 id: load-document-from-azure-blob-storage
-url: viewer-net/load-document-from-azure-blob-storage
+url: viewer/net/load-document-from-azure-blob-storage
 title: Load document from Azure Blob Storage
 weight: 2
 description: This article explains how to load a document from Azure Blob Storage with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

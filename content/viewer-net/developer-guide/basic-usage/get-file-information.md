@@ -1,11 +1,10 @@
 ---
 id: get-file-information
-url: viewer-net/get-file-information
+url: viewer/net/get-file-information
 title: Get file information
 weight: 4
 description: This article explains how to detect document file type and calculate pages count when displaying file with GroupDocs.Viewer.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

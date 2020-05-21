@@ -1,11 +1,10 @@
 ---
 id: generating-document-preview-advanced
-url: signature-net/generating-document-preview-advanced
+url: signature/net/generating-document-preview-advanced
 title: Generating document preview - advanced
 weight: 1
 description: This article shows how to generate document pages with advanced options.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

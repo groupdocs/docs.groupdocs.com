@@ -1,11 +1,10 @@
 ---
 id: enable-layered-rendering
-url: viewer-net/enable-layered-rendering
+url: viewer/net/enable-layered-rendering
 title: Enable layered rendering
 weight: 4
 description: This article explains how to enable layered rendering when viewing PDF Documents with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

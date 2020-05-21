@@ -1,11 +1,10 @@
 ---
 id: reorder-pages
-url: viewer-net/reorder-pages
+url: viewer/net/reorder-pages
 title: Reorder pages
 weight: 3
 description: This article explains how to reorder pages when viewing documents with GroupDocs.Viewer within your .NET applications.
 keywords: Reorder pages with GroupDocs.Viewer for .NET API
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

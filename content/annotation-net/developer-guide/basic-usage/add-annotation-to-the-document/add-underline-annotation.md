@@ -1,17 +1,16 @@
 ---
 id: add-underline-annotation
-url: annotation-net/add-underline-annotation
+url: annotation/net/add-underline-annotation
 title: Add underline annotation
 weight: 15
 description: Learn what is an underline annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is a underline annotation, how to add annotation, add underline annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Underline **annotation marks text with a underline styling like shown at the picture below. 
 
-![](images/annotation-net/add-underline-annotation_0.png)
+![](annotation-net/images/add-underline-annotation.png)
 
 There is an ability to specify the next properties for [UnderlineAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/underlineannotation) type:
 

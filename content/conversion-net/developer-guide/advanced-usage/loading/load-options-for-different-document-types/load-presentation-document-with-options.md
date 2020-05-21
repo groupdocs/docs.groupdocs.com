@@ -1,11 +1,10 @@
 ---
 id: load-presentation-document-with-options
-url: conversion-net/load-presentation-document-with-options
+url: conversion/net/load-presentation-document-with-options
 title: Load Presentation document with options
 weight: 7
 description: Learn this article and check how to load and convert Microsoft PowerPoint documents with advanced options using GroupDocs.Conversion for .NET API.
 keywords: Load document, Load and convert PowerPoint document, Load and convert PPTX presentation, Load and convert PPT
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

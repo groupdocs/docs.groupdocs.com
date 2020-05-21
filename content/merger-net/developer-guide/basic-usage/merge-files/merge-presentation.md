@@ -1,11 +1,10 @@
 ---
 id: merge-presentation
-url: merger-net/merge-presentation
+url: merger/net/merge-presentation
 title: Merge Presentation
 weight: 2
 description: This article explains how to merge PowerPoint presentations, combine several PPTX or PPT files into one using GroupDocs.Merger API and couple lines of code.
 keywords: Merge PowerPoint, Merge Presentations, Merge PPT, Merge PPTX, Merge PPSX, Merge PPS, Join PowerPoint, Combine PowerPoint
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: groupdocs-viewer-for-net-16-10-release-notes
-url: viewer-net/groupdocs-viewer-for-net-16-10-release-notes
+url: viewer/net/groupdocs-viewer-for-net-16-10-release-notes
 title: GroupDocs.Viewer For .NET 16.10 Release Notes
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

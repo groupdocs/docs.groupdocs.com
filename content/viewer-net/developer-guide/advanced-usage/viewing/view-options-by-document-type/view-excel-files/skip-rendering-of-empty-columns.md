@@ -1,11 +1,10 @@
 ---
 id: skip-rendering-of-empty-columns
-url: viewer-net/skip-rendering-of-empty-columns
+url: viewer/net/skip-rendering-of-empty-columns
 title: Skip rendering of empty columns
 weight: 6
 description: This article explains how to hide empty columns when viewing Spreadsheets with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

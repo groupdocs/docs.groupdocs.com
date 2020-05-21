@@ -1,11 +1,10 @@
 ---
 id: how-to-compare-contracts-drafts-and-legal-documents
-url: comparison-net/how-to-compare-contracts-drafts-and-legal-documents
+url: comparison/net/how-to-compare-contracts-drafts-and-legal-documents
 title: How to Compare Contracts Drafts and Legal Documents
 weight: 2
 description: This article describes how to compare contracts, drafts and legal documents using Microsoft Word blacklining feature and GroupDocs.Comparison API.
 keywords: Compare contracts, compare drafts, compare blacklining, compare redlining
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
@@ -21,15 +20,15 @@ As a result of creating a text file, we have to subject it to multiple changes. 
 *   First, open the Microsoft Word. Go to the "**Review**" tab, in the "**Comparison**" section, click "**Compare**".
 *   "**Version comparison**" pop-up window appears in front of which you now need to load two types of documents: the original and the modified one.  
       
-![](images/comparison-net/how-to-compare-contracts-drafts-and-legal-documents_0.png)
+![](comparison-net/images/how-to-compare-contracts-drafts-and-legal-documents.png)
     
 *   After you have selected two versions of a text document, click **OK**  
-![](images/comparison-net/how-to-compare-contracts-drafts-and-legal-documents_1.png)
+![](comparison-net/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
       
     
 *   The comparison results will open in a new window, and it will look something like this:  
       
-![](images/comparison-net/how-to-compare-contracts-drafts-and-legal-documents_2.png)
+![](comparison-net/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
     
 *   In the highlighted square with the number "1", all deleted and inserted words will appear. To the right, the zone with the number "2" Shows the document being compared with the presence in the text and the words deleted and inserted in their place.  
     The workspace with the number "3" shows us the source document (before making changes), while the space with the number "4" shows us the changed document with the changes made.  
@@ -52,9 +51,9 @@ Source File - Contract signed in 2018
 
 Target File\- Contract signed in 2019
 
-![](images/comparison-net/how-to-compare-contracts-drafts-and-legal-documents_3.png)
+![](comparison-net/images/how-to-compare-contracts-drafts-and-legal-documents_3.png)
 
-![](images/comparison-net/how-to-compare-contracts-drafts-and-legal-documents_4.png)
+![](comparison-net/images/how-to-compare-contracts-drafts-and-legal-documents_4.png)
 
 Here is the code that is used to compare two contracts.
 

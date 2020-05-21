@@ -1,11 +1,10 @@
 ---
 id: listening
-url: conversion-net/listening
+url: conversion/net/listening
 title: Listening
 weight: 4
 description: Follow this guide and learn how to track conversion process by subscribing to specific events of GroupDocs.Conversion for .NET API.
 keywords: Track conversion process, Subscribe to conversion process events
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

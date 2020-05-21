@@ -1,11 +1,10 @@
 ---
 id: verify-digital-signatures-in-the-document
-url: signature-net/verify-digital-signatures-in-the-document
+url: signature/net/verify-digital-signatures-in-the-document
 title: Verify Digital signatures in the document
 weight: 2
 description: This topic explains how to verify digital electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

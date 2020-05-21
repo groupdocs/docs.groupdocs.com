@@ -1,11 +1,10 @@
 ---
 id: view-attachments
-url: viewer-net/view-attachments
+url: viewer/net/view-attachments
 title: View attachments
 weight: 3
 description: Follow this guide and learn how to view or preview PDF document, Outlook data file or email attachments with file viewer by GroupDocs.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

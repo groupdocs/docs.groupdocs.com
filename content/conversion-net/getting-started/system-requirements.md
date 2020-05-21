@@ -1,11 +1,10 @@
 ---
 id: system-requirements
-url: conversion-net/system-requirements
+url: conversion/net/system-requirements
 title: System Requirements
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

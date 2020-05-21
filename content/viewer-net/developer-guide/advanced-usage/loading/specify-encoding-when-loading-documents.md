@@ -1,11 +1,10 @@
 ---
 id: specify-encoding-when-loading-documents
-url: viewer-net/specify-encoding-when-loading-documents
+url: viewer/net/specify-encoding-when-loading-documents
 title: Specify encoding when loading documents
 weight: 3
 description: This article explains how to set encoding when loading documents with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

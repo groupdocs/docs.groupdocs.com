@@ -1,17 +1,16 @@
 ---
 id: add-watermark-annotation
-url: annotation-net/add-watermark-annotation
+url: annotation/net/add-watermark-annotation
 title: Add watermark annotation
 weight: 16
 description: Learn what is a watermark annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is a watermark annotation, how to add annotation, add watermark annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Watermark** annotation adds text watermark like shown at the picture below. 
 
-![](images/annotation-net/add-watermark-annotation_0.png)
+![](annotation-net/images/add-watermark-annotation.png)
 
 There is an ability to specify the next properties for [WatermarkAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/watermarkannotation)type:
 

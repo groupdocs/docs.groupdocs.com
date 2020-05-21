@@ -1,11 +1,10 @@
 ---
 id: working-with-formats
-url: editor-net/working-with-formats
+url: editor/net/working-with-formats
 title: Working with formats
 weight: 8
 description: This article explains document formats and format families supported by GroupDocs.Editor for .NET and how to operate them in .NET code.
 keywords: GroupDocs.Editor supported formats, editable document formats
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: html-viewer-exclude-fonts
-url: viewer-net/html-viewer-exclude-fonts
+url: viewer/net/html-viewer-exclude-fonts
 title: HTML Viewer - Exclude fonts
 weight: 1
 description: Learn how to exclude system pre-installed fonts from HTML markup to reduce rendered document size when displaying documents with GroupDocs.Viewer.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

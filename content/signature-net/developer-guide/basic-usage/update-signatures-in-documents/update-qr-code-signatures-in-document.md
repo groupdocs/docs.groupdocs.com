@@ -1,11 +1,10 @@
 ---
 id: update-qr-code-signatures-in-document
-url: signature-net/update-qr-code-signatures-in-document
+url: signature/net/update-qr-code-signatures-in-document
 title: Update QR-code signatures in document
 weight: 3
 description: This article explains how to update QR-code electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: home
-url: editor-net
+url: editor/net
 title: GroupDocs.Editor for .NET
 weight: 1
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: True
 ---

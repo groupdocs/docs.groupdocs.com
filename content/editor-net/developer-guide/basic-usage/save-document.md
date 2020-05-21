@@ -1,11 +1,10 @@
 ---
 id: save-document
-url: editor-net/save-document
+url: editor/net/save-document
 title: Save document
 weight: 4
 description: This article demonstrates how to save edited text documents, spreadsheets and presentations with GroupDocs.Editor for .NET API.
 keywords: Save edited document, edit document, GroupDocs.Editor
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

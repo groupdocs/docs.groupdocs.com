@@ -1,11 +1,10 @@
 ---
 id: convert-to-pdf
-url: conversion-net/convert-to-pdf
+url: conversion/net/convert-to-pdf
 title: Convert to PDF
 weight: 3
 description: This article demonstrates how to convert any document to PDF format with couple C# code lines and GroupDocs.Conversion for .NET.
 keywords: Convert to PDF, Convert to PDF/A
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

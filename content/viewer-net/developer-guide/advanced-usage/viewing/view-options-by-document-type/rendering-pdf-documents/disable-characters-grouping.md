@@ -1,11 +1,10 @@
 ---
 id: disable-characters-grouping
-url: viewer-net/disable-characters-grouping
+url: viewer/net/disable-characters-grouping
 title: Disable characters grouping
 weight: 2
 description: This article explains how to disable characters grouping when viewing PDF Documents with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

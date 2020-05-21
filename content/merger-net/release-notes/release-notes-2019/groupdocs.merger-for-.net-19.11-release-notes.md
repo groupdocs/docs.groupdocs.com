@@ -1,11 +1,10 @@
 ---
 id: groupdocs-merger-for-net-19-11-release-notes
-url: merger-net/groupdocs-merger-for-net-19-11-release-notes
+url: merger/net/groupdocs-merger-for-net-19-11-release-notes
 title: GroupDocs.Merger for .NET 19.11 Release Notes
 weight: 2
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

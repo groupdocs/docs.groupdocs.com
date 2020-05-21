@@ -1,11 +1,10 @@
 ---
 id: development-environment-installation-and-configuration
-url: editor-net/development-environment-installation-and-configuration
+url: editor/net/development-environment-installation-and-configuration
 title: Development Environment Installation and Configuration
 weight: 4
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
@@ -32,7 +31,7 @@ Follow these steps to reference GroupDocs.Editor using Package Manager GUI:
       
     
 
-![](images/editor-net/development-environment-installation-and-configuration_0.png)
+![](editor-net/images/development-environment-installation-and-configuration.png)
 
 #### Using Package Manager Console
 
@@ -49,7 +48,7 @@ You can follow the steps below to reference GroupDocs.Editor for .NET using the 
 
   
 
-![](images/editor-net/development-environment-installation-and-configuration_1.png)
+![](editor-net/images/development-environment-installation-and-configuration_1.png)
 
   
 

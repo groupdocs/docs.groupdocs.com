@@ -1,11 +1,10 @@
 ---
 id: render-grid-lines
-url: viewer-net/render-grid-lines
+url: viewer/net/render-grid-lines
 title: Render grid lines
 weight: 3
 description: This article explains how to show gridlines when viewing Spreadsheets with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

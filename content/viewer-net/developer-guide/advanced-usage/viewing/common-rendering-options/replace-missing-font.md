@@ -1,11 +1,10 @@
 ---
 id: replace-missing-font
-url: viewer-net/replace-missing-font
+url: viewer/net/replace-missing-font
 title: Replace missing font
 weight: 4
 description: This article explains how to replace missing font when viewing documents with GroupDocs.Viewer within your .NET applications.
 keywords: Replace missing font with GroupDocs.Viewer for .NET API
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

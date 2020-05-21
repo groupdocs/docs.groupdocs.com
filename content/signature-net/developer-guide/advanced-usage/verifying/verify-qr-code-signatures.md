@@ -1,11 +1,10 @@
 ---
 id: verify-qr-code-signatures
-url: signature-net/verify-qr-code-signatures
+url: signature/net/verify-qr-code-signatures
 title: Verify QR-code signatures
 weight: 2
 description:  This article explains how to provide advanced verification of QR-code electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

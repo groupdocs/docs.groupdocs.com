@@ -1,11 +1,10 @@
 ---
 id: groupdocs-annotation-for-net-18-6-release-notes
-url: annotation-net/groupdocs-annotation-for-net-18-6-release-notes
+url: annotation/net/groupdocs-annotation-for-net-18-6-release-notes
 title: GroupDocs.Annotation for .NET 18.6 Release Notes
 weight: 7
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

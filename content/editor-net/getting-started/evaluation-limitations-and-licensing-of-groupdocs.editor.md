@@ -1,11 +1,10 @@
 ---
 id: evaluation-limitations-and-licensing-of-groupdocs-editor
-url: editor-net/evaluation-limitations-and-licensing-of-groupdocs-editor
+url: editor/net/evaluation-limitations-and-licensing-of-groupdocs-editor
 title: Evaluation Limitations and Licensing of GroupDocs.Editor
 weight: 5
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---

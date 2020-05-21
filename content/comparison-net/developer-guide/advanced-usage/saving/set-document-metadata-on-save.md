@@ -1,11 +1,10 @@
 ---
 id: set-document-metadata-on-save
-url: comparison-net/set-document-metadata-on-save
+url: comparison/net/set-document-metadata-on-save
 title: Set document metadata on save
 weight: 1
 description: Follow this guide and learn how to set document metadata when saving resultant document after files comparison within your .NET applications.
 keywords: Save document metadata,  Compare documents, Document comparison, File diff
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

@@ -1,17 +1,16 @@
 ---
 id: add-text-field-annotation
-url: annotation-net/add-text-field-annotation
+url: annotation/net/add-text-field-annotation
 title: Add text field annotation
 weight: 13
 description: Learn what is a text field annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
 keywords: What is a text field annotation, how to add annotation, add text field annotation
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
 **Text field** annotation adds rectangle with a text inside, like shown at the picture below. 
 
-![](images/annotation-net/add-text-field-annotation_0.png)
+![](annotation-net/images/add-text-field-annotation.png)
 
 There is an ability to specify the next properties for [TextFieldAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textfieldannotation) type:
 

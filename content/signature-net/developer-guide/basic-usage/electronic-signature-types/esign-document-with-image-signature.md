@@ -1,11 +1,10 @@
 ---
 id: esign-document-with-image-signature
-url: signature-net/esign-document-with-image-signature
+url: signature/net/esign-document-with-image-signature
 title: eSign document with Image signature
 weight: 4
 description: This article demonstrates how to add Image signature on document page with GroupDocs.Signature.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

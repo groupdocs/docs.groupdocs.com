@@ -1,11 +1,10 @@
 ---
 id: rotate-pages
-url: merger-net/rotate-pages
+url: merger/net/rotate-pages
 title: Rotate pages
 weight: 8
 description: Following this guide you will learn how to change PDF document page rotation angle using GroupDocs.Merger for .NET API.
 keywords: Rotate PDF pages, Rotate document pages, Change PDF page rotation angle 
-bookCollapseSection: true
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---

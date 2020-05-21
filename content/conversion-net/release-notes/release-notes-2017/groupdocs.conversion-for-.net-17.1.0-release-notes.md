@@ -1,11 +1,10 @@
 ---
 id: groupdocs-conversion-for-net-17-1-0-release-notes
-url: conversion-net/groupdocs-conversion-for-net-17-1-0-release-notes
+url: conversion/net/groupdocs-conversion-for-net-17-1-0-release-notes
 title: GroupDocs.Conversion For .NET 17.1.0 Release Notes
 weight: 11
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

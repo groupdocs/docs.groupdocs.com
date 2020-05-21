@@ -1,11 +1,10 @@
 ---
 id: supported-document-formats
-url: signature-net/supported-document-formats
+url: signature/net/supported-document-formats
 title: Supported Document Formats
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

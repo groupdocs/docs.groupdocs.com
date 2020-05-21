@@ -1,11 +1,10 @@
 ---
 id: get-view-info-for-cad-drawing
-url: viewer-net/get-view-info-for-cad-drawing
+url: viewer/net/get-view-info-for-cad-drawing
 title: Get View Info for CAD Drawing
 weight: 2
 description: This article explains how to retrieve information about CAD drawings with GroupDocs.Viewer within your .NET applications.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

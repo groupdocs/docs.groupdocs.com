@@ -1,11 +1,10 @@
 ---
 id: installation
-url: comparison-net/installation
+url: comparison/net/installation
 title: Installation
 weight: 4
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
@@ -28,7 +27,7 @@ Follow these steps to reference GroupDocs.Comparison using Package Manager GUI:
 *   Click the Install button to install the latest version of the API into your project as shown in the following screenshot.
     
 
-![](images/comparison-net/installation_0.png)
+![](comparison-net/images/installation.png)
 
 #### Using Package Manager Console
 
@@ -40,7 +39,7 @@ You can follow the steps below to reference GroupDocs.Comparison for .NET using 
 *   After successful installation, GroupDocs.Comparison will be referenced in your application.  
     
 
-![](images/comparison-net/installation_1.png)
+![](comparison-net/images/installation_1.png)
 
 ## Install from official GroupDocs website
 

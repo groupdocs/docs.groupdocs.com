@@ -1,11 +1,10 @@
 ---
 id: convert-to-spreadsheet-with-advanced-options
-url: conversion-net/convert-to-spreadsheet-with-advanced-options
+url: conversion/net/convert-to-spreadsheet-with-advanced-options
 title: Convert to Spreadsheet with advanced options
 weight: 5
 description: Follow this guide and learn how to convert documents to Excel and Open Document spreadsheets of XLS, XLSX, ODS, OTS formats  with zoom and other customizations using GroupDocs.Conversion for .NET.
 keywords: Convert Excel, Convert to Excel, Convert to spreadsheet, Convert to XLS, Convert to XLSX
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

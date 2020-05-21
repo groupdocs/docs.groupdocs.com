@@ -1,11 +1,10 @@
 ---
 id: implement-custom-encryption-with-qr-code-signatures
-url: signature-net/implement-custom-encryption-with-qr-code-signatures
+url: signature/net/implement-custom-encryption-with-qr-code-signatures
 title: Implement custom encryption with QR-Code signatures
 weight: 1
 description: This article explains how to implement custom encryption for QR-code electronic signatures.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

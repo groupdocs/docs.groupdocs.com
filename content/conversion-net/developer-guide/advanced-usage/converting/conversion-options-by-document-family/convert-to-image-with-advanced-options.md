@@ -1,11 +1,10 @@
 ---
 id: convert-to-image-with-advanced-options
-url: conversion-net/convert-to-image-with-advanced-options
+url: conversion/net/convert-to-image-with-advanced-options
 title: Convert to Image with advanced options
 weight: 2
 description: Follow this guide and learn how to convert documents to image with height, width, resolution, brightness and other customizations using GroupDocs.Conversion for .NET.
 keywords: Convert to Image, Convert Image
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

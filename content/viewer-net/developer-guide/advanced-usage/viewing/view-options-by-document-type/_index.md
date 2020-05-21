@@ -1,11 +1,10 @@
 ---
 id: view-options-by-document-type
-url: viewer-net/view-options-by-document-type
+url: viewer/net/view-options-by-document-type
 title: View options by document type
 weight: 2
 description: How to use rendering options that can be applied to specific document types.
 keywords: GroupDocs.Viewer Rendering Options, GroupDocs.Viewer .NET Rendering Options
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

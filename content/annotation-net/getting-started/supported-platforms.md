@@ -1,11 +1,10 @@
 ---
 id: supported-platforms
-url: annotation-net/supported-platforms
+url: annotation/net/supported-platforms
 title: Supported Platforms
 weight: 3
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---

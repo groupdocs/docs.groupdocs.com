@@ -1,11 +1,10 @@
 ---
 id: supported-document-formats
-url: conversion-net/supported-document-formats
+url: conversion/net/supported-document-formats
 title: Supported Document Formats
 weight: 2
 description: 
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

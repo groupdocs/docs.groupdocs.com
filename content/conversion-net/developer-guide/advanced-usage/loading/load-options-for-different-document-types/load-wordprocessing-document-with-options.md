@@ -1,11 +1,10 @@
 ---
 id: load-wordprocessing-document-with-options
-url: conversion-net/load-wordprocessing-document-with-options
+url: conversion/net/load-wordprocessing-document-with-options
 title: Load WordProcessing document with options
 weight: 10
 description: Learn this article and check how to convert Microsoft Word DOC/DOCX and Open Document ODT/OTT files hiding comments and tracked changes panel, setting default font and applying font substitution using features of GroupDocs.Conversion for .NET API.
 keywords: Convert Word document in C#, Convert DOC in C#, Convert DOCX C#, Convert ODT file C#, Convert OTT file C#
-bookCollapseSection: true
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---

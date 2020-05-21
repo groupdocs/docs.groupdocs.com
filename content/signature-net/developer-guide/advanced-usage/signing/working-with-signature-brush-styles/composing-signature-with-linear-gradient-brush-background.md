@@ -1,11 +1,10 @@
 ---
 id: composing-signature-with-linear-gradient-brush-background
-url: signature-net/composing-signature-with-linear-gradient-brush-background
+url: signature/net/composing-signature-with-linear-gradient-brush-background
 title: Composing signature with linear gradient brush background
 weight: 1
 description:  This article explains how to fill signature background with linear gradient brush
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---

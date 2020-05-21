@@ -1,11 +1,10 @@
 ---
 id: save-attachments
-url: viewer-net/save-attachments
+url: viewer/net/save-attachments
 title: Save attachments
 weight: 2
 description: This article will help you learn how to save attachments from PDF document, Outlook data file or email with file viewer by GroupDocs.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---

@@ -1,11 +1,10 @@
 ---
 id: update-barcode-signatures-in-document
-url: signature-net/update-barcode-signatures-in-document
+url: signature/net/update-barcode-signatures-in-document
 title: Update Barcode signatures in document
 weight: 1
 description: This article explains how to update Barcode electronic signatures with GroupDocs.Signature API.
 keywords: 
-bookCollapseSection: true
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
