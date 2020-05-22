@@ -8,7 +8,7 @@ keywords:
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-GroupDocs.Merger allows you to join multiple documents and manipulate single document structure across wide range of [supported document types](https://docs.groupdocs.com/display/mergernet/Supported+Document+Types). Below, the short list of possible actions: 
+GroupDocs.Merger allows you to join multiple documents and manipulate single document structure across wide range of [supported document types]({{< ref "merger-net\getting-started\supported-document-types.md" >}}). Below, the short list of possible actions:
 
 ## Multiple document operations
 

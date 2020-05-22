@@ -115,9 +115,9 @@ Bug
 
 Following topics from Developer Guide were updated:
 
-[Sign document with Form Field signature (advanced)](https://docs.groupdocs.com/display/signaturenet/Sign+document+with+Form+Field+signature+-+advanced)
+[Sign document with Form Field signature (advanced)]({{< ref "signature-net\developer-guide\advanced-usage\signing\sign-document-with-form-field-signature-advanced.md" >}})
 
-[Sign documents with standard QR-code entries](https://docs.groupdocs.com/display/signaturenet/Sign+documents+with+standard+QR-code+entries)
+[Sign documents with standard QR-code entries]({{< ref "signature-net\developer-guide\advanced-usage\signing\sign-document-with-embedded-and-encrypted-data-in-qr-code-signatures\sign-documents-with-standard-qr-code-entries.md" >}})
 
 # Public API and Backward Incompatible Changes
 

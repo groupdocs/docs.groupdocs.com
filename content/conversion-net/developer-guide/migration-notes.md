@@ -56,4 +56,4 @@ using (Converter converter = new Converter(documentPath))
 }
 ```
 
-For more code examples and specific use cases please refer to our [Developer Guide](https://docs.groupdocs.com/display/conversionnet/Developer+Guide) documentation or [GitHub](https://github.com/groupdocs-conversion/GroupDocs.Conversion-for-.NET) samples and showcases.
+For more code examples and specific use cases please refer to our [Developer Guide]({{< ref "conversion-net\developer-guide\_index.md" >}}) documentation or [GitHub](https://github.com/groupdocs-conversion/GroupDocs.Conversion-for-.NET) samples and showcases.

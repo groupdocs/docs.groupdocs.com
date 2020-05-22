@@ -10,7 +10,7 @@ hideChildren: False
 ---
 ## What Is GroupDocs.Merger?
 
-GroupDocs.Merger allows you to merge documents and manipulate document structure across wide range of [supported document types](https://docs.groupdocs.com/display/mergernet/Supported+Document+Types) - PDF, DOCX/DOC, PPTX/PPT, XLSX/XLS, VSDX/VSD, ODT, ODS, ODP, HTML, EPUB and many others. Merge or join several documents into one, split single document to multiple documents, reorder or replace document pages, change page orientation, manage document password and perform other manipulations with GroupDocs.Merger API.
+GroupDocs.Merger allows you to merge documents and manipulate document structure across wide range of [supported document types]({{< ref "merger-net\getting-started\supported-document-types.md" >}}) - PDF, DOCX/DOC, PPTX/PPT, XLSX/XLS, VSDX/VSD, ODT, ODS, ODP, HTML, EPUB and many others. Merge or join several documents into one, split single document to multiple documents, reorder or replace document pages, change page orientation, manage document password and perform other manipulations with GroupDocs.Merger API.
 
 ## Why Use GroupDocs.Merger?
 

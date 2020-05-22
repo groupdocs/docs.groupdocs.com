@@ -16,10 +16,10 @@ hideChildren: True
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 
-*   [GroupDocs.Signature for .NET Online Documentation](https://docs.groupdocs.com/display/signaturenet/)
-*   [GroupDocs.Signature for .NET Features](https://docs.groupdocs.com/display/signaturenet/Features+Overview)
-*   [GroupDocs.Signature for .NET Limitations](https://docs.groupdocs.com/display/signaturenet/Evaluation+Limitations+and+Licensing+of+GroupDocs.Signature)
-*   [GroupDocs.Signature for .NET Release Notes](https://docs.groupdocs.com/display/signaturenet/Release+Notes)
+*   [GroupDocs.Signature for .NET Online Documentation]({{< ref "signature-net" >}})
+*   [GroupDocs.Signature for .NET Features]({{< ref "signature-net\getting-started\features-overview.md" >}})
+*   [GroupDocs.Signature for .NET Limitations]({{< ref "signature-net\getting-started\evaluation-limitations-and-licensing-of-groupdocs.signature.md" >}})
+*   [GroupDocs.Signature for .NET Release Notes]({{< ref "signature-net\release-notes\_index.md" >}})
 *   [GroupDocs.Signature for .NET Product Page](https://products.groupdocs.com/signature/net)
 *   [Install GroupDocs.Signature for .NET NuGet Package](https://www.nuget.org/packages/GroupDocs.Signature/)
 *   [GroupDocs.Signature for .NET API Reference Guide](https://apireference.groupdocs.com/net/signature)

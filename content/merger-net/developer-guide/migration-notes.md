@@ -63,4 +63,4 @@ using (Merger merger = new Merger(@"c:\sample1.docx"))
 }
 ```
 
-For more code examples and specific use cases please refer to our [Developer Guide](https://docs.groupdocs.com/display/mergernet/Developer+Guide) documentation or [GitHub](https://github.com/groupdocs-merger/GroupDocs.Merger-for-.NET) samples and showcases.
+For more code examples and specific use cases please refer to our [Developer Guide]({{< ref "merger-net\developer-guide\_index.md" >}}) documentation or [GitHub](https://github.com/groupdocs-merger/GroupDocs.Merger-for-.NET) samples and showcases.

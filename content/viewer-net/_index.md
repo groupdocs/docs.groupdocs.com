@@ -16,10 +16,10 @@ hideChildren: True
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 
-*   [GroupDocs.Viewer for .NET Online Documentation](https://docs.groupdocs.com/display/viewernet/)
-*   [GroupDocs.Viewer for .NET Features](https://docs.groupdocs.com/display/viewernet/Features+Overview)
-*   [GroupDocs.Viewer for .NET Limitations](https://docs.groupdocs.com/display/viewernet/Evaluation+Limitations+and+Licensing+of+GroupDocs.Viewer)
-*   [GroupDocs.Viewer for .NET Release Notes](https://docs.groupdocs.com/display/viewernet/Release+Notes)
+*   [GroupDocs.Viewer for .NET Online Documentation]({{< ref "viewer-net" >}})
+*   [GroupDocs.Viewer for .NET Features]({{< ref "viewer-net\getting-started\features-overview.md" >}})
+*   [GroupDocs.Viewer for .NET Limitations]({{< ref "viewer-net\getting-started\evaluation-limitations-and-licensing-of-groupdocs.viewer.md" >}})
+*   [GroupDocs.Viewer for .NET Release Notes]({{< ref "viewer-net\release-notes\_index.md" >}})
 *   [GroupDocs.Viewer for .NET Product Page](https://products.groupdocs.com/viewer/net)
 *   [Install GroupDocs.Viewer for .NET NuGet Package](https://www.nuget.org/packages/GroupDocs.Viewer/)
 *   [GroupDocs.Viewer for .NET API Reference Guide](https://apireference.groupdocs.com/net/viewer)

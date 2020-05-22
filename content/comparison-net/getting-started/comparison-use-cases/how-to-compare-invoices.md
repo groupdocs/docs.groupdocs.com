@@ -26,9 +26,9 @@ Target Invoice
 
   
 
-[**GroupDocs****.Comparison**](https://products.groupdocs.com/comparison/net) provides the ability to compare two files in DOCX format(or any other [supported file formats](https://docs.groupdocs.com/display/comparisonnet/Supported+Document+Formats)) with adjustment of detalization level and[comparison sensitivity.](https://docs.groupdocs.com/display/comparisonnet/Adjusting+comparison+sensitivity)
+[**GroupDocs****.Comparison**](https://products.groupdocs.com/comparison/net) provides the ability to compare two files in DOCX format(or any other [supported file formats]({{< ref "comparison-net\getting-started\supported-document-formats.md" >}})) with adjustment of detalization level and[comparison sensitivity.](https://docs.groupdocs.com/display/comparisonnet/Adjusting+comparison+sensitivity)
 
-The following are the steps to compare two DOCX files with specific settings of detalization level and[comparison sensitivity.](https://docs.groupdocs.com/display/comparisonnet/Adjusting+comparison+sensitivity)
+The following are the steps to compare two DOCX files with specific settings of detalization level and[comparison sensitivity.]({{< ref "comparison-net\developer-guide\advanced-usage\comparison\adjusting-comparison-sensitivity.md" >}})
 
 *   Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer)objectwith source document path or stream;
 *   Call [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index)method and specify target document path or stream;
@@ -75,7 +75,7 @@ Result Invoice
 
 ### Advanced Usage Topics
 
-To learn more about document comparison features, please refer to the [advanced usage section](https://docs.groupdocs.com/display/comparisonnet/Advanced+usage).
+To learn more about document comparison features, please refer to the [advanced usage section]({{< ref "comparison-net\developer-guide\advanced-usage\_index.md" >}}).
 
 ### GitHub Examples
 

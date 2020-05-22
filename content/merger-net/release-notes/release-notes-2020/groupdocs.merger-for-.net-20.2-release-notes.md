@@ -36,4 +36,4 @@ Feature
 
 ### New MHTML file type was added
 
-A new **.MHTML** file type was added to GroupDocs.Merger for .NET product and accordingly to the following Wiki Public Docs page: [Supported Document Types](https://docs.groupdocs.com/display/mergernet/Supported+Document+Types).
+A new **.MHTML** file type was added to GroupDocs.Merger for .NET product and accordingly to the following Wiki Public Docs page: [Supported Document Types]({{< ref "merger-net\getting-started\supported-document-types.md" >}}).

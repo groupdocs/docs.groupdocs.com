@@ -8,7 +8,7 @@ keywords: Convert to Word, Convert to WordProcessing, Convert to DOCX, Convert t
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-GroupDocs.Conversion provides [WordProcessingConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/wordprocessingconvertoptions)to give you control over conversion result when convert to WordProcessing formats. Along with [common convert options](https://docs.groupdocs.com/display/conversionnet/Common+conversion+options) from base class [WordProcessingConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/wordprocessingconvertoptions) has the following additional options:
+GroupDocs.Conversion provides [WordProcessingConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/wordprocessingconvertoptions)to give you control over conversion result when convert to WordProcessing formats. Along with [common convert options]({{< ref "conversion-net\developer-guide\advanced-usage\converting\common-conversion-options\_index.md" >}}) from base class [WordProcessingConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/wordprocessingconvertoptions) has the following additional options:
 
 *   **[Format](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert.convertoptions/1/properties/format)**\- desired result document type. Available options are: *Doc, Docm, Docx, Dot, Dotx, Rtf, Odt, Ott, Mobi, Txt*
 *   **[Width](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/wordprocessingconvertoptions/properties/width)** - desired page width after conversion  

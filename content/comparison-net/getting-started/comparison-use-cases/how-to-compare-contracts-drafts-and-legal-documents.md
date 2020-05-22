@@ -39,7 +39,7 @@ As a result of creating a text file, we have to subject it to multiple changes. 
 
 ## How to compare contracts using GroupDocs.Comparison
 
-Sometimes Microsoft Word comparison features may be not enough to satisfy your requirements - for example you need your own way to implement comparison logic or you are developing your own application. [**GroupDocs****.Comparison**](https://products.groupdocs.com/comparison/net) provides a possibility to compare documents programmatically and manage found differences in code for wide range of [supported file formats](https://docs.groupdocs.com/display/comparisonnet/Supported+Document+Formats). Here is an example of how to compare two contracts using GroupDocs.Comparsion API. Usually you just have to follow these steps:
+Sometimes Microsoft Word comparison features may be not enough to satisfy your requirements - for example you need your own way to implement comparison logic or you are developing your own application. [**GroupDocs****.Comparison**](https://products.groupdocs.com/comparison/net) provides a possibility to compare documents programmatically and manage found differences in code for wide range of [supported file formats]({{< ref "comparison-net\getting-started\supported-document-formats.md" >}}). Here is an example of how to compare two contracts using GroupDocs.Comparsion API. Usually you just have to follow these steps:
 
 *   Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer)* object *with source document path or stream;;
 *   Call [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index)method and specify target document path or stream;

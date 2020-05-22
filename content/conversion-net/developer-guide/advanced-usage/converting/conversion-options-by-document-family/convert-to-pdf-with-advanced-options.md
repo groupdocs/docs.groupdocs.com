@@ -8,7 +8,7 @@ keywords: Convert PDF, Convert to PDF/A
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-GroupDocs.Conversion provides [PdfConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfconvertoptions)to give you control over conversion result when convert to PDF. Along with [common convert options](https://docs.groupdocs.com/display/conversionnet/Common+conversion+options) [PdfConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfconvertoptions)has the following additional options:
+GroupDocs.Conversion provides [PdfConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfconvertoptions)to give you control over conversion result when convert to PDF. Along with [common convert options]({{< ref "conversion-net\developer-guide\advanced-usage\converting\common-conversion-options\_index.md" >}}) [PdfConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfconvertoptions)has the following additional options:
 
 *   ****[Format](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert.convertoptions/1/properties/format)****\- desired result document type. Available options are: *Pdf, Epub, Xps, Tex, Ps, Pcl, *
 *   **[Width](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfconvertoptions/properties/width) **\- desired image width after conversion

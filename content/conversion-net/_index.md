@@ -16,10 +16,10 @@ hideChildren: True
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 
-*   [GroupDocs.Conversion for .NET Online Documentation](https://docs.groupdocs.com/display/conversionnet/)
-*   [GroupDocs.Conversion for .NET Features](https://docs.groupdocs.com/display/conversionnet/Features+Overview)
-*   [GroupDocs.Conversion for .NET Limitations](https://docs.groupdocs.com/display/conversionnet/Evaluation+Limitations+and+Licensing+of+GroupDocs.Conversion)
-*   [GroupDocs.Conversion for .NET Release Notes](https://docs.groupdocs.com/display/conversionnet/Release+Notes)
+*   [GroupDocs.Conversion for .NET Online Documentation]({{< ref "conversion-net" >}})
+*   [GroupDocs.Conversion for .NET Features]({{< ref "conversion-net\getting-started\features-overview.md" >}})
+*   [GroupDocs.Conversion for .NET Limitations]({{< ref "conversion-net\getting-started\evaluation-limitations-and-licensing-of-groupdocs.conversion.md" >}})
+*   [GroupDocs.Conversion for .NET Release Notes]({{< ref "conversion-net\release-notes\_index.md" >}})
 *   [GroupDocs.Conversion for .NET Product Page](https://products.groupdocs.com/conversion/net)
 *   [Install GroupDocs.Conversion for .NET NuGet Package](https://www.nuget.org/packages/GroupDocs.Conversion/)
 *   [GroupDocs.Conversion for .NET API Reference Guide](https://apireference.groupdocs.com/net/conversion)

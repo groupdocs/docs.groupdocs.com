@@ -75,7 +75,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
 
 ### Advanced Usage Topics
 
-To learn more about document annotating features, please refer to the [advanced usage section](https://docs.groupdocs.com/display/annotationnet/Advanced+usage).
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-net\developer-guide\advanced-usage\_index.md" >}}).
 
 ### GitHub Examples
 

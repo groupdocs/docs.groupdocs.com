@@ -12,4 +12,4 @@ hideChildren: False
 
 Manipulate your documents fast and easy with our intuitive and powerful API just with few lines of code.
 
-Let’s review common usage scenarios when source documentis stored at a local drive and you want to merge or manipulate document structure across wide range of [supported document types](https://docs.groupdocs.com/display/mergernet/Supported+Document+Types) - PDF, DOCX, PPTX, XLSX, VSDX and many others.
+Let’s review common usage scenarios when source documentis stored at a local drive and you want to merge or manipulate document structure across wide range of [supported document types]({{< ref "merger-net\getting-started\supported-document-types.md" >}}) - PDF, DOCX, PPTX, XLSX, VSDX and many others.

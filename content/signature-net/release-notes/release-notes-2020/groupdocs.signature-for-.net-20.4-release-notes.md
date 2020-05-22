@@ -78,11 +78,11 @@ Bug
 
 Following topics from Developer Guide were updated:
 
-[Advanced search for Barcode signatures](https://docs.groupdocs.com/display/signaturenet/Advanced+search+for+Barcode+signatures)
+[Advanced search for Barcode signatures]({{< ref "signature-net\developer-guide\advanced-usage\searching\advanced-search-for-barcode-signatures.md" >}})
 
-[Advanced search for QR-code signatures](https://docs.groupdocs.com/display/signaturenet/Advanced+search+for+QR-code+signatures)
+[Advanced search for QR-code signatures]({{< ref "signature-net\developer-guide\advanced-usage\searching\advanced-search-for-qr-code-signatures.md" >}})
 
-[Search for Image e-signatures](https://docs.groupdocs.com/display/signaturenet/Search+for+Image+e-signatures)
+[Search for Image e-signatures]({{< ref "signature-net\developer-guide\basic-usage\search-for-electronic-signatures-in-document\search-for-image-e-signatures.md" >}})
 
 # Public API and Backward Incompatible Changes
 
