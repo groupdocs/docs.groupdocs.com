@@ -17,9 +17,9 @@ hideChildren: True
 Following are the links to some useful resources you may need to accomplish your tasks.
 
 *   [GroupDocs.Editor for .NET Online Documentation]({{< ref "editor-net" >}})
-*   [GroupDocs.Editor for .NET Features]({{< ref "editor-net\getting-started\features-overview.md" >}})
-*   [GroupDocs.Editor for .NET Limitations]({{< ref "editor-net\getting-started\evaluation-limitations-and-licensing-of-groupdocs.editor.md" >}})
-*   [GroupDocs.Editor for .NET Release Notes]({{< ref "editor-net\release-notes\_index.md" >}})
+*   [GroupDocs.Editor for .NET Features]({{< ref "editor-net/getting-started/features-overview.md" >}})
+*   [GroupDocs.Editor for .NET Limitations]({{< ref "editor-net/getting-started/evaluation-limitations-and-licensing-of-groupdocs.editor.md" >}})
+*   [GroupDocs.Editor for .NET Release Notes]({{< ref "editor-net/release-notes/_index.md" >}})
 *   [GroupDocs.Editor for .NET Product Page](https://products.groupdocs.com/editor/net)
 *   [Install GroupDocs.Editor for .NET NuGet Package](https://www.nuget.org/packages/GroupDocs.Editor/)
 *   [GroupDocs.Editor for .NET API Reference Guide](https://apireference.groupdocs.com/net/editor)

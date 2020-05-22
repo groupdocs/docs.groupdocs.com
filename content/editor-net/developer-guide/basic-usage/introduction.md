@@ -18,7 +18,7 @@ From the GroupDocs.Editor perspective, this pipeline can be conditionally divide
 
 ### Loading document into the GroupDocs.Editor
 
-On the *[loading document]({{< ref "editor-net\developer-guide\basic-usage\load-document.md" >}}) stage* user should create an instance of `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class and pass an input document (through file path or byte stream) along with document load options. Loading options are not required and GroupDocs.Editor can automatically detect document format and select the most appropriate default options for the given format. But it is recommended to specify them explicitly. They are inevitable when trying to load password-protected documents.
+On the *[loading document]({{< ref "editor-net/developer-guide/basic-usage/load-document.md" >}}) stage* user should create an instance of `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class and pass an input document (through file path or byte stream) along with document load options. Loading options are not required and GroupDocs.Editor can automatically detect document format and select the most appropriate default options for the given format. But it is recommended to specify them explicitly. They are inevitable when trying to load password-protected documents.
 
 ```csharp
 string inputFilePath = "C:\\input_path\\document.docx"; //path to some document
@@ -29,7 +29,7 @@ After this stage document is ready to be opened and edited.
 
 ### Opening a document for editing
 
-Because GroupDocs.Editor is GUI-less library, document cannot be edited directly into it. But in order to edit document in WYSIWYG HTML-editor, GroupDocs.Editor needs to generate an HTML-version of a document, because any WYSIWYG editor can work only with HTML/CSS markup. When instance of `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class is created on the 1st stage, user should *[open document for editing]({{< ref "editor-net\developer-guide\basic-usage\edit-document.md" >}})*
+Because GroupDocs.Editor is GUI-less library, document cannot be edited directly into it. But in order to edit document in WYSIWYG HTML-editor, GroupDocs.Editor needs to generate an HTML-version of a document, because any WYSIWYG editor can work only with HTML/CSS markup. When instance of `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class is created on the 1st stage, user should *[open document for editing]({{< ref "editor-net/developer-guide/basic-usage/edit-document.md" >}})*
 
 by calling an `[Edit()](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/edit)` method of `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class. This method returns an instance of `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` class. This class can be described as a converted version of input document, that is stored in internal intermediate format, compatible with all formats, that GroupDocs.Editor supports. With [`EditableDocument` ](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)user can obtain HTML markup of the input document with different options, stylesheets, images, fonts, save HTML-document to disk, and other things. It is implied that HTML-markup, emitted by `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)`, then is passed into the client-side WYSIWYG HTML-editor, where end-user can actually edit the document.
 
@@ -46,7 +46,7 @@ After this stage document is ready to be passed to the WYSIWYG HTML-editor and i
 
 ### Saving a document
 
-*[Saving a document]({{< ref "editor-net\developer-guide\basic-usage\save-document.md" >}})* is a final stage, which occurs when document content was edited in the WYSIWYG HTML-editor (or any other software, this has no difference for GroupDocs.Editor) and should be saved back as a document of some format (like DOCX, PDF, or XLSX, for example). At this stage user should create a new instance of [`EditableDocument`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) class with HTML-markup and resources of edited version of the original document, that was obtained from end-user. [`EditableDocument`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) class contains several static methods, that allows to create its instances from HTML documents, that may be presented in different forms. And when [`EditableDocument`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) instance is ready, it is possible to save it as an ordinary document using a `[Save()](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/save)` method of `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class.
+*[Saving a document]({{< ref "editor-net/developer-guide/basic-usage/save-document.md" >}})* is a final stage, which occurs when document content was edited in the WYSIWYG HTML-editor (or any other software, this has no difference for GroupDocs.Editor) and should be saved back as a document of some format (like DOCX, PDF, or XLSX, for example). At this stage user should create a new instance of [`EditableDocument`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) class with HTML-markup and resources of edited version of the original document, that was obtained from end-user. [`EditableDocument`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) class contains several static methods, that allows to create its instances from HTML documents, that may be presented in different forms. And when [`EditableDocument`](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) instance is ready, it is possible to save it as an ordinary document using a `[Save()](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/save)` method of `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class.
 
 ```csharp
 EditableDocument afterEdit = EditableDocument.FromMarkup("<body>HTML content of the document...</body>", null);
@@ -59,7 +59,7 @@ Unlike with previous load options and edit options, save options are mandatory, 
 
 ### Detecting document type
 
-Sometimes it is necessary to *[detect a document type and extract its metadata]({{< ref "editor-net\developer-guide\advanced-usage\extracting-document-metainfo.md" >}})* before sending it for editing. For such scenarios GroupDocs.Editor allows to detect document type and extract its the most necessary metainfo depending on document type:
+Sometimes it is necessary to *[detect a document type and extract its metadata]({{< ref "editor-net/developer-guide/advanced-usage/extracting-document-metainfo.md" >}})* before sending it for editing. For such scenarios GroupDocs.Editor allows to detect document type and extract its the most necessary metainfo depending on document type:
 
 1.  Is document encoded or not;
 2.  Exact document format;
@@ -223,25 +223,25 @@ N/A
 
 Detailed information about every stage of document processing along with source code examples, options explanations and so on, can be found in the next articles:
 
-1.  [Load document]({{< ref "editor-net\developer-guide\basic-usage\load-document.md" >}})
+1.  [Load document]({{< ref "editor-net/developer-guide/basic-usage/load-document.md" >}})
 2.  [Edit document](https://wiki.lisbon.dynabic.com/display/editor/Edit+document)
 3.  [Save document](https://wiki.lisbon.dynabic.com/display/editor/Save+document)
 
 Complete description of `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) `class, all its possibilities, members and purpose, along with source code example, is located in the next articles:
 
-*   [Working with EditableDocument]({{< ref "editor-net\developer-guide\advanced-usage\working-with-editabledocument\_index.md" >}})
-*   [Get HTML markup in different forms]({{< ref "editor-net\developer-guide\advanced-usage\working-with-editabledocument\get-html-markup-in-different-forms.md" >}})
-*   [Save HTML to folder]({{< ref "editor-net\developer-guide\advanced-usage\working-with-editabledocument\save-html-to-folder.md" >}})
-*   [Working with resources]({{< ref "editor-net\developer-guide\advanced-usage\working-with-editabledocument\working-with-resources.md" >}})
-*   [Create EditableDocument from file or markup]({{< ref "editor-net\developer-guide\advanced-usage\working-with-editabledocument\create-editabledocument-from-file-or-markup.md" >}})
+*   [Working with EditableDocument]({{< ref "editor-net/developer-guide/advanced-usage/working-with-editabledocument/_index.md" >}})
+*   [Get HTML markup in different forms]({{< ref "editor-net/developer-guide/advanced-usage/working-with-editabledocument/get-html-markup-in-different-forms.md" >}})
+*   [Save HTML to folder]({{< ref "editor-net/developer-guide/advanced-usage/working-with-editabledocument/save-html-to-folder.md" >}})
+*   [Working with resources]({{< ref "editor-net/developer-guide/advanced-usage/working-with-editabledocument/working-with-resources.md" >}})
+*   [Create EditableDocument from file or markup]({{< ref "editor-net/developer-guide/advanced-usage/working-with-editabledocument/create-editabledocument-from-file-or-markup.md" >}})
 
 Detailed review of all supported family formats together with explaining their load/edit/save options, illustrated with source code, can be found in the next articles:
 
-*   [Working with WordProcessing documents]({{< ref "editor-net\developer-guide\advanced-usage\working-with-wordprocessing-documents\_index.md" >}})
-*   [Working with Spreadsheets]({{< ref "editor-net\developer-guide\advanced-usage\working-with-spreadsheets.md" >}})
-*   [Working with DSV]({{< ref "editor-net\developer-guide\advanced-usage\working-with-dsv.md" >}})
-*   [Working with Presentations]({{< ref "editor-net\developer-guide\advanced-usage\working-with-presentations\_index.md" >}})
-*   [Working with text documents]({{< ref "editor-net\developer-guide\advanced-usage\working-with-text-documents.md" >}})
+*   [Working with WordProcessing documents]({{< ref "editor-net/developer-guide/advanced-usage/working-with-wordprocessing-documents/_index.md" >}})
+*   [Working with Spreadsheets]({{< ref "editor-net/developer-guide/advanced-usage/working-with-spreadsheets.md" >}})
+*   [Working with DSV]({{< ref "editor-net/developer-guide/advanced-usage/working-with-dsv.md" >}})
+*   [Working with Presentations]({{< ref "editor-net/developer-guide/advanced-usage/working-with-presentations/_index.md" >}})
+*   [Working with text documents]({{< ref "editor-net/developer-guide/advanced-usage/working-with-text-documents.md" >}})
 
 ## More resources
 

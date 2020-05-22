@@ -8,7 +8,7 @@ keywords:
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-**[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to get the list of all [supported file types]({{< ref "merger-net\getting-started\supported-document-types.md" >}}) by following the below steps:
+**[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to get the list of all [supported file types]({{< ref "merger-net/getting-started/supported-document-types.md" >}}) by following the below steps:
 
 *   Call [GetSupportedFileTypes](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain/filetype/methods/getsupportedfiletypes)of [FileType](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain/filetype) class;
 *   Enumerate through the collection of [FileType](https://apireference.groupdocs.com/net/merger/groupdocs.merger.domain/filetype)objects*.*

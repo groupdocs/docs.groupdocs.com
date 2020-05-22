@@ -89,7 +89,7 @@ Bug
 
 Following topics from Developer Guide were added:
 
-*   [Obtain document form fields and signatures information]({{< ref "signature-net\developer-guide\advanced-usage\common\obtain-document-form-fields-and-signatures-information.md" >}})
+*   [Obtain document form fields and signatures information]({{< ref "signature-net/developer-guide/advanced-usage/common/obtain-document-form-fields-and-signatures-information.md" >}})
 
 Following topics from Developer Guide were updated:
 
@@ -218,7 +218,7 @@ In version 20.2 following public members were added:
     IList<FormFieldSignature> FormFields { get; }
     ```
     
-Few example **[Obtain document form fields and signatures information]({{< ref "signature-net\developer-guide\advanced-usage\common\obtain-document-form-fields-and-signatures-information.md" >}})**
+Few example **[Obtain document form fields and signatures information]({{< ref "signature-net/developer-guide/advanced-usage/common/obtain-document-form-fields-and-signatures-information.md" >}})**
     
 *   Public class **[GroupDocs.Signature.Domain.ImageSignature](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/imagesignature)** was updated with changes as follow
     

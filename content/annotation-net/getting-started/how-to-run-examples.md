@@ -19,7 +19,7 @@ Please choose one from the following list:
 
 *   Open Visual Studio and go to **File** -> **New **\->** Project**.
 *   Select appropriate project type - Console App, ASP.NET Web Application etc.
-*   Install **GroupDocs.Annotation for .NET **from Nuget or official GroupDocs website following this [guide]({{< ref "annotation-net\getting-started\development-environment-installation-and-configuration.md" >}}).
+*   Install **GroupDocs.Annotation for .NET **from Nuget or official GroupDocs website following this [guide]({{< ref "annotation-net/getting-started/development-environment-installation-and-configuration.md" >}}).
 *   Code your first application with **GroupDocs.Annotation for .NET **like this
     
     ```csharp

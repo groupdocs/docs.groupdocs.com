@@ -68,7 +68,7 @@ As a result, we get a DWG file where the deleted elements are marked in **red**
 
 ### Advanced Usage Topics
 
-To learn more about document comparison features, please refer to the [advanced usage section]({{< ref "comparison-net\developer-guide\advanced-usage\_index.md" >}}).
+To learn more about document comparison features, please refer to the [advanced usage section]({{< ref "comparison-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

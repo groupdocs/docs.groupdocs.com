@@ -71,4 +71,4 @@ using (Editor editor = new Editor(documentPath))
 }
 ```
 
-For more code examples and specific use cases please refer to our [Developer Guide]({{< ref "editor-net\developer-guide\_index.md" >}}) documentation or [GitHub](https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET) samples and showcases.
+For more code examples and specific use cases please refer to our [Developer Guide]({{< ref "editor-net/developer-guide/_index.md" >}}) documentation or [GitHub](https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET) samples and showcases.

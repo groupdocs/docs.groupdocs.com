@@ -98,7 +98,7 @@ List<IImageResource> onlyImages = document.Images;
 List<IHtmlResource> allResourcesTogether = document.AllResources;
 ```
 
-For more information about obtaining HTML markup and resources from `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` please visit "[Get HTML markup in different forms]({{< ref "editor-net\developer-guide\advanced-usage\working-with-editabledocument\get-html-markup-in-different-forms.md" >}})", "[Working with resources](https://docs.groupdocs.com/display/editornet/Working+with+resources)", and "[Save HTML to folder](https://docs.groupdocs.com/display/editornet/Save+HTML+to+folder)" articles..
+For more information about obtaining HTML markup and resources from `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` please visit "[Get HTML markup in different forms]({{< ref "editor-net/developer-guide/advanced-usage/working-with-editabledocument/get-html-markup-in-different-forms.md" >}})", "[Working with resources](https://docs.groupdocs.com/display/editornet/Working+with+resources)", and "[Save HTML to folder](https://docs.groupdocs.com/display/editornet/Save+HTML+to+folder)" articles..
 
 ## More resources
 

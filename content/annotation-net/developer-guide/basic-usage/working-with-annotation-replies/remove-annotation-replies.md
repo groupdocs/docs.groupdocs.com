@@ -65,7 +65,7 @@ using (Annotator annotator = new Annotator("annotated_file_with_replies.pdf", ne
 
 ### Advanced Usage Topics
 
-To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-net\developer-guide\advanced-usage\_index.md" >}}).
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

@@ -10,7 +10,7 @@ hideChildren: False
 ---
 # Documents comparison features
 
-**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to compare documents and save resultant document that shows changes between source and target document(s). Full list of supported document formats can be found [here]({{< ref "comparison-net\getting-started\supported-document-formats.md" >}}).
+**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to compare documents and save resultant document that shows changes between source and target document(s). Full list of supported document formats can be found [here]({{< ref "comparison-net/getting-started/supported-document-formats.md" >}}).
 Changes detection algorithms used by GroupDocs.Comparison allows to detect changes in different document parts and blocks:
 
 *   Text blocks - paragraphs, words and characters;

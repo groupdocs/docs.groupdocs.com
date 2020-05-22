@@ -17,9 +17,9 @@ hideChildren: True
 Following are the links to some useful resources you may need to accomplish your tasks.
 
 *   [GroupDocs.Merger for .NET Online Documentation]({{< ref "merger-net" >}})
-*   [GroupDocs.Merger for .NET Features]({{< ref "merger-net\getting-started\features-overview.md" >}})
-*   [GroupDocs.Merger for .NET Limitations]({{< ref "merger-net\getting-started\evaluation-limitations-and-licensing-of-groupdocs.merger.md" >}})
-*   [GroupDocs.Merger for .NET Release Notes]({{< ref "merger-net\release-notes\_index.md" >}})
+*   [GroupDocs.Merger for .NET Features]({{< ref "merger-net/getting-started/features-overview.md" >}})
+*   [GroupDocs.Merger for .NET Limitations]({{< ref "merger-net/getting-started/evaluation-limitations-and-licensing-of-groupdocs.merger.md" >}})
+*   [GroupDocs.Merger for .NET Release Notes]({{< ref "merger-net/release-notes/_index.md" >}})
 *   [GroupDocs.Merger for .NET Product Page](https://products.groupdocs.com/merger/net)
 *   [Install GroupDocs.Merger for .NET NuGet Package](https://www.nuget.org/packages/GroupDocs.Merger/)
 *   [GroupDocs.Merger for .NET API Reference Guide](https://apireference.groupdocs.com/net/merger)

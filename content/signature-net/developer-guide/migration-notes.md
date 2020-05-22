@@ -71,4 +71,4 @@ using (Signature signature = new Signature("sample.pdf"))
 }
 ```
 
-For more code examples and specific use cases please refer to our [Developer Guide]({{< ref "signature-net\developer-guide\_index.md" >}}) documentation or [GitHub](https://github.com/groupdocs-signature/GroupDocs.Signature-for-.NET/) samples and showcases.
+For more code examples and specific use cases please refer to our [Developer Guide]({{< ref "signature-net/developer-guide/_index.md" >}}) documentation or [GitHub](https://github.com/groupdocs-signature/GroupDocs.Signature-for-.NET/) samples and showcases.

@@ -23,7 +23,7 @@ You will then enter Review Mode. This will open the Reviewing Pane, which shows 
 
 # How to Compare Two Presentations using GroupDocs.Comparison
 
-Such functionality that is provided by third-party programs is clearly not enough. **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides many features for comparing a wide range of [supported file formats]({{< ref "comparison-net\getting-started\supported-document-formats.md" >}}), including PowerPoint Presentation format. Let's make an example, you made a presentation at different times, but the elements on the slides are not located as you originally did. To find where the slides differ, you can compare two files in PPTX format using the **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** functionality along with a built-in option that helps find changes in styles.
+Such functionality that is provided by third-party programs is clearly not enough. **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides many features for comparing a wide range of [supported file formats]({{< ref "comparison-net/getting-started/supported-document-formats.md" >}}), including PowerPoint Presentation format. Let's make an example, you made a presentation at different times, but the elements on the slides are not located as you originally did. To find where the slides differ, you can compare two files in PPTX format using the **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** functionality along with a built-in option that helps find changes in styles.
 
   
 
@@ -35,7 +35,7 @@ Modified Presentation
 
 ![](https://wiki.lisbon.dynabic.com/download/attachments/31491169/image2020-3-23%2012%3A11%3A51.png?version=1&modificationDate=1584958309000&api=v2)
 
-[**GroupDocs****.Comparison**](https://products.groupdocs.com/comparison/net) provides the ability to compare two files in PPTX format(or any other [supported file formats]({{< ref "comparison-net\getting-started\supported-document-formats.md" >}}))
+[**GroupDocs****.Comparison**](https://products.groupdocs.com/comparison/net) provides the ability to compare two files in PPTX format(or any other [supported file formats]({{< ref "comparison-net/getting-started/supported-document-formats.md" >}}))
 
 The following are the steps to compare two PPTX files.
 
@@ -81,7 +81,7 @@ Result Slide
 
 ### Advanced Usage Topics
 
-To learn more about document comparison features, please refer to the [advanced usage section]({{< ref "comparison-net\developer-guide\advanced-usage\_index.md" >}}).
+To learn more about document comparison features, please refer to the [advanced usage section]({{< ref "comparison-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

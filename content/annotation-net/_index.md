@@ -17,9 +17,9 @@ hideChildren: True
 Following are the links to some useful resources you may need to accomplish your tasks.
 
 *   [GroupDocs.Annotation for .NET Online Documentation]({{< ref "annotation-net" >}})
-*   [GroupDocs.Annotation for .NET Features]({{< ref "annotation-net\getting-started\features-overview.md" >}})
-*   [GroupDocs.Annotation for .NET Limitations]({{< ref "annotation-net\getting-started\evaluation-limitations-and-licensing-of-groupdocs.annotation.md" >}})
-*   [GroupDocs.Annotation for .NET Release Notes]({{< ref "annotation-net\release-notes\_index.md" >}})
+*   [GroupDocs.Annotation for .NET Features]({{< ref "annotation-net/getting-started/features-overview.md" >}})
+*   [GroupDocs.Annotation for .NET Limitations]({{< ref "annotation-net/getting-started/evaluation-limitations-and-licensing-of-groupdocs.annotation.md" >}})
+*   [GroupDocs.Annotation for .NET Release Notes]({{< ref "annotation-net/release-notes/_index.md" >}})
 *   [GroupDocs.Annotation for .NET Product Page](https://products.groupdocs.com/annotation/net)
 *   [Install GroupDocs.Annotation for .NET NuGet Package](https://www.nuget.org/packages/GroupDocs.Annotation/)
 *   [GroupDocs.Annotation for .NET API Reference Guide](https://apireference.groupdocs.com/net/annotation)

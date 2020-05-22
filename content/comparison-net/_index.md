@@ -17,9 +17,9 @@ hideChildren: True
 Following are the links to some useful resources you may need to accomplish your tasks.
 
 *   [GroupDocs.Comparison for .NET Online Documentation]({{< ref "comparison-net" >}})
-*   [GroupDocs.Comparison for .NET Features]({{< ref "comparison-net\getting-started\features-overview.md" >}})
-*   [GroupDocs.Comparison for .NET Limitations]({{< ref "comparison-net\getting-started\evaluation-limitations-and-licensing-of-groupdocs.comparison.md" >}})
-*   [GroupDocs.Comparison for .NET Release Notes]({{< ref "comparison-net\release-notes\_index.md" >}})
+*   [GroupDocs.Comparison for .NET Features]({{< ref "comparison-net/getting-started/features-overview.md" >}})
+*   [GroupDocs.Comparison for .NET Limitations]({{< ref "comparison-net/getting-started/evaluation-limitations-and-licensing-of-groupdocs.comparison.md" >}})
+*   [GroupDocs.Comparison for .NET Release Notes]({{< ref "comparison-net/release-notes/_index.md" >}})
 *   [GroupDocs.Comparison for .NET Product Page](https://products.groupdocs.com/comparison/net)
 *   [Install GroupDocs.Comparison for .NET NuGet Package](https://www.nuget.org/packages/GroupDocs.Comparison/)
 *   [GroupDocs.Comparison for .NET API Reference Guide](https://apireference.groupdocs.com/net/comparison)

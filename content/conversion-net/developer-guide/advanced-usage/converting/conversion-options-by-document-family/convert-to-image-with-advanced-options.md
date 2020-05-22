@@ -8,7 +8,7 @@ keywords: Convert to Image, Convert Image
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-GroupDocs.Conversion provides [ImageConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/imageconvertoptions)to give you control over conversion result when convert to image.  Along with [common convert options]({{< ref "conversion-net\developer-guide\advanced-usage\converting\common-conversion-options\_index.md" >}}) from base class [ImageConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/imageconvertoptions) has the following additional options:
+GroupDocs.Conversion provides [ImageConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/imageconvertoptions)to give you control over conversion result when convert to image.  Along with [common convert options]({{< ref "conversion-net/developer-guide/advanced-usage/converting/common-conversion-options/_index.md" >}}) from base class [ImageConvertOptions](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/imageconvertoptions) has the following additional options:
 
 *   **[Format](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert.convertoptions/1/properties/format)** - desired result document type. Available options are: *Tiff, Tif, Jpg, Jpeg, Png, Gig, Bmp, Ico, Psd, Wmf, Emf, Dcm, Webp, Dng, Svg, Jp2, Odg, J2c, J2k, Jpx, Jpf, Jpm, Eps, Cgm, Cdr, Cmx, Dib, Jpc, Jls, DjVu*
 *   **[Width](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/imageconvertoptions/properties/width) **\- desired image width after conversion

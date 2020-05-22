@@ -10,6 +10,6 @@ hideChildren: False
 ---
 # Loading documents from different sources
 
-[**GroupDocs.Merger**](https://products.groupdocs.com/merger/net) also enables you to operate with remotely located documents. The loading of the document would be similar to [Load document from stream]({{< ref "merger-net\developer-guide\advanced-usage\loading\loading-documents-from-different-sources\load-document-from-stream.md" >}}). In order to load a remotely located document, below steps can be followed.
+[**GroupDocs.Merger**](https://products.groupdocs.com/merger/net) also enables you to operate with remotely located documents. The loading of the document would be similar to [Load document from stream]({{< ref "merger-net/developer-guide/advanced-usage/loading/loading-documents-from-different-sources/load-document-from-stream.md" >}}). In order to load a remotely located document, below steps can be followed.
 
 Following examples demonstrates how to load document from different sources.

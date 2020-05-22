@@ -10,7 +10,7 @@ hideChildren: False
 ---
 ## What Is GroupDocs.Annotation?
 
-GroupDocs.Annotation is a lightweight and powerful library which allows developers to seamlessly enhance their applications with the capability to annotate documents from wide range of [supported formats]({{< ref "annotation-net\getting-started\supported-document-formats.md" >}}).
+GroupDocs.Annotation is a lightweight and powerful library which allows developers to seamlessly enhance their applications with the capability to annotate documents from wide range of [supported formats]({{< ref "annotation-net/getting-started/supported-document-formats.md" >}}).
 Annotations can be applied in form of textual comments, explanations with highlighted notes, watermarks, polylines, text/resource redactions and much more.   
 Along with ability to annotate documents multiple users can collaborate via annotation comments. Annotate PDF, DOCX/DOC, PPTX/PPT, XLSX/XLS, JPG, PNG, TIFF, VSDX/VSD, ODT, ODS, ODP, EML, HTML and many others formats, comment and review documents with GroupDocs.Annotation for .NET API.
 

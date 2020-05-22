@@ -26,63 +26,63 @@ Annotation
 
 Description
 
-[Area]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-area-annotation.md" >}})
+[Area]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-area-annotation.md" >}})
 
 Rectangle annotation that can be applied in random place on document page.
 
-[Arrow]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-arrow-annotation.md" >}})
+[Arrow]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-arrow-annotation.md" >}})
 
 Annotation in the form of pointer or arrow.
 
-[Distance]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-distance-annotation.md" >}})
+[Distance]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-distance-annotation.md" >}})
 
 Annotation looks like arrow but with arrows at both line ends. For most document formats this annotation can contains text value (this feature not support for Word documents).
 
-[Ellipse]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-ellipse-annotation.md" >}})
+[Ellipse]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-ellipse-annotation.md" >}})
 
 Circle-based annotation.
 
-[Link]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-link-annotation.md" >}})
+[Link]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-link-annotation.md" >}})
 
 Represents a web-link that can be applied to the part of text. This annotation supports only for PDF, Word processing text documents and presentations.
 
-[Point]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-point-annotation.md" >}})
+[Point]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-point-annotation.md" >}})
 
 Represents abstract point annotation.
 
-[Polyline]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-polyline-annotation.md" >}})
+[Polyline]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-polyline-annotation.md" >}})
 
 Represents free-hand drawing line.
 
-[Resource redaction]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-resource-redaction-annotation.md" >}})
+[Resource redaction]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-resource-redaction-annotation.md" >}})
 
 Represents free rectangle annotation with fixed position and black background. For this annotation is impossible to move it (in result document), and change any visual properties.
 
-[Text field]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-text-field-annotation.md" >}})
+[Text field]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-text-field-annotation.md" >}})
 
 This is a rectangle annotation with some text inside rectangle area.
 
-[Highlight]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-highlight-annotation.md" >}})
+[Highlight]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-highlight-annotation.md" >}})
 
 This annotation highlight text. Applicable only for text.
 
-[Text redaction]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-text-redaction-annotation.md" >}})
+[Text redaction]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-text-redaction-annotation.md" >}})
 
 Same as resource redaction annotation, but applicable only for text.
 
-[Replacement]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-replacement-annotation.md" >}})
+[Replacement]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-replacement-annotation.md" >}})
 
 Replace original document text by user text. Applicable only for text.
 
-[Strikeout]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-strikeout-annotation.md" >}})
+[Strikeout]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-strikeout-annotation.md" >}})
 
 Make selected text strikeout. Applicable only for text.
 
-[Underline]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-underline-annotation.md" >}})
+[Underline]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-underline-annotation.md" >}})
 
 Make selected text underline. Applicable only for text.
 
-[Watermark]({{< ref "annotation-net\developer-guide\basic-usage\add-annotation-to-the-document\add-watermark-annotation.md" >}})
+[Watermark]({{< ref "annotation-net/developer-guide/basic-usage/add-annotation-to-the-document/add-watermark-annotation.md" >}})
 
 Add text watermark. PageNumber for this annotation is ignored, because annotation adds to all document pages. For some document formats can set Angle property, that determines annotation angle rotation.
 
