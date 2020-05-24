@@ -11,9 +11,8 @@
     // top: + $header-height;  // CUSTOM
   }
 
-  @media screen {
+  @media screen and (max-width: $mobile-breakpoint) {
     .navHome {
-        display: none;
         flex: 0 0 0;
     }
 }
