@@ -32,6 +32,11 @@ $dark:          #343a40;
     margin-top:-3rem;
 }
 
+.main p img
+{
+     max-width: 100%;
+}
+
 .haschildren ul{
     color: gray;
     display:none;
