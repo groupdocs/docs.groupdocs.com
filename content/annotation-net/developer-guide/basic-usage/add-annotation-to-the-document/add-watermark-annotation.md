@@ -3,7 +3,7 @@ id: add-watermark-annotation
 url: annotation/net/add-watermark-annotation
 title: Add watermark annotation
 weight: 16
-description: Learn what is a watermark annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
+description: "Learn what is a watermark annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET."
 keywords: What is a watermark annotation, how to add annotation, add watermark annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

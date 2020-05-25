@@ -3,7 +3,7 @@ id: add-highlight-annotation
 url: annotation/net/add-highlight-annotation
 title: Add highlight annotation
 weight: 5
-description: Learn what is a highlight annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
+description: "Learn what is a highlight annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET."
 keywords: What is a highlight annotation, how to add annotation, add highlight annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

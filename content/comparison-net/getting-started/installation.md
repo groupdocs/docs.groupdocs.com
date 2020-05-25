@@ -3,11 +3,14 @@ id: installation
 url: comparison/net/installation
 title: Installation
 weight: 4
-description: 
-keywords: 
+description: "On this page you will find system requirements supported platforms, development environments. GroupDocs.Comparison for .NET does not require any external software or third party tool to be installed."
+keywords: Install from Nuget, How to install GroupDocs.Comparison, Install from website 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
+  
+
+
   
 
 # Install from Nuget

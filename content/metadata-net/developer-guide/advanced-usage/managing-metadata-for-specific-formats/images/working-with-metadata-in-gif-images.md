@@ -3,7 +3,7 @@ id: working-with-metadata-in-gif-images
 url: metadata/net/working-with-metadata-in-gif-images
 title: Working with metadata in GIF images
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

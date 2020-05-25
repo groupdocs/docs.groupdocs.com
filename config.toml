@@ -35,19 +35,22 @@ enableGitInfo = true
     GitHubDateFormat = 'January 2, 2006'
 
     ProductFamilies = [ 
-            { Key = "annotation", Name = "GroupDocs.Annotation", Description = "Powerful document annotator component that helps you to boost your applications with document annotation, commenting and collaboration features." },
-            { Key = "comparison", Name = "GroupDocs.Comparison", Description = "Document comparison API that detects document text, styling and formating changes quickly and with a high accuracy." },
-            { Key = "conversion", Name = "GroupDocs.Conversion", Description = "Huge conversion API that supports over 7400 document conversion pairs. With innumerous conversion options you will get hight quality result fast." },
-            { Key = "editor",     Name = "GroupDocs.Editor",     Description = "Modern document editor API that allows you to edit various documents inside your applications without additional software installed." },
-            { Key = "merger",     Name = "GroupDocs.Merger",     Description = "Powerful API to merge PDF, Word, Excel, PowerPoint documents and many other formats, move, reorder or remove document pages in different ways and with flexible options." },
-            { Key = "signature",  Name = "GroupDocs.Signature",  Description = "Outstanding electronic signature API that allows you to esign your documents with digital certificate, image, text and hand-written signatures, QR-Code or BarCodes and many more!" },
-            { Key = "viewer",     Name = "GroupDocs.Viewer",     Description = "Excellent file viewer component that empowers your C#, ASP.NET ?and other .NET-based applications with document viewing features across more than 100+ supported file formats!" },
+            { Key = "annotation",       Name = "GroupDocs.Annotation",      Description = "Powerful document annotator component that helps you to boost your applications with document annotation, commenting and collaboration features." },
+            { Key = "comparison",       Name = "GroupDocs.Comparison",      Description = "Document comparison API that detects document text, styling and formating changes quickly and with a high accuracy." },
+            { Key = "conversion",       Name = "GroupDocs.Conversion",      Description = "Huge conversion API that supports over 7400 document conversion pairs. With innumerous conversion options you will get hight quality result fast." },
+            { Key = "editor",           Name = "GroupDocs.Editor",          Description = "Modern document editor API that allows you to edit various documents inside your applications without additional software installed." },
+            { Key = "merger",           Name = "GroupDocs.Merger",          Description = "Powerful API to merge PDF, Word, Excel, PowerPoint documents and many other formats, move, reorder or remove document pages in different ways and with flexible options." },
+            { Key = "signature",        Name = "GroupDocs.Signature",       Description = "Outstanding electronic signature API that allows you to esign your documents with digital certificate, image, text and hand-written signatures, QR-Code or BarCodes and many more!" },
+            { Key = "viewer",           Name = "GroupDocs.Viewer",          Description = "Excellent file viewer component that empowers your C#, ASP.NET ?and other .NET-based applications with document viewing features across more than 100+ supported file formats!" },
             
-            { Key = "metadata",   Name = "GroupDocs.Metadata",   Description = "Native .NET API to dynamically read, write, edit and remove meta information from Microsoft Office, PDF, Multimedia, images and various other file formats." },
-            { Key = "search",     Name = "GroupDocs.Search",     Description = "Transform your document search process with this API for advance full text search capability into any existing or new cross platform application." },
-            { Key = "watermark",  Name = "GroupDocs.Watermark",  Description = "Watermark manipulation APIs for creating, removing, smart searching, edit locking, and performing other powerful operations across all popular platforms and supported file formats." },
-            { Key = "parser",     Name = "GroupDocs.Parser",     Description = "Parse, extract images, raw & formatted text with metadata and perform a lot of operations with it using APIs which work on all popular platforms and supported file formats." }
+            { Key = "metadata",         Name = "GroupDocs.Metadata",        Description = "Native .NET API to dynamically read, write, edit and remove meta information from Microsoft Office, PDF, Multimedia, images and various other file formats." },
+            { Key = "parser",           Name = "GroupDocs.Parser",          Description = "Parse, extract images, raw & formatted text with metadata and perform a lot of operations with it using APIs which work on all popular platforms and supported file formats." },
+            { Key = "redaction",        Name = "GroupDocs.Redaction",       Description = "Build cross-platform applications that perform operations, such as, redacting, hiding, removing content and metadata from documents, presentations, worksheets and PDF files" },
+            { Key = "search",           Name = "GroupDocs.Search",          Description = "Transform your document search process with this API for advance full text search capability into any existing or new cross platform application." },
+            { Key = "watermark",        Name = "GroupDocs.Watermark",       Description = "Watermark manipulation APIs for creating, removing, smart searching, edit locking, and performing other powerful operations across all popular platforms and supported file formats." },
             
+            { Key = "assembly",         Name = "GroupDocs.Assembly",        Description = "Automate your document generation process with cross platform automation assembly APIs to boost productivity and accuracy" },
+            { Key = "classification",   Name = "GroupDocs.Classification",  Description = "Build custom applications to perform documents and text categorization operations using different taxonomies within your applications." }           
     ]
 
     MoreServices = [ 

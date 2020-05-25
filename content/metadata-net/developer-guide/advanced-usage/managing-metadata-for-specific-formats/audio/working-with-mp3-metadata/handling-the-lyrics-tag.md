@@ -3,7 +3,7 @@ id: handling-the-lyrics-tag
 url: metadata/net/handling-the-lyrics-tag
 title: Handling the Lyrics tag
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

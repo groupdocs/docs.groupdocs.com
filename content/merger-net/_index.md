@@ -3,7 +3,7 @@ id: home
 url: merger/net
 title: GroupDocs.Merger for .NET
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: True

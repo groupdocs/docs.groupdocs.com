@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-18-5-release-notes
 url: viewer/net/groupdocs-viewer-for-net-18-5-release-notes
 title: GroupDocs.Viewer for .NET 18.5 Release Notes
 weight: 10
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -20,95 +20,22 @@ There are 14 features, improvements, and fixes in this regular monthly release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1591
-
-Setting page size when rendering Email documents as PDF and image
-
-New Feature
-
-VIEWERNET-1571
-
-Changing language for header of emails
-
-New Feature
-
-VIEWERNET-1587
-
-Add new property EnableCaching which will replace UseCache property in ViewerConfig class
-
-Improvement
-
-VIEWERNET-1580
-
-Add support for rendering password protected ODT and OTT formats
-
-Improvement
-
-VIEWERNET-1573
-
-Support JpegQuality option when rendering OneNote documents into PDF
-
-Improvement
-
-VIEWERNET-1561
-
-Extend support for DefaultFontName option for MS Project documents when rendering into PDF
-
-Improvement
-
-VIEWERNET-1595
-
-The voluminous email is not fully rendered into image
-
-Bug
-
-VIEWERNET-1559
-
-Images and diagrams are missing when rendering OTS file
-
-Bug
-
-VIEWERNET-1532
-
-Text's shadow appears in the output HTML
-
-Bug
-
-VIEWERNET-1527
-
-Issues when rendering Excel document with vertical Japanese writing
-
-Bug
-
-VIEWERNET-1464
-
-Text overlaps when viewing HTML in Mozilla Firefox
-
-Bug
-
-VIEWERNET-1256
-
-Content is missing when rendering PDF document into HTML
-
-Bug
-
-VIEWERNET-1016
-
-Link with external URL in PDF document is not rendered as hyperlink
-
-Bug
-
-VIEWERNET-1599
-
-The output image is cropped when rendering HTML as image
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1591 | Setting page size when rendering Email documents as PDF and image | New Feature |
+| VIEWERNET-1571 | Changing language for header of emails | New Feature |
+| VIEWERNET-1587 | Add new property EnableCaching which will replace UseCache property in ViewerConfig class | Improvement |
+| VIEWERNET-1580 | Add support for rendering password protected ODT and OTT formats | Improvement |
+| VIEWERNET-1573 | Support JpegQuality option when rendering OneNote documents into PDF | Improvement |
+| VIEWERNET-1561 | Extend support for DefaultFontName option for MS Project documents when rendering into PDF | Improvement |
+| VIEWERNET-1595 | The voluminous email is not fully rendered into image | Bug |
+| VIEWERNET-1559 | Images and diagrams are missing when rendering OTS file | Bug |
+| VIEWERNET-1532 | Text's shadow appears in the output HTML | Bug |
+| VIEWERNET-1527 | Issues when rendering Excel document with vertical Japanese writing | Bug |
+| VIEWERNET-1464 | Text overlaps when viewing HTML in Mozilla Firefox | Bug |
+| VIEWERNET-1256 | Content is missing when rendering PDF document into HTML | Bug |
+| VIEWERNET-1016 | Link with external URL in PDF document is not rendered as hyperlink | Bug |
+| VIEWERNET-1599 | The output image is cropped when rendering HTML as image | Bug |
 
 ## Public API and Backward Incompatible Changes
 

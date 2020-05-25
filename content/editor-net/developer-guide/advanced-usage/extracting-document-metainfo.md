@@ -3,7 +3,7 @@ id: extracting-document-metainfo
 url: editor/net/extracting-document-metainfo
 title: Extracting document metainfo
 weight: 6
-description: Following this guide you will learn how to obtain basic document metadata like pages count, size, file type before editing it with GroupDocs.Editor for .NET API.
+description: "Following this guide you will learn how to obtain basic document metadata like pages count, size, file type before editing it with GroupDocs.Editor for .NET API."
 keywords: Extract document metadata, Get document info
 productName: GroupDocs.Editor for .NET
 hideChildren: False

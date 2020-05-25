@@ -3,7 +3,7 @@ id: load-document-from-url
 url: merger/net/load-document-from-url
 title: Load document from URL
 weight: 3
-description: This article explains how to load PDF, Word, Excel, PowerPoint documents from URL when using GroupDocs.Merger for .NET.
+description: "This article explains how to load PDF, Word, Excel, PowerPoint documents from URL when using GroupDocs.Merger for .NET."
 keywords: Load document from URL, Load document by URL GroupDocs.Merger
 productName: GroupDocs.Merger for .NET
 hideChildren: False

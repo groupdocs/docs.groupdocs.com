@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-17-07-release-notes
 url: search/net/groupdocs-search-for-net-17-07-release-notes
 title: GroupDocs.Search for .NET 17.07 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -20,29 +20,7 @@ There are 3 features and enhancements in this regular monthly release. The most 
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-1059
-
-Implement support of FictionBook (fb2) format
-
-New Feature
-
-SEARCHNET-244
-
-Implement Indexing Report functionality
-
-New Feature
-
-SEARCHNET-242
-
-Implement Search Report functionality
-
-New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd">Key</td><td class="confluenceTd">Summary</td><td class="confluenceTd">Category</td></tr><tr><td class="confluenceTd">SEARCHNET-1059</td><td class="confluenceTd">Implement support of FictionBook (fb2) format</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SEARCHNET-244</td><td class="confluenceTd">Implement Indexing Report functionality</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SEARCHNET-242</td><td class="confluenceTd">Implement Search Report functionality</td><td class="confluenceTd">New Feature</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

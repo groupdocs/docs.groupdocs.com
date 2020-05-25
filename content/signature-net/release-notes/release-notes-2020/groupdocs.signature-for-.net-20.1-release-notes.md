@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-20-1-release-notes
 url: signature/net/groupdocs-signature-for-net-20-1-release-notes
 title: GroupDocs.Signature for .NET 20.1 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -20,47 +20,14 @@ Below is the list of most notable changes in release of GroupDocs.Signature for 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-2509 
-
- Implement support XAdES signatures for Spreadsheet documents
-
-Feature
-
-SIGNATURENET-2530
-
-SignResult does not have information about added PDF Form Field signatures
-
-Bug
-
-SIGNATURENET-2449
-
-Word Processing document Sign Text Watermark creates signatures only on last page for doc files
-
-Bug
-
-SIGNATURENET-2448
-
-Word Processing document Text Form Field - creation and search process gives no rectangle coordinates
-
-Bug
-
-SIGNATURENET-2447
-
-Word Processing document Sign Text Form field with empty Options.FormTextFieldTitle sign all form fields
-
-Bug
-
-SIGNATURENET-1794
-
-Getting exception while signing document without setting output path
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2509  |  Implement support XAdES signatures for Spreadsheet documents | Feature |
+| SIGNATURENET-2530 | SignResult does not have information about added PDF Form Field signatures | Bug |
+| SIGNATURENET-2449 | Word Processing document Sign Text Watermark creates signatures only on last page for doc files | Bug |
+| SIGNATURENET-2448 | Word Processing document Text Form Field - creation and search process gives no rectangle coordinates | Bug |
+| SIGNATURENET-2447 | Word Processing document Sign Text Form field with empty Options.FormTextFieldTitle sign all form fields | Bug |
+| SIGNATURENET-1794 | Getting exception while signing document without setting output path | Bug |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: load-password-protected-documents
 url: comparison/net/load-password-protected-documents
 title: Load password-protected documents
 weight: 3
-description: This article explains how to load password-protected PDF, Word, Excel, PowerPoint documents when using GroupDocs.Comparison for .NET.
+description: "This article explains how to load password-protected PDF, Word, Excel, PowerPoint documents when using GroupDocs.Comparison for .NET."
 keywords: Load password-protected document, Load protected document with GroupDocs.Comparison
 productName: GroupDocs.Comparison for .NET
 hideChildren: False

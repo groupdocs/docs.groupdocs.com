@@ -14,25 +14,7 @@ hideChildren: False
 
 You can easily download GroupDocs.Watermark for evaluation. The evaluation download is the same as the purchased download. The evaluation version simply becomes licensed when you add a few lines of code to apply the license. You will face following limitations while using the API without the license.  
 
-**API Feature**
-
-**Limitation**
-
-Document loading
-
-Only 10 documents can be loaded per application run.   
-
-Watermark search/removing
-
-Removing/replacing of document parts is not allowed in evaluation mode. 
-
-Watermark adding
-
-Only 1 watermark can be added to a document per editing session. 
-
-Document saving
-
-Evaluation warning watermark will be added to a document. 
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>API Feature</strong></p></td><td class="confluenceTd"><p><strong>Limitation</strong></p></td></tr><tr><td class="confluenceTd"><p>Document loading</p></td><td class="confluenceTd"><p>Only 10 documents can be loaded per application run. &nbsp;&nbsp;</p></td></tr><tr><td class="confluenceTd"><p>Watermark search/removing</p></td><td class="confluenceTd"><p>Removing/replacing of document parts is not allowed in evaluation mode.&nbsp;</p></td></tr><tr><td class="confluenceTd"><p>Watermark adding</p></td><td class="confluenceTd"><p>Only 1 watermark can be added to a document per editing session.&nbsp;</p></td></tr><tr><td class="confluenceTd"><p>Document saving</p></td><td class="confluenceTd"><p>Evaluation warning watermark will be added to a document.&nbsp;</p></td></tr></tbody></table>
 
 ## Licensing
 

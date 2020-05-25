@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-18-2-release-notes
 url: annotation/net/groupdocs-annotation-for-net-18-2-release-notes
 title: GroupDocs.Annotation for .NET 18.2 Release Notes
 weight: 11
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -25,95 +25,22 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-606
-
-Implement accepting SVG path also with spaces not only with commas
-
-Improvement
-
-ANNOTATIONNET-602
-
-Improve CleanUp for diagram
-
-Improvement
-
-ANNOTATIONNET-612
-
-Fix transparent color for lines of underline and strikeout annotations for Images
-
-Bug
-
-ANNOTATIONNET-611
-
-Fix transparent colors in Words
-
-Bug
-
-ANNOTATIONNET-609
-
-Underline style of annotation doesn't set on text in Words
-
-Bug
-
-ANNOTATIONNET-608
-
-Annotation of underline doesn't set in table in Words
-
-Bug
-
-ANNOTATIONNET-607
-
-Export adds extra comment for every shape in diagrams
-
-Bug
-
-ANNOTATIONNET-605
-
-The align of text for textfield of annotation is wrong in Words
-
-Bug
-
-ANNOTATIONNET-603
-
-Bug after export strikeout annotation in Words
-
-Bug
-
-ANNOTATIONNET-601
-
-Bug when importing text for textfield annotation in diagrams
-
-Bug
-
-ANNOTATIONNET-598
-
-Imported from word document resource redaction annotation does not have color
-
-Bug
-
-ANNOTATIONNET-597
-
-Bug when importing area annotation from word document
-
-Bug
-
-ANNOTATIONNET-596
-
-Bug with importing annotations for diagrams
-
-Bug
-
-ANNOTATIONNET-595
-
-The sample hangs while importing distance annotation for slides.
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-606 | Implement accepting SVG path also with spaces not only with commas | Improvement |
+| ANNOTATIONNET-602 | Improve CleanUp for diagram | Improvement |
+| ANNOTATIONNET-612 | Fix transparent color for lines of underline and strikeout annotations for Images | Bug |
+| ANNOTATIONNET-611 | Fix transparent colors in Words | Bug |
+| ANNOTATIONNET-609 | Underline style of annotation doesn't set on text in Words | Bug |
+| ANNOTATIONNET-608 | Annotation of underline doesn't set in table in Words | Bug |
+| ANNOTATIONNET-607 | Export adds extra comment for every shape in diagrams | Bug |
+| ANNOTATIONNET-605 | The align of text for textfield of annotation is wrong in Words | Bug |
+| ANNOTATIONNET-603 | Bug after export strikeout annotation in Words | Bug |
+| ANNOTATIONNET-601 | Bug when importing text for textfield annotation in diagrams | Bug |
+| ANNOTATIONNET-598 | Imported from word document resource redaction annotation does not have color | Bug |
+| ANNOTATIONNET-597 | Bug when importing area annotation from word document | Bug |
+| ANNOTATIONNET-596 | Bug with importing annotations for diagrams | Bug |
+| ANNOTATIONNET-595 | The sample hangs while importing distance annotation for slides. | Bug |
 
 ## Public API and Backward Incompatible Changes
 

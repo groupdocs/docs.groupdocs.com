@@ -3,7 +3,7 @@ id: search-for-encrypted-object-in-qr-code-signatures
 url: signature/net/search-for-encrypted-object-in-qr-code-signatures
 title: Search for encrypted object in QR-code signatures
 weight: 3
-description:  This article explains how to search for encrypted electronic signatures in QR-code electronic signatures. This topic contains example of using standard encryption, serialization, class definition and search for embedded objects in QR-codes with GroupDocs.Signature API.
+description: " This article explains how to search for encrypted electronic signatures in QR-code electronic signatures. This topic contains example of using standard encryption, serialization, class definition and search for embedded objects in QR-codes with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

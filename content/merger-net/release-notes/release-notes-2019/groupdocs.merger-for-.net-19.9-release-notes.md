@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-19-9-release-notes
 url: merger/net/groupdocs-merger-for-net-19-9-release-notes
 title: GroupDocs.Merger for .NET 19.9 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -22,23 +22,10 @@ Other notable features:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-415
-
-Implement a new format .mht
-
-Feature
-
-MERGERNET-602
-
-Implement a new API of GroupDocs.Merger for .NET product
-
-Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-415 | Implement a new format .mht | Feature |
+| MERGERNET-602 | Implement a new API of GroupDocs.Merger for .NET product | Feature |
 
 # Public API and Backward Incompatible Changes
 

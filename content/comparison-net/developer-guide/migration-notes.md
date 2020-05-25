@@ -3,7 +3,7 @@ id: migration-notes
 url: comparison/net/migration-notes
 title: Migration Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False

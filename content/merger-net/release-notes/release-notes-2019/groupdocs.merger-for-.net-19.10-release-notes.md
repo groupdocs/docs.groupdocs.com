@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-19-10-release-notes
 url: merger/net/groupdocs-merger-for-net-19-10-release-notes
 title: GroupDocs.Merger for .NET 19.10 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -26,35 +26,12 @@ There are a few new other features in this regular monthly release. The most not
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-627
-
-Add .NET Standard 2.0 support
-
-New Feature
-
-MERGERNET-668
-
-Add LoadOptions Encoding usage for the text splitting
-
-Improvement
-
-MERGERNET-655
-
-Format Xlsb is not load with unknown FileType
-
-Bug
-
-MERGERNET-686
-
-Cannot merge ODP files with table
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-627 | Add .NET Standard 2.0 support | New Feature |
+| MERGERNET-668 | Add LoadOptions Encoding usage for the text splitting | Improvement |
+| MERGERNET-655 | Format Xlsb is not load with unknown FileType | Bug |
+| MERGERNET-686 | Cannot merge ODP files with table | Bug |
 
 ## Public API and Backward Incompatible Changes
 

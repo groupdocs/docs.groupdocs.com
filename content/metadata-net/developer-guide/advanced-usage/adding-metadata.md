@@ -3,7 +3,7 @@ id: adding-metadata
 url: metadata/net/adding-metadata
 title: Adding metadata
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

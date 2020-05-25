@@ -3,7 +3,7 @@ id: save-only-annotated-pages
 url: annotation/net/save-only-annotated-pages
 title: Save only annotated pages
 weight: 2
-description: This article demonstrates how to save only annotated pages when using GroupDocs.Annotation for .NET API.
+description: "This article demonstrates how to save only annotated pages when using GroupDocs.Annotation for .NET API."
 keywords: Save annotated pages, save annotations
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

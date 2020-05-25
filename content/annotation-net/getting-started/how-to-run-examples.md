@@ -3,7 +3,7 @@ id: how-to-run-examples
 url: annotation/net/how-to-run-examples
 title: How to Run Examples
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -73,7 +73,7 @@ You can run [GroupDocs.Annotation for .NET MVC Example](https://github.com/grou
 
 *   Download [source code](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC/archive/master.zip) from GitHub or clone this repository
     
-    `git clone [https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC)`
+    <table class="confluenceTable"><tbody><tr><td class="confluenceTd"><div class="container" title="Hint: double-click to select code"><div class="line number1 index0 alt2"><code class="bash plain">git clone <span class="nolink"><a href="https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC" class="external-link" rel="nofollow">https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC</a></span></code></div></div></td></tr></tbody></table>
     
 *   Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
 *   Open [http://localhost:8080/annotation](http://localhost:8080/annotation) in your favorite browser
@@ -86,7 +86,7 @@ You can run [GroupDocs.Annotation for .NET Web.Forms Example](https://github.co
 
 *   Download [source code](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms/archive/master.zip) from GitHub or clone this repository
     
-    `git clone [https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms.git](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms.git)`
+    <table class="confluenceTable"><tbody><tr><td class="confluenceTd"><div class="container" title="Hint: double-click to select code"><div class="line number1 index0 alt2"><code class="bash plain">git clone <span class="nolink"><a href="https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms.git" class="external-link" rel="nofollow">https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms.git</a></span></code></div></div></td></tr></tbody></table>
     
 *   Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
 *   Open [http://localhost:8080/annotation](http://localhost:8080/annotation) in your favorite browser
@@ -97,13 +97,7 @@ For more details about project configuration please refer to this [guide](https
 
 Use [Docker](https://www.docker.com/) image to try GroupDocs.Annotation for .NET features in an easy way. Here are the command to run GroupDocs.Annotation for .NET from docker image.
 
-`mkdir` `DocumentSamples`
-
-`mkdir` `Licenses`
-
-`docker run -p 8080:8080 --``env` `application.hostAddress=localhost -``v` `` ` ```pwd``` ` ```/DocumentSamples``:``/home/groupdocs/app/DocumentSamples` `-``v` `` ` ```pwd``` ` ```/Licenses``:``/home/groupdocs/app/Licenses` `groupdocs``/annotation`
-
-`## Open [http://localhost:8080/annotation](http://localhost:8080/annotation) in your favorite browser.`
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><div class="container" title="Hint: double-click to select code"><div class="line number1 index0 alt2"><code class="bash functions">mkdir</code> <code class="bash plain">DocumentSamples</code></div><div class="line number2 index1 alt1"><code class="bash functions">mkdir</code> <code class="bash plain">Licenses</code></div><div class="line number3 index2 alt2"><code class="bash plain">docker run -p 8080:8080 --</code><code class="bash functions">env</code> <code class="bash plain">application.hostAddress=localhost -</code><code class="bash functions">v</code> <code class="bash plain">`</code><code class="bash functions">pwd</code><code class="bash plain">`</code><code class="bash plain">/DocumentSamples</code><code class="bash plain">:</code><code class="bash plain">/home/groupdocs/app/DocumentSamples</code> <code class="bash plain">-</code><code class="bash functions">v</code> <code class="bash plain">`</code><code class="bash functions">pwd</code><code class="bash plain">`</code><code class="bash plain">/Licenses</code><code class="bash plain">:</code><code class="bash plain">/home/groupdocs/app/Licenses</code> <code class="bash plain">groupdocs</code><code class="bash plain">/annotation</code></div><div class="line number4 index3 alt1"><code class="bash comments">## Open <a href="http://localhost:8080/annotation" class="external-link" rel="nofollow">http://localhost:8080/annotation</a> in your favorite browser.</code></div></div></td></tr></tbody></table>
 
 ## Contribute
 

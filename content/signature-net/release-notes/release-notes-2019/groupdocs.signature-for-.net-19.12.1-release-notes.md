@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-19-12-1-release-notes
 url: signature/net/groupdocs-signature-for-net-19-12-1-release-notes
 title: GroupDocs.Signature for .NET 19.12.1 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -16,17 +16,9 @@ One important bug fix included into this hot-fix release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-2508
-
-Sign process inserts wrong empty metadata for signatures information
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2508 | Sign process inserts wrong empty metadata for signatures information | Bug |
 
 ## Public API and Backward Incompatible Changes
 

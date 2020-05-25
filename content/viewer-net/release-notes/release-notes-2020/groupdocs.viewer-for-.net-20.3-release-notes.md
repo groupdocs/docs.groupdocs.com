@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-20-3-release-notes
 url: viewer/net/groupdocs-viewer-for-net-20-3-release-notes
 title: GroupDocs.Viewer for .NET 20.3 Release Notes
 weight: 3
-description: This page contains release notes for GroupDocs.Viewer for .NET 20.3.
+description: "This page contains release notes for GroupDocs.Viewer for .NET 20.3."
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -21,65 +21,17 @@ There are 9 features, improvements, and bug-fixes in this release, most notable 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1898
-
-Add Microsoft Excel 97-2003 Template (.xlt) file format support
-
-Feature
-
-VIEWERNET-2351
-
-Specify filename when rendering archive files
-
-Feature
-
-VIEWERNET-2155
-
-Reduce margins when rendering LaTeX (.tex) files
-
-Improvement
-
-VIEWERNET-2355
-
-Return unknown file type when passing null or empty string as extension or media type
-
-Improvement
-
-VIEWERNET-2356
-
-Accept attachment object instead of attachment ID
-
-Improvement
-
-VIEWERNET-86
-
-DefaultFontName setting is not working for rendering Word Processing documents into HTML
-
-Bug
-
-VIEWERNET-2120
-
-Page size is 0 for HTML mode
-
-Bug
-
-VIEWERNET-2347
-
-The number greater than zero is expected exception
-
-Bug
-
-VIEWERNET-2352
-
-Output shows compressed file content/data as Compressed Word File
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1898 | Add Microsoft Excel 97-2003 Template (.xlt) file format support | Feature |
+| VIEWERNET-2351 | Specify filename when rendering archive files | Feature |
+| VIEWERNET-2155 | Reduce margins when rendering LaTeX (.tex) files | Improvement |
+| VIEWERNET-2355 | Return unknown file type when passing null or empty string as extension or media type | Improvement |
+| VIEWERNET-2356 | Accept attachment object instead of attachment ID | Improvement |
+| VIEWERNET-86 | DefaultFontName setting is not working for rendering Word Processing documents into HTML | Bug |
+| VIEWERNET-2120 | Page size is 0 for HTML mode | Bug |
+| VIEWERNET-2347 | The number greater than zero is expected exception | Bug |
+| VIEWERNET-2352 | Output shows compressed file content/data as Compressed Word File | Bug |
 
 ## Public API and Backward Incompatible Changes
 

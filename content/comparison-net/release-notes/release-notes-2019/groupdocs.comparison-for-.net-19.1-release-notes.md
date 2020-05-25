@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-19-1-release-notes
 url: comparison/net/groupdocs-comparison-for-net-19-1-release-notes
 title: GroupDocs.Comparison for .NET 19.1 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -25,47 +25,14 @@ Below is the list of most notable changes in release of GroupDocs.Comparison for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-1738
-
-Improve paragraph absorber in result document
-
-Improvement
-
-COMPARISONNET-1742
-
-Improve charts comparing on Cells
-
-Improvement
-
-COMPARISONNET-1760
-
-Incorrect Sheet Name in result file in Cells
-
-Bug
-
-COMPARISONNET-1747
-
-Issue in comparing large sized PDF files
-
-Bug
-
-COMPARISONNET-1769
-
-Issue when setting ParaghraphLines.
-
-Bug
-
-COMPARISONNET-1766
-
-Issue in setting Hyperlinks in big size PDF file
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-1738 | Improve paragraph absorber in result document | Improvement |
+| COMPARISONNET-1742 | Improve charts comparing on Cells | Improvement |
+| COMPARISONNET-1760 | Incorrect Sheet Name in result file in Cells | Bug |
+| COMPARISONNET-1747 | Issue in comparing large sized PDF files | Bug |
+| COMPARISONNET-1769 | Issue when setting ParaghraphLines. | Bug |
+| COMPARISONNET-1766 | Issue in setting Hyperlinks in big size PDF file | Bug |
 
 ## Public API and Backward Incompatible Changes
 

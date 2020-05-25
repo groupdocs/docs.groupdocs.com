@@ -64,14 +64,7 @@ TableArea ParseTableArea(int pageIndex, TableAreaLayout tableAreaLayout)
 
 This method accepts the zero-based page index and layout of the table. The layout is represented by **TableAreaLayout** class with the following members:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
 | VerticalSeparators | A collection of vertical separators |
 | HorizontalSeparators | A collection of horizontal separators |
@@ -90,14 +83,7 @@ These collections represent bounds of columns and rows. For example, for 2x2 tab
 
 **TableArea** class has the following members:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
 | int RowCount | Number of table rows |
 | int ColumnCount | Number of table columns |
@@ -107,14 +93,7 @@ Description
 
 **TableCellArea** class has the following members:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
 | TextArea | Content of the cell. |
 | Row | Zero-based index of the row. |
@@ -196,14 +175,7 @@ This method accepts the zero-based page index and optional parameters. These par
 
 **TableAreaDetectorParameters** class has the following members:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
 | MinRowCount | Minimum number of table rows. |
 | MinColumnCount | Minimum number of table columns. |

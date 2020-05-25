@@ -3,7 +3,7 @@ id: add-document-password
 url: merger/net/add-document-password
 title: Add document password
 weight: 1
-description: This article explains how to add document password for PDF, Word, Excel, PowerPoint and  other file types using GroupDocs.Merger for .NET.
+description: "This article explains how to add document password for PDF, Word, Excel, PowerPoint and  other file types using GroupDocs.Merger for .NET."
 keywords: Add document password, Add PDF password, Add Word password, Add Excel password, Add PowerPoint password
 productName: GroupDocs.Merger for .NET
 hideChildren: False

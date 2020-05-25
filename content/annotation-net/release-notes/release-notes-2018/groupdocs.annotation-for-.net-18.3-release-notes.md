@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-18-3-release-notes
 url: annotation/net/groupdocs-annotation-for-net-18-3-release-notes
 title: GroupDocs.Annotation for .NET 18.3 Release Notes
 weight: 10
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -22,53 +22,15 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-579
-
-Add user wise permission with annotations
-
-New Feature
-
-ANNOTATIONNET-624
-
-Implement import using metadata in Images
-
-Improvement
-
-ANNOTATIONNET-621
-
-Add annotations to metadata in Words
-
-Improvement
-
-ANNOTATIONNET-620
-
-Add annotations to metadata in Slides
-
-Improvement
-
-ANNOTATIONNET-619
-
-Improve Annotation.Imaging
-
-Improvement
-
-ANNOTATIONNET-618
-
-Improve export text strikeout annotation for pdf
-
-Improvement
-
-ANNOTATIONNET-617
-
-Improve export underline text annotation for pdf
-
-Improvement
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-579 | Add user wise permission with annotations | New Feature |
+| ANNOTATIONNET-624 | Implement import using metadata in Images | Improvement |
+| ANNOTATIONNET-621 | Add annotations to metadata in Words | Improvement |
+| ANNOTATIONNET-620 | Add annotations to metadata in Slides | Improvement |
+| ANNOTATIONNET-619 | Improve Annotation.Imaging | Improvement |
+| ANNOTATIONNET-618 | Improve export text strikeout annotation for pdf | Improvement |
+| ANNOTATIONNET-617 | Improve export underline text annotation for pdf | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

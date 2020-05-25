@@ -3,7 +3,7 @@ id: handling-metadata-in-wav-files
 url: metadata/net/handling-metadata-in-wav-files
 title: Handling metadata in WAV files
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

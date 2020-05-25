@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-16-12-0-release-notes
 url: signature/net/groupdocs-signature-for-net-16-12-0-release-notes
 title: GroupDocs.Signature for .NET 16.12.0 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -26,125 +26,27 @@ There are over 20 improvements and fixes in this regular release. The most notab
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-2026
-
-Add ability to sign files with digital signature by given pattern in folder
-
-New Feature
-
-SIGNATURENET-2027
-
-Add ability to sign files with image signature by given pattern in folder
-
-New Feature
-
-SIGNATURENET-2113
-
-Implement Text Signature alignment for PDF Documents
-
-New Feature
-
-SIGNATURENET-2129
-
-Implement Text Signature alignment for Words Documents
-
-New Feature
-
-SIGNATURENET-2131
-
-Implement Text Signature alignment for Cells Documents
-
-New Feature
-
-SIGNATURENET-2133
-
-Implement Text Signature alignment for Slides Documents
-
-New Feature
-
-SIGNATURENET-2307
-
-Add ability to sign files with text signature by given pattern in folder
-
-New Feature
-
-SIGNATURENET-2349
-
-Implement Digital Signature for all pages for Pdf documents
-
-New Feature
-
-SIGNATURENET-2368
-
-Implement Text Signature Margins for PDF Documents
-
-New Feature
-
-SIGNATURENET-2370
-
-Implement Text Signature Margins for Cells Documents
-
-New Feature
-
-SIGNATURENET-2372
-
-Implement ability to sign Slides Documents with given list of Signature Options
-
-New Feature
-
-SIGNATURENET-2372
-
-Implement Text Signature Margins for Words Documents
-
-New Feature
-
-SIGNATURENET-2374
-
-Implement Text Signature Margins for Slides Documents
-
-New Feature
-
-SIGNATURENET-2384
-
-Implement ability to put Digital Signature on all pages for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2385
-
-Implement Digital Signature Alignment for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2392
-
-Implement ability to sign Pdf Documents with given list of Signature Options
-
-New Feature
-
-SIGNATURENET-2397
-
-Implement ability to sign Cells Documents with given list of Signature Options
-
-New Feature
-
-SIGNATURENET-2402
-
-Implement ability to sign Words Documents with given list of Signature Options
-
-New Feature
-
-SIGNATURENET-2377
-
-Pdf Text Signature - Adjust Signature Area when Width or Height properties are specified
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2026 | Add ability to sign files with digital signature by given pattern in folder | New Feature |
+| SIGNATURENET-2027 | Add ability to sign files with image signature by given pattern in folder | New Feature |
+| SIGNATURENET-2113 | Implement Text Signature alignment for PDF Documents | New Feature |
+| SIGNATURENET-2129 | Implement Text Signature alignment for Words Documents | New Feature |
+| SIGNATURENET-2131 | Implement Text Signature alignment for Cells Documents | New Feature |
+| SIGNATURENET-2133 | Implement Text Signature alignment for Slides Documents | New Feature |
+| SIGNATURENET-2307 | Add ability to sign files with text signature by given pattern in folder | New Feature |
+| SIGNATURENET-2349 | Implement Digital Signature for all pages for Pdf documents | New Feature |
+| SIGNATURENET-2368 | Implement Text Signature Margins for PDF Documents | New Feature |
+| SIGNATURENET-2370 | Implement Text Signature Margins for Cells Documents | New Feature |
+| SIGNATURENET-2372 | Implement ability to sign Slides Documents with given list of Signature Options | New Feature |
+| SIGNATURENET-2372 | Implement Text Signature Margins for Words Documents | New Feature |
+| SIGNATURENET-2374 | Implement Text Signature Margins for Slides Documents | New Feature |
+| SIGNATURENET-2384 | Implement ability to put Digital Signature on all pages for Pdf Documents | New Feature |
+| SIGNATURENET-2385 | Implement Digital Signature Alignment for Pdf Documents | New Feature |
+| SIGNATURENET-2392 | Implement ability to sign Pdf Documents with given list of Signature Options | New Feature |
+| SIGNATURENET-2397 | Implement ability to sign Cells Documents with given list of Signature Options | New Feature |
+| SIGNATURENET-2402 | Implement ability to sign Words Documents with given list of Signature Options | New Feature |
+| SIGNATURENET-2377 | Pdf Text Signature - Adjust Signature Area when Width or Height properties are specified | Bug |
 
 ## Public API and Backward Incompatible Changes
 

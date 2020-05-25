@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-17-11-release-notes
 url: comparison/net/groupdocs-comparison-for-net-17-11-release-notes
 title: GroupDocs.Comparison for .NET 17.11 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -22,89 +22,21 @@ Below the list of the most notable features improvements and fixes for GroupDocs
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-1431
-
-Comparison.PDF: Refactor document builder using new content map
-
-Improvement
-
-COMPARISONNET-1429
-
-Comparison.PDF: Implement page content map
-
-Improvement
-
-COMPARISONNET-1427
-
-PDF Improving: Check and fix columns comparing
-
-Improvement
-
-COMPARISONNET-1424
-
-Improve Style changed deep for Comparison.Note
-
-Improvement
-
-COMPARISONNET-1422
-
-Add ParagraphMerger for Comparison.Note
-
-Improvement
-
-COMPARISONNET-1420
-
-Update pdf structure
-
-Improvement
-
-COMPARISONNET-1418
-
-Add IntermediateParagraphComparer to Words
-
-Improvement
-
-COMPARISONNET-1433
-
-Intermediate paragraphs problem in Word
-
-Bug
-
-COMPARISONNET-1432
-
-Comparison.Note: Fix special cases of word division
-
-Bug
-
-COMPARISONNET-1430
-
-Comparison.Note:Break line in the middle of a word
-
-Bug
-
-COMPARISONNET-1428
-
-Fix infinite loop in image rectangle PDF
-
-Bug
-
-COMPARISONNET-1423
-
-Comparison.Note Insert\\Delete empty paragraph before text
-
-Bug
-
-COMPARISONNET-1421
-
-Tables with similar coordinates overlap on each other
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-1431 | Comparison.PDF: Refactor document builder using new content map | Improvement |
+| COMPARISONNET-1429 | Comparison.PDF: Implement page content map | Improvement |
+| COMPARISONNET-1427 | PDF Improving: Check and fix columns comparing | Improvement |
+| COMPARISONNET-1424 | Improve Style changed deep for Comparison.Note | Improvement |
+| COMPARISONNET-1422 | Add ParagraphMerger for Comparison.Note | Improvement |
+| COMPARISONNET-1420 | Update pdf structure | Improvement |
+| COMPARISONNET-1418 | Add IntermediateParagraphComparer to Words | Improvement |
+| COMPARISONNET-1433 | Intermediate paragraphs problem in Word | Bug |
+| COMPARISONNET-1432 | Comparison.Note: Fix special cases of word division | Bug |
+| COMPARISONNET-1430 | Comparison.Note:Break line in the middle of a word | Bug |
+| COMPARISONNET-1428 | Fix infinite loop in image rectangle PDF | Bug |
+| COMPARISONNET-1423 | Comparison.Note Insert\\Delete empty paragraph before text | Bug |
+| COMPARISONNET-1421 | Tables with similar coordinates overlap on each other | Bug |
 
 # Public API and Backward Incompatible Changes
 

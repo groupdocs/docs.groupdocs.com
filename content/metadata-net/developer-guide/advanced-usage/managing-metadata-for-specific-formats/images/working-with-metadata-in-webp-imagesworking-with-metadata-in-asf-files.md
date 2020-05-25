@@ -3,7 +3,7 @@ id: working-with-metadata-in-webp-imagesworking-with-metadata-in-asf-files
 url: metadata/net/working-with-metadata-in-webp-imagesworking-with-metadata-in-asf-files
 title: Working with metadata in WEBP imagesWorking with metadata in ASF files
 weight: 10
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: add-polyline-annotation
 url: annotation/net/add-polyline-annotation
 title: Add polyline annotation
 weight: 9
-description: Learn what is a polyline annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
+description: "Learn what is a polyline annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET."
 keywords: What is a polyline annotation, how to add annotation, add polyline annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

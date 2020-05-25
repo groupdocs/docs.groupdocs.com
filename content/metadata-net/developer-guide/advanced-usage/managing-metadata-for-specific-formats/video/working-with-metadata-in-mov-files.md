@@ -3,7 +3,7 @@ id: working-with-metadata-in-mov-files
 url: metadata/net/working-with-metadata-in-mov-files
 title: Working with metadata in MOV Files
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

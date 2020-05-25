@@ -3,7 +3,7 @@ id: esign-document-with-metadata-signature
 url: signature/net/esign-document-with-metadata-signature
 title: eSign document with Metadata signature
 weight: 5
-description: This article shows how to add Metadata signature to the each document type meta layer with different data types over with GroupDocs.Signature
+description: "This article shows how to add Metadata signature to the each document type meta layer with different data types over with GroupDocs.Signature"
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-19-5-release-notes
 url: signature/net/groupdocs-signature-for-net-19-5-release-notes
 title: GroupDocs.Signature for .NET 19.5 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -23,71 +23,7 @@ There are few new features, improvements and bug fixes in this regular release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-2020
-
-Fix exception for de-serialization of encrypted string values in Metadata Signatures
-
-Bug
-
-SIGNATURENET-2012
-
-SaveOptions.OutputFileName doesn't affect on result name of signed document
-
-Bug
-
-SIGNATURENET-2008
-
-PdfQRCodeSignature.GetData<DocumentSignature>() throws exception
-
-Bug
-
-SIGNATURENET-2024
-
-Implement ability to embed custom object to Slides Metadata Signature
-
-New Feature
-
-SIGNATURENET-1842
-
-Implement ability to embed custom object to Words Metadata Signature
-
-New Feature
-
-SIGNATURENET-1838
-
-Implement ability to embed custom object to Cells Metadata Signature
-
-New Feature
-
-SIGNATURENET-2014
-
-Implement support of .djvu file format for verification process
-
-Improvement
-
-SIGNATURENET-2013
-
-Implement ability to search files with .djvu format as image documents
-
-Improvement
-
-SIGNATURENET-2007
-
-Implement ability to sign files with .djvu format as image documents
-
-Improvement
-
-SIGNATURENET-1980
-
-Implement new method AddSignature for MetadataOptions
-
-Improvement
+<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2020</td><td colspan="1" class="confluenceTd">Fix exception for de-serialization of encrypted string values in Metadata Signatures</td><td colspan="1" style="text-align: center;" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2012</td><td colspan="1" class="confluenceTd">SaveOptions.OutputFileName doesn't affect on result name of signed document</td><td colspan="1" style="text-align: center;" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2008</td><td colspan="1" class="confluenceTd">PdfQRCodeSignature.GetData&lt;DocumentSignature&gt;() throws exception</td><td colspan="1" style="text-align: center;" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2024</td><td colspan="1" class="confluenceTd">Implement ability to embed custom object to Slides Metadata Signature</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1842</td><td colspan="1" class="confluenceTd">Implement ability to embed custom object to Words Metadata Signature</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1838</td><td colspan="1" class="confluenceTd">Implement ability to embed custom object to Cells Metadata Signature</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2014</td><td colspan="1" class="confluenceTd">Implement support of .djvu file format for verification process</td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2013</td><td colspan="1" class="confluenceTd">Implement ability to search files with .djvu format as image documents</td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd">SIGNATURENET-2007</td><td class="confluenceTd">Implement ability to sign files with .djvu format as image documents</td><td class="confluenceTd">Improvement</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1980</td><td colspan="1" class="confluenceTd"><p>Implement new method AddSignature for MetadataOptions</p></td><td colspan="1" class="confluenceTd">Improvement</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

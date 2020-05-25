@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-16-11-0-release-notes
 url: annotation/net/groupdocs-annotation-for-net-16-11-0-release-notes
 title: GroupDocs.Annotation for .NET 16.11.0 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -29,77 +29,19 @@ Below the list of improvements fixes and new features in this regular monthly re
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-ANNOTATIONNET-303
-
-Implement Strikeout annotation for Slides format
-
-New Feature
-
-ANNOTATIONNET-302
-
-Implement Undreline annotation for Slides format
-
-New Feature
-
-ANNOTATIONNET-301
-
-Implement Highlight annotation for Slides format
-
-New Feature
-
-ANNOTATIONNET-296
-
-Implement import of Text Field annotation for Slides
-
-New Feature
-
-ANNOTATIONNET-295
-
-Implement import of Point annotation for Slides
-
-New Feature
-
-ANNOTATIONNET-294
-
-Implement import of Resource Redaction annotation for Slides
-
-New Feature
-
-ANNOTATIONNET-293
-
-Implement import of Watermark annotation for Slides
-
-New Feature
-
-ANNOTATIONNET-292
-
-Implement import of Polyline annotation for Slides
-
-New Feature
-
-ANNOTATIONNET-291
-
-Implement import of Arrow annotation for Slides
-
-New Feature
-
-ANNOTATIONNET-290
-
-Implement import of Area annotation for Slides
-
-New Feature
-
-ANNOTATIONNET-298
-
-Arrow annotation imported incorrectly on several Words documents
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| ANNOTATIONNET-303 | Implement Strikeout annotation for Slides format | New Feature |
+| ANNOTATIONNET-302 | Implement Undreline annotation for Slides format | New Feature |
+| ANNOTATIONNET-301 | Implement Highlight annotation for Slides format | New Feature |
+| ANNOTATIONNET-296 | Implement import of Text Field annotation for Slides | New Feature |
+| ANNOTATIONNET-295 | Implement import of Point annotation for Slides | New Feature |
+| ANNOTATIONNET-294 | Implement import of Resource Redaction annotation for Slides | New Feature |
+| ANNOTATIONNET-293 | Implement import of Watermark annotation for Slides | New Feature |
+| ANNOTATIONNET-292 | Implement import of Polyline annotation for Slides | New Feature |
+| ANNOTATIONNET-291 | Implement import of Arrow annotation for Slides | New Feature |
+| ANNOTATIONNET-290 | Implement import of Area annotation for Slides | New Feature |
+| ANNOTATIONNET-298 | Arrow annotation imported incorrectly on several Words documents | Bug |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: working-with-metadata-in-pdf-documents
 url: metadata/net/working-with-metadata-in-pdf-documents
 title: Working with metadata in PDF documents
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

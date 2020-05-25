@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-17-1-0-release-notes
 url: annotation/net/groupdocs-annotation-for-net-17-1-0-release-notes
 title: GroupDocs.Annotation for .NET 17.1.0 Release Notes
 weight: 11
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -32,47 +32,7 @@ Improvement:
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Issue Type**
-
-ANNOTATIONNET-337
-
-Implement annotating GIF format static images (without animation)
-
-New Feature
-
-ANNOTATIONNET-335
-
-While exporting Slide document TextField annotation hasn't text
-
-Bug
-
-ANNOTATIONNET-332
-
-Implement annotating TIFF format images
-
-New Feature
-
-ANNOTATIONNET-331
-
-Implement annotating BMP format images
-
-New Feature
-
-ANNOTATIONNET-329
-
-Implement annotating JPEG format images
-
-New Feature
-
-ANNOTATIONNET-324
-
-Fix background when import Resource Redaction annotation (for slides)
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Issue Type</strong></p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-337</p></td><td class="confluenceTd"><p>Implement annotating GIF format static images (without animation)</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-335</p></td><td class="confluenceTd"><p>While exporting Slide document TextField annotation hasn't text</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-332</p></td><td class="confluenceTd"><p>Implement annotating TIFF format images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-331</p></td><td class="confluenceTd"><p>Implement annotating BMP format images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-329</p></td><td class="confluenceTd"><p>Implement annotating JPEG format images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-324</p></td><td class="confluenceTd"><p>Fix background when import Resource Redaction annotation (for slides)</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

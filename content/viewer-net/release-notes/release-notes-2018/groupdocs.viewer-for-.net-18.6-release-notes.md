@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-18-6-release-notes
 url: viewer/net/groupdocs-viewer-for-net-18-6-release-notes
 title: GroupDocs.Viewer for .NET 18.6 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -20,113 +20,25 @@ There are 17 features, improvements, and fixes in this regular monthly release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1601
-
-Add new option which allows checking password each time document processed
-
-New Feature
-
-VIEWERNET-1218
-
-Add DWF file format support
-
-New Feature
-
-VIEWERNET-915
-
-Render CAD documents by specifying coordinates
-
-New Feature
-
-VIEWERNET-1621
-
-Extend support for DefaultFontName setting to PDF documents when rendering into PDF
-
-Improvement
-
-VIEWERNET-1588
-
-Add new property EmbedResources which will replace IsResourcesEmbedded property in HtmlOptions class
-
-Improvement
-
-VIEWERNET-1585
-
-Support empty string for ViewerConfig.CacheFolderName property
-
-Improvement
-
-VIEWERNET-1564
-
-Eliminate the gap between list of tasks and footer when rendering MS Project documents
-
-Improvement
-
-VIEWERNET-1157
-
-Extend support for DefaultFontName option for CAD documents
-
-Improvement
-
-VIEWERNET-1626
-
-Access to the path 'c:\\windows\\system32\\inetsrv\\vs.bin' is denied.
-
-Bug
-
-VIEWERNET-1617
-
-Can't set different default fonts when rendering PDF document
-
-Bug
-
-VIEWERNET-1615
-
-Incorrect rendering of items with background color in Visio document
-
-Bug
-
-VIEWERNET-1614
-
-GetFileList throws "Guid for file should contain extension" when file has no extension
-
-Bug
-
-VIEWERNET-1613
-
-Some STL files are not supported
-
-Bug
-
-VIEWERNET-1553
-
-Text color is incorrect when rendering PDF
-
-Bug
-
-VIEWERNET-1545
-
-Content of the cell is hidden when rendering Excel to HTML
-
-Bug
-
-VIEWERNET-1543
-
-Unable to render Presentation documents, after ViewerConfig.FontDirectories are added
-
-Bug
-
-VIEWERNET-1470
-
-Wrong number of layouts in DXF
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1601 | Add new option which allows checking password each time document processed | New Feature |
+| VIEWERNET-1218 | Add DWF file format support | New Feature |
+| VIEWERNET-915 | Render CAD documents by specifying coordinates | New Feature |
+| VIEWERNET-1621 | Extend support for DefaultFontName setting to PDF documents when rendering into PDF | Improvement |
+| VIEWERNET-1588 | Add new property EmbedResources which will replace IsResourcesEmbedded property in HtmlOptions class | Improvement |
+| VIEWERNET-1585 | Support empty string for ViewerConfig.CacheFolderName property | Improvement |
+| VIEWERNET-1564 | Eliminate the gap between list of tasks and footer when rendering MS Project documents | Improvement |
+| VIEWERNET-1157 | Extend support for DefaultFontName option for CAD documents | Improvement |
+| VIEWERNET-1626 | Access to the path 'c:\\windows\\system32\\inetsrv\\vs.bin' is denied. | Bug |
+| VIEWERNET-1617 | Can't set different default fonts when rendering PDF document | Bug |
+| VIEWERNET-1615 | Incorrect rendering of items with background color in Visio document | Bug |
+| VIEWERNET-1614 | GetFileList throws "Guid for file should contain extension" when file has no extension | Bug |
+| VIEWERNET-1613 | Some STL files are not supported | Bug |
+| VIEWERNET-1553 | Text color is incorrect when rendering PDF | Bug |
+| VIEWERNET-1545 | Content of the cell is hidden when rendering Excel to HTML | Bug |
+| VIEWERNET-1543 | Unable to render Presentation documents, after ViewerConfig.FontDirectories are added | Bug |
+| VIEWERNET-1470 | Wrong number of layouts in DXF | Bug |
 
 ## Public API and Backward Incompatible Changes
 

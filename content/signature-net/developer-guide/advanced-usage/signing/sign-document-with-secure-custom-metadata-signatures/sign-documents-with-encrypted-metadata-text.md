@@ -3,7 +3,7 @@ id: sign-documents-with-encrypted-metadata-text
 url: signature/net/sign-documents-with-encrypted-metadata-text
 title: Sign documents with encrypted metadata text
 weight: 3
-description: This article explains how to create encrypted Metadata electronic signature with GroupDocs.Signature API
+description: "This article explains how to create encrypted Metadata electronic signature with GroupDocs.Signature API"
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

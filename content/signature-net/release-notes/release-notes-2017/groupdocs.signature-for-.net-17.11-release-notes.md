@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-17-11-release-notes
 url: signature/net/groupdocs-signature-for-net-17-11-release-notes
 title: GroupDocs.Signature for .NET 17.11 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -28,131 +28,28 @@ There are about 20 improvements, new features and fixes in this regular release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Issue Type**
-
-SIGNATURENET-3154
-
-Implement support of Image File formats in Document and Pages Information method
-
-New Feature
-
-SIGNATURENET-3142
-
-Implement ability to obtain Verification Progress
-
-New Feature
-
-SIGNATURENET-3127
-
-Implement ability to set Brush style for Stamp signatures background
-
-New Feature
-
-SIGNATURENET-3126
-
-Implement ability to set Brush style for Text signatures background
-
-New Feature
-
-SIGNATURENET-3121
-
-Implement various text shape types for Words
-
-New Feature
-
-SIGNATURENET-3118
-
-Implement various text shape types for Slides
-
-New Feature
-
-SIGNATURENET-3115
-
-Implement various text shape types for Cells
-
-New Feature
-
-SIGNATURENET-3110
-
-Implement ability to obtain Digital Signatures from Cells Documents
-
-New Feature
-
-SIGNATURENET-3107
-
-Implement ability to obtain Digital Signatures from Words Documents
-
-New Feature
-
-SIGNATURENET-3104
-
-Implement ability to obtain Digital Signatures from Pdf Documents
-
-New Feature
-
-SIGNATURENET-2479
-
-Implement ability to obtain Signing progress
-
-New Feature
-
-SIGNATURENET-3168
-
-Improve Cells Documents Verification when Page is not specified
-
-Improvement
-
-SIGNATURENET-3167
-
-Improve Image Documents Verification when Page is not specified
-
-Improvement
-
-SIGNATURENET-3166
-
-Improve Slides Documents Verification when Page is not specified
-
-Improvement
-
-SIGNATURENET-3165
-
-Improve Words Documents Verification when Page is not specified
-
-Improvement
-
-SIGNATURENET-3164
-
-Improve Pdf Documents Verification when Page is not specified
-
-Improvement
-
-SIGNATURENET-3134
-
-Implement ability to set background color for QRcode signatures
-
-Improvement
-
-SIGNATURENET-3133
-
-Implement ability to set background color for Barcode signatures
-
-Improvement
-
-SIGNATURENET-3153
-
-Method for Document Description and Pages raise Exception
-
-Bug
-
-SIGNATURENET-3145
-
-Signature .NET 17.11 Incorrect Cells TextStamp rendering
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-3154 | Implement support of Image File formats in Document and Pages Information method | New Feature |
+| SIGNATURENET-3142 | Implement ability to obtain Verification Progress | New Feature |
+| SIGNATURENET-3127 | Implement ability to set Brush style for Stamp signatures background | New Feature |
+| SIGNATURENET-3126 | Implement ability to set Brush style for Text signatures background | New Feature |
+| SIGNATURENET-3121 | Implement various text shape types for Words | New Feature |
+| SIGNATURENET-3118 | Implement various text shape types for Slides | New Feature |
+| SIGNATURENET-3115 | Implement various text shape types for Cells | New Feature |
+| SIGNATURENET-3110 | Implement ability to obtain Digital Signatures from Cells Documents | New Feature |
+| SIGNATURENET-3107 | Implement ability to obtain Digital Signatures from Words Documents | New Feature |
+| SIGNATURENET-3104 | Implement ability to obtain Digital Signatures from Pdf Documents | New Feature |
+| SIGNATURENET-2479 | Implement ability to obtain Signing progress | New Feature |
+| SIGNATURENET-3168 | Improve Cells Documents Verification when Page is not specified | Improvement |
+| SIGNATURENET-3167 | Improve Image Documents Verification when Page is not specified | Improvement |
+| SIGNATURENET-3166 | Improve Slides Documents Verification when Page is not specified | Improvement |
+| SIGNATURENET-3165 | Improve Words Documents Verification when Page is not specified | Improvement |
+| SIGNATURENET-3164 | Improve Pdf Documents Verification when Page is not specified | Improvement |
+| SIGNATURENET-3134 | Implement ability to set background color for QRcode signatures | Improvement |
+| SIGNATURENET-3133 | Implement ability to set background color for Barcode signatures | Improvement |
+| SIGNATURENET-3153 | Method for Document Description and Pages raise Exception | Bug |
+| SIGNATURENET-3145 | Signature .NET 17.11 Incorrect Cells TextStamp rendering | Bug |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-18-12-release-notes
 url: editor/net/groupdocs-editor-for-net-18-12-release-notes
 title: GroupDocs.Editor for .NET 18.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -22,53 +22,15 @@ hideChildren: False
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1030
-
-Improve compatibility of lists in HTML-editors for better editing
-
-Improvement
-
-EDITORNET-1031
-
-Improve compatibility of paragraphs with HTML-editors
-
-Improvement
-
-EDITORNET-1032
-
-Increase accuracy of space and gap distances between document elements
-
-Improvement
-
-EDITORNET-1033
-
-Improve stability in multi-threaded environment
-
-Improvement
-
-EDITORNET-1034
-
-Fix exception with SDT during backward conversion
-
-Bug
-
-EDITORNET-1035
-
-Fix bug with improper processing of bookmarks
-
-Bug
-
-EDITORNET-1036
-
-Fix issue with incorrect processing of unusual shapes in ShapeProcessor
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1030 | Improve compatibility of lists in HTML-editors for better editing | Improvement |
+| EDITORNET-1031 | Improve compatibility of paragraphs with HTML-editors | Improvement |
+| EDITORNET-1032 | Increase accuracy of space and gap distances between document elements | Improvement |
+| EDITORNET-1033 | Improve stability in multi-threaded environment | Improvement |
+| EDITORNET-1034 | Fix exception with SDT during backward conversion | Bug |
+| EDITORNET-1035 | Fix bug with improper processing of bookmarks | Bug |
+| EDITORNET-1036 | Fix issue with incorrect processing of unusual shapes in ShapeProcessor | Bug |
 
 ## Public API and Backward Incompatible Changes
 

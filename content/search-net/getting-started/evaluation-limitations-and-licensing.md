@@ -3,7 +3,7 @@ id: evaluation-limitations-and-licensing
 url: search/net/evaluation-limitations-and-licensing
 title: Evaluation Limitations and Licensing
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

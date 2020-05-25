@@ -3,7 +3,7 @@ id: basic-usage
 url: metadata/net/basic-usage
 title: Basic Usage
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-17-2-0-release-notes
 url: annotation/net/groupdocs-annotation-for-net-17-2-0-release-notes
 title: GroupDocs.Annotation for .NET 17.2.0 Release Notes
 weight: 10
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -23,35 +23,12 @@ Implemented annotations annotating documents of following types:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-351
-
-Implement annotating for DICOM format images
-
-New Feature
-
-ANNOTATIONNET-348
-
-Add Metered licensing support
-
-New Feature
-
-ANNOTATIONNET-344
-
-Implement adding annotations to Otp format
-
-New Feature
-
-ANNOTATIONNET-340
-
-Implement annotating DjVu format
-
-New Feature
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-351 | Implement annotating for DICOM format images | New Feature |
+| ANNOTATIONNET-348 | Add Metered licensing support | New Feature |
+| ANNOTATIONNET-344 | Implement adding annotations to Otp format | New Feature |
+| ANNOTATIONNET-340 | Implement annotating DjVu format | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

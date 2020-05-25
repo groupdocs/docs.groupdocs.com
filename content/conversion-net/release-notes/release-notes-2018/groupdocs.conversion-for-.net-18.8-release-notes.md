@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-18-8-release-notes
 url: conversion/net/groupdocs-conversion-for-net-18-8-release-notes
 title: GroupDocs.Conversion for .NET 18.8 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -23,59 +23,16 @@ This regular monthly release contains 5+ new features, improvements and bug fixe
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-2640
-
-Implement PdfFormattingOptions when converting to PDF
-
-New Feature
-
-CONVERSIONNET-2661
-
-Implement specific options for converting TXT documents
-
-New Feature
-
-CONVERSIONNET-2633
-
-Automatically add extension of the converted file if not set
-
-Improvement
-
-CONVERSIONNET-2649
-
-Remove obsolete constructors and properties
-
-Improvement
-
-CONVERSIONNET-2658
-
-Image to PDF conversion improvement
-
-Improvement
-
-CONVERSIONNET-2686
-
-Improve per page savings when converting to Words, Images, Slides, Cells, Pdf, Xps, Html
-
-Improvement
-
-CONVERSIONNET-2687
-
-Security improvements update
-
-Improvement
-
-CONVERSIONNET-2683
-
-Exception when cache is enabled
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-2640 | Implement PdfFormattingOptions when converting to PDF | New Feature |
+| CONVERSIONNET-2661 | Implement specific options for converting TXT documents | New Feature |
+| CONVERSIONNET-2633 | Automatically add extension of the converted file if not set | Improvement |
+| CONVERSIONNET-2649 | Remove obsolete constructors and properties | Improvement |
+| CONVERSIONNET-2658 | Image to PDF conversion improvement | Improvement |
+| CONVERSIONNET-2686 | Improve per page savings when converting to Words, Images, Slides, Cells, Pdf, Xps, Html | Improvement |
+| CONVERSIONNET-2687 | Security improvements update | Improvement |
+| CONVERSIONNET-2683 | Exception when cache is enabled | Bug |
 
 ##   
 Public API and Backward Incompatible Changes

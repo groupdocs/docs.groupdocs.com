@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-18-6-release-notes
 url: search/net/groupdocs-search-for-net-18-6-release-notes
 title: GroupDocs.Search for .NET 18.6 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -19,29 +19,7 @@ There are 3 enhancements in this regular monthly release. The most notable are:
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-1564
-
-Remove obsolete Relevance property from DetailedResultInfo
-
-Breaking Changes
-
-SEARCHNET-957
-
-Implement possibility to break indexing operation manually
-
-Enhancement
-
-SEARCHNET-1551
-
-Add ImportDictionary and ExportDictionary methods to index dictionaries
-
-Enhancement
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd">Key</td><td class="confluenceTd">Summary</td><td class="confluenceTd">Category</td></tr><tr><td class="confluenceTd"><span>SEARCHNET-1564</span></td><td class="confluenceTd"><span>Remove obsolete Relevance property from DetailedResultInfo</span></td><td class="confluenceTd"><span>Breaking Changes</span></td></tr><tr><td colspan="1" class="confluenceTd"><span>SEARCHNET-957</span></td><td colspan="1" class="confluenceTd"><span>Implement possibility to break indexing operation manually</span></td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd"><span>SEARCHNET-1551</span></td><td colspan="1" class="confluenceTd">Add ImportDictionary and ExportDictionary methods to index dictionaries</td><td colspan="1" class="confluenceTd">Enhancement</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 
@@ -131,62 +109,19 @@ Method **Export** has been marked as obsolete in **GroupDocs.Search.SynonymDi
 
 ##### Changing Details
 
-Old method name
-
-New method name
-
-GroupDocs.Search.AliasDictionary.Import
-
-GroupDocs.Search.AliasDictionary.ImportDictionary
-
-GroupDocs.Search.AliasDictionary.Export
-
-GroupDocs.Search.AliasDictionary.ExportDictionary
-
-GroupDocs.Search.CharacterReplacementDictionary.Import
-
-GroupDocs.Search.CharacterReplacementDictionary.ImportDictionary
-
-GroupDocs.Search.CharacterReplacementDictionary.Export
-
-GroupDocs.Search.CharacterReplacementDictionary.ExportDictionary
-
-GroupDocs.Search.Alphabet.Import
-
-GroupDocs.Search.Alphabet.ImportDictionary
-
-GroupDocs.Search.Alphabet.Export
-
-GroupDocs.Search.Alphabet.ExportDictionary
-
-GroupDocs.Search.SpellingCorrector.Import
-
-GroupDocs.Search.SpellingCorrector.ImportDictionary
-
-GroupDocs.Search.SpellingCorrector.Export
-
-GroupDocs.Search.SpellingCorrector.ExportDictionary
-
-GroupDocs.Search.HomophoneDictionary.Import
-
-GroupDocs.Search.HomophoneDictionary.ImportDictionary
-
-GroupDocs.Search.HomophoneDictionary.Export
-
-GroupDocs.Search.HomophoneDictionary.ExportDictionary
-
-GroupDocs.Search.StopWordDictionary.Import
-
-GroupDocs.Search.StopWordDictionary.ImportDictionary
-
-GroupDocs.Search.StopWordDictionary.Export
-
-GroupDocs.Search.StopWordDictionary.ExportDictionary
-
-GroupDocs.Search.SynonymDictionary.Import
-
-GroupDocs.Search.SynonymDictionary.ImportDictionary
-
-GroupDocs.Search.SynonymDictionary.Export
-
-GroupDocs.Search.SynonymDictionary.ExportDictionary
+| Old method name | New method name |
+| --- | --- |
+| GroupDocs.Search.AliasDictionary.Import | GroupDocs.Search.AliasDictionary.ImportDictionary |
+| GroupDocs.Search.AliasDictionary.Export | GroupDocs.Search.AliasDictionary.ExportDictionary |
+| GroupDocs.Search.CharacterReplacementDictionary.Import | GroupDocs.Search.CharacterReplacementDictionary.ImportDictionary |
+| GroupDocs.Search.CharacterReplacementDictionary.Export | GroupDocs.Search.CharacterReplacementDictionary.ExportDictionary |
+| GroupDocs.Search.Alphabet.Import | GroupDocs.Search.Alphabet.ImportDictionary |
+| GroupDocs.Search.Alphabet.Export | GroupDocs.Search.Alphabet.ExportDictionary |
+| GroupDocs.Search.SpellingCorrector.Import | GroupDocs.Search.SpellingCorrector.ImportDictionary |
+| GroupDocs.Search.SpellingCorrector.Export | GroupDocs.Search.SpellingCorrector.ExportDictionary |
+| GroupDocs.Search.HomophoneDictionary.Import | GroupDocs.Search.HomophoneDictionary.ImportDictionary |
+| GroupDocs.Search.HomophoneDictionary.Export | GroupDocs.Search.HomophoneDictionary.ExportDictionary |
+| GroupDocs.Search.StopWordDictionary.Import | GroupDocs.Search.StopWordDictionary.ImportDictionary |
+| GroupDocs.Search.StopWordDictionary.Export | GroupDocs.Search.StopWordDictionary.ExportDictionary |
+| GroupDocs.Search.SynonymDictionary.Import | GroupDocs.Search.SynonymDictionary.ImportDictionary |
+| GroupDocs.Search.SynonymDictionary.Export | GroupDocs.Search.SynonymDictionary.ExportDictionary |

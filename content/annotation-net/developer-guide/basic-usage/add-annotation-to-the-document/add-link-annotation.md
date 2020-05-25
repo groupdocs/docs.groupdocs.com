@@ -3,7 +3,7 @@ id: add-link-annotation
 url: annotation/net/add-link-annotation
 title: Add link annotation
 weight: 7
-description: Learn what is a link annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
+description: "Learn what is a link annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET."
 keywords: What is a link annotation, how to add annotation, add link annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

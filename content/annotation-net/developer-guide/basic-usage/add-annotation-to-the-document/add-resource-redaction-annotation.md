@@ -3,7 +3,7 @@ id: add-resource-redaction-annotation
 url: annotation/net/add-resource-redaction-annotation
 title: Add resource redaction annotation
 weight: 11
-description: Learn what is a resource redaction annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
+description: "Learn what is a resource redaction annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET."
 keywords: What is a resource redaction annotation, how to add annotation, add resource redaction annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: verify-for-multiple-signatures
 url: signature/net/verify-for-multiple-signatures
 title: Verify for multiple signatures
 weight: 5
-description: This topic explains how to verify electronic signatures of various types with GroupDocs.Signature API.
+description: "This topic explains how to verify electronic signatures of various types with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: set-metadata-properties
 url: metadata/net/set-metadata-properties
 title: Set metadata properties
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

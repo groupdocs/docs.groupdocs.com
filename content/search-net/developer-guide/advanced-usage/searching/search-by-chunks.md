@@ -3,7 +3,7 @@ id: search-by-chunks
 url: search/net/search-by-chunks
 title: Search by chunks
 weight: 18
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

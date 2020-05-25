@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-19-1-release-notes
 url: annotation/net/groupdocs-annotation-for-net-19-1-release-notes
 title: GroupDocs.Annotation for .NET 19.1 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -24,95 +24,22 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-823
-
-Add possibility to cache page previews
-
-Feature
-
-ANNOTATIONNET-830 
-
-Implement possibility to display distance annotation caption for Slides format
-
-Feature
-
-ANNOTATIONNET-831 
-
-Implement possibility to display distance annotation caption for Cells format
-
-Feature
-
-ANNOTATIONNET-832 
-
-Implement possibility to display distance annotation caption for Diagram format
-
-Feature
-
-ANNOTATIONNET-832 
-
-Add supporting processing older format for Slides (.ppt)
-
-Feature
-
-ANNOTATIONNET-841 
-
-Add supporting processing older format for Cells (.xls)
-
-Feature
-
-ANNOTATIONNET-842 
-
-Add supporting processing older format for Words (.doc)
-
-Feature
-
-ANNOTATIONNET-835
-
-Refactor logic for getting pages for Slides documents
-
-Improvement
-
-ANNOTATIONNET-837
-
-Refactor PdfToPng saver
-
-Improvement
-
-ANNOTATIONNET-844
-
-Line width not set in Slides
-
-Bug
-
-ANNOTATIONNET-808
-
-Application is consuming 100% resources usage while loading document
-
-Bug
-
-ANNOTATIONNET-849
-
-Issue when opening protected with password documents
-
-Bug
-
-ANNOTATIONNET-866
-
-AnnotationImageHandler.GetPages exception in trial mode (for documents with more than 2 pages)
-
-Bug
-
-ANNOTATIONNET-878
-
-Not closed stream when remove annotations
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-823 | Add possibility to cache page previews | Feature |
+| ANNOTATIONNET-830  | Implement possibility to display distance annotation caption for Slides format | Feature |
+| ANNOTATIONNET-831  | Implement possibility to display distance annotation caption for Cells format | Feature |
+| ANNOTATIONNET-832  | Implement possibility to display distance annotation caption for Diagram format | Feature |
+| ANNOTATIONNET-832  | Add supporting processing older format for Slides (.ppt) | Feature |
+| ANNOTATIONNET-841  | Add supporting processing older format for Cells (.xls) | Feature |
+| ANNOTATIONNET-842  | Add supporting processing older format for Words (.doc) | Feature |
+| ANNOTATIONNET-835 | Refactor logic for getting pages for Slides documents | Improvement |
+| ANNOTATIONNET-837 | Refactor PdfToPng saver | Improvement |
+| ANNOTATIONNET-844 | Line width not set in Slides | Bug |
+| ANNOTATIONNET-808 | Application is consuming 100% resources usage while loading document | Bug |
+| ANNOTATIONNET-849 | Issue when opening protected with password documents | Bug |
+| ANNOTATIONNET-866 | AnnotationImageHandler.GetPages exception in trial mode (for documents with more than 2 pages) | Bug |
+| ANNOTATIONNET-878 | Not closed stream when remove annotations | Bug |
 
 ## Public API and Backward Incompatible Change
 
@@ -128,97 +55,29 @@ Bug
     List<PageImage> GetPages(string guid)
     ```
     
-    **Parameter**
-    
-    **Type**
-    
-    **Description**
-    
-    CountPagesToConvert
-    
-    int
-    
-    Determines count of pages to convert. **PageNumber** should be greater than 0.
-    
-    PageNumber
-    
-    int
-    
-    Determines page number (index) to be converted. If PageNumber = 0 (by default) then all pages of document will be converted.
-    
-    PageNumbersToConvert
-    
-    List<int>
-    
-    Determines list of page numbers, that will be converted. For example, if need converted only 3, 5 and 7 pages.
-    
-    WithoutAnnotations
-    
-    bool
-    
-    Determines that image pages will be returned without annotations.
+    | Parameter | Type | Description |
+    | --- | --- | --- |
+    | CountPagesToConvert | int | Determines count of pages to convert. **PageNumber** should be greater than 0. |
+    | PageNumber | int | Determines page number (index) to be converted. If PageNumber = 0 (by default) then all pages of document will be converted. |
+    | PageNumbersToConvert | List<int> | Determines list of page numbers, that will be converted. For example, if need converted only 3, 5 and 7 pages. |
+    | WithoutAnnotations | bool | Determines that image pages will be returned without annotations. |
     
     Priority – it’s what will be happen if all parameters are sets:
     
-    Parameter
+    | Parameter | Priority | Description |
+    | --- | --- | --- |
+    | WithoutAnnotations | 1 | If this parameter is true, then document will be returned without annotations. |
+    | PageNumbersToConvert | 2 | If this parameter not null and count of elements > 0, then only page numbers from PageNumbersToConvert parameter will be converted. PageNumber and CountPagesToConvert will be ignored. |
+    | PageNumber | 3 | If this parameter = 0 (by default), then all pages of document will be converted. If parameter > 0, then will converted specified page. |
+    | CountPagesToConvert | 4 | Working only if PageNumber > 0. If CountPagesToConvert = 1, then only one page will be converted (which is defined by PageNumber parameter). If CountPagesToConvert > 1, then will converted from Page number to PageNumber + CountPagesToConvert range. |
     
-    Priority
-    
-    Description
-    
-    WithoutAnnotations
-    
-    1
-    
-    If this parameter is true, then document will be returned without annotations.
-    
-    PageNumbersToConvert
-    
-    2
-    
-    If this parameter not null and count of elements > 0, then only page numbers from PageNumbersToConvert parameter will be converted. PageNumber and CountPagesToConvert will be ignored.
-    
-    PageNumber
-    
-    3
-    
-    If this parameter = 0 (by default), then all pages of document will be converted. If parameter > 0, then will converted specified page.
-    
-    CountPagesToConvert
-    
-    4
-    
-    Working only if PageNumber > 0. If CountPagesToConvert = 1, then only one page will be converted (which is defined by PageNumber parameter). If CountPagesToConvert > 1, then will converted from Page number to PageNumber + CountPagesToConvert range.
-    
-    **ImageOption**
-    
-    **Result**
-    
-    new ImageOptions()
-    
-    All pages of document will be converted.
-    
-    new ImageOptions() {WithoutAnnotations = true}
-    
-    All pages of document will converted, but without annotations.
-    
-    new ImageOptions() {PageNumber = 5}
-    
-    Only 5 page of document will be converted.
-    
-    List<int> numberList = new List<int>() { 2, 5, 7};
-    
-    new ImageOptions()
-    
-    { PageNumbersToConvert = numberList }
-    
-    Only 2nd, 5th and 7th pages of document will be converted.
-    
-    new ImageOptions()
-    
-    {PageNumber = 5, CountPagesToConvert = 2}
-    
-    Pages 5,6,7 of document will be converted.
+    | ImageOption | Result |
+    | --- | --- |
+    | new ImageOptions() | All pages of document will be converted. |
+    | new ImageOptions() {WithoutAnnotations = true} | All pages of document will converted, but without annotations. |
+    | new ImageOptions() {PageNumber = 5} | Only 5 page of document will be converted. |
+    | List<int> numberList = new List<int>() { 2, 5, 7};new ImageOptions(){ PageNumbersToConvert = numberList } | Only 2nd, 5th and 7th pages of document will be converted. |
+    | new ImageOptions(){PageNumber = 5, CountPagesToConvert = 2} | Pages 5,6,7 of document will be converted. |
     
     **  
     Note:**

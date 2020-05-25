@@ -159,37 +159,10 @@ void OnPasswordRequest(object sender, PasswordRequest request);
 
 This method is called when the extractor or container meets a password-protected document. `sender` contains the link to the caller. `PasswordRequest` class contains the information about the request:
 
-| 
-Member
-
-
-
- | 
-
-Description
-
-
-
- |
+| Member | Description |
 | --- | --- |
-| 
-
-Cancel
-
- | 
-
-The boolean value indicating whether the request is rejected
-
- |
-| 
-
-Password
-
- | 
-
-A password for the document
-
- |
+| Cancel | The boolean value indicating whether the request is rejected |
+| Password | A password for the document |
 
 A user has two ways to provide a password for the document. When the password is known, `Password` property of *`LoadOptions`* class is used. If it is not known whether it is protected or not before opening the document, `PasswordProvider` property of *`LoadOptions`* class is used.
 

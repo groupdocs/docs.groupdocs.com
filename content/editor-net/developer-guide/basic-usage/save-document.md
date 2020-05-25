@@ -3,7 +3,7 @@ id: save-document
 url: editor/net/save-document
 title: Save document
 weight: 4
-description: This article demonstrates how to save edited text documents, spreadsheets and presentations with GroupDocs.Editor for .NET API.
+description: "This article demonstrates how to save edited text documents, spreadsheets and presentations with GroupDocs.Editor for .NET API."
 keywords: Save edited document, edit document, GroupDocs.Editor
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -28,61 +28,14 @@ When `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdoc
 
 Like with load and edit options, every family format has its own class, that implements `[ISaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/isaveoptions)` interface. These classes are listed below.
 
-Format family
-
-Example formats
-
-Save options class
-
-Format class
-
-WordProcessing
-
-DOC, DOCX, DOCM, DOT, ODT
-
-`[WordProcessingSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingsaveoptions)`
-
-`[WordProcessingFormats](https://apireference.groupdocs.com/net/editor/groupdocs.editor.formats/wordprocessingformats)`
-
-Spreadsheet
-
-XLS, XLSX, XLSM, XLSB
-
-`[SpreadsheetSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheetsaveoptions)`
-
-`[SpreadsheetFormat](https://apireference.groupdocs.com/net/editor/groupdocs.editor.formats/spreadsheetformats)`
-
-Delimiter-Separated Values (DSV)
-
-CSV, TSV
-
-`[DelimitedTextSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/delimitedtextsaveoptions)`
-
-`[TextualFormats](https://apireference.groupdocs.com/net/editor/groupdocs.editor.formats/textualformats)`
-
-Presentation
-
-PPT, PPTX, PPS, POT
-
-`[PresentationSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/presentationsaveoptions)`
-
-`[PresentationFormats](https://apireference.groupdocs.com/net/editor/groupdocs.editor.formats/presentationformats)`
-
-Plain Text documents
-
-TXT
-
-`[TextSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/textsaveoptions)`
-
-`[TextualFormats](https://apireference.groupdocs.com/net/editor/groupdocs.editor.formats/textualformats)`
-
-PDF
-
-PDF
-
-`[PdfSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/pdfsaveoptions)`
-
-N/A
+| Format family | Example formats | Save options class | Format class |
+| --- | --- | --- | --- |
+| WordProcessing | DOC, DOCX, DOCM, DOT, ODT | `[WordProcessingSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingsaveoptions)` | `[WordProcessingFormats](https://apireference.groupdocs.com/net/editor/groupdocs.editor.formats/wordprocessingformats)` |
+| Spreadsheet | XLS, XLSX, XLSM, XLSB | `[SpreadsheetSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheetsaveoptions)` | `[SpreadsheetFormat](https://apireference.groupdocs.com/net/editor/groupdocs.editor.formats/spreadsheetformats)` |
+| Delimiter-Separated Values (DSV) | CSV, TSV | `[DelimitedTextSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/delimitedtextsaveoptions)` | `[TextualFormats](https://apireference.groupdocs.com/net/editor/groupdocs.editor.formats/textualformats)` |
+| Presentation | PPT, PPTX, PPS, POT | `[PresentationSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/presentationsaveoptions)` | `[PresentationFormats](https://apireference.groupdocs.com/net/editor/groupdocs.editor.formats/presentationformats)` |
+| Plain Text documents | TXT | `[TextSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/textsaveoptions)` | `[TextualFormats](https://apireference.groupdocs.com/net/editor/groupdocs.editor.formats/textualformats)` |
+| PDF | PDF | `[PdfSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/pdfsaveoptions)` | N/A |
 
 Source code below shows creating an instance of `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` class and consequent saving a two versions of the document: one to the file and second — to the stream.
 

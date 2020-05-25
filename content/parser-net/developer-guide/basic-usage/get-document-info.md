@@ -17,42 +17,11 @@ IDocumentInfo GetDocumentInfo();
 
 [IDocumentInfo](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/idocumentinfo) interface has the following members:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
-| 
-
-[FileType](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/idocumentinfo/properties/filetype)
-
- | 
-
-The document type.
-
- |
-| 
-
-[PageCount](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/idocumentinfo/properties/pagecount)
-
- | 
-
-The total number of document pages.
-
- |
-| 
-
-[Size](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/idocumentinfo/properties/size)
-
- | 
-
-The size of the document in bytes.
-
- |
+| [FileType](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/idocumentinfo/properties/filetype) | The document type. |
+| [PageCount](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/idocumentinfo/properties/pagecount) | The total number of document pages. |
+| [Size](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/idocumentinfo/properties/size) | The size of the document in bytes. |
 
 Here are the steps to get document info:
 

@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-17-6-0-release-notes
 url: annotation/net/groupdocs-annotation-for-net-17-6-0-release-notes
 title: GroupDocs.Annotation for .NET 17.6.0 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -26,53 +26,15 @@ Below the list of  new features and fixed bugs in this regular monthly release 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-417
-
-Implement Polyline annotation with Diagram documents
-
-New Feature
-
-ANNOTATIONNET-416
-
-Implement Arrow annotation for Diagram documents
-
-New Feature
-
-ANNOTATIONNET-410
-
-Implement Area annotation for Diagrams
-
-New Feature
-
-ANNOTATIONNET-406
-
-Add option to process CAD documents as PDF
-
-Improvement
-
-ANNOTATIONNET-405
-
-Implement GetPages method for Email documents processing from streams
-
-Improvement
-
-ANNOTATIONNET-401
-
-Implement proper error handling when user try to invoke GetDocumentInfo method for images documents
-
-Improvement
-
-ANNOTATIONNET-395
-
-Internal Exception in annotator.GetDocumentInfo() Method
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-417 | Implement Polyline annotation with Diagram documents | New Feature |
+| ANNOTATIONNET-416 | Implement Arrow annotation for Diagram documents | New Feature |
+| ANNOTATIONNET-410 | Implement Area annotation for Diagrams | New Feature |
+| ANNOTATIONNET-406 | Add option to process CAD documents as PDF | Improvement |
+| ANNOTATIONNET-405 | Implement GetPages method for Email documents processing from streams | Improvement |
+| ANNOTATIONNET-401 | Implement proper error handling when user try to invoke GetDocumentInfo method for images documents | Improvement |
+| ANNOTATIONNET-395 | Internal Exception in annotator.GetDocumentInfo() Method | Bug |
 
 ## Public API and Backward Incompatible Changes
 

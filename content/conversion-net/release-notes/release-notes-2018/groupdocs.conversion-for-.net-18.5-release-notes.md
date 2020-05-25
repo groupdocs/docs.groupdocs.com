@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-18-5-release-notes
 url: conversion/net/groupdocs-conversion-for-net-18-5-release-notes
 title: GroupDocs.Conversion for .NET 18.5 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -22,41 +22,13 @@ This regular monthly release contains improved code base, improved performance, 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-2553
-
-Docx to Tiff G3 conversion with shading option
-
-Improvement
-
-CONVERSIONNET-2554
-
-Improved code coverage
-
-Improvement
-
-CONVERSIONNET-2508
-
-Eml to tiff conversion issue with stream parameters
-
-Bug
-
-CONVERSIONNET-2430
-
-System.ArgumentOutOfRangeException occurred
-
-Bug
-
-CONVERSIONNET-2495
-
-Tiff to Html conversion is not rendered properly in Chrome
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-2553 | Docx to Tiff G3 conversion with shading option | Improvement |
+| CONVERSIONNET-2554 | Improved code coverage | Improvement |
+| CONVERSIONNET-2508 | Eml to tiff conversion issue with stream parameters | Bug |
+| CONVERSIONNET-2430 | System.ArgumentOutOfRangeException occurred | Bug |
+| CONVERSIONNET-2495 | Tiff to Html conversion is not rendered properly in Chrome | Bug |
 
 ## Public API and Backward Incompatible Changes
 

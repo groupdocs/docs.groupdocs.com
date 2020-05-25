@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-19-5-release-notes
 url: metadata/net/groupdocs-metadata-for-net-19-5-release-notes
 title: GroupDocs.Metadata for .NET 19.5 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -20,29 +20,7 @@ There are the following features and enhancements in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-METADATANET-1177
-
-Add support for the vCard format
-
-New Feature
-
-METADATANET-2833
-
-Add support for the pps, ppsx and ppsm PowerPoint formats
-
-Enhancement
-
-METADATANET-2918
-
-Implement the ability to get the metered credit consumption statistic
-
-Enhancement
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-1177</td><td colspan="1" class="confluenceTd">Add support for the vCard format</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2833</td><td colspan="1" class="confluenceTd">Add support for the pps, ppsx and ppsm PowerPoint formats</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2918</td><td colspan="1" class="confluenceTd">Implement the ability to get the metered credit consumption statistic</td><td colspan="1" class="confluenceTd">Enhancement</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

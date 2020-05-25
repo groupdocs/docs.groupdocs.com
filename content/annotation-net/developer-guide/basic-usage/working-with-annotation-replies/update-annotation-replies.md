@@ -3,7 +3,7 @@ id: update-annotation-replies
 url: annotation/net/update-annotation-replies
 title: Update annotation replies
 weight: 3
-description: Check this guide to learn how to update annotation replies when collaborate over document using GroupDocs.Annotation for .NET API.
+description: "Check this guide to learn how to update annotation replies when collaborate over document using GroupDocs.Annotation for .NET API."
 keywords: How to change or remove annotation reply, update annotation reply, remove reply, reply to annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

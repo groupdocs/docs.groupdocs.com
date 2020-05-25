@@ -3,7 +3,7 @@ id: developer-guide
 url: annotation/net/developer-guide
 title: Developer Guide
 weight: 3
-description: GroupDocs.Annotation for .NET developer guide explains document annotator features and shows how to annotate PDF, Word, Excel, PowerPoint documents and images inside your .NET applications
+description: "GroupDocs.Annotation for .NET developer guide explains document annotator features and shows how to annotate PDF, Word, Excel, PowerPoint documents and images inside your .NET applications"
 keywords: GroupDocs.Annotation Developer Guide, GroupDocs.Annotation .NET Developer Guide, GroupDocs.Annotation Developer Guide C#, Using GroupDocs.Annotation for .NET, GroupDocs.Annotation for .NET use cases
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

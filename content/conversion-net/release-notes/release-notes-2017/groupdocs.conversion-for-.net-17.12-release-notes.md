@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-17-12-release-notes
 url: conversion/net/groupdocs-conversion-for-net-17-12-release-notes
 title: GroupDocs.Conversion for .NET 17.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -23,53 +23,7 @@ There are 5+ new features, improvements and fixes in this regular monthly releas
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Category**
-
-CONVERSIONNET-2277
-
-Implement conversion from/to Jpeg2000
-
-New Feature
-
-CONVERSIONNET-2257
-
-Implement possibility to convert one sheet per page or depending on print area when converting Cells to Pdf
-
-Improvement
-
-CONVERSIONNET-2258
-
-Implement possibility to optimize target Pdf for minimum file size when converting Cells to Pdf
-
-Improvement
-
-CONVERSIONNET-2262
-
-Image to SVG conversion improvement
-
-Improvement
-
-CONVERSIONNET-2266
-
-Words to Gif conversion improvement
-
-Improvement
-
-CONVERSIONNET-2240
-
-PDF to TIF conversion, InvalidValueFormatException
-
-Bug
-
-CONVERSIONNET-2234
-
-Index was outside the bounds of the array, while Converting .xlsx File To PDF
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>CONVERSIONNET-2277</p></td><td class="confluenceTd"><p>Implement conversion from/to Jpeg2000</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>CONVERSIONNET-2257</p></td><td class="confluenceTd"><p>Implement possibility to convert one sheet per page or depending on print area when converting Cells to Pdf</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>CONVERSIONNET-2258</p></td><td class="confluenceTd"><p>Implement possibility to optimize target Pdf for minimum file size when converting Cells to Pdf</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>CONVERSIONNET-2262</p></td><td class="confluenceTd"><p>Image to SVG conversion improvement</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>CONVERSIONNET-2266</p></td><td class="confluenceTd"><p>Words to Gif conversion improvement</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>CONVERSIONNET-2240</p></td><td class="confluenceTd"><p>PDF to TIF conversion, InvalidValueFormatException</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>CONVERSIONNET-2234</p></td><td class="confluenceTd"><p>Index was outside the bounds of the array, while Converting .xlsx File To PDF</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

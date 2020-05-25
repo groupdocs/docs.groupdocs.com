@@ -42,14 +42,7 @@ To extract a text from databases **DbContainer** class is used. **DbContainer
 
 **DbTableReader** class has the following members:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
 | Read() | Reads the next data row and returns a collection of row cells |
 | ReadLine() | Reads the next data row and returns a string representation of comma-separated values |

@@ -3,7 +3,7 @@ id: sign-documents-with-metadata-embedded-object
 url: signature/net/sign-documents-with-metadata-embedded-object
 title: Sign documents with Metadata embedded object
 weight: 4
-description: This article explains how to create encrypted Metadata electronic signature with embedded custom object.
+description: "This article explains how to create encrypted Metadata electronic signature with embedded custom object."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

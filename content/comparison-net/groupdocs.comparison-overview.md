@@ -3,40 +3,54 @@ id: groupdocs-comparison-overview
 url: comparison/net/groupdocs-comparison-overview
 title: GroupDocs.Comparison Overview
 weight: 1
-description: 
-keywords: 
+description: "In this article, get acquainted with the features, functions, supported file formats and developer usage of GroupDocs.Comparison for .NET — API to compare two or more files and get the difference between them."
+keywords: GroupDocs.Comparison Overview, Developer usage
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
 ## What Is GroupDocs.Comparison?
 
-GroupDocs.Comparison is a flexible and feature rich library which allows you to compare documents for all popular document formats such as:
+**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** – API for compare and merge two or more files in applications on the .NET platform. Compiled file shows line-by-line difference of content, paragraphs, characters, styles, shapes and positions.
 
-*   Portable Document Formats - PDF (PDF/A-1a, PDF/A-1b, PDF/A-2a)
-*   Microsoft Word documents - DOC, DOCX, DOCM, DOT, DOTM, DOTX, RTF, TXT
-*   Microsoft Excel spreadsheets - XLS, XLSX, XLT, XLTM, XLSB, XLSM, CSV
-*   Microsoft PowerPoint presentations - PPT, PPTX, POT, POTX, PPS, PPSX
-*   Microsoft Visio diagrams - VSD, VSDX, VSS, VST, VDX
-*   Microsoft OneNote - ONE
-*   Open Document formats - ODT, OTT, ODS, ODP, OTP
-*   Ebook - MOBI
-*   Image - PNG, JPG, BMP, DJVU, DICOM, DCM
-*   Email - EML, EMLX, MSG
-*   Autocad - DWG, DXF
-*   and many more.
+Supported formats:
 
-Compare documents, retrieve list of changes between source and target document(s), apply or reject changes and save results with GroupDocs.Comparison API.
+*   Microsoft Word – DOC, DOCX, DOCM, DOT, DOTM, DOTX, RTF;
+    
+*   Microsoft Excel – XLS, XLSX, XLT, XLTM, XLSB, XLSM, CSV;
+    
+*   Microsoft PowerPoint – PPT, PPTX, POT, POTX, PPS, PPSX;
+    
+*   Microsoft Visio – VSD, VSDX, VSS, VST, VDX;
+    
+*   Microsoft OneNote – ONE;
+    
+*   Portable Document Formats –PDF;
+    
+*   Autocad – DWG, DXF;
+    
+*   Open Document - ODT, OTT, ODS, ODP, OTP;
+    
+*   Ebook – MOBI;
+    
+*   Image – PNG, JPG, BMP, DJVU, DICOM, DCM;
+    
+*   Email – EML, EMLX, MSG;
+    
+*   Source Code files – CS, JAVA, CPP, JS, PHP, HTML, JSON, etc;
+    
+*   and many others [supported file formats]({{< ref "comparison-net/getting-started/supported-file-formats.md" >}}).
+    
 
 ## Why Use GroupDocs.Comparison as a Developer?
 
-*   Detect differences between source and target document(s) of 50+ supported file formats without any additional software.
+*   GroupDocs.Comparison supports 100\+ file formats without any additional software;
     
-*   Wide range of additional options to customize comparison process and output results.
+*   Wide range of options to customize comparison process;
     
-*   Document information extraction - file type, page count etc.
+*   Information extraction – file type, page count, etc.;
     
-*   Handful document differences categorization and highlight. 
+*   Handful differences categorization and highlight; 
     
-*   Content structure, styling and formatting changes detection.
+*   Content structure, styling and formatting changes detection;
     
-*   Ability to apply or reject detected changes and save resultant document.
+*   Ability to apply or reject detected changes and save result document;

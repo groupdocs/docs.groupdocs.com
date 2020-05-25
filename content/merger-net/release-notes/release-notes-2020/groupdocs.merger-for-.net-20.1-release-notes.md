@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-20-1-release-notes
 url: merger/net/groupdocs-merger-for-net-20-1-release-notes
 title: GroupDocs.Merger for .NET 20.1 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -19,17 +19,9 @@ There are a few new features in this regular monthly release. The most notable a
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-707
-
-The Note format. One is not supported for .Net Standard and Core
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-707 | The Note format. One is not supported for .Net Standard and Core | Bug |
 
 ## Public API and Backward Incompatible Changes
 

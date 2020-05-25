@@ -3,7 +3,7 @@ id: search-for-built-in-metadata-signatures
 url: signature/net/search-for-built-in-metadata-signatures
 title: Search for built-in Metadata signatures
 weight: 6
-description:  This article explains how to provide advanced search for metadata electronic signatures with GroupDocs.Signature API.
+description: " This article explains how to provide advanced search for metadata electronic signatures with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

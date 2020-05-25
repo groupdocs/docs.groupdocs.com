@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-17-1-0-release-notes
 url: conversion/net/groupdocs-conversion-for-net-17-1-0-release-notes
 title: GroupDocs.Conversion For .NET 17.1.0 Release Notes
 weight: 11
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -22,83 +22,20 @@ There are 11 new features, improvements and fixes in this regular monthly releas
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-1683
-
-Metered licensing
-
-New Feature
-
-CONVERSIONNET-1585
-
-Implement conversion from OTS
-
-New Feature
-
-CONVERSIONNET-1598
-
-Implement conversion to grayscale image
-
-New Feature
-
-CONVERSIONNET-1619
-
-Implement conversion to XPS
-
-New Feature
-
-CONVERSIONNET-1624
-
-Implement conversion to SVG
-
-New Feature
-
-CONVERSIONNET-1645
-
-Improving memory handling on save
-
-Improvement
-
-CONVERSIONNET-1646
-
-Improving output file name if converting from/to page
-
-Improvement
-
-CONVERSIONNET-1648
-
-Improve memory handling in documents
-
-Improvement
-
-CONVERSIONNET-1580
-
-Multipage Tiff is not converted properly to Pdf
-
-Bug
-
-CONVERSIONNET-1615
-
-Page mode conversions do not work
-
-Bug
-
-CONVERSIONNET-1643
-
-HideWordTrackedChanges not respected when converting from word
-
-Bug
-
-CONVERSIONNET-1644
-
-Dpi resolution not respected when converting Cells to Image
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-1683 | Metered licensing | New Feature |
+| CONVERSIONNET-1585 | Implement conversion from OTS | New Feature |
+| CONVERSIONNET-1598 | Implement conversion to grayscale image | New Feature |
+| CONVERSIONNET-1619 | Implement conversion to XPS | New Feature |
+| CONVERSIONNET-1624 | Implement conversion to SVG | New Feature |
+| CONVERSIONNET-1645 | Improving memory handling on save | Improvement |
+| CONVERSIONNET-1646 | Improving output file name if converting from/to page | Improvement |
+| CONVERSIONNET-1648 | Improve memory handling in documents | Improvement |
+| CONVERSIONNET-1580 | Multipage Tiff is not converted properly to Pdf | Bug |
+| CONVERSIONNET-1615 | Page mode conversions do not work | Bug |
+| CONVERSIONNET-1643 | HideWordTrackedChanges not respected when converting from word | Bug |
+| CONVERSIONNET-1644 | Dpi resolution not respected when converting Cells to Image | Bug |
 
   
 

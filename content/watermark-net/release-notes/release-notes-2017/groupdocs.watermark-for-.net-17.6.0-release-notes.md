@@ -21,35 +21,12 @@ There are following features in this first release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-WATERMARKNET-482
-
-Implement ability to add watermark to a particular page of a Word document
-
-New Feature
-
-WATERMARKNET-507
-
-Implement ability to set background image for a chart in Excel document
-
-New Feature
-
-WATERMARKNET-509
-
-Implement ability to set background image for a chart in PowerPoint document
-
-New Feature
-
-WATERMARKNET-540
-
-Implement ability to set additional options for slide background image in PowerPoint document
-
-Enhancement
+| Key | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-482 | Implement ability to add watermark to a particular page of a Word document | New Feature |
+| WATERMARKNET-507 | Implement ability to set background image for a chart in Excel document | New Feature |
+| WATERMARKNET-509 | Implement ability to set background image for a chart in PowerPoint document | New Feature |
+| WATERMARKNET-540 | Implement ability to set additional options for slide background image in PowerPoint document | Enhancement |
 
 ## Public API and Backward Incompatible Changes
 

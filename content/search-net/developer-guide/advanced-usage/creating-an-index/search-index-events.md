@@ -3,7 +3,7 @@ id: search-index-events
 url: search/net/search-index-events
 title: Search index events
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

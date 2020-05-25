@@ -3,7 +3,7 @@ id: sign-documents-with-extra-digital-signature-properties
 url: signature/net/sign-documents-with-extra-digital-signature-properties
 title: Sign documents with extra Digital Signature properties
 weight: 2
-description:  This article explains how to use extended Digital electronic signatures options and adjustment on document page.
+description: " This article explains how to use extended Digital electronic signatures options and adjustment on document page."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

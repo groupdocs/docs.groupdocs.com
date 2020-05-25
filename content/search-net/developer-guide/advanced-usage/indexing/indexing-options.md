@@ -3,7 +3,7 @@ id: indexing-options
 url: search/net/indexing-options
 title: Indexing options
 weight: 10
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

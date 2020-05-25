@@ -33,33 +33,10 @@ HighlightOptions(int? maxLength, int? wordCount, bool isLineLimited)
 
 [HighlightItem](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/highlightitem) class has the following members:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
-| 
-
-[Position](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/highlightitem/properties/position)
-
- | 
-
-The position in the document text.
-
- |
-| 
-
-[Text](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/highlightitem/properties/text)
-
- | 
-
-The highlight text.
-
- |
+| [Position](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/highlightitem/properties/position) | The position in the document text. |
+| [Text](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/highlightitem/properties/text) | The highlight text. |
 
 Here are the steps to extract highlight from the document:
 

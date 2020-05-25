@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-17-05-release-notes
 url: metadata/net/groupdocs-metadata-for-net-17-05-release-notes
 title: GroupDocs.Metadata for .NET 17.05 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -19,23 +19,7 @@ There are 2 new features in this regular monthly release. The most notable are:
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATANET-1570
-
-Ability to read all revisions in Word format
-
-New Feature
-
-METADATANET-1722
-
-Ability to accept or reject revisions in Word format
-
-New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1570</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read all revisions in Word format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1722</span></td><td colspan="1" class="confluenceTd">Ability to accept or reject revisions in Word format</td><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

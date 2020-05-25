@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-19-10-2-release-notes
 url: editor/net/groupdocs-editor-for-net-19-10-2-release-notes
 title: GroupDocs.Editor for .NET 19.10.2 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -26,35 +26,12 @@ Improved XML-comments for the GroupDocs.Editor.Editor main class.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1356
-
-Error While Getting DOCX document HTML
-
-Bug
-
-EDITORNET-1357
-
-Exception in FieldProcessor while opening MOBI file
-
-Bug
-
-EDITORNET-1374
-
-Fix bug with missing binding for Aspose components
-
-Bug
-
-EDITORNET-1355
-
-Improve XML-comments in the Editor class
-
-Improvement
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1356 | Error While Getting DOCX document HTML | Bug |
+| EDITORNET-1357 | Exception in FieldProcessor while opening MOBI file | Bug |
+| EDITORNET-1374 | Fix bug with missing binding for Aspose components | Bug |
+| EDITORNET-1355 | Improve XML-comments in the Editor class | Improvement |
 
 # Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-18-7-1-release-notes
 url: annotation/net/groupdocs-annotation-for-net-18-7-1-release-notes
 title: GroupDocs.Annotation for .NET 18.7.1 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -16,17 +16,9 @@ Hot fix release of GroupDocs.Annotation for .NET 18.7.1 contains security improv
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-745
-
-Security improvements update
-
-Improvement
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-745 | Security improvements update | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-18-9-1-release-notes
 url: signature/net/groupdocs-signature-for-net-18-9-1-release-notes
 title: GroupDocs.Signature for .NET 18.9.1 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -16,17 +16,7 @@ Two major bugs were fixed and included into this hot-fix release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-SIGNATURENET-3657
-
-Exception while signing PDF with Metadata Signatures using latest pre-release
-
-Bug
-
-SIGNATURENET-3658
-
-Exception while signing PDF with Metadata Sign Options using latest pre-release
-
-Bug
+<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3657</td><td colspan="1" class="confluenceTd">Exception while signing PDF with Metadata Signatures using latest pre-release</td><td colspan="1" class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3658</td><td class="confluenceTd">Exception while signing PDF with Metadata Sign Options using latest pre-release</td><td class="confluenceTd">Bug</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

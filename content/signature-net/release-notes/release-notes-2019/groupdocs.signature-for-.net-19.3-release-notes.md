@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-19-3-release-notes
 url: signature/net/groupdocs-signature-for-net-19-3-release-notes
 title: GroupDocs.Signature for .NET 19.3 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -16,17 +16,7 @@ This is a hot-fix release which includes one bug fix.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-1931
-
-Singing Pdf with Digital Form Field Signature gives exception on saving
-
-Bug
+<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1931</td><td colspan="1" class="confluenceTd">Singing Pdf with Digital Form Field Signature gives exception on saving</td><td colspan="1" class="confluenceTd">Bug</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

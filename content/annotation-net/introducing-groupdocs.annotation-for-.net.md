@@ -3,7 +3,7 @@ id: introducing-groupdocs-annotation-for-net
 url: annotation/net/introducing-groupdocs-annotation-for-net
 title: Introducing GroupDocs.Annotation for .NET
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

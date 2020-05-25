@@ -3,7 +3,7 @@ id: updating-metadata
 url: metadata/net/updating-metadata
 title: Updating metadata
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

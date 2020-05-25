@@ -3,7 +3,7 @@ id: add-area-annotation
 url: annotation/net/add-area-annotation
 title: Add area annotation
 weight: 1
-description: Learn what is area annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
+description: "Learn what is area annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET."
 keywords: What is area annotation, how to add annotation, add area annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

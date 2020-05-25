@@ -3,7 +3,7 @@ id: installation
 url: search/net/installation
 title: Installation
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

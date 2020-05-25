@@ -3,7 +3,7 @@ id: working-with-wordprocessing-documents
 url: editor/net/working-with-wordprocessing-documents
 title: Working with WordProcessing documents
 weight: 1
-description:  This guide demonstrates how to edit DOC, DOT, DOCX, DOCM, DOTX, ODT, RTF documents with font extraction, different pagination modes and many other powerful features of GroupDocs.Editor for .NET.
+description: " This guide demonstrates how to edit DOC, DOT, DOCX, DOCM, DOTX, ODT, RTF documents with font extraction, different pagination modes and many other powerful features of GroupDocs.Editor for .NET."
 keywords: Edit DOCX, Edit DOC, Edit RTF, Edit ODT, Edit Word document
 productName: GroupDocs.Editor for .NET
 hideChildren: False

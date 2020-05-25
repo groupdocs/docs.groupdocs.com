@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-20-2-release-notes
 url: editor/net/groupdocs-editor-for-net-20-2-release-notes
 title: GroupDocs.Editor for .NET 20.2 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -21,35 +21,12 @@ GroupDocs.Editor for .NET version 20.2 contains several new features, improvemen
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1467
-
-Add ability to set custom class name for all form-fields with corresponding public options
-
-New feature
-
-EDITORNET-1512
-
-Add support of text direction in input plain text document
-
-New feature
-
-EDITORNET-1505
-
-Add support of PDf 1.7
-
-Improvement
-
-EDITORNET-1504
-
-WordProcessing document is incorrectly rendered in paginal mode
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1467 | Add ability to set custom class name for all form-fields with corresponding public options | New feature |
+| EDITORNET-1512 | Add support of text direction in input plain text document | New feature |
+| EDITORNET-1505 | Add support of PDf 1.7 | Improvement |
+| EDITORNET-1504 | WordProcessing document is incorrectly rendered in paginal mode | Bug |
 
 # Public API and Backward Incompatible Changes
 

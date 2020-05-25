@@ -3,7 +3,7 @@ id: change-page-orientation
 url: merger/net/change-page-orientation
 title: Change page orientation
 weight: 7
-description: Following this guide you will learn how to change Word document page orientation to Portrait or Landscape using GroupDocs.Merger for .NET.
+description: "Following this guide you will learn how to change Word document page orientation to Portrait or Landscape using GroupDocs.Merger for .NET."
 keywords: DOCX page orientation, Change Word page orientation, Page Portrait orientation, Page Landscape orientation, 
 productName: GroupDocs.Merger for .NET
 hideChildren: False

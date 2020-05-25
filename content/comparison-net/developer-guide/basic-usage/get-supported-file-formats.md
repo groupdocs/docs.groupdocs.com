@@ -3,12 +3,12 @@ id: get-supported-file-formats
 url: comparison/net/get-supported-file-formats
 title: Get supported file formats
 weight: 1
-description: This article explains how to obtain supported file formats list when viewing documents with GroupDocs.Comparison within your .NET applications.
-keywords: 
+description: "This article explains how to obtain supported file formats list when viewing documents with GroupDocs.Comparison within your .NET applications."
+keywords: Get file info, Get File Type, Page count, File size
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to get the list of all [supported file formats](Supported%2BDocument%2BFormats.html) by following the below steps:
+**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to get the list of all [supported file formats](Supported%2BFile%2BFormats.html) by following the below steps:
 
 *   Call [GetSupportedFileTypes](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/filetype/methods/getsupportedfiletypes)of [FileType](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/filetype) class;
 *   Enumerate through the collection of [FileType](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/filetype)objects*.*

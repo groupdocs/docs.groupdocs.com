@@ -3,7 +3,7 @@ id: convert-to-wordprocessing-with-advanced-options
 url: conversion/net/convert-to-wordprocessing-with-advanced-options
 title: Convert to WordProcessing with advanced options
 weight: 6
-description: Follow this guide and learn how to convert documents to Word and Open Document formats like DOC, DOCX, ODT, OTT formats with height, width, DPI and other customizations using GroupDocs.Conversion for .NET.
+description: "Follow this guide and learn how to convert documents to Word and Open Document formats like DOC, DOCX, ODT, OTT formats with height, width, DPI and other customizations using GroupDocs.Conversion for .NET."
 keywords: Convert to Word, Convert to WordProcessing, Convert to DOCX, Convert to DOC
 productName: GroupDocs.Conversion for .NET
 hideChildren: False

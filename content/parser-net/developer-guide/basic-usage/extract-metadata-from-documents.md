@@ -21,33 +21,10 @@ IEnumerable<MetadataItem> GetMetadata();
 
 This method returns a collection of [MetadataItem](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/metadataitem) objects with following members:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
-| 
-
-[Name](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/metadataitem/properties/name)
-
- | 
-
-The name of the metadata item
-
- |
-| 
-
-[Value](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/metadataitem/properties/value)
-
- | 
-
-The value of the metadata item
-
- |
+| [Name](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/metadataitem/properties/name) | The name of the metadata item |
+| [Value](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/metadataitem/properties/value) | The value of the metadata item |
 
 Here are the steps to extract metadata from the document:
 

@@ -3,7 +3,7 @@ id: numeric-range-search
 url: search/net/numeric-range-search
 title: Numeric range search
 weight: 12
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

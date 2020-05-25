@@ -3,7 +3,7 @@ id: get-document-info
 url: metadata/net/get-document-info
 title: Get document info
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

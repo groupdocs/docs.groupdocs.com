@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-20-4-release-notes
 url: editor/net/groupdocs-editor-for-net-20-4-release-notes
 title: GroupDocs.Editor for .NET 20.4 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -50,137 +50,29 @@ GroupDocs.Editor for .NET version 20.4 contains a lot of fixed serious bugs, whi
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1541
-
-Ability to insert edited slide into existing presentation with substitution or injection by index
-
-New feature
-
-EDITORNET-1591
-
-Add support of paginal mode in backward HTML-to-PDF converter
-
-New feature
-
-EDITORNET-1609
-
-Add support of TIFF images
-
-New feature
-
-EDITORNET-1597
-
-Support repeat table header in HTML and backward converter
-
-Improvement
-
-EDITORNET-1607
-
-Implement ActiveX checkbox
-
-Improvement
-
-EDITORNET-1476
-
-Cannot convert HTML to WordProcessing with embedded PaginalStyle.css
-
-Bug
-
-EDITORNET-1530
-
-Error While Creating Edior instance with filepath Aurgument
-
-Bug
-
-EDITORNET-1581
-
-Opening a DOCX file throws Argument Exception
-
-Bug
-
-EDITORNET-1582
-
-Hanging while trying to open ODP document while detecting file format
-
-Bug
-
-EDITORNET-1583
-
-Small icons are always embedded into HTML as base64 when editing Spreadsheet document
-
-Bug
-
-EDITORNET-1584
-
-Fix bug in HTML parser when input HTML markup starts from empty string
-
-Bug
-
-EDITORNET-1588
-
-Fix performance degradation in font resource processor
-
-Bug
-
-EDITORNET-1589
-
-Fix bug with negative margin in tables
-
-Bug
-
-EDITORNET-1592
-
-'Aspose.Words.Drawing.Shape' is not supported
-
-Bug
-
-EDITORNET-1596
-
-Name of the INPUT element cannot be NULL
-
-Bug
-
-EDITORNET-1598
-
-Only 'phrasing' content is permitted for the heading H2
-
-Bug
-
-EDITORNET-1599
-
-Internal error - cannot find a 'FormField' node
-
-Bug
-
-EDITORNET-1602
-
-Content of the run is not represented by any of HTML elements
-
-Bug
-
-EDITORNET-1604
-
-Some controls missing in the output HTML and DOCX files
-
-Bug
-
-EDITORNET-1605
-
-Processing a particular DOCX file takes long time
-
-Bug
-
-EDITORNET-1640
-
-Add support of user-installed font with .NET Standard 2.0 assembly on Windows 10/Server 2016
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1541 | Ability to insert edited slide into existing presentation with substitution or injection by index | New feature |
+| EDITORNET-1591 | Add support of paginal mode in backward HTML-to-PDF converter | New feature |
+| EDITORNET-1609 | Add support of TIFF images | New feature |
+| EDITORNET-1597 | Support repeat table header in HTML and backward converter | Improvement |
+| EDITORNET-1607 | Implement ActiveX checkbox | Improvement |
+| EDITORNET-1476 | Cannot convert HTML to WordProcessing with embedded PaginalStyle.css | Bug |
+| EDITORNET-1530 | Error While Creating Edior instance with filepath Aurgument | Bug |
+| EDITORNET-1581 | Opening a DOCX file throws Argument Exception | Bug |
+| EDITORNET-1582 | Hanging while trying to open ODP document while detecting file format | Bug |
+| EDITORNET-1583 | Small icons are always embedded into HTML as base64 when editing Spreadsheet document | Bug |
+| EDITORNET-1584 | Fix bug in HTML parser when input HTML markup starts from empty string | Bug |
+| EDITORNET-1588 | Fix performance degradation in font resource processor | Bug |
+| EDITORNET-1589 | Fix bug with negative margin in tables | Bug |
+| EDITORNET-1592 | 'Aspose.Words.Drawing.Shape' is not supported | Bug |
+| EDITORNET-1596 | Name of the INPUT element cannot be NULL | Bug |
+| EDITORNET-1598 | Only 'phrasing' content is permitted for the heading H2 | Bug |
+| EDITORNET-1599 | Internal error - cannot find a 'FormField' node | Bug |
+| EDITORNET-1602 | Content of the run is not represented by any of HTML elements | Bug |
+| EDITORNET-1604 | Some controls missing in the output HTML and DOCX files | Bug |
+| EDITORNET-1605 | Processing a particular DOCX file takes long time | Bug |
+| EDITORNET-1640 | Add support of user-installed font with .NET Standard 2.0 assembly on Windows 10/Server 2016 | Bug |
 
 ## Public API and Backward Incompatible Changes
 

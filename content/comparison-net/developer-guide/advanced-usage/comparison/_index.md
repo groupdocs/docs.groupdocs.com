@@ -3,7 +3,7 @@ id: comparison
 url: comparison/net/comparison
 title: Comparison
 weight: 2
-description: Learn more about advanced document comparison use cases - how to adjust comparison detalisation level, get changed elements coordinates, detect style detection and many more using GroupDocs.Comparison for .NET
+description: "Learn more about advanced document comparison use cases - how to adjust comparison detalisation level, get changed elements coordinates, detect style detection and many more using GroupDocs.Comparison for .NET"
 keywords: Compare document with detalisation, Compare documents with password
 productName: GroupDocs.Comparison for .NET
 hideChildren: False

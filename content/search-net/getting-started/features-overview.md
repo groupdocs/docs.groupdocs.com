@@ -3,7 +3,7 @@ id: features-overview
 url: search/net/features-overview
 title: Features Overview
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

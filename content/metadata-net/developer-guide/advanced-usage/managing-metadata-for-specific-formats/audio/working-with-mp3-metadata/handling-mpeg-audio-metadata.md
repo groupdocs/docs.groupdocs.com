@@ -3,7 +3,7 @@ id: handling-mpeg-audio-metadata
 url: metadata/net/handling-mpeg-audio-metadata
 title: Handling MPEG audio metadata
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

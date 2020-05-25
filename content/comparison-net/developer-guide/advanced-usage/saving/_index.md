@@ -3,8 +3,8 @@ id: saving
 url: comparison/net/saving
 title: Saving
 weight: 3
-description: 
-keywords: 
+description: "Learn more about document saving and how to customize process with available options, like: cloning metadata type, gets or sets password and etc"
+keywords: Cloning metadata type, get ot sets password
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

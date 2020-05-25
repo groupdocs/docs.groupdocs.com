@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-1-4-0-release-notes
 url: metadata/net/groupdocs-metadata-for-net-1-4-0-release-notes
 title: GroupDocs.Metadata for .NET 1.4.0 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -23,44 +23,4 @@ There are 7 features in this regular monthly release. The most notable are:
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATA-106
-
-Ability to read IPTC IIM metadata in JPEG format
-
-New feature
-
-METADATA-739
-
-Ability to export metadata to DataSet
-
-New feature
-
-METADATA-760
-
-Ability to export metadata to csv
-
-New feature
-
-METADATA-761
-
-Ability to export metadata to Excel
-
-New feature
-
-METADATA-833
-
-Ability to read metadata of Microsoft Project file
-
-New feature
-
-METADATA-918
-
-Ability to read and write IPTC Photo Metadata (XMP API)
-
-New feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATA-106</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read IPTC IIM metadata in JPEG format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATA-739</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to export metadata to DataSet</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATA-760</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to export metadata to csv</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATA-761</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to export metadata to Excel</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATA-833</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read metadata of Microsoft Project file</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATA-918</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read and write IPTC Photo Metadata (XMP API)</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr></tbody></table>

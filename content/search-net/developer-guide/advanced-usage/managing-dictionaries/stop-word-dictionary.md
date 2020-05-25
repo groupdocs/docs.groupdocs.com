@@ -3,7 +3,7 @@ id: stop-word-dictionary
 url: search/net/stop-word-dictionary
 title: Stop word dictionary
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-17-10-release-notes
 url: annotation/net/groupdocs-annotation-for-net-17-10-release-notes
 title: GroupDocs.Annotation for .NET 17.10 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -22,83 +22,20 @@ Below the list of  new features and fixed bugs in this regular monthly release 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-508
-
-Implement export distance annotation for words
-
-New Feature
-
-ANNOTATIONNET-504
-
-Add comment for distance annotation in Diagrams
-
-New Feature
-
-ANNOTATIONNET-455
-
-Add comment for arrow annotation in Diagrams
-
-New Feature
-
-ANNOTATIONNET-454
-
-Add comment for resource redaction annotation in Diagrams
-
-New Feature
-
-ANNOTATIONNET-453
-
-Add comment for area annotation in Diagrams
-
-New Feature
-
-ANNOTATIONNET-452
-
-Add comment for polyline annotation in Diagrams
-
-New Feature
-
-ANNOTATIONNET-451
-
-Implement adding comments to annotations in diagram
-
-New Feature
-
-ANNOTATIONNET-510
-
-Wrong comment exported to Word
-
-Bug
-
-ANNOTATIONNET-509
-
-Wrong Distance annotation exported to word
-
-Bug
-
-ANNOTATIONNET-505
-
-Words: Fix export annotations for large fonts
-
-Bug
-
-ANNOTATIONNET-503
-
-Exporting a Word document adds old comments
-
-Bug
-
-ANNOTATIONNET-497
-
-Comment is not exported in Word
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-508 | Implement export distance annotation for words | New Feature |
+| ANNOTATIONNET-504 | Add comment for distance annotation in Diagrams | New Feature |
+| ANNOTATIONNET-455 | Add comment for arrow annotation in Diagrams | New Feature |
+| ANNOTATIONNET-454 | Add comment for resource redaction annotation in Diagrams | New Feature |
+| ANNOTATIONNET-453 | Add comment for area annotation in Diagrams | New Feature |
+| ANNOTATIONNET-452 | Add comment for polyline annotation in Diagrams | New Feature |
+| ANNOTATIONNET-451 | Implement adding comments to annotations in diagram | New Feature |
+| ANNOTATIONNET-510 | Wrong comment exported to Word | Bug |
+| ANNOTATIONNET-509 | Wrong Distance annotation exported to word | Bug |
+| ANNOTATIONNET-505 | Words: Fix export annotations for large fonts | Bug |
+| ANNOTATIONNET-503 | Exporting a Word document adds old comments | Bug |
+| ANNOTATIONNET-497 | Comment is not exported in Word | Bug |
 
 ## Public API and Backward Incompatible Changes
 

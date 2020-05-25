@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-19-6-release-notes
 url: conversion/net/groupdocs-conversion-for-net-19-6-release-notes
 title: GroupDocs.Conversion for .NET 19.6 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -25,65 +25,17 @@ This regular monthly release contains 5+ new features, improvements and bug fixe
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-3089
-
-Feature
-
-Implement conversion from Xlam
-
-CONVERSIONNET-3091
-
-Feature
-
-Implement conversion to Xlam
-
-CONVERSIONNET-3093
-
-Feature
-
-Implement conversion from Mpx
-
-CONVERSIONNET-3096
-
-Feature
-
-Introduce Metered.GetConsumptionCredit
-
-CONVERSIONNET-3098
-
-Feature
-
-Implement conversion from Jpc
-
-CONVERSIONNET-3100
-
-Feature
-
-Implement conversion from Dwt
-
-CONVERSIONNET-3113
-
-Feature
-
-Implement conversion from JPEG-LS (Jls)
-
-CONVERSIONNET-3117
-
-Improvement
-
-Improve Diagram to Word conversion
-
-CONVERSIONNET-2839
-
-Bug
-
-PowerPoint with black SmartArt Text gets changed into white text when converted to a PDF
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-3089 | Feature | Implement conversion from Xlam |
+| CONVERSIONNET-3091 | Feature | Implement conversion to Xlam |
+| CONVERSIONNET-3093 | Feature | Implement conversion from Mpx |
+| CONVERSIONNET-3096 | Feature | Introduce Metered.GetConsumptionCredit |
+| CONVERSIONNET-3098 | Feature | Implement conversion from Jpc |
+| CONVERSIONNET-3100 | Feature | Implement conversion from Dwt |
+| CONVERSIONNET-3113 | Feature | Implement conversion from JPEG-LS (Jls) |
+| CONVERSIONNET-3117 | Improvement | Improve Diagram to Word conversion |
+| CONVERSIONNET-2839 | Bug | PowerPoint with black SmartArt Text gets changed into white text when converted to a PDF |
 
 ## Public API and Backward Incompatible Changes
 

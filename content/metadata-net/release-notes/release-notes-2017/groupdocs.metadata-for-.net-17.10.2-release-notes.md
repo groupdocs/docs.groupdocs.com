@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-17-10-2-release-notes
 url: metadata/net/groupdocs-metadata-for-net-17-10-2-release-notes
 title: GroupDocs.Metadata for .NET 17.10.2 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -18,17 +18,7 @@ There is one bug fix in this hotfix monthly release. 
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATANET-1931
-
-TIF - Bit Depth is affected when removing metadata
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1931</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">TIF - Bit Depth is affected when removing metadata</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">Bug</span></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

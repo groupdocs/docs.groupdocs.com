@@ -3,7 +3,7 @@ id: working-with-metadata-in-png-images
 url: metadata/net/working-with-metadata-in-png-images
 title: Working with metadata in PNG images
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

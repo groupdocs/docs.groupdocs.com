@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-17-3-0-release-notes
 url: conversion/net/groupdocs-conversion-for-net-17-3-0-release-notes
 title: GroupDocs.Conversion for .NET 17.3.0 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -24,53 +24,15 @@ There are 7 new features, improvements and fixes in this regular monthly release
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-1729
-
-Implement conversion from DNG
-
-New Feature
-
-CONVERSIONNET-1737
-
-Implement conversion from DGN
-
-New Feature
-
-CONVERSIONNET-1745
-
-Implement conversion from VSSX and VSTX
-
-New Feature
-
-CONVERSIONNET-1761
-
-Ability to hide words comments when converting from word
-
-New Feature
-
-CONVERSIONNET-1760
-
-Implement conversion from ONE
-
-New Feature
-
-CONVERSIONNET-1719
-
-Convert Html to Pdf improvements
-
-Improvement
-
-CONVERSIONNET-1597
-
-Memory leak when converting CAD stream to image
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-1729 | Implement conversion from DNG | New Feature |
+| CONVERSIONNET-1737 | Implement conversion from DGN | New Feature |
+| CONVERSIONNET-1745 | Implement conversion from VSSX and VSTX | New Feature |
+| CONVERSIONNET-1761 | Ability to hide words comments when converting from word | New Feature |
+| CONVERSIONNET-1760 | Implement conversion from ONE | New Feature |
+| CONVERSIONNET-1719 | Convert Html to Pdf improvements | Improvement |
+| CONVERSIONNET-1597 | Memory leak when converting CAD stream to image | Bug |
 
 ## Public API and Backward Incompatible Changes
 

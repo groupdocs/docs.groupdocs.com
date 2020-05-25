@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-3-4-0-release-notes
 url: comparison/net/groupdocs-comparison-for-net-3-4-0-release-notes
 title: GroupDocs.Comparison For .NET 3.4.0 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -23,83 +23,20 @@ There are 12 improvements and fixes in this regular monthly release. The most no
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-COMPARISONNET-856
-
-GroupDocs.Comparison.Words: comparison of comments
-
-New Feature
-
-COMPARISONNET-857
-
-GroupDocs.Comparison.Words: comparison of WordArt objects
-
-New Feature
-
-COMPARISONNET-858
-
-GroupDocs.Comparison.Words: comparison of Table in table
-
-New Feature
-
-COMPARISONNET-854
-
-GroupDocs.Comparison.Words: comparison of Forms
-
-New Feature
-
-COMPARISONNET-855
-
-GroupDocs.Comparison.Words: comparison of multi-language
-
-New Feature
-
-COMPARISONNET-669
-
-GroupDocs.Comparison.PDF: object model of Paragraph
-
-New Feature
-
-COMPARISONNET-853
-
-GroupDocs.Comparison.Words: comparison of objects with VBA scripts
-
-New Feature
-
-COMPARISONNET-738
-
-GroupDocs.Comparison.PDF: implementation of absorber of paragraphs for the basic cases
-
-New Feature
-
-COMPARISONNET-864
-
-GroupDocs.Comparison.PDF: implementation of tables absorption for simple cases
-
-Improvement
-
-COMPARISONNET-776
-
-GroupDocs.Comparison.PDF: Implement the function CleanOperatorsList
-
-Improvement
-
-COMPARISONNET-888
-
-Result of comparison is System.ArgumentException: Invalid font name
-
-Bug
-
-COMPARISONNET-883
-
-TablesAligner for Pdf: fix function GetText of ComparisonCell class
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| COMPARISONNET-856 | GroupDocs.Comparison.Words: comparison of comments | New Feature |
+| COMPARISONNET-857 | GroupDocs.Comparison.Words: comparison of WordArt objects | New Feature |
+| COMPARISONNET-858 | GroupDocs.Comparison.Words: comparison of Table in table | New Feature |
+| COMPARISONNET-854 | GroupDocs.Comparison.Words: comparison of Forms | New Feature |
+| COMPARISONNET-855 | GroupDocs.Comparison.Words: comparison of multi-language | New Feature |
+| COMPARISONNET-669 | GroupDocs.Comparison.PDF: object model of Paragraph | New Feature |
+| COMPARISONNET-853 | GroupDocs.Comparison.Words: comparison of objects with VBA scripts | New Feature |
+| COMPARISONNET-738 | GroupDocs.Comparison.PDF: implementation of absorber of paragraphs for the basic cases | New Feature |
+| COMPARISONNET-864 | GroupDocs.Comparison.PDF: implementation of tables absorption for simple cases | Improvement |
+| COMPARISONNET-776 | GroupDocs.Comparison.PDF: Implement the function CleanOperatorsList | Improvement |
+| COMPARISONNET-888 | Result of comparison is System.ArgumentException: Invalid font name | Bug |
+| COMPARISONNET-883 | TablesAligner for Pdf: fix function GetText of ComparisonCell class | Bug |
 
   
 

@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-18-9-release-notes
 url: comparison/net/groupdocs-comparison-for-net-18-9-release-notes
 title: GroupDocs.Comparison for .NET 18.9 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -20,41 +20,13 @@ Below the list of most notable changes in  release of GroupDocs.Comparison for 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-740 
-
-Improve Html Anchors comparing
-
-Improvement
-
-COMPARISONNET-753
-
-Improve PDF comparison
-
-Improvement
-
-COMPARISONNET-758
-
-Improve HTML aligner
-
-Improvement
-
-COMPARISONNET-752 
-
-Error when comparing Words files protected with password
-
-Bug
-
-COMPARISONNET-750
-
-Cannot compare PDF documents
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-740  | Improve Html Anchors comparing | Improvement |
+| COMPARISONNET-753 | Improve PDF comparison | Improvement |
+| COMPARISONNET-758 | Improve HTML aligner | Improvement |
+| COMPARISONNET-752  | Error when comparing Words files protected with password | Bug |
+| COMPARISONNET-750 | Cannot compare PDF documents | Bug |
 
 ## Public API and Backward Incompatible Changes
 

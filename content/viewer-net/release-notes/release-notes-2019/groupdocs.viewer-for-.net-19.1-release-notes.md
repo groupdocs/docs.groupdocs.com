@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-19-1-release-notes
 url: viewer/net/groupdocs-viewer-for-net-19-1-release-notes
 title: GroupDocs.Viewer for .NET 19.1 Release Notes
 weight: 12
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -21,77 +21,19 @@ There are 11 features, improvements, and fixes in this regular monthly release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1781
-
-Add support for VCF format 
-
-Feature
-
-VIEWERNET-1782
-
-Obtaining email messages contained in OST/PST formats as attachments
-
-Feature
-
-VIEWERNET-1783
-
-Settings for filtering messages from OST/PST documents by subject and content 
-
-Feature
-
-VIEWERNET-1784
-
-Settings for filtering messages from OST/PST formats by sender
-
-Feature
-
-VIEWERNET-1831
-
-Obtaining layers statuses for CAD documents
-
-Feature
-
-VIEWERNET-1792
-
-Add support for rendering password protected ODS documents
-
-Improvement
-
-VIEWERNET-1812
-
-Simplify caching interface
-
-Improvement
-
-VIEWERNET-1798
-
-Descriptive Exception message when non-existing default font name is set
-
-Improvement
-
-VIEWERNET-1800
-
-Header is missing when rendering Word document 
-
-Bug
-
-VIEWERNET-1832
-
-Exception when getting document info of .msg file using MemoryStream
-
-Bug
-
-VIEWERNET-1842
-
-Images are not visible in Chrome browser when rendering OneNote documents
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1781 | Add support for VCF format  | Feature |
+| VIEWERNET-1782 | Obtaining email messages contained in OST/PST formats as attachments | Feature |
+| VIEWERNET-1783 | Settings for filtering messages from OST/PST documents by subject and content  | Feature |
+| VIEWERNET-1784 | Settings for filtering messages from OST/PST formats by sender | Feature |
+| VIEWERNET-1831 | Obtaining layers statuses for CAD documents | Feature |
+| VIEWERNET-1792 | Add support for rendering password protected ODS documents | Improvement |
+| VIEWERNET-1812 | Simplify caching interface | Improvement |
+| VIEWERNET-1798 | Descriptive Exception message when non-existing default font name is set | Improvement |
+| VIEWERNET-1800 | Header is missing when rendering Word document  | Bug |
+| VIEWERNET-1832 | Exception when getting document info of .msg file using MemoryStream | Bug |
+| VIEWERNET-1842 | Images are not visible in Chrome browser when rendering OneNote documents | Bug |
 
 ## Public API and Backward Incompatible Changes
 

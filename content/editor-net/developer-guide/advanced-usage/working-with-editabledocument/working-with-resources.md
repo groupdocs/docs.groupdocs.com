@@ -3,7 +3,7 @@ id: working-with-resources
 url: editor/net/working-with-resources
 title: Working with resources
 weight: 3
-description: This article demonstrates and explains different operations with resources, including retrieving, adjusting and saving them in different scenarios when editing documents with GroupDocs.Editor for .NET.
+description: "This article demonstrates and explains different operations with resources, including retrieving, adjusting and saving them in different scenarios when editing documents with GroupDocs.Editor for .NET."
 keywords: Working with HTML resources, Edit document, GroupDocs.Editor
 productName: GroupDocs.Editor for .NET
 hideChildren: False

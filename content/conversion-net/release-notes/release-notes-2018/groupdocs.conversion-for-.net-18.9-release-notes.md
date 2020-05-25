@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-18-9-release-notes
 url: conversion/net/groupdocs-conversion-for-net-18-9-release-notes
 title: GroupDocs.Conversion for .NET 18.9 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -25,101 +25,23 @@ This regular monthly release contains 10+ new features, improvements and bug fix
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-14095
-
-Implement conversion from Igs
-
-New Feature
-
-14094
-
-Implement conversion from Plt
-
-New Feature
-
-14073
-
-Support password protection when converting to ODS
-
-New Feature
-
-14072
-
-Support converting password protected ODS document
-
-New Feature
-
-14061
-
-Implement conversion from Cgm
-
-New Feature
-
-14097
-
-Pdf to Cells improvement
-
-Improvement
-
-14084
-
-Improve Words conversion options
-
-Improvement
-
-14083
-
-Improve Slides conversion options
-
-Improvement
-
-14082
-
-Improve Pdf conversion options
-
-Improvement
-
-14080
-
-Improve Image conversion options
-
-Improvement
-
-14079
-
-Improve Html conversion options
-
-Improvement
-
-14078
-
-Improve Cells conversion options
-
-Improvement
-
-14087
-
-XLS to HTML output is too small
-
-Bug
-
-14074
-
-Excel to SVG conversion issue
-
-Bug
-
-13688
-
-Xps to Pdf conversion issue
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| 14095 | Implement conversion from Igs | New Feature |
+| 14094 | Implement conversion from Plt | New Feature |
+| 14073 | Support password protection when converting to ODS | New Feature |
+| 14072 | Support converting password protected ODS document | New Feature |
+| 14061 | Implement conversion from Cgm | New Feature |
+| 14097 | Pdf to Cells improvement | Improvement |
+| 14084 | Improve Words conversion options | Improvement |
+| 14083 | Improve Slides conversion options | Improvement |
+| 14082 | Improve Pdf conversion options | Improvement |
+| 14080 | Improve Image conversion options | Improvement |
+| 14079 | Improve Html conversion options | Improvement |
+| 14078 | Improve Cells conversion options | Improvement |
+| 14087 | XLS to HTML output is too small | Bug |
+| 14074 | Excel to SVG conversion issue | Bug |
+| 13688 | Xps to Pdf conversion issue | Bug |
 
 ## Public API and Backward Incompatible Changes
 

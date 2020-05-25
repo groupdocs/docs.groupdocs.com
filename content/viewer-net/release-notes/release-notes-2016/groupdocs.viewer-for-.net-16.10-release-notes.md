@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-16-10-release-notes
 url: viewer/net/groupdocs-viewer-for-net-16-10-release-notes
 title: GroupDocs.Viewer For .NET 16.10 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -22,65 +22,7 @@ There are 1 new feature and 8 improvements and fixes in this regular monthly rel
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Category**
-
-VIEWERNET-888
-
-Mobi format support
-
-New Feature
-
-VIEWERNET-913
-
-Remove embedded audios from presentation
-
-Improvement
-
-VIEWERNET-942
-
-Invalid rendering of DWG file into Image or HTML
-
-Bug
-
-VIEWERNET-922
-
-GetDocumentInfo() method is throwing exception
-
-Bug
-
-VIEWERNET-918
-
-Failed to load XPS file in evaluation mode
-
-Bug
-
-VIEWERNET-910
-
-Dwg document is rendered into small image.
-
-Bug
-
-VIEWERNET-905
-
-Invalid rendering of DWG file into HTML and Image
-
-Bug
-
-VIEWERNET-798
-
-SheetRender.GetPageSize throws an exception when sheet is empty.
-
-Bug
-
-VIEWERNET-417
-
-FormattedText does not return TextWidth for Japanese characters.
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-888</p></td><td class="confluenceTd"><p>Mobi format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-913</p></td><td class="confluenceTd"><p>Remove embedded audios from presentation</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-942</p></td><td class="confluenceTd"><p>Invalid rendering of DWG file into Image or HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-922</p></td><td class="confluenceTd"><p>GetDocumentInfo() method is throwing exception</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-918</p></td><td class="confluenceTd"><p>Failed to load XPS file in evaluation mode</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-910</p></td><td class="confluenceTd"><p>Dwg document is rendered into small image.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-905</p></td><td class="confluenceTd"><p>Invalid rendering of DWG file into HTML and Image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-798</p></td><td class="confluenceTd"><p>SheetRender.GetPageSize throws an exception when sheet is empty.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-417</p></td><td class="confluenceTd"><p>FormattedText does not return TextWidth for Japanese characters.</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: find-metadata-properties
 url: metadata/net/find-metadata-properties
 title: Find metadata properties
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

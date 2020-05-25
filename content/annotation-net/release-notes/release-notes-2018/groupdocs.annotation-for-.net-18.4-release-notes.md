@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-18-4-release-notes
 url: annotation/net/groupdocs-annotation-for-net-18-4-release-notes
 title: GroupDocs.Annotation for .NET 18.4 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -21,41 +21,13 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-643
-
-Implement creating annotations in header footer of Words document
-
-New Feature
-
-ANNOTATIONNET-651
-
-Improve PDF format annotating using metadata
-
-Improvement
-
-ANNOTATIONNET-650
-
-Refactoring Imaging
-
-Improvement
-
-ANNOTATIONNET-648
-
-Wrong annotation range if other annotation has already been created in the same location
-
-Bug
-
-ANNOTATIONNET-646
-
-Cleanup leaves artifacts after deletion annotations in images
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-643 | Implement creating annotations in header footer of Words document | New Feature |
+| ANNOTATIONNET-651 | Improve PDF format annotating using metadata | Improvement |
+| ANNOTATIONNET-650 | Refactoring Imaging | Improvement |
+| ANNOTATIONNET-648 | Wrong annotation range if other annotation has already been created in the same location | Bug |
+| ANNOTATIONNET-646 | Cleanup leaves artifacts after deletion annotations in images | Bug |
 
 ## Public API and Backward Incompatible Changes
 

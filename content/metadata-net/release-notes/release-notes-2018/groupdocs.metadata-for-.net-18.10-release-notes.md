@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-18-10-release-notes
 url: metadata/net/groupdocs-metadata-for-net-18-10-release-notes
 title: GroupDocs.Metadata for .NET 18.10 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -22,47 +22,7 @@ There are the following features and enhancements in this release:
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATANET-383
-
-Implement the ability to update Lyrics3 tags
-
-New Feature
-
-METADATANET-1466
-
-Remove MetadataUtility obsolete methods
-
-Enhancement
-
-METADATANET-1608
-
-Reduce memory consumption of the PNG format
-
-Enhancement
-
-METADATANET-1632
-
-Reduce memory consumption of the JPEG2000 format
-
-Enhancement
-
-METADATANET-1633
-
-Reduce memory consumption of the BMP, DICOM, DJVU, EMF, WEBP and WMF formats
-
-Enhancement
-
-METADATANET-1045
-
-Exception when cleaning/updating metadata of Strict Open XML Presentation (.pptx)
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p>METADATANET-383</p></td><td class="confluenceTd"><p>Implement the ability to update Lyrics3 tags</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-1466</td><td colspan="1" class="confluenceTd">Remove MetadataUtility obsolete methods</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-1608</td><td colspan="1" class="confluenceTd">Reduce memory consumption of the PNG format</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-1632</td><td colspan="1" class="confluenceTd">Reduce memory consumption of the JPEG2000 format</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-1633</td><td colspan="1" class="confluenceTd">Reduce memory consumption of the BMP, DICOM, DJVU, EMF, WEBP and WMF formats</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-1045</td><td colspan="1" class="confluenceTd">Exception when cleaning/updating metadata of Strict Open XML Presentation (.pptx)</td><td colspan="1" class="confluenceTd">Bug</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

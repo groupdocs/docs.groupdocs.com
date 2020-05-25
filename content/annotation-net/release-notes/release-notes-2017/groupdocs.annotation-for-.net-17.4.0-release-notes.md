@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-17-4-0-release-notes
 url: annotation/net/groupdocs-annotation-for-net-17-4-0-release-notes
 title: GroupDocs.Annotation for .NET 17.4.0 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -20,41 +20,13 @@ Below the list of  new features and fixed bugs in this regular monthly release 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-381
-
-Improve import annotations from Word documents
-
-Improvement
-
-ANNOTATIONNET-380
-
-Process hyperlinks in tables for Words documents
-
-New Feature
-
-ANNOTATIONNET-379
-
-Processing numbered lists in tables for Words documents
-
-New Feature
-
-ANNOTATIONNET-378
-
-Processing tables in Word documents
-
-New Feature
-
-ANNOTATIONNET-376
-
-Improve Annotating CAD files
-
-Improvement
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-381 | Improve import annotations from Word documents | Improvement |
+| ANNOTATIONNET-380 | Process hyperlinks in tables for Words documents | New Feature |
+| ANNOTATIONNET-379 | Processing numbered lists in tables for Words documents | New Feature |
+| ANNOTATIONNET-378 | Processing tables in Word documents | New Feature |
+| ANNOTATIONNET-376 | Improve Annotating CAD files | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

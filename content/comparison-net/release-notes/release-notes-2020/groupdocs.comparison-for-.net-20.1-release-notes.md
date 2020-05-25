@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-20-1-release-notes
 url: comparison/net/groupdocs-comparison-for-net-20-1-release-notes
 title: GroupDocs.Comparison for .NET 20.1 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -23,35 +23,12 @@ Below is the list of most notable changes in release of GroupDocs.Comparison for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-2104
-
-Implement Multicomparer for Diagram
-
-Feature
-
-COMPARISONNET-2105 
-
-Implement Multicomparer for PDF
-
-Feature
-
-COMPARISONNET-2133 
-
-Improve table comparison in PDF
-
-Improvement
-
-COMPARISONNET-2148 
-
-Error occurred in comparing two identical Word documents
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-2104 | Implement Multicomparer for Diagram | Feature |
+| COMPARISONNET-2105  | Implement Multicomparer for PDF | Feature |
+| COMPARISONNET-2133  | Improve table comparison in PDF | Improvement |
+| COMPARISONNET-2148  | Error occurred in comparing two identical Word documents | Bug |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: document-filtering-during-indexing
 url: search/net/document-filtering-during-indexing
 title: Document filtering during indexing
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

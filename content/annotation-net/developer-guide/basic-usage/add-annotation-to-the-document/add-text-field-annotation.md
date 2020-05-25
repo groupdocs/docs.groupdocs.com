@@ -3,7 +3,7 @@ id: add-text-field-annotation
 url: annotation/net/add-text-field-annotation
 title: Add text field annotation
 weight: 13
-description: Learn what is a text field annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
+description: "Learn what is a text field annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET."
 keywords: What is a text field annotation, how to add annotation, add text field annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

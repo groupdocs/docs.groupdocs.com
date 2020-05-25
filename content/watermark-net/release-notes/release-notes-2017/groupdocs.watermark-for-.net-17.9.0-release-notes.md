@@ -19,23 +19,10 @@ There are the following features and enhancements in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key 
-
-Summary
-
-Category
-
-WATERMARKNET-582
-
-Implement ability to work with hyperlinks that are activated on mouse over (PowerPoint) 
-
-New Feature 
-
-WATERMARKNET-609 
-
-Add support of ODT format 
-
-New Feature 
+| Key  | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-582 | Implement ability to work with hyperlinks that are activated on mouse over (PowerPoint)  | New Feature  |
+| WATERMARKNET-609  | Add support of ODT format  | New Feature  |
 
 ## Public API and Backward Incompatible Changes
 

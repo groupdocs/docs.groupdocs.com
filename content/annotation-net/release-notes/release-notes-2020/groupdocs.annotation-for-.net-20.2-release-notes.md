@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-20-2-release-notes
 url: annotation/net/groupdocs-annotation-for-net-20-2-release-notes
 title: GroupDocs.Annotation for .NET 20.2 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -22,71 +22,18 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-884
-
-Implement ability to add Image annotation to Diagrams
-
-Feature
-
-ANNOTATIONNET-1241
-
-Add overloads for Annotator Remove Method
-
-Improvement
-
-ANNOTATIONNET-1248
-
-Implement image extracting to ImageAnnotation
-
-Improvement
-
-ANNOTATIONNET-1240
-
-Fix Dwg File Support
-
-Bug
-
-ANNOTATIONNET-1242
-
-Distance annotation was added in wrong place in jpg file
-
-Bug
-
-ANNOTATIONNET-1243
-
-Font color was changed after removing text redaction annotation
-
-Bug
-
-ANNOTATIONNET-1245
-
-Remove residual files after Image Annotation work
-
-Bug
-
-ANNOTATIONNET-1246
-
-Encrypted SpreadSheet(Cells) files throws exception
-
-Bug
-
-ANNOTATIONNET-1247
-
-Issue with AnnotationType byte Flag
-
-Bug
-
-ANNOTATIONNET-1257
-
-Exception while deleting work files when adding ImageAnntation
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-884 | Implement ability to add Image annotation to Diagrams | Feature |
+| ANNOTATIONNET-1241 | Add overloads for Annotator Remove Method | Improvement |
+| ANNOTATIONNET-1248 | Implement image extracting to ImageAnnotation | Improvement |
+| ANNOTATIONNET-1240 | Fix Dwg File Support | Bug |
+| ANNOTATIONNET-1242 | Distance annotation was added in wrong place in jpg file | Bug |
+| ANNOTATIONNET-1243 | Font color was changed after removing text redaction annotation | Bug |
+| ANNOTATIONNET-1245 | Remove residual files after Image Annotation work | Bug |
+| ANNOTATIONNET-1246 | Encrypted SpreadSheet(Cells) files throws exception | Bug |
+| ANNOTATIONNET-1247 | Issue with AnnotationType byte Flag | Bug |
+| ANNOTATIONNET-1257 | Exception while deleting work files when adding ImageAnntation | Bug |
 
   
 

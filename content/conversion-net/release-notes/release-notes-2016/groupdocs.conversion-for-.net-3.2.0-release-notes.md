@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-3-2-0-release-notes
 url: conversion/net/groupdocs-conversion-for-net-3-2-0-release-notes
 title: GroupDocs.Conversion For .NET 3.2.0 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -27,137 +27,29 @@ These are improvements and fixes in this regular monthly release. The most notab
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-684
-
-When converting to PDF return each page in separate stream
-
-New Feature
-
-CONVERSIONNET-685
-
-When converting to HTML return each page in separate stream
-
-New Feature
-
-CONVERSIONNET-723
-
-Place watermark in the converted document
-
-New Feature
-
-CONVERSIONNET-724
-
-Add support for converting to PSD format
-
-New Feature
-
-CONVERSIONNET-725
-
-Add support for converting from PSD format
-
-New Feature
-
-CONVERSIONNET-789
-
-Implement ConversionCompleted event with conversion details
-
-New Feature
-
-CONVERSIONNET-807
-
-ConversionStart event
-
-New Feature
-
-CONVERSIONNET-812
-
-Introducing two public interfaces IConversionProgressListener and IConversionStatusListener
-
-New Feature
-
-CONVERSIONNET-816
-
-Show grid lines when converting Excel files
-
-New Feature
-
-CONVERSIONNET-817
-
-Show hidden sheets when converting Excel files
-
-New Feature
-
-CONVERSIONNET-765
-
-Return conversion guid in ConversionProgressEventArgs
-
-Improvement
-
-CONVERSIONNET-710
-
-Client Response - In-Proper conversion From PPTX to PDF, Image and Word Document formats
-
-Bug
-
-CONVERSIONNET-722
-
-Exception when converting from ODP to PPT and PPS
-
-Bug
-
-CONVERSIONNET-734
-
-While Converting Xlsx file to HTML with HtmlSaveOptions Specific Pages (Sheets) does not work
-
-Bug
-
-CONVERSIONNET-740
-
-Client Response - HTML to Doc and Docx is not proper for Headings and contents are mixed
-
-Bug
-
-CONVERSIONNET-749
-
-Client Response - Only first page converts to PNG from TIF file (With and Without License)
-
-Bug
-
-CONVERSIONNET-750
-
-Client Response - Convert to HTML from Excel, PDF, MS Word overlaps the images AND some of Words with styling
-
-Bug
-
-CONVERSIONNET-757
-
-Can not find CallBack function to get Conversion Progress for MVC/WebForms Applications
-
-Bug
-
-CONVERSIONNET-767
-
-Client Respose - Could not open the file stream on azure.
-
-Bug
-
-CONVERSIONNET-782
-
-Client Response - FileType not supported Exceptions are not handled
-
-Bug
-
-CONVERSIONNET-783
-
-Client Response - Error for Empty Input Documents as Stream for Conversion
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-684 | When converting to PDF return each page in separate stream | New Feature |
+| CONVERSIONNET-685 | When converting to HTML return each page in separate stream | New Feature |
+| CONVERSIONNET-723 | Place watermark in the converted document | New Feature |
+| CONVERSIONNET-724 | Add support for converting to PSD format | New Feature |
+| CONVERSIONNET-725 | Add support for converting from PSD format | New Feature |
+| CONVERSIONNET-789 | Implement ConversionCompleted event with conversion details | New Feature |
+| CONVERSIONNET-807 | ConversionStart event | New Feature |
+| CONVERSIONNET-812 | Introducing two public interfaces IConversionProgressListener and IConversionStatusListener | New Feature |
+| CONVERSIONNET-816 | Show grid lines when converting Excel files | New Feature |
+| CONVERSIONNET-817 | Show hidden sheets when converting Excel files | New Feature |
+| CONVERSIONNET-765 | Return conversion guid in ConversionProgressEventArgs | Improvement |
+| CONVERSIONNET-710 | Client Response - In-Proper conversion From PPTX to PDF, Image and Word Document formats | Bug |
+| CONVERSIONNET-722 | Exception when converting from ODP to PPT and PPS | Bug |
+| CONVERSIONNET-734 | While Converting Xlsx file to HTML with HtmlSaveOptions Specific Pages (Sheets) does not work | Bug |
+| CONVERSIONNET-740 | Client Response - HTML to Doc and Docx is not proper for Headings and contents are mixed | Bug |
+| CONVERSIONNET-749 | Client Response - Only first page converts to PNG from TIF file (With and Without License) | Bug |
+| CONVERSIONNET-750 | Client Response - Convert to HTML from Excel, PDF, MS Word overlaps the images AND some of Words with styling | Bug |
+| CONVERSIONNET-757 | Can not find CallBack function to get Conversion Progress for MVC/WebForms Applications | Bug |
+| CONVERSIONNET-767 | Client Respose - Could not open the file stream on azure. | Bug |
+| CONVERSIONNET-782 | Client Response - FileType not supported Exceptions are not handled | Bug |
+| CONVERSIONNET-783 | Client Response - Error for Empty Input Documents as Stream for Conversion | Bug |
 
 ## Public API and Backward Incompatible Changes
 

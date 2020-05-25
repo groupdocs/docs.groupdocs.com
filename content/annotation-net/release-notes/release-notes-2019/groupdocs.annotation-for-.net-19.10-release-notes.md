@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-19-10-release-notes
 url: annotation/net/groupdocs-annotation-for-net-19-10-release-notes
 title: GroupDocs.Annotation for .NET 19.10 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -20,35 +20,12 @@ Also were fixed a couple of issues listed below
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-1096
-
-Add .NET Standard 2.0 support
-
-Feature
-
-ANNOTATIONNET-1103
-
-Issue with saving formats in Presentations
-
-Bug
-
-ANNOTATIONNET-1104 
-
-Issue with Word Processing documents cleanup
-
-Bug
-
-ANNOTATIONNET-1106
-
-Issue with cleanup Link annotation on Presentations
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-1096 | Add .NET Standard 2.0 support | Feature |
+| ANNOTATIONNET-1103 | Issue with saving formats in Presentations | Bug |
+| ANNOTATIONNET-1104  | Issue with Word Processing documents cleanup | Bug |
+| ANNOTATIONNET-1106 | Issue with cleanup Link annotation on Presentations | Bug |
 
 # Public API and Backward Incompatible Changes
 

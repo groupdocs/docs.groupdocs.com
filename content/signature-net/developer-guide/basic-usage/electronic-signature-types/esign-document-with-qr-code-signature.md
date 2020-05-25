@@ -3,7 +3,7 @@ id: esign-document-with-qr-code-signature
 url: signature/net/esign-document-with-qr-code-signature
 title: eSign document with QR-code signature
 weight: 6
-description: This article explains how sign documents with electronic signature as QR-code on document page with GroupDocs.Signature API.
+description: "This article explains how sign documents with electronic signature as QR-code on document page with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -18,20 +18,9 @@ QR-code (or Quick Response code) is a sort of two-dimensional [barcode](https:/
 
 [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) allows to eSign documents with QR-codes of various types that is listed in a table below. 
 
- 
-
-Aztec code
-
-DataMatrix code
-
-GS1 DataMatrix 
-
-GS1 QR code 
-
-QR
-
-**Application**
-
+|   | Aztec code | DataMatrix code | GS1 DataMatrix  | GS1 QR code  | QR |
+| --- | --- | --- | --- | --- | --- |
+| **Application** | 
 *   transport and ticketing;
 *   in airline industry for electronic boarding passes;  
     
@@ -42,6 +31,8 @@ QR
 *   medicine - patient identification wristbands  
     and labels for unit-of-use medications etc.
 
+ | 
+
 *   printed media such as labels and letters;
 *   industrial engineering purposes - marking  
     components etc;  
@@ -49,7 +40,7 @@ QR
 *   food industry - to prevent food products  
     being packaged and dated incorrectly;
 
-Used in
+ | Used in
 
 *   Healthcare;
 *   Government;
@@ -63,43 +54,19 @@ Encodes item additional information, such as:
 *   date of manufacture;
 *   etc.
 
-Userd in marketing to encode  
+ | Userd in marketing to encode  
 additional item information  
-on the package
-
-Widely used in automotive industry  
+on the package | Widely used in automotive industry  
 and mobile applications. Useful for encoding  
-large amount of data characters and specific URLs.
-
-**Length**
-
-3067 alphanumeric,  
+large amount of data characters and specific URLs. |
+| **Length** | 3067 alphanumeric,  
 3832 numeric,  
-1914 bytes
-
-2335 alphanumeric, 3116 numeric
-
-2335 alphanumeric 3116 numeric,  
-1556 bytes
-
-7089 alphanumeric 4296 numeric,  
-2953 bytes
-
-4296 alphanumeric,  
+1914 bytes | 2335 alphanumeric, 3116 numeric | 2335 alphanumeric 3116 numeric,  
+1556 bytes | 7089 alphanumeric 4296 numeric,  
+2953 bytes | 4296 alphanumeric,  
 7089 numeric,  
-2953 bytes
-
-**Example**
-
-![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/Aztec.png?version=1&modificationDate=1581415722000&api=v2)
-
-![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/DataMatrix.png?version=1&modificationDate=1581416613000&api=v2)
-
-![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/GS1%20DataMatrix.png?version=1&modificationDate=1581419522000&api=v2)
-
-![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/GS1%20QR.png?version=1&modificationDate=1581419623000&api=v2)
-
-![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/QR%20Code%202.png?version=1&modificationDate=1581412288000&api=v2)
+2953 bytes |
+| **Example** | ![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/Aztec.png?version=1&modificationDate=1581415722000&api=v2) | ![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/DataMatrix.png?version=1&modificationDate=1581416613000&api=v2) | ![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/GS1%20DataMatrix.png?version=1&modificationDate=1581419522000&api=v2) | ![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/GS1%20QR.png?version=1&modificationDate=1581419623000&api=v2) | ![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/QR%20Code%202.png?version=1&modificationDate=1581412288000&api=v2) |
 
 While adding QR-code electronic signature to document GroupDocs.Signature the main settings are text to be encoded and QR-code [type](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/qrcodetypes/fields/index) which should be specified via [QrCodeSignOptions](https://apireference.groupdocs.com/net/signature/groupdocs.signature.options/qrcodesignoptions) class.   
 

@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-18-8-release-notes
 url: viewer/net/groupdocs-viewer-for-net-18-8-release-notes
 title: GroupDocs.Viewer for .NET 18.8 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -20,101 +20,23 @@ There are 15 features, improvements, and fixes in this regular monthly release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1447
-
-Time interval option for rendering MS Project documents
-
-New feature
-
-VIEWERNET-1698
-
-Security improvements
-
-Improvement
-
-VIEWERNET-1685
-
-Rendering comments from Presentation documents into images when ExtractText option is enabled
-
-Improvement
-
-VIEWERNET-1670
-
-Retrieve list of resources only when loading page from cache
-
-Improvement
-
-VIEWERNET-1669
-
-Reduce count of calls to storage methods
-
-Improvement
-
-VIEWERNET-1664
-
-Extend support for DefaultFontName option for MS Project documents rendering to image and HTML
-
-Improvement
-
-VIEWERNET-1658
-
-Add ForcePasswordValidation configuration via configs
-
-Improvement
-
-VIEWERNET-1594
-
-Extend support for rendering comments from ODP document format
-
-Improvement
-
-VIEWERNET-1697
-
-Deadlock when rendering documents in multiple processes
-
-Bug
-
-VIEWERNET-1687
-
-An exception raises while retrieving HTML pages from the source document
-
-Bug
-
-VIEWERNET-1684
-
-Relative and absolute resource paths in the same HTML page
-
-Bug
-
-VIEWERNET-1682
-
-Exception when the file name contains curly braces
-
-Bug
-
-VIEWERNET-1465
-
-Legend is shifted and incorrect formatting when rendering PPTX as HTML
-
-Bug
-
-VIEWERNET-1462
-
-Incorrect font when rendering PPTX as HTML
-
-Bug
-
-VIEWERNET-935
-
-Incorrect character position in HTML mode in Safari for iOS
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1447 | Time interval option for rendering MS Project documents | New feature |
+| VIEWERNET-1698 | Security improvements | Improvement |
+| VIEWERNET-1685 | Rendering comments from Presentation documents into images when ExtractText option is enabled | Improvement |
+| VIEWERNET-1670 | Retrieve list of resources only when loading page from cache | Improvement |
+| VIEWERNET-1669 | Reduce count of calls to storage methods | Improvement |
+| VIEWERNET-1664 | Extend support for DefaultFontName option for MS Project documents rendering to image and HTML | Improvement |
+| VIEWERNET-1658 | Add ForcePasswordValidation configuration via configs | Improvement |
+| VIEWERNET-1594 | Extend support for rendering comments from ODP document format | Improvement |
+| VIEWERNET-1697 | Deadlock when rendering documents in multiple processes | Bug |
+| VIEWERNET-1687 | An exception raises while retrieving HTML pages from the source document | Bug |
+| VIEWERNET-1684 | Relative and absolute resource paths in the same HTML page | Bug |
+| VIEWERNET-1682 | Exception when the file name contains curly braces | Bug |
+| VIEWERNET-1465 | Legend is shifted and incorrect formatting when rendering PPTX as HTML | Bug |
+| VIEWERNET-1462 | Incorrect font when rendering PPTX as HTML | Bug |
+| VIEWERNET-935 | Incorrect character position in HTML mode in Safari for iOS | Bug |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: fuzzy-search
 url: search/net/fuzzy-search
 title: Fuzzy search
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

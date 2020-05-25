@@ -3,7 +3,7 @@ id: system-requirements
 url: merger/net/system-requirements
 title: System Requirements
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False

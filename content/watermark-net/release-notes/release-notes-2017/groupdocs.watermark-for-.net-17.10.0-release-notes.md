@@ -19,23 +19,10 @@ There are the following features and enhancements in this release:
 
 ## All Changes
 
-Key 
-
-Summary
-
-Category
-
-WATERMARKNET-686
-
-Implement the ability to work with attachments in a PDF document 
-
-New Feature 
-
-WATERMARKNET-687 
-
-Implement the ability to work with attachments in an Excel document 
-
-New Feature 
+| Key  | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-686 | Implement the ability to work with attachments in a PDF document  | New Feature  |
+| WATERMARKNET-687  | Implement the ability to work with attachments in an Excel document  | New Feature  |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: search-for-encrypted-text-in-metadata-signatures
 url: signature/net/search-for-encrypted-text-in-metadata-signatures
 title: Search for encrypted text in Metadata signatures
 weight: 4
-description:  This article explains how to search for encrypted text electronic signatures in the document metadata. This topic contains example of using standard encryption and search for encrypted text in the document metadata with further decryption by GroupDocs.Signature API.
+description: " This article explains how to search for encrypted text electronic signatures in the document metadata. This topic contains example of using standard encryption and search for encrypted text in the document metadata with further decryption by GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

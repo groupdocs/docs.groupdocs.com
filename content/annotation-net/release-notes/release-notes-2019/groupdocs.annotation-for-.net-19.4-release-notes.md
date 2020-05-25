@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-19-4-release-notes
 url: annotation/net/groupdocs-annotation-for-net-19-4-release-notes
 title: GroupDocs.Annotation for .NET 19.4 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -24,59 +24,16 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-941
-
-Implement Link annotation for Slides
-
-Feature
-
-ANNOTATIONNET-942
-
-Implement Link annotation for PDF
-
-Feature
-
-ANNOTATIONNET-943
-
-Implement Link annotation for Words
-
-Feature
-
-ANNOTATIONNET-964
-
-GetPdfFile method doesn't implement converting documents with password
-
-Improvement
-
-ANNOTATIONNET-950
-
-Remove annotations fails with Cells document
-
-Bug
-
-ANNOTATIONNET-952
-
-Documents with password are not converted to PDF
-
-Bug
-
-ANNOTATIONNET-963
-
-GetPdfFile method returns broken file
-
-Bug
-
-ANNOTATIONNET-965
-
-ImportAnnotations method doesn't close source stream for Tiff files
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-941 | Implement Link annotation for Slides | Feature |
+| ANNOTATIONNET-942 | Implement Link annotation for PDF | Feature |
+| ANNOTATIONNET-943 | Implement Link annotation for Words | Feature |
+| ANNOTATIONNET-964 | GetPdfFile method doesn't implement converting documents with password | Improvement |
+| ANNOTATIONNET-950 | Remove annotations fails with Cells document | Bug |
+| ANNOTATIONNET-952 | Documents with password are not converted to PDF | Bug |
+| ANNOTATIONNET-963 | GetPdfFile method returns broken file | Bug |
+| ANNOTATIONNET-965 | ImportAnnotations method doesn't close source stream for Tiff files | Bug |
 
 ## Public API and Backward Incompatible Change
 

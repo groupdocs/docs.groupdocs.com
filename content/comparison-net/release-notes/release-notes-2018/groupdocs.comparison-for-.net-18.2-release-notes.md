@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-18-2-release-notes
 url: comparison/net/groupdocs-comparison-for-net-18-2-release-notes
 title: GroupDocs.Comparison for .NET 18.2 Release Notes
 weight: 11
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -21,41 +21,13 @@ Below the list of the most notable features improvements and fixes for GroupDocs
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-1478
-
-Implement Comparison Imaging
-
-New Feature
-
-COMPARISONNET-1477
-
-Implement the process absorbing of tables with merged cells
-
-New Feature
-
-COMPARISONNET-1485
-
-Improve displaying of tables in PDF
-
-Improvement
-
-COMPARISONNET-1495
-
-Fix issue with filled cells on PDF
-
-Bug
-
-COMPARISONNET-1470
-
-PDF Comparison issue
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-1478 | Implement Comparison Imaging | New Feature |
+| COMPARISONNET-1477 | Implement the process absorbing of tables with merged cells | New Feature |
+| COMPARISONNET-1485 | Improve displaying of tables in PDF | Improvement |
+| COMPARISONNET-1495 | Fix issue with filled cells on PDF | Bug |
+| COMPARISONNET-1470 | PDF Comparison issue | Bug |
 
 # Public API and Backward Incompatible Changes
 

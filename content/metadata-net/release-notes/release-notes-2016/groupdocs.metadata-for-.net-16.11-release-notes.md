@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-16-11-release-notes
 url: metadata/net/groupdocs-metadata-for-net-16-11-release-notes
 title: GroupDocs.Metadata for .NET 16.11 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -28,77 +28,7 @@ There are 7 features and 4 enhancements in this regular monthly release. The mos
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATANET-1197
-
-Add support of xlsm, xlt, xltx, xltm Excel documents
-
- Enhancement
-
-METADATANET-1199
-
-Add support of pot, potx PowerPoint documents
-
-Enhancement
-
-METADATANET-1253
-
-Read additional properties of MPEG audio header like HeaderPosition, Bitrate, ChannelMode, Copyright etc
-
-Enhancement
-
-METADATANET-1258
-
-Ability to read and write common values like Artist, Album, Title, TrackNumber, Year etc in ID3v2 tag
-
-Enhancement
-
-METADATANET-712
-
-Ability to detect WMF image format
-
- New Feature
-
-METADATANET-960
-
-Ability to detect WebP image format
-
-New Feature
-
-METADATANET-1244
-
-Ability to remove ID3v2 tag in Mp3 format
-
-New Feature
-
-METADATANET-1249
-
-Ability to detect MIME type of the specific file
-
-New Feature
-
-METADATANET-1266
-
-Ability to detect EMF image format
-
-New Feature
-
-METADATANET-1276
-
-Ability to read content type properties in Excel document
-
-New Feature
-
-METADATANET-1278
-
-Ability to retrieve image size
-
-New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1197</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Add support of xlsm, xlt, xltx, xltm Excel documents</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1199</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Add support of pot, potx PowerPoint documents</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1253</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Read additional properties of MPEG audio header like HeaderPosition, Bitrate, ChannelMode, Copyright etc</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1258</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read and write common values like Artist, Album, Title, TrackNumber, Year etc in ID3v2 tag</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-712</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to detect WMF image format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-960</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to detect WebP image format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1244</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to remove ID3v2 tag in Mp3 format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1249</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to detect MIME type of the specific file</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1266</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to detect EMF image format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1276</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read content type properties in Excel document</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1278</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to retrieve image size</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-17-4-0-release-notes
 url: signature/net/groupdocs-signature-for-net-17-4-0-release-notes
 title: GroupDocs.Signature for .NET 17.4.0 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -28,78 +28,19 @@ There are about 15 improvements, new features and fixes in this regular release.
 ## Full List of Issues Covering all Changes in this Release
 
   
-
-SIGNATURENET-2347
-
-Implement Visible flag of Pdf Digital Signature
-
-New Feature
-
-SIGNATURENET-2350
-
-Implement ability to protect signed document with password
-
-New Feature
-
-SIGNATURENET-2351
-
-Implement password protection for signed Pdf Documents
-
-New Feature
-
-SIGNATURENET-2353
-
-Implement password protection for signed Cells Documents
-
-New Feature
-
-SIGNATURENET-2355
-
-Implement password protection for signed Words Documents
-
-New Feature
-
-SIGNATURENET-2357
-
-Implement password protection for signed Slides Documents
-
-New Feature
-
-SIGNATURENET-2595
-
-Implement Font StrikeOut property for all Text Signature Implementation for supported Document Types
-
-Improvement
-
-SIGNATURENET-2741
-
-Implement alternative Appearance features of Image Signature for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2758
-
-Implement alternative Appearance features of Image Signature for Cells Documents
-
-New Feature
-
-SIGNATURENET-2761
-
-Implement alternative Appearance features of Image Signature for Slides Documents
-
-New Feature
-
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-2764
-
-Implement alternative Appearance features of Image Signature for Words Documents
-
-New Feature
+| SIGNATURENET-2347 | Implement Visible flag of Pdf Digital Signature | New Feature |
+| SIGNATURENET-2350 | Implement ability to protect signed document with password | New Feature |
+| SIGNATURENET-2351 | Implement password protection for signed Pdf Documents | New Feature |
+| SIGNATURENET-2353 | Implement password protection for signed Cells Documents | New Feature |
+| SIGNATURENET-2355 | Implement password protection for signed Words Documents | New Feature |
+| SIGNATURENET-2357 | Implement password protection for signed Slides Documents | New Feature |
+| SIGNATURENET-2595 | Implement Font StrikeOut property for all Text Signature Implementation for supported Document Types | Improvement |
+| SIGNATURENET-2741 | Implement alternative Appearance features of Image Signature for Pdf Documents | New Feature |
+| SIGNATURENET-2758 | Implement alternative Appearance features of Image Signature for Cells Documents | New Feature |
+| SIGNATURENET-2761 | Implement alternative Appearance features of Image Signature for Slides Documents | New Feature |
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2764 | Implement alternative Appearance features of Image Signature for Words Documents | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

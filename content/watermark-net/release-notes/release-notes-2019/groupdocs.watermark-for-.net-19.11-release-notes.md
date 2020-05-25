@@ -28,41 +28,13 @@ There are the following features, enhancements, and bug fixes in this release:
 
 ## Full List of Issues Covering all Changes in this Release 
 
-Key
-
-Summary
-
-Category
-
-WATERMARKNET-1143
-
-FindWatermarks method throws System.NullReferenceException
-
-Bug
-
-WATERMARKNET-1172
-
-Add FormatFamily enumeration
-
-Improvement
-
-WATERMARKNET-1170
-
-Add Password property to the common LoadOptions
-
-Improvement
-
-WATERMARKNET-1171
-
-Throw FontNotFoundException when adding TextWatermark with non-existence font to PDF document
-
-Improvement
-
-WATERMARKNET-1209
-
-Add MultiframeImageWatermarkOptions
-
-Improvement
+| Key | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-1143 | FindWatermarks method throws System.NullReferenceException | Bug |
+| WATERMARKNET-1172 | Add FormatFamily enumeration | Improvement |
+| WATERMARKNET-1170 | Add Password property to the common LoadOptions | Improvement |
+| WATERMARKNET-1171 | Throw FontNotFoundException when adding TextWatermark with non-existence font to PDF document | Improvement |
+| WATERMARKNET-1209 | Add MultiframeImageWatermarkOptions | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

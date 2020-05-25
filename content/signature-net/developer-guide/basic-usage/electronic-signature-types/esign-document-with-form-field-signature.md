@@ -3,7 +3,7 @@ id: esign-document-with-form-field-signature
 url: signature/net/esign-document-with-form-field-signature
 title: eSign document with Form Field signature
 weight: 3
-description: This article explains how to add various types of Form Field signatures on document page with options on component positioning, alignment and other visual options with GroupDocs.Signature
+description: "This article explains how to add various types of Form Field signatures on document page with options on component positioning, alignment and other visual options with GroupDocs.Signature"
 keywords: form fields
 productName: GroupDocs.Signature for .NET
 hideChildren: False

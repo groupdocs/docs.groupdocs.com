@@ -3,7 +3,7 @@ id: migration-notes
 url: merger/net/migration-notes
 title: Migration Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False

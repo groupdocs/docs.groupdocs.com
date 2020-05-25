@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-19-11-release-notes
 url: metadata/net/groupdocs-metadata-for-net-19-11-release-notes
 title: GroupDocs.Metadata for .NET 19.11 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -16,17 +16,9 @@ hideChildren: False
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-METADATANET-3000
-
-New Public API
-
-Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-3000 | New Public API | Feature |
 
 ## Public API and Backward Incompatible Changes
 
@@ -37,7 +29,7 @@ Feature
 1.  Have been moved to the **GroupDocs.Metadata.Legacy** namespace
 2.  Marked as **Obsolete** with the following message: *This class/interface/enum is obsolete and will be removed in future releases.*
 
-###### div.rbtoc1590146414922 { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }div.rbtoc1590146414922 ul { list-style-type: disc; list-style-image: none; margin-left: 0px; }div.rbtoc1590146414922 li { margin-left: 0px; padding-left: 0px; }
+###### div.rbtoc1590388667856 { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }div.rbtoc1590388667856 ul { list-style-type: disc; list-style-image: none; margin-left: 0px; }div.rbtoc1590388667856 li { margin-left: 0px; padding-left: 0px; }
 
 ###### GroupDocs.Metadata
 

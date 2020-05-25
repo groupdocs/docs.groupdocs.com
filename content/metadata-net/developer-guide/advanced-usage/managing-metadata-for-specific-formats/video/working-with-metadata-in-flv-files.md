@@ -3,7 +3,7 @@ id: working-with-metadata-in-flv-files
 url: metadata/net/working-with-metadata-in-flv-files
 title: Working with metadata in FLV files
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

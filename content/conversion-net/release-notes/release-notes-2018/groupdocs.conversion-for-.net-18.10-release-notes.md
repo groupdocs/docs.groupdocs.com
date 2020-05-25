@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-18-10-release-notes
 url: conversion/net/groupdocs-conversion-for-net-18-10-release-notes
 title: GroupDocs.Conversion for .NET 18.10 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -23,35 +23,12 @@ This regular monthly release contains several improvements and bug fixes. Most n
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-1957
-
-Implement option for removing embedded files in Pdf
-
-Improvement
-
-CONVERSIONNET-1873
-
-The image inside presentation isn't the same in ODP output
-
-Bug
-
-CONVERSIONNET-1874
-
-Missing border in ODS Excel output
-
-Bug
-
-CONVERSIONNET-1923
-
-XLSX file eats almost 2 GB RAM while converting and the process never completes
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-1957 | Implement option for removing embedded files in Pdf | Improvement |
+| CONVERSIONNET-1873 | The image inside presentation isn't the same in ODP output | Bug |
+| CONVERSIONNET-1874 | Missing border in ODS Excel output | Bug |
+| CONVERSIONNET-1923 | XLSX file eats almost 2 GB RAM while converting and the process never completes | Bug |
 
 ## Public API and Backward Incompatible Changes
 

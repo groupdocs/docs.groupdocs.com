@@ -3,7 +3,7 @@ id: load-password-protected-document
 url: merger/net/load-password-protected-document
 title: Load password-protected document
 weight: 2
-description: This article explains how to load password-protected PDF, Word, Excel, PowerPoint documents when using GroupDocs.Merger for .NET.
+description: "This article explains how to load password-protected PDF, Word, Excel, PowerPoint documents when using GroupDocs.Merger for .NET."
 keywords: Load password-protected document, Load protected document with GroupDocs.Merger
 productName: GroupDocs.Merger for .NET
 hideChildren: False

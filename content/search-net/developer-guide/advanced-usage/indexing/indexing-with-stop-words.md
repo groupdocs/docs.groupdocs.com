@@ -3,7 +3,7 @@ id: indexing-with-stop-words
 url: search/net/indexing-with-stop-words
 title: Indexing with stop words
 weight: 13
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

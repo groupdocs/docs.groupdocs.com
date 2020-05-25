@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-19-11-release-notes
 url: editor/net/groupdocs-editor-for-net-19-11-release-notes
 title: GroupDocs.Editor for .NET 19.11 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -20,29 +20,11 @@ Also, we updated online documentation (API references), some XML docs and NUSPEC
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1409
-
-Add .NET Standard 2.0 support
-
-Feature
-
-EDITORNET-1410
-
-Generate new ProjectGuid and UpgradeCode for MSI package
-
-Improvement
-
-EDITORNET-1411
-
-Updates and improvements in XML comments, documentation and NUSPEC description
-
-Improvement
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1409 | Add .NET Standard 2.0 support | Feature |
+| EDITORNET-1410 | Generate new ProjectGuid and UpgradeCode for MSI package | Improvement |
+| EDITORNET-1411 | Updates and improvements in XML comments, documentation and NUSPEC description | Improvement |
 
 # Public API and Backward Incompatible Changes
 

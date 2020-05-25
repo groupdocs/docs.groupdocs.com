@@ -16,37 +16,12 @@ There are the following improvements in this release:
 
 # Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-        
-
-WATERMARKNET-1264
-
-Footer and header watermark adds line break using .NET
-
-Bug
-
-WATERMARKNET-772
-
-Allow to edit minor shape properties in Visio documents
-
-Improvement
-
-WATERMARKNET-1268
-
-Watermarking of Word document uses existing paragraph if available
-
-Improvement
-
-WATERMARKNET-1269
-
-After removing found watermark in Word document, the empty parent paragraph is removed too
-
-Improvement
+| Key | Summary | Issue Type |
+| --- | --- | --- |        
+| WATERMARKNET-1264 | Footer and header watermark adds line break using .NET | Bug |
+| WATERMARKNET-772 | Allow to edit minor shape properties in Visio documents | Improvement |
+| WATERMARKNET-1268 | Watermarking of Word document uses existing paragraph if available | Improvement |
+| WATERMARKNET-1269 | After removing found watermark in Word document, the empty parent paragraph is removed too | Improvement |
 
 # Public API and Backward Incompatible Changes
 

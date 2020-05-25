@@ -3,7 +3,7 @@ id: features-overview
 url: metadata/net/features-overview
 title: Features Overview
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

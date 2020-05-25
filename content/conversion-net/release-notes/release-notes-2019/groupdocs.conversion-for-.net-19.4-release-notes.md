@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-19-4-release-notes
 url: conversion/net/groupdocs-conversion-for-net-19-4-release-notes
 title: GroupDocs.Conversion for .NET 19.4 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -21,71 +21,18 @@ This regular monthly release contains 5+ improvements and bug fixes. Most notabl
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-2980
-
-Feature
-
-Implement automatic naming when saving converted document to file
-
-CONVERSIONNET-2983
-
-Feature
-
-Implement conversion from Cmx
-
-CONVERSIONNET-3011
-
-Improvement
-
-Implement getting page orientation for specific page
-
-CONVERSIONNET-1747
-
-Bug
-
-HTML output file is not rendered properly in Edge
-
-CONVERSIONNET-1919
-
-Bug
-
-Arrows point in the wrong direction in ODP output
-
-CONVERSIONNET-2964
-
-Bug
-
-AutoCAD(.ifc) to Image conversion issue
-
-CONVERSIONNET-2995
-
-Bug
-
-Evaluation message is not visible when converting to ODS
-
-CONVERSIONNET-3002
-
-Bug
-
-Incorrect Html after applying evaluation message when converting from Email
-
-CONVERSIONNET-3003
-
-Bug
-
-Incorrect Html structure after applying watermark over Html
-
-CONVERSIONNET-3048
-
-Bug
-
-GroupDocs.Conversion with several GroupDocs products in same project throws exception
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-2980 | Feature | Implement automatic naming when saving converted document to file |
+| CONVERSIONNET-2983 | Feature | Implement conversion from Cmx |
+| CONVERSIONNET-3011 | Improvement | Implement getting page orientation for specific page |
+| CONVERSIONNET-1747 | Bug | HTML output file is not rendered properly in Edge |
+| CONVERSIONNET-1919 | Bug | Arrows point in the wrong direction in ODP output |
+| CONVERSIONNET-2964 | Bug | AutoCAD(.ifc) to Image conversion issue |
+| CONVERSIONNET-2995 | Bug | Evaluation message is not visible when converting to ODS |
+| CONVERSIONNET-3002 | Bug | Incorrect Html after applying evaluation message when converting from Email |
+| CONVERSIONNET-3003 | Bug | Incorrect Html structure after applying watermark over Html |
+| CONVERSIONNET-3048 | Bug | GroupDocs.Conversion with several GroupDocs products in same project throws exception |
 
 ##   
 Public API and Backward Incompatible Changes

@@ -19,23 +19,10 @@ There are following features in this first release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key 
-
-Summary
-
-Category
-
-WATERMARKNET-706
-
-Support for EMLX and OFT email formats 
-
-New Feature 
-
-WATERMARKNET-712 
-
-Ability to edit Excel document objects that can be considered as watermarks 
-
-New Feature 
+| Key  | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-706 | Support for EMLX and OFT email formats  | New Feature  |
+| WATERMARKNET-712  | Ability to edit Excel document objects that can be considered as watermarks  | New Feature  |
 
 ## Public API and Backward Incompatible Changes
 

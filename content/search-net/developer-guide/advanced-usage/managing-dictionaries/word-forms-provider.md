@@ -3,7 +3,7 @@ id: word-forms-provider
 url: search/net/word-forms-provider
 title: Word forms provider
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

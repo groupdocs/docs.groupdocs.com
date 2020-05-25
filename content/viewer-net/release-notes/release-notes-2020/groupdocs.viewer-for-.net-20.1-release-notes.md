@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-20-1-release-notes
 url: viewer/net/groupdocs-viewer-for-net-20-1-release-notes
 title: GroupDocs.Viewer for .NET 20.1 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -21,41 +21,13 @@ There are 5 features, improvements, and bug-fixes in this release, most notable 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-2045
-
-Add OpenDocument Graphic Template (.otg) file format support
-
-Feature
-
-VIEWERNET-2240
-
-Improve rendering presentations to responsive HTML 
-
-Improvement
-
-VIEWERNET-2276
-
-MSI package is not signed
-
-Bug
-
-VIEWERNET-2277
-
-Resource loading timeout is not working for some files
-
-Bug
-
-VIEWERNET-2282
-
-Parameter is not valid exception when resizing image
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-2045 | Add OpenDocument Graphic Template (.otg) file format support | Feature |
+| VIEWERNET-2240 | Improve rendering presentations to responsive HTML  | Improvement |
+| VIEWERNET-2276 | MSI package is not signed | Bug |
+| VIEWERNET-2277 | Resource loading timeout is not working for some files | Bug |
+| VIEWERNET-2282 | Parameter is not valid exception when resizing image | Bug |
 
 ## Public API and Backward Incompatible Changes
 

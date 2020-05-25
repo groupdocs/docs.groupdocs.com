@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-17-8-0-release-notes
 url: annotation/net/groupdocs-annotation-for-net-17-8-0-release-notes
 title: GroupDocs.Annotation for .NET 17.8.0 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -22,113 +22,25 @@ Below the list of  new features and fixed bugs in this regular monthly release 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-490
-
-Implement clean of distance annotation
-
-New Feature
-
-ANNOTATIONNET-489
-
-Implement export of distance annotation
-
-New Feature
-
-ANNOTATIONNET-488
-
-Implement import of distance annotation
-
-New Feature
-
-ANNOTATIONNET-487
-
-Implement distance annotation for slides
-
-New Feature
-
-ANNOTATIONNET-485
-
-Simplify the cleaning of the document for the correct import of text annotations
-
-Improvement
-
-ANNOTATIONNET-483
-
-Exception thrown when deleting annotation with multiple replies
-
-Bug
-
-ANNOTATIONNET-482
-
-Import highlight annotation from slides
-
-New Feature
-
-ANNOTATIONNET-481
-
-Import underline annotation from slides
-
-New Feature
-
-ANNOTATIONNET-480
-
-Import strikeout annotation from slides
-
-New Feature
-
-ANNOTATIONNET-479
-
-Import text annotations from slides
-
-New Feature
-
-ANNOTATIONNET-477
-
-Implement opacity for text annotations in Words
-
-New Feature
-
-ANNOTATIONNET-475
-
-Implement opacity for text annotations in slides
-
-New Feature
-
-ANNOTATIONNET-473
-
-Export document to word creates multiple comments
-
-Bug
-
-ANNOTATIONNET-471
-
-Change arrow shape for arrow annotation
-
-Improvement
-
-ANNOTATIONNET-468
-
-Implement underline annotation for slides
-
-New Feature
-
-ANNOTATIONNET-467
-
-Implement strikeout annotation for slides
-
-New Feature
-
-ANNOTATIONNET-466
-
-Implement text annotations for Slides
-
-New Feature
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-490 | Implement clean of distance annotation | New Feature |
+| ANNOTATIONNET-489 | Implement export of distance annotation | New Feature |
+| ANNOTATIONNET-488 | Implement import of distance annotation | New Feature |
+| ANNOTATIONNET-487 | Implement distance annotation for slides | New Feature |
+| ANNOTATIONNET-485 | Simplify the cleaning of the document for the correct import of text annotations | Improvement |
+| ANNOTATIONNET-483 | Exception thrown when deleting annotation with multiple replies | Bug |
+| ANNOTATIONNET-482 | Import highlight annotation from slides | New Feature |
+| ANNOTATIONNET-481 | Import underline annotation from slides | New Feature |
+| ANNOTATIONNET-480 | Import strikeout annotation from slides | New Feature |
+| ANNOTATIONNET-479 | Import text annotations from slides | New Feature |
+| ANNOTATIONNET-477 | Implement opacity for text annotations in Words | New Feature |
+| ANNOTATIONNET-475 | Implement opacity for text annotations in slides | New Feature |
+| ANNOTATIONNET-473 | Export document to word creates multiple comments | Bug |
+| ANNOTATIONNET-471 | Change arrow shape for arrow annotation | Improvement |
+| ANNOTATIONNET-468 | Implement underline annotation for slides | New Feature |
+| ANNOTATIONNET-467 | Implement strikeout annotation for slides | New Feature |
+| ANNOTATIONNET-466 | Implement text annotations for Slides | New Feature |
 
 # Public API and Backward Incompatible Changes
 

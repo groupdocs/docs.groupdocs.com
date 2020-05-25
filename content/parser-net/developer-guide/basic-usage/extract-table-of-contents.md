@@ -21,42 +21,11 @@ IEnumerable<TocItem> GetToc()
 
 [TocItem](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/tocitem) class has the following members:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
-| 
-
-[Depth](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/tocitem/properties/depth)
-
- | 
-
-The depth level.
-
- |
-| 
-
-[PageIndex](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/tocitem/properties/pageindex)
-
- | 
-
-The page index.
-
- |
-| 
-
-[Text](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/tocitem/properties/text)
-
- | 
-
-The text.
-
- |
+| [Depth](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/tocitem/properties/depth) | The depth level. |
+| [PageIndex](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/tocitem/properties/pageindex) | The page index. |
+| [Text](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/tocitem/properties/text) | The text. |
 | TextReader [GetText()](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/tocitem/methods/gettext) | Extract a text from the document to which [TocItem](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/tocitem) object refers. For detail, see [Extract table of contents](Extract%2Btable%2Bof%2Bcontents.html) |
 
 Here are the steps to extract extract table of contents from the document:

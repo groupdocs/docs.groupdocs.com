@@ -3,7 +3,7 @@ id: working-with-bmp-metadata
 url: metadata/net/working-with-bmp-metadata
 title: Working with BMP metadata
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

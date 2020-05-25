@@ -3,7 +3,7 @@ id: search-for-encrypted-text-in-qr-code-signatures
 url: signature/net/search-for-encrypted-text-in-qr-code-signatures
 title: Search for encrypted text in QR-code signatures
 weight: 4
-description:  This article explains how to search for encrypted text in QR-code electronic signatures in the document metadata. This topic contains example of standard encryption usage and searching for encrypted text in the QR-code electronic signature with further decryption by GroupDocs.Signature API.
+description: " This article explains how to search for encrypted text in QR-code electronic signatures in the document metadata. This topic contains example of standard encryption usage and searching for encrypted text in the QR-code electronic signature with further decryption by GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

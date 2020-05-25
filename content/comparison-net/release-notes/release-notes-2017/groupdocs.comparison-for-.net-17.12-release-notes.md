@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-17-12-release-notes
 url: comparison/net/groupdocs-comparison-for-net-17-12-release-notes
 title: GroupDocs.Comparison for .NET 17.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -26,83 +26,7 @@ Below the list of the most notable features improvements and fixes for GroupDocs
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Issue Type**
-
-COMPARISONNET-1454
-
-Comparison.Note:Implement comparison of tables
-
-New Feature
-
-COMPARISONNET-1445
-
-Comparison.PDF: Implement hyperlinks comparing
-
-New Feature
-
-COMPARISONNET-1449
-
-Improve PDF text and columns mapping
-
-Improvement
-
-COMPARISONNET-1447
-
-Comparison.Word:Improvement special cases of word division
-
-Improvement
-
-COMPARISONNET-1443
-
-Improve count of changes on summary page
-
-Improvement
-
-COMPARISONNET-1442
-
-Comparison.PDF: Add processing tables with invisible frames
-
-Improvement
-
-COMPARISONNET-1441
-
-Improve style absorbing of cells, tables, textstates
-
-Improvement
-
-COMPARISONNET-1439
-
-Add intermediate with HyperLink in Words
-
-Improvement
-
-COMPARISONNET-1438
-
-Add intermediate with HyperLink in Note
-
-Improvement
-
-COMPARISONNET-1455
-
-Improve aligner for Comparison.Note
-
-Improvement
-
-COMPARISONNET-1446
-
-Comparison.Pfd: Fix GetChangesFromParagraph method
-
-Bug
-
-COMPARISONNET-1444
-
-Fix bug when some paragraphs align not right
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Issue Type</strong></p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1454</p></td><td class="confluenceTd"><p>Comparison.Note:Implement comparison of tables</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1445</p></td><td class="confluenceTd"><p>Comparison.PDF: Implement hyperlinks comparing</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1449</p></td><td class="confluenceTd"><p>Improve PDF text and columns mapping</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1447</p></td><td class="confluenceTd"><p>Comparison.Word:Improvement special cases of word division</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1443</p></td><td class="confluenceTd"><p>Improve count of changes on summary page</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1442</p></td><td class="confluenceTd"><p>Comparison.PDF: Add processing tables with invisible frames</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1441</p></td><td class="confluenceTd"><p>Improve style absorbing of cells, tables, textstates</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1439</p></td><td class="confluenceTd"><p>Add intermediate with HyperLink in Words</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1438</p></td><td class="confluenceTd"><p>Add intermediate with HyperLink in Note</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1455</p></td><td class="confluenceTd"><p>Improve aligner for Comparison.Note</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1446</p></td><td class="confluenceTd"><p>Comparison.Pfd: Fix GetChangesFromParagraph method</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1444</p></td><td class="confluenceTd"><p>Fix bug when some paragraphs align not right</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

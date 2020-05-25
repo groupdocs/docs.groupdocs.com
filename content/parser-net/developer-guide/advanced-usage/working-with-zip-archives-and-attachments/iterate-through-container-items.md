@@ -17,88 +17,17 @@ IEnumerable<ContainerItem> GetContainer()
 
 This method returns a collection of [ContainerItem](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem) objects:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
-| 
-
-[Name](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/properties/name)
-
- | 
-
-The name of the item.
-
- |
-| [Directory](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/properties/directory) | 
-
-The directory of the item.
-
- |
-| 
-
-[FilePath](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/properties/filepath)
-
- | 
-
-The full path of the item.
-
- |
-| 
-
-[Size](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/properties/size)
-
- | 
-
-The size of the item in bytes.
-
- |
-| 
-
-[Metadata](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/properties/metadata)
-
- | 
-
-The collection of item metadata.
-
- |
-| 
-
-Stream [OpenStream()](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/methods/openstream)
-
- | 
-
-Opens the stream of the item content.
-
- |
-| 
-
-Parser [OpenParser()](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/methods/openparser)
-
- | 
-
-Creates the [Parser](https://apireference.groupdocs.com/net/parser/groupdocs.parser/parser) object for the item content.
-
- |
-| 
-
-Parser [OpenParser(LoadOptions)](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data.containeritem/openparser/methods/1)
-
- | 
-
-Creates the [Parser](https://apireference.groupdocs.com/net/parser/groupdocs.parser/parser) object for the item content with [LoadOptions](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/loadoptions).
-
- |
-| 
-
-Parser [OpenParser(LoadOptions, ParserSettings)](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data.containeritem/openparser/methods/2)
-
- | Creates the [Parser](https://apireference.groupdocs.com/net/parser/groupdocs.parser/parser) object for the item content with [LoadOptions](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/loadoptions) and [ParserSettings](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/parsersettings). |
+| [Name](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/properties/name) | The name of the item. |
+| [Directory](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/properties/directory) | The directory of the item. |
+| [FilePath](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/properties/filepath) | The full path of the item. |
+| [Size](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/properties/size) | The size of the item in bytes. |
+| [Metadata](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/properties/metadata) | The collection of item metadata. |
+| Stream [OpenStream()](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/methods/openstream) | Opens the stream of the item content. |
+| Parser [OpenParser()](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/containeritem/methods/openparser) | Creates the [Parser](https://apireference.groupdocs.com/net/parser/groupdocs.parser/parser) object for the item content. |
+| Parser [OpenParser(LoadOptions)](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data.containeritem/openparser/methods/1) | Creates the [Parser](https://apireference.groupdocs.com/net/parser/groupdocs.parser/parser) object for the item content with [LoadOptions](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/loadoptions). |
+| Parser [OpenParser(LoadOptions, ParserSettings)](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data.containeritem/openparser/methods/2) | Creates the [Parser](https://apireference.groupdocs.com/net/parser/groupdocs.parser/parser) object for the item content with [LoadOptions](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/loadoptions) and [ParserSettings](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/parsersettings). |
 
 Here are the steps to extract container from the document:
 

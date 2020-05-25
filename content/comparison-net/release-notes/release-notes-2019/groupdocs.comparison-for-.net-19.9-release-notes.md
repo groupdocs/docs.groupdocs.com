@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-19-9-release-notes
 url: comparison/net/groupdocs-comparison-for-net-19-9-release-notes
 title: GroupDocs.Comparison for .NET 19.9 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False

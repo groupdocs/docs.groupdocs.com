@@ -3,7 +3,7 @@ id: getting-known-property-descriptors
 url: metadata/net/getting-known-property-descriptors
 title: Getting known property descriptors
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

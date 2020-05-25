@@ -3,7 +3,7 @@ id: home
 url: signature/net
 title: GroupDocs.Signature for .NET
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: True

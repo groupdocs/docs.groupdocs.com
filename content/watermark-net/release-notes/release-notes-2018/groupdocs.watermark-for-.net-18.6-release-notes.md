@@ -19,23 +19,10 @@ There are the following features in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-WATERMARKNET-945
-
-Implement ability to lock watermark in Word documents
-
-New Feature
-
-WATERMARKNET-946
-
-Implement ability to make Word document read-only after applying watermark
-
-New Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-945 | Implement ability to lock watermark in Word documents | New Feature |
+| WATERMARKNET-946 | Implement ability to make Word document read-only after applying watermark | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

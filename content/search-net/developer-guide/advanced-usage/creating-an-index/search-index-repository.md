@@ -3,7 +3,7 @@ id: search-index-repository
 url: search/net/search-index-repository
 title: Search index repository
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

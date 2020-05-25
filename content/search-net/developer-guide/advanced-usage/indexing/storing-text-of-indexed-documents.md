@@ -3,7 +3,7 @@ id: storing-text-of-indexed-documents
 url: search/net/storing-text-of-indexed-documents
 title: Storing text of indexed documents
 weight: 17
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: get-possible-conversions
 url: conversion/net/get-possible-conversions
 title: Get possible conversions
 weight: 1
-description: This article explains how to obtain supported conversions when convert documents with GroupDocs.Conversion within your .NET applications.
+description: "This article explains how to obtain supported conversions when convert documents with GroupDocs.Conversion within your .NET applications."
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False

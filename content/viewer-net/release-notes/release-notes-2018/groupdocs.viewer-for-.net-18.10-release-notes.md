@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-18-10-release-notes
 url: viewer/net/groupdocs-viewer-for-net-18-10-release-notes
 title: GroupDocs.Viewer for .NET 18.10 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -20,83 +20,20 @@ There are 12 features, improvements, and fixes in this regular monthly release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1677
-
-Option for setting the list of fonts that should be excluded from HTML
-
-Feature
-
-VIEWERNET-1773
-
-Do not show items beyond Start and End date options when rendering MS Project documents
-
-Improvement
-
-VIEWERNET-1742
-
-Release internal resources for methods which accept URL
-
-Improvement
-
-VIEWERNET-1738
-
-GetDocumentInfo method page number depending on the type of ViewerHandler
-
-Improvement
-
-VIEWERNET-1679
-
-Prevent setting malicious values for HtmlResourcePrefix
-
-Improvement
-
-VIEWERNET-1678
-
-Improve setting PageSize and TimeScale for MS Project documents by default 
-
-Improvement
-
-VIEWERNET-1741
-
-Specified watermark font not found exception when calling GetPdfFile method
-
-Bug
-
-VIEWERNET-1736
-
-OutlookOptions.MaxItemsInFolder option not working properly for rendering into image and PDF
-
-Bug
-
-VIEWERNET-1662
-
-Incorrect rendering of PDF document into HTML
-
-Bug
-
-VIEWERNET-1659
-
-Duplicate link tag when rendering Text documents with external resources
-
-Bug
-
-VIEWERNET-1649
-
-Exception when rendering PDF document as HTML
-
-Bug
-
-VIEWERNET-1420
-
-Images are missing when rendering PDF document into HTML or Image
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1677 | Option for setting the list of fonts that should be excluded from HTML | Feature |
+| VIEWERNET-1773 | Do not show items beyond Start and End date options when rendering MS Project documents | Improvement |
+| VIEWERNET-1742 | Release internal resources for methods which accept URL | Improvement |
+| VIEWERNET-1738 | GetDocumentInfo method page number depending on the type of ViewerHandler | Improvement |
+| VIEWERNET-1679 | Prevent setting malicious values for HtmlResourcePrefix | Improvement |
+| VIEWERNET-1678 | Improve setting PageSize and TimeScale for MS Project documents by default  | Improvement |
+| VIEWERNET-1741 | Specified watermark font not found exception when calling GetPdfFile method | Bug |
+| VIEWERNET-1736 | OutlookOptions.MaxItemsInFolder option not working properly for rendering into image and PDF | Bug |
+| VIEWERNET-1662 | Incorrect rendering of PDF document into HTML | Bug |
+| VIEWERNET-1659 | Duplicate link tag when rendering Text documents with external resources | Bug |
+| VIEWERNET-1649 | Exception when rendering PDF document as HTML | Bug |
+| VIEWERNET-1420 | Images are missing when rendering PDF document into HTML or Image | Bug |
 
 ## Public API and Backward Incompatible Changes
 

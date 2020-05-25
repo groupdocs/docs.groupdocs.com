@@ -3,7 +3,7 @@ id: working-with-editabledocument
 url: editor/net/working-with-editabledocument
 title: Working with EditableDocument
 weight: 7
-description: This documentation section explains features of EditableDocument class when editing document with GroupDocs.Editor for .NET API.
+description: "This documentation section explains features of EditableDocument class when editing document with GroupDocs.Editor for .NET API."
 keywords: Edit document, Editable document
 productName: GroupDocs.Editor for .NET
 hideChildren: False

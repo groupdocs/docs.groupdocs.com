@@ -3,7 +3,7 @@ id: basic-usage
 url: editor/net/basic-usage
 title: Basic usage
 weight: 1
-description: Quick Start section about main features of GroupDocs.Editor API, describes how to edit documents with just couple lines of code.
+description: "Quick Start section about main features of GroupDocs.Editor API, describes how to edit documents with just couple lines of code."
 keywords: GroupDocs.Editor Quick Start, GroupDocs.Editor .NET Basic Usage, GroupDocs.Editor Quick Start C#, GroupDocs.Editor Get Started
 productName: GroupDocs.Editor for .NET
 hideChildren: False

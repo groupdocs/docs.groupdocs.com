@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-18-9-release-notes
 url: merger/net/groupdocs-merger-for-net-18-9-release-notes
 title: GroupDocs.Merger for .NET 18.9 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -19,59 +19,16 @@ There are 8 new features in this regular monthly release. The most notable are:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-251
-
-Implement Security methods for ODT format
-
-New Feature
-
-MERGERNET-302
-
-Implement Security methods for OTT format
-
-New Feature
-
-MERGERNET-321
-
-Note formats support for Join method
-
-New Feature
-
-MERGERNET-322
-
-Note formats support for MovePage method
-
-New Feature
-
-MERGERNET-323
-
-Note formats support for RemovePage method
-
-New Feature
-
-MERGERNET-324
-
-Note formats support for Split document method
-
-New Feature
-
-MERGERNET-325
-
-Note formats support for SwapPages method
-
-New Feature
-
-MERGERNET-326
-
-Note formats support for Trim method
-
-New Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-251 | Implement Security methods for ODT format | New Feature |
+| MERGERNET-302 | Implement Security methods for OTT format | New Feature |
+| MERGERNET-321 | Note formats support for Join method | New Feature |
+| MERGERNET-322 | Note formats support for MovePage method | New Feature |
+| MERGERNET-323 | Note formats support for RemovePage method | New Feature |
+| MERGERNET-324 | Note formats support for Split document method | New Feature |
+| MERGERNET-325 | Note formats support for SwapPages method | New Feature |
+| MERGERNET-326 | Note formats support for Trim method | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

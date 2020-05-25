@@ -3,7 +3,7 @@ id: search-reports
 url: search/net/search-reports
 title: Search reports
 weight: 23
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

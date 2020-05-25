@@ -66,47 +66,14 @@ using (Watermarker watermarker = new Watermarker(Constants.InImagePng))
 
 Following are the origin of the coordinates for different formats of the documents.
 
-Document Format
-
-[Unit of Measure](https://apireference.groupdocs.com/net/watermark/groupdocs.watermark/unitofmeasurement)
-
-Origin of Coordinates
-
-PDF
-
-Point
-
-Left bottom corner of page
-
-WordProcessing
-
-Point
-
-Left top corner of page 
-
-Spreadsheet
-
-Point
-
-Left top corner of worksheet 
-
-Presentation
-
-Point
-
-Left top corner of slide 
-
-Image
-
-Pixel
-
-Left top corner of image (frame) 
-
-Diagram
-
-Point
-
-Left top corner of page
+| Document Format | Unit of Measure | Origin of Coordinates |
+| --- | --- | --- |
+| PDF | Point | Left bottom corner of page |
+| WordProcessing | Point | Left top corner of page  |
+| Spreadsheet | Point | Left top corner of worksheet  |
+| Presentation | Point | Left top corner of slide  |
+| Image | Pixel | Left top corner of image (frame)  |
+| Diagram | Point | Left top corner of page |
 
 ### Relative watermark positioning 
 

@@ -3,7 +3,7 @@ id: get-supported-file-formats
 url: search/net/get-supported-file-formats
 title: Get supported file formats
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

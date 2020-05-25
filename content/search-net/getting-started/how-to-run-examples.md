@@ -3,7 +3,7 @@ id: how-to-run-examples
 url: search/net/how-to-run-examples
 title: How to Run Examples
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

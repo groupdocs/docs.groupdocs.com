@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-19-4-release-notes
 url: merger/net/groupdocs-merger-for-net-19-4-release-notes
 title: GroupDocs.Merger for .NET 19.4 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -18,23 +18,10 @@ There is a following new feature in this regular monthly release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-418
-
-Implement a new format .tsv
-
-New Feature
-
-MERGERNET-491
-
-Metered related exception when License is initialized with other GroupDocs products
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-418 | Implement a new format .tsv | New Feature |
+| MERGERNET-491 | Metered related exception when License is initialized with other GroupDocs products | Bug |
 
 ## Public API and Backward Incompatible Changes
 

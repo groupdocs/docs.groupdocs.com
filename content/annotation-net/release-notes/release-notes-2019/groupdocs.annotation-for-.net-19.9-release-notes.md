@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-19-9-release-notes
 url: annotation/net/groupdocs-annotation-for-net-19-9-release-notes
 title: GroupDocs.Annotation for .NET 19.9 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

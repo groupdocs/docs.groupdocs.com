@@ -3,7 +3,7 @@ id: alias-dictionary
 url: search/net/alias-dictionary
 title: Alias dictionary
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

@@ -3,8 +3,8 @@ id: how-to-compare-autocad-drawings
 url: comparison/net/how-to-compare-autocad-drawings
 title: How to Compare AutoCAD drawings
 weight: 1
-description: 
-keywords: 
+description: "Read this article and find out how you can use the GroupDocs.Comparison for .NET to find differences in AutoCAD files and other drawings. Also, in this article you can find an option to use this product in your production"
+keywords: How to compare AutoCAD files, CAD files, Comparison Use Case, Compare AutoCAD files
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
@@ -33,13 +33,9 @@ To compare drawings with DWG Compare you should:
 
 Despite the fact that drawings comparison feature provided by AutoDesk is quite handy and powerful it is obviously doesn't provide a way to compare drawings programatically and manipulate found differences in code. **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) **provide an easy and convenient API to detect differences between drawings (and many other [supported file formats](https://wiki.lisbon.dynabic.com/display/comparison/Supported+File+Formats)) and apply or discard found changes to result document. Here is an example of DWG drawings comparison
 
-Source drawing
-
-Target drawing
-
-![](comparison-net/images/how-to-compare-autocad-drawings.png)
-
-![](comparison-net/images/how-to-compare-autocad-drawings_1.png)
+| Source drawing | Target drawing |
+| --- | --- |
+| ![](attachments/88178903/88342552.png) | ![](attachments/88178903/88342550.png) |
 
 Here are the steps to compare two DWG files:
 

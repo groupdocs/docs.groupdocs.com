@@ -3,7 +3,7 @@ id: split-text-file
 url: merger/net/split-text-file
 title: Split text file
 weight: 4
-description: Follow this guide and learn how to split text file into several resultant files using GroupDocs.Merger for .NET API.
+description: "Follow this guide and learn how to split text file into several resultant files using GroupDocs.Merger for .NET API."
 keywords: Split file, Split text file, Split text by line number
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -33,17 +33,10 @@ using (Merger merger = new Merger(filePath))
 
 This code snippet will produce:
 
-Text file
-
-Line numbers
-
-line\_0
-
-3
-
-line\_1
-
-6
+| Text file | Line numbers |
+| --- | --- |
+| line\_0 | 3 |
+| line\_1 | 6 |
 
 ## Split text file to several multi-line files 
 
@@ -63,21 +56,11 @@ using (Merger merger = new Merger(filePath))
 
 This code snippet will produce:
 
-Text file
-
-Line numbers
-
-text\_0
-
-1, 2
-
-text\_1
-
-3, 4, 5
-
-text\_2
-
-6
+| Text file | Line numbers |
+| --- | --- |
+| text\_0 | 1, 2 |
+| text\_1 | 3, 4, 5 |
+| text\_2 | 6 |
 
 ## More resources
 

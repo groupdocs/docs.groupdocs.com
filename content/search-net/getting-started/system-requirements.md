@@ -3,7 +3,7 @@ id: system-requirements
 url: search/net/system-requirements
 title: System Requirements
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

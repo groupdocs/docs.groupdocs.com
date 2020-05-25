@@ -3,7 +3,7 @@ id: merge-pdf
 url: merger/net/merge-pdf
 title: Merge PDF
 weight: 1
-description: Follow this guide and learn how to merge PDF files, combine several PDFs into one using GroupDocs.Merger API and couple lines of code.
+description: "Follow this guide and learn how to merge PDF files, combine several PDFs into one using GroupDocs.Merger API and couple lines of code."
 keywords: Merge PDF, Combine PDF, Join PDF, PDF document merger
 productName: GroupDocs.Merger for .NET
 hideChildren: False

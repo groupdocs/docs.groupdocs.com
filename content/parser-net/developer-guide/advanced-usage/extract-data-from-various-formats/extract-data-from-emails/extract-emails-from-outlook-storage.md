@@ -14,10 +14,7 @@ Outlook Storage item can contain the following metadata:
 
 | Name | Description |
 | --- | --- |
-| date | 
-The time and date at which the Outlook Storage item was last modified.
-
- |
+| date | The time and date at which the Outlook Storage item was last modified. |
 | email-sender | The value of "sender" field. |
 | email-to | The value of "to" field. |
 | subject | The value of "subject" field. |

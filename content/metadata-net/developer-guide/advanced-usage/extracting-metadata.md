@@ -3,7 +3,7 @@ id: extracting-metadata
 url: metadata/net/extracting-metadata
 title: Extracting metadata
 weight: 2
-description: This article shows how to extract metadata properties from your files in C# .NET solution programmatically with GroupDocs.Metadata for .NET
+description: "This article shows how to extract metadata properties from your files in C# .NET solution programmatically with GroupDocs.Metadata for .NET"
 keywords: C# .NET DOC DOCX PDF XLS XLSX PPT PPTX JPG TIFF PNG Metadata
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

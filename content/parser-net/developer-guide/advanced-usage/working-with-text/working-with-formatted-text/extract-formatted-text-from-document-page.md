@@ -24,42 +24,11 @@ FormattedTextOptions(FormattedTextMode mode)
 
 [FormattedTextMode](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/formattedtextmode) enumeration has the following members:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
-| 
-
-Html
-
- | 
-
-Html format.
-
- |
-| 
-
-Markdown
-
- | 
-
-Markdown format.
-
- |
-| 
-
-PlainText
-
- | 
-
-Plain text format.
-
- |
+| Html | Html format. |
+| Markdown | Markdown format. |
+| PlainText | Plain text format. |
 
 Here are the steps to extract a HTML formatted page text from the document:
 

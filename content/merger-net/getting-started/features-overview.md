@@ -3,7 +3,7 @@ id: features-overview
 url: merger/net/features-overview
 title: Features Overview
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False

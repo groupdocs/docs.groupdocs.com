@@ -3,7 +3,7 @@ id: working-with-metadata-in-jpeg-images
 url: metadata/net/working-with-metadata-in-jpeg-images
 title: Working with metadata in JPEG images
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

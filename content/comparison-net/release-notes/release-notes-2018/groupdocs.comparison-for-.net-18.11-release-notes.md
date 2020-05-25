@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-18-11-release-notes
 url: comparison/net/groupdocs-comparison-for-net-18-11-release-notes
 title: GroupDocs.Comparison for .NET 18.11 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -22,41 +22,13 @@ Below the list of most notable changes in  release of GroupDocs.Comparison for 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-1734 
-
-Make Comparison thread-safe
-
-Improvement
-
-COMPARISONNET-1748
-
-Improve charts comparing on Slides
-
-Improvement
-
-COMPARISONNET-1739
-
-Improve style detection on Slides
-
-Improvement
-
-COMPARISONNET-735 
-
-Improve comparison tester for Words
-
-Improvement
-
-COMPARISONNET-1744
-
-Fix issues with autoshape on Slides
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-1734  | Make Comparison thread-safe | Improvement |
+| COMPARISONNET-1748 | Improve charts comparing on Slides | Improvement |
+| COMPARISONNET-1739 | Improve style detection on Slides | Improvement |
+| COMPARISONNET-735  | Improve comparison tester for Words | Improvement |
+| COMPARISONNET-1744 | Fix issues with autoshape on Slides | Bug |
 
 ## Public API and Backward Incompatible Changes
 

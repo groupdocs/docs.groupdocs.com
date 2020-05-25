@@ -3,7 +3,7 @@ id: getting-indexed-documents
 url: search/net/getting-indexed-documents
 title: Getting indexed documents
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: sign-document-with-secure-custom-metadata-signatures
 url: signature/net/sign-document-with-secure-custom-metadata-signatures
 title: Sign document with secure custom Metadata signatures
 weight: 12
-description: This section contains articles with explanation how to create Metadata electronic signatures and embed into metadata custom object with its serialization and encryption. The examples show how to customize object serialization and encryption.
+description: "This section contains articles with explanation how to create Metadata electronic signatures and embed into metadata custom object with its serialization and encryption. The examples show how to customize object serialization and encryption."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

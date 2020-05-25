@@ -3,7 +3,7 @@ id: searching
 url: search/net/searching
 title: Searching
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

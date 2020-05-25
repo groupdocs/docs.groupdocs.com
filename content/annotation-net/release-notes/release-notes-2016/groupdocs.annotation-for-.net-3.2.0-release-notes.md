@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-3-2-0-release-notes
 url: annotation/net/groupdocs-annotation-for-net-3-2-0-release-notes
 title: GroupDocs.Annotation for .NET 3.2.0 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -21,83 +21,20 @@ Below the list of improvements fixes and new features in this regular monthly re
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-ANNOTATIONNET-249
-
-Import TextField annotation from Words Documents
-
-New Feature
-
-ANNOTATIONNET-236
-
-Implement TextRedaction annotation import from Word
-
-New Feature
-
-ANNOTATIONNET-244
-
-Implement Shape annotations import from Word
-
-New Feature
-
-ANNOTATIONNET-237
-
-Implement TextStrikeout annotation import from Word
-
-New Feature
-
-ANNOTATIONNET-238
-
-Implement Underline annotation import from Word
-
-New Feature
-
-ANNOTATIONNET-235
-
-Implement Area annotation import from Word
-
-New Feature
-
-ANNOTATIONNET-234
-
-Implement Text annotation import from Word
-
-New Feature
-
-ANNOTATIONNET-230
-
-Add native Word annotations after export Word documents to Text Replacement annotation
-
-New Feature
-
-ANNOTATIONNET-224
-
-Add native Word annotations after export Word documents
-
-New Feature
-
-ANNOTATIONNET-228
-
-Add native Word annotations after export Word documents to Strikeout annotation
-
-New Feature
-
-ANNOTATIONNET-241
-
-Implement option for ability to auto-import annotations when opening PDF documents
-
-Improvement
-
-ANNOTATIONNET-250
-
-Fix users permission for Delete annotations
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| ANNOTATIONNET-249 | Import TextField annotation from Words Documents | New Feature |
+| ANNOTATIONNET-236 | Implement TextRedaction annotation import from Word | New Feature |
+| ANNOTATIONNET-244 | Implement Shape annotations import from Word | New Feature |
+| ANNOTATIONNET-237 | Implement TextStrikeout annotation import from Word | New Feature |
+| ANNOTATIONNET-238 | Implement Underline annotation import from Word | New Feature |
+| ANNOTATIONNET-235 | Implement Area annotation import from Word | New Feature |
+| ANNOTATIONNET-234 | Implement Text annotation import from Word | New Feature |
+| ANNOTATIONNET-230 | Add native Word annotations after export Word documents to Text Replacement annotation | New Feature |
+| ANNOTATIONNET-224 | Add native Word annotations after export Word documents | New Feature |
+| ANNOTATIONNET-228 | Add native Word annotations after export Word documents to Strikeout annotation | New Feature |
+| ANNOTATIONNET-241 | Implement option for ability to auto-import annotations when opening PDF documents | Improvement |
+| ANNOTATIONNET-250 | Fix users permission for Delete annotations | Bug |
 
 ## Public API and Backward Incompatible Changes
 

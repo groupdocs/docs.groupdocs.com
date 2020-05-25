@@ -20,17 +20,9 @@ Starting from 20.2 release GroupDocs.Watermark for .NET includes .NET Standard 2
 
 ## Full List of Issues Covering all Changes in this Release 
 
-Key
-
-Summary
-
-Category
-
-WATERMARKNET-1205
-
-Add .NET Standard 2.0 support
-
-Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-1205 | Add .NET Standard 2.0 support | Feature |
 
 ## Public API and Backward Incompatible Changes
 

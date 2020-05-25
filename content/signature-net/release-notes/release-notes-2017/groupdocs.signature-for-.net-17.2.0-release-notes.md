@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-17-2-0-release-notes
 url: signature/net/groupdocs-signature-for-net-17-2-0-release-notes
 title: GroupDocs.Signature for .NET 17.2.0 Release Notes
 weight: 10
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -26,173 +26,35 @@ There are about 30 improvements, new features and fixes in this regular release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-2605
-
-Implement Text Signature Size Adjustments for Slides
-
-New Feature
-
-SIGNATURENET-2603
-
-Implement Text Signature Size Adjustments for Words
-
-New Feature
-
-SIGNATURENET-2601
-
-Implement Text Signature Size Adjustments for Cells
-
-New Feature
-
-SIGNATURENET-2598
-
-Implement Text Signature Size Adjustments for PDF
-
-New Feature
-
-SIGNATURENET-2593
-
-Implement extended properties for Text Stamp Implementation signature of Pdf Documents
-
-New Feature
-
-SIGNATURENET-2581
-
-Implement Text Signature Opacity for Words Documents
-
-New Feature
-
-SIGNATURENET-2579
-
-Implement Text Signature Opacity for Slides Documents
-
-New Feature
-
-SIGNATURENET-2569
-
-Implement verification for Pdf Text Sticker Annotation Signature
-
-New Feature
-
-SIGNATURENET-2564
-
-Implement alternative Text Signature implementation as Sticker (TextAnnotation) for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2217
-
-Implement Image Signature free angle rotation for Slides
-
-New Feature
-
-SIGNATURENET-2215
-
-Implement Image Signature free angle rotation for Words
-
-New Feature
-
-SIGNATURENET-2213
-
-Implement Image Signature free angle rotation for Cells
-
-New Feature
-
-SIGNATURENET-2211
-
-Implement Image Signature free angle rotation for PDF
-
-New Feature
-
-SIGNATURENET-2188
-
-Implement Image Signature Size Adjustments for Cells
-
-New Feature
-
-SIGNATURENET-2142
-
-Implement Image Signature rotation for Slides
-
-New Feature
-
-SIGNATURENET-2140
-
-Implement Image Signature rotation for Cells
-
-New Feature
-
-SIGNATURENET-2138
-
-Implement Image Signature rotation for Words
-
-New Feature
-
-SIGNATURENET-2136
-
-Implement Image Signature rotation for PDF
-
-New Feature
-
-SIGNATURENET-2126
-
-Implement Text Signature rotation for Slides
-
-New Feature
-
-SIGNATURENET-2124
-
-Implement Text Signature rotation for Cells
-
-New Feature
-
-SIGNATURENET-2122
-
-Implement Text Signature rotation for Words
-
-New Feature
-
-SIGNATURENET-2120
-
-Implement Text Signature rotation for Pdf
-
-New Feature
-
-SIGNATURENET-2607
-
-Multiple signature options for Words Documents are intersecting in same Word Node
-
-Bug
-
-SIGNATURENET-2589
-
-When processing Pdf document with Digital Signature in iterative mode document saved incorrectly
-
-Bug
-
-SIGNATURENET-2571
-
-Apply lower case for output file extension
-
-Bug
-
-SIGNATURENET-2556
-
-Fix background appearance of Text Annotation of Pdf Documents Pages
-
-Bug
-
-SIGNATURENET-2547
-
-Pdf Text Verification doesn't get list of Annotations from Pdf Document
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2605 | Implement Text Signature Size Adjustments for Slides | New Feature |
+| SIGNATURENET-2603 | Implement Text Signature Size Adjustments for Words | New Feature |
+| SIGNATURENET-2601 | Implement Text Signature Size Adjustments for Cells | New Feature |
+| SIGNATURENET-2598 | Implement Text Signature Size Adjustments for PDF | New Feature |
+| SIGNATURENET-2593 | Implement extended properties for Text Stamp Implementation signature of Pdf Documents | New Feature |
+| SIGNATURENET-2581 | Implement Text Signature Opacity for Words Documents | New Feature |
+| SIGNATURENET-2579 | Implement Text Signature Opacity for Slides Documents | New Feature |
+| SIGNATURENET-2569 | Implement verification for Pdf Text Sticker Annotation Signature | New Feature |
+| SIGNATURENET-2564 | Implement alternative Text Signature implementation as Sticker (TextAnnotation) for Pdf Documents | New Feature |
+| SIGNATURENET-2217 | Implement Image Signature free angle rotation for Slides | New Feature |
+| SIGNATURENET-2215 | Implement Image Signature free angle rotation for Words | New Feature |
+| SIGNATURENET-2213 | Implement Image Signature free angle rotation for Cells | New Feature |
+| SIGNATURENET-2211 | Implement Image Signature free angle rotation for PDF | New Feature |
+| SIGNATURENET-2188 | Implement Image Signature Size Adjustments for Cells | New Feature |
+| SIGNATURENET-2142 | Implement Image Signature rotation for Slides | New Feature |
+| SIGNATURENET-2140 | Implement Image Signature rotation for Cells | New Feature |
+| SIGNATURENET-2138 | Implement Image Signature rotation for Words | New Feature |
+| SIGNATURENET-2136 | Implement Image Signature rotation for PDF | New Feature |
+| SIGNATURENET-2126 | Implement Text Signature rotation for Slides | New Feature |
+| SIGNATURENET-2124 | Implement Text Signature rotation for Cells | New Feature |
+| SIGNATURENET-2122 | Implement Text Signature rotation for Words | New Feature |
+| SIGNATURENET-2120 | Implement Text Signature rotation for Pdf | New Feature |
+| SIGNATURENET-2607 | Multiple signature options for Words Documents are intersecting in same Word Node | Bug |
+| SIGNATURENET-2589 | When processing Pdf document with Digital Signature in iterative mode document saved incorrectly | Bug |
+| SIGNATURENET-2571 | Apply lower case for output file extension | Bug |
+| SIGNATURENET-2556 | Fix background appearance of Text Annotation of Pdf Documents Pages | Bug |
+| SIGNATURENET-2547 | Pdf Text Verification doesn't get list of Annotations from Pdf Document | Bug |
 
 ## Public API and Backward Incompatible Changes
 

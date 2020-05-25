@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-20-3-release-notes
 url: metadata/net/groupdocs-metadata-for-net-20-3-release-notes
 title: GroupDocs.Metadata for .NET 20.3 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -19,23 +19,10 @@ There are the following features, enhancements and fixes in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-METADATANET-2849
-
-Implement the ability to work with EXIF metadata in PSD images
-
-New Feature
-
-METADATANET-2850
-
-Implement the ability to work with XMP metadata in WEBP images
-
-New Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-2849 | Implement the ability to work with EXIF metadata in PSD images | New Feature |
+| METADATANET-2850 | Implement the ability to work with XMP metadata in WEBP images | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-20-1-release-notes
 url: editor/net/groupdocs-editor-for-net-20-1-release-notes
 title: GroupDocs.Editor for .NET 20.1 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -25,71 +25,18 @@ All these improvements are "internal", they do not affect public API.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1454
-
-Improve opening EditableDocument from inner-body markup by supporting a root BODY element
-
-Improvement
-
-EDITORNET-1460
-
-Add support of BUTTON element
-
-Improvement
-
-EDITORNET-1461
-
-Implement support of MACROBUTTON field
-
-Improvement
-
-EDITORNET-1464
-
-Fix bug and add complete support of obsolete STRIKE HTML element
-
-Improvement
-
-EDITORNET-1430
-
-Additional style sheet is not saved in embedded version in WordProcessing paginal mode
-
-Bug
-
-EDITORNET-1452
-
-Bug in HTML attribute parsing
-
-Bug
-
-EDITORNET-1457
-
-Exception while opening DOCX with specific field
-
-Bug
-
-EDITORNET-1458
-
-Exception in .NET Standard version of GD.Editor
-
-Bug
-
-EDITORNET-1450
-
-MSI package signature is not applied during release build
-
-Bug
-
-EDITORNET-1465
-
-Fix bug with locked HTML resources
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1454 | Improve opening EditableDocument from inner-body markup by supporting a root BODY element | Improvement |
+| EDITORNET-1460 | Add support of BUTTON element | Improvement |
+| EDITORNET-1461 | Implement support of MACROBUTTON field | Improvement |
+| EDITORNET-1464 | Fix bug and add complete support of obsolete STRIKE HTML element | Improvement |
+| EDITORNET-1430 | Additional style sheet is not saved in embedded version in WordProcessing paginal mode | Bug |
+| EDITORNET-1452 | Bug in HTML attribute parsing | Bug |
+| EDITORNET-1457 | Exception while opening DOCX with specific field | Bug |
+| EDITORNET-1458 | Exception in .NET Standard version of GD.Editor | Bug |
+| EDITORNET-1450 | MSI package signature is not applied during release build | Bug |
+| EDITORNET-1465 | Fix bug with locked HTML resources | Bug |
 
 # Public API and Backward Incompatible Changes
 

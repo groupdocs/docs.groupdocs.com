@@ -3,7 +3,7 @@ id: float-and-paginal-modes
 url: editor/net/float-and-paginal-modes
 title: Float and paginal modes
 weight: 4
-description: This article explains pros and cons of float and paginal document editing modes when edit Word documents with GroupDocs.Editor API.
+description: "This article explains pros and cons of float and paginal document editing modes when edit Word documents with GroupDocs.Editor API."
 keywords: Edit Word document in float mode, Edit Word document page by page
 productName: GroupDocs.Editor for .NET
 hideChildren: False

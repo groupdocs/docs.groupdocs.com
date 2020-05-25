@@ -3,7 +3,7 @@ id: verify-qr-code-signatures-in-the-document
 url: signature/net/verify-qr-code-signatures-in-the-document
 title: Verify QR-code signatures in the document
 weight: 3
-description: This topic explains how to verify QR-code electronic signatures with GroupDocs.Signature API.
+description: "This topic explains how to verify QR-code electronic signatures with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

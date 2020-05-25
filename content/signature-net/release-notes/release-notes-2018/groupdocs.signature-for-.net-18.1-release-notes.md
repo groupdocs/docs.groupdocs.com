@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-18-1-release-notes
 url: signature/net/groupdocs-signature-for-net-18-1-release-notes
 title: GroupDocs.Signature for .NET 18.1 Release Notes
 weight: 13
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -28,89 +28,21 @@ There are more about 14 improvements, new features and fixes in this regular rel
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-3251
-
-Fix error when loading Documents from Google drive
-
-Bug
-
-SIGNATURENET-3250
-
-Fix error when loading Documents from URL without target filename
-
-Bug
-
-SIGNATURENET-3277
-
-Implement ability to set text shadow effect for text as image signature for all documents types
-
-New Feature
-
-SIGNATURENET-3274
-
-Implement ability to set text shadow in text signatures for Cells documents
-
-New Feature
-
-SIGNATURENET-3276
-
-Implement ability to set text shadow in text signatures for Slides documents
-
-New Feature
-
-SIGNATURENET-3275
-
-Implement ability to set text shadow in text signatures for Words documents
-
-New Feature
-
-SIGNATURENET-3285
-
-Improve information of URL provided Document with corrected value
-
-Improvement
-
-SIGNATURENET-3286
-
-Improve result of Signing methods when Document provided by URL
-
-Improvement
-
-SIGNATURENET-3281
-
-Improve Signature on Complete event arguments with additional properties
-
-Improvement
-
-SIGNATURENET-3288
-
-Improve Verification events arguments with additional properties
-
-Improvement
-
-SIGNATURENET-3280
-
-Improve Verification Result with additional properties
-
-Improvement
-
-SIGNATURENET-3282
-
-Output file name has no extension for Stream and Url Document source
-
-Bug
-
-SIGNATURENET-3279
-
-Update result Stream of Sign methods
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-3251 | Fix error when loading Documents from Google drive | Bug |
+| SIGNATURENET-3250 | Fix error when loading Documents from URL without target filename | Bug |
+| SIGNATURENET-3277 | Implement ability to set text shadow effect for text as image signature for all documents types | New Feature |
+| SIGNATURENET-3274 | Implement ability to set text shadow in text signatures for Cells documents | New Feature |
+| SIGNATURENET-3276 | Implement ability to set text shadow in text signatures for Slides documents | New Feature |
+| SIGNATURENET-3275 | Implement ability to set text shadow in text signatures for Words documents | New Feature |
+| SIGNATURENET-3285 | Improve information of URL provided Document with corrected value | Improvement |
+| SIGNATURENET-3286 | Improve result of Signing methods when Document provided by URL | Improvement |
+| SIGNATURENET-3281 | Improve Signature on Complete event arguments with additional properties | Improvement |
+| SIGNATURENET-3288 | Improve Verification events arguments with additional properties | Improvement |
+| SIGNATURENET-3280 | Improve Verification Result with additional properties | Improvement |
+| SIGNATURENET-3282 | Output file name has no extension for Stream and Url Document source | Bug |
+| SIGNATURENET-3279 | Update result Stream of Sign methods | Bug |
 
 ## Public API and Backward Incompatible Changes
 

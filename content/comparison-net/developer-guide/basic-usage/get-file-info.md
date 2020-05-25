@@ -3,18 +3,18 @@ id: get-file-info
 url: comparison/net/get-file-info
 title: Get file info
 weight: 2
-description: This article explains how to detect document file type, size and calculate pages count when annotate documents or images with GroupDocs.Comparison.
-keywords: 
+description: "This article explains how to detect document file type, size and calculate pages count when annotate documents or images with GroupDocs.Comparison."
+keywords: Get file info, Get File Type, Page count, File size
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to get document information which includes:
+**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to get file information which includes:
 
 *   [FileType](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/filetype) - document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.);
 *   [PageCount](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/pagecount) - count of document pages;
-*   [FileSize](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/size)[](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/size)\- document file size;[](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/size)
+*   [FileSize](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/size)[](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/size)\- document file size;
 
-The following code samples demonstrate how to get document information.
+The following code samples demonstrate how to get file information.
 
 ## Get file info for the file from local disk
 

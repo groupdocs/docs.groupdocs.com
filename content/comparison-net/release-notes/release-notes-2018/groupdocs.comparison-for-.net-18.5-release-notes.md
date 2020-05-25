@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-18-5-release-notes
 url: comparison/net/groupdocs-comparison-for-net-18-5-release-notes
 title: GroupDocs.Comparison for .NET 18.5 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -20,29 +20,11 @@ Below the list of most notable changes in  release of GroupDocs.Comparison for 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-1527
-
-Implement Comparison of Diagrams
-
-New Feature
-
-COMPARISONNET-1556
-
-Improve Comparison.HTML
-
-Improvement
-
-COMPARISONNET-1575
-
-Comparison.Notes: Wrong count of changes in SummaryPage
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-1527 | Implement Comparison of Diagrams | New Feature |
+| COMPARISONNET-1556 | Improve Comparison.HTML | Improvement |
+| COMPARISONNET-1575 | Comparison.Notes: Wrong count of changes in SummaryPage | Bug |
 
 ## Public API and Backward Incompatible Changes
 

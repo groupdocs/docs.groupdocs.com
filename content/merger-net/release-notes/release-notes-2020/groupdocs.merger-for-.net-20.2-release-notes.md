@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-20-2-release-notes
 url: merger/net/groupdocs-merger-for-net-20-2-release-notes
 title: GroupDocs.Merger for .NET 20.2 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -18,17 +18,9 @@ There are a few new other features in this regular monthly release. The most not
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-767
-
-Implement MHTML format support
-
-Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-767 | Implement MHTML format support | Feature |
 
 ## Public API and Backward Incompatible Changes
 

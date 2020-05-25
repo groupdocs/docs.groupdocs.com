@@ -3,7 +3,7 @@ id: keyboard-layout-correction
 url: search/net/keyboard-layout-correction
 title: Keyboard layout correction
 weight: 10
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

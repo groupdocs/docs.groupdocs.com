@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-17-8-0-release-notes
 url: signature/net/groupdocs-signature-for-net-17-8-0-release-notes
 title: GroupDocs.Signature for .NET 17.8.0 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -26,96 +26,22 @@ There are about 15 improvements, new features and fixes in this regular release.
 ## Full List of Issues Covering all Changes in this Release
 
   
-
-SIGNATURENET-3013
-
-Add ability to crop background color by inner line for Stamp Signatures.
-
-Improvement
-
-SIGNATURENET-2959
-
-Add ability to crop background image by inner line for Stamp Signatures.
-
-Improvement
-
-SIGNATURENET-2267
-
-Digital Signature for Open Document files format support
-
-New Feature
-
-SIGNATURENET-2954
-
-Implement ability to repeat text for Stamp Signatures
-
-New Feature
-
-SIGNATURENET-2993
-
-Implement ability to save Image Documents in different formats
-
-New Feature
-
-SIGNATURENET-3021
-
-Implement ability to use Custom InputDataHandler for Certificates and Images resources
-
-Improvement
-
-SIGNATURENET-2984
-
-Implement BarCode Signature features for Image Documents
-
-New Feature
-
-SIGNATURENET-2997
-
-Implement Barcode Signature Verification for Image Documents
-
-New Feature
-
-SIGNATURENET-2981
-
-Implement Image Signature features for Image Documents
-
-New Feature
-
-SIGNATURENET-2987
-
-Implement QR-Code Signature features for Image Documents
-
-New Feature
-
-SIGNATURENET-3000
-
-Implement QR-Code Signature Verification for Image Documents
-
-New Feature
-
-SIGNATURENET-2990
-
-Implement Stamp Signature features for Image Documents
-
-New Feature
-
-SIGNATURENET-2978
-
-Implement Text Signature features for Image Documents
-
-New Feature
-
-SIGNATURENET-2943
-
-Implement Verification of Digital Signature Type for Pdf Documents
-
-Improvement
-
-Key
-
-Summary
-
-Issue Type
+| SIGNATURENET-3013 | Add ability to crop background color by inner line for Stamp Signatures. | Improvement |
+| SIGNATURENET-2959 | Add ability to crop background image by inner line for Stamp Signatures. | Improvement |
+| SIGNATURENET-2267 | Digital Signature for Open Document files format support | New Feature |
+| SIGNATURENET-2954 | Implement ability to repeat text for Stamp Signatures | New Feature |
+| SIGNATURENET-2993 | Implement ability to save Image Documents in different formats | New Feature |
+| SIGNATURENET-3021 | Implement ability to use Custom InputDataHandler for Certificates and Images resources | Improvement |
+| SIGNATURENET-2984 | Implement BarCode Signature features for Image Documents | New Feature |
+| SIGNATURENET-2997 | Implement Barcode Signature Verification for Image Documents | New Feature |
+| SIGNATURENET-2981 | Implement Image Signature features for Image Documents | New Feature |
+| SIGNATURENET-2987 | Implement QR-Code Signature features for Image Documents | New Feature |
+| SIGNATURENET-3000 | Implement QR-Code Signature Verification for Image Documents | New Feature |
+| SIGNATURENET-2990 | Implement Stamp Signature features for Image Documents | New Feature |
+| SIGNATURENET-2978 | Implement Text Signature features for Image Documents | New Feature |
+| SIGNATURENET-2943 | Implement Verification of Digital Signature Type for Pdf Documents | Improvement |
+| Key | Summary | Issue Type |
+| --- | --- | --- |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: convert-to-wordprocessing
 url: conversion/net/convert-to-wordprocessing
 title: Convert to WordProcessing
 weight: 6
-description: Learn this article and check how to convert documents to Word DOCX, DOC, RTF or Open Document ODT, OTT formats with GroupDocs.Conversion for .NET.
+description: "Learn this article and check how to convert documents to Word DOCX, DOC, RTF or Open Document ODT, OTT formats with GroupDocs.Conversion for .NET."
 keywords: Convert to Word, Convert to DOCX, Convert to DOC
 productName: GroupDocs.Conversion for .NET
 hideChildren: False

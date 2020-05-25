@@ -3,7 +3,7 @@ id: homophone-dictionary
 url: search/net/homophone-dictionary
 title: Homophone dictionary
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

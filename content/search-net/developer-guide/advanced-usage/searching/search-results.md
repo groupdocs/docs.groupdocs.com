@@ -3,7 +3,7 @@ id: search-results
 url: search/net/search-results
 title: Search results
 weight: 24
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

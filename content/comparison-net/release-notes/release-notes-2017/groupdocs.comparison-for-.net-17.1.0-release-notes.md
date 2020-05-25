@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-17-1-0-release-notes
 url: comparison/net/groupdocs-comparison-for-net-17-1-0-release-notes
 title: GroupDocs.Comparison For .NET 17.1.0 Release Notes
 weight: 11
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -21,95 +21,22 @@ There are 7 new features and 7 improvements and fixes in this regular monthly re
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-COMPARISONNET-1053
-
-GroupDocs.Comparison.PDF: Add support for Apply/Discard changes
-
-New Feature
-
-COMPARISONNET-975
-
-GroupDocs.Comparison.PDF: Add support for Watermarks
-
-New Feature
-
-COMPARISONNET-1065
-
-GroupDocs.Comparison.Cells: Add support for Hyperlinks
-
-New Feature
-
-COMPARISONNET-1069
-
-GroupDocs.Comparison.Cells: Add support for Comments
-
-New Feature
-
-COMPARISONNET-1072
-
-GroupDocs.Comparison.Cells: Add support for Text Box
-
-New Feature
-
-COMPARISONNET-1063
-
-GroupDocs.Comparison.Cells: Add support of Apply/Discard changes
-
-New Feature
-
-COMPARISONNET-1073
-
-GroupDocs.Comparison.Cells: Add support for Shapes
-
-New Feature
-
-COMPARISONNET-1075
-
-GroupDocs.Comparison.Cells: Add borders for deleted and inserted cells and Range of cells
-
-Improvement
-
-COMPARISONNET-679
-
-Fix problem when moving modified table into new page and not deleting previous version of added table
-
-Improvement
-
-COMPARISONNET-1055
-
-Improve Trim paragraphs by pages after some change in absorbing paragraphs
-
-Improvement
-
-COMPARISONNET-1080
-
-GroupDocs.Comparison.PDF: Improve comparison changes detection for Paragraphs
-
-Improvement
-
-COMPARISONNET-1056
-
-Improve GroupDocs.Comparison.PDF comparison quality for images in header, footer, setting coordinates for components and paragraphs by pages
-
-Improvement
-
-COMPARISONNET-1074
-
-GroupDocs.Comparison: PDF: Set type change for paragraph runs after page break
-
-Bug
-
-COMPARISONNET-1077
-
-Comparison.Cells: Fix cells appearance after critical update for Aligner comparer and Document builder
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| COMPARISONNET-1053 | GroupDocs.Comparison.PDF: Add support for Apply/Discard changes | New Feature |
+| COMPARISONNET-975 | GroupDocs.Comparison.PDF: Add support for Watermarks | New Feature |
+| COMPARISONNET-1065 | GroupDocs.Comparison.Cells: Add support for Hyperlinks | New Feature |
+| COMPARISONNET-1069 | GroupDocs.Comparison.Cells: Add support for Comments | New Feature |
+| COMPARISONNET-1072 | GroupDocs.Comparison.Cells: Add support for Text Box | New Feature |
+| COMPARISONNET-1063 | GroupDocs.Comparison.Cells: Add support of Apply/Discard changes | New Feature |
+| COMPARISONNET-1073 | GroupDocs.Comparison.Cells: Add support for Shapes | New Feature |
+| COMPARISONNET-1075 | GroupDocs.Comparison.Cells: Add borders for deleted and inserted cells and Range of cells | Improvement |
+| COMPARISONNET-679 | Fix problem when moving modified table into new page and not deleting previous version of added table | Improvement |
+| COMPARISONNET-1055 | Improve Trim paragraphs by pages after some change in absorbing paragraphs | Improvement |
+| COMPARISONNET-1080 | GroupDocs.Comparison.PDF: Improve comparison changes detection for Paragraphs | Improvement |
+| COMPARISONNET-1056 | Improve GroupDocs.Comparison.PDF comparison quality for images in header, footer, setting coordinates for components and paragraphs by pages | Improvement |
+| COMPARISONNET-1074 | GroupDocs.Comparison: PDF: Set type change for paragraph runs after page break | Bug |
+| COMPARISONNET-1077 | Comparison.Cells: Fix cells appearance after critical update for Aligner comparer and Document builder | Bug |
 
 ## Public API and Backward Incompatible Changes
 

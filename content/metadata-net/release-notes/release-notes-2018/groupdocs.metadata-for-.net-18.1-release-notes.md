@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-18-1-release-notes
 url: metadata/net/groupdocs-metadata-for-net-18-1-release-notes
 title: GroupDocs.Metadata for .NET 18.1 Release Notes
 weight: 11
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -20,29 +20,7 @@ There are 3 new features in this regular monthly release. The most notable are:
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATANET-717
-
-Implement ability to read metadata of EPUB format
-
-New Feature
-
-METADATANET-2133  
-
-Implement ability to detect EPUB e-book format
-
-New Feature 
-
-METADATANET-2134
-
-Implement ability to read DublinCore metadata in EPUB format
-
-New Feature 
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd">Key</td><td class="confluenceTd">Summary</td><td class="confluenceTd">Category</td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-717</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">Implement ability to read metadata of EPUB format</span></td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2133&nbsp;</span>&nbsp;</td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">Implement ability to detect EPUB e-book format</span></td><td class="confluenceTd">New Feature&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2134</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Implement ability to read DublinCore metadata in EPUB format</span></td><td colspan="1" class="confluenceTd"><span>New Feature&nbsp;</span></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

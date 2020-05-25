@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-18-9-release-notes
 url: signature/net/groupdocs-signature-for-net-18-9-release-notes
 title: GroupDocs.Signature for .NET 18.9 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -24,77 +24,7 @@ There are more than 10 improvements, new features and fixes in this regular rele
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-3652
-
-Implement standard Pdf Metadata Signatures
-
-New Feature
-
-SIGNATURENET-3650
-
-Add PDF save format for image documents
-
-New Feature
-
-SIGNATURENET-3647
-
-Implement Searching for Metadata Signature in PDF Documents
-
-New Feature
-
-SIGNATURENET-3643
-
-Implement Metadata Signature features for PDF Documents
-
-New Feature
-
-SIGNATURENET-3637
-
-Implement Metadata Signature entity and collection
-
-New Feature
-
-SIGNATURENET-3635
-
-Implement MatchType for text verification options
-
-New Feature
-
-SIGNATURENET-3632
-
-Incorrect signing image documents with .psd format
-
-Bug
-
-SIGNATURENET-3628
-
-The output PDF is incorrectly signed with Digital Certificates
-
-Bug
-
-SIGNATURENET-3626
-
-Incorrect signing image documents with .wmf format
-
-Bug
-
-SIGNATURENET-3624
-
-Incorrect signing image documents with .svg format
-
-Bug
-
-SIGNATURENET-3622
-
-Unable to search Digital signature in Cells with extended options using latest release
-
-Bug
+<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3652</td><td colspan="1" class="confluenceTd">Implement standard Pdf Metadata Signatures</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3650</td><td colspan="1" class="confluenceTd">Add PDF save format for image documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3647</td><td colspan="1" class="confluenceTd">Implement Searching for Metadata Signature in PDF Documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3643</td><td colspan="1" class="confluenceTd">Implement Metadata Signature features for PDF Documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3637</td><td class="confluenceTd">Implement Metadata Signature entity and collection</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3635</td><td class="confluenceTd">Implement MatchType for text verification options</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3632</td><td class="confluenceTd">Incorrect signing image documents with .psd format</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3628</td><td class="confluenceTd">The output PDF is incorrectly signed with Digital Certificates</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3626</td><td class="confluenceTd">Incorrect signing image documents with .wmf format</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3624</td><td class="confluenceTd">Incorrect signing image documents with .svg format</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3622</td><td class="confluenceTd">Unable to search Digital signature in Cells with extended options using latest release</td><td class="confluenceTd">Bug</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 
@@ -203,61 +133,20 @@ Bug
     
     **Metadata Signature properties**
     
-    Name
-    
-    Type
-    
-    Description
-    
-    Value
-    
-    object
-    
-    Specifies value of Metadata Signature. This property could be different type. At this moment Boolean, Integer, Double, DateTime and Strings types are supported.
-    
-    Name
-    
-    string
-    
-    Specifies name of Metadata Signature. This name should be unique within Document metadata collection scope.
+    | Name | Type | Description |
+    | --- | --- | --- |
+    | Value | object | Specifies value of Metadata Signature. This property could be different type. At this moment Boolean, Integer, Double, DateTime and Strings types are supported. |
+    | Name | string | Specifies name of Metadata Signature. This name should be unique within Document metadata collection scope. |
     
     **Metadata Signature methods**
     
-    Method name
-    
-    Return type
-    
-    Description / Remarks
-    
-    ToBoolean()
-    
-    boolean
-    
-    Returns the Metadata signature value as Boolean. Throws an exception if the Metadata value could not be converted. If value is integer type all non zero values will be interpreted as True. 
-    
-    ToInteger()
-    
-    integer
-    
-    Returns the Metadata Signature value as integer. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. Double value will be truncated. String value will be tries to parse into integer.
-    
-    ToDouble()
-    
-    double
-    
-    Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as double. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. String value will be tries to parse into double based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
-    
-    ToDateTime()
-    
-    DateTime
-    
-    Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as DateTime. Throws an exception if the Metadata value could not be converted. String value will be tries to parse into Datetime based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
-    
-    ToString()
-    
-    string
-    
-    Overload method with ability to specify IDataFormatProvider to data type convertions. Returns the Metadata Signature value as string representation based on passed format and IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
+    | Method name | Return type | Description / Remarks |
+    | --- | --- | --- |
+    | ToBoolean() | boolean | Returns the Metadata signature value as Boolean. Throws an exception if the Metadata value could not be converted. If value is integer type all non zero values will be interpreted as True.  |
+    | ToInteger() | integer | Returns the Metadata Signature value as integer. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. Double value will be truncated. String value will be tries to parse into integer. |
+    | ToDouble() | double | Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as double. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. String value will be tries to parse into double based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
+    | ToDateTime() | DateTime | Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as DateTime. Throws an exception if the Metadata value could not be converted. String value will be tries to parse into Datetime based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
+    | ToString() | string | Overload method with ability to specify IDataFormatProvider to data type convertions. Returns the Metadata Signature value as string representation based on passed format and IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
     
 2.  **New class Metadata Signature Collection**  
     New public class **MetadataSignatureCollection **was added to implement collection of Metadata signatures for Documents. This class implements IEnumarable generic class of MetadataSignature object collection, implements most Dictionary methods and provides collection of Metadata Signature manipulations with unique name validation.
@@ -332,73 +221,22 @@ Bug
     
     **Metadata Signature Collection properties**
     
-    Name
-    
-    Type
-    
-    Description
-    
-    this\[string name\]
-    
-    MetadataSignature
-    
-    Returns Metadata Signature object from collection based on unique name.
-    
-    this\[int index\]
-    
-    MetadataSignature
-    
-    Returns Metadata Signature object from collection based on index of object in collection.
-    
-    Count
-    
-    integer
-    
-    Returns count of Signatures in Collection
+    | Name | Type | Description |
+    | --- | --- | --- |
+    | this\[string name\] | MetadataSignature | Returns Metadata Signature object from collection based on unique name. |
+    | this\[int index\] | MetadataSignature | Returns Metadata Signature object from collection based on index of object in collection. |
+    | Count | integer | Returns count of Signatures in Collection |
     
     **Metadata Signature Collection methods**
     
-    Method name
-    
-    Return type
-    
-    Description / Remarks
-    
-    Clear()
-    
-    void
-    
-    Clear all Signatures from Collection.
-    
-    Contains(string name)
-    
-    Boolean
-    
-    Returns true if collection contains Metadata Signature with given name.
-    
-    IndexOf(string name)
-    
-    integer
-    
-    Returns zero based index of Metadata Signature with given name in collection. If signature with this name if not found methods returns -1.
-    
-    Remove(string name)
-    
-    Boolean
-    
-    Removes Signature with given name from collection and returns true. Otherwise if signature was not found returns false.
-    
-    RemoveAt(int index)
-    
-    Boolean
-    
-    Removes Signature with given index from collection and returns true. Otherwise if signature was not found returns false.
-    
-    Add(MetadataSignature signature)
-    
-    void
-    
-    Adds signature to collection.
+    | Method name | Return type | Description / Remarks |
+    | --- | --- | --- |
+    | Clear() | void | Clear all Signatures from Collection. |
+    | Contains(string name) | Boolean | Returns true if collection contains Metadata Signature with given name. |
+    | IndexOf(string name) | integer | Returns zero based index of Metadata Signature with given name in collection. If signature with this name if not found methods returns -1. |
+    | Remove(string name) | Boolean | Removes Signature with given name from collection and returns true. Otherwise if signature was not found returns false. |
+    | RemoveAt(int index) | Boolean | Removes Signature with given index from collection and returns true. Otherwise if signature was not found returns false. |
+    | Add(MetadataSignature signature) | void | Adds signature to collection. |
     
 3.  ****New class PdfMetadataSignature **derives abstract**MetadataSignature****  
     New public class ****PdfMetadataSignature ****was added to implement Metadata signature features for Pdf Documents. This class derives base **MetadataSignature ,** overloads virtual methods (IClonable implementation).
@@ -434,57 +272,21 @@ Bug
     
     Pdf metadata Signature derives all base class properties and contains TagPrefix string property to extend metadata name. Pdf document contains metadata properties with unique name in format "TagPrefix:Name".
     
-    Name
-    
-    Type
-    
-    Description
-    
-    TagPrefix
-    
-    string
-    
-    Specifies prefix of Pdf metadata signature unique name. By default this prefix is set to "xmp" value. User can specify any prefix. Standard prefixes that are supported by Pdf documentations are "pdf", "xmpMM", "dc".
+    | Name | Type | Description |
+    | --- | --- | --- |
+    | TagPrefix | string | Specifies prefix of Pdf metadata signature unique name. By default this prefix is set to "xmp" value. User can specify any prefix. Standard prefixes that are supported by Pdf documentations are "pdf", "xmpMM", "dc". |
     
     **Pdf Metadata Signature methods**
     
     Pdf metadata Signature derives all base class methods
     
-    Method name
-    
-    Return type
-    
-    Description / Remarks
-    
-    ToBoolean()
-    
-    boolean
-    
-    Returns the Metadata signature value as Boolean. Throws an exception if the Metadata value could not be converted. If value is integer type all non zero values will be interpreted as True. 
-    
-    ToInteger()
-    
-    integer
-    
-    Returns the Metadata Signature value as integer. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. Double value will be truncated. String value will be tries to parse into integer.
-    
-    ToDouble()
-    
-    double
-    
-    Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as double. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. String value will be tries to parse into double based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
-    
-    ToDateTime()
-    
-    DateTime
-    
-    Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as DateTime. Throws an exception if the Metadata value could not be converted. String value will be tries to parse into Datetime based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
-    
-    ToString()
-    
-    string
-    
-    Overload method with ability to specify IDataFormatProvider to data type convertions. Returns the Metadata Signature value as string representation based on passed format and IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
+    | Method name | Return type | Description / Remarks |
+    | --- | --- | --- |
+    | ToBoolean() | boolean | Returns the Metadata signature value as Boolean. Throws an exception if the Metadata value could not be converted. If value is integer type all non zero values will be interpreted as True.  |
+    | ToInteger() | integer | Returns the Metadata Signature value as integer. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. Double value will be truncated. String value will be tries to parse into integer. |
+    | ToDouble() | double | Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as double. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. String value will be tries to parse into double based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
+    | ToDateTime() | DateTime | Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as DateTime. Throws an exception if the Metadata value could not be converted. String value will be tries to parse into Datetime based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
+    | ToString() | string | Overload method with ability to specify IDataFormatProvider to data type convertions. Returns the Metadata Signature value as string representation based on passed format and IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
     
     Following example demonstrates using **PdfMetadataSignature **to compose Metadata Signature options for Pdf Document - PdfMetadataSignOptions.
     

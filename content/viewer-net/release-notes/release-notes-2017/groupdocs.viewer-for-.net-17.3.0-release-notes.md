@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-17-3-0-release-notes
 url: viewer/net/groupdocs-viewer-for-net-17-3-0-release-notes
 title: GroupDocs.Viewer for .NET 17.3.0 Release Notes
 weight: 10
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -21,89 +21,7 @@ There are 7 new features and 6 improvements and fixes in this regular monthly re
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Category**
-
-VIEWERNET-1110
-
-Add VSTX file format support
-
-New Feature
-
-VIEWERNET-1109
-
-Add VSSX file format support
-
-New Feature
-
-VIEWERNET-1106
-
-Implement settings for adjusting the size of CAD documents rendering
-
-New Feature
-
-VIEWERNET-1100
-
-Integrate Metered licensing
-
-New Feature
-
-VIEWERNET-1066
-
-Implement setting to delete annotations when rendering PDF documents
-
-New Feature
-
-VIEWERNET-797
-
-Hide tracked changes when converting Words documents
-
-New Feature
-
-VIEWERNET-796
-
-Remove slides comments when rendering Slides documents
-
-New Feature
-
-VIEWERNET-1084
-
-Remove members marked as obsolete in previous versions
-
-Improvement
-
-WEB-1152
-
-Color filling isn't displayed for some objects
-
-Bug
-
-VIEWERNET-1099
-
-IgnoreResourcePrefixForCss is ignored when rendering Words documents
-
-Bug
-
-VIEWERNET-1094
-
-Issue in HtmlResourcePrefix when Rendering .msg File
-
-Bug
-
-VIEWERNET-1025
-
-Character's size issue when rendering PDF document into HTML
-
-Bug
-
-VIEWERNET-793
-
-Email attachments are not found when setting UsePdf to true
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1110</p></td><td class="confluenceTd"><p>Add VSTX file format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1109</p></td><td class="confluenceTd"><p>Add VSSX file format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1106</p></td><td class="confluenceTd"><p>Implement settings for adjusting the size of CAD documents rendering</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1100</p></td><td class="confluenceTd"><p>Integrate Metered licensing</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1066</p></td><td class="confluenceTd"><p>Implement setting to delete annotations when rendering PDF documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-797</p></td><td class="confluenceTd"><p>Hide tracked changes when converting Words documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-796</p></td><td class="confluenceTd"><p>Remove slides comments when rendering Slides documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1084</p></td><td class="confluenceTd"><p>Remove members marked as obsolete in previous versions</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>WEB-1152</p></td><td class="confluenceTd"><p>Color filling isn't displayed for some objects</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1099</p></td><td class="confluenceTd"><p>IgnoreResourcePrefixForCss is ignored when rendering Words documents</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1094</p></td><td class="confluenceTd"><p>Issue in HtmlResourcePrefix when Rendering .msg File</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1025</p></td><td class="confluenceTd"><p>Character's size issue when rendering PDF document into HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-793</p></td><td class="confluenceTd"><p>Email attachments are not found when setting UsePdf to true</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

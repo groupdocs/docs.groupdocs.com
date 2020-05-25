@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-18-2-release-notes
 url: conversion/net/groupdocs-conversion-for-net-18-2-release-notes
 title: GroupDocs.Conversion for .NET 18.2 Release Notes
 weight: 10
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -24,35 +24,12 @@ There are 4 new features, improvements and fixes in this regular monthly release
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-2322
-
-Convert specific range when converting cells document
-
-New Feature
-
-CONVERSIONNET-2344
-
-Implement conversion from PostScript
-
-New Feature
-
-CONVERSIONNET-2338
-
-Implement configuration option for selecting if blank rows and columns should be skipped when converting Cells document
-
-Improvement
-
-CONVERSIONNET-2324
-
-Just print area is getting converted, not the entire spreadsheet
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-2322 | Convert specific range when converting cells document | New Feature |
+| CONVERSIONNET-2344 | Implement conversion from PostScript | New Feature |
+| CONVERSIONNET-2338 | Implement configuration option for selecting if blank rows and columns should be skipped when converting Cells document | Improvement |
+| CONVERSIONNET-2324 | Just print area is getting converted, not the entire spreadsheet | Bug |
 
 ## Public API and Backward Incompatible Changes
 

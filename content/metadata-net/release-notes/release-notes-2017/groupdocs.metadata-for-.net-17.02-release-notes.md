@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-17-02-release-notes
 url: metadata/net/groupdocs-metadata-for-net-17-02-release-notes
 title: GroupDocs.Metadata for .NET 17.02 Release Notes
 weight: 11
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -28,77 +28,7 @@ There are 9 features and 2 enhancements in this regular monthly release. The mos
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATANET-1455
-
- Ability to export Excel content type properties to csv, excel
-
- Enhancement
-
-METADATANET-1456
-
- Ability to process Excel content type properties using XlsMetadata class (add, remove, clear operations)
-
- Enhancement
-
-METADATANET-1475
-
- Ability to export metadata of AVI format to csv, excel
-
- New Feature
-
-METADATANET-247
-
- Ability to read header of AVI video format
-
- New Feature
-
-METADATANET-1232
-
- Ability to read Photoshop layers of PSD format
-
- New Feature
-
-METADATANET-1256
-
- Ability to use Dynabic.Metered account
-
- New Feature
-
-METADATANET-1264
-
- Ability to detect DICOM format
-
- New Feature
-
-METADATANET-1436
-
- Ability to read metadata of DICOM format
-
- New Feature
-
-METADATANET-1439
-
- Ability to export DICOM metadata to csv, excel file
-
- New Feature
-
-METADATANET-1453
-
- Ability to read ByteOrder (little-endian, big-endian) for image formats
-
- New Feature
-
-METADATANET-1473
-
- Ability to detect AVI video format
-
- New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">K</span><span style="color: rgb(0, 0, 0);">ey</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1455</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Ability to export Excel content type properties to csv, excel</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1456</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Ability to process Excel content type properties using XlsMetadata class (add, remove, clear operations)</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1475</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Ability to export metadata of AVI format to csv, excel</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-247</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Ability to read header of AVI video format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1232</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Ability to read Photoshop layers of PSD format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1256</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Ability to use Dynabic.Metered account</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1264</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Ability to detect DICOM format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1436</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Ability to read metadata of DICOM format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1439</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Ability to export DICOM metadata to csv, excel file</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1453</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Ability to read ByteOrder (little-endian, big-endian) for image formats</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1473</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Ability to detect AVI video format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;New Feature</span></p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

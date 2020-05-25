@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-19-5-release-notes
 url: conversion/net/groupdocs-conversion-for-net-19-5-release-notes
 title: GroupDocs.Conversion for .NET 19.5 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -26,47 +26,14 @@ This regular monthly release contains 5+ new features, improvements and bug fixe
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-3053
-
-Feature
-
-Enabled metered licensing
-
-CONVERSIONNET-3058
-
-Feature
-
-Implement conversion from Dib
-
-CONVERSIONNET-3059
-
-Feature
-
-Implement conversion from Xlt
-
-CONVERSIONNET-3061
-
-Feature
-
-Implement conversion to Wmf
-
-CONVERSIONNET-3062
-
-Feature
-
-Implement conversion to Emf
-
-CONVERSIONNET-3087
-
-Feature
-
-Implement conversion from Pot
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-3053 | Feature | Enabled metered licensing |
+| CONVERSIONNET-3058 | Feature | Implement conversion from Dib |
+| CONVERSIONNET-3059 | Feature | Implement conversion from Xlt |
+| CONVERSIONNET-3061 | Feature | Implement conversion to Wmf |
+| CONVERSIONNET-3062 | Feature | Implement conversion to Emf |
+| CONVERSIONNET-3087 | Feature | Implement conversion from Pot |
 
 ## Public API and Backward Incompatible Changes
 

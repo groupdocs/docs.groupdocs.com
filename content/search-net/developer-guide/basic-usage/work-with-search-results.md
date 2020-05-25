@@ -3,7 +3,7 @@ id: work-with-search-results
 url: search/net/work-with-search-results
 title: Work with search results
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

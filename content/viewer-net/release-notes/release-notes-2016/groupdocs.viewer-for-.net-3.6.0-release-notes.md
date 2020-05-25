@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-3-6-0-release-notes
 url: viewer/net/groupdocs-viewer-for-net-3-6-0-release-notes
 title: GroupDocs.Viewer For .NET 3.6.0 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -23,137 +23,7 @@ There are 7 new features and 14 improvements and fixes in this regular monthly r
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Category**
-
-VIEWERNET-394
-
-Support for hyperlinks referencing a worksheet in the same document
-
-New Feature
-
-VIEWERNET-433
-
-Add support for Spanish locale
-
-New Feature
-
-VIEWERNET-435
-
-Add support for Italian locale
-
-New Feature
-
-VIEWERNET-639
-
-Hide/Show the hidden pages for Visio files
-
-New Feature
-
-VIEWERNET-801
-
-Ability to set default font when rendering Cells documents
-
-New Feature
-
-VIEWERNET-802
-
-Ability to set default font when rendering Words documents
-
-New Feature
-
-WEB-2073
-
-LaTeX file format viewing support
-
-New Feature
-
-VIEWERNET-401
-
-Improve applying pdf document transformations
-
-Improvement
-
-VIEWERNET-803
-
-Ability to set the encoding standard automatically
-
-Improvement
-
-VIEWERNET-824
-
-Cleanup GetDocumentInfo method response
-
-Improvement
-
-VIEWERNET-826
-
-Remove XHTML xmlns attribute
-
-Improvement
-
-VIEWERNET-827
-
-Cleanup html markup for Cells documents
-
-Improvement
-
-VIEWERNET-596
-
-The bookmark range is invalid for .docx
-
-Bug
-
-VIEWERNET-747
-
-Text document format detected as Unknown
-
-Bug
-
-VIEWERNET-805
-
-GetPages() Method Throws "Parameter is not valid" Exception
-
-Bug
-
-VIEWERNET-807
-
-Output html contains garbled characters and few characters are merged
-
-Bug
-
-VIEWERNET-820
-
-GetPages() throws exception for email attachments
-
-Bug
-
-VIEWERNET-821
-
-API throws exception in Mono
-
-Bug
-
-VIEWERNET-835
-
-User can't catch GroupDocsException
-
-Bug
-
-WEB-2070
-
-Convert .docx to .pdf wrong symbol
-
-Bug
-
-WEB-2448
-
-Missing character in resultant html
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-394</p></td><td class="confluenceTd"><p>Support for hyperlinks referencing a worksheet in the same document</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-433</p></td><td class="confluenceTd"><p>Add support for Spanish locale</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-435</p></td><td class="confluenceTd"><p>Add support for Italian locale</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-639</p></td><td class="confluenceTd"><p>Hide/Show the hidden pages for Visio files</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-801</p></td><td class="confluenceTd"><p>Ability to set default font when rendering Cells documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-802</p></td><td class="confluenceTd"><p>Ability to set default font when rendering Words documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>WEB-2073</p></td><td class="confluenceTd"><p>LaTeX file format viewing support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-401</p></td><td class="confluenceTd"><p>Improve applying pdf document transformations</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-803</p></td><td class="confluenceTd"><p>Ability to set the encoding standard automatically</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-824</p></td><td class="confluenceTd"><p>Cleanup GetDocumentInfo method response</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-826</p></td><td class="confluenceTd"><p>Remove XHTML xmlns attribute</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-827</p></td><td class="confluenceTd"><p>Cleanup html markup for Cells documents</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-596</p></td><td class="confluenceTd"><p>The bookmark range is invalid for .docx</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-747</p></td><td class="confluenceTd"><p>Text document format detected as Unknown</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-805</p></td><td class="confluenceTd"><p>GetPages() Method Throws "Parameter is not valid" Exception</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-807</p></td><td class="confluenceTd"><p>Output html contains garbled characters and few characters are merged</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-820</p></td><td class="confluenceTd"><p>GetPages() throws exception for email attachments</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-821</p></td><td class="confluenceTd"><p>API throws exception in Mono</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-835</p></td><td class="confluenceTd"><p>User can't catch GroupDocsException</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-2070</p></td><td class="confluenceTd"><p>Convert .docx to .pdf wrong symbol</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-2448</p></td><td class="confluenceTd"><p>Missing character in resultant html</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

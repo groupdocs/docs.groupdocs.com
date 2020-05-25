@@ -10,22 +10,7 @@ hideChildren: False
 ---
 To extract metadata from PDF documents [GetMetadata](https://apireference.groupdocs.com/net/parser/groupdocs.parser/parser/methods/getmetadata) method is used. This method allows to extract the following metadata:
 
-| 
-Name
-
-
-
-
-
- | 
-
-Description
-
-
-
-
-
- |
+| Name | Description |
 | --- | --- |
 | title | The title of the presentation. |
 | subject | The subject of the presentation. |

@@ -3,7 +3,7 @@ id: basic-usage
 url: merger/net/basic-usage
 title: Basic usage
 weight: 1
-description: Quick Start section about main features of GroupDocs.Merger API, describes how to merge PDF, Word, Excel, PowerPoint documents with just couple lines of code.
+description: "Quick Start section about main features of GroupDocs.Merger API, describes how to merge PDF, Word, Excel, PowerPoint documents with just couple lines of code."
 keywords: GroupDocs.Merger Quick Start, GroupDocs.Merger .NET Basic Usage, GroupDocs.Merger Quick Start C#, GroupDocs.Merger Get Started
 productName: GroupDocs.Merger for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: features-overview
 url: viewer/net/features-overview
 title: Features Overview
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False

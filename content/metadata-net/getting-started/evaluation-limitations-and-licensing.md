@@ -3,7 +3,7 @@ id: evaluation-limitations-and-licensing
 url: metadata/net/evaluation-limitations-and-licensing
 title: Evaluation Limitations and Licensing
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -14,42 +14,17 @@ hideChildren: False
 
 You can easily download GroupDocs.Metadata for evaluation. The evaluation download is the same as the purchased download. The evaluation version simply becomes licensed when you add a few lines of code to apply the license. You will face following limitations while using the API without the license.  
 
-API
-
-Limitations
-
-Document properties (Pdf, Word, Excel, PowerPoint, Visio, etc)
-
-Only first 5 properties can be read
-
-XMP API
-
-Only first 2 XMP schemes can be read
-
-EXIF API
-
-GPS IFD and image thumbnail are unavailable  
-Only first 5 properties can be read
-
-IPTC API
-
-Only first 5 properties can be read
-
-Id3v2, Lyrics3, APEv2 tags
-
-Only first 5 properties can be read
-
-QuickTime atoms
-
-Only first 5 atoms can be read
-
-File open
-
-Open maximum 15 files, otherwise, API throws exception
-
-File save
-
-Not supported in trial mode
+| API | Limitations |
+| --- | --- |
+| Document properties (Pdf, Word, Excel, PowerPoint, Visio, etc) | Only first 5 properties can be read |
+| XMP API | Only first 2 XMP schemes can be read |
+| EXIF API | GPS IFD and image thumbnail are unavailable  
+Only first 5 properties can be read |
+| IPTC API | Only first 5 properties can be read |
+| Id3v2, Lyrics3, APEv2 tags | Only first 5 properties can be read |
+| QuickTime atoms | Only first 5 atoms can be read |
+| File open | Open maximum 15 files, otherwise, API throws exception |
+| File save | Not supported in trial mode |
 
 ## Licensing 
 

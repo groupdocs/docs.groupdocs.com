@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-19-4-1-release-notes
 url: annotation/net/groupdocs-annotation-for-net-19-4-1-release-notes
 title: GroupDocs.Annotation for .NET 19.4.1 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -19,23 +19,10 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-986
-
-Issue with getting document info in trial mode
-
-Bug
-
-ANNOTATIONNET-987
-
-Export annotations to tiff file issue
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-986 | Issue with getting document info in trial mode | Bug |
+| ANNOTATIONNET-987 | Export annotations to tiff file issue | Bug |
 
 ## Public API and Backward Incompatible Change
 

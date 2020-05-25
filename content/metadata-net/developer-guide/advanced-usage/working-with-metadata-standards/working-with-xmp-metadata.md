@@ -3,7 +3,7 @@ id: working-with-xmp-metadata
 url: metadata/net/working-with-xmp-metadata
 title: Working with XMP metadata
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-19-8-release-notes
 url: viewer/net/groupdocs-viewer-for-net-19-8-release-notes
 title: GroupDocs.Viewer for .NET 19.8 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -24,41 +24,13 @@ Other notable features:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-2038
-
-Add Microsoft Excel Add-in (.xlam) file format support
-
-Feature
-
-VIEWERNET-2039
-
-Add Microsoft Project Exchange File (.mpx) file format support
-
-Feature
-
-VIEWERNET-2076
-
-New public API
-
-Feature
-
-VIEWERNET-1998
-
-Rendering custom folders from Outlook Data Files
-
-Improvement
-
-VIEWERNET-2079
-
-SVG files are always embedded into resulting HTML
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-2038 | Add Microsoft Excel Add-in (.xlam) file format support | Feature |
+| VIEWERNET-2039 | Add Microsoft Project Exchange File (.mpx) file format support | Feature |
+| VIEWERNET-2076 | New public API | Feature |
+| VIEWERNET-1998 | Rendering custom folders from Outlook Data Files | Improvement |
+| VIEWERNET-2079 | SVG files are always embedded into resulting HTML | Bug |
 
 # Public API and Backward Incompatible Changes
 

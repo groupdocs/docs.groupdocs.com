@@ -3,7 +3,7 @@ id: date-range-search
 url: search/net/date-range-search
 title: Date range search
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

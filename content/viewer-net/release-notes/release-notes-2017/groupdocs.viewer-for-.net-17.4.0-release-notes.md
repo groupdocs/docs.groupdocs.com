@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-17-4-0-release-notes
 url: viewer/net/groupdocs-viewer-for-net-17-4-0-release-notes
 title: GroupDocs.Viewer for .NET 17.4.0 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -21,131 +21,7 @@ There are 5 new features and 15 improvements and fixes in this regular monthly r
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Category**
-
-VIEWERNET-1166
-
-Implement a setting for specifying output quality for rendering DjVu documents
-
-New Feature
-
-VIEWERNET-1146
-
-Implement setting for specifying Layouts when rendering Cad documents
-
-New Feature
-
-VIEWERNET-1135
-
-Add setting which allows to specify text overflow mode when rendering Cells documents
-
-New Feature
-
-VIEWERNET-1111
-
-Add ONE file format support
-
-New Feature
-
-VIEWERNET-739
-
-DJVU format support
-
-New Feature
-
-VIEWERNET-1167
-
-CellsOptions.ShowGridLines property does not work when rendering Cells to PDF
-
-Improvement
-
-VIEWERNET-1161
-
-Implement a setting that switches on more accurate rendering of pdf documents
-
-Improvement
-
-VIEWERNET-1078
-
-Add code examples to CellsOptions class documentation comments
-
-Improvement
-
-VIEWERNET-1077
-
-Add code examples to PdfOptions class documentation comments
-
-Improvement
-
-WEB-1982
-
-Aspose.Pdf 10.7: incorrect rendering of hieroglyphs when converting PDF to JPEG and HTML
-
-Bug
-
-VIEWERNET-1162
-
-IgnoreResourcePrefixForCss is ignored when rendering PDF documents
-
-Bug
-
-VIEWERNET-1160
-
-Content is missing when rendering PDF document into HTML
-
-Bug
-
-VIEWERNET-1152
-
-Header of Word document is not rendered in output HTML or image
-
-Bug
-
-VIEWERNET-1133
-
-Overflow Text is Not Visible when Rendering Excel Sheet to HTML
-
-Bug
-
-VIEWERNET-1095
-
-Issue with Underline Text when Rendering PDF into HTML
-
-Bug
-
-VIEWERNET-1091
-
-Aspose.Slides 17.1.0: Black background when rendering pps or ppt to image
-
-Bug
-
-VIEWERNET-1047
-
-Issue in using the API with a Portable (PCL) Xamarin UWP Project
-
-Bug
-
-VIEWERNET-1038
-
-Incorrect resource relative path when rendering to Html
-
-Bug
-
-VIEWERNET-874
-
-HTMLSaveOptions.DefaultFont setting doesn't work properly
-
-Bug
-
-VIEWERNET-800
-
-Failed to convert djvu file to pdf in Asp.Net application.
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1166</p></td><td class="confluenceTd"><p>Implement a setting for specifying output quality for rendering DjVu documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1146</p></td><td class="confluenceTd"><p>Implement setting for specifying Layouts when rendering Cad documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1135</p></td><td class="confluenceTd"><p>Add setting which allows to specify text overflow mode when rendering Cells documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1111</p></td><td class="confluenceTd"><p>Add ONE file format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-739</p></td><td class="confluenceTd"><p>DJVU format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1167</p></td><td class="confluenceTd"><p>CellsOptions.ShowGridLines property does not work when rendering Cells to PDF</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1161</p></td><td class="confluenceTd"><p>Implement a setting that switches on more accurate rendering of pdf documents</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1078</p></td><td class="confluenceTd"><p>Add code examples to CellsOptions class documentation comments</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1077</p></td><td class="confluenceTd"><p>Add code examples to PdfOptions class documentation comments</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>WEB-1982</p></td><td class="confluenceTd"><p>Aspose.Pdf 10.7: incorrect rendering of hieroglyphs when converting PDF to JPEG and HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1162</p></td><td class="confluenceTd"><p>IgnoreResourcePrefixForCss is ignored when rendering PDF documents</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1160</p></td><td class="confluenceTd"><p>Content is missing when rendering PDF document into HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1152</p></td><td class="confluenceTd"><p>Header of Word document is not rendered in output HTML or image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1133</p></td><td class="confluenceTd"><p>Overflow Text is Not Visible when Rendering Excel Sheet to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1095</p></td><td class="confluenceTd"><p>Issue with Underline Text when Rendering PDF into HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1091</p></td><td class="confluenceTd"><p>Aspose.Slides 17.1.0: Black background when rendering pps or ppt to image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1047</p></td><td class="confluenceTd"><p>Issue in using the API with a Portable (PCL) Xamarin UWP Project</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1038</p></td><td class="confluenceTd"><p>Incorrect resource relative path when rendering to Html</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-874</p></td><td class="confluenceTd"><p>HTMLSaveOptions.DefaultFont setting doesn't work properly</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-800</p></td><td class="confluenceTd"><p>Failed to convert djvu file to pdf in Asp.Net application.</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

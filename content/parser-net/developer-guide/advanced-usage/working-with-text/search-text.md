@@ -18,52 +18,13 @@ IEnumerable<SearchResult> Search(string keyword, SearchOptions options);
 
 The *keyword* parameter can contain a text or a regular expression. [SearchResult](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/searchresult) class contains every occurrence of the keyword in the document text. This class has the following members:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
-| 
-
-[Position](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/searchresult/properties/position)
-
- | 
-
-A zero-based index of the start position of the search result. Depending on [SearchOptions.SearchByPages](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions/properties/searchbypages) property value this index starts from the document start or the document page start.
-
- |
+| [Position](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/searchresult/properties/position) | A zero-based index of the start position of the search result. Depending on [SearchOptions.SearchByPages](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions/properties/searchbypages) property value this index starts from the document start or the document page start. |
 | [PageIndex](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/searchresult/properties/pageindex) | The page index where the text is found. |
-| 
-
-[Text](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/searchresult/properties/text)
-
- | 
-
-The found text.
-
- |
-| 
-
-[LeftHighlightItem](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/searchresult/properties/lefthighlightitem)
-
- | 
-
-The left highlight.
-
- |
-| 
-
-[RightHighlightItem](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/searchresult/properties/righthighlightitem)
-
- | 
-
-The right highlight.
-
- |
+| [Text](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/searchresult/properties/text) | The found text. |
+| [LeftHighlightItem](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/searchresult/properties/lefthighlightitem) | The left highlight. |
+| [RightHighlightItem](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/searchresult/properties/righthighlightitem) | The right highlight. |
 
 ## Search text by keyword
 
@@ -103,61 +64,14 @@ using(Parser parser = new Parser(filePath))
 
 [SearchOptions](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions) parameter is used to customize a search. This class has the following members:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
-| 
-
-[MatchCase](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions/properties/matchcase)
-
- | 
-
-The value that indicates whether a text case isn't ignored.
-
- |
-| 
-
-[MatchWholeWord](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions/properties/matchwholeword)
-
- | 
-
-The value that indicates whether text search is limited by the whole word.
-
- |
+| [MatchCase](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions/properties/matchcase) | The value that indicates whether a text case isn't ignored. |
+| [MatchWholeWord](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions/properties/matchwholeword) | The value that indicates whether text search is limited by the whole word. |
 | [SearchByPages](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions/properties/searchbypages) | The value that indicates whether the search is performed by pages. |
-| 
-
-[UseRegularExpression](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions/properties/useregularexpression)
-
- | 
-
-The value that indicates whether a regular expression is used.
-
- |
-| 
-
-[LeftHighlightOptions](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions/properties/lefthighlightoptions)
-
- | 
-
-The options for the left highlight.
-
- |
-| 
-
-[RightHighlightOptions](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions/properties/righthighlightoptions)
-
- | 
-
-The options for the right highlight.
-
- |
+| [UseRegularExpression](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions/properties/useregularexpression) | The value that indicates whether a regular expression is used. |
+| [LeftHighlightOptions](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions/properties/lefthighlightoptions) | The options for the left highlight. |
+| [RightHighlightOptions](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/searchoptions/properties/righthighlightoptions) | The options for the right highlight. |
 
 Here are the steps to search with a regular expression in the document:
 

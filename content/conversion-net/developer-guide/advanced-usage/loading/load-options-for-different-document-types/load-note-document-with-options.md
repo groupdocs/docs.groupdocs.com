@@ -3,7 +3,7 @@ id: load-note-document-with-options
 url: conversion/net/load-note-document-with-options
 title: Load Note document with options
 weight: 5
-description: Learn this article and check how to load and convert Microsoft OneNote documents with advanced options using GroupDocs.Conversion for .NET API.
+description: "Learn this article and check how to load and convert Microsoft OneNote documents with advanced options using GroupDocs.Conversion for .NET API."
 keywords: Load document, Load Microsoft OneNote document
 productName: GroupDocs.Conversion for .NET
 hideChildren: False

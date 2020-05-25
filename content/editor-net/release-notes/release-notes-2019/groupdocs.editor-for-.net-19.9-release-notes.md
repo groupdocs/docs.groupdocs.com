@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-19-9-release-notes
 url: editor/net/groupdocs-editor-for-net-19-9-release-notes
 title: GroupDocs.Editor for .NET 19.9 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -36,29 +36,11 @@ Lot of minor and major bug fixes and improvements over all code base.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1286
-
-New public API
-
-Feature
-
-EDITORNET-1287
-
-Implement GetDocumentInfo method
-
-Feature
-
-EDITORNET-1288
-
-New TextSaveOptions
-
-Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1286 | New public API | Feature |
+| EDITORNET-1287 | Implement GetDocumentInfo method | Feature |
+| EDITORNET-1288 | New TextSaveOptions | Feature |
 
 # Public API and Backward Incompatible Changes
 

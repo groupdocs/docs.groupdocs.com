@@ -3,7 +3,7 @@ id: working-with-metadata-in-spreadsheets
 url: metadata/net/working-with-metadata-in-spreadsheets
 title: Working with metadata in Spreadsheets
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

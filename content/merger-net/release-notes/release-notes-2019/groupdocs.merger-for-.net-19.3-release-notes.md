@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-19-3-release-notes
 url: merger/net/groupdocs-merger-for-net-19-3-release-notes
 title: GroupDocs.Merger for .NET 19.3 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -20,29 +20,11 @@ There are 3 new features in this regular monthly release. The most notable are:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-441
-
-Obtain document pages image representations
-
-New Feature
-
-MERGERNET-444
-
-Implement split txt files by line numbers
-
-New Feature
-
-MERGERNET-461
-
-Ability to specify page number for joined documents
-
-Improvement
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-441 | Obtain document pages image representations | New Feature |
+| MERGERNET-444 | Implement split txt files by line numbers | New Feature |
+| MERGERNET-461 | Ability to specify page number for joined documents | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

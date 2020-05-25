@@ -3,7 +3,7 @@ id: add-ellipse-annotation
 url: annotation/net/add-ellipse-annotation
 title: Add ellipse annotation
 weight: 4
-description: Learn what is an ellipse annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
+description: "Learn what is an ellipse annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET."
 keywords: What is a ellipse annotation, how to add annotation, add ellipse annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

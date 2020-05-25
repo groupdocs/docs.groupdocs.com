@@ -3,7 +3,7 @@ id: subscribing-for-signing-process-events
 url: signature/net/subscribing-for-signing-process-events
 title: Subscribing for signing process events
 weight: 4
-description: This article explains how to subscribe for signing electronic signatures events like start, progress and completion with GroupDocs.Signature API.
+description: "This article explains how to subscribe for signing electronic signatures events like start, progress and completion with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

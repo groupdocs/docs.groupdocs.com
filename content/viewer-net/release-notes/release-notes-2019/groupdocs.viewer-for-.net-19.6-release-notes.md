@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-19-6-release-notes
 url: viewer/net/groupdocs-viewer-for-net-19-6-release-notes
 title: GroupDocs.Viewer for .NET 19.6 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -64,53 +64,15 @@ There are 7 features, improvements and fixes in this regular monthly release. Th
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1898
-
-Add Microsoft Excel 97-2003 Template (.xlt) file format support
-
-Feature
-
-VIEWERNET-1899
-
-Add Microsoft Excel Macro-Enabled Template (.xltm) file format support
-
-Feature
-
-VIEWERNET-1900
-
-Add Microsoft Excel Template (.xltx) file format support
-
-Feature
-
-VIEWERNET-1979
-
-Add programming languages file formats support
-
-Feature
-
-VIEWERNET-2050
-
-Add JPEG 2000 Code Stream (.jpc) file format support
-
-Feature
-
-VIEWERNET-2075
-
-Credit based billing for Metered license
-
-Feature
-
-VIEWERNET-2052
-
-Excel document loses formatting when rendering into multiple pages per sheet
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1898 | Add Microsoft Excel 97-2003 Template (.xlt) file format support | Feature |
+| VIEWERNET-1899 | Add Microsoft Excel Macro-Enabled Template (.xltm) file format support | Feature |
+| VIEWERNET-1900 | Add Microsoft Excel Template (.xltx) file format support | Feature |
+| VIEWERNET-1979 | Add programming languages file formats support | Feature |
+| VIEWERNET-2050 | Add JPEG 2000 Code Stream (.jpc) file format support | Feature |
+| VIEWERNET-2075 | Credit based billing for Metered license | Feature |
+| VIEWERNET-2052 | Excel document loses formatting when rendering into multiple pages per sheet | Bug |
 
 ## Public API and Backward Incompatible Changes
 

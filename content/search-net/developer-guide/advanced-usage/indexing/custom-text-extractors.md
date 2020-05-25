@@ -3,7 +3,7 @@ id: custom-text-extractors
 url: search/net/custom-text-extractors
 title: Custom text extractors
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

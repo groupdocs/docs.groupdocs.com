@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-16-10-0-release-notes
 url: annotation/net/groupdocs-annotation-for-net-16-10-0-release-notes
 title: GroupDocs.Annotation for .NET 16.10.0 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -26,53 +26,15 @@ Below the list of improvements fixes and new features in this regular monthly re
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-ANNOTATIONNET-282
-
-Implement Watermark annotation for Slides format
-
-New Feature
-
-ANNOTATIONNET-276
-
-Implement Area annotation for Slides format
-
-New Feature
-
-ANNOTATIONNET-275
-
-Implement Arrow annotation for Slides format
-
-New Feature
-
-ANNOTATIONNET-273
-
-Implement Text Field annotation in Slides document
-
-New Feature
-
-ANNOTATIONNET-272
-
-Implement Polyline annotation for Slides format
-
-New Feature
-
-ANNOTATIONNET-271
-
-Implement Point annotation for Slides format
-
-New Feature
-
-ANNOTATIONNET-266
-
-Show and store annotation author when export annotation for PDF documents
-
-Improvement
+| Key | Summary | Category |
+| --- | --- | --- |
+| ANNOTATIONNET-282 | Implement Watermark annotation for Slides format | New Feature |
+| ANNOTATIONNET-276 | Implement Area annotation for Slides format | New Feature |
+| ANNOTATIONNET-275 | Implement Arrow annotation for Slides format | New Feature |
+| ANNOTATIONNET-273 | Implement Text Field annotation in Slides document | New Feature |
+| ANNOTATIONNET-272 | Implement Polyline annotation for Slides format | New Feature |
+| ANNOTATIONNET-271 | Implement Point annotation for Slides format | New Feature |
+| ANNOTATIONNET-266 | Show and store annotation author when export annotation for PDF documents | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-20-2-release-notes
 url: comparison/net/groupdocs-comparison-for-net-20-2-release-notes
 title: GroupDocs.Comparison for .NET 20.2 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -24,143 +24,30 @@ Below the list of changes in release of GroupDocs.Comparison for .NET 20.2:
 *   Fixed element movement changes detection for Presentation(Slides) documents
     
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-2188 
-
-Implement Groovy files comparing
-
-Feature
-
-COMPARISONNET-2187 
-
-Implement JSON files comparing
-
-Feature
-
-COMPARISONNET-2186 
-
-Implement comparing ActionScipt files
-
-Feature
-
-COMPARISONNET-2185
-
-Implement Perl files comparing
-
-Feature
-
-COMPARISONNET-2184 
-
-Implement comparing Objctive C\\C++ files
-
-Feature
-
-COMPARISONNET-2180 
-
-Implement comparing Ruby files
-
-Feature
-
-COMPARISONNET-2179 
-
-Implement Shell\\batch script, Log, Diff, Config, LESS files comparing
-
-Feature
-
-COMPARISONNET-2178 
-
-Implement comparing PHP files
-
-Feature
-
-COMPARISONNET-2177 
-
-Implement comparing SQL files
-
-Feature
-
-COMPARISONNET-2176 
-
-Implement comparing C-based files
-
-Feature
-
-COMPARISONNET-2175 
-
-Implement comparing Scala files
-
-Feature
-
-COMPARISONNET-2174 
-
-Implement comparing Javascript files
-
-Feature
-
-COMPARISONNET-2173 
-
-Implement comparing Assembler files
-
-Feature
-
-COMPARISONNET-2172 
-
-Implement comparing Python files
-
-Feature
-
-COMPARISONNET-2171 
-
-Implement comparing java files
-
-Feature
-
-COMPARISONNET-2169
-
-Implement comparing CSharp files
-
-Feature
-
-COMPARISONNET-2165 
-
-Implement Multicomparer for Cells
-
-Feature
-
-COMPARISONNET-2103 
-
-Implement Multi Comparer for Note
-
-Feature
-
-COMPARISONNET-2183 
-
-Improve calculating of coordinates of changes for PDF
-
-Improvement
-
-COMPARISONNET-2168 
-
-Update GetSupportedFileTypes method so it will contain all supported formats from documentation
-
-Improvement
-
-COMPARISONNET-2181 
-
-Compare PPT/PPTX documents with element movement changes detection
-
-Bug
-
-COMPARISONNET-2097
-
-PDF comparison, output document title getting distorted
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-2188  | Implement Groovy files comparing | Feature |
+| COMPARISONNET-2187  | Implement JSON files comparing | Feature |
+| COMPARISONNET-2186  | Implement comparing ActionScipt files | Feature |
+| COMPARISONNET-2185 | Implement Perl files comparing | Feature |
+| COMPARISONNET-2184  | Implement comparing Objctive C\\C++ files | Feature |
+| COMPARISONNET-2180  | Implement comparing Ruby files | Feature |
+| COMPARISONNET-2179  | Implement Shell\\batch script, Log, Diff, Config, LESS files comparing | Feature |
+| COMPARISONNET-2178  | Implement comparing PHP files | Feature |
+| COMPARISONNET-2177  | Implement comparing SQL files | Feature |
+| COMPARISONNET-2176  | Implement comparing C-based files | Feature |
+| COMPARISONNET-2175  | Implement comparing Scala files | Feature |
+| COMPARISONNET-2174  | Implement comparing Javascript files | Feature |
+| COMPARISONNET-2173  | Implement comparing Assembler files | Feature |
+| COMPARISONNET-2172  | Implement comparing Python files | Feature |
+| COMPARISONNET-2171  | Implement comparing java files | Feature |
+| COMPARISONNET-2169 | Implement comparing CSharp files | Feature |
+| COMPARISONNET-2165  | Implement Multicomparer for Cells | Feature |
+| COMPARISONNET-2103  | Implement Multi Comparer for Note | Feature |
+| COMPARISONNET-2183  | Improve calculating of coordinates of changes for PDF | Improvement |
+| COMPARISONNET-2168  | Update GetSupportedFileTypes method so it will contain all supported formats from documentation | Improvement |
+| COMPARISONNET-2181  | Compare PPT/PPTX documents with element movement changes detection | Bug |
+| COMPARISONNET-2097 | PDF comparison, output document title getting distorted | Bug |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: convert-to-pdf-with-advanced-options
 url: conversion/net/convert-to-pdf-with-advanced-options
 title: Convert to PDF with advanced options
 weight: 3
-description: Follow this guide and learn how to convert documents to PDF with height, width, DPI, margins and other customizations using GroupDocs.Conversion for .NET.
+description: "Follow this guide and learn how to convert documents to PDF with height, width, DPI, margins and other customizations using GroupDocs.Conversion for .NET."
 keywords: Convert PDF, Convert to PDF/A
 productName: GroupDocs.Conversion for .NET
 hideChildren: False

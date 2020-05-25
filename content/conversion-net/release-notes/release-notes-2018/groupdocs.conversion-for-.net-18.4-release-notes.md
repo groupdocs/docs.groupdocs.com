@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-18-4-release-notes
 url: conversion/net/groupdocs-conversion-for-net-18-4-release-notes
 title: GroupDocs.Conversion for .NET 18.4 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -26,53 +26,15 @@ There are 5+ new features, improvements and fixes in this regular monthly releas
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-2434
-
-Specify bookmark level, headings level and expanded level when converting from Words to PDF and XPS
-
-New Feature
-
-CONVERSIONNET-2457
-
-Implement option for creating linearized PDF when converting to PDF
-
-New Feature
-
-CONVERSIONNET-2458
-
-Implement option for converting to grayscale PDF
-
-New Feature
-
-CONVERSIONNET-2459
-
-Implement option for resource optimization when converting to PDF
-
-New Feature
-
-CONVERSIONNET-2471
-
-Implement option for applying image watermark
-
-New Feature
-
-CONVERSIONNET-2454
-
-Create HTML 5 compliant markup when converting to html
-
-Improvement
-
-CONVERSIONNET-2432
-
-Index was outside the bound of the array, when cache is enabled and watermarks are applied
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-2434 | Specify bookmark level, headings level and expanded level when converting from Words to PDF and XPS | New Feature |
+| CONVERSIONNET-2457 | Implement option for creating linearized PDF when converting to PDF | New Feature |
+| CONVERSIONNET-2458 | Implement option for converting to grayscale PDF | New Feature |
+| CONVERSIONNET-2459 | Implement option for resource optimization when converting to PDF | New Feature |
+| CONVERSIONNET-2471 | Implement option for applying image watermark | New Feature |
+| CONVERSIONNET-2454 | Create HTML 5 compliant markup when converting to html | Improvement |
+| CONVERSIONNET-2432 | Index was outside the bound of the array, when cache is enabled and watermarks are applied | Bug |
 
 ## Public API and Backward Incompatible Changes
 

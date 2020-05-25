@@ -3,7 +3,7 @@ id: accept-or-reject-detected-changes
 url: comparison/net/accept-or-reject-detected-changes
 title: Accept or Reject detected changes
 weight: 1
-description: Following this guide you will learn how to apply or discard changes detected during document comparison process using GroupDocs.Comparison for .NET API.
+description: "Following this guide you will learn how to apply or discard changes detected during document comparison process using GroupDocs.Comparison for .NET API."
 keywords: Apply changes to compared document, reject comparison changes, document comparison changes
 productName: GroupDocs.Comparison for .NET
 hideChildren: False

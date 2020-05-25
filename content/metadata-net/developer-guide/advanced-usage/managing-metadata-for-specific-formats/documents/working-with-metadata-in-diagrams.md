@@ -3,7 +3,7 @@ id: working-with-metadata-in-diagrams
 url: metadata/net/working-with-metadata-in-diagrams
 title: Working with metadata in Diagrams
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

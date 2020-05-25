@@ -3,7 +3,7 @@ id: add-strikeout-annotation
 url: annotation/net/add-strikeout-annotation
 title: Add strikeout annotation
 weight: 12
-description: Learn what is a strikeout annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
+description: "Learn what is a strikeout annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET."
 keywords: What is a strikeout annotation, how to add annotation, add strikeout annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

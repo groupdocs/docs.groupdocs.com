@@ -3,7 +3,7 @@ id: indexing
 url: search/net/indexing
 title: Indexing
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

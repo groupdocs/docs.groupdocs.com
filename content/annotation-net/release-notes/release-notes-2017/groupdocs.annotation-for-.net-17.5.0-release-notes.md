@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-17-5-0-release-notes
 url: annotation/net/groupdocs-annotation-for-net-17-5-0-release-notes
 title: GroupDocs.Annotation for .NET 17.5.0 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -21,47 +21,14 @@ Below the list of  new features and fixed bugs in this regular monthly release 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-393
-
-Implement GetDocumentInfo from a stream
-
-New Feature
-
-ANNOTATIONNET-392
-
-Implement Html documents annotating
-
-New Feature
-
-ANNOTATIONNET-391
-
-Implement annotating Email format
-
-New Feature
-
-ANNOTATIONNET-390
-
-Implement import annotations in tables for Word
-
-New Feature
-
-ANNOTATIONNET-389
-
-Fix issues with annotations detection in some special cases in Words documents
-
-Bug
-
-ANNOTATIONNET-388
-
-Refactor annotations export logic
-
-Improvement
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-393 | Implement GetDocumentInfo from a stream | New Feature |
+| ANNOTATIONNET-392 | Implement Html documents annotating | New Feature |
+| ANNOTATIONNET-391 | Implement annotating Email format | New Feature |
+| ANNOTATIONNET-390 | Implement import annotations in tables for Word | New Feature |
+| ANNOTATIONNET-389 | Fix issues with annotations detection in some special cases in Words documents | Bug |
+| ANNOTATIONNET-388 | Refactor annotations export logic | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

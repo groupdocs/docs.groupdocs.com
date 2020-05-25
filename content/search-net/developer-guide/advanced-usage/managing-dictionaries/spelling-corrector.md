@@ -3,7 +3,7 @@ id: spelling-corrector
 url: search/net/spelling-corrector
 title: Spelling corrector
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

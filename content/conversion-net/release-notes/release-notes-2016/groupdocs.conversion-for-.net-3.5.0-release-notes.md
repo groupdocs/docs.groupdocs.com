@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-3-5-0-release-notes
 url: conversion/net/groupdocs-conversion-for-net-3-5-0-release-notes
 title: GroupDocs.Conversion For .NET 3.5.0 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -16,29 +16,11 @@ There are general improvements and performance improvements in this version (al
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-1078
-
-% symbol in the file name trowns an exception
-
-Bug
-
-CONVERSIONNET-1206
-
-Exception in HTML to Excel Conversion
-
-Bug
-
-CONVERSIONNET-1207
-
-Convert Excel from Html - Table with background colour and some html controls are not converted properly
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-1078 | % symbol in the file name trowns an exception | Bug |
+| CONVERSIONNET-1206 | Exception in HTML to Excel Conversion | Bug |
+| CONVERSIONNET-1207 | Convert Excel from Html - Table with background colour and some html controls are not converted properly | Bug |
 
 ## Public API and Backward Incompatible Changes
 

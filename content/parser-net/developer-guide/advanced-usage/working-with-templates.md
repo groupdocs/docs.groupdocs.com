@@ -19,42 +19,11 @@ TemplateField(TemplatePosition position, string name, int? pageIndex)
 
 ```
 
-| 
-Parameter
-
- | 
-
-Description
-
- |
+| Parameter | Description |
 | --- | --- |
-| 
-
-position
-
- | 
-
-Defines the way how to find the field on a page.
-
- |
-| 
-
-name
-
- | 
-
-A unique template item name.
-
- |
-| 
-
-pageIndex
-
- | 
-
-The page index. An integer value that represents the index of the page where the template item is located; *null* if the template item is located on any page.
-
- |
+| position | Defines the way how to find the field on a page. |
+| name | A unique template item name. |
+| pageIndex | The page index. An integer value that represents the index of the page where the template item is located; *null* if the template item is located on any page. |
 
 [TemplatePosition](https://apireference.groupdocs.com/net/parser/groupdocs.parser.templates/templateposition) is an abstract base class. The following classes are used to set template positions:
 

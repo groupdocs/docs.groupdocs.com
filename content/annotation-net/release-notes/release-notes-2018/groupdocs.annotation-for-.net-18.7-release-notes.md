@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-18-7-release-notes
 url: annotation/net/groupdocs-annotation-for-net-18-7-release-notes
 title: GroupDocs.Annotation for .NET 18.7 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -29,71 +29,18 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-700
-
-Implement watermark annotation for Words
-
-New Feature
-
-ANNOTATIONNET-699
-
-Implement TextReplacement annotation for Cells
-
-New Feature
-
-ANNOTATIONNET-705
-
-Implement text annotations for Cells
-
-New Feature
-
-ANNOTATIONNET-702
-
-Implement Watermark annotation for Cells
-
-New Feature
-
-ANNOTATIONNET-701
-
-Implement ResourceRedation annotation for Cells
-
-New Feature
-
-ANNOTATIONNET-700
-
-Implement watermark annotation for Words
-
-New Feature
-
-ANNOTATIONNET-724
-
-Add cleanup for text replacement in Words
-
-New Feature
-
-ANNOTATIONNET-727
-
-Improve text annotations in Slides
-
-Improvement
-
-ANNOTATIONNET-720
-
-Improve shape processing in Diagrams for text annotations
-
-Improvement
-
-ANNOTATIONNET-729
-
-Bug with SvgPath parsing
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-700 | Implement watermark annotation for Words | New Feature |
+| ANNOTATIONNET-699 | Implement TextReplacement annotation for Cells | New Feature |
+| ANNOTATIONNET-705 | Implement text annotations for Cells | New Feature |
+| ANNOTATIONNET-702 | Implement Watermark annotation for Cells | New Feature |
+| ANNOTATIONNET-701 | Implement ResourceRedation annotation for Cells | New Feature |
+| ANNOTATIONNET-700 | Implement watermark annotation for Words | New Feature |
+| ANNOTATIONNET-724 | Add cleanup for text replacement in Words | New Feature |
+| ANNOTATIONNET-727 | Improve text annotations in Slides | Improvement |
+| ANNOTATIONNET-720 | Improve shape processing in Diagrams for text annotations | Improvement |
+| ANNOTATIONNET-729 | Bug with SvgPath parsing | Bug |
 
 ## Public API and Backward Incompatible Changes
 

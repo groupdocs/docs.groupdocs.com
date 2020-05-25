@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-19-12-release-notes
 url: annotation/net/groupdocs-annotation-for-net-19-12-release-notes
 title: GroupDocs.Annotation for .NET 19.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -20,71 +20,18 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-1170
-
-Improve Logging in Cells
-
-Improvement
-
-ANNOTATIONNET-1171
-
-Improve Logging in Diagram
-
-Improvement
-
-ANNOTATIONNET-1172 
-
-Improve Logging in Email/Html
-
-Improvement
-
-ANNOTATIONNET-1173
-
-Improve Logging in Images
-
-Improvement
-
-ANNOTATIONNET-1174 
-
-Improve Logging in PDF
-
-Improvement
-
-ANNOTATIONNET-1175  
-
-Improve Logging in Slides
-
-Improvement
-
-ANNOTATIONNET-1176  
-
-Improve Logging in Words
-
-Improvement
-
-ANNOTATIONNET-1177
-
-Improve Logging in Common Classes
-
-Improvement
-
-ANNOTATIONNET-1178 
-
-FilteringAnnotationTypes example raised and exception
-
-Bug
-
-ANNOTATIONNET-1184 
-
-Background color for highlight annotation is not set in Images
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-1170 | Improve Logging in Cells | Improvement |
+| ANNOTATIONNET-1171 | Improve Logging in Diagram | Improvement |
+| ANNOTATIONNET-1172  | Improve Logging in Email/Html | Improvement |
+| ANNOTATIONNET-1173 | Improve Logging in Images | Improvement |
+| ANNOTATIONNET-1174  | Improve Logging in PDF | Improvement |
+| ANNOTATIONNET-1175   | Improve Logging in Slides | Improvement |
+| ANNOTATIONNET-1176   | Improve Logging in Words | Improvement |
+| ANNOTATIONNET-1177 | Improve Logging in Common Classes | Improvement |
+| ANNOTATIONNET-1178  | FilteringAnnotationTypes example raised and exception | Bug |
+| ANNOTATIONNET-1184  | Background color for highlight annotation is not set in Images | Bug |
 
 # Public API and Backward Incompatible Changes
 

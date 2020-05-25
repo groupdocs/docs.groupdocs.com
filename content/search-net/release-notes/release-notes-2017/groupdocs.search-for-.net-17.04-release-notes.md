@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-17-04-release-notes
 url: search/net/groupdocs-search-for-net-17-04-release-notes
 title: GroupDocs.Search for .NET 17.04 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -19,23 +19,7 @@ There are 2 features bug fixes and enhancements in this regular monthly release.
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-457
-
-Implement using Dates Ranges in search
-
-New Feature
-
-SEARCHNET-905
-
-Implement definition of TableDiscreteFunction class as step function
-
-New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>Key</p></td><td class="confluenceTd"><p>Summary</p></td><td class="confluenceTd"><p>Category</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-457</p></td><td class="confluenceTd"><p>Implement using Dates Ranges in search</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-905</p></td><td class="confluenceTd"><p>Implement definition of TableDiscreteFunction class as step function</p></td><td class="confluenceTd"><p>New Feature</p></td></tr></tbody></table>
 
 ##   
 Public API and Backward Incompatible Changes

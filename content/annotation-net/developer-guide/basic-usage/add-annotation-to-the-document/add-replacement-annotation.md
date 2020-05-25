@@ -3,7 +3,7 @@ id: add-replacement-annotation
 url: annotation/net/add-replacement-annotation
 title: Add replacement annotation
 weight: 10
-description: Learn what is a replacement annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
+description: "Learn what is a replacement annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET."
 keywords: What is a replacement annotation, how to add annotation, add replacement annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

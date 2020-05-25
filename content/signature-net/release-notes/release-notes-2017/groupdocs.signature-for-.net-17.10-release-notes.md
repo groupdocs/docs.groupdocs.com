@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-17-10-release-notes
 url: signature/net/groupdocs-signature-for-net-17-10-release-notes
 title: GroupDocs.Signature for .NET 17.10 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -26,95 +26,7 @@ There are about 15 improvements, new features and fixes in this regular release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Issue Type**
-
-SIGNATURENET-3078
-
-Implement ability to verify separate pages of multi-page tiff images
-
-New Feature
-
-SIGNATURENET-3073
-
-Implement ability to process separate pages for multi-page tiff images
-
-New Feature
-
-SIGNATURENET-3070
-
-Add ability to export signed Document to multi pages Tiff format
-
-New Feature
-
-SIGNATURENET-3063
-
-Implement ability to use Signature Line for digital signature in Cells Documents
-
-New Feature
-
-SIGNATURENET-3060
-
-Implement ability to use Signature Line for digital signature in Words Documents
-
-New Feature
-
-SIGNATURENET-3052
-
-Implement ability to stretch Signature Area along Document Width or Height
-
-New Feature
-
-SIGNATURENET-3050
-
-Implement ability to save signed Words document to image format
-
-New Feature
-
-SIGNATURENET-3049
-
-Implement ability to save signed Slides presentation to image format
-
-New Feature
-
-SIGNATURENET-3048
-
-Implement ability to save signed PDF document to image format
-
-New Feature
-
-SIGNATURENET-3047
-
-Implement ability to save signed Cells Workbook to image format
-
-New Feature
-
-SIGNATURENET-3025
-
-Update Digital Signature implementation for Words Documents
-
-Improvement
-
-SIGNATURENET-3023
-
-Pdf Documents - error on Digital Signing when output Save format is not Pdf
-
-Bug
-
-SIGNATURENET-3022
-
-Destination document is empty when Digital Certificate Holder is not loaded
-
-Bug
-
-SIGNATURENET-2961
-
-Incorrect digital signing with doc and docx save options
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Issue Type</strong></p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-3078</p></td><td class="confluenceTd"><p>Implement ability to verify separate pages of multi-page tiff images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-3073</p></td><td class="confluenceTd"><p>Implement ability to process separate pages for multi-page tiff images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-3070</p></td><td class="confluenceTd"><p>Add ability to export signed Document to multi pages Tiff format</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-3063</p></td><td class="confluenceTd"><p>Implement ability to use Signature Line for digital signature in Cells Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-3060</p></td><td class="confluenceTd"><p>Implement ability to use Signature Line for digital signature in Words Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-3052</p></td><td class="confluenceTd"><p>Implement ability to stretch Signature Area along Document Width or Height</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-3050</p></td><td class="confluenceTd"><p>Implement ability to save signed Words document to image format</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-3049</p></td><td class="confluenceTd"><p>Implement ability to save signed Slides presentation to image format</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-3048</p></td><td class="confluenceTd"><p>Implement ability to save signed PDF document to image format</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-3047</p></td><td class="confluenceTd"><p>Implement ability to save signed Cells Workbook to image format</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-3025</p></td><td class="confluenceTd"><p>Update Digital Signature implementation for Words Documents</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-3023</p></td><td class="confluenceTd"><p>Pdf Documents - error on Digital Signing when output Save format is not Pdf</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-3022</p></td><td class="confluenceTd"><p>Destination document is empty when Digital Certificate Holder is not loaded</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2961</p></td><td class="confluenceTd"><p>Incorrect digital signing with doc and docx save options</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

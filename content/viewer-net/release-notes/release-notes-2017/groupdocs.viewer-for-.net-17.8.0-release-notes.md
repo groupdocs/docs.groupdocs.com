@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-17-8-0-release-notes
 url: viewer/net/groupdocs-viewer-for-net-17-8-0-release-notes
 title: GroupDocs.Viewer for .NET 17.8.0 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -24,131 +24,7 @@ There are 9 new features and 11 improvements and fixes in this regular monthly r
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Category**
-
-VIEWERNET-1322
-
-Export styles that make page responsive when resources are not embedded
-
-New Feature
-
-VIEWERNET-1315
-
-Implement a setting for ignoring HTML Resource Prefix in resources
-
-New Feature
-
-VIEWERNET-1307
-
-Show comments when rendering Spreadsheet documents as HTML
-
-New Feature
-
-VIEWERNET-1305
-
-Ignore empty rows when rendering Spreadsheet documents
-
-New Feature
-
-VIEWERNET-1292
-
-Add DNG image file format support
-
-New Feature
-
-VIEWERNET-1260
-
-Add VSTM file format support
-
-New Feature
-
-VIEWERNET-1259
-
-Add VSSM file format support
-
-New Feature
-
-VIEWERNET-1258
-
-Add VSDM file format support
-
-New Feature
-
-VIEWERNET-1191
-
-Show comments when rendering Presentation documents
-
-New Feature
-
-VIEWERNET-1321
-
-Improve setting prefix for fonts when rendering Text document as HTML
-
-Improvement
-
-VIEWERNET-1314
-
-Use single naming convention for HTML resources
-
-Improvement
-
-VIEWERNET-1306
-
-Use ICacheDataHandler instead of IFileDataStore
-
-Improvement
-
-VIEWERNET-1296
-
-Implement responsive output for rendering into HTML
-
-Improvement
-
-VIEWERNET-1303
-
-Exception when rendering Excel document into HTML and image
-
-Bug
-
-VIEWERNET-1297
-
-Exception when rendering email message containing .msg file as attachment
-
-Bug
-
-VIEWERNET-1241
-
-"Index was out of range" exception when rendering PDF to Html
-
-Bug
-
-VIEWERNET-1189
-
-Unable to render Word document having AD RMS template
-
-Bug
-
-VIEWERNET-1148
-
-Unable to render PDF document in HTML/Image mode
-
-Bug
-
-VIEWERNET-1063
-
-Rendering MS Project document stops responding
-
-Bug
-
-VIEWERNET-1017
-
-Check boxes in PDF document are not rendered correctly
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1322</p></td><td class="confluenceTd"><p>Export styles that make page responsive when resources are not embedded</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1315</p></td><td class="confluenceTd"><p>Implement a setting for ignoring HTML Resource Prefix in resources</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1307</p></td><td class="confluenceTd"><p>Show comments when rendering Spreadsheet documents as HTML</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1305</p></td><td class="confluenceTd"><p>Ignore empty rows when rendering Spreadsheet documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1292</p></td><td class="confluenceTd"><p>Add DNG image file format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1260</p></td><td class="confluenceTd"><p>Add VSTM file format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1259</p></td><td class="confluenceTd"><p>Add VSSM file format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1258</p></td><td class="confluenceTd"><p>Add VSDM file format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1191</p></td><td class="confluenceTd"><p>Show comments when rendering Presentation documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1321</p></td><td class="confluenceTd"><p>Improve setting prefix for fonts when rendering Text document as HTML</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1314</p></td><td class="confluenceTd"><p>Use single naming convention for HTML resources</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1306</p></td><td class="confluenceTd"><p>Use ICacheDataHandler instead of IFileDataStore</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1296</p></td><td class="confluenceTd"><p>Implement responsive output for rendering into HTML</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1303</p></td><td class="confluenceTd"><p>Exception when rendering Excel document into HTML and image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1297</p></td><td class="confluenceTd"><p>Exception when rendering email message containing .msg file as attachment</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1241</p></td><td class="confluenceTd"><p>"Index was out of range" exception when rendering PDF to Html</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1189</p></td><td class="confluenceTd"><p>Unable to render Word document having AD RMS template</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1148</p></td><td class="confluenceTd"><p>Unable to render PDF document in HTML/Image mode</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1063</p></td><td class="confluenceTd"><p>Rendering MS Project document stops responding</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1017</p></td><td class="confluenceTd"><p>Check boxes in PDF document are not rendered correctly</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 
@@ -302,77 +178,25 @@ foreach (PageHtml page in pages)
 
 **List of document types that do not support responsive rendering**
 
-Format Name
-
-Extension
-
-Comma-Separated Values
-
-CSV
-
-Electronic publication
-
-EPUB
-
-Extensible Markup Language
-
-XML
-
-HyperText Markup Language
-
-HTML, MHT, MHTML
-
-Image files
-
-SVG
-
-LaTeX
-
-TEX
-
-Microsoft Excel
-
-XLS, XLSX, XLSM, XLSB
-
-Microsoft PowerPoint
-
-PPT, PPTX, PPS, PPSX
-
-Microsoft Project
-
-MPP, MPT
-
-Microsoft Visio
-
-VSD, VDX, VSS, VSX, VST, VTX, VSDX, VDW, VSSX, VSTX, VSDM , VSTM, VSSM
-
-Microsoft Word
-
-DOC, DOCX, DOCM, DOT, DOTX, DOTM
-
-Mobipocket e-book format
-
-MOBI
-
-OpenDocument Formats
-
-ODT, OTT, ODS, ODP, OTP, OTS
-
-Plain Text File
-
-TXT
-
-Portable Document Format
-
-PDF
-
-Rich Text Format
-
-RTF
-
-XML Paper Specification
-
-XPS
+| Format Name | Extension |
+| --- | --- |
+| Comma-Separated Values | CSV |
+| Electronic publication | EPUB |
+| Extensible Markup Language | XML |
+| HyperText Markup Language | HTML, MHT, MHTML |
+| Image files | SVG |
+| LaTeX | TEX |
+| Microsoft Excel | XLS, XLSX, XLSM, XLSB |
+| Microsoft PowerPoint | PPT, PPTX, PPS, PPSX |
+| Microsoft Project | MPP, MPT |
+| Microsoft Visio | VSD, VDX, VSS, VSX, VST, VTX, VSDX, VDW, VSSX, VSTX, VSDM , VSTM, VSSM |
+| Microsoft Word | DOC, DOCX, DOCM, DOT, DOTX, DOTM |
+| Mobipocket e-book format | MOBI |
+| OpenDocument Formats | ODT, OTT, ODS, ODP, OTP, OTS |
+| Plain Text File | TXT |
+| Portable Document Format | PDF |
+| Rich Text Format | RTF |
+| XML Paper Specification | XPS |
 
 ### List of Changes in v17.8.0
 

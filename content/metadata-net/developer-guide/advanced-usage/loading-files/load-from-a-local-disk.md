@@ -3,7 +3,7 @@ id: load-from-a-local-disk
 url: metadata/net/load-from-a-local-disk
 title: Load from a local disk
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

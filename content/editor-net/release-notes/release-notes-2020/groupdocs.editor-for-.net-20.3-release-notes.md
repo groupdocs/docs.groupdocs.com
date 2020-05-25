@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-20-3-release-notes
 url: editor/net/groupdocs-editor-for-net-20-3-release-notes
 title: GroupDocs.Editor for .NET 20.3 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -28,95 +28,22 @@ With version 20.3, GroupDocs.Editor supports new HTML elements: COLGROUP, SECTIO
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1578
-
-Add support of user-installed fonts folder on Windows 10
-
-New feature
-
-EDITORNET-1579
-
-Add ability to extract only fonts, actually used in the document
-
-New feature
-
-EDITORNET-1536
-
-Add support of COLGROUP HTML element
-
-Improvement
-
-EDITORNET-1537
-
-Implement the SECTION HTML element
-
-Improvement
-
-EDITORNET-1538
-
-Implement the OPTGROUP HTML element
-
-Improvement
-
-EDITORNET-1539
-
-Add support of BDI HTML element
-
-Improvement
-
-EDITORNET-1542
-
-Add support of BDO HTML element
-
-Improvement
-
-EDITORNET-1543
-
-Add support of CAPTION HTML element
-
-Improvement
-
-EDITORNET-1545
-
-Implement ARTICLE HTML element
-
-Improvement
-
-EDITORNET-1546
-
-Add support of WBR HTML element
-
-Improvement
-
-EDITORNET-1535
-
-Missing footer during roundtrip conversion in paged mode
-
-Bug
-
-EDITORNET-1547
-
-Fix bug in attribute selector parser
-
-Bug
-
-EDITORNET-1549
-
-Exception in bookmark processing mechanism
-
-Bug
-
-EDITORNET-1552
-
-Fix bug with missing HTML attributes in INPUT HTML element
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1578 | Add support of user-installed fonts folder on Windows 10 | New feature |
+| EDITORNET-1579 | Add ability to extract only fonts, actually used in the document | New feature |
+| EDITORNET-1536 | Add support of COLGROUP HTML element | Improvement |
+| EDITORNET-1537 | Implement the SECTION HTML element | Improvement |
+| EDITORNET-1538 | Implement the OPTGROUP HTML element | Improvement |
+| EDITORNET-1539 | Add support of BDI HTML element | Improvement |
+| EDITORNET-1542 | Add support of BDO HTML element | Improvement |
+| EDITORNET-1543 | Add support of CAPTION HTML element | Improvement |
+| EDITORNET-1545 | Implement ARTICLE HTML element | Improvement |
+| EDITORNET-1546 | Add support of WBR HTML element | Improvement |
+| EDITORNET-1535 | Missing footer during roundtrip conversion in paged mode | Bug |
+| EDITORNET-1547 | Fix bug in attribute selector parser | Bug |
+| EDITORNET-1549 | Exception in bookmark processing mechanism | Bug |
+| EDITORNET-1552 | Fix bug with missing HTML attributes in INPUT HTML element | Bug |
 
 ## Public API and Backward Incompatible Changes
 

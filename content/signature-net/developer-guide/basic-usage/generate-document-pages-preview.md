@@ -3,7 +3,7 @@ id: generate-document-pages-preview
 url: signature/net/generate-document-pages-preview
 title: Generate document pages preview
 weight: 6
-description: This topic explains how to get document pages preview as images with various options by GroupDocs.Signature API.
+description: "This topic explains how to get document pages preview as images with various options by GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

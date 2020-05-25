@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-19-3-1-release-notes
 url: comparison/net/groupdocs-comparison-for-net-19-3-1-release-notes
 title: GroupDocs.Comparison for .NET 19.3.1 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -22,89 +22,21 @@ Below is the list of most notable changes in release of GroupDocs.Comparison for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-1836
-
-Save documents as images for Words
-
-Feature
-
-COMPARISONNET-1837
-
-Save documents as images for Cells
-
-Feature
-
-COMPARISONNET-1838
-
-Save documents as images for Slides
-
-Feature
-
-COMPARISONNET-1839
-
-Save documents as images for PDF
-
-Feature
-
-COMPARISONNET-1840
-
-Save documents as images for HTML
-
-Feature
-
-COMPARISONNET-1841
-
-Save documents as images for Email
-
-Feature
-
-COMPARISONNET-1842
-
-Save documents as images for Note
-
-Feature
-
-COMPARISONNET-1843
-
-Save documents as images for Text
-
-Feature
-
-COMPARISONNET-1844
-
-Save documents as images for Diagrams
-
-Feature
-
-COMPARISONNET-1806
-
-Issue on SuperScript and SubScript
-
-Bug
-
-COMPARISONNET-1802
-
-Settings StyleSettings is not working for html
-
-Bug
-
-COMPARISONNET-1803
-
-Issue in comparing large sized PDF files (another cases)
-
-Bug
-
-COMPARISONNET-1804
-
-EndNote Comparison is not working
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-1836 | Save documents as images for Words | Feature |
+| COMPARISONNET-1837 | Save documents as images for Cells | Feature |
+| COMPARISONNET-1838 | Save documents as images for Slides | Feature |
+| COMPARISONNET-1839 | Save documents as images for PDF | Feature |
+| COMPARISONNET-1840 | Save documents as images for HTML | Feature |
+| COMPARISONNET-1841 | Save documents as images for Email | Feature |
+| COMPARISONNET-1842 | Save documents as images for Note | Feature |
+| COMPARISONNET-1843 | Save documents as images for Text | Feature |
+| COMPARISONNET-1844 | Save documents as images for Diagrams | Feature |
+| COMPARISONNET-1806 | Issue on SuperScript and SubScript | Bug |
+| COMPARISONNET-1802 | Settings StyleSettings is not working for html | Bug |
+| COMPARISONNET-1803 | Issue in comparing large sized PDF files (another cases) | Bug |
+| COMPARISONNET-1804 | EndNote Comparison is not working | Bug |
 
 ## Public API and Backward Incompatible Changes
 

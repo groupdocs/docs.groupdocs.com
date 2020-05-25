@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-19-3-release-notes
 url: editor/net/groupdocs-editor-for-net-19-3-release-notes
 title: GroupDocs.Editor for .NET 19.3 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -20,47 +20,14 @@ Massive renaming in public API.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1109
-
-Develop XML module for opening, viewing and editing XML documents in GroupDocs.Editor
-
-New Feature
-
-EDITORNET-1110
-
-Implement ability to customize font settings and color for every distinct entity in XML structure
-
-New Feature
-
-EDITORNET-1111
-
-Develop option for specifying and applying the proper encoding
-
-New Feature
-
-EDITORNET-1112
-
-Develop mechanism for proper converting textual content into HTML
-
-New Feature
-
-EDITORNET-1080
-
-Implement extended text properties
-
-New Feature
-
-EDITORNET-1113
-
-Perform renaming of public API in accordance with new naming convention
-
-Improvement
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1109 | Develop XML module for opening, viewing and editing XML documents in GroupDocs.Editor | New Feature |
+| EDITORNET-1110 | Implement ability to customize font settings and color for every distinct entity in XML structure | New Feature |
+| EDITORNET-1111 | Develop option for specifying and applying the proper encoding | New Feature |
+| EDITORNET-1112 | Develop mechanism for proper converting textual content into HTML | New Feature |
+| EDITORNET-1080 | Implement extended text properties | New Feature |
+| EDITORNET-1113 | Perform renaming of public API in accordance with new naming convention | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

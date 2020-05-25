@@ -3,7 +3,7 @@ id: working-with-metadata-in-psd-images
 url: metadata/net/working-with-metadata-in-psd-images
 title: Working with metadata in PSD images
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

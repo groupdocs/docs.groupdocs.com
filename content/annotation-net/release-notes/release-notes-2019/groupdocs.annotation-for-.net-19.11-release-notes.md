@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-19-11-release-notes
 url: annotation/net/groupdocs-annotation-for-net-19-11-release-notes
 title: GroupDocs.Annotation for .NET 19.11 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -20,67 +20,17 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-1135
-
-Investigate and fix coordinates discrepancy for Cells
-
-Improvement
-
-ANNOTATIONNET-1139
-
-Investigate and fix coordinates discrepancy for PDF
-
-Improvement
-
-ANNOTATIONNET-1140 
-
-Investigate and fix coordinates discrepancy for Slides
-
-Improvement
-
-ANNOTATIONNET-1141
-
-Investigate and fix coordinates discrepancy for Words
-
-Improvement
-
-ANNOTATIONNET-1146 
-
-Improve Words Shapes Import
-
-Improvement
-
-ANNOTATIONNET-1165  
-
-Adding showing distance value for Distance annotations in different formats
-
-(Slides, PDF, Images, Diagrams, Cells)
-
-Improvement
-
-ANNOTATIONNET-1132  
-
-Issue with one page PDF preview generating
-
-Bug
-
-ANNOTATIONNET-1133
-
-Wrong Slides preview generating
-
-Bug
-
-ANNOTATIONNET-1145 
-
-Compatibility issues under .NET Standard 2.0
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-1135 | Investigate and fix coordinates discrepancy for Cells | Improvement |
+| ANNOTATIONNET-1139 | Investigate and fix coordinates discrepancy for PDF | Improvement |
+| ANNOTATIONNET-1140  | Investigate and fix coordinates discrepancy for Slides | Improvement |
+| ANNOTATIONNET-1141 | Investigate and fix coordinates discrepancy for Words | Improvement |
+| ANNOTATIONNET-1146  | Improve Words Shapes Import | Improvement |
+| ANNOTATIONNET-1165   | Adding showing distance value for Distance annotations in different formats(Slides, PDF, Images, Diagrams, Cells) | Improvement |
+| ANNOTATIONNET-1132   | Issue with one page PDF preview generating | Bug |
+| ANNOTATIONNET-1133 | Wrong Slides preview generating | Bug |
+| ANNOTATIONNET-1145  | Compatibility issues under .NET Standard 2.0 | Bug |
 
 # Public API and Backward Incompatible Changes
 

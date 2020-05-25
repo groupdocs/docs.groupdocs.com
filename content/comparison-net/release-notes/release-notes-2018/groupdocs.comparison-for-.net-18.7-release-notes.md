@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-18-7-release-notes
 url: comparison/net/groupdocs-comparison-for-net-18-7-release-notes
 title: GroupDocs.Comparison for .NET 18.7 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -22,47 +22,14 @@ Below the list of most notable changes in  release of GroupDocs.Annotation for 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-1605
-
-Implement Group Shapes for Diagrams
-
-New Feature
-
-COMPARISONNET-1587
-
-Implement comparison different formats as image
-
-New Feature
-
-COMPARISONNET-1607
-
-Implement GluedShapes in Diagram
-
-New Feature
-
-COMPARISONNET-1608
-
-Improve StyleSheet Comparer for Html
-
-Improvement
-
-COMPARISONNET-1606
-
-Add shape without Diagram's Master
-
-Improvement
-
-COMPARISONNET-1619
-
-Output of PDF with images is not as expected
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-1605 | Implement Group Shapes for Diagrams | New Feature |
+| COMPARISONNET-1587 | Implement comparison different formats as image | New Feature |
+| COMPARISONNET-1607 | Implement GluedShapes in Diagram | New Feature |
+| COMPARISONNET-1608 | Improve StyleSheet Comparer for Html | Improvement |
+| COMPARISONNET-1606 | Add shape without Diagram's Master | Improvement |
+| COMPARISONNET-1619 | Output of PDF with images is not as expected | Bug |
 
 ## Public API and Backward Incompatible Changes
 

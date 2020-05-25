@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-17-10-release-notes
 url: metadata/net/groupdocs-metadata-for-net-17-10-release-notes
 title: GroupDocs.Metadata for .NET 17.10 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -22,41 +22,7 @@ There are 2 new features and 3 fixes in this regular monthly release. The most n
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-METADATANET-1927 
-
-Ability to read metadata of ZIP format 
-
-New Feature 
-
-METADATANET-1567
-
-Implement ability to detect MOV video format 
-
-New Feature
-
-METADATANET-1924
-
-File Size increased after Metadata removal 
-
-Bug
-
-METADATANET-1935
-
-JPG - the GPS related data is removed after we try to remove the metadata of the JPG file 
-
-Bug
-
-METADATANET-1940
-
-Unable to update XMPBasic metadata when updating PdfMetadata at the same time
-
-Bug
+<table class="confluenceTable"><tbody><tr style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none;"><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Key</span></td><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Summary</span></td><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Category</span></td></tr><tr style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none;"><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1927</span>&nbsp;</td><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Ability to read metadata of ZIP format</span>&nbsp;</td><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span>&nbsp;</td></tr><tr style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none;"><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1567</span></td><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Implement ability to detect MOV video format</span>&nbsp;</td><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr><tr style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none;"><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1924</span></td><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">File Size increased after Metadata removal</span>&nbsp;</td><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Bug</span></td></tr><tr style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none;"><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1935</span></td><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">JPG - the GPS related data is removed after we try to remove the metadata of the JPG file</span>&nbsp;</td><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Bug</span></td></tr><tr style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none;"><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1940</span></td><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Unable to update XMPBasic metadata when updating PdfMetadata at the same time</span></td><td style="font-size: 10pt; line-height: 13pt; background-color: initial; background-image: none; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; min-width: 0.6em;" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Bug</span></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

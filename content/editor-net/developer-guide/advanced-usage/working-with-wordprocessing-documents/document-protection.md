@@ -3,7 +3,7 @@ id: document-protection
 url: editor/net/document-protection
 title: Document protection
 weight: 2
-description: This article explains how to edit protected Word document, allow or restrict document editing features like adding comments or filling form fields using GroupDocs.Editor for .NET API.
+description: "This article explains how to edit protected Word document, allow or restrict document editing features like adding comments or filling form fields using GroupDocs.Editor for .NET API."
 keywords: Edit protected Word document, Edit and protect Word document
 productName: GroupDocs.Editor for .NET
 hideChildren: False

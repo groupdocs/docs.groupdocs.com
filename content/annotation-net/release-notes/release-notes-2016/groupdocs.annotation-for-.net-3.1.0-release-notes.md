@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-3-1-0-release-notes
 url: annotation/net/groupdocs-annotation-for-net-3-1-0-release-notes
 title: GroupDocs.Annotation for .NET 3.1.0 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -20,77 +20,19 @@ This is the version of new generation GroupDocs.Annotation for .NET. The most n
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-ANNOTATIONNET-196
-
-Implement getting not all pages of document at once (performance improvenet)
-
-Improvement
-
-ANNOTATIONNET-197
-
-Increase slow Performance on big file
-
-Improvement
-
-ANNOTATIONNET-216
-
-Implement proper exception for unsuported annotations for Slides and Cells formats
-
-Improvement
-
-ANNOTATIONNET-189
-
-Implement ResourceRedaction annotation in Word documents
-
-New Feature
-
-ANNOTATIONNET-191
-
-Implement Strikeout annotation in Word documents
-
-New Feature
-
-ANNOTATIONNET-190
-
-Implement TextField annotation in Word documents
-
-New Feature
-
-ANNOTATIONNET-187
-
-Implement Text Replacement in Words documents (comments)
-
-New Feature
-
-ANNOTATIONNET-188
-
-Implement TextHighlight annotation in Word documents
-
-New Feature
-
-ANNOTATIONNET-211
-
-Implement Text Area annotatoin in Words documents
-
-New Feature
-
-ANNOTATIONNET-213
-
-Update open-source WebUI sample to use GroupDocs.Annotation 3.1.0
-
-New Feature
-
-ANNOTATIONNET-198
-
-Implement document export to Word
-
-New Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| ANNOTATIONNET-196 | Implement getting not all pages of document at once (performance improvenet) | Improvement |
+| ANNOTATIONNET-197 | Increase slow Performance on big file | Improvement |
+| ANNOTATIONNET-216 | Implement proper exception for unsuported annotations for Slides and Cells formats | Improvement |
+| ANNOTATIONNET-189 | Implement ResourceRedaction annotation in Word documents | New Feature |
+| ANNOTATIONNET-191 | Implement Strikeout annotation in Word documents | New Feature |
+| ANNOTATIONNET-190 | Implement TextField annotation in Word documents | New Feature |
+| ANNOTATIONNET-187 | Implement Text Replacement in Words documents (comments) | New Feature |
+| ANNOTATIONNET-188 | Implement TextHighlight annotation in Word documents | New Feature |
+| ANNOTATIONNET-211 | Implement Text Area annotatoin in Words documents | New Feature |
+| ANNOTATIONNET-213 | Update open-source WebUI sample to use GroupDocs.Annotation 3.1.0 | New Feature |
+| ANNOTATIONNET-198 | Implement document export to Word | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

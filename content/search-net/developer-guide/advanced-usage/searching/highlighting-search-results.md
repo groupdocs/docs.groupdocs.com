@@ -3,7 +3,7 @@ id: highlighting-search-results
 url: search/net/highlighting-search-results
 title: Highlighting search results
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

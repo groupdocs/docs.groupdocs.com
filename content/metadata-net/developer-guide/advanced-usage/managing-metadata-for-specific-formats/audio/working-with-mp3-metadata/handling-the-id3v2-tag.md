@@ -3,7 +3,7 @@ id: handling-the-id3v2-tag
 url: metadata/net/handling-the-id3v2-tag
 title: Handling the ID3v2 tag
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

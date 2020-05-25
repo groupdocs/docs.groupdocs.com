@@ -3,7 +3,7 @@ id: groupdocs-comparsion-for-net-17-2-0-release-notes
 url: comparison/net/groupdocs-comparsion-for-net-17-2-0-release-notes
 title: GroupDocs.Comparsion for .NET 17.2.0 Release Notes
 weight: 10
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -21,101 +21,23 @@ There are 8 new features and 2 improvements and 5 fixes in this regular monthly 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-COMPARISONNET-1123
-
-Integrate Metered licensing
-
-New Feature
-
-COMPARISONNET-1122
-
-GroupDocs.Comparison.PDF: Add support of comparing Text Font in Watermarks
-
-New Feature
-
-COMPARISONNET-1068
-
-GroupDocs.Comparison.Cells: Add support for Formulas
-
-New Feature
-
-COMPARISONNET-1065
-
-GroupDocs.Comparison.Cells: Add support for Images
-
-New Feature
-
-COMPARISONNET-1070
-
-GroupDocs.Comparison.Cells: Add support for Chart
-
-New Feature
-
-COMPARISONNET-1066
-
-GroupDocs.Comparison.Cells: Add support for Smart Art
-
-New Feature
-
-COMPARISONNET-1067
-
-GroupDocs.Comparison.Cells: Add support for VBA Controls
-
-New Feature
-
-COMPARISONNET-1108
-
-Add support of mobi format
-
-New Feature
-
-COMPARISONNET-1112
-
-Add support of Imaging DjVu
-
-Improvement
-
-COMPARISONNET-1080
-
-GroupDocs.Comparison.PDF: Improve comparison changes detection for Paragraphs
-
-Improvement
-
-COMPARISONNET-1129
-
-GroupDocs.Comparison.PDF: Fix bug when some lines are deleted or inserted where should not be
-
-Bug
-
-COMPARISONNET-1130
-
-GroupDocs.Comparison.PDF: Fix bug when first line of paragraph don't have indent but should have
-
-Bug
-
-COMPARISONNET-1131
-
-GroupDocs.Comparison.PDF: Fix bug when component change its page but dont change its position but should be
-
-Bug
-
-COMPARISONNET-1128
-
-GroupDocs.Comparison.PDF:Fix bug when first line of paragraph use as not paragraph line
-
-Bug
-
-COMPARISONNET-1132
-
-GroupDocs.Comparison.PDF: Fix bug when text from tables use twice with simple paragraphs
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| COMPARISONNET-1123 | Integrate Metered licensing | New Feature |
+| COMPARISONNET-1122 | GroupDocs.Comparison.PDF: Add support of comparing Text Font in Watermarks | New Feature |
+| COMPARISONNET-1068 | GroupDocs.Comparison.Cells: Add support for Formulas | New Feature |
+| COMPARISONNET-1065 | GroupDocs.Comparison.Cells: Add support for Images | New Feature |
+| COMPARISONNET-1070 | GroupDocs.Comparison.Cells: Add support for Chart | New Feature |
+| COMPARISONNET-1066 | GroupDocs.Comparison.Cells: Add support for Smart Art | New Feature |
+| COMPARISONNET-1067 | GroupDocs.Comparison.Cells: Add support for VBA Controls | New Feature |
+| COMPARISONNET-1108 | Add support of mobi format | New Feature |
+| COMPARISONNET-1112 | Add support of Imaging DjVu | Improvement |
+| COMPARISONNET-1080 | GroupDocs.Comparison.PDF: Improve comparison changes detection for Paragraphs | Improvement |
+| COMPARISONNET-1129 | GroupDocs.Comparison.PDF: Fix bug when some lines are deleted or inserted where should not be | Bug |
+| COMPARISONNET-1130 | GroupDocs.Comparison.PDF: Fix bug when first line of paragraph don't have indent but should have | Bug |
+| COMPARISONNET-1131 | GroupDocs.Comparison.PDF: Fix bug when component change its page but dont change its position but should be | Bug |
+| COMPARISONNET-1128 | GroupDocs.Comparison.PDF:Fix bug when first line of paragraph use as not paragraph line | Bug |
+| COMPARISONNET-1132 | GroupDocs.Comparison.PDF: Fix bug when text from tables use twice with simple paragraphs | Bug |
 
 ## Public API and Backward Incompatible Changes
 

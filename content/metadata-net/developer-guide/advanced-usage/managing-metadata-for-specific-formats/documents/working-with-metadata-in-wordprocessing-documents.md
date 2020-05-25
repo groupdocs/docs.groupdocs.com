@@ -3,7 +3,7 @@ id: working-with-metadata-in-wordprocessing-documents
 url: metadata/net/working-with-metadata-in-wordprocessing-documents
 title: Working with metadata in WordProcessing documents
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

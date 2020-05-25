@@ -44,14 +44,7 @@ This enhancement allows getting the information of supported extractors for a do
 
 **DocumentInfo** class has the following properties:
 
-| 
-Property
-
- | 
-
-Description
-
- |
+| Property | Description |
 | --- | --- |
 | HasText | Boolean value indicating if a user can extract a plain text from a document |
 | HasFormattedText | Boolean value indicating if a user can extract a formatted text from a document |
@@ -157,41 +150,10 @@ ExtractMode ExtractMode { get; set; }
 
 This property gets or sets a value indicating the mode of text extraction. `ExtractMode` enumeration has the following members:
 
-| 
-Value
-
-
-
-
-
- | 
-
-Description
-
-
-
-
-
- |
+| Value | Description |
 | --- | --- |
-| 
-
-`Simple`
-
- | 
-
-Fast text extraction. The text in this mode is not extracted in a very accurate way but faster than it is extracted in the standard mode. If the fast text extraction doesn't support the document format, this parameter is ignored and the standard text extraction is used.
-
- |
-| 
-
-`Standard`
-
- | 
-
-Standard text extraction.
-
- |
+| `Simple` | Fast text extraction. The text in this mode is not extracted in a very accurate way but faster than it is extracted in the standard mode. If the fast text extraction doesn't support the document format, this parameter is ignored and the standard text extraction is used. |
+| `Standard` | Standard text extraction. |
 
 Usage:
 

@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-19-9-release-notes
 url: signature/net/groupdocs-signature-for-net-19-9-release-notes
 title: GroupDocs.Signature for .NET 19.9 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -22,53 +22,15 @@ There are about seven new features, improvements and bug fixes in this regular r
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-2254
-
-DigitalSignature property of SignDigitalOptions does not affect signing process
-
-Bug
-
-SIGNATURENET-2279
-
-Implement Z-Order for Text Signature for WordProcessing Documents
-
-New Feature
-
-SIGNATURENET-2278
-
-Implement Z-Order for Text Signature for Spreadsheets Documents
-
-New Feature
-
-SIGNATURENET-2275
-
-Implement Z-Order for Text Signature for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2211
-
-Improvement of saving signed .djvu files
-
-Improvement
-
-SIGNATURENET-2210
-
-Improvement of WordProcessing documents saving to various formats
-
-Improvement
-
-SIGNATURENET-2200
-
-Implement Background Transparent for Stamp
-
-Improvement
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2254 | DigitalSignature property of SignDigitalOptions does not affect signing process | Bug |
+| SIGNATURENET-2279 | Implement Z-Order for Text Signature for WordProcessing Documents | New Feature |
+| SIGNATURENET-2278 | Implement Z-Order for Text Signature for Spreadsheets Documents | New Feature |
+| SIGNATURENET-2275 | Implement Z-Order for Text Signature for Pdf Documents | New Feature |
+| SIGNATURENET-2211 | Improvement of saving signed .djvu files | Improvement |
+| SIGNATURENET-2210 | Improvement of WordProcessing documents saving to various formats | Improvement |
+| SIGNATURENET-2200 | Implement Background Transparent for Stamp | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

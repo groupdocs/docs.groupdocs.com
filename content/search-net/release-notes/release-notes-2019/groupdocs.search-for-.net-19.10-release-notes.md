@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-19-10-release-notes
 url: search/net/groupdocs-search-for-net-19-10-release-notes
 title: GroupDocs.Search for .NET 19.10 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -23,41 +23,7 @@ Other notable features and improvements:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-1967
-
-Implement highlighting search results in short fragments
-
-Improvement
-
-SEARCHNET-1970
-
-Enhance document metadata indexing with new formats
-
-Improvement
-
-SEARCHNET-2110
-
-Implement new public API
-
-Improvement
-
-SEARCHNET-2035
-
-Implement indexing each letter as a separate word
-
-New Feature
-
-SEARCHNET-2108
-
-Implement ability to remove paths from index
-
-New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>Key</p></td><td class="confluenceTd"><p>Summary</p></td><td class="confluenceTd"><p>Category</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>SEARCHNET-1967</p></td><td colspan="1" class="confluenceTd">Implement highlighting search results in short fragments</td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd"><p>SEARCHNET-1970</p></td><td class="confluenceTd"><p>Enhance document metadata indexing with new formats</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td colspan="1" class="confluenceTd">SEARCHNET-2110</td><td colspan="1" class="confluenceTd">Implement new public API</td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td colspan="1" class="confluenceTd">SEARCHNET-2035</td><td colspan="1" class="confluenceTd">Implement indexing each letter as a separate word</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SEARCHNET-2108</td><td colspan="1" class="confluenceTd">Implement ability to remove paths from index</td><td colspan="1" class="confluenceTd">New Feature</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

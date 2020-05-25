@@ -3,7 +3,7 @@ id: search-index-settings
 url: search/net/search-index-settings
 title: Search index settings
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

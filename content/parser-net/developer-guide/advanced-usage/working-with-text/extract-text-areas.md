@@ -20,65 +20,14 @@ IEnumerable<PageTextArea> GetTextAreas(int pageIndex, PageTextAreaOptions option
 
 The methods return a collection of [PageTextArea](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagetextarea) objects:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
-| 
-
-[Page](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagearea/properties/page)
-
- | 
-
-The page that contains the text area.
-
- |
-| 
-
-[Rectangle](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagearea/properties/rectangle)
-
- | 
-
-The rectangular area on the page that contains the text area.
-
- |
-| 
-
-[Text](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagetextarea/properties/text)
-
- | 
-
-The value of the text area.
-
- |
-| [BaseLine](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagetextarea/properties/baseline) | 
-
-The base line of the text area.
-
- |
-| 
-
-[TextStyle](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagetextarea/properties/textstyle)
-
- | 
-
-The text style of the text area.
-
- |
-| 
-
-[Areas](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagetextarea/properties/areas)
-
- | 
-
-The collection of child text areas.
-
- |
+| [Page](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagearea/properties/page) | The page that contains the text area. |
+| [Rectangle](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagearea/properties/rectangle) | The rectangular area on the page that contains the text area. |
+| [Text](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagetextarea/properties/text) | The value of the text area. |
+| [BaseLine](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagetextarea/properties/baseline) | The base line of the text area. |
+| [TextStyle](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagetextarea/properties/textstyle) | The text style of the text area. |
+| [Areas](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagetextarea/properties/areas) | The collection of child text areas. |
 
 Text area represents a rectangular page area with a text. Text area can be simple or composite. The simple text area contains only a text and [Areas](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagetextarea/properties/areas) property is always an empty collection (not null). The composite text area doesn't have its own text. Text property is calculated by its children texts which are contained in [Areas](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagetextarea/properties/areas) property.
 
@@ -170,56 +119,13 @@ using(Parser parser = new Parser(filePath))
 
 [PageTextAreaOptions](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/pagetextareaoptions) parameter is used to customize text areas extraction process. This class has the following members:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
-| 
-
-[Rectangle](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/pageareaoptions/properties/rectangle)
-
- | 
-
-The rectangular area that contains a text area.
-
- |
-| 
-
-[Expression](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/pagetextareaoptions/properties/expression)
-
- | 
-
-The regular expression.
-
- |
-| [MatchCase](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/pagetextareaoptions/properties/matchcase) | 
-
-The value that indicates whether a text case isn't ignored.
-
- |
-| 
-
-[UniteSegments](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/pagetextareaoptions/properties/unitesegments)
-
- | 
-
-The value that indicates whether segments are united.
-
- |
-| 
-
-[IgnoreFormatting](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/pagetextareaoptions/properties/ignoreformatting)
-
- | 
-
-The value that indicates whether text formatting is ignored.
-
- |
+| [Rectangle](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/pageareaoptions/properties/rectangle) | The rectangular area that contains a text area. |
+| [Expression](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/pagetextareaoptions/properties/expression) | The regular expression. |
+| [MatchCase](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/pagetextareaoptions/properties/matchcase) | The value that indicates whether a text case isn't ignored. |
+| [UniteSegments](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/pagetextareaoptions/properties/unitesegments) | The value that indicates whether segments are united. |
+| [IgnoreFormatting](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/pagetextareaoptions/properties/ignoreformatting) | The value that indicates whether text formatting is ignored. |
 
 Here are the steps to extract text areas from the upper-left corner:
 

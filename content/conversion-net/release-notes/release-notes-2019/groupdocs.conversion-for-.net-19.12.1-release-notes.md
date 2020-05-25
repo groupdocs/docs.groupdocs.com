@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-19-12-1-release-notes
 url: conversion/net/groupdocs-conversion-for-net-19-12-1-release-notes
 title: GroupDocs.Conversion for .NET 19.12.1 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -16,17 +16,9 @@ This is hot fix release which fixes issues with licensing in the legacy namespac
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-3556
-
-Bug
-
-GroupDocs.Conversion.Legacy.License not working with Word Documents
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-3556 | Bug | GroupDocs.Conversion.Legacy.License not working with Word Documents |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: load-password-protected-documents
 url: annotation/net/load-password-protected-documents
 title: Load password-protected documents
 weight: 1
-description: This article explains how to load password-protected PDF, Word, Excel, PowerPoint documents when using GroupDocs.Annotation for .NET.
+description: "This article explains how to load password-protected PDF, Word, Excel, PowerPoint documents when using GroupDocs.Annotation for .NET."
 keywords: Load password-protected document, Load protected document with GroupDocs.Annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

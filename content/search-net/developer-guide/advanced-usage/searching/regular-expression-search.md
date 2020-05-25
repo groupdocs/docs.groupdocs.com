@@ -3,7 +3,7 @@ id: regular-expression-search
 url: search/net/regular-expression-search
 title: Regular expression search
 weight: 17
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

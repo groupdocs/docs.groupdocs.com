@@ -3,7 +3,7 @@ id: migration-notes
 url: annotation/net/migration-notes
 title: Migration Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-17-8-0-release-notes
 url: conversion/net/groupdocs-conversion-for-net-17-8-0-release-notes
 title: GroupDocs.Conversion for .NET 17.8.0 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -23,35 +23,12 @@ There are 4 new features, improvements and fixes in this regular monthly release
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-1999
-
-Hide comments for Cells documents
-
-New Feature
-
-CONVERSIONNET-1984
-
-Implement possibility to convert specific pages
-
-New Feature
-
-CONVERSIONNET-2003
-
-Simplify the generated HTML markup
-
-Improvement
-
-CONVERSIONNET-2020
-
-Converting to Html with SaveOptions.FixedLayout=false always produce fixed layout html conversion
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-1999 | Hide comments for Cells documents | New Feature |
+| CONVERSIONNET-1984 | Implement possibility to convert specific pages | New Feature |
+| CONVERSIONNET-2003 | Simplify the generated HTML markup | Improvement |
+| CONVERSIONNET-2020 | Converting to Html with SaveOptions.FixedLayout=false always produce fixed layout html conversion | Bug |
 
 ## Public API and Backward Incompatible Changes
 

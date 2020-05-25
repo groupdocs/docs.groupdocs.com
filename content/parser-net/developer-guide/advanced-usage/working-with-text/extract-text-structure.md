@@ -19,100 +19,26 @@ This method returns XML representation of a document. A document has the followi
 
 ![](https://wiki.lisbon.dynabic.com/download/attachments/29427384/general.png?version=1&modificationDate=1584289636000&api=v2)
 
-| 
-Tag
-
- | 
-
-Description
-
- |
+| Tag | Description |
 | --- | --- |
-| 
-
-document
-
- | 
-
-The root tag
-
- |
-| 
-
-section
-
- | 
-
-Represents a section of the document. Depending on the document type, it can represent a worksheet, a slide and so on. Can contain the following attributes:
-
+| document | The root tag |
+| section | Represents a section of the document. Depending on the document type, it can represent a worksheet, a slide and so on. Can contain the following attributes:
 *   style - the style of the section
 *   name - the name of the section (for example, the name of the sheet)
 
  |
-| 
-
-p
-
- | 
-
-Represents a text paragraph. Can contain the following attribute:
+| p | Represents a text paragraph. Can contain the following attribute:
 
 *   style - the style of paragraph
 
  |
-| 
-
-ul
-
- | 
-
-Represents an unordered list
-
- |
-| 
-
-ol
-
- | 
-
-Represents an ordered list
-
- |
-| 
-
-li
-
- | 
-
-Represents a list item
-
- |
+| ul | Represents an unordered list |
+| ol | Represents an ordered list |
+| li | Represents a list item |
 | shape | Represents a shape object. |
-| 
-
-table
-
- | 
-
-Represents a table
-
- |
-| 
-
-tr
-
- | 
-
-Represents a table row
-
- |
-| 
-
-td
-
- | 
-
-Represents a table cell. Can contain the following attributes:
+| table | Represents a table |
+| tr | Represents a table row |
+| td | Represents a table cell. Can contain the following attributes:
 
 *   rowIndex - the zero-based index of the row
 *   columnIndex - the zero-based index of the column
@@ -133,53 +59,15 @@ The **p** and **li** tags can contain **hyperlink, strong, em** tags and the val
 
 ![](https://wiki.lisbon.dynabic.com/download/thumbnails/29427384/p.png?version=1&modificationDate=1584289782000&api=v2)![](https://wiki.lisbon.dynabic.com/download/thumbnails/29427384/li.png?version=1&modificationDate=1584289787000&api=v2)
 
-| 
-Tag
-
- | 
-
-Description
-
- |
+| Tag | Description |
 | --- | --- |
-| 
-
-hyperlink
-
- | 
-
-Represents a hyperlink. Can contain the following attribute:
-
+| hyperlink | Represents a hyperlink. Can contain the following attribute:
 *   link - URL
 
  |
-| 
-
-strong
-
- | 
-
-Represents a strong emphasis (bold text)
-
- |
-| 
-
-em
-
- | 
-
-Represents a regular emphasis (italic text)
-
- |
-| 
-
-br
-
- | 
-
-Represents a line break (empty tag)
-
- |
+| strong | Represents a strong emphasis (bold text) |
+| em | Represents a regular emphasis (italic text) |
+| br | Represents a line break (empty tag) |
 
 ## Features of text extraction for different formats
 

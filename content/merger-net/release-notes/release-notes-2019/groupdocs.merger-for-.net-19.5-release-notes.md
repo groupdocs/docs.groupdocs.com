@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-19-5-release-notes
 url: merger/net/groupdocs-merger-for-net-19-5-release-notes
 title: GroupDocs.Merger for .NET 19.5 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -20,35 +20,12 @@ There are a few new features in this regular monthly release. The most notable a
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-117
-
-Implement a new format LaTex
-
-New Feature
-
-MERGERNET-487
-
-Implement GetImages for Diagram-formats
-
-New Feature
-
-MERGERNET-445
-
-Expand logic of document Split functionality
-
-New Feature
-
-MERGERNET-394
-
-How to save and load LaTex document
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-117 | Implement a new format LaTex | New Feature |
+| MERGERNET-487 | Implement GetImages for Diagram-formats | New Feature |
+| MERGERNET-445 | Expand logic of document Split functionality | New Feature |
+| MERGERNET-394 | How to save and load LaTex document | Bug |
 
 ## Public API and Backward Incompatible Changes
 

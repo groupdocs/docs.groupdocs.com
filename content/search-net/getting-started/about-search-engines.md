@@ -3,7 +3,7 @@ id: about-search-engines
 url: search/net/about-search-engines
 title: About Search Engines
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

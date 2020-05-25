@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-20-4-release-notes
 url: metadata/net/groupdocs-metadata-for-net-20-4-release-notes
 title: GroupDocs.Metadata for .NET 20.4 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -21,29 +21,11 @@ There are the following features, enhancements and fixes in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-METADATANET-2847
-
-Implement the ability to work with EXIF metadata in PNG images
-
-New Feature
-
-METADATANET-2852
-
-Implement the ability to work with XMP metadata in MP3 files
-
-New Feature
-
-METADATANET-3185
-
-Implement the ability to parse most common EXIF Makernote metadata formats using the new API
-
-Enhancement
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-2847 | Implement the ability to work with EXIF metadata in PNG images | New Feature |
+| METADATANET-2852 | Implement the ability to work with XMP metadata in MP3 files | New Feature |
+| METADATANET-3185 | Implement the ability to parse most common EXIF Makernote metadata formats using the new API | Enhancement |
 
 ## Public API and Backward Incompatible Changes
 

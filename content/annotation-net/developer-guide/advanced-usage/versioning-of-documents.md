@@ -3,7 +3,7 @@ id: versioning-of-documents
 url: annotation/net/versioning-of-documents
 title: Versioning of documents
 weight: 4
-description: Following this guide you will learn how to manage different versions of document using GroupDocs.Annotation for .NET API.
+description: "Following this guide you will learn how to manage different versions of document using GroupDocs.Annotation for .NET API."
 keywords: Get different document versions, versions, Version management
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -55,13 +55,7 @@ If you need to get list of annotations you can use [Annotator.GetVersion()](http
 
 Here code that demonstrates how to get list of annotations from specific version of document
 
-`using (Annotator annotator =` `new` `Annotator(``"result.pdf"``))`
-
-`{`
-
-`List<AnnotationBase> annotations = annotator.GetVersion(``"CUSTOM_VERSION"``);`
-
-`}`
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><div class="container" title="Hint: double-click to select code"><div class="line number1 index0 alt2"><code class="java plain">using (Annotator annotator = </code><code class="java keyword">new</code> <code class="java plain">Annotator(</code><code class="java string">"result.pdf"</code><code class="java plain">))</code></div><div class="line number2 index1 alt1"><code class="java plain">{</code></div><div class="line number3 index2 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">List&lt;AnnotationBase&gt; annotations = annotator.GetVersion(</code><code class="java string">"CUSTOM_VERSION"</code><code class="java plain">);</code></div><div class="line number4 index3 alt1"><code class="java plain">}</code></div></div></td></tr></tbody></table>
 
 {{< alert style="info" >}}GetVersion supports any type, and you can use any variable as version.{{< /alert >}}
 

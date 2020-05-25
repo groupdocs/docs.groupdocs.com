@@ -3,7 +3,7 @@ id: phrase-search
 url: search/net/phrase-search
 title: Phrase search
 weight: 14
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

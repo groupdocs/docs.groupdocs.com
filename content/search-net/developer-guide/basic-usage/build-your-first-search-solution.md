@@ -3,7 +3,7 @@ id: build-your-first-search-solution
 url: search/net/build-your-first-search-solution
 title: Build your first search solution
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

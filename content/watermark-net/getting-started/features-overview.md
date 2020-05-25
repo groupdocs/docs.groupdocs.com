@@ -32,171 +32,19 @@ GroupDocs.Watermark for .NET API presents a wide range of features related to wa
 
 Following are the watermark types that can be added to each supported document format.
 
-**Document Format**
-
-**Watermark Type**
-
-PDF
-
-XObject (image and text)
-
-Artifact (image and text) 
-
-Annotation (image and text)
-
-Word
-
-Shape (image and text)
-
-Excel
-
-Shape (image and text)
-
-Header & Footer (image and text)
-
-Background image
-
-PowerPoint
-
-Shape (image and text)
-
-Visio
-
-Shape (image and text)
-
-Raster Image Formats
-
-Text
-
-Image
-
-Multi-page tiff
-
-Text
-
-Image
-
-Animated gif
-
-Text
-
-Image
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Document Format</strong></p></td><td class="confluenceTd"><p><strong>Watermark Type</strong></p></td></tr><tr><td class="confluenceTd"><p>PDF</p></td><td class="confluenceTd"><p>XObject (image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Artifact (image and text)&nbsp;</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Annotation&nbsp;(image and text)</p></td></tr><tr><td class="confluenceTd"><p>Word</p></td><td class="confluenceTd"><p>Shape (image and text)</p></td></tr><tr><td class="confluenceTd"><p>Excel</p></td><td class="confluenceTd"><p>Shape (image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Header &amp; Footer&nbsp;(image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Background image</p></td></tr><tr><td class="confluenceTd"><p>PowerPoint</p></td><td class="confluenceTd"><p>Shape (image and text)</p></td></tr><tr><td class="confluenceTd"><p>Visio</p></td><td class="confluenceTd"><p>Shape (image and text)</p></td></tr><tr><td class="confluenceTd"><p>Raster Image Formats</p></td><td class="confluenceTd"><p>Text</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Image</p></td></tr><tr><td class="confluenceTd"><p>Multi-page tiff</p></td><td class="confluenceTd"><p>Text</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Image</p></td></tr><tr><td class="confluenceTd"><p>Animated gif</p></td><td class="confluenceTd"><p>Text</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Image</p></td></tr></tbody></table>
 
 ## Search watermark
 
 Following are the watermark types that can be found using GroupDocs.Watermark.
 
-**Format**
-
-**Watermark type**
-
-PDF
-
-XObject (image and text)
-
-Artifact (image and text)
-
-Annotation (image and text)
-
-Regular text
-
-Word
-
-Shape (image and text)
-
-Regular text
-
-Hyperlinks
-
-Excel
-
-Shape (image and text)
-
-Header&Footer (image and text)
-
-Background image
-
-Text and formulas in cells
-
-Hyperlinks
-
-PowerPoint
-
-Shape (image and text)
-
-Hyperlinks
-
-Visio
-
-Shape (image and text)
-
-Diagram comments
-
-Hyperlinks
-
-Email
-
-Attached and embedded images
-
-Subject and body text fragments
+<table class="confluenceTable"><tbody><tr><td colspan="1" class="confluenceTd"><p><strong>Format</strong></p></td><td colspan="1" class="confluenceTd"><p><strong>Watermark type</strong></p></td></tr><tr><td class="confluenceTd"><p>PDF</p></td><td class="confluenceTd"><p>XObject&nbsp;(image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Artifact (image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Annotation&nbsp;(image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Regular text</p></td></tr><tr><td class="confluenceTd"><p>Word</p></td><td class="confluenceTd"><p>Shape (image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Regular text</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Hyperlinks</p></td></tr><tr><td class="confluenceTd"><p>Excel</p></td><td class="confluenceTd"><p>Shape (image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Header&amp;Footer&nbsp;(image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Background image</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Text and formulas in cells</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Hyperlinks</p></td></tr><tr><td class="confluenceTd"><p>PowerPoint</p></td><td class="confluenceTd"><p>Shape (image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Hyperlinks</p></td></tr><tr><td class="confluenceTd"><p>Visio</p></td><td class="confluenceTd"><p>Shape (image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Diagram comments</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Hyperlinks</p></td></tr><tr><td class="confluenceTd"><p>Email</p></td><td class="confluenceTd"><p>Attached and embedded images</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Subject and body text fragments</p></td></tr></tbody></table>
 
 ## Remove watermark
 
 Following are the watermark types that can be removed using GroupDocs.Watermark.
 
-**Format**
-
-**Watermark type**
-
-PDF
-
-XObject (image and text)
-
-Artifact (image and text)
-
-Annotation (image and text)
-
-Regular text
-
-Word
-
-Shape (image and text)
-
-Regular text
-
-Hyperlinks
-
-Excel
-
-Shape (image and text)
-
-Header&Footer (image and text)
-
-Background image
-
-Text and formulas in cells
-
-Hyperlinks
-
-PowerPoint
-
-Shape (image and text)
-
-Hyperlinks
-
-Visio
-
-Shape (image and text)
-
-Diagram comments
-
-Hyperlinks
-
-Email
-
-Attached and embedded images
-
-Subject and body text fragments
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Format</strong></p></td><td class="confluenceTd"><p><strong>Watermark type</strong></p></td></tr><tr><td class="confluenceTd"><p>PDF</p></td><td class="confluenceTd"><p>XObject&nbsp;(image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Artifact (image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Annotation&nbsp;(image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Regular text</p></td></tr><tr><td class="confluenceTd"><p>Word</p></td><td class="confluenceTd"><p>Shape (image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Regular text</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Hyperlinks</p></td></tr><tr><td class="confluenceTd"><p>Excel</p></td><td class="confluenceTd"><p>Shape (image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Header&amp;Footer&nbsp;(image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Background image</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Text and formulas in cells</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Hyperlinks</p></td></tr><tr><td class="confluenceTd"><p>PowerPoint</p></td><td class="confluenceTd"><p>Shape (image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Hyperlinks</p></td></tr><tr><td class="confluenceTd"><p>Visio</p></td><td class="confluenceTd"><p>Shape (image and text)</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Diagram comments</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Hyperlinks</p></td></tr><tr><td class="confluenceTd"><p>Email</p></td><td class="confluenceTd"><p>Attached and embedded images</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Subject and body text fragments</p></td></tr></tbody></table>
 
 ## Document information extraction
 

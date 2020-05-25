@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-19-3-release-notes
 url: annotation/net/groupdocs-annotation-for-net-19-3-release-notes
 title: GroupDocs.Annotation for .NET 19.3 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -23,131 +23,28 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-851
-
-Add Thumbnails of the selected document
-
-Feature
-
-ANNOTATIONNET-869 
-
-Implement ability to add ellipse annotation to PDF
-
-Feature
-
-ANNOTATIONNET-870 
-
-Implement ability to add ellipse annotation to Words
-
-Feature
-
-ANNOTATIONNET-871 
-
-Implement ability to add ellipse annotation to Slides
-
-Feature
-
-ANNOTATIONNET-872 
-
-Implement ability to add ellipse annotation to Images
-
-Feature
-
-ANNOTATIONNET-873 
-
-Implement ability to add ellipse annotation to Cells
-
-Feature
-
-ANNOTATIONNET-876 
-
-Implement angled watermarks for PDF
-
-Feature
-
-ANNOTATIONNET-877 
-
-Implement angled watermarks for Slides
-
-Feature
-
-ANNOTATIONNET-897
-
-Implement working with mutipage TIFF
-
-Feature
-
-ANNOTATIONNET-904  
-
-Add GetPage convert options for multipage TIF / TIFF
-
-Feature
-
-ANNOTATIONNET-905 
-
-Implement ability to add ellipse annotation to Diagrams
-
-Feature
-
-ANNOTATIONNET-919 
-
-Implement angled watermarks for Cells
-
-Feature
-
-ANNOTATIONNET-920 
-
-Implement angled watermarks for Images
-
-Feature
-
-ANNOTATIONNET-922 
-
-Implement angled watermarks for Diagrams
-
-Feature
-
-ANNOTATIONNET-843
-
-Only first page is saved in output when Multi-Tiff file is annotated
-
-Bug
-
-ANNOTATIONNET-898
-
-Import annotations for Images doesn't close stream
-
-Bug
-
-ANNOTATIONNET-899
-
-AnnotationImageHandler.GetDocumentInfo exception in trial mode
-
-Bug
-
-ANNOTATIONNET-914
-
-Annotation not apply if page number not defined in Words
-
-Bug
-
-ANNOTATIONNET-918
-
-PenWidht and PenColor annotation properties can't be applied in Words
-
-Bug
-
-ANNOTATIONNET-923
-
-Comments can't be set to shapes in Slides
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-851 | Add Thumbnails of the selected document | Feature |
+| ANNOTATIONNET-869  | Implement ability to add ellipse annotation to PDF | Feature |
+| ANNOTATIONNET-870  | Implement ability to add ellipse annotation to Words | Feature |
+| ANNOTATIONNET-871  | Implement ability to add ellipse annotation to Slides | Feature |
+| ANNOTATIONNET-872  | Implement ability to add ellipse annotation to Images | Feature |
+| ANNOTATIONNET-873  | Implement ability to add ellipse annotation to Cells | Feature |
+| ANNOTATIONNET-876  | Implement angled watermarks for PDF | Feature |
+| ANNOTATIONNET-877  | Implement angled watermarks for Slides | Feature |
+| ANNOTATIONNET-897 | Implement working with mutipage TIFF | Feature |
+| ANNOTATIONNET-904   | Add GetPage convert options for multipage TIF / TIFF | Feature |
+| ANNOTATIONNET-905  | Implement ability to add ellipse annotation to Diagrams | Feature |
+| ANNOTATIONNET-919  | Implement angled watermarks for Cells | Feature |
+| ANNOTATIONNET-920  | Implement angled watermarks for Images | Feature |
+| ANNOTATIONNET-922  | Implement angled watermarks for Diagrams | Feature |
+| ANNOTATIONNET-843 | Only first page is saved in output when Multi-Tiff file is annotated | Bug |
+| ANNOTATIONNET-898 | Import annotations for Images doesn't close stream | Bug |
+| ANNOTATIONNET-899 | AnnotationImageHandler.GetDocumentInfo exception in trial mode | Bug |
+| ANNOTATIONNET-914 | Annotation not apply if page number not defined in Words | Bug |
+| ANNOTATIONNET-918 | PenWidht and PenColor annotation properties can't be applied in Words | Bug |
+| ANNOTATIONNET-923 | Comments can't be set to shapes in Slides | Bug |
 
 ## Public API and Backward Incompatible Change
 

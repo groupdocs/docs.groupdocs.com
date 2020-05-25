@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-1-6-0-release-notes
 url: metadata/net/groupdocs-metadata-for-net-1-6-0-release-notes
 title: GroupDocs.Metadata for .NET 1.6.0 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -26,62 +26,4 @@ There are 6 features and 3 enhancements in this regular monthly release. The mos
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATANET-587
-
-Ability to read and write XMP metadata of TIFF format
-
-New feature
-
-METADATANET-1012
-
-Ability to inspect hidden data in Excel format
-
-New feature
-
-METADATANET-1013
-
-Ability to inspect hidden data in PowerPoint format
-
-New feature
-
-METADATANET-1049
-
-Ability to read TIFF Image File Directory tags
-
-New feature
-
-METADATANET-1066
-
-Ability to remove hidden data in PowerPoint format
-
-New feature
-
-METADATANET-1067
-
-Ability to remove hidden data in Excel format
-
-New feature
-
-METADATANET-1029
-
-Throws DocumentProtectedException when document could not be opened without password
-
-Enhancement
-
-METADATANET-1042
-
-Ability to read XMP metadata without header process instruction
-
-Enhancement
-
-METADATANET-1047
-
-Ability to process multi-page TIFF during loading XMP metadata
-
-Enhancement
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-587</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read and write XMP metadata of TIFF format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1012</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to inspect hidden data in Excel format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1013</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to inspect hidden data in PowerPoint format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1049</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read TIFF Image File Directory tags</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1066</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to remove hidden data in PowerPoint format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1067</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to remove hidden data in Excel format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1029</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Throws DocumentProtectedException when document could not be opened without password</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1042</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read XMP metadata without header process instruction</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1047</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to process multi-page TIFF during loading XMP metadata</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr></tbody></table>

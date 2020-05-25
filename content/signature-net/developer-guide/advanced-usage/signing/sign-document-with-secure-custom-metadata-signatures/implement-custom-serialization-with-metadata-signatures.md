@@ -3,7 +3,7 @@ id: implement-custom-serialization-with-metadata-signatures
 url: signature/net/implement-custom-serialization-with-metadata-signatures
 title: Implement custom serialization with Metadata signatures
 weight: 2
-description: This article explains how to implement custom serialization for Metadata electronic signatures.
+description: "This article explains how to implement custom serialization for Metadata electronic signatures."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: working-with-vcard-metadata
 url: metadata/net/working-with-vcard-metadata
 title: Working with vCard metadata
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: working-with-metadata-in-presentations
 url: metadata/net/working-with-metadata-in-presentations
 title: Working with metadata in Presentations
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-18-11-release-notes
 url: conversion/net/groupdocs-conversion-for-net-18-11-release-notes
 title: GroupDocs.Conversion for .NET 18.11 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -25,101 +25,23 @@ This regular monthly release contains 10+ improvements and bug fixes. Most notab
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-2814
-
-Move HideWordTrackedChanges option to WordsLoadOptions class
-
-Improvement
-
-CONVERSIONNET-2815
-
-Move HidePdfAnnotations option to PdfLoadOptions class
-
-Improvement
-
-CONVERSIONNET-2816
-
-Move HideComments option to CellsLoadOptions, Slides CellsLoadOptions and WordsLoadOptions class
-
-Improvement
-
-CONVERSIONNET-1509
-
-Implement conversion from EPS
-
-Feature
-
-CONVERSIONNET-2781
-
-Implement conversion from TSV and to TSV
-
-Feature
-
-CONVERSIONNET-2786
-
-Implement conversion from Pcl
-
-Feature
-
-CONVERSIONNET-2797
-
-Implement setting default font and font substitution options when converting One document
-
-Feature
-
-CONVERSIONNET-2799
-
-Implement setting default font when converting Psd, Emf, Wmf documents
-
-Feature
-
-CONVERSIONNET-2801
-
-Measure conversion time and return it as property of ConvertedDocument class
-
-Feature
-
-CONVERSIONNET-2802
-
-Set font load folders when converting Image documents
-
-Feature
-
-CONVERSIONNET-2810
-
-Implement rotation feature when converting to image
-
-Feature
-
-CONVERSIONNET-2818
-
-Implement option for flatten all form fields when converting Pdf
-
-Feature
-
-CONVERSIONNET-2825
-
-Implement page rotation when converting to Pdf
-
-Feature
-
-CONVERSIONNET-2826
-
-Implement option for including hidden slides in converted document when converting from Slides
-
-Feature
-
-CONVERSIONNET-2828
-
-Set default font when converting from Diagram
-
-Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-2814 | Move HideWordTrackedChanges option to WordsLoadOptions class | Improvement |
+| CONVERSIONNET-2815 | Move HidePdfAnnotations option to PdfLoadOptions class | Improvement |
+| CONVERSIONNET-2816 | Move HideComments option to CellsLoadOptions, Slides CellsLoadOptions and WordsLoadOptions class | Improvement |
+| CONVERSIONNET-1509 | Implement conversion from EPS | Feature |
+| CONVERSIONNET-2781 | Implement conversion from TSV and to TSV | Feature |
+| CONVERSIONNET-2786 | Implement conversion from Pcl | Feature |
+| CONVERSIONNET-2797 | Implement setting default font and font substitution options when converting One document | Feature |
+| CONVERSIONNET-2799 | Implement setting default font when converting Psd, Emf, Wmf documents | Feature |
+| CONVERSIONNET-2801 | Measure conversion time and return it as property of ConvertedDocument class | Feature |
+| CONVERSIONNET-2802 | Set font load folders when converting Image documents | Feature |
+| CONVERSIONNET-2810 | Implement rotation feature when converting to image | Feature |
+| CONVERSIONNET-2818 | Implement option for flatten all form fields when converting Pdf | Feature |
+| CONVERSIONNET-2825 | Implement page rotation when converting to Pdf | Feature |
+| CONVERSIONNET-2826 | Implement option for including hidden slides in converted document when converting from Slides | Feature |
+| CONVERSIONNET-2828 | Set default font when converting from Diagram | Feature |
 
 ## Public API and Backward Incompatible Changes
 

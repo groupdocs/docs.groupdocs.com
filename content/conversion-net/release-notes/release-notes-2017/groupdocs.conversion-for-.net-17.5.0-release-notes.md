@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-17-5-0-release-notes
 url: conversion/net/groupdocs-conversion-for-net-17-5-0-release-notes
 title: GroupDocs.Conversion for .NET 17.5.0 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -24,59 +24,16 @@ There are 9 new features, improvements and fixes in this regular monthly release
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-1892
-
-Implement conversion from XML-FO/XSL
-
-New Feature
-
-CONVERSIONNET-1910
-
-Option to set zoom when converting to HTML
-
-New Feature
-
-CONVERSIONNET-1917
-
-Conversion from Vsdm, Vssm, Vstm
-
-New Feature
-
-CONVERSIONNET-1928
-
-Implement conversion from LaTex
-
-New Feature
-
-CONVERSIONNET-1756
-
-PPTX to HTML Conversion - Slide zoom level property
-
-New Feature
-
-CONVERSIONNET-1881
-
-Improve SlidesToHtml saver
-
-Improvement
-
-CONVERSIONNET-1885
-
-Update CellsToImageSaver and CellsToPdfSaver to remove empty rows and columns before saving document
-
-Improvement
-
-CONVERSIONNET-1884
-
-PPt to PDF Conversion - Tables borders are showing - showgridline property is also not working for this
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-1892 | Implement conversion from XML-FO/XSL | New Feature |
+| CONVERSIONNET-1910 | Option to set zoom when converting to HTML | New Feature |
+| CONVERSIONNET-1917 | Conversion from Vsdm, Vssm, Vstm | New Feature |
+| CONVERSIONNET-1928 | Implement conversion from LaTex | New Feature |
+| CONVERSIONNET-1756 | PPTX to HTML Conversion - Slide zoom level property | New Feature |
+| CONVERSIONNET-1881 | Improve SlidesToHtml saver | Improvement |
+| CONVERSIONNET-1885 | Update CellsToImageSaver and CellsToPdfSaver to remove empty rows and columns before saving document | Improvement |
+| CONVERSIONNET-1884 | PPt to PDF Conversion - Tables borders are showing - showgridline property is also not working for this | Bug |
 
 ## Public API and Backward Incompatible Changes
 

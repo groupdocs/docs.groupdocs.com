@@ -3,7 +3,7 @@ id: save-specific-page-range
 url: annotation/net/save-specific-page-range
 title: Save specific page range
 weight: 3
-description: This article demonstrates how to save specific page range when annotating documents with GroupDocs.Annotation for .NET API.
+description: "This article demonstrates how to save specific page range when annotating documents with GroupDocs.Annotation for .NET API."
 keywords: Save specific annotated pages, save specific pages
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

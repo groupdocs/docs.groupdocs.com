@@ -3,7 +3,7 @@ id: add-image-annotation
 url: annotation/net/add-image-annotation
 title: Add image annotation
 weight: 6
-description: Learn what is a image annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
+description: "Learn what is a image annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET."
 keywords: What is a image annotation, how to add annotation, add image annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

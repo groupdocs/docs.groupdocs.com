@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-18-6-release-notes
 url: conversion/net/groupdocs-conversion-for-net-18-6-release-notes
 title: GroupDocs.Conversion for .NET 18.6 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -22,29 +22,11 @@ This regular monthly release contains simplified instantiation of the conversion
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-2597
-
-Reducing ConversionHandler constructors to one
-
-Improvement
-
-CONVERSIONNET-2598
-
-Introduced ITempDataHandler for handling temp operations stream
-
-Improvement
-
-CONVERSIONNET-2599
-
-Introducing new properties in ConversionConfig for different handler types
-
-Improvement
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-2597 | Reducing ConversionHandler constructors to one | Improvement |
+| CONVERSIONNET-2598 | Introduced ITempDataHandler for handling temp operations stream | Improvement |
+| CONVERSIONNET-2599 | Introducing new properties in ConversionConfig for different handler types | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: merge-indexes
 url: search/net/merge-indexes
 title: Merge indexes
 weight: 15
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

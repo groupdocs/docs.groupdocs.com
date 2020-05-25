@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-19-12-release-notes
 url: editor/net/groupdocs-editor-for-net-19-12-release-notes
 title: GroupDocs.Editor for .NET 19.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -19,71 +19,18 @@ GroupDocs.Editor for .NET version 19.12 contains two main features:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1448
-
-Implement extension parsing for all formats
-
-Feature
-
-EDITORNET-1449
-
-Implement possibility to enumerate over all formats
-
-Feature
-
-EDITORNET-1422
-
-Implement parsing of inner content from HTML BODY element
-
-Feature
-
-EDITORNET-1423
-
-Implement resource fetching and parsing for HTML BODY content
-
-Feature
-
-EDITORNET-1420
-
-Improve formats-representing types
-
-Improvement
-
-EDITORNET-1421
-
-Implement better support of truncated markup
-
-Improvement
-
-EDITORNET-1419
-
-Bug with duplicated images in EditableDocument
-
-Bug
-
-EDITORNET-1418
-
-Internal error in Bookmark processor
-
-Bug
-
-EDITORNET-1414
-
-Fix bug with locked HTML resources
-
-Bug
-
-EDITORNET-1380
-
-Exception while getting DOCX document HTML
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1448 | Implement extension parsing for all formats | Feature |
+| EDITORNET-1449 | Implement possibility to enumerate over all formats | Feature |
+| EDITORNET-1422 | Implement parsing of inner content from HTML BODY element | Feature |
+| EDITORNET-1423 | Implement resource fetching and parsing for HTML BODY content | Feature |
+| EDITORNET-1420 | Improve formats-representing types | Improvement |
+| EDITORNET-1421 | Implement better support of truncated markup | Improvement |
+| EDITORNET-1419 | Bug with duplicated images in EditableDocument | Bug |
+| EDITORNET-1418 | Internal error in Bookmark processor | Bug |
+| EDITORNET-1414 | Fix bug with locked HTML resources | Bug |
+| EDITORNET-1380 | Exception while getting DOCX document HTML | Bug |
 
 # Public API and Backward Incompatible Changes
 
@@ -93,83 +40,20 @@ Bug
     
     First feature is represented in public API by the next new public types and methods.
     
-    Type name
-    
-    Member name
-    
-    Responsibility
-    
-    WordProcessingFormats.AllEnumerable
-    
-    N/A
-    
-    Internal class, that enables enumeration over all formats within WordProcessingFormats 
-    
-    SpreadsheetFormats.AllEnumerable
-    
-    N/A
-    
-    Internal class, that enables enumeration over all formats within SpreadsheetFormats
-    
-    PresentationFormats.AllEnumerable
-    
-    N/A
-    
-    Internal class, that enables enumeration over all formats within PresentationFormats
-    
-    TextualFormats.AllEnumerable
-    
-    N/A
-    
-    Internal class, that enables enumeration over all formats within TextualFormats
-    
-    WordProcessingFormats 
-    
-    All
-    
-    Static readonly field, that returns an WordProcessingFormats.AllEnumerable instance
-    
-    SpreadsheetFormats 
-    
-    All
-    
-    Static readonly field, that returns an SpreadsheetFormats .AllEnumerable instance
-    
-    PresentationFormats 
-    
-    All
-    
-    Static readonly field, that returns an PresentationFormats .AllEnumerable instance
-    
-    TextualFormats 
-    
-    All
-    
-    Static readonly field, that returns an TextualFormats .AllEnumerable instance
-    
-    WordProcessingFormats
-    
-    FromExtension
-    
-    Static method, that parses a string and returns appropriate WordProcessing format
-    
-    SpreadsheetFormats
-    
-    FromExtension
-    
-    Static method, that parses a string and returns appropriate Spreadsheet format
-    
-    PresentationFormats
-    
-    FromExtension
-    
-    Static method, that parses a string and returns appropriate Presentation format
-    
-    TextualFormats
-    
-    FromExtension
-    
-    Static method, that parses a string and returns appropriate Textual format
+    | Type name | Member name | Responsibility |
+    | --- | --- | --- |
+    | WordProcessingFormats.AllEnumerable | N/A | Internal class, that enables enumeration over all formats within WordProcessingFormats  |
+    | SpreadsheetFormats.AllEnumerable | N/A | Internal class, that enables enumeration over all formats within SpreadsheetFormats |
+    | PresentationFormats.AllEnumerable | N/A | Internal class, that enables enumeration over all formats within PresentationFormats |
+    | TextualFormats.AllEnumerable | N/A | Internal class, that enables enumeration over all formats within TextualFormats |
+    | WordProcessingFormats  | All | Static readonly field, that returns an WordProcessingFormats.AllEnumerable instance |
+    | SpreadsheetFormats  | All | Static readonly field, that returns an SpreadsheetFormats .AllEnumerable instance |
+    | PresentationFormats  | All | Static readonly field, that returns an PresentationFormats .AllEnumerable instance |
+    | TextualFormats  | All | Static readonly field, that returns an TextualFormats .AllEnumerable instance |
+    | WordProcessingFormats | FromExtension | Static method, that parses a string and returns appropriate WordProcessing format |
+    | SpreadsheetFormats | FromExtension | Static method, that parses a string and returns appropriate Spreadsheet format |
+    | PresentationFormats | FromExtension | Static method, that parses a string and returns appropriate Presentation format |
+    | TextualFormats | FromExtension | Static method, that parses a string and returns appropriate Textual format |
     
       
     Second feature is representing by only one new method in the EditableDocument class:

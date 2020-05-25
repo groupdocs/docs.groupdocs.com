@@ -19,23 +19,10 @@ There are following features in this first release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-WATERMARKNET-513
-
-Add support for email formats
-
-New Feature
-
-WATERMARKNET-541
-
-Remove SlidesBaseSlide.BackgroundImage property (obsolete code)
-
-Enhancement
+| Key | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-513 | Add support for email formats | New Feature |
+| WATERMARKNET-541 | Remove SlidesBaseSlide.BackgroundImage property (obsolete code) | Enhancement |
 
 ## Public API and Backward Incompatible Changes
 

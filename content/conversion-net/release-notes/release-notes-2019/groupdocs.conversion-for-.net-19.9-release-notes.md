@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-19-9-release-notes
 url: conversion/net/groupdocs-conversion-for-net-19-9-release-notes
 title: GroupDocs.Conversion for .NET 19.9 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -21,17 +21,9 @@ Additionally one bug is fixed: 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-3142
-
-Bug
-
-Specified argument was out of the range of valid values when converting a spreadsheet document to pdf
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-3142 | Bug | Specified argument was out of the range of valid values when converting a spreadsheet document to pdf |
 
 ##   
 Public API and Backward Incompatible Changes

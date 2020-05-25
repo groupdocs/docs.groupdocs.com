@@ -3,7 +3,7 @@ id: creating-an-index
 url: search/net/creating-an-index
 title: Creating an index
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

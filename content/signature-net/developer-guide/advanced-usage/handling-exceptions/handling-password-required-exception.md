@@ -3,7 +3,7 @@ id: handling-password-required-exception
 url: signature/net/handling-password-required-exception
 title: Handling password required exception
 weight: 2
-description: This article shows how to handle missing document password exception with GroupDocs.Signature API.
+description: "This article shows how to handle missing document password exception with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

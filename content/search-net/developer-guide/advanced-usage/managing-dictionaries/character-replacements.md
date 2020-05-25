@@ -3,7 +3,7 @@ id: character-replacements
 url: search/net/character-replacements
 title: Character replacements
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

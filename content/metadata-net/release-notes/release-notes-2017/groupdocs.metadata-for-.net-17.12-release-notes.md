@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-17-12-release-notes
 url: metadata/net/groupdocs-metadata-for-net-17-12-release-notes
 title: GroupDocs.Metadata for .NET 17.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -19,23 +19,7 @@ There are 2 new features in this regular monthly release. The most notable are:
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATANET-2015
-
-Ability to remove comment of ZIP format
-
-New Feature
-
-METADATANET-2016  
-
-Ability to read thumbnail of JPEG format from EXIF segment
-
-New Feature 
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd">Key</td><td class="confluenceTd">Summary</td><td class="confluenceTd">Category</td></tr><tr><td class="confluenceTd">METADATANET-2015</td><td class="confluenceTd">Ability to remove comment of ZIP format</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">METADATANET-2016&nbsp;&nbsp;</td><td class="confluenceTd">Ability to read thumbnail of JPEG format from EXIF segment</td><td class="confluenceTd">New Feature&nbsp;</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

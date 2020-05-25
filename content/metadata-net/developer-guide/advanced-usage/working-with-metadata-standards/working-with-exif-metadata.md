@@ -3,7 +3,7 @@ id: working-with-exif-metadata
 url: metadata/net/working-with-exif-metadata
 title: Working with EXIF metadata
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

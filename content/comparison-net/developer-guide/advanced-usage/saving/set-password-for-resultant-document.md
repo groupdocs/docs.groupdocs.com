@@ -3,7 +3,7 @@ id: set-password-for-resultant-document
 url: comparison/net/set-password-for-resultant-document
 title: Set password for resultant document
 weight: 2
-description: This article explains how to set document password after files comparison within your .NET applications using GroupDocs.Comparison for .NET.
+description: "This article explains how to set document password after files comparison within your .NET applications using GroupDocs.Comparison for .NET."
 keywords: Compare document and protect with password
 productName: GroupDocs.Comparison for .NET
 hideChildren: False

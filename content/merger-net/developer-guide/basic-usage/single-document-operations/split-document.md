@@ -3,7 +3,7 @@ id: split-document
 url: merger/net/split-document
 title: Split document
 weight: 3
-description: This guide describes how to split document of PDF, Word, Excel, PowerPoint and many other formats into several resultant documents using GroupDocs.Merger API.
+description: "This guide describes how to split document of PDF, Word, Excel, PowerPoint and many other formats into several resultant documents using GroupDocs.Merger API."
 keywords: Split document, Split PDF, Split Word, Split DOC, Split Presentation, Split Excel
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -47,21 +47,11 @@ using (Merger merger = new Merger(filePath))
 
 This code snippet will  produce:
 
-Document name
-
-Page numbers
-
-document\_0
-
-3
-
-document\_1
-
-6
-
-document\_2
-
-8
+| Document name | Page numbers |
+| --- | --- |
+| document\_0 | 3 |
+| document\_1 | 6 |
+| document\_2 | 8 |
 
 ## Split the document to several one-page documents (by start/end page numbers)
 
@@ -81,29 +71,20 @@ using (Merger merger = new Merger(filePath))
 
 This code snippet will  produce:
 
-Document name
-
-Page numbers
-
-document\_0
-
-3
-
-document\_1
-
-4
-
-document\_2
-
-5
-
+| Document name | Page numbers |
+| --- | --- |
+| document\_0 | 3 |
+| document\_1 | 4 |
+| document\_2 | 5 |
+| 
 document\_3     
 
-6
+ | 6 |
+| 
 
 document\_4  
 
-7
+ | 7 |
 
 ## Split the document to several one-page documents (by start/end page numbers and even/odd filter)
 
@@ -124,21 +105,11 @@ using (Merger merger = new Merger(filePath))
 
 This code snippet will  produce:
 
-Document name
-
-Page numbers
-
-document\_0
-
-3
-
-document\_1
-
-5
-
-document\_2
-
-7
+| Document name | Page numbers |
+| --- | --- |
+| document\_0 | 3 |
+| document\_1 | 5 |
+| document\_2 | 7 |
 
 ## Split the document to several multi-page documents
 
@@ -158,25 +129,12 @@ using (Merger merger = new Merger(filePath))
 
 This code snippet will  produce:
 
-Document name
-
-Page numbers
-
-document\_0
-
-1, 2
-
-document\_1
-
-3, 4, 5
-
-document\_2
-
-6, 7
-
-document\_3
-
-8, 9, 10
+| Document name | Page numbers |
+| --- | --- |
+| document\_0 | 1, 2 |
+| document\_1 | 3, 4, 5 |
+| document\_2 | 6, 7 |
+| document\_3 | 8, 9, 10 |
 
 ## More resources
 

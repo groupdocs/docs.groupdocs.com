@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-19-2-release-notes
 url: merger/net/groupdocs-merger-for-net-19-2-release-notes
 title: GroupDocs.Merger for .NET 19.2 Release Notes
 weight: 10
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -20,47 +20,14 @@ There are 3 new features in this regular monthly release. The most notable are:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-420
-
-Added Xlt format support
-
-New Feature
-
-MERGERNET-421
-
-Added Xltm format support
-
-New Feature
-
-MERGERNET-423
-
-Added Xltx format support
-
-New Feature
-
-MERGERNET-387
-
-Optimized ODP presentations loading
-
-Improvement
-
-MERGERNET-120
-
-MSI installer shows wrong file size
-
-Bug
-
-MERGERNET-396
-
-MovePage method is working incorrectly for Epub and Xps formats
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-420 | Added Xlt format support | New Feature |
+| MERGERNET-421 | Added Xltm format support | New Feature |
+| MERGERNET-423 | Added Xltx format support | New Feature |
+| MERGERNET-387 | Optimized ODP presentations loading | Improvement |
+| MERGERNET-120 | MSI installer shows wrong file size | Bug |
+| MERGERNET-396 | MovePage method is working incorrectly for Epub and Xps formats | Bug |
 
 ## Public API and Backward Incompatible Changes
 

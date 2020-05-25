@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-20-1-release-notes
 url: annotation/net/groupdocs-annotation-for-net-20-1-release-notes
 title: GroupDocs.Annotation for .NET 20.1 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -19,47 +19,14 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-880 
-
-Implement ability to add Image annotation to PDF
-
-Feature
-
-ANNOTATIONNET-881
-
-Implement ability to add Image annotation to SpreadSheet
-
-Feature
-
-ANNOTATIONNET-882 
-
-Implement ability to add Image annotation to Presentations
-
-Feature
-
-ANNOTATIONNET-883 
-
-Implement ability to add Image annotation to WordProcessing
-
-Feature
-
-ANNOTATIONNET-1220
-
-Implement ability to add Image annotation to Images
-
-Feature
-
-ANNOTATIONNET-1219
-
-Example Code throws NullReferenceException for SpreadSheet
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-880  | Implement ability to add Image annotation to PDF | Feature |
+| ANNOTATIONNET-881 | Implement ability to add Image annotation to SpreadSheet | Feature |
+| ANNOTATIONNET-882  | Implement ability to add Image annotation to Presentations | Feature |
+| ANNOTATIONNET-883  | Implement ability to add Image annotation to WordProcessing | Feature |
+| ANNOTATIONNET-1220 | Implement ability to add Image annotation to Images | Feature |
+| ANNOTATIONNET-1219 | Example Code throws NullReferenceException for SpreadSheet | Bug |
 
 # Public API and Backward Incompatible Changes
 

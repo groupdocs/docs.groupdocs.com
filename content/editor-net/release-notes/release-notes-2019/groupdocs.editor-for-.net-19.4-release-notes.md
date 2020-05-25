@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-19-4-release-notes
 url: editor/net/groupdocs-editor-for-net-19-4-release-notes
 title: GroupDocs.Editor for .NET 19.4 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -20,47 +20,14 @@ Improvement in existing WordProcessing module — support of double slanted diag
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1126
-
-Develop URI detection mechanism
-
-New Feature
-
-EDITORNET-1125
-
-Implement XML correctness algorithm
-
-New Feature
-
-EDITORNET-1124
-
-Implement quote type option
-
-New Feature
-
-EDITORNET-1123
-
-Implement email and URI validation in XML attributes
-
-New Feature
-
-EDITORNET-1122
-
-Fix detected issues in XML module
-
-Bug
-
-EDITORNET-1150
-
-Implement double slanted diagonal lines in table cell
-
-Improvement
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1126 | Develop URI detection mechanism | New Feature |
+| EDITORNET-1125 | Implement XML correctness algorithm | New Feature |
+| EDITORNET-1124 | Implement quote type option | New Feature |
+| EDITORNET-1123 | Implement email and URI validation in XML attributes | New Feature |
+| EDITORNET-1122 | Fix detected issues in XML module | Bug |
+| EDITORNET-1150 | Implement double slanted diagonal lines in table cell | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

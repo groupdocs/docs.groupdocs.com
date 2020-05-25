@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-19-4-release-notes
 url: signature/net/groupdocs-signature-for-net-19-4-release-notes
 title: GroupDocs.Signature for .NET 19.4 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -22,35 +22,7 @@ There are few new features, and bug fixes in this regular release. Most features
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-1981
-
-Data serialization routines fail on simple data types and strings
-
-Bug
-
-SIGNATURENET-1979
-
-Implement ability to encrypt and decrypt Pdf Metadata Signature values
-
-New Feature
-
-SIGNATURENET-1978
-
-Implement ability to serialize Pdf Metadata Signature value
-
-New Feature
-
-SIGNATURENET-1833
-
-Implement ability to embed custom object to Pdf Metadata Signature
-
-New Feature
+<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1981</td><td colspan="1" class="confluenceTd">Data serialization routines fail on simple data types and strings</td><td colspan="1" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1979</td><td colspan="1" class="confluenceTd">Implement ability to encrypt and decrypt Pdf Metadata Signature values</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1978</td><td colspan="1" class="confluenceTd">Implement ability to serialize Pdf Metadata Signature value</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-1833</td><td class="confluenceTd">Implement ability to embed custom object to Pdf Metadata Signature</td><td class="confluenceTd">New Feature</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

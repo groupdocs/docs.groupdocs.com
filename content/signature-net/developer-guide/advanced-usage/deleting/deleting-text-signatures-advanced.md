@@ -3,7 +3,7 @@ id: deleting-text-signatures-advanced
 url: signature/net/deleting-text-signatures-advanced
 title: Deleting Text signatures - advanced
 weight: 5
-description: This article shows how to delete Text electronic signatures different ways with GroupDocs.Signature API.
+description: "This article shows how to delete Text electronic signatures different ways with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

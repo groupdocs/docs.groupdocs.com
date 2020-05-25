@@ -3,7 +3,7 @@ id: working-with-metadata-in-note-formats
 url: metadata/net/working-with-metadata-in-note-formats
 title: Working with metadata in Note formats
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

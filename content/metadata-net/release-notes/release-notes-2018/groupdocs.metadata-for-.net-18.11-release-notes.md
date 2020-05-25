@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-18-11-release-notes
 url: metadata/net/groupdocs-metadata-for-net-18-11-release-notes
 title: GroupDocs.Metadata for .NET 18.11 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -21,35 +21,7 @@ There are the following features and enhancements in this release:
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATANET-1640
-
-Reduce memory consumption of the PDF format
-
-Enhancement
-
-METADATANET-2422
-
-Reduce memory consumption of supported Excel formats
-
-Enhancement
-
-METADATANET-2436
-
-XlsFormat: Add support for missing metadata properties
-
-Enhancement
-
-METADATANET-470
-
-Implement the ability to work with metadata stored in FLV files
-
-New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-1640</td><td colspan="1" class="confluenceTd">Reduce memory consumption of the PDF format</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2422</td><td colspan="1" class="confluenceTd">Reduce memory consumption of supported Excel formats</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2436</td><td colspan="1" class="confluenceTd">XlsFormat: Add support for missing metadata properties</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-470</td><td colspan="1" class="confluenceTd">Implement the ability to work with metadata stored in FLV files</td><td colspan="1" class="confluenceTd">New Feature</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

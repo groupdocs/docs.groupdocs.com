@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-18-6-release-notes
 url: comparison/net/groupdocs-comparison-for-net-18-6-release-notes
 title: GroupDocs.Comparison for .NET 18.6 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -22,35 +22,12 @@ Below the list of most notable changes in  release of GroupDocs.Comparison for 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-1599
-
-Implement comparing connect on Diagrams
-
-New Feature
-
-COMPARISONNET-1598
-
-Improve styles comparing for HTML
-
-Improvement
-
-COMPARISONNET-1583
-
-Improve Aligner for Comparison.Diagrams
-
-Improvement
-
-COMPARISONNET-1574
-
-Introduced support CompariosnSettings to Html
-
-Improvement
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-1599 | Implement comparing connect on Diagrams | New Feature |
+| COMPARISONNET-1598 | Improve styles comparing for HTML | Improvement |
+| COMPARISONNET-1583 | Improve Aligner for Comparison.Diagrams | Improvement |
+| COMPARISONNET-1574 | Introduced support CompariosnSettings to Html | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

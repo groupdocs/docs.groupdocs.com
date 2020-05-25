@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-20-4-release-notes
 url: search/net/groupdocs-search-for-net-20-4-release-notes
 title: GroupDocs.Search for .NET 20.4 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -19,23 +19,7 @@ There are the following new features in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-215
-
-Implement changing path without reindexing for renamed documents
-
-New Feature
-
-SEARCHNET-2134
-
-Implement ability to change attributes of indexed documents without reindexing
-
-New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>Key</p></td><td class="confluenceTd"><p>Summary</p></td><td class="confluenceTd"><p>Category</p></td></tr><tr><td colspan="1" class="confluenceTd">SEARCHNET-215</td><td colspan="1" class="confluenceTd">Implement changing path without reindexing for renamed documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd"><p>SEARCHNET-2134</p></td><td colspan="1" class="confluenceTd"><p>Implement ability to change attributes of indexed documents without reindexing</p></td><td colspan="1" class="confluenceTd">New Feature</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

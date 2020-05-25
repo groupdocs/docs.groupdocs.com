@@ -19,23 +19,10 @@ There are the following new features in this monthly release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key 
-
-Summary
-
-Category
-
-WATERMARKNET-788
-
-Implement ability to edit Pdf document objects that can be considered as watermarks 
-
-New Feature 
-
-WATERMARKNET-789 
-
-Implement ability to edit text and image in found possible watermarks (across all formats) 
-
-New Feature
+| Key  | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-788 | Implement ability to edit Pdf document objects that can be considered as watermarks  | New Feature  |
+| WATERMARKNET-789  | Implement ability to edit text and image in found possible watermarks (across all formats)  | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

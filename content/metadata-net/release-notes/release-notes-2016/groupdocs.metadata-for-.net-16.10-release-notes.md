@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-16-10-release-notes
 url: metadata/net/groupdocs-metadata-for-net-16-10-release-notes
 title: GroupDocs.Metadata for .NET 16.10 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -26,65 +26,7 @@ There are 8 features and 1 enhancement in this regular monthly release. The most
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATANET-1172
-
-IPTC reader improvements - scan all image resource blocks to find IPTC metadata in JPEG format
-
-Enhancement
-
-METADATANET-691
-
-Implement wav audio format. Ability to read WAV audio details
-
-New feature
-
-METADATANET-1043
-
-Ability to read IPTC metadata in TIFF format
-
-New feature
-
-METADATANET-1044
-
-Ability to read IPTC metadata in PSD format
-
-New feature
-
-METADATANET-1116
-
-Ability to read Lyrics3 tag in Mp3 format
-
-New feature
-
-METADATANET-1118
-
-Ability to update ID3v1 tag in Mp3 format
-
-New feature
-
-METADATANET-1170
-
-Ability to read Image Resource Blocks (native PSD metadata) in Photoshop format
-
-New feature
-
-METADATANET-1171
-
-Ability to remove Photoshop metadata in Jpeg format
-
-New feature
-
-METADATANET-1174
-
-Ability to read Image Resource Blocks (native PSD metadata) in Jpeg format
-
-New feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1172</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">IPTC reader improvements - scan all image resource blocks to find IPTC metadata in JPEG format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-691</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Implement wav audio format. Ability to read WAV audio details</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1043</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read IPTC metadata in TIFF format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1044</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read IPTC metadata in PSD format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1116</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read Lyrics3 tag in Mp3 format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1118</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to update ID3v1 tag in Mp3 format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1170</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read Image Resource Blocks (native PSD metadata) in Photoshop format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1171</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to remove Photoshop metadata in Jpeg format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1174</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read Image Resource Blocks (native PSD metadata) in Jpeg format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

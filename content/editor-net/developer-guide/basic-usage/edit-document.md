@@ -3,7 +3,7 @@ id: edit-document
 url: editor/net/edit-document
 title: Edit document
 weight: 3
-description: Follow this guide and learn how to edit text documents, spreadsheets and presentations using GroupDocs.Editor for .NET API features.
+description: "Follow this guide and learn how to edit text documents, spreadsheets and presentations using GroupDocs.Editor for .NET API features."
 keywords: Edit document, edit presentation, edit spreadsheet, GroupDocs.Editor
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -13,47 +13,14 @@ hideChildren: False
 When document is loaded into the instance of the `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class, it is possible to open it for editing. In terms of [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net), open a document for edit implies creating an instance of `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` class by calling an `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor).[Edit()](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/edit)` instance method. There are two overloads of the [Edit](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/edit) method. First one obtains a single parameter — inheritor of `[IEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/ieditoptions)` interface.  
 Each format family has its own implementation of `[IEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/ieditoptions)` interface. They are listed in the table below.
 
-Format family
-
-Example formats
-
-Edit options class
-
-WordProcessing
-
-DOC, DOCX, DOCM, DOT, ODT
-
-`[WordProcessingEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions)`
-
-Spreadsheet
-
-XLS, XLSX, XLSM, XLSB
-
-`[SpreadsheetEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheeteditoptions)`
-
-Delimiter-Separated Values (DSV)
-
-CSV, TSV
-
-`[DelimitedTextEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/delimitedtexteditoptions)`
-
-Presentation
-
-PPT, PPTX, PPS, POT
-
-`[PresentationEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/presentationeditoptions)`
-
-Plain Text documents
-
-TXT
-
-`[TextEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/texteditoptions)`
-
-XML
-
-Any XML-based format like CSPROJ, SVG, and so on
-
-`[XmlEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/xmleditoptions)`
+| Format family | Example formats | Edit options class |
+| --- | --- | --- |
+| WordProcessing | DOC, DOCX, DOCM, DOT, ODT | `[WordProcessingEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions)` |
+| Spreadsheet | XLS, XLSX, XLSM, XLSB | `[SpreadsheetEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheeteditoptions)` |
+| Delimiter-Separated Values (DSV) | CSV, TSV | `[DelimitedTextEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/delimitedtexteditoptions)` |
+| Presentation | PPT, PPTX, PPS, POT | `[PresentationEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/presentationeditoptions)` |
+| Plain Text documents | TXT | `[TextEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/texteditoptions)` |
+| XML | Any XML-based format like CSPROJ, SVG, and so on | `[XmlEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/xmleditoptions)` |
 
 Second overload is parameterless — it chooses the most appropriate default edit options based on input document format.
 

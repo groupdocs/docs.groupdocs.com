@@ -3,7 +3,7 @@ id: convert-to-presentation
 url: conversion/net/convert-to-presentation
 title: Convert to Presentation
 weight: 4
-description: This article demonstrates how to convert documents to PowerPoint presentation of PPT, PPTX, ODP and may other formats with couple C# code lines and GroupDocs.Conversion for .NET.
+description: "This article demonstrates how to convert documents to PowerPoint presentation of PPT, PPTX, ODP and may other formats with couple C# code lines and GroupDocs.Conversion for .NET."
 keywords: Convert to Presentation, Convert to PPT, Convert to PPTX
 productName: GroupDocs.Conversion for .NET
 hideChildren: False

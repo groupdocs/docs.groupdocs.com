@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-19-12-release-notes
 url: comparison/net/groupdocs-comparison-for-net-19-12-release-notes
 title: GroupDocs.Comparison for .NET 19.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -23,59 +23,16 @@ Below the list of most notable changes in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-2112
-
-Improve TXT comparison result without a license
-
-Improvement
-
-COMPARISONNET-2111
-
-Improve showing HTML comparison result without a license
-
-Improvement
-
-COMPARISONNET-2110
-
-Improve Imaging comparison result without a license
-
-Improvement
-
-COMPARISONNET-2107
-
-Improve creation result document in Comparison.PDF
-
-Improvement
-
-COMPARISONNET-2101
-
-Improve annotation comparison for PDF
-
-Improvement
-
-COMPARISONNET-2108
-
-Duplicate Images in Result file in PDF
-
-Bug
-
-COMPARISONNET-2102
-
-Issue with Spreadsheet DeletedItemsStyle
-
-Bug
-
-COMPARISONNET-1950
-
-PDF comparison is not accurate
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-2112 | Improve TXT comparison result without a license | Improvement |
+| COMPARISONNET-2111 | Improve showing HTML comparison result without a license | Improvement |
+| COMPARISONNET-2110 | Improve Imaging comparison result without a license | Improvement |
+| COMPARISONNET-2107 | Improve creation result document in Comparison.PDF | Improvement |
+| COMPARISONNET-2101 | Improve annotation comparison for PDF | Improvement |
+| COMPARISONNET-2108 | Duplicate Images in Result file in PDF | Bug |
+| COMPARISONNET-2102 | Issue with Spreadsheet DeletedItemsStyle | Bug |
+| COMPARISONNET-1950 | PDF comparison is not accurate | Bug |
 
 ## Public API and Backward Incompatible Changes
 

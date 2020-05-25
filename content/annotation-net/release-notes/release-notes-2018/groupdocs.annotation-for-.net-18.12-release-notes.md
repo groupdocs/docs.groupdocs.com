@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-18-12-release-notes
 url: annotation/net/groupdocs-annotation-for-net-18-12-release-notes
 title: GroupDocs.Annotation for .NET 18.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -27,65 +27,17 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-812
-
-Implement export only pages that contains annotations
-
-Feature
-
-ANNOTATIONNET-813
-
-Implement Export document with specific annotation type
-
-Feature
-
-ANNOTATIONNET-814 
-
-Export specific pages range of document
-
-Feature
-
-ANNOTATIONNET-815
-
-Add possibility to retrieve pages without annotations
-
-Feature
-
-ANNOTATIONNET-806
-
-Ensured and updated GroupDocs.Annotation code is thread-safe.
-
-Improvement
-
-ANNOTATIONNET-811
-
-Add text replacement for grouped shapes.
-
-Improvement
-
-ANNOTATIONNET-819 
-
-AnnotationImageHandler.GetDocumentInfo method in trial mode throws exception
-
-Bug
-
-ANNOTATIONNET-821 
-
-Bug during apply annotation to empty document in Cells.
-
-Bug
-
-ANNOTATIONNET-826 
-
-NotSupportedException exception when pass password parameter for Images.
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-812 | Implement export only pages that contains annotations | Feature |
+| ANNOTATIONNET-813 | Implement Export document with specific annotation type | Feature |
+| ANNOTATIONNET-814  | Export specific pages range of document | Feature |
+| ANNOTATIONNET-815 | Add possibility to retrieve pages without annotations | Feature |
+| ANNOTATIONNET-806 | Ensured and updated GroupDocs.Annotation code is thread-safe. | Improvement |
+| ANNOTATIONNET-811 | Add text replacement for grouped shapes. | Improvement |
+| ANNOTATIONNET-819  | AnnotationImageHandler.GetDocumentInfo method in trial mode throws exception | Bug |
+| ANNOTATIONNET-821  | Bug during apply annotation to empty document in Cells. | Bug |
+| ANNOTATIONNET-826  | NotSupportedException exception when pass password parameter for Images. | Bug |
 
 ## Public API and Backward Incompatible Change
 

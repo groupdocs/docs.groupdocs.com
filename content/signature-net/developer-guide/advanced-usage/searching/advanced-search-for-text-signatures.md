@@ -3,7 +3,7 @@ id: advanced-search-for-text-signatures
 url: signature/net/advanced-search-for-text-signatures
 title: Advanced search for Text signatures
 weight: 4
-description:  This article explains how to make advanced search for Text electronic signatures with GroupDocs.Signature API.
+description: " This article explains how to make advanced search for Text electronic signatures with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

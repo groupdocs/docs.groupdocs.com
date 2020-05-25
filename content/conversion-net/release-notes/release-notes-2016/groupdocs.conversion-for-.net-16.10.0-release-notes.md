@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-16-10-0-release-notes
 url: conversion/net/groupdocs-conversion-for-net-16-10-0-release-notes
 title: GroupDocs.Conversion For .NET 16.10.0 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -20,41 +20,13 @@ There are 5 improvements and fixes in this regular monthly release. The most not
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-1318
-
-Convert from CAD documents to Cells, Html, Image, Pdf, Slides, Words
-
-New Feature
-
-CONVERSIONNET-1077
-
-Setting default Fonts
-
-New Feature
-
-CONVERSIONNET-1305
-
-Add FixedLayout option to Words to Html conversions
-
-New Feature
-
-CONVERSIONNET-1304
-
-Add FixedLayout option to Pdf to Html conversions
-
-New Feature
-
-CONVERSIONNET-1351
-
-Coversion with document as Stream input not working
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-1318 | Convert from CAD documents to Cells, Html, Image, Pdf, Slides, Words | New Feature |
+| CONVERSIONNET-1077 | Setting default Fonts | New Feature |
+| CONVERSIONNET-1305 | Add FixedLayout option to Words to Html conversions | New Feature |
+| CONVERSIONNET-1304 | Add FixedLayout option to Pdf to Html conversions | New Feature |
+| CONVERSIONNET-1351 | Coversion with document as Stream input not working | Bug |
 
 ## Public API and Backward Incompatible Changes
 

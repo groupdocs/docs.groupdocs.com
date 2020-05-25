@@ -3,7 +3,7 @@ id: sign-document-with-qr-code-signature-advanced
 url: signature/net/sign-document-with-qr-code-signature-advanced
 title: Sign document with QR-code signature - advanced
 weight: 11
-description:  This article explains how to sign document with QR-code electronic signatures using extended options with GroupDocs.Signature API.
+description: " This article explains how to sign document with QR-code electronic signatures using extended options with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

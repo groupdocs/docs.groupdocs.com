@@ -3,7 +3,7 @@ id: working-with-presentations
 url: editor/net/working-with-presentations
 title: Working with Presentations
 weight: 4
-description: This guide demonstrates how to edit PPT, PPTX, PPTM, PPSX, PPSM, POTX, POTM presentations with different settings and many other powerful features of GroupDocs.Editor for .NET.
+description: "This guide demonstrates how to edit PPT, PPTX, PPTM, PPSX, PPSM, POTX, POTM presentations with different settings and many other powerful features of GroupDocs.Editor for .NET."
 keywords: Edit PPT, Edit PPTX, Edit PPTM, Edit PPSX, Edit PPSM, Edit POTX, Edit POTM
 productName: GroupDocs.Editor for .NET
 hideChildren: False

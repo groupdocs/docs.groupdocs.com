@@ -3,7 +3,7 @@ id: load-document-from-stream
 url: conversion/net/load-document-from-stream
 title: Load document from Stream
 weight: 5
-description: This article demonstrates how to convert document presented as stream using GroupDocs.Conversion for .NET API.
+description: "This article demonstrates how to convert document presented as stream using GroupDocs.Conversion for .NET API."
 keywords: Convert document from stream, Convert file
 productName: GroupDocs.Conversion for .NET
 hideChildren: False

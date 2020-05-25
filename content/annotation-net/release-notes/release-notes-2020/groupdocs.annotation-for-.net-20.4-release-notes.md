@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-20-4-release-notes
 url: annotation/net/groupdocs-annotation-for-net-20-4-release-notes
 title: GroupDocs.Annotation for .NET 20.4 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -32,47 +32,14 @@ Below the list of most notable changes in  release of GroupDocs.Annotation for 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Type
-
-ANNOTATIONNET-816
-
-Managing different versions of annotated file
-
-Feature
-
-ANNOTATIONNET-1320
-
-Pages image size
-
-Improvement
-
-ANNOTATIONNET-1318
-
-Document advanced rendering modes and options support
-
-Improvement
-
-ANNOTATIONNET-1296
-
-Cannot access a closed Stream
-
-Bug
-
-ANNOTATIONNET-1284
-
-Encrypted Excel spreadsheet file throws exception
-
-Bug
-
-ANNOTATIONNET-1321
-
-CleanUp method for PowerPoint presentation does not remove replies
-
-Bug
+| Key | Summary | Type |
+| --- | --- | --- |
+| ANNOTATIONNET-816 | Managing different versions of annotated file | Feature |
+| ANNOTATIONNET-1320 | Pages image size | Improvement |
+| ANNOTATIONNET-1318 | Document advanced rendering modes and options support | Improvement |
+| ANNOTATIONNET-1296 | Cannot access a closed Stream | Bug |
+| ANNOTATIONNET-1284 | Encrypted Excel spreadsheet file throws exception | Bug |
+| ANNOTATIONNET-1321 | CleanUp method for PowerPoint presentation does not remove replies | Bug |
 
 # Public API and Backward Incompatible Changes
 

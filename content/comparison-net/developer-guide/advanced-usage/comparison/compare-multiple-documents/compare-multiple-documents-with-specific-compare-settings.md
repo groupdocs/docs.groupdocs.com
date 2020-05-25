@@ -3,7 +3,7 @@ id: compare-multiple-documents-with-specific-compare-settings
 url: comparison/net/compare-multiple-documents-with-specific-compare-settings
 title: Compare multiple documents with specific compare settings
 weight: 2
-description: Following this guide you will learn how to compare multiple documents with different customisations - style detection, change comparison detalisation level and more.
+description: "Following this guide you will learn how to compare multiple documents with different customisations - style detection, change comparison detalisation level and more."
 keywords: Compare multiple documents, style change detection, Multi-compare files
 productName: GroupDocs.Comparison for .NET
 hideChildren: False

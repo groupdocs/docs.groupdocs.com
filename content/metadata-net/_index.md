@@ -3,7 +3,7 @@ id: home
 url: metadata/net
 title: GroupDocs.Metadata for .NET
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: True

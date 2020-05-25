@@ -3,7 +3,7 @@ id: synonym-dictionary
 url: search/net/synonym-dictionary
 title: Synonym dictionary
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

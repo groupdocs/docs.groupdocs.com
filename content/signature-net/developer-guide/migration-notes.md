@@ -3,7 +3,7 @@ id: migration-notes
 url: signature/net/migration-notes
 title: Migration Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

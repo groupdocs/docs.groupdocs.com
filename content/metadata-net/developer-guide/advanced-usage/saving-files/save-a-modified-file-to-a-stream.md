@@ -3,7 +3,7 @@ id: save-a-modified-file-to-a-stream
 url: metadata/net/save-a-modified-file-to-a-stream
 title: Save a modified file to a stream
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

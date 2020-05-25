@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-16-11-0-release-notes
 url: conversion/net/groupdocs-conversion-for-net-16-11-0-release-notes
 title: GroupDocs.Conversion For .NET 16.11.0 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -26,83 +26,20 @@ There are 12 new features, improvements and fixes in this regular monthly releas
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-1387
-
-Implement OTP file format conversion
-
-New Feature
-
-CONVERSIONNET-1413
-
-Implement DICOM file format conversion
-
-New Feature
-
-CONVERSIONNET-1418
-
-Implement conversion from WMF
-
-New Feature
-
-CONVERSIONNET-1419
-
-Implement conversion from EMF
-
-New Feature
-
-CONVERSIONNET-1447
-
-Count total pages of a document
-
-New Feature
-
-CONVERSIONNET-1458
-
-Return all possible conversions from file extension or stream
-
-New Feature
-
-CONVERSIONNET-1425
-
-Implement conversion from DjVu
-
-New Feature
-
-CONVERSIONNET-1376
-
-Improve performance of Word to Pdf and Word to Epub conversions
-
-Improvement
-
-CONVERSIONNET-1400
-
-Improve progress reporting
-
-Improvement
-
-CONVERSIONNET-1399
-
-Progress report is not working
-
-Bug
-
-CONVERSIONNET-1424
-
-Mssing "Fixedlayout" Property while Updating VB Example
-
-Bug
-
-CONVERSIONNET-1414
-
-File name contains extra symbols
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-1387 | Implement OTP file format conversion | New Feature |
+| CONVERSIONNET-1413 | Implement DICOM file format conversion | New Feature |
+| CONVERSIONNET-1418 | Implement conversion from WMF | New Feature |
+| CONVERSIONNET-1419 | Implement conversion from EMF | New Feature |
+| CONVERSIONNET-1447 | Count total pages of a document | New Feature |
+| CONVERSIONNET-1458 | Return all possible conversions from file extension or stream | New Feature |
+| CONVERSIONNET-1425 | Implement conversion from DjVu | New Feature |
+| CONVERSIONNET-1376 | Improve performance of Word to Pdf and Word to Epub conversions | Improvement |
+| CONVERSIONNET-1400 | Improve progress reporting | Improvement |
+| CONVERSIONNET-1399 | Progress report is not working | Bug |
+| CONVERSIONNET-1424 | Mssing "Fixedlayout" Property while Updating VB Example | Bug |
+| CONVERSIONNET-1414 | File name contains extra symbols | Bug |
 
 ## Public API and Backward Incompatible Changes
 

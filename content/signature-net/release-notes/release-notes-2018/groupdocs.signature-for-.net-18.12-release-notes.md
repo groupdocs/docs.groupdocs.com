@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-18-12-release-notes
 url: signature/net/groupdocs-signature-for-net-18-12-release-notes
 title: GroupDocs.Signature for .NET 18.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -22,47 +22,7 @@ There are few new features, improvements and bug fixes in this regular release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-1797
-
-Skip Output folder when SaveOptions.OutputFileName is set as absolute path
-
-Bug
-
-SIGNATURENET-1782
-
-Exception is fired when searching in PDF documents for Form-fields that were setup without name
-
-Bug
-
-SIGNATURENET-1785
-
-Implement standard Image Metadata Signatures
-
-New Feature
-
-SIGNATURENET-1723
-
-Implement Metadata Signatures Search for Image Documents
-
-New Feature
-
-SIGNATURENET-1756
-
-Extend FormField signature name automatically with number prefix for multiple-pages options
-
-Improvement
-
-SIGNATURENET-1581
-
-Improve handling exceptions with proper details and exception type
-
-Improvement
+<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1797</td><td colspan="1" class="confluenceTd">Skip Output folder when SaveOptions.OutputFileName is set as absolute path</td><td colspan="1" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1782</td><td colspan="1" class="confluenceTd">Exception is fired when searching in PDF documents for Form-fields that were setup without name</td><td colspan="1" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1785</td><td colspan="1" class="confluenceTd">Implement standard Image Metadata Signatures</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1723</td><td colspan="1" class="confluenceTd">Implement Metadata Signatures Search for Image Documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-1756</td><td class="confluenceTd">Extend FormField signature name automatically with number prefix for multiple-pages options</td><td class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd">SIGNATURENET-1581</td><td class="confluenceTd">Improve handling exceptions with proper details and exception type</td><td class="confluenceTd">Improvement</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 
@@ -96,29 +56,11 @@ Improvement
     
     **FormField Signature properties:**
     
-    Name
-    
-    Type
-    
-    Description
-    
-    Id
-    
-    ushort
-    
-    Specifies unique exif tag identifier. See documentation of TIFF Tag Reference
-    
-    Size
-    
-    int
-    
-    Specifies size of Metadata value. Property is read only and set automatically once value will be changed
-    
-    Description
-    
-    string
-    
-    Specifies description of Metadata signature when standard identifier metadata signature is being used
+    | Name | Type | Description |
+    | --- | --- | --- |
+    | Id | ushort | Specifies unique exif tag identifier. See documentation of TIFF Tag Reference |
+    | Size | int | Specifies size of Metadata value. Property is read only and set automatically once value will be changed |
+    | Description | string | Specifies description of Metadata signature when standard identifier metadata signature is being used |
     
     Class specifies unique identifier Id to follow Exif specification, Name property contains Id in hex format, read-only property Description contains extended description for standard image exif data, read-only property Size keeps the size of metadata signatures.
     

@@ -3,7 +3,7 @@ id: compare-multiple-documents-protected-by-password
 url: comparison/net/compare-multiple-documents-protected-by-password
 title: Compare multiple documents protected by password
 weight: 1
-description: This article describes how to compare multiple Word documents or PowerPoint presentations protected by password using GroupDocs.Comparison for .NET API.
+description: "This article describes how to compare multiple Word documents or PowerPoint presentations protected by password using GroupDocs.Comparison for .NET API."
 keywords: Compare multiple password protected documents, compare multiple protected documents
 productName: GroupDocs.Comparison for .NET
 hideChildren: False

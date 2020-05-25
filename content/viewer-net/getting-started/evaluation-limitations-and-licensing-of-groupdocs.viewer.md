@@ -3,7 +3,7 @@ id: evaluation-limitations-and-licensing-of-groupdocs-viewer
 url: viewer/net/evaluation-limitations-and-licensing-of-groupdocs-viewer
 title: Evaluation Limitations and Licensing of GroupDocs.Viewer
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False

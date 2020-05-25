@@ -19,23 +19,10 @@ There are the following features and enhancements in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key 
-
-Summary
-
-Category
-
-WATERMARKNET-713
-
-Implement ability to edit PowerPoint document objects that can be considered as watermarks 
-
-New Feature 
-
-WATERMARKNET-714 
-
-Implement ability to edit Visio document objects that can be considered as watermarks 
-
-New Feature 
+| Key  | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-713 | Implement ability to edit PowerPoint document objects that can be considered as watermarks  | New Feature  |
+| WATERMARKNET-714  | Implement ability to edit Visio document objects that can be considered as watermarks  | New Feature  |
 
 ## Public API and Backward Incompatible Changes
 

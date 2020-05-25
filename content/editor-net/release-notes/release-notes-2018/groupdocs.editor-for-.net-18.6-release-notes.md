@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-18-6-release-notes
 url: editor/net/groupdocs-editor-for-net-18-6-release-notes
 title: GroupDocs.Editor for .NET 18.6 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -48,65 +48,17 @@ Along with Cells support we have slightly improved existing Words processing mod
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-868
-
-Implement opening Cells documents and converting them to the HTML format
-
-New Feature
-
-EDITORNET-869
-
-Implement generating Cells documents from input HTML
-
-New Feature
-
-EDITORNET-870
-
-Add support of text-based Cells documents with ability to specify a separator
-
-New Feature
-
-EDITORNET-871
-
-Add support of opening encrypted documents with password
-
-New Feature
-
-EDITORNET-872
-
-Implement support of encrypting output Cells documents with setting a password
-
-New Feature
-
-EDITORNET-873
-
-Add support of Metered license system
-
-New Feature
-
-EDITORNET-874
-
-Improve processing of multiple consequent spaces in Words processing module for roundtrip scenarios
-
-Improvement
-
-EDITORNET-875
-
-Improve space processing for bidirectional text
-
-Improvement
-
-EDITORNET-876
-
-Improve list processing in roundtrip scenarios
-
-Improvement
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-868 | Implement opening Cells documents and converting them to the HTML format | New Feature |
+| EDITORNET-869 | Implement generating Cells documents from input HTML | New Feature |
+| EDITORNET-870 | Add support of text-based Cells documents with ability to specify a separator | New Feature |
+| EDITORNET-871 | Add support of opening encrypted documents with password | New Feature |
+| EDITORNET-872 | Implement support of encrypting output Cells documents with setting a password | New Feature |
+| EDITORNET-873 | Add support of Metered license system | New Feature |
+| EDITORNET-874 | Improve processing of multiple consequent spaces in Words processing module for roundtrip scenarios | Improvement |
+| EDITORNET-875 | Improve space processing for bidirectional text | Improvement |
+| EDITORNET-876 | Improve list processing in roundtrip scenarios | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

@@ -18,23 +18,10 @@ There is the following new feature in this monthly release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key 
-
-Summary
-
-Category
-
-WATERMARKNET-787
-
-Implement ability to edit Word document objects that can be considered as watermarks 
-
-New Feature 
-
-WATERMARKNET-668 
-
-Remove SlidesBaseShape.Hyperlink property (obsolete code) 
-
-Enhancement
+| Key  | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-787 | Implement ability to edit Word document objects that can be considered as watermarks  | New Feature  |
+| WATERMARKNET-668  | Remove SlidesBaseShape.Hyperlink property (obsolete code)  | Enhancement |
 
 ## Public API and Backward Incompatible Changes
 

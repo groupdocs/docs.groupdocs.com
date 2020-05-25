@@ -3,7 +3,7 @@ id: working-with-metadata-in-tiff-images
 url: metadata/net/working-with-metadata-in-tiff-images
 title: Working with metadata in TIFF images
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

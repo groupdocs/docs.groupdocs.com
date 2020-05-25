@@ -3,7 +3,7 @@ id: supported-platforms
 url: annotation/net/supported-platforms
 title: Supported Platforms
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

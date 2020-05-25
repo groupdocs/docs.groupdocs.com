@@ -3,7 +3,7 @@ id: sign-document-with-barcode-signature-and-additional-settings
 url: signature/net/sign-document-with-barcode-signature-and-additional-settings
 title: Sign document with Barcode signature and additional settings
 weight: 3
-description:  This article explains how to sign document with Barcode electronic signatures using extended options with GroupDocs.Signature API.
+description: " This article explains how to sign document with Barcode electronic signatures using extended options with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

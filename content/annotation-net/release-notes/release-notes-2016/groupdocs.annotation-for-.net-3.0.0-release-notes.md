@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-3-0-0-release-notes
 url: annotation/net/groupdocs-annotation-for-net-3-0-0-release-notes
 title: GroupDocs.Annotation for .NET 3.0.0 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

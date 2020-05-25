@@ -3,7 +3,7 @@ id: esign-document-with-text-signature
 url: signature/net/esign-document-with-text-signature
 title: eSign document with Text signature
 weight: 7
-description: This article explains how to sign document with Text signature by GroupDocs.Signature API
+description: "This article explains how to sign document with Text signature by GroupDocs.Signature API"
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

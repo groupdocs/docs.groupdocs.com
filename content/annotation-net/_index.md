@@ -3,7 +3,7 @@ id: home
 url: annotation/net
 title: GroupDocs.Annotation for .NET
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: True

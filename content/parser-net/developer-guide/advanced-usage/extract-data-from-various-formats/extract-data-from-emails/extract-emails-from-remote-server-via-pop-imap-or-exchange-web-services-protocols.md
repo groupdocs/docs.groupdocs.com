@@ -81,23 +81,17 @@ Username = <user-name>
 Password = <password>  
   
  |
-| IMAP | 
-mode = imap  
+| IMAP | mode = imap  
 Host = <url>  
 Port = <port>  
 Username = <user-name>  
 Password = <password>  
   
-
-
  |
-| EWS | 
-
-mode = exchange  
+| EWS | mode = exchange  
 MailboxUri = <url>  
 Username = <user-name>  
 Password = <password>
-
  |
 
 ## More resources

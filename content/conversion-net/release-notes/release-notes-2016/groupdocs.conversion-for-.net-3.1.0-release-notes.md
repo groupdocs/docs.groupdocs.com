@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-3-1-0-release-notes
 url: conversion/net/groupdocs-conversion-for-net-3-1-0-release-notes
 title: GroupDocs.Conversion For .NET 3.1.0 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -19,35 +19,12 @@ There are 4 new features in this regular monthly release. The most notable are:
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-680
-
-Implement document conversion from stream with auto detect source file type
-
-New Feature
-
-CONVERSIONNET-662
-
-Autodetect source document type when converting from stream
-
-New Feature
-
-CONVERSIONNET-655
-
-Report conversion progress
-
-New Feature
-
-CONVERSIONNET-654
-
-Return all supported conversions types with single method
-
-New Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-680 | Implement document conversion from stream with auto detect source file type | New Feature |
+| CONVERSIONNET-662 | Autodetect source document type when converting from stream | New Feature |
+| CONVERSIONNET-655 | Report conversion progress | New Feature |
+| CONVERSIONNET-654 | Return all supported conversions types with single method | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

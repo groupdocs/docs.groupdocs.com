@@ -3,7 +3,7 @@ id: traverse-a-whole-metadata-tree
 url: metadata/net/traverse-a-whole-metadata-tree
 title: Traverse a whole metadata tree
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

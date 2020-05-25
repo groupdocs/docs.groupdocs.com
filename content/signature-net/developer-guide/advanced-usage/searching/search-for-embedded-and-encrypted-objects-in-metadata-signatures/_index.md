@@ -3,7 +3,7 @@ id: search-for-embedded-and-encrypted-objects-in-metadata-signatures
 url: signature/net/search-for-embedded-and-encrypted-objects-in-metadata-signatures
 title: Search for embedded and encrypted objects in Metadata signatures
 weight: 8
-description:  This section explains how to search for embedded electronic signatures into the document metadata with GroupDocs.Signature API. Also this topic shows the way to customize data serialization, encryption and class definition with ability to embed it into the metadata electronic signature.
+description: " This section explains how to search for embedded electronic signatures into the document metadata with GroupDocs.Signature API. Also this topic shows the way to customize data serialization, encryption and class definition with ability to embed it into the metadata electronic signature."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

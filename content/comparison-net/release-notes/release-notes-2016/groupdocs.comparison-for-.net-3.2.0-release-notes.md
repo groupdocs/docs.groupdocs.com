@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-3-2-0-release-notes
 url: comparison/net/groupdocs-comparison-for-net-3-2-0-release-notes
 title: GroupDocs.Comparison For .NET 3.2.0 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -24,95 +24,22 @@ There are 14 improvements and fixes in this regular monthly release. The most no
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-COMPARISONNET-787
-
-Save html files to word document when use Comparison.Text for comparison
-
-New Feature
-
-COMPARISONNET-769
-
-Add GetChanges and UpdateChanges methods for Comparison.Text
-
-New Feature
-
-COMPARISONNET-742
-
-Implement the Saving of result Comparison as images
-
-New Feature
-
-COMPARISONNET-730
-
-PDF: Implement the own absorber of tables
-
-New Feature
-
-COMPARISONNET-801
-
-Improve speed comparison Cells
-
-Improvement
-
-COMPARISONNET-750
-
-Comparison.Words significant performance improvements with new aligners
-
-Improvement
-
-COMPARISONNET-728
-
-Improve the displaying of images and text after process the comparison
-
-Improvement
-
-COMPARISONNET-726
-
-Implement function for correction of position and size Image after ImagePlacementAbsorber for Images from XForms
-
-Improvement
-
-COMPARISONNET-616
-
-Implement formulas comparison for Words format
-
-Improvement
-
-COMPARISONNET-533
-
-Implement of comparing pdf with the images
-
-Improvement
-
-COMPARISONNET-794
-
-GroupDocs.Comparison.Words: Aligning of paragraphs mismatch for the case when paragraphs is moved by page break
-
-Bug
-
-COMPARISONNET-780
-
-Out of memory exception in ComparisonText
-
-Bug
-
-COMPARISONNET-737
-
-Cannot open result file when graphics objects are used
-
-Bug
-
-COMPARISONNET-445
-
-Cells: original Excel tables layout is not supported.
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| COMPARISONNET-787 | Save html files to word document when use Comparison.Text for comparison | New Feature |
+| COMPARISONNET-769 | Add GetChanges and UpdateChanges methods for Comparison.Text | New Feature |
+| COMPARISONNET-742 | Implement the Saving of result Comparison as images | New Feature |
+| COMPARISONNET-730 | PDF: Implement the own absorber of tables | New Feature |
+| COMPARISONNET-801 | Improve speed comparison Cells | Improvement |
+| COMPARISONNET-750 | Comparison.Words significant performance improvements with new aligners | Improvement |
+| COMPARISONNET-728 | Improve the displaying of images and text after process the comparison | Improvement |
+| COMPARISONNET-726 | Implement function for correction of position and size Image after ImagePlacementAbsorber for Images from XForms | Improvement |
+| COMPARISONNET-616 | Implement formulas comparison for Words format | Improvement |
+| COMPARISONNET-533 | Implement of comparing pdf with the images | Improvement |
+| COMPARISONNET-794 | GroupDocs.Comparison.Words: Aligning of paragraphs mismatch for the case when paragraphs is moved by page break | Bug |
+| COMPARISONNET-780 | Out of memory exception in ComparisonText | Bug |
+| COMPARISONNET-737 | Cannot open result file when graphics objects are used | Bug |
+| COMPARISONNET-445 | Cells: original Excel tables layout is not supported. | Bug |
 
   
   

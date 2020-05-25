@@ -3,7 +3,7 @@ id: load-a-file-of-a-specific-format
 url: metadata/net/load-a-file-of-a-specific-format
 title: Load a file of a specific format
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

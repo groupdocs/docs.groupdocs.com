@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-16-10-0-release-notes
 url: signature/net/groupdocs-signature-for-net-16-10-0-release-notes
 title: GroupDocs.Signature for .NET 16.10.0 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -27,203 +27,40 @@ There are 32 improvements and fixes in this regular release. The most notable ar
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-2347
-
-Implement Visible flag of Pdf Digital Signature
-
-New Feature
-
-SIGNATURENET-2314
-
-Implement Save Format Options for Slides Documents
-
-New Feature
-
-SIGNATURENET-2312
-
-Implement Save Format Options for Cells Documents
-
-New Feature
-
-SIGNATURENET-2310
-
-Implement Save Format Options for Words Documents
-
-New Feature
-
-SIGNATURENET-2305
-
-Implement Save Format Options for PDF Documents
-
-New Feature
-
-SIGNATURENET-2222
-
-Implement Different Words Save Format Options
-
-New Feature
-
-SIGNATURENET-2199
-
-Implement Image Signature Margins for Slides
-
-New Feature
-
-SIGNATURENET-2197
-
-Implement Image Signature Margins for Cells
-
-New Feature
-
-SIGNATURENET-2195
-
-Implement Image Signature Margins for Words
-
-New Feature
-
-SIGNATURENET-2193
-
-Implement Image Signature Margins for PDF
-
-New Feature
-
-SIGNATURENET-2181
-
-Implement Text Signature Color Options for Slides
-
-New Feature
-
-SIGNATURENET-2179
-
-Implement Text Signature Color Options for Words
-
-New Feature
-
-SIGNATURENET-2177
-
-Implement Text Signature Color Options for Cells
-
-New Feature
-
-SIGNATURENET-2175
-
-Implement Text Signature Color Options for PDF
-
-New Feature
-
-SIGNATURENET-2162
-
-Implement Text Signature Font properties for Slides
-
-New Feature
-
-SIGNATURENET-2160
-
-Implement Text Signature Font properties for Cells
-
-New Feature
-
-SIGNATURENET-2158
-
-Implement Text Signature Font properties for Words
-
-New Feature
-
-SIGNATURENET-2156
-
-Implement Text Signature Font properties for PDF
-
-New Feature
-
-SIGNATURENET-2119
-
-Implement text size options in text signature for Slides documents
-
-New Feature
-
-SIGNATURENET-2118
-
-Implement text size options in text signature for Cells documents
-
-New Feature
-
-SIGNATURENET-2117
-
-Implement text size options in text signature for Words documents
-
-New Feature
-
-SIGNATURENET-2116
-
-Implement text size options in text signature for Pdf documents
-
-New Feature
-
-SIGNATURENET-2112
-
-Add ability to specify color options for text signature
-
-New Feature
-
-SIGNATURENET-2109
-
-Add ability to specify options for saving signed Document
-
-New Feature
-
-SIGNATURENET-2092
-
-Implement Image Signature Alignment for Slides
-
-New Feature
-
-SIGNATURENET-2091
-
-Implement Image Signature Alignment for Words
-
-New Feature
-
-SIGNATURENET-2090
-
-Implement Image Signature Alignment for Cells
-
-New Feature
-
-SIGNATURENET-2089
-
-Implement Image Signature Alignment for PDF
-
-New Feature
-
-SIGNATURENET-2348
-
-Adjust Pdf Size options to document points dimension
-
-Bug
-
-SIGNATURENET-2280
-
-When signing a password-protected Words file with a digital signature, an exception is thrown
-
-Bug
-
-SIGNATURENET-2274
-
-When signing a PPTX and a password is set in the options, Aspose.Slides.PptxUnsupportedFormatException is thrown
-
-Bug
-
-SIGNATURENET-2067
-
-Fix Words Provider to locate Image Signature on Page Number from Option
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2347 | Implement Visible flag of Pdf Digital Signature | New Feature |
+| SIGNATURENET-2314 | Implement Save Format Options for Slides Documents | New Feature |
+| SIGNATURENET-2312 | Implement Save Format Options for Cells Documents | New Feature |
+| SIGNATURENET-2310 | Implement Save Format Options for Words Documents | New Feature |
+| SIGNATURENET-2305 | Implement Save Format Options for PDF Documents | New Feature |
+| SIGNATURENET-2222 | Implement Different Words Save Format Options | New Feature |
+| SIGNATURENET-2199 | Implement Image Signature Margins for Slides | New Feature |
+| SIGNATURENET-2197 | Implement Image Signature Margins for Cells | New Feature |
+| SIGNATURENET-2195 | Implement Image Signature Margins for Words | New Feature |
+| SIGNATURENET-2193 | Implement Image Signature Margins for PDF | New Feature |
+| SIGNATURENET-2181 | Implement Text Signature Color Options for Slides | New Feature |
+| SIGNATURENET-2179 | Implement Text Signature Color Options for Words | New Feature |
+| SIGNATURENET-2177 | Implement Text Signature Color Options for Cells | New Feature |
+| SIGNATURENET-2175 | Implement Text Signature Color Options for PDF | New Feature |
+| SIGNATURENET-2162 | Implement Text Signature Font properties for Slides | New Feature |
+| SIGNATURENET-2160 | Implement Text Signature Font properties for Cells | New Feature |
+| SIGNATURENET-2158 | Implement Text Signature Font properties for Words | New Feature |
+| SIGNATURENET-2156 | Implement Text Signature Font properties for PDF | New Feature |
+| SIGNATURENET-2119 | Implement text size options in text signature for Slides documents | New Feature |
+| SIGNATURENET-2118 | Implement text size options in text signature for Cells documents | New Feature |
+| SIGNATURENET-2117 | Implement text size options in text signature for Words documents | New Feature |
+| SIGNATURENET-2116 | Implement text size options in text signature for Pdf documents | New Feature |
+| SIGNATURENET-2112 | Add ability to specify color options for text signature | New Feature |
+| SIGNATURENET-2109 | Add ability to specify options for saving signed Document | New Feature |
+| SIGNATURENET-2092 | Implement Image Signature Alignment for Slides | New Feature |
+| SIGNATURENET-2091 | Implement Image Signature Alignment for Words | New Feature |
+| SIGNATURENET-2090 | Implement Image Signature Alignment for Cells | New Feature |
+| SIGNATURENET-2089 | Implement Image Signature Alignment for PDF | New Feature |
+| SIGNATURENET-2348 | Adjust Pdf Size options to document points dimension | Bug |
+| SIGNATURENET-2280 | When signing a password-protected Words file with a digital signature, an exception is thrown | Bug |
+| SIGNATURENET-2274 | When signing a PPTX and a password is set in the options, Aspose.Slides.PptxUnsupportedFormatException is thrown | Bug |
+| SIGNATURENET-2067 | Fix Words Provider to locate Image Signature on Page Number from Option | Bug |
 
 ## Public API and Backward Incompatible Changes
 

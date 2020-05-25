@@ -17,73 +17,14 @@ IEnumerable<PageImageArea> GetImages(int pageIndex);
 
 The methods return a collection of [PageImageArea](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pageimagearea) objects:
 
-| 
-Member
-
-
-
- | 
-
-Description
-
-
-
- |
+| Member | Description |
 | --- | --- |
-| 
-
-[Page](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagearea/properties/page)
-
- | 
-
-The page that contains the text area.
-
- |
-| 
-
-[Rectangle](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagearea/properties/rectangle)
-
- | 
-
-The rectangular area on the page that contains the text area.
-
- |
-| 
-
-[FileType](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pageimagearea/properties/filetype)
-
- | 
-
-The format of the image.
-
- |
-| 
-
-[Rotation](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pageimagearea/properties/rotation)
-
- | 
-
-The rotation angle of the image.
-
- |
-| 
-
-Stream [GetImageStream()](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pageimagearea/methods/getimagestream)
-
- | 
-
-Returns the image stream.
-
- |
-| 
-
-Stream [GetImageStream(ImageOptions)](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data.pageimagearea/getimagestream/methods/1)
-
- | 
-
-Returns the image stream in a different format.
-
- |
+| [Page](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagearea/properties/page) | The page that contains the text area. |
+| [Rectangle](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pagearea/properties/rectangle) | The rectangular area on the page that contains the text area. |
+| [FileType](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pageimagearea/properties/filetype) | The format of the image. |
+| [Rotation](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pageimagearea/properties/rotation) | The rotation angle of the image. |
+| Stream [GetImageStream()](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pageimagearea/methods/getimagestream) | Returns the image stream. |
+| Stream [GetImageStream(ImageOptions)](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data.pageimagearea/getimagestream/methods/1) | Returns the image stream in a different format. |
 | [Save(string)](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data/pageimagearea/methods/save) | Saves the image to the file. |
 | [Save(string, ImageOptions)](https://apireference.groupdocs.com/net/parser/groupdocs.parser.data.pageimagearea/save/methods/1) | Saves the image to the file in a different format. |
 

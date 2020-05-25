@@ -3,7 +3,7 @@ id: home
 url: viewer/net
 title: GroupDocs.Viewer for .NET
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: True

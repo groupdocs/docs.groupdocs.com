@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-20-5-release-notes
 url: metadata/net/groupdocs-metadata-for-net-20-5-release-notes
 title: GroupDocs.Metadata for .NET 20.5 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -26,83 +26,20 @@ There are the following features, enhancements and fixes in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-METADATANET-3293
-
-Remove obsolete API (Legacy namespace)
-
-Improvement
-
-METADATANET-2851
-
-Implement the ability to work with EXIF metadata in WEBP images
-
-New Feature
-
-METADATANET-2854
-
-Implement the ability to work with XMP metadata in MOV files
-
-New Feature
-
-METADATANET-3177
-
-An exception is thrown when trying to extract PDF properties
-
-Bug
-
-METADATANET-3270
-
-Operation is not valid due to the current state of the object
-
-Bug
-
-METADATANET-3273
-
-Could not parse RDF description
-
-Bug
-
-METADATANET-3276
-
-"Could not unzip EPUB stream" exception when reading EPUB file
-
-Bug
-
-METADATANET-3278
-
-"Date has invalid format:7/24/2003 16:17:18" exception when reading PDF
-
-Bug
-
-METADATANET-3279
-
-Invalid data descriptor header exception is thrown when reading ZIP file
-
-Bug
-
-METADATANET-3282
-
-"Invalid Epub package" exception when reading EPUB file
-
-Bug
-
-METADATANET-3285
-
-An exception is thrown when trying to loading WebP file
-
-Bug
-
-METADATANET-3290
-
-Exception is thrown when loading EPUB file
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-3293 | Remove obsolete API (Legacy namespace) | Improvement |
+| METADATANET-2851 | Implement the ability to work with EXIF metadata in WEBP images | New Feature |
+| METADATANET-2854 | Implement the ability to work with XMP metadata in MOV files | New Feature |
+| METADATANET-3177 | An exception is thrown when trying to extract PDF properties | Bug |
+| METADATANET-3270 | Operation is not valid due to the current state of the object | Bug |
+| METADATANET-3273 | Could not parse RDF description | Bug |
+| METADATANET-3276 | "Could not unzip EPUB stream" exception when reading EPUB file | Bug |
+| METADATANET-3278 | "Date has invalid format:7/24/2003 16:17:18" exception when reading PDF | Bug |
+| METADATANET-3279 | Invalid data descriptor header exception is thrown when reading ZIP file | Bug |
+| METADATANET-3282 | "Invalid Epub package" exception when reading EPUB file | Bug |
+| METADATANET-3285 | An exception is thrown when trying to loading WebP file | Bug |
+| METADATANET-3290 | Exception is thrown when loading EPUB file | Bug |
 
 ## Public API and Backward Incompatible Changes
 

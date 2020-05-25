@@ -3,7 +3,7 @@ id: system-requirements
 url: signature/net/system-requirements
 title: System Requirements
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

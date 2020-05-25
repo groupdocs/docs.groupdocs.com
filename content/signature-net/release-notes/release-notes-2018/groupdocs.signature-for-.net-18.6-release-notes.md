@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-18-6-release-notes
 url: signature/net/groupdocs-signature-for-net-18-6-release-notes
 title: GroupDocs.Signature for .NET 18.6 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -23,95 +23,7 @@ There are about 15 improvements, new features and fixes in this regular release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-SIGNATURENET-3516
-
-Implement ability to set text alignment inside shapes for Words documents
-
-New Feature
-
-SIGNATURENET-3514
-
-Implement ability to set text alignment inside shapes for Slides documents
-
-New Feature
-
-SIGNATURENET-3512
-
-Implement ability to set text alignment inside shapes for PDF documents
-
-New Feature
-
-SIGNATURENET-3510
-
-Implement ability to set text alignment inside shapes for Images documents
-
-New Feature
-
-SIGNATURENET-3507
-
-Implement ability to verify encrypted Text of QR-Code Signatures
-
-New Feature
-
-SIGNATURENET-3486
-
-Implement ability to set text alignment inside shapes for Cells documents
-
-New Feature
-
-SIGNATURENET-3481
-
-Implement ability to set signature position in Cells with pixels
-
-New Feature
-
-SIGNATURENET-3524
-
-Implement ability to verify QR-Code Signatures without required QR-Code Encode type
-
-Improvement
-
-SIGNATURENET-3522
-
-Implement ability to verify Barcode Signatures without required Barcode Encode type
-
-Improvement
-
-SIGNATURENET-3480
-
-Implement global Exception handler to catch all unhandled exceptions
-
-Improvement
-
-SIGNATURENET-3468
-
-Implement setting color of QR-code code text with fore color value
-
-Improvement
-
-SIGNATURENET-3467
-
-Implement setting color of Bar-code code text with fore color value
-
-Improvement
-
-SIGNATURENET-3523
-
-Fix exception on QR-Code Signature Verification when options has no Encode Type specified
-
-Bug
-
-SIGNATURENET-3520
-
-Wrong text alignment in Text Signature shape for Words
-
-Bug
-
-SIGNATURENET-3466
-
-Wrong QRCode rendering for various settings
-
-Bug
+<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3516</td><td colspan="1" class="confluenceTd">Implement ability to set text alignment inside shapes for Words documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3514</td><td colspan="1" class="confluenceTd">Implement ability to set text alignment inside shapes for Slides documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3512</td><td colspan="1" class="confluenceTd">Implement ability to set text alignment inside shapes for PDF documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3510</td><td colspan="1" class="confluenceTd">Implement ability to set text alignment inside shapes for Images documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3507</td><td colspan="1" class="confluenceTd">Implement ability to verify encrypted Text of QR-Code Signatures</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3486</td><td class="confluenceTd">Implement ability to set text alignment inside shapes for Cells documents</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3481</td><td class="confluenceTd">Implement ability to set signature position in Cells with pixels</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3524</td><td class="confluenceTd">Implement ability to verify QR-Code Signatures without required QR-Code Encode type</td><td class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd">SIGNATURENET-3522</td><td class="confluenceTd">Implement ability to verify Barcode Signatures without required Barcode Encode type</td><td class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd">SIGNATURENET-3480</td><td class="confluenceTd">Implement global Exception handler to catch all unhandled exceptions</td><td class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd">SIGNATURENET-3468</td><td class="confluenceTd">Implement setting color of QR-code code text with fore color value</td><td class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd">SIGNATURENET-3467</td><td class="confluenceTd">Implement setting color of Bar-code code text with fore color value</td><td class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd">SIGNATURENET-3523</td><td class="confluenceTd">Fix exception on QR-Code Signature Verification when options has no Encode Type specified</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3520</td><td class="confluenceTd">Wrong text alignment in Text Signature shape for Words</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3466</td><td class="confluenceTd">Wrong QRCode rendering for various settings</td><td class="confluenceTd">Bug</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

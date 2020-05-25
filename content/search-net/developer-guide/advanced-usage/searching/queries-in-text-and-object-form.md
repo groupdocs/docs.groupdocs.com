@@ -3,7 +3,7 @@ id: queries-in-text-and-object-form
 url: search/net/queries-in-text-and-object-form
 title: Queries in text and object form
 weight: 15
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

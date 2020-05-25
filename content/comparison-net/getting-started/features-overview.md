@@ -3,8 +3,8 @@ id: features-overview
 url: comparison/net/features-overview
 title: Features Overview
 weight: 1
-description: 
-keywords: 
+description: "This article describes the main functions of GroupDocs.Comparison for .NET. Comparing files, Accepting or rejecting changes between documents, receiving information from a document and creating a summary report"
+keywords: File comparison, Apply Reject changes between documents, information extraction
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---

@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-18-7-release-notes
 url: merger/net/groupdocs-merger-for-net-18-7-release-notes
 title: GroupDocs.Merger for .NET 18.7 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -18,47 +18,14 @@ There are 7 new features in this regular monthly release. The most notable are:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-259
-
-Diagram formats support for Join method
-
-New Feature
-
-MERGERNET-260
-
-Diagram formats support for MovePage method
-
-New Feature
-
-MERGERNET-261
-
-Diagram formats support for RemovePage method
-
-New Feature
-
-MERGERNET-262
-
-Diagram formats support for Split document method
-
-New Feature
-
-MERGERNET-264
-
-Diagram formats support for SwapPages method
-
-New Feature
-
-MERGERNET-265
-
-Diagram formats support for Trim method
-
-New Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-259 | Diagram formats support for Join method | New Feature |
+| MERGERNET-260 | Diagram formats support for MovePage method | New Feature |
+| MERGERNET-261 | Diagram formats support for RemovePage method | New Feature |
+| MERGERNET-262 | Diagram formats support for Split document method | New Feature |
+| MERGERNET-264 | Diagram formats support for SwapPages method | New Feature |
+| MERGERNET-265 | Diagram formats support for Trim method | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

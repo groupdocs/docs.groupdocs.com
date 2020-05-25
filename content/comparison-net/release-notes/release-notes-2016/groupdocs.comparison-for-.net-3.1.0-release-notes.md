@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-3-1-0-release-notes
 url: comparison/net/groupdocs-comparison-for-net-3-1-0-release-notes
 title: GroupDocs.Comparison For .NET 3.1.0 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -22,89 +22,21 @@ There are 13 improvements and fixes in this regular monthly release. The most no
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-COMPARISONNET-700
-
-Extend PDF Comparison functionality to get changes or confirm that documents are identical
-
-New Feature
-
-COMPARISONNET-663
-
-Add support of password protected files for Words, Cells, Slides and PDF
-
-New Feature
-
-COMPARISONNET-605
-
-Add support of File Type Detection from Stream
-
-New Feature
-
-COMPARISONNET-638
-
-If content of slide is unique then slide should be marked as Inserted or Deleted
-
-Improvement
-
-COMPARISONNET-722
-
-Update comparison differs according to performance improvement for Words.
-
-Improvement
-
-COMPARISONNET-684
-
-Change differ in CommonAligner to improve comparison performance
-
-Improvement
-
-COMPARISONNET-664
-
-Implement comparison Words with alignment by identical and formation result-document using target-doc and insertion deleted components from source-doc
-
-Improvement
-
-COMPARISONNET-588
-
-Implement localization for exceptions handling
-
-Improvement
-
-COMPARISONNET-683
-
-Modify Comparison Settings in order to support culture information
-
-Improvement
-
-COMPARISONNET-682
-
-Add resetting of stream positions in documents constructors
-
-Improvement
-
-COMPARISONNET-681
-
-Add checker for result document after merging comparison results
-
-Improvement
-
-COMPARISONNET-719
-
-Comparison Results creating Blank page and Extra Spaces for DOCX/PDF
-
-Bug
-
-COMPARISONNET-697
-
-Client Response - comparing attached documents runs between 8-13 minutes depending on hardware, then ends with 0-byte result.
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| COMPARISONNET-700 | Extend PDF Comparison functionality to get changes or confirm that documents are identical | New Feature |
+| COMPARISONNET-663 | Add support of password protected files for Words, Cells, Slides and PDF | New Feature |
+| COMPARISONNET-605 | Add support of File Type Detection from Stream | New Feature |
+| COMPARISONNET-638 | If content of slide is unique then slide should be marked as Inserted or Deleted | Improvement |
+| COMPARISONNET-722 | Update comparison differs according to performance improvement for Words. | Improvement |
+| COMPARISONNET-684 | Change differ in CommonAligner to improve comparison performance | Improvement |
+| COMPARISONNET-664 | Implement comparison Words with alignment by identical and formation result-document using target-doc and insertion deleted components from source-doc | Improvement |
+| COMPARISONNET-588 | Implement localization for exceptions handling | Improvement |
+| COMPARISONNET-683 | Modify Comparison Settings in order to support culture information | Improvement |
+| COMPARISONNET-682 | Add resetting of stream positions in documents constructors | Improvement |
+| COMPARISONNET-681 | Add checker for result document after merging comparison results | Improvement |
+| COMPARISONNET-719 | Comparison Results creating Blank page and Extra Spaces for DOCX/PDF | Bug |
+| COMPARISONNET-697 | Client Response - comparing attached documents runs between 8-13 minutes depending on hardware, then ends with 0-byte result. | Bug |
 
 ## Public API and Backward Incompatible Changes
 

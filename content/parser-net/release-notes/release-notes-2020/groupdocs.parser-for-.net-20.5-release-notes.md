@@ -19,38 +19,9 @@ There are the following improvements in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-| 
-Key
-
-
-
- | 
-
-Summary
-
-
-
- | 
-
-Category
-
-
-
- |
+| Key | Summary | Category |
 | --- | --- | --- |
-| 
-
-PARSERNET-1507
-
- | 
-
-Add RawPageCount property to IDocumentInfo interface
-
- | 
-
-Improvement
-
- |
+| PARSERNET-1507 | Add RawPageCount property to IDocumentInfo interface | Improvement |
 | PARSERNET-1364 | Implement the ability to create Parser object with DbConnection | New feature |
 | PARSERNET-1365 | Implement the ability to create Parser object with EmailConnection | New feature |
 

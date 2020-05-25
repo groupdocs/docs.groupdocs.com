@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-18-7-release-notes
 url: conversion/net/groupdocs-conversion-for-net-18-7-release-notes
 title: GroupDocs.Conversion for .NET 18.7 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -22,53 +22,15 @@ This regular monthly release contains 5+ new features, improvements and bug fixe
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-2615
-
-MailOption to control conversions from email
-
-New Feature
-
-CONVERSIONNET-2625
-
-Add support for password protected ODT and OTT documents
-
-New Feature
-
-CONVERSIONNET-2618
-
-Implement font substitution option when converting from Words
-
-New Feature
-
-CONVERSIONNET-2620
-
-Implement automatic font substitution option when converting from Words
-
-New Feature
-
-CONVERSIONNET-2622
-
-Implement font substitution option when converting from Slides
-
-New Feature
-
-CONVERSIONNET-2624
-
-Implement font substitution option when converting from Cells
-
-New Feature
-
-CONVERSIONNET-2616
-
-Fonts loading folder is not properly set when converting from Words
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-2615 | MailOption to control conversions from email | New Feature |
+| CONVERSIONNET-2625 | Add support for password protected ODT and OTT documents | New Feature |
+| CONVERSIONNET-2618 | Implement font substitution option when converting from Words | New Feature |
+| CONVERSIONNET-2620 | Implement automatic font substitution option when converting from Words | New Feature |
+| CONVERSIONNET-2622 | Implement font substitution option when converting from Slides | New Feature |
+| CONVERSIONNET-2624 | Implement font substitution option when converting from Cells | New Feature |
+| CONVERSIONNET-2616 | Fonts loading folder is not properly set when converting from Words | Bug |
 
 ## Public API and Backward Incompatible Changes
 

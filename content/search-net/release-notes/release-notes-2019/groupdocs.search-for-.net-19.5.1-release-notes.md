@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-19-5-1-release-notes
 url: search/net/groupdocs-search-for-net-19-5-1-release-notes
 title: GroupDocs.Search for .NET 19.5.1 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -19,23 +19,7 @@ There are the following breaking changes and bug fixes:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-2019
-
-Remove obsolete methods from Alphabet class
-
-Breaking Change
-
-SEARCHJAVA-82
-
-Error of updating an index containing password protected documents
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>Key</p></td><td class="confluenceTd"><p>Summary</p></td><td class="confluenceTd"><p>Category</p></td></tr><tr><td colspan="1" class="confluenceTd"><p>SEARCHNET-2019</p></td><td colspan="1" class="confluenceTd">Remove obsolete methods from Alphabet class</td><td colspan="1" class="confluenceTd">Breaking Change</td></tr><tr><td class="confluenceTd"><p>SEARCHJAVA-82</p></td><td class="confluenceTd"><p>Error of updating an index containing password protected documents</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

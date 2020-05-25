@@ -14,10 +14,7 @@ Zip Entry can contain the following metadata:
 
 | Name | Description |
 | --- | --- |
-| date | 
-The time and date at which the file indicated by the Zip Entry was last modified.
-
- |
+| date | The time and date at which the file indicated by the Zip Entry was last modified. |
 
 These metadata refer to a container element itself, not a document.
 

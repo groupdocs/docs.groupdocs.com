@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-17-01-release-notes
 url: metadata/net/groupdocs-metadata-for-net-17-01-release-notes
 title: GroupDocs.Metadata for .NET 17.01 Release Notes
 weight: 12
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -24,53 +24,7 @@ There are 4 features and 3 enhancements in this regular monthly release. The mos
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATANET-1332
-
-Ability to read page count, characters count, words count, page size in document formats
-
-New feature
-
-METADATANET-1385
-
-Ability to recognize file type of the document format (DOCX, DOC, DOT etc)
-
-New feature
-
-METADATANET-1391
-
-Ability to detect digital signature in document formats
-
-New feature
-
-METADATANET-1392
-
-Ability to remove all digital signatures in document formats
-
-New feature
-
-METADATANET-417
-
-Ability to update ContentType, ContentStatus, HyperlinkBase SharedDoc properties in PPTX format
-
-Enhancement
-
-METADATANET-1041
-
-Load metadata without loading whole PowerPoint document
-
-Enhancement
-
-METADATANET-1401
-
-Ability to read ID3 metadata directly in Mp3 format
-
-Enhancement
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">K</span><span style="color: rgb(0, 0, 0);">ey</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1332</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read page count, characters count, words count, page size in document formats</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1385</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to recognize file type of the document format (DOCX, DOC, DOT etc)</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1391</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to detect digital signature in document formats</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1392</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to remove all digital signatures in document formats</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-417</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to update ContentType, ContentStatus, HyperlinkBase SharedDoc properties in PPTX format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1041</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Load metadata without loading whole PowerPoint document</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1401</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read ID3 metadata directly in Mp3 format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

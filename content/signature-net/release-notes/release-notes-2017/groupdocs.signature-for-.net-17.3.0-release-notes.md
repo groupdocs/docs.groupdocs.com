@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-17-3-0-release-notes
 url: signature/net/groupdocs-signature-for-net-17-3-0-release-notes
 title: GroupDocs.Signature for .NET 17.3.0 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -27,107 +27,24 @@ There are about 20 improvements, new features and fixes in this regular release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-2706
-
-Improve Digital Certificate Helper class to release disposable objects
-
-Improvement
-
-SIGNATURENET-2705
-
-Pdf internal resources do not work properly after using Text Sticker default appearance object
-
-Bug
-
-SIGNATURENET-2702
-
-Implement Text Signature Verification for Slides Documents
-
-New Feature
-
-SIGNATURENET-2700
-
-Implement Text Signature Verification for Word Documents
-
-New Feature
-
-SIGNATURENET-2691
-
-Implement Image appearance of Digital Signatures for Cells Documents
-
-New Feature
-
-SIGNATURENET-2688
-
-Implement Image appearance of Digital Signatures for Words Documents
-
-New Feature
-
-SIGNATURENET-2670
-
-Implement Image Signature Opacity for Words Documents
-
-New Feature
-
-SIGNATURENET-2665
-
-Implement Digital Signature Opacity for PDF Documents
-
-New Feature
-
-SIGNATURENET-2662
-
-Implement ability to put Text Signature on user specified Document Pages (first, last, even, odd and arbitrary pages list) for Cells Documents
-
-New Feature
-
-SIGNATURENET-2659
-
-Implement ability to put Digital Signature on user specified Document Pages (first, last, even, odd and arbitrary pages list) for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2656
-
-Implement ability to put Image Signature on user specified Document Pages (first, last, even, odd and arbitrary pages list) for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2650
-
-Implement ability to put Text Signature on user specified Document Pages (first, last, even, odd and arbitrary pages list) for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2629
-
-Implement Image Signature Opacity for Slides Documents
-
-New Feature
-
-SIGNATURENET-2626
-
-Implement Image Signature Opacity for Cells Documents
-
-New Feature
-
-SIGNATURENET-2624
-
-Implement Image Signature Opacity for PDF Documents
-
-New Feature
-
-SIGNATURENET-2488
-
-Implement Text Signature Verification for Cells Documents
-
-New Feature
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2706 | Improve Digital Certificate Helper class to release disposable objects | Improvement |
+| SIGNATURENET-2705 | Pdf internal resources do not work properly after using Text Sticker default appearance object | Bug |
+| SIGNATURENET-2702 | Implement Text Signature Verification for Slides Documents | New Feature |
+| SIGNATURENET-2700 | Implement Text Signature Verification for Word Documents | New Feature |
+| SIGNATURENET-2691 | Implement Image appearance of Digital Signatures for Cells Documents | New Feature |
+| SIGNATURENET-2688 | Implement Image appearance of Digital Signatures for Words Documents | New Feature |
+| SIGNATURENET-2670 | Implement Image Signature Opacity for Words Documents | New Feature |
+| SIGNATURENET-2665 | Implement Digital Signature Opacity for PDF Documents | New Feature |
+| SIGNATURENET-2662 | Implement ability to put Text Signature on user specified Document Pages (first, last, even, odd and arbitrary pages list) for Cells Documents | New Feature |
+| SIGNATURENET-2659 | Implement ability to put Digital Signature on user specified Document Pages (first, last, even, odd and arbitrary pages list) for Pdf Documents | New Feature |
+| SIGNATURENET-2656 | Implement ability to put Image Signature on user specified Document Pages (first, last, even, odd and arbitrary pages list) for Pdf Documents | New Feature |
+| SIGNATURENET-2650 | Implement ability to put Text Signature on user specified Document Pages (first, last, even, odd and arbitrary pages list) for Pdf Documents | New Feature |
+| SIGNATURENET-2629 | Implement Image Signature Opacity for Slides Documents | New Feature |
+| SIGNATURENET-2626 | Implement Image Signature Opacity for Cells Documents | New Feature |
+| SIGNATURENET-2624 | Implement Image Signature Opacity for PDF Documents | New Feature |
+| SIGNATURENET-2488 | Implement Text Signature Verification for Cells Documents | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

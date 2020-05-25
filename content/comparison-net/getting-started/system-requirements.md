@@ -3,14 +3,14 @@ id: system-requirements
 url: comparison/net/system-requirements
 title: System Requirements
 weight: 3
-description: 
-keywords: 
+description: "On this page you will find system requirements supported platforms, development environments. GroupDocs.Comparison for .NET does not require any external software or third party tool to be installed."
+keywords: System Requirements, Supported Operating System, Supported Frameworks
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
 ## Overview
 
-GroupDocs.Comparison for .NET does not require any external software or third party tool to be installed. Just follow one of the way as described in [Installation](Installation.html).
+**[GroupDocs.Comparison for .NET](https://products.groupdocs.com/comparison/net)** does not require any external software or third party tool to be installed. Just follow one of the way as described in [Installation](Installation.html).
 
 ## Supported Operating Systems
 

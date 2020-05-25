@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-18-11-release-notes
 url: viewer/net/groupdocs-viewer-for-net-18-11-release-notes
 title: GroupDocs.Viewer for .NET 18.11 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -24,89 +24,21 @@ There are 13 features, improvements, and fixes in this regular monthly release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-128
-
-Add PCL file format support
-
-Feature
-
-VIEWERNET-1786
-
-Add TSV (Tab-separated values) file format support
-
-Feature
-
-VIEWERNET-1768
-
-Rendering comments from ODP presentation documents that has no author 
-
-Improvement
-
-VIEWERNET-1778
-
-Rendering attachments while working with source document's stream
-
-Improvement
-
-VIEWERNET-1787
-
-Extend support for ExcludeFonts setting of HtmlOptions class for MS OneNote documents
-
-Improvement
-
-VIEWERNET-1789
-
-Exporting font files as external resources when rendering MS OneNote documents
-
-Improvement
-
-VIEWERNET-1793
-
-Add support for DefaultFontName option when rendering MS OneNote documents
-
-Improvement
-
-VIEWERNET-1549
-
-Exception when rendering email message containing .msg file as attachment
-
-Bug
-
-VIEWERNET-133
-
-Issues when rendering Japanese PDF document to HTML 
-
-Bug
-
-VIEWERNET-1231
-
-Font lightness is ignored for rendering Presentations into HTML
-
-Bug
-
-VIEWERNET-1790
-
-Resources are not created in cache after GetPrintableHtml called
-
-Bug
-
-VIEWERNET-1801
-
-Unexpected behavior of cache when both Image and Html handlers instantiated
-
-Bug
-
-VIEWERNET-1803
-
-Missing pst and ost formats in GetSupportedDocumentFormats();
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-128 | Add PCL file format support | Feature |
+| VIEWERNET-1786 | Add TSV (Tab-separated values) file format support | Feature |
+| VIEWERNET-1768 | Rendering comments from ODP presentation documents that has no author  | Improvement |
+| VIEWERNET-1778 | Rendering attachments while working with source document's stream | Improvement |
+| VIEWERNET-1787 | Extend support for ExcludeFonts setting of HtmlOptions class for MS OneNote documents | Improvement |
+| VIEWERNET-1789 | Exporting font files as external resources when rendering MS OneNote documents | Improvement |
+| VIEWERNET-1793 | Add support for DefaultFontName option when rendering MS OneNote documents | Improvement |
+| VIEWERNET-1549 | Exception when rendering email message containing .msg file as attachment | Bug |
+| VIEWERNET-133 | Issues when rendering Japanese PDF document to HTML  | Bug |
+| VIEWERNET-1231 | Font lightness is ignored for rendering Presentations into HTML | Bug |
+| VIEWERNET-1790 | Resources are not created in cache after GetPrintableHtml called | Bug |
+| VIEWERNET-1801 | Unexpected behavior of cache when both Image and Html handlers instantiated | Bug |
+| VIEWERNET-1803 | Missing pst and ost formats in GetSupportedDocumentFormats(); | Bug |
 
 ## Public API and Backward Incompatible Changes
 

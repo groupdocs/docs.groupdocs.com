@@ -3,7 +3,7 @@ id: case-sensitive-search
 url: search/net/case-sensitive-search
 title: Case sensitive search
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

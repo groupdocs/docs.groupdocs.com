@@ -3,7 +3,7 @@ id: enabling-language-information
 url: editor/net/enabling-language-information
 title: Enabling language information
 weight: 3
-description: Following this guide you will learn how to edit Word document using locale info, apply spell-checkers to a document content written in different languages using GroupDocs.Editor for .NET API.
+description: "Following this guide you will learn how to edit Word document using locale info, apply spell-checkers to a document content written in different languages using GroupDocs.Editor for .NET API."
 keywords: Edit Word document with language. Edit Word document with locale
 productName: GroupDocs.Editor for .NET
 hideChildren: False

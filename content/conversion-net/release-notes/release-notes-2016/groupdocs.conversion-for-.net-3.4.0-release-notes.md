@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-3-4-0-release-notes
 url: conversion/net/groupdocs-conversion-for-net-3-4-0-release-notes
 title: GroupDocs.Conversion For .NET 3.4.0 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -21,41 +21,13 @@ There are 5 improvements and fixes in this regular monthly release. The most not
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-924
-
-Option when converting from Words for show/hide markup and tack changes
-
-New Feature
-
-CONVERSIONNET-979
-
-Html to image conversion
-
-New Feature
-
-CONVERSIONNET-911
-
-Image to Image conversion - target resolution is not changed when setting Dpi
-
-Bug
-
-CONVERSIONNET-912
-
-Diagram to Image conversion - target resolution is not changed when setting Dpi
-
-Bug
-
-CONVERSIONNET-1072
-
-Txt to Pdf is causing "Unknown format" exception
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-924 | Option when converting from Words for show/hide markup and tack changes | New Feature |
+| CONVERSIONNET-979 | Html to image conversion | New Feature |
+| CONVERSIONNET-911 | Image to Image conversion - target resolution is not changed when setting Dpi | Bug |
+| CONVERSIONNET-912 | Diagram to Image conversion - target resolution is not changed when setting Dpi | Bug |
+| CONVERSIONNET-1072 | Txt to Pdf is causing "Unknown format" exception | Bug |
 
 ## Public API and Backward Incompatible Changes
 

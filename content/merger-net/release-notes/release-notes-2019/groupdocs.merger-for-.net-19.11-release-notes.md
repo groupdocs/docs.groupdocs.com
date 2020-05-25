@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-19-11-release-notes
 url: merger/net/groupdocs-merger-for-net-19-11-release-notes
 title: GroupDocs.Merger for .NET 19.11 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -17,23 +17,10 @@ There are a few new other features in this regular monthly release. The most not
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-557
-
-Protected Odp and Otp is not supported
-
-Bug
-
-MERGERNET-733
-
-Compatibility issues under .NET Standard 2.0
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-557 | Protected Odp and Otp is not supported | Bug |
+| MERGERNET-733 | Compatibility issues under .NET Standard 2.0 | Bug |
 
 ## Public API and Backward Incompatible Changes
 

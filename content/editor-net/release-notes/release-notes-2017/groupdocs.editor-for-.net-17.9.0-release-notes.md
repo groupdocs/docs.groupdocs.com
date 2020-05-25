@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-17-9-0-release-notes
 url: editor/net/groupdocs-editor-for-net-17-9-0-release-notes
 title: GroupDocs.Editor for .NET 17.9.0 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -29,119 +29,26 @@ This is the second version of GroupDocs.Editorfor .NET. There are 6 major new fe
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-698
-
-Implement saving into PDF
-
-New Feature
-
-EDITORNET-707
-
-Implement ability to set password on output PDF
-
-New Feature
-
-EDITORNET-680
-
-Add support of spell check in GroupDocs.Editor
-
-New Feature
-
-EDITORNET-671
-
-Implement support of bidirectional text
-
-New Feature
-
-EDITORNET-697
-
-Implement bidirectional support of tables
-
-New Feature
-
-EDITORNET-695
-
-Implement bidirectional support for lists
-
-New Feature
-
-EDITORNET-622
-
-Support font extraction from Words document
-
-New Feature
-
-EDITORNET-551
-
-Add support of table textures
-
-Improvement
-
-EDITORNET-670
-
-Implement shading textures and color in text runs
-
-Improvement
-
-EDITORNET-604
-
-Implement new types of fields
-
-Improvement
-
-EDITORNET-605
-
-Implement support of paragraph foreground and background color
-
-Improvement
-
-EDITORNET-606
-
-Implement Underline.Words feature
-
-Improvement
-
-EDITORNET-650
-
-Completely rework the recognition and validation of TTF font resources
-
-Improvement
-
-EDITORNET-673
-
-Fill missing xml-doc comments for public namespaces, classes, properties and methods
-
-Bug
-
-EDITORNET-601
-
-Fix bug in FontProcessor
-
-Bug
-
-EDITORNET-608
-
-Fix bug with duplicate CSS declarations
-
-Bug
-
-EDITORNET-607
-
-Fix issue with single-child SDTs
-
-Bug
-
-EDITORNET-632
-
-Fix bug in font parser
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-698 | Implement saving into PDF | New Feature |
+| EDITORNET-707 | Implement ability to set password on output PDF | New Feature |
+| EDITORNET-680 | Add support of spell check in GroupDocs.Editor | New Feature |
+| EDITORNET-671 | Implement support of bidirectional text | New Feature |
+| EDITORNET-697 | Implement bidirectional support of tables | New Feature |
+| EDITORNET-695 | Implement bidirectional support for lists | New Feature |
+| EDITORNET-622 | Support font extraction from Words document | New Feature |
+| EDITORNET-551 | Add support of table textures | Improvement |
+| EDITORNET-670 | Implement shading textures and color in text runs | Improvement |
+| EDITORNET-604 | Implement new types of fields | Improvement |
+| EDITORNET-605 | Implement support of paragraph foreground and background color | Improvement |
+| EDITORNET-606 | Implement Underline.Words feature | Improvement |
+| EDITORNET-650 | Completely rework the recognition and validation of TTF font resources | Improvement |
+| EDITORNET-673 | Fill missing xml-doc comments for public namespaces, classes, properties and methods | Bug |
+| EDITORNET-601 | Fix bug in FontProcessor | Bug |
+| EDITORNET-608 | Fix bug with duplicate CSS declarations | Bug |
+| EDITORNET-607 | Fix issue with single-child SDTs | Bug |
+| EDITORNET-632 | Fix bug in font parser | Bug |
 
 ## Public API and Backward Incompatible Changes
 

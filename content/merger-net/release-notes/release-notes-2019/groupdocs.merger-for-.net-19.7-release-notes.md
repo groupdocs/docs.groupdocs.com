@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-19-7-release-notes
 url: merger/net/groupdocs-merger-for-net-19-7-release-notes
 title: GroupDocs.Merger for .NET 19.7 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -20,29 +20,11 @@ There are a few new features in this regular monthly release. The most notable a
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-431
-
-Implement a new method GetDocumentInfo
-
-New Feature
-
-MERGERNET-513
-
-Implement a new format .html
-
-New Feature
-
-MERGERNET-544
-
-Implement .tiff image joining
-
-New Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-431 | Implement a new method GetDocumentInfo | New Feature |
+| MERGERNET-513 | Implement a new format .html | New Feature |
+| MERGERNET-544 | Implement .tiff image joining | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

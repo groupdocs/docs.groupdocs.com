@@ -3,7 +3,7 @@ id: character-replacement-during-indexing
 url: search/net/character-replacement-during-indexing
 title: Character replacement during Indexing
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

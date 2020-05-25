@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-19-12-release-notes
 url: conversion/net/groupdocs-conversion-for-net-19-12-release-notes
 title: GroupDocs.Conversion for .NET 19.12 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -21,59 +21,16 @@ There are 5+ features, improvements and bug-fixes in this release, most notable 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-3539
-
-Feature
-
-Convert XML documents without transformation
-
-CONVERSIONNET-3526
-
-Improvement
-
-New overload Convert methods which accepts ConvertedDocumentStream or ConvertedPageStream delegates
-
-CONVERSIONNET-2922
-
-Bug
-
-Error converting RTL/HTML to PDF
-
-CONVERSIONNET-3357
-
-Bug
-
-Cross reference table or cross reference stream not found exception thrown when converting a particular PDF to image
-
-CONVERSIONNET-3507
-
-Bug
-
-Convert from XML to any format throw exception - The file is corrupt or damaged.
-
-CONVERSIONNET-3508
-
-Bug
-
-Exception "The process cannot access the file because it is being used by another process." when converting to file
-
-CONVERSIONNET-3525
-
-Bug
-
-Convert to image doesn't release the last image
-
-CONVERSIONNET-3534
-
-Bug
-
-Pages limit for TXT file adds additional empty page at the end
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-3539 | Feature | Convert XML documents without transformation |
+| CONVERSIONNET-3526 | Improvement | New overload Convert methods which accepts ConvertedDocumentStream or ConvertedPageStream delegates |
+| CONVERSIONNET-2922 | Bug | Error converting RTL/HTML to PDF |
+| CONVERSIONNET-3357 | Bug | Cross reference table or cross reference stream not found exception thrown when converting a particular PDF to image |
+| CONVERSIONNET-3507 | Bug | Convert from XML to any format throw exception - The file is corrupt or damaged. |
+| CONVERSIONNET-3508 | Bug | Exception "The process cannot access the file because it is being used by another process." when converting to file |
+| CONVERSIONNET-3525 | Bug | Convert to image doesn't release the last image |
+| CONVERSIONNET-3534 | Bug | Pages limit for TXT file adds additional empty page at the end |
 
 ## Public API and Backward Incompatible Changes
 

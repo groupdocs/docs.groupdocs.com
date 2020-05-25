@@ -53,14 +53,7 @@ class DocumentContent {
 
 The method with one parameter returns all images from the page with zero-based pageIndex. The method with **ImageAreaSearchOptions** optional parameter returns only the images which meet the conditions of **searchOptions**. Both versions of the method return a collection of **ImageArea** objects:
 
-| 
-Member
-
- | 
-
-Description
-
- |
+| Member | Description |
 | --- | --- |
 | Page | Link to the page which contains this image |
 | Rectangle | Rectangle of the image area |

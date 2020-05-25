@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-19-5-release-notes
 url: viewer/net/groupdocs-viewer-for-net-19-5-release-notes
 title: GroupDocs.Viewer for .NET 19.5 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -20,83 +20,20 @@ There are 12 features, improvements and fixes in this regular monthly release. T
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1896
-
-Add Device Independent Bitmap File (.dib) file format support
-
-Feature
-
-VIEWERNET-1897
-
-Add PowerPoint template (.pot) file format support
-
-Feature
-
-VIEWERNET-1987
-
-Implement obtaining contained files (attachments) from password protected documents
-
-Feature
-
-VIEWERNET-1999
-
-Add .vcard file format support
-
-Feature
-
-VIEWERNET-2004
-
-Add bz2 archive format support
-
-Feature
-
-VIEWERNET-1932
-
-Extend support for ViewerConfig.FontDirectories setting to SVG format
-
-Improvement
-
-VIEWERNET-1770
-
-Issue with rendering PCL documents
-
-Bug
-
-VIEWERNET-1834
-
-ViewerHtmlHandler.GetPages produces exception with custom fonts directory option
-
-Bug
-
-VIEWERNET-1849
-
-PDF to HTML rendering throws "Stack empty" exception
-
-Bug
-
-VIEWERNET-2002
-
-Pages are empty when rendering Archive documents with text extraction set on
-
-Bug
-
-VIEWERNET-2021
-
-The content of email gets cut in the output image and PDF
-
-Bug
-
-VIEWERNET-2025
-
-Pages are empty when rendering Outlook Data Files with text extraction set on
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1896 | Add Device Independent Bitmap File (.dib) file format support | Feature |
+| VIEWERNET-1897 | Add PowerPoint template (.pot) file format support | Feature |
+| VIEWERNET-1987 | Implement obtaining contained files (attachments) from password protected documents | Feature |
+| VIEWERNET-1999 | Add .vcard file format support | Feature |
+| VIEWERNET-2004 | Add bz2 archive format support | Feature |
+| VIEWERNET-1932 | Extend support for ViewerConfig.FontDirectories setting to SVG format | Improvement |
+| VIEWERNET-1770 | Issue with rendering PCL documents | Bug |
+| VIEWERNET-1834 | ViewerHtmlHandler.GetPages produces exception with custom fonts directory option | Bug |
+| VIEWERNET-1849 | PDF to HTML rendering throws "Stack empty" exception | Bug |
+| VIEWERNET-2002 | Pages are empty when rendering Archive documents with text extraction set on | Bug |
+| VIEWERNET-2021 | The content of email gets cut in the output image and PDF | Bug |
+| VIEWERNET-2025 | Pages are empty when rendering Outlook Data Files with text extraction set on | Bug |
 
 ##   
 Public API and Backward Incompatible Changes

@@ -3,7 +3,7 @@ id: deleting-barcode-signatures-advanced
 url: signature/net/deleting-barcode-signatures-advanced
 title: Deleting Barcode signatures - advanced
 weight: 1
-description: This article shows how to delete Barcode electronic signatures different ways with GroupDocs.Signature API.
+description: "This article shows how to delete Barcode electronic signatures different ways with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

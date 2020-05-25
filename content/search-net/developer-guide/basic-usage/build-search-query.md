@@ -3,7 +3,7 @@ id: build-search-query
 url: search/net/build-search-query
 title: Build search query
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

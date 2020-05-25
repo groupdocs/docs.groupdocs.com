@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-19-1-release-notes
 url: conversion/net/groupdocs-conversion-for-net-19-1-release-notes
 title: GroupDocs.Conversion for .NET 19.1 Release Notes
 weight: 10
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -22,65 +22,17 @@ This regular monthly release contains 5+ improvements and bug fixes. Most notabl
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-2862
-
-Implement conversion from Vcf
-
-Feature
-
-CONVERSIONNET-2830
-
-Implement conversion improvement when converting Svg to Slides
-
-Improvement
-
-CONVERSIONNET-2878
-
-Add support for setting watermark as background when converting to image
-
-Improvement
-
-CONVERSIONNET-2881
-
-Save converted document to file should return the file name and size
-
-Improvement
-
-CONVERSIONNET-2837
-
-Spreadsheets sometimes show incorrect graph data
-
-Bug
-
-CONVERSIONNET-2863
-
-Issue with conversion .docx (with table of content) to .html
-
-Bug
-
-CONVERSIONNET-2864
-
-Conversion .pdf to .png (or .jpeg) with watermark as background issue
-
-Bug
-
-CONVERSIONNET-2871
-
-Inconsistent conversion from email file formats when converting to Cells
-
-Bug
-
-CONVERSIONNET-2876
-
-Receiving Aspose.Pdf.InvalidValueFormatException when converting a PDF file
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-2862 | Implement conversion from Vcf | Feature |
+| CONVERSIONNET-2830 | Implement conversion improvement when converting Svg to Slides | Improvement |
+| CONVERSIONNET-2878 | Add support for setting watermark as background when converting to image | Improvement |
+| CONVERSIONNET-2881 | Save converted document to file should return the file name and size | Improvement |
+| CONVERSIONNET-2837 | Spreadsheets sometimes show incorrect graph data | Bug |
+| CONVERSIONNET-2863 | Issue with conversion .docx (with table of content) to .html | Bug |
+| CONVERSIONNET-2864 | Conversion .pdf to .png (or .jpeg) with watermark as background issue | Bug |
+| CONVERSIONNET-2871 | Inconsistent conversion from email file formats when converting to Cells | Bug |
+| CONVERSIONNET-2876 | Receiving Aspose.Pdf.InvalidValueFormatException when converting a PDF file | Bug |
 
 ## Public API and Backward Incompatible Changes
 

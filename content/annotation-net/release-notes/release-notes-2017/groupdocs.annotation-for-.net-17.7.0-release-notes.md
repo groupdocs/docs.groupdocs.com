@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-17-7-0-release-notes
 url: annotation/net/groupdocs-annotation-for-net-17-7-0-release-notes
 title: GroupDocs.Annotation for .NET 17.7.0 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -21,83 +21,20 @@ Below the list of  new features and fixed bugs in this regular monthly release 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-448
-
-Set opacity for Diagrams annotations
-
-New Feature
-
-ANNOTATIONNET-447
-
-Set opacity for Pdf annotations
-
-New Feature
-
-ANNOTATIONNET-446
-
-Set opacity for Words annotations
-
-New Feature
-
-ANNOTATIONNET-445
-
-Set opacity for Slides annotations
-
-New Feature
-
-ANNOTATIONNET-442
-
-Implement additional specific exceptions
-
-Improvement
-
-ANNOTATIONNET-441
-
-Import text field annotation from Diagram
-
-New Feature
-
-ANNOTATIONNET-440
-
-Import polyline annotation from Diagram
-
-New Feature
-
-ANNOTATIONNET-439
-
-Import Area Redaction annotation from diagram
-
-New Feature
-
-ANNOTATIONNET-438
-
-Import area annotation from diagram
-
-New Feature
-
-ANNOTATIONNET-430
-
-Implement import annotations for Diagram
-
-New Feature
-
-ANNOTATIONNET-421
-
-Bug with parsing specific SVG path
-
-Bug
-
-ANNOTATIONNET-419
-
-Implement TextField annotation for Diagrams
-
-New Feature
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-448 | Set opacity for Diagrams annotations | New Feature |
+| ANNOTATIONNET-447 | Set opacity for Pdf annotations | New Feature |
+| ANNOTATIONNET-446 | Set opacity for Words annotations | New Feature |
+| ANNOTATIONNET-445 | Set opacity for Slides annotations | New Feature |
+| ANNOTATIONNET-442 | Implement additional specific exceptions | Improvement |
+| ANNOTATIONNET-441 | Import text field annotation from Diagram | New Feature |
+| ANNOTATIONNET-440 | Import polyline annotation from Diagram | New Feature |
+| ANNOTATIONNET-439 | Import Area Redaction annotation from diagram | New Feature |
+| ANNOTATIONNET-438 | Import area annotation from diagram | New Feature |
+| ANNOTATIONNET-430 | Implement import annotations for Diagram | New Feature |
+| ANNOTATIONNET-421 | Bug with parsing specific SVG path | Bug |
+| ANNOTATIONNET-419 | Implement TextField annotation for Diagrams | New Feature |
 
 # Public API and Backward Incompatible Changes
 

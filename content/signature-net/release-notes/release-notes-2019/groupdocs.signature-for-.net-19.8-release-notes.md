@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-19-8-release-notes
 url: signature/net/groupdocs-signature-for-net-19-8-release-notes
 title: GroupDocs.Signature for .NET 19.8 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -24,35 +24,12 @@ Other notable features:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-SIGNATURENET-2202
-
-Implement Encryption setup to Sign Metadata at options level
-
-Feature
-
-SIGNATURENET-2204
-
-Implement Encryption setup for Search Metadata at Search Options level
-
-Feature
-
-SIGNATURENET-2149
-
-Implement new public Signature V2 API
-
-Feature
-
-SIGNATURENET-2154
-
-Unify document related options and classes for signing, verification and search processes
-
-Improvement
+| Key | Summary | Category |
+| --- | --- | --- |
+| SIGNATURENET-2202 | Implement Encryption setup to Sign Metadata at options level | Feature |
+| SIGNATURENET-2204 | Implement Encryption setup for Search Metadata at Search Options level | Feature |
+| SIGNATURENET-2149 | Implement new public Signature V2 API | Feature |
+| SIGNATURENET-2154 | Unify document related options and classes for signing, verification and search processes | Improvement |
 
 # Public API and Backward Incompatible Changes
 

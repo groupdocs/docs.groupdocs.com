@@ -3,7 +3,7 @@ id: getting-started
 url: signature/net/getting-started
 title: Getting Started
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

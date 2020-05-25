@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-17-4-0-release-notes
 url: conversion/net/groupdocs-conversion-for-net-17-4-0-release-notes
 title: GroupDocs.Conversion for .NET 17.4.0 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -22,77 +22,19 @@ There are 11 new features, improvements and fixes in this regular monthly releas
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-1810
-
-Implement method for getting extended document information
-
-New Feature
-
-CONVERSIONNET-1835
-
-Convert Html to Cells improvements
-
-Improvement
-
-CONVERSIONNET-1845
-
-Convert Cad to Html improvements
-
-Improvement
-
-CONVERSIONNET-1846
-
-Convert Note to Html improvements
-
-Improvement
-
-CONVERSIONNET-1840
-
-Convert Slides to Html improvements
-
-Improvement
-
-CONVERSIONNET-1847
-
-Convert Tasks to Html improvements
-
-Improvement
-
-CONVERSIONNET-1851
-
-Convert Words to Html improvements with UsePdf=true option set
-
-Improvement
-
-CONVERSIONNET-1871
-
-Improved handling of extension-less urls
-
-Improvement
-
-CONVERSIONNET-1678
-
-Failed to validate PDF\_X\_3 and PDF\_X\_1A
-
-Bug
-
-CONVERSIONNET-1844
-
-Converting Image to Html with UsePdf=true always use direct conversion instead converting through Pdf
-
-Bug
-
-CONVERSIONNET-1676
-
-Loading Latex document from stream requires FileStream
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-1810 | Implement method for getting extended document information | New Feature |
+| CONVERSIONNET-1835 | Convert Html to Cells improvements | Improvement |
+| CONVERSIONNET-1845 | Convert Cad to Html improvements | Improvement |
+| CONVERSIONNET-1846 | Convert Note to Html improvements | Improvement |
+| CONVERSIONNET-1840 | Convert Slides to Html improvements | Improvement |
+| CONVERSIONNET-1847 | Convert Tasks to Html improvements | Improvement |
+| CONVERSIONNET-1851 | Convert Words to Html improvements with UsePdf=true option set | Improvement |
+| CONVERSIONNET-1871 | Improved handling of extension-less urls | Improvement |
+| CONVERSIONNET-1678 | Failed to validate PDF\_X\_3 and PDF\_X\_1A | Bug |
+| CONVERSIONNET-1844 | Converting Image to Html with UsePdf=true always use direct conversion instead converting through Pdf | Bug |
+| CONVERSIONNET-1676 | Loading Latex document from stream requires FileStream | Bug |
 
 ## Public API and Backward Incompatible Changes
 

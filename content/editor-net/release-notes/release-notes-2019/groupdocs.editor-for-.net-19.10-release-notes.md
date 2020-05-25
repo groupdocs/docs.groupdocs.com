@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-19-10-release-notes
 url: editor/net/groupdocs-editor-for-net-19-10-release-notes
 title: GroupDocs.Editor for .NET 19.10 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -20,29 +20,11 @@ Along with new Presentation module, GroupDocs.Editor now contains binding redire
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1317
-
-Add Presentations editing support
-
-Feature
-
-EDITORNET-1318
-
-Add Presentation support into GetDocumentInfo method
-
-Feature
-
-EDITORNET-1308
-
-Setup binding redirects for third-party components
-
-Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1317 | Add Presentations editing support | Feature |
+| EDITORNET-1318 | Add Presentation support into GetDocumentInfo method | Feature |
+| EDITORNET-1308 | Setup binding redirects for third-party components | Feature |
 
 ## Public API and Backward Incompatible Changes
 
@@ -50,26 +32,10 @@ Feature
 
 *   Presentation module - ability to load, open for editing, edit and save Presentation documents. This feature is represented in public API by the next new public types.
     
-    Type name
-    
-    Responsibility
-    
-    PresentationLoadOptions
-    
-    Allows to specify custom options for loading documents of all supportable Presentation formats like PPT(X), PPTM, PPS(X) etc.
-    
-    PresentationEditOptions
-    
-    Allows to specify custom options for editing documents of all supportable Presentation (PowerPoint-compatible) formats
-    
-    PresentationSaveOptions
-    
-    Allows to specify custom options for generating and saving Presentation (PowerPoint-compatible) documents
-    
-    PresentationDocumentInfo
-    
-    Represents metadata of one Presentation document
-    
-    PresentationFormats
-    
-    Encapsulates all Presentation formats
+    | Type name | Responsibility |
+    | --- | --- |
+    | PresentationLoadOptions | Allows to specify custom options for loading documents of all supportable Presentation formats like PPT(X), PPTM, PPS(X) etc. |
+    | PresentationEditOptions | Allows to specify custom options for editing documents of all supportable Presentation (PowerPoint-compatible) formats |
+    | PresentationSaveOptions | Allows to specify custom options for generating and saving Presentation (PowerPoint-compatible) documents |
+    | PresentationDocumentInfo | Represents metadata of one Presentation document |
+    | PresentationFormats | Encapsulates all Presentation formats |

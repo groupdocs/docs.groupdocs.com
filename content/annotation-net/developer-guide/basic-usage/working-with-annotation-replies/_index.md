@@ -3,7 +3,7 @@ id: working-with-annotation-replies
 url: annotation/net/working-with-annotation-replies
 title: Working with annotation replies
 weight: 7
-description: What annotation replies are and how to manage them for different document types? Check this this guide and learn how to add, edit, delete annotations using GroupDocs.Annotation for .NET API.
+description: "What annotation replies are and how to manage them for different document types? Check this this guide and learn how to add, edit, delete annotations using GroupDocs.Annotation for .NET API."
 keywords: Annotation reply, what are annotation replies, what is reply
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

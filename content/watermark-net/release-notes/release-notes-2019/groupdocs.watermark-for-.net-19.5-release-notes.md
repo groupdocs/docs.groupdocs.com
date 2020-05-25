@@ -19,23 +19,10 @@ There are the following features, enhancements, and bug fixes in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-WATERMARKNET-994
-
-WordsDocument.save() throws exception when setting WordsLockType.ReadOnlyWithEditableContent
-
-Bug
-
-WATERMARKNET-1024
-
-Add new types of a shape in a Word document
-
-Enhancement
+| Key | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-994 | WordsDocument.save() throws exception when setting WordsLockType.ReadOnlyWithEditableContent | Bug |
+| WATERMARKNET-1024 | Add new types of a shape in a Word document | Enhancement |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-18-10-release-notes
 url: annotation/net/groupdocs-annotation-for-net-18-10-release-notes
 title: GroupDocs.Annotation for .NET 18.10 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -21,47 +21,14 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-791
-
-Implement TextReplacement in Slides
-
-Feature
-
-ANNOTATIONNET-798
-
-Implement font family support for TextReplacement
-
-Feature
-
-ANNOTATIONNET-807 
-
-Fix time format bug for Slides
-
-Bug
-
-ANNOTATIONNET-804
-
-Fix converting int to PDF.Color
-
-Bug
-
-ANNOTATIONNET-799
-
-Fix annotation point position for TextReplacement on Slides
-
-Bug
-
-ANNOTATIONNET-793
-
-Issue with CleanUp on PDF document
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-791 | Implement TextReplacement in Slides | Feature |
+| ANNOTATIONNET-798 | Implement font family support for TextReplacement | Feature |
+| ANNOTATIONNET-807  | Fix time format bug for Slides | Bug |
+| ANNOTATIONNET-804 | Fix converting int to PDF.Color | Bug |
+| ANNOTATIONNET-799 | Fix annotation point position for TextReplacement on Slides | Bug |
+| ANNOTATIONNET-793 | Issue with CleanUp on PDF document | Bug |
 
 ## Public API and Backward Incompatible Change
 

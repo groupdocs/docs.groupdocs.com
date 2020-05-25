@@ -3,7 +3,7 @@ id: remove-metadata-properties
 url: metadata/net/remove-metadata-properties
 title: Remove metadata properties
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

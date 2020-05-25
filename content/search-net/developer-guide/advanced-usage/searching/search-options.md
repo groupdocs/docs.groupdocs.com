@@ -3,7 +3,7 @@ id: search-options
 url: search/net/search-options
 title: Search options
 weight: 22
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

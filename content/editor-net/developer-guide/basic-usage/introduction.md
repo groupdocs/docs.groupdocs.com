@@ -3,7 +3,7 @@ id: introduction
 url: editor/net/introduction
 title: Introduction
 weight: 1
-description: This article explains main principles and stages of editing documents programmatically with GroupDocs.Editor for .NET API.
+description: "This article explains main principles and stages of editing documents programmatically with GroupDocs.Editor for .NET API."
 keywords: Edit document programmatically, Edit document C#, Edit document principles
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -83,141 +83,15 @@ Some of these options may be optional in specific cases, some are mandatory. For
 
 All document formats, which GroupDocs.Editor supports, are grouped into family formats. Each family format has lot of common features, so there is no options for each format — only for family format. Relation between formats, family formats, import/export formats and options is illustrated in the table below.
 
-Family format
-
-Supported formats
-
-Load
-
-Save
-
-Load options
-
-Edit options
-
-Save options
-
-Metadata
-
-WordProcessing
-
-DOC, DOCX, DOCM, DOT,DOTX, DOTM, RTF,
-
-WordprocessingML Flat XML, ODT, OTT, Word 2003 XML
-
-![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
-![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
-[WordProcessingLoadOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingloadoptions)
-
-[WordProcessingEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions)
-
-[WordProcessingSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingsaveoptions)
-
-[WordProcessingDocumentInfo](https://apireference.groupdocs.com/net/editor/groupdocs.editor.metadata/wordprocessingdocumentinfo)
-
-Spreadsheet
-
-XLS, XLT, XLSX, XLSM, XLSB, XLTX, XLTM, XLAM,
-
-SpreadsheetML XML, ODS, FODS, SXC, DIF
-
-![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
-![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
-[SpreadsheetLoadOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheetloadoptions)
-
-[SpreadsheetEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheeteditoptions)
-
-[SpreadsheetSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheetsaveoptions)
-
-[SpreadsheetDocumentInfo](https://apireference.groupdocs.com/net/editor/groupdocs.editor.metadata/spreadsheetdocumentinfo)
-
-DSV
-
-CSV, TSV, semicolon-separated,
-
-whitespace-separated, arbitrary separator
-
-![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
-![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
-N/A
-
-[DelimitedTextEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/delimitedtexteditoptions)
-
-[DelimitedTextSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/delimitedtextsaveoptions)
-
-N/A
-
-Presentation
-
-PPT, PPTX, PPTM, PPS, PPSX, PPSM,
-
-POT, POTX, POTM, ODP, OTP
-
-![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
-![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
-[PresentationLoadOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/presentationloadoptions)
-
-[PresentationEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/presentationeditoptions)
-
-[PresentationSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/presentationsaveoptions)
-
-[PresentationDocumentInfo](https://apireference.groupdocs.com/net/editor/groupdocs.editor.metadata/presentationdocumentinfo)
-
-XML
-
-Any XML document
-
-![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
-![(error)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/error.png)
-
-N/A
-
-[XmlEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/xmleditoptions)
-
-N/A
-
-[TextualDocumentInfo](https://apireference.groupdocs.com/net/editor/groupdocs.editor.metadata/textualdocumentinfo)
-
-TXT
-
-Any text document
-
-![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
-![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
-N/A
-
-[TextEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/texteditoptions)
-
-[TextSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/textsaveoptions)
-
-[TextualDocumentInfo](https://apireference.groupdocs.com/net/editor/groupdocs.editor.metadata/textualdocumentinfo)
-
-Fixed-layout format
-
-PDF
-
-![(error)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/error.png)
-
-![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png)
-
-N/A
-
-N/A
-
-[PdfSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/pdfsaveoptions)
-
-N/A
+| Family format | Supported formats | Load | Save | Load options | Edit options | Save options | Metadata |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| WordProcessing | DOC, DOCX, DOCM, DOT,DOTX, DOTM, RTF,WordprocessingML Flat XML, ODT, OTT, Word 2003 XML | ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png) | ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png) | [WordProcessingLoadOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingloadoptions) | [WordProcessingEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingeditoptions) | [WordProcessingSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/wordprocessingsaveoptions) | [WordProcessingDocumentInfo](https://apireference.groupdocs.com/net/editor/groupdocs.editor.metadata/wordprocessingdocumentinfo) |
+| Spreadsheet | XLS, XLT, XLSX, XLSM, XLSB, XLTX, XLTM, XLAM,SpreadsheetML XML, ODS, FODS, SXC, DIF | ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png) | ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png) | [SpreadsheetLoadOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheetloadoptions) | [SpreadsheetEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheeteditoptions) | [SpreadsheetSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/spreadsheetsaveoptions) | [SpreadsheetDocumentInfo](https://apireference.groupdocs.com/net/editor/groupdocs.editor.metadata/spreadsheetdocumentinfo) |
+| DSV | CSV, TSV, semicolon-separated,whitespace-separated, arbitrary separator | ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png) | ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png) | N/A | [DelimitedTextEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/delimitedtexteditoptions) | [DelimitedTextSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/delimitedtextsaveoptions) | N/A |
+| Presentation | PPT, PPTX, PPTM, PPS, PPSX, PPSM,POT, POTX, POTM, ODP, OTP | ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png) | ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png) | [PresentationLoadOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/presentationloadoptions) | [PresentationEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/presentationeditoptions) | [PresentationSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/presentationsaveoptions) | [PresentationDocumentInfo](https://apireference.groupdocs.com/net/editor/groupdocs.editor.metadata/presentationdocumentinfo) |
+| XML | Any XML document | ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png) | ![(error)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/error.png) | N/A | [XmlEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/xmleditoptions) | N/A | [TextualDocumentInfo](https://apireference.groupdocs.com/net/editor/groupdocs.editor.metadata/textualdocumentinfo) |
+| TXT | Any text document | ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png) | ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png) | N/A | [TextEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/texteditoptions) | [TextSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/textsaveoptions) | [TextualDocumentInfo](https://apireference.groupdocs.com/net/editor/groupdocs.editor.metadata/textualdocumentinfo) |
+| Fixed-layout format | PDF | ![(error)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/error.png) | ![(tick)](s/en_GB-1988229788/4108/b47156ace146e4f759b49ef98258cb637bdd5af8.5/_/images/icons/emoticons/check.png) | N/A | N/A | [PdfSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/pdfsaveoptions) | N/A |
 
 ### Additional materials
 

@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-18-7-release-notes
 url: viewer/net/groupdocs-viewer-for-net-18-7-release-notes
 title: GroupDocs.Viewer for .NET 18.7 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -20,65 +20,17 @@ There are 9 features, improvements, and fixes in this regular monthly release. T
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1475
-
-Add ISFF-based DGN (V7) file format support
-
-New Feature
-
-VIEWERNET-1651
-
-Extend DefaultFontName setting support for ODG, SVG and MetaFile Images
-
-Improvement
-
-VIEWERNET-1637
-
-Improve output content for printable HTML
-
-Improvement
-
-VIEWERNET-1586
-
-Support empty string for ViewerConfig.PageNamePrefix property
-
-Improvement
-
-VIEWERNET-1567
-
-Improve compression for rendering into HTML with EnableMinification setting
-
-Improvement
-
-VIEWERNET-1657
-
-DOCX to HTML pages - all HTML pages use CSS class names from first page
-
-Bug
-
-VIEWERNET-1646
-
-API generates 5 pages with repeated content when rendering single page email message
-
-Bug
-
-VIEWERNET-1542
-
-Invalid styles when rendering presentation documents into HTML
-
-Bug
-
-VIEWERNET-1498
-
-Issues when printing printable Html or saving as PDF
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1475 | Add ISFF-based DGN (V7) file format support | New Feature |
+| VIEWERNET-1651 | Extend DefaultFontName setting support for ODG, SVG and MetaFile Images | Improvement |
+| VIEWERNET-1637 | Improve output content for printable HTML | Improvement |
+| VIEWERNET-1586 | Support empty string for ViewerConfig.PageNamePrefix property | Improvement |
+| VIEWERNET-1567 | Improve compression for rendering into HTML with EnableMinification setting | Improvement |
+| VIEWERNET-1657 | DOCX to HTML pages - all HTML pages use CSS class names from first page | Bug |
+| VIEWERNET-1646 | API generates 5 pages with repeated content when rendering single page email message | Bug |
+| VIEWERNET-1542 | Invalid styles when rendering presentation documents into HTML | Bug |
+| VIEWERNET-1498 | Issues when printing printable Html or saving as PDF | Bug |
 
 ## Public API and Backward Incompatible Changes
 

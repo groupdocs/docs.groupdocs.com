@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-19-12-release-notes
 url: viewer/net/groupdocs-viewer-for-net-19-12-release-notes
 title: GroupDocs.Viewer for .NET 19.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -20,59 +20,16 @@ There are 8 features, improvements, and bug-fixes in this release, most notable 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-127
-
-Add AutoCAD Drawing Template (.dwt) file-format support
-
-Feature
-
-VIEWERNET-2257
-
-Timeout when loading external resources contained by text documents
-
-Feature
-
-VIEWERNET-1993
-
-Reduce the number of resources created when rendering MS Project documents
-
-Improvement
-
-VIEWERNET-2174
-
-Improve performance when rendering document in chunks
-
-Improvement
-
-VIEWERNET-2250
-
-Support rendering CAD drawings in 32-bit process
-
-Improvement
-
-VIEWERNET-2258
-
-Simplify Viewer constructors that accept file path
-
-Improvement
-
-VIEWERNET-2133
-
-Incorrect font when rendering PDF to HTML
-
-Bug
-
-VIEWERNET-2251
-
-Empty folder list for ZIP archive created in Windows
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-127 | Add AutoCAD Drawing Template (.dwt) file-format support | Feature |
+| VIEWERNET-2257 | Timeout when loading external resources contained by text documents | Feature |
+| VIEWERNET-1993 | Reduce the number of resources created when rendering MS Project documents | Improvement |
+| VIEWERNET-2174 | Improve performance when rendering document in chunks | Improvement |
+| VIEWERNET-2250 | Support rendering CAD drawings in 32-bit process | Improvement |
+| VIEWERNET-2258 | Simplify Viewer constructors that accept file path | Improvement |
+| VIEWERNET-2133 | Incorrect font when rendering PDF to HTML | Bug |
+| VIEWERNET-2251 | Empty folder list for ZIP archive created in Windows | Bug |
 
 # Public API and Backward Incompatible Changes
 

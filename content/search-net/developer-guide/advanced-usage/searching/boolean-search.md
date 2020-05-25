@@ -3,7 +3,7 @@ id: boolean-search
 url: search/net/boolean-search
 title: Boolean search
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

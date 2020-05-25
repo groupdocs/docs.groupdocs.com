@@ -3,7 +3,7 @@ id: delete-text-signatures-from-documents
 url: signature/net/delete-text-signatures-from-documents
 title: Delete Text signatures from documents
 weight: 4
-description: This article explains how to delete Text electronic signatures with GroupDocs.Signature API.
+description: "This article explains how to delete Text electronic signatures with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

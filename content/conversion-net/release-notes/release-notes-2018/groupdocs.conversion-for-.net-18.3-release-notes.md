@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-18-3-release-notes
 url: conversion/net/groupdocs-conversion-for-net-18-3-release-notes
 title: GroupDocs.Conversion for .NET 18.3 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -24,77 +24,19 @@ There are 10+ new features, improvements and fixes in this regular monthly relea
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-2397
-
-Implement specific options for converting CSV documents
-
-New Feature
-
-CONVERSIONNET-2414
-
-Implement setting default zoom when converting to Cells
-
-New Feature
-
-CONVERSIONNET-2417
-
-Implement setting default zoom when converting to Words
-
-New Feature
-
-CONVERSIONNET-2418
-
-Implement setting default zoom when converting to Slides
-
-New Feature
-
-CONVERSIONNET-2423
-
-Implement configurable option for setting a watermark as background
-
-New Feature
-
-CONVERSIONNET-2395
-
-Set zoom when converting to Pdf document
-
-Improvement
-
-CONVERSIONNET-2406
-
-Update API for getting document info to detect page orientation for the supported formats
-
-Improvement
-
-CONVERSIONNET-2392
-
-Set default font to replace all missing fonts when converting Words document
-
-Improvement
-
-CONVERSIONNET-2394
-
-Set default font to replace all missing fonts when converting Cells document
-
-Improvement
-
-CONVERSIONNET-2421
-
-Conversion improvement when converting Psd and Odg to Pdf
-
-Improvement
-
-CONVERSIONNET-2304
-
-XPS to PDF conversion failed
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-2397 | Implement specific options for converting CSV documents | New Feature |
+| CONVERSIONNET-2414 | Implement setting default zoom when converting to Cells | New Feature |
+| CONVERSIONNET-2417 | Implement setting default zoom when converting to Words | New Feature |
+| CONVERSIONNET-2418 | Implement setting default zoom when converting to Slides | New Feature |
+| CONVERSIONNET-2423 | Implement configurable option for setting a watermark as background | New Feature |
+| CONVERSIONNET-2395 | Set zoom when converting to Pdf document | Improvement |
+| CONVERSIONNET-2406 | Update API for getting document info to detect page orientation for the supported formats | Improvement |
+| CONVERSIONNET-2392 | Set default font to replace all missing fonts when converting Words document | Improvement |
+| CONVERSIONNET-2394 | Set default font to replace all missing fonts when converting Cells document | Improvement |
+| CONVERSIONNET-2421 | Conversion improvement when converting Psd and Odg to Pdf | Improvement |
+| CONVERSIONNET-2304 | XPS to PDF conversion failed | Bug |
 
 ## Public API and Backward Incompatible Changes
 

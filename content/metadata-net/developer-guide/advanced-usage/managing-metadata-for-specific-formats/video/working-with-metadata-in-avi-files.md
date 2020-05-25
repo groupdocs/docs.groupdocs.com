@@ -3,7 +3,7 @@ id: working-with-metadata-in-avi-files
 url: metadata/net/working-with-metadata-in-avi-files
 title: Working with metadata in AVI files
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

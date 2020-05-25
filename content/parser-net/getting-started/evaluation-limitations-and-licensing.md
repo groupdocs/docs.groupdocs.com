@@ -21,10 +21,7 @@ You can easily download GroupDocs.Parser for evaluation. The evaluation download
 
 | API | Limit |
 | --- | --- |
-|   | 
-Only 100 files per session
-
- |
+|   | Only 100 files per session |
 |   | Only 5 pages (slides, sheets) of a document |
 | **Text extraction** | Only 20 lines per file  
 Only the first 1600 symbols  

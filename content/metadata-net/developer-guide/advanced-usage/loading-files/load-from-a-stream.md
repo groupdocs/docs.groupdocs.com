@@ -3,7 +3,7 @@ id: load-from-a-stream
 url: metadata/net/load-from-a-stream
 title: Load from a stream
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

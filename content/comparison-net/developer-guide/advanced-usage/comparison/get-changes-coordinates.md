@@ -3,7 +3,7 @@ id: get-changes-coordinates
 url: comparison/net/get-changes-coordinates
 title: Get changes coordinates
 weight: 5
-description: This article explains how to obtain coordinates for detected changes at a document pages preview when compare documents with GroupDocs.Comparison for .NET
+description: "This article explains how to obtain coordinates for detected changes at a document pages preview when compare documents with GroupDocs.Comparison for .NET"
 keywords: Compare documents, get changes coordinates
 productName: GroupDocs.Comparison for .NET
 hideChildren: False

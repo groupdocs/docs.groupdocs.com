@@ -3,7 +3,7 @@ id: search-for-barcode-e-signatures
 url: signature/net/search-for-barcode-e-signatures
 title: Search for Barcode e-signatures
 weight: 1
-description: This article explains how to search for Barcode in the document with few lines of code over GroupDocs.Signature API.
+description: "This article explains how to search for Barcode in the document with few lines of code over GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

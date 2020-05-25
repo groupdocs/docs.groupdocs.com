@@ -3,7 +3,7 @@ id: index-lifecycle
 url: search/net/index-lifecycle
 title: Index lifecycle
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

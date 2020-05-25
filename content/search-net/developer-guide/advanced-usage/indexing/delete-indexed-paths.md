@@ -3,7 +3,7 @@ id: delete-indexed-paths
 url: search/net/delete-indexed-paths
 title: Delete indexed paths
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

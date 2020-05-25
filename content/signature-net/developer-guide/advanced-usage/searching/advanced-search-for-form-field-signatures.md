@@ -3,7 +3,7 @@ id: advanced-search-for-form-field-signatures
 url: signature/net/advanced-search-for-form-field-signatures
 title: Advanced search for Form Field signatures
 weight: 7
-description:  This article explains how to provide advanced search for Form Field electronic signatures with GroupDocs.Signature API.
+description: " This article explains how to provide advanced search for Form Field electronic signatures with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

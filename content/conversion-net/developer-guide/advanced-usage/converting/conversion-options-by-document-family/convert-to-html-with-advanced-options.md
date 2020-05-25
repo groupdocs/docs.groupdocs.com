@@ -3,7 +3,7 @@ id: convert-to-html-with-advanced-options
 url: conversion/net/convert-to-html-with-advanced-options
 title: Convert to HTML with advanced options
 weight: 1
-description: Follow this guide and learn how to convert documents to HTML format with fixed layout, zoom and other customizations using GroupDocs.Conversion for .NET.
+description: "Follow this guide and learn how to convert documents to HTML format with fixed layout, zoom and other customizations using GroupDocs.Conversion for .NET."
 keywords: Convert to HTML, Convert HTML
 productName: GroupDocs.Conversion for .NET
 hideChildren: False

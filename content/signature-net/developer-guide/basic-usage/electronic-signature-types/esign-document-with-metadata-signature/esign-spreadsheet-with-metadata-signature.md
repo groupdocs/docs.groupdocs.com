@@ -3,7 +3,7 @@ id: esign-spreadsheet-with-metadata-signature
 url: signature/net/esign-spreadsheet-with-metadata-signature
 title: eSign Spreadsheet with Metadata signature
 weight: 4
-description: This article explains how to add metadata signatures to Spreadsheet document with GroupDocs.Signature
+description: "This article explains how to add metadata signatures to Spreadsheet document with GroupDocs.Signature"
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

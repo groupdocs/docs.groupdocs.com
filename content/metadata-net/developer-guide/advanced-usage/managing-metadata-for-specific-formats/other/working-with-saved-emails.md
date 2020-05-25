@@ -3,7 +3,7 @@ id: working-with-saved-emails
 url: metadata/net/working-with-saved-emails
 title: Working with saved Emails
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

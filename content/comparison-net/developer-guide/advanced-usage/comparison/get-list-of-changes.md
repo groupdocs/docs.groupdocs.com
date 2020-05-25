@@ -3,7 +3,7 @@ id: get-list-of-changes
 url: comparison/net/get-list-of-changes
 title: Get list of changes
 weight: 6
-description: This article explains how to get collection of changes between compared documents when using GroupDocs.Comparison for .NET.
+description: "This article explains how to get collection of changes between compared documents when using GroupDocs.Comparison for .NET."
 keywords: Get file diff, documents diff, compare documents, compare files
 productName: GroupDocs.Comparison for .NET
 hideChildren: False

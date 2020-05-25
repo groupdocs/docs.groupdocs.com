@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-18-8-release-notes
 url: comparison/net/groupdocs-comparison-for-net-18-8-release-notes
 title: GroupDocs.Comparison for .NET 18.8 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -21,65 +21,17 @@ Below the list of most notable changes in  release of GroupDocs.Comparison for 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-1637
-
-Implement new Setting for text highlighting Comparison.Html
-
-New Feature
-
-COMPARISONNET-1636
-
-Implement new Setting for text highlighting Comparison.Slides
-
-New Feature
-
-COMPARISONNET-1635
-
-Implement new Setting for text highlighting Comparison.Notes
-
-New Feature
-
-COMPARISONNET-1634
-
-Implement new Setting for text highlighting Comparison.Pdf
-
-New Feature
-
-COMPARISONNET-1633
-
-Implement new Setting for text highlighting Comparison.Words
-
-New Feature
-
-COMPARISONNET-1644
-
-Improve PDF mapper
-
-Improvement
-
-COMPARISONNET-1640
-
-Improve support of comparing different formats with image
-
-Improvement
-
-COMPARISONNET-1620
-
-Output of PDF with graphs is not as expected
-
-Bug
-
-COMPARISONNET-1619
-
-Output of PDF with images is not as expected
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-1637 | Implement new Setting for text highlighting Comparison.Html | New Feature |
+| COMPARISONNET-1636 | Implement new Setting for text highlighting Comparison.Slides | New Feature |
+| COMPARISONNET-1635 | Implement new Setting for text highlighting Comparison.Notes | New Feature |
+| COMPARISONNET-1634 | Implement new Setting for text highlighting Comparison.Pdf | New Feature |
+| COMPARISONNET-1633 | Implement new Setting for text highlighting Comparison.Words | New Feature |
+| COMPARISONNET-1644 | Improve PDF mapper | Improvement |
+| COMPARISONNET-1640 | Improve support of comparing different formats with image | Improvement |
+| COMPARISONNET-1620 | Output of PDF with graphs is not as expected | Bug |
+| COMPARISONNET-1619 | Output of PDF with images is not as expected | Bug |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-19-6-release-notes
 url: annotation/net/groupdocs-annotation-for-net-19-6-release-notes
 title: GroupDocs.Annotation for .NET 19.6 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -21,35 +21,12 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-1011
-
-Add supporting another Slides formats: pptm, potx, potm, ppsm
-
-Feature
-
-ANNOTATIONNET-1037 
-
-Credit based billing for Metered license
-
-Feature
-
-ANNOTATIONNET-986 
-
-Issue with getting document info in trial mode
-
-Bug
-
-ANNOTATIONNET-987 
-
-Export annotations to tiff file issue
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-1011 | Add supporting another Slides formats: pptm, potx, potm, ppsm | Feature |
+| ANNOTATIONNET-1037  | Credit based billing for Metered license | Feature |
+| ANNOTATIONNET-986  | Issue with getting document info in trial mode | Bug |
+| ANNOTATIONNET-987  | Export annotations to tiff file issue | Bug |
 
 ## Public API and Backward Incompatible Change
 

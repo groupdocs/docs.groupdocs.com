@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-19-11-release-notes
 url: conversion/net/groupdocs-conversion-for-net-19-11-release-notes
 title: GroupDocs.Conversion for .NET 19.11 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -21,47 +21,14 @@ There are 5+ features, improvements and bug-fixes in this release, most notable 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-3460
-
-Feature
-
-Provide information for conversion start, end and progress
-
-CONVERSIONNET-3345
-
-Improvement
-
-MPP to XLS conversion improvement and missing information
-
-CONVERSIONNET-2819
-
-Bug
-
-Fail to convert a specific word document to PDF
-
-CONVERSIONNET-3420
-
-Bug
-
-Other than PNG to PDF conversion throw exception for PNG source file
-
-CONVERSIONNET-3423
-
-Bug
-
-"System.DllNotFoundException: Unable to load DLL ?gdiplus?" exception when targeting .NET Standard 2.0 under MacOS
-
-CONVERSIONNET-3424
-
-Bug
-
-Compatibility issues under .NET Standard 2.0
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-3460 | Feature | Provide information for conversion start, end and progress |
+| CONVERSIONNET-3345 | Improvement | MPP to XLS conversion improvement and missing information |
+| CONVERSIONNET-2819 | Bug | Fail to convert a specific word document to PDF |
+| CONVERSIONNET-3420 | Bug | Other than PNG to PDF conversion throw exception for PNG source file |
+| CONVERSIONNET-3423 | Bug | "System.DllNotFoundException: Unable to load DLL ?gdiplus?" exception when targeting .NET Standard 2.0 under MacOS |
+| CONVERSIONNET-3424 | Bug | Compatibility issues under .NET Standard 2.0 |
 
 ## Public API and Backward Incompatible Changes
 

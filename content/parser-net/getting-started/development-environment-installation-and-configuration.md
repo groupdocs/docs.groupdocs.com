@@ -61,9 +61,6 @@ Note that .NET Standard 2.0 version has external references:
 | System.Drawing.Common | 4.5.1 |
 | System.Text.Encoding.CodePages | 4.5.0 |
 | System.Security.Permissions | 4.5.0 |
-| 
-System.Reflection.Emit   
-
- | 4.3.0 |
+| System.Reflection.Emit    | 4.3.0 |
 | System.Reflection.Emit.ILGeneration | 4.3.0 |
 | SkiaSharp | 1.68.1 |

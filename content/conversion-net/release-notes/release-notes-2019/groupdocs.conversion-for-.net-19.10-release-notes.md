@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-19-10-release-notes
 url: conversion/net/groupdocs-conversion-for-net-19-10-release-notes
 title: GroupDocs.Conversion for .NET 19.10 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -22,41 +22,13 @@ There are 5 features, improvements and bug-fixes in this release, most notable a
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-3323
-
-Feature
-
-Keep the timezone of the SENT field
-
-CONVERSIONNET-3330
-
-Feature
-
-Add .NET Standard 2.0 support
-
-CONVERSIONNET-3416
-
-Improvement
-
-Converting multi-page TIFF to PDF
-
-CONVERSIONNET-3356
-
-Bug
-
-Converting spreadsheet to html, ranges are not respected
-
-CONVERSIONNET-3376
-
-Bug
-
-Exception stream is not expandable when converting to html
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-3323 | Feature | Keep the timezone of the SENT field |
+| CONVERSIONNET-3330 | Feature | Add .NET Standard 2.0 support |
+| CONVERSIONNET-3416 | Improvement | Converting multi-page TIFF to PDF |
+| CONVERSIONNET-3356 | Bug | Converting spreadsheet to html, ranges are not respected |
+| CONVERSIONNET-3376 | Bug | Exception stream is not expandable when converting to html |
 
 ## Public API and Backward Incompatible Changes
 

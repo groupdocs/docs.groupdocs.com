@@ -3,7 +3,7 @@ id: output-adapters
 url: search/net/output-adapters
 title: Output adapters
 weight: 13
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

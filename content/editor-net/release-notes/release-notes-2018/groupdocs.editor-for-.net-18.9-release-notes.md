@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-18-9-release-notes
 url: editor/net/groupdocs-editor-for-net-18-9-release-notes
 title: GroupDocs.Editor for .NET 18.9 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -32,77 +32,19 @@ Fixed several bugs and security improvements update.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-911
-
-Implement support of generating the password-protected sheets in spreadsheet documents
-
-New Feature
-
-EDITORNET-927
-
-Implement support of additional parameters when processing text-based spreadsheet
-
-New Feature
-
-EDITORNET-928
-
-Implement ability to adjust memory usage during opening input Cells document
-
-New Feature
-
-EDITORNET-929
-
-Implement the ExcludeHiddenWorksheets option
-
-New Feature
-
-EDITORNET-930
-
-Implement ability to adjust memory usage during Words processing
-
-New Feature
-
-EDITORNET-931
-
-Add support of document protection during Words document generation
-
-New Feature
-
-EDITORNET-933
-
-Implement Reply comments and Done status
-
-New Feature
-
-EDITORNET-935
-
-Implement ability to select PDF standards compliance level when generating PDF from HTML
-
-New Feature
-
-EDITORNET-946
-
-Security improvements update
-
-Improvement
-
-EDITORNET-914
-
-Fix common bug in length and Resolution parsing modules
-
-Bug
-
-EDITORNET-895
-
-Fix ArgumentException with pages15.docx sample document
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-911 | Implement support of generating the password-protected sheets in spreadsheet documents | New Feature |
+| EDITORNET-927 | Implement support of additional parameters when processing text-based spreadsheet | New Feature |
+| EDITORNET-928 | Implement ability to adjust memory usage during opening input Cells document | New Feature |
+| EDITORNET-929 | Implement the ExcludeHiddenWorksheets option | New Feature |
+| EDITORNET-930 | Implement ability to adjust memory usage during Words processing | New Feature |
+| EDITORNET-931 | Add support of document protection during Words document generation | New Feature |
+| EDITORNET-933 | Implement Reply comments and Done status | New Feature |
+| EDITORNET-935 | Implement ability to select PDF standards compliance level when generating PDF from HTML | New Feature |
+| EDITORNET-946 | Security improvements update | Improvement |
+| EDITORNET-914 | Fix common bug in length and Resolution parsing modules | Bug |
+| EDITORNET-895 | Fix ArgumentException with pages15.docx sample document | Bug |
 
 ## Public API and Backward Incompatible Changes
 

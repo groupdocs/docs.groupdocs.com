@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-19-5-release-notes
 url: editor/net/groupdocs-editor-for-net-19-5-release-notes
 title: GroupDocs.Editor for .NET 19.5 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -20,29 +20,11 @@ Minor internal improvements and fixes.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1189
-
-Implement various text effects
-
-New Feature
-
-EDITORNET-1185
-
-Implement new Metered support
-
-New Feature
-
-EDITORNET-1208
-
-Develop paginal mode in WordProcessing module
-
-New Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1189 | Implement various text effects | New Feature |
+| EDITORNET-1185 | Implement new Metered support | New Feature |
+| EDITORNET-1208 | Develop paginal mode in WordProcessing module | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-18-1-release-notes
 url: viewer/net/groupdocs-viewer-for-net-18-1-release-notes
 title: GroupDocs.Viewer for .NET 18.1 Release Notes
 weight: 13
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -22,83 +22,20 @@ There are 12 features, improvements, and fixes in this regular monthly release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1479
-
-Add POTM file format support
-
-New Feature
-
-VIEWERNET-1477
-
-Add PPSM file format support
-
-New Feature
-
-VIEWERNET-1430
-
-Add JPEG2000 file format support
-
-New Feature
-
-VIEWERNET-1222
-
-Support rendering notes for Presentation documents
-
-New Feature
-
-VIEWERNET-1156
-
-Implement setting for specifying Layers when rendering CAD documents
-
-New Feature
-
-VIEWERNET-872
-
-Add PS (PostScript) file format support
-
-New Feature
-
-VIEWERNET-1484
-
-Set output page height and width (for image and HTML) depending on the rendered DWF document page sizes
-
-Improvement
-
-VIEWERNET-1483
-
-Create single styles resource when rendering Text documents as HTML
-
-Improvement
-
-VIEWERNET-1457
-
-Improve exporting and embedding HTML resources when rendering SVG documents
-
-Improvement
-
-VIEWERNET-1242
-
-Improve exporting and embedding HTML resources when rendering Presentation documents
-
-Improvement
-
-VIEWERNET-1482
-
-Header contains error message when rendering Word document as PDF
-
-Bug
-
-VIEWERNET-1474
-
-API is not creating cache files in CachePath when rendering document from network path
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1479 | Add POTM file format support | New Feature |
+| VIEWERNET-1477 | Add PPSM file format support | New Feature |
+| VIEWERNET-1430 | Add JPEG2000 file format support | New Feature |
+| VIEWERNET-1222 | Support rendering notes for Presentation documents | New Feature |
+| VIEWERNET-1156 | Implement setting for specifying Layers when rendering CAD documents | New Feature |
+| VIEWERNET-872 | Add PS (PostScript) file format support | New Feature |
+| VIEWERNET-1484 | Set output page height and width (for image and HTML) depending on the rendered DWF document page sizes | Improvement |
+| VIEWERNET-1483 | Create single styles resource when rendering Text documents as HTML | Improvement |
+| VIEWERNET-1457 | Improve exporting and embedding HTML resources when rendering SVG documents | Improvement |
+| VIEWERNET-1242 | Improve exporting and embedding HTML resources when rendering Presentation documents | Improvement |
+| VIEWERNET-1482 | Header contains error message when rendering Word document as PDF | Bug |
+| VIEWERNET-1474 | API is not creating cache files in CachePath when rendering document from network path | Bug |
 
 ## Public API and Backward Incompatible Changes
 

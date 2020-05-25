@@ -3,7 +3,7 @@ id: locales-for-output-document
 url: editor/net/locales-for-output-document
 title: Locales for output document
 weight: 6
-description: This guide demonstrates how to edit RTL documents and specify locale for Word documents when using  GroupDocs.Editor for .NET API.
+description: "This guide demonstrates how to edit RTL documents and specify locale for Word documents when using  GroupDocs.Editor for .NET API."
 keywords: Edit document with locale, GroupDocs.Editor, Edit RTL documents
 productName: GroupDocs.Editor for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: composing-signature-with-solid-brush-background
 url: signature/net/composing-signature-with-solid-brush-background
 title: Composing signature with solid brush background
 weight: 3
-description:  This article explains how to fill signature background with solid brush
+description: " This article explains how to fill signature background with solid brush"
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

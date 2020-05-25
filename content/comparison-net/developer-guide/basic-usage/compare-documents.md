@@ -3,38 +3,47 @@ id: compare-documents
 url: comparison/net/compare-documents
 title: Compare documents
 weight: 3
-description: This article demonstrates how to compare Word, Excel, PowerPoint, Outlook, OneNote, PDF, Image, HTML, AutoCAD, Visio, OpenDocument, OneNote documents using GroupDocs.Comparison for .NET.
+description: "This article demonstrates how to compare Word, Excel, PowerPoint, Outlook, OneNote, PDF, Image, HTML, AutoCAD, Visio, OpenDocument, OneNote documents using GroupDocs.Comparison for .NET."
 keywords: Compare documents, document comparison in C#
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-# Documents comparison features
+# File comparison features
 
-**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to compare documents and save resultant document that shows changes between source and target document(s). Full list of supported document formats can be found [here]({{< ref "comparison-net/getting-started/supported-document-formats.md" >}}).
-Changes detection algorithms used by GroupDocs.Comparison allows to detect changes in different document parts and blocks:
+Changes detection algorithms used by** [GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to detect changes in different document parts and blocks:
 
 *   Text blocks - paragraphs, words and characters;
+    
 *   Tables;
+    
 *   Images;
+    
 *   Shapes etc.
+    
 
 For better visual separation of detected changes added, modified or deleted document parts are highlighted with different colors:
 
-*   Added document segments are highlighted with **blue**color;
-*   Modified document segments are highlighted with **green** color;
-*   Style changed document segments are highlighted with **green** color;
-*   Deleted document segments are highlighted with **red**color.  
+*   Added – **blue** 
+    
+*   Modified – **green**
+    
+*   Style – **green**
+    
+*   Deleted – **red**
     
 
-Changes styling coloring scheme can be customized if needed, changed text blocks can be marked with different formatting - italic, bold, underlined, strikethrough etc.  
+Changes styling coloring scheme can be customized if needed, changed text blocks can be marked with different formatting - italic, bold, underlined, strikethrough etc.
 
-Here are simple steps to compare two documents:
+ Here are simple steps to compare two documents: 
 
-*   Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream;
-*   Call [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream;
-*   Call [Compare](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare/index) method.
+*   Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer)objectwith source document path or stream;
+    
+*   Call [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index)method and specify target document path or stream.
+    
+*   Call [Compare](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare/index)method.
+    
 
-The following code snippet demonstrates the simplest case of documents comparison using couple lines of code. 
+The following code snippet demonstrates the simplest case of documents comparison using couple lines of code.
 
 ## Compare documents from local file
 

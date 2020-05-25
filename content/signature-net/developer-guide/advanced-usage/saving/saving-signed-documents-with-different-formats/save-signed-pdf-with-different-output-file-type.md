@@ -3,7 +3,7 @@ id: save-signed-pdf-with-different-output-file-type
 url: signature/net/save-signed-pdf-with-different-output-file-type
 title: Save signed Pdf with different output file type
 weight: 2
-description: This article explains how to save signed PDF document with various file formats by GroupDocs.Signature API.
+description: "This article explains how to save signed PDF document with various file formats by GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

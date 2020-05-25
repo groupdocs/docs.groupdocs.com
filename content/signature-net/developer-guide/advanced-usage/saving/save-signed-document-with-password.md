@@ -3,7 +3,7 @@ id: save-signed-document-with-password
 url: signature/net/save-signed-document-with-password
 title: Save signed document with password
 weight: 1
-description: This article explains how to save document with password protection.
+description: "This article explains how to save document with password protection."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

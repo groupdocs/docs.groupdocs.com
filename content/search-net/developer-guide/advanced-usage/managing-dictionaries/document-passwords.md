@@ -3,7 +3,7 @@ id: document-passwords
 url: search/net/document-passwords
 title: Document passwords
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

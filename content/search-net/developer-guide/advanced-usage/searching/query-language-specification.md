@@ -3,7 +3,7 @@ id: query-language-specification
 url: search/net/query-language-specification
 title: Query language specification
 weight: 16
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

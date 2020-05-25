@@ -3,7 +3,7 @@ id: indexing-reports
 url: search/net/indexing-reports
 title: Indexing reports
 weight: 12
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

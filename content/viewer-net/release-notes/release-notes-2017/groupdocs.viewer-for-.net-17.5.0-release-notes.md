@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-17-5-0-release-notes
 url: viewer/net/groupdocs-viewer-for-net-17-5-0-release-notes
 title: GroupDocs.Viewer for .NET 17.5.0 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -20,143 +20,7 @@ There are 2 new features and 20 improvements and fixes in this regular monthly r
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Category**
-
-WEB-2143
-
-Get print URl for document in JavaScript API
-
-New Feature
-
-VIEWERNET-1192
-
-Show comments when rendering Cells documents
-
-New Feature
-
-VIEWERNET-1184
-
-Show comments when rendering Words documents
-
-New Feature
-
-VIEWERNET-1194
-
-Create lower-case name when rendering document from stream
-
-Improvement
-
-VIEWERNET-1190
-
-Throw GroupDocsViewerException when file type can't be determined for passed stream
-
-Improvement
-
-VIEWERNET-1170
-
-Extend support for setting JpegQuality when rendering documents as pdf
-
-Improvement
-
-VIEWERNET-1164
-
-Improve look of comments in API reference documentation
-
-Improvement
-
-VIEWERNET-1163
-
-Do not set resource prefix when HtmlResourcePrefix is empty string
-
-Improvement
-
-VIEWERNET-1080
-
-Add code examples to EmailOptions class documentation comments
-
-Improvement
-
-VIEWERNET-1079
-
-Add code examples to DiagramOptions class documentation comments
-
-Improvement
-
-VIEWERNET-1076
-
-Remove obsolete CountPagesToConvert and PageNumbersToConvert RenderOptions properties
-
-Improvement
-
-WEB-1895
-
-Text selection flickers in converted HTML
-
-Bug
-
-VIEWERNET-1204
-
-Viewer creates temp folder when caching is disabled
-
-Bug
-
-VIEWERNET-1183
-
-Comments in Word document are not rendered in output HTML/image
-
-Bug
-
-VIEWERNET-1181
-
-File data file updated on each GetDocumentInfo call
-
-Bug
-
-VIEWERNET-1158
-
-Content of Excel document is jumbled up when rendering into HTML
-
-Bug
-
-VIEWERNET-1141
-
-Inline styles are used when styles are set to be saved separately
-
-Bug
-
-VIEWERNET-1026
-
-API is rendering PDF document into blank HTML pages
-
-Bug
-
-VIEWERNET-987
-
-Incomplete image when converting specific dwg
-
-Bug
-
-VIEWERNET-938
-
-Save method requires System.Web reference
-
-Bug
-
-VIEWERNET-760
-
-3D effect of the text in a shape is lost while converting spreadsheet to HTML
-
-Bug
-
-VIEWERNET-756
-
-Incorrect Font Color in Rendering Excel to Html
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>WEB-2143</p></td><td class="confluenceTd"><p>Get print URl for document in JavaScript API</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1192</p></td><td class="confluenceTd"><p>Show comments when rendering Cells documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1184</p></td><td class="confluenceTd"><p>Show comments when rendering Words documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1194</p></td><td class="confluenceTd"><p>Create lower-case name when rendering document from stream</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1190</p></td><td class="confluenceTd"><p>Throw GroupDocsViewerException when file type can't be determined for passed stream</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1170</p></td><td class="confluenceTd"><p>Extend support for setting JpegQuality when rendering documents as pdf</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1164</p></td><td class="confluenceTd"><p>Improve look of comments in API reference documentation</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1163</p></td><td class="confluenceTd"><p>Do not set resource prefix when HtmlResourcePrefix is empty string</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1080</p></td><td class="confluenceTd"><p>Add code examples to EmailOptions class documentation comments</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1079</p></td><td class="confluenceTd"><p>Add code examples to DiagramOptions class documentation comments</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1076</p></td><td class="confluenceTd"><p>Remove obsolete CountPagesToConvert and PageNumbersToConvert RenderOptions properties</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>WEB-1895</p></td><td class="confluenceTd"><p>Text selection flickers in converted HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1204</p></td><td class="confluenceTd"><p>Viewer creates temp folder when caching is disabled</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1183</p></td><td class="confluenceTd"><p>Comments in Word document are not rendered in output HTML/image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1181</p></td><td class="confluenceTd"><p>File data file updated on each GetDocumentInfo call</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1158</p></td><td class="confluenceTd"><p>Content of Excel document is jumbled up when rendering into HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1141</p></td><td class="confluenceTd"><p>Inline styles are used when styles are set to be saved separately</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1026</p></td><td class="confluenceTd"><p>API is rendering PDF document into blank HTML pages</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-987</p></td><td class="confluenceTd"><p>Incomplete image when converting specific dwg</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-938</p></td><td class="confluenceTd"><p>Save method requires System.Web reference</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-760</p></td><td class="confluenceTd"><p>3D effect of the text in a shape is lost while converting spreadsheet to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-756</p></td><td class="confluenceTd"><p>Incorrect Font Color in Rendering Excel to Html</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 
@@ -243,39 +107,15 @@ using (FileContainer container = handler.GetPdfFile(guid, pdfFileOptions))
 
 ##### List of formats affected by PdfFileOptions.JpegQuality property when rendered as PDF
 
-Format Name
-
-Description
-
-Microsoft Word
-
-Affects JPEG images contained in Microsoft Word documents
-
-Microsoft PowerPoint
-
-Affects JPEG images contained in Microsoft PowerPoint documents
-
-Microsoft Outlook
-
-Affects JPEG images set as a background in email documents msg and eml formats
-
-OpenDocument Formats
-
-Affects JPEG images contained in OpenDocument presentation (odp) and
-
-OpenDocument text (odt) formats
-
-Image files
-
-Affects rendering from PSD, TIFF, multi-page TIFF, WebP and DjVu formats
-
-Metafile
-
-Affects rendering from WMF and EMF formats
-
-Microsoft Visio
-
-Affects JPEG images contained inside Microsoft Visio documents
+| Format Name | Description |
+| --- | --- |
+| Microsoft Word | Affects JPEG images contained in Microsoft Word documents |
+| Microsoft PowerPoint | Affects JPEG images contained in Microsoft PowerPoint documents |
+| Microsoft Outlook | Affects JPEG images set as a background in email documents msg and eml formats |
+| OpenDocument Formats | Affects JPEG images contained in OpenDocument presentation (odp) andOpenDocument text (odt) formats |
+| Image files | Affects rendering from PSD, TIFF, multi-page TIFF, WebP and DjVu formats |
+| Metafile | Affects rendering from WMF and EMF formats |
+| Microsoft Visio | Affects JPEG images contained inside Microsoft Visio documents |
 
 ### Throw GroupDocsViewerException when File Type can't be Determined for Passed Stream
 

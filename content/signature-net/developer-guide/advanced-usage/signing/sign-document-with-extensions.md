@@ -3,7 +3,7 @@ id: sign-document-with-extensions
 url: signature/net/sign-document-with-extensions
 title: Sign document with extensions
 weight: 7
-description: This article shows how to create electronic signatures with additional visual extensions
+description: "This article shows how to create electronic signatures with additional visual extensions"
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

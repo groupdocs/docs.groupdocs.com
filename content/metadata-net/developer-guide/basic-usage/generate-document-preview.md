@@ -3,7 +3,7 @@ id: generate-document-preview
 url: metadata/net/generate-document-preview
 title: Generate document preview
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

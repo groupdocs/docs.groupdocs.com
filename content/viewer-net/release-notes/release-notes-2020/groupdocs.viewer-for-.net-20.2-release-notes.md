@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-20-2-release-notes
 url: viewer/net/groupdocs-viewer-for-net-20-2-release-notes
 title: GroupDocs.Viewer for .NET 20.2 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -19,95 +19,22 @@ There are 14 features, improvements, and bug-fixes in this release, most notable
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-2318
-
-Support retrieving an attachment file type
-
-Feature
-
-VIEWERNET-2323
-
-Include folder name when rendering archive folders
-
-Feature
-
-VIEWERNET-2324
-
-Recreate output files and resources instead of writing over
-
-Improvement
-
-VIEWERNET-8
-
-Overlapping Characters in Safari for iOS
-
-Bug
-
-VIEWERNET-226
-
-Files being created in Windows temp folder
-
-Bug
-
-VIEWERNET-257
-
-Incorrect rendering of DWG file as image
-
-Bug
-
-VIEWERNET-1202
-
-Invalid characters while viewing rendered HTML in IE
-
-Bug
-
-VIEWERNET-2175
-
-STL file is rendered into blank HTML or image
-
-Bug
-
-VIEWERNET-2306
-
-Issue in rendering/converting email attachments
-
-Bug
-
-VIEWERNET-2315
-
-Getting evaluation message on second server even license is applied 
-
-Bug
-
-VIEWERNET-2319
-
-Archive file name is missing when passing file stream
-
-Bug
-
-VIEWERNET-2320
-
-GetViewInfo hangs indefinitely 
-
-Bug
-
-VIEWERNET-2321
-
-ArchiveViewInfo shows that current folder is sub-folder of itself
-
-Bug
-
-VIEWERNET-2343
-
-Document viewer size discrepancy 
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-2318 | Support retrieving an attachment file type | Feature |
+| VIEWERNET-2323 | Include folder name when rendering archive folders | Feature |
+| VIEWERNET-2324 | Recreate output files and resources instead of writing over | Improvement |
+| VIEWERNET-8 | Overlapping Characters in Safari for iOS | Bug |
+| VIEWERNET-226 | Files being created in Windows temp folder | Bug |
+| VIEWERNET-257 | Incorrect rendering of DWG file as image | Bug |
+| VIEWERNET-1202 | Invalid characters while viewing rendered HTML in IE | Bug |
+| VIEWERNET-2175 | STL file is rendered into blank HTML or image | Bug |
+| VIEWERNET-2306 | Issue in rendering/converting email attachments | Bug |
+| VIEWERNET-2315 | Getting evaluation message on second server even license is applied  | Bug |
+| VIEWERNET-2319 | Archive file name is missing when passing file stream | Bug |
+| VIEWERNET-2320 | GetViewInfo hangs indefinitely  | Bug |
+| VIEWERNET-2321 | ArchiveViewInfo shows that current folder is sub-folder of itself | Bug |
+| VIEWERNET-2343 | Document viewer size discrepancy  | Bug |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: evaluation-limitations-and-licensing-of-groupdocs-annotation
 url: annotation/net/evaluation-limitations-and-licensing-of-groupdocs-annotation
 title: Evaluation Limitations and Licensing of GroupDocs.Annotation
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

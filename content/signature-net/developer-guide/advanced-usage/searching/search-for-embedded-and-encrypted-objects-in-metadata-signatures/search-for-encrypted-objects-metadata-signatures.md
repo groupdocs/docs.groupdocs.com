@@ -3,7 +3,7 @@ id: search-for-encrypted-objects-metadata-signatures
 url: signature/net/search-for-encrypted-objects-metadata-signatures
 title: Search for encrypted objects Metadata signatures
 weight: 3
-description:  This article explains how to search for encrypted electronic signatures in the document metadata. This topic contains example of using standard encryption, serialization, class definition and search for embedded objects in the document metadata with GroupDocs.Signature.
+description: " This article explains how to search for encrypted electronic signatures in the document metadata. This topic contains example of using standard encryption, serialization, class definition and search for embedded objects in the document metadata with GroupDocs.Signature."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

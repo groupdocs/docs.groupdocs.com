@@ -3,7 +3,7 @@ id: wildcard-search
 url: search/net/wildcard-search
 title: Wildcard search
 weight: 29
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

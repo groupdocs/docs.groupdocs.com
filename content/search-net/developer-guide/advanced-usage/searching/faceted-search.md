@@ -3,7 +3,7 @@ id: faceted-search
 url: search/net/faceted-search
 title: Faceted search
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

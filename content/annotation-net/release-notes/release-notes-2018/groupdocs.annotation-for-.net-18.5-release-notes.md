@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-18-5-release-notes
 url: annotation/net/groupdocs-annotation-for-net-18-5-release-notes
 title: GroupDocs.Annotation for .NET 18.5 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -21,35 +21,12 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-684
-
-Cleanup in PDF doesn't remove watermarks
-
-Bug
-
-ANNOTATIONNET-677
-
-Highlight color is not changed in footnotes for highlight annotations in words.
-
-Bug
-
-ANNOTATIONNET-667
-
-Improve integration tests coverage
-
-Task
-
-ANNOTATIONNET-666
-
-Add a font highlight color change for text annotations in word
-
-New Feature
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-684 | Cleanup in PDF doesn't remove watermarks | Bug |
+| ANNOTATIONNET-677 | Highlight color is not changed in footnotes for highlight annotations in words. | Bug |
+| ANNOTATIONNET-667 | Improve integration tests coverage | Task |
+| ANNOTATIONNET-666 | Add a font highlight color change for text annotations in word | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-19-4-release-notes
 url: viewer/net/groupdocs-viewer-for-net-19-4-release-notes
 title: GroupDocs.Viewer for .NET 19.4 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -20,95 +20,22 @@ There are 14 features, improvements, and fixes in this regular monthly release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1940
-
-Add cdr file format support
-
-Feature
-
-VIEWERNET-1859
-
-Option for rendering content of the specified folder in the zip archive
-
-Feature
-
-VIEWERNET-1861
-
-Possibility to render files contained in zip archives as attachments
-
-Feature
-
-VIEWERNET-1846
-
-Extend support for ViewerConfig.FontDirectories setting to vector image formats
-
-Improvement
-
-VIEWERNET-1857
-
-Rending attachments from password protected zip archives
-
-Improvement
-
-VIEWERNET-23
-
-Exception: Value does not fall within the expected range
-
-Bug
-
-VIEWERNET-51
-
-Some characters are missing when rendering PDF as Html
-
-Bug
-
-VIEWERNET-203
-
-Invalid Printable HTML  for MS Project documents with several pages 
-
-Bug
-
-VIEWERNET-225
-
-Missing characters when rendering PDF document as HTML
-
-Bug
-
-VIEWERNET-1227
-
-License is not applied in Unit Test project
-
-Bug
-
-VIEWERNET-1939
-
-ArchiveDocumentInfoContainer.Folders doesn't return the list of folders
-
-Bug
-
-VIEWERNET-1977
-
- Values in the form fields are missing when rendering PDF into HTML
-
-Bug
-
-VIEWERNET-1966
-
-First page of ODT documents is not rendering
-
-Bug
-
-VIEWERNET-1975
-
-Metered related exception when License is initialized with other GroupDocs products
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1940 | Add cdr file format support | Feature |
+| VIEWERNET-1859 | Option for rendering content of the specified folder in the zip archive | Feature |
+| VIEWERNET-1861 | Possibility to render files contained in zip archives as attachments | Feature |
+| VIEWERNET-1846 | Extend support for ViewerConfig.FontDirectories setting to vector image formats | Improvement |
+| VIEWERNET-1857 | Rending attachments from password protected zip archives | Improvement |
+| VIEWERNET-23 | Exception: Value does not fall within the expected range | Bug |
+| VIEWERNET-51 | Some characters are missing when rendering PDF as Html | Bug |
+| VIEWERNET-203 | Invalid Printable HTML  for MS Project documents with several pages  | Bug |
+| VIEWERNET-225 | Missing characters when rendering PDF document as HTML | Bug |
+| VIEWERNET-1227 | License is not applied in Unit Test project | Bug |
+| VIEWERNET-1939 | ArchiveDocumentInfoContainer.Folders doesn't return the list of folders | Bug |
+| VIEWERNET-1977 |  Values in the form fields are missing when rendering PDF into HTML | Bug |
+| VIEWERNET-1966 | First page of ODT documents is not rendering | Bug |
+| VIEWERNET-1975 | Metered related exception when License is initialized with other GroupDocs products | Bug |
 
 # Public API and Backward Incompatible Changes
 

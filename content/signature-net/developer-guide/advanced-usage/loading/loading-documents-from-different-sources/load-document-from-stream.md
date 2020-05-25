@@ -3,7 +3,7 @@ id: load-document-from-stream
 url: signature/net/load-document-from-stream
 title: Load document from Stream
 weight: 5
-description: This section explains how to load document from stream with GroupDocs.Signature API.
+description: "This section explains how to load document from stream with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

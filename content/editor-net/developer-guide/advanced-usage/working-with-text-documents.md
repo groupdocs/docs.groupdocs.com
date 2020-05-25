@@ -3,7 +3,7 @@ id: working-with-text-documents
 url: editor/net/working-with-text-documents
 title: Working with text documents
 weight: 5
-description: This guide demonstrates how to edit plain text files with encoding, lists recognition, pagination and other powerful features of GroupDocs.Editor for .NET
+description: "This guide demonstrates how to edit plain text files with encoding, lists recognition, pagination and other powerful features of GroupDocs.Editor for .NET"
 keywords: Edit TXT file, Edit plain text, Edit TXT programmatically
 productName: GroupDocs.Editor for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: working-with-dicom-metadata
 url: metadata/net/working-with-dicom-metadata
 title: Working with DICOM metadata
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

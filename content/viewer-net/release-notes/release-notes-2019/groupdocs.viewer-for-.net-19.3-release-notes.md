@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-19-3-release-notes
 url: viewer/net/groupdocs-viewer-for-net-19-3-release-notes
 title: GroupDocs.Viewer for .NET 19.3 Release Notes
 weight: 10
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -20,71 +20,18 @@ There are 10 features, improvements, and fixes in this regular monthly release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1895
-
-Add Visual Basic (.vb) file format support
-
-Feature
-
-VIEWERNET-1894
-
-Add C# (.cs) file format support
-
-Feature
-
-VIEWERNET-1860
-
-Obtaining list of folders contained in the zip archive
-
-Feature
-
-VIEWERNET-1913
-
-Detect restriction for the printing
-
-Feature
-
-VIEWERNET-1905
-
-Print PDF documents which have restriction for printing
-
-Feature
-
-VIEWERNET-1909
-
-Specify owner password, user password and permissions when rendering into PDF
-
-Feature
-
-VIEWERNET-1858
-
-Show contact image when rendering vCard documents
-
-Improvement
-
-VIEWERNET-1856
-
-Improve output for rendering zip archives
-
-Improvement
-
-VIEWERNET-1911
-
-Out of memory exception
-
-Bug
-
-VIEWERNET-1910
-
-Document corrupted exception
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1895 | Add Visual Basic (.vb) file format support | Feature |
+| VIEWERNET-1894 | Add C# (.cs) file format support | Feature |
+| VIEWERNET-1860 | Obtaining list of folders contained in the zip archive | Feature |
+| VIEWERNET-1913 | Detect restriction for the printing | Feature |
+| VIEWERNET-1905 | Print PDF documents which have restriction for printing | Feature |
+| VIEWERNET-1909 | Specify owner password, user password and permissions when rendering into PDF | Feature |
+| VIEWERNET-1858 | Show contact image when rendering vCard documents | Improvement |
+| VIEWERNET-1856 | Improve output for rendering zip archives | Improvement |
+| VIEWERNET-1911 | Out of memory exception | Bug |
+| VIEWERNET-1910 | Document corrupted exception | Bug |
 
 {{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Viewer for .NET 19.3. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Viewer which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 

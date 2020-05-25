@@ -3,7 +3,7 @@ id: adding-class-name-to-input-controls
 url: editor/net/adding-class-name-to-input-controls
 title: Adding class name to input controls
 weight: 1
-description: Follow this guide and learn how to edit Word documents that contain input controls like buttons, textboxes, check-boxes, combo-boxes, input fields, dropdown lists, radio-buttons, date/time pickers etc. using GroupDocs.Editor for .NET API features.
+description: "Follow this guide and learn how to edit Word documents that contain input controls like buttons, textboxes, check-boxes, combo-boxes, input fields, dropdown lists, radio-buttons, date/time pickers etc. using GroupDocs.Editor for .NET API features."
 keywords: Edit Word document with input controls, Edit DOCX with input fields and text boxes
 productName: GroupDocs.Editor for .NET
 hideChildren: False

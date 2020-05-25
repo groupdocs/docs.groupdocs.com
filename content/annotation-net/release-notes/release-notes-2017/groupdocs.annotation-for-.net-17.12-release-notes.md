@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-17-12-release-notes
 url: annotation/net/groupdocs-annotation-for-net-17-12-release-notes
 title: GroupDocs.Annotation for .NET 17.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -22,101 +22,23 @@ Below the list of  new features improvements and fixes in this release of Grou
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-563
-
-Implement import of distance annotation for Words
-
-New Feature
-
-ANNOTATIONNET-560
-
-Merge similar annotations when importing from a MSWord document
-
-Improvement
-
-ANNOTATIONNET-559
-
-Improve import of text annotations for words
-
-Improvement
-
-ANNOTATIONNET-548
-
-Merge similar annotations when importing from a MSWord document
-
-Improvement
-
-ANNOTATIONNET-546
-
-Improve replacement annotation for text in different paragraphs
-
-Improvement
-
-ANNOTATIONNET-545
-
-Bug with import and export distance annotations in pdf
-
-Bug
-
-ANNOTATIONNET-544
-
-Bug with import text annotations from pdf
-
-Bug
-
-ANNOTATIONNET-543
-
-Bug with import arrow annotation from pdf
-
-Bug
-
-ANNOTATIONNET-538
-
-AnnotationImageHandler.getPages does not respect ImageOptions.setWidth
-
-Bug
-
-ANNOTATIONNET-561
-
-Errors in import of diagrams: Wrong text in TextField annotation.
-
-Bug
-
-ANNOTATIONNET-556
-
-Fix import of arrow annotation in MSWord
-
-Bug
-
-ANNOTATIONNET-551
-
-Wrong polyline structure after export in diagram
-
-Bug
-
-ANNOTATIONNET-550
-
-Errors in import of diagrams: Wrong text in TextField annotation.
-
-Bug
-
-ANNOTATIONNET-549
-
-Wrong distance structure after export in diagram
-
-Bug
-
-ANNOTATIONNET-547
-
-Wrong coordinates of annotations after exporting images
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-563 | Implement import of distance annotation for Words | New Feature |
+| ANNOTATIONNET-560 | Merge similar annotations when importing from a MSWord document | Improvement |
+| ANNOTATIONNET-559 | Improve import of text annotations for words | Improvement |
+| ANNOTATIONNET-548 | Merge similar annotations when importing from a MSWord document | Improvement |
+| ANNOTATIONNET-546 | Improve replacement annotation for text in different paragraphs | Improvement |
+| ANNOTATIONNET-545 | Bug with import and export distance annotations in pdf | Bug |
+| ANNOTATIONNET-544 | Bug with import text annotations from pdf | Bug |
+| ANNOTATIONNET-543 | Bug with import arrow annotation from pdf | Bug |
+| ANNOTATIONNET-538 | AnnotationImageHandler.getPages does not respect ImageOptions.setWidth | Bug |
+| ANNOTATIONNET-561 | Errors in import of diagrams: Wrong text in TextField annotation. | Bug |
+| ANNOTATIONNET-556 | Fix import of arrow annotation in MSWord | Bug |
+| ANNOTATIONNET-551 | Wrong polyline structure after export in diagram | Bug |
+| ANNOTATIONNET-550 | Errors in import of diagrams: Wrong text in TextField annotation. | Bug |
+| ANNOTATIONNET-549 | Wrong distance structure after export in diagram | Bug |
+| ANNOTATIONNET-547 | Wrong coordinates of annotations after exporting images | Bug |
 
 # Public API and Backward Incompatible Changes
 

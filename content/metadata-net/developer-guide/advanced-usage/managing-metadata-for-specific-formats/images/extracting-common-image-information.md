@@ -3,7 +3,7 @@ id: extracting-common-image-information
 url: metadata/net/extracting-common-image-information
 title: Extracting Common Image Information
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

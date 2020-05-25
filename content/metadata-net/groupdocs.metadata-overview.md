@@ -3,7 +3,7 @@ id: groupdocs-metadata-overview
 url: metadata/net/groupdocs-metadata-overview
 title: GroupDocs.Metadata Overview
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

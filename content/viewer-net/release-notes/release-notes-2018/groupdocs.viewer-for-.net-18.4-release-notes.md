@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-18-4-release-notes
 url: viewer/net/groupdocs-viewer-for-net-18-4-release-notes
 title: GroupDocs.Viewer for .NET 18.4 Release Notes
 weight: 11
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -25,119 +25,26 @@ There are 18 new features, improvements, and fixes in this regular monthly relea
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1552
-
-Feature for AutoFitting column width depending on content for rendering into HTML
-
-New Feature
-
-VIEWERNET-1544
-
-Implement simple file storage interface
-
-New Feature
-
-VIEWERNET-1518
-
-Settings to include/exclude hidden content in Excel documents
-
-New Feature
-
-VIEWERNET-1517
-
-Rendering only Print Area in Excel documents
-
-New Feature
-
-VIEWERNET-1478
-
-Add POTX file format support
-
-New Feature
-
-VIEWERNET-1476
-
-Add PPTM file format support
-
-New Feature
-
-VIEWERNET-526
-
-Add EPS (Encapsulated PostScript) file format support
-
-New Feature
-
-VIEWERNET-1537
-
-Add prefix for CSS classes when rendering Email messages
-
-Improvement
-
-VIEWERNET-1501
-
-Minify CSS content when rendering into HTML with EnableMinification is true
-
-Improvement
-
-VIEWERNET-1481
-
-Improve rendering comments from Presentation documents
-
-Improvement
-
-VIEWERNET-1428
-
-Support JpegQuality option when rendering Microsoft Project documents
-
-Improvement
-
-VIEWERNET-1549
-
-Extend support for DefaultFontName setting to PDF documents when rendering into HTML
-
-Improvement
-
-VIEWERNET-512
-
-Responsive HTML output required in the case of HTML representation
-
-Improvement
-
-VIEWERNET-1526
-
-Invalid PDF when rendering Excel document with multiple pages per sheet
-
-Bug
-
-VIEWERNET-1511
-
-DefaultFontName setting is not working for rendering Text documents into PDF and image
-
-Bug
-
-VIEWERNET-1494
-
-Incorrect rendering of the content in header and footer of Word document
-
-Bug
-
-WEB-2106
-
-Local links are ignored when rendering PDF to HTML
-
-Bug
-
-WEB-1153
-
-Discrepancy when rendering as JPEG and HTML
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1552 | Feature for AutoFitting column width depending on content for rendering into HTML | New Feature |
+| VIEWERNET-1544 | Implement simple file storage interface | New Feature |
+| VIEWERNET-1518 | Settings to include/exclude hidden content in Excel documents | New Feature |
+| VIEWERNET-1517 | Rendering only Print Area in Excel documents | New Feature |
+| VIEWERNET-1478 | Add POTX file format support | New Feature |
+| VIEWERNET-1476 | Add PPTM file format support | New Feature |
+| VIEWERNET-526 | Add EPS (Encapsulated PostScript) file format support | New Feature |
+| VIEWERNET-1537 | Add prefix for CSS classes when rendering Email messages | Improvement |
+| VIEWERNET-1501 | Minify CSS content when rendering into HTML with EnableMinification is true | Improvement |
+| VIEWERNET-1481 | Improve rendering comments from Presentation documents | Improvement |
+| VIEWERNET-1428 | Support JpegQuality option when rendering Microsoft Project documents | Improvement |
+| VIEWERNET-1549 | Extend support for DefaultFontName setting to PDF documents when rendering into HTML | Improvement |
+| VIEWERNET-512 | Responsive HTML output required in the case of HTML representation | Improvement |
+| VIEWERNET-1526 | Invalid PDF when rendering Excel document with multiple pages per sheet | Bug |
+| VIEWERNET-1511 | DefaultFontName setting is not working for rendering Text documents into PDF and image | Bug |
+| VIEWERNET-1494 | Incorrect rendering of the content in header and footer of Word document | Bug |
+| WEB-2106 | Local links are ignored when rendering PDF to HTML | Bug |
+| WEB-1153 | Discrepancy when rendering as JPEG and HTML | Bug |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-17-7-0-release-notes
 url: conversion/net/groupdocs-conversion-for-net-17-7-0-release-notes
 title: GroupDocs.Conversion for .NET 17.7.0 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -23,35 +23,12 @@ There are 4 new features, improvements and fixes in this regular monthly release
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-1968
-
-Update DocumentInfo class to return all layouts for CAD document types
-
-New Feature
-
-CONVERSIONNET-1969
-
-Implement possibility to convert specific layouts when converting from CAD document
-
-New Feature
-
-CONVERSIONNET-1970
-
-Convert Pdf documents without annotations
-
-New Feature
-
-CONVERSIONNET-1962
-
-Implement possibility to set Width and Height when converting from CAD document
-
-Improvement
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-1968 | Update DocumentInfo class to return all layouts for CAD document types | New Feature |
+| CONVERSIONNET-1969 | Implement possibility to convert specific layouts when converting from CAD document | New Feature |
+| CONVERSIONNET-1970 | Convert Pdf documents without annotations | New Feature |
+| CONVERSIONNET-1962 | Implement possibility to set Width and Height when converting from CAD document | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

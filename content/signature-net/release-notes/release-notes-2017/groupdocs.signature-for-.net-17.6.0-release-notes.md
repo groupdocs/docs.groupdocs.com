@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-17-6-0-release-notes
 url: signature/net/groupdocs-signature-for-net-17-6-0-release-notes
 title: GroupDocs.Signature for .NET 17.6.0 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -27,132 +27,28 @@ There are more than 20 improvements, new features and fixes in this regular rele
 ## Full List of Issues Covering all Changes in this Release
 
   
-
-SIGNATURENET-2906
-
-Implement QRCode Signature Verification for Words Documents
-
-New Feature
-
-SIGNATURENET-2905
-
-Implement QRCode Signature Verification for Cells Documents
-
-New Feature
-
-SIGNATURENET-2904
-
-Implement QRCode Signature Verification for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2903
-
-Implement QRCode Signature Verification for Slides Documents
-
-New Feature
-
-SIGNATURENET-2896
-
-Implement Barcode Signature Verification for Words Documents
-
-New Feature
-
-SIGNATURENET-2893
-
-Implement Barcode Signature Verification for Slides Documents
-
-New Feature
-
-SIGNATURENET-2890
-
-Implement Barcode Signature Verification for Cells Documents
-
-New Feature
-
-SIGNATURENET-2887
-
-Implement Barcode Signature Verification for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2872
-
-Implement QR-code Signature features for Slides Documents
-
-New Feature
-
-SIGNATURENET-2869
-
-Implement QR-code Signature features for Words Documents
-
-New Feature
-
-SIGNATURENET-2866
-
-Implement QR-code Signature features for Cells Documents
-
-New Feature
-
-SIGNATURENET-2863
-
-Implement QR-code Signature features for PDF Documents
-
-New Feature
-
-SIGNATURENET-2857
-
-Implement Barcode Signature features for Slides Documents
-
-New Feature
-
-SIGNATURENET-2854
-
-Implement Barcode Signature features for Words Documents
-
-New Feature
-
-SIGNATURENET-2851
-
-Implement Barcode Signature features for Cells Documents
-
-New Feature
-
-SIGNATURENET-2848
-
-Implement Barcode Signature features for PDF Documents
-
-New Feature
-
-SIGNATURENET-2267
-
-Digital Signature for Open Document [files format![](http://cdncache-a.akamaihd.net/items/it/img/arrow-10x10.png)](#32619053 "Click to Continue > by Advertise") support
-
-New Feature
-
-SIGNATURENET-2879
-
-Improve validation messages with detailed information
-
-Improvement
-
-SIGNATURENET-2826
-
-Implement positioning subsystem for watermarks signatures
-
-Improvement
-
-SIGNATURENET-2539
-
-Error occurred when passing Digital PFX Certificate file rendered by DSA Algorithm
-
-Bug
-
-Key
-
-Summary
-
-Issue Type
+| SIGNATURENET-2906 | Implement QRCode Signature Verification for Words Documents | New Feature |
+| SIGNATURENET-2905 | Implement QRCode Signature Verification for Cells Documents | New Feature |
+| SIGNATURENET-2904 | Implement QRCode Signature Verification for Pdf Documents | New Feature |
+| SIGNATURENET-2903 | Implement QRCode Signature Verification for Slides Documents | New Feature |
+| SIGNATURENET-2896 | Implement Barcode Signature Verification for Words Documents | New Feature |
+| SIGNATURENET-2893 | Implement Barcode Signature Verification for Slides Documents | New Feature |
+| SIGNATURENET-2890 | Implement Barcode Signature Verification for Cells Documents | New Feature |
+| SIGNATURENET-2887 | Implement Barcode Signature Verification for Pdf Documents | New Feature |
+| SIGNATURENET-2872 | Implement QR-code Signature features for Slides Documents | New Feature |
+| SIGNATURENET-2869 | Implement QR-code Signature features for Words Documents | New Feature |
+| SIGNATURENET-2866 | Implement QR-code Signature features for Cells Documents | New Feature |
+| SIGNATURENET-2863 | Implement QR-code Signature features for PDF Documents | New Feature |
+| SIGNATURENET-2857 | Implement Barcode Signature features for Slides Documents | New Feature |
+| SIGNATURENET-2854 | Implement Barcode Signature features for Words Documents | New Feature |
+| SIGNATURENET-2851 | Implement Barcode Signature features for Cells Documents | New Feature |
+| SIGNATURENET-2848 | Implement Barcode Signature features for PDF Documents | New Feature |
+| SIGNATURENET-2267 | Digital Signature for Open Document [files format![](http://cdncache-a.akamaihd.net/items/it/img/arrow-10x10.png)](#32619053 "Click to Continue > by Advertise") support | New Feature |
+| SIGNATURENET-2879 | Improve validation messages with detailed information | Improvement |
+| SIGNATURENET-2826 | Implement positioning subsystem for watermarks signatures | Improvement |
+| SIGNATURENET-2539 | Error occurred when passing Digital PFX Certificate file rendered by DSA Algorithm | Bug |
+| Key | Summary | Issue Type |
+| --- | --- | --- |
 
 ## Public API and Backward Incompatible Changes
 

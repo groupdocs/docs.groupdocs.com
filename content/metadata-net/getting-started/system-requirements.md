@@ -3,7 +3,7 @@ id: system-requirements
 url: metadata/net/system-requirements
 title: System Requirements
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

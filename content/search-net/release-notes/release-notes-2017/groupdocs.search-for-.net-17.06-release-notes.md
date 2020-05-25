@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-17-06-release-notes
 url: search/net/groupdocs-search-for-net-17-06-release-notes
 title: GroupDocs.Search for .NET 17.06 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -21,35 +21,7 @@ There are 4 features and enhancements in this regular monthly release. The most 
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-1045
-
-Implement optimization of the spelling corrector
-
-Enhancement
-
-SEARCHNET-1047
-
-Implement optimization of searching
-
-Enhancement
-
-SEARCHNET-968
-
-Integrate Dynabic.Metered to GroupDocs.Search
-
-New Feature
-
-SEARCHNET-1019
-
-Implement dictionary of letters
-
-New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd">Key</td><td class="confluenceTd">Summary</td><td class="confluenceTd">Category</td></tr><tr><td class="confluenceTd">SEARCHNET-1045</td><td class="confluenceTd">Implement optimization of the spelling corrector</td><td class="confluenceTd">Enhancement</td></tr><tr><td class="confluenceTd">SEARCHNET-1047</td><td class="confluenceTd">Implement optimization of searching</td><td class="confluenceTd">Enhancement</td></tr><tr><td class="confluenceTd">SEARCHNET-968</td><td class="confluenceTd">Integrate Dynabic.Metered to GroupDocs.Search</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SEARCHNET-1019</td><td class="confluenceTd">Implement dictionary of letters</td><td class="confluenceTd">New Feature</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

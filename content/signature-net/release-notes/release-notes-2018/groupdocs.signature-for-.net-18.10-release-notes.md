@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-18-10-release-notes
 url: signature/net/groupdocs-signature-for-net-18-10-release-notes
 title: GroupDocs.Signature for .NET 18.10 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -24,71 +24,7 @@ There are about 10 improvements, new features and fixes in this regular release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-1694
-
-Implement support of built-in metadata search for Words Documents
-
-New Feature
-
-SIGNATURENET-1690
-
-Implement support of built-in metadata search for Cells Documents
-
-New Feature
-
-SIGNATURENET-1685
-
-Implement Metadata Signatures Search for Cells Documents
-
-New Feature
-
-SIGNATURENET-1681
-
-Implement Metadata Signatures Search for Words Documents
-
-New Feature
-
-SIGNATURENET-1677
-
- Implement Metadata Signature features for Cells Documents
-
-New Feature
-
-SIGNATURENET-1672
-
- Implement Metadata Signature features for Words Documents
-
-New Feature
-
-SIGNATURENET-1582
-
- Implement additional verification criteria for Digital Signatures of Words Documents
-
-New Feature
-
-SIGNATURENET-1701
-
-Implement support of password protected Open-Documents-Spreadsheet ODS file formats
-
-Improvement
-
-SIGNATURENET-1695
-
-Implement Search results conversion to typed list of signatures
-
-Improvement
-
-SIGNATURENET-1467
-
- Implement global Exception handler to catch all not handled exceptions
-
-Improvement
+<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1694</td><td colspan="1" class="confluenceTd">Implement support of built-in metadata search for Words Documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1690</td><td colspan="1" class="confluenceTd">Implement support of built-in metadata search for Cells Documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1685</td><td colspan="1" class="confluenceTd">Implement Metadata Signatures Search for Cells Documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1681</td><td colspan="1" class="confluenceTd">Implement Metadata Signatures Search for Words Documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-1677</td><td class="confluenceTd">&nbsp;Implement Metadata Signature features for Cells Documents</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-1672</td><td class="confluenceTd">&nbsp;Implement Metadata Signature features for Words Documents</td><td class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1582</td><td colspan="1" class="confluenceTd">&nbsp;Implement additional verification criteria for Digital Signatures of Words Documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1701</td><td colspan="1" class="confluenceTd">Implement support of password protected Open-Documents-Spreadsheet ODS file formats</td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1695</td><td colspan="1" class="confluenceTd">Implement Search results conversion to typed list of signatures</td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1467</td><td colspan="1" class="confluenceTd">&nbsp;Implement global Exception handler to catch all not handled exceptions</td><td colspan="1" class="confluenceTd">Improvement</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 
@@ -138,41 +74,13 @@ Improvement
     
     **Cells Metadata Signature methods**
     
-    Method name
-    
-    Return type
-    
-    Description / Remarks
-    
-    ToBoolean()
-    
-    boolean
-    
-    Returns the Metadata signature value as Boolean. Throws an exception if the Metadata value could not be converted. If value is integer type all non zero values will be interpreted as True. 
-    
-    ToInteger()
-    
-    integer
-    
-    Returns the Metadata Signature value as integer. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. Double value will be truncated. String value will be tries to parse into integer.
-    
-    ToDouble()
-    
-    double
-    
-    Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as double. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. String value will be tries to parse into double based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
-    
-    ToDateTime()
-    
-    DateTime
-    
-    Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as DateTime. Throws an exception if the Metadata value could not be converted. String value will be tries to parse into Datetime based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
-    
-    ToString()
-    
-    string
-    
-    Overload method with ability to specify IDataFormatProvider to data type convertions. Returns the Metadata Signature value as string representation based on passed format and IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
+    | Method name | Return type | Description / Remarks |
+    | --- | --- | --- |
+    | ToBoolean() | boolean | Returns the Metadata signature value as Boolean. Throws an exception if the Metadata value could not be converted. If value is integer type all non zero values will be interpreted as True.  |
+    | ToInteger() | integer | Returns the Metadata Signature value as integer. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. Double value will be truncated. String value will be tries to parse into integer. |
+    | ToDouble() | double | Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as double. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. String value will be tries to parse into double based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
+    | ToDateTime() | DateTime | Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as DateTime. Throws an exception if the Metadata value could not be converted. String value will be tries to parse into Datetime based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
+    | ToString() | string | Overload method with ability to specify IDataFormatProvider to data type convertions. Returns the Metadata Signature value as string representation based on passed format and IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
     
 2.  New public class **CellsMetadataSignOptions **was added to provide options to support Cells Metadata signature features for Cells Documents. This class derives base **MetadataSignOptions**.
     
@@ -278,41 +186,13 @@ Improvement
     
     **Words Metadata Signature methods**
     
-    Method name
-    
-    Return type
-    
-    Description / Remarks
-    
-    ToBoolean()
-    
-    boolean
-    
-    Returns the Metadata signature value as Boolean. Throws an exception if the Metadata value could not be converted. If value is integer type all non zero values will be interpreted as True. 
-    
-    ToInteger()
-    
-    integer
-    
-    Returns the Metadata Signature value as integer. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. Double value will be truncated. String value will be tries to parse into integer.
-    
-    ToDouble()
-    
-    double
-    
-    Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as double. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. String value will be tries to parse into double based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
-    
-    ToDateTime()
-    
-    DateTime
-    
-    Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as DateTime. Throws an exception if the Metadata value could not be converted. String value will be tries to parse into Datetime based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
-    
-    ToString()
-    
-    string
-    
-    Overload method with ability to specify IDataFormatProvider to data type convertions. Returns the Metadata Signature value as string representation based on passed format and IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
+    | Method name | Return type | Description / Remarks |
+    | --- | --- | --- |
+    | ToBoolean() | boolean | Returns the Metadata signature value as Boolean. Throws an exception if the Metadata value could not be converted. If value is integer type all non zero values will be interpreted as True.  |
+    | ToInteger() | integer | Returns the Metadata Signature value as integer. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. Double value will be truncated. String value will be tries to parse into integer. |
+    | ToDouble() | double | Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as double. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. String value will be tries to parse into double based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
+    | ToDateTime() | DateTime | Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as DateTime. Throws an exception if the Metadata value could not be converted. String value will be tries to parse into Datetime based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
+    | ToString() | string | Overload method with ability to specify IDataFormatProvider to data type convertions. Returns the Metadata Signature value as string representation based on passed format and IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
     
 4.  New public class **WordsMetadataSignOptions **was added to provide options to support Words Metadata signature features for Words Documents. This class derives base **MetadataSignOptions**.
     

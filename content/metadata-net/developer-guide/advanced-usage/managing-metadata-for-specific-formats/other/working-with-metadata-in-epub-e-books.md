@@ -3,7 +3,7 @@ id: working-with-metadata-in-epub-e-books
 url: metadata/net/working-with-metadata-in-epub-e-books
 title: Working with metadata in EPUB E-Books
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

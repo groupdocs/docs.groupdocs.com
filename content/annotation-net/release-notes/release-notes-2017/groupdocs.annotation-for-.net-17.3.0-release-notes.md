@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-17-3-0-release-notes
 url: annotation/net/groupdocs-annotation-for-net-17-3-0-release-notes
 title: GroupDocs.Annotation for .NET 17.3.0 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -24,41 +24,13 @@ Implemented annotations annotating documents of following types:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-368
-
-Implement distance annotation for images
-
-New Feature
-
-ANNOTATIONNET-367
-
-Implement annotating EMF/WMF document
-
-New Feature
-
-ANNOTATIONNET-365
-
-Export to MS-Word exporting the repeated reply comments
-
-Bug
-
-ANNOTATIONNET-363
-
-Implement CAD documents annotating
-
-New Feature
-
-ANNOTATIONNET-361
-
-Implement adding Arrow annotation to Image documents
-
-New Feature
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-368 | Implement distance annotation for images | New Feature |
+| ANNOTATIONNET-367 | Implement annotating EMF/WMF document | New Feature |
+| ANNOTATIONNET-365 | Export to MS-Word exporting the repeated reply comments | Bug |
+| ANNOTATIONNET-363 | Implement CAD documents annotating | New Feature |
+| ANNOTATIONNET-361 | Implement adding Arrow annotation to Image documents | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

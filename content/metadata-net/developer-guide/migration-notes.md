@@ -3,7 +3,7 @@ id: migration-notes
 url: metadata/net/migration-notes
 title: Migration Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

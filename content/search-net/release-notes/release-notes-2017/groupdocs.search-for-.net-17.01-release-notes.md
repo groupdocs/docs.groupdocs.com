@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-17-01-release-notes
 url: search/net/groupdocs-search-for-net-17-01-release-notes
 title: GroupDocs.Search for .NET 17.01 Release Notes
 weight: 12
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -21,35 +21,7 @@ There are 4 features in this regular monthly release. The most notable are:
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-445
-
-Implement correcting words in search query before searching
-
-New Feature
-
-SEARCHNET-703
-
-Implement Alias Dictionary functionality
-
-New Feature
-
-SEARCHNET-704
-
-Implement Homophone Dictionary functionality
-
-New Feature
-
-SEARCHNET-177
-
-Implement Merge Indexes functionality
-
-New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>Key</p></td><td class="confluenceTd"><p>Summary</p></td><td class="confluenceTd"><p>Category</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-445</p></td><td class="confluenceTd"><p>Implement correcting words in search query before searching</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-703</p></td><td class="confluenceTd"><p>Implement Alias Dictionary functionality</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-704</p></td><td class="confluenceTd"><p>Implement Homophone Dictionary functionality</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-177</p></td><td class="confluenceTd"><p>Implement Merge Indexes functionality</p></td><td class="confluenceTd"><p>New Feature</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-16-12-release-notes
 url: metadata/net/groupdocs-metadata-for-net-16-12-release-notes
 title: GroupDocs.Metadata for .NET 16.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -24,53 +24,7 @@ There are 5 features and 2 enhancements in this regular monthly release. The mos
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATANET-1333
-
-Ability to read all available keys of the specific metadata
-
- Enhancement
-
-METADATANET-1335
-
-Ability to enumerate any type of metadata
-
-Enhancement
-
-METADATANET-961
-
-Ability to read and write metadata of Open Document Format (ODF)
-
- New Feature
-
-METADATANET-964
-
-Implement DjVu format
-
-New Feature
-
-METADATANET-1271
-
-Implement BMP image format
-
-New Feature
-
-METADATANET-1323
-
-Implement ability to read header of BMP image
-
-New Feature
-
-METADATANET-1340
-
-Ability to read metadata property by defined key for any supported format
-
-New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1333</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read all available keys of the specific metadata</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1335</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to enumerate any type of metadata</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-961</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read and write metadata of Open Document Format (ODF)</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-964</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Implement DjVu format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1271</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Implement BMP image format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1323</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Implement ability to read header of BMP image</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1340</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read metadata property by defined key for any supported format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">&nbsp;</span><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

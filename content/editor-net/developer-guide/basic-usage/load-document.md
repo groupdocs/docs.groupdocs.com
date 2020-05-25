@@ -3,7 +3,7 @@ id: load-document
 url: editor/net/load-document
 title: Load document
 weight: 2
-description: Following this guide you will learn how to load document from local disk or file stream for editing with GroupDocs.Editor for .NET API.
+description: "Following this guide you will learn how to load document from local disk or file stream for editing with GroupDocs.Editor for .NET API."
 keywords: Load document with GroupDocs.Editor, Load and edit document, edit document, edit spreadsheet, edit presentation
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -41,29 +41,11 @@ Editor editor = new Editor(delegate { return inputStream; }, delegate { return s
 
 Please note that not all document formats have appropriate classes, that represent load options. As for version 19.10, only WordProcessing, Spreadsheet and Presentation family formats have load options. For other document types, such as DSV, TXT or XML, there are no load options.
 
-Format family
-
-Example formats
-
-Load options class
-
-WordProcessing
-
-DOC, DOCX, DOCM, DOT, ODT
-
-`WordProcessingLoadOptions`
-
-Spreadsheet
-
-XLS, XLSX, XLSM, XLSB
-
-`SpreadsheetLoadOptions`
-
-Presentation
-
-PPT, PPTX, PPS, POT
-
-`PresentationLoadOptions`
+| Format family | Example formats | Load options class |
+| --- | --- | --- |
+| WordProcessing | DOC, DOCX, DOCM, DOT, ODT | `WordProcessingLoadOptions` |
+| Spreadsheet | XLS, XLSX, XLSM, XLSB | `SpreadsheetLoadOptions` |
+| Presentation | PPT, PPTX, PPS, POT | `PresentationLoadOptions` |
 
 Using load options is the only way for working with password-protected input documents. Any document can be loaded into the `Editor` instance, even encoded document without the password. However, on the next step — opening for editing, — the exception will be thrown. GroupDocs.Editor handles passwords and encoded documents in the next way:
 

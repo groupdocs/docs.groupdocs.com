@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-18-8-release-notes
 url: search/net/groupdocs-search-for-net-18-8-release-notes
 title: GroupDocs.Search for .NET 18.8 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -18,17 +18,7 @@ There is 1 enhancement in this regular monthly release.
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-1622
-
-Implement breaking functionality for IndexRepository class
-
-Enhancement
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>Key</p></td><td class="confluenceTd"><p>Summary</p></td><td class="confluenceTd"><p>Category</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-1622</p></td><td class="confluenceTd"><p>Implement breaking functionality for IndexRepository class</p></td><td class="confluenceTd"><p>Enhancement</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

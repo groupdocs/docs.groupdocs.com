@@ -3,7 +3,7 @@ id: groupdocs-comparsion-for-net-17-4-0-release-notes
 url: comparison/net/groupdocs-comparsion-for-net-17-4-0-release-notes
 title: GroupDocs.Comparsion for .NET 17.4.0 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -23,71 +23,18 @@ There are 3 new features and 3 improvements and 4 fix in this regular monthly re
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-COMPARISONNET-1143
-
-Add support of multi compare for formats to GroupDocs.Comparison public API
-
-New Feature
-
-COMPARISONNET-1172
-
-Add UpdateChanges Model for Imaging
-
-New Feature
-
-COMPARISONNET-1175
-
-Add supporting of comparison CAD
-
-New Feature
-
-COMPARISONNET-1188
-
-Improve comparison of Imaging formats
-
-Improvement
-
-COMPARISONNET-1182
-
-Cross-format API simplifications across all supported formats
-
-Improvement
-
-COMPARISONNET-1080
-
-Comparison.PDF: Improve comparison changes detection for Paragraphs
-
-Improvement
-
-COMPARISONNET-1184
-
-GroupDocs.Comparison.Words: Text files with html content compared by Words engine
-
-Bug
-
-COMPARISONNET-1185
-
-GroupDocs.Comparison.Text: Fix compare html code in .txt files using word comparer
-
-Bug
-
-COMPARISONNET-1200
-
-GroupDocs.Comparison.PDF: Fix bug when the text from the paragraphs overlaps tables
-
-Bug
-
-COMPARISONNET-1208
-
-Disposed Images in Facade
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| COMPARISONNET-1143 | Add support of multi compare for formats to GroupDocs.Comparison public API | New Feature |
+| COMPARISONNET-1172 | Add UpdateChanges Model for Imaging | New Feature |
+| COMPARISONNET-1175 | Add supporting of comparison CAD | New Feature |
+| COMPARISONNET-1188 | Improve comparison of Imaging formats | Improvement |
+| COMPARISONNET-1182 | Cross-format API simplifications across all supported formats | Improvement |
+| COMPARISONNET-1080 | Comparison.PDF: Improve comparison changes detection for Paragraphs | Improvement |
+| COMPARISONNET-1184 | GroupDocs.Comparison.Words: Text files with html content compared by Words engine | Bug |
+| COMPARISONNET-1185 | GroupDocs.Comparison.Text: Fix compare html code in .txt files using word comparer | Bug |
+| COMPARISONNET-1200 | GroupDocs.Comparison.PDF: Fix bug when the text from the paragraphs overlaps tables | Bug |
+| COMPARISONNET-1208 | Disposed Images in Facade | Bug |
 
 ## Public API and Backward Incompatible Changes
 

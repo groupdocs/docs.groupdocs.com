@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-17-7-0-release-notes
 url: signature/net/groupdocs-signature-for-net-17-7-0-release-notes
 title: GroupDocs.Signature for .NET 17.7.0 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -26,84 +26,20 @@ There are about 15 improvements, new features and fixes in this regular release.
 ## Full List of Issues Covering all Changes in this Release
 
   
-
-SIGNATURENET-2937
-
-Implement Stamp Signature features for Slides Documents
-
-New Feature
-
-SIGNATURENET-2934
-
-Implement Stamp Signature features for Words Documents
-
-New Feature
-
-SIGNATURENET-2931
-
-Implement Stamp Signature features for Cells Documents
-
-New Feature
-
-SIGNATURENET-2928
-
-Implement Stamp Signature features for PDF Documents
-
-New Feature
-
-SIGNATURENET-2924
-
-Implement Verification of new Barcode encode types
-
-New Feature
-
-SIGNATURENET-2923
-
-Implement Verification of new QR-Code encode types
-
-New Feature
-
-SIGNATURENET-2921
-
-Implement new QR-Code encode types
-
-New Feature
-
-SIGNATURENET-2920
-
-Implement new Barcode encode types
-
-New Feature
-
-SIGNATURENET-2946
-
-Improve Barcode Verification options
-
-Improvement
-
-SIGNATURENET-2945
-
-Update Document Information method with extended guid properties
-
-Improvement
-
-SIGNATURENET-2922
-
-Improve QR-Code options validation
-
-Improvement
-
-SIGNATURENET-2901
-
-Improve Barcode options validation
-
-Improvement
-
-Key
-
-Summary
-
-Issue Type
+| SIGNATURENET-2937 | Implement Stamp Signature features for Slides Documents | New Feature |
+| SIGNATURENET-2934 | Implement Stamp Signature features for Words Documents | New Feature |
+| SIGNATURENET-2931 | Implement Stamp Signature features for Cells Documents | New Feature |
+| SIGNATURENET-2928 | Implement Stamp Signature features for PDF Documents | New Feature |
+| SIGNATURENET-2924 | Implement Verification of new Barcode encode types | New Feature |
+| SIGNATURENET-2923 | Implement Verification of new QR-Code encode types | New Feature |
+| SIGNATURENET-2921 | Implement new QR-Code encode types | New Feature |
+| SIGNATURENET-2920 | Implement new Barcode encode types | New Feature |
+| SIGNATURENET-2946 | Improve Barcode Verification options | Improvement |
+| SIGNATURENET-2945 | Update Document Information method with extended guid properties | Improvement |
+| SIGNATURENET-2922 | Improve QR-Code options validation | Improvement |
+| SIGNATURENET-2901 | Improve Barcode options validation | Improvement |
+| Key | Summary | Issue Type |
+| --- | --- | --- |
 
 ## Public API and Backward Incompatible Changes
 

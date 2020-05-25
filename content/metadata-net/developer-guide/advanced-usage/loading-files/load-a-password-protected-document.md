@@ -3,7 +3,7 @@ id: load-a-password-protected-document
 url: metadata/net/load-a-password-protected-document
 title: Load a password-protected document
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

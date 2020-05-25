@@ -21,35 +21,12 @@ There are the following features, enhancements, and bug fixes in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-WATERMARKNET-895
-
-Locking watermark in PPTX, PPT is not working
-
-Bug
-
-WATERMARKNET-981
-
-Add SmartArt and CustomXml drawing types
-
-Enhancement
-
-WATERMARKNET-998
-
-Implement ability to skip unreadable characters during text watermark search
-
-New Feature
-
-WATERMARKNET-999
-
-Implement protection of text watermark using unreadable characters for Slides
-
-New Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-895 | Locking watermark in PPTX, PPT is not working | Bug |
+| WATERMARKNET-981 | Add SmartArt and CustomXml drawing types | Enhancement |
+| WATERMARKNET-998 | Implement ability to skip unreadable characters during text watermark search | New Feature |
+| WATERMARKNET-999 | Implement protection of text watermark using unreadable characters for Slides | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

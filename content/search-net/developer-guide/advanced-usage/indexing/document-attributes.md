@@ -3,7 +3,7 @@ id: document-attributes
 url: search/net/document-attributes
 title: Document attributes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

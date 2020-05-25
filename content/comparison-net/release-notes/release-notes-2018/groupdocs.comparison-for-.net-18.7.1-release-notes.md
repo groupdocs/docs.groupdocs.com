@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-18-7-1-release-notes
 url: comparison/net/groupdocs-comparison-for-net-18-7-1-release-notes
 title: GroupDocs.Comparison for .NET 18.7.1 Release Notes
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -16,17 +16,9 @@ hideChildren: False
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-1645
-
-Security improvements update
-
-Improvement
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-1645 | Security improvements update | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

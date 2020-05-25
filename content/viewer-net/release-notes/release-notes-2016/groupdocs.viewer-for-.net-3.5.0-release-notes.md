@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-3-5-0-release-notes
 url: viewer/net/groupdocs-viewer-for-net-3-5-0-release-notes
 title: GroupDocs.Viewer For .NET 3.5.0 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -19,149 +19,7 @@ There are 2 new features and 21 improvements and fixes in this regular monthly r
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Category**
-
-VIEWERNET-733
-
-Implement saving Cells document sheet to multiple pages in image mode
-
-New Feature
-
-VIEWERNET-787
-
-Implement ability to specify font for watermark
-
-New Feature
-
-VIEWERNET-616
-
-Implement GetPdfFile from stream or remote file
-
-Improvement
-
-VIEWERNET-721
-
-Improve Words files to html rendering speed
-
-Improvement
-
-VIEWERNET-732
-
-Implement saving file data separately based on options
-
-Improvement
-
-VIEWERNET-748
-
-Implement releasing converters resources
-
-Improvement
-
-VIEWERNET-529
-
-Cannot add page to pdf document
-
-Bug
-
-VIEWERNET-564
-
-OutOfMemoryException raised when total readed file size reached upto 250MB
-
-Bug
-
-VIEWERNET-627
-
-The operation is not supported error raised when loading epub document
-
-Bug
-
-VIEWERNET-667
-
-IOException is raised when try to move a loaded document(into the viewer) to any other directory
-
-Bug
-
-VIEWERNET-691
-
-Cell shading is not applied uniformly while converting spreadsheet to HTML
-
-Bug
-
-VIEWERNET-717
-
-Ott file stream detects as ods file format
-
-Bug
-
-VIEWERNET-729
-
-GetDocumentInfo() Throws "Parameter is not valid" Exception
-
-Bug
-
-VIEWERNET-753
-
-Excel file is not properly rendering into HTML
-
-Bug
-
-VIEWERNET-776
-
-Header contents of Word document are not appearing in rendered html or images
-
-Bug
-
-VIEWERNET-779
-
-Exception generated while calling handler.getDocumentInfo(uuid)
-
-Bug
-
-VIEWERNET-780
-
-Exception when calling GetPdfFile/RotatePage/ReorderPage with guid without extension
-
-Bug
-
-VIEWERNET-784
-
-Incorrect watermark position and text in PDF file
-
-Bug
-
-VIEWERNET-786
-
-Out Of Memory Exception While Rendering Excel File into HTML
-
-Bug
-
-WEB-1869
-
-Each page of a Word document is converted to HTML too long
-
-Bug
-
-WEB-2000
-
-Incorrect saving PDF to HTML
-
-Bug
-
-WEB-2081
-
-There is no text in tables of a PDF after conversion to HTML
-
-Bug
-
-WEB-2349
-
-Text selection is unstable in Firefox on the HTML engine
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-733</p></td><td class="confluenceTd"><p>Implement saving Cells document sheet to multiple pages in image mode</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-787</p></td><td class="confluenceTd"><p>Implement ability to specify font for watermark</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-616</p></td><td class="confluenceTd"><p>Implement GetPdfFile from stream or remote file</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-721</p></td><td class="confluenceTd"><p>Improve Words files to html rendering speed</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-732</p></td><td class="confluenceTd"><p>Implement saving file data separately based on options</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-748</p></td><td class="confluenceTd"><p>Implement releasing converters resources</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-529</p></td><td class="confluenceTd"><p>Cannot add page to pdf document</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-564</p></td><td class="confluenceTd"><p>OutOfMemoryException raised when total readed file size reached upto 250MB</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-627</p></td><td class="confluenceTd"><p>The operation is not supported error raised when loading epub document</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-667</p></td><td class="confluenceTd"><p>IOException is raised when try to move a loaded document(into the viewer) to any other directory</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-691</p></td><td class="confluenceTd"><p>Cell shading is not applied uniformly while converting spreadsheet to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-717</p></td><td class="confluenceTd"><p>Ott file stream detects as ods file format</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-729</p></td><td class="confluenceTd"><p>GetDocumentInfo() Throws "Parameter is not valid" Exception</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-753</p></td><td class="confluenceTd"><p>Excel file is not properly rendering into HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-776</p></td><td class="confluenceTd"><p>Header contents of Word document are not appearing in rendered html or images</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-779</p></td><td class="confluenceTd"><p>Exception generated while calling handler.getDocumentInfo(uuid)</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-780</p></td><td class="confluenceTd"><p>Exception when calling GetPdfFile/RotatePage/ReorderPage with guid without extension</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-784</p></td><td class="confluenceTd"><p>Incorrect watermark position and text in PDF file</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-786</p></td><td class="confluenceTd"><p>Out Of Memory Exception While Rendering Excel File into HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-1869</p></td><td class="confluenceTd"><p>Each page of a Word document is converted to HTML too long</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-2000</p></td><td class="confluenceTd"><p>Incorrect saving PDF to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-2081</p></td><td class="confluenceTd"><p>There is no text in tables of a PDF after conversion to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-2349</p></td><td class="confluenceTd"><p>Text selection is unstable in Firefox on the HTML engine</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-17-08-release-notes
 url: metadata/net/groupdocs-metadata-for-net-17-08-release-notes
 title: GroupDocs.Metadata for .NET 17.08 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -22,41 +22,7 @@ There are 2 new features, 2 ehnancements and 1 fix in this regular monthly relea
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-METADATANET-1845
-
-Ability to read EXIF maker-notes from Nikon D models (D300, D500, D600, D5100 etc)
-
-Enhancement
-
-METADATANET-1846
-
-Ability to read EXIF maker-notes from Sony xperia, cybershot models
-
-Enhancement  
-
-METADATANET-1731
-
-Ability to read CANON maker notes in JPEG image
-
-New Feature
-
-METADATANET-1803
-
-Ability to read Panasonic maker notes in JPEG image
-
-New Feature
-
-METADATANET-1836
-
-Xmp metadata is absent after removing EXIF geo-location
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1845</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read EXIF maker-notes from Nikon D models (D300, D500, D600, D5100 etc)</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1846</span></td><td class="confluenceTd">Ability to read EXIF maker-notes from Sony xperia, cybershot models</td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">Enhancement</span><br></span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1731</span></td><td class="confluenceTd">Ability to read CANON maker notes in JPEG image</td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1803</span></td><td class="confluenceTd">Ability to read Panasonic maker notes in JPEG image</td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1836</span></td><td colspan="1" class="confluenceTd">Xmp metadata is absent after removing EXIF geo-location</td><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Bug</span></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: evaluation-limitations-and-licensing-of-groupdocs-signature
 url: signature/net/evaluation-limitations-and-licensing-of-groupdocs-signature
 title: Evaluation Limitations and Licensing of GroupDocs.Signature
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

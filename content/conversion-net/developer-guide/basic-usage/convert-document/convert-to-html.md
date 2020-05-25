@@ -3,7 +3,7 @@ id: convert-to-html
 url: conversion/net/convert-to-html
 title: Convert to Html
 weight: 1
-description: Following this article you will learn how to convert documents to HTML format with couple C# code lines and GroupDocs.Conversion for .NET.
+description: "Following this article you will learn how to convert documents to HTML format with couple C# code lines and GroupDocs.Conversion for .NET."
 keywords: Convert to HTML, Convert to HTM
 productName: GroupDocs.Conversion for .NET
 hideChildren: False

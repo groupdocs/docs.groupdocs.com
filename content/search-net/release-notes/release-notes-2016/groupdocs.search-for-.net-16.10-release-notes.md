@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-16-10-release-notes
 url: search/net/groupdocs-search-for-net-16-10-release-notes
 title: GroupDocs.Search for .NET 16.10 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -21,35 +21,7 @@ There are 4 features or enhancements in this regular monthly release. The most n
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-470
-
-Fix Query Parser to parse file names with extensions with one Field Name
-
-Bug
-
-SEARCHNET-468
-
-Add found words to the search results to make it possible to see what exactly was found
-
-Enhancement
-
-SEARCHNET-270
-
-Improve Indexing and Update functionality to notify user about the progress percentage
-
-Enhancement
-
-SEARCHNET-449
-
-Implement Exact phrase Search feature
-
-New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>Key</p></td><td class="confluenceTd"><p>Summary</p></td><td class="confluenceTd"><p>Category</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-470</p></td><td class="confluenceTd"><p>Fix Query Parser to parse file names with extensions with one Field Name</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-468</p></td><td class="confluenceTd"><p>Add found words to the search results to make it possible to see what exactly was found</p></td><td class="confluenceTd"><p>Enhancement</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-270</p></td><td class="confluenceTd"><p>Improve Indexing and Update functionality to notify user about the progress percentage</p></td><td class="confluenceTd"><p>Enhancement</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-449</p></td><td class="confluenceTd"><p>Implement Exact phrase Search feature</p></td><td class="confluenceTd"><p>New Feature</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

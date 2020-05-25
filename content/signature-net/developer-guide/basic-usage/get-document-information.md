@@ -3,7 +3,7 @@ id: get-document-information
 url: signature/net/get-document-information
 title: Get document information
 weight: 2
-description: This article explains how to detect document file type, obtain document details,  retrieve list of existing form fields and added signatures, calculate pages count when processing document file with GroupDocs.Signature.
+description: "This article explains how to detect document file type, obtain document details,  retrieve list of existing form fields and added signatures, calculate pages count when processing document file with GroupDocs.Signature."
 keywords: document properties, document information, document details, get document information
 productName: GroupDocs.Signature for .NET
 hideChildren: False

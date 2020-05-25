@@ -3,7 +3,7 @@ id: document-renaming
 url: search/net/document-renaming
 title: Document renaming
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

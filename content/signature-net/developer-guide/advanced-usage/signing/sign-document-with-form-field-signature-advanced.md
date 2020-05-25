@@ -3,7 +3,7 @@ id: sign-document-with-form-field-signature-advanced
 url: signature/net/sign-document-with-form-field-signature-advanced
 title: Sign document with Form Field signature - advanced
 weight: 8
-description:  This article explains how to sign document with Form field electronic signatures using advanced options with GroupDocs.Signature API.
+description: " This article explains how to sign document with Form field electronic signatures using advanced options with GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

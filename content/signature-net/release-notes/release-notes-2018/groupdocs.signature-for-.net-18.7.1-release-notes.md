@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-18-7-1-release-notes
 url: signature/net/groupdocs-signature-for-net-18-7-1-release-notes
 title: GroupDocs.Signature for .NET 18.7.1 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -16,17 +16,7 @@ One security improvements update included into this hot-fix release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-3598
-
-Security improvements update
-
-Improvement
+<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3598</td><td colspan="1" class="confluenceTd">Security improvements update</td><td colspan="1" class="confluenceTd">Improvement</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

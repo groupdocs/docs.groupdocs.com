@@ -3,7 +3,7 @@ id: save-html-to-folder
 url: editor/net/save-html-to-folder
 title: Save HTML to folder
 weight: 2
-description: This article explains how to save edited document in HTML form to folder at local disk using GroupDocs.Editor for .NET features.
+description: "This article explains how to save edited document in HTML form to folder at local disk using GroupDocs.Editor for .NET features."
 keywords: Save edited HTML, Save edited document, Save HTML to folder
 productName: GroupDocs.Editor for .NET
 hideChildren: False

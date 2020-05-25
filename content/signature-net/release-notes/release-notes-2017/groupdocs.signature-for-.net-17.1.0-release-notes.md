@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-17-1-0-release-notes
 url: signature/net/groupdocs-signature-for-net-17-1-0-release-notes
 title: GroupDocs.Signature for .NET 17.1.0 Release Notes
 weight: 11
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -26,203 +26,40 @@ There are over 30 improvements, new features and fixes in this regular release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-2499
-
-Implement alternative Text Signature implementation as Annotation for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2491
-
-Implement ability to setup output file name for Save Options
-
-New Feature
-
-SIGNATURENET-2486
-
-Implement Text Signature Verification for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2477
-
-Implement Unique Identifier of Text Signature for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2475
-
-Provide alternative Text Signature implementation as Image for Slides Documents
-
-New Feature
-
-SIGNATURENET-2473
-
-Provide alternative Text Signature implementation as Image for Words Documents
-
-New Feature
-
-SIGNATURENET-2471
-
-Provide alternative Text Signature implementation as Image for Cells Documents
-
-New Feature
-
-SIGNATURENET-2469
-
-Provide alternative Text Signature implementation as Image for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2449
-
-Implement ability to check, load and verify digitally signed Words documents
-
-New Feature
-
-SIGNATURENET-2447
-
-Implement ability to check, load and verify digitally signed Cells documents
-
-New Feature
-
-SIGNATURENET-2437
-
-Implement ability to check, load and verify digitally signed Pdf documents
-
-New Feature
-
-SIGNATURENET-2380
-
-Implement Text Signature Opacity for Cells Documents
-
-New Feature
-
-SIGNATURENET-2378
-
-Implement Text Signature Opacity for Pdf Documents
-
-New Feature
-
-SIGNATURENET-2190
-
-Implement Image Signature Size Adjustments for Slides
-
-New Feature
-
-SIGNATURENET-2186
-
-Implement Image Signature Size Adjustments for Words
-
-New Feature
-
-SIGNATURENET-2184
-
-Implement Image Signature Size Adjustments for PDF
-
-New Feature
-
-SIGNATURENET-2517
-
-Update Digital Verification Options with ability to pass Certificate from Stream
-
-Improvement
-
-SIGNATURENET-2516
-
-Update Digital Signature Options with ability to pass Certificate from Stream
-
-Improvement
-
-SIGNATURENET-2505
-
-Improve logic of Words finding page algorithm
-
-Improvement
-
-SIGNATURENET-2504
-
-Improve logic for cells text and image signature position.
-
-Improvement
-
-SIGNATURENET-2466
-
-Provide alternative Text Signature implementation for Pdf Documents
-
-Improvement
-
-SIGNATURENET-2431
-
-Provide alternative Text and Image Signature implementation for Open Office format files
-
-Improvement
-
-SIGNATURENET-2494
-
-Fix wrong alignment for Words Text Signature
-
-Bug
-
-SIGNATURENET-2492
-
-Fix Border and Transparency appearance of Text Signature for Cells Documents
-
-Bug
-
-SIGNATURENET-2464
-
-Text signature for Words is not visible.
-
-Bug
-
-SIGNATURENET-2458
-
-Intentions for a Pdf document with Text Signature don't work.
-
-Bug
-
-SIGNATURENET-2457
-
-Not able to set PDF/Cells test signature opacity
-
-Bug
-
-SIGNATURENET-2454
-
-Text signature with font and background options looks wrong
-
-Bug
-
-SIGNATURENET-2453
-
-Wrong exception's text for wrong password
-
-Bug
-
-SIGNATURENET-2452
-
-OpenOfice doesn't open .xls with default encryption method.
-
-Bug
-
-SIGNATURENET-2441
-
-Detection of a type of an encrypted cells file starts an inappropriate exception
-
-Bug
-
-SIGNATURENET-2322
-
-When saving signed Words Document to different format - signature disappears
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2499 | Implement alternative Text Signature implementation as Annotation for Pdf Documents | New Feature |
+| SIGNATURENET-2491 | Implement ability to setup output file name for Save Options | New Feature |
+| SIGNATURENET-2486 | Implement Text Signature Verification for Pdf Documents | New Feature |
+| SIGNATURENET-2477 | Implement Unique Identifier of Text Signature for Pdf Documents | New Feature |
+| SIGNATURENET-2475 | Provide alternative Text Signature implementation as Image for Slides Documents | New Feature |
+| SIGNATURENET-2473 | Provide alternative Text Signature implementation as Image for Words Documents | New Feature |
+| SIGNATURENET-2471 | Provide alternative Text Signature implementation as Image for Cells Documents | New Feature |
+| SIGNATURENET-2469 | Provide alternative Text Signature implementation as Image for Pdf Documents | New Feature |
+| SIGNATURENET-2449 | Implement ability to check, load and verify digitally signed Words documents | New Feature |
+| SIGNATURENET-2447 | Implement ability to check, load and verify digitally signed Cells documents | New Feature |
+| SIGNATURENET-2437 | Implement ability to check, load and verify digitally signed Pdf documents | New Feature |
+| SIGNATURENET-2380 | Implement Text Signature Opacity for Cells Documents | New Feature |
+| SIGNATURENET-2378 | Implement Text Signature Opacity for Pdf Documents | New Feature |
+| SIGNATURENET-2190 | Implement Image Signature Size Adjustments for Slides | New Feature |
+| SIGNATURENET-2186 | Implement Image Signature Size Adjustments for Words | New Feature |
+| SIGNATURENET-2184 | Implement Image Signature Size Adjustments for PDF | New Feature |
+| SIGNATURENET-2517 | Update Digital Verification Options with ability to pass Certificate from Stream | Improvement |
+| SIGNATURENET-2516 | Update Digital Signature Options with ability to pass Certificate from Stream | Improvement |
+| SIGNATURENET-2505 | Improve logic of Words finding page algorithm | Improvement |
+| SIGNATURENET-2504 | Improve logic for cells text and image signature position. | Improvement |
+| SIGNATURENET-2466 | Provide alternative Text Signature implementation for Pdf Documents | Improvement |
+| SIGNATURENET-2431 | Provide alternative Text and Image Signature implementation for Open Office format files | Improvement |
+| SIGNATURENET-2494 | Fix wrong alignment for Words Text Signature | Bug |
+| SIGNATURENET-2492 | Fix Border and Transparency appearance of Text Signature for Cells Documents | Bug |
+| SIGNATURENET-2464 | Text signature for Words is not visible. | Bug |
+| SIGNATURENET-2458 | Intentions for a Pdf document with Text Signature don't work. | Bug |
+| SIGNATURENET-2457 | Not able to set PDF/Cells test signature opacity | Bug |
+| SIGNATURENET-2454 | Text signature with font and background options looks wrong | Bug |
+| SIGNATURENET-2453 | Wrong exception's text for wrong password | Bug |
+| SIGNATURENET-2452 | OpenOfice doesn't open .xls with default encryption method. | Bug |
+| SIGNATURENET-2441 | Detection of a type of an encrypted cells file starts an inappropriate exception | Bug |
+| SIGNATURENET-2322 | When saving signed Words Document to different format - signature disappears | Bug |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-19-11-release-notes
 url: comparison/net/groupdocs-comparison-for-net-19-11-release-notes
 title: GroupDocs.Comparison for .NET 19.11 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -24,83 +24,20 @@ Below is the list of most notable changes in release of GroupDocs.Comparison for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-2072
-
-Add option that will allow to set output format (paper size)
-
-Feature
-
-COMPARISONNET-2069
-
-Implement Multi comparer for Email
-
-Feature
-
-COMPARISONNET-2068 
-
-Implement multi comparer for Text
-
-Feature
-
-COMPARISONNET-2028 
-
-Add Comparison option to switch header/footer comparison
-
-Feature
-
-COMPARISONNET-2094  
-
-API is not releasing file handles
-
-Bug
-
-COMPARISONNET-2076 
-
-Compatibility issues under .NET Standard 2.0
-
-Bug
-
-COMPARISONNET-2071 
-
-Difference width and height is incorrect
-
-Bug
-
-COMPARISONNET-2070  
-
-Wrong Cells result file
-
-Bug
-
-COMPARISONNET-2014 
-
-Unexpected amount of changes in the comparing results of a PDF-files
-
-Bug
-
-COMPARISONNET-2012  
-
-Exception during comparing PDF-files without license
-
-Bug
-
-COMPARISONNET-1993
-
-Incorrect box dimensions and position
-
-Bug
-
-COMPARISONNET-1971
-
-Difference width and height is incorrect
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-2072 | Add option that will allow to set output format (paper size) | Feature |
+| COMPARISONNET-2069 | Implement Multi comparer for Email | Feature |
+| COMPARISONNET-2068  | Implement multi comparer for Text | Feature |
+| COMPARISONNET-2028  | Add Comparison option to switch header/footer comparison | Feature |
+| COMPARISONNET-2094   | API is not releasing file handles | Bug |
+| COMPARISONNET-2076  | Compatibility issues under .NET Standard 2.0 | Bug |
+| COMPARISONNET-2071  | Difference width and height is incorrect | Bug |
+| COMPARISONNET-2070   | Wrong Cells result file | Bug |
+| COMPARISONNET-2014  | Unexpected amount of changes in the comparing results of a PDF-files | Bug |
+| COMPARISONNET-2012   | Exception during comparing PDF-files without license | Bug |
+| COMPARISONNET-1993 | Incorrect box dimensions and position | Bug |
+| COMPARISONNET-1971 | Difference width and height is incorrect | Bug |
 
 Public API and Backward Incompatible Changes
 

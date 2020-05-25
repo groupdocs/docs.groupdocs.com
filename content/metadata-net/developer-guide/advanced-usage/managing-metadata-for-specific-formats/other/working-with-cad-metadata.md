@@ -3,7 +3,7 @@ id: working-with-cad-metadata
 url: metadata/net/working-with-cad-metadata
 title: Working with CAD metadata
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

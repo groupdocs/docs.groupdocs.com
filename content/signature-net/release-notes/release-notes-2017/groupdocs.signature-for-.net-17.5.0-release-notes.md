@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-17-5-0-release-notes
 url: signature/net/groupdocs-signature-for-net-17-5-0-release-notes
 title: GroupDocs.Signature for .NET 17.5.0 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -27,96 +27,22 @@ There are about 15 improvements, new features and fixes in this regular release.
 ## Full List of Issues Covering all Changes in this Release
 
   
-
-SIGNATURENET-2785
-
-Implement ability to put Text Signature into Form Fields of Words Documents
-
-New Feature
-
-SIGNATURENET-2788
-
-Implement ability to put Text Signature into Template/Form Fields of Pdf Documents
-
-New Feature
-
-SIGNATURENET-2798
-
-Implement ability to specify new Measure Units Millimeters for Pdf Signatures
-
-New Feature
-
-SIGNATURENET-2804
-
-Implement ability to specify new Measure Units Millimeters for Slides Signatures
-
-New Feature
-
-SIGNATURENET-2801
-
-Implement ability to specify new Measure Units Millimeters for Words Signatures
-
-New Feature
-
-SIGNATURENET-2768
-
-Implement Document information features into non static method of Signature Handler
-
-Improvement
-
-SIGNATURENET-2810
-
-Implement Watermark feature for Text Signature of Cells Documents
-
-New Feature
-
-SIGNATURENET-2819
-
-Implement Watermark feature for Text Signature of PDF Documents
-
-New Feature
-
-SIGNATURENET-2816
-
-Implement Watermark feature for Text Signature of Slides Documents
-
-New Feature
-
-SIGNATURENET-2813
-
-Implement Watermark feature for Text Signature of Words Documents
-
-New Feature
-
-SIGNATURENET-2610
-
-Optimize Words Signature Implementation for Text and Image types
-
-Improvement
-
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-2822
-
-Implement ability to obtain Document Information over Signature Handler
-
-New Feature
-
-SIGNATURENET-2825
-
-Implement ability to verify Text Signature located into Form Fields of PDF Documents
-
-New Feature
-
-SIGNATURENET-2824
-
-Implement ability to verify Text Signature located into Form Fields of Words Documents
-
-New Feature
+| SIGNATURENET-2785 | Implement ability to put Text Signature into Form Fields of Words Documents | New Feature |
+| SIGNATURENET-2788 | Implement ability to put Text Signature into Template/Form Fields of Pdf Documents | New Feature |
+| SIGNATURENET-2798 | Implement ability to specify new Measure Units Millimeters for Pdf Signatures | New Feature |
+| SIGNATURENET-2804 | Implement ability to specify new Measure Units Millimeters for Slides Signatures | New Feature |
+| SIGNATURENET-2801 | Implement ability to specify new Measure Units Millimeters for Words Signatures | New Feature |
+| SIGNATURENET-2768 | Implement Document information features into non static method of Signature Handler | Improvement |
+| SIGNATURENET-2810 | Implement Watermark feature for Text Signature of Cells Documents | New Feature |
+| SIGNATURENET-2819 | Implement Watermark feature for Text Signature of PDF Documents | New Feature |
+| SIGNATURENET-2816 | Implement Watermark feature for Text Signature of Slides Documents | New Feature |
+| SIGNATURENET-2813 | Implement Watermark feature for Text Signature of Words Documents | New Feature |
+| SIGNATURENET-2610 | Optimize Words Signature Implementation for Text and Image types | Improvement |
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2822 | Implement ability to obtain Document Information over Signature Handler | New Feature |
+| SIGNATURENET-2825 | Implement ability to verify Text Signature located into Form Fields of PDF Documents | New Feature |
+| SIGNATURENET-2824 | Implement ability to verify Text Signature located into Form Fields of Words Documents | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

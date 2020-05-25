@@ -19,23 +19,10 @@ There are the following features and enhancements in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key 
-
-Summary
-
-Category
-
-WATERMARKNET-516
-
-Implement settings allowing user to specify which objects should be included in watermark search 
-
-New Feature 
-
-WATERMARKNET-611
-
-Intergrate metered licensing API to GroupDocs.Watermark
-
-New Feature 
+| Key  | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-516 | Implement settings allowing user to specify which objects should be included in watermark search  | New Feature  |
+| WATERMARKNET-611 | Intergrate metered licensing API to GroupDocs.Watermark | New Feature  |
 
 ## Public API and Backward Incompatible Changes
 

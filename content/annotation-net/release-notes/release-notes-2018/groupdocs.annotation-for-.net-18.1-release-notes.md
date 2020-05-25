@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-18-1-release-notes
 url: annotation/net/groupdocs-annotation-for-net-18-1-release-notes
 title: GroupDocs.Annotation for .NET 18.1 Release Notes
 weight: 12
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -24,89 +24,21 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-583
-
-Add text redaction annotation in Slides
-
-New Feature
-
-ANNOTATIONNET-582
-
-Add point with text for text annotation
-
-Improvement
-
-ANNOTATIONNET-573
-
-Improve export of text annotations in Slides
-
-Improvement
-
-ANNOTATIONNET-570
-
-Improve annotation export for big font sizes for Slides
-
-Improvement
-
-ANNOTATIONNET-591
-
-Fix Point annotation in Slides
-
-Bug
-
-ANNOTATIONNET-589
-
-Fix opacity value for import in Diagrams
-
-Bug
-
-ANNOTATIONNET-584
-
-Bug with import text field for diagram
-
-Bug
-
-ANNOTATIONNET-581
-
-Arrow annotation doesn't create for diagrams
-
-Bug
-
-ANNOTATIONNET-578
-
-Fix Slides bug with coordinates of paragraph and portion
-
-Bug
-
-ANNOTATIONNET-577
-
-Words:Fixed cleanup for text redaction annotation
-
-Bug
-
-ANNOTATIONNET-574
-
-Bug with import text annotations from pdf
-
-Bug
-
-ANNOTATIONNET-572
-
-Wrong distance structure after export in diagram
-
-Bug
-
-ANNOTATIONNET-571
-
-Wrong polyline structure after export in diagram
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-583 | Add text redaction annotation in Slides | New Feature |
+| ANNOTATIONNET-582 | Add point with text for text annotation | Improvement |
+| ANNOTATIONNET-573 | Improve export of text annotations in Slides | Improvement |
+| ANNOTATIONNET-570 | Improve annotation export for big font sizes for Slides | Improvement |
+| ANNOTATIONNET-591 | Fix Point annotation in Slides | Bug |
+| ANNOTATIONNET-589 | Fix opacity value for import in Diagrams | Bug |
+| ANNOTATIONNET-584 | Bug with import text field for diagram | Bug |
+| ANNOTATIONNET-581 | Arrow annotation doesn't create for diagrams | Bug |
+| ANNOTATIONNET-578 | Fix Slides bug with coordinates of paragraph and portion | Bug |
+| ANNOTATIONNET-577 | Words:Fixed cleanup for text redaction annotation | Bug |
+| ANNOTATIONNET-574 | Bug with import text annotations from pdf | Bug |
+| ANNOTATIONNET-572 | Wrong distance structure after export in diagram | Bug |
+| ANNOTATIONNET-571 | Wrong polyline structure after export in diagram | Bug |
 
 ## Public API and Backward Incompatible Changes
 

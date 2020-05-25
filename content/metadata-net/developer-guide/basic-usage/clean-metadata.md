@@ -3,7 +3,7 @@ id: clean-metadata
 url: metadata/net/clean-metadata
 title: Clean metadata
 weight: 5
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

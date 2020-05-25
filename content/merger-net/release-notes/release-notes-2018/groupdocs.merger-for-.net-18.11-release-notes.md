@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-18-11-release-notes
 url: merger/net/groupdocs-merger-for-net-18-11-release-notes
 title: GroupDocs.Merger for .NET 18.11 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -20,29 +20,11 @@ There are 3 new features in this regular monthly release. The most notable are:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-156
-
-Implement RotatePages method
-
-New Feature
-
-MERGERNET-245
-
-Implement ChangeOrientation method
-
-New Feature
-
-MERGERNET-259
-
-Implement GetSupportedFormats method
-
-New Feature
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-156 | Implement RotatePages method | New Feature |
+| MERGERNET-245 | Implement ChangeOrientation method | New Feature |
+| MERGERNET-259 | Implement GetSupportedFormats method | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

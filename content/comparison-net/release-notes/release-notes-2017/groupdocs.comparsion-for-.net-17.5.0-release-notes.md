@@ -3,7 +3,7 @@ id: groupdocs-comparsion-for-net-17-5-0-release-notes
 url: comparison/net/groupdocs-comparsion-for-net-17-5-0-release-notes
 title: GroupDocs.Comparsion for .NET 17.5.0 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -21,71 +21,18 @@ There are 2 new features and 6 improvements and 2 fix in this regular monthly re
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-COMPARISONNET-1217
-
-Add support for JPG, BMP and PNG formats
-
-New Feature
-
-COMPARISONNET-1170
-
-GroupDocs.Comparison.PDF: Add comparison of page context before building of the object model
-
-New Feature
-
-COMPARISONNET-1254
-
-Strikeout option for deleted/changed text in words comparison
-
-Improvement
-
-COMPARISONNET-1237
-
-GroupDocs.Comparison.Imaging: Improve comparison performance
-
-Improvement
-
-COMPARISONNET-1235
-
-GroupDocs.Comparison.Text: Improve comparison performance
-
-Improvement
-
-COMPARISONNET-1218
-
-Fix the support of new settings for PDF
-
-Improvement
-
-COMPARISONNET-1245
-
-Comparison.Words: Fix case with absolutely different paragraphs
-
-Improvement
-
-OMPARISONNET-1244
-
-Add styles change detection for Comparison.Imaging (height, width)
-
-Improvement
-
-COMPARISONNET-1256
-
-New Version 17.4.0 have Missing Properties for ChangeInfo
-
-Bug
-
-COMPARISONNET-1246
-
-Comparison.Slides: Two almost identical comments compared as different
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| COMPARISONNET-1217 | Add support for JPG, BMP and PNG formats | New Feature |
+| COMPARISONNET-1170 | GroupDocs.Comparison.PDF: Add comparison of page context before building of the object model | New Feature |
+| COMPARISONNET-1254 | Strikeout option for deleted/changed text in words comparison | Improvement |
+| COMPARISONNET-1237 | GroupDocs.Comparison.Imaging: Improve comparison performance | Improvement |
+| COMPARISONNET-1235 | GroupDocs.Comparison.Text: Improve comparison performance | Improvement |
+| COMPARISONNET-1218 | Fix the support of new settings for PDF | Improvement |
+| COMPARISONNET-1245 | Comparison.Words: Fix case with absolutely different paragraphs | Improvement |
+| OMPARISONNET-1244 | Add styles change detection for Comparison.Imaging (height, width) | Improvement |
+| COMPARISONNET-1256 | New Version 17.4.0 have Missing Properties for ChangeInfo | Bug |
+| COMPARISONNET-1246 | Comparison.Slides: Two almost identical comments compared as different | Bug |
 
 ##   
 Public API and Backward Incompatible Changes

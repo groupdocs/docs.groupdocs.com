@@ -3,7 +3,7 @@ id: groupdocs-annotation-for-net-18-6-release-notes
 url: annotation/net/groupdocs-annotation-for-net-18-6-release-notes
 title: GroupDocs.Annotation for .NET 18.6 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
@@ -28,47 +28,14 @@ Below is the list of most notable changes in release of GroupDocs.Annotation for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-ANNOTATIONNET-714
-
-Implemnent support of metadata in Slides
-
-New Feature
-
-ANNOTATIONNET-713
-
-Implement Watermark annotation in Diagrams
-
-New Feature
-
-ANNOTATIONNET-706
-
-Implement adding Point annotation in Diagrams
-
-New Feature
-
-ANNOTATIONNET-704
-
-Implement Polyline annotation for Words
-
-New Feature
-
-ANNOTATIONNET-700
-
-Implement watermark annotation for Words
-
-New Feature
-
-ANNOTATIONNET-697
-
-Implement Point annotation for Words
-
-New Feature
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-714 | Implemnent support of metadata in Slides | New Feature |
+| ANNOTATIONNET-713 | Implement Watermark annotation in Diagrams | New Feature |
+| ANNOTATIONNET-706 | Implement adding Point annotation in Diagrams | New Feature |
+| ANNOTATIONNET-704 | Implement Polyline annotation for Words | New Feature |
+| ANNOTATIONNET-700 | Implement watermark annotation for Words | New Feature |
+| ANNOTATIONNET-697 | Implement Point annotation for Words | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

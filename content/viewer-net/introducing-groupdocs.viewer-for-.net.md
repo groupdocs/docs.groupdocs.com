@@ -3,7 +3,7 @@ id: introducing-groupdocs-viewer-for-net
 url: viewer/net/introducing-groupdocs-viewer-for-net
 title: Introducing GroupDocs.Viewer for .NET
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False

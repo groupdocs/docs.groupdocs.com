@@ -3,7 +3,7 @@ id: groupdocs-search-overview
 url: search/net/groupdocs-search-overview
 title: GroupDocs.Search Overview
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

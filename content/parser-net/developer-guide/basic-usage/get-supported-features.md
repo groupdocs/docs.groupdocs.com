@@ -14,10 +14,7 @@ The set of the supported features depends on the document format. GroupDocs.Pars
 
 | Member | Description |
 | --- | --- |
-| 
-bool [IsFeatureSupported(string featureName)](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/features/methods/isfeaturesupported)
-
- | Returns the value that indicates whether the **feature** is supported. |
+| bool [IsFeatureSupported(string featureName)](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/features/methods/isfeaturesupported) | Returns the value that indicates whether the **feature** is supported. |
 | [Text](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/features/properties/text) | The value that indicates whether **text extraction** is supported. |
 | [TextPage](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/features/properties/textpage) | The value that indicates whether **text page** extraction is supported. |
 | [FormattedText](https://apireference.groupdocs.com/net/parser/groupdocs.parser.options/features/properties/formattedtext) | The value that indicates whether **formatted text** extraction is supported. |

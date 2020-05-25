@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-18-12-release-notes
 url: viewer/net/groupdocs-viewer-for-net-18-12-release-notes
 title: GroupDocs.Viewer for .NET 18.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -20,65 +20,17 @@ There are 9 features, improvements, and fixes in this regular monthly release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1779
-
-Obtaining the list of folders contained in OST/PST formats 
-
-Feature
-
-VIEWERNET-1780
-
-Setting for rendering specific folder from OST/PST formats
-
-Feature
-
-VIEWERNET-1811
-
-Ignore empty columns when rendering spreadsheet documents
-
-Feature
-
-VIEWERNET-1220
-
-Ignore empty string when it passed as path to directory with fonts
-
-Improvement
-
-VIEWERNET-1820
-
-Improve rendering into HTML for Outlook Data Files with subfolders and empty folders 
-
-Improvement
-
-VIEWERNET-1824
-
-Set exception localization feature as obsolete
-
-Improvement
-
-VIEWERNET-1828
-
-Prevent rendering frozen and invisible CAD layers by default
-
-Improvement
-
-VIEWERNET-150
-
-PDF contains blank page when rendering XPS to PDF
-
-Bug
-
-VIEWERNET-1226
-
-Issue with the image source when rendering Excel to HTML with embedded resources
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1779 | Obtaining the list of folders contained in OST/PST formats  | Feature |
+| VIEWERNET-1780 | Setting for rendering specific folder from OST/PST formats | Feature |
+| VIEWERNET-1811 | Ignore empty columns when rendering spreadsheet documents | Feature |
+| VIEWERNET-1220 | Ignore empty string when it passed as path to directory with fonts | Improvement |
+| VIEWERNET-1820 | Improve rendering into HTML for Outlook Data Files with subfolders and empty folders  | Improvement |
+| VIEWERNET-1824 | Set exception localization feature as obsolete | Improvement |
+| VIEWERNET-1828 | Prevent rendering frozen and invisible CAD layers by default | Improvement |
+| VIEWERNET-150 | PDF contains blank page when rendering XPS to PDF | Bug |
+| VIEWERNET-1226 | Issue with the image source when rendering Excel to HTML with embedded resources | Bug |
 
 ## Public API and Backward Incompatible Changes
 

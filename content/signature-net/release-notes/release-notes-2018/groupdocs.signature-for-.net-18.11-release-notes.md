@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-18-11-release-notes
 url: signature/net/groupdocs-signature-for-net-18-11-release-notes
 title: GroupDocs.Signature for .NET 18.11 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -23,47 +23,7 @@ There are about six new features and improvements in this regular release. Most 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-SIGNATURENET-1760
-
-Implement FormField Search features for Pdf documents
-
-New Feature
-
-SIGNATURENET-1751
-
-Implement FormField Signature features for Pdf documents
-
-New Feature
-
-SIGNATURENET-1715
-
-Implement support of built-in metadata search for Slides/Presentation documents
-
-New Feature
-
-SIGNATURENET-1711
-
-Implement Metadata Signatures Search for Slides documents
-
-New Feature
-
-SIGNATURENET-1707
-
-Implement Metadata Signature features for Slides documents
-
-New Feature
-
-SIGNATURENET-1582
-
-Extend verification options for Digital Signatures of Words documents with Subject and Issuer criteria
-
-New Feature
+<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1760</td><td colspan="1" class="confluenceTd">Implement FormField Search features for Pdf documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1751</td><td colspan="1" class="confluenceTd">Implement FormField Signature features for Pdf documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1715</td><td colspan="1" class="confluenceTd">Implement support of built-in metadata search for Slides/Presentation documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1711</td><td colspan="1" class="confluenceTd">Implement Metadata Signatures Search for Slides documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-1707</td><td class="confluenceTd">Implement Metadata Signature features for Slides documents</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-1582</td><td class="confluenceTd">Extend verification options for Digital Signatures of Words documents with Subject and Issuer criteria</td><td class="confluenceTd">New Feature</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 
@@ -128,29 +88,11 @@ New Feature
     
     **FormField Signature properties:**
     
-    Name
-    
-    Type
-    
-    Description
-    
-    Name
-    
-    string
-    
-    Specifies name of FormField Signature.
-    
-    Type
-    
-    FormFieldType
-    
-    Specifies type of form field.
-    
-    Value
-    
-    object
-    
-    Specifies value of FormField  Signature. This property could be different type.
+    | Name | Type | Description |
+    | --- | --- | --- |
+    | Name | string | Specifies name of FormField Signature. |
+    | Type | FormFieldType | Specifies type of form field. |
+    | Value | object | Specifies value of FormField  Signature. This property could be different type. |
     
 2.  ****New classes to represent different Form-Field Signatures of Pdf documents.****  
     New scope of classes that are derived from base **FormFieldSignature** implement following Pdf document form-fields.  
@@ -182,17 +124,9 @@ New Feature
     
     **Pdf Text FormField Signature properties:**
     
-    Name
-    
-    Type
-    
-    Description
-    
-    Text
-    
-    string
-    
-    Specifies text of input Form Field Signature.
+    | Name | Type | Description |
+    | --- | --- | --- |
+    | Text | string | Specifies text of input Form Field Signature. |
     
     2\. New public class **PdfCheckboxFormFieldSignature **was added to implement simple Check Box Form Field signatures for Pdf documents.
     
@@ -226,17 +160,9 @@ New Feature
     
     **Pdf Text FormField Signature properties:**
     
-    Name
-    
-    Type
-    
-    Description
-    
-    Text
-    
-    string
-    
-    Specifies text of input Form Field Signature.
+    | Name | Type | Description |
+    | --- | --- | --- |
+    | Text | string | Specifies text of input Form Field Signature. |
     
     3\. New public class **PdfDigitalFormFieldSignature **was added to implement Digital Signature input Form Field for Pdf documents.
     
@@ -264,17 +190,9 @@ New Feature
     
     **Pdf Text FormField Signature properties:**
     
-    Name
-    
-    Type
-    
-    Description
-    
-    Signed
-    
-    bool
-    
-    Specifies if Form Field Signature was signed.
+    | Name | Type | Description |
+    | --- | --- | --- |
+    | Signed | bool | Specifies if Form Field Signature was signed. |
     
 3.  New static class **PdfFormFieldSignOptions** represent options to put Form-field signature on Pdf document. Class is derived from base **TextSignOptions** class that allows to specify positioning of signature area, alignment etc. Class keeps property of **FormFieldSignature** to be posted on document.
     
@@ -477,41 +395,13 @@ New Feature
     
     Slides metadata Signature derives all base class methods.
     
-    Method name
-    
-    Return type
-    
-    Description / Remarks
-    
-    ToBoolean()
-    
-    boolean
-    
-    Returns the Metadata signature value as Boolean. Throws an exception if the Metadata value could not be converted. If value is integer type all non zero values will be interpreted as True. 
-    
-    ToInteger()
-    
-    integer
-    
-    Returns the Metadata Signature value as integer. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. Double value will be truncated. String value will be tries to parse into integer.
-    
-    ToDouble()
-    
-    double
-    
-    Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as double. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. String value will be tries to parse into double based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
-    
-    ToDateTime()
-    
-    DateTime
-    
-    Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as DateTime. Throws an exception if the Metadata value could not be converted. String value will be tries to parse into Datetime based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
-    
-    ToString()
-    
-    string
-    
-    Overload method with ability to specify IDataFormatProvider to data type convertions. Returns the Metadata Signature value as string representation based on passed format and IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property.
+    | Method name | Return type | Description / Remarks |
+    | --- | --- | --- |
+    | ToBoolean() | boolean | Returns the Metadata signature value as Boolean. Throws an exception if the Metadata value could not be converted. If value is integer type all non zero values will be interpreted as True.  |
+    | ToInteger() | integer | Returns the Metadata Signature value as integer. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. Double value will be truncated. String value will be tries to parse into integer. |
+    | ToDouble() | double | Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as double. Throws an exception if the Metadata value could not be converted. Boolean value will be converted to 1 in case of logical true value, otherwise 0. String value will be tries to parse into double based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
+    | ToDateTime() | DateTime | Overload method with ability to specify IDataFormatProvider for string based values conversion. Returns the Metadata Signature value as DateTime. Throws an exception if the Metadata value could not be converted. String value will be tries to parse into Datetime based on passed IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
+    | ToString() | string | Overload method with ability to specify IDataFormatProvider to data type convertions. Returns the Metadata Signature value as string representation based on passed format and IDataFormatProvider or default provider from SignatureConfig.DefaultCulture property. |
     
     Following example demonstrates using **SlidesMetadataSignature **to compose Metadata Signature options for Words document -**SlidesMetadataSignOptions:**
     

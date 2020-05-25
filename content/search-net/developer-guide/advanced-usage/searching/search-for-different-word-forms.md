@@ -3,7 +3,7 @@ id: search-for-different-word-forms
 url: search/net/search-for-different-word-forms
 title: Search for different word forms
 weight: 20
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-17-12-release-notes
 url: viewer/net/groupdocs-viewer-for-net-17-12-release-notes
 title: GroupDocs.Viewer for .NET 17.12 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -20,71 +20,18 @@ There 10 improvements, fixes, and new features in this regular monthly release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1454
-
-Add ODG (OpenDocument Graphics) file format support
-
-New Feature
-
-VIEWERNET-1445
-
-Removing cache files of a specific document
-
-New Feature
-
-VIEWERNET-1433
-
-Improve rendering Jpeg images into HTML
-
-New Feature
-
-VIEWERNET-1353
-
-Implement a setting for minifying CSS resources and HTML content
-
-New Feature
-
-VIEWERNET-1352
-
-Implement an option to split MS Project documents by time intervals
-
-New Feature
-
-VIEWERNET-1364
-
-Add code examples for Slides rendering options
-
-Improvement
-
-VIEWERNET-1452
-
-Index was out of range exception when rendering XLSX as PDF
-
-Bug
-
-VIEWERNET-1415
-
-Blank output when rendering PDF document as HTML
-
-Bug
-
-VIEWERNET-1342
-
-CAD document layouts with the size different than model are not rendered correctly
-
-Bug
-
-VIEWERNET-1004
-
-Alignment of radio button text and checkbox text is not proper
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1454 | Add ODG (OpenDocument Graphics) file format support | New Feature |
+| VIEWERNET-1445 | Removing cache files of a specific document | New Feature |
+| VIEWERNET-1433 | Improve rendering Jpeg images into HTML | New Feature |
+| VIEWERNET-1353 | Implement a setting for minifying CSS resources and HTML content | New Feature |
+| VIEWERNET-1352 | Implement an option to split MS Project documents by time intervals | New Feature |
+| VIEWERNET-1364 | Add code examples for Slides rendering options | Improvement |
+| VIEWERNET-1452 | Index was out of range exception when rendering XLSX as PDF | Bug |
+| VIEWERNET-1415 | Blank output when rendering PDF document as HTML | Bug |
+| VIEWERNET-1342 | CAD document layouts with the size different than model are not rendered correctly | Bug |
+| VIEWERNET-1004 | Alignment of radio button text and checkbox text is not proper | Bug |
 
 ## Public API and Backward Incompatible Changes
 

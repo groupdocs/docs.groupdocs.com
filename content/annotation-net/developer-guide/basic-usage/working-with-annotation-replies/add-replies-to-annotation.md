@@ -3,7 +3,7 @@ id: add-replies-to-annotation
 url: annotation/net/add-replies-to-annotation
 title: Add replies to annotation
 weight: 1
-description: Check this guide to learn how to add annotation replies when collaborate over document using GroupDocs.Annotation for .NET API.
+description: "Check this guide to learn how to add annotation replies when collaborate over document using GroupDocs.Annotation for .NET API."
 keywords: How to add annotation reply, add annotation reply, add reply, reply to annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

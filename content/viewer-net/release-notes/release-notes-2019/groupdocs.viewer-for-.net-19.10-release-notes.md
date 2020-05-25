@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-19-10-release-notes
 url: viewer/net/groupdocs-viewer-for-net-19-10-release-notes
 title: GroupDocs.Viewer for .NET 19.10 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -20,125 +20,27 @@ There are 19 features, improvements and bug-fixes in this release, most notable 
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-2183
-
-Adjust page size when rendering email messages into HTML
-
-Feature
-
-VIEWERNET-2129
-
-Support excluding fonts when rendering PDF documents
-
-Feature
-
-VIEWERNET-2128
-
-Support rendering PDF documents without embedding or producing external font resources
-
-Feature
-
-VIEWERNET-2074
-
-Add Gnu Zipped File (.gzip) file format support
-
-Feature
-
-VIEWERNET-2037
-
-Add StarOffice Calc Spreadsheet (.sxc) file format support
-
-Feature
-
-VIEWERNET-1904
-
-Add .NET Standard 2.0 support
-
-Feature
-
-VIEWERNET-2122
-
-Improve rendering of Markdown Documentation File (\*.md) file format
-
-Improvement
-
-VIEWERNET-2022
-
-Fit content by width when rendering mail messages into PDF/JPG/PNG
-
-Improvement
-
-VIEWERNET-2178
-
-Tiff rendered incorrectly
-
-Bug
-
-VIEWERNET-2169
-
-Incorrect image URLs when rendering email as HTML
-
-Bug
-
-VIEWERNET-2168
-
-Blur image in when rendering slides as HTML
-
-Bug
-
-VIEWERNET-2159
-
-Rendering Word document is taking a long time
-
-Bug
-
-VIEWERNET-2157
-
-External resources failed to load when rendering Email messages
-
-Bug
-
-VIEWERNET-2156
-
-Styles are lost when rendering XLSX into HTML
-
-Bug
-
-VIEWERNET-2054
-
-The print preview of the rendered HTML is zoomed in
-
-Bug
-
-VIEWERNET-2051
-
-Exception when rendering Word document as HTML
-
-Bug
-
-VIEWERNET-1996
-
-Rendering Diagram document provides improper output colors
-
-Bug
-
-VIEWERNET-16
-
-A null reference or invalid value was found exception when rendering DWG as HTML
-
-Bug
-
-VIEWERNET-15
-
-DWG rendered empty
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-2183 | Adjust page size when rendering email messages into HTML | Feature |
+| VIEWERNET-2129 | Support excluding fonts when rendering PDF documents | Feature |
+| VIEWERNET-2128 | Support rendering PDF documents without embedding or producing external font resources | Feature |
+| VIEWERNET-2074 | Add Gnu Zipped File (.gzip) file format support | Feature |
+| VIEWERNET-2037 | Add StarOffice Calc Spreadsheet (.sxc) file format support | Feature |
+| VIEWERNET-1904 | Add .NET Standard 2.0 support | Feature |
+| VIEWERNET-2122 | Improve rendering of Markdown Documentation File (\*.md) file format | Improvement |
+| VIEWERNET-2022 | Fit content by width when rendering mail messages into PDF/JPG/PNG | Improvement |
+| VIEWERNET-2178 | Tiff rendered incorrectly | Bug |
+| VIEWERNET-2169 | Incorrect image URLs when rendering email as HTML | Bug |
+| VIEWERNET-2168 | Blur image in when rendering slides as HTML | Bug |
+| VIEWERNET-2159 | Rendering Word document is taking a long time | Bug |
+| VIEWERNET-2157 | External resources failed to load when rendering Email messages | Bug |
+| VIEWERNET-2156 | Styles are lost when rendering XLSX into HTML | Bug |
+| VIEWERNET-2054 | The print preview of the rendered HTML is zoomed in | Bug |
+| VIEWERNET-2051 | Exception when rendering Word document as HTML | Bug |
+| VIEWERNET-1996 | Rendering Diagram document provides improper output colors | Bug |
+| VIEWERNET-16 | A null reference or invalid value was found exception when rendering DWG as HTML | Bug |
+| VIEWERNET-15 | DWG rendered empty | Bug |
 
 # Public API and Backward Incompatible Changes
 

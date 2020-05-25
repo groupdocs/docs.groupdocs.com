@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-19-6-release-notes
 url: comparison/net/groupdocs-comparison-for-net-19-6-release-notes
 title: GroupDocs.Comparison for .NET 19.6 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -24,71 +24,18 @@ Below is the list of most notable changes in release of GroupDocs.Comparison for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-1846
-
-Calculate correct coordinates of changes for Words
-
-Improvement
-
-COMPARISONNET-1929
-
-Implement sensitivity option
-
-Improvement
-
-COMPARISONNET-1901
-
-Integrate latest version of Dynabic.Metered into products
-
-Improvement
-
-COMPARISONNET-1815
-
-Ignore comments (for code files mostly)
-
-Improvement
-
-COMPARISONNET-1816
-
-Ignore White Space - All, Leading, Trailing, Changes in amount
-
-Improvement
-
-COMPARISONNET-1813
-
-Ignore Case - Ignore character case differences
-
-Improvement
-
-COMPARISONNET-1927
-
-Merged Document and then document Comparison failed
-
-Bug
-
-COMPARISONNET-1891
-
-Text got overlapped with other text or images
-
-Bug
-
-COMPARISONNET-1930
-
-Duplicate Images in Result file in PDF
-
-Bug
-
-COMPARISONNET-1772
-
-PDF comparison has overlapping and mangled output
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-1846 | Calculate correct coordinates of changes for Words | Improvement |
+| COMPARISONNET-1929 | Implement sensitivity option | Improvement |
+| COMPARISONNET-1901 | Integrate latest version of Dynabic.Metered into products | Improvement |
+| COMPARISONNET-1815 | Ignore comments (for code files mostly) | Improvement |
+| COMPARISONNET-1816 | Ignore White Space - All, Leading, Trailing, Changes in amount | Improvement |
+| COMPARISONNET-1813 | Ignore Case - Ignore character case differences | Improvement |
+| COMPARISONNET-1927 | Merged Document and then document Comparison failed | Bug |
+| COMPARISONNET-1891 | Text got overlapped with other text or images | Bug |
+| COMPARISONNET-1930 | Duplicate Images in Result file in PDF | Bug |
+| COMPARISONNET-1772 | PDF comparison has overlapping and mangled output | Bug |
 
 ## Public API and Backward Incompatible Changes
 

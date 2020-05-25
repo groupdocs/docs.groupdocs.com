@@ -3,7 +3,7 @@ id: homophone-search
 url: search/net/homophone-search
 title: Homophone search
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

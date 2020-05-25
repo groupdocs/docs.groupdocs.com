@@ -3,7 +3,7 @@ id: basic-usage
 url: signature/net/basic-usage
 title: Basic usage
 weight: 1
-description: Quick Start section about main features of GroupDocs.Signature API, describes how to sign documents with just couple lines of code.
+description: "Quick Start section about main features of GroupDocs.Signature API, describes how to sign documents with just couple lines of code."
 keywords: GroupDocs.Signature Quick Start, GroupDocs.Signature .NET Basic Usage, GroupDocs.Signature Quick Start C#, GroupDocs.Signature Get Started
 productName: GroupDocs.Signature for .NET
 hideChildren: False

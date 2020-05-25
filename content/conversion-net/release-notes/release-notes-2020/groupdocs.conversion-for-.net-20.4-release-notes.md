@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-20-4-release-notes
 url: conversion/net/groupdocs-conversion-for-net-20-4-release-notes
 title: GroupDocs.Conversion for .NET 20.4 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -24,137 +24,29 @@ There are 20+ features, improvements and bug-fixes in this release, most notable
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-3225
-
-Feature
-
-Support for auto page numbering while export to PDF
-
-CONVERSIONNET-3710
-
-Feature
-
-Convert each email attachment to different type
-
-CONVERSIONNET-3778
-
-Feature
-
-Convert from PST, OST
-
-CONVERSIONNET-3812
-
-Feature
-
-Implement conversion from Oxps
-
-CONVERSIONNET-3816
-
-Feature
-
-Implement conversion from Fods
-
-CONVERSIONNET-3822
-
-Feature
-
-Implement conversion to Fods
-
-CONVERSIONNET-3823
-
-Feature
-
-Implement conversion from Otg
-
-CONVERSIONNET-2875
-
-Feature
-
-Introduced in memory caching
-
-CONVERSIONNET-3659
-
-Improvement
-
-Improve font substitution when converting from PDF
-
-CONVERSIONNET-3874
-
-Improvement
-
-Improved caching
-
-CONVERSIONNET-1702
-
-Bug
-
-A generic error occurred in GDI+ while saving document to LZW TIFF
-
-CONVERSIONNET-3699
-
-Bug
-
-Exception while Converting PST to CSV using GroupDocs.Conversion .NET API v20.1.0 As The Not supported file type
-
-CONVERSIONNET-3724
-
-Bug
-
-Exception while Converting XLSB to XLS using GroupDocs.Conversion .NET API v20.1.0
-
-CONVERSIONNET-3729
-
-Bug
-
-Exception while Converting XLSB to XLSX As The column index should not be inside the pivot table report
-
-CONVERSIONNET-3745
-
-Bug
-
-XLSB to XLS conversion issue 
-
-CONVERSIONNET-3768
-
-Bug
-
-"System.DllNotFoundException : Unable to load DLL 'libgdiplus': The specified module could not be found." exception on MacOS targeting .NET Standard
-
-CONVERSIONNET-3770
-
-Bug
-
-VSD to DOC conversion issue
-
-CONVERSIONNET-3790
-
-Bug
-
-Xps and Tex files are converted in trial mode when using venture licensing
-
-CONVERSIONNET-3804
-
-Bug
-
-PCL to DOT file conversion
-
-CONVERSIONNET-3810
-
-Bug
-
-XLSX to XLS conversion - The column index should not be inside the pivottable report
-
-CONVERSIONNET-3821
-
-Bug
-
-GroupDocs.Conversion.Exceptions.GroupDocsConversionException was unhandled
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-3225 | Feature | Support for auto page numbering while export to PDF |
+| CONVERSIONNET-3710 | Feature | Convert each email attachment to different type |
+| CONVERSIONNET-3778 | Feature | Convert from PST, OST |
+| CONVERSIONNET-3812 | Feature | Implement conversion from Oxps |
+| CONVERSIONNET-3816 | Feature | Implement conversion from Fods |
+| CONVERSIONNET-3822 | Feature | Implement conversion to Fods |
+| CONVERSIONNET-3823 | Feature | Implement conversion from Otg |
+| CONVERSIONNET-2875 | Feature | Introduced in memory caching |
+| CONVERSIONNET-3659 | Improvement | Improve font substitution when converting from PDF |
+| CONVERSIONNET-3874 | Improvement | Improved caching |
+| CONVERSIONNET-1702 | Bug | A generic error occurred in GDI+ while saving document to LZW TIFF |
+| CONVERSIONNET-3699 | Bug | Exception while Converting PST to CSV using GroupDocs.Conversion .NET API v20.1.0 As The Not supported file type |
+| CONVERSIONNET-3724 | Bug | Exception while Converting XLSB to XLS using GroupDocs.Conversion .NET API v20.1.0 |
+| CONVERSIONNET-3729 | Bug | Exception while Converting XLSB to XLSX As The column index should not be inside the pivot table report |
+| CONVERSIONNET-3745 | Bug | XLSB to XLS conversion issue  |
+| CONVERSIONNET-3768 | Bug | "System.DllNotFoundException : Unable to load DLL 'libgdiplus': The specified module could not be found." exception on MacOS targeting .NET Standard |
+| CONVERSIONNET-3770 | Bug | VSD to DOC conversion issue |
+| CONVERSIONNET-3790 | Bug | Xps and Tex files are converted in trial mode when using venture licensing |
+| CONVERSIONNET-3804 | Bug | PCL to DOT file conversion |
+| CONVERSIONNET-3810 | Bug | XLSX to XLS conversion - The column index should not be inside the pivottable report |
+| CONVERSIONNET-3821 | Bug | GroupDocs.Conversion.Exceptions.GroupDocsConversionException was unhandled |
 
 ## Public API and Backward Incompatible Changes
 

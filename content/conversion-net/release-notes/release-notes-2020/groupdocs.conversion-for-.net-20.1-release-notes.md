@@ -3,7 +3,7 @@ id: groupdocs-conversion-for-net-20-1-release-notes
 url: conversion/net/groupdocs-conversion-for-net-20-1-release-notes
 title: GroupDocs.Conversion for .NET 20.1 Release Notes
 weight: 3
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
@@ -26,77 +26,19 @@ There are 10+ features, improvements and bug-fixes in this release, most notable
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-CONVERSIONNET-3290
-
-Feature
-
-EML to MSG conversion
-
-CONVERSIONNET-3512
-
-Feature
-
-API to retrieve prepared default ConvertOptions for desired target conversion
-
-CONVERSIONNET-3536
-
-Feature
-
-Convert attachments from a mail document
-
-CONVERSIONNET-3586
-
-Feature
-
-GetAllPossibleConversions method which returns all supported conversions
-
-CONVERSIONNET-3587
-
-Feature
-
-GetPossibleConversions for a document extension without instantiating a Converter
-
-CONVERSIONNET-3597
-
-Improvement
-
-Improve document info classes 
-
-CONVERSIONNET-3626
-
-Improvement
-
-Make proportional image If only Width or Height is provided when converting to image
-
-CONVERSIONNET-3576
-
-Bug
-
-Email to Excel conversion issue
-
-CONVERSIONNET-3581
-
-Bug
-
-Email to Word or PDF License Not working
-
-CONVERSIONNET-3625
-
-Bug
-
-PageNumber and PagesCount not respected when converting to image
-
-CONVERSIONNET-3634
-
-Bug
-
-'Index was out of range.' exception when converting particular .mpx file to .html
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONNET-3290 | Feature | EML to MSG conversion |
+| CONVERSIONNET-3512 | Feature | API to retrieve prepared default ConvertOptions for desired target conversion |
+| CONVERSIONNET-3536 | Feature | Convert attachments from a mail document |
+| CONVERSIONNET-3586 | Feature | GetAllPossibleConversions method which returns all supported conversions |
+| CONVERSIONNET-3587 | Feature | GetPossibleConversions for a document extension without instantiating a Converter |
+| CONVERSIONNET-3597 | Improvement | Improve document info classes  |
+| CONVERSIONNET-3626 | Improvement | Make proportional image If only Width or Height is provided when converting to image |
+| CONVERSIONNET-3576 | Bug | Email to Excel conversion issue |
+| CONVERSIONNET-3581 | Bug | Email to Word or PDF License Not working |
+| CONVERSIONNET-3625 | Bug | PageNumber and PagesCount not respected when converting to image |
+| CONVERSIONNET-3634 | Bug | 'Index was out of range.' exception when converting particular .mpx file to .html |
 
 ## Public API and Backward Incompatible Changes
 

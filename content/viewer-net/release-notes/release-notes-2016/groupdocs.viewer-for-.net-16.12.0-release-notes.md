@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-16-12-0-release-notes
 url: viewer/net/groupdocs-viewer-for-net-16-12-0-release-notes
 title: GroupDocs.Viewer For .NET 16.12.0 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -21,77 +21,7 @@ There are 2 new features and 9 improvements and fixes in this regular monthly re
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Category**
-
-VIEWERNET-996
-
-OTS format support
-
-New Feature
-
-VIEWERNET-971
-
-WebP file format support
-
-New Feature
-
-VIEWERNET-1020
-
-Use current directory when storage path is not specified
-
-Improvement
-
-VIEWERNET-934
-
-Implement responsive html output for Slides documents
-
-Improvement
-
-VIEWERNET-1027
-
-Different exception messages for password encrypted Word document
-
-Bug
-
-VIEWERNET-993
-
-Failed to load SAI image
-
-Bug
-
-VIEWERNET-976
-
-Large scrollbars when viewing pdf converted to html with embedded resources in IE Edge
-
-Bug
-
-VIEWERNET-962
-
-IE Edge displays large scrollbars for generated HTML
-
-Bug
-
-VIEWERNET-953
-
-Failed to load Tex file from stream
-
-Bug
-
-VIEWERNET-947
-
-Failed to load XCF file
-
-Bug
-
-VIEWERNET-941
-
-Position of graph lines is not correct in output HTML or image file
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-996</p></td><td class="confluenceTd"><p>OTS format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-971</p></td><td class="confluenceTd"><p>WebP file format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1020</p></td><td class="confluenceTd"><p>Use current directory when storage path is not specified</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-934</p></td><td class="confluenceTd"><p>Implement responsive html output for Slides documents</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1027</p></td><td class="confluenceTd"><p>Different exception messages for password encrypted Word document</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-993</p></td><td class="confluenceTd"><p>Failed to load SAI image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-976</p></td><td class="confluenceTd"><p>Large scrollbars when viewing pdf converted to html with embedded resources in IE Edge</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-962</p></td><td class="confluenceTd"><p>IE Edge displays large scrollbars for generated HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-953</p></td><td class="confluenceTd"><p>Failed to load Tex file from stream</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-947</p></td><td class="confluenceTd"><p>Failed to load XCF file</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-941</p></td><td class="confluenceTd"><p>Position of graph lines is not correct in output HTML or image file</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

@@ -18,10 +18,7 @@ hideChildren: False
 
 | Key | Summary | Category |
 | --- | --- | --- |
-| PARSERNET-1218 | 
-New public API
-
- | Feature |
+| PARSERNET-1218 | New public API | Feature |
 
 # Public API and Backward Incompatible Changes
 
@@ -32,7 +29,7 @@ New public API
 
 #### Full list of types that have been moved and marked as obsolete:
 
-###### div.rbtoc1590155373027 { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }div.rbtoc1590155373027 ul { list-style-type: disc; list-style-image: none; margin-left: 0px; }div.rbtoc1590155373027 li { margin-left: 0px; padding-left: 0px; }
+###### div.rbtoc1590388776698 { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }div.rbtoc1590388776698 ul { list-style-type: disc; list-style-image: none; margin-left: 0px; }div.rbtoc1590388776698 li { margin-left: 0px; padding-left: 0px; }
 
 ###### GroupDocs.Parser
 

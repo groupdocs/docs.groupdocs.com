@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-19-4-release-notes
 url: metadata/net/groupdocs-metadata-for-net-19-4-release-notes
 title: GroupDocs.Metadata for .NET 19.4 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -22,23 +22,7 @@ There are the following features and enhancements in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-METADATANET-2698
-
-Implement the ability to read Matroska subtitles
-
-New Feature
-
-METADATANET-2761
-
-Implement the ability to read original encoded names of ZIP archive entries
-
-Enhancement
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2698</td><td colspan="1" class="confluenceTd">Implement the ability to read Matroska subtitles</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2761</td><td colspan="1" class="confluenceTd">Implement the ability to read original encoded names of ZIP archive entries</td><td colspan="1" class="confluenceTd">Enhancement</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

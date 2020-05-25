@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-16-11-release-notes
 url: search/net/groupdocs-search-for-net-16-11-release-notes
 title: GroupDocs.Search for .NET 16.11 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -18,17 +18,7 @@ There is one feature in this regular monthly release:
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-452
-
-Implement Case sensitive search feature
-
-New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>Key</p></td><td class="confluenceTd"><p>Summary</p></td><td class="confluenceTd"><p>Category</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-452</p></td><td class="confluenceTd"><p>Implement Case sensitive search feature</p></td><td class="confluenceTd"><p>New Feature</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

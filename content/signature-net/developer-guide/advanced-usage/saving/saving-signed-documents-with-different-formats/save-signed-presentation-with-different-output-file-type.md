@@ -3,12 +3,12 @@ id: save-signed-presentation-with-different-output-file-type
 url: signature/net/save-signed-presentation-with-different-output-file-type
 title: Save signed Presentation with different output file type
 weight: 3
-description: This article explains how to save signed Presentation documents with various file formats by GroupDocs.Signature API.
+description: "This article explains how to save signed Presentation documents with various file formats by GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
- div.rbtoc1588849575935 { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }div.rbtoc1588849575935 ul { list-style-type: disc; list-style-image: none; margin-left: 0px; }div.rbtoc1588849575935 li { margin-left: 0px; padding-left: 0px; }
+ div.rbtoc1590388503172 { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }div.rbtoc1590388503172 ul { list-style-type: disc; list-style-image: none; margin-left: 0px; }div.rbtoc1590388503172 li { margin-left: 0px; padding-left: 0px; }
 
 # Save signed Presentation with different output file type
 

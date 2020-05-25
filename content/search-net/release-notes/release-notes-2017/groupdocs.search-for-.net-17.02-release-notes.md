@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-17-02-release-notes
 url: search/net/groupdocs-search-for-net-17-02-release-notes
 title: GroupDocs.Search for .NET 17.02 Release Notes
 weight: 11
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -20,29 +20,7 @@ There are 3 features and enhancements in this regular monthly release. The most 
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-802
-
-Inherit Password dictionary from IEnumerable to make it like other dictionaries
-
-Enhancement
-
-SEARCHNET-841
-
-Support different search features in one search query
-
-Enhancement
-
-SEARCHNET-384
-
-Implement recognizing the queries written in a different keyboard layout
-
-New Feature
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>Key</p></td><td class="confluenceTd"><p>Summary</p></td><td class="confluenceTd"><p>Category</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-802</p></td><td class="confluenceTd"><p>Inherit Password dictionary from IEnumerable to make it like other dictionaries</p></td><td class="confluenceTd"><p>Enhancement</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-841</p></td><td class="confluenceTd"><p>Support different search features in one search query</p></td><td class="confluenceTd"><p>Enhancement</p></td></tr><tr><td class="confluenceTd"><p>SEARCHNET-384</p></td><td class="confluenceTd"><p>Implement recognizing the queries written in a different keyboard layout</p></td><td class="confluenceTd"><p>New Feature</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

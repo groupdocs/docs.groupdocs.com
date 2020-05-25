@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-17-1-0-release-notes
 url: viewer/net/groupdocs-viewer-for-net-17-1-0-release-notes
 title: GroupDocs.Viewer for .NET 17.1.0 Release Notes
 weight: 12
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -21,101 +21,7 @@ There are 4 new features and 11 improvements and fixes in this regular monthly r
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Category**
-
-VIEWERNET-1043
-
-Implement setting to prevent glyphs grouping when rendering pdf documents
-
-New Feature
-
-VIEWERNET-1036
-
-Partial rendering of large Excel sheets in HTML mode
-
-New Feature
-
-VIEWERNET-1034
-
-Implement parameterless ViewerHtmlHandler and ViewerImageHandler constructors
-
-New Feature
-
-VIEWERNET-308
-
-Add possibility to configure ViewerConfig class via app.config or web.config file
-
-New Feature
-
-VIEWERNET-1052
-
-Implement setting to configure content ordering in resultant HTML document
-
-Improvement
-
-VIEWERNET-1040
-
-Improve Email documents rendering
-
-Improvement
-
-WEB-2422
-
-Printing Radio Buttons from HTML page
-
-Bug
-
-WEB-1092
-
-Links are converted into plain text when converting PDF to HTML
-
-Bug
-
-VIEWERNET-1023
-
-Merged cells in xlsx are not displayed as merged in HTML
-
-Bug
-
-VIEWERNET-1004
-
-Alignment of radio button text and checkbox text is not proper
-
-Bug
-
-VIEWERNET-994
-
-Jumbling words when rendering PDF document to HTML
-
-Bug
-
-VIEWERNET-975
-
-Creates only one page in text(txt) document
-
-Bug
-
-VIEWERNET-974
-
-Radio buttons are not showing as 'selected' or 'checked' when converting to fixed HTML
-
-Bug
-
-VIEWERNET-972
-
-Radio buttons are not showing as 'selected' or 'checked'
-
-Bug
-
-VIEWERNET-581
-
-Missing characters, invalid formating when saving to HTML
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1043</p></td><td class="confluenceTd"><p>Implement setting to prevent glyphs grouping when rendering pdf documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1036</p></td><td class="confluenceTd"><p>Partial rendering of large Excel sheets in HTML mode</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1034</p></td><td class="confluenceTd"><p>Implement parameterless ViewerHtmlHandler and ViewerImageHandler constructors</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-308</p></td><td class="confluenceTd"><p>Add possibility to configure ViewerConfig class via app.config or web.config file</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1052</p></td><td class="confluenceTd"><p>Implement setting to configure content ordering in resultant HTML document</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1040</p></td><td class="confluenceTd"><p>Improve Email documents rendering</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>WEB-2422</p></td><td class="confluenceTd"><p>Printing Radio Buttons from HTML page</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-1092</p></td><td class="confluenceTd"><p>Links are converted into plain text when converting PDF to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1023</p></td><td class="confluenceTd"><p>Merged cells in xlsx are not displayed as merged in HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1004</p></td><td class="confluenceTd"><p>Alignment of radio button text and checkbox text is not proper</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-994</p></td><td class="confluenceTd"><p>Jumbling words when rendering PDF document to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-975</p></td><td class="confluenceTd"><p>Creates only one page in text(txt) document</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-974</p></td><td class="confluenceTd"><p>Radio buttons are not showing as 'selected' or 'checked' when converting to fixed HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-972</p></td><td class="confluenceTd"><p>Radio buttons are not showing as 'selected' or 'checked'</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-581</p></td><td class="confluenceTd"><p>Missing characters, invalid formating when saving to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

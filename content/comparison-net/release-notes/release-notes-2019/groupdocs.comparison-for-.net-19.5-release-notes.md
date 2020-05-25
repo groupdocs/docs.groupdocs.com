@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-19-5-release-notes
 url: comparison/net/groupdocs-comparison-for-net-19-5-release-notes
 title: GroupDocs.Comparison for .NET 19.5 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -24,95 +24,22 @@ Below is the list of most notable changes in release of GroupDocs.Comparison for
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-1847
-
-Calculate correct coordinates of changes for Slides
-
-Feature
-
-COMPARISONNET-1849 
-
-Calculate correct coordinates of changes for PDF
-
-Feature
-
-COMPARISONNET-1852 
-
-Calculate correct coordinates of changes for Diagrams
-
-Feature
-
-COMPARISONNET-1895 
-
-Implement Get document info method
-
-Feature
-
-COMPARISONNET-1773 
-
-Error handling improvements for all formats
-
-Improvement
-
-COMPARISONNET-1799 
-
-Improve change detection in tables on Words
-
-Improvement
-
-COMPARISONNET-1808 
-
-Comparison is not working on Footnote
-
-Bug
-
-COMPARISONNET-1774 
-
-Can't get images for HTML files
-
-Bug
-
-COMPARISONNET-1805 
-
-Deleted items in comparison output is not as expected
-
-Bug
-
-COMPARISONNET-1892 
-
-Incorrect difference info in PDF
-
-Bug
-
-COMPARISONNET-1899 
-
-Html MarkDeletedInsertedContentDeep Bug
-
-Bug
-
-COMPARISONNET-1903 
-
-License issue in GroupDocs.Comparison for .NET application
-
-Bug
-
-COMPARISONNET-1906 
-
-Font detection exception
-
-Bug
-
-COMPARISONNET-1909 
-
-Word separation exception
-
-Bug
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-1847 | Calculate correct coordinates of changes for Slides | Feature |
+| COMPARISONNET-1849  | Calculate correct coordinates of changes for PDF | Feature |
+| COMPARISONNET-1852  | Calculate correct coordinates of changes for Diagrams | Feature |
+| COMPARISONNET-1895  | Implement Get document info method | Feature |
+| COMPARISONNET-1773  | Error handling improvements for all formats | Improvement |
+| COMPARISONNET-1799  | Improve change detection in tables on Words | Improvement |
+| COMPARISONNET-1808  | Comparison is not working on Footnote | Bug |
+| COMPARISONNET-1774  | Can't get images for HTML files | Bug |
+| COMPARISONNET-1805  | Deleted items in comparison output is not as expected | Bug |
+| COMPARISONNET-1892  | Incorrect difference info in PDF | Bug |
+| COMPARISONNET-1899  | Html MarkDeletedInsertedContentDeep Bug | Bug |
+| COMPARISONNET-1903  | License issue in GroupDocs.Comparison for .NET application | Bug |
+| COMPARISONNET-1906  | Font detection exception | Bug |
+| COMPARISONNET-1909  | Word separation exception | Bug |
 
 ## Public API and Backward Incompatible Changes
 

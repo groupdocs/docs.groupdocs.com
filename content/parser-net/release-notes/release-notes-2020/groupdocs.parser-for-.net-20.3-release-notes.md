@@ -19,32 +19,9 @@ There are the following improvements in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-| 
-Key
-
- | 
-
-Summary
-
- | 
-
-Category
-
- |
+| Key | Summary | Category |
 | --- | --- | --- |
-| 
-
-PARSERNET-1432
-
- | 
-
-Improve the support of text structure extraction
-
- | 
-
-Improvement
-
- |
+| PARSERNET-1432 | Improve the support of text structure extraction | Improvement |
 | PARSERNET-1431 | Improve table of contents extraction API | Improvement |
 
 ## Public API and Backward Incompatible Changes

@@ -3,7 +3,7 @@ id: working-with-metadata-in-asf-files
 url: metadata/net/working-with-metadata-in-asf-files
 title: Working with Metadata in ASF Files
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

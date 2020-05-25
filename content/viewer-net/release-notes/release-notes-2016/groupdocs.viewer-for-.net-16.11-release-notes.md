@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-16-11-release-notes
 url: viewer/net/groupdocs-viewer-for-net-16-11-release-notes
 title: GroupDocs.Viewer For .NET 16.11 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -21,113 +21,7 @@ There are 2 new features and 15 improvements and fixes in this regular monthly r
 
 ## Full List of Issues Covering all Changes in this Release
 
-**Key**
-
-**Summary**
-
-**Category**
-
-VIEWERNET-955
-
-Ability to set default font when rendering Email documents
-
-New Feature
-
-VIEWERNET-849
-
-Add OTP format support
-
-New Feature
-
-VIEWERNET-966
-
-Improve public API of ViewerConfig class
-
-Improvement
-
-VIEWERNET-963
-
-Improve rendering CAD (dwg, dxf) documents to Pdf
-
-Improvement
-
-VIEWERNET-957
-
-Improve public API of IInputDataHandler interface
-
-Improvement
-
-VIEWERNET-927
-
-Display HTML pages of two different documents in the same page in browser without overriding css classes
-
-Improvement
-
-WEB-2447
-
-The background is missed for IE 11
-
-Bug
-
-WEB-2109
-
-Special characters like accents, umlauts and circumflex are displayed incorrectly when saving specific PDF to HTML
-
-Bug
-
-WEB-1398
-
-A ligature is shown incorrectly in HTML produced from PDF
-
-Bug
-
-VIEWERNET-979
-
-Invalid characters while rendering Word document into HTML
-
-Bug
-
-VIEWERNET-958
-
-Throws unsupported file format exception when loading specific doc file
-
-Bug
-
-VIEWERNET-956
-
-Getting exception "File type 'doc' is not supported"
-
-Bug
-
-VIEWERNET-949
-
-Parameter is not valid exception when rendering xlsx to image
-
-Bug
-
-VIEWERNET-877
-
-Extra blank page created when convering dwg to pdf.
-
-Bug
-
-VIEWERNET-848
-
-Failed to convert wmf file to image in Asp.Net application.
-
-Bug
-
-VIEWERNET-847
-
-Incorrect Rendering of Radio Buttons, Checkboxes and their Label into Html
-
-Bug
-
-VIEWERNET-775
-
-No text when converting Pdf to Html with FontAbsorber
-
-Bug
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-955</p></td><td class="confluenceTd"><p>Ability to set default font when rendering Email documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-849</p></td><td class="confluenceTd"><p>Add OTP format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-966</p></td><td class="confluenceTd"><p>Improve public API of ViewerConfig class</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-963</p></td><td class="confluenceTd"><p>Improve rendering CAD (dwg, dxf) documents to Pdf</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-957</p></td><td class="confluenceTd"><p>Improve public API of IInputDataHandler interface</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-927</p></td><td class="confluenceTd"><p>Display HTML pages of two different documents in the same page in browser without overriding css classes</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>WEB-2447</p></td><td class="confluenceTd"><p>The background is missed for IE 11</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-2109</p></td><td class="confluenceTd"><p>Special characters like accents, umlauts and circumflex are displayed incorrectly when saving specific PDF to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-1398</p></td><td class="confluenceTd"><p>A ligature is shown incorrectly in HTML produced from PDF</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-979</p></td><td class="confluenceTd"><p>Invalid characters while rendering Word document into HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-958</p></td><td class="confluenceTd"><p>Throws unsupported file format exception when loading specific doc file</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-956</p></td><td class="confluenceTd"><p>Getting exception "File type 'doc' is not supported"</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-949</p></td><td class="confluenceTd"><p>Parameter is not valid exception when rendering xlsx to image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-877</p></td><td class="confluenceTd"><p>Extra blank page created when convering dwg to pdf.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-848</p></td><td class="confluenceTd"><p>Failed to convert wmf file to image in Asp.Net application.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-847</p></td><td class="confluenceTd"><p>Incorrect Rendering of Radio Buttons, Checkboxes and their Label into Html</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-775</p></td><td class="confluenceTd"><p>No text when converting Pdf to Html with FontAbsorber</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

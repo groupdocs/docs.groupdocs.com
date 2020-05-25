@@ -3,7 +3,7 @@ id: extracting-makernote-metadata
 url: metadata/net/extracting-makernote-metadata
 title: Extracting MakerNote Metadata
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

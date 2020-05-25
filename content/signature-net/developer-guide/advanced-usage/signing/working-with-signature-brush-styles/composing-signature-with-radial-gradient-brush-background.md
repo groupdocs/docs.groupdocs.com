@@ -3,7 +3,7 @@ id: composing-signature-with-radial-gradient-brush-background
 url: signature/net/composing-signature-with-radial-gradient-brush-background
 title: Composing signature with radial gradient brush background
 weight: 2
-description:  This article explains how to fill signature background with radial gradient brush
+description: " This article explains how to fill signature background with radial gradient brush"
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False

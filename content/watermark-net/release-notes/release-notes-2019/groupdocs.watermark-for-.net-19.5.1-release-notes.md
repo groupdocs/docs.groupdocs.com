@@ -18,17 +18,9 @@ There are the following features, enhancements, and bug fixes in this release:
 
 ### All Changes
 
-Key
-
-Summary
-
-Category
-
-WATERMARKNET-1109
-
-Exception in Version19.5 "Stream was not writable" raised on saving after watermarking
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-1109 | Exception in Version19.5 "Stream was not writable" raised on saving after watermarking | Bug |
 
 ## Public API and Backward Incompatible Changes
 

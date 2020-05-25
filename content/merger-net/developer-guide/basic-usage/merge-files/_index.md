@@ -3,7 +3,7 @@ id: merge-files
 url: merger/net/merge-files
 title: Merge files
 weight: 3
-description: This article explains how to merge files of PDF, Microsoft Word, Excel and PowerPoint and other formats using GroupDocs.Merger API.
+description: "This article explains how to merge files of PDF, Microsoft Word, Excel and PowerPoint and other formats using GroupDocs.Merger API."
 keywords: Merge files, Combine files, Merge documents
 productName: GroupDocs.Merger for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-18-7-release-notes
 url: search/net/groupdocs-search-for-net-18-7-release-notes
 title: GroupDocs.Search for .NET 18.7 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -21,35 +21,7 @@ There are 4 enhancements in this regular monthly release. The most notable are:
 
 ## All Changes
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-236
-
-Implement using morphological word forms dictionary in search
-
-Enhancement
-
-SEARCHNET-1301
-
-Implement possibility to break updating operation manually
-
-Enhancement
-
-SEARCHNET-1302
-
-Implement possibility to break merging operation manually
-
-Enhancement
-
-SEARCHNET-1616
-
-Implement possibility to break indexing with Cancelation object
-
-Enhancement
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd">Key</td><td class="confluenceTd">Summary</td><td class="confluenceTd">Category</td></tr><tr><td class="confluenceTd">SEARCHNET-236</td><td class="confluenceTd">Implement using morphological word forms dictionary in search</td><td class="confluenceTd">Enhancement</td></tr><tr><td class="confluenceTd">SEARCHNET-1301</td><td class="confluenceTd">Implement possibility to break updating operation manually</td><td class="confluenceTd">Enhancement</td></tr><tr><td class="confluenceTd">SEARCHNET-1302</td><td class="confluenceTd">Implement possibility to break merging operation manually</td><td class="confluenceTd">Enhancement</td></tr><tr><td class="confluenceTd">SEARCHNET-1616</td><td class="confluenceTd">Implement possibility to break indexing with Cancelation object</td><td class="confluenceTd">Enhancement</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

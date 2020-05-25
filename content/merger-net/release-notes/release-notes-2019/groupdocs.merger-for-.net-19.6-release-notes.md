@@ -3,7 +3,7 @@ id: groupdocs-merger-for-net-19-6-release-notes
 url: merger/net/groupdocs-merger-for-net-19-6-release-notes
 title: GroupDocs.Merger for .NET 19.6 Release Notes
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Merger for .NET
 hideChildren: False
@@ -20,29 +20,11 @@ There are a few new features in this regular monthly release. The most notable a
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-MERGERNET-543
-
-Implement .png and .bmp image joining
-
-New Feature
-
-MERGERNET-561
-
-Expand options for image joining with background color for empty black image space
-
-New Feature
-
-MERGERNET-373
-
-Fix Aspose.Note document type saving for multithreading
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| MERGERNET-543 | Implement .png and .bmp image joining | New Feature |
+| MERGERNET-561 | Expand options for image joining with background color for empty black image space | New Feature |
+| MERGERNET-373 | Fix Aspose.Note document type saving for multithreading | Bug |
 
 ## Public API and Backward Incompatible Changes
 

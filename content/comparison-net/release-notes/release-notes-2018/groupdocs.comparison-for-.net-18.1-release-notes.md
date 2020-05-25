@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-18-1-release-notes
 url: comparison/net/groupdocs-comparison-for-net-18-1-release-notes
 title: GroupDocs.Comparison for .NET 18.1 Release Notes
 weight: 12
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -24,53 +24,15 @@ Below the list of the most notable features improvements and fixes for GroupDocs
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Issue Type
-
-COMPARISONNET-1461
-
-Comparison.PDF: Implement annotations comparing
-
-New Feature
-
-COMPARISONNET-1473
-
-Add public bool property LicenseChecker
-
-Improvement
-
-COMPARISONNET-1469
-
-Improve displaying of tables in PDF
-
-Improvement
-
-COMPARISONNET-1468
-
-Improve page mapper for PDF.
-
-Improvement
-
-COMPARISONNET-1465
-
-Comparison.PDF: fix filled cells on tables
-
-Improvement
-
-COMPARISONNET-1464
-
-Add page mapper for Note format
-
-Improvement
-
-COMPARISONNET-1462
-
-Comparison.Note: Improve comparison of table
-
-Improvement 
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| COMPARISONNET-1461 | Comparison.PDF: Implement annotations comparing | New Feature |
+| COMPARISONNET-1473 | Add public bool property LicenseChecker | Improvement |
+| COMPARISONNET-1469 | Improve displaying of tables in PDF | Improvement |
+| COMPARISONNET-1468 | Improve page mapper for PDF. | Improvement |
+| COMPARISONNET-1465 | Comparison.PDF: fix filled cells on tables | Improvement |
+| COMPARISONNET-1464 | Add page mapper for Note format | Improvement |
+| COMPARISONNET-1462 | Comparison.Note: Improve comparison of table | Improvement  |
 
 # Public API and Backward Incompatible Changes
 

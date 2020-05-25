@@ -3,7 +3,7 @@ id: groupdocs-signature-for-net-18-7-release-notes
 url: signature/net/groupdocs-signature-for-net-18-7-release-notes
 title: GroupDocs.Signature for .NET 18.7 Release Notes
 weight: 7
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
 hideChildren: False
@@ -23,83 +23,7 @@ There are about 13 improvements, new features and fixes in this regular release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-SIGNATURENET-3568
-
-Implement additional search criteria for Digital Signatures of Words Documents
-
-New Feature
-
-SIGNATURENET-3533
-
-Implement ability for cancellation of Search process
-
-New Feature
-
-SIGNATURENET-3530
-
-Implement ability for cancellation of Verification process
-
-New Feature
-
-SIGNATURENET-3527
-
-Implement ability for cancellation of Signing process
-
-New Feature
-
-SIGNATURENET-3526
-
-Implement text positioning for Stamp Signatures.
-
-New Feature
-
-SIGNATURENET-3483
-
-Implement support of Measure Type Units for Cells positioning
-
-New Feature
-
-SIGNATURENET-3463
-
-Implement additional search criteria for Digital Signatures of Cells Documents
-
-New Feature
-
-SIGNATURENET-3570
-
-Implement support of several Words Digital Search Options
-
-Improvement
-
-SIGNATURENET-3566
-
-Implement support of several Cells Digital Search Options
-
-Improvement
-
-SIGNATURENET-3480
-
-Implement global Exception handler to catch all unhandled exceptions
-
-Improvement
-
-SIGNATURENET-3578
-
-Wrong border appearance for PDF Text as Image signatures
-
-Bug
-
-SIGNATURENET-3563
-
-Fix QR-Code positioning when Signature area is more than generated QR-Code
-
-Bug
-
-SIGNATURENET-3562
-
-Fix freezing of Signature process on Image Documents for QR-Code Signature
-
-Bug
+<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3568</td><td colspan="1" class="confluenceTd">Implement additional search criteria for Digital Signatures of Words Documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3533</td><td colspan="1" class="confluenceTd">Implement ability for cancellation of Search process</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3530</td><td colspan="1" class="confluenceTd">Implement ability for cancellation of Verification process</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3527</td><td colspan="1" class="confluenceTd">Implement ability for cancellation of Signing process</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3526</td><td class="confluenceTd">Implement text positioning for Stamp Signatures.</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3483</td><td class="confluenceTd">Implement support of Measure Type Units for Cells positioning</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3463</td><td class="confluenceTd">Implement additional search criteria for Digital Signatures of Cells Documents</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3570</td><td class="confluenceTd">Implement support of several Words Digital Search Options</td><td class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd">SIGNATURENET-3566</td><td class="confluenceTd">Implement support of several Cells Digital Search Options</td><td class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd">SIGNATURENET-3480</td><td class="confluenceTd">Implement global Exception handler to catch all unhandled exceptions</td><td class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd">SIGNATURENET-3578</td><td class="confluenceTd">Wrong border appearance for PDF Text as Image signatures</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3563</td><td class="confluenceTd">Fix QR-Code positioning when Signature area is more than generated QR-Code</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3562</td><td class="confluenceTd">Fix freezing of Signature process on Image Documents for QR-Code Signature</td><td class="confluenceTd">Bug</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

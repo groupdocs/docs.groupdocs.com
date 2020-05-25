@@ -51,18 +51,8 @@ You can follow the steps below to reference GroupDocs.Watermark for .NET downloa
 
 Note that .NET Standard 2.0 version has external references:
 
-Package
-
-Version
-
-System.Drawing.Common
-
-4.7.0
-
-System.Text.Encoding.CodePages
-
-4.7.0
-
-SkiaSharp
-
-1.68.1
+| Package | Version |
+| --- | --- |
+| System.Drawing.Common | 4.7.0 |
+| System.Text.Encoding.CodePages | 4.7.0 |
+| SkiaSharp | 1.68.1 |

@@ -3,7 +3,7 @@ id: groupdocs-editor-for-net-19-10-1-release-notes
 url: editor/net/groupdocs-editor-for-net-19-10-1-release-notes
 title: GroupDocs.Editor for .NET 19.10.1 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Editor for .NET
 hideChildren: False
@@ -26,35 +26,12 @@ Improved XML-comments for the GroupDocs.Editor.Editor main class.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-EDITORNET-1320
-
-Exception during roundtrip in Presentation module in trial mode
-
-Bug
-
-EDITORNET-1353
-
-Undisposed resources in EditableDocument class
-
-Bug
-
-EDITORNET-1354
-
-Missing bindings for Aspose components
-
-Bug
-
-EDITORNET-1355
-
-Improve XML-comments in the Editor class
-
-Improvement
+| Key | Summary | Category |
+| --- | --- | --- |
+| EDITORNET-1320 | Exception during roundtrip in Presentation module in trial mode | Bug |
+| EDITORNET-1353 | Undisposed resources in EditableDocument class | Bug |
+| EDITORNET-1354 | Missing bindings for Aspose components | Bug |
+| EDITORNET-1355 | Improve XML-comments in the Editor class | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

@@ -3,7 +3,7 @@ id: groupdocs-metadata-for-net-20-1-release-notes
 url: metadata/net/groupdocs-metadata-for-net-20-1-release-notes
 title: GroupDocs.Metadata for .NET 20.1 Release Notes
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
@@ -20,29 +20,11 @@ There are the following features, enhancements and fixes in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-METADATANET-3132
-
-Implement the ability to obtain known property descriptors in the public API
-
-Improvement
-
-METADATANET-3143
-
-Implement an alternative way to extract metadata property values
-
-Improvement
-
-METADATANET-3133
-
-Add support for .Net Standard 2.0
-
-Improvement
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-3132 | Implement the ability to obtain known property descriptors in the public API | Improvement |
+| METADATANET-3143 | Implement an alternative way to extract metadata property values | Improvement |
+| METADATANET-3133 | Add support for .Net Standard 2.0 | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

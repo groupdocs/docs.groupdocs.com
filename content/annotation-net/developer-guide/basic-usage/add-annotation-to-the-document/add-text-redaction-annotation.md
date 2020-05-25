@@ -3,7 +3,7 @@ id: add-text-redaction-annotation
 url: annotation/net/add-text-redaction-annotation
 title: Add text redaction annotation
 weight: 14
-description: Learn what is a text redaction annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET.
+description: "Learn what is a text redaction annotation and how to add it to a document programmatically using GroupDocs.Annotation for .NET."
 keywords: What is a text redaction annotation, how to add annotation, add text redaction annotation
 productName: GroupDocs.Annotation for .NET
 hideChildren: False

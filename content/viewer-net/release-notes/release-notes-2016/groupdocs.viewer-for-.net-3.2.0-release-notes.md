@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-3-2-0-release-notes
 url: viewer/net/groupdocs-viewer-for-net-3-2-0-release-notes
 title: GroupDocs.Viewer For .NET 3.2.0 Release Notes
 weight: 9
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -30,245 +30,47 @@ There are 36 improvements and fixes in this regular monthly release. The most no
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-WEB-2128
-
-New conversion mechanism for displaying multipage TIFF files
-
-New Feature
-
-VIEWERNET-542
-
-Implement option that allows to set text document encoding.
-
-New Feature
-
-VIEWERNET-495
-
-Implement method that returns supported document formats.
-
-New Feature
-
-VIEWERNET-494
-
-Implement file description property that returns document type format.
-
-New Feature
-
-VIEWERNET-484
-
-Provide jpeg image quality setting.
-
-New Feature
-
-VIEWERNET-469
-
-Implement configuration option that allows set cells sheet conversion mode when converting to pdf.
-
-New Feature
-
-VIEWERNET-434
-
-Add support for Portuguese locale
-
-New Feature
-
-VIEWERNET-415
-
-Add ability to show/hide grid lines for excel files
-
-New Feature
-
-VIEWERNET-393
-
-New conversion mechanism for displaying multipage TIFF files
-
-New Feature
-
-VIEWERNET-389
-
-Implement PdfFileOptions same as another Options classes.
-
-New Feature
-
-VIEWERNET-304
-
-Process files from stream without specifying fileName parameter
-
-New Feature
-
-VIEWERNET-525
-
-Implement storing cache files separately depends on use pdf option.
-
-Improvement
-
-VIEWERNET-515
-
-Improve quality of re-sized images.
-
-Improvement
-
-VIEWERNET-462
-
-Improve document processing fidelity and speed
-
-Improvement
-
-VIEWERNET-436
-
-User provided Excel Spreadsheet does not follow MS Excel behavior when rendered to PDF
-
-Improvement
-
-VIEWERNET-423
-
-Improve localization engine to use custom locales from path
-
-Improvement
-
-VIEWERNET-395
-
-Hide/Show the hidden sheets for Excel files
-
-Improvement
-
-WEB-2446
-
-DocuSign signed files not showing all content
-
-Bug
-
-WEB-2445
-
-Doc to Pdf save error
-
-Bug
-
-WEB-2441
-
-Empty html
-
-Bug
-
-WEB-2438
-
-Not all content of the pdf document rendered to html
-
-Bug
-
-WEB-2435
-
-High memory usage while converting to Pdf
-
-Bug
-
-WEB-2402
-
-Specific eml file can't be viewed in HTML mode
-
-Bug
-
-VIEWERNET-528
-
-Failed to rotate page if page number specified.
-
-Bug
-
-VIEWERNET-514
-
-Resolution is set incorrectly when converting pdf to image.
-
-Bug
-
-VIEWERNET-513
-
-Image re-sized incorrectly when re-sizing to larger dimensions.
-
-Bug
-
-VIEWERNET-493
-
-Css classes are overridden in multiple pages documents
-
-Bug
-
-VIEWERNET-486
-
-Shift\_JIS encoded characters are not showing in proper format
-
-Bug
-
-VIEWERNET-480
-
-PreloadPagesCount is not working in V3.0
-
-Bug
-
-VIEWERNET-479
-
-Blurry document in Image Based rendering
-
-Bug
-
-VIEWERNET-472
-
-Invalid Parameter Exception on rendering PDF to HTML
-
-Bug
-
-VIEWERNET-455
-
-Underline for some words/sentences when saving to html/image
-
-Bug
-
-VIEWERNET-454
-
-Failed to convert .xlsx with fixed headers table to image.
-
-Bug
-
-VIEWERNET-453
-
-Conversion of .xlsx with fixed headers table to pdf never completes.
-
-Bug
-
-VIEWERNET-451
-
-Empty Value Exception on rendering PDF File
-
-Bug
-
-VIEWERNET-438
-
-Invalid Parameter Exception on rendering Excel Spreadsheet to HTML
-
-Bug
-
-VIEWERNET-508
-
-MinimumImageWidth is not working in V3.0
-
-Bug
-
-VIEWERNET-509
-
-Quality is not working in V3.0
-
-Bug
-
-VIEWERNET-511
-
-Locale is not working in V3.0
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| WEB-2128 | New conversion mechanism for displaying multipage TIFF files | New Feature |
+| VIEWERNET-542 | Implement option that allows to set text document encoding. | New Feature |
+| VIEWERNET-495 | Implement method that returns supported document formats. | New Feature |
+| VIEWERNET-494 | Implement file description property that returns document type format. | New Feature |
+| VIEWERNET-484 | Provide jpeg image quality setting. | New Feature |
+| VIEWERNET-469 | Implement configuration option that allows set cells sheet conversion mode when converting to pdf. | New Feature |
+| VIEWERNET-434 | Add support for Portuguese locale | New Feature |
+| VIEWERNET-415 | Add ability to show/hide grid lines for excel files | New Feature |
+| VIEWERNET-393 | New conversion mechanism for displaying multipage TIFF files | New Feature |
+| VIEWERNET-389 | Implement PdfFileOptions same as another Options classes. | New Feature |
+| VIEWERNET-304 | Process files from stream without specifying fileName parameter | New Feature |
+| VIEWERNET-525 | Implement storing cache files separately depends on use pdf option. | Improvement |
+| VIEWERNET-515 | Improve quality of re-sized images. | Improvement |
+| VIEWERNET-462 | Improve document processing fidelity and speed | Improvement |
+| VIEWERNET-436 | User provided Excel Spreadsheet does not follow MS Excel behavior when rendered to PDF | Improvement |
+| VIEWERNET-423 | Improve localization engine to use custom locales from path | Improvement |
+| VIEWERNET-395 | Hide/Show the hidden sheets for Excel files | Improvement |
+| WEB-2446 | DocuSign signed files not showing all content | Bug |
+| WEB-2445 | Doc to Pdf save error | Bug |
+| WEB-2441 | Empty html | Bug |
+| WEB-2438 | Not all content of the pdf document rendered to html | Bug |
+| WEB-2435 | High memory usage while converting to Pdf | Bug |
+| WEB-2402 | Specific eml file can't be viewed in HTML mode | Bug |
+| VIEWERNET-528 | Failed to rotate page if page number specified. | Bug |
+| VIEWERNET-514 | Resolution is set incorrectly when converting pdf to image. | Bug |
+| VIEWERNET-513 | Image re-sized incorrectly when re-sizing to larger dimensions. | Bug |
+| VIEWERNET-493 | Css classes are overridden in multiple pages documents | Bug |
+| VIEWERNET-486 | Shift\_JIS encoded characters are not showing in proper format | Bug |
+| VIEWERNET-480 | PreloadPagesCount is not working in V3.0 | Bug |
+| VIEWERNET-479 | Blurry document in Image Based rendering | Bug |
+| VIEWERNET-472 | Invalid Parameter Exception on rendering PDF to HTML | Bug |
+| VIEWERNET-455 | Underline for some words/sentences when saving to html/image | Bug |
+| VIEWERNET-454 | Failed to convert .xlsx with fixed headers table to image. | Bug |
+| VIEWERNET-453 | Conversion of .xlsx with fixed headers table to pdf never completes. | Bug |
+| VIEWERNET-451 | Empty Value Exception on rendering PDF File | Bug |
+| VIEWERNET-438 | Invalid Parameter Exception on rendering Excel Spreadsheet to HTML | Bug |
+| VIEWERNET-508 | MinimumImageWidth is not working in V3.0 | Bug |
+| VIEWERNET-509 | Quality is not working in V3.0 | Bug |
+| VIEWERNET-511 | Locale is not working in V3.0 | Bug |
 
   
   

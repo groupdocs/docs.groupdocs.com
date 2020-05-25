@@ -19,23 +19,10 @@ There are following features in this first release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key 
-
-Summary
-
-Category
-
-WATERMARKNET-460
-
-Implement ability to search watermarks by text formatting (font, color etc) 
-
-New Feature
-
-WATERMARKNET-504 
-
-Implement ability to work with hyperlinks associated with document entities (all formats) 
-
-New Feature 
+| Key  | Summary | Category |
+| --- | --- | --- |
+| WATERMARKNET-460 | Implement ability to search watermarks by text formatting (font, color etc)  | New Feature |
+| WATERMARKNET-504  | Implement ability to work with hyperlinks associated with document entities (all formats)  | New Feature  |
 
 ## Public API and Backward Incompatible Changes
 

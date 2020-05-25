@@ -3,7 +3,7 @@ id: document-filtering-in-search-result
 url: search/net/document-filtering-in-search-result
 title: Document filtering in search result
 weight: 4
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False

@@ -86,14 +86,7 @@ There are the following features in this release:
     
     The document template is set by DocumentTemplate class:
     
-    | 
-    Member
-    
-     | 
-    
-    Description
-    
-     |
+    | Member | Description |
     | --- | --- |
     | Count | An integer value that represents the total number of the template fields. |
     | TemplateField this\[int index\] | Gets a template field. |
@@ -112,22 +105,11 @@ There are the following features in this release:
     
     The template field is set by TemplateField class:
     
-    | 
-    Member
-    
-     | 
-    
-    Description
-    
-     |
+    | Member | Description |
     | --- | --- |
     | FieldName | An uppercase string that represents the name of the template field. |
     | PageIndex | A zero-based index of the page where the field is placed; null if the field is placed on any page. |
-    | FieldPosition | 
-    
-    A field position on the page (see below).
-    
-     |
+    | FieldPosition | A field position on the page (see below). |
     
     An instance of the class is created by the following constructors:
     
@@ -143,26 +125,7 @@ There are the following features in this release:
     
     TemplateFieldPosition class contains properties for all supported position types. The instance of TemplateFieldPosition class contains only those properties which are related to the position type; other properties are null.
     
-    | 
-    Member
-    
-     | 
-    
-    Description
-    
-     | 
-    
-    Fixed
-    
-     | 
-    
-    Regex
-    
-     | 
-    
-    Related
-    
-     |
+    | Member | Description | Fixed | Regex | Related |
     | --- | --- | --- | --- | --- |
     | Type | A value that represents a type of the template field position. | • | • | • |
     | Rectangle | A rectangle that bounds the field. | • |   |   |
@@ -307,14 +270,7 @@ There are the following features in this release:
     
     Template table is set by TemplateTable class:
     
-    | 
-    Member
-    
-     | 
-    
-    Description
-    
-     |
+    | Member | Description |
     | --- | --- |
     | TableName | An uppercase string that represents the name of the template table. |
     | PageIndex | A zero-based index of the page where the table is placed; null if the table is placed on any page. |
@@ -334,14 +290,7 @@ There are the following features in this release:
     
     TableAreaDetectorParameters class has the following members:
     
-    | 
-    Member
-    
-     | 
-    
-    Description
-    
-     |
+    | Member | Description |
     | --- | --- |
     | MinRowCount | Minimum number of table rows |
     | MinColumnCount | Minimum number of table columns |
@@ -369,14 +318,7 @@ There are the following features in this release:
     
     Template table is set by table layout if the table can't be detected automatically:
     
-    | 
-    Member
-    
-     | 
-    
-    Description
-    
-     |
+    | Member | Description |
     | --- | --- |
     | VerticalSeparators | A collection of vertical separators |
     | HorizontalSeparators | A collection of horizontal separators |
@@ -506,14 +448,7 @@ There are the following features in this release:
     
     Extracted data are stored in the instance of DocumentData class:
     
-    | 
-    Member
-    
-     | 
-    
-    Description
-    
-     |
+    | Member | Description |
     | --- | --- |
     | Count | An integer value that represents the total number of data fields. |
     | DocumentDataField this\[int index\] | Gets a data field. |
@@ -522,22 +457,11 @@ There are the following features in this release:
     
     The following methods are used to fill an instance with the data:
     
-    | 
-    Method
-    
-     | 
-    
-    Description
-    
-     |
+    | Method | Description |
     | --- | --- |
     | AddDataField(DocumentDataField dataField) | Adds a data field. |
     | AddDataFields(IEnumerable<DocumentDataField> dataFields) | Adds a collection of data fields. |
-    | AddDataTable(DocumentDataTable dataTable) | 
-    
-    Adds a data table.
-    
-     |
+    | AddDataTable(DocumentDataTable dataTable) | Adds a data table. |
     
     An instance of DocumentData class can contain more than one field (or table) with the same name. This is because a field (or table) is placed on more than one page or one page can contain more than one text value that meets the template field condition (for example, template regex field).
     
@@ -545,14 +469,7 @@ There are the following features in this release:
     
     Data field is set by DocumentDataField class:
     
-    | 
-    Member
-    
-     | 
-    
-    Description
-    
-     |
+    | Member | Description |
     | --- | --- |
     | FieldName | An uppercase string that represents the name of the data field. |
     | PageIndex | A zero-based index of the page where the value is found. |
@@ -611,14 +528,7 @@ There are the following features in this release:
     
     Data table is set by DocumentDataTable class:
     
-    | 
-    Member
-    
-     | 
-    
-    Description
-    
-     |
+    | Member | Description |
     | --- | --- |
     | TableName | An uppercase string that represents the name of the data table. |
     | PageIndex | A zero-based index of the page where the table is found. |

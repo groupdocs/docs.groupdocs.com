@@ -3,7 +3,7 @@ id: groupdocs-viewer-for-net-18-6-1-release-notes
 url: viewer/net/groupdocs-viewer-for-net-18-6-1-release-notes
 title: GroupDocs.Viewer for .NET 18.6.1 Release Notes
 weight: 8
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
@@ -16,17 +16,9 @@ There is one bug fix in this hotfix release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-VIEWERNET-1642
-
-Black image when rendering PDF document
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1642 | Black image when rendering PDF document | Bug |
 
 ## Public API and Backward Incompatible Changes
 

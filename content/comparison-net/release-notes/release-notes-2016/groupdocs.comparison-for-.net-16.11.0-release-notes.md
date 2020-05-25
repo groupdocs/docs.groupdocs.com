@@ -3,7 +3,7 @@ id: groupdocs-comparison-for-net-16-11-0-release-notes
 url: comparison/net/groupdocs-comparison-for-net-16-11-0-release-notes
 title: GroupDocs.Comparison For .NET 16.11.0 Release Notes
 weight: 2
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
@@ -21,71 +21,18 @@ There are 10 improvements and fixes in this regular monthly release. The most no
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-COMPARISONNET-1009
-
-GroupDocs.Comparison.Slides: Add support of comparing objects with VBA scripts
-
-New Feature
-
-COMPARISONNET-1013
-
-GroupDocs.Comparison.Slides: Add support of style changes detection
-
-New Feature
-
-COMPARISONNET-1026
-
-GroupDocs.Comparison.Slides: add support of detection of Picture Frames
-
-New Feature
-
-COMPARISONNET-1015
-
-GroupDocs.Comparison.Slides: Improve comparison performance
-
-Improvement
-
-COMPARISONNET-1012
-
-GroupDocs.Comparison.Slides: Extend engine to support all kind of images
-
-Improvement
-
-COMPARISONNET-957
-
-Cross-format engine: The case the comparison of tables with different results for all formats
-
-Improvement
-
-COMPARISONNET-970
-
-GroupDocs.Comparison.PDF:Add support for new components to new core
-
-Improvement
-
-COMPARISONNET-966
-
-GroupDocs.Comparison.Cells: If content of row is unique then row should be marked as Inserted or Deleted
-
-Bug
-
-COMPARISONNET-967
-
-GroupDocs.Comparison.Cells: The result table structure not conforming to primary table structure
-
-Bug
-
-COMPARISONNET-946
-
-GroupDocs.Comparison.Words: Exception: The newChild was created from a different document than the one that created this node.
-
-Bug
+| Key | Summary | Category |
+| --- | --- | --- |
+| COMPARISONNET-1009 | GroupDocs.Comparison.Slides: Add support of comparing objects with VBA scripts | New Feature |
+| COMPARISONNET-1013 | GroupDocs.Comparison.Slides: Add support of style changes detection | New Feature |
+| COMPARISONNET-1026 | GroupDocs.Comparison.Slides: add support of detection of Picture Frames | New Feature |
+| COMPARISONNET-1015 | GroupDocs.Comparison.Slides: Improve comparison performance | Improvement |
+| COMPARISONNET-1012 | GroupDocs.Comparison.Slides: Extend engine to support all kind of images | Improvement |
+| COMPARISONNET-957 | Cross-format engine: The case the comparison of tables with different results for all formats | Improvement |
+| COMPARISONNET-970 | GroupDocs.Comparison.PDF:Add support for new components to new core | Improvement |
+| COMPARISONNET-966 | GroupDocs.Comparison.Cells: If content of row is unique then row should be marked as Inserted or Deleted | Bug |
+| COMPARISONNET-967 | GroupDocs.Comparison.Cells: The result table structure not conforming to primary table structure | Bug |
+| COMPARISONNET-946 | GroupDocs.Comparison.Words: Exception: The newChild was created from a different document than the one that created this node. | Bug |
 
   
 

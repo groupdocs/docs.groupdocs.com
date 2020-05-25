@@ -3,7 +3,7 @@ id: working-with-metadata-in-projectmanagement-formats
 url: metadata/net/working-with-metadata-in-projectmanagement-formats
 title: Working with metadata in ProjectManagement formats
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

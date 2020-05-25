@@ -3,7 +3,7 @@ id: groupdocs-search-for-net-20-1-release-notes
 url: search/net/groupdocs-search-for-net-20-1-release-notes
 title: GroupDocs.Search for .NET 20.1 Release Notes
 weight: 1
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
@@ -26,35 +26,7 @@ There are also the following improvements:
 
 ## Full List of Issues Covering all Changes in this Release
 
-Key
-
-Summary
-
-Category
-
-SEARCHNET-2182
-
-Add support for .Net Standard 2.0
-
-Improvement
-
-SEARCHNET-2160
-
-Implement index statuses reflecting possible operations
-
-Improvement
-
-SEARCHNET-2185
-
-Remove Legacy namespace
-
-Improvement
-
-SEARCHNET-2186
-
-Implement options for metadata indexing
-
-Improvement
+<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>Key</p></td><td class="confluenceTd"><p>Summary</p></td><td class="confluenceTd"><p>Category</p></td></tr><tr><td colspan="1" class="confluenceTd">SEARCHNET-2182</td><td colspan="1" class="confluenceTd">Add support for .Net Standard 2.0</td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td colspan="1" class="confluenceTd"><p>SEARCHNET-2160</p></td><td colspan="1" class="confluenceTd"><p>Implement index statuses reflecting possible operations</p></td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td colspan="1" class="confluenceTd">SEARCHNET-2185</td><td colspan="1" class="confluenceTd">Remove Legacy namespace</td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td colspan="1" class="confluenceTd">SEARCHNET-2186</td><td colspan="1" class="confluenceTd">Implement options for metadata indexing</td><td colspan="1" class="confluenceTd">Improvement</td></tr></tbody></table>
 
 ## Public API and Backward Incompatible Changes
 

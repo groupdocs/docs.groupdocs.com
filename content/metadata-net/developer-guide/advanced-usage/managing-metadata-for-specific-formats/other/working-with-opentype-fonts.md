@@ -3,7 +3,7 @@ id: working-with-opentype-fonts
 url: metadata/net/working-with-opentype-fonts
 title: Working with OpenType fonts
 weight: 6
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
 hideChildren: False

@@ -3,7 +3,7 @@ id: using-aliases
 url: search/net/using-aliases
 title: Using aliases
 weight: 28
-description: 
+description: ""
 keywords: 
 productName: GroupDocs.Search for .NET
 hideChildren: False
