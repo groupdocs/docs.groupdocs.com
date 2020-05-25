@@ -2,23 +2,30 @@
 // Basic Bootstrap table
 //
 
-.table {
+table {
   width: 100%;
   margin-bottom: $spacer;
   color: $table-color;
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+  border: $table-border-width solid $table-border-color;
 
   th,
   td {
     padding: $table-cell-padding;
     vertical-align: top;
-    border-top: $table-border-width solid $table-border-color;
+    border: $table-border-width solid $table-border-color;
+  }
+
+  th{
+    background-color: $gray-100;
   }
 
   thead th {
-    vertical-align: bottom;
-    border-bottom: (2 * $table-border-width) solid $table-border-color;
+    vertical-align: middle;   
+    //border-bottom-width: 2 * $table-border-width;
+    text-align: center;
   }
+
 
   tbody + tbody {
     border-top: (2 * $table-border-width) solid $table-border-color;
