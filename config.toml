@@ -50,7 +50,7 @@ enableGitInfo = true
             { Key = "watermark",        Name = "GroupDocs.Watermark",       Description = "Watermark manipulation APIs for creating, removing, smart searching, edit locking, and performing other powerful operations across all popular platforms and supported file formats." },
             
             { Key = "assembly",         Name = "GroupDocs.Assembly",        Description = "Automate your document generation process with cross platform automation assembly APIs to boost productivity and accuracy" },
-            { Key = "classification",   Name = "GroupDocs.Classification",  Description = "Build custom applications to perform documents and text categorization operations using different taxonomies within your applications." }           
+            { Key = "classification",   Name = "GroupDocs.Classification",  Description = "Build custom applications to perform documents and text categorization operations using different taxonomies within your applications.", HideJava = true }           
     ]
 
     MoreServices = [ 
