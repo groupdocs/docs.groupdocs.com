@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+    {{- partial "head.html" . -}}
+    {{- partial "groupdocs-header.html" . -}}
+        
+    <div class="pf-header">
+        <div class="pf-header-title">{{ .Params.Title }}</div>    
+        <div class="pf-header-motto">GROUPDOCS DEVELOPERS COOKBOOK</div>    
+    </div>
+    <body>  
+        <main style="display: flex;">   
+            <div class="leftBar">    
+            </div>
+            <div class="pfMain">
+                
+                {{ range where $.Site.Data.products.Items "Family" .Params.Id}}
+                    {{ partial "family-product-info"  (dict "product" . "ctx" $) }}      
+                            
+                {{ end }}
+            </div>
+
+            <div class="rightBar"></div>
+        </main>
+        
+    </body>
+    <footer >{{- partial "groupdocs-footer.html" . -}}</footer>
+</html>
+

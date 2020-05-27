@@ -27,7 +27,17 @@ Below the list of improvements fixes and new features in this regular monthly re
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Issue Type</strong></p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-320</p></td><td class="confluenceTd"><p>Implement Watermark annotation for images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-319</p></td><td class="confluenceTd"><p>Implement Polyline annotation for images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-318</p></td><td class="confluenceTd"><p>Implement Text Underline annotation for images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-317</p></td><td class="confluenceTd"><p>Implement Text Strikeout annotations for images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-316</p></td><td class="confluenceTd"><p>Implement TextField annotation for images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-315</p></td><td class="confluenceTd"><p>Implement Point annotation for images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-314</p></td><td class="confluenceTd"><p>Implement Resource Redaction annotation for images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-313</p></td><td class="confluenceTd"><p>Implement Area annotation for images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-311</p></td><td class="confluenceTd"><p>Wrong Annotation orientation (After export PDF Annotations are shifted to other place )</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-320 | Implement Watermark annotation for images | New Feature |
+| ANNOTATIONNET-319 | Implement Polyline annotation for images | New Feature |
+| ANNOTATIONNET-318 | Implement Text Underline annotation for images | New Feature |
+| ANNOTATIONNET-317 | Implement Text Strikeout annotations for images | New Feature |
+| ANNOTATIONNET-316 | Implement TextField annotation for images | New Feature |
+| ANNOTATIONNET-315 | Implement Point annotation for images | New Feature |
+| ANNOTATIONNET-314 | Implement Resource Redaction annotation for images | New Feature |
+| ANNOTATIONNET-313 | Implement Area annotation for images | New Feature |
+| ANNOTATIONNET-311 | Wrong Annotation orientation (After export PDF Annotations are shifted to other place ) | Bug |
 
 ## Public API and Backward Incompatible Changes
 

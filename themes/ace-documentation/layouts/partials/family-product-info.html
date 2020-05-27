@@ -1,0 +1,101 @@
+
+<div class="pf-product-container">
+    <div class="pf-platform-icon">
+        {{ if eq .product.Platform "net" }}
+            <span style="font-size: 2em; color: cornflowerblue;">
+                <i class="fab fa-windows"></i>
+            </span>
+        {{ else if eq .product.Platform "java" }}
+            <span style="font-size: 2em; color: mediumvioletred;">
+                <i class="fab fa-java"></i>
+            </span>        
+        {{ end }}
+    </div>
+    <div class="pf-product-name">
+        <a href="{{ .ctx.Site.BaseURL }}{{ .product.Family }}/{{ .product.Platform }}">{{ .product.Name }}</a>
+    </div>
+
+    <div class="pf-docs">
+        
+        <div class="pf-docs-icon">                            
+            <i class="fas fa-stopwatch"></i>
+        </div>
+        <div class="pf-docs-item">     
+            <div class="pf-docs-item-name">Getting Started</div>
+            <div class="pf-docs-item-desc">Start quickly with our getting started documentation</div>     
+            <ul class="fa-ul">
+                {{ $sectionPath := (printf "%s\\%s\\" .product.Key "getting-started")}} 
+                {{ range first 4 (where (where .ctx.Site.RegularPages "Section" .product.Key) ".File.Dir" "==" $sectionPath) }}                               
+                    <li><span class="fa-li">
+                        <i class="far fa-file-alt"></i></span>
+                        <a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a>
+                    </li>                 
+                {{ end }}  
+            </ul>                         
+        </div>
+        <div class="pf-docs-icon">                            
+            <i class="fas fa-book"></i>
+        </div>  
+        <div class="pf-docs-item">   
+            <div class="pf-docs-item-name">Developer Guide</div>
+            <div class="pf-docs-item-desc">Articles and guidelines for basic and advanced development</div>                              
+            <ul class="fa-ul">
+                {{ $devGuidePath := (printf "%s\\%s\\_index.md" .product.Key "developer-guide")}}     
+                {{ range (where (where .ctx.Site.Pages "Section" .product.Key) ".Kind" "==" "section") }}
+                {{ if eq .Parent.File.Path $devGuidePath}}
+                    <li><span class="fa-li"><i class="far fa-file-alt"></i></span>
+                        <a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a>
+                    </li>   
+                {{ end }} 
+                {{ end }}  
+            </ul>
+        </div>                                               
+    </div>
+    <div> 
+        <a class="btn-net" style="margin-bottom: 30px;" 
+            href="{{ .ctx.Site.BaseURL }}{{ .product.Family }}/{{ .product.Platform }}">
+            More <i class="fas fa-arrow-right"></i>
+        </a>                            
+    </div>  
+
+    <div class="pf-code">
+        <div class="pf-code-name">
+            <i class="fas fa-code"></i>Code Examples
+        </div>
+
+        <div class="github-links">
+            {{ range .product.CodeExamples }}
+                <div class="github-item">
+                    <div class="github-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div>
+                        <a href="{{ .Url }}">
+                            <div class="github-project-name">{{ .Name }}</div>
+                            <div class="github-project-desc">{{ .Description }}</div>
+                        </a>                                
+                    </div>                                
+                </div>
+            {{ end }}                            
+        </div>
+    </div>
+
+    <div class="pf-code" style="background-color: white;">
+        <div class="pf-code-name">
+            <i class="fas fa-desktop"></i>Live Demo
+        </div>
+            {{ range .product.LiveDemo }}
+                <div class="github-item">
+                    <div class="github-icon">
+                        <i class="{{ .Icon }}"></i>
+                    </div>
+                    <div>
+                        <a href="{{ .Url }}">
+                            <div class="github-project-name">{{ .Name }}</div>
+                            <div class="github-project-desc">{{ .Description }}</div>
+                        </a>                                
+                    </div>                                
+                </div>
+            {{ end }}           
+    </div>
+</div>

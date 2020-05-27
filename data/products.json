@@ -1,0 +1,52 @@
+{
+	"Items": [{
+            "Family": "annotation",
+            "Key": "annotation-net",
+            "Name": "GroupDocs.Annotation for .NET",
+            "Platform": "net",
+            "CodeExamples": [
+                {
+                    "Name": "GroupDocs.Annotation for .NET",
+                    "Description": "Open-source project for APIs example usage",
+                    "Url": "https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET"
+                },
+                {
+                    "Name": "GroupDocs.Annotation for .NET MVC",
+                    "Description": "Open-source font-end project ready to be used out of the box",
+                    "Url": "https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC"
+                },
+                {
+                    "Name": "GroupDocs.Annotation for .NET WebForms",
+                    "Description": "Open-source font-end project ready to be used out of the box",
+                    "Url": "https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms"
+                    
+
+                }
+            ],
+            "LiveDemo": [
+                {                    
+                    "Name": "GroupDocs.Annotation at DockerHub",
+                    "Description": "Out-of-the-box docker container",
+                    "Url": "https://hub.docker.com/r/groupdocs/annotation",
+                    "Icon": "fab fa-docker"
+                },                    
+                {                    
+                    "Name": "GroupDocs.Annotation Free App",
+                    "Description": "Try our free online document annotator",
+                    "Url": "https://products.groupdocs.app/annotation",
+                    "Icon": "fab fa-internet-explorer"
+                }
+            ]
+        },
+		{
+            "Family": "annotation",
+            "Key": "annotation-java",
+            "Name": "GroupDocs.Annotation for Java",
+			"Platform": "java"
+		},
+		{
+			"Family": "test",
+			"Platform": "CPP"
+		}
+	]
+}
