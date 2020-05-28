@@ -21,6 +21,10 @@
     height: 14rem;
 }
 
+.topheader{
+    box-shadow: unset !important;
+  }
+
 .pf-header-title {
     vertical-align: middle;  
     font-size: $font-size-lg;
@@ -87,7 +91,8 @@
 
 
 .pf-docs-icon{
-    font-size: 2rem; color: $gray-900;
+    font-size: 7rem; 
+    color: #535353;
     margin-left: 20px;
     margin-right: 10px;
 }
@@ -116,13 +121,21 @@
 
 
 .pf-docs-item-name{
-    font-size: $font-size-base; font-style: normal; font-variant: normal; font-weight: normal; line-height: 19px;
-    color: $gray-900;
+    font-size: 1rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 19px;
+    color: #535353;
 }
 
 .pf-docs-item-desc{
-    font-size: $font-size-xsm; font-style: normal; font-variant: normal; font-weight: normal; line-height: 15px;
-    color: $gray-700;
+    font-size: .7rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 15px;
+    color: #9A9A9A;
     margin-bottom: 15px;  
     
     //max-width: 160px;  
@@ -178,9 +191,10 @@
 }
 
 .github-project-name{
-    font-size: $font-size-sm;
-    font-weight: $font-weight-semibold;
-    color: $gray-800;    
+    font-size: .875rem;
+    font-weight: 400;
+    color: #9A9A9A;    
+    opacity: .9;
 }
 
 .github-project-desc{
