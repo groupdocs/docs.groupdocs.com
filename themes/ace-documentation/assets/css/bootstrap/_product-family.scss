@@ -60,8 +60,8 @@
 
 .pf-docs{   
     display: flex;  
-    flex-direction: row;  
-    justify-items: start;
+   // flex-direction: row;  
+    justify-items: center;
     height: 230px;
     //border: 1px solid blue; // TEMP
 }
@@ -75,7 +75,14 @@
 
 .pf-docs-item{
     text-align: left; 
+    flex-grow: 1;
+    flex-basis: 0;
+    //border: 1px solid blue; // TEMP
 }
+
+.pf-docs-item + .pf-docs-item {
+    margin-left: 2%;
+  }
 
 .pf-docs-item a{
     font-size: $font-size-sm;
@@ -99,7 +106,7 @@
     color: $gray-700;
     margin-bottom: 15px;  
     
-    max-width: 160px;  
+    //max-width: 160px;  
 }
 
 .pf-getting-started{
