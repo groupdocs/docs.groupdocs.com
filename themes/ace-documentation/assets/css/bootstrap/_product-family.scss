@@ -4,14 +4,6 @@
     flex: 0 0 8rem;
   }
 
-@media screen and (max-width: $mobile-breakpoint) 
-{
-    .leftBar, .rightBar {
-        display: none;
-        flex: 0 0 0;
-    }
-}
-
 .pf-header {
     width: 100%;
     background-color: $black;
@@ -50,13 +42,6 @@
     text-align: center;   
 }
 
-@media screen and (max-width: $mobile-breakpoint) 
-{
-    .pfMain {
-        flex-direction: column;
-    }
-}
-
 .pf-product-container{
     text-align: center;    
     width: 50%;
@@ -91,7 +76,7 @@
 
 
 .pf-docs-icon{
-    font-size: 7rem; 
+    font-size: 2rem; 
     color: #535353;
     margin-left: 20px;
     margin-right: 10px;
@@ -121,20 +106,16 @@
 
 
 .pf-docs-item-name{
-    font-size: 1rem; 
+    font-size: $font-size-base; 
     font-style: normal; 
     font-variant: normal; 
-    font-weight: 400; 
+    font-weight: normal; 
     line-height: 19px;
     color: #535353;
 }
 
 .pf-docs-item-desc{
-    font-size: .7rem; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 400; 
-    line-height: 15px;
+    font-size: $font-size-xsm; font-style: normal; font-variant: normal; font-weight: normal; line-height: 15px;
     color: #9A9A9A;
     margin-bottom: 15px;  
     
@@ -191,8 +172,8 @@
 }
 
 .github-project-name{
-    font-size: .875rem;
-    font-weight: 400;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;        
     color: #9A9A9A;    
     opacity: .9;
 }
@@ -203,3 +184,31 @@
     color: $gray-700;
     opacity: .9;    
 }
+
+.spacer{    
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    min-height: 240px;
+    background-color: $white;
+}
+
+@media screen and (max-width: $mobile-breakpoint) 
+{
+    .pfMain {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftBar, .rightBar {
+        display: none;
+        flex: 0 0 0;
+    }
+
+    .spacer{    
+        display: none;
+    }
+}
+
+
