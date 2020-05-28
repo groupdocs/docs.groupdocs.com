@@ -39,14 +39,20 @@
         <div class="pf-docs-item">   
             <div class="pf-docs-item-name">Developer Guide</div>
             <div class="pf-docs-item-desc">Articles and guidelines for basic and advanced development</div>                              
-            <ul class="fa-ul">
+            <ul class="fa-ul">            
+
                 {{ $devGuidePath := (printf "%s\\%s\\_index.md" .product.Key "developer-guide")}}     
-                {{ range (where (where .ctx.Site.Pages "Section" .product.Key) ".Kind" "==" "section") }}
-                {{ if eq .Parent.File.Path $devGuidePath}}
-                    <li><span class="fa-li"><i class="far fa-file-alt"></i></span>
-                        <a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a>
-                    </li>   
-                {{ end }} 
+                {{ $.ctx.Scratch.Set "counter" 0 }}                
+                {{ range (where (where .ctx.Site.Pages "Section" .product.Key) ".Kind" "==" "section") }}                
+                    
+                    {{ if (eq .Parent.File.Path $devGuidePath) }}                
+                    {{ if (lt ($.ctx.Scratch.Get "counter") 3) }}                    
+                        {{ $.ctx.Scratch.Set "counter" (add ($.ctx.Scratch.Get "counter") 1) }}                  
+                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span>
+                            <a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a>
+                        </li>  
+                    {{ end }}             
+                    {{ end }} 
                 {{ end }}  
             </ul>
         </div>                                               

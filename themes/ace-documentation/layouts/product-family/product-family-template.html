@@ -6,7 +6,11 @@
         
     <div class="pf-header">
         <div class="pf-header-title">{{ .Params.Title }}</div>    
-        <div class="pf-header-motto">GROUPDOCS DEVELOPERS COOKBOOK</div>    
+        <div class="pf-header-motto">
+            <a href="{{ .Site.BaseURL }}">
+                GROUPDOCS DEVELOPERS COOKBOOK
+            </a> 
+        </div>    
     </div>
     <body>  
         <main style="display: flex;">   
@@ -15,9 +19,9 @@
             <div class="pfMain">
                 
                 {{ range where $.Site.Data.products.Items "Family" .Params.Id}}
-                    {{ partial "family-product-info"  (dict "product" . "ctx" $) }}      
-                            
+                    {{ partial "family-product-info"  (dict "product" . "ctx" $) }}                                  
                 {{ end }}
+
             </div>
 
             <div class="rightBar"></div>
