@@ -24,7 +24,7 @@
             <div class="pf-docs-item-name">Getting Started</div>
             <div class="pf-docs-item-desc">Start quickly with our getting started documentation</div>     
             <ul class="fa-ul">
-                {{ $sectionPath := (printf "%s%s\\%s\\" .ctx.Site.BaseURL .product.Key "getting-started")}} 
+                {{ $sectionPath := (printf "%s\\%s\\" .product.Key "getting-started")}} 
                 {{ range first 4 (where (where .ctx.Site.RegularPages "Section" .product.Key) ".File.Dir" "==" $sectionPath) }}                               
                     <li><span class="fa-li">
                         <i class="far fa-file-alt"></i></span>
@@ -35,9 +35,12 @@
                 ----<br/>
                 TEST<br/>
                 SECT PATH: {{ $sectionPath }}<br/>
-                {{ range first 4 (where .ctx.Site.RegularPages "Section" .product.Key) }}
+                {{ range (where .ctx.Site.RegularPages "Section" .product.Key) }}
                     PAGE: {{ . }} <br/>
                     DIR: {{ .File.Dir }}<br/>
+                    {{ if (eq .File.Dir  $sectionPath) }}
+                        true
+                    {{ end }}
                 {{ end }}
                 <br/>----
 
