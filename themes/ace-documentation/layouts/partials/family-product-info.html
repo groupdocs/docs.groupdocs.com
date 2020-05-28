@@ -24,7 +24,8 @@
             <div class="pf-docs-item-name">Getting Started</div>
             <div class="pf-docs-item-desc">Start quickly with our getting started documentation</div>     
             <ul class="fa-ul">
-                {{ $sectionPath := (printf "%s\\%s\\" .product.Key "getting-started")}} 
+                OS: {{ getenv "OS" }}
+                {{ $sectionPath := (printf "%s/%s/" .product.Key "getting-started")}} 
                 {{ range first 4 (where (where .ctx.Site.RegularPages "Section" .product.Key) ".File.Dir" "==" $sectionPath) }}                               
                     <li><span class="fa-li">
                         <i class="far fa-file-alt"></i></span>
