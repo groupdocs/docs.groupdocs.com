@@ -1,16 +1,24 @@
 .leftBar, .rightBar  {
     //background-color: $gray-100; // TEMP
     display: flex; 
-    flex: 0 0 12rem;
+    flex: 0 0 8rem;
   }
+
+@media screen and (max-width: $mobile-breakpoint) 
+{
+    .leftBar, .rightBar {
+        display: none;
+        flex: 0 0 0;
+    }
+}
 
 .pf-header {
     width: 100%;
     background-color: $black;
     text-align: center;
     color: $white;
-    padding-top: 3rem;      
-    height: 8rem;
+    padding-top: 5rem;      
+    height: 14rem;
 }
 
 .pf-header-title {
@@ -38,6 +46,13 @@
     text-align: center;   
 }
 
+@media screen and (max-width: $mobile-breakpoint) 
+{
+    .pfMain {
+        flex-direction: column;
+    }
+}
+
 .pf-product-container{
     text-align: center;    
     width: 50%;
@@ -45,7 +60,11 @@
 }
 
 .pf-platform-icon{
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.pf-platform-icon span {
+    font-size:  3rem;
 }
 
 .pf-product-name{    
@@ -62,7 +81,7 @@
     display: flex;  
    // flex-direction: row;  
     justify-items: center;
-    height: 230px;
+    height: 210px;
     //border: 1px solid blue; // TEMP
 }
 

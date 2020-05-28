@@ -2,11 +2,11 @@
 <div class="pf-product-container">
     <div class="pf-platform-icon">
         {{ if eq .product.Platform "net" }}
-            <span style="font-size: 2em; color: cornflowerblue;">
+            <span style="color: cornflowerblue;">
                 <i class="fab fa-windows"></i>
             </span>
         {{ else if eq .product.Platform "java" }}
-            <span style="font-size: 2em; color: mediumvioletred;">
+            <span style="color: mediumvioletred;">
                 <i class="fab fa-java"></i>
             </span>        
         {{ end }}
@@ -65,7 +65,7 @@
         </div>                                               
     </div>
     <div> 
-        <a class="btn-net" style="margin-bottom: 30px;" 
+        <a class="btn-net" style="margin-bottom: 55px;" 
             href="{{ .ctx.Site.BaseURL }}{{ .product.Family }}/{{ .product.Platform }}">
             More <i class="fas fa-arrow-right"></i>
         </a>                            
@@ -93,7 +93,7 @@
         </div>
     </div>
 
-    <div class="pf-code" style="background-color: white;">
+    <div class="pf-code" style="background-color: white; margin: 30px;">
         <div class="pf-code-name">
             <i class="fas fa-desktop"></i>Live Demo
         </div>
