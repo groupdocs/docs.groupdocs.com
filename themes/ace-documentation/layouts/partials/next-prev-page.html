@@ -1,12 +1,11 @@
-<!-- <div class="bg-primary overflow-hidden p-3 mt-5 shadow"> -->
     <div class="p-3 mt-5">
-
-    <!-- <h4 class="text-white text-center">Read more</h4> -->
+    {{ $menuSection := default "annotation-net" .Section  }}
+    {{ $homeSect := .Site.GetPage $menuSection }}    
 
     <!-- Next prev page -->
     {{- $currentNode := . -}}
 
-    {{- template "menu-nextprev" dict "menu" .Site.Home "currentnode" $currentNode -}}
+    {{- template "menu-nextprev" dict "menu" $homeSect "currentnode" $currentNode -}}
 
     {{- define "menu-nextprev" -}}
         {{- $currentNode := .currentnode -}}
