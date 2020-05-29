@@ -29,7 +29,20 @@ There are more than 10 improvements, new features and fixes in this regular rele
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3231</td><td colspan="1" class="confluenceTd">Implement ability to set color of QR-Code bars</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3229</td><td colspan="1" class="confluenceTd">Implement ability to set color of Barcode bars</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3228</td><td colspan="1" class="confluenceTd">Implement ability to set code text alignment for QR-codes</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3225</td><td colspan="1" class="confluenceTd">Implement ability to set code text alignment for Bar-codes</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3217</td><td colspan="1" class="confluenceTd">Implement ability to use inner image logo for QR-Codes</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3208</td><td colspan="1" class="confluenceTd">Provide ability to set inner margins for QRcodes.</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3207</td><td colspan="1" class="confluenceTd">Provide ability to set inner margins for Barcodes.</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3178</td><td colspan="1" class="confluenceTd">Implement ability to load Digital Signatures from local system</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3223</td><td colspan="1" class="confluenceTd">Update SearchOptionsCollection class to make it IEnumerable</td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3222</td><td colspan="1" class="confluenceTd">Update VerifyOptionsCollection class to make it IEnumerable</td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3221</td><td colspan="1" class="confluenceTd">Update SignatureOptionsCollection class to make it IEnumerable</td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3211</td><td colspan="1" class="confluenceTd">Improve Document detection based on passed Option type</td><td colspan="1" class="confluenceTd">Improvement</td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-3231 | Implement ability to set color of QR-Code bars | New Feature |
+| SIGNATURENET-3229 | Implement ability to set color of Barcode bars | New Feature |
+| SIGNATURENET-3228 | Implement ability to set code text alignment for QR-codes | New Feature |
+| SIGNATURENET-3225 | Implement ability to set code text alignment for Bar-codes | New Feature |
+| SIGNATURENET-3217 | Implement ability to use inner image logo for QR-Codes | New Feature |
+| SIGNATURENET-3208 | Provide ability to set inner margins for QRcodes. | New Feature |
+| SIGNATURENET-3207 | Provide ability to set inner margins for Barcodes. | New Feature |
+| SIGNATURENET-3178 | Implement ability to load Digital Signatures from local system | New Feature |
+| SIGNATURENET-3223 | Update SearchOptionsCollection class to make it IEnumerable | Improvement |
+| SIGNATURENET-3222 | Update VerifyOptionsCollection class to make it IEnumerable | Improvement |
+| SIGNATURENET-3221 | Update SignatureOptionsCollection class to make it IEnumerable | Improvement |
+| SIGNATURENET-3211 | Improve Document detection based on passed Option type | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

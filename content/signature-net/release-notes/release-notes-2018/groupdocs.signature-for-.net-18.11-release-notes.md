@@ -23,7 +23,14 @@ There are about six new features and improvements in this regular release. Most 
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1760</td><td colspan="1" class="confluenceTd">Implement FormField Search features for Pdf documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1751</td><td colspan="1" class="confluenceTd">Implement FormField Signature features for Pdf documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1715</td><td colspan="1" class="confluenceTd">Implement support of built-in metadata search for Slides/Presentation documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1711</td><td colspan="1" class="confluenceTd">Implement Metadata Signatures Search for Slides documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-1707</td><td class="confluenceTd">Implement Metadata Signature features for Slides documents</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-1582</td><td class="confluenceTd">Extend verification options for Digital Signatures of Words documents with Subject and Issuer criteria</td><td class="confluenceTd">New Feature</td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-1760 | Implement FormField Search features for Pdf documents | New Feature |
+| SIGNATURENET-1751 | Implement FormField Signature features for Pdf documents | New Feature |
+| SIGNATURENET-1715 | Implement support of built-in metadata search for Slides/Presentation documents | New Feature |
+| SIGNATURENET-1711 | Implement Metadata Signatures Search for Slides documents | New Feature |
+| SIGNATURENET-1707 | Implement Metadata Signature features for Slides documents | New Feature |
+| SIGNATURENET-1582 | Extend verification options for Digital Signatures of Words documents with Subject and Issuer criteria | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

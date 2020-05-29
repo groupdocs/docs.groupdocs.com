@@ -16,7 +16,9 @@ There are few improvements in this minor release. Most changes were made on upda
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3325</td><td colspan="1" class="confluenceTd">Fix TextShadow class implementation and namespace</td><td colspan="1" class="confluenceTd">Improvement</td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-3325 | Fix TextShadow class implementation and namespace | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

@@ -26,7 +26,6 @@ There are about 15 improvements, new features and fixes in this regular release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-  
 | SIGNATURENET-2785 | Implement ability to put Text Signature into Form Fields of Words Documents | New Feature |
 | SIGNATURENET-2788 | Implement ability to put Text Signature into Template/Form Fields of Pdf Documents | New Feature |
 | SIGNATURENET-2798 | Implement ability to specify new Measure Units Millimeters for Pdf Signatures | New Feature |

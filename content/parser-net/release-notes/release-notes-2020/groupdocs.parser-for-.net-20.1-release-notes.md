@@ -20,7 +20,12 @@ There are the following features in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">PARSERNET-1099</td><td colspan="1" class="confluenceTd">Remove obsolete members (Legacy namespace)</td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td colspan="1" class="confluenceTd">PARSERNET-1363</td><td colspan="1" class="confluenceTd">Implement the ability to extract a text by TOC item</td><td colspan="1" class="confluenceTd">New feature</td></tr><tr><td class="confluenceTd">PARSERNET-1361</td><td class="confluenceTd">Implement the ability to extract TOC from Word Processing documents</td><td class="confluenceTd">New feature</td></tr><tr><td class="confluenceTd">PARSERNET-1362</td><td class="confluenceTd">Implement the ability to extract TOC from PDF documents</td><td class="confluenceTd">New feature</td></tr></tbody><colgroup><col></colgroup><colgroup><col></colgroup></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| PARSERNET-1099 | Remove obsolete members (Legacy namespace) | Improvement |
+| PARSERNET-1363 | Implement the ability to extract a text by TOC item | New feature |
+| PARSERNET-1361 | Implement the ability to extract TOC from Word Processing documents | New feature |
+| PARSERNET-1362 | Implement the ability to extract TOC from PDF documents | New feature |
 
 ## Public API and Backward Incompatible Changes
 

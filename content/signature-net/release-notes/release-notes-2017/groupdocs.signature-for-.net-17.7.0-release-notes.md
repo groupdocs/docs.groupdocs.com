@@ -25,7 +25,6 @@ There are about 15 improvements, new features and fixes in this regular release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-  
 | SIGNATURENET-2937 | Implement Stamp Signature features for Slides Documents | New Feature |
 | SIGNATURENET-2934 | Implement Stamp Signature features for Words Documents | New Feature |
 | SIGNATURENET-2931 | Implement Stamp Signature features for Cells Documents | New Feature |

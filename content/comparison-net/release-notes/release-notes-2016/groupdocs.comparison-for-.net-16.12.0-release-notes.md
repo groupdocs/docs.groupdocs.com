@@ -21,7 +21,16 @@ There are 8 improvements and fixes in this regular monthly release. The most not
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1034</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Cells: add support for Shapes</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1011</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: add support of styles to text watermarks</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1014</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Slides: Improve aligning of slides for more precise changes detection</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1029</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Remove Text Artifacts from documents before Paragraph absorbation</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1048</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Improve set coordinates for components</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1047</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Improve set HorizontalAlignment</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-953</p></td><td class="confluenceTd"><p>Compile Error on Comparison Document for VB.NET</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-946</p></td><td class="confluenceTd"><p>Exception: The newChild was created from a different document than the one that created this node.</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| COMPARISONNET-1034 | GroupDocs.Comparison.Cells: add support for Shapes | New Feature |
+| COMPARISONNET-1011 | GroupDocs.Comparison.PDF: add support of styles to text watermarks | New Feature |
+| COMPARISONNET-1014 | GroupDocs.Comparison.Slides: Improve aligning of slides for more precise changes detection | Improvement |
+| COMPARISONNET-1029 | GroupDocs.Comparison.PDF: Remove Text Artifacts from documents before Paragraph absorbation | Improvement |
+| COMPARISONNET-1048 | GroupDocs.Comparison.PDF: Improve set coordinates for components | Improvement |
+| COMPARISONNET-1047 | GroupDocs.Comparison.PDF: Improve set HorizontalAlignment | Improvement |
+| COMPARISONNET-953 | Compile Error on Comparison Document for VB.NET | Bug |
+| COMPARISONNET-946 | Exception: The newChild was created from a different document than the one that created this node. | Bug |
 
 ## Public API and Backward Incompatible Changes
 

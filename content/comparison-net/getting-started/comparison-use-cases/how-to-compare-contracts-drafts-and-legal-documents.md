@@ -49,7 +49,7 @@ Let's say you have two contracts in DOCX format that were concluded in different
 
 | Source File - Contract signed in 2018 | Target File- Contract signed in 2019 |
 | --- | --- |
-| ![](attachments/87687827/88342541.png) | ![](attachments/87687827/88342539.png) |
+| ![](comparison-net/images/how-to-compare-contracts-drafts-and-legal-documents_3.png)) | ![](comparison-net/images/how-to-compare-contracts-drafts-and-legal-documents_4.png))
 
 Here is the code that is used to compare two contracts.
 
@@ -63,7 +63,7 @@ using (Comparer comparer = new Comparer("source-contract.docx"))
 
 As a result, we get a DOCX file where the deleted elements are marked in **red**, the added – in **blue**, and the modified – in **green. **
 
-**![](attachments/87687827/88342542.png)**
+**![](comparison-net/images/how-to-compare-contracts-drafts-and-legal-documents_5.png))*
 
 ## More resources
 

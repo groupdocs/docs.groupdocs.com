@@ -19,7 +19,14 @@ hideChildren: False
 
 For better understanding about how comparison algorithms work let's suppose we have two strings:
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><div class="container" title="Hint: double-click to select code"><div class="line number1 index0 alt2"><code class="java value">1</code><code class="java plain">. <span style="color: rgb(29, 28, 29);">It is our equity poetry</span></code></div><div class="line number2 index1 alt1"><code class="java value">2</code><code class="java plain">. J<span style="color: rgb(29, 28, 29);">ack is a glad calf</span></code></div></div></td></tr></tbody></table>
+| Strings |
+| --- |
+| 
+`1``. It is our equity poetry`
+
+`2``. Jack is a glad calf`
+
+ |
 
 We will highlight removed text parts with **red **and inserted parts with **blue** color. So, these strings have two common sub-sequences: "**is" **wordand** 4 space symbols.   
 **  

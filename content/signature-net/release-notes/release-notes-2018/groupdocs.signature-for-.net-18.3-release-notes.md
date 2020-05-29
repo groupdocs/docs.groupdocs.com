@@ -24,7 +24,15 @@ There are about seven improvements, new features and fixes in this regular relea
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td class="confluenceTd">SIGNATURENET-3294</td><td class="confluenceTd">Signed .doc files have .docx extension</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3290</td><td class="confluenceTd">Signed .ppt files have .pps extension</td><td class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3413</td><td colspan="1" class="confluenceTd">Implement standard QRCode embedded classes VCard, Email</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3400</td><td class="confluenceTd">Implement ability to search custom object to QR-Code Signature</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3396</td><td class="confluenceTd">Implement ability to encode custom object to QR-Code Signature</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3393</td><td class="confluenceTd">Add ability to process new Slides file formats (otp, potx, potm, pptm, ppsm)</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3391</td><td class="confluenceTd">Implement Square type of Stamp Signatures</td><td class="confluenceTd">New Feature</td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-3294 | Signed .doc files have .docx extension | Bug |
+| SIGNATURENET-3290 | Signed .ppt files have .pps extension | Bug |
+| SIGNATURENET-3413 | Implement standard QRCode embedded classes VCard, Email | New Feature |
+| SIGNATURENET-3400 | Implement ability to search custom object to QR-Code Signature | New Feature |
+| SIGNATURENET-3396 | Implement ability to encode custom object to QR-Code Signature | New Feature |
+| SIGNATURENET-3393 | Add ability to process new Slides file formats (otp, potx, potm, pptm, ppsm) | New Feature |
+| SIGNATURENET-3391 | Implement Square type of Stamp Signatures | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

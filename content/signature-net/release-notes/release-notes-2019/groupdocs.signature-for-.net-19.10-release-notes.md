@@ -21,7 +21,12 @@ The most notable feature is start of supporting .Net Standard 2.0. Also there ar
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2240</td><td colspan="1" class="confluenceTd">Add .NET Standard 2.0 support</td><td colspan="1" style="text-align: center;" class="confluenceTd">Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2249</td><td colspan="1" class="confluenceTd">Implement searching for Text signatures for supported document types</td><td colspan="1" style="text-align: center;" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2316</td><td colspan="1" class="confluenceTd">Implement searching for Image signatures for supported document types</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2325</td><td colspan="1" class="confluenceTd">Fix memory leaks on Document Preview with unreleased resources</td><td colspan="1" class="confluenceTd">Bug</td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2240 | Add .NET Standard 2.0 support | Feature |
+| SIGNATURENET-2249 | Implement searching for Text signatures for supported document types | New Feature |
+| SIGNATURENET-2316 | Implement searching for Image signatures for supported document types | New Feature |
+| SIGNATURENET-2325 | Fix memory leaks on Document Preview with unreleased resources | Bug |
 
 ## Public API and Backward Incompatible Changes
 

@@ -25,7 +25,6 @@ There are about 15 improvements, new features and fixes in this regular release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-  
 | SIGNATURENET-3013 | Add ability to crop background color by inner line for Stamp Signatures. | Improvement |
 | SIGNATURENET-2959 | Add ability to crop background image by inner line for Stamp Signatures. | Improvement |
 | SIGNATURENET-2267 | Digital Signature for Open Document files format support | New Feature |

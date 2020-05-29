@@ -26,7 +26,18 @@ There are about more than ten improvements, new features and fixes in this regul
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3461</td><td colspan="1" class="confluenceTd">Implement standard symmetric algorithm for QRCode Signature data encryption</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3460</td><td class="confluenceTd">Extend QRCode Signature to specify custom encryption dynamically</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3424</td><td class="confluenceTd">Add ability to process new Cells file formats (ots, xltx, xltm)</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3422</td><td class="confluenceTd">Implement custom encryption for embedded QR Code Signature</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3417</td><td class="confluenceTd">Implement custom serialization for embedded objects in QR Code Signature</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3470</td><td class="confluenceTd">Implement support of CRT and CER digital certificates files types for Verification</td><td class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd">SIGNATURENET-3473</td><td class="confluenceTd">Tests for digital PDF signatures are failed with message "PKCS#1 does not support ocsp, timestamp settings, use PKCS#7"</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3472</td><td class="confluenceTd">Add messages for exceptions that were thrown during making certificate objects for digital signatures</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3469</td><td class="confluenceTd">Exception when accessing Pdf document without specified metadata</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3170</td><td class="confluenceTd">Incorrect number of pages calculation for all Cells Options</td><td class="confluenceTd">Bug</td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-3461 | Implement standard symmetric algorithm for QRCode Signature data encryption | New Feature |
+| SIGNATURENET-3460 | Extend QRCode Signature to specify custom encryption dynamically | New Feature |
+| SIGNATURENET-3424 | Add ability to process new Cells file formats (ots, xltx, xltm) | New Feature |
+| SIGNATURENET-3422 | Implement custom encryption for embedded QR Code Signature | New Feature |
+| SIGNATURENET-3417 | Implement custom serialization for embedded objects in QR Code Signature | New Feature |
+| SIGNATURENET-3470 | Implement support of CRT and CER digital certificates files types for Verification | Improvement |
+| SIGNATURENET-3473 | Tests for digital PDF signatures are failed with message "PKCS#1 does not support ocsp, timestamp settings, use PKCS#7" | Bug |
+| SIGNATURENET-3472 | Add messages for exceptions that were thrown during making certificate objects for digital signatures | Bug |
+| SIGNATURENET-3469 | Exception when accessing Pdf document without specified metadata | Bug |
+| SIGNATURENET-3170 | Incorrect number of pages calculation for all Cells Options | Bug |
 
 ## Public API and Backward Incompatible Changes
 

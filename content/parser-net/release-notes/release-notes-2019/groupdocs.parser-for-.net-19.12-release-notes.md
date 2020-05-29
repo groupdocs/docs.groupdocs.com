@@ -23,7 +23,11 @@ There are the following features in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">PARSERNET-1389</td><td colspan="1" class="confluenceTd">Implement .NET Standard 2.0 support</td><td colspan="1" class="confluenceTd">New feature</td></tr><tr><td colspan="1" class="confluenceTd">PARSERNET-1342</td><td colspan="1" class="confluenceTd">Implement the ability to extract the image in a different format</td><td colspan="1" class="confluenceTd">New feature</td></tr><tr><td class="confluenceTd">PARSERNET-1341</td><td class="confluenceTd">Implement the ability to save images to file</td><td class="confluenceTd">New feature</td></tr></tbody><colgroup><col></colgroup><colgroup><col></colgroup></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| PARSERNET-1389 | Implement .NET Standard 2.0 support | New feature |
+| PARSERNET-1342 | Implement the ability to extract the image in a different format | New feature |
+| PARSERNET-1341 | Implement the ability to save images to file | New feature |
 
 ## Public API and Backward Incompatible Changes
 

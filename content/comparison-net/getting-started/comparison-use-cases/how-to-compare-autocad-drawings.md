@@ -35,7 +35,7 @@ Despite the fact that drawings comparison feature provided by AutoDesk is quite 
 
 | Source drawing | Target drawing |
 | --- | --- |
-| ![](attachments/88178903/88342552.png) | ![](attachments/88178903/88342550.png) |
+| ![](comparison-net/images/how-to-compare-autocad-drawings.png)) | ![](comparison-net/images/how-to-compare-autocad-drawings_1.png))
 
 Here are the steps to compare two DWG files:
 
@@ -57,7 +57,7 @@ using (Comparer comparer = new Comparer(@"source.dwg"))
 
 As a result, we get a DWG file where the deleted elements are marked in **red**, the added – in **blue**, and the modified – in **green. **
 
-**![](attachments/88178903/88342551.png)  
+**![](comparison-net/images/how-to-compare-autocad-drawings_2.png)
 **
 
 ## More resources

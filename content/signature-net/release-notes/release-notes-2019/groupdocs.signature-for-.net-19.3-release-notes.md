@@ -16,7 +16,9 @@ This is a hot-fix release which includes one bug fix.
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1931</td><td colspan="1" class="confluenceTd">Singing Pdf with Digital Form Field Signature gives exception on saving</td><td colspan="1" class="confluenceTd">Bug</td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-1931 | Singing Pdf with Digital Form Field Signature gives exception on saving | Bug |
 
 ## Public API and Backward Incompatible Changes
 

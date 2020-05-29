@@ -22,7 +22,13 @@ There are the following features in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd"><span>PARSERNET-1145</span></td><td colspan="1" class="confluenceTd">Implement the ability to extract data from documents</td><td colspan="1" class="confluenceTd">New feature</td></tr><tr><td colspan="1" class="confluenceTd"><span>PARSERNET-1151</span></td><td colspan="1" class="confluenceTd">Implement the ability to move Table Layout</td><td colspan="1" class="confluenceTd">New feature</td></tr><tr><td colspan="1" class="confluenceTd"><span>PARSERNET-1158</span></td><td colspan="1" class="confluenceTd">Implement the ability to detect a table in a rectangular area using a collection of column separators</td><td colspan="1" class="confluenceTd">New feature</td></tr><tr><td class="confluenceTd"><span>PARSERNET-1200</span></td><td class="confluenceTd">Implement the support for spreadsheet and presentation templates</td><td class="confluenceTd">New feature</td></tr><tr><td colspan="1" class="confluenceTd">PARSERNET-63</td><td colspan="1" class="confluenceTd">Remove obsolete members (version 18.7)</td><td colspan="1" class="confluenceTd"><span>Breaking Change</span></td></tr></tbody><colgroup><col></colgroup><colgroup><col></colgroup></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| PARSERNET-1145 | Implement the ability to extract data from documents | New feature |
+| PARSERNET-1151 | Implement the ability to move Table Layout | New feature |
+| PARSERNET-1158 | Implement the ability to detect a table in a rectangular area using a collection of column separators | New feature |
+| PARSERNET-1200 | Implement the support for spreadsheet and presentation templates | New feature |
+| PARSERNET-63 | Remove obsolete members (version 18.7) | Breaking Change |
 
 ## Public API and Backward Incompatible Changes
 

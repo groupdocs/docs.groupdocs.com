@@ -22,7 +22,14 @@ There are few new features, improvements and bug fixes in this regular release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1797</td><td colspan="1" class="confluenceTd">Skip Output folder when SaveOptions.OutputFileName is set as absolute path</td><td colspan="1" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1782</td><td colspan="1" class="confluenceTd">Exception is fired when searching in PDF documents for Form-fields that were setup without name</td><td colspan="1" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1785</td><td colspan="1" class="confluenceTd">Implement standard Image Metadata Signatures</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1723</td><td colspan="1" class="confluenceTd">Implement Metadata Signatures Search for Image Documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-1756</td><td class="confluenceTd">Extend FormField signature name automatically with number prefix for multiple-pages options</td><td class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd">SIGNATURENET-1581</td><td class="confluenceTd">Improve handling exceptions with proper details and exception type</td><td class="confluenceTd">Improvement</td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-1797 | Skip Output folder when SaveOptions.OutputFileName is set as absolute path | Bug |
+| SIGNATURENET-1782 | Exception is fired when searching in PDF documents for Form-fields that were setup without name | Bug |
+| SIGNATURENET-1785 | Implement standard Image Metadata Signatures | New Feature |
+| SIGNATURENET-1723 | Implement Metadata Signatures Search for Image Documents | New Feature |
+| SIGNATURENET-1756 | Extend FormField signature name automatically with number prefix for multiple-pages options | Improvement |
+| SIGNATURENET-1581 | Improve handling exceptions with proper details and exception type | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

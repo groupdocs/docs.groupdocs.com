@@ -27,7 +27,6 @@ There are about 15 improvements, new features and fixes in this regular release.
 
 ## Full List of Issues Covering all Changes in this Release
 
-  
 | SIGNATURENET-2347 | Implement Visible flag of Pdf Digital Signature | New Feature |
 | SIGNATURENET-2350 | Implement ability to protect signed document with password | New Feature |
 | SIGNATURENET-2351 | Implement password protection for signed Pdf Documents | New Feature |

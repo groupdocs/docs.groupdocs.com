@@ -24,7 +24,19 @@ There are more than 10 improvements, new features and fixes in this regular rele
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3652</td><td colspan="1" class="confluenceTd">Implement standard Pdf Metadata Signatures</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3650</td><td colspan="1" class="confluenceTd">Add PDF save format for image documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3647</td><td colspan="1" class="confluenceTd">Implement Searching for Metadata Signature in PDF Documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-3643</td><td colspan="1" class="confluenceTd">Implement Metadata Signature features for PDF Documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3637</td><td class="confluenceTd">Implement Metadata Signature entity and collection</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3635</td><td class="confluenceTd">Implement MatchType for text verification options</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-3632</td><td class="confluenceTd">Incorrect signing image documents with .psd format</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3628</td><td class="confluenceTd">The output PDF is incorrectly signed with Digital Certificates</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3626</td><td class="confluenceTd">Incorrect signing image documents with .wmf format</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3624</td><td class="confluenceTd">Incorrect signing image documents with .svg format</td><td class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd">SIGNATURENET-3622</td><td class="confluenceTd">Unable to search Digital signature in Cells with extended options using latest release</td><td class="confluenceTd">Bug</td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-3652 | Implement standard Pdf Metadata Signatures | New Feature |
+| SIGNATURENET-3650 | Add PDF save format for image documents | New Feature |
+| SIGNATURENET-3647 | Implement Searching for Metadata Signature in PDF Documents | New Feature |
+| SIGNATURENET-3643 | Implement Metadata Signature features for PDF Documents | New Feature |
+| SIGNATURENET-3637 | Implement Metadata Signature entity and collection | New Feature |
+| SIGNATURENET-3635 | Implement MatchType for text verification options | New Feature |
+| SIGNATURENET-3632 | Incorrect signing image documents with .psd format | Bug |
+| SIGNATURENET-3628 | The output PDF is incorrectly signed with Digital Certificates | Bug |
+| SIGNATURENET-3626 | Incorrect signing image documents with .wmf format | Bug |
+| SIGNATURENET-3624 | Incorrect signing image documents with .svg format | Bug |
+| SIGNATURENET-3622 | Unable to search Digital signature in Cells with extended options using latest release | Bug |
 
 ## Public API and Backward Incompatible Changes
 

@@ -18,7 +18,9 @@ There are the following features in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd"><span>PARSERNET-1294</span></td><td colspan="1" class="confluenceTd">Implement the ability to extract a page number with search results</td><td colspan="1" class="confluenceTd">New feature</td></tr></tbody><colgroup><col></colgroup><colgroup><col></colgroup></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| PARSERNET-1294 | Implement the ability to extract a page number with search results | New feature |
 
 ## Public API and Backward Incompatible Changes
 

@@ -39,17 +39,29 @@ Microsoft Office Professional Plus 2013 offers spreadsheet comparisons, but **[G
 
 | Price List for 2018 | Price List for 2019 | Price List for 2020 |
 | --- | --- | --- |
-| ![](attachments/88178874/88342546.png) | ![](attachments/88178874/88342547.png) | ![](attachments/88178874/88342548.png) |
+| ![](comparison-net/images/how-to-compare-price-lists_3.png)) | ![](comparison-net/images/how-to-compare-price-lists_4.png)) | ![](comparison-net/images/how-to-compare-price-lists_5.png)
 
 Here is the code that is used to compare three price lists.
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><div class="container" title="Hint: double-click to select code"><div class="line number1 index0 alt2"><code class="csharp keyword">string</code> <code class="csharp plain">sourceDocumentPath = </code><code class="csharp string">@"Source Price List.xlsx"</code><code class="csharp plain">; </code><code class="csharp comments">// NOTE: Put here actual path to source document</code></div><div class="line number2 index1 alt1"><code class="csharp keyword">string</code> <code class="csharp plain">targetOneDocumentPath = </code><code class="csharp string">@"Target Price List 1.xlsx"</code><code class="csharp plain">; </code><code class="csharp comments">// NOTE: Put here actual path to target one document</code></div><div class="line number3 index2 alt2"><code class="csharp keyword">string</code> <code class="csharp plain">targetTwoDocumentPath = </code><code class="csharp string">@"Target Price List 2.xlsx"</code><code class="csharp plain">; </code><code class="csharp comments">// NOTE: Put here actual path to target two document</code></div><div class="line number4 index3 alt1"><code class="csharp keyword">string</code> <code class="csharp plain">outputPath = </code><code class="csharp string">@"Result Price List.xlsx"</code><code class="csharp plain">; </code><code class="csharp comments">// NOTE: Put here actual path to result document</code></div><div class="line number5 index4 alt2"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number6 index5 alt1"><code class="csharp keyword">using</code> <code class="csharp plain">(Comparer comparer = </code><code class="csharp keyword">new</code> <code class="csharp plain">Comparer(sourceDocumentPath))</code></div><div class="line number7 index6 alt2"><code class="csharp plain">{</code></div><div class="line number8 index7 alt1"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">comparer.Add(targetOneDocumentPath);</code></div><div class="line number9 index8 alt2"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">comparer.Add(targetTwoDocumentPath);</code></div><div class="line number10 index9 alt1"><code class="csharp spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="csharp plain">comparer.Compare(outputPath);</code></div><div class="line number11 index10 alt2"><code class="csharp plain">}</code></div></div></td></tr></tbody></table>
+```csharp
+string sourceDocumentPath = @"Source Price List.xlsx"; // NOTE: Put here actual path to source document
+string targetOneDocumentPath = @"Target Price List 1.xlsx"; // NOTE: Put here actual path to target one document
+string targetTwoDocumentPath = @"Target Price List 2.xlsx"; // NOTE: Put here actual path to target two document
+string outputPath = @"Result Price List.xlsx"; // NOTE: Put here actual path to result document
+             
+using (Comparer comparer = new Comparer(sourceDocumentPath))
+{
+     comparer.Add(targetOneDocumentPath);
+     comparer.Add(targetTwoDocumentPath);
+     comparer.Compare(outputPath);
+}
+```
 
 As a result, we get a XSLX file where the deleted elements are marked in **red**, the added – in **blue**, and the modified – in **green**
 
 | Result Price List |
 | --- |
-| ![](attachments/88178874/88342549.png) |
+| ![](comparison-net/images/how-to-compare-price-lists_6.png)) 
 
 ## More resources
 

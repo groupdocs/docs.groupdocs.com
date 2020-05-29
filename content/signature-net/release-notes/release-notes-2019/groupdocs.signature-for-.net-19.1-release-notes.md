@@ -21,7 +21,14 @@ There are few new features, improvements and bug fixes in this regular release. 
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><colgroup><col><col><col></colgroup><tbody><tr><th class="confluenceTh"><div class="tablesorter-header-inner">Key</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Summary</div></th><th class="confluenceTh"><div class="tablesorter-header-inner">Issue Type</div></th></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1856</td><td colspan="1" class="confluenceTd">Fix Stamp generation processing for wide areas</td><td colspan="1" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1851</td><td colspan="1" class="confluenceTd">&nbsp;QR/Bar code with wide border cannot be read</td><td colspan="1" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1786</td><td colspan="1" class="confluenceTd">Implement Rounded corners for Rectangle Stamp Signature Types</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-1719</td><td colspan="1" class="confluenceTd">Implement Metadata Signature features for Image Documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">SIGNATURENET-1871</td><td class="confluenceTd">&nbsp;Improve Image Metadata type conversion</td><td class="confluenceTd">Improvement</td></tr><tr><td class="confluenceTd">SIGNATURENET-1858</td><td class="confluenceTd">&nbsp;Optimize Document options type detection for handler processes (Sign/Verify/Search)</td><td class="confluenceTd">Improvement</td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-1856 | Fix Stamp generation processing for wide areas | Bug |
+| SIGNATURENET-1851 |  QR/Bar code with wide border cannot be read | Bug |
+| SIGNATURENET-1786 | Implement Rounded corners for Rectangle Stamp Signature Types | New Feature |
+| SIGNATURENET-1719 | Implement Metadata Signature features for Image Documents | New Feature |
+| SIGNATURENET-1871 |  Improve Image Metadata type conversion | Improvement |
+| SIGNATURENET-1858 |  Optimize Document options type detection for handler processes (Sign/Verify/Search) | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

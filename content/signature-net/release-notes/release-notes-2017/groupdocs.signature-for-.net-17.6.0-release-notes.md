@@ -26,7 +26,6 @@ There are more than 20 improvements, new features and fixes in this regular rele
 
 ## Full List of Issues Covering all Changes in this Release
 
-  
 | SIGNATURENET-2906 | Implement QRCode Signature Verification for Words Documents | New Feature |
 | SIGNATURENET-2905 | Implement QRCode Signature Verification for Cells Documents | New Feature |
 | SIGNATURENET-2904 | Implement QRCode Signature Verification for Pdf Documents | New Feature |

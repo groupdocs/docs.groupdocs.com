@@ -16,7 +16,13 @@ hideChildren: False
 
 GroupDocs.Viewer for .NET supported platforms are listed below.
 
-<table class="confluenceTable"><colgroup><col><col></colgroup><tbody><tr><th class="confluenceTh"><p style="text-align: center;">Platform</p></th><th class="confluenceTh"><p style="text-align: center;">Description</p></th></tr><tr><td class="confluenceTd"><p>.NET Standard 2.0</p></td><td class="confluenceTd"><p>Any type of&nbsp; .NET Standard 2.0 application is supported (since Q4 2019).</p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">.NET Framework</span></p></td><td class="confluenceTd"><p>Any type of&nbsp; .NET Framework version 2.0 (or later) application is supported - ASP.NET, Web Services, WinForms, WPF and others.<br>Full support for 32-bit and 64-bit.</p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Windows Azure</span></p></td><td class="confluenceTd"><p>Yes, GroupDocs.Viewer for .NET runs on Windows Azure.</p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Mono</span></p></td><td class="confluenceTd"><p>You can use GroupDocs.Viewer for .NET to build applications with Mono.</p></td></tr></tbody></table>
+| Platform | Description |
+| --- | --- |
+| .NET Standard 2.0 | Any type of  .NET Standard 2.0 application is supported (since Q4 2019). |
+| .NET Framework | Any type of  .NET Framework version 2.0 (or later) application is supported - ASP.NET, Web Services, WinForms, WPF and others.  
+Full support for 32-bit and 64-bit. |
+| Windows Azure | Yes, GroupDocs.Viewer for .NET runs on Windows Azure. |
+| Mono | You can use GroupDocs.Viewer for .NET to build applications with Mono. |
 
 ## Install from Nuget
 
