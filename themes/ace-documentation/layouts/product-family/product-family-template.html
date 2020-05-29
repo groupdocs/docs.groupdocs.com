@@ -2,16 +2,9 @@
 <html lang="{{ .Site.Language.Lang }}">
 
     {{- partial "head.html" . -}}
-    {{- partial "groupdocs-header.html" . -}}
-        
-    <div class="pf-header">
-        <div class="pf-header-title">{{ .Params.Title }}</div>    
-        <div class="pf-header-motto">
-            <a href="{{ .Site.BaseURL }}">
-                GROUPDOCS DEVELOPERS COOKBOOK
-            </a> 
-        </div>    
-    </div>
+    {{- partial "groupdocs-header.html" . -}}        
+    {{- partial "header-landing" . -}}
+    
     <body>  
         <main style="display: flex;">   
             <div class="leftBar">    

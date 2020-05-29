@@ -13,6 +13,22 @@ h1, h2, h3, h4, h5, h6,
   color: $headings-color;
 }
 
+h1, .h1 {
+  color: #111111;
+}
+
+h2, .h2, h3, .h3 {
+  color: #333333;
+}
+
+
+/*
+h1 -> font-size: 26px -> color: #111111
+h2 -> font-size: 22px -> color: #333333
+h3 -> font-size: 20px -> color: #33333
+body -> font-size: 14px -> color: #4e4e4e
+*/
+
 h1, .h1 { @include font-size($h1-font-size); }
 h2, .h2 { @include font-size($h2-font-size); }
 h3, .h3 { @include font-size($h3-font-size); }
