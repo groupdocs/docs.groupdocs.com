@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
-
-    {{- partial "head.html" . -}}
-    {{- partial "groupdocs-header.html" . -}}        
-    {{- partial "header-landing" . -}}
-    
+    {{- partial "head.html" . -}}    
     <body>  
+        
+        {{- partial "groupdocs-header.html" . -}}
+        {{- partial "header-landing" . -}}
+
         <main style="display: flex;">   
-            <div class="leftBar">    
-            </div>
+            <div class="leftBar"></div>
             <div class="pfMain">
                 
                 {{ range where $.Site.Data.products.Items "Family" .Params.Id}}
@@ -16,11 +15,10 @@
                 {{ end }}
 
             </div>
-
             <div class="rightBar"></div>
         </main>
+        {{- partial "groupdocs-footer.html" . -}}
         {{- partial "footer.html" . -}}
-    </body>
-    <footer >{{- partial "groupdocs-footer.html" . -}}</footer>
+    </body>   
 </html>
 

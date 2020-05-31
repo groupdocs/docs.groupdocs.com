@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
-
     {{- partial "head.html" . -}}
-    {{- partial "groupdocs-header.html" . -}}
-    {{- partial "header-landing" . -}}
-        
     <body>  
+        
+        {{- partial "groupdocs-header.html" . -}}
+        {{- partial "header-landing" . -}}
+
         <main style="display: flex;">   
             <div class="navHome"></div>
             <div class="productsHome">
@@ -29,9 +29,7 @@
                 </div>
             </div>            
         </main>
-        
+        {{- partial "groupdocs-footer.html" . -}}
         {{- partial "footer.html" . -}}
-    </body>
-
-    <footer >{{- partial "groupdocs-footer.html" . -}}</footer>
+    </body>    
 </html>

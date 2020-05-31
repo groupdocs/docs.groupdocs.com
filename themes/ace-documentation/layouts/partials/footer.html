@@ -1,18 +1,13 @@
 <!-- Load required Javascript -->
 <script src="{{ .Site.BaseURL }}lib/jquery.min.js"></script> <!-- jQuery.js -->
 <script src="https://menu.containerize.com/Scripts/Containerize.Menu.min.js"></script>
-
-<script defer="defer">LoadMenu("GroupDocs");</script>   
+<script>LoadMenu("GroupDocs");</script>   
 
 <script src="{{ .Site.BaseURL }}lib/popper.min.js"></script> <!-- Popper.js - dependency of Bootstrap -->
-
 <script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script> <!-- Other javascript -->
+
 <script src="{{ .Site.BaseURL }}js/anchor.min.js"></script> <!-- Heading Anchors script -->
-<script src="https://kit.fontawesome.com/b3fab819e9.js" crossorigin="anonymous"></script>
-<script>
-  anchors.add('.main h2, .main h3');
-  
-</script>
+<script>anchors.add('.main h2, .main h3');</script>
 
 <!-- Plugin: search -->
 <script type="text/javascript" src="{{"plugins/lunr.min.js" | relURL}}"></script>

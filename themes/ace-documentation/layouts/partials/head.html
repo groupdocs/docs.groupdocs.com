@@ -19,6 +19,13 @@
     <!-- Load stylesheet -->
     <link href="{{ .Site.BaseURL }}css/fontawesome.min.css" rel="stylesheet">
 
+    <!-- Venture CSS -->    
+    <link href="https://cms.admin.containerize.com/templates/aspose/css/AsposePtyLtdMenu.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/aspose/css/font-awesome.css" type="text/css" /> -->
+    <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/aspose/css/groupdocs.css" type="text/css" />
+    <link rel="shortcut icon" href="https://cms.admin.containerize.com/templates/groupdocs/favicon.ico" />
+    <!-- End of Venture CSS -->         
+
     {{ $style := resources.Get "css/ace.scss" | toCSS | minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
@@ -26,5 +33,4 @@
     {{ if eq hugo.Environment "production" }}
         {{ template "_internal/google_analytics_async.html" . }}
     {{ end }}
-
 </head>
