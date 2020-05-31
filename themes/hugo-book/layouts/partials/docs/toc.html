@@ -1,4 +1,0 @@
-<!-- Standard approach doesn't work when BaseUrl used -->
-<!-- {{ .TableOfContents }} --> 
-
-{{ replace .TableOfContents `href="#` (printf `href="%s#` .Permalink) | safeHTML }}
