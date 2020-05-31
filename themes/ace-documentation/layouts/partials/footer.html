@@ -10,20 +10,7 @@
 <script>anchors.add('.main h2, .main h3');</script>
 
 <!-- Plugin: search -->
-<script type="text/javascript" src="{{"plugins/lunr.min.js" | relURL}}"></script>
-<script type="text/javascript" src="{{"plugins/auto-complete.js" | relURL}}"></script>
-<link href="{{"plugins/auto-complete.css" | relURL}}" rel="stylesheet">
-<script type="text/javascript">
-  {{ if .Site.IsMultiLingual }}
-      var baseurl = "{{.Site.BaseURL}}{{.Site.LanguagePrefix}}";
-  {{ else }}
-      var baseurl = "{{.Site.BaseURL}}";
-  {{ end }}
-</script>
-<script type="text/javascript" src="{{"plugins/search.js" | relURL}}"></script>
+<!-- <script type="text/javascript" src="{{"plugins/lunr.min.js" | relURL}}"></script>
 
-<!-- Plugin: clipboard -->
-<script type="text/javascript" src="{{"plugins/clipboard.js" | relURL}}"></script>
-<script>
-  new ClipboardJS('.btn');
-</script>
+<script type="text/javascript" src="{{"plugins/search.js" | relURL}}"></script> -->
+
