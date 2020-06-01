@@ -46,13 +46,17 @@ function initLunr() {
  * @param  {String} query
  * @return {Array}  results
  */
-function search(query) {
+function search(query) {    
     // Find the item in our index corresponding to the lunr one to have more info
-    return lunrIndex.search(query).map(function(result) {
+    var all = lunrIndex.search(query).map(function(result) {
             return pagesIndex.filter(function(page) {
-                return page.uri === result.ref;
+                return (page.uri === result.ref);
             })[0];
         });
+    var filterBySection = all.filter(function(item){
+        return item.uri.startsWith(sectionName);
+        });    
+    return filterBySection;    
 }
 
 // Let's get started

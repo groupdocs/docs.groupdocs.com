@@ -14,8 +14,9 @@
     {{ if .Site.IsMultiLingual }}
         var baseurl = "{{.Site.BaseURL}}{{.Site.LanguagePrefix}}";
     {{ else }}
-        var baseurl = "{{.Site.BaseURL}}";
+        var baseurl = "{{.Site.BaseURL}}";    
     {{ end }}
+        var sectionName = baseurl + "{{ .Section }}".replace('-','/');
 </script>
 
 
