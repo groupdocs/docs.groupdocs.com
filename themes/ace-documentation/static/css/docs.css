@@ -21,3 +21,10 @@
     background-color: rgba(255,102,102,.1);
     border-color:#f66;
 }
+
+/* Article Fotter */
+
+.docs-article-date a, .docs-article-edit a{
+    font-size: 14px;
+    color: #333;
+}
