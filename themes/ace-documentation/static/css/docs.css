@@ -1,0 +1,11 @@
+/* Alert / Hints */
+.alert-info {
+    color: #0c5460;
+    background-color: rgba(102, 187, 255, .1);
+    border-color: #6bf;
+}
+
+.alert{
+    border: 0;
+    border-inline-start: .25rem solid #e9ecef;
+}
