@@ -23,7 +23,9 @@
 }
 
 /* Article Fotter */
-
+.docs-article-date i, .docs-article-edit i{
+    margin-right: 5px;
+}
 .docs-article-date a, .docs-article-edit a{
     font-size: 14px;
     color: #333;
