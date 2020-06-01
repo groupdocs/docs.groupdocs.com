@@ -105,7 +105,7 @@ HTML minification:  
 *   Protocol declarations like http:, https: and javascript: from path values are removed
 *   Multiple spaces between words (except when they occur inside the pre or textarea tag) are replaced with single space
 *   Quotes around tag property values (except inline events) are removed
-*   Default attributes for <script>, <style> and <link> tags are removed
+*   Default attributes for `<script>`, `<style>` and `<link>` tags are removed
 *   Boolean attributes are simplified, therefore <input type="text" disabled="disabled"> becomes <input type=text disabled>
 
 ### Option to split MS Project documents by time intervals

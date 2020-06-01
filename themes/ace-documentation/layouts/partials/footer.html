@@ -22,7 +22,15 @@
 
 <script type="text/javascript" src="{{ .Site.BaseURL }}plugins/lunr.min.js"></script>
 <script type="text/javascript" src="{{ .Site.BaseURL }}plugins/auto-complete.js"></script>
-<link href="{{ .Site.BaseURL }}plugins/auto-complete.css" rel="stylesheet">
+<link href="{{ .Site.BaseURL }}plugins/auto-complete.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="{{ .Site.BaseURL }}plugins/search.js"></script>
+
+<!-- Plugin: clipboard -->
+{{ if (findRE "<pre" .Content 1) }}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}plugins/clip.css" type="text/css" />
+    <script type="text/javascript" src="{{ .Site.BaseURL }}plugins/clip.js"></script>
+{{ end }}
+
+
 

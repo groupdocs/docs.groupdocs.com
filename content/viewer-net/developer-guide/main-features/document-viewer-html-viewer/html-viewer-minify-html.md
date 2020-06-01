@@ -42,7 +42,7 @@ The process of minification almost in all cases provides the output that looks i
 *   Protocol declarations like http:, https: and javascript: are removed from path values
 *   Multiple spaces between words (except when they occur inside the pre or textarea tag) are replaced with single space
 *   Quotes around tag property values (except inline events) are removed
-*   Default attributes for <script>, <style> and <link> tags are removed
+*   Default attributes for `<script>`, `<style>` and `<link>` tags are removed
 *   Boolean attributes are simplified, therefore <input type="text" disabled="disabled"> becomes <input type=text disabled>
 
 **CSS Minification**
