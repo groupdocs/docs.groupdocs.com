@@ -27,6 +27,7 @@ Here are the list of settings that can be customized during comparison process:
 *   [PasswordSaveOption](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/passwordsaveoption) - Gets or sets the password save option. More details [here](Set%2Bpassword%2Bfor%2Bresultant%2Bdocument.html);
 *   [SensitivityOfComparison](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/sensitivityofcomparison) - Gets or sets the comparison sensitivity. More details [here](Adjusting%2Bcomparison%2Bsensitivity.html);
 *   [ShowDeletedContent](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/showdeletedcontent) - Indicates whether to show deleted components in resultant document or not;
+*   [ShowInsertedContent](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/showinsertedcontent "ShowInsertedContent Property ") - Indicates whether to show inserted components in resultant document or not;
 *   [WordsSeparatorChars](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/wordsseparatorchars) - Sets an array of delimiters to split text into words;
 
 For more details about described options please refer to the following guides:

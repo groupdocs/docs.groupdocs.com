@@ -13,6 +13,7 @@ hideChildren: False
 *   [FileType](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/filetype) - document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.);
 *   [PageCount](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/pagecount) - count of document pages;
 *   [FileSize](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/size)[](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/size)\- document file size;
+*   [PagesInfo](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.result/pageinfo) - represents information about page.
 
 The following code samples demonstrate how to get file information.
 
@@ -22,7 +23,11 @@ The following code samples demonstrate how to get file information.
 using (Comparer comparer = new Comparer("source.docx"))
 {
 	IDocumentInfo info = comparer.Source.GetDocumentInfo();
-    Console.WriteLine("\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes", info.FileType, info.PageCount, info.Size);
+    for (int i = 0; i < info.PageCount; i++)
+    {
+         Console.WriteLine("\nPage number: {5}\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes\nWidth: {3}\nHeight: {4} ", 
+             info.FileType, info.PageCount, info.Size, info.PagesInfo[i].Width, info.PagesInfo[i].Height, i + 1);
+    }
 }
 ```
 
@@ -32,7 +37,11 @@ using (Comparer comparer = new Comparer("source.docx"))
 using (Comparer comparer = new Comparer(File.OpenRead("source.docx"))
 {
 	IDocumentInfo info = comparer.Source.GetDocumentInfo();
-    Console.WriteLine("\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes", info.FileType, info.PageCount, info.Size);
+    for (int i = 0; i < info.PageCount; i++)
+    {
+         Console.WriteLine("\nPage number: {5}\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes\nWidth: {3}\nHeight: {4} ", 
+             info.FileType, info.PageCount, info.Size, info.PagesInfo[i].Width, info.PagesInfo[i].Height, i + 1);
+    }
 }
 ```
 
