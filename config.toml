@@ -21,6 +21,8 @@ enableGitInfo = true
         endLevel = 4
         ordered = false
 
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
 
 [params]
     contentDir = "content"
