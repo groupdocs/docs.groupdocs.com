@@ -18,7 +18,9 @@ There are fixed 1 bug:
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>CONVERSIONJAVA-451</p></td><td class="confluenceTd"><p>Single source file DOCX different outputs PDF on different platforms/environment</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| CONVERSIONJAVA-451 | Single source file DOCX different outputs PDF on different platforms/environment | Bug |
 
 ## Public API and Backward Incompatible Changes
 
