@@ -23,7 +23,28 @@ There are 4 new features and 16 improvements and fixes in this regular monthly r
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>WEB-1084</p></td><td class="confluenceTd"><p>The ability to show and hide PDF layers</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-871</p></td><td class="confluenceTd"><p>Ability to set default font when rendering Diagram documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-851</p></td><td class="confluenceTd"><p>Implement support of EMF file type.</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-549</p></td><td class="confluenceTd"><p>DICOM format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-899</p></td><td class="confluenceTd"><p>Convert Pdf Dynamic XFA Form to Standard AcroForm</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-895</p></td><td class="confluenceTd"><p>Mark CachedPageDescription redundant constructor as Obsolete</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-873</p></td><td class="confluenceTd"><p>Save HTML resources to cache without saving them to local disc.</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>WEB-2425</p></td><td class="confluenceTd"><p>Incomprehensible characters when view pdf</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-2038</p></td><td class="confluenceTd"><p>Text issues when saving document containing XFA form to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-866</p></td><td class="confluenceTd"><p>Html watermark style block contains garbage characters.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-865</p></td><td class="confluenceTd"><p>Html watermark style block contains garbage characters.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-863</p></td><td class="confluenceTd"><p>Watermark is Rendered Incorrectly in Html Representation</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-838</p></td><td class="confluenceTd"><p>Wmf file dimensions are different from dimensions in the MS Paint.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-834</p></td><td class="confluenceTd"><p>TeX to Html conversion error</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-829</p></td><td class="confluenceTd"><p>Incorrect Rendering of PDF Document into Image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-811</p></td><td class="confluenceTd"><p>The output pdf file contains black pages instead of content when converting djvu to pdf.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-794</p></td><td class="confluenceTd"><p>DefaultRegularFont setting doesn't work properly</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-566</p></td><td class="confluenceTd"><p>Specific pdf document can't be saved as HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-496</p></td><td class="confluenceTd"><p>Exception when converting document to HTML after cleanup</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-437</p></td><td class="confluenceTd"><p>Some characters not displayed when rendering HTML or PNG</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| WEB-1084 | The ability to show and hide PDF layers | New Feature |
+| VIEWERNET-871 | Ability to set default font when rendering Diagram documents | New Feature |
+| VIEWERNET-851 | Implement support of EMF file type. | New Feature |
+| VIEWERNET-549 | DICOM format support | New Feature |
+| VIEWERNET-899 | Convert Pdf Dynamic XFA Form to Standard AcroForm | Improvement |
+| VIEWERNET-895 | Mark CachedPageDescription redundant constructor as Obsolete | Improvement |
+| VIEWERNET-873 | Save HTML resources to cache without saving them to local disc. | Improvement |
+| WEB-2425 | Incomprehensible characters when view pdf | Bug |
+| WEB-2038 | Text issues when saving document containing XFA form to HTML | Bug |
+| VIEWERNET-866 | Html watermark style block contains garbage characters. | Bug |
+| VIEWERNET-865 | Html watermark style block contains garbage characters. | Bug |
+| VIEWERNET-863 | Watermark is Rendered Incorrectly in Html Representation | Bug |
+| VIEWERNET-838 | Wmf file dimensions are different from dimensions in the MS Paint. | Bug |
+| VIEWERNET-834 | TeX to Html conversion error | Bug |
+| VIEWERNET-829 | Incorrect Rendering of PDF Document into Image | Bug |
+| VIEWERNET-811 | The output pdf file contains black pages instead of content when converting djvu to pdf. | Bug |
+| VIEWERNET-794 | DefaultRegularFont setting doesn't work properly | Bug |
+| VIEWERNET-566 | Specific pdf document can't be saved as HTML | Bug |
+| VIEWERNET-496 | Exception when converting document to HTML after cleanup | Bug |
+| VIEWERNET-437 | Some characters not displayed when rendering HTML or PNG | Bug |
 
 ## Public API and Backward Incompatible Changes
 

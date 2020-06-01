@@ -20,7 +20,22 @@ There are 3 new features and 11 improvements and fixes in this regular monthly r
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1350</p></td><td class="confluenceTd"><p>Implement a setting to show/hide hidden pages</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1317</p></td><td class="confluenceTd"><p>Add STL file format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-965</p></td><td class="confluenceTd"><p>Support of IFC file format</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1403</p></td><td class="confluenceTd"><p>Extend support of CountRowsPerPage option when rendering Spreadsheet documents as PDF and image with enabled text extraction</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1349</p></td><td class="confluenceTd"><p>Rendering documents into HTML from stream does not create external resources</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>WEB-1350</p></td><td class="confluenceTd"><p>Gray rectangles instead of image parts</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1402</p></td><td class="confluenceTd"><p>Empty space between text is lost when rendering Email documents</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1399</p></td><td class="confluenceTd"><p>The parameter 'address' cannot be an empty string exception when rendering MSG document</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1372</p></td><td class="confluenceTd"><p>Some rows/records are missing when rendering Excel document to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1371</p></td><td class="confluenceTd"><p>Parameter is not valid exception when rendering Excel document to image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1367</p></td><td class="confluenceTd"><p>The output image gets cut when rendering PowerPoint presentation</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1313</p></td><td class="confluenceTd"><p>All pages are same when rendering Microsoft Project document into an image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1243</p></td><td class="confluenceTd"><p>Incorrect rendering of PDF document into HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1139</p></td><td class="confluenceTd"><p>Exception when rendering CAD file into image</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1350 | Implement a setting to show/hide hidden pages | New Feature |
+| VIEWERNET-1317 | Add STL file format support | New Feature |
+| VIEWERNET-965 | Support of IFC file format | New Feature |
+| VIEWERNET-1403 | Extend support of CountRowsPerPage option when rendering Spreadsheet documents as PDF and image with enabled text extraction | Improvement |
+| VIEWERNET-1349 | Rendering documents into HTML from stream does not create external resources | Improvement |
+| WEB-1350 | Gray rectangles instead of image parts | Bug |
+| VIEWERNET-1402 | Empty space between text is lost when rendering Email documents | Bug |
+| VIEWERNET-1399 | The parameter 'address' cannot be an empty string exception when rendering MSG document | Bug |
+| VIEWERNET-1372 | Some rows/records are missing when rendering Excel document to HTML | Bug |
+| VIEWERNET-1371 | Parameter is not valid exception when rendering Excel document to image | Bug |
+| VIEWERNET-1367 | The output image gets cut when rendering PowerPoint presentation | Bug |
+| VIEWERNET-1313 | All pages are same when rendering Microsoft Project document into an image | Bug |
+| VIEWERNET-1243 | Incorrect rendering of PDF document into HTML | Bug |
+| VIEWERNET-1139 | Exception when rendering CAD file into image | Bug |
 
 ## Public API and Backward Incompatible Changes
 

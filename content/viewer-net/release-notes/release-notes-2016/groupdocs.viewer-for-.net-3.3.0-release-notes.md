@@ -25,7 +25,41 @@ There are 33 improvements and fixes in this regular monthly release. The most no
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-631</p></td><td class="confluenceTd"><p>Add ability to specify custom fonts path</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-475</p></td><td class="confluenceTd"><p>Opacity setting for Watermark</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-416</p></td><td class="confluenceTd"><p>Get selected attachment from email documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-414</p></td><td class="confluenceTd"><p>Render attachments from email documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-478</p></td><td class="confluenceTd"><p>Pre-Render Information required of a remotely located document or document in the form of streams</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-459</p></td><td class="confluenceTd"><p>Provide remove old cache utility feature in the next generation API</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-582</p></td><td class="confluenceTd"><p>The GroupDocs.Viewer 3.x is slower than 2.19 in performance</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-641</p></td><td class="confluenceTd"><p>Update DocumentInfoOptions Cells/Words/Email DocumentInfoOptions properties names and types</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-640</p></td><td class="confluenceTd"><p>Remove duplicated document name header in Project document converted to html</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-636</p></td><td class="confluenceTd"><p>Remove border in html that was converted from words document</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-619</p></td><td class="confluenceTd"><p>Implement adding prefix to font-family property if it can be overriden</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-614</p></td><td class="confluenceTd"><p>Implement transparent watermarking in html mode</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-600</p></td><td class="confluenceTd"><p>Improve performance of extracting document information in image mode</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-590</p></td><td class="confluenceTd"><p>Apply HtmlResourcePrefix to fonts mentioned in css files</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-568</p></td><td class="confluenceTd"><p>Load document only when not cached</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-557</p></td><td class="confluenceTd"><p>Improve temp files folder structure</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-558</p></td><td class="confluenceTd"><p>Improve processing remote files by Uri</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>WEB-1107</p></td><td class="confluenceTd"><p>Convert a document page to JPEG in about 0.1 second</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>WEB-905</p></td><td class="confluenceTd"><p>Links for mail attachments</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-642</p></td><td class="confluenceTd"><p>GetDocumentInfo Method Throws Exception in Evaluation Mode</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-632</p></td><td class="confluenceTd"><p>The HtmlResourcePrefix {page-number} is not set in DiagramToHtmlConverter</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-476</p></td><td class="confluenceTd"><p>Some characters are not showing in correct format when render as HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-591</p></td><td class="confluenceTd"><p>'System.OutOfMemoryException' thrown while rendering as image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-605</p></td><td class="confluenceTd"><p>Only first frame or tiff document converted in image mode</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-606</p></td><td class="confluenceTd"><p>Only first frame or tiff document converted in image mode</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-550</p></td><td class="confluenceTd"><p>MSG file is not rendering properly</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-583</p></td><td class="confluenceTd"><p>Failed to get document information in image mode with text from epub document</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-570</p></td><td class="confluenceTd"><p>Failed to get document information in image mode with text in trial</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-551</p></td><td class="confluenceTd"><p>File description document type format is Unknown when extension is upper case</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-552</p></td><td class="confluenceTd"><p>File description document type format is Unknown when extension is upper case</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-2372</p></td><td class="confluenceTd"><p>Different HTML generated for the same document</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-1531</p></td><td class="confluenceTd"><p>Outlines are rendered incorrectly in HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-2320</p></td><td class="confluenceTd"><p>Some text extracted from document twice</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-631 | Add ability to specify custom fonts path | New Feature |
+| VIEWERNET-475 | Opacity setting for Watermark | New Feature |
+| VIEWERNET-416 | Get selected attachment from email documents | New Feature |
+| VIEWERNET-414 | Render attachments from email documents | New Feature |
+| VIEWERNET-478 | Pre-Render Information required of a remotely located document or document in the form of streams | New Feature |
+| VIEWERNET-459 | Provide remove old cache utility feature in the next generation API | New Feature |
+| VIEWERNET-582 | The GroupDocs.Viewer 3.x is slower than 2.19 in performance | Improvement |
+| VIEWERNET-641 | Update DocumentInfoOptions Cells/Words/Email DocumentInfoOptions properties names and types | Improvement |
+| VIEWERNET-640 | Remove duplicated document name header in Project document converted to html | Improvement |
+| VIEWERNET-636 | Remove border in html that was converted from words document | Improvement |
+| VIEWERNET-619 | Implement adding prefix to font-family property if it can be overriden | Improvement |
+| VIEWERNET-614 | Implement transparent watermarking in html mode | Improvement |
+| VIEWERNET-600 | Improve performance of extracting document information in image mode | Improvement |
+| VIEWERNET-590 | Apply HtmlResourcePrefix to fonts mentioned in css files | Improvement |
+| VIEWERNET-568 | Load document only when not cached | Improvement |
+| VIEWERNET-557 | Improve temp files folder structure | Improvement |
+| VIEWERNET-558 | Improve processing remote files by Uri | Improvement |
+| WEB-1107 | Convert a document page to JPEG in about 0.1 second | Improvement |
+| WEB-905 | Links for mail attachments | Improvement |
+| VIEWERNET-642 | GetDocumentInfo Method Throws Exception in Evaluation Mode | Bug |
+| VIEWERNET-632 | The HtmlResourcePrefix {page-number} is not set in DiagramToHtmlConverter | Bug |
+| VIEWERNET-476 | Some characters are not showing in correct format when render as HTML | Bug |
+| VIEWERNET-591 | 'System.OutOfMemoryException' thrown while rendering as image | Bug |
+| VIEWERNET-605 | Only first frame or tiff document converted in image mode | Bug |
+| VIEWERNET-606 | Only first frame or tiff document converted in image mode | Bug |
+| VIEWERNET-550 | MSG file is not rendering properly | Bug |
+| VIEWERNET-583 | Failed to get document information in image mode with text from epub document | Bug |
+| VIEWERNET-570 | Failed to get document information in image mode with text in trial | Bug |
+| VIEWERNET-551 | File description document type format is Unknown when extension is upper case | Bug |
+| VIEWERNET-552 | File description document type format is Unknown when extension is upper case | Bug |
+| WEB-2372 | Different HTML generated for the same document | Bug |
+| WEB-1531 | Outlines are rendered incorrectly in HTML | Bug |
+| WEB-2320 | Some text extracted from document twice | Bug |
 
    
  
@@ -37,7 +71,6 @@ There are 33 improvements and fixes in this regular monthly release. The most no
 **C#**
 
 ```csharp
-
 // Setup GroupDocs.Viewer config
 ViewerConfig config = new ViewerConfig();
 config.StoragePath = @"C:\storage";
@@ -57,8 +90,6 @@ ViewerHtmlHandler htmlHandler = new ViewerHtmlHandler(config);
 **C#**
 
 ```csharp
-
-
 // Setup GroupDocs.Viewer config
 ViewerConfig config = new ViewerConfig();
 config.StoragePath = @"C:\storage";
@@ -80,7 +111,6 @@ Console.WriteLine("Attach stream lenght: {0}", fileContainer.Stream.Length);
 **C#**
 
 ```csharp
-
 // Setup GroupDocs.Viewer config
 ViewerConfig viewerConfig = new ViewerConfig();
 viewerConfig.StoragePath = "c:\\storage";
@@ -121,7 +151,6 @@ foreach (AttachmentBase attachment in info.Attachments)
 **C#**
 
 ```csharp
-
 // Setup GroupDocs.Viewer config
 ViewerConfig viewerConfig = new ViewerConfig();
 viewerConfig.StoragePath = "c:\\storage";
@@ -153,7 +182,6 @@ The following code snippet shows you how to get document information by guid in 
 **C#**
 
 ```csharp
-
 // Setup GroupDocs.Viewer config
 ViewerConfig config = new ViewerConfig();
 config.StoragePath = @"C:\storage";
@@ -191,7 +219,6 @@ foreach (PageData pageData in documentInfo.Pages)
 **C#**
 
 ```csharp
-
 // Setup GroupDocs.Viewer config
 ViewerConfig config = new ViewerConfig();
 config.StoragePath = @"C:\storage";
@@ -230,7 +257,6 @@ foreach (PageData pageData in documentInfo.Pages)
 **C#**
 
 ```csharp
-
 // Setup GroupDocs.Viewer config
 ViewerConfig config = new ViewerConfig();
 config.StoragePath = @"C:\storage";
@@ -269,7 +295,6 @@ foreach (PageData pageData in documentInfo.Pages)
 **C#**
 
 ```csharp
-
 //Init viewer config
 ViewerConfig viewerConfig = new ViewerConfig();
 viewerConfig.StoragePath = "c:\\storage";
@@ -288,7 +313,6 @@ viewerImageHandler.ClearCache();
 **C#**
 
 ```csharp
-
 //Init viewer config
 ViewerConfig viewerConfig = new ViewerConfig();
 viewerConfig.StoragePath = "c:\\storage";

@@ -21,7 +21,21 @@ There are 2 new features and 11 improvements and fixes in this regular monthly r
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1022</p></td><td class="confluenceTd"><p>Rendering password-protected MPP(2003) files</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-785</p></td><td class="confluenceTd"><p>LaTeX file format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1075</p></td><td class="confluenceTd"><p>Implement saving fonts and styles separately when converting Words to Html</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1071</p></td><td class="confluenceTd"><p>Add {resource-name} pattern to HtmlOptions.HtmlResourcePrefix</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1061</p></td><td class="confluenceTd"><p>Add CountPagesToRender and PageNumbersToRender properties to RenderOptions class</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1060</p></td><td class="confluenceTd"><p>Implement IDisposable for container classes</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1055</p></td><td class="confluenceTd"><p>Implement setting which allows render pdf document layers separately</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1021</p></td><td class="confluenceTd"><p>Add code examples to documentation comments</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>WEB-2377</p></td><td class="confluenceTd"><p>Incorrect conversion from DOCX to PDF</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>WEB-756</p></td><td class="confluenceTd"><p>Header-links in PDF files do not work</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1035</p></td><td class="confluenceTd"><p>Input stream must be FileStream exception when loading Tex file from stream</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-688</p></td><td class="confluenceTd"><p>Getting GroupDocs.Foundation Dependency Exception in SharePoint 2013</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-505</p></td><td class="confluenceTd"><p>Background image is missing when converting to image.</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1022 | Rendering password-protected MPP(2003) files | New Feature |
+| VIEWERNET-785 | LaTeX file format support | New Feature |
+| VIEWERNET-1075 | Implement saving fonts and styles separately when converting Words to Html | Improvement |
+| VIEWERNET-1071 | Add {resource-name} pattern to HtmlOptions.HtmlResourcePrefix | Improvement |
+| VIEWERNET-1061 | Add CountPagesToRender and PageNumbersToRender properties to RenderOptions class | Improvement |
+| VIEWERNET-1060 | Implement IDisposable for container classes | Improvement |
+| VIEWERNET-1055 | Implement setting which allows render pdf document layers separately | Improvement |
+| VIEWERNET-1021 | Add code examples to documentation comments | Improvement |
+| WEB-2377 | Incorrect conversion from DOCX to PDF | Bug |
+| WEB-756 | Header-links in PDF files do not work | Bug |
+| VIEWERNET-1035 | Input stream must be FileStream exception when loading Tex file from stream | Bug |
+| VIEWERNET-688 | Getting GroupDocs.Foundation Dependency Exception in SharePoint 2013 | Bug |
+| VIEWERNET-505 | Background image is missing when converting to image. | Bug |
 
    
  

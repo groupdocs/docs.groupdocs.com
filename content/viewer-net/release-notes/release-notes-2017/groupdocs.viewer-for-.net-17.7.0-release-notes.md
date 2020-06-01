@@ -20,7 +20,23 @@ One new feature and 14 improvements and fixes in this regular monthly release. T
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1182</p></td><td class="confluenceTd"><p>Support rendering PDF documents with attachments</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1274</p></td><td class="confluenceTd"><p>Extend support for setting font directories to Presentation documents</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1255</p></td><td class="confluenceTd"><p>Extend support for setting JpegQuality when rendering SVG as PDF</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1250</p></td><td class="confluenceTd"><p>Improve rendering Microsoft Visio document as HTML</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1173</p></td><td class="confluenceTd"><p>Rendering djvu documents with maximum JpegQuality renders contained images with low quality</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>WEB-2429</p></td><td class="confluenceTd"><p>PDF with hieroglyphs is converted to the JPEG and HTML with corrupted symbols</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1262</p></td><td class="confluenceTd"><p>Resource prefix not applied when rendering Presentation documents to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1252</p></td><td class="confluenceTd"><p>Watermark not displayed when rendering Microsoft Visio document as HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1251</p></td><td class="confluenceTd"><p>Multipage Microsoft Visio document shows page count as one</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1220</p></td><td class="confluenceTd"><p>ViewerConfig.DefaultFontName setting does not replace missing fonts for Spreadsheet documents</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1203</p></td><td class="confluenceTd"><p>Conflict when using GroupDocs.Viewer and Aspose APIs in same project</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1154</p></td><td class="confluenceTd"><p>Incorrect rendering of bullets in HTML mode</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1151</p></td><td class="confluenceTd"><p>Incorrect Characters after rendering PDF in HTML/Image mode</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1143</p></td><td class="confluenceTd"><p>Some characters are being replaced with a ? placeholder while rendering.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-917</p></td><td class="confluenceTd"><p>Failed to load DGN file</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1182 | Support rendering PDF documents with attachments | New Feature |
+| VIEWERNET-1274 | Extend support for setting font directories to Presentation documents | Improvement |
+| VIEWERNET-1255 | Extend support for setting JpegQuality when rendering SVG as PDF | Improvement |
+| VIEWERNET-1250 | Improve rendering Microsoft Visio document as HTML | Improvement |
+| VIEWERNET-1173 | Rendering djvu documents with maximum JpegQuality renders contained images with low quality | Improvement |
+| WEB-2429 | PDF with hieroglyphs is converted to the JPEG and HTML with corrupted symbols | Bug |
+| VIEWERNET-1262 | Resource prefix not applied when rendering Presentation documents to HTML | Bug |
+| VIEWERNET-1252 | Watermark not displayed when rendering Microsoft Visio document as HTML | Bug |
+| VIEWERNET-1251 | Multipage Microsoft Visio document shows page count as one | Bug |
+| VIEWERNET-1220 | ViewerConfig.DefaultFontName setting does not replace missing fonts for Spreadsheet documents | Bug |
+| VIEWERNET-1203 | Conflict when using GroupDocs.Viewer and Aspose APIs in same project | Bug |
+| VIEWERNET-1154 | Incorrect rendering of bullets in HTML mode | Bug |
+| VIEWERNET-1151 | Incorrect Characters after rendering PDF in HTML/Image mode | Bug |
+| VIEWERNET-1143 | Some characters are being replaced with a ? placeholder while rendering. | Bug |
+| VIEWERNET-917 | Failed to load DGN file | Bug |
 
 ## Public API and Backward Incompatible Changes
 

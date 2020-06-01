@@ -2,7 +2,7 @@
 id: view-cad-drawings
 url: viewer/net/view-cad-drawings
 title: View CAD Drawings
-weight: 14
+weight: 18
 description: "This article contains use-cases of viewing CAD drawings with GroupDocs.Viewer within your .NET applications."
 keywords: 
 productName: GroupDocs.Viewer for .NET
@@ -18,27 +18,20 @@ The following CAD formats are supported by the GroupDocs.Viewer for .NET. 
 
 Auto Detection means that GroupDocs.Viewer for .NET can determine the type of the CAD drawing by reading the information in the file header.
 
-| Format | File Extension | Auto Detection | Note |
+| File Extension | File Type | Auto Detection | Note |
 | --- | --- | --- | --- |
-| [MicroStation Design File (V7)](https://wiki.fileformat.com/cad/dgn/) | [.dgn](https://wiki.fileformat.com/cad/dgn/) | Yes |   |
-| [Autodesk Design Web Format](https://wiki.fileformat.com/cad/dwf/) | [.dwf](https://wiki.fileformat.com/cad/dwf/) | Yes |   |
-| [AutoCAD Drawing](https://wiki.fileformat.com/cad/dwg/) | .[dwg](https://wiki.fileformat.com/cad/dwg/) | Yes | Supported formats:
-*   Release 11, 12, 13, 14.
-*   DWG 2000, 2000i, 2002
-*   DWG 2004, 2005, 2006
-*   DWG 2010, 2011, 2012
-*   DWG 2013, 2014, 2015, 2016
-
- |
-| [AutoCAD Drawing Template](https://wiki.fileformat.com/cad/dwt/) | [.dwt](https://wiki.fileformat.com/cad/dwt/) | Yes |   |
-| [AutoCAD Drawing Interchange](https://wiki.fileformat.com/cad/dxf/) | [.dxf](https://wiki.fileformat.com/cad/dxf/) | Yes |   |
-| [Industry Foundation Classes](https://wiki.fileformat.com/cad/ifc/) | [.ifc](https://wiki.fileformat.com/cad/ifc/) | Yes |   |
-| [Stereo Lithography](https://wiki.fileformat.com/cad/stl/) | [.stl](https://wiki.fileformat.com/cad/stl/) | Yes |   |
-| [AutoCAD Plotter Document](https://wiki.fileformat.com/cad/plt/) | [.plt](https://wiki.fileformat.com/cad/plt/) | Yes |   |
-| Wavefront 3D Object File | .obj | Yes |   |
-| Common File Format File | .cf2 | Yes |   |
-| Initial Graphics Exchange Specification (IGES) File | .igs | Yes |   |
-| HPGL Plot File | .hpg | Yes |   |
+| [.DGN](https://wiki.fileformat.com/cad/dgn) | [MicroStation Design File (V7)](https://wiki.fileformat.com/cad/dgn) | Yes |   |
+| [.DWF](https://wiki.fileformat.com/cad/dwf) | [Autodesk Design Web Format](https://wiki.fileformat.com/cad/dwf) | Yes |   |
+| [.DWG](https://wiki.fileformat.com/cad/dwg) | [AutoCAD Drawing](https://wiki.fileformat.com/cad/dwg) | Yes | Supported formats: *   Release 11, 12, 13, 14. *   DWG 2000, 2000i, 2002 *   DWG 2004, 2005, 2006 *   DWG 2010, 2011, 2012 *   DWG 2013, 2014, 2015, 2016 |
+| [.DWT](https://wiki.fileformat.com/cad/dwt) | [AutoCAD Drawing Template](https://wiki.fileformat.com/cad/dwt) | Yes |   |
+| [.DXF](https://wiki.fileformat.com/cad/dxf) | [AutoCAD Drawing Interchange](https://wiki.fileformat.com/cad/dxf) | Yes |   |
+| [.IFC](https://wiki.fileformat.com/cad/ifc) | [Industry Foundation Classes](https://wiki.fileformat.com/cad/ifc) | Yes |   |
+| [.STL](https://wiki.fileformat.com/cad/stl) | [Stereo Lithography](https://wiki.fileformat.com/cad/stl) | Yes |   |
+| [.PLT](https://wiki.fileformat.com/cad/plt) | [AutoCAD Plotter Document](https://wiki.fileformat.com/cad/plt) | Yes |   |
+| .OBJ | Wavefront 3D Object File | Yes |   |
+| .CF2 | Common File Format File | Yes |   |
+| .IGS | Initial Graphics Exchange Specification (IGES) File | Yes |   |
+| .HPG | HPGL Plot File | Yes |   |
 
 ## Articles in this section
 

@@ -2,7 +2,7 @@
 id: split-drawing-into-tiles
 url: viewer/net/split-drawing-into-tiles
 title: Split drawing into tiles
-weight: 9
+weight: 13
 description: "This article explains how to split CAD drawing into tiles with GroupDocs.Viewer within your .NET applications."
 keywords: 
 productName: GroupDocs.Viewer for .NET

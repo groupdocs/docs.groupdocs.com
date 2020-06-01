@@ -20,7 +20,23 @@ There are 15 improvements and fixes in this regular monthly release. The most no
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1424</p></td><td class="confluenceTd"><p>New overload for RotatePage and ReorderPage methods with ability to specify RenderOptions</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1417</p></td><td class="confluenceTd"><p>Improve MHT documents rendering performance</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1405</p></td><td class="confluenceTd"><p>Drop support of caching based on render options</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1363</p></td><td class="confluenceTd"><p>Add code examples for CAD rendering options</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1362</p></td><td class="confluenceTd"><p>Load custom fonts on demand</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1351</p></td><td class="confluenceTd"><p>Improve styles generation when rendering into HTML with embedded resources</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1347</p></td><td class="confluenceTd"><p>Watermark is not over the content when rendering into HTML</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-560</p></td><td class="confluenceTd"><p>DWG+DFX (2007,2010) support is required.</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1434</p></td><td class="confluenceTd"><p>ViewerConfig.FontDirectories property not working for Text documents</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1425</p></td><td class="confluenceTd"><p>Exception when rendering Excel document into HTML and image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1423</p></td><td class="confluenceTd"><p>Index out of range exception when rendering CAD document</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1418</p></td><td class="confluenceTd"><p>Content is missing when rendering interactive PDF document</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1414</p></td><td class="confluenceTd"><p>Columns are missing when rendering Excel document to PDF and HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1376</p></td><td class="confluenceTd"><p>Missing words and characters when rendering PDF to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1132</p></td><td class="confluenceTd"><p>Incorrect Positioning of Characters When Rendering PDF to HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1424 | New overload for RotatePage and ReorderPage methods with ability to specify RenderOptions | Improvement |
+| VIEWERNET-1417 | Improve MHT documents rendering performance | Improvement |
+| VIEWERNET-1405 | Drop support of caching based on render options | Improvement |
+| VIEWERNET-1363 | Add code examples for CAD rendering options | Improvement |
+| VIEWERNET-1362 | Load custom fonts on demand | Improvement |
+| VIEWERNET-1351 | Improve styles generation when rendering into HTML with embedded resources | Improvement |
+| VIEWERNET-1347 | Watermark is not over the content when rendering into HTML | Improvement |
+| VIEWERNET-560 | DWG+DFX (2007,2010) support is required. | Improvement |
+| VIEWERNET-1434 | ViewerConfig.FontDirectories property not working for Text documents | Bug |
+| VIEWERNET-1425 | Exception when rendering Excel document into HTML and image | Bug |
+| VIEWERNET-1423 | Index out of range exception when rendering CAD document | Bug |
+| VIEWERNET-1418 | Content is missing when rendering interactive PDF document | Bug |
+| VIEWERNET-1414 | Columns are missing when rendering Excel document to PDF and HTML | Bug |
+| VIEWERNET-1376 | Missing words and characters when rendering PDF to HTML | Bug |
+| VIEWERNET-1132 | Incorrect Positioning of Characters When Rendering PDF to HTML | Bug |
 
 ## Public API and Backward Incompatible Changes
 

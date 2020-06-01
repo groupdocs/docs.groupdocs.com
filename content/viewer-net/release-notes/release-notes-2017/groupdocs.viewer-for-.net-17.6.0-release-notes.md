@@ -20,7 +20,17 @@ One new feature and 8 improvements and fixes in this regular monthly release. Th
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1223</p></td><td class="confluenceTd"><p>Add SVG format support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1213</p></td><td class="confluenceTd"><p>Move the setting that enables text extraction to ImageOptions class</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1210</p></td><td class="confluenceTd"><p>Replace backslashes in resource URL's with forward slashes</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1199</p></td><td class="confluenceTd"><p>Extend support of HtmlOptions.IsResourceEmbedded option for Presentation documents</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1083</p></td><td class="confluenceTd"><p>Determine resource type based on resource name</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1082</p></td><td class="confluenceTd"><p>Remove obsolete ViewerConfig properties and fields</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1081</p></td><td class="confluenceTd"><p>Add code examples to WordsOptions class documentation comments</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1230</p></td><td class="confluenceTd"><p>Image export failed exception when passed CAD layout name does not exist.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1212</p></td><td class="confluenceTd"><p>File added to storage when GetDocumentInfo called for stream</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1223 | Add SVG format support | New Feature |
+| VIEWERNET-1213 | Move the setting that enables text extraction to ImageOptions class | Improvement |
+| VIEWERNET-1210 | Replace backslashes in resource URL's with forward slashes | Improvement |
+| VIEWERNET-1199 | Extend support of HtmlOptions.IsResourceEmbedded option for Presentation documents | Improvement |
+| VIEWERNET-1083 | Determine resource type based on resource name | Improvement |
+| VIEWERNET-1082 | Remove obsolete ViewerConfig properties and fields | Improvement |
+| VIEWERNET-1081 | Add code examples to WordsOptions class documentation comments | Improvement |
+| VIEWERNET-1230 | Image export failed exception when passed CAD layout name does not exist. | Bug |
+| VIEWERNET-1212 | File added to storage when GetDocumentInfo called for stream | Bug |
 
 ## Public API and Backward Incompatible Changes
 

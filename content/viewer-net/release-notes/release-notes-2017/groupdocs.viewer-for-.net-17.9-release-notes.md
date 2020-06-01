@@ -21,7 +21,22 @@ There are 2 new features and 12 improvements and fixes in this regular monthly r
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1343</p></td><td class="confluenceTd"><p>GIF images are displayed without animation</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1263</p></td><td class="confluenceTd"><p>Implement a setting for excluding fonts while rendering into HTML</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1336</p></td><td class="confluenceTd"><p>Show local time when rendering Email messages</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1323</p></td><td class="confluenceTd"><p>Implement responsive output for rendering MS Visio documents and SVG images into HTML</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1311</p></td><td class="confluenceTd"><p>Extend support for HtmlOptions.EnableResponsiveRendering to Text documents</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1261</p></td><td class="confluenceTd"><p>Improve rendering into HTML for rotated documents</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>WEB-1407</p></td><td class="confluenceTd"><p>It takes hours of time and gigabytes of RAM to convert a DOCX of 1758 pages</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1335</p></td><td class="confluenceTd"><p>Issue with recipient and sent date when rendering from .eml message to image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1257</p></td><td class="confluenceTd"><p>File extension field does not include period</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1202</p></td><td class="confluenceTd"><p>Incorrect position of parenthesis in output HTML</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1178</p></td><td class="confluenceTd"><p>Out Of Memory Exception when rendering PDF into image</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1159</p></td><td class="confluenceTd"><p>Blank output HTML page when rendering PDF document</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td colspan="1" class="confluenceTd">VIEWERNET-1136</td><td colspan="1" class="confluenceTd">Misplaced Characters when Viewing HTML in Safari for iOS</td><td colspan="1" class="confluenceTd">Bug</td></tr><tr><td class="confluenceTd"><p>VIEWERNET-1004</p></td><td class="confluenceTd"><p>Alignment of radio button text and checkbox text is not proper</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERNET-1343 | GIF images are displayed without animation | New Feature |
+| VIEWERNET-1263 | Implement a setting for excluding fonts while rendering into HTML | New Feature |
+| VIEWERNET-1336 | Show local time when rendering Email messages | Improvement |
+| VIEWERNET-1323 | Implement responsive output for rendering MS Visio documents and SVG images into HTML | Improvement |
+| VIEWERNET-1311 | Extend support for HtmlOptions.EnableResponsiveRendering to Text documents | Improvement |
+| VIEWERNET-1261 | Improve rendering into HTML for rotated documents | Improvement |
+| WEB-1407 | It takes hours of time and gigabytes of RAM to convert a DOCX of 1758 pages | Bug |
+| VIEWERNET-1335 | Issue with recipient and sent date when rendering from .eml message to image | Bug |
+| VIEWERNET-1257 | File extension field does not include period | Bug |
+| VIEWERNET-1202 | Incorrect position of parenthesis in output HTML | Bug |
+| VIEWERNET-1178 | Out Of Memory Exception when rendering PDF into image | Bug |
+| VIEWERNET-1159 | Blank output HTML page when rendering PDF document | Bug |
+| VIEWERNET-1136 | Misplaced Characters when Viewing HTML in Safari for iOS | Bug |
+| VIEWERNET-1004 | Alignment of radio button text and checkbox text is not proper | Bug |
 
 ## Public API and Backward Incompatible Changes
 

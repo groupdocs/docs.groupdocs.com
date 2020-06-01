@@ -2,7 +2,7 @@
 id: how-to-view-plt-files
 url: viewer/net/how-to-view-plt-files
 title: How to view PLT files
-weight: 5
+weight: 9
 description: "This article explains how to convert PLT files with GroupDocs.Viewer within your .NET applications."
 keywords: 
 productName: GroupDocs.Viewer for .NET
