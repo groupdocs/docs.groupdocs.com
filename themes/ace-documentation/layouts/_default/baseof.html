@@ -33,7 +33,7 @@
                     
                     <div class="row">
                         {{- if and (ne .Site.Params.disableReadmoreNav true) (ne .Params.disableReadmoreNav true) -}}
-                        <div class="position-relative mx-auto col-lg-9">
+                        <div class="position-relative mx-auto col-lg-12">
                           {{ partial "next-prev-page.html" . }}
                         </div>
                         {{- end -}}
