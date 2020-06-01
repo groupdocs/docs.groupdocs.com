@@ -1,6 +1,6 @@
 ---
-id: how-to-make-cache-thread-safe-in-your-net-c#-application
-url: viewer/net/how-to-make-cache-thread-safe-in-your-net-c#-application
+id: how-to-make-cache-thread-safe-in-your-net-csharp-application
+url: viewer/net/how-to-make-cache-thread-safe-in-your-net-csharp-application
 title: How to make cache thread-safe in your .NET C# application
 weight: 2
 description: "This article explains how to make cache thread-safe with GroupDocs.Viewer within your .NET applications."
@@ -8,8 +8,6 @@ keywords: GroupDocs.Viewer, thread-safe, cache
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-/\*<!\[CDATA\[\*/ div.rbtoc1590388476157 {padding: 0px;} div.rbtoc1590388476157 ul {list-style: disc;margin-left: 0px;} div.rbtoc1590388476157 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
-
 # How to make cache thread-safe 
 
 This tutorial will explain how to make cache thread-safe by using [C# lock](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/lock-statement) and [ConcurrentDictionary<,> class](https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentdictionary-2).

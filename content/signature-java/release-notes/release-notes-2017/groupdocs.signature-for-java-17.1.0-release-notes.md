@@ -49,7 +49,136 @@ This is the first version of new generation GroupDocs.Signature for Java. The mo
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Issue Type</strong></p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2347</p></td><td class="confluenceTd"><p>Implement Visible flag of Pdf Digital Signature</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2314</p></td><td class="confluenceTd"><p>Implement Save Format Options for Slides Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2312</p></td><td class="confluenceTd"><p>Implement Save Format Options for Cells Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2310</p></td><td class="confluenceTd"><p>Implement Save Format Options for Words Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2305</p></td><td class="confluenceTd"><p>Implement Save Format Options for PDF Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2222</p></td><td class="confluenceTd"><p>Implement Different Words Save Format Options</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2199</p></td><td class="confluenceTd"><p>Implement Image Signature Margins for Slides</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2197</p></td><td class="confluenceTd"><p>Implement Image Signature Margins for Cells</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2195</p></td><td class="confluenceTd"><p>Implement Image Signature Margins for Words</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2193</p></td><td class="confluenceTd"><p>Implement Image Signature Margins for PDF</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2181</p></td><td class="confluenceTd"><p>Implement Text Signature Color Options for Slides</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2179</p></td><td class="confluenceTd"><p>Implement Text Signature Color Options for Words</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2177</p></td><td class="confluenceTd"><p>Implement Text Signature Color Options for Cells</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2175</p></td><td class="confluenceTd"><p>Implement Text Signature Color Options for PDF</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2162</p></td><td class="confluenceTd"><p>Implement Text Signature Font properties for Slides</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2160</p></td><td class="confluenceTd"><p>Implement Text Signature Font properties for Cells</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2158</p></td><td class="confluenceTd"><p>Implement Text Signature Font properties for Words</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2156</p></td><td class="confluenceTd"><p>Implement Text Signature Font properties for PDF</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2119</p></td><td class="confluenceTd"><p>Implement text size options in text signature for Slides documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2118</p></td><td class="confluenceTd"><p>Implement text size options in text signature for Cells documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2117</p></td><td class="confluenceTd"><p>Implement text size options in text signature for Words documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2116</p></td><td class="confluenceTd"><p>Implement text size options in text signature for Pdf documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2112</p></td><td class="confluenceTd"><p>Add ability to specify color options for text signature</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2109</p></td><td class="confluenceTd"><p>Add ability to specify options for saving signed Document</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2092</p></td><td class="confluenceTd"><p>Implement Image Signature Alignment for Slides</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2091</p></td><td class="confluenceTd"><p>Implement Image Signature Alignment for Words</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2090</p></td><td class="confluenceTd"><p>Implement Image Signature Alignment for Cells</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2089</p></td><td class="confluenceTd"><p>Implement Image Signature Alignment for PDF</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2372</p></td><td class="confluenceTd"><p>Implement ability to sign Slides Documents with given list of Signature Options</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2402</p></td><td class="confluenceTd"><p>Implement ability to sign Words Documents with given list of Signature Options</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2397</p></td><td class="confluenceTd"><p>Implement ability to sign Cells Documents with given list of Signature Options</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2392</p></td><td class="confluenceTd"><p>Implement ability to sign Pdf Documents with given list of Signature Options</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2385</p></td><td class="confluenceTd"><p>Implement Digital Signature Alignment for Pdf Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2384</p></td><td class="confluenceTd"><p>Implement ability to put Digital Signature on all pages for Pdf Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2374</p></td><td class="confluenceTd"><p>Implement Text Signature Margins for Slides Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2372</p></td><td class="confluenceTd"><p>Implement Text Signature Margins for Words Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2370</p></td><td class="confluenceTd"><p>Implement Text Signature Margins for Cells Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2368</p></td><td class="confluenceTd"><p>Implement Text Signature Margins for PDF Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Implement Digital Signature for all pages for Pdf documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2349</p></td><td class="confluenceTd"><p>Add ability to sign files with text signature by given pattern in folder</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Implement Text Signature alignment for Slides Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2307</p></td><td class="confluenceTd"><p>Implement Text Signature alignment for Cells Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Implement Text Signature alignment for Words Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2133</p></td><td class="confluenceTd"><p>Implement Text Signature alignment for PDF Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Add ability to sign files with image signature by given pattern in folder</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2131</p></td><td class="confluenceTd"><p>Add ability to sign files with digital signature by given pattern in folder</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Implement alternative Text Signature implementation as Annotation for Pdf Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2129</p></td><td class="confluenceTd"><p>Implement ability to setup output file name for Save Options</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Implement Text Signature Verification for Pdf Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2113</p></td><td class="confluenceTd"><p>Implement Unique Identifier of Text Signature for Pdf Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Provide alternative Text Signature implementation as Image for Slides Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2027</p></td><td class="confluenceTd"><p>Provide alternative Text Signature implementation as Image for Words Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Provide alternative Text Signature implementation as Image for Cells Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2026</p></td><td class="confluenceTd"><p>Provide alternative Text Signature implementation as Image for Pdf Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Implement ability to check, load and verify digitally signed Words documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2499</p></td><td class="confluenceTd"><p>Implement ability to check, load and verify digitally signed Cells documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Implement ability to check, load and verify digitally signed Pdf documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2491</p></td><td class="confluenceTd"><p>Implement Text Signature Opacity for Cells Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Implement Text Signature Opacity for Pdf Documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2486</p></td><td class="confluenceTd"><p>Implement Image Signature Size Adjustments for Slides</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Implement Image Signature Size Adjustments for Words</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2477</p></td><td class="confluenceTd"><p>Implement Image Signature Size Adjustments for PDF</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Update Digital Verification Options with ability to pass Certificate from Stream</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2475</p></td><td class="confluenceTd"><p>Update Digital Signature Options with ability to pass Certificate from Stream</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Improve logic of Words finding page algorithm</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2473</p></td><td class="confluenceTd"><p>Improve logic for cells text and image signature position.</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Provide alternative Text Signature implementation for Pdf Documents</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2471</p></td><td class="confluenceTd"><p>Provide alternative Text and Image Signature implementation for Open Office format files</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Adjust Pdf Size options to document points dimension</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2469</p></td><td class="confluenceTd"><p>When signing a password-protected Words file with a digital signature, an exception is thrown</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>When signing a PPTX and a password is set in the options, Aspose.Slides.PptxUnsupportedFormatException is thrown</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2449</p></td><td class="confluenceTd"><p>Fix Words Provider to locate Image Signature on Page Number from Option</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Pdf Text Signature - Adjust Signature Area when Width or Height properties are specified</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2447</p></td><td class="confluenceTd"><p>Fix wrong alignment for Words Text Signature</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Fix Border and Transparency appearance of Text Signature for Cells Documents</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2437</p></td><td class="confluenceTd"><p>Text signature for Words is not visible.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Intentions for a Pdf document with Text Signature don't work.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2380</p></td><td class="confluenceTd"><p>Not able to set PDF/Cells test signature opacity</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>Text signature with font and background options looks wrong</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2378</p></td><td class="confluenceTd"><p>Wrong exception's text for wrong password</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>OpenOfice doesn't open .xls with default encryption method.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>SIGNATURENET-2190</p></td><td class="confluenceTd"><p>Detection of a type of an encrypted cells file starts an inappropriate exception</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>&nbsp;</p></td><td class="confluenceTd"><p>When saving signed Words Document to different format - signature disappears</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2347 | Implement Visible flag of Pdf Digital Signature | New Feature |
+| SIGNATURENET-2314 | Implement Save Format Options for Slides Documents | New Feature |
+| SIGNATURENET-2312 | Implement Save Format Options for Cells Documents | New Feature |
+| SIGNATURENET-2310 | Implement Save Format Options for Words Documents | New Feature |
+| SIGNATURENET-2305 | Implement Save Format Options for PDF Documents | New Feature |
+| SIGNATURENET-2222 | Implement Different Words Save Format Options | New Feature |
+| SIGNATURENET-2199 | Implement Image Signature Margins for Slides | New Feature |
+| SIGNATURENET-2197 | Implement Image Signature Margins for Cells | New Feature |
+| SIGNATURENET-2195 | Implement Image Signature Margins for Words | New Feature |
+| SIGNATURENET-2193 | Implement Image Signature Margins for PDF | New Feature |
+| SIGNATURENET-2181 | Implement Text Signature Color Options for Slides | New Feature |
+| SIGNATURENET-2179 | Implement Text Signature Color Options for Words | New Feature |
+| SIGNATURENET-2177 | Implement Text Signature Color Options for Cells | New Feature |
+| SIGNATURENET-2175 | Implement Text Signature Color Options for PDF | New Feature |
+| SIGNATURENET-2162 | Implement Text Signature Font properties for Slides | New Feature |
+| SIGNATURENET-2160 | Implement Text Signature Font properties for Cells | New Feature |
+| SIGNATURENET-2158 | Implement Text Signature Font properties for Words | New Feature |
+| SIGNATURENET-2156 | Implement Text Signature Font properties for PDF | New Feature |
+| SIGNATURENET-2119 | Implement text size options in text signature for Slides documents | New Feature |
+| SIGNATURENET-2118 | Implement text size options in text signature for Cells documents | New Feature |
+| SIGNATURENET-2117 | Implement text size options in text signature for Words documents | New Feature |
+| SIGNATURENET-2116 | Implement text size options in text signature for Pdf documents | New Feature |
+| SIGNATURENET-2112 | Add ability to specify color options for text signature | New Feature |
+| SIGNATURENET-2109 | Add ability to specify options for saving signed Document | New Feature |
+| SIGNATURENET-2092 | Implement Image Signature Alignment for Slides | New Feature |
+| SIGNATURENET-2091 | Implement Image Signature Alignment for Words | New Feature |
+| SIGNATURENET-2090 | Implement Image Signature Alignment for Cells | New Feature |
+| SIGNATURENET-2089 | Implement Image Signature Alignment for PDF | New Feature |
+| SIGNATURENET-2372 | Implement ability to sign Slides Documents with given list of Signature Options | New Feature |
+| SIGNATURENET-2402 | Implement ability to sign Words Documents with given list of Signature Options | New Feature |
+| SIGNATURENET-2397 | Implement ability to sign Cells Documents with given list of Signature Options | New Feature |
+| SIGNATURENET-2392 | Implement ability to sign Pdf Documents with given list of Signature Options | New Feature |
+| SIGNATURENET-2385 | Implement Digital Signature Alignment for Pdf Documents | New Feature |
+| SIGNATURENET-2384 | Implement ability to put Digital Signature on all pages for Pdf Documents | New Feature |
+| SIGNATURENET-2374 | Implement Text Signature Margins for Slides Documents | New Feature |
+| SIGNATURENET-2372 | Implement Text Signature Margins for Words Documents | New Feature |
+| SIGNATURENET-2370 | Implement Text Signature Margins for Cells Documents | New Feature |
+| SIGNATURENET-2368 | Implement Text Signature Margins for PDF Documents | New Feature |
+| 
+ | Implement Digital Signature for all pages for Pdf documents | New Feature |
+| SIGNATURENET-2349 | Add ability to sign files with text signature by given pattern in folder | New Feature |
+| 
+
+ | Implement Text Signature alignment for Slides Documents | New Feature |
+| SIGNATURENET-2307 | Implement Text Signature alignment for Cells Documents | New Feature |
+| 
+
+ | Implement Text Signature alignment for Words Documents | New Feature |
+| SIGNATURENET-2133 | Implement Text Signature alignment for PDF Documents | New Feature |
+| 
+
+ | Add ability to sign files with image signature by given pattern in folder | New Feature |
+| SIGNATURENET-2131 | Add ability to sign files with digital signature by given pattern in folder | New Feature |
+| 
+
+ | Implement alternative Text Signature implementation as Annotation for Pdf Documents | New Feature |
+| SIGNATURENET-2129 | Implement ability to setup output file name for Save Options | New Feature |
+| 
+
+ | Implement Text Signature Verification for Pdf Documents | New Feature |
+| SIGNATURENET-2113 | Implement Unique Identifier of Text Signature for Pdf Documents | New Feature |
+| 
+
+ | Provide alternative Text Signature implementation as Image for Slides Documents | New Feature |
+| SIGNATURENET-2027 | Provide alternative Text Signature implementation as Image for Words Documents | New Feature |
+| 
+
+ | Provide alternative Text Signature implementation as Image for Cells Documents | New Feature |
+| SIGNATURENET-2026 | Provide alternative Text Signature implementation as Image for Pdf Documents | New Feature |
+| 
+
+ | Implement ability to check, load and verify digitally signed Words documents | New Feature |
+| SIGNATURENET-2499 | Implement ability to check, load and verify digitally signed Cells documents | New Feature |
+| 
+
+ | Implement ability to check, load and verify digitally signed Pdf documents | New Feature |
+| SIGNATURENET-2491 | Implement Text Signature Opacity for Cells Documents | New Feature |
+| 
+
+ | Implement Text Signature Opacity for Pdf Documents | New Feature |
+| SIGNATURENET-2486 | Implement Image Signature Size Adjustments for Slides | New Feature |
+| 
+
+ | Implement Image Signature Size Adjustments for Words | New Feature |
+| SIGNATURENET-2477 | Implement Image Signature Size Adjustments for PDF | New Feature |
+| 
+
+ | Update Digital Verification Options with ability to pass Certificate from Stream | Improvement |
+| SIGNATURENET-2475 | Update Digital Signature Options with ability to pass Certificate from Stream | Improvement |
+| 
+
+ | Improve logic of Words finding page algorithm | Improvement |
+| SIGNATURENET-2473 | Improve logic for cells text and image signature position. | Improvement |
+| 
+
+ | Provide alternative Text Signature implementation for Pdf Documents | Improvement |
+| SIGNATURENET-2471 | Provide alternative Text and Image Signature implementation for Open Office format files | Improvement |
+| 
+
+ | Adjust Pdf Size options to document points dimension | Bug |
+| SIGNATURENET-2469 | When signing a password-protected Words file with a digital signature, an exception is thrown | Bug |
+| 
+
+ | When signing a PPTX and a password is set in the options, Aspose.Slides.PptxUnsupportedFormatException is thrown | Bug |
+| SIGNATURENET-2449 | Fix Words Provider to locate Image Signature on Page Number from Option | Bug |
+| 
+
+ | Pdf Text Signature - Adjust Signature Area when Width or Height properties are specified | Bug |
+| SIGNATURENET-2447 | Fix wrong alignment for Words Text Signature | Bug |
+| 
+
+ | Fix Border and Transparency appearance of Text Signature for Cells Documents | Bug |
+| SIGNATURENET-2437 | Text signature for Words is not visible. | Bug |
+| 
+
+ | Intentions for a Pdf document with Text Signature don't work. | Bug |
+| SIGNATURENET-2380 | Not able to set PDF/Cells test signature opacity | Bug |
+| 
+
+ | Text signature with font and background options looks wrong | Bug |
+| SIGNATURENET-2378 | Wrong exception's text for wrong password | Bug |
+| 
+
+ | OpenOfice doesn't open .xls with default encryption method. | Bug |
+| SIGNATURENET-2190 | Detection of a type of an encrypted cells file starts an inappropriate exception | Bug |
+| 
+
+ | When saving signed Words Document to different format - signature disappears | Bug |
 
 ## Public API and Backward Incompatible Changes
 

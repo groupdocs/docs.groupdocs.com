@@ -2,7 +2,7 @@
 id: groupdocs-signature-for-net-20-4-release-notes
 url: signature/net/groupdocs-signature-for-net-20-4-release-notes
 title: GroupDocs.Signature for .NET 20.4 Release Notes
-weight: 4
+weight: 2
 description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
@@ -26,7 +26,16 @@ This release contains implemented features on ability to obtain Barcode and QR-c
 
 Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td colspan="1" class="confluenceTd"><a href="https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2788" class="external-link" rel="nofollow">SIGNATURENET-2788</a></td><td colspan="1" class="confluenceTd">Involve full featured JSON serialization and de-serialization support</td><td colspan="1" class="confluenceTd">Feature</td></tr><tr><td colspan="1" class="confluenceTd"><a href="https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2611" class="external-link" rel="nofollow">SIGNATURENET-2611</a></td><td colspan="1" class="confluenceTd">Extend QR-code Signature with image data content</td><td colspan="1" class="confluenceTd">Feature</td></tr><tr><td colspan="1" class="confluenceTd"><a href="https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2610" class="external-link" rel="nofollow">SIGNATURENET-2610</a></td><td colspan="1" class="confluenceTd">Extend Barcode Signature with image data content</td><td colspan="1" class="confluenceTd">Feature</td></tr><tr><td colspan="1" class="confluenceTd"><a href="https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2438" class="external-link" rel="nofollow">SIGNATURENET-2438</a></td><td colspan="1" class="confluenceTd"><a href="https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2438" class="external-link" rel="nofollow">Implement ability to store creation and update date for signatures</a></td><td colspan="1" class="confluenceTd">Feature</td></tr><tr><td colspan="1" class="confluenceTd"><a href="https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2794" class="external-link" rel="nofollow">SIGNATURENET-2794</a></td><td colspan="1" class="confluenceTd"><a href="https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2794" class="external-link" rel="nofollow">Digital signatures are not valid for password protected PDF documents</a></td><td colspan="1" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd"><a href="https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2793" class="external-link" rel="nofollow">SIGNATURENET-2793</a></td><td colspan="1" class="confluenceTd"><a href="https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2793" class="external-link" rel="nofollow">Incorrect Text signature appearance with right allignment for PDF documents</a></td><td colspan="1" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd"><a href="https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2790" class="external-link" rel="nofollow">/SIGNATURENET-2790</a></td><td colspan="1" class="confluenceTd"><a href="https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2790" class="external-link" rel="nofollow">QR-Code signatures without left and top margins on image are not recognized</a></td><td colspan="1" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd"><a href="https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2787" class="external-link" rel="nofollow">SIGNATURENET-2787</a></td><td colspan="1" class="confluenceTd"><a href="https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2787" class="external-link" rel="nofollow">Exception occurs when creating QRCode signature with non latin char-set characters</a></td><td colspan="1" class="confluenceTd">Bug</td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2788 | Involve full featured JSON serialization and de-serialization support | Feature |
+| SIGNATURENET-2611 | Extend QR-code Signature with image data content | Feature |
+| SIGNATURENET-2610 | Extend Barcode Signature with image data content | Feature |
+| SIGNATURENET-2438 | Implement ability to store creation and update date for signatures | Feature |
+| SIGNATURENET-2794 | Digital signatures are not valid for password protected PDF documents | Bug |
+| SIGNATURENET-2793 | Incorrect Text signature appearance with right allignment for PDF documents | Bug |
+| /SIGNATURENET-2790 | QR-Code signatures without left and top margins on image are not recognized | Bug |
+| SIGNATURENET-2787 | Exception occurs when creating QRCode signature with non latin char-set characters | Bug |
 
 ## Public Developer Guide examples changes
 

@@ -2,7 +2,7 @@
 id: sign-document-with-xml-advanced-electronic-signature
 url: signature/net/sign-document-with-xml-advanced-electronic-signature
 title: Sign document with XML Advanced Electronic Signature
-weight: 15
+weight: 16
 description: " This article explains how to sign document with XML advanced electronic signatures (XAdES) using GroupDocs.Signature API."
 keywords: 
 productName: GroupDocs.Signature for .NET

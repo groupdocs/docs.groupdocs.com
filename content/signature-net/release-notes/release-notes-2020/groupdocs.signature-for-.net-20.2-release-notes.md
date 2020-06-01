@@ -2,7 +2,7 @@
 id: groupdocs-signature-for-net-20-2-release-notes
 url: signature/net/groupdocs-signature-for-net-20-2-release-notes
 title: GroupDocs.Signature for .NET 20.2 Release Notes
-weight: 2
+weight: 4
 description: ""
 keywords: 
 productName: GroupDocs.Signature for .NET
@@ -25,7 +25,18 @@ This release contains advanced image search features like grabbing image content
 
 Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2605</td><td colspan="1" class="confluenceTd">&nbsp;Extend Image Signature with image data content for Presentations documents</td><td colspan="1" class="confluenceTd">Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2604</td><td colspan="1" class="confluenceTd">&nbsp;Extend Image Signature with image data content for Word Processing documents</td><td colspan="1" class="confluenceTd">Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2603</td><td colspan="1" class="confluenceTd">&nbsp;Extend Image Signature with image data content for Spreadsheets documents</td><td colspan="1" class="confluenceTd">Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2585</td><td colspan="1" class="confluenceTd">&nbsp;Extend Image Signature with image data content for Pdf documents</td><td colspan="1" class="confluenceTd">Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2529</td><td colspan="1" class="confluenceTd">&nbsp;Implement Image Size filter for Image Search functionality</td><td colspan="1" class="confluenceTd">Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2377</td><td colspan="1" class="confluenceTd">&nbsp;Implement output Image format property for Image Search Options</td><td colspan="1" class="confluenceTd">Feature</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2528</td><td colspan="1" class="confluenceTd">&nbsp;Extend Document Information with list of existing signatures and document Form Fields</td><td colspan="1" class="confluenceTd"><p>Improvement</p></td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2470</td><td colspan="1" class="confluenceTd">&nbsp;Improve ability to search over simple SignatureType argument or several</td><td colspan="1" class="confluenceTd">Improvement</td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2628&nbsp;</td><td colspan="1" class="confluenceTd">&nbsp;Multiple parallel API calls on digital signing PDF document raise an exception</td><td colspan="1" class="confluenceTd"><span>Bug</span></td></tr><tr><td colspan="1" class="confluenceTd">SIGNATURENET-2445</td><td colspan="1" class="confluenceTd">&nbsp;Text search returns no signatures for Word Processing documents with format odt</td><td colspan="1" class="confluenceTd"><span>Bug</span></td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| SIGNATURENET-2605 |  Extend Image Signature with image data content for Presentations documents | Feature |
+| SIGNATURENET-2604 |  Extend Image Signature with image data content for Word Processing documents | Feature |
+| SIGNATURENET-2603 |  Extend Image Signature with image data content for Spreadsheets documents | Feature |
+| SIGNATURENET-2585 |  Extend Image Signature with image data content for Pdf documents | Feature |
+| SIGNATURENET-2529 |  Implement Image Size filter for Image Search functionality | Feature |
+| SIGNATURENET-2377 |  Implement output Image format property for Image Search Options | Feature |
+| SIGNATURENET-2528 |  Extend Document Information with list of existing signatures and document Form Fields | Improvement |
+| SIGNATURENET-2470 |  Improve ability to search over simple SignatureType argument or several | Improvement |
+| SIGNATURENET-2628  |  Multiple parallel API calls on digital signing PDF document raise an exception | Bug |
+| SIGNATURENET-2445 |  Text search returns no signatures for Word Processing documents with format odt | Bug |
 
 ## Public Developer Guide examples changes
 
