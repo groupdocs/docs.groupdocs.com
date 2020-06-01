@@ -34,7 +34,28 @@ Implemented annotations annotating documents of following types:
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Issue Type</strong></p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-351</p></td><td class="confluenceTd"><p>Implement annotating for DICOM format images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-348</p></td><td class="confluenceTd"><p>Add Metered licensing support</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-344</p></td><td class="confluenceTd"><p>Implement adding annotations to Otp format</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-340</p></td><td class="confluenceTd"><p>Implement annotating DjVu format</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-368</p></td><td class="confluenceTd"><p>Implement distance annotation for images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-367</p></td><td class="confluenceTd"><p>Implement annotating EMF/WMF document</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-363</p></td><td class="confluenceTd"><p>Implement CAD documents annotating</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-361</p></td><td class="confluenceTd"><p>Implement adding Arrow annotation to Image documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-380</p></td><td class="confluenceTd"><p>Process hyperlinks in tables for Words documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-379</p></td><td class="confluenceTd"><p>Processing numbered lists in tables for Words documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-378</p></td><td class="confluenceTd"><p>Processing tables in Word documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-393</p></td><td class="confluenceTd"><p>Implement GetDocumentInfo from a stream</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-392</p></td><td class="confluenceTd"><p>Implement Html documents annotating</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-391</p></td><td class="confluenceTd"><p>Implement annotating Email format</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-390</p></td><td class="confluenceTd"><p>Implement import annotations in tables for Word</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-381</p></td><td class="confluenceTd"><p>Improve import annotations from Word documents</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-376</p></td><td class="confluenceTd"><p>Improve Annotating CAD files</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-388</p></td><td class="confluenceTd"><p>Refactor annotations export logic</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-365</p></td><td class="confluenceTd"><p>Export to MS-Word exporting the repeated reply comments</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-389</p></td><td class="confluenceTd"><p>Fix issues with annotations detection in some special cases in Words documents</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-351 | Implement annotating for DICOM format images | New Feature |
+| ANNOTATIONNET-348 | Add Metered licensing support | New Feature |
+| ANNOTATIONNET-344 | Implement adding annotations to Otp format | New Feature |
+| ANNOTATIONNET-340 | Implement annotating DjVu format | New Feature |
+| ANNOTATIONNET-368 | Implement distance annotation for images | New Feature |
+| ANNOTATIONNET-367 | Implement annotating EMF/WMF document | New Feature |
+| ANNOTATIONNET-363 | Implement CAD documents annotating | New Feature |
+| ANNOTATIONNET-361 | Implement adding Arrow annotation to Image documents | New Feature |
+| ANNOTATIONNET-380 | Process hyperlinks in tables for Words documents | New Feature |
+| ANNOTATIONNET-379 | Processing numbered lists in tables for Words documents | New Feature |
+| ANNOTATIONNET-378 | Processing tables in Word documents | New Feature |
+| ANNOTATIONNET-393 | Implement GetDocumentInfo from a stream | New Feature |
+| ANNOTATIONNET-392 | Implement Html documents annotating | New Feature |
+| ANNOTATIONNET-391 | Implement annotating Email format | New Feature |
+| ANNOTATIONNET-390 | Implement import annotations in tables for Word | New Feature |
+| ANNOTATIONNET-381 | Improve import annotations from Word documents | Improvement |
+| ANNOTATIONNET-376 | Improve Annotating CAD files | Improvement |
+| ANNOTATIONNET-388 | Refactor annotations export logic | Improvement |
+| ANNOTATIONNET-365 | Export to MS-Word exporting the repeated reply comments | Bug |
+| ANNOTATIONNET-389 | Fix issues with annotations detection in some special cases in Words documents | Bug |
 
 ## Public API and Backward Incompatible Changes
 

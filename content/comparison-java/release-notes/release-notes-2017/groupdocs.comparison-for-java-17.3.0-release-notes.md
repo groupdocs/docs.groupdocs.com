@@ -33,7 +33,53 @@ There are improvements and fixes in this regular monthly release. The most notab
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1034</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Cells: add support for Shapes</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1011</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: add support of styles to text watermarks</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1053</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Add support for Apply/Discard changes</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-975</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Add support for Watermarks</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1065</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Cells: Add support for Hyperlinks</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1069</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Cells: Add support for Comments</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1072</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Cells: Add support for Text Box</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1063</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Cells: Add support of Apply/Discard changes</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1073</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Cells: Add support for Shapes</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1123</p></td><td class="confluenceTd"><p>Integrate Metered licensing</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1122</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Add support of comparing Text Font in Watermarks</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1068</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Cells: Add support for Formulas</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1065</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Cells: Add support for Images</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1070</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Cells: Add support for Chart</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1066</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Cells: Add support for Smart Art</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1067</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Cells: Add support for VBA Controls</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1108</p></td><td class="confluenceTd"><p>Add support of mobi format</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1156</p></td><td class="confluenceTd"><p>Add ability of comparing DICOM documents by Comparison.Imaging</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1163</p></td><td class="confluenceTd"><p>Apply/Discard changes for DICOM format</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>OMPARISONNET-1165</p></td><td class="confluenceTd"><p>Add summary page to images streams</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1014</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Slides: Improve aligning of slides for more precise changes detection</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1029</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Remove Text Artifacts from documents before Paragraph absorbation</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1048</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Improve set coordinates for components</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1047</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Improve set HorizontalAlignment</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1075</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.Cells: Add borders for deleted and inserted cells and Range of cells</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-679</p></td><td class="confluenceTd"><p>Fix problem when moving modified table into new page and not deleting previous version of added table</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1055</p></td><td class="confluenceTd"><p>Improve Trim paragraphs by pages after some change in absorbing paragraphs</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1080</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Improve comparison changes detection for Paragraphs</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1056</p></td><td class="confluenceTd"><p>Improve GroupDocs.Comparison.PDF comparison quality for images in header, footer, setting coordinates for components and paragraphs by pages</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1112</p></td><td class="confluenceTd"><p>Add support of Imaging DjVu</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1080</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Improve comparison changes detection for Paragraphs</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-778</p></td><td class="confluenceTd"><p>Implement the process absorbing of tables with merged cells</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1148</p></td><td class="confluenceTd"><p>Improved public API</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1161</p></td><td class="confluenceTd"><p>Add ability for comparison of result and original files in Imaging.Tests</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1157</p></td><td class="confluenceTd"><p>Add localize exceptions for wrong passwords while opening documents in Cells, Words, Slides and PDF</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-953</p></td><td class="confluenceTd"><p>Compile Error on Comparison Document for VB.NET</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-946</p></td><td class="confluenceTd"><p>Exception: The newChild was created from a different document than the one that created this node.</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1074</p></td><td class="confluenceTd"><p>GroupDocs.Comparison: PDF: Set type change for paragraph runs after page break</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1077</p></td><td class="confluenceTd"><p>Comparison.Cells: Fix cells appearance after critical update for Aligner comparer and Document builder</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1129</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Fix bug when some lines are deleted or inserted where should not be</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1130</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Fix bug when first line of paragraph don't have indent but should have</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1131</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Fix bug when component change its page but dont change its position but should be</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1128</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF:&nbsp;Fix bug when first line of paragraph use as not paragraph line</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1132</p></td><td class="confluenceTd"><p>GroupDocs.Comparison.PDF: Fix bug when text from tables use twice with simple paragraphs</p></td><td class="confluenceTd"><p>Bug</p></td></tr><tr><td class="confluenceTd"><p>COMPARISONNET-1160</p></td><td class="confluenceTd"><p>PDF Comparison - PDF files with tables and footer lines generating unexpected output</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| COMPARISONNET-1034 | GroupDocs.Comparison.Cells: add support for Shapes | New Feature |
+| COMPARISONNET-1011 | GroupDocs.Comparison.PDF: add support of styles to text watermarks | New Feature |
+| COMPARISONNET-1053 | GroupDocs.Comparison.PDF: Add support for Apply/Discard changes | New Feature |
+| COMPARISONNET-975 | GroupDocs.Comparison.PDF: Add support for Watermarks | New Feature |
+| COMPARISONNET-1065 | GroupDocs.Comparison.Cells: Add support for Hyperlinks | New Feature |
+| COMPARISONNET-1069 | GroupDocs.Comparison.Cells: Add support for Comments | New Feature |
+| COMPARISONNET-1072 | GroupDocs.Comparison.Cells: Add support for Text Box | New Feature |
+| COMPARISONNET-1063 | GroupDocs.Comparison.Cells: Add support of Apply/Discard changes | New Feature |
+| COMPARISONNET-1073 | GroupDocs.Comparison.Cells: Add support for Shapes | New Feature |
+| COMPARISONNET-1123 | Integrate Metered licensing | New Feature |
+| COMPARISONNET-1122 | GroupDocs.Comparison.PDF: Add support of comparing Text Font in Watermarks | New Feature |
+| COMPARISONNET-1068 | GroupDocs.Comparison.Cells: Add support for Formulas | New Feature |
+| COMPARISONNET-1065 | GroupDocs.Comparison.Cells: Add support for Images | New Feature |
+| COMPARISONNET-1070 | GroupDocs.Comparison.Cells: Add support for Chart | New Feature |
+| COMPARISONNET-1066 | GroupDocs.Comparison.Cells: Add support for Smart Art | New Feature |
+| COMPARISONNET-1067 | GroupDocs.Comparison.Cells: Add support for VBA Controls | New Feature |
+| COMPARISONNET-1108 | Add support of mobi format | New Feature |
+| COMPARISONNET-1156 | Add ability of comparing DICOM documents by Comparison.Imaging | New Feature |
+| COMPARISONNET-1163 | Apply/Discard changes for DICOM format | New Feature |
+| OMPARISONNET-1165 | Add summary page to images streams | New Feature |
+| COMPARISONNET-1014 | GroupDocs.Comparison.Slides: Improve aligning of slides for more precise changes detection | Improvement |
+| COMPARISONNET-1029 | GroupDocs.Comparison.PDF: Remove Text Artifacts from documents before Paragraph absorbation | Improvement |
+| COMPARISONNET-1048 | GroupDocs.Comparison.PDF: Improve set coordinates for components | Improvement |
+| COMPARISONNET-1047 | GroupDocs.Comparison.PDF: Improve set HorizontalAlignment | Improvement |
+| COMPARISONNET-1075 | GroupDocs.Comparison.Cells: Add borders for deleted and inserted cells and Range of cells | Improvement |
+| COMPARISONNET-679 | Fix problem when moving modified table into new page and not deleting previous version of added table | Improvement |
+| COMPARISONNET-1055 | Improve Trim paragraphs by pages after some change in absorbing paragraphs | Improvement |
+| COMPARISONNET-1080 | GroupDocs.Comparison.PDF: Improve comparison changes detection for Paragraphs | Improvement |
+| COMPARISONNET-1056 | Improve GroupDocs.Comparison.PDF comparison quality for images in header, footer, setting coordinates for components and paragraphs by pages | Improvement |
+| COMPARISONNET-1112 | Add support of Imaging DjVu | Improvement |
+| COMPARISONNET-1080 | GroupDocs.Comparison.PDF: Improve comparison changes detection for Paragraphs | Improvement |
+| COMPARISONNET-778 | Implement the process absorbing of tables with merged cells | Improvement |
+| COMPARISONNET-1148 | Improved public API | Improvement |
+| COMPARISONNET-1161 | Add ability for comparison of result and original files in Imaging.Tests | Improvement |
+| COMPARISONNET-1157 | Add localize exceptions for wrong passwords while opening documents in Cells, Words, Slides and PDF | Improvement |
+| COMPARISONNET-953 | Compile Error on Comparison Document for VB.NET | Bug |
+| COMPARISONNET-946 | Exception: The newChild was created from a different document than the one that created this node. | Bug |
+| COMPARISONNET-1074 | GroupDocs.Comparison: PDF: Set type change for paragraph runs after page break | Bug |
+| COMPARISONNET-1077 | Comparison.Cells: Fix cells appearance after critical update for Aligner comparer and Document builder | Bug |
+| COMPARISONNET-1129 | GroupDocs.Comparison.PDF: Fix bug when some lines are deleted or inserted where should not be | Bug |
+| COMPARISONNET-1130 | GroupDocs.Comparison.PDF: Fix bug when first line of paragraph don't have indent but should have | Bug |
+| COMPARISONNET-1131 | GroupDocs.Comparison.PDF: Fix bug when component change its page but dont change its position but should be | Bug |
+| COMPARISONNET-1128 | GroupDocs.Comparison.PDF: Fix bug when first line of paragraph use as not paragraph line | Bug |
+| COMPARISONNET-1132 | GroupDocs.Comparison.PDF: Fix bug when text from tables use twice with simple paragraphs | Bug |
+| COMPARISONNET-1160 | PDF Comparison - PDF files with tables and footer lines generating unexpected output | Bug |
 
 ## Public API and Backward Incompatible Changes
 
@@ -463,7 +509,10 @@ After that you have to specify a path to document which you want to save as imag
 
 saveAsImages(String imagePath, ComparsionSlidesImageSettings settings)
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>String imagePath</p></td><td class="confluenceTd"><p>Path to folder where save images</p></td></tr><tr><td class="confluenceTd"><p>ComparsionSlidesImageSettings settings</p></td><td class="confluenceTd"><p>Image save settings</p></td></tr></tbody></table>
+| Parameter | Description |
+| --- | --- |
+| String imagePath | Path to folder where save images |
+| ComparsionSlidesImageSettings settings | Image save settings |
 
 **Java**
 
@@ -488,7 +537,10 @@ presentation.saveAsImages(imageFolderPath, settings);
 
 saveAsImages(ArrayList<ByteArrayOutputStream> imageStream, ComparsionSlidesImageSettings settings)
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>ArrayList&lt;ByteArrayOutputStream&gt;&nbsp;imageStream</p></td><td class="confluenceTd"><p>The images streams – where each stream from list contains a single page from document</p></td></tr><tr><td class="confluenceTd"><p>ComparsionSlidesImageSettings settings</p></td><td class="confluenceTd"><p>Image save settings</p></td></tr></tbody></table>
+| Name | Description |
+| --- | --- |
+| ArrayList<ByteArrayOutputStream> imageStream | The images streams – where each stream from list contains a single page from document |
+| ComparsionSlidesImageSettings settings | Image save settings |
 
 **Java**
 
@@ -514,7 +566,11 @@ presentation.saveAsImages(imageStream, settings);
 
 saveSlideAsImage (String imagePath, ComparsionSlidesImageSettings settings, int slideIndex )
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>String imagePath</p></td><td class="confluenceTd"><p>Path to folder where save images</p></td></tr><tr><td class="confluenceTd"><p>ComparsionSlidesImageSettings settings</p></td><td class="confluenceTd"><p>Image save settings</p></td></tr><tr><td class="confluenceTd"><p>int slideIndex</p></td><td class="confluenceTd"><p>Index of slide</p></td></tr></tbody></table>
+| Name | Description |
+| --- | --- |
+| String imagePath | Path to folder where save images |
+| ComparsionSlidesImageSettings settings | Image save settings |
+| int slideIndex | Index of slide |
 
 **Java**
 
@@ -540,7 +596,11 @@ presentation.saveSlideAsImage(imageFolderPath, settings, slideIndex);
 
 saveSlideAsImage (ArrayList<ByteArrayOutputStream> imageStream, ComparsionSlidesImageSettings settings, int slideIndex )
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p>ArrayList&lt;ByteArrayOutputStream&gt;&nbsp;imageStream</p></td><td class="confluenceTd"><p>The images streams – where each stream from list contains a single page from document</p></td></tr><tr><td class="confluenceTd"><p>ComparsionSlidesImageSettings settings</p></td><td class="confluenceTd"><p>Image save settings</p></td></tr><tr><td class="confluenceTd"><p>int slideIndex</p></td><td class="confluenceTd"><p>Index of slide</p></td></tr></tbody></table>
+| Name | Description |
+| --- | --- |
+| ArrayList<ByteArrayOutputStream> imageStream | The images streams – where each stream from list contains a single page from document |
+| ComparsionSlidesImageSettings settings | Image save settings |
+| int slideIndex | Index of slide |
 
 **Java**
 

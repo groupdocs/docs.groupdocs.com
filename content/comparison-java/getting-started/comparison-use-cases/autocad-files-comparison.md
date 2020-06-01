@@ -28,7 +28,15 @@ The following are the steps to compare two DWG files
 
 The following code samples demonstrate how to compare two DWG files.
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><div class="container" title="Hint: double-click to select code"><div class="line number1 index0 alt2"><pre><span style="color: rgb(0, 0, 0);">Comparer comparer </span>= <span style="color: rgb(0, 51, 179);">new </span>Comparer(<span style="color: rgb(6, 125, 23);">"source.dwg"</span>); <span style="color: rgb(140, 140, 140);">// NOTE: Put here actual path to source document<br></span><span style="color: rgb(0, 51, 179);">try </span>{<br>    <span style="color: rgb(0, 0, 0);">comparer</span>.add(<span style="color: rgb(6, 125, 23);">"target.dwg"</span>); <span style="color: rgb(140, 140, 140);">// NOTE: Put here actual path to target document<br></span><span style="color: rgb(140, 140, 140);">&nbsp;</span><span style="color: rgb(0, 0, 0);"> comparer</span>.compare(<span style="color: rgb(6, 125, 23);">"result.dwg"</span>); <span style="color: rgb(140, 140, 140);">// NOTE: Put here actual path to result document<br></span>} <span style="color: rgb(0, 51, 179);">finally </span>{<br>    <span style="color: rgb(0, 0, 0);">comparer</span>.dispose();<br>}</pre></div></div></td></tr></tbody></table>
+```csharp
+Comparer comparer = new Comparer("source.dwg"); // NOTE: Put here actual path to source document
+try {
+    comparer.add("target.dwg"); // NOTE: Put here actual path to target document
+  comparer.compare("result.dwg"); // NOTE: Put here actual path to result document
+} finally {
+    comparer.dispose();
+}
+```
 
 As a result, we get a DWG file where the deleted elements are marked in **red**, the added – in **blue**, and the modified – in **green. **
 

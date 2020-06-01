@@ -26,7 +26,15 @@ Below the list of  new features and fixed bugs in this regular monthly release 
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Issue Type</strong></p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-417</p></td><td class="confluenceTd"><p>Implement Polyline annotation with Diagram documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-416</p></td><td class="confluenceTd"><p>Implement Arrow annotation for Diagram documents</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-410</p></td><td class="confluenceTd"><p>Implement Area annotation for Diagrams</p></td><td class="confluenceTd"><p>New Feature</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-406</p></td><td class="confluenceTd"><p>Add option to process CAD documents as PDF</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-405</p></td><td class="confluenceTd"><p>Implement GetPages method for Email documents processing from streams</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-401</p></td><td class="confluenceTd"><p>Implement proper error handling when user try to invoke GetDocumentInfo method for images documents</p></td><td class="confluenceTd"><p>Improvement</p></td></tr><tr><td class="confluenceTd"><p>ANNOTATIONNET-395</p></td><td class="confluenceTd"><p>Internal Exception in annotator.GetDocumentInfo() Method</p></td><td class="confluenceTd"><p>Bug</p></td></tr></tbody></table>
+| Key | Summary | Issue Type |
+| --- | --- | --- |
+| ANNOTATIONNET-417 | Implement Polyline annotation with Diagram documents | New Feature |
+| ANNOTATIONNET-416 | Implement Arrow annotation for Diagram documents | New Feature |
+| ANNOTATIONNET-410 | Implement Area annotation for Diagrams | New Feature |
+| ANNOTATIONNET-406 | Add option to process CAD documents as PDF | Improvement |
+| ANNOTATIONNET-405 | Implement GetPages method for Email documents processing from streams | Improvement |
+| ANNOTATIONNET-401 | Implement proper error handling when user try to invoke GetDocumentInfo method for images documents | Improvement |
+| ANNOTATIONNET-395 | Internal Exception in annotator.GetDocumentInfo() Method | Bug |
 
 ## Public API and Backward Incompatible Changes
 

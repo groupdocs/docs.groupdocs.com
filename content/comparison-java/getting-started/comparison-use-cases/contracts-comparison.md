@@ -30,7 +30,15 @@ The following are the steps to compare two DOCX files
 
 The following code samples demonstrate how to compare two DOCX files.
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><div class="container" title="Hint: double-click to select code"><div class="line number1 index0 alt2"><code class="java plain">Comparer comparer = </code><code class="java keyword">new</code> <code class="java plain">Comparer(SOURCE_FILE, </code><code class="java keyword">new</code> <code class="java plain">LoadOptions(</code><code class="java string">"source-password"</code><code class="java plain">));</code></div><div class="line number2 index1 alt1"><code class="java keyword">try</code> <code class="java plain">{</code></div><div class="line number3 index2 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">comparer.add(TARGET_FILE, </code><code class="java keyword">new</code> <code class="java plain">LoadOptions(</code><code class="java string">"target-password"</code><code class="java plain">));</code></div><div class="line number4 index3 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">comparer.compare(RESULT_FILE);</code></div><div class="line number5 index4 alt2"><code class="java plain">} </code><code class="java keyword">finally</code> <code class="java plain">{</code></div><div class="line number6 index5 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">comparer.dispose();</code></div><div class="line number7 index6 alt2"><code class="java plain">}</code></div></div></td></tr></tbody></table>
+```csharp
+Comparer comparer = new Comparer(SOURCE_FILE, new LoadOptions("source-password"));
+try {
+    comparer.add(TARGET_FILE, new LoadOptions("target-password"));
+    comparer.compare(RESULT_FILE);
+} finally {
+    comparer.dispose();
+}
+```
 
 As a result, we get a DOCX file where the deleted elements are marked in **red**, the added – in **blue**, and the modified – in **green.  
 **

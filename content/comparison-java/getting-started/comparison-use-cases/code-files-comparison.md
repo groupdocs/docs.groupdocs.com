@@ -37,7 +37,24 @@ ApplyChangeOptions class:
 
 The following code samples demonstrate how to compare two CS files and accept or reject detected changesin a specific range.
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><div class="container" title="Hint: double-click to select code"><div class="line number1 index0 alt2"><code class="java plain">Comparer comparer = </code><code class="java keyword">new</code> <code class="java plain">Comparer(SOURCE_FILE); </code><code class="java comments">// NOTE: Put here actual path to source document</code></div><div class="line number2 index1 alt1"><code class="java keyword">try</code> <code class="java plain">{</code></div><div class="line number3 index2 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">comparer.add(TARGET_FILE); </code><code class="java comments">// NOTE: Put here actual path to target document</code></div><div class="line number4 index3 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">comparer.compare();</code></div><div class="line number5 index4 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">ChangeInfo[] changes = comparer.getChanges();</code></div><div class="line number6 index5 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">for</code> <code class="java plain">(</code><code class="java keyword">int</code> <code class="java plain">n = </code><code class="java value">0</code><code class="java plain">; n &lt; </code><code class="java value">5</code><code class="java plain">; n++) {</code></div><div class="line number7 index6 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">changes[n].setComparisonAction(ComparisonAction.REJECT);</code></div><div class="line number8 index7 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div><div class="line number9 index8 alt2">&nbsp;</div><div class="line number10 index9 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">for</code> <code class="java plain">(</code><code class="java keyword">int</code> <code class="java plain">n = </code><code class="java value">6</code><code class="java plain">; n &lt; </code><code class="java value">17</code><code class="java plain">; n++) {</code></div><div class="line number11 index10 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">changes[n].setComparisonAction(ComparisonAction.ACCEPT);</code></div><div class="line number12 index11 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div><div class="line number13 index12 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">comparer.applyChanges(RESULT_FILE, </code><code class="java keyword">new</code> <code class="java plain">SaveOptions(), </code><code class="java keyword">new</code> <code class="java plain">ApplyChangeOptions(changes));</code></div><div class="line number14 index13 alt1"><code class="java plain">} </code><code class="java keyword">finally</code> <code class="java plain">{</code></div><div class="line number15 index14 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">comparer.dispose();</code></div><div class="line number16 index15 alt1"><code class="java plain">}</code></div></div></td></tr></tbody></table>
+```csharp
+Comparer comparer = new Comparer(SOURCE_FILE); // NOTE: Put here actual path to source document
+try {
+    comparer.add(TARGET_FILE); // NOTE: Put here actual path to target document
+    comparer.compare();
+    ChangeInfo[] changes = comparer.getChanges();
+    for (int n = 0; n < 5; n++) {
+        changes[n].setComparisonAction(ComparisonAction.REJECT);
+    }
+ 
+    for (int n = 6; n < 17; n++) {
+        changes[n].setComparisonAction(ComparisonAction.ACCEPT);
+    }
+    comparer.applyChanges(RESULT_FILE, new SaveOptions(), new ApplyChangeOptions(changes));
+} finally {
+    comparer.dispose();
+}
+```
 
 As a result, we get a merged CS file where the deleted elements are marked in **red**, the added – in **blue**, and the modified – in **green. **
 
