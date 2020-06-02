@@ -19,7 +19,7 @@ Please choose one from the following list:
 
 *   Open Visual Studio and go to **File** -> **New **\->** Project**.
 *   Select appropriate project type - Console App, ASP.NET Web Application etc.
-*   Install **GroupDocs.Comparison for .NET **from Nuget or official GroupDocs website following this [guide](https://docs.groupdocs.com/display/comparisonnet/Development+Environment%2C+Installation+and+Configuration).
+*   Install **GroupDocs.Comparison for .NET **from Nuget or official GroupDocs website following this [guide]({{< ref "comparison-net/getting-started/installation.md" >}}).
 *   Code your first application with **GroupDocs.Comparison for .NET **like this
     
     ```csharp
@@ -45,7 +45,7 @@ In case you download the ZIP file, extract the folders on your local disk. The e
 ![](comparison-net/images/how-to-run-examples.jpg)
 
 In extracted files and folders, you can find CSharp solution file. The project is created in **Microsoft Visual Studio 2019**. The **Resources **folder contains all the sample document and image files used in the examples.  
-To run the examples, open the solution file in Visual Studio and build the project. To add missing references of **GroupDocs.Comparison **see [Development Environment, Installation and Configuration](https://docs.groupdocs.com/display/comparisonnet/Development+Environment%2C+Installation+and+Configuration). All the functions are called from **RunExamples.cs**.   
+To run the examples, open the solution file in Visual Studio and build the project. To add missing references of **GroupDocs.Comparison **see [installation guide]({{< ref "comparison-net/getting-started/installation.md" >}}). All the functions are called from **RunExamples.cs**.
 Un-comment the function you want to run and comment the rest.
 
 ![](comparison-net/images/how-to-run-examples_1.png)

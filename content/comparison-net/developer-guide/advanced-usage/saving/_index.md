@@ -14,8 +14,8 @@ hideChildren: False
 
 The [SaveOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions) class provides following properties to customize saving process:
 
-*   **CloneMetadataType** - Gets or sets a value indicating whether to clone metadata to target document or not[;](https://wiki.lisbon.dynabic.com/display/comparison/Set+password+for+resultant+document)
-*   **FileAuthorMetadata** - Used when MetadataType is set to FileAuthor, allows set metadata values provided by user[;](https://wiki.lisbon.dynabic.com/display/comparison/Set+password+for+resultant+document)
+*   **CloneMetadataType** - Gets or sets a value indicating whether to clone metadata to target document or not;
+*   **FileAuthorMetadata** - Used when MetadataType is set to FileAuthor, allows set metadata values provided by user;
 *   **Password** - Gets or sets the password for result document.  
       
     

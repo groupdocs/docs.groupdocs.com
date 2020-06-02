@@ -69,7 +69,7 @@ using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 
 ### Advanced Usage Topics
 
-To learn more about document comparison features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document comparison features, please refer to the [advanced usage section]({{< ref "comparison-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

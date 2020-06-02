@@ -18,11 +18,11 @@ For example, there are two invoices in the DOCX format and you need to compare t
 
 | Source Invoice | Target Invoice |
 | --- | --- |
-| ![](https://wiki.lisbon.dynabic.com/download/attachments/31490619/2.png?version=1&modificationDate=1584538043000&api=v2) | ![](https://wiki.lisbon.dynabic.com/download/attachments/31490619/1.png?version=1&modificationDate=1584538043000&api=v2) |
+| ![](comparison-net/images/how-to-compare-invoices.png)) | ![](comparison-net/images/how-to-compare-invoices_1.png))
 
   
 
-[**GroupDocs****.Comparison**](https://products.groupdocs.com/comparison/net) provides the ability to compare two files in DOCX format(or any other [supported file formats](https://docs.groupdocs.com/display/comparisonnet/Supported+Document+Formats)) with adjustment of detalization level and[comparison sensitivity.](https://docs.groupdocs.com/display/comparisonnet/Adjusting+comparison+sensitivity)
+[**GroupDocs****.Comparison**](https://products.groupdocs.com/comparison/net) provides the ability to compare two files in DOCX format(or any other [supported file formats](Supported%2BFile%2BFormats.html)) with adjustment of detalization level and[comparison sensitivity.]({{< ref "comparison-net/developer-guide/advanced-usage/comparison/adjusting-comparison-sensitivity.md" >}})
 
 The following are the steps to compare two DOCX files with specific settings of detalization level and[comparison sensitivity.]({{< ref "comparison-net/developer-guide/advanced-usage/comparison/adjusting-comparison-sensitivity.md" >}})
 
@@ -56,7 +56,7 @@ As a result, we get a DOCX file where the deleted elements are marked in **red**
 
 | Result Invoice |
 | --- |
-| ![](https://wiki.lisbon.dynabic.com/download/attachments/31490619/%3F%3F%3F%3F%3F%3F.PNG?version=1&modificationDate=1584539216000&api=v2) |
+| ![](comparison-net/images/how-to-compare-invoices_2.png)) 
 
 ## More resources
 

@@ -8,7 +8,7 @@ keywords: Get file info, Get File Type, Page count, File size
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to get the list of all [supported file formats](Supported%2BFile%2BFormats.html) by following the below steps:
+**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to get the list of all [supported file formats]({{< ref "comparison-net/getting-started/supported-file-formats.md" >}}) by following the below steps:
 
 *   Call [GetSupportedFileTypes](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/filetype/methods/getsupportedfiletypes)of [FileType](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/filetype) class;
 *   Enumerate through the collection of [FileType](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/filetype)objects*.*
@@ -28,7 +28,7 @@ foreach (FileType fileType in supportedFileTypes)
 
 ### Advanced Usage Topics
 
-To learn more about document comparison features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document comparison features, please refer to the [advanced usage section]({{< ref "comparison-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

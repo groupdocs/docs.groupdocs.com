@@ -10,7 +10,7 @@ hideChildren: False
 ---
 ## Overview
 
-**[GroupDocs.Comparison for .NET](https://products.groupdocs.com/comparison/net)** does not require any external software or third party tool to be installed. Just follow one of the way as described in [Installation](Installation.html).
+**[GroupDocs.Comparison for .NET](https://products.groupdocs.com/comparison/net)** does not require any external software or third party tool to be installed. Just follow one of the way as described in [Installation]({{< ref "comparison-net/getting-started/installation.md" >}}).
 
 ## Supported Operating Systems
 

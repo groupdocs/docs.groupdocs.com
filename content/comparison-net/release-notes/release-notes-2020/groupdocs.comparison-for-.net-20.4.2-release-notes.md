@@ -27,4 +27,4 @@ Below the list of changes in release of GroupDocs.Comparison for .NET 20.4.2:
 
 ## Public API and Backward Incompatible Changes
 
-*   *   [n](https://wiki.lisbon.dynabic.com/display/comparison/20.4+Public+API+Changes+.NET)one
+*   *   none

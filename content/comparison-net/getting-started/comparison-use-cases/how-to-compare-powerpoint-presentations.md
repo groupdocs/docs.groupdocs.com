@@ -17,21 +17,21 @@ You may need to compare two versions of a PowerPoint Presentation to see the dif
 *   Click **Compare** to open a browser window
 *   Select the edited version of the presentation and click **Merge**
 
-![](https://wiki.lisbon.dynabic.com/download/attachments/31491169/powerpoint1.png?version=4&modificationDate=1587123812000&api=v2)
-
 You will then enter Review Mode. This will open the Reviewing Pane, which shows a list of all edits in the presentation at the right of the screen.
+
+![](comparison-net/images/how-to-compare-powerpoint-presentations.png)
 
 # How to Compare Two Presentations using GroupDocs.Comparison
 
-Such functionality that is provided by third-party programs is clearly not enough. **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides many features for comparing a wide range of [supported file formats](https://docs.groupdocs.com/display/comparisonnet/Supported+Document+Formats), including PowerPoint Presentation format. Let's make an example, you made a presentation at different times, but the elements on the slides are not located as you originally did. To find where the slides differ, you can compare two files in PPTX format using the **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** functionality along with a built-in option that helps find changes in styles.
+Such functionality that is provided by third-party programs is clearly not enough. **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides many features for comparing a wide range of [supported file formats]({{< ref "comparison-net/getting-started/supported-file-formats.md" >}}), including PowerPoint Presentation format. Let's make an example, you made a presentation at different times, but the elements on the slides are not located as you originally did. To find where the slides differ, you can compare two files in PPTX format using the **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** functionality along with a built-in option that helps find changes in styles.
 
   
 
 | Original Presentation | Modified Presentation |
 | --- | --- |
-| ![](https://wiki.lisbon.dynabic.com/download/attachments/31491169/image2020-3-23%2012%3A11%3A30.png?version=1&modificationDate=1584958287000&api=v2) | ![](https://wiki.lisbon.dynabic.com/download/attachments/31491169/image2020-3-23%2012%3A11%3A51.png?version=1&modificationDate=1584958309000&api=v2) |
+| ![](comparison-net/images/how-to-compare-powerpoint-presentations_1.png)) | ![](comparison-net/images/how-to-compare-powerpoint-presentations_2.png))
 
-[**GroupDocs****.Comparison**](https://products.groupdocs.com/comparison/net) provides the ability to compare two files in PPTX format(or any other [supported file formats](https://docs.groupdocs.com/display/comparisonnet/Supported+Document+Formats))
+[**GroupDocs****.Comparison**](https://products.groupdocs.com/comparison/net) provides the ability to compare two files in PPTX format(or any other [supported file formats]({{< ref "comparison-net/getting-started/supported-file-formats.md" >}}))
 
 The following are the steps to compare two PPTX files.
 
@@ -62,7 +62,7 @@ As a result, we get a PPTX file where the deleted elements are marked in **red*
 
 | Result Slide |
 | --- |
-| ![](https://wiki.lisbon.dynabic.com/download/attachments/31491169/image2020-3-23%2012%3A12%3A7.png?version=1&modificationDate=1584958324000&api=v2) |
+| ![](comparison-net/images/how-to-compare-powerpoint-presentations_3.png)) 
 
 ## More resources
 

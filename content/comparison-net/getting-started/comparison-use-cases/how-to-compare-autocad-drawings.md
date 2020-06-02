@@ -31,7 +31,7 @@ To compare drawings with DWG Compare you should:
 
 ## How to Compare AutoCAD drawings using GroupDocs.Comparison
 
-Despite the fact that drawings comparison feature provided by AutoDesk is quite handy and powerful it is obviously doesn't provide a way to compare drawings programatically and manipulate found differences in code. **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) **provide an easy and convenient API to detect differences between drawings (and many other [supported file formats](https://wiki.lisbon.dynabic.com/display/comparison/Supported+File+Formats)) and apply or discard found changes to result document. Here is an example of DWG drawings comparison
+Despite the fact that drawings comparison feature provided by AutoDesk is quite handy and powerful it is obviously doesn't provide a way to compare drawings programatically and manipulate found differences in code. **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) **provide an easy and convenient API to detect differences between drawings (and many other [supported file formats]({{< ref "comparison-net/getting-started/supported-file-formats.md" >}})) and apply or discard found changes to result document. Here is an example of DWG drawings comparison
 
 | Source drawing | Target drawing |
 | --- | --- |
