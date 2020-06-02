@@ -40,7 +40,7 @@ Here a [PreviewOptions](https://apireference.groupdocs.com/net/annotation/group
 *   **ReleasePageStream** - Delegate which defines method to remove output page preview stream. This is can be used when need advanced control for resources handling.
 *   **Width** - Preview image width. This property used when need customize output image width;
 *   **Height** - Preview image height. This property used when need customize output image height;
-*   **PageNumbers** - Page numbers that will be previewed[;](https://wiki.lisbon.dynabic.com/display/comparison/Get+page+previews+with+specific+size)
+*   **PageNumbers** - Page numbers that will be previewed;
 *   **PreviewFormat** - Gets or sets the preview image format which provides ability to choose between image quality and size. **BMP** format should be used for the best image quality. **JPG** format will be useful in case of strict requirements to image size - it produces smallest image size (and faster loading image previews), but with lower quality than **BMP**. By default **PNG** format is selected - which is a golden mean between image quality and size.
 *   **RenderComments **\- Default value is *true*. If it is not needed to display replies and comments at the page preview - set *RenderComments* property to *false *( replies and comments still will be stored inside document).  
     Please notice, that *RenderComments* value will impact any document comments (doesn't matter if they were added by GroupDocs.Annotation or  some other application). This property affects only on WordProcessing documents

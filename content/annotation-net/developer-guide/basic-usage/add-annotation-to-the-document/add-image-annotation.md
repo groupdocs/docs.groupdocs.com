@@ -12,7 +12,7 @@ hideChildren: False
 
 **[Image annotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/imageannotation)** allows to add image within document page like shown at the picture below.
 
-![](https://wiki.lisbon.dynabic.com/download/thumbnails/30478647/Image-annotation.png?version=1&modificationDate=1580300221000&api=v2)
+![](annotation-net/images/add-image-annotation.png)
 
 There is an ability to specify the next properties for [ImageAnnotation](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/imageannotation) type:
 
