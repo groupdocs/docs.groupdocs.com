@@ -48,7 +48,7 @@ Here a [PreviewOptions](https://apireference.groupdocs.com/comparison/java/com.
     
 *   [Height](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions#setHeight(int)) - Preview image height. This property used when need customize output image height;
     
-*   PageNumbers - Page numbers that will be previewed[;](https://wiki.lisbon.dynabic.com/display/comparison/Get+page+previews+with+specific+size)
+*   PageNumbers - Page numbers that will be previewed;
     
 *   [PreviewFormat](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions#setPreviewFormat(int)) - Gets or sets the preview image format which provides ability to choose between image quality and size. **[BMP](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.enums/PreviewFormats#BMP)** format should be used for the best image quality. **[JPG](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.enums/PreviewFormats#JPEG)** format will be useful in case of strict requirements to image size - it produces smallest image size (and faster loading image previews), but with lower quality than **[BMP](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.enums/PreviewFormats#BMP)**. By default **[PNG](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.enums/PreviewFormats#PNG)** format is selected - which is a golden mean between image quality and size.
     
