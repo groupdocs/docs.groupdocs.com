@@ -18,7 +18,9 @@ There are 1 new feature in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><strong>Key</strong></p></td><td class="confluenceTd"><p><strong>Summary</strong></p></td><td class="confluenceTd"><p><strong>Category</strong></p></td></tr><tr><td class="confluenceTd"><p>VIEWERJAVA-1201</p></td><td class="confluenceTd"><p>Add ability to specify custom fonts path</p></td><td class="confluenceTd"><p>New Feature</p></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| VIEWERJAVA-1201 | Add ability to specify custom fonts path | New Feature |
 
 ## Public API and Backward Incompatible Changes
 
