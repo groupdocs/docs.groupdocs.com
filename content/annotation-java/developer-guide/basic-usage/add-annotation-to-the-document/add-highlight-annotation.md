@@ -10,7 +10,7 @@ hideChildren: False
 ---
 **Highlight** annotation highlights and comments selected text  like shown at the picture below. 
 
-![](download/attachments/85231532/1345214979)
+![](annotation-java/images/add-highlight-annotation.png)
 
 There is an ability to specify the next fields for [HighlightAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/HighlightAnnotation) type: 
 
@@ -79,7 +79,7 @@ The following code demonstrates how to add [HighlightAnnotation](https://apiref
 
 ### Advanced Usage Topics
 
-To learn more about document annotating features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

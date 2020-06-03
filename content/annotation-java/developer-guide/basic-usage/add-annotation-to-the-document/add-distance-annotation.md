@@ -10,7 +10,7 @@ hideChildren: False
 ---
 **Distance annotation** measures a distance between objects in a document like shown at the picture below. 
 
-![](download/attachments/85231528/946780106)
+![](annotation-java/images/add-distance-annotation.png)
 
 There is an ability to specify the next fields for [DistanceAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/DistanceAnnotation) type:
 
@@ -75,7 +75,7 @@ String outputPath = Constants.getOutputFilePath("AddDistanceAnnotation", Filenam
 
 ### Advanced Usage Topics
 
-To learn more about document annotating features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

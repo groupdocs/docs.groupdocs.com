@@ -10,7 +10,7 @@ hideChildren: False
 ---
 **Arrow annotation** draws an arrow on the document like shown at the picture below. 
 
-![](download/attachments/85231526/2072698316)
+![](annotation-java/images/add-arrow-annotation.png)
 
 There  is an ability to specify the next fields for [ArrowAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/ArrowAnnotation) type:
 
@@ -74,7 +74,7 @@ String outputPath = Constants.getOutputFilePath("AddArrowAnnotation", FilenameUt
 
 ### Advanced Usage Topics
 
-To learn more about document annotating features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

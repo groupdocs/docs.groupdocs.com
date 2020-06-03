@@ -61,12 +61,12 @@ Implemented annotations annotating documents of following types:
 
 {{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Annotation for Java 17.5.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Annotation which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
-1.  Added new formats to annotating images article :[ Documentation article](https://docs.groupdocs.com/display/annotationjava/Different+Annotations+for+Images)
-2.  Adding annotations for EMF/WMF and CAD formats : [Documentation article](https://docs.groupdocs.com/display/annotationjava/Different+Annotations+for+Images)
-3.  Adding Distance and Arrow annotations for image: [Documentation article](https://docs.groupdocs.com/display/annotationjava/Different+Annotations+for+Images)
-4.  Added ability to get document information from stream: [Documentation article](https://docs.groupdocs.com/display/annotationjava/Getting+Text+Coordinates+in+Image+Representation)[](https://docs.groupdocs.com/display/annotationjava/Text+Coordinates+in+Image+Presentation+of+Document)
-5.  Added annotating Email (export only) (Eml Emlx Msg) documents: [Documentation article](https://docs.groupdocs.com/display/annotationjava/Annotating+Email+Documents)
-6.  Added annotating (export only) Email (Html) documents: [Documentation article](https://docs.groupdocs.com/display/annotationjava/Annotating+HTML+Documents)
+1.  Added new formats to annotating images article
+2.  Adding annotations for EMF/WMF and CAD formats
+3.  Adding Distance and Arrow annotations for image
+4.  Added ability to get document information from stream
+5.  Added annotating Email (export only) (Eml Emlx Msg) documents
+6.  Added annotating (export only) Email (Html) documents
 
 ### Metered licensing
 

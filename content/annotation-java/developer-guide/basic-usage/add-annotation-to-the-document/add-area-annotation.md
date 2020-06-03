@@ -10,7 +10,7 @@ hideChildren: False
 ---
 **Area annotation** allows to mark up an area within the document page with a rectangle like shown at the picture below. 
 
-![](download/attachments/85231524/85828833)
+![](annotation-java/images/add-area-annotation.png)
 
 There is an ability to specify the next fields for [AreaAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/AreaAnnotation) type:
 
@@ -77,7 +77,7 @@ The following code demonstrates how to add [AreaAnnotation](https://apireferenc
 
 ### Advanced Usage Topics
 
-To learn more about document annotating features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

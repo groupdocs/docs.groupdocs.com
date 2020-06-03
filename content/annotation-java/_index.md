@@ -18,7 +18,7 @@ Following are the links to some useful resources you may need to accomplish your
 
 *   [GroupDocs.Annotation for Java Online Documentation]({{< ref "annotation-java" >}})
 *   [GroupDocs.Annotation for Java Features]({{< ref "annotation-java/getting-started/features-overview.md" >}})
-*   [GroupDocs.Annotation for Java Limitations](https://docs.groupdocs.com/display/annotationjava/Evaluation+Limitations+and+Licensing+of+GroupDocs.Annotation)
+*   [GroupDocs.Annotation for Java Limitations]({{< ref "annotation-java/getting-started/evaluation-limitations-and-licensing.md" >}})
 *   [GroupDocs.Annotation for Java Release Notes]({{< ref "annotation-java/release-notes/_index.md" >}})
 *   [GroupDocs.Annotation for Java Product Page](https://products.groupdocs.com/annotation/java)
 *   [Download GroupDocs.Annotation for Java](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-annotation)

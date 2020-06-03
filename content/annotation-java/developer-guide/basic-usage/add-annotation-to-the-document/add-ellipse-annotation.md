@@ -10,7 +10,7 @@ hideChildren: False
 ---
 **Ellipse annotation** draws elliptic annotation in a document page like shown at the picture below.
 
-![](download/attachments/85231530/845988064)
+![](annotation-java/images/add-ellipse-annotation.png)
 
 There is an ability to specify the next fields for [EllipseAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/EllipseAnnotation)type*:*
 
@@ -77,7 +77,7 @@ String outputPath = Constants.getOutputFilePath("AddLinkAnnotation", FilenameUti
 
 ### Advanced Usage Topics
 
-To learn more about document annotating features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

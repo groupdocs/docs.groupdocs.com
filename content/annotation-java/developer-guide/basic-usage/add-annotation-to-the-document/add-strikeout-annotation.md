@@ -10,7 +10,7 @@ hideChildren: False
 ---
 **Strikeout** annotation marks text fragment with a strikethrough styling like shown at the picture below.
 
-![](download/attachments/85231546/2066825315)
+![](annotation-java/images/add-strikeout-annotation.png)
 
 There is an ability to specify the next fields for [StrikeoutAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/StrikeoutAnnotation) type:
 
@@ -77,7 +77,7 @@ String outputPath = Constants.getOutputFilePath("AddTextStrikeoutAnnotation", Fi
 
 ### Advanced Usage Topics
 
-To learn more about document annotating features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

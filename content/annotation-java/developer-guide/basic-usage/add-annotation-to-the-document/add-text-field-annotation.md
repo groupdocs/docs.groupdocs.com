@@ -10,7 +10,7 @@ hideChildren: False
 ---
 **Text field** annotation adds rectangle with a text inside, like shown at the picture below. 
 
-![](download/attachments/85231548/539695140)
+![](annotation-java/images/add-text-field-annotation.png)
 
 There is an ability to specify the next fields for [TextFieldAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/TextFieldAnnotation) type:
 
@@ -91,7 +91,7 @@ String outputPath = Constants.getOutputFilePath("AddTextStrikeoutAnnotation", Fi
 
 ### Advanced Usage Topics
 
-To learn more about document annotating features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

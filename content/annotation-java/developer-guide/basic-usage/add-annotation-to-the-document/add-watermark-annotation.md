@@ -10,7 +10,7 @@ hideChildren: False
 ---
 **Watermark** annotation adds text watermark like shown at the picture below. 
 
-![](download/attachments/85231554/1025838748)
+![](annotation-java/images/add-watermark-annotation.png)
 
 There is an ability to specify the next fields for [WatermarkAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/WatermarkAnnotation) type:
 
@@ -79,7 +79,7 @@ String outputPath = Constants.getOutputFilePath("AddWatermarkAnnotation", Filena
 
 ### Advanced Usage Topics
 
-To learn more about document annotating features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

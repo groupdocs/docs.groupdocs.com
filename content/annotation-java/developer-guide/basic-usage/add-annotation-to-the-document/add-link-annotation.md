@@ -10,7 +10,7 @@ hideChildren: False
 ---
 **Link** annotation adds a hyper link to document  like shown at the picture below. 
 
-![](download/attachments/85231534/110952540)
+![](annotation-java/images/add-link-annotation.png)
 
 There is an ability to specify the next fields for [LinkAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/LinkAnnotation) type:
 
@@ -75,7 +75,7 @@ String outputPath = Constants.getOutputFilePath("AddLinkAnnotation", FilenameUti
 
 ### Advanced Usage Topics
 
-To learn more about document annotating features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

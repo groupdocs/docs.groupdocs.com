@@ -16,7 +16,7 @@ The complete examples package of **GroupDocs.Annotation** is hosted on [GitHu
 
 In case you download the ZIP file, extract the folders on your local disk. The extracted files and folders will look like following image:
 
-![](https://wiki.lisbon.dynabic.com/download/attachments/30050419/GroupDocs.Signature.png?version=1&modificationDate=1572267880000&api=v2)
+![](annotation-java/images/how-to-run-the-examples.png)
 
 Open Eclipse and import the project to get started with it. Archived project file can also be imported.Follow the given steps to run the application:
 
@@ -24,7 +24,7 @@ Open Eclipse and import the project to get started with it. Archived project fil
 *   Click on Java Build Path.
 *   Go to Libraries and external Jars (GroupDocs.Annotation.Jar).
 
-![](https://wiki.lisbon.dynabic.com/download/attachments/30050419/GroupDocs.Signature_for_Java.png?version=1&modificationDate=1572267898000&api=v2)
+![](annotation-java/images/how-to-run-the-examples_1.png)
 
 ## Contribute
 

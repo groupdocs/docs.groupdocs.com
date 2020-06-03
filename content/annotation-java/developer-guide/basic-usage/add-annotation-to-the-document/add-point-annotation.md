@@ -10,7 +10,7 @@ hideChildren: False
 ---
 **Point** annotationsticks comments to any point in a document like shown at the picture below. 
 
-![](download/attachments/85231536/1812831928)
+![](annotation-java/images/add-point-annotation.png)
 
 There is an ability to specify the next fields for [PointAnnotation](https://apireference.groupdocs.com/java/annotation/com.groupdocs.annotation.models.annotationmodels/PointAnnotation) type:
 
@@ -62,7 +62,7 @@ String outputPath = Constants.getOutputFilePath("AddPointAnnotation", FilenameUt
 
 ### Advanced Usage Topics
 
-To learn more about document annotating features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

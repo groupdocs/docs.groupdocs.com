@@ -40,4 +40,4 @@ Below the list of  new features and fixed bugs in this regular monthly release 
 
 {{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Annotation for Java 17.6.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Annotation which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
-1.  Added annotating Diagrams (vss, vsd)  documents [](http://lisbon.dynabic.com/wiki/display/annotation/24.++Working+with+Diagram+documents)[Documentation article](https://docs.groupdocs.com/display/annotationjava/Working+with+Diagrams)
+1.  Added annotating Diagrams (vss, vsd)  documents
