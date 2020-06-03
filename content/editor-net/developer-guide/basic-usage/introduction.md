@@ -98,8 +98,8 @@ All document formats, which GroupDocs.Editor supports, are grouped into family f
 Detailed information about every stage of document processing along with source code examples, options explanations and so on, can be found in the next articles:
 
 1.  [Load document]({{< ref "editor-net/developer-guide/basic-usage/load-document.md" >}})
-2.  [Edit document](https://wiki.lisbon.dynabic.com/display/editor/Edit+document)
-3.  [Save document](https://wiki.lisbon.dynabic.com/display/editor/Save+document)
+2.  [Edit document]({{< ref "editor-net/developer-guide/basic-usage/edit-document.md" >}})
+3.  [Save document]({{< ref "editor-net/developer-guide/basic-usage/save-document.md" >}})
 
 Complete description of `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument) `class, all its possibilities, members and purpose, along with source code example, is located in the next articles:
 
