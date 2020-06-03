@@ -56,4 +56,4 @@ try(Converter converter = new Converter(documentPath))
 }
 ```
 
-For more code examples and specific use cases please refer to our [Developer Guide](https://wiki.lisbon.dynabic.com/display/conversion/Developer+Guide) documentation or [GitHub](https://github.com/groupdocs-conversion/GroupDocs.Conversion-for-Java) samples and showcases.
+For more code examples and specific use cases please refer to our [Developer Guide]({{< ref "conversion-java/developer-guide/_index.md" >}}) documentation or [GitHub](https://github.com/groupdocs-conversion/GroupDocs.Conversion-for-Java) samples and showcases.

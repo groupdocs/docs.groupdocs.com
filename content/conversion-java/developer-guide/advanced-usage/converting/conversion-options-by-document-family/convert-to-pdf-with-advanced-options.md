@@ -8,7 +8,7 @@ keywords: Convert PDF, Convert to PDF/A
 productName: GroupDocs.Conversion for Java
 hideChildren: False
 ---
-**[GroupDocs.Conversion](https://products.groupdocs.com/conversion/java)** provides[PdfConvertOptions](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/PdfConvertOptions)to give you control over conversion result when convert to PDF. Along with [common convert options](Convert%2Bto%2BPDF%2Bwith%2Badvanced%2Boptions.html) [PdfConvertOptions](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/PdfConvertOptions)has the following additional options:
+**[GroupDocs.Conversion](https://products.groupdocs.com/conversion/java)** provides[PdfConvertOptions](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/PdfConvertOptions)to give you control over conversion result when convert to PDF. Along with [common convert options]({{< ref "conversion-java/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-pdf-with-advanced-options.md" >}}) [PdfConvertOptions](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/PdfConvertOptions)has the following additional options:
 
 *   ****[setFormat](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/ConvertOptions#setFormat(com.groupdocs.conversion.filetypes.FileType))****\- desired result document type. Available options are: *Pdf, Epub, Xps, Tex, Ps, Pcl, *
 *   **[setWidth](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/PdfConvertOptions#setWidth(int)) **\- desired image width after conversion
@@ -19,7 +19,7 @@ hideChildren: False
 *   **[setMarginBottom](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/PdfConvertOptions#setMarginBottom(int)) **\- desired page bottom margin after conversion
 *   **[setMarginLeft](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/PdfConvertOptions#setMarginLeft(int)) **\- desired page left margin after conversion
 *   **[setMarginRight](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/PdfConvertOptions#setMarginRight(int)) **\- desired page right margin after conversion
-*   **[setPdfOptions](Convert%2Bto%2BPDF%2Bwith%2Badvanced%2Boptions.html) **\- PDF specific convert options
+*   **[setPdfOptions]({{< ref "conversion-java/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-pdf-with-advanced-options.md" >}}) **\- PDF specific convert options
 *   **[setRotate](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/PdfConvertOptions#setRotate(com.groupdocs.conversion.options.convert.Rotation)) **\- page rotation. Available options are: *None, On90, On180, On270*  
       
     
@@ -51,8 +51,8 @@ converter.convert("converted.pdf", options);
 *   **[setZoom](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/PdfOptions#setZoom(int))** - specifies the zoom level in percentage
 *   **[setLinearize](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/PdfOptions#setLinearize(boolean))** - linearizes PDF document for web
 *   **[setGrayscale](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/PdfOptions#setGrayscale(boolean))** - convert to grayscale PDF
-*   **[setOptimizationOptions](Convert%2Bto%2BPDF%2Bwith%2Badvanced%2Boptions.html)** - PDF optimization options
-*   **[setFormattingOptions](Convert%2Bto%2BPDF%2Bwith%2Badvanced%2Boptions.html)** - PDF formatting options
+*   **[setOptimizationOptions]({{< ref "conversion-java/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-pdf-with-advanced-options.md" >}})** - PDF optimization options
+*   **[setFormattingOptions]({{< ref "conversion-java/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-pdf-with-advanced-options.md" >}})** - PDF formatting options
 
 ### PdfOptimizationOptions
 

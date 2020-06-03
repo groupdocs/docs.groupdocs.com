@@ -10,7 +10,7 @@ hideChildren: False
 ---
 # Loading documents from different sources
 
-[**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/java) also enables you to convert remotely located documents. The conversion of a remote document would be similar to [Loading documents from different sources](Loading%2Bdocuments%2Bfrom%2Bdifferent%2Bsources.html). In order to convert a remotely located document you must:
+[**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/java) also enables you to convert remotely located documents. The conversion of a remote document would be similar to [Loading documents from different sources]({{< ref "conversion-java/developer-guide/advanced-usage/loading/loading-documents-from-different-sources/_index.md" >}}). In order to convert a remotely located document you must:
 
 *   Specify the method to obtain remotely located document stream; 
 *   Pass method's name to **Converter**class constructor.

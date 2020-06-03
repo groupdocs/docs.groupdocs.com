@@ -8,7 +8,7 @@ keywords: Convert to Image, Convert Image
 productName: GroupDocs.Conversion for Java
 hideChildren: False
 ---
-[**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/java) provides [ImageConvertOptions](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/ImageConvertOptions)to give you control over conversion result when convert to image.  Along with [common convert options](Convert%2Bto%2BImage%2Bwith%2Badvanced%2Boptions.html) from base class [ImageConvertOptions](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/ImageConvertOptions) has the following additional options:
+[**GroupDocs.Conversion**](https://products.groupdocs.com/conversion/java) provides [ImageConvertOptions](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/ImageConvertOptions)to give you control over conversion result when convert to image.  Along with [common convert options]({{< ref "conversion-java/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-image-with-advanced-options.md" >}}) from base class [ImageConvertOptions](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/ImageConvertOptions) has the following additional options:
 
 *   **[setFormat](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/ConvertOptions#setFormat(com.groupdocs.conversion.filetypes.FileType))** - desired result document type. Available options are: *Tiff, Tif, Jpg, Jpeg, Png, Gig, Bmp, Ico, Psd, Wmf, Emf, Dcm, Webp, Dng, Svg, Jp2, Odg, J2c, J2k, Jpx, Jpf, Jpm, Eps, Cgm, Cdr, Cmx, Dib, Jpc, Jls, DjVu*
 *   **[setWidth](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/ImageConvertOptions#setWidth(int)) **\- desired image width after conversion
@@ -22,10 +22,10 @@ hideChildren: False
 *   **[setContrast](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/ImageConvertOptions#setContrast(int)) **\- adjusts image contrast
 *   **[setGamma](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/ImageConvertOptions#setGamma(float)) **\- adjust image gamma  
     
-*   **[setJpegOptions](Convert%2Bto%2BImage%2Bwith%2Badvanced%2Boptions.html) **\- JPEG specific convert options
-*   **[setTiffOptions](Convert%2Bto%2BImage%2Bwith%2Badvanced%2Boptions.html) **\- TIFF specific convert options
-*   **[setPsdOptions](Convert%2Bto%2BImage%2Bwith%2Badvanced%2Boptions.html) **\- PSD specific convert options
-*   **[setWebpOptions](Convert%2Bto%2BImage%2Bwith%2Badvanced%2Boptions.html)** - WebP specific convert options  
+*   **[setJpegOptions]({{< ref "conversion-java/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-image-with-advanced-options.md" >}}) **\- JPEG specific convert options
+*   **[setTiffOptions]({{< ref "conversion-java/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-image-with-advanced-options.md" >}}) **\- TIFF specific convert options
+*   **[setPsdOptions]({{< ref "conversion-java/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-image-with-advanced-options.md" >}}) **\- PSD specific convert options
+*   **[setWebpOptions]({{< ref "conversion-java/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-image-with-advanced-options.md" >}})** - WebP specific convert options
     
 *   **[setUsePdf](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion.options.convert/ImageConvertOptions#setUsePdf(boolean)) **\- in some cases, for better rendering and elements positioning the source document should be converted to PDF first. If this property is set to *true*, the input firstly is converted to PDF and after that to desired format.
 
