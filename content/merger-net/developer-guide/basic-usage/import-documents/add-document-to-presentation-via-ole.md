@@ -46,7 +46,7 @@ using (Merger merger = new Merger(filePath))
 
 ### Advanced Usage Topics 
 
-To learn more about document merging features, please refer the [advanced usage section](Add%2Bdocument%2Bto%2BPresentation%2Bvia%2BOLE.html).
+To learn more about document merging features, please refer the [advanced usage section]({{< ref "merger-net/developer-guide/basic-usage/import-documents/add-document-to-presentation-via-ole.md" >}}).
 
 ### GitHub Examples 
 

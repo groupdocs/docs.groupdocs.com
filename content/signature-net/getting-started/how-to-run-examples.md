@@ -19,7 +19,7 @@ Please choose one from the following list:
 
 *   Open Visual Studio and go to **File** -> **New **\->** Project**.
 *   Select appropriate project type - Console App, ASP.NET Web Application etc.
-*   Install **GroupDocs.Signature for .NET **from Nuget or official GroupDocs website following this [guide](Development%2BEnvironment%252C%2BInstallation%2Band%2BConfiguration.html).
+*   Install **GroupDocs.Signature for .NET **from Nuget or official GroupDocs website following this [guide]({{< ref "signature-net/getting-started/development-environment-installation-and-configuration.md" >}}).
 *   Code your first application with **GroupDocs.Signature for .NET **like this
     
     ```csharp

@@ -10,5 +10,5 @@ hideChildren: False
 ---
 # Loading documents from different sources
 
-[**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows you to annotate remotely located documents. The document processing would be similar to [Load document from stream](Load%2Bdocument%2Bfrom%2Bstream.html).   
+[**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) allows you to annotate remotely located documents. The document processing would be similar to [Load document from stream]({{< ref "annotation-net/developer-guide/advanced-usage/loading/loading-documents-from-different-sources/load-document-from-stream.md" >}}).
 Following examples demonstrates how to load documents from different sources.

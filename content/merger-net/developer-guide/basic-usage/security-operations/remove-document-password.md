@@ -34,7 +34,7 @@ using (Merger merger = new Merger(filePath, loadOptions))
 
 ### Advanced Usage Topics 
 
-To learn more about document merging features, please refer the [advanced usage section](Advanced%2Busage.html).
+To learn more about document merging features, please refer the [advanced usage section]({{< ref "merger-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples 
 

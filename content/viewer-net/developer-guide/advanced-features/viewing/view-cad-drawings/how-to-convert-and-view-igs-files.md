@@ -2,7 +2,7 @@
 id: how-to-convert-and-view-igs-files
 url: viewer/net/how-to-convert-and-view-igs-files
 title: How to convert and view IGS files
-weight: 4
+weight: 3
 description: "This article demonstrates how to convert and view IGS files with GroupDocs.Viewer within your .NET applications."
 keywords: 
 productName: GroupDocs.Viewer for .NET

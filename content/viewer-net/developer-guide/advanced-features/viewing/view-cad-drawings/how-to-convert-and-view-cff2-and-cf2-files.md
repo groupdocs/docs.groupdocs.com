@@ -2,7 +2,7 @@
 id: how-to-convert-and-view-cff2-and-cf2-files
 url: viewer/net/how-to-convert-and-view-cff2-and-cf2-files
 title: How to convert and view CFF2 and CF2 files
-weight: 3
+weight: 2
 description: "This article demonstrates how to convert and view CFF2 and CF2 files with GroupDocs.Viewer within your .NET applications."
 keywords: 
 productName: GroupDocs.Viewer for .NET

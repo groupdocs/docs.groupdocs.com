@@ -8,7 +8,7 @@ keywords: GroupDocs.Signature supported files, GroupDocs.Signature supported doc
 productName: GroupDocs.Signature for .NET
 hideChildren: False
 ---
-With [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) you can get the [list of file formats](Get%2Bsupported%2Bfile%2Bformats.html) that allow adding electronic signatures by following the below steps: 
+With [**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) you can get the [list of file formats]({{< ref "signature-net/developer-guide/basic-usage/get-supported-file-formats.md" >}}) that allow adding electronic signatures by following the below steps:
 
 *   Call static function [GetSupportedFileTypes](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/filetype/methods/getsupportedfiletypes) of [FileType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/filetype) class;
 *   Enumerate through the collection of [FileType](https://apireference.groupdocs.com/net/signature/groupdocs.signature.domain/filetype) objects*.*
@@ -28,7 +28,7 @@ foreach (FileType fileType in supportedFileTypes)
 
 ### Advanced Usage Topics
 
-To learn more about document eSign features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document eSign features, please refer to the [advanced usage section]({{< ref "signature-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

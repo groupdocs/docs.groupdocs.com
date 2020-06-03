@@ -77,7 +77,7 @@ editor.Save(afterEdit, outputStream, saveOptions);
 
 ```
 
-Starting from version 20.4, `[PresentationSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/presentationsaveoptions)` class contains two new properties — `[SlideNumber](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions/properties/slidenumber)` and `[InsertAsNewSlide](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions/properties/insertasnewslide)`, — which are highly coupled together. These properties allow to insert edited slide into existing presentation instead of creating new presentation with single edited slide, which remains the default behavior. They are explained in detail in [separate article](Inserting%2Bedited%2Bslide%2Binto%2Bexisting%2Bpresentation.html).
+Starting from version 20.4, `[PresentationSaveOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/presentationsaveoptions)` class contains two new properties — `[SlideNumber](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions/properties/slidenumber)` and `[InsertAsNewSlide](https://apireference.groupdocs.com/editor/net/groupdocs.editor.options/presentationsaveoptions/properties/insertasnewslide)`, — which are highly coupled together. These properties allow to insert edited slide into existing presentation instead of creating new presentation with single edited slide, which remains the default behavior. They are explained in detail in [separate article]({{< ref "editor-net/developer-guide/advanced-usage/working-with-presentations/inserting-edited-slide-into-existing-presentation.md" >}}).
 
 ## More resources
 

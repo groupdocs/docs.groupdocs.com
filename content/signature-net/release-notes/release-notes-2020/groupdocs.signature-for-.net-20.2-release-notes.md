@@ -46,7 +46,7 @@ Following topics from Developer Guide were added:
 
 Following topics from Developer Guide were updated:
 
-*   [Advanced search for Image signatures](Advanced%2Bsearch%2Bfor%2BImage%2Bsignatures.html)
+*   [Advanced search for Image signatures]({{< ref "signature-net/developer-guide/advanced-usage/searching/advanced-search-for-image-signatures.md" >}})
 
 # Public API and Backward Incompatible Changes
 

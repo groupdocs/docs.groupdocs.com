@@ -2,7 +2,7 @@
 id: how-to-convert-and-view-ms-project-documents-with-notes
 url: viewer/net/how-to-convert-and-view-ms-project-documents-with-notes
 title: How to convert and view MS Project documents with notes
-weight: 3
+weight: 2
 description: "In this article we show how to convert and view MS Project Documents with notes with GroupDocs.Viewer within your .NET applications."
 keywords: 
 productName: GroupDocs.Viewer for .NET

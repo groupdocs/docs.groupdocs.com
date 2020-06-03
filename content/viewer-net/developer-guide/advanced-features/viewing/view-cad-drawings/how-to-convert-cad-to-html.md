@@ -1,8 +1,8 @@
 ---
-id: how-to-convert-cad-drawings-to-html
-url: viewer/net/how-to-convert-cad-drawings-to-html
-title: How to convert CAD drawings to HTML
-weight: 6
+id: how-to-convert-cad-to-html
+url: viewer/net/how-to-convert-cad-to-html
+title: How to convert CAD to HTML
+weight: 5
 description: "This article demonstrates how to convert CAD drawings to HTML with GroupDocs.Viewer within your .NET applications."
 keywords: 
 productName: GroupDocs.Viewer for .NET
@@ -16,7 +16,7 @@ hideChildren: False
 
 If you convert your CAD drawings to HTML it's better to leave them in vector format rather rasterization to get better viewing and zooming. While converting your CAD drawings to HTML GroupDocs.Viewer converts a drawing to [SVG (Scalable Vector Graphics format)](https://wiki.fileformat.com/page-description-language/svg/) and embeds it to [HTML](https://wiki.fileformat.com/web/html/).
 
-![](viewer-net/images/how-to-convert-cad-drawings-to-html.png)
+![](viewer-net/images/how-to-convert-cad-to-html.png)
 
 ## How to convert CAD drawings to HTML
 
@@ -36,9 +36,9 @@ using (Viewer viewer = new Viewer("document.dwg"))
 
 Result:
 
-![](viewer-net/images/how-to-convert-cad-drawings-to-html_1.png)
+![](viewer-net/images/how-to-convert-cad-to-html_1.png)
 
-![](viewer-net/images/how-to-convert-cad-drawings-to-html_2.png)
+![](viewer-net/images/how-to-convert-cad-to-html_2.png)
 
 Output SVG and HTML styles are located in the separate resources folder.
 
@@ -55,7 +55,7 @@ using (Viewer viewer = new Viewer("document.dwg"))
 
 Result:
 
-![](viewer-net/images/how-to-convert-cad-drawings-to-html_3.png)
+![](viewer-net/images/how-to-convert-cad-to-html_3.png)
 
 HTML content, SVG and HTML styles are located in one HTML file.
 

@@ -15,7 +15,7 @@ hideChildren: False
 There are 13 features, improvements, and bug-fixes in this release, most notable are:
 
 *   When converting CAD drawings to HTML, CAD drawings are converted to SVG instead of PNG   
-*Related article* *[How to convert CAD drawings to HTML]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-cad-drawings/how-to-convert-cad-drawings-to-html.md" >}})*
+*Related article* *[How to convert CAD to HTML]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-cad-drawings/how-to-convert-cad-to-html.md" >}})*
 *   Added Flat XML ODF Template (.fodg) file format support  
 *Related article [How to convert and view ODG and FODG files]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-image-files/how-to-convert-and-view-odg-and-fodg-files.md" >}})*
 *   Added IGES Drawing File (.igs) file format support  
@@ -53,4 +53,4 @@ There are 13 features, improvements, and bug-fixes in this release, most notable
 
 ### Behavior changes
 
-*   Starting from 20.5 the CAD drawings are converted to SVG instead of PNG for better quality please refer to [How to convert CAD drawings to HTML]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-cad-drawings/how-to-convert-cad-drawings-to-html.md" >}}) article for more details.
+*   Starting from 20.5 the CAD drawings are converted to SVG instead of PNG for better quality please refer to [How to convert CAD to HTML]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-cad-drawings/how-to-convert-cad-to-html.md" >}}) article for more details.

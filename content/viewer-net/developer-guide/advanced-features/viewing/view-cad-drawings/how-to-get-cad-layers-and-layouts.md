@@ -1,29 +1,34 @@
 ---
-id: get-view-info-for-outlook-data-file
-url: viewer/net/get-view-info-for-outlook-data-file
-title: Get View Info for Outlook Data File
-weight: 2
-description: "This article explains how to retrieve information about Outlook Data File with GroupDocs.Viewer within your .NET applications."
+id: how-to-get-cad-layers-and-layouts
+url: viewer/net/how-to-get-cad-layers-and-layouts
+title: How to get CAD layers and layouts
+weight: 6
+description: "This article explains how to retrieve information about CAD drawings with GroupDocs.Viewer within your .NET applications."
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
-GroupDocs.Viewer provides additional information for Outlook Data Files when calling [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo)method. To retrieve view information for Outlook Data File call [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo)method and cast output result to [OutlookViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.results/outlookviewinfo) type.
+## Retrieving layers and layouts
 
-Following example demonstrates how to retrieve view information for Outlook Data File.
+GroupDocs.Viewer provides additional information about CAD drawings such as list of layouts and layers when calling [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo)method. To retrieve view information for CAD drawing call [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo)method and cast output result to [CadViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.results/cadviewinfo) type.
+
+Following example demonstrates how to retrieve view information for CAD drawing.
 
 ```csharp
-using (Viewer viewer = new Viewer("sample.ost"))
+using (Viewer viewer = new Viewer("sample.dwg"))
 {
     ViewInfoOptions viewInfoOptions = ViewInfoOptions.ForHtmlView();
-    OutlookViewInfo viewInfo = viewer.GetViewInfo(viewInfoOptions) as OutlookViewInfo;
- 
-    Console.WriteLine("File type is: " + viewInfo.FileType);
+    CadViewInfo viewInfo = viewer.GetViewInfo(viewInfoOptions) as CadViewInfo;
+ 
+    Console.WriteLine("File type: " + viewInfo.FileType);
     Console.WriteLine("Pages count: " + viewInfo.Pages.Count);
-    
-    foreach (string folder in viewInfo.Folders)
-        Console.WriteLine(folder);
-}      
+     
+    foreach (Layout layout in viewInfo.Layouts)
+        Console.WriteLine(layout);
+ 
+    foreach (Layer layer in viewInfo.Layers)
+        Console.WriteLine(layer);
+}    
       
 
 ```

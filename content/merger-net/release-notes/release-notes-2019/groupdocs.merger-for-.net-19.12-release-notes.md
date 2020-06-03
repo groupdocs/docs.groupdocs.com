@@ -26,4 +26,4 @@ There are a few new other features in this regular monthly release. The most not
 
 ### New XLAM file type was added
 
-A new **.XLAM** file type was added to GroupDocs.Merger for .NET product and accordingly to the following Wiki Public Docs page: [Supported Document Types](Supported%2BDocument%2BTypes.html).
+A new **.XLAM** file type was added to GroupDocs.Merger for .NET product and accordingly to the following Wiki Public Docs page: [Supported Document Types]({{< ref "merger-net/getting-started/supported-document-types.md" >}}).

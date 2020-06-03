@@ -10,7 +10,7 @@ hideChildren: False
 ---
 ## Overview
 
-GroupDocs.Conversion for .NET does not require any external software or third party tool to be installed. Just follow one of the way as described in [Development Environment Installation and Configuration](Development%2BEnvironment%2BInstallation%2Band%2BConfiguration.html).
+GroupDocs.Conversion for .NET does not require any external software or third party tool to be installed. Just follow one of the way as described in [Development Environment Installation and Configuration]({{< ref "conversion-net/getting-started/development-environment-installation-and-configuration.md" >}}).
 
 ## Supported Operating Systems
 

@@ -1,6 +1,6 @@
 ---
-id: -net-standard-2-0-api-limitations
-url: signature/net/-net-standard-2-0-api-limitations
+id: net-standard-2-0-api-limitations
+url: signature/net/net-standard-2-0-api-limitations
 title: .NET Standard 2.0 API Limitations
 weight: 1
 description: ""

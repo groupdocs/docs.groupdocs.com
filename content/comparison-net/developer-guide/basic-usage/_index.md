@@ -11,4 +11,4 @@ hideChildren: False
 # Quick Start section for GroupDocs.Comparison API
 
 Compare your documents fast and easy with our intuitive and powerful API just with few lines of code.  
-Let’s review common usage scenarios when source and target documents are stored at a local drive and you want to compare them using **[GroupDocs.Comparison](https://docs.groupdocs.com/products.groupdocs.com/comparison/net)** API.
+Let’s review common usage scenarios when source and target documents are stored at a local drive and you want to compare them using **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** API.

@@ -37,7 +37,7 @@ using (Merger merger = new Merger(@"c:\sample.pdf"))
 
 ### Advanced Usage Topics 
 
-To learn more about document merging features, please refer the [advanced usage section](How%2Bto%2Badd%2Battachment%2Bto%2BPDF%2Bdocument.html).
+To learn more about document merging features, please refer the [advanced usage section]({{< ref "merger-net/developer-guide/basic-usage/import-documents/how-to-add-attachment-to-pdf-document.md" >}}).
 
 ### GitHub Examples 
 

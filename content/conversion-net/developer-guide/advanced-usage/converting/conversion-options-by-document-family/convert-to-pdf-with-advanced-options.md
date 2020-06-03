@@ -19,7 +19,7 @@ GroupDocs.Conversion provides [PdfConvertOptions](https://apireference.groupdoc
 *   **[MarginBottom](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfconvertoptions/properties/marginbottom) **\- desired page bottom margin after conversion
 *   **[MarginLeft](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfconvertoptions/properties/marginleft) **\- desired page left margin after conversion
 *   **[MarginRight](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfconvertoptions/properties/marginright) **\- desired page right margin after conversion
-*   **[PdfOptions](Convert%2Bto%2BPDF%2Bwith%2Badvanced%2Boptions.html) **\- PDF specific convert options
+*   **[PdfOptions]({{< ref "conversion-net/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-pdf-with-advanced-options.md" >}}) **\- PDF specific convert options
 *   **[Rotate](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfconvertoptions/properties/rotate) **\- page rotation. Available options are: *None, On90, On180, On270*
 
 Following code snippet shows how to convert to PDF with advanced options.
@@ -49,8 +49,8 @@ using (Converter converter = new Converter("sample.docx"))
 *   **[Zoom](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfoptions/properties/zoom)** - specifies the zoom level in percentage
 *   **[Linearize](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfoptions/properties/linearize)** - linearizes PDF document for web
 *   **[Grayscale](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/pdfoptions/properties/grayscale)** - convert to grayscale PDF
-*   [**OptimizationOptions** ](Convert%2Bto%2BPDF%2Bwith%2Badvanced%2Boptions.html)\- PDF optimization options
-*   **[FormattingOptions](Convert%2Bto%2BPDF%2Bwith%2Badvanced%2Boptions.html)** - PDF formatting options
+*   [**OptimizationOptions** ]({{< ref "conversion-net/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-pdf-with-advanced-options.md" >}})\- PDF optimization options
+*   **[FormattingOptions]({{< ref "conversion-net/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-pdf-with-advanced-options.md" >}})** - PDF formatting options
 
 ### PdfOptimizationOptions
 

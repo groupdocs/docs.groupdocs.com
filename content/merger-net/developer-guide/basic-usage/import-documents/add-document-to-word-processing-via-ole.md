@@ -40,7 +40,7 @@ using (Merger merger = new Merger(@"c:\sample.docx"))
 
 ### Advanced Usage Topics 
 
-To learn more about document merging features, please refer the [advanced usage section](Add%2Bdocument%2Bto%2BWord%2Bprocessing%2Bvia%2BOLE.html).
+To learn more about document merging features, please refer the [advanced usage section]({{< ref "merger-net/developer-guide/basic-usage/import-documents/add-document-to-word-processing-via-ole.md" >}}).
 
 ### GitHub Examples 
 

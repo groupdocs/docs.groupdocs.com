@@ -68,7 +68,7 @@ Editor editor = new Editor(inputFilePath, delegate { return wordLoadOptions; });
 
 ### Advanced Usage Topics
 
-To learn more about document viewing features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document viewing features, please refer to the [advanced usage section]({{< ref "editor-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

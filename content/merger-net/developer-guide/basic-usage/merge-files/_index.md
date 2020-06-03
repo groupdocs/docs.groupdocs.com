@@ -8,7 +8,7 @@ keywords: Merge files, Combine files, Merge documents
 productName: GroupDocs.Merger for .NET
 hideChildren: False
 ---
-**[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to merge multiple documents into single document nice and easy. The result will contain the content of all source documents with all data, styles and formatting. Here are the simple steps to merge several documents of any [supported format](Supported%2BDocument%2BTypes.html):
+**[GroupDocs.Merger](https://products.groupdocs.com/merger/net)** allows to merge multiple documents into single document nice and easy. The result will contain the content of all source documents with all data, styles and formatting. Here are the simple steps to merge several documents of any [supported format]({{< ref "merger-net/getting-started/supported-document-types.md" >}}):
 
 *   Instantiate [Merger](https://apireference.groupdocs.com/net/merger/groupdocs.merger/merger) objectwith source document path or stream;
 *   Call [Join](https://apireference.groupdocs.com/net/merger/groupdocs.merger.merger/join/methods/2) method and pass next merged document file path or stream to it*. *Repeat this step for every merged document.
@@ -34,7 +34,7 @@ Please learn more about how to merge PDF, Microsoft Word, Microsoft PowerPoint 
 
 ### Advanced Usage Topics 
 
-To learn more about document merging features, please refer the [advanced usage section](Advanced%2Busage.html).
+To learn more about document merging features, please refer the [advanced usage section]({{< ref "merger-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples 
 

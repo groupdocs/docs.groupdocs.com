@@ -1,13 +1,15 @@
 ---
-id: get-view-info-for-pdf-document
-url: viewer/net/get-view-info-for-pdf-document
-title: Get View Info for PDF Document
+id: how-to-check-that-pdf-printing-not-allowed
+url: viewer/net/how-to-check-that-pdf-printing-not-allowed
+title: How to check that PDF printing not allowed
 weight: 5
 description: "This article explains how to retrieve information about PDF Documents with GroupDocs.Viewer within your .NET applications."
 keywords: 
 productName: GroupDocs.Viewer for .NET
 hideChildren: False
 ---
+## Checking that sprinting not allowed
+
 GroupDocs.Viewer provides additional information for PDF documents when calling [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo)method. To retrieve view information for PDF document call [GetViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/viewer/methods/getviewinfo)method and cast output result to [PdfViewInfo](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.results/pdfviewinfo) type.
 
 Following example demonstrates how to retrieve view information for PDF document.

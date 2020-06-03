@@ -28,7 +28,7 @@ foreach (FileType fileType in supportedFileTypes)
 
 ### Advanced Usage Topics
 
-To learn more about document annotating features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

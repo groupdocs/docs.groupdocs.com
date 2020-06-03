@@ -14,11 +14,11 @@ GroupDocs.Viewer for .NET API enables you to get file type and pages count with 
 
 For the following document types GroupDocs.Viewer provides additional information:
 
-*   Archive files - a collection of folders inside archive (see [How to get file type and pages count]({{< ref "viewer-net/developer-guide/main-features/how-to-get-file-type-and-pages-count.md" >}}));
-*   CAD drawings - a collection of layouts and layers (see [How to get file type and pages count]({{< ref "viewer-net/developer-guide/main-features/how-to-get-file-type-and-pages-count.md" >}}));
-*   Outlook data files - a collection of folders inside data file (see [How to get file type and pages count]({{< ref "viewer-net/developer-guide/main-features/how-to-get-file-type-and-pages-count.md" >}}));
-*   PDF documents - a flag that indicates whether document printing is allowed or not (see [How to get file type and pages count]({{< ref "viewer-net/developer-guide/main-features/how-to-get-file-type-and-pages-count.md" >}}));
-*   MS Project documents - project start/end dates (see [How to get file type and pages count]({{< ref "viewer-net/developer-guide/main-features/how-to-get-file-type-and-pages-count.md" >}})).
+*   Archive files - a collection of folders inside the archive (see [How to list archive folders]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-archive-files/how-to-list-archive-folders.md" >}}));
+*   CAD drawings - a collection of layouts and layers (see [How to get CAD layers and layouts]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-cad-drawings/how-to-get-cad-layers-and-layouts.md" >}}));
+*   Outlook Data files - a collection of folders inside Outlook Data file (see [How to get Outlook Data file folders]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-outlook-data-files/how-to-get-outlook-data-file-folders.md" >}}));
+*   PDF documents - a flag that indicates whether document printing is allowed or not (see [How to check that PDF printing not allowed]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-pdf-documents/how-to-check-that-pdf-printing-not-allowed.md" >}}));
+*   MS Project documents - project start/end dates (see [How to get MS Project start and end dates]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-ms-project-files/how-to-get-ms-project-start-and-end-dates.md" >}})).
 
 ## Get file type and pages count from file 
 

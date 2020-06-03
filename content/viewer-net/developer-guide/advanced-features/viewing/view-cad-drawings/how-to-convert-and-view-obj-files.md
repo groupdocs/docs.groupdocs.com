@@ -2,7 +2,7 @@
 id: how-to-convert-and-view-obj-files
 url: viewer/net/how-to-convert-and-view-obj-files
 title: How to convert and view OBJ files
-weight: 5
+weight: 4
 description: "This article demonstrates how to convert and view OBJ files with GroupDocs.Viewer within your .NET applications."
 keywords: 
 productName: GroupDocs.Viewer for .NET

@@ -37,7 +37,7 @@ using (Signature signature = new Signature("signed.pdf"))
 
 ### Advanced Usage Topics
 
-To learn more about document eSign features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document eSign features, please refer to the [advanced usage section]({{< ref "signature-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples 
 

@@ -8,7 +8,7 @@ keywords:
 productName: GroupDocs.Conversion for .NET
 hideChildren: False
 ---
-There are multiple target formats available when convert documents with **[GroupDocs.Conversion](https://products.groupdocs.com/conversion/net) **and you can always refer to [supported document formats](Supported%2BDocument%2BFormats.html) documentation for more details.
+There are multiple target formats available when convert documents with **[GroupDocs.Conversion](https://products.groupdocs.com/conversion/net) **and you can always refer to [supported document formats]({{< ref "conversion-net/getting-started/supported-document-formats.md" >}}) documentation for more details.
 
 But what about getting possible conversions programmatically - for example it's needed to allow end user to select target format for a specific document or it's required to display the complete list of supported formats?
 
@@ -64,7 +64,7 @@ foreach (var possibleConversions in allPossibleConversions)
 
 ### Advanced Usage Topics
 
-To learn more about document viewing features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document viewing features, please refer to the [advanced usage section]({{< ref "conversion-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

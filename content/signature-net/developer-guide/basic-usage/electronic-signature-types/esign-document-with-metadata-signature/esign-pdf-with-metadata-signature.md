@@ -12,7 +12,7 @@ hideChildren: False
 PDF document metadata is hidden attributes, some of them are visible only over viewing standard document properties like Author, Creation Date, Producer, Entry, Keywords etc.  
 PDF document metadata contains 3 fields: Name, Value and TagPrefix, combination of Name and Tag prefix should be unique.
 
-PDF document metadata could keep big amount of data that provides ability to keep serialized custom objects with additional encryption in there. See [Advanced examples how to embed secure data](eSign%2BPDF%2Bwith%2BMetadata%2Bsignature.html).
+PDF document metadata could keep big amount of data that provides ability to keep serialized custom objects with additional encryption in there. See [Advanced examples how to embed secure data]({{< ref "signature-net/developer-guide/basic-usage/electronic-signature-types/esign-document-with-metadata-signature/esign-pdf-with-metadata-signature.md" >}}).
 
 Here are the steps to add metadata signatures into PDF document with GroupDocs.Signature:
 
@@ -82,7 +82,7 @@ using (Signature signature = new Signature("sample.pdf"))
 
 ### Advanced Usage Topics 
 
-To learn more about document eSign features, please refer to the [advanced usage section](Advanced%2Busage.html).
+To learn more about document eSign features, please refer to the [advanced usage section]({{< ref "signature-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples  
 

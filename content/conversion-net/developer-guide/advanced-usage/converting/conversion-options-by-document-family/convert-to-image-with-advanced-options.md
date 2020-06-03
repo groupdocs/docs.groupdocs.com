@@ -22,10 +22,10 @@ GroupDocs.Conversion provides [ImageConvertOptions](https://apireference.groupd
 *   **[Contrast](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/imageconvertoptions/properties/contrast) **\- adjusts image contrast
 *   **[Gamma](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/imageconvertoptions/properties/gamma) **\- adjust image gamma  
     
-*   **[JpegOptions](Convert%2Bto%2BImage%2Bwith%2Badvanced%2Boptions.html) **\- JPEG specific convert options
-*   **[TiffOptions](Convert%2Bto%2BImage%2Bwith%2Badvanced%2Boptions.html) **\- TIFF specific convert options
-*   **[PsdOptions](Convert%2Bto%2BImage%2Bwith%2Badvanced%2Boptions.html) **\- PSD specific convert options
-*   **[WebpOptions](Convert%2Bto%2BImage%2Bwith%2Badvanced%2Boptions.html)** - WebP specific convert options  
+*   **[JpegOptions]({{< ref "conversion-net/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-image-with-advanced-options.md" >}}) **\- JPEG specific convert options
+*   **[TiffOptions]({{< ref "conversion-net/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-image-with-advanced-options.md" >}}) **\- TIFF specific convert options
+*   **[PsdOptions]({{< ref "conversion-net/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-image-with-advanced-options.md" >}}) **\- PSD specific convert options
+*   **[WebpOptions]({{< ref "conversion-net/developer-guide/advanced-usage/converting/conversion-options-by-document-family/convert-to-image-with-advanced-options.md" >}})** - WebP specific convert options
     
 *   **[UsePdf](https://apireference.groupdocs.com/net/conversion/groupdocs.conversion.options.convert/imageconvertoptions/properties/usepdf) **\- in some cases, for better rendering and elements positioning the source document should be converted to PDF first. If this property is set to *true*, the input firstly is converted to PDF and after that to desired format
 
