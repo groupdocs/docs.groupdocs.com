@@ -14,11 +14,11 @@ GroupDocs.Viewer for .NET API enables you to get file type and pages count with 
 
 For the following document types GroupDocs.Viewer provides additional information:
 
-*   Archive files - a collection of folders inside archive (see [How to get file type and pages count](How%2Bto%2Bget%2Bfile%2Btype%2Band%2Bpages%2Bcount.html));
-*   CAD drawings - a collection of layouts and layers (see [How to get file type and pages count](How%2Bto%2Bget%2Bfile%2Btype%2Band%2Bpages%2Bcount.html)); 
-*   Outlook data files - a collection of folders inside data file (see [How to get file type and pages count](How%2Bto%2Bget%2Bfile%2Btype%2Band%2Bpages%2Bcount.html));
-*   PDF documents - a flag that indicates whether document printing is allowed or not (see [How to get file type and pages count](How%2Bto%2Bget%2Bfile%2Btype%2Band%2Bpages%2Bcount.html));
-*   MS Project documents - project start/end dates (see [How to get file type and pages count](How%2Bto%2Bget%2Bfile%2Btype%2Band%2Bpages%2Bcount.html)).
+*   Archive files - a collection of folders inside archive (see [How to get file type and pages count]({{< ref "viewer-net/developer-guide/main-features/how-to-get-file-type-and-pages-count.md" >}}));
+*   CAD drawings - a collection of layouts and layers (see [How to get file type and pages count]({{< ref "viewer-net/developer-guide/main-features/how-to-get-file-type-and-pages-count.md" >}}));
+*   Outlook data files - a collection of folders inside data file (see [How to get file type and pages count]({{< ref "viewer-net/developer-guide/main-features/how-to-get-file-type-and-pages-count.md" >}}));
+*   PDF documents - a flag that indicates whether document printing is allowed or not (see [How to get file type and pages count]({{< ref "viewer-net/developer-guide/main-features/how-to-get-file-type-and-pages-count.md" >}}));
+*   MS Project documents - project start/end dates (see [How to get file type and pages count]({{< ref "viewer-net/developer-guide/main-features/how-to-get-file-type-and-pages-count.md" >}})).
 
 ## Get file type and pages count from file 
 
@@ -50,7 +50,7 @@ using (Viewer viewer = new Viewer(() => File.OpenRead("sample.pdf")))
 
 ### Advanced Usage Topics
 
-To learn more about document viewing features, please refer to the [advanced usage section](Advanced%2Bfeatures.html).
+To learn more about document viewing features, please refer to the [advanced usage section]({{< ref "viewer-net/developer-guide/advanced-features/_index.md" >}}).
 
 ### GitHub Examples
 

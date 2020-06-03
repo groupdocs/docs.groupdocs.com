@@ -10,7 +10,7 @@ hideChildren: False
 ---
 ## Get supported file formats
 
-Here is the full list of [supported file formats](Supported%2BDocument%2BFormats.html). In case you need to list or print out all of the supported file formats in your application you can do the following:
+Here is the full list of [supported file formats]({{< ref "viewer-net/getting-started/supported-document-formats.md" >}}). In case you need to list or print out all of the supported file formats in your application you can do the following:
 
 *   Call [GetSupportedFileTypes](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/filetype/methods/getsupportedfiletypes) methodof [FileType](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/filetype) class;
 *   Enumerate through the collection of [FileType](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer/filetype)objects*.*
@@ -28,7 +28,7 @@ foreach (FileType fileType in supportedFileTypes)
 
 ### Advanced Usage Topics
 
-To learn more about document viewing features, please refer to the [advanced usage section](Advanced%2Bfeatures.html).
+To learn more about document viewing features, please refer to the [advanced usage section]({{< ref "viewer-net/developer-guide/advanced-features/_index.md" >}}).
 
 ### GitHub Examples
 

@@ -14,10 +14,10 @@ hideChildren: False
 
 There are 10 features, improvements, and bug-fixes in this release, most notable are:
 
-*   [Plotter Document (.plt, .hpg)](https://wiki.fileformat.com/cad/plt/) viewing support added, see [How to view PLT files](How%2Bto%2Bview%2BPLT%2Bfiles.html) for more details;
-*   Viewing specific [Design Web Format File (.dwf)](https://wiki.fileformat.com/cad/dwf) layers is now supported, see [How to view DWF file layers](How%2Bto%2Bview%2BDWF%2Bfile%2Blayers.html) for more details;
-*   Added option to set background color when viewing CAD drawings, see [How to set background color when converting CAD Drawings](How%2Bto%2Bset%2Bbackground%2Bcolor%2Bwhen%2Bconverting%2BCAD%2BDrawings.html) for more details;
-*   Added option to show spreadsheet column headings and row numbers, see [How to show spreadsheet column and row headings](How%2Bto%2Bshow%2Bspreadsheet%2Bcolumn%2Band%2Brow%2Bheadings.html) for more details.  
+*   [Plotter Document (.plt, .hpg)](https://wiki.fileformat.com/cad/plt/) viewing support added, see [How to view PLT files]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-cad-drawings/how-to-view-plt-files.md" >}}) for more details;
+*   Viewing specific [Design Web Format File (.dwf)](https://wiki.fileformat.com/cad/dwf) layers is now supported, see [How to view DWF file layers]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-cad-drawings/how-to-view-dwf-file-layers.md" >}}) for more details;
+*   Added option to set background color when viewing CAD drawings, see [How to set background color when converting CAD Drawings]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-cad-drawings/how-to-set-background-color-when-converting-cad-drawings.md" >}}) for more details;
+*   Added option to show spreadsheet column headings and row numbers, see [How to show spreadsheet column and row headings]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-excel-spreadsheets/how-to-show-spreadsheet-column-and-row-headings.md" >}}) for more details.
     *NOTE: This feature is supported when rendering worksheets into a single page when *SpreadsheetOptions *is set to* SpreadsheetOptions.ForOnePagePerSheet().**
 
 ## Full List of Issues Covering all Changes in this Release

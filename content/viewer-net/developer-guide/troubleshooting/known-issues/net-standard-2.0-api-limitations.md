@@ -1,6 +1,6 @@
 ---
-id: -net-standard-2-0-api-limitations
-url: viewer/net/-net-standard-2-0-api-limitations
+id: net-standard-2-0-api-limitations
+url: viewer/net/net-standard-2-0-api-limitations
 title: .NET Standard 2.0 API Limitations
 weight: 1
 description: "This article is about the limitations of .NET Standard 2.0 compared to .NET API or GroupDocs.Viewer."

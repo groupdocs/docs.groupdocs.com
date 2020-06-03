@@ -12,7 +12,7 @@ hideChildren: False
 
 # Document Viewer - PDF Viewer
 
-Document viewer can operate in different rendering modes, HTML, Image and PDF (see [Features Overview](https://wiki.lisbon.dynabic.com/display/viewer/Features+Overview) for more information).
+Document viewer can operate in different rendering modes, HTML, Image and PDF (see [Features Overview]({{< ref "viewer-net/getting-started/features-overview.md" >}}) for more information).
 
 This article will describe on how to view documents in PDF mode with PDF Viewer.
 
@@ -43,7 +43,7 @@ using (Viewer viewer = new Viewer("sample.docx"))
 
 ### Advanced Usage Topics
 
-To learn more about document viewing features, please refer to the [advanced usage section](Advanced%2Bfeatures.html).
+To learn more about document viewing features, please refer to the [advanced usage section]({{< ref "viewer-net/developer-guide/advanced-features/_index.md" >}}).
 
 ### GitHub Examples
 

@@ -12,7 +12,7 @@ hideChildren: False
 
 ## Document viewer - HTML Viewer
 
-Document viewer can operate in different rendering modes, HTML, Image and PDF (see [Document viewer - HTML Viewer](Document%2Bviewer%2B-%2BHTML%2BViewer.html) for more information). This article will describe on how to view documents in HTML mode with HTML Viewer.
+Document viewer can operate in different rendering modes, HTML, Image and PDF (see [Document viewer - HTML Viewer]({{< ref "viewer-net/developer-guide/main-features/document-viewer-html-viewer/_index.md" >}}) for more information). This article will describe on how to view documents in HTML mode with HTML Viewer.
 
 In HTML rendering mode all pages of the source documents are rendered as separate HTML pages. 
 
@@ -73,7 +73,7 @@ using (Viewer viewer = new Viewer("sample.docx"))
 
 ### Advanced Usage Topics
 
-To learn more about document viewing features, please refer to the [advanced usage section](Advanced%2Bfeatures.html).
+To learn more about document viewing features, please refer to the [advanced usage section]({{< ref "viewer-net/developer-guide/advanced-features/_index.md" >}}).
 
 ### GitHub Examples
 

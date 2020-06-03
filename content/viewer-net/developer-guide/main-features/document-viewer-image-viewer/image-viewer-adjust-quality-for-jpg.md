@@ -26,7 +26,7 @@ This example demonstrates how to adjust quality of the output JPG image.
 
 ### Advanced Usage Topics
 
-To learn more about document viewing features, please refer to the [advanced usage section](Advanced%2Bfeatures.html).
+To learn more about document viewing features, please refer to the [advanced usage section]({{< ref "viewer-net/developer-guide/advanced-features/_index.md" >}}).
 
 ### GitHub Examples
 

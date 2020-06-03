@@ -15,21 +15,21 @@ hideChildren: False
 There are 13 features, improvements, and bug-fixes in this release, most notable are:
 
 *   When converting CAD drawings to HTML, CAD drawings are converted to SVG instead of PNG   
-    *Related article* *[How to convert CAD drawings to HTML](How%2Bto%2Bconvert%2BCAD%2Bdrawings%2Bto%2BHTML.html)*
+*Related article* *[How to convert CAD drawings to HTML]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-cad-drawings/how-to-convert-cad-drawings-to-html.md" >}})*
 *   Added Flat XML ODF Template (.fodg) file format support  
-    *Related article [How to convert and view ODG and FODG files](How%2Bto%2Bconvert%2Band%2Bview%2BODG%2Band%2BFODG%2Bfiles.html)*
+*Related article [How to convert and view ODG and FODG files]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-image-files/how-to-convert-and-view-odg-and-fodg-files.md" >}})*
 *   Added IGES Drawing File (.igs) file format support  
-    *Related article [How to convert and view IGS files](How%2Bto%2Bconvert%2Band%2Bview%2BIGS%2Bfiles.html)*
+*Related article [How to convert and view IGS files]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-cad-drawings/how-to-convert-and-view-igs-files.md" >}})*
 *   Added Common File Format File (.cf2) file-format support  
-    *Related article [How to convert and view CFF2 and CF2 files](How%2Bto%2Bconvert%2Band%2Bview%2BCFF2%2Band%2BCF2%2Bfiles.html)*
+*Related article [How to convert and view CFF2 and CF2 files]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-cad-drawings/how-to-convert-and-view-cff2-and-cf2-files.md" >}})*
 *   Added Wavefront 3D Object File (.obj) file-format support  
-    *Related article [How to convert and view OBJ files](How%2Bto%2Bconvert%2Band%2Bview%2BOBJ%2Bfiles.html)*
+*Related article [How to convert and view OBJ files]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-cad-drawings/how-to-convert-and-view-obj-files.md" >}})*
 *   Added support viewing MS Project documents with notes  
-    *Related article [How to convert and view MS Project documents with notes](How%2Bto%2Bconvert%2Band%2Bview%2BMS%2BProject%2Bdocuments%2Bwith%2Bnotes.html)*
-*   Added support viewing Flat XML ODF Template (.fodg) files  
-    *Related article [How to convert and view FODP and ODP files](How%2Bto%2Bconvert%2Band%2Bview%2BFODP%2Band%2BODP%2Bfiles.html)*
+*Related article [How to convert and view MS Project documents with notes]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-ms-project-files/how-to-convert-and-view-ms-project-documents-with-notes.md" >}})*
+*   Added support viewing OpenDocument Flat XML Presentation (.fodp) files  
+*Related article [How to convert and view FODP and ODP files]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-powerpoint-presentations/how-to-convert-and-view-fodp-and-odp-files.md" >}})*
 *   Improved default font support when converting PowerPoint files to HTML and PDF  
-    *Related article [How to substitute missing font when converting presentations](How%2Bto%2Bsubstitute%2Bmissing%2Bfont%2Bwhen%2Bconverting%2Bpresentations.html)*
+*Related article [How to substitute missing font when converting presentations]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-powerpoint-presentations/how-to-substitute-missing-font-when-converting-presentations.md" >}})*
 
 ## Full List of Issues Covering all Changes in this Release
 
@@ -53,4 +53,4 @@ There are 13 features, improvements, and bug-fixes in this release, most notable
 
 ### Behavior changes
 
-*   Starting from 20.5 the CAD drawings are converted to SVG instead of PNG for better quality please refer to [How to convert CAD drawings to HTML](How%2Bto%2Bconvert%2BCAD%2Bdrawings%2Bto%2BHTML.html) article for more details.
+*   Starting from 20.5 the CAD drawings are converted to SVG instead of PNG for better quality please refer to [How to convert CAD drawings to HTML]({{< ref "viewer-net/developer-guide/advanced-features/viewing/view-cad-drawings/how-to-convert-cad-drawings-to-html.md" >}}) article for more details.
