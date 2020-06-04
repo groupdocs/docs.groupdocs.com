@@ -8,7 +8,7 @@ keywords:
 productName: GroupDocs.Merger for Java
 hideChildren: False
 ---
-[**GroupDocs.Merger**](https://products.groupdocs.com/merger/java) allows to get the list of all [supported file types](https://wiki.lisbon.dynabic.com/display/merger/Supported+Document+Types) by following the below steps:
+[**GroupDocs.Merger**](https://products.groupdocs.com/merger/java) allows to get the list of all [supported file types]({{< ref "merger-java/getting-started/supported-document-formats.md" >}}) by following the below steps:
 
 *   Call [getSupportedFileTypes](https://apireference.groupdocs.com/java/merger/com.groupdocs.merger.domain/FileType#getSupportedFileTypes()) methodof [FileType](https://apireference.groupdocs.com/java/merger/com.groupdocs.merger.domain/FileType) class;
 *   Enumerate through the collection of [FileType](https://apireference.groupdocs.com/java/merger/com.groupdocs.merger.domain/FileType)objects*.*
@@ -28,7 +28,7 @@ for(FileType fileType : fileTypes)
 
 ### Advanced Usage Topics 
 
-To learn more about document merging features, please refer the [advanced usage section](Advanced%2Busage.html).
+To learn more about document merging features, please refer the [advanced usage section]({{< ref "merger-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples 
 

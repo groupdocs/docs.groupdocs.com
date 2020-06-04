@@ -32,7 +32,7 @@ System.out.print(info);
 
 ### Advanced Usage Topics 
 
-To learn more about document merging features, please refer the [advanced usage section](Advanced%2Busage.html).
+To learn more about document merging features, please refer the [advanced usage section]({{< ref "merger-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples 
 
