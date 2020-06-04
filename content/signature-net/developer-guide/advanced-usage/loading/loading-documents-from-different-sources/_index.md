@@ -10,5 +10,5 @@ hideChildren: False
 ---
 ## Loading documents from different sources
 
-[**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) also enables you to render of remotely located documents. The rendering of the document would be similar to [Load document from Stream](https://wiki.lisbon.dynabic.com/display/signature/Load+document+from+Stream). In order to render a remotely located document, below steps can be followed.  
+[**GroupDocs.Signature**](https://products.groupdocs.com/signature/net) also enables you to render of remotely located documents. The rendering of the document would be similar to [Load document from Stream]({{< ref "signature-net/developer-guide/advanced-usage/loading/loading-documents-from-different-sources/load-document-from-stream.md" >}}). In order to render a remotely located document, below steps can be followed.
 Following examples demonstrates how to render document from different sources.

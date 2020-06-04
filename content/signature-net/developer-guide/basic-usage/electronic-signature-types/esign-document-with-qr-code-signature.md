@@ -12,7 +12,7 @@ hideChildren: False
 
 QR-code (or Quick Response code) is a sort of two-dimensional [barcode](https://wiki.lisbon.dynabic.com/display/signature/eSign+document+with+Barcode+signature#eSigndocumentwithBarcodesignature-WhatisaBarcode?)that consists of black squares arranged in a square grid on a white background. QR-code can be read by smartphone camera or specialized devices that are dedicated to QR reading - hand-held scanners, handy terminals, fixed scanners that are used after placing it on a desktop, or embedding it in other devices. Usually QR-codes contain data that points to a website or application, emails, or phone numbers, product identifiers, or trackers. Therefore QR-code application scope extends general marketing and item identification to document management.
 
-![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/QR%20Code%202.png?version=1&modificationDate=1581412288000&api=v2)
+![](download/thumbnails/85230464/230898812)  
 
 ## How to eSign document with QR-Code signature 
 

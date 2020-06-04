@@ -12,7 +12,7 @@ hideChildren: False
 
 A **form field** is the interactive element located on document page that allows user data input through various control types like free input text box, multi-line text box, check boxes, drop down lists etc. Different document types support specific list of form field types. These elements are used to collect information from user on template form. Each Form Field element has an unique name, settings and value field. Form Fields should have unique names within the form. Picture below demonstrates possible document page with form fields.
 
-![](https://wiki.lisbon.dynabic.com/download/attachments/29426734/image2020-2-11%200%3A18%3A46.png?version=1&modificationDate=1581373127000&api=v2)
+![](signature-net/images/esign-document-with-form-field-signature.png)
 
 ## How to eSign document with Form Field signature
 

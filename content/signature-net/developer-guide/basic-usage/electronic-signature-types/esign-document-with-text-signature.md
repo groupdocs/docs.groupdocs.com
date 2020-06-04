@@ -12,7 +12,7 @@ hideChildren: False
 
 A** Text** electronic signature is an arbitrary text that is added to a document in a native way dependent on document type. GroupDocs.Signature provides text signature feature and allows to customize wide range of text settings - from font name, size and color to alignment, borders, shadow effects etc. This is how text signature may look like:  
 
-![](https://wiki.lisbon.dynabic.com/download/attachments/29426676/Screenshot_1.png?version=1&modificationDate=1581502727000&api=v2)
+![](signature-net/images/esign-document-with-text-signature.png)
 
 ## How to eSign document with Text signature 
 
