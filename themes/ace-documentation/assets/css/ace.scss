@@ -58,39 +58,6 @@ $dark:          #343a40;
     font-size: 10px;
 }
 
-@media (min-width: 768px) {
-    .docs-sidenav, .docs-toc{
-        height: calc(100vh - 4rem);
-        top:4rem;
-        position: sticky;
-    }
-    .docs-sidenav .navbar, .docs-toc .navbar{
-        padding-right: 0;
-    }
-    .docs-sidenav .navbar-collapse, .docs-sidenav .navbar-nav{
-        width: 100%;
-    }
-    .docs-sidenav .nav-link, .docs-toc li a{
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-    }
-    .docs-sidenav .nav-link > span.badge.badge-primary, .docs-toc li a > span.badge.badge-primary{
-        margin-top: 5px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .docs-toc.large{
-        height: calc(100vh - 4rem);
-    }
-}
-
-@media (max-width: 1200px) {
-    .docs-toc.large{
-        display:none;
-    }
-}
 
 .docs-toc{
     padding-top: 10px;
