@@ -1,45 +1,13 @@
-.leftBar, .rightBar  {
-    //background-color: $gray-100; // TEMP
-    display: flex; 
-    flex: 0 0 8rem;
-  }
-
-.pf-header {
-    width: 100%;
-    background-color: $black;
-    text-align: center;
-    color: $white;
-    padding-top: 5rem;      
-    height: 14rem;
-}
-
 .topheader{
     box-shadow: unset !important;
-  }
-
-.pf-header-title {
-    vertical-align: middle;  
-    font-size: $font-size-lg;
-}
-
-.pf-header-motto {
-    font-size: $font-size-xsm;
-}
-
-.pf-header-motto a{     
-    color: inherit;
-}
-
-.navHome {
-    display: flex; 
-    flex: 0 0 16rem;
   }
 
 .pfMain{
     font-family: "Open Sans"; 
     display: flex; 
     flex: 2 0 30rem; 
-    text-align: center;   
+    text-align: center;  
+    padding: 0 8rem; 
 }
 
 .pf-product-container{
@@ -192,6 +160,6 @@
     min-height: 240px;
     background-color: $white;
 }
-
-
+/*
+*/
 

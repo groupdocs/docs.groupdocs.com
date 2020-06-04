@@ -6,8 +6,7 @@
         {{- partial "groupdocs-header.html" . -}}
         {{- partial "header-landing" . -}}
 
-        <main style="display: flex;">   
-            <div class="leftBar"></div>
+        <main style="display: flex;">  
             <div class="pfMain">
                 
                 {{ range where $.Site.Data.products.Items "Family" .Params.Id}}
@@ -15,7 +14,6 @@
                 {{ end }}
 
             </div>
-            <div class="rightBar"></div>
         </main>
         {{- partial "groupdocs-footer.html" . -}}
         {{- partial "footer.html" . -}}

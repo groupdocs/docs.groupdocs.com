@@ -51,62 +51,76 @@
 
 
 // Home page
+@media screen and (max-width: 1024px){
+  .productsHome{
+    padding: 0 4rem 0 8rem !important;  
+  }
 
+  .pfMain{
+    padding: 0 4rem !important;
+  }
+}
 
 @media screen and (max-width: 768px){
-    .navHome {
+  .moreServicesHome {
       flex: 0 0 0 !important;
       display: none !important;
-    
-    } 
+  }
 
-    .moreServicesHome {
-        flex: 0 0 0 !important;
-        display: none !important;
-    }
+  .sectionName {
+    display: none !important;
+  }
 
-    .sectionName {
-      display: none !important;
-    }
+  main{
+    display: block !important;
+  }
 
-    main{
-      display: block !important;
-      //background-color: red;
-    }
+  .pfMain{
+    padding: 0 1rem !important;
+  }
+
+  .pf-product-container {    
+    width: 75% !important;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 577px){
   .productsHome{
     padding: 0 8rem !important; 
-  }
+  } 
 }
 
 @media screen and (max-width: 576px) and (min-width: 481px) {
-
   .productsHome{
     padding: 0 4rem !important; 
-  }
+  }  
 }
 
 @media screen and (max-width: 480px) and (min-width: 351px){
-
   .productsHome{
     padding: 0 1rem !important; 
   }
+
   .productFamilyItem{
     margin: 0 2rem !important; 
+  }
+
+  .pfMain{
+    padding: 0 !important;
+  }
+
+  .pf-product-container {    
+    width: 100% !important;
   }
 }
 
 @media screen and (max-width: 350px) and (min-width: 321px){
-
   .productsHome{
     padding: 0 .5rem !important; 
   }
 }
 
 @media screen and (max-width: 320px) {
-
   .productsHome{
     padding: 0 .2rem !important; 
   }
@@ -114,58 +128,21 @@
   .btn-net, .btn-java{
     font-size: 11px !important; 
   }
-
 }
-
-/*
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-*/
-
-// @media screen and (max-width: $mobile-breakpoint) 
-// {
-//     .navHome {
-//         //flex: 0 0 0;
-//         background-color: red;
-//     }
-//     .moreServicesHome {
-//         //flex: 0 0 0;
-//         //display: none;
-//         background-color: red;
-//     }
-// }
-
-// @media (min-width: 768px) {
-//     .navHome {
-//         flex: 0 0 0;
-//     }
-//     .moreServicesHome {
-//         flex: 0 0 0;
-//         display: none;
-//     }
-// }
 // END OF - Home page
-
 
 // Product Family landing 
 
-// @media screen and (max-width: $mobile-breakpoint) 
-// {
-//     .pfMain {
-//         flex-direction: column;
-//         align-items: center;
-//         justify-content: center;
-//     }
+@media screen and (max-width: $mobile-breakpoint) 
+{
+    .pfMain {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-//     .leftBar, .rightBar {
-//         display: none;
-//         flex: 0 0 0;
-//     }
-
-//     .spacer{    
-//         display: none;
-//     }
-// }
+    .spacer{    
+        display: none;
+    }
+}
 // END OF - Product Family landing 
