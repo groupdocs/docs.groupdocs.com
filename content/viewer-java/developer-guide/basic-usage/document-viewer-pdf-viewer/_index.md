@@ -8,7 +8,7 @@ keywords:
 productName: GroupDocs.Viewer for Java
 hideChildren: False
 ---
-Document viewer can operate in different rendering modes, HTML, Image and PDF (see [Document viewer - PDF Viewer](Document%2Bviewer%2B-%2BPDF%2BViewer.html) for more information). This article will describe on how to view documents in PDF mode with PDF Viewer.
+Document viewer can operate in different rendering modes, HTML, Image and PDF (see [Document viewer - PDF Viewer]({{< ref "viewer-java/developer-guide/basic-usage/document-viewer-pdf-viewer/_index.md" >}}) for more information). This article will describe on how to view documents in PDF mode with PDF Viewer.
 
 When rendering to PDF format with [**GroupDocs.Viewer**](https://products.groupdocs.com/viewer/java), it saves all pages of source document as a single target PDF document. 
 
@@ -37,7 +37,7 @@ viewer.close();
 
 ### Advanced Usage Topics
 
-To learn more about document viewing features, please refer the [advanced usage section](Advanced%2Busage.html).
+To learn more about document viewing features, please refer the [advanced usage section]({{< ref "viewer-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

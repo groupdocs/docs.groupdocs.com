@@ -30,7 +30,7 @@ This example demonstrates how to render document for display with text.
 
 ### Advanced Usage Topics
 
-To learn more about document viewing features, please refer the [advanced usage section](Advanced%2Busage.html).
+To learn more about document viewing features, please refer the [advanced usage section]({{< ref "viewer-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

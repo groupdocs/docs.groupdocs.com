@@ -461,15 +461,14 @@ viewerImageHandler.ClearCache(olderThanTwoDays)
     htmlOptions.setIgnoreResourcePrefixForCss(true);
     ```
     
-8.  **[How to set default font name](https://docs.asposeptyltd.com/display/viewerjava/Working+with+Common+Operations)**
-9.  **[Show hidden pages for Visio files](https://docs.asposeptyltd.com/display/viewerjava/Render+Visio+Document+as+HTML+with+Hidden+Pages)[](file:///C:/wiki/display/viewer/17.++Show+hidden+pages+for+Visio+files)**
-10.  **[How to specify internal hyperlink prefix for Excel files](https://docs.asposeptyltd.com/display/viewerjava/Render+Excel+as+Html+with+InternalHyperlinkPrefix)**
+8.  **[How to set default font name]({{< ref "viewer-java/developer-guide/advanced-usage/rendering/common-rendering-options/replace-missing-font.md" >}})**
+9.  **[Show hidden pages for Visio files]({{< ref "viewer-java/developer-guide/advanced-usage/rendering/common-rendering-options/show-hidden-pages.md" >}})[](file:///C:/wiki/display/viewer/17.++Show+hidden+pages+for+Visio+files)**
+10.  **How to specify internal hyperlink prefix for Excel files**
 11.  **Mark CachedPageDescription redundant constructor as Obsolete**  
     1.  Class com.groupdocs.viewer.domain.CachedPageDescription constructor public CachedPageDescription(String guid, CacheFileType cacheFileType) marked as deprecated
 12.  ****Improve CAD files rendering ****  
     1.  Class com.groupdocs.viewer.domain.DocumentTypeName constant public final String Autocad = "Autocad"; changed to public final String CAD = "CAD"
 13.  **Update public classes fields access modifiers.**  
-    
     1.  Class com.groupdocs.viewer.localization.LocalizedStringKeys new contant EXC\_TMPL\_CORRUPTED\_OR\_DAMAGED\_FILE
     2.  Class com.groupdocs.viewer.localization.LocalizedStringKeys new contant EXC\_TMPL\_FILE\_TYPE\_NOT\_SUPPORTED
     3.  Class com.groupdocs.viewer.localization.LocalizedStringKeys new contant EXC\_TMPL\_INVALID\_PASSWORD
@@ -478,13 +477,10 @@ viewerImageHandler.ClearCache(olderThanTwoDays)
     6.  Class com.groupdocs.viewer.localization.LocalizedStringKeys new contant EXC\_TMPL\_CACHE\_FILE\_NOT\_FOUND
     7.  Class com.groupdocs.viewer.localization.LocalizedStringKeys new contant EXC\_TMPL\_GUID\_NOT\_SPECIFIED
     8.  Class com.groupdocs.viewer.localization.LocalizedStringKeys new contant EXC\_TMPL\_TRANSFORMATION\_FAILED\_PAGE\_NOT\_EXIST
-    
-14.  **[Ability to set default font when rendering Diagram documents](https://docs.asposeptyltd.com/display/viewerjava/Working+with+Common+Operations)[](http://lisbon.dynabic.com/wiki/display/viewer/16.++How+to+set+default+font+name)**
+14.  **[Ability to set default font when rendering Diagram documents]({{< ref "viewer-java/developer-guide/advanced-usage/rendering/common-rendering-options/replace-missing-font.md" >}})**
 15.  The ability to show and hide PDF layers
-    
-    Starting from version 3.7.0 GroupDocs.Viewer the rendering Pdf documents into html representation was improved. It is possible to work with layers in html representation of Pdf document (e.g. show\\hide) with help of javascript. Each layer is separated into <div> tag which has Html data tag "data-pdflayer" and its value contains layer name. For example Pdf document has layer with name "Backgroung" so output html will contain tag
-    
-    **Html**
+16.  Starting from version 3.7.0 GroupDocs.Viewer the rendering Pdf documents into html representation was improved. It is possible to work with layers in html representation of Pdf document (e.g. show\\hide) with help of javascript. Each layer is separated into <div> tag which has Html data tag "data-pdflayer" and its value contains layer name. For example Pdf document has layer with name "Backgroung" so output html will contain tag
+17.  **Html**
     
     ```csharp
     <div data-pdflayer="Backgroung"> .... </div>

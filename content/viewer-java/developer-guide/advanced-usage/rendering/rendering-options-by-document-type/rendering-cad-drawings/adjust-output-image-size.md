@@ -35,7 +35,7 @@ When rendering CAD drawings GroupDocs.Viewer provides following options:
 
 ### How sizing works for Sheets and Layouts
 
-DWF drawing format consists of sheets, that may have different sizes, DWG and DXF drawing formats consists of the Model and Layouts. Refer to [Adjust output image size](Adjust%2Boutput%2Bimage%2Bsize.html) article that describes layouts rendering. Sizing rules described above, work for the drawings that consist of a one sheet or rendered without layouts and provide only one page as an output. In this section we will review how sizing works when the output consist of several pages. Later in this article, for convenience, we will refer to Model and layouts as sheets.
+DWF drawing format consists of sheets, that may have different sizes, DWG and DXF drawing formats consists of the Model and Layouts. Refer to [Adjust output image size]({{< ref "viewer-java/developer-guide/advanced-usage/rendering/rendering-options-by-document-type/rendering-cad-drawings/adjust-output-image-size.md" >}}) article that describes layouts rendering. Sizing rules described above, work for the drawings that consist of a one sheet or rendered without layouts and provide only one page as an output. In this section we will review how sizing works when the output consist of several pages. Later in this article, for convenience, we will refer to Model and layouts as sheets.
 
 By default, when we render DWF format with several sheets, or DWG and DXF formats with layouts,  each sheet is rendered into separate page, that has it's own size. 
 

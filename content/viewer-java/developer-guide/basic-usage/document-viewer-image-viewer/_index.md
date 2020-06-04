@@ -8,7 +8,7 @@ keywords:
 productName: GroupDocs.Viewer for Java
 hideChildren: False
 ---
-Document viewer can operate in different rendering modes, HTML, Image and PDF (see [Document viewer - Image Viewer](Document%2Bviewer%2B-%2BImage%2BViewer.html) for more information). This article will describe on how to view documents in Image mode with Image Viewer.
+Document viewer can operate in different rendering modes, HTML, Image and PDF (see [Document viewer - Image Viewer]({{< ref "viewer-java/developer-guide/basic-usage/document-viewer-image-viewer/_index.md" >}}) for more information). This article will describe on how to view documents in Image mode with Image Viewer.
 
 Image Viewer provides [PngViewOptions](https://apireference.groupdocs.com/java/viewer/com.groupdocs.viewer.options/PngViewOptions) and [JpgViewOptions ](https://apireference.groupdocs.com/java/viewer/com.groupdocs.viewer.options/JpgViewOptions)classes to set specific options for rendering the document into desired image format.
 
@@ -51,7 +51,7 @@ viewer.close();
 
 ### Advanced Usage Topics
 
-To learn more about document viewing features, please refer the [advanced usage section](Advanced%2Busage.html).
+To learn more about document viewing features, please refer the [advanced usage section]({{< ref "viewer-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

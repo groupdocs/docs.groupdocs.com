@@ -15,11 +15,11 @@ hideChildren: False
 
 For the following document types GroupDocs.Viewer provides additional information:
 
-*   Archive files - collection of folders inside archive (see [Get file information](Get%2Bfile%2Binformation.html));
-*   CAD drawings - collection of layouts and layers (see [Get View Info for CAD Drawing\*](Get%2Bfile%2Binformation.html)); 
-*   Outlook data files - collection of folders inside data file (see [Get View Info for Outlook Data File\*](Get%2Bfile%2Binformation.html));
-*   PDF documents - flag that indicates whether document printing is allowed or not (see [Get View Info for PDF Document\*](Get%2Bfile%2Binformation.html));
-*   MS Project documents - project start/end dates (see [Get file information](Get%2Bfile%2Binformation.html)).
+*   Archive files - collection of folders inside archive (see [Get file information]({{< ref "viewer-java/developer-guide/basic-usage/get-file-information.md" >}}));
+*   CAD drawings - collection of layouts and layers (see [Get View Info for CAD Drawing\*]({{< ref "viewer-java/developer-guide/basic-usage/get-file-information.md" >}}));
+*   Outlook data files - collection of folders inside data file (see [Get View Info for Outlook Data File\*]({{< ref "viewer-java/developer-guide/basic-usage/get-file-information.md" >}}));
+*   PDF documents - flag that indicates whether document printing is allowed or not (see [Get View Info for PDF Document\*]({{< ref "viewer-java/developer-guide/basic-usage/get-file-information.md" >}}));
+*   MS Project documents - project start/end dates (see [Get file information]({{< ref "viewer-java/developer-guide/basic-usage/get-file-information.md" >}})).
 
 ## Get file information for the file from local disk
 
@@ -55,7 +55,7 @@ System.out.println("Pages count: " + info.getPages().size());
 
 ### Advanced Usage Topics
 
-To learn more about document viewing features, please refer the [advanced usage section](Advanced%2Busage.html).
+To learn more about document viewing features, please refer the [advanced usage section]({{< ref "viewer-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

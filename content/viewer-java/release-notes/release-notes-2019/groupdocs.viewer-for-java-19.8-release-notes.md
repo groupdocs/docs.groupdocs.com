@@ -56,19 +56,19 @@ There are 23 features, improvements and bug fixes in this release, the most nota
 
 Since the version v19.8 Groupdocs.Viewer for Java API allows to retrieve the list of containing folders. For the detail please visit the link as follows:
 
-*   [Retrieving list of Outlook folders](https://docs.groupdocs.com/display/viewerjava/Working+with+Outlook+Data+Files#WorkingwithOutlookDataFiles-RetrievinglistofOutlookfolders)
+*   [Retrieving list of Outlook folders]({{< ref "viewer-java/developer-guide/advanced-usage/rendering/rendering-options-by-document-type/rendering-outlook-data-files/get-view-info-for-outlook-data-file.md" >}})
 
 ### Rendering messages from specified folder only
 
 By default, messages from all folders (including nested folders) are rendered. Version 19.8 allows you to render items form specific folder. Please visit the following link for the detail:
 
-*   [Rendering messages from specified folder](https://docs.groupdocs.com/display/viewerjava/Working+with+Outlook+Data+Files#WorkingwithOutlookDataFiles-Renderingmessagesfromspecifiedfolderonly)
+*   [Rendering messages from specified folder]({{< ref "viewer-java/developer-guide/advanced-usage/rendering/rendering-options-by-document-type/rendering-outlook-data-files/render-outlook-data-file-folder.md" >}})
 
 ### Ignoring empty columns when rendering Spreadsheet documents
 
 Since version 19.8, the GroupDocs.Viewer for Java allows to omit and do not render empty columns. Please visit the following link:
 
-*   [Ignoring Empty Columns in Excel Worksheets When Rendering](https://docs.groupdocs.com/display/viewerjava/Ignoring+Empty+Columns+in+Excel+Worksheets+When+Rendering)
+*   [Ignoring Empty Columns in Excel Worksheets When Rendering]({{< ref "viewer-java/developer-guide/advanced-usage/rendering/rendering-options-by-document-type/rendering-spreadsheets/skip-rendering-of-empty-columns.md" >}})
 
 ### Public API changes in this version
 

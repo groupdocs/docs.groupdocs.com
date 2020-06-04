@@ -18,7 +18,7 @@ Following are the links to some useful resources you may need to accomplish your
 
 *   [GroupDocs.Viewer for Java Online Documentation]({{< ref "viewer-java" >}})
 *   [GroupDocs.Viewer for Java Features]({{< ref "viewer-java/getting-started/features-overview.md" >}})
-*   [GroupDocs.Viewer for Java Limitations](https://docs.groupdocs.com/display/viewerjava/Evaluation+Limitations+and+Licensing+of+GroupDocs.Viewer)
+*   [GroupDocs.Viewer for Java Limitations]({{< ref "viewer-java/getting-started/evaluation-limitations-and-licensing.md" >}})
 *   [GroupDocs.Viewer for Java Release Notes]({{< ref "viewer-java/release-notes/_index.md" >}})
 *   [GroupDocs.Viewer for Java Product Page](https://products.groupdocs.com/viewer/java)
 *   [Download GroupDocs.Viewer for Java](https://artifact.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-viewer)

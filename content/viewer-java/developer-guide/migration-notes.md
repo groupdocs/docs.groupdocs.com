@@ -46,4 +46,4 @@ List<PageHtml> pages = htmlHandler.getPages("sample.docx", options);
         viewer.close();
 ```
 
-For more code examples and specific use cases please refer to our [Developer Guide](https://wiki.lisbon.dynabic.com/display/viewer/Developer+Guide*) documentation or [GitHub](https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-Java) samples and showcases.
+For more code examples and specific use cases please refer to our [Developer Guide]({{< ref "viewer-java/developer-guide/_index.md" >}}) documentation or [GitHub](https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-Java) samples and showcases.

@@ -149,13 +149,13 @@ Documentation articles:
 
 1.  1.  Load file tree
     2.  Get file list
-2.  [](http://lisbon.dynabic.com/wiki/display/viewer/Introduction+to+GroupDocs.Viewer)[](https://docs.asposeptyltd.com/display/viewerjava/Supported+Document+Formats)OTS format support
-3.  [](http://lisbon.dynabic.com/wiki/display/viewer/Introduction+to+GroupDocs.Viewer)[](https://docs.asposeptyltd.com/display/viewerjava/Supported+Document+Formats)WebP file format support
+2.  OTS format support
+3.  WebP file format support
 4.  Investigate EMLX format support Public API changes:
     1.  class *com.groupdocs.viewer.**domain**.DocumentTypeFormat* new constant added *public static final String APPLE\_MAIL = "Apple Mail";*
-5.  [](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=3837116)[](https://docs.asposeptyltd.com/pages/viewpage.action?pageId=42729823)Implement setting to prevent glyphs grouping when rendering pdf documents
-6.  [](http://lisbon.dynabic.com/wiki/display/viewer/07.++Multiple+pages+per+sheet+for+Excel+files)[](https://docs.asposeptyltd.com/display/viewerjava/Partial+Rendering+of+Large+Excel+Sheets+in+HTML+Mode)Partial rendering of large Excel sheets in HTML mode
-7.  [](http://lisbon.dynabic.com/wiki/display/viewer/07.++Multiple+pages+per+sheet+for+Excel+files)[](https://docs.asposeptyltd.com/display/viewerjava/Partial+Rendering+of+Large+Excel+Sheets+in+Image+Mode)Partial rendering of large Excel sheets in Image mode
+5.  Implement setting to prevent glyphs grouping when rendering pdf documents
+6.  Partial rendering of large Excel sheets in HTML mode
+7.  Partial rendering of large Excel sheets in Image mode
 8.  Implement parameterless ViewerHtmlHandler and ViewerImageHandler constructors, after setting StoragePath and UseCache in configuration files following can be implemented as below:
     
     **Example of rendering document using parameterless constructor and configurations**
@@ -171,7 +171,7 @@ Documentation articles:
     ```
     
 9.  Implement setting to configure content ordering in resultant html document
-10.  [](http://lisbon.dynabic.com/wiki/display/viewer/Introduction+to+GroupDocs.Viewer)[](https://docs.asposeptyltd.com/display/viewerjava/Supported+Document+Formats)LaTeX file format support
+10.  LaTeX file format support
 11.  Add {resource-name} pattern to HtmlOptions.HtmlResourcePrefix
     
     **HtmlResourcePrefix setting supports replacement patterns: {page-number} and {resource-name}.**
@@ -183,5 +183,5 @@ Documentation articles:
     //The {page-number} and {resource-name} patterns will be replaced with current processing page number and resource name accordingly. 
     ```
     
-12.  [](http://lisbon.dynabic.com/wiki/display/viewer/04.++Get+document+Image+representation)[](https://docs.asposeptyltd.com/display/viewerjava/Render+Document+as+Image)Add CountPagesToRender and PageNumbersToRender properties to RenderOptions class
-13.  [](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=3837121)[](https://docs.asposeptyltd.com/pages/viewpage.action?pageId=42729835)Implement setting which allows render pdf document layers separately
+12.  Add CountPagesToRender and PageNumbersToRender properties to RenderOptions class
+13.  Implement setting which allows render pdf document layers separately

@@ -8,7 +8,7 @@ keywords:
 productName: GroupDocs.Viewer for Java
 hideChildren: False
 ---
-Document viewer can operate in different rendering modes, HTML, Image and PDF (see [Features Overview](Document%2Bviewer%2B-%2BHTML%2BViewer.html) for more information). This article will describe on how to view documents in HTML mode with HTML Viewer.
+Document viewer can operate in different rendering modes, HTML, Image and PDF (see [Features Overview]({{< ref "viewer-java/developer-guide/basic-usage/document-viewer-html-viewer/_index.md" >}}) for more information). This article will describe on how to view documents in HTML mode with HTML Viewer.
 
 In HTML rendering mode all pages of the source documents are rendered as separate HTML pages. 
 
@@ -78,7 +78,7 @@ The following code shows how to render document to HTML with external resources.
 
 ### Advanced Usage Topics
 
-To learn more about document viewing features, please refer the [advanced usage section](Advanced%2Busage.html).
+To learn more about document viewing features, please refer the [advanced usage section]({{< ref "viewer-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 
