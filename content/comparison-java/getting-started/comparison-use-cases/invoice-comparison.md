@@ -18,9 +18,9 @@ For example, there are two invoices in the DOCX format and you need to compare t
 | --- | --- |
 | ![](comparison-java/images/invoice-comparison.png)) | ![](comparison-java/images/invoice-comparison_1.png))
 
-[**GroupDocs****.Comparison**](https://products.groupdocs.com/comparison/java) provides the ability to compare two files in DOCX format(or any other [supported file formats]({{< ref "comparison-java/getting-started/supported-document-formats.md" >}})) with adjustment of detalization level and[comparison sensitivity](https://docs.groupdocs.com/display/comparisonjava/Adjusting+comparison+sensitivity).
+[**GroupDocs****.Comparison**](https://products.groupdocs.com/comparison/java) provides the ability to compare two files in DOCX format(or any other [supported file formats]({{< ref "comparison-java/getting-started/supported-document-formats.md" >}})) with adjustment of detalization level and[comparison sensitivity](https://docs.groupdocs.com/display/comparisonjava/Set+Comparison+Sensitivity+While+Comparing+Documents).
 
-The following are the steps to compare two DOCX files with specific settings of detalization level and[comparison sensitivity.](Adjusting%2Bcomparison%2Bsensitivity.html)
+The following are the steps to compare two DOCX files with specific settings of detalization level and[comparison sensitivity.]({{< ref "comparison-java/developer-guide/advanced-usage/comparison/adjusting-comparison-sensitivity.md" >}})
 
 *   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer)objectwith source document path or stream;
 *   Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String))method and specify target document path or stream;

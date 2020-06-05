@@ -38,7 +38,7 @@ Supported formats:
     
 *   Source Code files – CS, JAVA, CPP, JS, PHP, HTML, JSON, etc;
     
-*   and many others [supported file formats](Supported%2BDocument%2BFormats.html).
+*   and many others [supported file formats]({{< ref "comparison-java/getting-started/supported-document-formats.md" >}}).
     
 
 ## Why Use GroupDocs.Comparison?

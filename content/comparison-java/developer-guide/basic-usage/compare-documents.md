@@ -73,7 +73,7 @@ try {
 
 ### Advanced Usage Topics
 
-To learn more about document comparison features, please refer to the [advanced usage section](Advanced%2BUsage.html).
+To learn more about document comparison features, please refer to the [advanced usage section]({{< ref "comparison-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 

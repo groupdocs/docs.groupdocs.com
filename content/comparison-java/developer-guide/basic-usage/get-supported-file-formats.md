@@ -8,7 +8,7 @@ keywords:
 productName: GroupDocs.Comparison for Java
 hideChildren: False
 ---
-**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to get the list of all [supported file formats](Supported%2BDocument%2BFormats.html) by following the below steps:
+**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to get the list of all [supported file formats]({{< ref "comparison-java/getting-started/supported-document-formats.md" >}}) by following the below steps:
 
 *   Call [getSupportedFileTypes](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/FileType#getSupportedFileTypes())of [FileType](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/FileType) class;
 *   Enumerate through the collection of [FileType](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/FileType)objects*.*
@@ -26,7 +26,7 @@ for (FileType fileType : fileTypes) {
 
 ### Advanced Usage Topics
 
-To learn more about document comparison features, please refer to the [advanced usage section](Advanced%2BUsage.html).
+To learn more about document comparison features, please refer to the [advanced usage section]({{< ref "comparison-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples
 
