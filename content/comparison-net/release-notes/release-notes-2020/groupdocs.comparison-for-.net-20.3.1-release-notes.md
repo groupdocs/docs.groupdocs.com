@@ -17,7 +17,7 @@ This is a hotfix version that fixes comparing SpreadSheet documents using .NET C
 
 | Key | Summary | Issue Type |
 | --- | --- | --- |
-| [COMPARISONNET-2266](https://issue.lisbon.dynabic.com/issues/COMPARISONNET-2266) | Comparing SpredSheet (Cells) documents does not work on .NET Core framework | Bug |
+| COMPARISONNET-2266 | Comparing SpredSheet (Cells) documents does not work on .NET Core framework | Bug |
 
 ## Public API and Backward Incompatible Changes
 

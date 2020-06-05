@@ -23,11 +23,11 @@ Below the list of most notable changes in  release of GroupDocs.Comparison for 
 
 | Key | Summary | Issue Type |
 | --- | --- | --- |
-| [COMPARISONNET-1518](http://lisbon.dynabic.com/jira/browse/COMPARISONNET-1518) | Implement image update changes by shapes | Improvement |
-| [COMPARISONNET-1517](http://lisbon.dynabic.com/jira/browse/COMPARISONNET-1517) | Implement image update changes by zone | Improvement |
-| [COMPARISONNET-1501](http://lisbon.dynabic.com/jira/browse/COMPARISONNET-1501) | Improve registration of changes by groups | Improvement |
-| [COMPARISONNET-1498](http://lisbon.dynabic.com/jira/browse/COMPARISONNET-1498) | Improve Comparison.Imaging | Improvement |
-| [COMPARISONNET-1499](http://lisbon.dynabic.com/jira/browse/COMPARISONNET-1499) | Fix ColumnMerger problem | Bug |
+| COMPARISONNET-1518 | Implement image update changes by shapes | Improvement |
+| COMPARISONNET-1517 | Implement image update changes by zone | Improvement |
+| COMPARISONNET-1501 | Improve registration of changes by groups | Improvement |
+| COMPARISONNET-1498 | Improve Comparison.Imaging | Improvement |
+| COMPARISONNET-1499 | Fix ColumnMerger problem | Bug |
 
 ## Public API and Backward Incompatible Changes
 
