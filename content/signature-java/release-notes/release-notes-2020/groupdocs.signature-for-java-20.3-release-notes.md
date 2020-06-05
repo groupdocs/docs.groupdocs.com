@@ -46,23 +46,23 @@ The most notable changes:
 
 | Key | Summary | Issue Type |
 | --- | --- | --- |
-| [SIGNATURENET-2453](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2453) | Implement ability to search only for signatures marked as IsSignature | New Feature |
-| [SIGNATURENET-2426](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2426) | Implement result of Sign method as SignResult class with newly created signatures list | New Feature |
-| [SIGNATURENET-2394](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2394) | Implement ability to hide signatures from Document Preview | New Feature |
-| [SIGNATURENET-2391](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2391) | Implement Delete method to remove existing document signatures | New Feature |
-| [SIGNATURENET-2326](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2326) | Implement Update method to modify existing document signatures | New Feature |
-| [SIGNATURENET-2473](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2473) | Implement support of Digital signatures for Spreadsheet document under .NET Standard 2.0 framework | Improvement |
-| [SIGNATURENET-2472](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2472) | Improve method ToList<T> of SearchResult to return only non null instances | Improvement |
-| [SIGNATURENET-2434](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2434) | Provide ICloneable interface implementation for all signature types | Improvement |
-| [SIGNATURENET-2431](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2431) | Override Equals / GetHashCode methods for all signatures to have compare ability | Improvement |
-| [SIGNATURENET-2425](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2425) | Generate new ProjectGuid and UpgradeCode for MSI package | Improvement |
-| [SIGNATURENET-2404](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2404) | Implement support enumeration type properties of embedded custom objects for QR-Code signatures | Improvement |
-| [SIGNATURENET-2403](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2403) | Improve exceptions usage | Improvement |
-| [SIGNATURENET-2387](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2387) | Allow adding Digital signatures to already signed Spreadsheet documents without removing previous signatures | Improvement |
-| [SIGNATURENET-1465](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-1465) | Implement exceptions for required or incorrect password when load document | Improvement |
-| [SIGNATURENET-2400](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2400) | SaveOptions value OverwriteExistingFile with default value as false to prevent saving to the same file | Bug |
-| [SIGNATURENET-2382](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2382) | Compatibility issues under .NET Standard 2.0 | Bug |
-| [SIGNATURENET-2508](https://issue.lisbon.dynabic.com/issues/SIGNATURENET-2508) | Sign process inserts wrong empty metadata for signatures information | Bug |
+| SIGNATURENET-2453 | Implement ability to search only for signatures marked as IsSignature | New Feature |
+| SIGNATURENET-2426 | Implement result of Sign method as SignResult class with newly created signatures list | New Feature |
+| SIGNATURENET-2394 | Implement ability to hide signatures from Document Preview | New Feature |
+| SIGNATURENET-2391 | Implement Delete method to remove existing document signatures | New Feature |
+| SIGNATURENET-2326 | Implement Update method to modify existing document signatures | New Feature |
+| SIGNATURENET-2473 | Implement support of Digital signatures for Spreadsheet document under .NET Standard 2.0 framework | Improvement |
+| SIGNATURENET-2472 | Improve method ToList<T> of SearchResult to return only non null instances | Improvement |
+| SIGNATURENET-2434 | Provide ICloneable interface implementation for all signature types | Improvement |
+| SIGNATURENET-2431 | Override Equals / GetHashCode methods for all signatures to have compare ability | Improvement |
+| SIGNATURENET-2425 | Generate new ProjectGuid and UpgradeCode for MSI package | Improvement |
+| SIGNATURENET-2404 | Implement support enumeration type properties of embedded custom objects for QR-Code signatures | Improvement |
+| SIGNATURENET-2403 | Improve exceptions usage | Improvement |
+| SIGNATURENET-2387 | Allow adding Digital signatures to already signed Spreadsheet documents without removing previous signatures | Improvement |
+| SIGNATURENET-1465 | Implement exceptions for required or incorrect password when load document | Improvement |
+| SIGNATURENET-2400 | SaveOptions value OverwriteExistingFile with default value as false to prevent saving to the same file | Bug |
+| SIGNATURENET-2382 | Compatibility issues under .NET Standard 2.0 | Bug |
+| SIGNATURENET-2508 | Sign process inserts wrong empty metadata for signatures information | Bug |
 
 ## Public API and Backward Incompatible Changes
 
@@ -142,7 +142,7 @@ Example:
 ### Public class **BaseSignature** was updated to support modifying signature in the document.
 
 *    properties **Top**, **Left**, **Width** and **Height** are marked as editable to adjust signature location and size in the document
-*   added new editable property **string SignatureId. **Its value provides unique signature identification. When signing document (see changes with **[Signature methods](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)**) Sign method returns newly created signatures with this property set. So once signature was added to the document it can be identified by assigned **SignatureId** property. The same is true for document Search.
+*   added new editable property **string SignatureId. **Its value provides unique signature identification. When signing document (see changes with **[Signature methods]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**) Sign method returns newly created signatures with this property set. So once signature was added to the document it can be identified by assigned **SignatureId** property. The same is true for document Search.
 *   added new editable Boolean property **bool IsSignature. **This property specifies if document component (text/image/barcode/qr-code) is the actual signature or element of document content. By default all found signatures in the document are marked as signature (setSignature(true)). When particular signature object is created (over Sign method, Search or manually) this property could be changed to false, that will indicate that this component is no longer will be treated as signature object and over **Update** method saved to document
 *   class implements **ICloneable** interface that means ability to call **Clone** method to obtain copy of existing instance of object.
 *   method **Equals** was overridden to support object equals checking
@@ -245,7 +245,7 @@ public abstract class BaseSignature implements ICloneable
 
 ### Public class **DeleteResult **was added to keep result of **Delete** method of Signature class.
 
-This class implements newly added interface **[IResult](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)** that specifies succeeded and failed signatures after process.
+This class implements newly added interface **[IResult]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})** that specifies succeeded and failed signatures after process.
 
 **New public class DeleteResult**
 
@@ -278,7 +278,7 @@ public class DeleteResult implements IResult
 
 Signature passed to method **Delete** may not be removed from the document for several reasons:
 
-*   signature was passed only with property** SignatureId** identifier ( see changes of **[BaseSignature](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)**) that was not found at document signature information layer;
+*   signature was passed only with property** SignatureId** identifier ( see changes of **[BaseSignature]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**) that was not found at document signature information layer;
 *   signature was passed after Search method with correct properties, but was not found inside document with these coordinates, size or other properties that identifies unique signature.
 *   signature was passed with "wrong" properties like not actual **SignatureId**, coordinates **Left**, **Top**, **Width** or **Height**, same as Text for text signatures or **BarcodeType** for barcode signatures
 
@@ -423,13 +423,13 @@ public interface IResult
 ```
 
 *   read-only property **Succeeded** specifies list of signatures that were successfully processed. 
-    *   for **Sign** process this is a list of newly created signatures (see **[SignResult](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)**), 
-    *   for **Update** method this property keeps a list of successfully updated signatures (see **[UpdateResult](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)**), 
-    *   for **Delete** method this property keeps a list of successfully deleted signatures (see **[DeleteResult](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)**)
+*   for **Sign** process this is a list of newly created signatures (see **[SignResult]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**),
+*   for **Update** method this property keeps a list of successfully updated signatures (see **[UpdateResult]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**),
+*   for **Delete** method this property keeps a list of successfully deleted signatures (see **[DeleteResult]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**)
 *   property **Failed** specifies list of signatures that were not successfully processed. 
-    *   for **Sign** process this is a list of newly created signatures (see **[SignResult](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)**), 
-    *   for **Update** method this property keeps a list of successfully updated signatures (see **[UpdateResult](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)**), 
-    *   for **Delete** method this property keeps a list of successfully deleted signatures (see **[DeleteResult](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)**)
+*   for **Sign** process this is a list of newly created signatures (see **[SignResult]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**),
+*   for **Update** method this property keeps a list of successfully updated signatures (see **[UpdateResult]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**),
+*   for **Delete** method this property keeps a list of successfully deleted signatures (see **[DeleteResult]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**)
 
 See different examples for various methods
 
@@ -512,7 +512,7 @@ try
 
 ### Public class **SignResult **was added
 
-This class implements newly added interface **[IResult](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)** that specifies succeeded and failed signatures after process.
+This class implements newly added interface **[IResult]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})** that specifies succeeded and failed signatures after process.
 
 **New public class SignResult**
 
@@ -672,7 +672,7 @@ List<TextSignature> signatures = signature.search(TextSignature.class, options);
 
 ### Public class **UpdateResult **was added
 
-This class implements newly added interface **[IResult](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)** that specifies succeeded and failed signatures after process.
+This class implements newly added interface **[IResult]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})** that specifies succeeded and failed signatures after process.
 
 **New public class DeleteResult**
 
@@ -705,7 +705,7 @@ public class UpdateResult implements IResult
 
 Few reasons when passed signature to method **Update** was not processed (updated) in the document
 
-*   signature was passed only with property** SignatureId** identifier (see changes of **[BaseSignature](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)**) that was not found at document signature information layer;
+*   signature was passed only with property** SignatureId** identifier (see changes of **[BaseSignature]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**) that was not found at document signature information layer;
 *   signature was passed after Search method with correct properties, but was not found in a document with these coordinates, size or other properties that identifies unique signature.
 *   signature was passed with "wrong" properties like not actual **SignatureId**, coordinates **Left**, **Top**, **Width** or **Height**, same as Text for text signatures or **BarcodeType** for barcode signatures
 
@@ -802,7 +802,7 @@ catch (java.lang.RuntimeException ex)
 
 ### Added new boolean **HideSignatures** property to **PreviewOptions **class. 
 
-This property indicates whether signatures that were marked as **IsSignature = true** should be hidden from document preview or not**. **For more information see **[BaseSignature](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html).**
+This property indicates whether signatures that were marked as **IsSignature = true** should be hidden from document preview or not**. **For more information see **[BaseSignature]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}}).**
 
 **class PreviewOptions**
 
@@ -1132,7 +1132,7 @@ try
 
 ### Main public class **Signature** was updated with following changes
 
-*   all existing overload methods **Sign** were extended with result as instance of object **SignResult** (see **[SignResult](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)**). This result allows to obtain list of newly created signatures (see changes of base class **[BaseSignature](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)**) with all properties set (like actual location, size, implementation type, and other corresponding signature fields) and new properties **IsSignature** = true and assigned value to internal property **SignatureId.**
+*   all existing overload methods **Sign** were extended with result as instance of object **SignResult** (see **[SignResult]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**). This result allows to obtain list of newly created signatures (see changes of base class **[BaseSignature]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**) with all properties set (like actual location, size, implementation type, and other corresponding signature fields) and new properties **IsSignature** = true and assigned value to internal property **SignatureId.**
     
     **Updated overload method Sign definition**
     
@@ -1154,7 +1154,7 @@ try
     public SignResult sign(String filePath, java.util.List<SignOptions> signOptionsList, SaveOptions saveOptions);
     ```
     
-*   added new overload method **Update **that expects one signature or list of signatures to update in the document. Method with one signature argument returns Boolean value as indicator if process went successfully. Method with list of signatures returns instance of **UpdateResult**. See **[UpdateResult](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)**  with lists of updated signatures and signatures that were not found. Each of passed signature should be identified with existing signatures in the document. This identification could be provided in two ways. First way when signature was searched right pass to **Update** method by **Search** method. See first example 2 *How to update signatures after Search*. The second way works over unique signature identifier **SignatureId**. This **SignatureId** could be obtained after **Sign** result as unique signature identifier stored at document metadata layer. The very important thing here that this method applies changes in same document file or stream. See second example  *How to update signatures by known Id*
+*   added new overload method **Update **that expects one signature or list of signatures to update in the document. Method with one signature argument returns Boolean value as indicator if process went successfully. Method with list of signatures returns instance of **UpdateResult**. See **[UpdateResult]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**  with lists of updated signatures and signatures that were not found. Each of passed signature should be identified with existing signatures in the document. This identification could be provided in two ways. First way when signature was searched right pass to **Update** method by **Search** method. See first example 2 *How to update signatures after Search*. The second way works over unique signature identifier **SignatureId**. This **SignatureId** could be obtained after **Sign** result as unique signature identifier stored at document metadata layer. The very important thing here that this method applies changes in same document file or stream. See second example  *How to update signatures by known Id*
     
     **New overload method Update definition**
     
@@ -1168,7 +1168,7 @@ try
     public UpdateResult update(String filePath, java.util.List<BaseSignature> signatures);
     ```
     
-*   added new overload method **Delete **that that expects one signature or list of signatures to delete from the document. Method with one signature argument returns Boolean value as indicator if process went successfully. Method with list of signatures returns instance of **DeleteResult**. See **[DeleteResult](GroupDocs.Signature%2Bfor%2BJava%2B20.3%2BRelease%2BNotes.html)**  with lists of removed signatures and signatures that were not found. Same as method **Update** each of passed signature should be identified with existing signatures in the document. This identification could be provided by two ways. First way when signature was searched right pass to **Update** method by **Search** method. See first example *How to update signatures after Search*. The second way works over unique signature identifier **SignatureId**. This **SignatureId** could be obtained after **Sign** result as unique signature identifier stored at document metadata layer. The very important thing here that this method applies changes in same document file or stream.
+*   added new overload method **Delete **that that expects one signature or list of signatures to delete from the document. Method with one signature argument returns Boolean value as indicator if process went successfully. Method with list of signatures returns instance of **DeleteResult**. See **[DeleteResult]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**  with lists of removed signatures and signatures that were not found. Same as method **Update** each of passed signature should be identified with existing signatures in the document. This identification could be provided by two ways. First way when signature was searched right pass to **Update** method by **Search** method. See first example *How to update signatures after Search*. The second way works over unique signature identifier **SignatureId**. This **SignatureId** could be obtained after **Sign** result as unique signature identifier stored at document metadata layer. The very important thing here that this method applies changes in same document file or stream.
     
     ```csharp
     public boolean delete(OutputStream document, BaseSignature signature);
@@ -1374,33 +1374,33 @@ try
 
 Following topics from Developer Guide were updated:
 
-*   [Basic usage](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=30050422)
-*   [Sign document with Text signature (advanced)](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=30050550)
-*   [Sign document with Barcode signature (advanced)](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=30050447)
-*   [Sign document with QR-code signature (advanced)](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=30050533)
-*   [Sign document with Image signature (advanced)](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=30050493)
+*   [Basic usage]({{< ref "signature-java/developer-guide/basic-usage/_index.md" >}})
+*   [Sign document with Text signature (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/signing/sign-document-with-text-signature-advanced.md" >}})
+*   [Sign document with Barcode signature (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/signing/sign-document-with-barcode-signature-advanced.md" >}})
+*   [Sign document with QR-code signature (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/signing/sign-document-with-qr-code-signature-advanced.md" >}})
+*   [Sign document with Image signature (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/signing/sign-document-with-image-signature-advanced.md" >}})
 
 Following topics from Developer Guide were added:
 
-*   [Update Text signatures in document](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31001582)
-*   [Updating Text signature (advanced)](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31002064)
-*   [Delete Text signatures from documents](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31001595)
-*   [Deleting Text signatures (advanced)](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31002139)
-*   [Update Image signatures in document](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31001362)
-*   [Updating Image signatures (advanced)](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31002045)
-*   [Delete Image signatures from documents](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31001590)
-*   [Deleting Image signatures (advanced)](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31002119)
-*   [Update Barcode signatures in document](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31001280)
-*   [Updating Barcode signatures (advanced)](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31001346)
-*   [Delete Barcode signatures from documents](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31001353)
-*   [Deleting Barcode signatures (advanced)](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31001350)
-*   [Update QR-code signatures in document](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31001580)
-*   [Updating QR-code signatures (advanced)](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31002062)
-*   [Delete QR-code signatures from documents](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31001593)
-*   [Deleting QR-code signatures (advanced).](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31002135)
-*   [Updating multiple signatures of different types](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31002053)
-*   [Deleting multiple signatures of different types](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31002123)
-*   [Generating document preview (advanced)](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31002171)
-*   [Searching for document signatures excluding external components](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31002011)
-*   [Handling incorrect document password exception](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31002068)
-*   [Handling password required exception](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=31002070)
+*   [Update Text signatures in document]({{< ref "signature-java/developer-guide/basic-usage/update-signatures-in-documents/update-text-signatures-in-document.md" >}})
+*   [Updating Text signature (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/updating/updating-text-signature-with-advanced-options.md" >}})
+*   [Delete Text signatures from documents]({{< ref "signature-java/developer-guide/basic-usage/delete-signatures-from-documents/delete-text-signatures-from-documents.md" >}})
+*   [Deleting Text signatures (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/deleting/deleting-text-signatures-advanced.md" >}})
+*   [Update Image signatures in document]({{< ref "signature-java/developer-guide/basic-usage/update-signatures-in-documents/update-image-signatures-in-document.md" >}})
+*   [Updating Image signatures (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/updating/updating-image-signatures-with-advanced-options.md" >}})
+*   [Delete Image signatures from documents]({{< ref "signature-java/developer-guide/basic-usage/delete-signatures-from-documents/delete-image-signatures-from-documents.md" >}})
+*   [Deleting Image signatures (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/deleting/deleting-image-signatures-advanced.md" >}})
+*   [Update Barcode signatures in document]({{< ref "signature-java/developer-guide/basic-usage/update-signatures-in-documents/update-barcode-signatures-in-document.md" >}})
+*   [Updating Barcode signatures (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/updating/updating-barcode-signatures-with-advanced-options.md" >}})
+*   [Delete Barcode signatures from documents]({{< ref "signature-java/developer-guide/basic-usage/delete-signatures-from-documents/delete-barcode-signatures-from-documents.md" >}})
+*   [Deleting Barcode signatures (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/deleting/deleting-barcode-signatures-advanced.md" >}})
+*   [Update QR-code signatures in document]({{< ref "signature-java/developer-guide/basic-usage/update-signatures-in-documents/update-qr-code-signatures-in-document.md" >}})
+*   [Updating QR-code signatures (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/updating/updating-qr-code-signatures-with-advanced-options.md" >}})
+*   [Delete QR-code signatures from documents]({{< ref "signature-java/developer-guide/basic-usage/delete-signatures-from-documents/delete-qr-code-signatures-from-documents.md" >}})
+*   [Deleting QR-code signatures (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/deleting/deleting-qr-code-signatures-advanced.md" >}})
+*   [Updating multiple signatures of different types]({{< ref "signature-java/developer-guide/advanced-usage/updating/updating-multiple-signatures-of-different-types.md" >}})
+*   [Deleting multiple signatures of different types]({{< ref "signature-java/developer-guide/advanced-usage/deleting/deleting-multiple-signatures-of-different-types.md" >}})
+*   [Generating document preview (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/previewing/generating-document-preview-advanced.md" >}})
+*   [Searching for document signatures excluding external components]({{< ref "signature-java/developer-guide/advanced-usage/searching/searching-for-document-signatures-excluding-external-components.md" >}})
+*   [Handling incorrect document password exception]({{< ref "signature-java/developer-guide/advanced-usage/handling-exceptions/handling-incorrect-document-password-exception.md" >}})
+*   [Handling password required exception]({{< ref "signature-java/developer-guide/advanced-usage/handling-exceptions/handling-password-required-exception.md" >}})

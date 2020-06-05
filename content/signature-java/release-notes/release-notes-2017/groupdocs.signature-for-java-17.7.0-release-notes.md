@@ -126,7 +126,4 @@ Console.writeLine(StringExtensions.concat("Signed file path is: ",  signedPath))
 
 Added new classes **PdfStampSignOptions**, **CellsStampSignOptions**, **WordsStampSignOptions** and **SlidesStampSignOptions** for corresponding document type. Examples demonstrate how to use them with different options properties
 
-[Signing Cells Documents with Stamp Signature](https://docs.asposeptyltd.com/display/signaturejava/Signing+Cell+Documents+with+Stamp+Signature)  
-[Signing Pdf Documents with Stamp Signature](https://docs.asposeptyltd.com/display/signaturejava/Signing+Pdf+Documents+with+Stamp+Signature)  
-[Signing Slides Documents with Stamp Signature](https://docs.asposeptyltd.com/display/signaturejava/Signing+Slide+Documents+with+Stamp+Signature)  
-[Signing Words Documents with Stamp Signature](https://docs.asposeptyltd.com/display/signaturejava/Signing+Word+Documents+with+Stamp+Signature)
+[Signing Documents with Stamp Signature]({{< ref "signature-java/developer-guide/basic-usage/electronic-signature-types/esign-document-with-stamp-signature.md" >}})

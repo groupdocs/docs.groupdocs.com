@@ -48,7 +48,7 @@ There are about 15 improvements, new features and fixes in this regular release.
 {{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for Java 17.5.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
 1.  Added new enumeration value **Millimeters** for enumeration** MeasureType** to specify measure units in millimeters for location, size of margins. See different examples here    
-    [How to specify different Measure Units](https://docs.groupdocs.com/display/signaturejava/Measure+Unit+Types)  
+[How to specify different Measure Units]({{< ref "signature-java/developer-guide/advanced-usage/signing/locating-signature-on-document-page/locating-signature-on-page-with-different-measure-units.md" >}})
 
       2. Following static method of SignatureHandler are marked as Obsolete attribute and will be deprecated after next 3 Releases
 

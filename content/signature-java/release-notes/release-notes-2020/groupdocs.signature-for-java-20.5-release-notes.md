@@ -48,9 +48,9 @@ Full List of Issues Covering all Changes in this Release 
 
 Following topics from Developer Guide were updated:
 
-[Sign document with Form Field signature (advanced)](https://wiki.lisbon.dynabic.com/display/signature/Sign+document+with+Form+Field+signature+-+advanced)
+[Sign document with Form Field signature (advanced)]({{< ref "signature-java/developer-guide/advanced-usage/signing/sign-document-with-form-field-signature-advanced.md" >}})
 
-[Sign documents with standard QR-code entries](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=30050490)
+[Sign documents with standard QR-code entries]({{< ref "signature-java/developer-guide/advanced-usage/signing/sign-document-with-embedded-and-encrypted-data-in-qr-code-signatures/_index.md" >}})
 
 # Public API and Backward Incompatible Changes
 

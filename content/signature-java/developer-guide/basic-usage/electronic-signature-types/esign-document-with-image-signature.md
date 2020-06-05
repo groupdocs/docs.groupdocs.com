@@ -11,8 +11,7 @@ hideChildren: False
 ## What is a Image Signature?
 
 An** image **as signature is alternative way to put any presenting data in a visual form. This electronic signature type allows to create custom image with company logo, sender' initials, names or make a company stamp icon in it,  
-
-![](https://wiki.lisbon.dynabic.com/download/attachments/29426679/image2020-2-12%2013%3A16%3A59.png?version=1&modificationDate=1581506221000&api=v2&effects=border-simple,shadow-kn)
+![](signature-java/images/esign-document-with-image-signature.png)
 
   
 

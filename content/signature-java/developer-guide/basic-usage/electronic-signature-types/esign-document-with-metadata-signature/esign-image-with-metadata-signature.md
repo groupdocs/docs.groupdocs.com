@@ -11,7 +11,7 @@ hideChildren: False
 Metadata signature for Image document is an electronic signature based on image metadata standard. Most image formats support metadata specification or [EXIF](https://en.wikipedia.org/wiki/Exif). Image metadata is dictionary map with unique whole short identifier in range 0-65535, Some identifiers are reserved by [EXIF specification.](https://www.exiv2.org/tags.html) From signature perspective image metadata may content any hidden value of standard (int,char, string) or custom type (user defined class), be encrypted and decrypted back by known key over Search method.
 
 GroupDocs.Signature provides [ImageMetadataSignature](https://apireference.groupdocs.com/java/signature/com.groupdocs.signature.domain.signatures.metadata/ImageMetadataSignature) class to specify Metadata e-signature for image documents. Image document metadata contains pair with unique identifier Id and its Value.  
-Image document metadata could keep big amount of data that provides ability to keep serialized custom objects with additional encryption in there. See more examples [here](https://wiki.lisbon.dynabic.com/pages/viewpage.action?pageId=30050498).
+Image document metadata could keep big amount of data that provides ability to keep serialized custom objects with additional encryption in there. See more examples [here]({{< ref "signature-java/developer-guide/advanced-usage/signing/sign-document-with-secure-custom-metadata-signatures/_index.md" >}}).
 
 Here are the steps to add metadata signatures into Image with GroupDocs.Signature:
 

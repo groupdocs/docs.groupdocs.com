@@ -54,7 +54,7 @@ Public API and Backward Incompatible Changes
 
 {{< alert style="info" >}}This section lists public API changes that were introduced in GroupDocs.Signature for Java 17.6.0. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in GroupDocs.Signature which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.{{< /alert >}}
 
-1. Added new classes that describe Barcode types. Class BarcodeType contains description of Barcode encoding type, name and index in list of supported types. Newly added static class BarcodeTypes  contains static objects of each supported Barcode type, same as list of all registered types in AllTypes array property. See common examples here: [Working with Barcode Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Cell+Documents)
+1. Added new classes that describe Barcode types. Class BarcodeType contains description of Barcode encoding type, name and index in list of supported types. Newly added static class BarcodeTypes contains static objects of each supported Barcode type, same as list of all registered types in AllTypes array property. See common examples here: [Working with Barcode Signature]({{< ref "signature-java/developer-guide/basic-usage/electronic-signature-types/esign-document-with-barcode-signature.md" >}})
 
 ### Adding Barcode Signature
 
@@ -78,15 +78,9 @@ signOptions.setVerticalAlignment(VerticalAlignment.Bottom);
 
 See examples of using new Signature type per each Document Format on these links 
 
-[](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=9404669)[Signing Cells Documents with Barcode Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Cell+Documents)[ ](https://docs.groupdocs.com/display/signaturejava/Signing+Cell+Documents)[ ](https://docs.groupdocs.com/display/signaturejava/Signing+Cell+Documents)
+[eSign document with Barcode signature]({{< ref "signature-java/developer-guide/basic-usage/electronic-signature-types/esign-document-with-barcode-signature.md" >}})
 
-[Signing PDF Documents with Barcode Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Pdf+Documents)  
-
-[Signing Slides Documents with Barcode Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Slide+Documents) 
-
-[Signing Words Documents with Barcode Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Word+Documents)
-
-3\. Added new classes that describe QR-code types. Class **QRCodeType** contains description of QR-code encoding type, name and index in list of supported types. Newly added static class **QRCodeTypes **contains static objects of each supported QRCode type, same as list of all registered types in **AllTypes** array property. See common examples here [Working with QR-code Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Cell+Documents)
+3\. Added new classes that describe QR-code types. Class **QRCodeType** contains description of QR-code encoding type, name and index in list of supported types. Newly added static class **QRCodeTypes **contains static objects of each supported QRCode type, same as list of all registered types in **AllTypes** array property. See common examples here [Working with QR-code Signature]({{< ref "signature-java/developer-guide/basic-usage/electronic-signature-types/esign-document-with-qr-code-signature.md" >}})
 
 ### Adding QR-code to Documents 
 
@@ -111,13 +105,7 @@ signOptions.setVerticalAlignment(VerticalAlignment.Bottom);
 
 See examples of using new Signature type per each Document Format on these links
 
-[Signing Cells Documents with QR-code Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Cell+Documents)
-
-[](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=9404694)[Signing PDF Documents with QR-code Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Pdf+Documents)
-
-[](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=9404696)[Signing Slides Documents with QR-code Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Slide+Documents)
-
-[Signing](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=9404700) [Words Documents with QR-code Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Word+Documents)
+[eSign document with QR-code signature]({{< ref "signature-java/developer-guide/basic-usage/electronic-signature-types/esign-document-with-qr-code-signature.md" >}})
 
   
 5\. For verification purposes of newly added Signature types new classes were added. Base class **VerifyBarcodeOptions**. This class inherits from **VerifyTextOptions** and implements all inherited properties like Text, VerifyPages, PagesSetup etc.
@@ -152,14 +140,8 @@ System.out.println("Verification pdf file with Barcode signature " + result.isVa
 
 For each supported Document Type appropriate Signature Options were added **CellsVerifyBarcodeOptions**, **PdfVerifyBarcodeOptions**, **SlidesVerifyBarcodeOptions** and **WordsVerifyBarcodeOptions**.
 
-See examples of using new Signature type per each Document Format on these links  
-[Verification Cells Documents signed with Barcode Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Cell+Documents)
+See examples of using new Signature type per each Document Format on these links - [Verify Barcode signatures in the document]({{< ref "signature-java/developer-guide/basic-usage/verify-document-for-signatures/verify-barcode-signatures-in-the-document.md" >}})
 
-[Verification PDF Documents signed with Barcode Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Pdf+Documents)
-
-[Verification Slides Documents signed with Barcode Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Slide+Documents)
-
-[Verification Words Documents signed with Barcode Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Word+Documents)  
    
 6\. For verification purposes of newly added QR-code Signature types new classes were added. Base class **VerifyQRCodeOptions**. This class inherits from **VerifyTextOptions** and implements all inherited properties like Text, VerifyPages, PagesSetup etc. 
 
@@ -193,10 +175,4 @@ System.out.println("Verification pdf file with Qrcode signature " + result.isVal
 
 For each supported Document Type appropriate Signature Options were added **CellsVerifyQRCodeOptions**, **PdfVerifyQRCodeOptions**, **SlidesVerifyQRCodeOptions** and **WordsVerifyQRCodeOptions**. See examples of using new Signature type per each Document Format on these links
 
-[Verification Cells Documents signed with QR-code Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Cell+Documents)
-
-[Verification PDF Documents signed with QR-code Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Pdf+Documents)
-
-[Verification Signing Slides Documents signed with QR-code Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Slide+Documents)
-
-[Verification Signing Words Documents signed with QR-code Signature](https://docs.groupdocs.com/display/signaturejava/Signing+Word+Documents)
+[Verification documents signed with QR-code Signature]({{< ref "signature-java/developer-guide/advanced-usage/verifying/verify-qr-code-signatures.md" >}})

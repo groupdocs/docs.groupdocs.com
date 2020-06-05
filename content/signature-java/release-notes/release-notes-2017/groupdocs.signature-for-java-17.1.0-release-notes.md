@@ -187,18 +187,18 @@ This is the first version of new generation GroupDocs.Signature for Java. The mo
 1.  Updated public classes for Text Signature Options. a. Class GroupDocs.Signature.Options.PdfSignTextOptions was extended with Font, ForeColor, BorderColor and BackgroundColor properties. b. Class GroupDocs.Signature.Options.WordsSignTextOptions was extended with Font, ForeColor, BorderColor, BackgroundColor, BorderTransparency, BorderWeight and BorderDashStyleBackgroundTransparency properties. c. Class GroupDocs.Signature.Options.CellsSignTextOptions was extended with Font, ForeColor, BorderColor, BackgroundColor, BorderTransparency, BorderWeight and BorderDashStyleBackgroundTransparency properties. d. Class GroupDocs.Signature.Options.SlidesSignTextOptions was extended with Font, ForeColor, BorderColor, BorderWeight and BackgroundColor properties.
 2.  Updated public classes for Image Signature Options a. Classes GroupDocs.Signature.Options.PdfSignImageOptions, GroupDocs.Signature.Options.CellsSignImageOptions, GroupDocs.Signature.Options.WordsSignImageOptions, GroupDocs.Signature.Options.SlidesSignImageOptions were extended with VerticalAlignment, HorizontalAlignment and Margin properties.
 3.  Ability to save output documents with different file format
-4.  [](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=3836183)The ability to adjust Text Signature appearance
-5.  [](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=3836185)The ability to adjust Image Signature appearance
+4.  The ability to adjust Text Signature appearance
+5.  The ability to adjust Image Signature appearance
 6.  Updated public classes for Text Signature Options (PdfTextSignatuteOptions, CellsTextSignatuteOptions, WordsTextSignatuteOptions and SlidesTextSignatuteOptions) were extended with VerticalAlignment, HorizontalAlignment and Margins properties
 7.  Added new class SignatureOptionsCollection to keep collection of Signature Options
 8.  Updated Pdf Digital Options - class was extended with Horizontal and Vertical Alignment
-9.  [](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=3836143)Ability to sign document with multiple signature options
+9.  Ability to sign document with multiple signature options
 10.  Updated public classes for Text Signature Options (PdfTextSignatuteOptions, CellsTextSignatuteOptions, WordsTextSignatuteOptions and SlidesTextSignatuteOptions). Text Signature Options classes were extended with Signature Implementation enumeration types per each Document Types, like PdfTextSignatureImplementation, CellsTextSignatureImplementation, WordsTextSignatureImplementation and SlidesTextSignatureImplementation.
-11.  Added new class SignatureAppearance that describes extended settings for specific signature implementation. Added derived classes like PdfTextAnnotationAppearance that describes additional appearance options for PdfTextSignatureImplementation.TextAnnotation enumeration type. On this page you can find example [](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=3836147)Sign Pdf document with Text Signature as Annotation
+11.  Added new class SignatureAppearance that describes extended settings for specific signature implementation. Added derived classes like PdfTextAnnotationAppearance that describes additional appearance options for PdfTextSignatureImplementation.TextAnnotation enumeration type. 
 12.  Added new classes for verification options: VerifyOptions, VerifyTextOptions, VerifyDigitalOptions, PdfVerifyTextOptions, PdfVerifyDigitalOptions, CellsVerifyDigitalOptions, WordsVerifyDigitalOptions, SlidesVerifyDigitalOptions.
-13.  [](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=3836141)Save signed file with different file name
-14.  [](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=3836153)Verification PDF Documents signed with Text Signature
-15.  [](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=3836171)Verification Cells Documents signed with digital certificates
-16.  [](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=3836173)Verification PDF Documents signed with digital certificates
+13.  Save signed file with different file name
+14.  Verification PDF Documents signed with Text Signature
+15.  Verification Cells Documents signed with digital certificates
+16.  Verification PDF Documents signed with digital certificates
 17.  Verification Slides Documents signed with digital certificates (This feature will be provided in next release of the API)
-18.  [](http://lisbon.dynabic.com/wiki/pages/viewpage.action?pageId=3836177)Verification Words Documents signed with digital certificates
+18.  Verification Words Documents signed with digital certificates
