@@ -462,7 +462,7 @@ viewerImageHandler.ClearCache(olderThanTwoDays)
     ```
     
 8.  **[How to set default font name]({{< ref "viewer-java/developer-guide/advanced-usage/rendering/common-rendering-options/replace-missing-font.md" >}})**
-9.  **[Show hidden pages for Visio files]({{< ref "viewer-java/developer-guide/advanced-usage/rendering/common-rendering-options/show-hidden-pages.md" >}})[](file:///C:/wiki/display/viewer/17.++Show+hidden+pages+for+Visio+files)**
+9.  **[Show hidden pages for Visio files]({{< ref "viewer-java/developer-guide/advanced-usage/rendering/common-rendering-options/show-hidden-pages.md" >}})**
 10.  **How to specify internal hyperlink prefix for Excel files**
 11.  **Mark CachedPageDescription redundant constructor as Obsolete**  
     1.  Class com.groupdocs.viewer.domain.CachedPageDescription constructor public CachedPageDescription(String guid, CacheFileType cacheFileType) marked as deprecated

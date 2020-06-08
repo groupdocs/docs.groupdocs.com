@@ -126,10 +126,10 @@ There are new features, improvements, and fixes in this regular monthly release.
 1.  Rename classes which names start with AutoCad to Cad
     1.  Class *com.groupdocs.viewer.**domain**.DocumentTypeFormat* constant *AUTOCAD\_DRAWING\_FILE\_FORMAT* **value**** changed** to *"CAD Drawing File Format"*
     2.  Class*com.groupdocs.viewer.**domain**.DocumentTypeFormat** constant **AUTOCAD\_DRAWING\_FILE\_FORMAT****name****** changed*** *to**CAD\_DRAWING\_FILE\_FORMAT*
-2.  [](https://docs.asposeptyltd.com/display/viewerjava/Supported+Document+Formats)Mobi format support
+2.   Mobi format support
     1.  Class *com.groupdocs.viewer.**domain**.DocumentTypeFormat* **constant added** *public static final String MOBIPOCKET = "Mobipocket"*
 3.  Ability to set default font when rendering Email documents
-4.  [](https://docs.asposeptyltd.com/display/viewerjava/Supported+Document+Formats)Add OTP format support 
+4.  Add OTP format support
 5.  Improve public API of ViewerConfig class Public API changes:
     1.  Class *com.groupdocs.viewer.сonfig.ViewerConfig* property *public String TempFolderName* marked as 'Deprecated'
     2.  Class *com.groupdocs.viewer.сonfig.ViewerConfig* property *public String TempPath* marked as 'Deprecated'
