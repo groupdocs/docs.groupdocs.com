@@ -12,4 +12,4 @@ hideChildren: False
 
 ### Working with XMP Metadata
 
-GroupDocs.Metadata for .NET also allows managing XMP metadata in MP3 files. For more details please refer to the following guide: [Working with XMP metadata](Working%2Bwith%2BXMP%2Bmetadata.html)
+GroupDocs.Metadata for .NET also allows managing XMP metadata in MP3 files. For more details please refer to the following guide: [Working with XMP metadata]({{< ref "metadata-net/developer-guide/advanced-usage/working-with-metadata-standards/working-with-xmp-metadata.md" >}})

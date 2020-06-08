@@ -14,7 +14,7 @@ The GroupDocs.Metadata API supports extracting format-specific information from 
 
 The following are the steps to read the JPEG2000 comments (pieces of metadata represented as strings with the length up to 64 kbytes).
 
-1.  [Load](Loading%2Bfiles.html) a JPEG2000 image
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a JPEG2000 image
 2.  Get the root metadata package
 3.  Extract  the native metadata package using [Jpeg2000RootPackage.Jpeg2000Package](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.image/jpeg2000rootpackage/properties/jpeg2000package)
 4.  Read the JPEG2000 comments
@@ -37,7 +37,7 @@ using (Metadata metadata = new Metadata(Constants.InputJpeg2000))
 
 ## Working with XMP metadata
 
-GroupDocs.Metadata for .NET also allows managing XMP metadata in JPEG2000 images. For more details please refer to the following guide: [Working with XMP metadata](Working%2Bwith%2BXMP%2Bmetadata.html).
+GroupDocs.Metadata for .NET also allows managing XMP metadata in JPEG2000 images. For more details please refer to the following guide: [Working with XMP metadata]({{< ref "metadata-net/developer-guide/advanced-usage/working-with-metadata-standards/working-with-xmp-metadata.md" >}}).
 
 ## More resources
 

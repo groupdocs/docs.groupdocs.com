@@ -14,10 +14,10 @@ Sometimes you may need to just remove all metadata properties without applying a
 
 This example demonstrates how to remove all detected metadata packages/properties.
 
-1.  [Load](Clean%2Bmetadata.html) a file to clean
+1.  [Load]({{< ref "metadata-net/developer-guide/basic-usage/clean-metadata.md" >}}) a file to clean
 2.  Call the [Sanitize](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata/metadata/methods/sanitize) method
 3.  Check the actual number of removed packages/properties
-4.  [Save](Clean%2Bmetadata.html) the changes
+4.  [Save]({{< ref "metadata-net/developer-guide/basic-usage/clean-metadata.md" >}}) the changes
 
 **BasicUsage.CleanMetadata**
 
@@ -38,7 +38,7 @@ As a result, we get a sanitized version of the original file.
 
 ### Advanced usage topics
 
-To learn more about document watermarking features and get familiar how to manage watermarks and more, please refer to the [advanced usage section](Advanced%2BUsage.html).
+To learn more about document watermarking features and get familiar how to manage watermarks and more, please refer to the [advanced usage section]({{< ref "metadata-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub examples
 

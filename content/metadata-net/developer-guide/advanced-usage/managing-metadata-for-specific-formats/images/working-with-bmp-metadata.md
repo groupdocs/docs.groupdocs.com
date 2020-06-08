@@ -14,7 +14,7 @@ The GroupDocs.Metadata API supports extracting format-specific information from 
 
 The following are the steps to read the header of a BMP file.
 
-1.  [Load](Loading%2Bfiles.html) a BMP image
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a BMP image
 2.  Get the root metadata package
 3.  Extract  the native metadata package using [BmpRootPackage.BmpHeader](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.image/bmprootpackage/properties/bmpheader)
 4.  Read the BMP header properties

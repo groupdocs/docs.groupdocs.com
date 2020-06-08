@@ -18,7 +18,9 @@ There is one bug fix in this hotfix monthly release. 
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1931</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">TIF - Bit Depth is affected when removing metadata</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">Bug</span></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-1931 | TIF - Bit Depth is affected when removing metadata | Bug |
 
 ## Public API and Backward Incompatible Changes
 

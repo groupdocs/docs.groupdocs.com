@@ -2,7 +2,7 @@
 id: groupdocs-metadata-for-net-20-5-release-notes
 url: metadata/net/groupdocs-metadata-for-net-20-5-release-notes
 title: GroupDocs.Metadata for .NET 20.5 Release Notes
-weight: 1
+weight: 2
 description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET
@@ -55,7 +55,7 @@ All types from the GroupDocs.Metadata.Legacy namespace were removed
 
 ##### Use cases
 
-See the [migration notes](Migration%2BNotes.html) for brief comparison of the old and new API
+See the [migration notes]({{< ref "metadata-net/developer-guide/migration-notes.md" >}}) for brief comparison of the old and new API
 
 ### Implement the ability to work with EXIF metadata in WEBP images
 

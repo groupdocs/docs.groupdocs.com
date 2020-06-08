@@ -8,13 +8,13 @@ keywords:
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
 ---
-GroupDocs.Metadata for .NET provides functionality that allows working with different kinds of diagrams such as VDX, VSDX, VSX, etc. For the full list of supported document formats please refer to [Supported Document Formats](Supported%2BFile%2BFormats.html).
+GroupDocs.Metadata for .NET provides functionality that allows working with different kinds of diagrams such as VDX, VSDX, VSX, etc. For the full list of supported document formats please refer to [Supported Document Formats]({{< ref "metadata-net/getting-started/supported-file-formats.md" >}}).
 
 ## Detecting the exact type of a document
 
 The following sample of code will help you to detect the exact type of a loaded diagram and extract some additional file format information.
 
-1.  [Load](Loading%2Bfiles.html) a PDF document
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a PDF document
 2.  Extract the root metadata package
 3.  Use the [FileType](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.document/diagramrootpackage/properties/filetype) property to obtain file format information
 

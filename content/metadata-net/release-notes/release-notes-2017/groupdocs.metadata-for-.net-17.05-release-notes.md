@@ -19,7 +19,10 @@ There are 2 new features in this regular monthly release. The most notable are:
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1570</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read all revisions in Word format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1722</span></td><td colspan="1" class="confluenceTd">Ability to accept or reject revisions in Word format</td><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-1570 | Ability to read all revisions in Word format | New Feature |
+| METADATANET-1722 | Ability to accept or reject revisions in Word format | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

@@ -22,7 +22,13 @@ There are 4 new features and 1 fix in this regular monthly release. The most not
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1470</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read and write XMP metadata in AVI format</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1730</span></td><td class="confluenceTd">Ability to read SONY maker notes in JPEG image</td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1732</span></td><td class="confluenceTd">Ability to read SONY maker notes in JPEG image</td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1733</span></td><td class="confluenceTd">Ability to parse additional IFD tags like SByte, SShort, SRational and SLong</td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1724</span></td><td colspan="1" class="confluenceTd">Cannot Update IPTC tags in Jpeg</td><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Bug</span></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-1470 | Ability to read and write XMP metadata in AVI format | New Feature |
+| METADATANET-1730 | Ability to read SONY maker notes in JPEG image | New Feature |
+| METADATANET-1732 | Ability to read SONY maker notes in JPEG image | New Feature |
+| METADATANET-1733 | Ability to parse additional IFD tags like SByte, SShort, SRational and SLong | New Feature |
+| METADATANET-1724 | Cannot Update IPTC tags in Jpeg | Bug |
 
 ## Public API and Backward Incompatible Changes
 

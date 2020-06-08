@@ -2,7 +2,7 @@
 id: extracting-property-values
 url: metadata/net/extracting-property-values
 title: Extracting property values
-weight: 1
+weight: 2
 description: ""
 keywords: 
 productName: GroupDocs.Metadata for .NET

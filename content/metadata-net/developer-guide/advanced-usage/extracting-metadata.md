@@ -10,7 +10,7 @@ hideChildren: False
 ---
 Using the GroupDocs.Metadata for .NET you can easily extract metadata from PDF, DOC, PPT, XLS and many other files of different types in your .NET solution.
 
-GroupDocs.Metadata for .NET supports many file formats. See full list at [supported file formats](Supported%2BFile%2BFormats.html) article.
+GroupDocs.Metadata for .NET supports many file formats. See full list at [supported file formats]({{< ref "metadata-net/getting-started/supported-file-formats.md" >}}) article.
 
 You don't need to worry about the exact file format and metadata standards it can deal with. The same code will work for all supported formats in the same way.
 
@@ -20,7 +20,7 @@ In this article we would like to demonstrate some advanced usage of tags, catego
 
 The following steps and C# code sample below show **how to extract metadata properties from your files in .NET solution**:
 
-1.  [Load](Extracting%2Bmetadata.html) a file to be searched for metadata properties
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/extracting-metadata.md" >}}) a file to be searched for metadata properties
 2.  Make up a predicate to examine all extracted metadata properties
 3.  Pass the predicate to the [FindProperties](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata/metadata/methods/findproperties) method
 4.  Iterate through the found properties

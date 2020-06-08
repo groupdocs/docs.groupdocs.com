@@ -20,7 +20,7 @@ The GroupDocs.Metadata API supports extracting format-specific information from 
 
 The following are the steps to read native EPUB metadata.
 
-1.  [Load](Loading%2Bfiles.html) an EPUB file
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) an EPUB file
 2.  Get the root metadata package
 3.  Extract  the native metadata package using [EpubRootPackage.EpubPackage](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.ebook/epubrootpackage/properties/epubpackage)
 4.  Read the EPUB metadata properties

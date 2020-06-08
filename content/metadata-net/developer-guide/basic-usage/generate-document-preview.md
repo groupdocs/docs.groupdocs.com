@@ -12,7 +12,7 @@ If you need to implement a UI for your application it can be useful to generate 
 
 Here are the steps to generate a document preview for a particular page:
 
-1.  [Load](Generate%2Bdocument%2Bpreview.html) a document to preview
+1.  [Load]({{< ref "metadata-net/developer-guide/basic-usage/generate-document-preview.md" >}}) a document to preview
 2.  Specify a delegate that will be used to create the page streams (please see the [CreatePageStream](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.options/createpagestream) delegate for more information)
 3.  Specify the page numbers
 4.  Generate previews for desired pages using the [GeneratePreview](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata/metadata/methods/generatepreview) method of the [Metadata](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata/metadata) class
@@ -33,7 +33,7 @@ using (Metadata metadata = new Metadata(Constants.InputDocx))
 
 ### Advanced usage topics
 
-To learn more about document watermarking features and get familiar how to manage watermarks and more, please refer to the  [advanced usage section](Advanced%2BUsage.html).
+To learn more about document watermarking features and get familiar how to manage watermarks and more, please refer to the  [advanced usage section]({{< ref "metadata-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub examples
 

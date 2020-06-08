@@ -14,10 +14,10 @@ The easiest way to remove certain metadata properties from a file is to use corr
 
 The following example demonstrates how to remove specific metadata properties using a combination of criteria.
 
-1.  [Load](Remove%2Bmetadata%2Bproperties.html) a file to update
+1.  [Load]({{< ref "metadata-net/developer-guide/basic-usage/remove-metadata-properties.md" >}}) a file to update
 2.  Use a predicate to find and remove any desired metadata properties
 3.  Check the number of properties that were actually removed (please see the return value of the [RemoveProperties](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata/metadata/methods/removeproperties) method)
-4.  [Save](Remove%2Bmetadata%2Bproperties.html) the changes
+4.  [Save]({{< ref "metadata-net/developer-guide/basic-usage/remove-metadata-properties.md" >}}) the changes
 
 **BasicUsage.RemoveMetadataProperties**
 
@@ -43,16 +43,16 @@ As a result of execution of the code snippet above, we remove all mentions of th
 
 For more information on supported features of the GroupDocs.Metadata search engine please refer to the following articles:
 
-*   [Remove metadata properties](Remove%2Bmetadata%2Bproperties.html)
-*   [Remove metadata properties](Remove%2Bmetadata%2Bproperties.html)
-*   [Remove metadata properties](Remove%2Bmetadata%2Bproperties.html)
-*   [Remove metadata properties](Remove%2Bmetadata%2Bproperties.html)
+*   [Remove metadata properties]({{< ref "metadata-net/developer-guide/basic-usage/remove-metadata-properties.md" >}})
+*   [Remove metadata properties]({{< ref "metadata-net/developer-guide/basic-usage/remove-metadata-properties.md" >}})
+*   [Remove metadata properties]({{< ref "metadata-net/developer-guide/basic-usage/remove-metadata-properties.md" >}})
+*   [Remove metadata properties]({{< ref "metadata-net/developer-guide/basic-usage/remove-metadata-properties.md" >}})
 
 ## More resources
 
 ### Advanced usage topics
 
-To learn more about document watermarking features and get familiar how to manage watermarks and more, please refer to the  [advanced usage section](Advanced%2BUsage.html).
+To learn more about document watermarking features and get familiar how to manage watermarks and more, please refer to the  [advanced usage section]({{< ref "metadata-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub examples
 

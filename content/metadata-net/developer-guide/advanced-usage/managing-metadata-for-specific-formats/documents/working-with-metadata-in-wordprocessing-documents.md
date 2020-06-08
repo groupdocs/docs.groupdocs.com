@@ -8,13 +8,13 @@ keywords:
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
 ---
-GroupDocs.Metadata for .NET provides functionality that allows working with different kinds of WordProcessing documents such as DOC, DOCX, ODT, etc. For the full list of supported document formats please refer to [Supported Document Formats](Supported%2BFile%2BFormats.html).
+GroupDocs.Metadata for .NET provides functionality that allows working with different kinds of WordProcessing documents such as DOC, DOCX, ODT, etc. For the full list of supported document formats please refer to [Supported Document Formats]({{< ref "metadata-net/getting-started/supported-file-formats.md" >}}).
 
 ## Detecting the exact type of a document
 
 The following sample of code will help you to detect the exact type of a loaded document and extract some additional file format information.
 
-1.  [Load](Loading%2Bfiles.html) a WordProcessing document
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a WordProcessing document
 2.  Extract the root metadata package
 3.  Use the [FileType](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.document/wordprocessingrootpackage/properties/filetype) property to obtain file format information
 
@@ -80,7 +80,7 @@ As you can see the code sample uses the GroupDocs.Metadata search engine to retr
 
 The inspection feature that is introduced in this section doesn't work with metadata directly but extracts some useful pieces of information that can be considered as metadata under some circumstances. For example, you may want to obtain information about digital signatures associated with a document, extract user comments from the document content, obtain pieces of hidden text, work with document revisions, etc. Please follow the example below to learn how to do that.
 
-1.  [Load](Loading%2Bfiles.html) a WordProcessing document
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a WordProcessing document
 2.  Extract the root metadata package
 3.  Use the [InspectionPackage](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.document/wordprocessingrootpackage/properties/inspectionpackage) property to inspect the document
 
@@ -248,7 +248,7 @@ using (Metadata metadata = new Metadata(Constants.InputDoc))
 
 ## Updating document statistics
 
-The document statistics described in [this section](Working%2Bwith%2Bmetadata%2Bin%2BWordProcessing%2Bdocuments.html) are not only calculated for WordProcessing documents, they can also be saved in the native metadata package with regular metadata properties. The following code sample demonstrates how to achieve this.
+The document statistics described in [this section]({{< ref "metadata-net/developer-guide/advanced-usage/managing-metadata-for-specific-formats/documents/working-with-metadata-in-wordprocessing-documents.md" >}}) are not only calculated for WordProcessing documents, they can also be saved in the native metadata package with regular metadata properties. The following code sample demonstrates how to achieve this.
 
 **AdvancedUsage.ManagingMetadataForSpecificFormats.Document.WordProcessing.WordProcessingUpdateDocumentStatistics**
 

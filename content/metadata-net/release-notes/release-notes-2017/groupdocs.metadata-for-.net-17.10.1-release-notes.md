@@ -23,7 +23,12 @@ There are 4 fixes in this hotfix monthly release. The most notable are:  
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1923</span></p></td><td class="confluenceTd">Presentation format field displays Russian text after removing the metadata</td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Bug</span></p></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1925</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">GroupDocs.Metadata cannot remove personal data of a TIF file</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">Bug</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1931</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">TIF - Bit Depth will be affected when removing metadata</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">Bug</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1932</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">TIF file gets damaged with getting info of XmpSchemes</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">Bug</span></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-1923 | Presentation format field displays Russian text after removing the metadata | Bug |
+| METADATANET-1925 | GroupDocs.Metadata cannot remove personal data of a TIF file | Bug |
+| METADATANET-1931 | TIF - Bit Depth will be affected when removing metadata | Bug |
+| METADATANET-1932 | TIF file gets damaged with getting info of XmpSchemes | Bug |
 
 ## Public API and Backward Incompatible Changes
 

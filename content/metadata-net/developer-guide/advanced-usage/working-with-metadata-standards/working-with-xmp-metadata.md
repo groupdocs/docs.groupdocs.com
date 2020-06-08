@@ -18,7 +18,7 @@ The Extensible Metadata Platform (XMP) is an XML-based ISO metadata standard, or
 
 To access XMP metadata in a file of any supported format, GroupDocs.Metadata provides the [IXmp.XmpPackage](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.standards.xmp/ixmp/properties/xmppackage) property. The following are the steps to read XMP metadata:
 
-1.  [Load](Loading%2Bfiles.html) a file that contains XMP metadata
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a file that contains XMP metadata
 2.  Extract the XMP metadata package using the [IXmp.XmpPackage](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.standards.xmp/ixmp/properties/xmppackage) property
 
 The following code snippet gets XMP properties of a PNG image and displays them on the screen. 
@@ -90,10 +90,10 @@ Here is a full list of supported XMP schemes:
 
 The GroupDocs.Metadata API facilitates the user to update XMP metadata in a convenient way - using the [XmpPacketWrapper](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.standards.xmp/xmppacketwrapper) class properties. Follow the below steps to update XMP metadata in a file of any supported format.
 
-1.  [Load](Loading%2Bfiles.html) a file that contains XMP metadata
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a file that contains XMP metadata
 2.  Extract the XMP metadata package using the [IXmp.XmpPackage](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.standards.xmp/ixmp/properties/xmppackage) property
 3.  Assign values to desired XMP properties
-4.  [Save](Saving%2Bfiles.html) the changes
+4.  [Save]({{< ref "metadata-net/developer-guide/advanced-usage/saving-files/_index.md" >}}) the changes
 
 **AdvancedUsage.WorkingWithMetadataStandards.Xmp.UpdateXmpProperties**
 

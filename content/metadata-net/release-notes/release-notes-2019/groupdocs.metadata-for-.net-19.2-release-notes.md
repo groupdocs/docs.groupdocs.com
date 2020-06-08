@@ -22,7 +22,13 @@ There are the following features and enhancements in this release:
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-1635</td><td colspan="1" class="confluenceTd">Implement support for the ASF format</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2441</td><td colspan="1" class="confluenceTd">Implement the ability to render image previews for supported document types</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-1369</td><td colspan="1" class="confluenceTd">Refactor base metadata classes to add support for hierarchical metadata structures</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2636</td><td colspan="1" class="confluenceTd">Remove obsolete EXIF APIs</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-1636</td><td colspan="1" class="confluenceTd">Remove Mp3Format obsolete members</td><td colspan="1" class="confluenceTd">Enhancement</td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-1635 | Implement support for the ASF format | New Feature |
+| METADATANET-2441 | Implement the ability to render image previews for supported document types | New Feature |
+| METADATANET-1369 | Refactor base metadata classes to add support for hierarchical metadata structures | Enhancement |
+| METADATANET-2636 | Remove obsolete EXIF APIs | Enhancement |
+| METADATANET-1636 | Remove Mp3Format obsolete members | Enhancement |
 
 ## Public API and Backward Incompatible Changes
 

@@ -12,7 +12,7 @@ hideChildren: False
 
 The API allows detecting ZIP archives and reading format metadata. The following steps are needed to be followed:
 
-*   [Load](Loading%2Bfiles.html) a ZIP archive
+*   [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a ZIP archive
 *   Get the root metadata package
 *   Extract  the native metadata package using [ZipRootPackage.ZipPackage](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.archive/ziprootpackage/properties/zippackage)
 *   Read the ZIP archive properties
@@ -50,7 +50,7 @@ using (Metadata metadata = new Metadata(Constants.InputZip))
 
 GroupDocs.Metadata for .NET allows you to update the user comment in a ZIP archive. The following steps are needed to be followed:
 
-*   [Load](Loading%2Bfiles.html) a ZIP archive
+*   [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a ZIP archive
 *   Get the root metadata package
 *   Update the comment using the [ZipPackage.Comment](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.archive/zippackage/properties/comment) setter
 *   Save the changes

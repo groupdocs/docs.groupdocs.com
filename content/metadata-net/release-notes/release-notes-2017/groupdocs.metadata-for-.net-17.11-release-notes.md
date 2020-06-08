@@ -25,7 +25,12 @@ There are 4 new features in this regular monthly release. The most notable are:
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1338</span></td><td class="confluenceTd">Ability to remove Lyrics3 v2.0 tag in MP3 format</td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2008</span></td><td colspan="1" class="confluenceTd">Ability to clean metadata in MP3 format</td><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2011</span></td><td colspan="1" class="confluenceTd">Ability to remove APEv2 audio tag in MP3 format</td><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2013</span></td><td colspan="1" class="confluenceTd">Ability to clean metadata in AVI format</td><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-1338 | Ability to remove Lyrics3 v2.0 tag in MP3 format | New Feature |
+| METADATANET-2008 | Ability to clean metadata in MP3 format | New Feature |
+| METADATANET-2011 | Ability to remove APEv2 audio tag in MP3 format | New Feature |
+| METADATANET-2013 | Ability to clean metadata in AVI format | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

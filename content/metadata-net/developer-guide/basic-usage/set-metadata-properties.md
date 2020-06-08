@@ -14,11 +14,11 @@ The [SetProperties](https://apireference.groupdocs.com/net/metadata/groupdocs.me
 
 The code snippet below demonstrates a basic usage scenario of the [SetProperties](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata/metadata/methods/setproperties) method.
 
-1.  [Open](Set%2Bmetadata%2Bproperties.html) a file to update
+1.  [Open]({{< ref "metadata-net/developer-guide/basic-usage/set-metadata-properties.md" >}}) a file to update
 2.  Specify a predicate that will be used to add/update metadata properties
 3.  Specify a value you would like to add to existing metadata packages in the file
 4.  Check the actual number of added/updated properties
-5.  [Save](Set%2Bmetadata%2Bproperties.html) the changes
+5.  [Save]({{< ref "metadata-net/developer-guide/basic-usage/set-metadata-properties.md" >}}) the changes
 
 **BasicUsage.SetMetadataProperties**
 
@@ -40,16 +40,16 @@ As a result, we update all existing metadata properties containing the date the 
 
 For more information on supported features of the GroupDocs.Metadata search engine please refer to the following articles:
 
-*   [Set metadata properties](Set%2Bmetadata%2Bproperties.html)
-*   [Set metadata properties](Set%2Bmetadata%2Bproperties.html)
-*   [Set metadata properties](Set%2Bmetadata%2Bproperties.html)
-*   [Set metadata properties](Set%2Bmetadata%2Bproperties.html)
+*   [Set metadata properties]({{< ref "metadata-net/developer-guide/basic-usage/set-metadata-properties.md" >}})
+*   [Set metadata properties]({{< ref "metadata-net/developer-guide/basic-usage/set-metadata-properties.md" >}})
+*   [Set metadata properties]({{< ref "metadata-net/developer-guide/basic-usage/set-metadata-properties.md" >}})
+*   [Set metadata properties]({{< ref "metadata-net/developer-guide/basic-usage/set-metadata-properties.md" >}})
 
 ## More resources
 
 ### Advanced usage topics
 
-To learn more about document watermarking features and get familiar how to manage watermarks and more, please refer to the [advanced usage section](Advanced%2BUsage.html).
+To learn more about document watermarking features and get familiar how to manage watermarks and more, please refer to the [advanced usage section]({{< ref "metadata-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub examples
 

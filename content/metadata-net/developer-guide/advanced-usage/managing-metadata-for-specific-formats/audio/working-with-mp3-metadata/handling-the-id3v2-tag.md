@@ -10,7 +10,7 @@ hideChildren: False
 ---
 ## Waht is ID3v2?
 
-ID3v2 is a metadata standard that is primarily used with mp3 files. Although it bears the name ID3, its structure is very different from [ID3v1](Handling%2Bthe%2BID3v2%2Btag.html). ID3v2 tags consist of a number of frames, each of which contains a piece of metadata.
+ID3v2 is a metadata standard that is primarily used with mp3 files. Although it bears the name ID3, its structure is very different from [ID3v1]({{< ref "metadata-net/developer-guide/advanced-usage/managing-metadata-for-specific-formats/audio/working-with-mp3-metadata/handling-the-id3v2-tag.md" >}}). ID3v2 tags consist of a number of frames, each of which contains a piece of metadata.
 
 {{< alert style="info" >}}For more information on the ID3v2 standard visit http://id3.org/id3v2.3.0. Please note there are three versions of ID3v2: ID3v2.2, ID3v2.3, ID3v2.4.{{< /alert >}}
 
@@ -20,7 +20,7 @@ The GroupDocs.Metadata API allows reading the ID3v2 tag in an MP3 audio. To get 
 
 The following steps show how to read the ID3v2 tag in an MP3 file.
 
-1.  [Load](Loading%2Bfiles.html) an MP3 file
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) an MP3 file
 2.  Extract the root metadata package
 3.  Get the ID3v2 tag by using the [Mp3RootPackage.ID3V2](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.audio/mp3rootpackage/properties/id3v2)property
 4.  If the ID3v2 tag is not null then check for all of its properties
@@ -66,11 +66,11 @@ The GroupDocs.Metadata API supports updating the ID3v2 tag in an MP3 audio file.
 
 The following are the steps to update the ID3v2 tag in an MP3 file.
 
-1.  [Load](Loading%2Bfiles.html) an MP3 file
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) an MP3 file
 2.  Extract the root metadata package
 3.  Create the ID3v2 tag if it's missing
 4.  Update ID3v2 fields using the [Mp3RootPackage.ID3V2](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.audio/mp3rootpackage/properties/id3v2) property
-5.  [Save](Saving%2Bfiles.html) the changes
+5.  [Save]({{< ref "metadata-net/developer-guide/advanced-usage/saving-files/_index.md" >}}) the changes
 
 The following code snippet shows how to update the ID3v2 tag in an MP3 file.
 

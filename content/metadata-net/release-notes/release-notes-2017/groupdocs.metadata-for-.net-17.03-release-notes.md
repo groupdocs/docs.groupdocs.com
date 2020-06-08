@@ -22,7 +22,13 @@ There are 4 enhancements and 1 new feature in this regular monthly release. The 
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1519</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Load DocumentInfo property using lazy loading pattern in document formats</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1525</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Load only existing metadata keys into PdfMetadata class</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1533</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Faster deleting of EXIF metadata</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1534</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Faster updating of EXIF metadata</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Enhancement</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1463</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Ability to read thumbnail in document formats</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-1519 | Load DocumentInfo property using lazy loading pattern in document formats | Enhancement |
+| METADATANET-1525 | Load only existing metadata keys into PdfMetadata class | Enhancement |
+| METADATANET-1533 | Faster deleting of EXIF metadata | Enhancement |
+| METADATANET-1534 | Faster updating of EXIF metadata | Enhancement |
+| METADATANET-1463 | Ability to read thumbnail in document formats | New Feature |
 
 ## Public API and Backward Incompatible Changes
 

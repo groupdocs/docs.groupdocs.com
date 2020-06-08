@@ -23,7 +23,15 @@ There are the following features and enhancements in this release:
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2462</td><td colspan="1" class="confluenceTd">Add support for password-protected documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd">METADATANET-2489</td><td class="confluenceTd">Reduce memory consumption of supported Word formats</td><td class="confluenceTd">Enhancement</td></tr><tr><td class="confluenceTd">METADATANET-2424</td><td class="confluenceTd">Reduce memory consumption of supported PowerPoint formats</td><td class="confluenceTd">Enhancement</td></tr><tr><td class="confluenceTd">METADATANET-1436</td><td class="confluenceTd">Ability to update metadata keys in Doc/Docx file format</td><td class="confluenceTd">Enhancement</td></tr><tr><td class="confluenceTd">METADATANET-1519</td><td class="confluenceTd">Remove obsolete members of the Mp3Format class</td><td class="confluenceTd">Enhancement</td></tr><tr><td class="confluenceTd">METADATANET-2463</td><td class="confluenceTd">Remove the MppFormat.GetProperties method (obsolete code)</td><td class="confluenceTd">Enhancement</td></tr><tr><td class="confluenceTd">METADATANET-1614</td><td class="confluenceTd">Removing Author property from DOC/DOCX removes Content Type, Scale, Version and Language properties</td><td class="confluenceTd">Bug</td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-2462 | Add support for password-protected documents | New Feature |
+| METADATANET-2489 | Reduce memory consumption of supported Word formats | Enhancement |
+| METADATANET-2424 | Reduce memory consumption of supported PowerPoint formats | Enhancement |
+| METADATANET-1436 | Ability to update metadata keys in Doc/Docx file format | Enhancement |
+| METADATANET-1519 | Remove obsolete members of the Mp3Format class | Enhancement |
+| METADATANET-2463 | Remove the MppFormat.GetProperties method (obsolete code) | Enhancement |
+| METADATANET-1614 | Removing Author property from DOC/DOCX removes Content Type, Scale, Version and Language properties | Bug |
 
 ## Public API and Backward Incompatible Changes
 

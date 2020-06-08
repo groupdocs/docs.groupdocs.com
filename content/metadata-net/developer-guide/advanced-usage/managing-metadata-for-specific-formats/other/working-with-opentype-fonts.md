@@ -18,7 +18,7 @@ The GroupDocs.Metadata API supports extracting format-specific information from 
 
 The following are the steps to read the header of an OpenType file.
 
-1.  [Load](Loading%2Bfiles.html) an OpenType font file
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) an OpenType font file
 2.  Get the root metadata package
 3.  Extract  the native metadata package using [OpenTypeRootPackage.OpenTypePackage](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.font/opentyperootpackage/properties/opentypepackage)
 4.  Read the OpenType font properties
@@ -90,7 +90,7 @@ using (Metadata metadata = new Metadata(Constants.InputTtf))
 
 The code snippet bellow demonstrates how to extract information about digital signatures associated with an OpenType font.
 
-1.  [Load](Loading%2Bfiles.html) an OpenType font file
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) an OpenType font file
 2.  Get the root metadata package
 3.  Use the [DigitalSignaturePackage](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.font/opentyperootpackage/properties/digitalsignaturepackage) property to get access to all digital signatures associated with the file
 

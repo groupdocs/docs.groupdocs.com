@@ -14,7 +14,7 @@ GroupDocs.Metadata for .NET provides functionality that allows working with ONE 
 
 The inspection feature that is introduced in this section doesn't work with metadata directly but extracts some useful pieces of information that can be considered as metadata under some circumstances. For example, you may want to obtain information about pages in a note document. Please follow the example below to learn how to do that.
 
-1.  [Load](Loading%2Bfiles.html) a Note document
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a Note document
 2.  Extract the root metadata package
 3.  Use the [InspectionPackage](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.document/noterootpackage/properties/inspectionpackage) property to inspect the document
 

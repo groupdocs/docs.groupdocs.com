@@ -42,7 +42,7 @@ using (Metadata metadata = new Metadata(Constants.InputXlsx))
 
 ### Advanced usage topics
 
-To learn more about document watermarking features and get familiar how to manage watermarks and more, please refer to the [advanced usage section](Advanced%2BUsage.html).
+To learn more about document watermarking features and get familiar how to manage watermarks and more, please refer to the [advanced usage section]({{< ref "metadata-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub examples
 

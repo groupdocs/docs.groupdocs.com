@@ -10,7 +10,7 @@ hideChildren: False
 ---
 Using the GroupDocs.Metadata for .NET you can easily find and extract desired metadata properties from PDF, DOCX, PPTX, XLSX, images, audio, video and many other files of different types in your .NET solution.
 
-GroupDocs.Metadata for .NET supports many file formats. See full list at [supported file formats](Supported%2BFile%2BFormats.html) article.
+GroupDocs.Metadata for .NET supports many file formats. See full list at [supported file formats]({{< ref "metadata-net/getting-started/supported-file-formats.md" >}}) article.
 
 ## Use tags to find most common metadata properties
 
@@ -20,7 +20,7 @@ In this article we will demonstrate how to search and extract metadata from PPTX
 
 The following steps and C# code sample below show **how to search for specific metadata properties using tags in .NET solution**:
 
-1.  [Load](Loading%2Bfiles.html) a file to examine.
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a file to examine.
 2.  Make up a predicate checking that a specific tag is assigned to a property (alternatively you can use a combination of tags)
 3.  Pass the predicate to the [FindProperties](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata/metadata/methods/findproperties) method
 4.  Iterate through the found properties
@@ -46,16 +46,16 @@ As a result, we obtain all metadata properties containing the name of the person
 
 For more information on supported features of the GroupDocs.Metadata search engine please refer to the following articles:
 
-*   [Extracting metadata](Extracting%2Bmetadata.html)
-*   [Removing metadata](Removing%2Bmetadata.html)
-*   [Updating metadata](Updating%2Bmetadata.html)
-*   [Adding metadata](Adding%2Bmetadata.html)
+*   [Extracting metadata]({{< ref "metadata-net/developer-guide/advanced-usage/extracting-metadata.md" >}})
+*   [Removing metadata]({{< ref "metadata-net/developer-guide/advanced-usage/removing-metadata.md" >}})
+*   [Updating metadata]({{< ref "metadata-net/developer-guide/advanced-usage/updating-metadata.md" >}})
+*   [Adding metadata]({{< ref "metadata-net/developer-guide/advanced-usage/adding-metadata.md" >}})
 
 ## More resources
 
 ### Advanced usage topics
 
-To learn more about library features and get familiar how to manage metadata and more, please refer to the [advanced usage section](Advanced%2BUsage.html).
+To learn more about library features and get familiar how to manage metadata and more, please refer to the [advanced usage section]({{< ref "metadata-net/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub examples
 

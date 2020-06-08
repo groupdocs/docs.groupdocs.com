@@ -23,7 +23,14 @@ There are the following enhancements in this release:
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd">Key</td><td class="confluenceTd">Summary</td><td class="confluenceTd">Category</td></tr><tr><td class="confluenceTd"><span>METADATANET-566</span></td><td class="confluenceTd"><span>Implement the ability to search and replace metadata using regular expressions</span></td><td class="confluenceTd"><span>Enhancement&nbsp;</span></td></tr><tr><td class="confluenceTd"><span>METADATANET-2238</span>&nbsp;</td><td class="confluenceTd"><span>Implement unified DublinCore metadata reader for all formats that support XMP</span></td><td class="confluenceTd"><span>Enhancement&nbsp;</span></td></tr><tr><td colspan="1" class="confluenceTd"><span>METADATANET-2246</span></td><td colspan="1" class="confluenceTd"><span>Reduce memory consumption of zip format metadata loading and saving&nbsp;</span>&nbsp;</td><td colspan="1" class="confluenceTd"><span>Enhancement&nbsp;</span>&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd"><span>METADATANET-2288</span></td><td colspan="1" class="confluenceTd"><span>Implement the ability to edit the zip archive comment&nbsp;</span></td><td colspan="1" class="confluenceTd">Enhancement&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd"><span>METADATANET-2290</span></td><td colspan="1" class="confluenceTd"><span>Reduce memory consumption of epub format metadata loading&nbsp;</span></td><td colspan="1" class="confluenceTd"><span>Enhancement&nbsp;</span></td></tr><tr><td colspan="1" class="confluenceTd"><span>METADATANET-2291</span></td><td colspan="1" class="confluenceTd"><span>Reduce memory consumption of torrent format metadata loading and saving</span></td><td colspan="1" class="confluenceTd"><span>Enhancement&nbsp;</span></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-566 | Implement the ability to search and replace metadata using regular expressions | Enhancement  |
+| METADATANET-2238  | Implement unified DublinCore metadata reader for all formats that support XMP | Enhancement  |
+| METADATANET-2246 | Reduce memory consumption of zip format metadata loading and saving   | Enhancement   |
+| METADATANET-2288 | Implement the ability to edit the zip archive comment  | Enhancement  |
+| METADATANET-2290 | Reduce memory consumption of epub format metadata loading  | Enhancement  |
+| METADATANET-2291 | Reduce memory consumption of torrent format metadata loading and saving | Enhancement  |
 
 ## Public API and Backward Incompatible Changes
 

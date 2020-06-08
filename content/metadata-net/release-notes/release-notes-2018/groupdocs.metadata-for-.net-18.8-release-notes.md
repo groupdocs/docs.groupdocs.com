@@ -21,7 +21,12 @@ There are the following features and enhancements in this release:
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd">Key</td><td class="confluenceTd">Summary</td><td class="confluenceTd">Category</td></tr><tr><td class="confluenceTd">METADATANET-2319</td><td class="confluenceTd">Refactor the classes representing TIFF tags to bring them in accordance with the TIFF specification&nbsp;</td><td class="confluenceTd">Enhancement&nbsp;</td></tr><tr><td class="confluenceTd">METADATANET-2382</td><td class="confluenceTd">Reduce memory consumption of the JPEG format&nbsp;</td><td class="confluenceTd">Enhancement&nbsp;</td></tr><tr><td class="confluenceTd">METADATANET-2403</td><td class="confluenceTd">Reduce memory consumption of the TIFF format&nbsp;</td><td class="confluenceTd">Enhancement&nbsp;</td></tr><tr><td class="confluenceTd">METADATANET-1045</td><td class="confluenceTd">Implement the ability to read EXIF metadata in the PSD format&nbsp;</td><td class="confluenceTd">New Feature&nbsp;</td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-2319 | Refactor the classes representing TIFF tags to bring them in accordance with the TIFF specification  | Enhancement  |
+| METADATANET-2382 | Reduce memory consumption of the JPEG format  | Enhancement  |
+| METADATANET-2403 | Reduce memory consumption of the TIFF format  | Enhancement  |
+| METADATANET-1045 | Implement the ability to read EXIF metadata in the PSD format  | New Feature  |
 
 ## Public API and Backward Incompatible Changes
 

@@ -20,7 +20,11 @@ There are the following features and enhancements in this release:
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd">Key</td><td class="confluenceTd">Summary</td><td class="confluenceTd">Category</td></tr><tr><td class="confluenceTd"><span>METADATANET-1175</span></td><td class="confluenceTd"><span>Implement the ability to update IPTC metadata in a PSD file</span></td><td class="confluenceTd"><span>New Feature&nbsp;</span>&nbsp;</td></tr><tr><td class="confluenceTd"><span>METADATANET-2375</span>&nbsp;</td><td class="confluenceTd"><span>Reduce memory consumption of the PSD format&nbsp;</span></td><td class="confluenceTd"><span>Enhancement</span></td></tr><tr><td colspan="1" class="confluenceTd"><span>METADATANET-2305</span></td><td colspan="1" class="confluenceTd"><span>Reduce memory consumption of the Mp3 format&nbsp;</span></td><td colspan="1" class="confluenceTd">Enhancement&nbsp;&nbsp;</td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-1175 | Implement the ability to update IPTC metadata in a PSD file | New Feature   |
+| METADATANET-2375  | Reduce memory consumption of the PSD format  | Enhancement |
+| METADATANET-2305 | Reduce memory consumption of the Mp3 format  | Enhancement   |
 
 ## Public API and Backward Incompatible Changes
 

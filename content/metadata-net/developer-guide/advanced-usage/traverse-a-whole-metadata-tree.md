@@ -10,7 +10,7 @@ hideChildren: False
 ---
 In some cases, it's required to get access to all properties extracted from a document, video, image, etc. GroupDocs.Metadata represents any loaded file as a tree consisting of metadata properties and nested metadata packages. You can easily iterate through the metadata tree using the code snippet below:
 
-1.  [Load](Loading%2Bfiles.html) a file to examine
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a file to examine
 2.  Obtain the [RootMetadataPackage](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.common/rootmetadatapackage) instance which is the root of the whole metadata tree extracted from the file
 3.  Use any algorithm of your choice to traverse the tree.
 

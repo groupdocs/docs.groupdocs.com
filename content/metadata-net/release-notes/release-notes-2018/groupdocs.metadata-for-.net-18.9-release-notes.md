@@ -22,7 +22,16 @@ There are the following enhancements in this release:
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p>METADATANET-2320</p></td><td class="confluenceTd"><p>Remove EpubFormat.GetImageCoverBytes method (obsolete code)</p></td><td class="confluenceTd"><p>Enhancement</p></td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2321</td><td colspan="1" class="confluenceTd">Remove GroupDocs.Metadata.Formats.Document.InspectionResult class (obsolete code)</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2322</td><td colspan="1" class="confluenceTd">Remove XlsMetadata.ContentProperties property (obsolete code)</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2446</td><td colspan="1" class="confluenceTd">Implement the ability to read and update common TIFF/EXIF tags in TIFF images</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2449</td><td colspan="1" class="confluenceTd">Reduce memory consumption of the GIF format</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd"><span>METADATANET-2417</span></td><td colspan="1" class="confluenceTd"><span>Unable to add TiffTag to EXIF tags</span></td><td colspan="1" class="confluenceTd"><span>Bug</span></td></tr><tr><td colspan="1" class="confluenceTd"><span>METADATANET-2418</span></td><td colspan="1" class="confluenceTd"><span>Unable to remove Title, Subject, Authors, and Copyright fields in Tiff file</span></td><td colspan="1" class="confluenceTd"><span>Bug</span></td></tr><tr><td colspan="1" class="confluenceTd"><span>METADATANET-2420</span></td><td colspan="1" class="confluenceTd"><span>TIF file SetSubject() method updates Tags field instead of Subject</span></td><td colspan="1" class="confluenceTd"><span>Bug</span></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-2320 | Remove EpubFormat.GetImageCoverBytes method (obsolete code) | Enhancement |
+| METADATANET-2321 | Remove GroupDocs.Metadata.Formats.Document.InspectionResult class (obsolete code) | Enhancement |
+| METADATANET-2322 | Remove XlsMetadata.ContentProperties property (obsolete code) | Enhancement |
+| METADATANET-2446 | Implement the ability to read and update common TIFF/EXIF tags in TIFF images | Enhancement |
+| METADATANET-2449 | Reduce memory consumption of the GIF format | Enhancement |
+| METADATANET-2417 | Unable to add TiffTag to EXIF tags | Bug |
+| METADATANET-2418 | Unable to remove Title, Subject, Authors, and Copyright fields in Tiff file | Bug |
+| METADATANET-2420 | TIF file SetSubject() method updates Tags field instead of Subject | Bug |
 
 ## Public API and Backward Incompatible Changes
 

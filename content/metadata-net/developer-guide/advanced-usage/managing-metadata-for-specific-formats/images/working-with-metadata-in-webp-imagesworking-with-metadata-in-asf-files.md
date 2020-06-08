@@ -12,7 +12,7 @@ hideChildren: False
 
 ## Working with XMP metadata
 
-GroupDocs.Metadata for .NET allows managing XMP metadata in WEBP images. For more details please refer to the following guide: [Working with XMP metadata](Working%2Bwith%2BXMP%2Bmetadata.html).
+GroupDocs.Metadata for .NET allows managing XMP metadata in WEBP images. For more details please refer to the following guide: [Working with XMP metadata]({{< ref "metadata-net/developer-guide/advanced-usage/working-with-metadata-standards/working-with-xmp-metadata.md" >}}).
 
 ## More resources
 

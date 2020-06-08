@@ -21,7 +21,14 @@ There are 4 new features, 1 enhancement and 1 fix in this regular monthly releas
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">METADATANET-1214</span></p></td><td class="confluenceTd"><p>Ability to read APEv2 metadata in MP3 format<span>&nbsp;</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">New Feature</span></p></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1329</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">Ability to read and update metadata of ODS format</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);"><span style="color: rgb(0, 0, 0);">New Feature</span></span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1872</span></td><td class="confluenceTd">Ability to read SRational TIFF tag in JPEG and TIFF image formats<span>&nbsp;</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1883</span></td><td class="confluenceTd">Ability to add or update TIFF tags in EXIF<span>&nbsp;</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">New Feature</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1878</span></td><td colspan="1" class="confluenceTd">Several TIFF tags are lost after changing EXIF properties<span>&nbsp;</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Bug</span></td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1891</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Prevent to crash export process in case of converting large objects to csv</span></td><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">Enhancement</span></td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-1214 | Ability to read APEv2 metadata in MP3 format | New Feature |
+| METADATANET-1329 | Ability to read and update metadata of ODS format | New Feature |
+| METADATANET-1872 | Ability to read SRational TIFF tag in JPEG and TIFF image formats | New Feature |
+| METADATANET-1883 | Ability to add or update TIFF tags in EXIF | New Feature |
+| METADATANET-1878 | Several TIFF tags are lost after changing EXIF properties | Bug |
+| METADATANET-1891 | Prevent to crash export process in case of converting large objects to csv | Enhancement |
 
 ## Public API and Backward Incompatible Changes
 

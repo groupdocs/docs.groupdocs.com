@@ -16,7 +16,7 @@ In the BitTorrent file distribution system, a torrent file or METAINFO is a comp
 
 To get TORRENT file metadata, the following steps are needed to be followed:
 
-1.  [Load](Loading%2Bfiles.html) a TORRENT file
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a TORRENT file
 2.  Get the root metadata package
 3.  Extract  the native metadata package using [TorrentRootPackage.TorrentPackage](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.peer2peer/torrentrootpackage/properties/torrentpackage)
 4.  Read the TORRENT file properties

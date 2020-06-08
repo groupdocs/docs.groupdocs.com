@@ -14,7 +14,7 @@ The GroupDocs Metadata API allows the user to read Adobe Photoshop metadata ass
 
 The code sample below demonstrates how to extract image resource blocks (building blocks of the Photoshop file format) from a JPEG image.
 
-1.  [Load](Loading%2Bfiles.html) a JPEG image
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a JPEG image
 2.  Get the root metadata package
 3.  Extract the [ImageResourcePackage](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.image/imageresourcepackage) instance and obtain a list of [ImageResourceBlock](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.image/imageresourceblock) objects
 4.  Iterate trough the collection of resource blocks
@@ -77,19 +77,19 @@ using (Metadata metadata = new Metadata(Constants.JpegWithBarcodes))
 
 ## Extracting MakerNote metadata
 
-The GroupDocs.Metadata API allows users to read MakerNote properties stored by various camera manufacturers. Please visit the following documentation section for more information: [Extracting MakerNote metadata](Extracting%2BMakerNote%2BMetadata.html)
+The GroupDocs.Metadata API allows users to read MakerNote properties stored by various camera manufacturers. Please visit the following documentation section for more information: [Extracting MakerNote metadata]({{< ref "metadata-net/developer-guide/advanced-usage/managing-metadata-for-specific-formats/images/working-with-metadata-in-jpeg-images/extracting-makernote-metadata.md" >}})
 
 ## Working with XMP metadata
 
-GroupDocs.Metadata for .NET allows managing XMP metadata in JPEG images. For more details please refer to the following guide: [Working with XMP metadata](Working%2Bwith%2BXMP%2Bmetadata.html).
+GroupDocs.Metadata for .NET allows managing XMP metadata in JPEG images. For more details please refer to the following guide: [Working with XMP metadata]({{< ref "metadata-net/developer-guide/advanced-usage/working-with-metadata-standards/working-with-xmp-metadata.md" >}}).
 
 ## Working with EXIF metadata
 
-The GroupDocs.Metadata API supports handling EXIF metadata in JPEG images. Please find appropriate code samples in the [Working with EXIF metadata](Working%2Bwith%2BEXIF%2Bmetadata.html) section.
+The GroupDocs.Metadata API supports handling EXIF metadata in JPEG images. Please find appropriate code samples in the [Working with EXIF metadata]({{< ref "metadata-net/developer-guide/advanced-usage/working-with-metadata-standards/working-with-exif-metadata.md" >}}) section.
 
 ## Working with IPTC metadata
 
-GroupDocs.Metadata for .NET is also able to work with IPTC metadata in JPEG images. Please find more information in the [Working with IPTC IIM metadata](Working%2Bwith%2BIPTC%2BIIM%2Bmetadata.html) section.
+GroupDocs.Metadata for .NET is also able to work with IPTC metadata in JPEG images. Please find more information in the [Working with IPTC IIM metadata]({{< ref "metadata-net/developer-guide/advanced-usage/working-with-metadata-standards/working-with-iptc-iim-metadata.md" >}}) section.
 
 ## More resources
 

@@ -8,13 +8,13 @@ keywords:
 productName: GroupDocs.Metadata for .NET
 hideChildren: False
 ---
-GroupDocs.Metadata for .NET provides functionality that allows working with different kinds of presentations such as PPT, PPTX, POTM, POTX, etc. For the full list of supported presentation formats please refer to [Supported Document Formats](Supported%2BFile%2BFormats.html).
+GroupDocs.Metadata for .NET provides functionality that allows working with different kinds of presentations such as PPT, PPTX, POTM, POTX, etc. For the full list of supported presentation formats please refer to [Supported Document Formats]({{< ref "metadata-net/getting-started/supported-file-formats.md" >}}).
 
 ## Detecting the exact type of a presentation
 
 The following sample of code will help you to detect the exact type of a loaded presentation and extract some additional file format information.
 
-1.  [Load](Loading%2Bfiles.html) a presentation
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a presentation
 2.  Extract the root metadata package
 3.  Use the [FileType](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.document/presentationrootpackage/properties/filetype) property to obtain file format information
 
@@ -82,7 +82,7 @@ As you can see the code sample uses the GroupDocs.Metadata search engine to retr
 
 The inspection feature that is introduced in this section doesn't work with metadata directly but extracts some useful pieces of information that can be considered as metadata under some circumstances. For example, you may want to obtain information about hidden slides presented in a document or extract user comments from the document content. Please follow the example below to learn how to do that.
 
-1.  [Load](Loading%2Bfiles.html) a Presentation document
+1.  [Load]({{< ref "metadata-net/developer-guide/advanced-usage/loading-files/_index.md" >}}) a Presentation document
 2.  Extract the root metadata package
 3.  Use the [InspectionPackage](https://apireference.groupdocs.com/net/metadata/groupdocs.metadata.formats.document/presentationrootpackage/properties/inspectionpackage) property to inspect the document
 
