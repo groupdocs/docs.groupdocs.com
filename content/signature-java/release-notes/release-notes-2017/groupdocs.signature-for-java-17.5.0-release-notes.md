@@ -61,9 +61,7 @@ public static java.awt.Dimension getPageSize(String guid, int signaturePageNumbe
 double signatureLocationY, PositionInCellsDocument positionInCellsDocument);
 ```
 
-       3. Introduced non static methods to obtain Document information to SignatureHandler class. More examples are located here
-
-           [How to obtain information about document](https://docs.groupdocs.com/pages/viewpage.action?pageId=46858855)
+3. Introduced non static methods to obtain Document information to SignatureHandler class. More examples are [here]({{< ref "signature-java/developer-guide/basic-usage/get-document-information.md" >}})
 
        4. Added new enumeration for Text Signature Implementation for each enumeration type like CellsTextSignatureImplementation,
 

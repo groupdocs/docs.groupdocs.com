@@ -37,7 +37,7 @@ for (FormFieldSignature formFieldSignature : signatures)
 
 ### Advanced Usage Topics
 
-To learn more about document eSign features, please refer to the [advanced usage section](https://docs.groupdocs.com/display/signaturenet/Advanced+usage).
+To learn more about document eSign features, please refer to the [advanced usage section]({{< ref "signature-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub Examples 
 

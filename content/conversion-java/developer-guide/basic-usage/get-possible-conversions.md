@@ -8,7 +8,7 @@ keywords:
 productName: GroupDocs.Conversion for Java
 hideChildren: False
 ---
-**[GroupDocs.Conversion](https://docs.groupdocs.com/products.groupdocs.com/conversion/java)** allows to get possible conversions for a provided source document by following the below steps:
+**[GroupDocs.Conversion](https://products.groupdocs.com/conversion/java)** allows to get possible conversions for a provided source document by following the below steps:
 
 *   Create new instance of [Converter](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion/Converter) class by passing source document path as constructor's parameter
 *   Call [GetPossibleConversions](https://apireference.groupdocs.com/java/conversion/com.groupdocs.conversion/Converter#getPossibleConversions()) method of converter object

@@ -10,7 +10,7 @@ hideChildren: False
 ---
 ## What is a QR-code?
 
-QR-code (or Quick Response code) is a sort of two-dimensional [barcode](https://wiki.lisbon.dynabic.com/display/signature/eSign+document+with+Barcode+signature#eSigndocumentwithBarcodesignature-WhatisaBarcode?)that consists of black squares arranged in a square grid on a white background. QR-code can be read by smartphone camera or specialized devices that are dedicated to QR reading - hand-held scanners, handy terminals, fixed scanners that are used after placing it on a desktop, or embedding it in other devices. Usually QR-codes contain data that points to a website or application, emails, or phone numbers, product identifiers, or trackers. Therefore QR-code application scope extends general marketing and item identification to document management.
+QR-code (or Quick Response code) is a sort of two-dimensional [barcode]({{< ref "signature-java/developer-guide/basic-usage/electronic-signature-types/esign-document-with-barcode-signature.md" >}})that consists of black squares arranged in a square grid on a white background. QR-code can be read by smartphone camera or specialized devices that are dedicated to QR reading - hand-held scanners, handy terminals, fixed scanners that are used after placing it on a desktop, or embedding it in other devices. Usually QR-codes contain data that points to a website or application, emails, or phone numbers, product identifiers, or trackers. Therefore QR-code application scope extends general marketing and item identification to document management.
 
 ![](signature-java/images/esign-document-with-qr-code-signature.png)
 
@@ -65,7 +65,7 @@ large amount of data characters and specific URLs. |
 2953 bytes | 4296 alphanumeric,  
 7089 numeric,  
 2953 bytes |
-| **Example** | ![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/Aztec.png?version=1&modificationDate=1581415722000&api=v2) | ![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/DataMatrix.png?version=1&modificationDate=1581416613000&api=v2) | ![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/GS1%20DataMatrix.png?version=1&modificationDate=1581419522000&api=v2) | ![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/GS1%20QR.png?version=1&modificationDate=1581419623000&api=v2) | ![](https://wiki.lisbon.dynabic.com/download/thumbnails/29426708/QR%20Code%202.png?version=1&modificationDate=1581412288000&api=v2) |
+| **Example** | ![](signature-java/images/esign-document-with-qr-code-signature_1.png)) | ![](signature-java/images/esign-document-with-qr-code-signature_2.png)) | ![](download/thumbnails/85819854/1133764449) | ![](download/thumbnails/85819854/857042819) | ![](download/thumbnails/85819854/295887374)
 
   
 

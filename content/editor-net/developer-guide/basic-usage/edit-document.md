@@ -8,6 +8,11 @@ keywords: Edit document, edit presentation, edit spreadsheet, GroupDocs.Editor
 productName: GroupDocs.Editor for .NET
 hideChildren: False
 ---
+Save HTML to folder
+
+
+# Edit document
+
 > This article describes how to open for editing a previously loaded document, which options should be applied, and how to send document content to the WYSIWYG HTML-editor or any other editing application.
 
 When document is loaded into the instance of the `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor)` class, it is possible to open it for editing. In terms of [**GroupDocs.Editor**](https://products.groupdocs.com/editor/net), open a document for edit implies creating an instance of `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` class by calling an `[Editor](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor).[Edit()](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/edit)` instance method. There are two overloads of the [Edit](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editor/methods/edit) method. First one obtains a single parameter — inheritor of `[IEditOptions](https://apireference.groupdocs.com/net/editor/groupdocs.editor.options/ieditoptions)` interface.  
@@ -65,7 +70,7 @@ List<IImageResource> onlyImages = document.Images;
 List<IHtmlResource> allResourcesTogether = document.AllResources;
 ```
 
-For more information about obtaining HTML markup and resources from `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` please visit "[Get HTML markup in different forms]({{< ref "editor-net/developer-guide/advanced-usage/working-with-editabledocument/get-html-markup-in-different-forms.md" >}})", "[Working with resources](https://docs.groupdocs.com/display/editornet/Working+with+resources)", and "[Save HTML to folder](https://docs.groupdocs.com/display/editornet/Save+HTML+to+folder)" articles..
+For more information about obtaining HTML markup and resources from `[EditableDocument](https://apireference.groupdocs.com/net/editor/groupdocs.editor/editabledocument)` please visit "[Get HTML markup in different forms]({{< ref "editor-net/developer-guide/advanced-usage/working-with-editabledocument/get-html-markup-in-different-forms.md" >}})", "[Working with resources](Working%2Bwith%2Bresources.html)", and "[Save HTML to folder](Working%2Bwith%2Bresources.html)" articles..
 
 ## More resources
 

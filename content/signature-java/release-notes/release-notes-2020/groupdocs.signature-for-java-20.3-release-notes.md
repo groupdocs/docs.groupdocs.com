@@ -12,7 +12,7 @@ hideChildren: False
 
 ## Major Features
 
-With this release we are glad to announce updated signature objects life cycle and entire different process methods for **Signature** class. Now **Signature** class supports classic CRUD (Create-Read-Update-Delete) operations set.
+With this release we are glad to announce updated signature objects life cycle and entire different process methods for **Signature** class. Now **Signature** class supponew public constructorrts classic CRUD (Create-Read-Update-Delete) operations set.
 
 *   **Sign** method **creates** signatures inside document and returns them as result with all properties along with new signature identifier property;
 *   **Search** method **reads** a list of existing document signatures;
@@ -70,7 +70,7 @@ The most notable changes:
 
 *   property**EncodeType** was marked as read-only
 *   property **Text** was marked as read-only
-*   new public constructor **BarcodeSignature**(**string signatureId**) was added with string argument as unique signature identifier that could obtained by **Search** or **Sign** methods**. **Its value provides unique signature identification. When signing document (see changes with **[Signature methods](https://wiki.lisbon.dynabic.com/display/signature/19.12+GroupDocs.Signature.Signature)**) **Sign** method returns newly created signatures with this property set. So once signature was added to the document it can be identified by assigned **SignatureId** property. The same is true for document Search.
+*   new public constructor **BarcodeSignature**(**string signatureId**) was added with string argument as unique signature identifier that could obtained by **Search** or **Sign** methods**. **Its value provides unique signature identification. When signing document **Sign** method returns newly created signatures with this property set. So once signature was added to the document it can be identified by assigned **SignatureId** property. The same is true for document Search.
 *   class implements **ICloneable** interface that means ability to call **Clone** method to obtain copy of existing instance of object.
 *   method **Equals** was overridden to support object equals checking
 
@@ -142,7 +142,7 @@ Example:
 ### Public class **BaseSignature** was updated to support modifying signature in the document.
 
 *    properties **Top**, **Left**, **Width** and **Height** are marked as editable to adjust signature location and size in the document
-*   added new editable property **string SignatureId. **Its value provides unique signature identification. When signing document (see changes with **[Signature methods]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**) Sign method returns newly created signatures with this property set. So once signature was added to the document it can be identified by assigned **SignatureId** property. The same is true for document Search.
+*   added new editable property **string SignatureId. **Its value provides unique signature identification. When signing document Sign method returns newly created signatures with this property set. So once signature was added to the document it can be identified by assigned **SignatureId** property. The same is true for document Search.
 *   added new editable Boolean property **bool IsSignature. **This property specifies if document component (text/image/barcode/qr-code) is the actual signature or element of document content. By default all found signatures in the document are marked as signature (setSignature(true)). When particular signature object is created (over Sign method, Search or manually) this property could be changed to false, that will indicate that this component is no longer will be treated as signature object and over **Update** method saved to document
 *   class implements **ICloneable** interface that means ability to call **Clone** method to obtain copy of existing instance of object.
 *   method **Equals** was overridden to support object equals checking
@@ -278,7 +278,7 @@ public class DeleteResult implements IResult
 
 Signature passed to method **Delete** may not be removed from the document for several reasons:
 
-*   signature was passed only with property** SignatureId** identifier ( see changes of **[BaseSignature]({{< ref "signature-java/release-notes/release-notes-2020/groupdocs.signature-for-java-20.3-release-notes.md" >}})**) that was not found at document signature information layer;
+*   signature was passed only with property** SignatureId** identifier that was not found at document signature information layer;
 *   signature was passed after Search method with correct properties, but was not found inside document with these coordinates, size or other properties that identifies unique signature.
 *   signature was passed with "wrong" properties like not actual **SignatureId**, coordinates **Left**, **Top**, **Width** or **Height**, same as Text for text signatures or **BarcodeType** for barcode signatures
 
@@ -321,7 +321,7 @@ try
 ### Public class **ImageSignature** was updated
 
 *   property **int Size** was marked as read-only
-*   new public constructor **ImageSignature**(**string signatureId**) was added with string argument as unique signature identifier that could be obtained by **Search** or **Sign** methods**. **Its value provides unique signature identification. When signing document (see changes with **[Signature methods](https://wiki.lisbon.dynabic.com/display/signature/19.12+GroupDocs.Signature.Signature)**) Sign method returns newly created signatures with this property set. So once signature was added to the document it can be identified by assigned **SignatureId** property. The same is true for document Search.
+*   new public constructor **ImageSignature**(**string signatureId**) was added with string argument as unique signature identifier that could be obtained by **Search** or **Sign** methods**. **Its value provides unique signature identification. When signing document Sign method returns newly created signatures with this property set. So once signature was added to the document it can be identified by assigned **SignatureId** property. The same is true for document Search.
 *   class implements **ICloneable** interface that means ability to call **Clone** method to obtain copy of existing object instance.
 *   method **Equals** was overridden to support object equality checking
 
@@ -442,7 +442,7 @@ See different examples for various methods
 
 *   property**EncodeType** was marked as read-only
 *   property **Text** was marked as read-only
-*   new public constructor **QrCodeSignature**(**string signatureId**) was added with string argument as unique signature identifier that could be obtained by **Search** or **Sign** methods**. **Its value provides unique signature identification. When signing document (see changes with **[Signature methods](https://wiki.lisbon.dynabic.com/display/signature/19.12+GroupDocs.Signature.Signature)**) **Sign** method returns newly created signatures with this property set. So once signature was added to the document it can be identified by assigned **SignatureId** property. The same is true for document Search.
+*   new public constructor **QrCodeSignature**(**string signatureId**) was added with string argument as unique signature identifier that could be obtained by **Search** or **Sign** methods**. **Its value provides unique signature identification. When signing document **Sign** method returns newly created signatures with this property set. So once signature was added to the document it can be identified by assigned **SignatureId** property. The same is true for document Search.
 *   class implements **ICloneable** interface that means ability to call **Clone** method to obtain copy of existing object instance.
 *   method **Equals** was overridden to support object equality checking.
 
@@ -587,7 +587,7 @@ try
 *   property **Text** was marked as editable and now it can be changed when modifying signatures
 *   property **TextSignatureImplementation SignatureImplementation** was marked as read-only since current signature class does not support changing implementation of Text Signature.
     
-*   new public constructor **TextSignature**(**string signatureId**) was added with string argument as unique signature identifier that could be obtained by **Search** or **Sign** methods**. **Its value provides unique signature identification. When signing document (see changes with **[Signature methods](https://wiki.lisbon.dynabic.com/display/signature/19.12+GroupDocs.Signature.Signature)**) **Sign** method returns newly created signatures with this property set. So once signature was added to the document it can be identified by assigned **SignatureId** property. The same is true for document Search.
+*   new public constructor **TextSignature**(**string signatureId**) was added with string argument as unique signature identifier that could be obtained by **Search** or **Sign** methods**. **Its value provides unique signature identification. When signing document **Sign** method returns newly created signatures with this property set. So once signature was added to the document it can be identified by assigned **SignatureId** property. The same is true for document Search.
 *   class implements **ICloneable** interface that means ability to call **Clone** method to obtain copy of existing object instance.
 *   method **Equals** was overridden to support object equality checking.
 

@@ -18,7 +18,7 @@ There are a few new other features in this regular monthly release. The most not
 
 | Key | Summary | Category |
 | --- | --- | --- |
-| [MERGERNET-417](https://issue.lisbon.dynabic.com/issues/MERGERNET-417) | Add XLAM document format support | Feature |
+| MERGERNET-417 | Add XLAM document format support | Feature |
 
 ## Public API and Backward Incompatible Changes
 
