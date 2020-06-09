@@ -5,11 +5,14 @@ before_install:
 - chmod 600 ./deploy_key
 - echo -e "Host $HOST\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - ssh-add ./deploy_key
+- ssh -i ./deploy_key $USER@$HOST pwd
 
 install:
 - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.67.1/hugo_extended_0.67.1_Linux-64bit.deb
 - sudo dpkg -i hugo_extended_0.67.1_Linux-64bit.deb
 
 script:
-- cd docs
 - hugo
+
+after_success:
+- scp -i ./deploy_key -r public/* $USER@$HOST:/var/www/docs.groupdocs.com/html/
