@@ -12,6 +12,7 @@ install:
 
 script:
 - hugo
+- mkdir -p public/sitemaps
 - mv public/product-sitemap.xml public/sitemaps/viewer-net.xml
 
 after_success:
