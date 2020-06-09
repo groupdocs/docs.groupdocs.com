@@ -1,4 +1,4 @@
-baseURL = "http://lisbon.dynabic.com/com/"
+baseURL = "https://docs2.groupdocs.com/"
 languageCode = "en-us"
 title = "Documentation"
 #theme = "hugo-book"
