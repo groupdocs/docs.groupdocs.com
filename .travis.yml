@@ -11,5 +11,4 @@ install:
 - sudo dpkg -i hugo_extended_0.67.1_Linux-64bit.deb
 
 script:
-- cd docs
 - hugo
