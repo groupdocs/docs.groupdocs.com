@@ -15,5 +15,5 @@ script:
 - hugo
 
 after_success:
-  #skip_cleanup: true
+  skip_cleanup: true
 - scp -i ./deploy_key -r public/* $USER@$HOST:/var/www/docs.groupdocs.com/html/
