@@ -12,8 +12,12 @@ install:
 
 script:
 - hugo
+- cat public/product-sitemap.xml
+- ls
 - mkdir -p public/sitemaps
+- ls
 - mv public/product-sitemap.xml public/sitemaps/viewer-net.xml
+- ls
 
 after_success:
 - scp -i ./deploy_key -r public/* $USER@$HOST:/var/www/docs.groupdocs.com/html/
