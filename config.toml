@@ -1,40 +1,54 @@
-baseURL = "https://docs2.groupdocs.com/"
-languageCode = "en-us"
-title = "Documentation"
-#theme = "hugo-book"
-theme = "ace-documentation"
+baseURL                     = "https://docs2.groupdocs.com/"
+languageCode                = "en-us"
+title                       = "Documentation"
+theme                       = "ace-documentation"
 
+
+disableKinds                = ["RSS", "sitemap", "categories", "tags", "taxonomy", "taxonomyTerm"]
 
 
 # (Optional) Set this to true to enable 'Last Modified by' date and git author
 #  information on 'doc' type pages.
-enableGitInfo = true
+enableGitInfo               = true
+
 
 # Markup configure section
 # See https://gohugo.io/getting-started/configuration-markup/
 [markup]
-    defaultMarkdownHandler = "goldmark"
+    defaultMarkdownHandler  = "goldmark"    
     [markup.goldmark.renderer]
-        unsafe= true
+        unsafe              = true
     [markup.tableOfContents]
-        startLevel = 1
-        endLevel = 4
-        ordered = false
+        startLevel          = 1
+        endLevel            = 4
+        ordered             = false
 
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
+    home                    = [ "HTML", "JSON", "SITEMAP"]
+    section                 = [ "HTML" ]
+    page                    = [ "HTML" ]
 
-[params]
-    contentDir = "content"
+[outputFormats.SITEMAP]
+    MediaType               = "application/xml"
+    BaseName                = "product-sitemap"
+    IsHTML                  = false
+    IsPlainText             = true
+    noUgly                  = true
+    Rel                     = "sitemap"
+
+[Params]
+    contentDir              = "content"
+    sitemapMax              = 49999
+
     # Set source repository location.
     # Used for 'Last Modified' and 'Edit this page' links.
-    GitHubRepo = 'https://github.com/groupdocs/docs'
+    GitHubRepo              = 'https://github.com/groupdocs/docs'
     
     # Enable 'Edit this page' links for 'doc' page type.
     # Disabled by default. Uncomment to enable. Requires 'GitHubRepo' param.    
-    GitHubEditPath = 'edit/master'    #https://github.com/groupdocs/docs/blob/master/content/docs/annotation-net/getting-started/supported-document-formats.md
+    GitHubEditPath          = 'edit/master'    #https://github.com/groupdocs/docs/blob/master/content/docs/annotation-net/getting-started/supported-document-formats.md
 
-    GitHubDateFormat = 'January 2, 2006'
+    GitHubDateFormat        = 'January 2, 2006'
 
     ProductFamilies = [ 
             { Key = "annotation",       Name = "GroupDocs.Annotation",      Description = "Powerful document annotator component that helps you to boost your applications with document annotation, commenting and collaboration features." },
@@ -63,3 +77,8 @@ home = [ "HTML", "RSS", "JSON"]
             { Name = "Free Support", CssClass = "fas fa-user", Href = "https://forum.groupdocs.com" },
             { Name = "Paid Support", CssClass = "fas fa-user-tie", Href = "https://helpdesk.groupdocs.com" }
     ]
+
+
+[Params.Sitemap]
+	changeFreq              = "weekly"
+	priority                = 0.5
