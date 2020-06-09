@@ -18,7 +18,7 @@ Lyrics3 Tag is a chunk of data which begins with "LYRICSBEGIN", ends with "LYRI
 
 The GroupDocs.Metadata API allows reading the Lyrics3 tag in an MP3 file.
 
-1.  [Load](Handling%2Bthe%2BLyrics%2Btag.html) an MP3 file
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/managing-metadata-for-specific-formats/audio/working-with-mp3-metadata/handling-the-lyrics-tag.md" >}}) an MP3 file
 2.  Extract the root metadata package
 3.  Get the Lyrics tag by using the [MP3RootPackage.getLyrics3V2](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/MP3RootPackage#getLyrics3V2())method
 4.  If the Lyrics tag is not null then check for all of its properties
@@ -51,11 +51,11 @@ The GroupDocs.Metadata API supports updating the Lyrics tag in an MP3 audio file
 
 The following are the steps to update the Lyrics tag in an MP3 file.
 
-1.  [Load](Loading%2Bfiles.html) an MP3 file
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) an MP3 file
 2.  Extract the root metadata package
 3.  Create the Lyrics tag if it's missing
 4.  Update Lyrics fields using the [MP3RootPackage.getLyrics3V2](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/MP3RootPackage#getLyrics3V2())method
-5.  [Save](Saving%2Bfiles.html) the changes
+5.  [Save]({{< ref "metadata-java/developer-guide/advanced-usage/saving-files/_index.md" >}}) the changes
 
 The following code snippet shows how to update the Lyrics tag in an MP3 file.
 

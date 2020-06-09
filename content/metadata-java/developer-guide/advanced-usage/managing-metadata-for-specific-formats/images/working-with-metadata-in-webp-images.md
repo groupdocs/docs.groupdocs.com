@@ -10,11 +10,11 @@ hideChildren: False
 ---
 ## Working with XMP metadata
 
-GroupDocs.Metadata for Java allows managing XMP metadata in JPEG images. For more details please refer to the following guide: [Working with XMP Metadata](Working%2Bwith%2BXMP%2Bmetadata.html).
+GroupDocs.Metadata for Java allows managing XMP metadata in JPEG images. For more details please refer to the following guide: [Working with XMP Metadata]({{< ref "metadata-java/developer-guide/advanced-usage/working-with-metadata-standards/working-with-xmp-metadata.md" >}}).
 
 ## Working with EXIF metadata
 
-The GroupDocs.Metadata API supports handling EXIF metadata in JPEG images. Please find appropriate code samples in the [Working with EXIF Metadata](Working%2Bwith%2BEXIF%2Bmetadata.html) section.
+The GroupDocs.Metadata API supports handling EXIF metadata in JPEG images. Please find appropriate code samples in the [Working with EXIF Metadata]({{< ref "metadata-java/developer-guide/advanced-usage/working-with-metadata-standards/working-with-exif-metadata.md" >}}) section.
 
 ## More resources
 

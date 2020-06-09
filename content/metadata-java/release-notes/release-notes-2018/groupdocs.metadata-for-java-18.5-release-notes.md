@@ -24,7 +24,15 @@ There are the following enhancements in this release:
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd">Key</td><td class="confluenceTd">Summary</td><td class="confluenceTd">Category</td></tr><tr><td colspan="1" class="confluenceTd"><span>METADATAJAVA-58</span></td><td colspan="1" class="confluenceTd"><span>Add implementation of Closeable interface to all classes referencing any resources that should be explicitly closed&nbsp;</span></td><td colspan="1" class="confluenceTd"><span>Enhancement&nbsp;</span></td></tr><tr><td class="confluenceTd">METADATANET-566</td><td class="confluenceTd">Implement the ability to search and replace metadata using regular expressions</td><td class="confluenceTd">Enhancement&nbsp;</td></tr><tr><td class="confluenceTd">METADATANET-2238&nbsp;</td><td class="confluenceTd">Implement unified DublinCore metadata reader for all formats that support XMP</td><td class="confluenceTd">Enhancement&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2246</td><td colspan="1" class="confluenceTd">Reduce memory consumption of zip format metadata loading and saving&nbsp;&nbsp;</td><td colspan="1" class="confluenceTd">Enhancement&nbsp;&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2288</td><td colspan="1" class="confluenceTd">Implement the ability to edit the zip archive comment&nbsp;</td><td colspan="1" class="confluenceTd">Enhancement&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2290</td><td colspan="1" class="confluenceTd">Reduce memory consumption of epub format metadata loading&nbsp;</td><td colspan="1" class="confluenceTd">Enhancement&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2291</td><td colspan="1" class="confluenceTd">Reduce memory consumption of torrent format metadata loading and saving</td><td colspan="1" class="confluenceTd">Enhancement&nbsp;</td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATAJAVA-58 | Add implementation of Closeable interface to all classes referencing any resources that should be explicitly closed  | Enhancement  |
+| METADATANET-566 | Implement the ability to search and replace metadata using regular expressions | Enhancement  |
+| METADATANET-2238  | Implement unified DublinCore metadata reader for all formats that support XMP | Enhancement  |
+| METADATANET-2246 | Reduce memory consumption of zip format metadata loading and saving   | Enhancement   |
+| METADATANET-2288 | Implement the ability to edit the zip archive comment  | Enhancement  |
+| METADATANET-2290 | Reduce memory consumption of epub format metadata loading  | Enhancement  |
+| METADATANET-2291 | Reduce memory consumption of torrent format metadata loading and saving | Enhancement  |
 
 ## Public API and Backward Incompatible Changes
 

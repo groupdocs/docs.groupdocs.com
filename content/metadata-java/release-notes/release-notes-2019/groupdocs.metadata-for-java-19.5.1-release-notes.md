@@ -18,7 +18,9 @@ There are the following features, enhancements and fixes in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2909</td><td colspan="1" class="confluenceTd">"Invalid xls format" exception when loading Excel worksheet</td><td colspan="1" class="confluenceTd">Bug</td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-2909 | "Invalid xls format" exception when loading Excel worksheet | Bug |
 
 ## Public API and Backward Incompatible Changes
 

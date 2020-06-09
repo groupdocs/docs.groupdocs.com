@@ -14,7 +14,7 @@ The GroupDocs.Metadata API supports extracting format-specific information from 
 
 The following are the steps to read the header of an FLV file.
 
-1.  [Load](Loading%2Bfiles.html) an FLV video
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) an FLV video
 2.  Get the root metadata package
 3.  Extract  the native metadata package using the [FlvRootPackage.getHeader](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/FlvRootPackage#getHeader()) method
 4.  Read the FLV header properties
@@ -34,7 +34,7 @@ try (Metadata metadata = new Metadata(Constants.InputFlv)) {
 
 ## Working with XMP metadata
 
-GroupDocs.Metadata for Java allows managing XMP metadata in FLV files. For more details please refer to the following guide: [Working with XMP Metadata](Working%2Bwith%2BXMP%2Bmetadata.html).
+GroupDocs.Metadata for Java allows managing XMP metadata in FLV files. For more details please refer to the following guide: [Working with XMP Metadata]({{< ref "metadata-java/developer-guide/advanced-usage/working-with-metadata-standards/working-with-xmp-metadata.md" >}}).
 
 ## More resources
 

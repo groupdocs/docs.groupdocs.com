@@ -20,7 +20,13 @@ There are the following features and fixes in this release:
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd">Key</td><td class="confluenceTd">Summary</td><td class="confluenceTd">Category</td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-592</span></td><td class="confluenceTd">Implement BitTorrent format support&nbsp;</td><td class="confluenceTd">New Feature</td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2101&nbsp;</span>&nbsp;</td><td class="confluenceTd">Implement unified DublinCore metadata reader for EPUB, DOCX, PDF&nbsp;&nbsp;</td><td class="confluenceTd">New Feature&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2221</span></td><td colspan="1" class="confluenceTd">Implement unified approach of getting image cover across all formats (EPUB, MP3, Word, Excel)&nbsp;</td><td colspan="1" class="confluenceTd">New Feature&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1976</span></td><td colspan="1" class="confluenceTd">GIF and PNG file's size increases after removing metadata&nbsp;</td><td colspan="1" class="confluenceTd">Bug</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2169</span></td><td colspan="1" class="confluenceTd">The JpegFormat() method in GroupDocs.Metadata.dll isn't safe on MTA&nbsp;</td><td colspan="1" class="confluenceTd">Bug</td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-592 | Implement BitTorrent format support  | New Feature |
+| METADATANET-2101   | Implement unified DublinCore metadata reader for EPUB, DOCX, PDF   | New Feature  |
+| METADATANET-2221 | Implement unified approach of getting image cover across all formats (EPUB, MP3, Word, Excel)  | New Feature  |
+| METADATANET-1976 | GIF and PNG file's size increases after removing metadata  | Bug |
+| METADATANET-2169 | The JpegFormat() method in GroupDocs.Metadata.dll isn't safe on MTA  | Bug |
 
 ## Public API and Backward Incompatible Changes
 

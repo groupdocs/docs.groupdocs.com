@@ -14,7 +14,7 @@ The GroupDocs.Metadata API supports extracting format-specific information from 
 
 The following are the steps to read native MKV metadata.
 
-1.  [Load](Loading%2Bfiles.html) an MKV video
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) an MKV video
 2.  Get the root metadata package
 3.  Extract  the native metadata package using the [MatroskaRootPackage.getMatroskaPackage](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/MatroskaRootPackage#getMatroskaPackage()) method
 4.  Read the Matroska metadata properties on different levels of the format structure
@@ -97,7 +97,7 @@ try (Metadata metadata = new Metadata(Constants.InputMkv)) {
 
 The GroupDocs.Metadata API also provides a convenient way of extracting subtitles attached to a Matroska video. The code sample below demonstrates how to extract multilingual subtitles from an MKV file.
 
-1.  [Load](Loading%2Bfiles.html) an MKV video
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) an MKV video
 2.  Get the root metadata package
 3.  Use the [MatroskaPackage.getSubtitleTracks](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/MatroskaPackage#getSubtitleTracks()) method to extract sets of subtitles in different languages
 

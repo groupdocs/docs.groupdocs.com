@@ -14,10 +14,10 @@ The easiest way to remove certain metadata properties from a file is to use corr
 
 The following example demonstrates how to remove specific metadata properties using a combination of criteria.
 
-1.  [Load](Remove%2Bmetadata%2Bproperties.html) a file to update
+1.  [Load]({{< ref "metadata-java/developer-guide/basic-usage/remove-metadata-properties.md" >}}) a file to update
 2.  Use a specification to find and remove any desired metadata properties
 3.  Check the number of properties that were actually removed (please see the return value of the [removeProperties](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata/Metadata#removeProperties(com.groupdocs.metadata.search.Specification)) method)
-4.  [Save](Remove%2Bmetadata%2Bproperties.html) the changes
+4.  [Save]({{< ref "metadata-java/developer-guide/basic-usage/remove-metadata-properties.md" >}}) the changes
 
 **basic\_usage.RemoveMetadataProperties**
 
@@ -69,16 +69,16 @@ As a result of execution of the code snippet above, we remove all mentions of th
 
 For more information on supported features of the GroupDocs.Metadata search engine please refer to the following articles:
 
-*   [Extracting metadata](Extracting%2Bmetadata.html)
-*   [Removing metadata](Removing%2Bmetadata.html)
-*   [Updating metadata](Updating%2Bmetadata.html)
-*   [Adding metadata](Adding%2Bmetadata.html)
+*   [Extracting metadata]({{< ref "metadata-java/developer-guide/advanced-usage/extracting-metadata.md" >}})
+*   [Removing metadata]({{< ref "metadata-java/developer-guide/advanced-usage/removing-metadata.md" >}})
+*   [Updating metadata]({{< ref "metadata-java/developer-guide/advanced-usage/updating-metadata.md" >}})
+*   [Adding metadata]({{< ref "metadata-java/developer-guide/advanced-usage/adding-metadata.md" >}})
 
 ## More resources
 
 ### Advanced usage topics
 
-To learn more about library features and get familiar how to manage metadata and more, please refer to the[advanced usage section](Advanced%2BUsage.html).
+To learn more about library features and get familiar how to manage metadata and more, please refer to the[advanced usage section]({{< ref "metadata-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub examples
 

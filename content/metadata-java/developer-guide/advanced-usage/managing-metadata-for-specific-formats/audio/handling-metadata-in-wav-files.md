@@ -14,7 +14,7 @@ The GroupDocs.Metadata API supports extracting technical audio information from 
 
 The following are the steps to read audio details.
 
-1.  [Load](Loading%2Bfiles.html) a WAV audio
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) a WAV audio
 2.  Get the root metadata package
 3.  Extract  the native metadata package using the [WavRootPackage.getWavPackage](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/WavRootPackage#getWavPackage()) method
 4.  Read the WAV audio properties
@@ -37,7 +37,7 @@ try (Metadata metadata = new Metadata(Constants.InputWav)) {
 
 ## Working with XMP metadata
 
-GroupDocs.Metadata for Java also allows managing XMP metadata in WAV files. For more details please refer to the following guide: [Working with XMP Metadata](Handling%2Bmetadata%2Bin%2BWAV%2Bfiles.html)
+GroupDocs.Metadata for Java also allows managing XMP metadata in WAV files. For more details please refer to the following guide: [Working with XMP Metadata]({{< ref "metadata-java/developer-guide/advanced-usage/managing-metadata-for-specific-formats/audio/handling-metadata-in-wav-files.md" >}})
 
 ## More resources
 

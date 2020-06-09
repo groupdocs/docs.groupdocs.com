@@ -26,7 +26,17 @@ There are 3 enhancements and 6 new features in this regular monthly release. Th
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd">Key</td><td class="confluenceTd">Summary</td><td class="confluenceTd">Category</td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2155</span></td><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">Performance improvements - better speed of loading and saving EXIF metadata for JPEG and TIFF formats</span></td><td class="confluenceTd">Enhancement&nbsp;</td></tr><tr><td class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2157&nbsp;</span>&nbsp;</td><td class="confluenceTd">Validate ID3 input metadata before saving in Mp3Format&nbsp;</td><td class="confluenceTd">Enhancement&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2162</span></td><td colspan="1" class="confluenceTd">Read additional properties from ID3v2 tag in Mp3Format&nbsp;</td><td colspan="1" class="confluenceTd">Enhancement&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1230</span></td><td colspan="1" class="confluenceTd">Ability to update ID3v2 tag using properties in Mp3Format&nbsp;</td><td colspan="1" class="confluenceTd">New Feature&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-1231</span></td><td colspan="1" class="confluenceTd">Ability to update ID3v1 tag using properties in Mp3Format&nbsp;</td><td colspan="1" class="confluenceTd">New Feature&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2119</span></td><td colspan="1" class="confluenceTd">Ability to read image cover from EPUB e-book format&nbsp;</td><td colspan="1" class="confluenceTd">New Feature&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2147&nbsp;</td><td colspan="1" class="confluenceTd">Ability to read version of EPUB package&nbsp;</td><td colspan="1" class="confluenceTd">New Feature&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2166</span></td><td colspan="1" class="confluenceTd">Ability to read image cover from ID3 audio tag&nbsp;</td><td colspan="1" class="confluenceTd">New Feature&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd"><span style="color: rgb(0, 0, 0);">METADATANET-2170</span></td><td colspan="1" class="confluenceTd">Ability to update or remove image cover from ID3 audio tag in MP3 audio&nbsp;</td><td colspan="1" class="confluenceTd">New Feature&nbsp;</td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-2155 | Performance improvements - better speed of loading and saving EXIF metadata for JPEG and TIFF formats | Enhancement  |
+| METADATANET-2157   | Validate ID3 input metadata before saving in Mp3Format  | Enhancement  |
+| METADATANET-2162 | Read additional properties from ID3v2 tag in Mp3Format  | Enhancement  |
+| METADATANET-1230 | Ability to update ID3v2 tag using properties in Mp3Format  | New Feature  |
+| METADATANET-1231 | Ability to update ID3v1 tag using properties in Mp3Format  | New Feature  |
+| METADATANET-2119 | Ability to read image cover from EPUB e-book format  | New Feature  |
+| METADATANET-2147  | Ability to read version of EPUB package  | New Feature  |
+| METADATANET-2166 | Ability to read image cover from ID3 audio tag  | New Feature  |
+| METADATANET-2170 | Ability to update or remove image cover from ID3 audio tag in MP3 audio  | New Feature  |
 
 ## Public API and Backward Incompatible Changes
 

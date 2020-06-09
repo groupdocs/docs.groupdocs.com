@@ -2,7 +2,7 @@
 id: groupdocs-metadata-for-java-20-2-release-notes
 url: metadata/java/groupdocs-metadata-for-java-20-2-release-notes
 title: GroupDocs.Metadata for Java 20.2 Release Notes
-weight: 4
+weight: 5
 description: ""
 keywords: 
 productName: GroupDocs.Metadata for Java
@@ -16,7 +16,10 @@ hideChildren: False
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td colspan="1" class="confluenceTd">METADATAJAVA-171</td><td colspan="1" class="confluenceTd">New public API</td><td colspan="1" class="confluenceTd">Feature</td></tr><tr><td colspan="1" class="confluenceTd">METADATAJAVA-172</td><td colspan="1" class="confluenceTd">Modality field is blank for DICOM images</td><td colspan="1" class="confluenceTd">Bug</td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATAJAVA-171 | New public API | Feature |
+| METADATAJAVA-172 | Modality field is blank for DICOM images | Bug |
 
 ## Public API and Backward Incompatible Changes
 
@@ -29,7 +32,7 @@ hideChildren: False
 
 #### Full list of types that have been moved and marked as deprecated:
 
-###### div.rbtoc1590607175938 { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }div.rbtoc1590607175938 ul { list-style-type: disc; list-style-image: none; margin-left: 0px; }div.rbtoc1590607175938 li { margin-left: 0px; padding-left: 0px; }
+###### div.rbtoc1591645723409 { padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }div.rbtoc1591645723409 ul { list-style-type: disc; list-style-image: none; margin-left: 0px; }div.rbtoc1591645723409 li { margin-left: 0px; padding-left: 0px; }
 
 ###### com.groupdocs.metadata
 

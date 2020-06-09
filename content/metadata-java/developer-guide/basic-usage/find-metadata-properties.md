@@ -14,7 +14,7 @@ To make manipulating metadata easier we attach specific tags to the most commonl
 
 The code sample below demonstrates how to search for specific metadata properties using tags:
 
-1.  [Load](Find%2Bmetadata%2Bproperties.html) a file to examine
+1.  [Load]({{< ref "metadata-java/developer-guide/basic-usage/find-metadata-properties.md" >}}) a file to examine
 2.  Make up a predicate checking that a specific tag is assigned to a property (alternatively you can use a combination of tags)
 3.  Pass the predicate to the [f](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata/Metadata#findProperties(com.groupdocs.metadata.search.Specification))[indProperties](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata/Metadata#findProperties(com.groupdocs.metadata.search.Specification)) method
 4.  Iterate through the found properties
@@ -38,16 +38,16 @@ As a result, we obtain all metadata properties containing the name of the person
 
 For more information on supported features of the GroupDocs.Metadata search engine please refer to the following articles:
 
-*   [Extracting metadata](Extracting%2Bmetadata.html)
-*   [Removing metadata](Removing%2Bmetadata.html)
-*   [Updating metadata](Updating%2Bmetadata.html)
-*   [Adding metadata](Adding%2Bmetadata.html)
+*   [Extracting metadata]({{< ref "metadata-java/developer-guide/advanced-usage/extracting-metadata.md" >}})
+*   [Removing metadata]({{< ref "metadata-java/developer-guide/advanced-usage/removing-metadata.md" >}})
+*   [Updating metadata]({{< ref "metadata-java/developer-guide/advanced-usage/updating-metadata.md" >}})
+*   [Adding metadata]({{< ref "metadata-java/developer-guide/advanced-usage/adding-metadata.md" >}})
 
 ## More resources
 
 ### Advanced usage topics
 
-To learn more about library features and get familiar how to manage metadata and more, please refer to the[advanced usage section](Advanced%2BUsage.html).
+To learn more about library features and get familiar how to manage metadata and more, please refer to the[advanced usage section]({{< ref "metadata-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub examples
 

@@ -12,7 +12,7 @@ If you need to implement a UI for your application it can be useful to generate 
 
 Here are the steps to generate a document preview for a particular page:
 
-1.  [Load](Generate%2Bdocument%2Bpreview.html) a document to preview
+1.  [Load]({{< ref "metadata-java/developer-guide/basic-usage/generate-document-preview.md" >}}) a document to preview
 2.  Specify a delegate that will be used to create the page streams (please see the [ICreatePageStream](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.options/ICreatePageStream) interface for more information)
 3.  Specify the page numbers
 4.  Generate previews for desired pages using the [generatePreview](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata/Metadata#generatePreview(com.groupdocs.metadata.options.PreviewOptions)) method of the [Metadata](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata/Metadata) class
@@ -50,7 +50,7 @@ public class GenerateFilePreview {
 
 ### Advanced usage topics
 
-To learn more about library features and get familiar how to manage metadata and more, please refer to the[advanced usage section](Advanced%2BUsage.html).
+To learn more about library features and get familiar how to manage metadata and more, please refer to the[advanced usage section]({{< ref "metadata-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub examples
 

@@ -21,7 +21,7 @@ MakerNote metadata refers to image information that is written by digital camera
 
 Utilizing the GroupDocs.Metadata API the user is able to read all metadata properties regardless of the exact MakerNote format.
 
-1.  [Load](Loading%2Bfiles.html) a raw image file that contains MakerNote metadata
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) a raw image file that contains MakerNote metadata
 2.  Extract the MakerNote package using the [getMakerNotePackage](https://apireference.groupdocs.com/java/metadata/com.groupdocs.metadata.core/JpegRootPackage#getMakerNotePackage()) method
 3.  Iterate through the EXIF tags 
 

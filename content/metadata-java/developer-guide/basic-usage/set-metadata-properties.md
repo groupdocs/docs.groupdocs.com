@@ -14,11 +14,11 @@ The [setProperties](https://apireference.groupdocs.com/metadata/java/com.groupd
 
 The code snippet below demonstrates a basic usage scenario of the [setProperties](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata/Metadata#setProperties(com.groupdocs.metadata.search.Specification,%20com.groupdocs.metadata.core.PropertyValue)) method.
 
-1.  [Open](Set%2Bmetadata%2Bproperties.html) a file to update
+1.  [Open]({{< ref "metadata-java/developer-guide/basic-usage/set-metadata-properties.md" >}}) a file to update
 2.  Specify a predicate that will be used to add/update metadata properties
 3.  Specify a value you would like to add to existing metadata packages in the file
 4.  Check the actual number of added/updated properties
-5.  [Save](Set%2Bmetadata%2Bproperties.html) the changes
+5.  [Save]({{< ref "metadata-java/developer-guide/basic-usage/set-metadata-properties.md" >}}) the changes
 
 **basic\_usage.SetMetadataProperties**
 
@@ -39,16 +39,16 @@ As a result, we update all existing metadata properties containing the date the 
 
 For more information on supported features of the GroupDocs.Metadata search engine please refer to the following articles:
 
-*   [Extracting metadata](Extracting%2Bmetadata.html)
-*   [Removing metadata](Removing%2Bmetadata.html)
-*   [Updating metadata](Updating%2Bmetadata.html)
-*   [Adding metadata](Adding%2Bmetadata.html)
+*   [Extracting metadata]({{< ref "metadata-java/developer-guide/advanced-usage/extracting-metadata.md" >}})
+*   [Removing metadata]({{< ref "metadata-java/developer-guide/advanced-usage/removing-metadata.md" >}})
+*   [Updating metadata]({{< ref "metadata-java/developer-guide/advanced-usage/updating-metadata.md" >}})
+*   [Adding metadata]({{< ref "metadata-java/developer-guide/advanced-usage/adding-metadata.md" >}})
 
 ## More resources
 
 ### Advanced usage topics
 
-To learn more about library features and get familiar how to manage metadata and more, please refer to the[advanced usage section](Advanced%2BUsage.html).
+To learn more about library features and get familiar how to manage metadata and more, please refer to the[advanced usage section]({{< ref "metadata-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub examples
 

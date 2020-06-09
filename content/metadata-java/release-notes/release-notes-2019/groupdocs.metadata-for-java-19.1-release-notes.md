@@ -26,7 +26,17 @@ There are the following features and enhancements in this release:
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-519</td><td colspan="1" class="confluenceTd">Add support for the Matroska multimedia container</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2556</td><td colspan="1" class="confluenceTd">Add support for password-protected OneNote documents</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2513</td><td colspan="1" class="confluenceTd">Reduce memory consumption of supported Visio formats</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2517</td><td colspan="1" class="confluenceTd">Reduce memory consumption of supported OneNote formats</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2538</td><td colspan="1" class="confluenceTd">Reduce memory consumption of supported CAD formats</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2539</td><td colspan="1" class="confluenceTd">Reduce memory consumption of supported Email formats</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2544</td><td colspan="1" class="confluenceTd">Reduce memory consumption of the MOV format</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-1565</td><td colspan="1" class="confluenceTd">Remove the obsolete code related to the TIFF/EXIF functionality</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-1577</td><td colspan="1" class="confluenceTd">Remove obsolete members of the DublinCorePackage class</td><td colspan="1" class="confluenceTd">Enhancement</td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-519 | Add support for the Matroska multimedia container | New Feature |
+| METADATANET-2556 | Add support for password-protected OneNote documents | New Feature |
+| METADATANET-2513 | Reduce memory consumption of supported Visio formats | Enhancement |
+| METADATANET-2517 | Reduce memory consumption of supported OneNote formats | Enhancement |
+| METADATANET-2538 | Reduce memory consumption of supported CAD formats | Enhancement |
+| METADATANET-2539 | Reduce memory consumption of supported Email formats | Enhancement |
+| METADATANET-2544 | Reduce memory consumption of the MOV format | Enhancement |
+| METADATANET-1565 | Remove the obsolete code related to the TIFF/EXIF functionality | Enhancement |
+| METADATANET-1577 | Remove obsolete members of the DublinCorePackage class | Enhancement |
 
 ## Public API and Backward Incompatible Changes
 

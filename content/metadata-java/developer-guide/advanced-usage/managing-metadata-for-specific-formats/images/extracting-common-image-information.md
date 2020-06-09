@@ -10,7 +10,7 @@ hideChildren: False
 ---
 For all supported image formats the GroupDocs.Metadata API allows extracting common image properties such as width and height, MIME type, byte order, etc. Please see the code snippet below for more information on the feature.
 
-1.  [Load](Loading%2Bfiles.html) an image
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) an image
 2.  Extract the root metadata package
 3.  Use the [getImageType](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/ImageRootPackage#getImageType()) method to obtain file format information
 

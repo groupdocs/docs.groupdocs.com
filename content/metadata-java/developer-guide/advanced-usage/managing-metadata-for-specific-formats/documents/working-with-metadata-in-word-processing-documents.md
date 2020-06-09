@@ -10,13 +10,13 @@ hideChildren: False
 ---
 # Working with metadata in WordProcessing documents
 
-GroupDocs.Metadata for Java provides functionality that allows working with different kinds of WordProcessing documents such as DOC, DOCX, ODT, etc. For the full list of supported document formats please refer to [Supported document formats](Supported%2BFile%2BFormats.html).
+GroupDocs.Metadata for Java provides functionality that allows working with different kinds of WordProcessing documents such as DOC, DOCX, ODT, etc. For the full list of supported document formats please refer to [Supported document formats]({{< ref "metadata-java/getting-started/supported-file-formats.md" >}}).
 
 ## Detecting the exact type of a document
 
 The following sample of code will help you to detect the exact type of a loaded document and extract some additional file format information.
 
-1.  [Load](Loading%2Bfiles.html) a WordProcessing document
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) a WordProcessing document
 2.  Extract the root metadata package
 3.  Use the [getWordProcessingType](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/WordProcessingRootPackage#getWordProcessingType()) method to obtain file format information
 
@@ -77,7 +77,7 @@ As you can see the code sample uses the GroupDocs.Metadata search engine to retr
 
 The inspection feature that is introduced in this section doesn't work with metadata directly but extracts some useful pieces of information that can be considered as metadata under some circumstances. For example, you may want to obtain information about digital signatures associated with a document, extract user comments from the document content, obtain pieces of hidden text, work with document revisions, etc. Please follow the example below to learn how to do that.
 
-1.  [Load](Loading%2Bfiles.html) a WordProcessing document
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) a WordProcessing document
 2.  Extract the root metadata package
 3.  Use the [getInspectionPackage](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/WordProcessingRootPackage#getInspectionPackage()) method to inspect the document
 
@@ -228,7 +228,7 @@ try (Metadata metadata = new Metadata(Constants.InputDoc)) {
 
 ## Updating document statistics
 
-The document statistics described in [this section](Working%2Bwith%2Bmetadata%2Bin%2BWord%2BProcessing%2Bdocuments.html) are not only calculated for WordProcessing documents, they can also be saved in the native metadata package with regular metadata properties. The following code sample demonstrates how to achieve this.
+The document statistics described in [this section]({{< ref "metadata-java/developer-guide/advanced-usage/managing-metadata-for-specific-formats/documents/working-with-metadata-in-word-processing-documents.md" >}}) are not only calculated for WordProcessing documents, they can also be saved in the native metadata package with regular metadata properties. The following code sample demonstrates how to achieve this.
 
 **advanced\_usage.managing\_metadata\_for\_specific\_formats.document.word\_processing.WordProcessingUpdateDocumentStatistics**
 

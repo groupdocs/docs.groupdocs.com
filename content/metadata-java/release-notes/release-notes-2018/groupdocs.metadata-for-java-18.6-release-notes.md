@@ -22,7 +22,14 @@ There are the following features and enhancements in this release:
 
 ## All Changes
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd">Key</td><td class="confluenceTd">Summary</td><td class="confluenceTd">Category</td></tr><tr><td class="confluenceTd">METADATANET-2333</td><td class="confluenceTd">Implement the ability to edit XMP metadata in WAV files&nbsp;</td><td class="confluenceTd">New Feature&nbsp;&nbsp;</td></tr><tr><td class="confluenceTd">METADATANET-1168&nbsp;</td><td class="confluenceTd">Implement the ability to update properties of the Microsoft Project format&nbsp;</td><td class="confluenceTd">New Feature&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2334</td><td colspan="1" class="confluenceTd">Reduce memory consumption of MPP format metadata loading and saving</td><td colspan="1" class="confluenceTd">Enhancement&nbsp;&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2332</td><td colspan="1" class="confluenceTd">Reduce memory consumption of WAV format metadata loading and saving</td><td colspan="1" class="confluenceTd">Enhancement&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2297</td><td colspan="1" class="confluenceTd">Reduce memory consumption of AVI format metadata loading and saving&nbsp;</td><td colspan="1" class="confluenceTd">Enhancement&nbsp;</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2303</td><td colspan="1" class="confluenceTd">TiffFormat.RemoveXmpData() turns Tiff Image into black&nbsp;</td><td colspan="1" class="confluenceTd">Bug</td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-2333 | Implement the ability to edit XMP metadata in WAV files  | New Feature   |
+| METADATANET-1168  | Implement the ability to update properties of the Microsoft Project format  | New Feature  |
+| METADATANET-2334 | Reduce memory consumption of MPP format metadata loading and saving | Enhancement   |
+| METADATANET-2332 | Reduce memory consumption of WAV format metadata loading and saving | Enhancement  |
+| METADATANET-2297 | Reduce memory consumption of AVI format metadata loading and saving  | Enhancement  |
+| METADATANET-2303 | TiffFormat.RemoveXmpData() turns Tiff Image into black  | Bug |
 
 ## Public API and Backward Incompatible Changes
 

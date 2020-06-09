@@ -2,7 +2,7 @@
 id: groupdocs-metadata-for-java-20-5-release-notes
 url: metadata/java/groupdocs-metadata-for-java-20-5-release-notes
 title: GroupDocs.Metadata for Java 20.5 Release Notes
-weight: 1
+weight: 2
 description: ""
 keywords: 
 productName: GroupDocs.Metadata for Java
@@ -46,7 +46,7 @@ All types from the com.groupdocs.metadata.legacy package were removed
 
 ##### Use cases
 
-See the [migration notes](Migration%2BNotes.html) for brief comparison of the old and new API
+See the [migration notes]({{< ref "metadata-java/developer-guide/migration-notes.md" >}}) for brief comparison of the old and new API
 
 ### Implement the ability to work with EXIF metadata in WEBP images
 

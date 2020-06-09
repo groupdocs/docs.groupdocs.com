@@ -14,7 +14,7 @@ The GroupDocs.Metadata API supports extracting QuickTime atoms from a MOV video.
 
 The following are the steps to extract QuickTime atoms from a MOV video.
 
-1.  [Load](Loading%2Bfiles.html) a MOV video
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) a MOV video
 2.  Get the root metadata package
 3.  Extract  the native metadata package using the [MovRootPackage.getMovPackage](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/MovRootPackage#getMovPackage()) method
 4.  Read the QuickTime atoms
@@ -37,7 +37,7 @@ try (Metadata metadata = new Metadata(Constants.InputMov)) {
 
 ## Working with XMP metadata
 
-GroupDocs.Metadata for Java allows managing XMP metadata in MOV files. For more details please refer to the following guide: [Working with XMP Metadata](Working%2Bwith%2BXMP%2Bmetadata.html).
+GroupDocs.Metadata for Java allows managing XMP metadata in MOV files. For more details please refer to the following guide: [Working with XMP Metadata]({{< ref "metadata-java/developer-guide/advanced-usage/working-with-metadata-standards/working-with-xmp-metadata.md" >}}).
 
 ## More resources
 

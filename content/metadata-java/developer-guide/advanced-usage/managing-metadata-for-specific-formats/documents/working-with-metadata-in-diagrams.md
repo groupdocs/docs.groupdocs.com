@@ -8,13 +8,13 @@ keywords:
 productName: GroupDocs.Metadata for Java
 hideChildren: False
 ---
-GroupDocs.Metadata for Java provides functionality that allows working with different kinds of diagrams such as VDX, VSDX, VSX, etc. For the full list of supported document formats please refer to [Supported document formats](Supported%2BFile%2BFormats.html).
+GroupDocs.Metadata for Java provides functionality that allows working with different kinds of diagrams such as VDX, VSDX, VSX, etc. For the full list of supported document formats please refer to [Supported document formats]({{< ref "metadata-java/getting-started/supported-file-formats.md" >}}).
 
 ## Detecting the exact type of a document
 
 The following sample of code will help you to detect the exact type of a loaded diagram and extract some additional file format information.
 
-1.  [Load](Loading%2Bfiles.html) a PDF document
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) a PDF document
 2.  Extract the root metadata package
 3.  Use the [getDiagramType](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/DiagramRootPackage#getDiagramType()) method to obtain file format information
 

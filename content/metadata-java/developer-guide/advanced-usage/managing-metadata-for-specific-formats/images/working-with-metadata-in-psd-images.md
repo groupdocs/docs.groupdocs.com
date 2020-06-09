@@ -14,7 +14,7 @@ The GroupDocs Metadata API allows the user to read Adobe Photoshop metadata ass
 
 The code sample below demonstrates how to extract image resource blocks (building blocks of the Photoshop file format) from a PSD image.
 
-1.  [Load](Loading%2Bfiles.html) a PSD file
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) a PSD file
 2.  Get the root metadata package
 3.  Extract the [ImageResourcePackage](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/ImageResourcePackage) instance and obtain a list of [ImageResourceBlock](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/ImageResourceBlock) objects
 4.  Iterate trough the collection of resource blocks
@@ -41,7 +41,7 @@ The GroupDocs.Metadata API also supports extracting some other format-specific i
 
 The following are the steps to read the header of a PSD file and extract information about the PSD layers.
 
-1.  [Load](Loading%2Bfiles.html) a PSD image
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) a PSD image
 2.  Get the root metadata package
 3.  Extract  the native metadata package using the [PsdRootPackage.getPsdPackage](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/PsdRootPackage#getPsdPackage()) method
 4.  Read the PSD header and layer information
@@ -74,15 +74,15 @@ try (Metadata metadata = new Metadata(Constants.PsdWithIptc)) {
 
 ## Working with XMP metadata
 
-GroupDocs.Metadata for Java allows managing XMP metadata in JPEG images. For more details please refer to the following guide: [Working with XMP Metadata](Working%2Bwith%2BXMP%2Bmetadata.html).
+GroupDocs.Metadata for Java allows managing XMP metadata in JPEG images. For more details please refer to the following guide: [Working with XMP Metadata]({{< ref "metadata-java/developer-guide/advanced-usage/working-with-metadata-standards/working-with-xmp-metadata.md" >}}).
 
 ## Working with EXIF metadata
 
-The GroupDocs.Metadata API supports handling EXIF metadata in JPEG images. Please find appropriate code samples in the [Working with EXIF Metadata](Working%2Bwith%2BEXIF%2Bmetadata.html) section.
+The GroupDocs.Metadata API supports handling EXIF metadata in JPEG images. Please find appropriate code samples in the [Working with EXIF Metadata]({{< ref "metadata-java/developer-guide/advanced-usage/working-with-metadata-standards/working-with-exif-metadata.md" >}}) section.
 
 ## Working with IPTC metadata
 
-GroupDocs.Metadata for Java is also able to work with IPTC metadata in PSD images. Please find more information in the [Working with IPTC IIM Metadata](Working%2Bwith%2BIPTC%2BIIM%2Bmetadata.html) section.
+GroupDocs.Metadata for Java is also able to work with IPTC metadata in PSD images. Please find more information in the [Working with IPTC IIM Metadata]({{< ref "metadata-java/developer-guide/advanced-usage/working-with-metadata-standards/working-with-iptc-iim-metadata.md" >}}) section.
 
 ## More resources
 

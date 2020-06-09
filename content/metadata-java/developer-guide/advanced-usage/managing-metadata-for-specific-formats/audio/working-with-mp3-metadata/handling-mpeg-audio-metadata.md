@@ -19,7 +19,7 @@ MP3 (formally MPEG-1 Audio Layer III or MPEG-2 Audio Layer III) is a coding form
 
 The following steps demonstrate how to read MPEG audio metadata from an MP3 file.
 
-1.  [Load](Loading%2Bfiles.html) an MP3 file
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) an MP3 file
 2.  Get the root metadata package
 3.  Use the [MP3RootPackage.getMpegAudioPackage](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/MP3RootPackage#getMpegAudioPackage())method to read the metadata values
 

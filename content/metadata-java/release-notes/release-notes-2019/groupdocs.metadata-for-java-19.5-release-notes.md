@@ -20,7 +20,11 @@ There are the following features and enhancements in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-1177</td><td colspan="1" class="confluenceTd">Add support for the vCard format</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2833</td><td colspan="1" class="confluenceTd">Add support for the pps, ppsx and ppsm PowerPoint formats</td><td colspan="1" class="confluenceTd">Enhancement</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2918</td><td colspan="1" class="confluenceTd">Implement the ability to get the metered credit consumption statistic</td><td colspan="1" class="confluenceTd">Enhancement</td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-1177 | Add support for the vCard format | New Feature |
+| METADATANET-2833 | Add support for the pps, ppsx and ppsm PowerPoint formats | Enhancement |
+| METADATANET-2918 | Implement the ability to get the metered credit consumption statistic | Enhancement |
 
   
 

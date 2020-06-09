@@ -20,7 +20,11 @@ There are the following features and enhancements in this release:
 
 ## Full List of Issues Covering all Changes in this Release
 
-<table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Key</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Summary</span></p></td><td class="confluenceTd"><p><span style="color: rgb(0, 0, 0);">Category</span></p></td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-518</td><td colspan="1" class="confluenceTd">Implement the ability to parse font files</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2441</td><td colspan="1" class="confluenceTd">Implement the ability to render image previews for supported document types</td><td colspan="1" class="confluenceTd">New Feature</td></tr><tr><td colspan="1" class="confluenceTd">METADATANET-2696</td><td colspan="1" class="confluenceTd">Refactor the AVI, FLV, MOV, Matroska, BitTorrent, ZIP and EPUB formats according to the new concept of metadata arrangement</td><td colspan="1" class="confluenceTd">Enhancement</td></tr></tbody></table>
+| Key | Summary | Category |
+| --- | --- | --- |
+| METADATANET-518 | Implement the ability to parse font files | New Feature |
+| METADATANET-2441 | Implement the ability to render image previews for supported document types | New Feature |
+| METADATANET-2696 | Refactor the AVI, FLV, MOV, Matroska, BitTorrent, ZIP and EPUB formats according to the new concept of metadata arrangement | Enhancement |
 
 ## Public API and Backward Incompatible Changes
 

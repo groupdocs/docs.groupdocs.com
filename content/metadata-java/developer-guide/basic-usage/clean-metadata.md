@@ -14,10 +14,10 @@ Sometimes you may need to just remove all metadata properties without applying a
 
 This example demonstrates how to remove all detected metadata packages/properties.
 
-1.  [Load](Clean%2Bmetadata.html) a file to clean
+1.  [Load]({{< ref "metadata-java/developer-guide/basic-usage/clean-metadata.md" >}}) a file to clean
 2.  Call the [sanitize](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata/Metadata#sanitize()) method
 3.  Check the actual number of removed packages/properties
-4.  [Save](Clean%2Bmetadata.html) the changes
+4.  [Save]({{< ref "metadata-java/developer-guide/basic-usage/clean-metadata.md" >}}) the changes
 
 **basic\_usage.CleanMetadata**
 
@@ -37,7 +37,7 @@ As a result, we get a sanitized version of the original file.
 
 ### Advanced usage topics
 
-To learn more about library features and get familiar how to manage metadata and more, please refer to the[advanced usage section](Advanced%2BUsage.html).
+To learn more about library features and get familiar how to manage metadata and more, please refer to the[advanced usage section]({{< ref "metadata-java/developer-guide/advanced-usage/_index.md" >}}).
 
 ### GitHub examples
 

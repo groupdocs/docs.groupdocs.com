@@ -12,7 +12,7 @@ hideChildren: False
 
 The following sample of code will help you to detect the version of a loaded GIF image and extract some additional file format information.
 
-1.  [Load](Loading%2Bfiles.html) a GIF image
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) a GIF image
 2.  Extract the root metadata package
 3.  Use the [getGifImageType](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/GifRootPackage#getGifImageType()) method to obtain file format information
 
@@ -34,7 +34,7 @@ try (Metadata metadata = new Metadata(Constants.InputGif)) {
 
 ## Working with XMP Metadata
 
-GroupDocs.Metadata for Java also allows managing XMP metadata in GIF files. For more details please refer to the following guide: [Working with XMP Metadata](Working%2Bwith%2BXMP%2Bmetadata.html).
+GroupDocs.Metadata for Java also allows managing XMP metadata in GIF files. For more details please refer to the following guide: [Working with XMP Metadata]({{< ref "metadata-java/developer-guide/advanced-usage/working-with-metadata-standards/working-with-xmp-metadata.md" >}}).
 
 ## More resources
 

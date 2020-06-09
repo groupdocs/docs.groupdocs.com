@@ -12,7 +12,7 @@ hideChildren: False
 
 The following sample of code will help you to detect the PDF version a loaded document and extract some additional file format information.
 
-1.  [Load](Loading%2Bfiles.html) a PDF document
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) a PDF document
 2.  Extract the root metadata package
 3.  Use the [getPdfType](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/PdfRootPackage#getPdfType()) method to obtain file format information
 
@@ -75,7 +75,7 @@ As you can see the code sample uses the GroupDocs.Metadata search engine to retr
 
 The inspection feature that is introduced in this section doesn't work with metadata directly but extracts some useful pieces of information that can be considered as metadata under some circumstances. For example, you may want to obtain information about digital signatures associated with a document, extract form fields, attachments, bookmarks, etc. Please follow the example below to learn how to do that.
 
-1.  [Load](Loading%2Bfiles.html) a PDF document
+1.  [Load]({{< ref "metadata-java/developer-guide/advanced-usage/loading-files/_index.md" >}}) a PDF document
 2.  Extract the root metadata package
 3.  Use the [getInspectionPackage](https://apireference.groupdocs.com/metadata/java/com.groupdocs.metadata.core/PdfRootPackage#getInspectionPackage()) method to inspect the document
 
@@ -200,7 +200,7 @@ try (Metadata metadata = new Metadata(Constants.SignedPdf)) {
 
 ## Working with XMP metadata
 
-GroupDocs.Metadata for Java also allows managing XMP metadata in PDF files. For more details please refer to the following guide: [Working with XMP Metadata](Working%2Bwith%2BXMP%2Bmetadata.html)
+GroupDocs.Metadata for Java also allows managing XMP metadata in PDF files. For more details please refer to the following guide: [Working with XMP Metadata]({{< ref "metadata-java/developer-guide/advanced-usage/working-with-metadata-standards/working-with-xmp-metadata.md" >}})
 
 ## More resources
 
