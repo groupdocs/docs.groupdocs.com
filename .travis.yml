@@ -12,3 +12,6 @@ install:
 
 script:
 - hugo
+
+after_success:
+- scp -i ./deploy_key public/* $USER@$HOST:/var/www/docs.groupdocs.com/html/
