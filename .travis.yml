@@ -11,7 +11,7 @@ install:
 - sudo dpkg -i hugo_extended_0.67.1_Linux-64bit.deb
 
 script:
-- hugo
+- hugo --minify
 
 after_success:
 - scp -i ./deploy_key -r public/* $USER@$HOST:/var/www/docs.groupdocs.com/html/
