@@ -1,6 +1,9 @@
     <div class="p-3 mt-5">
-    {{ $menuSection := default "annotation-net" .Section  }}
-    {{ $homeSect := .Site.GetPage $menuSection }}    
+    {{- $url := $.RelPermalink -}}
+    {{- $slittedUrl := split $url "/" -}}           
+    {{- $menuSection := (printf "%s/%s" (index $slittedUrl 1)  (index $slittedUrl 2)) -}}
+    
+    {{- $homeSect := .Site.GetPage $menuSection -}}    
 
     <!-- Next prev page -->
     {{- $currentNode := . -}}
