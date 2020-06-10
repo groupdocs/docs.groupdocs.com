@@ -1,7 +1,13 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {{- $baseurl := printf "%s" .Site.BaseURL -}}
-  {{- range (sort (where .Site.Pages "Permalink" "ne" $baseurl) "Params.url" "asc") }}
+
+  {{- $urlsToExclude := slice $baseurl -}}
+    {{- range $.Site.Data.products.Items -}}        
+        {{- $productUrl := (printf "%s%s/" $baseurl .Family ) -}}        
+        {{- $urlsToExclude = $urlsToExclude | append $productUrl -}}  
+    {{- end -}}   
+  {{- range (sort (where .Site.Pages "Permalink" "not in" $urlsToExclude) "Params.url" "asc") }}
   <url>
     <loc>
         {{ .Permalink }}
