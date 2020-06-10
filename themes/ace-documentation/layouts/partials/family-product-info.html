@@ -46,7 +46,7 @@
             <ul class="fa-ul">            
                 {{ $devGuidePath := (printf "%s\\%s\\%s\\_index.md" .product.Family .product.Platform "developer-guide")}}     
                 {{ if ne (getenv "OS") "Windows_NT" }}
-                {{ $devGuidePath = (printf "%s/%s/_index.md" .product.Family .product.Platform "developer-guide")}}     
+                {{ $devGuidePath = (printf "%s/%s/%s/_index.md" .product.Family .product.Platform "developer-guide")}}     
                 {{ end }}         
                
                 {{ $.ctx.Scratch.Set "counter" 0 }}                
