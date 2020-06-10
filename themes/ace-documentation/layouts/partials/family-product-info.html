@@ -44,10 +44,8 @@
             <ul class="fa-ul">            
                 {{- $devGuidePath := (printf "%s\\%s\\%s\\_index.md" .product.Family .product.Platform "developer-guide") -}}     
                 {{- if ne (getenv "OS") "Windows_NT" -}}
-                    {{- $devGuidePath = (printf "%s/%s/%s/_index.md" .product.Family .product.Platform "developer-guide") -}}     
-                    {{- printf "isLinux" -}}
+                    {{- $devGuidePath = (printf "%s/%s/%s/_index.md" .product.Family .product.Platform "developer-guide") -}} 
                 {{- end -}}         
-                {{- $devGuidePath -}}
                 {{- $.ctx.Scratch.Set "counter" 0 -}}                
                 {{- range (where (where .ctx.Site.Pages "Section" .product.Family) ".Kind" "==" "section") -}}                
                     
