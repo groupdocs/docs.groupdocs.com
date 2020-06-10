@@ -18,21 +18,38 @@
         <div class="pf-docs-icon">                            
             <i class="fas fa-stopwatch"></i>
         </div>
+        {{- $sectionPath := (printf "%s\\%s\\" .product.Family .product.Platform) -}} 
+        {{- if ne (getenv "OS") "Windows_NT" -}}
+            {{- $sectionPath = (printf "%s/%s/" .product.Family .product.Platform) -}} 
+        {{- end -}}
         <div class="pf-docs-item">     
             <div class="pf-docs-item-name">Getting Started</div>
             <div class="pf-docs-item-desc">Start quickly with our getting started documentation</div>     
-            <ul class="fa-ul">
-                {{- $sectionPath := (printf "%s\\%s\\%s\\" .product.Family .product.Platform "getting-started") -}} 
-               
-                {{- if ne (getenv "OS") "Windows_NT" -}}
-                    {{- $sectionPath = (printf "%s/%s/%s/" .product.Family .product.Platform "getting-started") -}} 
-                {{- end -}}
-                {{- range first 4 (where (where .ctx.Site.RegularPages "Section" .product.Family) ".File.Dir" "==" $sectionPath) -}}                               
-                    <li><span class="fa-li">
-                        <i class="far fa-file-alt"></i></span>
-                        <a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a>
-                    </li>                 
-                {{- end -}}  
+            <ul class="fa-ul">                                              
+                <li><span class="fa-li">
+                    <i class="far fa-file-alt"></i></span>
+                    {{- with .ctx.Site.GetPage (printf "%s%s" $sectionPath "getting-started/features-overview.md") -}}
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{- end -}}                    
+                </li>   
+                <li><span class="fa-li">
+                    <i class="far fa-file-alt"></i></span>
+                    {{- with .ctx.Site.GetPage (printf "%s%s" $sectionPath "getting-started/supported-document-formats.md") -}}
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{- end -}}                    
+                </li>   
+                <li><span class="fa-li">
+                    <i class="far fa-file-alt"></i></span>
+                    {{- with .ctx.Site.GetPage (printf "%s%s" $sectionPath "getting-started/system-requirements.md") -}}
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{- end -}}                    
+                </li>   
+                <li><span class="fa-li">
+                    <i class="far fa-file-alt"></i></span>
+                    {{- with .ctx.Site.GetPage (printf "%s%s" $sectionPath "getting-started/installation.md") -}}
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{- end -}}                    
+                </li>   
             </ul>                         
         </div>
         <div class="pf-docs-icon">                            
@@ -41,23 +58,19 @@
         <div class="pf-docs-item">   
             <div class="pf-docs-item-name">Developer Guide</div>
             <div class="pf-docs-item-desc">Articles and guidelines for basic and advanced development</div>                              
-            <ul class="fa-ul">            
-                {{- $devGuidePath := (printf "%s\\%s\\%s\\_index.md" .product.Family .product.Platform "developer-guide") -}}     
-                {{- if ne (getenv "OS") "Windows_NT" -}}
-                    {{- $devGuidePath = (printf "%s/%s/%s/_index.md" .product.Family .product.Platform "developer-guide") -}} 
-                {{- end -}}         
-                {{- $.ctx.Scratch.Set "counter" 0 -}}                
-                {{- range (where (where .ctx.Site.Pages "Section" .product.Family) ".Kind" "==" "section") -}}                
-                    
-                    {{- if (eq .Parent.File.Path $devGuidePath) -}}                
-                    {{- if (lt ($.ctx.Scratch.Get "counter") 3) -}}                    
-                        {{- $.ctx.Scratch.Set "counter" (add ($.ctx.Scratch.Get "counter") 1) -}}                  
-                        <li><span class="fa-li"><i class="far fa-file-alt"></i></span>
-                            <a href="{{ .Permalink }}">{{ .Params.title | humanize | title }}</a>
-                        </li>  
-                    {{- end -}}             
-                    {{- end -}} 
-                {{- end -}}  
+            <ul class="fa-ul">                                            
+                <li><span class="fa-li">
+                    <i class="far fa-file-alt"></i></span>
+                    {{- with .ctx.Site.GetPage (printf "%s%s" $sectionPath "developer-guide/basic-usage/_index.md") -}}
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{- end -}}                    
+                </li>   
+                <li><span class="fa-li">
+                    <i class="far fa-file-alt"></i></span>
+                    {{- with .ctx.Site.GetPage (printf "%s%s" $sectionPath "developer-guide/advanced-usage/_index.md") -}}
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{- end -}}                    
+                </li>   
             </ul>
         </div>                                               
     </div>
