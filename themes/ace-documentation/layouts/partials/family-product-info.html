@@ -17,39 +17,35 @@
     <div class="pf-docs">        
         <div class="pf-docs-icon">                            
             <i class="fas fa-stopwatch"></i>
-        </div>
-        {{- $sectionPath := (printf "%s\\%s\\" .product.Family .product.Platform) -}} 
-        {{- if ne (getenv "OS") "Windows_NT" -}}
-            {{- $sectionPath = (printf "%s/%s/" .product.Family .product.Platform) -}} 
-        {{- end -}}
+        </div>        
         <div class="pf-docs-item">     
             <div class="pf-docs-item-name">Getting Started</div>
             <div class="pf-docs-item-desc">Start quickly with our getting started documentation</div>     
             <ul class="fa-ul">                                              
-                <li><span class="fa-li">
-                    <i class="far fa-file-alt"></i></span>
-                    {{- with .ctx.Site.GetPage (printf "%s%s" $sectionPath "getting-started/features-overview.md") -}}
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    {{- end -}}                    
+                <li>
+                    <span class="fa-li">
+                        <i class="far fa-file-alt"></i>
+                    </span>                    
+                    <a href="{{ .ctx.Site.BaseURL }}{{ .product.Family }}/features-overview">Features Overview</a>
                 </li>   
-                <li><span class="fa-li">
-                    <i class="far fa-file-alt"></i></span>
-                    {{- with .ctx.Site.GetPage (printf "%s%s" $sectionPath "getting-started/supported-document-formats.md") -}}
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    {{- end -}}                    
+                <li>
+                    <span class="fa-li">
+                        <i class="far fa-file-alt"></i>
+                    </span>                    
+                    <a href="{{ .ctx.Site.BaseURL }}{{ .product.Family }}/supported-document-formats">Supported Document Formats</a>
                 </li>   
-                <li><span class="fa-li">
-                    <i class="far fa-file-alt"></i></span>
-                    {{- with .ctx.Site.GetPage (printf "%s%s" $sectionPath "getting-started/system-requirements.md") -}}
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    {{- end -}}                    
+                <li>
+                    <span class="fa-li">
+                        <i class="far fa-file-alt"></i>
+                    </span>                    
+                    <a href="{{ .ctx.Site.BaseURL }}{{ .product.Family }}/system-requirements">System Requirements</a>
                 </li>   
-                <li><span class="fa-li">
-                    <i class="far fa-file-alt"></i></span>
-                    {{- with .ctx.Site.GetPage (printf "%s%s" $sectionPath "getting-started/installation.md") -}}
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    {{- end -}}                    
-                </li>   
+                <li>
+                    <span class="fa-li">
+                        <i class="far fa-file-alt"></i>
+                    </span>                    
+                    <a href="{{ .ctx.Site.BaseURL }}{{ .product.Family }}/installation">Installation</a>
+                </li> 
             </ul>                         
         </div>
         <div class="pf-docs-icon">                            
@@ -58,19 +54,19 @@
         <div class="pf-docs-item">   
             <div class="pf-docs-item-name">Developer Guide</div>
             <div class="pf-docs-item-desc">Articles and guidelines for basic and advanced development</div>                              
-            <ul class="fa-ul">                                            
-                <li><span class="fa-li">
-                    <i class="far fa-file-alt"></i></span>
-                    {{- with .ctx.Site.GetPage (printf "%s%s" $sectionPath "developer-guide/basic-usage/_index.md") -}}
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    {{- end -}}                    
-                </li>   
-                <li><span class="fa-li">
-                    <i class="far fa-file-alt"></i></span>
-                    {{- with .ctx.Site.GetPage (printf "%s%s" $sectionPath "developer-guide/advanced-usage/_index.md") -}}
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    {{- end -}}                    
-                </li>   
+            <ul class="fa-ul">  
+                <li>
+                    <span class="fa-li">
+                        <i class="far fa-file-alt"></i>
+                    </span>                    
+                    <a href="{{ .ctx.Site.BaseURL }}{{ .product.Family }}/basic-usage">Basic Usage</a>
+                </li>                                           
+                <li>
+                    <span class="fa-li">
+                        <i class="far fa-file-alt"></i>
+                    </span>                    
+                    <a href="{{ .ctx.Site.BaseURL }}{{ .product.Family }}/advanced-usage">Advanced Usage</a>
+                </li>
             </ul>
         </div>                                               
     </div>
