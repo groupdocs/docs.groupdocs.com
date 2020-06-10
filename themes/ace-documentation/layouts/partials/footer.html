@@ -22,7 +22,7 @@
     {{- $productSearchJson := (printf "%s-%s.json" (index $slittedUrl 1)  (index $slittedUrl 2)) -}}    
     
     var sectionName = baseurl + "{{ $menuSection }}";    
-    var jsonUrl = baseurl + "search/" + "{{ $productSearchJson }}";  
+    var jsonUrl = baseurl + "search-json/" + "{{ $productSearchJson }}";  
     {{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
         jsonUrl = baseurl + "index.json";   
     {{ end }}
