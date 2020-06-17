@@ -14,7 +14,11 @@
     <div class="pf-product-name">
         <a href="{{ .ctx.Site.BaseURL }}{{ .product.Family }}/{{ .product.Platform }}">{{ .product.Name }}</a>
     </div>
-    <div class="pf-docs">        
+    <div class="pf-docs" 
+    {{- if eq .ctx.Params.hideDocsSection true}}
+    style="display: none;"
+    {{ end }}
+    >        
         <div class="pf-docs-icon">                            
             <i class="fas fa-stopwatch"></i>
         </div>        
@@ -70,7 +74,10 @@
             </ul>
         </div>                                               
     </div>
-    <div> 
+    <div  {{- if eq .ctx.Params.hideDocsSection true}}
+    style="display: none;"
+    {{ end }}
+    > 
         <a class="btn-net" style="margin-bottom: 55px;" 
             href="{{ .ctx.Site.BaseURL }}{{ .product.Family }}/{{ .product.Platform }}">
             More <i class="fas fa-arrow-right"></i>
