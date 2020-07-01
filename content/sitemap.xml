@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://docs2.groupdocs.com/</loc>
+        <loc>https://docs.groupdocs.com/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/assembly/</loc>
+        <loc>https://docs.groupdocs.com/assembly/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/annotation/</loc>
+        <loc>https://docs.groupdocs.com/annotation/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/classification/</loc>
+        <loc>https://docs.groupdocs.com/classification/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/comparison/</loc>
+        <loc>https://docs.groupdocs.com/comparison/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/conversion/</loc>
+        <loc>https://docs.groupdocs.com/conversion/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/editor/</loc>
+        <loc>https://docs.groupdocs.com/editor/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/merger/</loc>
+        <loc>https://docs.groupdocs.com/merger/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/metadata/</loc>
+        <loc>https://docs.groupdocs.com/metadata/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/parser/</loc>
+        <loc>https://docs.groupdocs.com/parser/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/redaction/</loc>
+        <loc>https://docs.groupdocs.com/redaction/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/search/</loc>
+        <loc>https://docs.groupdocs.com/search/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/signature/</loc>
+        <loc>https://docs.groupdocs.com/signature/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/viewer/</loc>
+        <loc>https://docs.groupdocs.com/viewer/</loc>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docs2.groupdocs.com/watermark/</loc>
+        <loc>https://docs.groupdocs.com/watermark/</loc>
         <priority>0.9</priority>
     </url>
 </urlset>
