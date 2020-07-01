@@ -2,7 +2,12 @@
 <html lang="{{ .Site.Language.Lang }}">
     {{- partial "head.html" . -}}    
     <body>  
-        
+        {{- if .Site.Params.google_tag_manager_id -}}
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.google_tag_manager_id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        {{- end -}}
+
         {{- partial "groupdocs-header.html" . -}}
         {{- partial "header-landing" . -}}
 

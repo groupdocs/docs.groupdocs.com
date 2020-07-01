@@ -15,9 +15,9 @@
         <a href="{{ .ctx.Site.BaseURL }}{{ .product.Family }}/{{ .product.Platform }}">{{ .product.Name }}</a>
     </div>
     <div class="pf-docs" 
-    {{- if eq .ctx.Params.hideDocsSection true}}
+    {{- if eq .ctx.Params.hideDocsSection true }}
     style="display: none;"
-    {{ end }}
+    {{ end -}}
     >        
         <div class="pf-docs-icon">                            
             <i class="fas fa-stopwatch"></i>

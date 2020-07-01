@@ -3,7 +3,6 @@ languageCode                = "en-us"
 title                       = "Documentation"
 theme                       = "ace-documentation"
 
-
 disableKinds                = ["RSS", "sitemap", "categories", "tags", "taxonomy", "taxonomyTerm"]
 
 
@@ -38,6 +37,7 @@ enableGitInfo               = true
 
 [Params]
     contentDir              = "content"
+    google_tag_manager_id   = "GTM-WZTNN8"
     sitemapMax              = 49999
 
     # Set source repository location.
