@@ -51,6 +51,8 @@ enableGitInfo               = true
     GitHubDateFormat        = 'January 2, 2006'
 
     ProductFamilies = [ 
+            { Key = "total",            Name = "GroupDocs.Total",           Description = "Manipulate documents from within your own desktop solutions and web apps without requiring any other commercial products." },           
+
             { Key = "annotation",       Name = "GroupDocs.Annotation",      Description = "Powerful document annotator component that helps you to boost your applications with document annotation, commenting and collaboration features." },
             { Key = "comparison",       Name = "GroupDocs.Comparison",      Description = "Document comparison API that detects document text, styling and formating changes quickly and with a high accuracy." },
             { Key = "conversion",       Name = "GroupDocs.Conversion",      Description = "Huge conversion API that supports over 7400 document conversion pairs. With innumerous conversion options you will get hight quality result fast." },

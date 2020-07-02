@@ -14,10 +14,12 @@
         <main style="display: flex;">               
             <div class="productsHome">
                 
-                <div class="sectionName">PRODUCTS</div>
-
-                {{ range sort .Site.Params.ProductFamilies "Name" }}        
-                {{ partial "home-product" . }}
+                <div class="sectionName">PRODUCTS</div>                
+                {{ range sort (where .Site.Params.ProductFamilies "Key" "eq" "total" ) "Name" }}         
+                    {{ partial "home-product" . }}
+                {{ end }} 
+                {{ range sort (where .Site.Params.ProductFamilies "Key" "ne" "total" ) "Name" }}         
+                    {{ partial "home-product" . }}
                 {{ end }}               
                 <div style="margin-bottom: 100px;">
                     </div>
