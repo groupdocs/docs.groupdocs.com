@@ -40,6 +40,8 @@ enableGitInfo               = true
     google_tag_manager_id   = "GTM-WZTNN8"
     sitemapMax              = 49999
 
+    disableSearch           = true
+
     # Set source repository location.
     # Used for 'Last Modified' and 'Edit this page' links.
     GitHubRepo              = 'https://github.com/groupdocs/docs'
