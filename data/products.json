@@ -20,8 +20,6 @@
                     "Name": "GroupDocs.Assembly for .NET WebForms",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-.NET-WebForms"
-                    
-
                 }
             ],
             "LiveDemo": [
@@ -58,9 +56,7 @@
                 {
                     "Name": "GroupDocs.Assembly for Java Dropwizard",
                     "Description": "Open-source font-end project ready to be used out of the box",
-                    "Url": "https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-Java-Dropwizard"
-                    
-
+                    "Url": "https://github.com/groupdocs-assembly/GroupDocs.Assembly-for-Java-Dropwizard"    
                 }
             ],
             "LiveDemo": [
@@ -100,8 +96,6 @@
                     "Name": "GroupDocs.Annotation for .NET WebForms",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms"
-                    
-
                 }
             ],
             "LiveDemo": [
@@ -138,9 +132,7 @@
                 {
                     "Name": "GroupDocs.Annotation for Java Dropwizard",
                     "Description": "Open-source font-end project ready to be used out of the box",
-                    "Url": "https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java-Dropwizard"
-                    
-
+                    "Url": "https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java-Dropwizard" 
                 }
             ],
             "LiveDemo": [
@@ -203,8 +195,6 @@
                     "Name": "GroupDocs.Comparison for .NET WebForms",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-WebForms"
-                    
-
                 }
             ],
             "LiveDemo": [
@@ -242,8 +232,6 @@
                     "Name": "GroupDocs.Comparison for Java Dropwizard",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java-Dropwizard"
-                    
-
                 }
             ],
             "LiveDemo": [
@@ -283,8 +271,6 @@
                     "Name": "GroupDocs.Conversion for .NET WebForms",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-conversion/GroupDocs.Conversion-for-.NET-WebForms"
-                    
-
                 }
             ],
             "LiveDemo": [
@@ -322,8 +308,6 @@
                     "Name": "GroupDocs.Conversion for Java Dropwizard",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-conversion/GroupDocs.Conversion-for-Java-Dropwizard"
-                    
-
                 }
             ],
             "LiveDemo": [
@@ -363,8 +347,6 @@
                     "Name": "GroupDocs.Editor for .NET WebForms",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-editor/GroupDocs.Editor-for-.NET-WebForms"
-                    
-
                 }
             ],
             "LiveDemo": [
@@ -402,8 +384,6 @@
                     "Name": "GroupDocs.Editor for Java Dropwizard",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-editor/GroupDocs.Editor-for-Java-Dropwizard"
-                    
-
                 }
             ],
             "LiveDemo": [
@@ -486,8 +466,6 @@
                     "Name": "GroupDocs.Metadata for .NET WebForms",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-metadata/GroupDocs.Metadata-for-.NET-WebForms"
-                    
-
                 }
             ],
             "LiveDemo": [                                
@@ -519,8 +497,6 @@
                     "Name": "GroupDocs.Metadata for Java Dropwizard",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-metadata/GroupDocs.Metadata-for-Java-Dropwizard"
-                    
-
                 }
             ],
             "LiveDemo": [                                
@@ -686,8 +662,6 @@
                     "Name": "GroupDocs.Signature for .NET WebForms",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-signature/GroupDocs.Signature-for-.NET-WebForms"
-                    
-
                 }
             ],
             "LiveDemo": [
@@ -725,8 +699,6 @@
                     "Name": "GroupDocs.Signature for Java Dropwizard",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-signature/GroupDocs.Signature-for-Java-Dropwizard"
-                    
-
                 }
             ],
             "LiveDemo": [
@@ -766,8 +738,6 @@
                     "Name": "GroupDocs.Viewer for .NET WebForms",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-.NET-WebForms"
-                    
-
                 }
             ],
             "LiveDemo": [
@@ -805,8 +775,6 @@
                     "Name": "GroupDocs.Viewer for Java Dropwizard",
                     "Description": "Open-source font-end project ready to be used out of the box",
                     "Url": "https://github.com/groupdocs-viewer/GroupDocs.Viewer-for-Java-Dropwizard"
-                    
-
                 }
             ],
             "LiveDemo": [

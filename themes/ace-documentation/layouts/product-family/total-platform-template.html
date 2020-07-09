@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
     {{- partial "head.html" . -}}
-    <body>          
+    <body>
+        {{- if .Site.Params.google_tag_manager_id -}}
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.google_tag_manager_id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        {{- end -}}          
+        <!-- Start Header -->
         {{- partial "groupdocs-header.html" . -}}
+         <!-- End Header -->
         {{- partial "header-landing" . -}}
-        <main style="display: flex;">               
-            <div class="productsHome">                
-                <div class="sectionName">{{ .Title }}</div>                                            
+        <!-- Main Content Start -->
+        <div id="main-cointainer">
+            <div class="content-container" id="left-container">               
+                <h3>Products</h3>            
                 {{- if eq .Params.Platform "net" }}                    
-                    {{ range sort (where .Site.Params.ProductFamilies "Key" "ne" "total" ) "Name" }}                         
-                        {{- partial "total-product" (dict "product" . "ctx" $) -}}
-                    {{- end -}}
+                {{ range sort (where .Site.Params.ProductFamilies "Key" "ne" "total" ) "Name" }}                         
+                    {{- partial "total-product" (dict "product" . "ctx" $) -}}
+                {{- end -}}
                 {{- end -}}
                 {{- if eq .Params.Platform "java" }}
                     {{ range sort (where .Site.Params.ProductFamilies "Key" "ne" "total" ) "Name" }}   
@@ -19,19 +27,20 @@
                         {{- end -}}
                     {{- end -}}
                 {{- end -}}                
-                <div style="margin-bottom: 100px;"></div>
             </div>
-            <div class="moreServicesHome">
-                <div class="sectionName" style="display: flex;">MORE</div>
-                <div class="btn-container">        
-                    {{ range sort .Site.Params.MoreServices "Name" }}        
-                        {{ partial "more-services" . }}
-                    {{ end }}             
-                </div>
-            </div>            
-        </main>
+            <div class="content-container" id="right-container">
+                <h3>More</h3>
+                {{ range sort .Site.Params.MoreServices "Name" }}        
+                    {{ partial "more-services" . }}
+                {{ end }}                      
+            </div>
+        </div>
+        <!-- Main Content End-->
+
+        <!-- Start Footer -->
         {{- partial "groupdocs-footer.html" . -}}
-        {{- partial "footer.html" . -}}
+        <!-- End Footer -->
+        {{- partial "footer.html" . -}}       
     </body>    
 </html>
 

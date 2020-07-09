@@ -5,4 +5,5 @@ title: GroupDocs.Total
 type: "product-family"
 layout: "total-template"
 hideDocsSection: true
+useLandingCss: true
 ---      

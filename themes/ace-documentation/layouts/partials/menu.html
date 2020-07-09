@@ -49,8 +49,7 @@
               {{ if .Page.IsSection -}} 
                 <a class="collapsable-menu-icon" data-toggle="collapse" data-target="#{{ .Page.Params.Id }}" aria-expanded="false" role="button" aria-controls="{{ .Page.Params.Id }}"></a>
               {{ end -}}              
-                <a href="{{ .Page.RelPermalink }}" class="nav-link p-0  {{- if eq .Page.RelPermalink $.CurrentPage.RelPermalink}} active{{end -}}">                    
-                  
+                <a href="{{ .Page.RelPermalink }}" class="nav-link p-0  {{- if eq .Page.RelPermalink $.CurrentPage.RelPermalink}} active{{end -}}">                                      
                       {{- partial "title" .Page -}}
                 </a>
               {{- else }}

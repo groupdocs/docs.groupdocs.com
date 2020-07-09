@@ -1,0 +1,28 @@
+@media (max-width: 1109px){
+
+    #main-cointainer{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #left-container{
+        width: calc(100% - 40px);
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    #right-container{
+        display: none;
+    }
+
+    .product-container{
+        text-align: center;
+    }
+
+    .content-container > h3{
+        font-size: 22px;
+        margin-bottom: 40px;
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -5,4 +5,5 @@ title: GroupDocs.Total for .NET
 type: "product-family"
 layout: "total-platform-template"
 platform: net
+useLandingCss: true
 ---      

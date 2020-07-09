@@ -6,36 +6,33 @@
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.google_tag_manager_id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        {{- end -}}
-
+        {{- end -}}        
+        <!-- Start Header -->
         {{- partial "groupdocs-header.html" . -}}
+         <!-- End Header -->
         {{- partial "header-landing" . -}}
-
-        <main style="display: flex;">               
-            <div class="productsHome">
-                
-                <div class="sectionName">PRODUCTS</div>                
+        <!-- Main Content Start -->
+        <div id="main-cointainer">
+            <div class="content-container" id="left-container">
+                <h3>Products</h3>
                 {{ range sort (where .Site.Params.ProductFamilies "Key" "eq" "total" ) "Name" }}         
                     {{ partial "home-product" . }}
                 {{ end }} 
                 {{ range sort (where .Site.Params.ProductFamilies "Key" "ne" "total" ) "Name" }}         
                     {{ partial "home-product" . }}
-                {{ end }}               
-                <div style="margin-bottom: 100px;">
-                    </div>
-
+                {{ end }}                      
             </div>
-
-            <div class="moreServicesHome">
-                <div class="sectionName" style="display: flex;">MORE</div>
-                <div class="btn-container">        
-                    {{ range sort .Site.Params.MoreServices "Name" }}        
-                        {{ partial "more-services" . }}
-                    {{ end }}             
-                </div>
-            </div>            
-        </main>
+            <div class="content-container" id="right-container">
+                <h3>More</h3>
+                {{ range sort .Site.Params.MoreServices "Name" }}        
+                    {{ partial "more-services" . }}
+                {{ end }}                      
+            </div>
+        </div>
+        <!-- Main Content End-->        
+        <!-- Start Footer -->
         {{- partial "groupdocs-footer.html" . -}}
+        <!-- End Footer -->
         {{- partial "footer.html" . -}}
     </body>    
 </html>

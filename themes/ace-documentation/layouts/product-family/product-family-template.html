@@ -7,19 +7,15 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.google_tag_manager_id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         {{- end -}}
-
+        <!-- Start Header -->
         {{- partial "groupdocs-header.html" . -}}
+        <!-- End Header -->
         {{- partial "header-landing" . -}}
-
-        <main style="display: flex;">  
-            <div class="pfMain">
-                
-                {{ range where $.Site.Data.products.Items "Family" .Params.Id}}
-                    {{ partial "family-product-info"  (dict "product" . "ctx" $) }}                                  
-                {{ end }}
-
-            </div>
-        </main>
+        <div id="main-cointainer">            
+        {{ $netProduct := (index (first 1 (where (where .Site.Data.products.Items "Family" .Params.Id) "Platform" "net")) 0) }}
+        {{ $javaProduct := (index (first 1 (where (where .Site.Data.products.Items "Family" .Params.Id) "Platform" "java")) 0) }}
+        {{ partial "family-product-info" (dict "netProduct" $netProduct "javaProduct" $javaProduct "ctx" $) }}                                              
+        </div>       
         {{- partial "groupdocs-footer.html" . -}}
         {{- partial "footer.html" . -}}
     </body>   

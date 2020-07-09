@@ -2,12 +2,10 @@
     <base href="{{ .Site.BaseURL }}">
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <meta name="description" content="{{ default .Summary .Description }}">
     <meta name="keywords" content={{ delimit .Keywords " " }} >
-
     <link rel="canonical" href="{{ .Permalink }}">
-
+    
     <title>
         {{ block "title" . }}
         {{ .Title}} 
@@ -18,23 +16,36 @@
 
    <!-- Only include the tracking when using `hugo` or adding `--environment production` -->
    {{- if eq (getenv "HUGO_ENV") "production" | or (eq hugo.Environment "production") -}}
+   <meta name="google-site-verification" content="n0rtymY2bXXsnMn_HlCrA-IUeTfvuNV4hs_gW83kNkU">
+   <meta name="google-site-verification" content="QsvolQStNoH5gGgY2mESUljn4pZ4kMod1jsDKvAKg0w">
    {{- if .Site.Params.google_tag_manager_id -}}
        {{- partial "google_tag_manager.html" . -}}
    {{- end -}}        
    {{- end -}}
-
-    <!-- Load stylesheet -->
+    
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/fontawesome.min.css">
-    <!-- Venture CSS -->    
-    <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/aspose/css/AsposePtyLtdMenu.css" type="text/css" />
+     
+    <!-- Start Header Resources -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://menu.containerize.com/Scripts/Containerize.Menu.min.js"></script>
+    <!-- 
+    <script src="{{ .Site.BaseURL }}lib/jquery.min.js"></script> 
+    <script src="{{ .Site.BaseURL }}js/Containerize.Menu.min.js"></script> -->
+
+    <link href="https://cms.admin.containerize.com/templates/aspose/css/AsposePtyLtdMenu.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/aspose/css/font-awesome.css" type="text/css" />
-    <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/aspose/css/groupdocs.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cms.admin.containerize.com/templates/groupdocs/css/groupdocs.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cms.admin.containerize.com/templates/aspose/css/font-awesome.css"/>
     <link rel="shortcut icon" href="https://cms.admin.containerize.com/templates/groupdocs/favicon.ico" />
-    <!-- End of Venture CSS -->        
-
+    <!-- End Header Resources -->  
+    {{ if .Params.useLandingCss }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/docs.groupdocs.com.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/docs.groupdocs.com.mobile.css"/>   
+    {{ end }}
+    {{ if ne .Params.useLandingCss true }}
     {{ $style := resources.Get "css/ace.scss" | toCSS | minify }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
-
+        <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ end }}
     <!-- Custom Docs CSS -->
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/docs.css" type="text/css" />   
 </head>
