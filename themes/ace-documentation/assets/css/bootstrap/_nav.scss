@@ -39,6 +39,8 @@ li.nav-item.parent > a.nav-link.active
 
 li.nav-item.parent > a.nav-link {
   background-color: $gray-100;
+  border-radius: 3px;
+  padding: 0 3px !important;
 }
 
 .collapsable-menu-icon[aria-expanded="true"]::before {
@@ -46,6 +48,7 @@ li.nav-item.parent > a.nav-link {
   font-family: FontAwesome;
   position: absolute;
   right: 0;
+  padding-right: 2px;
 }
 
 .collapsable-menu-icon[aria-expanded="false"]::before {
@@ -53,4 +56,5 @@ li.nav-item.parent > a.nav-link {
   font-family: FontAwesome;
   position: absolute;
   right: 0;
+  padding-right: 2px;
 }
