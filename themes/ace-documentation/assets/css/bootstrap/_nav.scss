@@ -29,12 +29,12 @@
 }
 
 li.nav-item.active {
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-semibold;
 }
 
 li.nav-item.parent > a.nav-link.active
 {
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-semibold;
 }
 
 li.nav-item.parent > a.nav-link {
