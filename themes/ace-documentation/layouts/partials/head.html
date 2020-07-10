@@ -45,7 +45,5 @@
     {{ if ne .Params.useLandingCss true }}
     {{ $style := resources.Get "css/ace.scss" | toCSS | minify }}
         <link rel="stylesheet" href="{{ $style.Permalink }}">
-    {{ end }}
-    <!-- Custom Docs CSS -->
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/docs.css" type="text/css" />   
+    {{ end }}    
 </head>
