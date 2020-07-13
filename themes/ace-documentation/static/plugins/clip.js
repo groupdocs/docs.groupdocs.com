@@ -19,7 +19,7 @@ if (navigator && navigator.clipboard) {
 function addCopyButtons(clipboard) {
     document.querySelectorAll('pre > code').forEach(function (codeBlock) {
         var button = document.createElement('button');
-        button.className = 'copy-code-button';
+        button.className = 'copy-code-button float-right';        
         button.type = 'button';
         button.innerText = 'Copy';
 
@@ -40,11 +40,6 @@ function addCopyButtons(clipboard) {
         });
 
         var pre = codeBlock.parentNode;
-        if (pre.parentNode.classList.contains('highlight')) {
-            var highlight = pre.parentNode;
-            highlight.parentNode.insertBefore(button, highlight);
-        } else {
-            pre.parentNode.insertBefore(button, pre);
-        }
+        pre.prepend(button);
     });
 }
