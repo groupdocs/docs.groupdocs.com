@@ -7,7 +7,6 @@
 <script>anchors.add('.main h2, .main h3');</script>
 
 <!-- Plugin: clipboard -->
-{{ if (findRE "<pre" .Content 1) }}
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}plugins/clip.css" type="text/css" />
+{{ if (findRE "<pre" .Content 1) }}    
     <script type="text/javascript" src="{{ .Site.BaseURL }}plugins/clip.js"></script>
 {{ end }}

@@ -19,7 +19,8 @@ if (navigator && navigator.clipboard) {
 function addCopyButtons(clipboard) {
     document.querySelectorAll('pre > code').forEach(function (codeBlock) {
         var button = document.createElement('button');
-        button.className = 'copy-code-button float-right';        
+        button.className = 'btn btn-outline-light float-right'; 
+        button.style = 'font-size: 1em !important;';
         button.type = 'button';
         button.innerText = 'Copy';
 
