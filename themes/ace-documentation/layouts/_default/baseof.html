@@ -7,35 +7,14 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.google_tag_manager_id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         {{- end -}}
-
-        {{- partial "groupdocs-header.html" . -}}
-      
+        {{- partial "groupdocs-header.html" . -}}      
         <div class="container-fluid">
             <div class="row">
-
-                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right">
+                <div class="docs-sidenav order-0 col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 position-sticky border-right">
                     {{- partial "menu.html" . -}}
-                </div>
-
-                {{- if and (ne .Site.Params.toc false) (ne .Params.toc false) }}
-                    <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left">
-                        {{- partial "tableofcontents.html" . -}}
-                    </div>
-                    <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
-                {{else}}
-                    <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-10 py-3">
-                {{end}}
-                    
+                </div>        
+                <div class="main col-12 order-1 col-sm-9 col-md-9 col-lg-9 col-xl-9 py-3">                
                     {{- block "main" . }}{{- end }}
-
-                    <div class="row justify-content-between py-5">
-                        {{- if .GitInfo -}}                       
-                        {{- if not .Params.disableGitInfo -}}
-                        {{- partial "github-info.html" . -}}                                     
-                        {{- end -}}
-                        {{- end -}}
-                    </div> <!-- /end of row -->
-                    
                     <div class="row">
                         {{- if and (ne .Site.Params.disableReadmoreNav true) (ne .Params.disableReadmoreNav true) -}}
                         <div class="position-relative mx-auto col-lg-12">
@@ -43,13 +22,9 @@
                         </div>
                         {{- end -}}
                     </div> <!-- /end of row -->
-
                 </div>
-
             </div> <!-- /end of row -->
-
         </div> <!-- /end of container -->        
-
         {{- partial "groupdocs-footer.html" . -}}
         {{- partial "footer.html" . -}}
     </body>   
