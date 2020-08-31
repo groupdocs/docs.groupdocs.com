@@ -21,6 +21,8 @@ enableGitInfo               = true
         startLevel          = 1
         endLevel            = 4
         ordered             = false
+    [markup.highlight]        
+        style               = "github"
 
 [outputs]
     home                    = [ "HTML", "JSON", "SITEMAP"]
