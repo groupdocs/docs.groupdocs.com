@@ -11,25 +11,47 @@
         {{- partial "groupdocs-header.html" . -}}
          <!-- End Header -->
         {{- partial "header-landing" . -}}
+
         <!-- Main Content Start -->
-        <div id="main-cointainer">
-            <div class="content-container" id="left-container">
-                <h3>Products</h3>
-                {{ range sort (where .Site.Params.ProductFamilies "Key" "eq" "total" ) "Name" }}         
-                    {{ partial "home-product" . }}
-                {{ end }} 
-                {{ range sort (where .Site.Params.ProductFamilies "Key" "ne" "total" ) "Name" }}         
-                    {{ partial "home-product" . }}
-                {{ end }}                      
-            </div>
-            <div class="content-container" id="right-container">
-                <h3>More</h3>
-                {{ range sort .Site.Params.MoreServices "Name" }}        
+         <div id="content-container">
+            <ul id="support-buttons-container">
+                {{- range sort .Site.Params.MoreServices "Name" -}}        
                     {{ partial "more-services" . }}
-                {{ end }}                      
+                {{- end -}}    
+            </ul> 
+
+            {{ range sort (where .Site.Params.ProductFamilies "Key" "eq" "total" ) "Name" }}         
+            <!-- product -->
+            <div class="product-row product-pilot">
+                <div class="product-container product-center">
+                    <h3><a href="total">GroupDocs.Total Product Family</a></h3>
+                    <div class="product-description">Manipulate documents from within your own desktop solutions and web apps without requiring any other commercial products</div>
+                    <div class="product-buttons">
+                        <a href="total/net"><div class="pdt-btn btn-blue"><i class="fab fa-windows"></i> <span>.NET</span></div></a>
+                        <a href="total/java"><div class="pdt-btn btn-red"><i class="fab fa-java"></i> <span>Java</span></div></a>
+                    </div>
+                </div>
             </div>
+            {{ end }} 
+
+            {{ range sort (where .Site.Params.ProductFamilies "Key" "ne" "total" ) "Name" }}         
+                {{ .Scratch.Add "counter" 0 }}                                        
+                {{- $k := $.Scratch.Get "counter" -}}                
+                    {{- if (modBool $k 2) }}
+                        <div class="product-row">
+                    {{- end }}                        
+                    {{- partial "home-product" . -}}                                     
+                    {{- if (modBool $k 2) }}
+                        <div class="product-splitter"></div>
+                    {{- end -}}
+                    {{- if not (modBool $k 2) -}}                
+                        </div>
+                    {{ end }}
+                    {{- $.Scratch.Add "counter" 1 -}}                
+            {{- end -}} 
         </div>
-        <!-- Main Content End-->        
+        <!-- Main Content End-->    
+
         <!-- Start Footer -->
         {{- partial "groupdocs-footer.html" . -}}
         <!-- End Footer -->

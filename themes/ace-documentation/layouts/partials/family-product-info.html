@@ -49,7 +49,7 @@
         </div>
         <!-- More Button -->
         <div class="docs-container-button">
-            <a class="btn btn-net" href="{{ .ctx.Site.BaseURL }}{{ .Family }}/{{ .Platform }}">More <i class="fas fa-arrow-right"></i></a>
+            <a class="pdt-btn btn-blue" href="{{ .ctx.Site.BaseURL }}{{ .Family }}/{{ .Platform }}">More <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>    
     {{ end }}                    
@@ -102,7 +102,7 @@
         </div>
         <!-- More Button -->
         <div class="docs-container-button">
-            <a class="btn btn-net" href="{{ .ctx.Site.BaseURL }}{{ .Family }}/{{ .Platform }}">More <i class="fas fa-arrow-right"></i></a>
+            <a class="pdt-btn btn-blue" href="{{ .ctx.Site.BaseURL }}{{ .Family }}/{{ .Platform }}">More <i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
     {{ end }}  
@@ -112,7 +112,7 @@
     <!-- Left -->
     {{ with  .netProduct }}  
     <div class="content-container code-container">
-        <h3><i class="fas fa-code" style="padding-right: 5px;"></i>.NET Code Examples</h3>
+        <h3><i class="fas fa-code"></i>.NET Code Examples</h3>
         <ul>
             {{- range .CodeExamples -}}
             <li>
@@ -131,7 +131,7 @@
     <!-- Right -->
     {{ with  .javaProduct }}  
     <div class="content-container code-container">
-        <h3><i class="fas fa-code" style="padding-right: 5px;"></i>Java Code Examples</h3>
+        <h3><i class="fas fa-code"></i>Java Code Examples</h3>
         <ul>
             {{- range .CodeExamples -}}
             <li>
@@ -152,7 +152,7 @@
 <div class="docs-block">
     {{ with  .netProduct }}  
     <div class="content-container examples-container">
-        <h3><i class="fas fa-desktop" style="padding-right: 5px;"></i>Live Showcases</h3>
+        <h3><i class="fas fa-desktop"></i>Live Showcases</h3>
         <ul>
             {{- range .LiveDemo -}}
             <li>

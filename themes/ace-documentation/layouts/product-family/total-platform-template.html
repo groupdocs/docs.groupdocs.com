@@ -11,29 +11,59 @@
         {{- partial "groupdocs-header.html" . -}}
          <!-- End Header -->
         {{- partial "header-landing" . -}}
+        
         <!-- Main Content Start -->
-        <div id="main-cointainer">
-            <div class="content-container" id="left-container">               
-                <h3>Products</h3>            
-                {{- if eq .Params.Platform "net" }}                    
-                {{ range sort (where .Site.Params.ProductFamilies "Key" "ne" "total" ) "Name" }}                         
-                    {{- partial "total-product" (dict "product" . "ctx" $) -}}
-                {{- end -}}
-                {{- end -}}
-                {{- if eq .Params.Platform "java" }}
-                    {{ range sort (where .Site.Params.ProductFamilies "Key" "ne" "total" ) "Name" }}   
-                        {{- if ne .HideJava true }}   
-                            {{- partial "total-product" (dict "product" . "ctx" $) -}}
-                        {{- end -}}
-                    {{- end -}}
-                {{- end -}}                
-            </div>
-            <div class="content-container" id="right-container">
-                <h3>More</h3>
-                {{ range sort .Site.Params.MoreServices "Name" }}        
+        <div id="content-container">
+            <ul id="support-buttons-container">
+                {{- range sort .Site.Params.MoreServices "Name" -}}        
                     {{ partial "more-services" . }}
-                {{ end }}                      
-            </div>
+                {{- end -}}    
+            </ul>             
+            {{ .Scratch.Add "counter" 0 }}
+            {{- if eq .Params.Platform "net" }}                    
+            {{- range sort (where .Site.Params.ProductFamilies "Key" "ne" "total" ) "Name" -}}                         
+                {{- $k := $.Scratch.Get "counter" -}}
+                   
+                {{- if (modBool $k 2) }}
+                <div class="product-row">
+                {{- end }}
+                
+                {{- partial "total-product" (dict "product" . "ctx" $) -}}  
+                                
+                {{- if (modBool $k 2) }}
+                <div class="product-splitter"></div>
+                {{- end -}}
+                {{- if not (modBool $k 2) -}}                
+                </div>
+                {{ end }}
+                {{- $.Scratch.Add "counter" 1 -}}
+            {{- end -}}
+            {{- end -}}
+            
+            {{- if eq .Params.Platform "java" }}
+            {{ range sort .Site.Params.ProductFamilies "HideJava"  }}  
+             {{ if ne .Key "total"}}
+                {{- $k := $.Scratch.Get "counter" -}} 
+                
+                {{- if (modBool $k 2) }}
+                <div class="product-row">
+                {{- end }}
+                {{- if ne .HideJava "true" }}      
+                {{- partial "total-product" (dict "product" . "ctx" $) -}}
+                {{- else -}}    
+                {{- partial "empty-total-product" -}}
+                {{- end -}}
+    
+                {{- if (modBool $k 2) }}
+                <div class="product-splitter"></div>
+                {{- end -}}
+                {{- if not (modBool $k 2) -}}                
+                </div>
+                {{ end }}
+                {{- $.Scratch.Add "counter" 1 -}}
+            
+                {{- end -}} {{- end -}}
+            {{- end -}}         
         </div>
         <!-- Main Content End-->
 
