@@ -2,13 +2,18 @@
 <div class="docs-block">
     <!-- Left -->    
     {{ with  .netProduct }}  
-    <div class="content-container docs-container" id="left-container-family">
+    <div class="content-container docs-container" 
+    {{- if eq .Family "total" }}      
+    style="height: auto;" 
+    {{- end -}}
+    id="left-container-family">
         <!-- Platform Icon -->
         <div class="docs-container-icon">
             <i class="fab fa-windows"></i>
         </div>
         <!-- Title -->        
         <h3><a style="color: inherit;" href="{{ .ctx.Site.BaseURL }}{{ .Family }}/{{ .Platform }}">{{ .Name }}</a></h3>
+        {{- if ne .Family "total" }}      
         <!-- Getting Started / Developer Guide -->
         <div class="docs-container-title">
             <div class="docs-container-half">
@@ -51,17 +56,22 @@
         <div class="docs-container-button">
             <a class="pdt-btn btn-blue" href="{{ .ctx.Site.BaseURL }}{{ .Family }}/{{ .Platform }}">More <i class="fas fa-arrow-right"></i></a>
         </div>
+        {{- end -}}
     </div>    
     {{ end }}                    
     <!-- Right -->
     {{ with  .javaProduct }}  
-    <div class="content-container docs-container" id="right-container-family">
+    <div class="content-container docs-container" 
+    {{- if eq .Family "total" }}      
+    style="height: auto;" 
+    {{- end -}} id="right-container-family">
         <!-- Platform Icon -->
         <div class="docs-container-icon">
             <i class="fab fa-java"></i>
         </div>
         <!-- Title -->
         <h3><a style="color: inherit;" href="{{ .ctx.Site.BaseURL }}{{ .Family }}/{{ .Platform }}">{{ .Name }}</a></h3>
+        {{- if ne .Family "total" }}    
         <!-- Getting Started / Developer Guide -->
         <div class="docs-container-title">
             <div class="docs-container-half">
@@ -104,6 +114,7 @@
         <div class="docs-container-button">
             <a class="pdt-btn btn-blue" href="{{ .ctx.Site.BaseURL }}{{ .Family }}/{{ .Platform }}">More <i class="fas fa-arrow-right"></i></a>
         </div>
+        {{- end -}}
     </div>
     {{ end }}  
 </div>
