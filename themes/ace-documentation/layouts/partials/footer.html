@@ -10,3 +10,22 @@
 {{ if (findRE "<pre" .Content 1) }}    
     <script type="text/javascript" src="{{ .Site.BaseURL }}plugins/clip.js"></script>
 {{ end }}
+
+<script>
+    (function() {
+      var fess = document.createElement('script');
+      fess.type = 'text/javascript';
+      fess.async = true;
+      // fess.src is URL for FSS JS
+      fess.src = 'https://search.groupdocs.com/common/js/fess-ss.min.js';
+      fess.charset = 'utf-8';
+      fess.setAttribute('id', 'fess-ss');
+      fess.setAttribute('fess-url', 'https://search.groupdocs.com/json/');
+      fess.setAttribute('popup-result', 'true');
+      fess.setAttribute('enable-thumbnail', 'false');
+      fess.setAttribute('fields-label', 'gddocs');
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(fess, s);
+    })();
+</script>
+ 
