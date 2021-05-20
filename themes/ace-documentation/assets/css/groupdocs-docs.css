@@ -27,6 +27,8 @@ li{
     text-align: center;
     color: #FFFFFF;
     padding: 100px 0;
+    margin-top: 60px;
+    margin-top: 60px;
 }
 
 #top-container > h1{
@@ -48,6 +50,7 @@ li{
 #content-container{
     width: var(--container-width);
     margin: auto;
+    background: #fff !important;
 }
 
 ul#support-buttons-container{

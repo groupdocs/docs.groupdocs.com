@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.Language.Lang }}">
     {{- partial "head.html" . -}}
-    <body>
+    <body style="background: #111 !important;">
         {{- if .Site.Params.google_tag_manager_id -}}
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.google_tag_manager_id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         {{- end -}}
-        {{- partial "groupdocs-header.html" . -}}      
-        <div class="container-fluid">
-            <div class="row">
+        {{- partial "groupdocs-menu.html" . -}}      
+        <div class="container-fluid" style="margin-top: 60px;">
+            <div class="row" style="background: #fff !important;">
                 <div class="docs-sidenav order-0 col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 position-sticky border-right">
                     {{- partial "menu.html" . -}}
                 </div>        
@@ -25,7 +25,6 @@
                 </div>
             </div> <!-- /end of row -->
         </div> <!-- /end of container -->        
-        {{- partial "groupdocs-footer.html" . -}}
         {{- partial "footer.html" . -}}
     </body>   
 </html>

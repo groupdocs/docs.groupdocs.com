@@ -8,10 +8,9 @@
         <!-- End Google Tag Manager (noscript) -->
         {{- end -}}          
         <!-- Start Header -->
-        {{- partial "groupdocs-header.html" . -}}
+        {{- partial "groupdocs-menu.html" . -}}
          <!-- End Header -->
-        {{- partial "header-landing" . -}}
-        
+        {{- partial "header-landing" . -}}        
         <!-- Main Content Start -->
         <div id="content-container">
             <ul id="support-buttons-container">
@@ -22,14 +21,11 @@
             {{ .Scratch.Add "counter" 0 }}
             {{- if eq .Params.Platform "net" }}                    
             {{- range sort (where .Site.Params.ProductFamilies "Key" "ne" "total" ) "Name" -}}                         
-                {{- $k := $.Scratch.Get "counter" -}}
-                   
+                {{- $k := $.Scratch.Get "counter" -}}                   
                 {{- if (modBool $k 2) }}
                 <div class="product-row">
-                {{- end }}
-                
-                {{- partial "total-product" (dict "product" . "ctx" $) -}}  
-                                
+                {{- end }}                
+                {{- partial "total-product" (dict "product" . "ctx" $) -}}                                  
                 {{- if (modBool $k 2) }}
                 <div class="product-splitter"></div>
                 {{- end -}}
@@ -38,13 +34,11 @@
                 {{ end }}
                 {{- $.Scratch.Add "counter" 1 -}}
             {{- end -}}
-            {{- end -}}
-            
+            {{- end -}}            
             {{- if eq .Params.Platform "java" }}
             {{ range sort .Site.Params.ProductFamilies "HideJava"  }}  
              {{ if ne .Key "total"}}
-                {{- $k := $.Scratch.Get "counter" -}} 
-                
+                {{- $k := $.Scratch.Get "counter" -}}                 
                 {{- if (modBool $k 2) }}
                 <div class="product-row">
                 {{- end }}
@@ -52,25 +46,19 @@
                 {{- partial "total-product" (dict "product" . "ctx" $) -}}
                 {{- else -}}    
                 {{- partial "empty-total-product" -}}
-                {{- end -}}
-    
+                {{- end -}}    
                 {{- if (modBool $k 2) }}
                 <div class="product-splitter"></div>
                 {{- end -}}
                 {{- if not (modBool $k 2) -}}                
                 </div>
                 {{ end }}
-                {{- $.Scratch.Add "counter" 1 -}}
-            
+                {{- $.Scratch.Add "counter" 1 -}}            
                 {{- end -}} {{- end -}}
             {{- end -}}         
         </div>
         <!-- Main Content End-->
-
-        <!-- Start Footer -->
-        {{- partial "groupdocs-footer.html" . -}}
-        <!-- End Footer -->
-        {{- partial "footer.html" . -}}       
+        <div id="footer" />
     </body>    
 </html>
 

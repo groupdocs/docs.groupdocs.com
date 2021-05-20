@@ -8,10 +8,9 @@
         <!-- End Google Tag Manager (noscript) -->
         {{- end -}}        
         <!-- Start Header -->
-        {{- partial "groupdocs-header.html" . -}}
+        {{- partial "groupdocs-menu.html" . -}}
          <!-- End Header -->
         {{- partial "header-landing" . -}}
-
         <!-- Main Content Start -->
          <div id="content-container">
             <ul id="support-buttons-container">
@@ -19,7 +18,6 @@
                     {{ partial "more-services" . }}
                 {{- end -}}    
             </ul> 
-
             {{ range sort (where .Site.Params.ProductFamilies "Key" "eq" "total" ) "Name" }}         
             <!-- product -->
             <div class="product-row product-pilot">
@@ -33,7 +31,6 @@
                 </div>
             </div>
             {{ end }} 
-
             {{ range sort (where .Site.Params.ProductFamilies "Key" "ne" "total" ) "Name" }}         
                 {{ .Scratch.Add "counter" 0 }}                                        
                 {{- $k := $.Scratch.Get "counter" -}}                
@@ -50,11 +47,7 @@
                     {{- $.Scratch.Add "counter" 1 -}}                
             {{- end -}} 
         </div>
-        <!-- Main Content End-->    
-
-        <!-- Start Footer -->
-        {{- partial "groupdocs-footer.html" . -}}
-        <!-- End Footer -->
-        {{- partial "footer.html" . -}}
+        <!-- Main Content End-->  
+        <div id="footer" />
     </body>    
 </html>

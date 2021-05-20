@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
     {{- partial "head.html" . -}}
-    <body>  
-        
-        {{- partial "groupdocs-header.html" . -}}
+    <body>          
+        {{- partial "groupdocs-menu.html" . -}}
         {{- partial "header-landing" . -}}
-
         <main style="display: flex;">               
-            <div class="productsHome">
-                
+            <div class="productsHome">                
                 <div class="sectionName">PRODUCTS</div>
-
                 {{ range sort .Site.Params.ProductFamilies "Name" }}        
                 {{ partial "home-product" . }}
                 {{ end }}               
                 <div style="margin-bottom: 100px;">
                     </div>
-
             </div>
-
             <div class="moreServicesHome">
                 <div class="sectionName" style="display: flex;">MORE</div>
                 <div class="btn-container">        
@@ -28,7 +22,6 @@
                 </div>
             </div>            
         </main>
-        {{- partial "groupdocs-footer.html" . -}}
-        {{- partial "footer.html" . -}}
+        <div id="footer" />
     </body>    
 </html>

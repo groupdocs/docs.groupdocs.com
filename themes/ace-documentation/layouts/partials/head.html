@@ -4,14 +4,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ default .Summary .Description }}">
     <meta name="keywords" content={{ delimit .Keywords " " }} >
-    <link rel="canonical" href="{{ .Permalink }}">
-    
+    <link rel="canonical" href="{{ .Permalink }}">    
     <title>
-        {{ block "title" . }}
-        {{ .Title}} 
-        {{ if .Params.productName }} | {{ .Params.productName }} {{ end }}
-        {{ if ne .Title .Site.Title }} | {{ .Site.Title }} {{ end }}
-        {{ end }}
+        {{- block "title" . -}}
+        {{- $titleFull := .Title -}}        
+        {{- if .Params.productName -}} 
+            {{ $titleFull = (print $titleFull " | " .Params.productName) -}} 
+        {{- end -}}        
+        {{- if ne .Title .Site.Title -}} 
+            {{ $titleFull = (print $titleFull " | " .Site.Title) -}}                    
+        {{- end -}}
+        {{- $titleFull -}}         
+        {{- end -}}
     </title>
 
    <!-- Only include the tracking when using `hugo` or adding `--environment production` -->
@@ -21,11 +25,15 @@
    {{- if .Site.Params.google_tag_manager_id -}}
        {{- partial "google_tag_manager.html" . -}}
    {{- end -}}        
-   {{- end -}}
-    
-   {{ if .Params.useLandingCss }}
-    {{ partial "head-land-scripts" }}   
-   {{ else}}
-   {{ partial "head-docs-scripts" }}
+   {{- end -}}   
+
+   {{ if not .Params.useLandingCss }}
+    {{ partial "head-docs-scripts" }}    
+   {{ else if eq .Params.layout "total-platform-template"}}
+   {{ partial "head-total-platform-scripts.html" }}   
+   {{ else if or (eq .Params.layout "total-template") (eq .Params.layout "product-family-template")}}
+   {{ partial "head-family-scripts" }}   
+   {{ else }}
+   {{ partial "head-land-scripts" }}   
    {{ end }}      
 </head>
