@@ -28,10 +28,7 @@
     <loc>https://docs.groupdocs.com/sitemaps/conversion.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/editor-net.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/editor-java.xml</loc>
+    <loc>https://docs.groupdocs.com/sitemaps/editor.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/merger-net.xml</loc>
