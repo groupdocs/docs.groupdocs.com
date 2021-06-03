@@ -25,7 +25,7 @@ enableGitInfo               = true
         style               = "github"
 
 [outputs]
-    home                    = [ "HTML", "JSON", "SITEMAP"]
+    home                    = [ "HTML", "SITEMAP"]
     section                 = [ "HTML" ]
     page                    = [ "HTML" ]
 
