@@ -31,10 +31,7 @@
     <loc>https://docs.groupdocs.com/sitemaps/editor.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/merger-net.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/merger-java.xml</loc>
+    <loc>https://docs.groupdocs.com/sitemaps/merger.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/metadata-net.xml</loc>
