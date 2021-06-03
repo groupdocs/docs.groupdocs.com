@@ -25,10 +25,7 @@
     <loc>https://docs.groupdocs.com/sitemaps/comparison-java.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/conversion-net.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/conversion-java.xml</loc>
+    <loc>https://docs.groupdocs.com/sitemaps/conversion.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/editor-net.xml</loc>
