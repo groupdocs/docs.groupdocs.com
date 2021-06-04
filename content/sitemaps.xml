@@ -58,10 +58,7 @@
     <loc>https://docs.groupdocs.com/sitemaps/search-java.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/signature-net.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/signature-java.xml</loc>
+    <loc>https://docs.groupdocs.com/sitemaps/signature.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/viewer-net.xml</loc>
