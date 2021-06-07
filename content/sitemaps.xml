@@ -4,6 +4,9 @@
     <loc>https://docs.groupdocs.com/sitemap.xml</loc>
   </sitemap>
   <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/total.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/assembly-net.xml</loc>
   </sitemap>
   <sitemap>
