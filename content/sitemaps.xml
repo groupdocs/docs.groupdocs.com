@@ -13,19 +13,13 @@
     <loc>https://docs.groupdocs.com/sitemaps/assembly-java.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/annotation-net.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/annotation-java.xml</loc>
+    <loc>https://docs.groupdocs.com/sitemaps/annotation.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/classification-net.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/comparison-net.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/comparison-java.xml</loc>
+    <loc>https://docs.groupdocs.com/sitemaps/comparison.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/conversion.xml</loc>
@@ -64,10 +58,7 @@
     <loc>https://docs.groupdocs.com/sitemaps/signature.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/viewer-net.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/viewer-java.xml</loc>
+    <loc>https://docs.groupdocs.com/sitemaps/viewer.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/watermark-net.xml</loc>
