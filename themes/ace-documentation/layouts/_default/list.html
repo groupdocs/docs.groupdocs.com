@@ -13,7 +13,7 @@
 </div>   
 <h1>{{ .Title }}</h1>
     {{ .Content }}    
-    {{ if not (.Params.hideChildren) }}      
+    {{ if and (not .Params.hideChildren) (not .Params.showAllChildrenTable)}}      
         <ul class="contents">
         {{ $pages := .Paginator.Pages | append .Sections }}    
         {{ range sort $pages.ByWeight }}
@@ -21,6 +21,35 @@
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </li>
         {{ end }}        
-        </ul>         
+        </ul> 
     {{ end }}   
+       
+    {{ if .Params.showAllChildrenTable }}      
+        {{ $pageCount := len .Pages }}
+        {{ $emptyPagesCount := (sub 4 (mod $pageCount 4))}}
+        {{ $fullPagesCount :=add $pageCount $emptyPagesCount }}
+
+        <table style='border:none;'>
+            {{ range $i, $num := seq  $fullPagesCount}}
+                {{- $isRowStart := modBool  $i 4 -}}       
+                {{- $isRowEnd := modBool  (sub $i 3) 4 -}} 
+                {{- $p := index $.Pages $i -}} 
+                
+                {{if $isRowStart }}
+                <tr>
+                {{ end }}
+
+                <td style='border:none;'>
+                    <a href="{{ $p.RelPermalink }}" class="nav-link p-0">                                      
+                        {{ $p.Title}}
+                    </a>
+                </td>
+                {{if $isRowEnd }}
+                </tr>
+                {{ end }}
+            {{ end }}
+        </table>
+    {{ end }}   
+   
 {{ end }}
+
