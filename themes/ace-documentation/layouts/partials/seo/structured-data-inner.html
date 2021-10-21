@@ -94,6 +94,12 @@
                   "creator": {
                   "@id": "https://company.aspose.com/"
                   },
+                  "image": {
+                     "@type": "ImageObject",
+                     "url": "{{ $.Site.BaseURL }}{{ $element.imageUrl }}",
+                     "height": "{{ $element.imageHeight }}",
+                     "width": "{{ $element.imageWidth }}"
+                  },
                   "url": "{{ $.Site.BaseURL}}{{ $.Params.structuredData.howTo.url }}"                  
                }{{- if not (eq $index (sub $stepsCount 1)) -}},{{- end -}}
                {{ end -}}
