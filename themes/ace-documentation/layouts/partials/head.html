@@ -35,5 +35,9 @@
    {{ partial "head-family-scripts" }}   
    {{ else }}
    {{ partial "head-land-scripts" }}   
-   {{ end }}      
+   {{ end }}   
+   
+   {{- if .Params.structuredData  }}
+        {{ partial "seo/structured-data.html" . }}
+   {{ end -}}
 </head>

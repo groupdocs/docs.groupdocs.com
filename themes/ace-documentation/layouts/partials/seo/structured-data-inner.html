@@ -1,0 +1,204 @@
+{{- $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" -}}
+{{- $.Scratch.Delete "path" -}}
+{{- $.Scratch.Add "path" .Site.BaseURL -}}
+{{- $count := len (split $url "/") -}}
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "BreadcrumbList",
+            "name": "breadcrumbList",
+            "itemListElement": 
+            [{
+                "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "{{ .Site.BaseURL }}",
+                        "name": "{{ .Params.productName }}"
+                    }
+            },{{ range $index, $element := split $url "/" }}{{ $.Scratch.Add "path" $element }}{{ if ne $element "" }}
+            {   
+                "@type": "ListItem",
+                "position": {{ add $index 2 }},
+                "item": {
+                    "@id": "{{ $.Scratch.Get "path" }}",
+                    "name": "{{ humanize . }}"
+                }
+            }{{- if not (eq $index (sub $count 2)) -}},{{- end -}}{{- $.Scratch.Add "path" "/" -}}{{- end -}}{{- end -}}]
+        },
+        {
+            "@type": "SoftwareApplication",
+            "applicationCategory": [
+               "DeveloperApplication",
+               "BusinessApplication",
+               "UtilitiesApplication"
+            ],
+            "operatingSystem": [
+               "Windows, iOS, Linux, Android"
+            ],
+            "softwareVersion": "21.1.0",
+            "softwareHelp": "https://docs.groupdocs.com/{{ .Params.structuredData.productCode }}/{{ .Params.structuredData.productPlatform }}/",
+            "softwareRequirements": "https://docs.groupdocs.com/{{ .Params.structuredData.productCode }}/{{ .Params.structuredData.productPlatform }}/system-requirements/",
+            "offers": {
+               "@type": "Offer",
+               "price": 0,
+               "priceCurrency": "USD"
+            },
+            "datePublished": "2021-10-21",
+            "isFamilyFriendly": true,
+            "isAccessibleForFree": true,
+            "creator": {
+               "@id": "https://company.aspose.com/"
+            },
+            "inLanguage": {
+               "@type": "Language",
+               "name": "English (United States)",
+               "alternateName": "en-US"
+            },
+            "name": "{{ .Params.structuredData.appName }}",
+            "description": "{{ .Params.structuredData.appDescription }}",
+            "url": "https://products.groupdocs.com/{{ .Params.structuredData.productCode }}/{{ .Params.structuredData.productPlatform }}",
+            "sameAs": [
+               "https://en.wikipedia.org/wiki/{{ .Params.structuredData.productCode }}"
+            ],
+            "@id": "https://products.groupdocs.com/{{ .Params.structuredData.productCode }}/{{ .Params.structuredData.productPlatform }}"
+         },
+         {
+            "@type": "HowTo",
+            "estimatedCost": {
+               "@type": "MonetaryAmount",
+               "currency": "USD",
+               "value": "0"
+            },
+            "totalTime": "PT1M",
+            "tool": {
+               "@type": "HowToTool",
+               "name": "{{ .Params.productName }}"
+            },
+            "supply": [
+               {
+                  "@type": "HowToSupply",
+                  "name": "source file"
+               }
+            ],
+            "step": [
+               {{ $stepsCount := len .Params.structuredData.howTo.steps }}
+               {{- range $index, $element := .Params.structuredData.howTo.steps -}}
+               {{- $count := add $index 1 -}}
+               {
+                  "@type": "HowToStep",
+                  "name": "{{ $element.name }}"
+                  "text": "{{ $element.text }}",
+                  "isFamilyFriendly": true,
+                  "isAccessibleForFree": true,
+                  "creator": {
+                  "@id": "https://company.aspose.com/"
+                  },
+                  "url": "{{ $.Site.BaseURL}}{{ $.Params.structuredData.howTo.url }}"                  
+               }{{- if not (eq $index (sub $stepsCount 1)) -}},{{- end -}}
+               {{ end -}}
+            ],
+            "isFamilyFriendly": true,
+            "isAccessibleForFree": true,
+            "creator": {
+               "@id": "https://company.aspose.com/"
+            },
+            "name": "{{ .Params.structuredData.howTo.name }}",
+            "description": "{{ .Params.structuredData.howTo.description }}",
+            "url": "{{ $.Site.BaseURL}}{{ .Params.structuredData.howTo.url }}"
+         },
+         {
+            "@id": "https://company.aspose.com/",
+            "@type": "Organization",
+            "name": "Aspose Pty Ltd",
+            "alternateName": "Aspose Pty Ltd",
+            "legalName": "Aspose Pty Ltd",
+            "logo": {
+               "@type": "ImageObject",
+               "url": "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/aspose-logo.png",
+               "height": "50",
+               "width": "270"
+            },
+            "image": {
+               "@type": "ImageObject",
+               "url": "https://cms.admin.containerize.com/templates/aspose/App_Themes/V3/images/aspose-logo.png",
+               "height": "50",
+               "width": "270"
+            },
+            "url": "https://www.aspose.com/",
+            "address": {
+               "@type": "PostalAddress",
+               "addressLocality": "Lane Cove, NSW",
+               "postalCode": "2066, Australia",
+               "streetAddress": "Suite 163, 79 Longueville Road, Lane Cove"
+            },
+            "email": "mailto:sales@groupdocs.com",
+            "telephone": "+19033061676",
+            "sameAs": [
+               "https://www.facebook.com/groupdocs",
+               "https://twitter.com/groupdocs",
+               "https://www.youtube.com/channel/UCSRRI9t9ooReVo82e1d1a0g",
+               "https://www.linkedin.com/company/groupdocs/"
+            ],
+            "contactPoint": [
+               {
+                  "@type": "ContactPoint",
+                  "telephone": "+19033061676",
+                  "contactType": [
+                     "customer service",
+                     "technical support",
+                     "billing support",
+                     "bill payment",
+                     "credit card support"
+                  ],
+                  "contactOption": "http://schema.org/TollFree",
+                  "areaServed": [
+                     "USA"
+                  ],
+                  "availableLanguage": [
+                     "English"
+                  ]
+               },
+               {
+                  "@type": "ContactPoint",
+                  "telephone": "+441416288900",
+                  "contactType": [
+                     "customer service",
+                     "technical support",
+                     "billing support",
+                     "bill payment",
+                     "credit card support"
+                  ],
+                  "contactOption": "http://schema.org/TollFree",
+                  "areaServed": [
+                     "Europe"
+                  ],
+                  "availableLanguage": [
+                     "English"
+                  ]
+               },
+               {
+                  "@type": "ContactPoint",
+                  "telephone": "+61280066987",
+                  "contactType": [
+                     "customer service",
+                     "technical support",
+                     "billing support",
+                     "bill payment",
+                     "credit card support"
+                  ],
+                  "contactOption": "http://schema.org/TollFree",
+                  "areaServed": [
+                     "Australia"
+                  ],
+                  "availableLanguage": [
+                     "English"
+                  ]
+               }
+            ],
+            "award": [
+               "Top 5 Best Selling Publisher Award 2012"
+            ]
+         }
+    ]
+}
