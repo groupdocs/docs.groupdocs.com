@@ -2,6 +2,8 @@
 .alert{
     border: 0;
     border-inline-start: .25rem solid #e9ecef;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .alert-info {
@@ -29,4 +31,21 @@
 .docs-article-date a, .docs-article-edit a{
     font-size: 14px;
     color: #333;
+}
+
+/* Main styles */
+
+.breadcrumb {
+    padding: 0.75rem 0;
+}
+
+.main > h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 0 !important;
+}
+
+.main > h2 {
+    padding-top: 2rem !important;
 }
