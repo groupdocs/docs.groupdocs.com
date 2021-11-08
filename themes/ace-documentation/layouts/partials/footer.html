@@ -1,9 +1,10 @@
 {{ if not .Params.useLandingCss }}
   {{ $jquery := resources.Get "js/jquery-3.6.0.slim.min.js" }}
+  <script src="{{ $jquery.Permalink }}"></script>
   {{ $popperJs := resources.Get "js/popper.min.js" }} <!-- Popper.js - dependency of Bootstrap -->
   {{ $bootstrapJs := resources.Get "js/bootstrap.min.js" }} 
   {{ $anchorJs := resources.Get "js/anchor.min.js" }} <!-- Heading Anchors script -->
-  {{ $bundleJs := slice $jquery $popperJs $bootstrapJs $anchorJs | resources.Concat "js/bundle-footer.js" | minify }}
+  {{ $bundleJs := slice $popperJs $bootstrapJs $anchorJs | resources.Concat "js/bundle-footer.js" | minify }}
   <script src="{{ $bundleJs.Permalink }}"></script>
 
   <script>anchors.add('.main h2, .main h3');</script>
