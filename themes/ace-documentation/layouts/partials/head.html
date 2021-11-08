@@ -27,16 +27,12 @@
    {{- end -}}        
    {{- end -}}   
 
-   {{ if not .Params.useLandingCss }}
-    {{ partial "head-docs-scripts" }}    
-   {{ else if eq .Params.layout "total-platform-template"}}
-   {{ partial "head-land-scripts.html" }}   
-   {{ else if or (eq .Params.layout "total-template") (eq .Params.layout "product-family-template")}}
-   {{ partial "head-family-scripts" }}   
+   {{ if .Params.useLandingCss }}
+    {{ partial "head-scripts/landing" }}   
    {{ else }}
-   {{ partial "head-land-scripts" }}   
+    {{ partial "head-scripts/docs" }}    
    {{ end }}   
-   
+  
    {{- if .Params.structuredData  }}
         {{ partial "seo/structured-data.html" . }}
    {{ end -}}
