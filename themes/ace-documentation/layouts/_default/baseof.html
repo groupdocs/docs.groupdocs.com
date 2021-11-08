@@ -2,6 +2,7 @@
 <html lang="{{ .Site.Language.Lang }}">
     {{- partial "head.html" . -}}
     <body style="background: #111 !important;">
+        <noscript>We're sorry GroupDocs doesn't work properply without JavaScript enabled. </noscript>
         {{- if .Site.Params.google_tag_manager_id -}}
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ .Site.Params.google_tag_manager_id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
