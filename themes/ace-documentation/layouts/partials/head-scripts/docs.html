@@ -2,8 +2,8 @@
 <link rel="shortcut icon" href="{{ $favicon.Permalink }}" />
 
 {{ $fontawesomeCss := resources.Get "css/fontawesome-slim.css" }}
-{{ $aceCss := resources.Get "css/ace.scss" | toCSS }}
+{{ $themeCss := resources.Get "css/theme.scss" | toCSS }}
 
-{{ $bundleCss := slice $fontawesomeCss $aceCss | resources.Concat "css/bundle-docs.css" | toCSS | minify }}
+{{ $bundleCss := slice $fontawesomeCss $themeCss | resources.Concat "css/bundle-docs.css" | toCSS | minify }}
 
 <link rel="stylesheet" href="{{ $bundleCss.Permalink }}"/>
