@@ -7,7 +7,7 @@
   {{ $bundleJs := slice $popperJs $bootstrapJs $anchorJs | resources.Concat "js/bundle-footer.js" | minify }}
   <script src="{{ $bundleJs.Permalink }}"></script>
 
-  <script>anchors.add('.main h2, .main h3');</script>
+  <script>anchors.add('.main h2, .main h3, .main h4');</script>
 
   <!-- Plugin: clipboard -->
   {{ if (findRE "<pre" .Content 1) }}    
