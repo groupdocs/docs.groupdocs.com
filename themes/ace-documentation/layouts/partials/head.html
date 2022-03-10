@@ -10,9 +10,6 @@
         {{- $titleFull := .Title -}}        
         {{- if .Params.productName -}} 
             {{ $titleFull = (print $titleFull " | " .Params.productName) -}} 
-        {{- end -}}        
-        {{- if ne .Title .Site.Title -}} 
-            {{ $titleFull = (print $titleFull " | " .Site.Title) -}}                    
         {{- end -}}
         {{- $titleFull -}}         
         {{- end -}}
