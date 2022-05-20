@@ -1,0 +1,16 @@
+{
+	"Items": [
+        {
+            "Code": "conversion",
+            "BaseRating": 750,
+            "Video": {
+                "Name": "Conversion Video Tutorial",
+                "Description": "File conversion - convert files to most major file formats for free, no registration required. Secure and easy to use file conversion! Convert to PDF, PSD, JPG, GIF, SVG and others.",
+                "ThumbnailUrl": "https://img.youtube.com/vi/HGi6g_4XTTg/1.jpg",
+                "UploadDate": "2022-02-16",
+                "Duration": "PT1M12S",
+                "ContentUrl": "https://www.youtube.com/watch?v=HGi6g_4XTTg"
+            }
+        }
+	]
+}
