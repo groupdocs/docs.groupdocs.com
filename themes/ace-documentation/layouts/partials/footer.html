@@ -1,4 +1,6 @@
 {{ if not .Params.useLandingCss }}
+{{ $version := now.UnixNano }}
+
   {{ $jquery := resources.Get "js/jquery-3.6.0.slim.min.js" }}
   <script src="{{ $jquery.Permalink }}"></script>
   {{ $popperJs := resources.Get "js/popper.min.js" }} <!-- Popper.js - dependency of Bootstrap -->
@@ -6,7 +8,7 @@
   {{ $anchorJs := resources.Get "js/anchor.min.js" }} <!-- Heading Anchors script -->
   {{ $bundleJs := slice $popperJs $bootstrapJs $anchorJs | resources.Concat "js/bundle-footer.js" | minify }}
   
-  <script src="{{ $bundleJs.Permalink }}"></script>
+  <script src="{{ $bundleJs.Permalink }}?{{ $version }}"></script>
   <script>anchors.add('.main h2, .main h3, .main h4');</script>
 
   <!-- Plugin: clipboard -->
@@ -15,7 +17,7 @@
   {{ end }}
 
   {{ $search := resources.Get "js/search.js" | minify }}
-  <script src="{{ $search.Permalink }}"></script>
+  <script src="{{ $search.Permalink }}?{{ $version }}"></script>
 {{ else }}       
 {{ end }}  
 
