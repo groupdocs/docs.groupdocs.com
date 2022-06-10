@@ -4,8 +4,10 @@
 {{ $fontawesomeCss := resources.Get "css/fontawesome-slim-landing.css" }}
 {{ $style := resources.Get "css/landing.css" }}
 {{ $styleMobile := resources.Get "css/landing-mobile.css" }}
+{{ $groupdocsMenuCss := resources.Get "css/groupdocs_v1_2.css" }}
+{{ $structure2Css := resources.Get "css/structure2.css" }}
 
-{{ $bundleCss := slice $fontawesomeCss $style $styleMobile | resources.Concat "css/bundle-landing.css" | toCSS | minify }}
+{{ $bundleCss := slice $fontawesomeCss $style $styleMobile $groupdocsMenuCss $structure2Css | resources.Concat "css/bundle-landing.css" | minify }}
 
 <link rel="stylesheet" type="text/css" href="{{ $bundleCss.Permalink }}" />
 

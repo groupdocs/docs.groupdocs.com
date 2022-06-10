@@ -1,0 +1,1493 @@
+::-webkit-input-placeholder {
+    font-weight: 400;
+    font-style: normal
+}
+
+::-moz-placeholder {
+    font-weight: 400;
+    font-style: normal
+}
+
+:-ms-input-placeholder {
+    font-weight: 400;
+    font-style: normal
+}
+
+:-moz-placeholder {
+    font-weight: 400;
+    font-style: normal
+}
+
+#DynabicMenuInnerDiv {
+    margin-bottom: 60px
+}
+
+body {
+    padding: 0;
+    margin: 0
+}
+
+A:HOVER,
+a,
+a:focus,
+a:hover {
+    text-decoration: none !important
+}
+
+.footerbottom ul,
+.topheader ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.footerbottom ul li,
+.topheader ul li {
+    float: left;
+    list-style-image: none !important
+}
+
+.topheader {
+    float: left;
+    width: 100%;
+    min-width: 1000px;
+    height: 60px;
+    background: #111;
+    box-shadow: 0 -10px 10px -10px #000 inset;
+    font-family: Arial, Verdana, Tahoma;
+    top: 0;
+    position: fixed;
+    z-index: 9999999
+}
+
+.topsection {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box
+}
+
+.venturelogo a {
+    float: left;
+    width: 165px !important;
+    height: 50px;
+    line-height: 50px;
+    /* background: url(https://cms.admin.containerize.com/templates/aspose/img/svg/aspose-logo.svg) 0 0 no-repeat; */
+    margin-top: 5px;
+    background-size: 165px
+}
+
+.menuitems {
+    height: 60px;
+    float: left;
+    margin-left: 60px;
+    padding: 0 !important
+}
+
+.topheadermenus a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff !important;
+    display: block;
+    margin: 0 .25em 0 .25em;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    line-height: 60px;
+    padding: 0 1em 0 1em
+}
+
+.topheadermenus ul {
+    display: none
+}
+
+.topheadermenus li:hover ul {
+    display: block;
+    float: left;
+    width: 175px;
+    position: absolute;
+    background: #333;
+    color: #fff
+}
+
+.topheadermenus li li {
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    margin: 5px 0 0
+}
+
+.topheadermenus li li a {
+    font-size: 13px;
+    line-height: 32px !important;
+    margin: 0 !important
+}
+
+.topheadermenus li a:hover {
+    background: #3ca3d9;
+    color: #fff
+}
+
+.topheadermenus li li:focus {
+    background: #3ca3d9;
+    color: #fff
+}
+
+.footerbottom {
+    float: left;
+    width: 100%;
+    position: relative;
+    background: #222;
+    background: -moz-linear-gradient(top, #222 30%, #444 100%);
+    background: -webkit-linear-gradient(top, #222 30%, #444 100%);
+    background: linear-gradient(to bottom, #222 30%, #444 100%)
+}
+
+.footercol {
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px 0;
+    text-align: center
+}
+
+.socialicon {
+    width: auto;
+    display: table;
+    margin: 30px auto 40px
+}
+
+.socialicon ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none
+}
+
+.socialicon ul a {
+    padding: 8px 10px !important;
+    margin: 0 2px;
+    border-radius: 100%;
+    color: #818692 !important;
+    text-align: center;
+    display: block;
+    height: 25px;
+    font-size: 20px;
+    line-height: 30px
+}
+
+.bottomenuitems {
+    width: auto;
+    display: inline-block;
+    margin: 0 auto 20px
+}
+
+.bottomenuitems ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+.bottomenuitems ul li {
+    float: left
+}
+
+.bottomenuitems ul li a {
+    padding: 0;
+    margin: 0 15px;
+    color: #fff !important;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif
+}
+
+.bottomenuitems ul li a:hover,
+.footer2col a:hover {
+    color: #3ca3d9 !important;
+    text-decoration: none
+}
+
+.footer2bar {
+    float: left;
+    width: 100%;
+    height: 52px;
+    background: #242323;
+    background: -moz-linear-gradient(top, #242323 0, #333 100%);
+    background: -webkit-linear-gradient(top, #242323 0, #333 100%);
+    background: linear-gradient(to bottom, #242323 0, #333 100%);
+    border-bottom: 3px solid #222
+}
+
+.footer2col {
+    width: 100%;
+    margin: 0 auto
+}
+
+.footer2col p {
+    font-size: 11px !important;
+    margin: 0 10px 0 0;
+    color: #868484 !important;
+    line-height: 52px;
+    float: left !important;
+    font-family: Arial, Verdana, Tahoma
+}
+
+.footer2col a {
+    font-size: 11px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #868484 !important;
+    line-height: 52px;
+    font-family: Arial, Verdana, Tahoma;
+    text-decoration: none !important
+}
+
+.socialicon a:hover {
+    color: #fff !important
+}
+
+.sep1 {
+    color: #818692;
+    font-size: 15px
+}
+
+.togglebtn {
+    max-width: 52px;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #333;
+    min-height: 60px;
+    padding: 0 10px;
+    border-radius: 0;
+    outline: 0
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+
+.icon-bar {
+    transform: rotate(0);
+    padding: 0;
+    left: 0;
+    display: block;
+    top: 0;
+    transition: .3s all ease-in-out;
+    margin-top: 4px
+}
+
+.icon-bar+.icon-bar {
+    margin-top: 4px
+}
+
+.icon-bar {
+    background: #888
+}
+
+.togglebtn .icon-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px
+}
+
+.togglebtn {
+    display: none;
+    background: #333;
+    margin: 0 0 0 5px;
+    min-height: 60px;
+    padding: 0 15px;
+    border-radius: 0
+}
+
+.footerbottom i {
+    font-style: normal
+}
+
+li.linkmobile {
+    display: none !important
+}
+
+.topsearchbox {
+    float: right;
+    position: relative;
+    margin-right: 8px !important;
+    padding-top: 15px
+}
+
+.topsearchbox .topsearchbtn {
+    padding: 0 10px;
+    display: table;
+    color: #eaeaea;
+    font-size: 18px;
+    line-height: 60px;
+    cursor: pointer
+}
+
+.topsearchboxdiv {
+    display: block
+}
+
+
+.footer2col {
+    text-align: center
+}
+
+.footer2text {
+    text-align: center;
+    display: inline-block
+}
+
+.footer2col p {
+    display: inline;
+    float: none !important
+}
+
+.footer2anchor {
+    display: inline-block
+}
+
+@media (max-width:1024px) and (min-width:0px) {
+
+    .footer2anchor,
+    .footer2col p {
+        display: table !important
+    }
+
+    .menuitems li a:after {
+        float: right;
+        content: "\f107";
+        font-size: 16px;
+        font-family: Fontawesome;
+        color: #999
+    }
+}
+
+@media (max-width:1024px) {
+    .topheadermenus li.linkmobile {
+        display: block !important
+    }
+
+    .topheader,
+    .topsection {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0 !important;
+        z-index: 9999 !important
+    }
+
+    .togglebtn {
+        display: block
+    }
+
+    .menuitems {
+        display: none
+    }
+
+    .venturelogo {
+        margin-left: 10px
+    }
+
+    .footer2bar {
+        background: #000 !important;
+        height: inherit
+    }
+
+    .footer2col,
+    .footercol {
+        width: 100% !important
+    }
+
+    .footer2anchor,
+    .footer2text {
+        display: block;
+        clear: both;
+        height: 20px;
+        background: #000 !important
+    }
+
+    .footer2anchor,
+    .footer2col p {
+        float: none !important;
+        text-align: center;
+        line-height: 16px;
+        background: #000 !important;
+        width: 100%;
+        display: table;
+        clear: both
+    }
+}
+
+@media (max-width:768px) {
+    .socialicon ul li {
+        width: inherit !important;
+        min-height: 40px;
+        float: none;
+        display: inline-block
+    }
+
+    .sep1 {
+        display: none !important
+    }
+
+    .bottomenuitems ul li {
+        margin: 0 10px 10px 10px !important;
+        float: none !important;
+        display: inline-block !important
+    }
+
+    .bottomenuitems ul {
+        display: table !important;
+        text-align: center !important
+    }
+
+    .bottomenuitems ul li a {
+        margin: 0
+    }
+
+    .bottomenuitems ul li.sep1 {
+        display: none !important
+    }
+
+    .footer2anchor,
+    .footer2col p {
+        line-height: 50px !important
+    }
+}
+
+@media (max-width:1024px) and (min-width:0px) {
+    .menuitems ul ul {
+        display: none !important
+    }
+
+    .menuitems {
+        right: 0 !important;
+        width: 280px !important;
+        left: inherit !important;
+        overflow-y: auto;
+        margin: 0;
+        clear: both;
+        position: absolute;
+        top: 60px;
+        background: #fff;
+        padding-right: 0;
+        max-height: 500px !important;
+        height: inherit
+    }
+
+    .menuitems ul {
+        margin-left: 0 !important
+    }
+
+    .menuitems ul li {
+        margin-left: 0 !important;
+        width: 100% !important
+    }
+
+    .menuitems ul li a {
+        line-height: 40px !important;
+        margin: 0 !important
+    }
+
+    .menuitems ul li a:after {
+        float: right;
+        content: "\f107";
+        font-size: 16px;
+        font-family: Fontawesome;
+        color: #999
+    }
+
+    .menuitems ul li:hover a:after {
+        float: right;
+        content: "\f106";
+        font-size: 16px;
+        font-family: Fontawesome;
+        color: #fff
+    }
+
+    .menuitems ul ul {
+        position: relative !important;
+        background: #000 !important;
+        width: 100% !important;
+        border-radius: 0 !important;
+        float: left;
+        margin-top: 0 !important
+    }
+
+    .menuitems ul li li {
+        width: 100% !important;
+        padding: 0 !important;
+        margin-top: 0 !important
+    }
+
+    .menuitems ul li li a {
+        padding: 2px 15px !important;
+        line-height: 35px !important
+    }
+
+    .menuitems ul li li a:after {
+        display: none !important
+    }
+
+    .menuitems ul li:hover {
+        background: 0 0 !important
+    }
+
+    .menuitems ul li li a:hover {
+        background: #439cda !important
+    }
+}
+
+.topsearchboxdiv .fa.fa-search,
+.userloginbox .userlogin .fa.fa-user {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #006bb0;
+    border-radius: 100%;
+    font-size: 16px
+}
+
+.topsearchbox .topsearchbtn {
+    padding: 0;
+    display: table;
+    color: #eaeaea;
+    font-size: 18px;
+    line-height: 12px
+}
+
+@media (max-width:1024px) {
+    .togglebtn {
+        float: left;
+        margin: 0 5px 0 0 !important
+    }
+
+    .menuitems {
+        right: inherit !important;
+        left: 0 !important
+    }
+}
+
+.desklink {
+    display: block !important
+}
+
+.moblink {
+    display: none !important
+}
+
+.blackout {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: none;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    transition: opacity 3s ease-in-out;
+    opacity: .5;
+    z-index: -2;
+    background: #000;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0
+}
+
+.topurlink.moblink:after {
+    display: none !important
+}
+
+#DynabicMenuUserControlsclone {
+    display: none !important
+}
+
+.topsearchboxul .topsearchbtn:hover {
+    opacity: .7
+}
+
+@media (max-width:1024px) {
+    .topsearchboxdiv {
+        z-index: 999999;
+        position: relative
+    }
+
+    .topurlink.moblink:hover {
+        background: #3ca3d9;
+        color: #fff
+    }
+
+    .topurlink.moblink:after {
+        display: none !important
+    }
+
+    .menuitems ul li a {
+        box-sizing: border-box !important
+    }
+
+    .topheader .menuitems {
+        display: block !important;
+        transition: .5s all ease-in-out;
+        left: -300px !important;
+        background: #222
+    }
+
+    .productmenubox {
+        width: 100% !important;
+        max-width: 100%
+    }
+
+    .topheadermenus li ul .productmenubox a {
+        padding: 10px 15px !important;
+        display: block;
+        width: 100%
+    }
+
+    .menuitems ul li:hover .productmenubox a:after {
+        display: none !important
+    }
+
+    .productmenubox em {
+        font-style: normal !important;
+        float: none !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        display: inline !important;
+        white-space: nowrap !important
+    }
+
+    .productmenubox a b {
+        font-size: 14px !important;
+        display: inline !important;
+        clear: none !important;
+        font-weight: 400 !important
+    }
+}
+
+.twocolmenu.topheadermenus li:nth-child(1):hover ul {
+    width: inherit !important
+}
+
+.productmenubox {
+    width: 500px;
+    float: left;
+    display: block
+}
+
+.topheadermenus li .productmenubox a {
+    line-height: 20px !important;
+    margin: 10px 0 0;
+    float: left;
+    padding: 5px 15px !important;
+    display: inline-block;
+    width: 33.33%;
+    box-sizing: border-box
+}
+
+.topheadermenus li .productmenubox a:hover {
+    background: #3ca3d9 !important;
+    color: #fff !important
+}
+
+.productmenubox a b {
+    font-size: 12px;
+    display: block;
+    clear: both;
+    font-weight: 400
+}
+
+.productmenubox em {
+    font-style: normal;
+    float: left;
+    font-size: 16px;
+    font-weight: 600
+}
+
+@media (max-width:320px) {
+    #DynabicMenuInnerDiv .topsection .venturelogo a {
+        width: 135px !important;
+        background-size: 135px !important;
+        background-position: center !important;
+        height: 60px;
+    }
+}
+
+.footersubscribe {
+    background: #006bb0;
+    padding: 30px 0
+}
+
+.subscibe-box {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    font-family: 'Open Sans', sans-serif
+}
+
+.subscibe-lhs {
+    width: 50%;
+    margin: 0;
+    display: inline;
+    text-align: left
+}
+
+.footersubscribe .row {
+    margin: 0 -15px
+}
+
+.subscibe-lhs h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fefefe;
+    margin: 0 0 5px;
+    text-transform: none;
+    line-height: 20px
+}
+
+.subscibe-lhs p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #e8e8e8;
+    margin: 0
+}
+
+.subscibe-rhs {
+    width: 50%;
+    margin: 0;
+    display: inline-block;
+    text-align: left
+}
+
+.subscibe-rhs form {
+    display: block;
+    clear: both;
+    width: 100%
+}
+
+.subscibe-rhs form input {
+    border-radius: 0 !important;
+    display: inline !important;
+    width: 70% !important;
+    margin: 0 0 0 30px !important;
+    min-height: 45px !important;
+    float: left !important
+}
+
+.subscibe-rhs form button {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 45px
+}
+
+#subscribe_message p {
+    text-align: center;
+    color: #fff
+}
+
+.subscibe-rhs .form-control {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 0 solid #ccc;
+    box-sizing: border-box
+}
+
+.footersubscribe .col-md-12 {
+    min-height: 1px
+}
+
+@media (min-width:1200px) {
+    .footersubscribe .container {
+        width: 1170px
+    }
+}
+
+@media (min-width:992px) {
+    .footersubscribe .container {
+        width: 970px
+    }
+}
+
+.footersubscribe .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.subscibe-rhs .btn-danger {
+    color: #fff;
+    background-color: #dc4342;
+    border-color: #d43f3a
+}
+
+.subscibe-rhs .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0
+}
+
+@media (max-width:800px) and (min-width:669px) {
+    .subscibe-rhs form input {
+        width: 60% !important
+    }
+}
+
+@media (max-width:668px) {
+    .topheader.topbutton .menuitems {
+        display: block;
+        margin: 0;
+        width: 100%;
+        background: #222
+    }
+
+    div#DynabicMenuUserControlsclone {
+        display: block !important
+    }
+
+    .subscibe-box {
+        display: block;
+        align-items: center;
+        padding: 20px 10px !important;
+        box-sizing: border-box
+    }
+
+    .subscibe-lhs h3,
+    .subscibe-lhs p {
+        text-align: center
+    }
+
+    .subscibe-rhs form {
+        margin-top: 30px !important
+    }
+
+    .subscibe-lhs,
+    .subscibe-rhs {
+        width: 100%;
+        margin: 0;
+        display: inline;
+        text-align: left
+    }
+
+    .subscibe-rhs form input {
+        border-radius: 0 !important;
+        display: inline !important;
+        width: 100% !important;
+        margin: 0 0 10px !important;
+        min-height: 45px !important;
+        float: left !important
+    }
+
+    .subscibe-rhs form button {
+        display: block;
+        vertical-align: top;
+        min-height: 45px;
+        margin: 0 auto;
+        width: 100%
+    }
+}
+
+.fa-quora:before {
+    content: "\f2c4"
+}
+
+@media (max-width:993px) and (min-width:967px) {
+    .subscibe-rhs form input {
+        margin: 0 !important
+    }
+}
+
+@media (max-width:1170px) and (min-width:668px) {
+    .topsection {
+        max-width: 100%;
+        width: 100%
+    }
+
+    .desklink {
+        display: block !important
+    }
+}
+
+#DynabicMenuUserControls a i:before,
+.footerbottom .socialicon a:hover i:before {
+    color: #fff !important
+}
+
+.footercol .socialicon ul a {
+    padding: 0 !important;
+    height: 26px !important;
+    max-height: 26px !important;
+    min-height: 26px !important;
+    max-width: 26px;
+    min-width: 26px;
+    width: 26px
+}
+
+.footercol .socialicon a i {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat !important;
+    background-color: transparent !important;
+    padding: 5px;
+    margin: 0 auto;
+    background-image: url(../svg/menu-icons.svg);
+    background-size: 26px 903.052px
+}
+
+.footercol .socialicon a:hover i {
+    filter: brightness(1.5)
+}
+
+.footercol .socialicon .fa:after,
+.footercol .socialicon .fa:before {
+    display: none !important
+}
+
+.socialicon ul {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center
+}
+
+.socialicon ul li {
+    margin: 10px 8px
+}
+
+.footercol .socialicon .fa-facebook {
+    background-position: -5px -210px !important
+}
+
+.footercol .socialicon .fa-twitter {
+    background-position: -5px -240px !important
+}
+
+.footercol .socialicon .fa-youtube-play {
+    background-position: -5px -270px !important
+}
+
+.footercol .socialicon .fa-linkedin {
+    background-position: -5px -300px !important
+}
+
+.footercol .socialicon .fa-stack-overflow {
+    background-position: -5px -330px !important
+}
+
+.footercol .socialicon .fa-github-alt {
+    background-position: -5px -360px !important
+}
+
+.footercol .socialicon .fa-rss {
+    background-position: -5px -510px !important
+}
+
+.footercol .socialicon .fa-quora {
+    background-position: -5px -598px !important
+}
+
+.topsearchboxdiv .fa.fa-search {
+    background-image: url(../svg/menu-icons.svg);
+    background-size: 26px 903.052px;
+    background-position: 2px 2px !important;
+    background-repeat: no-repeat !important;
+    background-color: #006bb0 !important;
+    border-radius: 100% !important;
+    font-size: 16px;
+    display: block
+}
+
+.userloginbox .fa.fa-user {
+    background-image: url(../svg/menu-icons.svg) !important;
+    background-size: 26px 903.052px !important;
+    background-position: 2px -27px !important;
+    background-repeat: no-repeat !important;
+    background-color: #006bb0 !important;
+    border-radius: 100% !important;
+    font-size: 16px;
+    display: block
+}
+
+@media (max-width:1024px) {
+    .subscibe-box {
+        box-sizing: border-box;
+        padding: 20px
+    }
+
+    .footercol .socialicon ul a,
+    .footercol .socialicon ul li {
+        height: 26px !important;
+        max-height: 26px !important;
+        min-height: 26px !important;
+        width: 26px;
+        max-width: 26px;
+        min-width: 26px
+    }
+
+    .socialicon {
+        width: 95%;
+        display: block
+    }
+
+    .menuitems ul li a.mobileanchor:after {
+        background-image: url(../svg/menu-icons.svg) !important;
+        background-size: 26px 903.052px !important;
+        background-repeat: no-repeat !important;
+        background-color: transparent !important;
+        border-radius: 0 !important;
+        font-size: 0;
+        display: inline-block;
+        width: 20px;
+        height: 28px;
+        background-position: 0 -532px
+    }
+
+    .menuitems ul li:hover a.mobileanchor:after {
+        background-image: url(../svg/menu-icons.svg) !important;
+        background-size: 26px 903.052px !important;
+        background-repeat: no-repeat !important;
+        background-color: transparent !important;
+        border-radius: 0 !important;
+        font-size: 0;
+        display: inline-block;
+        width: 20px;
+        height: 28px;
+        background-position: 0 -563px
+    }
+
+    .userloginbox.desklink {
+        padding-top: 0 !important
+    }
+
+    .menuitems ul li a:after {
+        font-size: 0 !important
+    }
+}
+
+.topsearchboxdiv .fa.fa-search:before,
+.userloginbox .fa.fa-user:before {
+    display: none
+}
+
+#subscribe_message {
+    color: #fff;
+    text-align: center
+}
+
+@media (max-width:1700px) and (min-width:1200px) {
+    .footerbottom .bottomenuitems ul li a {
+        margin: 0 15px !important
+    }
+}
+
+@media (max-width:1366px) {
+    body .bottomenuitems ul {
+        display: flex !important;
+        flex-flow: wrap;
+        align-items: flex-start;
+        justify-content: start
+    }
+
+    .bottomenuitems ul li {
+        width: 25%;
+        margin-bottom: 10px
+    }
+
+    .sep1 {
+        display: none
+    }
+
+    .bottomenuitems ul li a {
+        text-align: left !important;
+        text-indent: 25%
+    }
+}
+
+@media (max-width:668px) {
+    .bottomenuitems ul li {
+        width: 100%;
+        margin-left: 0 !important
+    }
+
+    .sep1 {
+        display: none
+    }
+
+    .bottomenuitems ul li a {
+        text-align: center !important;
+        text-indent: 0
+    }
+}
+
+.font-0 {
+    font-size: 0 !important;
+    height: 0;
+    width: 0;
+    display: block
+}
+
+.container_selected_area[data-v-5f0b9ba1] {
+    display: none;
+    visibility: hidden;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2147483647
+}
+
+.container_selected_area .area[data-v-5f0b9ba1] {
+    display: none;
+    position: fixed;
+    z-index: 2147483647;
+    border: 1px solid #1e83ff;
+    background: rgba(30, 131, 255, .1);
+    box-sizing: border-box
+}
+
+.topheadermenus.twocolmenu li:hover a.mobileanchor {
+    background: #3ca3d9 !important
+}
+
+.productmenubox {
+    min-width: 650px;
+    max-width: 650px;
+    min-width: 650px
+}
+
+.font-0 {
+    font-size: 0 !important;
+    height: 0;
+    width: 0;
+    display: block
+}
+
+.subscibe-lhs h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fefefe;
+    margin: 0 0 5px;
+    text-transform: none;
+    line-height: 20px
+}
+
+@media (max-width:1024px) {
+    .topheader .topheadermenus li .productmenubox a {
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%
+    }
+
+    .productmenubox {
+        min-width: 100%;
+        max-width: 100%;
+        min-width: 100%
+    }
+}
+
+.topsearchboxdiv {
+    display: inline-block;
+    float: left;
+    padding: 0
+}
+
+
+.menuitems {
+    display: table;
+    margin: 0 auto !important;
+    float: none
+}
+
+.venturelogo {
+    float: left
+}
+
+.userloginbox ul ul {
+    top: 60px;
+    z-index: 9
+}
+
+.topbutton .icon-bar:nth-child(2) {
+    transform: rotate(45deg);
+    padding-left: 10px;
+    left: 0;
+    top: 5px;
+    transition: .3s all ease-in-out
+}
+
+.topbutton .icon-bar:nth-child(3) {
+    display: none
+}
+
+.topbutton .icon-bar:nth-child(4) {
+    transform: rotate(-45deg);
+    padding-right: 10px;
+    left: 0;
+    transition: .3s all ease-in-out;
+    margin-top: -2px
+}
+
+.toggletopnav .topheadermenus a {
+    margin: 0 .15em 0 .15em;
+    padding: 0 .5em 0 .5em
+}
+
+.toggletopnav .icon-bar:nth-child(2) {
+    transform: rotate(45deg);
+    left: 0;
+    top: 5px;
+    transition: .3s all ease-in-out
+}
+
+.toggletopnav .icon-bar:nth-child(3) {
+    display: none
+}
+
+.toggletopnav .icon-bar:nth-child(4) {
+    transform: rotate(-45deg);
+    left: 0;
+    transition: .3s all ease-in-out;
+    margin-top: -2px
+}
+
+.menuitems .mobileanchor.openmenu~ul {
+    display: block !important
+}
+
+#DynabicMenuUserControlsclone .loginanchor {
+    display: block !important;
+    width: 100% !important;
+    float: left !important
+}
+
+#DynabicMenuUserControlsclone .loginanchor a {
+    font-size: 14px !important
+}
+
+#DynabicMenuUserControlsclone .userlogin {
+    display: none !important
+}
+
+#DynabicMenuUserControlsclone .userloginbox ul ul {
+    display: block !important;
+    box-sizing: border-box;
+    padding: 0 !important;
+    z-index: 0
+}
+
+#DynabicMenuUserControlsclone .loginanchor li ul li:nth-child(2) a {
+    margin-top: 0 !important
+}
+
+#DynabicMenuUserControlsclone .userloginbox.desklink {
+    width: 100%;
+    background: #111 !important;
+    display: block !important;
+    margin: 0 !important;
+    display: table !important;
+    max-width: 100% !important
+}
+
+#DynabicMenuUserControlsclone .userloginbox ul ul {
+    top: inherit !important
+}
+
+#DynabicMenuUserControlsclone .loginanchor a.moblink {
+    display: block !important
+}
+
+.togglebtn {
+    padding: 0 10px !important
+}
+
+#DynabicMenuUserControlsclone .loginanchor.loggeduser .topurlink.toplogout.moblink {
+    background: #dc4342 !important
+}
+
+.topurlink i.fa {
+    display: none !important
+}
+
+.topurlink.toplogout.moblink {
+    text-align: center !important;
+}
+
+.userlogin.useractive img {
+    filter: invert(47%) sepia(100%) saturate(1000%) hue-rotate(186deg) brightness(104%) contrast(97%)
+}
+
+a#UserNameLink {
+    background-color: transparent !important;
+}
+
+#languageControl {
+    position: static !important;
+    padding: 0 !important
+}
+
+.lang-selector,
+.topsearchboxdiv,
+.userloginbox.desklink {
+    transition: .3s all ease-in-out
+}
+
+.lang-selector:hover,
+.topsearchboxdiv:hover,
+.userloginbox.desklink:hover {
+    background: #3ca3d9 !important;
+}
+
+.lang-selector ul a:hover {
+    transition: .3s all ease-in-out;
+    color: #fff;
+    background: #1a89d0;
+}
+
+.lang-selector ul a {
+    padding: 5px !important;
+    box-sizing: border-box;
+    line-height: 11px;
+}
+
+.lang-selector ul li a.active:hover {
+    color: #FFFFFF !important
+}
+
+.topsearchbtn {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+}
+
+.lang-selector:hover>a,
+.topsearchbtn:hover img,
+.userlogin:hover img {
+    filter: brightness(100)
+}
+
+@media(max-width:768px) {
+
+    .lang-selector,
+    .topsearchboxdiv,
+    .userloginbox .userlogin,
+    .userloginbox.desklink {
+        min-width: 40px !important;
+        max-width: 40px !important;
+    }
+
+    .userlogstatus {
+        margin-right: 5px
+    }
+
+    .userlogstatus {
+        width: 120px !important;
+        max-width: 120px !important;
+        min-width: 120px !important
+    }
+
+    .lang-selector,
+    .topsearchboxdiv,
+    .userlogin {
+        margin: 0 !important
+    }
+
+    .lang-selector ul {
+        padding: 5px !important
+    }
+
+    .lang-selector,
+    .topsearchboxdiv,
+    .userloginbox .userlogin,
+    .userloginbox.desklink {
+        margin: 0px
+    }
+
+    .lang-selector a {
+        font-size: 16px;
+    }
+
+    .userlogin img,
+    .topsearchbtn img {
+        max-width: 20px;
+    }
+
+    .lang-selector {
+        max-width: 55px !important;
+        min-width: 55px !important;
+    }
+}
+
+@media (max-width:1024px) {
+    .topheader .menuitems {
+        display: block !important;
+        transition: .5s all ease-in-out;
+        left: -300px !important;
+        background: #222
+    }
+
+    .topheader.topbutton .menuitems {
+        display: block !important;
+        transition: .5s all ease-in-out;
+        left: 0 !important
+    }
+}
+
+.topsearchbox {
+    float: inherit !important;
+    position: inherit !important;
+    margin-right: inherit !important;
+    padding-top: inherit !important;
+}
+
+.topsearchbox .topsearchbtn {
+    display: flex;
+}
+
+#DynabicMenuInnerDiv .venturelogo a {
+    transition: none !important;
+}

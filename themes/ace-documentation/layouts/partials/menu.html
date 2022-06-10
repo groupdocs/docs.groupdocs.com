@@ -4,8 +4,8 @@
   </button>
    <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
       {{- if not .Site.Params.disableSearch -}}
-      {{- if not .Params.disableSearch -}}         
-          <fess:search style="min-height: 75px; max-height: 75px;"></fess:search>          
+      {{- if not .Params.disableSearch -}} 
+        {{- partial "search-input.html" . -}}                  
       {{- end -}}
       {{- end -}}
        <ul class="navbar-nav flex-column pt-3">         
