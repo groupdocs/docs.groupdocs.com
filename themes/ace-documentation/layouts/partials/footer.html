@@ -5,7 +5,7 @@
   {{ $bootstrapJs := resources.Get "js/bootstrap.min.js" }} 
   {{ $anchorJs := resources.Get "js/anchor.min.js" }} <!-- Heading Anchors script -->
   {{ $search := resources.Get "js/search.js" }}
-  {{ $bundleJs := slice $popperJs $bootstrapJs $anchorJs  $search | resources.Concat "js/bundle-footer.js" | minify }}
+  {{ $bundleJs := slice $popperJs $bootstrapJs $anchorJs $search | resources.Concat "js/bundle-footer.js" | minify }}
   
   <script src="{{ $bundleJs.Permalink }}"></script>
   <script>anchors.add('.main h2, .main h3, .main h4');</script>
