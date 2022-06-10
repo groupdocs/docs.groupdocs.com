@@ -4,8 +4,7 @@
   {{ $popperJs := resources.Get "js/popper.min.js" }} <!-- Popper.js - dependency of Bootstrap -->
   {{ $bootstrapJs := resources.Get "js/bootstrap.min.js" }} 
   {{ $anchorJs := resources.Get "js/anchor.min.js" }} <!-- Heading Anchors script -->
-  {{ $search := resources.Get "js/search.js" }}
-  {{ $bundleJs := slice $popperJs $bootstrapJs $anchorJs $search | resources.Concat "js/bundle-footer.js" | minify }}
+  {{ $bundleJs := slice $popperJs $bootstrapJs $anchorJs | resources.Concat "js/bundle-footer.js" | minify }}
   
   <script src="{{ $bundleJs.Permalink }}"></script>
   <script>anchors.add('.main h2, .main h3, .main h4');</script>
@@ -14,6 +13,9 @@
   {{ if (findRE "<pre" .Content 1) }}    
       <script type="text/javascript" src="{{ .Site.BaseURL }}plugins/clip.js"></script>
   {{ end }}
+
+  {{ $search := resources.Get "js/search.js" | minify }}
+  <script src="{{ $search.Permalink }}"></script>
 {{ else }}       
 {{ end }}  
 
