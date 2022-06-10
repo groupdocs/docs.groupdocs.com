@@ -22,7 +22,7 @@
         if (e.keyCode !== 13) {
             return;
         }
-        var query = $(this).val().replace(/ /g,"_");
+        var query = $(this).val().replace(/ /g,"-");
         searchPageUrl = "https://search.groupdocs.com/q/"+ query + ".html";            
         window.location.replace(searchPageUrl);
         return false;
