@@ -15,9 +15,20 @@
   {{ if (findRE "<pre" .Content 1) }}    
       <script type="text/javascript" src="{{ .Site.BaseURL }}plugins/clip.js"></script>
   {{ end }}
-
-  {{ $searchJs := resources.Get "js/srch.js" }}
-  <script src="{{ $searchJs.Permalink }}?{{ $version }}"></script>
+  
+  <script>
+  $(document).ready(function() {
+    $(document).on('keypress', '.td-search-input', function(e) {
+        if (e.keyCode !== 13) {
+            return;
+        }
+        var query = $(this).val().replace(/ /g,"_");
+        searchPageUrl = "https://search.groupdocs.com/q/"+ query + ".html";            
+        window.location.replace(searchPageUrl);
+        return false;
+    });
+  });
+  </script>
 {{ else }}       
 {{ end }}  
 
