@@ -16,8 +16,8 @@
       <script type="text/javascript" src="{{ .Site.BaseURL }}plugins/clip.js"></script>
   {{ end }}
 
-  {{ $search := resources.Get "js/search.js" | minify }}
-  <script src="{{ $search.Permalink }}?{{ $version }}"></script>
+  {{ $searchJs := resources.Get "js/search.js" }}
+  <script src="{{ $searchJs.Permalink }}?{{ $version }}"></script>
 {{ else }}       
 {{ end }}  
 
