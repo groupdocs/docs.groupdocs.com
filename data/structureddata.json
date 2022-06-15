@@ -11,6 +11,30 @@
                 "Duration": "PT1M12S",
                 "ContentUrl": "https://www.youtube.com/watch?v=HGi6g_4XTTg"
             }
+        },
+        {
+            "Code": "merger",
+            "BaseRating": 650,
+            "Video": {
+                "Name": "Merger Video Tutorial",
+                "Description": "This is a tutorial video that demonstrates how to merge multiple files online inside your browser using GroupDocs.Merger app.",
+                "ThumbnailUrl": "https://img.youtube.com/vi/mJJSijs_tSE/1.jpg",
+                "UploadDate": "2022-02-16",
+                "Duration": "PT0M54S",
+                "ContentUrl": "https://www.youtube.com/watch?v=mJJSijs_tSE"
+            }
+        },
+        {
+            "Code": "splitter",
+            "BaseRating": 350,
+            "Video": {
+                "Name": "Splitter Video Tutorial",
+                "Description": "This is a tutorial video that demonstrates how to split a file online inside your browser using GroupDocs.Splitter app.",
+                "ThumbnailUrl": "https://img.youtube.com/vi/h_J0AcAr2EY/1.jpg",
+                "UploadDate": "2022-02-17",
+                "Duration": "PT0M57S",
+                "ContentUrl": "https://www.youtube.com/watch?v=h_J0AcAr2EY"
+            }
         }
 	]
 }

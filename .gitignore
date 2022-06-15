@@ -16,3 +16,4 @@
 resources/_gen/
 public/
 deploy_key
+/.vs
