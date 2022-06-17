@@ -35,6 +35,18 @@
                 "Duration": "PT0M57S",
                 "ContentUrl": "https://www.youtube.com/watch?v=h_J0AcAr2EY"
             }
+        },
+        {
+            "Code": "editor",
+            "BaseRating": 400,
+            "Video": {
+                "Name": "Editor Video Tutorial",
+                "Description": "This is a tutorial video that demonstrates how to edit a content of a document file online inside your browser using GroupDocs.Editor app.",
+                "ThumbnailUrl": "https://i3.ytimg.com/vi/sglNsWlwIy8/maxresdefault.jpg",
+                "UploadDate": "2022-02-16",
+                "Duration": "PT1M11S",
+                "ContentUrl": "https://www.youtube.com/watch?v=sglNsWlwIy8"
+            }
         }
 	]
 }
