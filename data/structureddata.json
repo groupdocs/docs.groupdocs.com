@@ -17,7 +17,7 @@
             "BaseRating": 650,
             "Video": {
                 "Name": "Merger Video Tutorial",
-                "Description": "This is a tutorial video that demonstrates how to merge multiple files online inside your browser using GroupDocs.Merger app.",
+                "Description": "This is a tutorial video that demonstrates how to merge multiple files online inside your browser using GroupDocs.Merger.",
                 "ThumbnailUrl": "https://img.youtube.com/vi/mJJSijs_tSE/1.jpg",
                 "UploadDate": "2022-02-16",
                 "Duration": "PT0M54S",
@@ -29,7 +29,7 @@
             "BaseRating": 350,
             "Video": {
                 "Name": "Splitter Video Tutorial",
-                "Description": "This is a tutorial video that demonstrates how to split a file online inside your browser using GroupDocs.Splitter app.",
+                "Description": "This is a tutorial video that demonstrates how to split a file online inside your browser using GroupDocs.Splitter.",
                 "ThumbnailUrl": "https://img.youtube.com/vi/h_J0AcAr2EY/1.jpg",
                 "UploadDate": "2022-02-17",
                 "Duration": "PT0M57S",
@@ -41,11 +41,23 @@
             "BaseRating": 400,
             "Video": {
                 "Name": "Editor Video Tutorial",
-                "Description": "This is a tutorial video that demonstrates how to edit a content of a document file online inside your browser using GroupDocs.Editor app.",
+                "Description": "This is a tutorial video that demonstrates how to edit a content of a document file online inside your browser using GroupDocs.Editor.",
                 "ThumbnailUrl": "https://i3.ytimg.com/vi/sglNsWlwIy8/maxresdefault.jpg",
                 "UploadDate": "2022-02-16",
                 "Duration": "PT1M11S",
                 "ContentUrl": "https://www.youtube.com/watch?v=sglNsWlwIy8"
+            }
+        },
+        {
+            "Code": "signature",
+            "BaseRating": 500,
+            "Video": {
+                "Name": "Document eSign Video Tutorial",
+                "Description": "This is a tutorial video that demonstrates how to esign a document online inside your browser using GroupDocs.Signature.",
+                "ThumbnailUrl": "https://img.youtube.com/vi/KQfz3kSM5ZE/1.jpg",
+                "UploadDate": "2022-02-17",
+                "Duration": "PT1M01S",
+                "ContentUrl": "https://www.youtube.com/watch?v=KQfz3kSM5ZE"
             }
         }
 	]
