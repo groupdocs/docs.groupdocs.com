@@ -8,6 +8,7 @@
         {{- $urlsToExclude = $urlsToExclude | append $productUrl -}}  
     {{- end -}}   
   {{- range (sort (where .Site.Pages "Permalink" "not in" $urlsToExclude) "Params.url" "asc") }}
+  {{ if ne .Params.IsMenuItemWithNoContent true -}}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{ if not .Lastmod.IsZero -}}
@@ -19,5 +20,6 @@
     <priority>{{ site.Params.Sitemap.Priority }}</priority>
     {{- end }}
   </url>
+  {{- end }}
   {{- end }}
 </urlset>
