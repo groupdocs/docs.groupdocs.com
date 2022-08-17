@@ -25,7 +25,10 @@
                     </div> <!-- /end of row -->
                 </div>
             </div> <!-- /end of row -->
-        </div> <!-- /end of container -->        
+        </div> <!-- /end of container -->     
+        {{- if .Site.Params.showFeedbackForm }}
+            {{- partial "feedback-form.html" . -}}
+        {{ end }}
         {{- partial "footer.html" . -}}
         {{- partial "groupdocs-footer.html" . -}}
     </body>   

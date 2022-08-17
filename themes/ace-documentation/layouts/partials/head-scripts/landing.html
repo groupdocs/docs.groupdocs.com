@@ -6,8 +6,9 @@
 {{ $styleMobile := resources.Get "css/landing-mobile.css" }}
 {{ $groupdocsMenuCss := resources.Get "css/groupdocs_v1_2.css" }}
 {{ $structure2Css := resources.Get "css/structure2.css" }}
+{{ $feedbackFormCss := resources.Get "css/feedback-form.css" }}
 
-{{ $bundleCss := slice $fontawesomeCss $style $styleMobile $groupdocsMenuCss $structure2Css | resources.Concat "css/bundle-landing.css" | minify }}
+{{ $bundleCss := slice $fontawesomeCss $style $styleMobile $groupdocsMenuCss $structure2Css $feedbackFormCss | resources.Concat "css/bundle-landing.css" | minify }}
 
 <link rel="stylesheet" type="text/css" href="{{ $bundleCss.Permalink }}" />
 

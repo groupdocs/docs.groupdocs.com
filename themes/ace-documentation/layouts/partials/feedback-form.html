@@ -1,0 +1,45 @@
+<div class="feedback-container" style="bottom: 8px;">
+    <div class="feedback feedback-initial">
+        <button class="feedback_label btn btn-light">Leave feedback</button>
+        <div class="feedback_form">
+            <div class="feedback_rate">
+                <div class="feedback_text feedback_question">
+                    <span>Was this page helpful?</span>
+                </div>
+                <div class="feedback_button-panel horizontal-list">
+                    <button class="button feedback_rate_val feedback_positive">Yes</button>
+                    <button class="button feedback_rate_val feedback_negative">No</button>
+                </div>
+                <button class="feedback_close">
+                    <span class="invisible">Close</span>
+                </button>
+            </div>
+            <div class="feedback_thank">
+                <div class="feedback_text">
+                    <span>Thank you for your feedback!</span><br>
+                    <span class="feedback_thank__tell-us-more"><span>We welcome your suggestions.&nbsp;</span><button
+                            class="feedback_link">Tell us more</button></span>
+                </div>
+                <button class="feedback_close">
+                    <span class="invisible">Close</span>
+                </button>
+            </div>
+            <div class="feedback_details">
+                <div class="feedback_text">
+                    <span class="feedback_text-input-title">
+                        Tell us more
+                    </span>
+                    <label class="invisible" for="feedback_text-input">Feedback</label>
+                    <textarea id="feedback_text-input" class="feedback_text-input"
+                        placeholder="How can we improve this page?" name="feedback-msg"></textarea>
+                    <input id="feedback_rate-input" class="invisible" type="hidden" />
+                </div>
+                <button id="feedback_submit" class="button feedback_details-submit">Submit</button>
+                <button class="button feedback_details-no">Skip</button>
+                <button class="feedback_close invisible">
+                    <span class="invisible">Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

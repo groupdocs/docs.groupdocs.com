@@ -5,8 +5,9 @@
 {{ $themeCss := resources.Get "css/theme.scss" | toCSS }}
 {{ $groupdocsMenuCss := resources.Get "css/groupdocs_v1_2.css" }}
 {{ $structure2Css := resources.Get "css/structure2.css" }}
+{{ $feedbackFormCss := resources.Get "css/feedback-form.css" }}
 
-{{ $bundleCss := slice $fontawesomeCss $themeCss $groupdocsMenuCss $structure2Css | resources.Concat "css/bundle-docs.css" | minify }}
+{{ $bundleCss := slice $fontawesomeCss $themeCss $groupdocsMenuCss $structure2Css $feedbackFormCss | resources.Concat "css/bundle-docs.css" | minify }}
 
 <link rel="stylesheet" href="{{ $bundleCss.Permalink }}"/>
 
