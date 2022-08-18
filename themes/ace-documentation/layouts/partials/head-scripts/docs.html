@@ -9,5 +9,6 @@
 
 {{ $bundleCss := slice $fontawesomeCss $themeCss $groupdocsMenuCss $structure2Css $feedbackFormCss | resources.Concat "css/bundle-docs.css" | minify }}
 
-<link rel="stylesheet" href="{{ $bundleCss.Permalink }}"/>
+{{ $version := now.UnixNano }}
+<link rel="stylesheet" href="{{ $bundleCss.Permalink }}?{{ $version }}"/>
 
