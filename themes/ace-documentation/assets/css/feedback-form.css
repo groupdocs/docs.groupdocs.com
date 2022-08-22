@@ -1,6 +1,5 @@
 .feedback button {
     font: inherit;
-    border-radius: 5px;
     border: none;
 }
 
@@ -41,7 +40,6 @@
 }
 
 .feedback_label {
-    background-color: #dedede;
     border-radius: 2px;
     cursor: pointer;
     display: none;
@@ -61,7 +59,6 @@
 .feedback_label:focus {
     border: 1px solid #115bc0 !important;
     box-shadow: 0 0 0 2px #afcef8;
-    background-color: #dedede;
 }
 
 .feedback_rate {
@@ -337,7 +334,6 @@
 .feedback_rate_val {
     height: 28px;
     width: 70px;
-    background-color: #dedede;
 }
 
 .feedback_rate_val:focus {
@@ -350,7 +346,6 @@
 }
 
 .feedback_details-submit {
-    background-color: #dedede;
     float: right;
     height: 30px;
     margin-top: 10px;
@@ -376,7 +371,6 @@
 }
 
 .feedback_details-no {
-    background-color: #dedede;
     float: right;
     height: 30px;
     margin-top: 10px;
@@ -449,4 +443,16 @@
 
 .feedback_text-input.feedback_text-input-validation {
     border: 1px solid #f54062
+}
+
+.btn-feedback:hover {
+    color: #fff;
+    background-color: #2681c9;
+    border-color: #2681c9;
+}
+
+.btn-feedback {
+    color: #fff;
+    background-color: #2689c9;
+    border-color: #2689c9;
 }

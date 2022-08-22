@@ -1,6 +1,9 @@
 $(function () {
-    const FEEDBACK_FORM_VERSION = "22.8";
-    const FEEDBACK_STATUS_KEY = "groupdocs-feedback-form-status";
+    const FEEDBACK_FORM_VERSION = "22.8.1";
+    const FEEDBACK_STATUS_KEY = "FEEDBACK-FORM-STATUS";
+    const FEEDBACK_STATUS_COMENT_SUBMITTED = "COMMENT-SUBMITTED";
+    const FEEDBACK_STATUS_POSITIVE_RATE_VALUE_SET = "POSITIVE-RATE-VALUE-SET";
+    const FEEDBACK_STATUS_NEGATIVE_RATE_VALUE_SET = "NEGATIVE-RATE-VALUE-SET";
     const FEEDBACK_API_ENDPOINT = "https://docs.groupdocs.com/api/feedback";
 
     var feedbackData = {};
@@ -41,11 +44,17 @@ $(function () {
     }
 
     function show() {
-        $feedback.removeClass("feedback-initial")
-            .removeClass("feedback-label")
-            .addClass("feedback-rating");
+        var status = readFeedbackStatus();
 
-        saveFeedbackStatus("shown");
+        if (status === FEEDBACK_STATUS_POSITIVE_RATE_VALUE_SET) {
+            showThank(true);
+        } else if (status === FEEDBACK_STATUS_NEGATIVE_RATE_VALUE_SET) {
+            showThank(true);
+        } else if (status === FEEDBACK_STATUS_COMENT_SUBMITTED) {
+            showThank(false);
+        } else {
+            showRating();
+        }
     }
 
     function feedback_init() {
@@ -59,12 +68,16 @@ $(function () {
             $feedback.find(".feedback_positive").click(function (e) {
                 send({
                     rateValue: 1
+                }, function () {
+                    saveFeedbackStatus(FEEDBACK_STATUS_POSITIVE_RATE_VALUE_SET);
                 });
                 showThank(true);
             });
             $feedback.find(".feedback_negative").click(function (e) {
                 send({
                     rateValue: -1
+                }, function () {
+                    saveFeedbackStatus(FEEDBACK_STATUS_NEGATIVE_RATE_VALUE_SET);
                 });
                 showFeedbackCommentForm(-1);
             });
@@ -85,12 +98,15 @@ $(function () {
                 }, function () {
                     $feedbackComment.val('');
                     $feedbackRateValue.val('');
+
+                    saveFeedbackStatus(FEEDBACK_STATUS_COMENT_SUBMITTED);
                 });
 
                 showThank(false);
             });
             $feedback.find(".feedback_details-no").click(function (e) {
                 showThank(false);
+                saveFeedbackStatus(FEEDBACK_STATUS_COMENT_SUBMITTED);
             });
             $feedbackComment.on("input", function () {
                 $feedbackComment.removeClass("feedback_text-input-validation");
@@ -119,14 +135,6 @@ $(function () {
             });
         }
 
-        function showThank(tellUsMore) {
-            $feedback
-                .removeClass("feedback-initial")
-                .removeClass("feedback-rating")
-                .removeClass("feedback-comment")
-                .addClass(tellUsMore ? "feedback-thank-tell-us-more" : "feedback-thank");
-        }
-
         function showFeedbackCommentForm(rateValue) {
             $feedback.removeClass("feedback-initial")
                 .removeClass("feedback-rating")
@@ -139,6 +147,22 @@ $(function () {
             $feedbackRateValue.val(rateValue);
         }
     };
+
+    function showThank(tellUsMore) {
+        $feedback
+            .removeClass("feedback-initial")
+            .removeClass("feedback-rating")
+            .removeClass("feedback-comment")
+            .removeClass("feedback-label")
+            .addClass(tellUsMore ? "feedback-thank-tell-us-more" : "feedback-thank");
+    }
+
+    function showRating() {
+        $feedback
+            .removeClass("feedback-initial")
+            .removeClass("feedback-label")
+            .addClass("feedback-rating");
+    }
 
     function saveFeedbackStatus(value) {
         storeValue(FEEDBACK_STATUS_KEY, value);
