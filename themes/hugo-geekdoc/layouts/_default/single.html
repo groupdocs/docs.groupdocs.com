@@ -6,6 +6,11 @@
     class="gdoc-markdown gdoc-markdown__align--{{ default "left" (.Page.Params.GeekdocAlign | lower) }}"
   >
     <h1>{{ partial "utils/title" . }}</h1>
+    
+    {{- if or (and (.Site.Params.toc) (ne .Site.Params.toc false)) (and (.Params.toc) (ne .Params.toc false)) }}
+      {{ partial "toc" . }}
+    {{end}}
+
     {{ partial "utils/content" . }}
   </article>
 {{ end }}
