@@ -1,0 +1,5 @@
+{{ $id := .Get 0 }}
+
+{{- with $id -}}
+  <svg class="gdoc-icon gdoc-icon-large {{ . }}"><use xlink:href="#{{ . }}"></use></svg>
+{{- end -}}

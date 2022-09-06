@@ -1,0 +1,12 @@
+{{ if default true .Site.Params.GeekdocSearch }}
+  <script defer src="{{ index (index .Site.Data.assets "search.js") "src" | relURL }}"></script>
+  {{- $searchConfigFile := printf "search/%s.config.json" .Language.Lang -}}
+  {{- $searchConfig := resources.Get "search/config.json" | resources.ExecuteAsTemplate $searchConfigFile . | resources.Minify -}}
+  {{- $searchConfig.Publish -}}
+{{ end }}
+{{ if default true .Site.Params.showFeedbackForm }}
+  <script defer src="{{ index (index .Site.Data.assets "feedback-form.js") "src" | relURL }}"></script>
+{{ end }}
+{{ if default true .Site.Params.showSearchInput }}
+  <script defer src="{{ index (index .Site.Data.assets "search-input.js") "src" | relURL }}"></script>
+{{ end }}

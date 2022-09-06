@@ -1,0 +1,366 @@
+{
+  "main.js": {
+    "src": "js/main-902b82d5.bundle.min.js",
+    "integrity": "sha512-Cx3LyJlwyTwOSNwi2Kz6MvKFqUqbcWO0TKoOtpdAA2LflzEwH7ZCFwW6GyerorAaDnyrur90Mh8rXLuupeHkcg=="
+  },
+  "mermaid.js": {
+    "src": "js/mermaid-bd9b7641.bundle.min.js",
+    "integrity": "sha512-idZY6I4cjFVIeJ6WN+QGgu51ZU5uNkZ6ZLscVc2FaVm7n99XnTAuZPsC56DaEgNm2DOK0IjV1aJPTEHdPFuoxw=="
+  },
+  "katex.js": {
+    "src": "js/katex-8f5d1c53.bundle.min.js",
+    "integrity": "sha512-V6pdV2EI9DxULqCVNz8JNsDv06IR4gVRNhOjIDW4e7AZFuXh0JhSTbHq2nU5sUXaTP/X+p8YS2OcoZyTDiioow=="
+  },
+  "search.js": {
+    "src": "js/search-1c4cfb2d.bundle.min.js",
+    "integrity": "sha512-wK0vKlf8b3uje5GnRC4RN0aL7HzWDu7slqHlbfqCmCbHW30ede6D5H4rc/VqrpOx/Pf1ZfTV5L4Tx4pka1TwXQ=="
+  },
+  "js/273-647fed29.chunk.min.js": {
+    "src": "js/273-647fed29.chunk.min.js",
+    "integrity": "sha512-ccb2FynPdwxbAu0R6doHLCzhykkAcN1PkbPRLCTSXSFqyyW07ARtug3GOg6uayq9EHnDwNSKY/PX2vx3lK4CXw=="
+  },
+  "js/116-2bf49fb1.chunk.min.js": {
+    "src": "js/116-2bf49fb1.chunk.min.js",
+    "integrity": "sha512-yBCqcmxpVT8L4nP8RCIINK6ZzP27Ms1hPS4Whkg7tMl9FUmOHt/podhi9o988CZnEbzblGx/51+cDhN1ngIP6w=="
+  },
+  "fonts/LiberationSans-Italic.woff": {
+    "src": "fonts/LiberationSans-Italic.woff",
+    "integrity": "sha512-3rg7qqlEgAeip3NcoxqNNKeVrPvkXCxHbybcidDz8/aKmNhtp9LG45K20dOaOxvWrB+XbjM6bBPnRuzJj8Pltw=="
+  },
+  "fonts/LiberationSans-BoldItalic.woff": {
+    "src": "fonts/LiberationSans-BoldItalic.woff",
+    "integrity": "sha512-l+QH9jdBUO/jvAiX27bbZvr5vCiPwBt1IJqfTy3545wRaqGOP2qeFNvolbaj7kIS7d0rc841Lgf7NACrcMFCmQ=="
+  },
+  "fonts/LiberationSans-Bold.woff": {
+    "src": "fonts/LiberationSans-Bold.woff",
+    "integrity": "sha512-dcvCYm+u+bCFKnERGNyS94DBqaNaaXr7TdD6cNXNvCwNV1jk7mOnRXub3rjX2hoIEcyMSBbeIny9nP5QCBij2g=="
+  },
+  "fonts/LiberationSans.woff": {
+    "src": "fonts/LiberationSans.woff",
+    "integrity": "sha512-X8iWtp7gsJFHLyWhQzM8IZMH97LUsxhB5Hzv9smPHsqmRrDhl/S5xClHq3lUEtupVjCxcthMXl2qQvXcM3XVkA=="
+  },
+  "fonts/LiberationMono.woff": {
+    "src": "fonts/LiberationMono.woff",
+    "integrity": "sha512-fP8icFlpIzR+72w2iaQLQAImsyFi7T1hjZhT4102/kw2k0EJ8Q4iufSfjxhlKyeh7EAzF8OaEsOKeOmA7MfHVA=="
+  },
+  "fonts/LiberationSans-Italic.woff2": {
+    "src": "fonts/LiberationSans-Italic.woff2",
+    "integrity": "sha512-boZm4ZsUNEmYS85TJvhuBiOUS18gpj0+9WbFgBpAQbCWdU5yde32bVS6rP0YvNvZMuS/R92y+e/bKbcgbMGDtg=="
+  },
+  "fonts/LiberationSans-BoldItalic.woff2": {
+    "src": "fonts/LiberationSans-BoldItalic.woff2",
+    "integrity": "sha512-5MVxBiZI9GlXK/F6eeZnwsLBYOMzoQ+ncAmSIoBa+kkrYnMfWaEHJaJO9tA6ml44ety3gt4e9tNmYZULvO86ug=="
+  },
+  "fonts/LiberationSans-Bold.woff2": {
+    "src": "fonts/LiberationSans-Bold.woff2",
+    "integrity": "sha512-msH61PCwMuCScUPTyVOjuQgZBhYICioAyJxifpioqircJqe1voESkLNzFz6NBmhewRZvfwJHKzwAne1cxg7mpQ=="
+  },
+  "fonts/LiberationSans.woff2": {
+    "src": "fonts/LiberationSans.woff2",
+    "integrity": "sha512-/se1p5pF9DbDIpOqEIdjqpr1J3v84dQAHPFdMsK1ZiojTlOWQJuqCH4jZ+oZh2K7TtOJa8lyY14RIHTvGh3+SQ=="
+  },
+  "fonts/LiberationMono.woff2": {
+    "src": "fonts/LiberationMono.woff2",
+    "integrity": "sha512-p5oGo6T78XQ6SECsAez1Sc9HBw0SvLJlhndS+pJ0KyauzBdilh7/8/M/V8ivTjbJKU+rJHtIjHtMUVhPQjXq+g=="
+  },
+  "main.scss": {
+    "src": "main-96593c38.min.css",
+    "integrity": "sha512-XhVwR07h+psrNjPD61IgEMnfUogYOtcydYYPVazgYJf1usbXw3VpVbDci57BcdjYDxZFhlv6a4K8j8CeUSgk0A=="
+  },
+  "favicon/android-chrome-512x512.png": {
+    "src": "favicon/android-chrome-512x512.png",
+    "integrity": "sha512-THMit1CASRUDBVST5GDLNAZw/22Ty7x6p9AOhIyq8UuNM7FZ2XE0JFWaN/9Hvz0chfx+r+5NBHuUGcpJ7xmTPg=="
+  },
+  "fonts/KaTeX_AMS-Regular.woff": {
+    "src": "fonts/KaTeX_AMS-Regular.woff",
+    "integrity": "sha512-9OTmXDiUyTZC10JExwbsf9iq5LBx+9l7D9C4/6i+l0df+q4VmoRuBkqtOGsQJq6Ak3lnikurNrXbfpooemNRWw=="
+  },
+  "favicon/favicon.ico": {
+    "src": "favicon/favicon.ico",
+    "integrity": "sha512-kvJQ7WAEQiM+7Nne4EJzJF31jBenCTgNXKvJu2Qz069q3qvzlynx5+glcYgH+qwh+jy+NVRQf5V3Zt4LNqdmWA=="
+  },
+  "fonts/KaTeX_Main-Regular.woff": {
+    "src": "fonts/KaTeX_Main-Regular.woff",
+    "integrity": "sha512-e/R6E/kxpe/ZJOoelEE/Up1luI+TGgnZk7sqD5WEgZni3mT7SuJIXeg+Tds6aQVW3EU5OdrzkQgy7SKvgmlwNw=="
+  },
+  "favicon/android-chrome-384x384.png": {
+    "src": "favicon/android-chrome-384x384.png",
+    "integrity": "sha512-eY8+MuGvTy1b+qp1hIBbVHfA/aXFnvgAkT5HV1OQsO7C8PAlahw7jP1elFnsy3kzcCMtxKJmdDKCNZf/PyAb+g=="
+  },
+  "fonts/KaTeX_Main-Bold.woff": {
+    "src": "fonts/KaTeX_Main-Bold.woff",
+    "integrity": "sha512-+UGGXn4fqiTI5j9vbHK7pGg1ArRyP1KjM10tTyRjdEXUXl8VYS8VFuKcZm7TYzSAUbKCyMROpMarzCPNdhwUYA=="
+  },
+  "favicon/firefox_app_512x512.png": {
+    "src": "favicon/firefox_app_512x512.png",
+    "integrity": "sha512-THMit1CASRUDBVST5GDLNAZw/22Ty7x6p9AOhIyq8UuNM7FZ2XE0JFWaN/9Hvz0chfx+r+5NBHuUGcpJ7xmTPg=="
+  },
+  "fonts/KaTeX_AMS-Regular.woff2": {
+    "src": "fonts/KaTeX_AMS-Regular.woff2",
+    "integrity": "sha512-gAE8LJexY6Fb4a8zluSx/+2E4uy09m2cU4S2aUbdJVMhYine4XXka/ehaMYIPso+KvEjy22Nu9LicCgefbF/gg=="
+  },
+  "fonts/KaTeX_Main-Regular.woff2": {
+    "src": "fonts/KaTeX_Main-Regular.woff2",
+    "integrity": "sha512-G/qfHSw59EYNIAQD8uKjJ9K5ZLpOANYUlemDOCbMgEFEt1NoYHBPdBaUk12AWMo1BYb5fMsxnlfRRyMQD0iGIA=="
+  },
+  "fonts/KaTeX_Main-Bold.woff2": {
+    "src": "fonts/KaTeX_Main-Bold.woff2",
+    "integrity": "sha512-H+N2wqGFzd+GKbPWL2b/P2EMC2x9xHwWWkv2qsb56vSMQZA+sxRpebHebFddNq3kSXdlE7bhofyupEO+H7oPlg=="
+  },
+  "favicon/mstile-310x310.png": {
+    "src": "favicon/mstile-310x310.png",
+    "integrity": "sha512-icZaE7WSaNEZ3Fs2rhGYlNtXP11L24Pt6Z4h8UvpIU2yHCctxHYy9I7UvlfmELIEHsUZXiNpOrOzLdqNQ1MbDg=="
+  },
+  "katex.css": {
+    "src": "katex-93898449.min.css",
+    "integrity": "sha512-+jN99xaxTfEnkXs3pd7HbOx3huOnHRvLCSHTSo5guaqvNSZmQuHzlU0F6iqxROksLb9MatYIhinBDlSY59UPQg=="
+  },
+  "fonts/KaTeX_Main-Italic.woff": {
+    "src": "fonts/KaTeX_Main-Italic.woff",
+    "integrity": "sha512-OjmWMTSIDlTf1ZGhOQiZsZAQ1cySo4EizhqshTvbuqZkgbUtV0291hC/QN+o4+VFc7OBxaKWYaJgjFRszpQnuA=="
+  },
+  "fonts/KaTeX_Main-BoldItalic.woff": {
+    "src": "fonts/KaTeX_Main-BoldItalic.woff",
+    "integrity": "sha512-AXQBZ7CFEPmUhTEmD290away1CMsXG+6B1M2c0kKewQFg5ynwIe/FryXq4dNvcTh6Cjt4PqMMss8oi95k0itSw=="
+  },
+  "fonts/KaTeX_Math-Italic.woff": {
+    "src": "fonts/KaTeX_Math-Italic.woff",
+    "integrity": "sha512-TUy17s9hPgsK0he3aJxEtpu4tdrXIgAwSR0wJnkr4b0BNKSEAap1orh7MA2QgT/KOV5ob6ZOWO7HqbwwQ9GVcg=="
+  },
+  "fonts/KaTeX_Math-BoldItalic.woff": {
+    "src": "fonts/KaTeX_Math-BoldItalic.woff",
+    "integrity": "sha512-vOUuWrtWrswqo6byaXpdKXUyJVAQjZdovxjXMqt2d6077hOXP4buD9+CEGzgiJdFOLXgVyt663Qg24V6tq7q0g=="
+  },
+  "favicon/android-chrome-256x256.png": {
+    "src": "favicon/android-chrome-256x256.png",
+    "integrity": "sha512-b2ttZ7x6mOaWgo94dfkBKO6fPtL8CDqaQEKzzzdShNYzxZi5BkSRKL2U5x80yHXebZPj0esK1gQDaepJ6C8VjQ=="
+  },
+  "fonts/KaTeX_Main-Italic.woff2": {
+    "src": "fonts/KaTeX_Main-Italic.woff2",
+    "integrity": "sha512-SNdgxBdi/h31Ew67zOq7HpN4HMSa4vcCObb4qEywoA1tsMO8V+FQjZMrzVggok/ZIOK54mYOZBwNHPxiJLwhlw=="
+  },
+  "fonts/KaTeX_Main-BoldItalic.woff2": {
+    "src": "fonts/KaTeX_Main-BoldItalic.woff2",
+    "integrity": "sha512-R8cMx8fydyMLYJCaCwtZOVO5dDNFXr7+HQ4k3anhEEwt1D/apo8SHVx6P9z+0b1WiCB3HayQkQmWWgW39rKstQ=="
+  },
+  "fonts/KaTeX_Math-Italic.woff2": {
+    "src": "fonts/KaTeX_Math-Italic.woff2",
+    "integrity": "sha512-LRyb4qX7MDVXzDJUxajFm8w3ycI/0r+z6F4qY8c/YbZUYFx246I2HiNeQfpsTCa6nsCtrF4Uah6G0rzJhZR+uA=="
+  },
+  "fonts/KaTeX_Math-BoldItalic.woff2": {
+    "src": "fonts/KaTeX_Math-BoldItalic.woff2",
+    "integrity": "sha512-sR3fQuYKVLlf6OGCMP7Fk/S8itLYLDZY/yN9YADDDPEbY0Ii3XaOAR0ytOTUgL8nehwjBdaCw+iMXMwT0rtKqQ=="
+  },
+  "fonts/Metropolis.woff": {
+    "src": "fonts/Metropolis.woff",
+    "integrity": "sha512-fqZj5Y6hMExrGIb+OuLPY4hnQ+/ILiPON6MpAc77iKhzTWNn7KvSdfwS2NY5hmAYGfggxl55cYRUgT6F/W/RjQ=="
+  },
+  "fonts/KaTeX_Typewriter-Regular.woff": {
+    "src": "fonts/KaTeX_Typewriter-Regular.woff",
+    "integrity": "sha512-B1qvhsqVeoK6poFsOdVkSoAG3RcVLila6oTE8GeRxtrRsGTF2eWKwdY3C6Td1Cijbh6UvjkunBI/2pWW6mCaXg=="
+  },
+  "fonts/KaTeX_SansSerif-Bold.woff": {
+    "src": "fonts/KaTeX_SansSerif-Bold.woff",
+    "integrity": "sha512-x8XDvU1FWtV3VSVxwu9zpioBXeiCPU5ePRJintoxp1HuPg3LBF0XC0X9fOnObO6VHEtQtKwzKfevNLhrQWzi9w=="
+  },
+  "fonts/KaTeX_SansSerif-Italic.woff": {
+    "src": "fonts/KaTeX_SansSerif-Italic.woff",
+    "integrity": "sha512-WNH/1HTzqy+zZJp9UuT4yMSK/ynD0f2Wd4aY3w0mKUezWJtXn9uUaa3tAdw5rE7finAD2STy24CzwVku+lc5xg=="
+  },
+  "fonts/KaTeX_Typewriter-Regular.woff2": {
+    "src": "fonts/KaTeX_Typewriter-Regular.woff2",
+    "integrity": "sha512-S0dhh+bWsw9RVuG+u7wuf+MKUhB6FozZMooTc172VAUU+g1jjXAki8d+/7ecphrmo2/4uumB2bbMdWbvU5u/oA=="
+  },
+  "fonts/KaTeX_Fraktur-Bold.woff": {
+    "src": "fonts/KaTeX_Fraktur-Bold.woff",
+    "integrity": "sha512-bbDj1QAzneCTF9//oni1rIQ3wKjtMX2kGbSrYaVNJOCOPOHWD+Mn8ZCACQAKzsVnWX9IB8X1Uwazyjz95kmPAg=="
+  },
+  "fonts/KaTeX_Fraktur-Regular.woff": {
+    "src": "fonts/KaTeX_Fraktur-Regular.woff",
+    "integrity": "sha512-bphDtaXYbimBkkS8AIyw0aBbDWoMVkeEIwAnz+Ra1LrcrZxPCaqiV615P3g8zRvWCUifq1fNBAqvHYLqkhd1TA=="
+  },
+  "favicon/android-chrome-192x192.png": {
+    "src": "favicon/android-chrome-192x192.png",
+    "integrity": "sha512-5Pbkd2mj59Qd2yjkPV/pA5pdjq578o2rfOHhiQK5NTA7eaE0PUHKBMvzrueQQuMJHAzT67b1K+Q2iZD/UtlMvw=="
+  },
+  "fonts/KaTeX_SansSerif-Regular.woff": {
+    "src": "fonts/KaTeX_SansSerif-Regular.woff",
+    "integrity": "sha512-O4mHHzWemAibL1YVBTG0lPZWRdcNQ/Qbn2/SvQ5gz9CREHr3pWQgrLI7VuqScudj74azd1v0S4YUiNuoFjwfoA=="
+  },
+  "fonts/KaTeX_SansSerif-Bold.woff2": {
+    "src": "fonts/KaTeX_SansSerif-Bold.woff2",
+    "integrity": "sha512-VWDeiG3/j21h8nr6IlK3IcD9ST9gTGHTAaDC0hFMIqCqWztrzO6H7bVJ2GWOlp9seqrFCQvkrcoEKULdYBxSEg=="
+  },
+  "fonts/KaTeX_SansSerif-Italic.woff2": {
+    "src": "fonts/KaTeX_SansSerif-Italic.woff2",
+    "integrity": "sha512-hZ3bBm8cZVRGJ8lu3C9HAvGbBBWc3a5gK7PZj5BcUPmP0zHxCnUQwAjw5M90j26Nu49DmGHd6BpUC3tGRdgSVw=="
+  },
+  "favicon/apple-touch-icon.png": {
+    "src": "favicon/apple-touch-icon.png",
+    "integrity": "sha512-NJE8X8ItXECsPEwp1/ou55A9E8VWkhijnpMNmXh4Uwdo00TPLUAak76/t0wK+9OOqdZZGP2Y0IcLQ3xY+uzyTA=="
+  },
+  "fonts/KaTeX_Fraktur-Bold.woff2": {
+    "src": "fonts/KaTeX_Fraktur-Bold.woff2",
+    "integrity": "sha512-y7piX+9FWnsdHdn+ZeIbANy0v3KeCMwb0Ygq8IKnZq9tCtyFyEk9NSmqSc+thy0MSyQUhHYhdPCkjSHijHbJgA=="
+  },
+  "fonts/KaTeX_Fraktur-Regular.woff2": {
+    "src": "fonts/KaTeX_Fraktur-Regular.woff2",
+    "integrity": "sha512-scyZ311eKDPdtO9dnq+j8r21ahTaiygTrpRE14e7YxUs/7tjMv61mCA+cpLAz0+lzrDaZoyMuCr8yTvqgsSX5Q=="
+  },
+  "fonts/Metropolis.woff2": {
+    "src": "fonts/Metropolis.woff2",
+    "integrity": "sha512-oS5Y/tXC8/vG4f7KiHpDicy0yE4zs1TMps9Mzfk3M8O7/QNeC9Q7ZcsjnncuGo0vQB5RXU8g460XpSUB5Luc4Q=="
+  },
+  "favicon/firefox_app_128x128.png": {
+    "src": "favicon/firefox_app_128x128.png",
+    "integrity": "sha512-vHAEncZD84uXn/yqgb+3rlrUS6VzZzIOKB/WQs4kc/qyoSiNYktXQstFp++Aaj+iJDNg+dWbp/+pmo0cQvNMrA=="
+  },
+  "fonts/KaTeX_Script-Regular.woff": {
+    "src": "fonts/KaTeX_Script-Regular.woff",
+    "integrity": "sha512-GnZ6z38QaaRNmfOLaikoe5x0HgxQ0qhfi5eGO6QzdHTXdGiTWxV+RjYPrvoW/vc9Bk/BdVH9vBcIODhXtwsYZg=="
+  },
+  "fonts/KaTeX_SansSerif-Regular.woff2": {
+    "src": "fonts/KaTeX_SansSerif-Regular.woff2",
+    "integrity": "sha512-E9Kz6Ra6gXiS2dEGdOw6t9bDwwqYaLGplO0sYwtsh9aveV9xu/j0kwSkr0VZJ+otqrSPzox6sJKTvzlVjQtQsQ=="
+  },
+  "fonts/KaTeX_Script-Regular.woff2": {
+    "src": "fonts/KaTeX_Script-Regular.woff2",
+    "integrity": "sha512-/jhfsi53uEpLeJpQXaN1nzNSIuRztZkiF6tZ16/KKJ631DD61mQBX80CEnFaQ6+t7t2cuqTUH2xR/WoY8xvvOw=="
+  },
+  "favicon/mstile-150x150.png": {
+    "src": "favicon/mstile-150x150.png",
+    "integrity": "sha512-y7vHL5+KIuZdS/vF5WouvJywEwM92YHADSbP0ued/ZCt1MmzfcqrQ8SzRj2znOZqWM0ijo4pPLuzVk/9JLJM5g=="
+  },
+  "favicon/android-chrome-144x144.png": {
+    "src": "favicon/android-chrome-144x144.png",
+    "integrity": "sha512-dPFnTFU4K6uoPnM1dc7yo06A2Co9Cajp3dyEf9+nHRtyxHIQPCHTVZVidGjgikaCnu9fFwEGHKlTCGtdbPLaBQ=="
+  },
+  "favicon/mstile-144x144.png": {
+    "src": "favicon/mstile-144x144.png",
+    "integrity": "sha512-bda6aDM+RfO9zI6/aEf10SUNt1cd2TGow+1Drv+ZoT4qGoRWh4UmF16pGwQEJ7QrETjZmvJ51r0tvRQ2R1rgyQ=="
+  },
+  "fonts/KaTeX_Caligraphic-Bold.woff": {
+    "src": "fonts/KaTeX_Caligraphic-Bold.woff",
+    "integrity": "sha512-dfUme9QtfyLoXukghFSnTuTlLsQ/8O6YC0QnfbcJermS4BcnS4yWkZT1MEkDPL7/OUnVHcBSuLlvPbQQviJLGw=="
+  },
+  "fonts/KaTeX_Caligraphic-Regular.woff": {
+    "src": "fonts/KaTeX_Caligraphic-Regular.woff",
+    "integrity": "sha512-31Lt1ryrvtQyFxwrABw2xZiojGGAxgDf1ojQFVy11mzmlJfn38QVSwxISnudZVBrslsHyahoDuZK6wBrayJ/LA=="
+  },
+  "favicon/mstile-310x150.png": {
+    "src": "favicon/mstile-310x150.png",
+    "integrity": "sha512-Vyi+6E2YCQ3T0j4G8nx9A9T0kynmB33fHkzgudOUoN4yPhzkhACH+WQ7XFmVZ+vYEtU4H1Lv8buWGxGeSDg8PQ=="
+  },
+  "fonts/KaTeX_Caligraphic-Bold.woff2": {
+    "src": "fonts/KaTeX_Caligraphic-Bold.woff2",
+    "integrity": "sha512-Ljf53JaOUtVkASUsf8k9tpv6UeNL81MK9LR5Zco6qeIZ7l7oL3heh4SgT5mljccYcPeQ3+qB0JG8GLOiyXcNAg=="
+  },
+  "fonts/KaTeX_Caligraphic-Regular.woff2": {
+    "src": "fonts/KaTeX_Caligraphic-Regular.woff2",
+    "integrity": "sha512-lxXHdk259ffCje8TkPwi9v0jtJzlnd2O4FKYgzmdPOGHFdEzdM+7FiAumS0ClHPuqU90I2hTSmpDcpmIT/P8yQ=="
+  },
+  "fonts/KaTeX_Size1-Regular.woff": {
+    "src": "fonts/KaTeX_Size1-Regular.woff",
+    "integrity": "sha512-XkOjZvm8Ok63zQ6QfZMMFYV0/WG59qxy8+n8Iu6Vqzbo9S+HhvsUpoQDEKLOS/BlLmvWQxjKoDJRdwuht5XP7A=="
+  },
+  "fonts/KaTeX_Size2-Regular.woff": {
+    "src": "fonts/KaTeX_Size2-Regular.woff",
+    "integrity": "sha512-8lcSsq+0OUHQ1txGOO+hbXlRT9HjF0XmcVXU1trgKtDJx+fq2ejI00wJX/Jd+qw7e70BsOIuhvhY/9Og5wGxiw=="
+  },
+  "fonts/GeekdocIcons.woff": {
+    "src": "fonts/GeekdocIcons.woff",
+    "integrity": "sha512-qVuXHoxbqTylOXDgZJsw9Gud7Q40p26X+nROC3yg/61me5xZlhvV0zky+8yBg99U8kaoqPIsbjTzky+nzHKGAg=="
+  },
+  "fonts/KaTeX_Size4-Regular.woff": {
+    "src": "fonts/KaTeX_Size4-Regular.woff",
+    "integrity": "sha512-Yn3rCn0/wh7IJxqTkxIMQmE2R1WuooBx1NXlsrmmodUYljKoXDiY5V/ENfqav4ZaVoHfuahfqQyvwQ8GyMgtLQ=="
+  },
+  "favicon/android-chrome-96x96.png": {
+    "src": "favicon/android-chrome-96x96.png",
+    "integrity": "sha512-7mB5mW2lJB10jyqPWTgKgLPvlWK/tkqAbu7REoJWD3I3NMVyCACtaizrDFeBVOb5Wd6BhEPzybBWcaehUPK4bw=="
+  },
+  "fonts/KaTeX_Size1-Regular.woff2": {
+    "src": "fonts/KaTeX_Size1-Regular.woff2",
+    "integrity": "sha512-LWpGCcgzMsmdUrmsBIN5OaYPFpbpYpEn+YmrnLfiCbdq8s7aNTtNqdyUxmExvdZ2Vo2Bz87pfzjvN+xtL4+JTg=="
+  },
+  "fonts/KaTeX_Size2-Regular.woff2": {
+    "src": "fonts/KaTeX_Size2-Regular.woff2",
+    "integrity": "sha512-BHXH2ZEkl2rojultow0zLPFK6z4CAw4f7zYtMCTNhaXYnmELwHufinI8V3Mc45cLgD+IPwsA9hoinugMQimuwQ=="
+  },
+  "fonts/GeekdocIcons.woff2": {
+    "src": "fonts/GeekdocIcons.woff2",
+    "integrity": "sha512-sQmhdY6C9vuIHSrJvUTlw9Yb+LpBjT8e3mZMBMFldzRkWE613zzIlaLSRyGf1s1P2XyDLx5jtBVF/vp7TYvUVg=="
+  },
+  "fonts/KaTeX_Size4-Regular.woff2": {
+    "src": "fonts/KaTeX_Size4-Regular.woff2",
+    "integrity": "sha512-F6rlkx62QlxNW+vGsxhQWgaktNw+Gzb6fmNF9fEzx5O/FWE+6L7711Q5jKjzMQVeegEdiSeSqvncYFE3j81Dzw=="
+  },
+  "favicon/firefox_app_60x60.png": {
+    "src": "favicon/firefox_app_60x60.png",
+    "integrity": "sha512-0J0YTXHSfYgIp77gymRY1cJM/OQ9qcPag67oLmhkNV+EUnjjHbeoQgV4L+wh8JAEqOr9PeGkWHzmQTK/mQxKxw=="
+  },
+  "fonts/KaTeX_Size3-Regular.woff": {
+    "src": "fonts/KaTeX_Size3-Regular.woff",
+    "integrity": "sha512-Eo35y+ZReFpmRgZv0N2dKAc5ggcXGE3wnrCf28qnu5G1+Ikvew0IFkdCYN1I6FnHsPDTnQzjJZU7+F7oBYvHKQ=="
+  },
+  "favicon/android-chrome-72x72.png": {
+    "src": "favicon/android-chrome-72x72.png",
+    "integrity": "sha512-I1pR+60WqCHqvircqQ3+SxbSTxoGwEI7GuwqDDl5EmyI1l6qjbOyEYQJVqn8NUxCl/JEQbjStZ5+0u1i2gcORQ=="
+  },
+  "favicon/mstile-70x70.png": {
+    "src": "favicon/mstile-70x70.png",
+    "integrity": "sha512-eP6j1hQgYwyKedTt6NZ3N03WFlV5kC7lWIl+9nZALAytCSP89+vz67vsJapuFAtu7epyl17Y54RdAFbrmCdsRw=="
+  },
+  "fonts/KaTeX_Size3-Regular.woff2": {
+    "src": "fonts/KaTeX_Size3-Regular.woff2",
+    "integrity": "sha512-avq+5YU1Cd9KtJ0U6hujFkh4fMNVZC59Y/HPlqUXkxeUlWca4Fmqn1YA8WK1188GG59qRHBtoZzvRgC9k9fGZA=="
+  },
+  "favicon/android-chrome-48x48.png": {
+    "src": "favicon/android-chrome-48x48.png",
+    "integrity": "sha512-UHLkhDx6PiLwZMFryz3XibN+SCeiQUq3tg0m1SEyyuPUF0vTZu5O9uU7yvlyolldsIZZbCaJGzS/CEYmGkupeA=="
+  },
+  "mobile.scss": {
+    "src": "mobile-c0e18b0e.min.css",
+    "integrity": "sha512-V3Jia728GDyzfuEQgI7Cxestw0uZjDUPO7fIA8IYIFtQCVLmqgWIczWmdWqjdQ3vpGwqgMbg/K8Z3v1E/8L7FQ=="
+  },
+  "favicon/manifest.json": {
+    "src": "favicon/manifest.json",
+    "integrity": "sha512-gHQct6GcKK849C0BDrz2WpJmhhCjkXH2m+IMV4WDM9uqif4LDFQ21Od8n14u7HfU6YPEl7gQR2QF9CxVmVT3MQ=="
+  },
+  "favicon/favicon-16x16.png": {
+    "src": "favicon/favicon-16x16.png",
+    "integrity": "sha512-najX03XcHt4n/41C7hCEYOv933eWNEZ0pK55YnTx0CllUxo/xHfv3af/dIgPuS8HazomnOczb5/lxyx2q/OtSg=="
+  },
+  "brand.svg": {
+    "src": "brand.svg",
+    "integrity": "sha512-Jd8eC3JIBSlIdC3HrUWJeIDVyWzPNiZ01zgi3fxNNfGsTAJzGy/UOnX7MOBzDkSDs7UmSbrsyAOAKOSJ4VYvZA=="
+  },
+  "print.scss": {
+    "src": "print-19966b38.min.css",
+    "integrity": "sha512-xpNQeJp9e4SbqEv+pFoGrOehV+RABxosG+toy6+HJ6SGFLxJNgG4+/RwPYdg3BxBvRXfkTmwf+iArAT3/a3+3g=="
+  },
+  "favicon/browserconfig.xml": {
+    "src": "favicon/browserconfig.xml",
+    "integrity": "sha512-/NLFofO+L33xBGXtr2u7v+QQlUdb8W9VNGchcdC0JY4GqJZItgOsuSFfduZMZeprGAuhpWZqPHBUU2mng7YaAw=="
+  },
+  "favicon/manifest.webapp": {
+    "src": "favicon/manifest.webapp",
+    "integrity": "sha512-d25e4TSwrrwSewx9HD3DKa6kArp3TKD2R2I0Xce9EiNaw6IMCNnUOmwOZw5xeq0d28Yr+hVTIMcQ2QWxO7Jyww=="
+  },
+  "custom.css": {
+    "src": "custom.css",
+    "integrity": "sha512-7Q4+KTjgrRJZJVqBXScwm7DwE0J2YX/lC8h9GP3p8Ksu3tSu6epf0LAhkzlD5BRcJqNecp9K8j6utt/ShFYUKQ=="
+  },
+  "feedback-form.js": {
+    "src": "js/feedback-form-22.9.js",
+    "integrity": "sha512-MpABbNUDgsV1DoultQZeWWDNr3QAiKsbetO/4YAZPvZkm3QAZXrRH24fd7OZhiSKYLMQgvlVdq1YuN/uvvBq9A=="
+  },
+  "feedback-form.css": {
+    "src": "feedback-form-22.9.css",
+    "integrity": "sha512-SRFbC4l/FfvTq4IGxVYyotmchbCqDIhUJMNYWXg1B4XBPMOLmj8qnVD7qPNLwVn/1Q3A456TuqO0cRCi35Vp5w=="
+  },
+  "search-input.js": {
+    "src": "js/search-input-22.9.js",
+    "integrity": "sha512-hf33WcvdQ/KCp2+Dxg/yr+DiApbkrlMiiI9yodtqkiKT8BojUfSnbutZddk3+fvNCzcSI5QA2qyrqBEJ4RvkqA=="
+  }
+}

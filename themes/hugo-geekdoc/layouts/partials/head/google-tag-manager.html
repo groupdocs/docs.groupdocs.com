@@ -1,0 +1,16 @@
+<!-- Only include the tracking when using `hugo` or adding `--environment production` -->
+{{- if eq (getenv "HUGO_ENV") "production" | or (eq hugo.Environment "production") -}}
+<meta name="google-site-verification" content="n0rtymY2bXXsnMn_HlCrA-IUeTfvuNV4hs_gW83kNkU">
+<meta name="google-site-verification" content="QsvolQStNoH5gGgY2mESUljn4pZ4kMod1jsDKvAKg0w">
+{{- if .Site.Params.google_tag_manager_id -}}
+<link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','{{ .Site.Params.google_tag_manager_id }}');</script>
+<!-- End Google Tag Manager -->
+{{- end -}}        
+{{- end -}}

@@ -1,0 +1,22 @@
+/* You can add custom styles here. */
+
+.gdoc-icon-large {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+}
+
+.home-resource-link {
+    color: var(--body-font-color) !important;
+}
+
+.gdoc-icon.windows {
+    color: #028cda !important;
+}
+.gdoc-icon.java {
+    color: #ba3e5b !important;
+}
+
+@media print {
+    #DynabicMenuInnerDiv{ display:none; }
+    #dvMenuFooter{ display:none; }
+}
