@@ -1,0 +1,39 @@
+# Build and publish documentation
+
+name: publish
+
+# Controls when the workflow will run
+on:
+  workflow_run:
+    workflows: ["build"]
+    branches: [staging]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Hugo
+        run: |
+          curl -LO https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Linux-64bit.deb
+          sudo dpkg -i hugo_extended_0.101.0_Linux-64bit.deb
+          
+      - name: Run and build Hugo
+        run: |
+          hugo --minify --config config-geekdoc.toml,ignore-total-config.toml
+          rm ./public/product-sitemap.xml 
+
+      - name: Deploy documentation
+        uses: nogsantos/scp-deploy@master
+        with:
+          src: public/
+          host: ${{ secrets.DOCS_SSH_HOST }}
+          remote: ${{ secrets.DOCS_SSH_DIR }}
+          user: ${{ secrets.DOCS_SSH_USER }}
+          key: ${{ secrets.DOCS_SSH_KEY }}
