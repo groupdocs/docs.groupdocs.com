@@ -1,6 +1,6 @@
 # Build documentation
 
-name: build and deploy
+name: 'build and deploy'
 
 # Controls when the workflow will run
 on: push
@@ -21,4 +21,13 @@ jobs:
       - name: Build site
         run: |
           hugo --minify --config config-geekdoc.toml,ignore-total-config.toml
+
+      - name: Deploy artifacts
+        uses: nogsantos/scp-deploy@master
+        with:
+          src: public
+          host: ${{ secrets.DOCS_SSH_HOST }}
+          remote: ${{ secrets.DOCS_SSH_DIR }}
+          user: ${{ secrets.DOCS_SSH_USER }}
+          key: ${{ secrets.DOCS_SSH_KEY }}
 
