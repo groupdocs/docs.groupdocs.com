@@ -1,13 +1,9 @@
 # Build documentation
 
-name: build
+name: build and deploy
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push
-  push:
-  # Triggers the workflow on pull
-  pull_request:
   # Run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -24,6 +20,15 @@ jobs:
           curl -LO https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Linux-64bit.deb
           sudo dpkg -i hugo_extended_0.101.0_Linux-64bit.deb
           
-      - name: Run and build Hugo
+      - name: Build site
         run: |
           hugo --minify --config config-geekdoc.toml,ignore-total-config.toml
+
+      - name: Deploy artifacts
+        uses: nogsantos/scp-deploy@master
+        with:
+          src: public
+          host: ${{ secrets.DOCS_SSH_HOST }}
+          remote: ${{ secrets.DOCS_SSH_DIR }}
+          user: ${{ secrets.DOCS_SSH_USER }}
+          key: ${{ secrets.DOCS_SSH_KEY }}
