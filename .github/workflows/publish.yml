@@ -6,8 +6,6 @@ name: publish
 on:
   workflow_run:
     workflows: ["build"]
-    branches: 
-      - staging
     types:
       - completed
   workflow_dispatch:
