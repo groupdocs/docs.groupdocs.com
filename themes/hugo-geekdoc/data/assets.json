@@ -360,7 +360,7 @@
     "integrity": "sha512-DyMASSkX8hP+PywbNTij7kOmj8BHdtf7OVurEPb/GfOyX18IsIkzl6Roaw7XiNAzxS1uo6Igy2iNNDk67QQ4/A=="
   },
   "search-input.js": {
-    "src": "js/search-input-22.9.1.js",
-    "integrity": "sha512-DO1GUrxB42+2XOejIE1kGy2BNszjM0VjVxJMRHraKXM8HXFiT0Z/ON4R+dp4Li32owkWH6NKcV5j3f6tly28vw=="
+    "src": "js/search-input-22.9.2.js",
+    "integrity": "sha512-k6E05colc4yKQb0j/omuLKQUlVhf2yM9uwCEJw2OwfFXKrJM7iI5NO9Y3Wa7LlhJfJnVrPpI/q3a7hjdz+HS/g=="
   }
 }
