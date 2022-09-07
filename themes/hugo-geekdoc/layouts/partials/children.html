@@ -1,0 +1,10 @@
+{{ if and (not .Params.hideChildren) (not .Params.showAllChildrenTable)}}      
+<ul class="contents">
+  {{ $pages := .Paginator.Pages | append .Sections }}    
+  {{ range sort $pages.ByWeight }}
+      <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+  {{ end }}        
+</ul> 
+{{ end }}   
