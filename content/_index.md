@@ -1,6 +1,5 @@
 ---
-id: viewer
-url: viewer
+id: home
 title: GROUPDOCS DOCUMENTATION
 description: "GroupDocs Documentation Homepage"
 geekdocSkip: true
@@ -199,8 +198,8 @@ Outstanding electronic signature API that allows you to esign your documents wit
 
 Excellent file viewer component that empowers your C#, ASP.NET, and other .NET applications with document viewing features across more than 170+ supported file formats
 
-{{< button size="large" href="https://docs.groupdocs.com/Viewer/net" >}}{{< icon-large "windows" >}} .NET{{< /button >}}
-{{< button size="large" href="https://docs.groupdocs.com/Viewer/java" >}}{{< icon-large "java" >}} Java{{< /button >}}
+{{< button size="large" href="https://docs.groupdocs.com/viewer/net" >}}{{< icon-large "windows" >}} .NET{{< /button >}}
+{{< button size="large" href="https://docs.groupdocs.com/viewer/java" >}}{{< icon-large "java" >}} Java{{< /button >}}
 
 <--->
 
