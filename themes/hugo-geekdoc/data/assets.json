@@ -352,8 +352,8 @@
     "integrity": "sha512-7Q4+KTjgrRJZJVqBXScwm7DwE0J2YX/lC8h9GP3p8Ksu3tSu6epf0LAhkzlD5BRcJqNecp9K8j6utt/ShFYUKQ=="
   },
   "feedback-form.js": {
-    "src": "js/feedback-form-22.9.js",
-    "integrity": "sha512-MpABbNUDgsV1DoultQZeWWDNr3QAiKsbetO/4YAZPvZkm3QAZXrRH24fd7OZhiSKYLMQgvlVdq1YuN/uvvBq9A=="
+    "src": "js/feedback-form-22.9.1.js",
+    "integrity": "sha512-+a9+BkBIIwkVnx+g7eYyQdbwSvBFPJY6VufUR/6MkpN5mxyAnhMDyMsvkEfhT8x+NzP5pmCv07MtNapM1y9+ZQ=="
   },
   "feedback-form.css": {
     "src": "feedback-form-22.9.1.css",

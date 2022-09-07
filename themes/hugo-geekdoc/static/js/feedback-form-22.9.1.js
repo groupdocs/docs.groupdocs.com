@@ -59,6 +59,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     function feedback_init() {
+        var container = document.querySelector(".feedback-container");
+        if(!container) {
+            return;
+        }
+
         var $feedbackComment = $feedback.querySelector('.feedback_details .feedback_text-input');
         var $feedbackRateValue = $feedback.querySelector('.feedback_details #feedback_rate-input');
 
