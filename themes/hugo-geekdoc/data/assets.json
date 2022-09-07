@@ -356,8 +356,8 @@
     "integrity": "sha512-MpABbNUDgsV1DoultQZeWWDNr3QAiKsbetO/4YAZPvZkm3QAZXrRH24fd7OZhiSKYLMQgvlVdq1YuN/uvvBq9A=="
   },
   "feedback-form.css": {
-    "src": "feedback-form-22.9.css",
-    "integrity": "sha512-SRFbC4l/FfvTq4IGxVYyotmchbCqDIhUJMNYWXg1B4XBPMOLmj8qnVD7qPNLwVn/1Q3A456TuqO0cRCi35Vp5w=="
+    "src": "feedback-form-22.9.1.css",
+    "integrity": "sha512-DyMASSkX8hP+PywbNTij7kOmj8BHdtf7OVurEPb/GfOyX18IsIkzl6Roaw7XiNAzxS1uo6Igy2iNNDk67QQ4/A=="
   },
   "search-input.js": {
     "src": "js/search-input-22.9.js",

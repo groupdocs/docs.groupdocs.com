@@ -100,9 +100,9 @@
         border-radius: 2px;
         box-shadow: none;
         cursor: pointer;
-        height: 50px;
+        height: 36px;
         outline: none;
-        width: 100px
+        width: 128px
     }
 
     .feedback-initial .feedback_label {
