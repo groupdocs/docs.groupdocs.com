@@ -420,6 +420,8 @@
 
 .feedback_text-input {
     border: 1px solid #cecece;
+    background: #fff;
+    color: rgb(52, 58, 64);
     box-sizing: border-box;
     display: block;
     font-family: inherit;

@@ -357,7 +357,7 @@
   },
   "feedback-form.css": {
     "src": "feedback-form-22.9.1.css",
-    "integrity": "sha512-DyMASSkX8hP+PywbNTij7kOmj8BHdtf7OVurEPb/GfOyX18IsIkzl6Roaw7XiNAzxS1uo6Igy2iNNDk67QQ4/A=="
+    "integrity": "sha512-UTi782HrYSa2/1yYLu0JroBdZ1lP6/LZSIyjyD6Kut3krfHr9v0TBq9wHZ+QEThlzIoJDyZxHRU82Q0zaIdVqw=="
   },
   "search-input.js": {
     "src": "js/search-input-22.9.2.js",
