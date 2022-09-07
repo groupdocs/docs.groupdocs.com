@@ -16,6 +16,14 @@
     color: #ba3e5b !important;
 }
 
+a > svg.gdoc-icon { margin-right: 5px; }
+li > svg.gdoc-icon { margin-right: 5px; }
+h1 > svg.gdoc-icon { margin-right: 5px; }
+h2 > svg.gdoc-icon { margin-right: 5px; }
+h3 > svg.gdoc-icon { margin-right: 5px; }
+h4 > svg.gdoc-icon { margin-right: 5px; }
+h5 > svg.gdoc-icon { margin-right: 5px; }
+
 @media print {
     #DynabicMenuInnerDiv{ display:none; }
     #dvMenuFooter{ display:none; }
