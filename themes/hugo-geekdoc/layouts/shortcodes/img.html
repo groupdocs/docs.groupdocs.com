@@ -1,6 +1,7 @@
 {{- $source := ($.Page.Resources.ByType "image").GetMatch (printf "%s" (.Get "name")) }}
 {{- $customAlt := .Get "alt" }}
 {{- $customSize := .Get "size" | lower }}
+{{- $noTitle := default false (.Get "noTitle") }}
 {{- $lazyLoad := default (default true $.Site.Params.GeekdocImageLazyLoading) (.Get "lazy") }}
 
 {{- with $source }}
@@ -32,18 +33,20 @@
           <img
             {{- if $lazyLoad }}{{ print " loading=\"lazy\"" | safeHTMLAttr }}{{- end }}
             src="{{ $size.large }}"
-            alt="{{ $caption }}"
+            alt="{{ .Title }}"
           />
         </picture>
       </a>
       {{- if not (eq $customSize "profile") }}
-        {{- with $caption }}
-          <figcaption>
-            {{ . }}
-            {{- with $source.Params.credits }}
-              {{ printf " (%s)" . | $.Page.RenderString }}
-            {{- end }}
-          </figcaption>
+        {{- if eq $noTitle false }}
+          {{- with $caption }}
+            <figcaption>
+              {{ . }}
+              {{- with $source.Params.credits }}
+                {{ printf " (%s)" . | $.Page.RenderString }}
+              {{- end }}
+            </figcaption>
+          {{- end }}
         {{- end }}
       {{- end }}
     </figure>
