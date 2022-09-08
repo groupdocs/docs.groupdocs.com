@@ -1,5 +1,6 @@
 {{- $raw := or (hasPrefix .Text "<img") (hasPrefix .Text "<figure") -}}
 {{- $code := hasPrefix .Text "<code" -}}
+{{- $external := not (hasPrefix .Destination .Page.Site.BaseURL) -}}
 <a
   class="gdoc-markdown__link{{ if $raw -}}
     --raw
@@ -8,6 +9,7 @@
   {{- end }}"
   href="{{ .Destination | safeURL }}"
   {{- with .Title }}{{ printf "title=\"%s\"" . | safeHTMLAttr }}{{- end }}
+  {{- if $external }}{{ printf "rel=\"nofollow\"" | safeHTMLAttr }}{{- end }}
 >
   {{- .Text | safeHTML -}}
 </a>
