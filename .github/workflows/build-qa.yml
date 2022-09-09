@@ -1,5 +1,5 @@
 # Build documentation
-name: 'build and deploy prod'
+name: 'build and deploy qa'
 
 # Controls when the workflow will run
 on: workflow_dispatch
@@ -26,7 +26,7 @@ jobs:
         with:
           src: ./public/*
           host: ${{ secrets.DOCS_SSH_HOST }}
-          remote: ${{ secrets.DOCS_SSH_DIR }}
+          remote: ${{ secrets.DOCS_QA_SSH_DIR }}
           user: ${{ secrets.DOCS_SSH_USER }}
           key: ${{ secrets.DOCS_SSH_KEY }}
 
