@@ -19,7 +19,7 @@ jobs:
           
       - name: Build site
         run: |
-          hugo --minify --config config-geekdoc.toml,ignore-total-config.toml
+          hugo --minify --config config-geekdoc.toml,ignore-total-config.toml --baseURL 'https://docs-qa.groupdocs.com/'
 
       - name: Deploy artifacts
         uses: nogsantos/scp-deploy@master
