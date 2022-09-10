@@ -1,5 +1,5 @@
 # Build documentation
-name: 'build and deploy qa'
+name: publish-qa
 
 # Controls when the workflow will run
 on: workflow_dispatch
