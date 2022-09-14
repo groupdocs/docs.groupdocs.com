@@ -6,6 +6,7 @@ geekdocSkip: true
 geekdocNav: false
 geekdocAlign: center
 geekdocAnchor: false
+geekdocBreadcrumb: false
 hideChildren: true
 ---
 

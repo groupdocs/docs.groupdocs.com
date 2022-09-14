@@ -1,11 +1,12 @@
 ---
 id: home
-title: GROUPDOCS DOCUMENTATION
+title: GroupDocs Documentation
 description: "GroupDocs Documentation Homepage"
 geekdocSkip: true
 geekdocNav: false
 geekdocAlign: center
 geekdocAnchor: false
+geekdocBreadcrumb: false
 hideChildren: true
 ---
 
