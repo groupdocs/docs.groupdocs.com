@@ -3,7 +3,7 @@
   {{ $pages := .Paginator.Pages | append .Sections }}    
   {{ range sort $pages.ByWeight }}
       <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <a href="{{ .RelPermalink }}">{{ partial "utils/short-title" . }}</a>
       </li>
   {{ end }}        
 </ul> 
