@@ -11,7 +11,7 @@
   {{ if $parent }}
     {{ $name := (partial "utils/short-title" $parent) }}
     {{ $position := (sub .position 1) }}
-    {{ $value := (printf "<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='%s' href='%s'><span itemprop='name'>%s</span></a><meta itemprop='position' content='%d' /></li><li>&nbsp;/&nbsp;</li>%s" $parent.RelPermalink $parent.RelPermalink $name $position .value) }}
+    {{ $value := (printf "<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='%s' href='%s'><span itemprop='name'>%s</span></a><meta itemprop='position' content='%d' /></li><li class='gdoc-breadcrumb__sep'>/</li>%s" $parent.RelPermalink $parent.RelPermalink $name $position .value) }}
     {{ template "breadcrumb" dict "page" $parent "value" $value "position" $position }}
   {{ else }}
     {{ .value | safeHTML }}
@@ -33,8 +33,7 @@
 >
   {{ if $showBreadcrumb }}
     <div>
-      <svg class="gdoc-icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
-      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <ol class="gdoc-breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
         {{ $position := sub (len (split .RelPermalink "/")) 1 }}
         {{ $name := (partial "utils/short-title" .) }}
         {{ $value := (printf "<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>%s</span><meta itemprop='position' content='%d' /></li>" $name $position ) }}

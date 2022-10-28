@@ -1,6 +1,10 @@
 {{ if default true .Site.Params.showSearchInput }}
   <div class="gdoc-search flex align-center">
-    <svg class="gdoc-icon gdoc_search"><use xlink:href="#gdoc_search"></use></svg>
+    <svg class="gdoc-search__search-icon">
+      <use xlink:href="/img/groupdocs-stack.svg#search_control"></use>
+    </svg>
+    
+    
     <input
       type="text"
       id="gdoc-search-input-ext"
@@ -11,6 +15,11 @@
       data-site-base-url="{{ .Site.BaseURL }}"
       data-site-lang="{{ .Site.Language.Lang }}"
     />
+
+    <svg id="search_close" class="gdoc-search__close-icon">
+      <use xlink:href="/img/groupdocs-stack.svg#search_close"></use>
+  </svg>
+    
     <div class="gdoc-search__spinner spinner hidden"></div>
     <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
   </div>

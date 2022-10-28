@@ -24,21 +24,6 @@ h3 > svg.gdoc-icon { margin-right: 5px; }
 h4 > svg.gdoc-icon { margin-right: 5px; }
 h5 > svg.gdoc-icon { margin-right: 5px; }
 
-
-/* footer styles */
-
-.footercol .socialicon .fa-pinterest {
-    background-position: -5px -390px!important;
-}
-
-.footercol .socialicon .fa-tumblr {
-    background-position: -5px -420px!important;
-}
-
-.footercol .socialicon .fa-instagram {
-    background-position: -5px -450px!important;
-}
-
 /* img shortcode image container margins  */
 
 .gdoc-post__figure {
@@ -50,4 +35,3 @@ h5 > svg.gdoc-icon { margin-right: 5px; }
     #DynabicMenuInnerDiv{ display:none; }
     #dvMenuFooter{ display:none; }
 }
-

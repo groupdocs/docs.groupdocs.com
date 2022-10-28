@@ -1,16 +1,37 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
-
+<div class="gdoc-content-cols">
   <article
     class="gdoc-markdown gdoc-markdown__align--{{ default "left" (.Page.Params.GeekdocAlign | lower) }}"
   >
-    <h1>{{ partial "utils/title" . }}</h1>
+    <h1>{{ partial "utils/title" . }}
+
+    <a class="gdoc-feedback-link" href="#feedback">
+      <svg  class="gdoc-feedback-link__icon">
+        <use xlink:href="/img/groupdocs-stack.svg#thumb_up"></use>
+      </svg>
+      <span class="gdoc-feedback-link__label">Leave&nbsp;feedback</span>
+
+    </a>
+
+    </h1>
     
     {{- if or (and (.Site.Params.toc) (ne .Site.Params.toc false)) (and (.Params.toc) (ne .Params.toc false)) }}
-      {{ partial "toc" . }}
+    {{ partial "toc-mobile" . }}
     {{end}}
 
     {{ partial "utils/content" . }}
+
+
+    {{ partial "feedback-form" . }} 
   </article>
+
+  {{- if or (and (.Site.Params.toc) (ne .Site.Params.toc false)) (and (.Params.toc) (ne .Params.toc false)) }}
+  {{ partial "toc" . }}
+  {{end}}
+
+</div>
+
+
 {{ end }}

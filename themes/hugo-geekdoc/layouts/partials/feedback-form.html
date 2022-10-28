@@ -1,47 +1,44 @@
 {{- if .Site.Params.showFeedbackForm }}
-    <div class="feedback-container" style="bottom: 8px;">
-        <div class="feedback feedback-initial">
-            <button class="feedback_label btn-feedback">Leave feedback</button>
-            <div class="feedback_form">
-                <div class="feedback_rate">
-                    <div class="feedback_text feedback_question">
-                        <span>Was this page helpful?</span>
-                    </div>
-                    <div class="feedback_button-panel horizontal-list">
-                        <button class="button feedback_rate_val feedback_positive btn-feedback">Yes</button>
-                        <button class="button feedback_rate_val feedback_negative btn-feedback">No</button>
-                    </div>
-                    <button class="feedback_close">
-                        <span class="invisible">Close</span>
-                    </button>
-                </div>
-                <div class="feedback_thank">
-                    <div class="feedback_text">
-                        <span>Thank you for your feedback!</span><br>
-                        <span class="feedback_thank__tell-us-more"><span>We welcome your suggestions.&nbsp;</span><button
-                                class="feedback_link">Tell us more</button></span>
-                    </div>
-                    <button class="feedback_close">
-                        <span class="invisible">Close</span>
-                    </button>
-                </div>
-                <div class="feedback_details">
-                    <div class="feedback_text">
-                        <span class="feedback_text-input-title">
-                            Tell us more
-                        </span>
-                        <label class="invisible" for="feedback_text-input">Feedback</label>
-                        <textarea id="feedback_text-input" class="feedback_text-input"
-                            placeholder="How can we improve this page?" name="feedback-msg"></textarea>
-                        <input id="feedback_rate-input" class="invisible" type="hidden" />
-                    </div>
-                    <button id="feedback_submit" class="button feedback_details-submit btn-feedback">Submit</button>
-                    <button class="button feedback_details-no btn-feedback">Skip</button>
-                    <button class="feedback_close invisible">
-                        <span class="invisible">Close</span>
-                    </button>
-                </div>
-            </div>
-        </div>
+    
+<a name="feedback"></a>
+<div id="feedback" class="gdoc-feedback">
+
+<div id="feedback_tab_vote" class="gdoc-feedback__tab active">
+    <h2 class="gdoc-feedback__header">Was this page helpful?</h2>
+
+    <div class="gdoc-feedback__actions">
+        <button id="feedback_no" class="gdoc-feedback__button">Not really</button>
+        <button id="feedback_yes" class="gdoc-feedback__button gdoc-feedback__button--primary">Yes, thanks</button>
     </div>
+
+</div>
+<div id="feedback_tab_yes" class="gdoc-feedback__tab">
+    <h2 class="gdoc-feedback__header">Any additional feedback you'd like to share with us?</h2>
+    <textarea id="feedback_yes_msg" class="gdoc-feedback__msg"></textarea>
+    <div class="gdoc-feedback__actions">
+        <button id="feedback_yes_skip" class="gdoc-feedback__button gdoc-feedback__button--label">Skip</button>
+        <button id="feedback_yes_send" class="gdoc-feedback__button gdoc-feedback__button--primary">Send</button>
+    </div>
+
+</div>
+<div id="feedback_tab_no" class="gdoc-feedback__tab">
+    <h2 class="gdoc-feedback__header">Please tell us how we can improve this page.</h2>
+    <textarea id="feedback_no_msg" class="gdoc-feedback__msg"></textarea>
+    <div class="gdoc-feedback__actions">
+        <button id="feedback_no_skip" class="gdoc-feedback__button gdoc-feedback__button--label">Skip</button>
+        <button id="feedback_no_send" class="gdoc-feedback__button gdoc-feedback__button--primary">Send</button>
+    </div>
+
+</div>
+<div id="feedback_tab_thanks" class="gdoc-feedback__tab">
+    
+    <h2 class="gdoc-feedback__header">Thank you for your feedback!</h2>
+    <p class="gdoc-feedback__text">Your opinion is valuable to us. We'll use your feedback to improve our documentation quality.</p>
+
+</div>
+
+
+</div>
+
+
 {{ end }}

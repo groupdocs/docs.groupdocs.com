@@ -2,7 +2,9 @@
 
 {{- if and $tocLevels .Page.TableOfContents -}}
     <div class="gdoc-toc gdoc-toc__level--{{ $tocLevels }}">
+      
+      <h2 class="gdoc-toc__header">On this page</h2>
       {{ .Page.TableOfContents | replaceRE `<nav id="TableOfContents">\s*<ul>\s*<li>\s*<ul>` `<nav id="TableOfContents"><ul>` | replaceRE `</ul>\s*</li>\s*</ul>\s*</nav>` `</ul></nav>` | safeHTML }}
-      <hr />
+     
     </div>
 {{- end -}}

@@ -23,6 +23,10 @@
     "src": "js/116-2bf49fb1.chunk.min.js",
     "integrity": "sha512-yBCqcmxpVT8L4nP8RCIINK6ZzP27Ms1hPS4Whkg7tMl9FUmOHt/podhi9o988CZnEbzblGx/51+cDhN1ngIP6w=="
   },
+  "fonts/OpenSans-SemiBold.ttf": {
+    "src": "fonts/OpenSans-SemiBold.ttf",
+    "integrity": "sha512-X8iWtp7gsJFHLyWhQzM8IZMH97LUsxhB5Hzv9smPHsqmRrDhl/S5xClHq3lUEtupVjCxcthMXl2qQvXcM3XVkA=="
+  },
   "fonts/LiberationSans-Italic.woff": {
     "src": "fonts/LiberationSans-Italic.woff",
     "integrity": "sha512-3rg7qqlEgAeip3NcoxqNNKeVrPvkXCxHbybcidDz8/aKmNhtp9LG45K20dOaOxvWrB+XbjM6bBPnRuzJj8Pltw=="
@@ -63,8 +67,9 @@
     "src": "fonts/LiberationMono.woff2",
     "integrity": "sha512-p5oGo6T78XQ6SECsAez1Sc9HBw0SvLJlhndS+pJ0KyauzBdilh7/8/M/V8ivTjbJKU+rJHtIjHtMUVhPQjXq+g=="
   },
+ 
   "main.scss": {
-    "src": "main-96593c38.min.css",
+    "src": "main-groupdocs.css",
     "integrity": "sha512-XhVwR07h+psrNjPD61IgEMnfUogYOtcydYYPVazgYJf1usbXw3VpVbDci57BcdjYDxZFhlv6a4K8j8CeUSgk0A=="
   },
   "favicon/android-chrome-512x512.png": {
@@ -320,7 +325,11 @@
     "integrity": "sha512-UHLkhDx6PiLwZMFryz3XibN+SCeiQUq3tg0m1SEyyuPUF0vTZu5O9uU7yvlyolldsIZZbCaJGzS/CEYmGkupeA=="
   },
   "mobile.scss": {
-    "src": "mobile-c0e18b0e.min.css",
+    "src": "mobile-groupdocs.css",
+    "integrity": "sha512-V3Jia728GDyzfuEQgI7Cxestw0uZjDUPO7fIA8IYIFtQCVLmqgWIczWmdWqjdQ3vpGwqgMbg/K8Z3v1E/8L7FQ=="
+  },
+  "color.scss": {
+    "src": "color-groupdocs.css",
     "integrity": "sha512-V3Jia728GDyzfuEQgI7Cxestw0uZjDUPO7fIA8IYIFtQCVLmqgWIczWmdWqjdQ3vpGwqgMbg/K8Z3v1E/8L7FQ=="
   },
   "favicon/manifest.json": {
@@ -351,16 +360,9 @@
     "src": "custom.css",
     "integrity": "sha512-7Q4+KTjgrRJZJVqBXScwm7DwE0J2YX/lC8h9GP3p8Ksu3tSu6epf0LAhkzlD5BRcJqNecp9K8j6utt/ShFYUKQ=="
   },
-  "feedback-form.js": {
-    "src": "js/feedback-form-22.9.1.js",
+  "groupdocs.js": {
+    "src": "js/groupdocs-22.10.0.js",
     "integrity": "sha512-+a9+BkBIIwkVnx+g7eYyQdbwSvBFPJY6VufUR/6MkpN5mxyAnhMDyMsvkEfhT8x+NzP5pmCv07MtNapM1y9+ZQ=="
-  },
-  "feedback-form.css": {
-    "src": "feedback-form-22.9.1.css",
-    "integrity": "sha512-UTi782HrYSa2/1yYLu0JroBdZ1lP6/LZSIyjyD6Kut3krfHr9v0TBq9wHZ+QEThlzIoJDyZxHRU82Q0zaIdVqw=="
-  },
-  "search-input.js": {
-    "src": "js/search-input-22.9.2.js",
-    "integrity": "sha512-k6E05colc4yKQb0j/omuLKQUlVhf2yM9uwCEJw2OwfFXKrJM7iI5NO9Y3Wa7LlhJfJnVrPpI/q3a7hjdz+HS/g=="
   }
+
 }

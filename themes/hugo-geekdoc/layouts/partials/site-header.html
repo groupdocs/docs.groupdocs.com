@@ -1,6 +1,8 @@
+<!--  -->
+
 <div id="DynabicMenuInnerDiv">
-    <div class="topheader gdoc-header">
-        <div class="topsection topsection-panel">
+    <div class="gdoc-header">
+        <div class="gdoc-header__content">
             {{ $navEnabled := default true .Page.Params.GeekdocNav }}
             {{ if $navEnabled }}
                 <label for="menu-control" class="gdoc-nav__control" tabindex="0">
@@ -15,71 +17,73 @@
                 </label>
             {{ end }}
             
-            <div class="venturelogo"><a href="https://www.groupdocs.app" class="groupdocs"><span
-                        class="font-0">GroupDocs</span></a></div>
-
-            <div class="userlogstatus">
-                <div id="DynabicMenuUserControls">
-                    <div id="gdoc-color-theme" class="topsearchboxdiv">
-                        <span style="color: white">
-                            <svg class="gdoc-icon gdoc_brightness_dark">
-                                <title>{{ i18n "button_toggle_dark" }}</title>
-                                <use xlink:href="#gdoc_brightness_dark"></use>
+            
+            <div class="gdoc-header__brand">
+                
+                <div class="gdoc-brand">
+                    <div class="gdoc-brand__pic">
+                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2329 9.92005C13.4838 9.89639 14.674 9.40361 15.5438 8.54927C16.4136 7.69494 16.8922 6.54844 16.8753 5.36005C16.8753 2.84005 14.791 0.800049 12.2329 0.800049C9.67482 0.800049 7.52731 2.84005 7.52731 5.36005C7.51895 5.95603 7.6353 6.54765 7.86962 7.10056C8.10393 7.65347 8.45154 8.15665 8.89226 8.58089C9.33298 9.00513 9.85804 9.34197 10.4369 9.57186C11.0158 9.80175 11.637 9.9201 12.2645 9.92005H12.2329ZM16.749 8.69005C17.2543 8.93005 17.8543 9.05005 18.4544 9.05005C20.665 9.05005 22.4967 7.25005 22.4967 5.09005C22.5093 4.57538 22.4145 4.06344 22.2177 3.58376C22.021 3.10408 21.7262 2.66614 21.3504 2.29521C20.9746 1.92428 20.5252 1.6277 20.0282 1.42257C19.5311 1.21745 18.9962 1.10783 18.4544 1.10005C17.6938 1.10723 16.9504 1.31495 16.3068 1.70005C17.2859 2.60242 17.8741 3.82005 17.9559 5.11354C18.0377 6.40703 17.6072 7.68281 16.749 8.69005ZM5.85352 9.05005C6.48514 9.05005 7.0536 8.93005 7.59048 8.69005C6.72529 7.68562 6.29032 6.40838 6.37227 5.1129C6.45421 3.81741 7.04705 2.59884 8.03261 1.70005C7.40099 1.31005 6.64304 1.07005 5.82194 1.07005C5.28002 1.08168 4.74588 1.19515 4.25036 1.40389C3.75484 1.61263 3.30774 1.91253 2.93486 2.28626C2.56198 2.66 2.2707 3.10018 2.07784 3.58141C1.88497 4.06263 1.79433 4.57537 1.81114 5.09005C1.80279 5.60472 1.90177 6.11586 2.10238 6.59402C2.30298 7.07217 2.60124 7.50787 2.97996 7.876C3.35869 8.24413 3.81037 8.5374 4.30898 8.7389C4.80759 8.9404 5.34326 9.04615 5.8851 9.05005H5.85352ZM4.36921 10.5201C2.85332 10.5201 2.09537 9.32005 2.09537 9.32005C0.832131 9.32005 0.263672 10.31 0.263672 11.51V16.16C0.263672 17.18 2.15853 18.08 4.49553 18.6201V12.38C4.49553 11.27 5.3798 10.37 6.51672 10.22C5.8851 10.3101 4.77976 10.5201 4.36921 10.5201ZM16.2437 10.94C16.2437 10.94 15.012 12.11 13.4961 12.11C13.0224 12.11 12.6434 11.36 12.1381 11.36C11.3486 11.36 11.1591 12.11 10.4644 12.11C9.3906 12.11 7.87471 10.94 7.87471 10.94C6.61146 10.94 5.60087 11.9 5.60087 13.1V19.4901C5.60087 22.01 18.5491 22.1 18.5491 19.4901V13.1C18.5491 11.9 17.5069 10.94 16.2437 10.94ZM15.5805 18.32C14.1278 18.59 10.0538 18.6201 8.56949 18.32C8.03261 18.23 7.7168 18.1101 7.7168 17.7201C7.7168 17.3901 7.96945 17.15 8.56949 17.3C10.8977 17.5719 13.2522 17.5719 15.5805 17.3C16.4648 17.21 16.5279 17.39 16.5595 17.75C16.5911 18.14 16.1805 18.2001 15.5805 18.32ZM15.5805 16.43C14.1278 16.73 10.0538 16.73 8.56949 16.43C8.03261 16.34 7.7168 16.22 7.7168 15.86C7.7168 15.5 7.96945 15.26 8.56949 15.41C9.70641 15.71 13.433 15.71 15.5805 15.41C16.4648 15.32 16.5279 15.5 16.5595 15.86C16.5911 16.25 16.1805 16.34 15.5805 16.46V16.43ZM22.0546 9.35005C22.0546 9.35005 21.2651 10.5201 19.7492 10.5201C19.307 10.5201 18.2333 10.28 17.6017 10.22C18.7386 10.37 19.5913 11.27 19.5913 12.38V18.59C21.9283 18.08 23.8863 17.18 23.8863 16.16V11.51C23.8863 10.31 23.3178 9.35005 22.0546 9.35005Z" />
                             </svg>
-                            <svg class="gdoc-icon gdoc_brightness_light">
-                                <title>{{ i18n "button_toggle_dark" }}</title>
-                                <use xlink:href="#gdoc_brightness_light"></use>
+                    </div>
+                    <div class="gdoc-brand__name">
+                        <svg width="127" height="15" viewBox="0 0 127 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.3708 7.37992H13.7709V11.9999C12.4445 13.4099 10.5497 14.0999 8.08633 14.0999C5.9704 14.0999 4.23345 13.4399 2.8123 12.1499C2.12159 11.5079 1.57946 10.7361 1.22056 9.88374C0.861665 9.03141 0.693888 8.11734 0.727951 7.19992C0.727951 5.18992 1.42273 3.53992 2.87546 2.21992C4.29661 0.869924 6.03357 0.209924 8.05475 0.209924C10.1075 0.209924 11.7813 0.779924 13.1077 1.91992L11.8445 3.62992C11.3575 3.21396 10.7887 2.89375 10.1707 2.68779C9.5528 2.48182 8.89803 2.39418 8.24424 2.42992C6.82309 2.42992 5.62301 2.87992 4.644 3.74992C3.69657 4.64992 3.19127 5.78992 3.19127 7.19992C3.16083 7.81595 3.26401 8.43135 3.49441 9.00792C3.72481 9.58449 4.0775 10.1099 4.5306 10.5516C4.9837 10.9933 5.52754 11.3417 6.12834 11.5754C6.72915 11.8091 7.37411 11.9229 8.02317 11.9099C9.38116 11.9099 10.4865 11.6399 11.4023 11.0999V7.37992H11.3708ZM27.1613 4.85992C27.1613 7.07992 26.1191 8.45992 24.0979 9.05992L27.7929 13.8899H24.7611L21.382 9.38992H18.2554V13.8899H15.8869V0.509924H21.1293C23.2768 0.509924 24.8243 0.869924 25.7401 1.55992C26.6876 2.24992 27.1297 3.35992 27.1297 4.85992H27.1613ZM24.0032 6.74992C24.4769 6.35992 24.698 5.72992 24.698 4.85992C24.698 3.95992 24.4453 3.35992 23.9716 3.05992C23.4663 2.72992 22.582 2.54992 21.2872 2.54992H18.2554V7.34992H21.2241C22.582 7.34992 23.4979 7.16992 23.9716 6.74992H24.0032ZM41.3728 12.0599C40.6747 12.7128 39.8448 13.2247 38.933 13.565C38.0212 13.9053 37.0464 14.0668 36.0671 14.0399C35.1001 14.0599 34.1385 13.8962 33.239 13.5584C32.3394 13.2206 31.5199 12.7155 30.8286 12.0728C30.1373 11.43 29.5881 10.6626 29.2132 9.81555C28.8384 8.96848 28.6454 8.0588 28.6456 7.13992C28.6454 6.22104 28.8384 5.31137 29.2132 4.4643C29.5881 3.61722 30.1373 2.8498 30.8286 2.20708C31.5199 1.56435 32.3394 1.05927 33.239 0.721468C34.1385 0.383665 35.1001 0.219947 36.0671 0.239923C37.0368 0.215885 38.0018 0.376597 38.9051 0.712576C39.8083 1.04855 40.6316 1.55299 41.3263 2.19613C42.0209 2.83926 42.573 3.60806 42.9498 4.45716C43.3266 5.30626 43.5206 6.21845 43.5203 7.13992C43.5203 9.08992 42.7939 10.7399 41.3728 12.0599ZM39.6358 3.65992C39.1787 3.19981 38.6247 2.83642 38.0097 2.59346C37.3948 2.35051 36.7329 2.23345 36.0671 2.24992C35.4023 2.25378 34.745 2.38301 34.1331 2.63011C33.5213 2.8772 32.9673 3.23725 32.5031 3.68936C32.0389 4.14146 31.6738 4.67663 31.4291 5.26382C31.1844 5.851 31.0648 6.4785 31.0773 7.10992C31.0605 7.74635 31.1779 8.37955 31.4227 8.9722C31.6675 9.56484 32.0347 10.1049 32.5027 10.5607C32.9706 11.0164 33.5299 11.3785 34.1475 11.6257C34.7651 11.8729 35.4285 12.0001 36.0987 11.9999C36.7636 11.9922 37.4202 11.8591 38.0305 11.6084C38.6407 11.3576 39.1925 10.9943 39.6538 10.5394C40.115 10.0844 40.4766 9.54704 40.7175 8.95833C40.9583 8.36963 41.0737 7.74133 41.057 7.10992C41.057 5.75992 40.5832 4.61992 39.6358 3.68992V3.65992ZM48.668 10.8299C49.2996 11.5499 50.1839 11.9099 51.2892 11.9099C52.3946 11.9099 53.2788 11.5499 53.9104 10.8299C54.5421 10.1099 54.8579 9.14992 54.8579 7.91992V0.509924H57.258V8.00992C57.258 9.95992 56.6896 11.4299 55.5842 12.5099C54.4789 13.5299 53.0578 14.0399 51.2892 14.0399C49.5523 14.0399 48.1311 13.5299 46.9942 12.4799C46.414 11.8856 45.9665 11.1858 45.6788 10.4227C45.3911 9.65959 45.2692 8.84902 45.3204 8.03992V0.539923H47.689V7.91992C47.689 9.14992 48.0048 10.1399 48.668 10.8299ZM69.4799 1.67992C70.4905 2.45992 70.9642 3.65992 70.9642 5.27992C70.9642 6.89992 70.4905 8.09992 69.4799 8.84992C68.4693 9.59992 66.9534 9.98992 64.8691 9.98992H62.3426V13.8899H60.0056V0.539923H64.8691C66.985 0.539923 68.5641 0.929923 69.5431 1.73992L69.4799 1.67992ZM67.8693 7.19992C68.343 6.71992 68.5641 6.02992 68.5641 5.09992C68.5641 4.19992 68.2482 3.50992 67.6482 3.14992C67.0482 2.75992 66.1007 2.54992 64.8059 2.54992H62.4057V7.94992H65.1533C66.4797 7.94992 67.364 7.67992 67.8693 7.19992ZM83.4387 2.27992C84.7967 3.44992 85.4915 5.06992 85.4915 7.13992C85.4915 9.23992 84.8283 10.8899 83.5019 12.0899C82.1755 13.2899 80.1859 13.8899 77.4699 13.8899H72.7643V0.539923H77.6278C80.1543 0.539923 82.0807 1.13992 83.4387 2.30992V2.27992ZM83.0913 7.19992C83.0913 4.13992 81.2281 2.60992 77.5331 2.60992H75.1645V11.7899H77.7857C79.4911 11.7899 80.8175 11.3999 81.7334 10.6199C82.6176 9.83992 83.0913 8.69992 83.0913 7.19992ZM99.3556 12.0599C98.6575 12.7128 97.8276 13.2247 96.9158 13.565C96.004 13.9053 95.0292 14.0668 94.05 14.0399C93.0829 14.0599 92.1214 13.8962 91.2218 13.5584C90.3222 13.2206 89.5027 12.7155 88.8114 12.0728C88.1201 11.43 87.5709 10.6626 87.196 9.81555C86.8212 8.96848 86.6282 8.0588 86.6284 7.13992C86.6282 6.22104 86.8212 5.31137 87.196 4.4643C87.5709 3.61722 88.1201 2.8498 88.8114 2.20708C89.5027 1.56435 90.3222 1.05927 91.2218 0.721468C92.1214 0.383665 93.0829 0.219947 94.05 0.239923C95.017 0.219947 95.9786 0.383665 96.8782 0.721468C97.7777 1.05927 98.5972 1.56435 99.2885 2.20708C99.9798 2.8498 100.529 3.61722 100.904 4.4643C101.279 5.31137 101.472 6.22104 101.472 7.13992C101.497 8.05453 101.322 8.96421 100.958 9.81118C100.594 10.6582 100.048 11.4239 99.3556 12.0599ZM97.587 3.65992C97.1336 3.20361 96.5846 2.84244 95.9755 2.59962C95.3663 2.35679 94.7104 2.23768 94.05 2.24992C93.3852 2.25378 92.7278 2.38301 92.116 2.63011C91.5042 2.8772 90.9501 3.23725 90.4859 3.68936C90.0217 4.14146 89.6567 4.67663 89.4119 5.26382C89.1672 5.851 89.0476 6.4785 89.0602 7.10992C89.0434 7.74384 89.1598 8.37457 89.4026 8.96524C89.6454 9.55591 90.0098 10.0947 90.4744 10.55C90.939 11.0053 91.4946 11.368 92.1085 11.617C92.7224 11.866 93.3824 11.9961 94.05 11.9999C94.7148 11.9961 95.3721 11.8668 95.984 11.6197C96.5958 11.3726 97.1499 11.0126 97.614 10.5605C98.0782 10.1084 98.4433 9.57321 98.688 8.98603C98.9328 8.39885 99.0523 7.77134 99.0398 7.13992C99.0398 5.78992 98.5661 4.64992 97.587 3.71992V3.65992ZM109.904 11.8499C110.725 11.8499 111.451 11.7299 112.02 11.4599C112.718 11.1388 113.358 10.7134 113.914 10.1999L115.43 11.6999C114.76 12.4531 113.922 13.0562 112.978 13.4659C112.033 13.8757 111.005 14.0819 109.967 14.0699C108.99 14.1007 108.016 13.9439 107.105 13.6089C106.193 13.2738 105.362 12.7674 104.661 12.1199C103.97 11.4779 103.428 10.7061 103.069 9.85374C102.711 9.00141 102.543 8.08734 102.577 7.16992C102.572 6.23285 102.766 5.3045 103.148 4.44053C103.53 3.57656 104.092 2.79477 104.8 2.14203C105.508 1.48929 106.347 0.979044 107.267 0.641885C108.188 0.304727 109.17 0.147599 110.156 0.179924C112.367 0.179924 114.167 0.959923 115.62 2.48992L114.104 4.04992C113.555 3.52773 112.914 3.10125 112.209 2.78992C111.539 2.52539 110.819 2.39271 110.093 2.39992C108.672 2.39992 107.472 2.84992 106.493 3.71992C105.545 4.61992 105.04 5.72992 105.04 7.07992C105.04 8.42992 105.545 9.56992 106.493 10.4999C107.44 11.3999 108.609 11.8499 109.904 11.8499ZM121.494 2.27992C120.799 2.27992 120.231 2.39992 119.789 2.66992C119.576 2.79665 119.403 2.97439 119.287 3.18513C119.17 3.39587 119.115 3.63212 119.125 3.86992C119.125 4.43992 119.346 4.85992 119.757 5.12992C120.231 5.42992 121.178 5.72992 122.599 6.05992C124.052 6.38992 125.126 6.86992 125.884 7.46992C126.61 8.06992 126.989 8.96992 126.989 10.1099C126.989 11.2499 126.515 12.2399 125.599 12.9599C124.684 13.6799 123.452 14.0999 121.904 14.0999C119.694 14.0999 117.736 13.3799 116.03 11.9399L117.515 10.2299C118.936 11.3999 120.42 11.9699 121.936 11.9699C122.726 11.9699 123.326 11.8199 123.799 11.5199C124.241 11.2199 124.463 10.7999 124.463 10.2599C124.463 9.71992 124.241 9.35992 123.831 9.05992C123.42 8.75992 122.662 8.51992 121.62 8.27992C120.61 8.03992 119.82 7.82992 119.283 7.61992C118.746 7.40992 118.273 7.16992 117.862 6.83992C117.009 6.23992 116.599 5.33992 116.599 4.07992C116.599 2.84992 117.073 1.88992 118.02 1.22992C118.967 0.569923 120.136 0.209924 121.525 0.209924C122.441 0.209924 123.326 0.359923 124.21 0.629923C125.126 0.929923 125.884 1.31992 126.515 1.82992L125.252 3.53992C124.754 3.1329 124.174 2.82666 123.547 2.63992C122.852 2.42992 122.157 2.30992 121.462 2.30992L121.494 2.27992Z" />
                             </svg>
-                            <svg class="gdoc-icon gdoc_brightness_auto">
-                                <title>{{ i18n "button_toggle_dark" }}</title>
-                                <use xlink:href="#gdoc_brightness_auto"></use>
-                            </svg>
-                        </span>
+                            
                     </div>
                 </div>
+            
+              
             </div>
 
-            <div class="menuitems">
-                <ul class="topheadermenus twocolmenu">
-                    <li><a href="https://products.groupdocs.com" class="mobileanchor">Products</a>
-                        <ul>
-                            <li class="linkmobile"><a href="https://products.groupdocs.com">All Products</a></li>
-                            <div class="productmenubox cloudmenubox"><a
-                                    href="https://products.groupdocs.com/total/"><em>GroupDocs.Total <b>Product
-                                            Family</b></em></a>
-                                <a href="https://products.groupdocs.com/viewer/"><em>GroupDocs.Viewer <b>Product
-                                            Solution</b></em></a>
-                                <a href="https://products.groupdocs.com/annotation/"><em>GroupDocs.Annotation <b>Product
-                                            Solution</b></em></a>
-                                <a href="https://products.groupdocs.com/conversion/"><em>GroupDocs.Conversion <b>Product
-                                            Solution</b></em></a>
-                                <a href="https://products.groupdocs.com/comparison/"><em>GroupDocs.Comparison <b>Product
-                                            Solution</b></em></a>
-                                <a href="https://products.groupdocs.com/signature/"><em>GroupDocs.Signature <b>Product
-                                            Solution</b></em></a>
-                                <a href="https://products.groupdocs.com/assembly/"><em>GroupDocs.Assembly <b>Product
-                                            Solution</b></em></a>
-                                <a href="https://products.groupdocs.com/metadata/"><em>GroupDocs.Metadata <b>Product
-                                            Solution</b></em></a>
-                                <a href="https://products.groupdocs.com/search/"><em>GroupDocs.Search <b>Product
-                                            Solution</b></em></a>
-                                <a href="https://products.groupdocs.com/parser/"><em>GroupDocs.Parser <b>Product
-                                            Solution</b></em></a>
-                                <a href="https://products.groupdocs.com/watermark/"><em>GroupDocs.Watermark <b>Product
-                                            Solution</b></em></a>
-                                <a href="https://products.groupdocs.com/editor/"><em>GroupDocs.Editor <b>Product
-                                            Solution</b></em></a>
-                                <a href="https://products.groupdocs.com/merger/"><em>GroupDocs.Merger <b>Product
-                                            Solution</b></em></a>
-                                <a href="https://products.groupdocs.com/redaction/"><em>GroupDocs.Redaction <b>Product
-                                            Solution</b></em></a>
-                                <a href="https://products.groupdocs.com/classification/"><em>GroupDocs.Classification
-                                        <b>Product Solution</b></em></a>
-                            </div>
-                        </ul>
+
+
+           <div class="gdoc-header__search">
+            {{ partial "search-input" . }}
+           </div>
+
+            <div class="gdoc-header__menu">
+                <div class="gdoc-header__menu-inner">
+                <ul class="gdoc-menu">
+                    <li class="gdoc-menu__item"><a href="https://products.groupdocs.com" >Products</a>
+                        
+                            <ul class="gdoc-menu__sub gdoc-menu__sub--wide">
+                                <li><a href="https://products.groupdocs.com/total/"><em>GroupDocs.Total <b>Product
+                                Family</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/viewer/"><em>GroupDocs.Viewer <b>Product
+                                Solution</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/annotation/"><em>GroupDocs.Annotation <b>Product
+                                Solution</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/conversion/"><em>GroupDocs.Conversion <b>Product
+                                Solution</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/comparison/"><em>GroupDocs.Comparison <b>Product
+                                Solution</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/signature/"><em>GroupDocs.Signature <b>Product
+                                Solution</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/assembly/"><em>GroupDocs.Assembly <b>Product
+                                Solution</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/metadata/"><em>GroupDocs.Metadata <b>Product
+                                Solution</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/search/"><em>GroupDocs.Search <b>Product
+                                Solution</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/parser/"><em>GroupDocs.Parser <b>Product
+                                Solution</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/watermark/"><em>GroupDocs.Watermark <b>Product
+                                Solution</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/editor/"><em>GroupDocs.Editor <b>Product
+                                Solution</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/merger/"><em>GroupDocs.Merger <b>Product
+                                Solution</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/redaction/"><em>GroupDocs.Redaction <b>Product
+                                Solution</b></em></a></li>
+                                <li><a href="https://products.groupdocs.com/classification/"><em>GroupDocs.Classification
+                            <b>Product Solution</b></em></a></li>
+                                </ul>
+                        
                     </li>
-                    <li><a href="https://purchase.groupdocs.com" class="mobileanchor">Purchase</a>
-                        <ul>
+                    <li class="gdoc-menu__item"><a href="https://purchase.groupdocs.com" >Purchase</a>
+                        <ul class="gdoc-menu__sub">
                             <li><a href="https://purchase.groupdocs.com/buy">Buy Now</a></li>
                             <li><a href="https://purchase.groupdocs.com/pricing">Pricing Information</a></li>
                             <li><a href="https://downloads.groupdocs.com/">Free Trials</a></li>
@@ -90,8 +94,8 @@
                             <li><a href="https://purchase.groupdocs.com/upgrade">Upgrade an Order</a></li>
                         </ul>
                     </li>
-                    <li><a href="javascript:;" class="mobileanchor">Support</a>
-                        <ul>
+                    <li class="gdoc-menu__item"><a href="https://helpdesk.groupdocs.com" >Support</a>
+                        <ul class="gdoc-menu__sub">
                             <li><a href="https://docs.groupdocs.com">Docs</a></li>
                             <li><a href="https://apireference.groupdocs.com/">API Reference</a></li>
                             <li><a class="nofollow" href="https://demos.groupdocs.com">Live Demos</a></li>
@@ -107,8 +111,8 @@
                             <li><a href="https://status.groupdocs.com/">Status</a></li>
                         </ul>
                     </li>
-                    <li><a href="https://websites.groupdocs.com" class="mobileanchor">Websites</a>
-                        <ul>
+                    <li class="gdoc-menu__item"><a href="https://websites.groupdocs.com" >Websites</a>
+                        <ul class="gdoc-menu__sub">
                             <li><a href="https://websites.groupdocs.com/aspose/com">aspose.com</a></li>
                             <li><a href="https://websites.groupdocs.com/aspose/cloud">aspose.cloud</a></li>
                             <li><a href="https://websites.groupdocs.com/aspose/app">aspose.app</a></li>
@@ -124,8 +128,8 @@
                             <li><a href="https://websites.groupdocs.com/fileformat/app">fileformat.app</a></li>
                         </ul>
                     </li>
-                    <li><a href="https://about.groupdocs.com" class="mobileanchor">About</a>
-                        <ul>
+                    <li class="gdoc-menu__item"><a href="https://about.groupdocs.com" >About</a>
+                        <ul class="gdoc-menu__sub">
                             <li><a href="https://about.groupdocs.com">About Us</a></li>
                             <li><a href="https://about.groupdocs.com/contact">Contact</a></li>
                             <li><a href="https://about.groupdocs.com/customers">Customers</a></li>
@@ -139,6 +143,37 @@
                         <div id="DynabicMenuUserControlsclone"></div>
                     </li>
                 </ul>
+                </div>
+            </div>
+
+
+            <div class="gdoc-header__buttons">
+                <div id="search_toggle" class="gdoc-header__search-btn" title="Search">
+                    <svg class="gdoc-header__search-btn-icon">
+                        <use xlink:href="/img/groupdocs-stack.svg#search"></use>
+                    </svg>
+                </div>   
+                
+                <div id="DynabicMenuUserControls">
+                    <div id="gdoc-color-theme" title="Color theme" >
+                        <span >
+                            
+                            <svg  class="gdoc-theme-icon gdoc_brightness_dark">
+                                <use xlink:href="/img/groupdocs-stack.svg#theme_dark"></use>
+                            </svg>
+
+                            <svg  class="gdoc-theme-icon gdoc_brightness_light">
+                                <use xlink:href="/img/groupdocs-stack.svg#theme_light"></use>
+                            </svg>
+
+                            <svg  class="gdoc-theme-icon gdoc_brightness_auto">
+                                <use xlink:href="/img/groupdocs-stack.svg#theme_auto"></use>
+                            </svg> 
+                            
+                           
+                        </span>
+                    </div>
+                </div>
             </div>
 
         </div>

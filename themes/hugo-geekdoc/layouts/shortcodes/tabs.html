@@ -13,7 +13,7 @@
       {{ if not $index }}checked="checked"{{ end }}
     />
     <label for="{{ printf "%s-%d" $group $index }}" class="gdoc-tabs__label">
-      {{ $tab.Name }}
+      <div class="gdoc-tabs__name">{{ $tab.Name }}</div>
     </label>
     <div class="gdoc-markdown--nested gdoc-tabs__content">
       {{ .Content | $.Page.RenderString }}

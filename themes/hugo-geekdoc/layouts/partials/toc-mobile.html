@@ -1,0 +1,19 @@
+{{- $tocLevels := default (default 6 .Site.Params.GeekdocToC) .Page.Params.GeekdocToC }}
+
+{{- if and $tocLevels .Page.TableOfContents -}}
+    <div class="gdoc-toc-mobile gdoc-toc-mobile__level--{{ $tocLevels }}">
+      
+      <h2 id="TableOfContentsMobileHeader" class="gdoc-toc-mobile__header"><span>On this page</span>
+
+
+        <svg class="gdoc-icon toggle gdoc_keyboard_arrow_left">
+          <use xlink:href="#gdoc_keyboard_arrow_left"></use>
+        </svg>
+        <svg class="gdoc-icon toggle gdoc_keyboard_arrow_down">
+          <use xlink:href="#gdoc_keyboard_arrow_down"></use>
+        </svg>
+      </h2>
+      {{ .Page.TableOfContents | replaceRE `<nav id="TableOfContents">\s*<ul>\s*<li>\s*<ul>` `<nav id="TableOfContentsMobile"><ul>` | replaceRE `</ul>\s*</li>\s*</ul>\s*</nav>` `</ul></nav>` | safeHTML }}
+     
+    </div>
+{{- end -}}
