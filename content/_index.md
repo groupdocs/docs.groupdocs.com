@@ -13,7 +13,7 @@ hideChildren: true
 <div class="gdoc-page__anchorwrap">
     <h2 id="groupdocs-developers-cookbook">GroupDocs Developers Cookbook</h2>
 </div>
-<div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+<div class="gdocs-main-icons gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
     <div class="gdoc-columns__content gdoc-markdown--nested flex-even"><a class="home-resource-link" rel="nofollow"
             href="https://apireference.groupdocs.com/"><svg class="gdoc-icon gdoc-icon-large book">
                 <use xlink:href="#book"></use>
@@ -39,7 +39,7 @@ hideChildren: true
                 <use xlink:href="#user-tie"></use>
             </svg><br>Paid Support</a></div>
 </div>
-<div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+<div class="gdocs-main-app gdocs-main-app__first gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
     <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
         <div class="gdoc-page__anchorwrap">
             <h3 id="a-classhome-resource-link-relnofollow-hrefhttpsdocsgroupdocscomtotalgroupdocstotal-product-familya">
@@ -57,7 +57,7 @@ hideChildren: true
                 </svg>Java</a></span>
     </div>
 </div>
-<div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+<div class="gdocs-main-app gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
     <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
         <div class="gdoc-page__anchorwrap">
             <h3
@@ -95,7 +95,7 @@ hideChildren: true
                 </svg>Java</a></span>
     </div>
 </div>
-<div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+<div class="gdocs-main-app gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
     <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
         <div class="gdoc-page__anchorwrap">
             <h3
@@ -132,7 +132,7 @@ hideChildren: true
                 </svg>Java</a></span>
     </div>
 </div>
-<div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+<div class="gdocs-main-app gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
     <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
         <div class="gdoc-page__anchorwrap">
             <h3
@@ -169,7 +169,7 @@ hideChildren: true
                 </svg>Java</a></span>
     </div>
 </div>
-<div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+<div class="gdocs-main-app gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
     <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
         <div class="gdoc-page__anchorwrap">
             <h3
@@ -207,7 +207,7 @@ hideChildren: true
                 </svg>Java</a></span>
     </div>   
 </div>
-<div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+<div class="gdocs-main-app gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
     <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
         <div class="gdoc-page__anchorwrap">
             <h3
@@ -245,7 +245,7 @@ hideChildren: true
                 </svg>Java</a></span>
     </div>
 </div>
-<div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+<div class="gdocs-main-app gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
     <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
         <div class="gdoc-page__anchorwrap">
             <h3
@@ -282,7 +282,7 @@ hideChildren: true
                 </svg>Java</a></span>
     </div>
 </div>
-<div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+<div class="gdocs-main-app gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
     <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
         <div class="gdoc-page__anchorwrap">
             <h3
