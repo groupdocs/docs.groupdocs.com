@@ -31,6 +31,14 @@ h5 > svg.gdoc-icon { margin-right: 5px; }
     margin-right: 0px !important;
 }
 
+/* main page */
+.gdocs-main-icons {padding: 0 2rem; gap:0; margin-bottom: 2rem;}
+.gdocs-main-icons .gdoc-columns__content {min-width: 6rem;}
+.gdocs-main-icons svg.gdoc-icon { margin-right: 0; margin-bottom: 0.8rem; }
+.gdocs-main-app {margin: 1rem 0;}
+.gdocs-main-app__first {justify-content: center; }
+.gdocs-main-app__first .gdoc-columns__content {flex:0.5;}
+
 @media print {
     #DynabicMenuInnerDiv{ display:none; }
     #dvMenuFooter{ display:none; }
