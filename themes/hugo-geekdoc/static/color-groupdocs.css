@@ -53,6 +53,7 @@
     --danger-color: #ef4b41;
     --warning-color: #efae35;
     --tip-color:#43bb50;
+    --list-button-background: #ffffff;
 }
 
 :root .dark-mode-dim .gdoc-markdown img,
@@ -619,6 +620,7 @@
         --danger-color: #ef4b41;
         --warning-color: #efae35;
         --tip-color:#43bb50;
+        --list-button-background: #ffffff;
     }
 
     :root .dark-mode-dim .gdoc-markdown img {
@@ -1091,6 +1093,7 @@
     --danger-color: #ef4b41;
     --warning-color: #efae35;
     --tip-color:#43bb50;
+    --list-button-background: rgba(40, 40, 40, 1);
     
 }
 
@@ -1938,6 +1941,7 @@
         --danger-color: #ef4b41;
         --warning-color: #efae35;
         --tip-color:#43bb50;
+        --list-button-background: rgba(40, 40, 40, 1);
     }
 
     :root .dark-mode-dim .gdoc-markdown img {
