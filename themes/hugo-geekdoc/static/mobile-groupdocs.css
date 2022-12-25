@@ -43,10 +43,27 @@
     .gdoc-feedback-link__label {display: none;}
     .gdoc-feedback-link__icon {margin-top: 6px;}
     
+
+    .gdoc-product-docs, .gdoc-product-examples {
+        flex-wrap: wrap;
     }
+
+    .gdoc-product-doc, .gdoc-product-example {width: 100%;}
+
+    .gdoc-product-doc {padding: 0;}
+
+    .gdoc-product-example--mobile-fix {
+        margin-bottom: 0;
+    }
+
+}
 
 @media screen and (max-width: 1024px) {
     html {font-size: 14px;}
+    
+    .gdoc-nav__control--none {
+        display: block;
+    }
     .gdoc-nav {
         margin-left: -18rem;
         font-size: 14px;
@@ -142,4 +159,10 @@
     }
 
     .gdoc-resource {width: 50%;}
+
+    ul.gdoc-product-example__list {
+        align-self: flex-start;
+    }
+
+    
 }

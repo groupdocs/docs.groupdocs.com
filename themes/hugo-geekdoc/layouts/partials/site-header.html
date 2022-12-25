@@ -3,6 +3,7 @@
 <div id="DynabicMenuInnerDiv">
     <div class="gdoc-header">
         <div class="gdoc-header__content">
+           
             {{ $navEnabled := default true .Page.Params.GeekdocNav }}
             {{ if $navEnabled }}
                 <label for="menu-control" class="gdoc-nav__control" tabindex="0">
@@ -15,6 +16,9 @@
                         <use xlink:href="#gdoc_arrow_back"></use>
                     </svg>
                 </label>
+
+            {{ else }}
+                <div class="gdoc-nav__control--none"></div>
             {{ end }}
             
             

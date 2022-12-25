@@ -54,6 +54,7 @@
     --warning-color: #efae35;
     --tip-color:#43bb50;
     --list-button-background: #ffffff;
+    --bg-image: url(/bg.svg);
 }
 
 :root .dark-mode-dim .gdoc-markdown img,
@@ -1094,6 +1095,7 @@
     --warning-color: #efae35;
     --tip-color:#43bb50;
     --list-button-background: rgba(40, 40, 40, 1);
+    --bg-image: url(/bg-dark.svg);
     
 }
 
