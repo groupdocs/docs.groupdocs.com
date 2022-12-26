@@ -17,7 +17,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 <div class="gdoc-list-apps">
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#total"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#total"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/total">GroupDocs.Total Product Family</a>
     <div class="gdoc-list-app__descr">Manipulate documents from within your own desktop solutions and web apps without requiring any other commercial products</div>
     <div class="gdoc-list-app__buttons">
@@ -27,7 +27,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#viewer"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#viewer"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/viewer">GroupDocs.Viewer Product Family</a>
     <div class="gdoc-list-app__descr">Excellent file viewer component that empowers your C#, ASP.NET, and other .NET applications with document
             viewing features across more than 170+ supported file formats</div>
@@ -38,7 +38,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#annotation"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#annotation"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/annotation">GroupDocs.Annotation Product Family</a>
     <div class="gdoc-list-app__descr">Powerful document annotator component that helps you to boost your applications with document annotation,
             commenting and collaboration features.</div>
@@ -49,7 +49,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#conversion"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#conversion"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/conversion">GroupDocs.Conversion Product Family</a>
     <div class="gdoc-list-app__descr">Huge conversion API that supports over 7400 document conversion pairs. With innumerous conversion options you will get hight quality result fast</div>
     <div class="gdoc-list-app__buttons">
@@ -59,7 +59,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#comparison"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#comparison"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/comparison">GroupDocs.Comparison Product Family</a>
     <div class="gdoc-list-app__descr">Document comparison API that detects document text, styling and formating changes quickly and with a high
             accuracy</div>
@@ -70,7 +70,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#signature"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#signature"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/signature">GroupDocs.Signature Product Family</a>
     <div class="gdoc-list-app__descr">Outstanding electronic signature API that allows you to design your documents with digital certificate, image, text and hand-written signatures, QR-Code and many more</div>
     <div class="gdoc-list-app__buttons">
@@ -80,7 +80,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#assembly"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#assembly"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/assembly">GroupDocs.Assembly Product Family</a>
     <div class="gdoc-list-app__descr">Automate your document generation process with cross platform automation assembly APIs to boost productivity and accuracy</div>
     <div class="gdoc-list-app__buttons">
@@ -90,7 +90,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#metadata"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#metadata"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/metadata">GroupDocs.Metadata Product Family</a>
     <div class="gdoc-list-app__descr">Native .NET API to dynamically read, write, edit and remove meta information from Microsoft Office, PDF,
             Multimedia, images and various other file formats</div>
@@ -101,7 +101,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#search-app"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#search-app"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/search">GroupDocs.Search Product Family</a>
     <div class="gdoc-list-app__descr">Transform your document search process with this API for advance full text search capability into any
             existing or new cross platform application</div>
@@ -112,7 +112,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#parser"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#parser"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/parser">GroupDocs.Parser Product Family</a>
     <div class="gdoc-list-app__descr">Parse, extract images, raw &amp; formatted text with metadata and perform a lot of operations with it using APIs which work on all popular platforms and supported file formats</div>
     <div class="gdoc-list-app__buttons">
@@ -122,7 +122,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#watermark"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#watermark"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/watermark">GroupDocs.Watermark Product Family</a>
     <div class="gdoc-list-app__descr">Watermark manipulation APIs for creating, removing, smart searching, edit locking, and performing other
             powerful operations across all popular platforms and supported file formats</div>
@@ -133,7 +133,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#editor"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#editor"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/editor">GroupDocs.Editor Product Family</a>
     <div class="gdoc-list-app__descr">Modern document editor API that allows you to edit various documents inside your applications without
             additional software installed</div>
@@ -144,7 +144,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#merger"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#merger"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/merger">GroupDocs.Merger Product Family</a>
     <div class="gdoc-list-app__descr">Powerful API to merge PDF, Word, Excel, PowerPoint documents and many other formats, move, reorder or remove document pages in different ways and with flexible options</div>
     <div class="gdoc-list-app__buttons">
@@ -154,7 +154,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#redaction"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#redaction"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/redaction">GroupDocs.Redaction Product Family</a>
     <div class="gdoc-list-app__descr">Build cross-platform applications that perform operations, such as, redacting, hiding, removing content and metadata from documents, presentations, worksheets and PDF files</div>
     <div class="gdoc-list-app__buttons">
@@ -164,7 +164,7 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 </div>
 
 <div class="gdoc-list-app">
-    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#classification"></use></svg>
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#classification"></use></svg>
     <a class="gdoc-list-app__link" rel="nofollow" href="/classification">GroupDocs.Classification Product Family</a>
     <div class="gdoc-list-app__descr">Build custom applications to perform documents and text categorization operations using different taxonomies within your applications</div>
     <div class="gdoc-list-app__buttons">
@@ -180,42 +180,42 @@ Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving y
 
 <a class="gdoc-resource" href="https://apireference.groupdocs.com/" rel="nofollow" target="_blank">
     <div class="gdoc-resource__icon-box">
-    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg#api"></use></svg>
+    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#api"></use></svg>
     </div>
     <div class="gdoc-resource__link" >API Reference</div>
 </a>
 
 <a class="gdoc-resource" href="https://groupdocs.github.io/" rel="nofollow" target="_blank">
     <div class="gdoc-resource__icon-box">
-    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg#code"></use></svg>
+    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#code"></use></svg>
     </div>
     <div class="gdoc-resource__link" >Code Samples</div>
 </a>
 
 <a class="gdoc-resource" href="https://groupdocs-free-consulting.github.io/" rel="nofollow" target="_blank">
     <div class="gdoc-resource__icon-box">
-    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg#consulting"></use></svg>
+    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#consulting"></use></svg>
     </div>
     <div class="gdoc-resource__link" >Free Consulting</div>
 </a>
 
 <a class="gdoc-resource" href="https://forum.groupdocs.com/" rel="nofollow" target="_blank">
     <div class="gdoc-resource__icon-box">
-    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg#free-support"></use></svg>
+    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#free-support"></use></svg>
     </div>
     <div class="gdoc-resource__link" >Free Suppport</div>
 </a>
 
 <a class="gdoc-resource" href="https://groupdocsapp.github.io/" rel="nofollow" target="_blank">
     <div class="gdoc-resource__icon-box">
-    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg#demos"></use></svg>
+    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#demos"></use></svg>
     </div>
     <div class="gdoc-resource__link" >Live Demos</div>
 </a>
 
 <a class="gdoc-resource" href="https://helpdesk.groupdocs.com/" rel="nofollow" target="_blank">
     <div class="gdoc-resource__icon-box">
-    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg#paid-support"></use></svg>
+    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg?v=22.12.0#paid-support"></use></svg>
     </div>
     <div class="gdoc-resource__link" >Paid Support</div>
 </a>
