@@ -215,7 +215,7 @@ Simply View, Convert, Compress, Resize, Crop & Watermark images without leaving 
 
 <a class="gdoc-resource" href="https://helpdesk.groupdocs.com/" rel="nofollow" target="_blank">
     <div class="gdoc-resource__icon-box">
-    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg?v22.12.0#paid-support-test"></use></svg>
+    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg?v22.12.0#paid-support"></use></svg>
     </div>
     <div class="gdoc-resource__link" >Paid Support</div>
 </a>
