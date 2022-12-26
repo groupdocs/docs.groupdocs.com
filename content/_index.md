@@ -11,7 +11,7 @@ hideChildren: true
 ---
 
 <div class="gdoc-list-descr">
-Simpy View, Convert, Compress, Resize, Crop & Watermark images without leaving your browser. Perform Reverse Image Search on a specified website. Recognize images using deep learning
+Simply View, Convert, Compress, Resize, Crop & Watermark images without leaving your browser. Perform Reverse Image Search on a specified website. Recognize images using deep learning
 </div>
 
 <div class="gdoc-list-apps">
