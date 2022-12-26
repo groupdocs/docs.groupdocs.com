@@ -280,10 +280,19 @@ template {
 
 @font-face {
     font-family: "Inter";
+    src: url("fonts/Inter-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Inter";
     src: url("fonts/Inter-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
@@ -291,7 +300,7 @@ template {
     src: url("fonts/Inter-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
@@ -299,7 +308,7 @@ template {
     src: url("fonts/Inter-Medium.woff2") format("woff2");
     font-weight: 500;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
@@ -307,7 +316,7 @@ template {
     src: url("fonts/RobotoMono-Medium.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
@@ -315,7 +324,7 @@ template {
     src: url("fonts/OpenSans-SemiBold.woff2") format("woff2");
     font-weight: 600;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 
@@ -325,7 +334,7 @@ template {
     src: url("fonts/GeekdocIcons.woff2") format("woff2"), url("fonts/GeekdocIcons.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 
@@ -477,7 +486,15 @@ img {
     min-height: 100vh;
     color: var(--body-font-color);
     background: var(--body-background);
-    font-weight: normal
+    font-weight: normal;
+
+   
+}
+
+.wrapper-bg {
+    background-image: var(--bg-image);   
+    background-size: 100% 31rem;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -499,7 +516,7 @@ svg.gdoc-icon {
 }
 
 .gdoc-header {
-    background: var(--header-background);
+    /* background: var(--header-background); */
     color: var(--header-font-color);
     
 }
@@ -576,7 +593,7 @@ margin: 0;
 padding: 24px;
 background-color: var(--header-background);
 min-width: 200px;
-    border: 1px solid var(--border-color);
+box-shadow: 0 24px 32px rgb(0 0 0 / 4%), 0 16px 24px rgb(0 0 0 / 4%), 0 4px 8px rgb(0 0 0 / 4%), 0 0 1px rgb(0 0 0 / 4%);
     border-radius: 5px;
     font-size: 0.75rem;
 z-index: 99;
@@ -605,10 +622,12 @@ box-sizing: border-box;
     opacity: 0.7;}
 
 
-.gdoc-menu__sub > li { padding: 8px 0;}
+.gdoc-menu__sub > li { padding: 10px 0;}
 
-.gdoc-menu__item:hover  .gdoc-menu__sub { visibility: visible;
-    opacity: 1; transition-delay: 0s, 0s;}
+.gdoc-menu__item:hover  .gdoc-menu__sub { 
+    visibility: visible;
+    opacity: 1; 
+    transition-delay: .25s;}
 
 .gdoc-header__link,
 .gdoc-header__link:visited {
@@ -689,6 +708,10 @@ box-sizing: border-box;
     margin-top: 2rem
 }
 
+.gdoc-nav__control--none {
+    display: none;
+    width: 75px;
+}
 .gdoc-nav__control {
     display: none;
     margin: 0;
@@ -1098,8 +1121,9 @@ box-sizing: border-box;
     padding: 0 2rem;
 }
 
-.gdoc-footer__logo {width: 110px;
-margin-right: 1rem;}
+.gdoc-footer__logo {
+    width: 150px;
+margin-right: 1.5rem;}
 
 .gdoc-footer__line {
     display: flex;
@@ -2446,3 +2470,311 @@ h2.gdoc-feedback__header {
     text-align: center;
     opacity: 0.7;
 }
+
+.gdoc-markdown h1.gdoc-list-title {
+    font-size: 2.625rem;
+    font-weight: 800;
+    margin-top: 6rem !important;
+    margin-bottom: 2rem;
+    line-height: 3.5rem;
+
+}
+
+.gdoc-list-descr {
+    font-size: 1rem;
+    color: var(--body-font-color);
+    padding: 0 1rem;
+    max-width: 48rem;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+}
+.gdoc-list-apps {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+}
+
+.gdoc-list-app {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    margin-bottom: 7rem;
+}
+
+.gdoc-list-app__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1.3rem;
+    fill: #558fff;
+}
+
+a.gdoc-list-app__link {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--header-font-color);
+    min-height: 3.5rem;
+}
+a.gdoc-list-app__link:visited {
+    color: var(--header-font-color);
+}
+
+.gdoc-list-app__descr {
+    font-size: 1rem;
+    color: var(--body-text-font-color);
+    line-height: 1.875rem;
+   
+    min-height: 8.5rem;
+
+}
+.gdoc-list-app__buttons {
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+a.gdoc-list-app__button {
+    background: var(--list-button-background);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    width: 7.5rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 3.3rem;
+    background-repeat: no-repeat;
+    background-position: 1.2rem center ;
+    background-size: 1.3rem;
+    font-weight: 500;
+    color: var(--header-font-color);
+}
+a.gdoc-list-app__button:visited {color: var(--header-font-color);}
+a.gdoc-list-app__button--net {
+    background-image: url(img/groupdocs-stack.svg#net);
+    
+}
+
+a.gdoc-list-app__button--java {
+    background-image: url(img/groupdocs-stack.svg#java);
+    background-size: 1.5rem;
+}
+
+
+
+h2.gdoc-list-title {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+
+}
+
+.gdoc-resources {
+    display: flex;
+  
+ 
+    margin-bottom: 6rem;
+    justify-content: space-around;
+}
+
+.gdoc-resource {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+}
+
+.gdoc-resource__icon-box {
+    border-radius: 50%;
+    background-color: var(--info-bg-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.gdoc-resource__icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.gdoc-resource__link{
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--body-font-color);
+}
+
+
+h2.gdoc-product-title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+
+.gdoc-product-docs {
+    display: flex;
+    margin-bottom: 6rem;
+}
+
+.gdoc-product-doc {
+    width: 50%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.gdoc-product-doc__icon-box {
+    padding: 2rem 0;
+}
+
+
+.gdoc-product-doc__icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+a.gdoc-product-doc__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--body-font-color);
+    margin-bottom: 3rem;
+    
+}
+
+.gdoc-product-cols {
+    display: flex;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.gdoc-product-col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    font-size: 0.875rem;
+}
+
+.gdoc-product-col__title {
+    font-size: 1rem;
+   
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    background-position: left center;
+    display: flex;
+    align-self: center;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.gdoc-product-col__icon {
+    fill: var(--body-font-color);
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right:  0.5rem;
+}
+
+
+
+.gdoc-product-col__descr {
+    color: var(--body-text-font-color);
+    text-align: center;
+    padding: 1rem 0;
+    
+}
+
+ul.gdoc-product-col__links {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.gdoc-product-col__links > li {
+    padding: 0.5rem 0;
+    text-align: left;
+   
+}
+
+
+a.gdoc-product-doc__btn {
+    display: block;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.65rem 1.8rem;
+    background-color: var(--link-color);
+    font-size: 0.875rem;
+    cursor: pointer;
+
+
+}
+a.gdoc-product-doc__btn:visited {color:#fff;}
+
+.gdoc-product-examples {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.gdoc-product-example {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+ul.gdoc-product-example__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-left: 0;
+}
+
+ul.gdoc-product-example__list > li {
+
+text-align: left;
+padding-left: 1rem;
+padding-top: 0 !important;
+margin-bottom: 2rem;
+display: flex;
+}
+
+.gdoc-product-example__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--body-font-color);
+    margin-right: 1rem;
+}
+
+a.gdoc-product-example__link {color:var(--body-font-color);
+    border-bottom: none !important;
+}
+.gdoc-product-example__descr {color:var(--body-text-font-color);
+font-size: 0.875rem;}
+
+
+
+.gdoc-product-example__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 3rem;
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: left center;
+    display: flex;
+    align-self: center;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+    background-image: url(/img/groupdocs-stack.svg#code-example);
+}
+

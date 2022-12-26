@@ -1,36 +1,69 @@
-@media screen and (max-width: 768px) {
-html {font-size: 14px;}
-.gdoc-markdown code {
-    padding: 0.125rem 0.4rem;
-}
 
+@media screen and (max-width: 1350px) {
 
-.gdoc-footer__bottom {display: block;}
-.gdoc-footer__copy {
-    
-    margin-bottom: 0.875rem;
-}
-}
+    .gdoc-list-app {
+        width: 50%;
+    }
 
-
-@media screen and (max-width: 1024px) {
-.gdoc-header__menu {display: none;}
-.gdoc-footer__menu {display: none;}
-.gdoc-markdown__align--left {max-width: 100%;}
-.gdoc-gotop {display: none;}
-.gdoc-feedback-link__label {display: none;}
-.gdoc-feedback-link__icon {margin-top: 6px;}
+    .gdoc-list-app__descr {
+        min-height: 7.5rem;
+    }
 
 }
+
+
+
 @media screen and (max-width: 1200px) {
     .gdoc-toc {display: none;}
     .gdoc-toc-mobile {display: block;}
     .gdoc-menu__sub {display: none;}
+
+    .gdoc-resources {
+        flex-wrap: wrap;
+    }
+
+    .gdoc-resource {width: 33%;}
 }
 
 
 
+@media screen and (max-width: 1140px) {
+    .gdoc-list-app__descr {
+        min-height: 8.5rem;
+    }
+
+   
+}
+
 @media screen and (max-width: 1024px) {
+    .gdoc-header__menu {display: none;}
+    .gdoc-footer__menu {display: none;}
+    .gdoc-markdown__align--left {max-width: 100%;}
+    .gdoc-gotop {display: none;}
+    .gdoc-feedback-link__label {display: none;}
+    .gdoc-feedback-link__icon {margin-top: 6px;}
+    
+
+    .gdoc-product-docs, .gdoc-product-examples {
+        flex-wrap: wrap;
+    }
+
+    .gdoc-product-doc, .gdoc-product-example {width: 100%;}
+
+    .gdoc-product-doc {padding: 0;}
+
+    .gdoc-product-example--mobile-fix {
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    html {font-size: 14px;}
+    
+    .gdoc-nav__control--none {
+        display: block;
+    }
     .gdoc-nav {
         margin-left: -18rem;
         font-size: 14px;
@@ -100,4 +133,42 @@ html {font-size: 14px;}
     #menu-header-control:checked~* .gdoc-nav__control svg.gdoc-icon.gdoc_keyboard_arrow_left {
         display: none 
    }
+}
+
+
+@media screen and (max-width: 768px) {
+    html {font-size: 14px;}
+    .gdoc-markdown code {
+        padding: 0.125rem 0.4rem;
+    }
+
+
+    .gdoc-footer__bottom {display: block;}
+    .gdoc-footer__copy {
+        
+        margin-bottom: 0.875rem;
+    }
+
+    .gdoc-list-app {
+        width: 100%;
+    }
+
+    .gdoc-list-app__descr {
+        min-height: unset;
+        margin-bottom: 2.5rem;
+    }
+
+    .gdoc-resource {width: 50%;}
+
+    ul.gdoc-product-example__list {
+        align-self: flex-start;
+    }
+
+    .wrapper-bg {
+        background-image: none;
+    }
+
+    .gdoc-list-descr {
+        margin-bottom: 10rem;
+    }
 }

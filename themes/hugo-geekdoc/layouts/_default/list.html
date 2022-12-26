@@ -20,7 +20,16 @@
   <article
     class="gdoc-markdown  gdoc-markdown__align--{{ default "left" (.Page.Params.GeekdocAlign | lower) }} {{$fullWidthClass}}"
   >
+   
+    
+    {{ if $navEnabled }}
     <h1>{{ partial "utils/title" . }}</h1>
+{{ else }}
+    <h1 class="gdoc-list-title">{{ partial "utils/title" . }}</h1>
+{{ end }}
+    
+    
+    
     {{ partial "utils/content" . }}
     {{ partial "children" . }}
   </article>
