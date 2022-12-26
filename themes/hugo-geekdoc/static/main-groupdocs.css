@@ -283,7 +283,7 @@ template {
     src: url("fonts/Inter-ExtraBold.woff2") format("woff2");
     font-weight: 800;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 
@@ -292,7 +292,7 @@ template {
     src: url("fonts/Inter-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
@@ -300,7 +300,7 @@ template {
     src: url("fonts/Inter-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
@@ -308,7 +308,7 @@ template {
     src: url("fonts/Inter-Medium.woff2") format("woff2");
     font-weight: 500;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
@@ -316,7 +316,7 @@ template {
     src: url("fonts/RobotoMono-Medium.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
@@ -324,7 +324,7 @@ template {
     src: url("fonts/OpenSans-SemiBold.woff2") format("woff2");
     font-weight: 600;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 
@@ -334,7 +334,7 @@ template {
     src: url("fonts/GeekdocIcons.woff2") format("woff2"), url("fonts/GeekdocIcons.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 
 
