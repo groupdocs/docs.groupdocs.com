@@ -2778,3 +2778,8 @@ font-size: 0.875rem;}
     background-image: url(/img/groupdocs-stack.svg#code-example);
 }
 
+/* bg fix for product family not updated design */
+#groupdocs-developers-cookbook {
+    margin-bottom: 10rem;
+    margin-top: 6rem;
+}
