@@ -21,7 +21,7 @@ Excellent file viewer component that empowers your C#, ASP.NET, and other .NET a
     <div class="gdoc-product-doc__icon-box">
     <svg class="gdoc-product-doc__icon"><use xlink:href="/img/groupdocs-stack.svg#net"></use></svg>
     </div>
-    <a class="gdoc-product-doc__title" rel="nofollow" href='{{< ref "/viewer/net" >}}'>GroupDocs.Viewer for .NET</a>
+    <a class="gdoc-product-doc__title"  href='/viewer/net/'>GroupDocs.Viewer for .NET</a>
     <div class="gdoc-product-cols">
         <div class="gdoc-product-col">
         <div class="gdoc-product-col__title">
@@ -29,10 +29,10 @@ Excellent file viewer component that empowers your C#, ASP.NET, and other .NET a
         <div>Getting Started</div></div>
         <div class="gdoc-product-col__descr">Start quickly with our getting started documentation</div>
         <ul class="gdoc-product-col__links">
-        <li> <a href='{{< ref "/viewer/net/getting-started/features-overview.md" >}}'>Features Overview</a></li>
-        <li> <a href='{{< ref "/viewer/net/getting-started/supported-document-formats.md" >}}'>Supported Document Formats</a></li>
-        <li> <a href='{{< ref "/viewer/net/getting-started/system-requirements.md" >}}'>System Requirements</a></li>
-        <li> <a href='{{< ref "/viewer/net/getting-started/installation.md" >}}'>Installation</a></li>
+        <li> <a href='/viewer/net/features-overview/'>Features Overview</a></li>
+        <li> <a href='/viewer/net/supported-document-formats/'>Supported Document Formats</a></li>
+        <li> <a href='/viewer/net/system-requirements/'>System Requirements</a></li>
+        <li> <a href='/viewer/net/installation/'>Installation</a></li>
         </ul>
         </div>
         <div class="gdoc-product-col">
@@ -41,14 +41,14 @@ Excellent file viewer component that empowers your C#, ASP.NET, and other .NET a
         <div>Document rendering</div></div>
         <div class="gdoc-product-col__descr">Articles and guidelines for basic document rendering</div>
         <ul class="gdoc-product-col__links">
-        <li> <a href='{{< ref "/viewer/net/rendering-basics/render-word-documents.md" >}}'>Render Word documents</a></li>
-        <li> <a href='{{< ref "/viewer/net/rendering-basics/render-pdf-documents.md" >}}'>Render PDF documents</a></li>
-        <li> <a href='{{< ref "/viewer/net/rendering-basics/render-presentations.md" >}}'>Render PowerPoint presentations</a></li>
-        <li> <a href='{{< ref "/viewer/net/rendering-basics/render-spreadsheets/render-excel-and-apple-numbers-spreadsheets.md" >}}'>Render Spreadsheets</a></li>
+        <li> <a href='/viewer/net/render-word-documents/'>Render Word documents</a></li>
+        <li> <a href='/viewer/net/render-pdf-documents/'>Render PDF documents</a></li>
+        <li> <a href='/viewer/net/render-presentations/'>Render PowerPoint presentations</a></li>
+        <li> <a href='/viewer/net/render-excel-and-apple-numbers-spreadsheets/'>Render Spreadsheets</a></li>
         </ul>
         </div>
     </div>
-    <a class="gdoc-product-doc__btn" rel="nofollow" href='{{< ref "/viewer/net" >}}'>More</a>
+    <a class="gdoc-product-doc__btn"  href='/viewer/net/'>More</a>
 
 </div>
 
@@ -56,7 +56,7 @@ Excellent file viewer component that empowers your C#, ASP.NET, and other .NET a
     <div class="gdoc-product-doc__icon-box">
     <svg class="gdoc-product-doc__icon"><use xlink:href="/img/groupdocs-stack.svg#java"></use></svg>
     </div>
-    <a class="gdoc-product-doc__title" rel="nofollow" href='{{< ref "/viewer/java" >}}'>GroupDocs.Viewer for Java</a>
+    <a class="gdoc-product-doc__title"  href='/viewer/java/'>GroupDocs.Viewer for Java</a>
     <div class="gdoc-product-cols">
         <div class="gdoc-product-col">
         <div class="gdoc-product-col__title ">
@@ -64,10 +64,10 @@ Excellent file viewer component that empowers your C#, ASP.NET, and other .NET a
         <div>Getting Started</div></div>
         <div class="gdoc-product-col__descr">Start quickly with our getting started documentation</div>
         <ul class="gdoc-product-col__links">
-         <li> <a href='{{< ref "/viewer/java/getting-started/features-overview.md" >}}'>Features  Overview</a></li>
-                    <li> <a href='{{< ref "/viewer/java/getting-started/supported-document-formats.md" >}}'>Supported Document Formats</a></li>
-                    <li> <a href='{{< ref "/viewer/java/getting-started/system-requirements.md" >}}'>System Requirements</a></li>
-                    <li> <a href='{{< ref "/viewer/java/getting-started/installation.md" >}}'>Installation</a></li>
+         <li> <a href='/viewer/java/features-overview/'>Features  Overview</a></li>
+                    <li> <a href='/viewer/java/supported-document-formats/'>Supported Document Formats</a></li>
+                    <li> <a href='/viewer/java/system-requirements/'>System Requirements</a></li>
+                    <li> <a href='/viewer/java/installation/'>Installation</a></li>
         </ul>
         </div>
         <div class="gdoc-product-col">
@@ -76,13 +76,13 @@ Excellent file viewer component that empowers your C#, ASP.NET, and other .NET a
         <div>Document rendering</div></div>
         <div class="gdoc-product-col__descr">Articles and guidelines for basic document rendering</div>
         <ul class="gdoc-product-col__links">
-        <li> <a href='{{< ref "/viewer/java/getting-started/viewer-use-cases/how-to-view-word-documents-using-java.md" >}}'>Render Word documents</a></li>
-            <li> <a href='{{< ref "/viewer/java/getting-started/viewer-use-cases/how-to-view-pdf-documents-using-java.md" >}}'>Render PDF documents</a></li>
-            <li> <a href='{{< ref "/viewer/java/getting-started/viewer-use-cases/how-to-view-cad-documents-using-java.md" >}}'>Render CAD documents</a></li>
+        <li> <a href='/viewer/java/how-to-view-word-documents-using-java/'>Render Word documents</a></li>
+            <li> <a href='/viewer/java/how-to-view-pdf-documents-using-java/'>Render PDF documents</a></li>
+            <li> <a href='/viewer/java/how-to-view-cad-documents-using-java/'>Render CAD documents</a></li>
         </ul>
         </div>
     </div>
-    <a class="gdoc-product-doc__btn" rel="nofollow" href='{{< ref "/viewer/java" >}}'>More</a>
+    <a class="gdoc-product-doc__btn"  href='/viewer/java/'>More</a>
 
 </div>
 
