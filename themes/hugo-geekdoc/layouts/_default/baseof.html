@@ -22,18 +22,18 @@
     {{ partial "head/google-tag-manager" . }}
   </head>
 
-  
+  {{ $navEnabled := default true .Page.Params.GeekdocNav }}
   <body itemscope itemtype="https://schema.org/WebPage">
     {{ partial "no-script" . }}
     {{ partial "google-tag-manager-noscript" . }}
     {{ partial "svg-icon-symbols" . }}
 
     <div
-      class="wrapper {{ if default false .Site.Params.GeekdocDarkModeDim }}dark-mode-dim{{ end }}"
+      class="wrapper {{ if default false .Site.Params.GeekdocDarkModeDim }}dark-mode-dim{{ end }} {{ if  not $navEnabled }}wrapper-bg{{ end }}"
     >
       <input type="checkbox" class="hidden" id="menu-control" />
       <input type="checkbox" class="hidden" id="menu-header-control" />
-      {{ $navEnabled := default true .Page.Params.GeekdocNav }}
+     
       {{ partial "site-header" . }}
 
 

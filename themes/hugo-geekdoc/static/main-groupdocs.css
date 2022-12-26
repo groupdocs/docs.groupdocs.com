@@ -493,7 +493,7 @@ img {
 
 .wrapper-bg {
     background-image: var(--bg-image);   
-    background-size: 100% 500px;
+    background-size: 100% 31rem;
     background-repeat: no-repeat;
 }
 
@@ -516,7 +516,7 @@ svg.gdoc-icon {
 }
 
 .gdoc-header {
-    background: var(--header-background);
+    /* background: var(--header-background); */
     color: var(--header-font-color);
     
 }
@@ -2486,7 +2486,7 @@ h2.gdoc-feedback__header {
     padding: 0 1rem;
     max-width: 48rem;
     margin: 0 auto;
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
 }
 .gdoc-list-apps {
     display: flex;

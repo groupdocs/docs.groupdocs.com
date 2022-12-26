@@ -164,5 +164,11 @@
         align-self: flex-start;
     }
 
-    
+    .wrapper-bg {
+        background-image: none;
+    }
+
+    .gdoc-list-descr {
+        margin-bottom: 10rem;
+    }
 }
