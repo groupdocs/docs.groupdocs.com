@@ -2257,33 +2257,33 @@ background-color: var(--tab-label-bg);
 }
 
 .gdoc-hint__icon.info {
-    background-image: url(img/groupdocs-stack.svg?v22.12.0#hint_info)
+    background-image: url(img/groupdocs-stack.svg#hint_info)
 }
 
 .gdoc-hint__icon.note {
-    background-image: url(img/groupdocs-stack.svg?v22.12.0#hint_info)
+    background-image: url(img/groupdocs-stack.svg#hint_info)
 }
 
 .gdoc-hint__icon.ok {
-    background-image: url(img/groupdocs-stack.svg?v22.12.0#hint_tip)
+    background-image: url(img/groupdocs-stack.svg#hint_tip)
 }
 
 .gdoc-hint__icon.tip {
-    background-image: url(img/groupdocs-stack.svg?v22.12.0#hint_tip)
+    background-image: url(img/groupdocs-stack.svg#hint_tip)
 }
 
 .gdoc-hint__icon.important {
-    background-image: url(img/groupdocs-stack.svg?v22.12.0#hint_danger)
+    background-image: url(img/groupdocs-stack.svg#hint_danger)
 }
 .gdoc-hint__icon.danger {
-    background-image: url(img/groupdocs-stack.svg?v22.12.0#hint_danger)
+    background-image: url(img/groupdocs-stack.svg#hint_danger)
 }
 
 .gdoc-hint__icon.caution {
-    background-image: url(img/groupdocs-stack.svg?v22.12.0#hint_warning)
+    background-image: url(img/groupdocs-stack.svg#hint_warning)
 }
 .gdoc-hint__icon.warning {
-    background-image: url(img/groupdocs-stack.svg?v22.12.0#hint_warning)
+    background-image: url(img/groupdocs-stack.svg#hint_warning)
 }
 
 
@@ -2551,12 +2551,12 @@ a.gdoc-list-app__button {
 }
 a.gdoc-list-app__button:visited {color: var(--header-font-color);}
 a.gdoc-list-app__button--net {
-    background-image: url(img/groupdocs-stack.svg?v22.12.0#net);
+    background-image: url(img/groupdocs-stack.svg#net);
     
 }
 
 a.gdoc-list-app__button--java {
-    background-image: url(img/groupdocs-stack.svg?v22.12.0#java);
+    background-image: url(img/groupdocs-stack.svg#java);
     background-size: 1.5rem;
 }
 
@@ -2775,7 +2775,7 @@ font-size: 0.875rem;}
     align-self: center;
     white-space: nowrap;
     margin-bottom: 2rem;
-    background-image: url(/img/groupdocs-stack.svg?v22.12.0#code-example);
+    background-image: url(/img/groupdocs-stack.svg#code-example);
 }
 
 /* bg fix for product family not updated design */
