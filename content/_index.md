@@ -208,7 +208,7 @@ Simply View, Convert, Compress, Resize, Crop & Watermark images without leaving 
 
 <a class="gdoc-resource" href="https://groupdocsapp.github.io/" rel="nofollow" target="_blank">
     <div class="gdoc-resource__icon-box">
-    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg#demos-1"></use></svg>
+    <svg class="gdoc-resource__icon"><use xlink:href="/img/groupdocs-stack.svg#demos"></use></svg>
     </div>
     <div class="gdoc-resource__link" >Live Demos</div>
 </a>
