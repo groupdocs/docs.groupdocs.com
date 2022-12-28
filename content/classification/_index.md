@@ -62,7 +62,7 @@ Build custom applications to perform documents and text categorization operation
 <svg class="gdoc-product-example__icon"><use xlink:href="/img/groupdocs-stack.svg#git"></use></svg>
 <div>
 <a class="gdoc-product-example__link" rel="nofollow" href="https://github.com/groupdocs-classification/GroupDocs.Classification-for-.NET">GroupDocs.Classification for .NET</a>
-<div class="gdoc-product-example__descr">Open-source project for APIs example usage</div>
+<div class="gdoc-product-example__descr">APIs usage examples (documents classification and sentiment analysis)</div>
 </div>
 </li>
 
