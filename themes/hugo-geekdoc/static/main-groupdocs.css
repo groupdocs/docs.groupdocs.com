@@ -2620,6 +2620,7 @@ h2.gdoc-product-title {
 .gdoc-product-docs {
     display: flex;
     margin-bottom: 6rem;
+    justify-content: center;
 }
 
 .gdoc-product-doc {
@@ -2722,6 +2723,7 @@ a.gdoc-product-doc__btn:visited {color:#fff;}
 .gdoc-product-examples {
     display: flex;
     margin-bottom: 3rem;
+    justify-content: center;
 }
 
 .gdoc-product-example {

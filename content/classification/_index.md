@@ -10,72 +10,81 @@ geekdocBreadcrumb: false
 hideChildren: true
 ---
 
-<div class="gdoc-page__anchorwrap">
-    <h2 id="groupdocs-developers-cookbook">
-        GroupDocs Developers Cookbook
-    </h2>
+<div class="gdoc-list-descr">
+Build custom applications to perform documents and text categorization operations using different taxonomies within your applications
 </div>
 
-<br>
+<h2 class="gdoc-product-title">GroupDocs Developers Cookbook</h2>
 
-<h3>
-    <a class="home-resource-link" rel="nofollow" href="https://docs.groupdocs.com/classification/net"> 
-        <svg class="gdoc-icon gdoc-icon-large windows"><use xlink:href="#windows"></use></svg> 
-        <br><br>
-        GroupDocs.Classification for .NET
-    </a>
-</h3>
+<div class="gdoc-product-docs">
 
-<div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
-    <div class="gdoc-columns__content gdoc-markdown--nested flex-even" style="margin-top: 1rem !important">
-        <h4><svg class="gdoc-icon gdoc-icon-large gdoc_timer"><use xlink:href="#gdoc_timer"></use></svg> Getting Started</h4>
-        <p>Start quickly with our getting started documentation</p>
-        <ul style="text-align: left;list-style:none">
-            <li><svg class="gdoc-icon file-alt"><use xlink:href="#file-alt"></use></svg> <a href="https://docs.groupdocs.com/classification/net/features-overview">Features Overview</a></li>
-            <li><svg class="gdoc-icon file-alt"><use xlink:href="#file-alt"></use></svg> <a href="https://docs.groupdocs.com/classification/net/supported-document-formats">Supported Document Formats</a></li>
-            <li><svg class="gdoc-icon file-alt"><use xlink:href="#file-alt"></use></svg> <a href="https://docs.groupdocs.com/classification/net/system-requirements">System Requirements</a></li>
-            <li><svg class="gdoc-icon file-alt"><use xlink:href="#file-alt"></use></svg> <a href="https://docs.groupdocs.com/classification/net/installation">Installation</a></li>
-        </ul>
+<div class="gdoc-product-doc">
+    <div class="gdoc-product-doc__icon-box">
+    <svg class="gdoc-product-doc__icon"><use xlink:href="/img/groupdocs-stack.svg#net"></use></svg>
     </div>
-    <div class="gdoc-columns__content gdoc-markdown--nested flex-even" style="margin-top: 1rem !important">
-        <h4><svg class="gdoc-icon gdoc-icon-large book"><use xlink:href="#book"></use></svg> Developer Guide</h4>
-        <p>Articles and guidelines for basic and advanced development</p>
-        <ul style="text-align: left;list-style:none">
-            <li><svg class="gdoc-icon file-alt"><use xlink:href="#file-alt"></use></svg> <a href="https://docs.groupdocs.com/classification/net/basic-usage">Basic Usage</a></li>
-            <li><svg class="gdoc-icon file-alt"><use xlink:href="#file-alt"></use></svg> <a href="https://docs.groupdocs.com/classification/net/advanced-usage">Advanced Usage</a></li>
+    <a class="gdoc-product-doc__title"  href='/classification/net/'>GroupDocs.Classification for .NET</a>
+    <div class="gdoc-product-cols">
+        <div class="gdoc-product-col">
+        <div class="gdoc-product-col__title">
+        <svg class="gdoc-product-col__icon"><use xlink:href="/img/groupdocs-stack.svg#time"></use></svg>
+        <div>Getting Started</div></div>
+        <div class="gdoc-product-col__descr">Start quickly with our getting started documentation</div>
+        <ul class="gdoc-product-col__links">
+        <li> <a href='/classification/net/features-overview/'>Features Overview</a></li>
+        <li> <a href='/classification/net/supported-document-formats/'>Supported Document Formats</a></li>
+        <li> <a href='/classification/net/system-requirements/'>System Requirements</a></li>
+        <li> <a href='/classification/net/installation/'>Installation</a></li>
         </ul>
+        </div>
+        <div class="gdoc-product-col">
+        <div class="gdoc-product-col__title">
+         <svg class="gdoc-product-col__icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg>
+        <div>Developer Guide</div></div>
+        <div class="gdoc-product-col__descr">Articles and guidelines for basic and advanced development</div>
+        <ul class="gdoc-product-col__links">
+        <li> <a href='/classification/net/basic-usage/'>Basic Usage</a></li>
+        <li> <a href='/classification/net/advanced-usage/'>Advanced Usage</a></li>
+        </ul>
+        </div>
     </div>
+    <a class="gdoc-product-doc__btn"  href='/classification/net/'>More</a>
+
+</div>
 </div>
 
-<span class="gdoc-button gdoc-button--large">
-  <a class="gdoc-button__link" href="net">
-     MORE <svg class="gdoc-icon gdoc_keyboard_arrow_right"><use xlink:href="#gdoc_keyboard_arrow_right"></use></svg>
-  </a>
-</span>
+<div class="gdoc-product-examples">
+<div class="gdoc-product-example">
 
-<br>
+<div class="gdoc-product-example__title">.NET Code Examples</div>
 
-<h3>
-    <svg class="gdoc-icon gdoc-icon-large code"><use xlink:href="#code"></use></svg>&nbsp;.NET Code Examples
-</h3>
+<ul class="gdoc-product-example__list ">
+<li > 
+<svg class="gdoc-product-example__icon"><use xlink:href="/img/groupdocs-stack.svg#git"></use></svg>
+<div>
+<a class="gdoc-product-example__link" rel="nofollow" href="https://github.com/groupdocs-classification/GroupDocs.Classification-for-.NET">GroupDocs.Classification for .NET</a>
+<div class="gdoc-product-example__descr">Open-source project for APIs example usage</div>
+</div>
+</li>
 
-<ul style="list-style:none;padding-top: 10px">
-    <li>
-        <h4>
-         <a class="home-resource-link" rel="nofollow" href="https://github.com/groupdocs-classification/GroupDocs.Classification-for-.NET"><svg class="gdoc-icon gdoc_github"><use xlink:href="#gdoc_github"></use></svg> GroupDocs.Classification for .NET</a>
-        </h4>
-         <p>Open-source project for APIs example usage</p>
-    </li>
 </ul>
 
-<br>
+</div>
+</div>
 
-<h3>
-    <svg class="gdoc-icon gdoc-icon-large desktop"><use xlink:href="#desktop"></use></svg>&nbsp;Live Demos
-</h3>
+<h2 class="gdoc-product-title">Live demos</h2>
 
-<h4>
-<a class="home-resource-link" href="https://products.groupdocs.app/classification" rel="nofollow"><svg class="gdoc-icon eye"><use xlink:href="#eye"></use></svg> GroupDocs.Assembly Free App</a>
-</h4>
+<div class="gdoc-product-examples">
 
-<p>Free online application</p>
+<div class="gdoc-product-example">
+<ul class="gdoc-product-example__list gdoc-product-example__list--app">
+<li > 
+ <svg class="gdoc-product-example__icon"><use xlink:href="/img/groupdocs-stack.svg#app"></use></svg>
+<div>
+<a class="gdoc-product-example__link" href="https://products.groupdocs.app/classification">GroupDocs.Classification Free App</a>
+<div class="gdoc-product-example__descr">Classify raw text, Microsoft Word, OpenOffice, PDF, TXT & RTF files online</div>
+</div>
+</li>
+
+</ul>
+</div>
+</div>
