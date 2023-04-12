@@ -499,7 +499,7 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 1rem
 }
@@ -686,12 +686,12 @@ box-sizing: border-box;
     flex: 0 0 16rem;
     font-size: .875rem;
     line-height: 1.2rem;
-    margin-right: 2.25rem;
+    margin-right: 2rem;
 }
 
 .gdoc-nav nav {
-    width: 16rem;
-    padding-right: 2rem;
+    width: 17rem;
+    padding-right: 1.25rem;
     border-right: 1px solid var(--border-color);
 }
 
@@ -749,7 +749,8 @@ box-sizing: border-box;
 }
 
 .gdoc-nav__list svg.gdoc-icon {
-    margin-right: .25rem
+    opacity: 0.7;
+    margin-right: 0.25rem;
 }
 
 .gdoc-nav__toggle {
@@ -1377,7 +1378,7 @@ h2.gdoc-toc__header {
     margin-top: 0;
     font-size: 1rem;
     text-transform: uppercase;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     border-left: 1px solid var(--border-color);
     display: block;
     margin-bottom: -1rem;
@@ -1407,7 +1408,7 @@ h2.gdoc-toc__header {
 }
 
 .gdoc-toc nav {
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     border-left: 1px solid var(--border-color);
 }
 
