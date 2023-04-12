@@ -1,4 +1,14 @@
 
+@media screen and (min-width: 1500px) {
+
+    .gdoc-nav nav {
+        width: 18rem;
+    }
+    .gdoc-toc {flex: 0 0 18rem;}
+
+}
+
+
 @media screen and (max-width: 1350px) {
 
     .gdoc-list-app {
@@ -13,7 +23,7 @@
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .gdoc-toc {display: none;}
     .gdoc-toc-mobile {display: block;}
     .gdoc-menu__sub {display: none;}
@@ -64,8 +74,12 @@
     .gdoc-nav__control--none {
         display: block;
     }
+
+    .gdoc-nav nav {
+        width: 19rem;
+    }
     .gdoc-nav {
-        margin-left: -18rem;
+        margin-left: -20rem;
         font-size: 14px;
         line-height: 20px;
     }
@@ -119,7 +133,7 @@
         margin: 0 
    }
     #menu-control:checked~main .gdoc-nav nav, #menu-control:checked~main .gdoc-page {
-        transform: translateX(18rem) 
+        transform: translateX(20rem) 
    }
     #menu-control:checked~main .gdoc-page {
         opacity: .25 
