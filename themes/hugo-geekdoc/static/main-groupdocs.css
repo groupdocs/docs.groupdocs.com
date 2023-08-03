@@ -2560,6 +2560,11 @@ a.gdoc-list-app__button--java {
     background-size: 1.5rem;
 }
 
+a.gdoc-list-app__button--nodejs {
+    background-image: url(img/groupdocs-stack.svg#nodejs);
+    background-size: 1.5rem;
+}
+
 
 
 h2.gdoc-list-title {
