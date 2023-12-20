@@ -363,6 +363,9 @@
   "groupdocs.js": {
     "src": "js/groupdocs-22.10.0.js",
     "integrity": "sha512-+a9+BkBIIwkVnx+g7eYyQdbwSvBFPJY6VufUR/6MkpN5mxyAnhMDyMsvkEfhT8x+NzP5pmCv07MtNapM1y9+ZQ=="
-  }
-
+  },
+  "lib-info.js": {
+    "src": "js/lib-info.js",
+    "integrity": "sha512-+qBXScwm7DwE0J2YX/lC8h9GP3pFPJY6VufUR/6MkpN5mxyAnhMDyMOmwOZw5xeq0d28Yr+hVTIMcQ2QWxO7Jy=="
+  }                                                                            
 }

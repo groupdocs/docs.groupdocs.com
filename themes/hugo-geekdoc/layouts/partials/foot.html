@@ -6,3 +6,8 @@
 {{ end }}
 
 <script defer src="{{ index (index .Site.Data.assets "groupdocs.js") "src" | relURL }}"></script>
+
+<!-- JS scripts -->
+{{ if default true .Params.AddLibInfoScript }}
+<script defer src="{{ index (index .Site.Data.assets "lib-info.js") "src" | relURL }}"></script>
+{{ end }}
