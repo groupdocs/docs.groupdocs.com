@@ -15,8 +15,7 @@
                 return response.json()})
             .then(info => {
                 if (!info) return null;
-                return { 'version': info.data[0].version, 'downloads': info.data[0].totalDownloads}});
-    
+                return { 'version': info.data[0].version, 'downloads': info.data[0].totalDownloads}});    
             }
         },
         java: {
@@ -47,14 +46,42 @@
                         'version': verEl.textContent, 
                         'downloads': 0, 
                         'url': 'https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-' + productName + '/'+ verEl.textContent + '/'
-                    };
-                    
-                });
-              
+                    };                    
+                });              
             }
+        },
+        'nodejs-java': {
 
-        }
-    
+            getInfo: function(productName) {
+                const metadataUrl = 'https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-' + productName + '-nodejs/maven-metadata.xml';
+  
+                console.log('Trying to fetch from ' + metadataUrl);
+  
+                return fetch(metadataUrl)
+                .catch((error) => {
+                    console.log(error)
+                })
+                .then(response => { 
+                    if (!response) return null;
+                    return response.text()})
+                .then(text => {
+  
+                    console.log('Data fetched. Parsing data.');
+  
+                    if (!text) return null;
+                    const xml = new DOMParser().parseFromString(text, 'application/xml');
+                    const verEl = xml.querySelector('metadata versioning release');
+  
+                    console.log('Return results.');
+  
+                    return { 
+                        'version': verEl.textContent, 
+                        'downloads': 0, 
+                        'url': 'https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-' + productName + '-nodejs/'+ verEl.textContent + '/'
+                    };  
+                });  
+            }  
+        }    
     }
 
 function updateLibInfo(platform, product){
