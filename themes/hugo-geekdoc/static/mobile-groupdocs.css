@@ -185,4 +185,25 @@
     .gdoc-list-descr {
         margin-bottom: 10rem;
     }
+
+    .gdoc-platform__cols {
+        flex-direction: column;
+        gap:4rem;
+    }
+    .gdoc-platform__col {width:auto;}
+    .gdoc-platform__header {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .gdoc-platform__header-icon {
+        margin-right: 0;
+    }
+
+    a.gdoc-platform__header-btn {
+        display: none;
+    }
+
+    .gdoc-platform__footer {
+        display: block;
+    }
 }
