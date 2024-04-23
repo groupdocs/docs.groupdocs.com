@@ -2623,6 +2623,180 @@ h2.gdoc-product-title {
 }
 
 
+.gdoc-platforms {
+    max-width: 80rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.gdoc-platform {
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+}
+
+.gdoc-platform__header {
+background-color: var(--code-background);
+display: flex;
+align-items: center;
+padding: 2rem 3rem;
+border-top-left-radius:  1rem;
+border-top-right-radius:  1rem;
+}
+
+.gdoc-platform__header-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+a.gdoc-platform__header-title{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--body-font-color);
+   
+}
+a.gdoc-platform__header-btn {
+    margin-left:auto;
+    display: block;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.45rem 1rem;
+    background-color: var(--link-color);
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+
+.gdoc-platform__footer {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: 4rem;
+   display: none;
+}
+
+.gdoc-platform-links {
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+   
+}
+.gdoc-platform-links a {
+    border-bottom: none !important;
+}
+
+.gdoc-platform-links ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-left:0;
+  
+  
+}
+
+.gdoc-platform-links li {
+    padding-top:0.5rem !important;
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: var(--code-copy-background);
+    border-right: 1px solid  var(--border-color);
+    
+}
+
+.gdoc-platform-links li:first-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.gdoc-platform-links li:last-child {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-right: none;
+}
+    
+
+a.gdoc-platform__footer-btn {
+    
+   
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--link-color);
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.gdoc-platform__cols {
+    display: flex;
+    padding: 3rem 1rem;
+}
+
+.gdoc-platform__col {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    font-size: 0.875rem;
+}
+
+.gdoc-platform__col-title {
+    font-size: 1rem;
+   
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    background-position: left center;
+    display: flex;
+   
+    white-space: nowrap;
+    align-items: center;
+}
+
+.gdoc-platform__col-icon {
+    fill: var(--body-font-color);
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right:  0.5rem;
+}
+
+
+
+.gdoc-platform__col-descr {
+    color: var(--body-text-font-color);
+   text-align: left;
+    padding: 1rem 0;
+    
+}
+
+ul.gdoc-platform__col-links {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0rem;
+  
+    display: flex;
+    flex-direction: column;
+}
+.gdoc-platform__col-links > li {
+    padding: 0;
+    text-align: left;
+   
+}
+
+.gdoc-platform__col-links a {
+    padding-bottom: 2px;
+}
+
+.gdoc-platform__col-links--alt a {
+    color: var(--body-font-color);
+    border-bottom: 1px solid var(--alt-border-color) !important;
+ 
+}
+
+
+
 .gdoc-product-docs {
     display: flex;
     margin-bottom: 6rem;
