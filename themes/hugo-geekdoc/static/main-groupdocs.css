@@ -2626,6 +2626,7 @@ h2.gdoc-product-title {
 .gdoc-platforms {
     max-width: 80rem;
     margin: 0 auto;
+    margin-bottom: 6rem;
 }
 
 .gdoc-platform {
@@ -2675,6 +2676,46 @@ a.gdoc-platform__header-btn {
     padding: 2rem;
     padding-bottom: 4rem;
    display: none;
+}
+
+.gdoc-platform-links {
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+   
+}
+.gdoc-platform-links a {
+    border-bottom: none !important;
+}
+
+.gdoc-platform-links ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-left:0;
+  
+  
+}
+
+.gdoc-platform-links li {
+    padding-top:0.5rem !important;
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: var(--code-copy-background);
+    border-right: 1px solid  var(--border-color);
+    
+}
+
+.gdoc-platform-links li:first-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.gdoc-platform-links li:last-child {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-right: none;
 }
     
 
