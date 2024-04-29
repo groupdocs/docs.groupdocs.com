@@ -17,3 +17,5 @@ resources/_gen/
 public/
 deploy_key
 /.vs
+.DS_Store
+content/viewer/**/
