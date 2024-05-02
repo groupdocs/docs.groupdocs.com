@@ -43,3 +43,9 @@ h5 > svg.gdoc-icon { margin-right: 5px; }
     #DynabicMenuInnerDiv{ display:none; }
     #dvMenuFooter{ display:none; }
 }
+
+/* tab-text shortcode */
+
+.gdoc-tab-text {
+    padding: 1rem;
+}
