@@ -49,3 +49,52 @@ h5 > svg.gdoc-icon { margin-right: 5px; }
 .gdoc-tab-text {
     padding: 1rem;
 }
+
+/* two columns */
+
+.gdoc-two-columns {
+    display: flex;
+    margin-bottom: 0px;
+    justify-content: flex-start;
+}
+
+.gdoc-two-columns__column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+ul.gdoc-two-columns__column__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-left: 0;
+}
+
+ul.gdoc-two-columns__column__list > li {
+    text-align: left;
+    padding-left: 1rem;
+    padding-top: 0 !important;
+    margin-bottom: 0;
+    display: flex;
+}
+
+.gdoc-two-columns__column__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--body-font-color);
+    margin-right: 1rem;
+}
+
+a.gdoc-two-columns__column__link {
+    color:var(--body-font-color);
+    border-bottom: none !important;
+}
+
+.gdoc-two-columns__column__descr {
+    color:var(--body-text-font-color);
+    font-size: 0.875rem;
+}
