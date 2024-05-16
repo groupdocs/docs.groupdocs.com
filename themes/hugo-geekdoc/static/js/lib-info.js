@@ -81,7 +81,21 @@
                     };  
                 });  
             }  
-        }    
+        },
+        'python-net': {
+            getInfo: function(productName){
+            return fetch('https://api-v2v3search-0.nuget.org/query?q=packageid:GroupDocs.'+ productName)
+            .catch((error) => {
+                console.log(error)
+            })    
+            .then(response => {
+                if (!response) return null;
+                return response.json()})
+            .then(info => {
+                if (!info) return null;
+                return { 'version': info.data[0].version, 'downloads': info.data[0].totalDownloads}});    
+            }  
+        }
     }
 
 function updateLibInfo(platform, product){
