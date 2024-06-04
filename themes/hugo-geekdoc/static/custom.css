@@ -98,3 +98,11 @@ a.gdoc-two-columns__column__link {
     color:var(--body-text-font-color);
     font-size: 0.875rem;
 }
+
+/* table-search shortcode */
+
+.gdoc_search_abs {
+    position: absolute !important;
+    left: .5rem;
+    color: var(--control-icons);
+}

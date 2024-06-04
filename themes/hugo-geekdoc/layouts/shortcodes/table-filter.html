@@ -1,0 +1,6 @@
+{{- $placeholder := default "Filter rows" (.Get "placeholder" ) }}
+
+<div class="gdoc-search flex align-center">
+    <svg class="gdoc-icon gdoc_search gdoc_search_abs"><use xlink:href="#gdoc_search"></use></svg>
+    <input type="text" id="tableFilter" placeholder="{{ $placeholder }}" class="gdoc-search__input"/>
+</div>
