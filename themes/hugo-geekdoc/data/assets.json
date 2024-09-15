@@ -361,7 +361,7 @@
     "integrity": "sha512-7Q4+KTjgrRJZJVqBXScwm7DwE0J2YX/lC8h9GP3p8Ksu3tSu6epf0LAhkzlD5BRcJqNecp9K8j6utt/ShFYUKQ=="
   },
   "groupdocs.js": {
-    "src": "js/groupdocs-24.6.0.js",
+    "src": "js/groupdocs-24.9.0.js",
     "integrity": "sha512-+a9+BkBIIwkVnx+g7eYyQdbwSvBFPJY6VufUR/6MkpN5mxyAnhMDyMsvkEfhT8x+NzP5pmCv07MtNapM1y9+ZQ=="
   },
   "lib-info.js": {
