@@ -8,6 +8,7 @@ geekdocAlign: center
 geekdocAnchor: false
 geekdocBreadcrumb: false
 hideChildren: true
+showFeedbackForm: false
 ---
 
 <div class="gdoc-page__anchorwrap">
