@@ -19,11 +19,13 @@
     {{ partial "head/microformats" . }}
     {{ partial "head/others" . }}
     {{ partial "head/custom" . }}
+    {{ partial "head/consent-banner" . }}
     {{ partial "head/google-tag-manager" . }}
   </head>
 
   {{ $navEnabled := default true .Page.Params.GeekdocNav }}
   <body itemscope itemtype="https://schema.org/WebPage">
+    {{ partial "consentise-script" . }}
     {{ partial "no-script" . }}
     {{ partial "google-tag-manager-noscript" . }}
     {{ partial "svg-icon-symbols" . }}
