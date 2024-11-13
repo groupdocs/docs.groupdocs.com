@@ -8,7 +8,7 @@
         {{- $urlsToExclude = $urlsToExclude | append $productUrl -}}  
     {{- end -}}   
   {{- range (sort (where .Site.Pages "Permalink" "not in" $urlsToExclude) "Params.url" "asc") }}
-  {{ if ne .Params.IsMenuItemWithNoContent true -}}
+  {{ if and (ne .Params.IsMenuItemWithNoContent true) (ne .Params.GeekdocHidden true) -}}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{ if not .Lastmod.IsZero -}}
