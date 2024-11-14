@@ -11,7 +11,7 @@
   {{- else if eq $type "html" -}}
     {{- $file | readFile | safeHTML -}}
   {{- else if eq $type "page" -}}
-    {{- with $page }}{{ .Content }}{{ end -}}
+    {{- with $page }}{{ .RawContent  | replaceRE "^---[\\s\\S]*?--\n" "" | markdownify }}{{ end -}}
   {{- else -}}
     {{- $file | readFile | $.Page.RenderString -}}
   {{- end -}}
