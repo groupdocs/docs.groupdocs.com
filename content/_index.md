@@ -72,6 +72,7 @@ Simply View, Convert, Compress, Resize, Crop & Watermark images without leaving 
         <a href="/comparison/net" class="gdoc-list-app__button gdoc-list-app__button--net" >.NET</a>
         <a href="/comparison/java" class="gdoc-list-app__button gdoc-list-app__button--java"  >Java</a>
         <a href="/comparison/nodejs-java" class="gdoc-list-app__button gdoc-list-app__button--nodejs"  >Node.js</a>
+        <a href="/comparison/python-net" class="gdoc-list-app__button gdoc-list-app__button--python"  >Python</a>
     </div>
 </div>
 
