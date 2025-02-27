@@ -1,0 +1,45 @@
+<script 
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+
+{{- $close := resources.Get "icons/close.svg" -}}
+{{- $preloader := resources.Get "icons/preloader.svg" -}}
+
+<div id="aiSearchResultsCurtain" class="ai-search-invisible"></div>
+<div id="aiSearchResultsForm" class="ai-search-invisible">
+	<header>
+		<div class="ai-search-results-prompt">
+			<input id="aiSearchResultsField" type="text" maxlength="150" placeholder="What can I help you with?" autocomplete="off" />
+			<button id="aiSearchResultsButton">Ask AI</button>
+		</div>
+		<div class="ai-search-results-tools">
+			<img id="aiSearchResultsClose" src="{{- $close.RelPermalink -}}" alt="Close" title="Close" />
+		</div>
+	</header>
+	<article>
+		<div id="aiSearchResultsPreloader">
+			<img src="{{- $preloader.RelPermalink -}}" alt="Loading" />
+			<p>Analyzing your prompt, please hold on...</p>
+		</div>
+		<p id="aiSearchError">An error occurred while retrieving the results. Please refresh the page and try again.</p>
+		<div id="aiSearchResultsSummary"></div>
+	</article>
+	<aside>
+		<div class="ai-search-results-title">Related articles</div>
+		<div id="aiSearchRelatedArticles">
+			<a id="aiSearchRelatedArticleTemplate" href="#" target="_blank">-</a>
+		</div>
+	</aside>
+</div>
+{{- $mdLibrary := resources.Get "js/showdown.min.js"  -}}
+{{- $fingerprintLibrary := resources.Get "js/thumbmark.umd.js"  -}}
+{{- $aiSearch := resources.Get "js/ai-search.js" | resources.Minify  -}}
+{{- $js := (slice $mdLibrary $fingerprintLibrary $aiSearch) | resources.Concat "js/aisearch.js" -}}
+{{- $js := $js | resources.Minify | fingerprint -}}
+<script>
+	const aiSearchScope = "{{ .Params.ai_search_scope }}";
+	const aiSearchEndpoint = "{{ .Params.ai_search_endpoint }}";
+</script>
+<script src="{{- $js.RelPermalink -}}?v=25.2.0" integrity="{{- $js.Data.Integrity -}}" crossorigin="anonymous"></script>

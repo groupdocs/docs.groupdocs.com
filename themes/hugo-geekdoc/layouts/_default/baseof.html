@@ -42,6 +42,9 @@
       <main class="container flex flex-even">
         {{ if $navEnabled }}
           <aside class="gdoc-nav">
+             {{- if (and (.Params.ai_search_scope) (.Params.ai_search_endpoint)) -}}
+             {{- partial "ai-search-input" . -}}  
+             {{- end -}}             
             {{ partial "menu" . }}
           </aside>
         {{ end }}
@@ -58,7 +61,11 @@
       </main>
 
       {{ partial "go-top" . }}
-      
+            
+      {{- if (and (.Params.ai_search_scope) (.Params.ai_search_endpoint)) -}}
+      {{- partial "ai-search-result" . -}}
+      {{- end -}}
+
       {{ partial "site-footer" . }}
     </div>
 
