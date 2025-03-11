@@ -1,0 +1,208 @@
+// AI-powered search
+
+.ai-search-invisible {
+    display: none !important;
+}
+
+.ai-search-form {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 0px 2px 0px 15px;
+    border: solid 1px #cccccc;
+    border-radius: 15px;
+    background-color: #ffffff;
+
+    &:hover {
+        border-color: #1a89d0;
+    }
+
+    #aiSearchField {
+        flex-grow: 1;
+        margin-right: 7px;
+        border: none;
+        outline: none;
+        font-family: $font-family-base;
+        color: #222222;
+        background-color: transparent;
+    }
+
+    #aiSearchButton {
+        height: 24px;
+        padding: 0px 18px;
+        border-radius: 13px;
+        border: none;
+        outline: none;
+        white-space: nowrap;
+        background-color: #1a89d0;
+        font-family: $font-family-base;
+        color: #ffffff;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #3071a9;
+        }
+    }
+}
+
+#aiSearchResultsCurtain {
+    z-index: 99;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #000000;
+    opacity: 0.7;
+}
+
+#aiSearchResultsForm {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    bottom: 10%;
+    right: 10%;
+    padding: 15px;
+    border: solid 1px #cccccc;
+    box-shadow: 0px 0px 5px 3px rgba(68,68,68,1);
+    background-color: #ffffff;
+
+    & > header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .ai-search-results-prompt {
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            height: 40px;
+            padding: 0px 2px 0px 20px;
+            border: solid 1px #cccccc;
+            border-radius: 20px;
+            background-color: #ffffff;
+            font-size: 16px;
+
+            #aiSearchResultsField {
+            flex-grow: 1;
+            margin-right: 7px;
+            border: none;
+            outline: none;
+            font-family: $font-family-base;
+            color: #222222;
+            background-color: transparent;
+            }
+
+            #aiSearchResultsButton {
+                height: 34px;
+                padding: 0px 18px;
+                border-radius: 17px;
+                border: none;
+                outline: none;
+                white-space: nowrap;
+                background-color: #1a89d0;
+                font-family: $font-family-base;
+                font-weight: 600;
+                color: #ffffff;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #3071a9;
+                }
+            }
+        }
+
+        .ai-search-results-tools {
+            margin-left: 30px;
+
+            & > img {
+                width: auto;
+                height: 34px;
+                cursor: pointer;
+                opacity: 0.3;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+
+    & > article {
+        flex-grow: 1;
+        overflow: auto;
+        padding: 10px 20px;
+
+        #aiSearchResultsPreloader {
+            margin-top: 15px;
+            text-align: center;
+
+            & > img {
+                margin-bottom: 15px;
+            }
+
+            & > p {
+                color: #666666;
+                font-style: italic;
+            }
+        }
+
+        #aiSearchError {
+            display: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: #aa0000;
+        }
+
+        pre {
+            padding: 10px;
+            border: solid 1px #c2c2c2;
+            background-color: #f8f9fa;
+        }
+    }
+
+    & > aside {
+        display: none;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-top: solid 1px #cccccc;
+
+        .ai-search-results-title {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        #aiSearchRelatedArticles {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: top;
+
+            #aiSearchRelatedArticleTemplate {
+                display: none;
+            }
+
+            & > a {
+                display: block;
+                min-width: 200px;
+                margin: 0px 15px 5px 0px;
+                padding: 10px 15px;
+                border-radius: 10px;
+                box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
+                text-decoration: none;
+                white-space: nowrap;
+                overflow: hidden;
+
+                &:hover {
+                    text-decoration: none;
+                    box-shadow: inset 0px 0px 5px 0px rgba(26,137,208,1);;
+                }
+            }
+        }
+    }
+}

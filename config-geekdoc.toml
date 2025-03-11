@@ -51,6 +51,9 @@ pluralizeListTitles = false
 
     disableSearch           = false
 
+    aiSearchEndpoint        = "https://docsearch.api.aspose.cloud/ask"
+    aiSearchScopes          = ["viewer_net", "conversion_net"]
+
     # Collapse not active menu items by default
     GeekdocCollapseAllSections  = true
     # Disable default Hugo search
