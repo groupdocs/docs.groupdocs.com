@@ -9,13 +9,17 @@
     align-items: center;
     height: 30px;
     margin-bottom: 10px;
-    padding: 0px 2px 0px 15px;
+    padding: 0px 8px 0px 8px;
     border: solid 1px #cccccc;
-    border-radius: 15px;
+    border-radius: 3px;
     background-color: #ffffff;
-
+    margin-bottom: 30px;
+    margin-right: 10px;
+    position: relative;
+  
+    
     &:hover {
-        border-color: #1a89d0;
+        border-color: #b2bac1;
     }
 
     #aiSearchField {
@@ -29,19 +33,23 @@
     }
 
     #aiSearchButton {
-        height: 24px;
-        padding: 0px 18px;
-        border-radius: 13px;
+        height: 30px;
+        padding: 0px 12px;
+       
         border: none;
         outline: none;
         white-space: nowrap;
-        background-color: #1a89d0;
+        background-color: #b2bac1;
         font-family: $font-family-base;
         color: #ffffff;
         cursor: pointer;
+        position: absolute;
+        right:-1px;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
 
         &:hover {
-            background-color: #3071a9;
+            background-color: #8d969d;
         }
     }
 }
@@ -83,9 +91,10 @@
             height: 40px;
             padding: 0px 2px 0px 20px;
             border: solid 1px #cccccc;
-            border-radius: 20px;
+            border-radius: 3px;
             background-color: #ffffff;
             font-size: 16px;
+            position: relative;
 
             #aiSearchResultsField {
             flex-grow: 1;
@@ -98,20 +107,23 @@
             }
 
             #aiSearchResultsButton {
-                height: 34px;
+                height: 40px;
                 padding: 0px 18px;
-                border-radius: 17px;
+               
                 border: none;
                 outline: none;
                 white-space: nowrap;
-                background-color: #1a89d0;
+                background-color: #558fff;
                 font-family: $font-family-base;
                 font-weight: 600;
                 color: #ffffff;
                 cursor: pointer;
-
+                position: absolute;
+                right:-1px;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
                 &:hover {
-                    background-color: #3071a9;
+                    background-color:#4172d4;
                 }
             }
         }
@@ -121,12 +133,12 @@
 
             & > img {
                 width: auto;
-                height: 34px;
+                height: 25px;
                 cursor: pointer;
-                opacity: 0.3;
+                opacity: 1;
 
                 &:hover {
-                    opacity: 0.9;
+                    opacity: 0.7;
                 }
             }
         }
@@ -193,14 +205,15 @@
                 margin: 0px 15px 5px 0px;
                 padding: 10px 15px;
                 border-radius: 10px;
-                box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
+               
                 text-decoration: none;
                 white-space: nowrap;
                 overflow: hidden;
+                background-color: #f3f5f7;
 
                 &:hover {
                     text-decoration: none;
-                    box-shadow: inset 0px 0px 5px 0px rgba(26,137,208,1);;
+                    
                 }
             }
         }
