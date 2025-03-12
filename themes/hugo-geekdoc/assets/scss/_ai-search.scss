@@ -14,7 +14,7 @@
     border-radius: 3px;
     background-color: #ffffff;
     margin-bottom: 30px;
-    margin-right: 10px;
+    margin-right: 1px;
     position: relative;
   
     
@@ -74,7 +74,7 @@
     left: 10%;
     bottom: 10%;
     right: 10%;
-    padding: 15px;
+    padding: 20px;
     border: solid 1px #cccccc;
     box-shadow: 0px 0px 5px 3px rgba(68,68,68,1);
     background-color: #ffffff;
@@ -89,7 +89,8 @@
             flex-grow: 1;
             align-items: center;
             height: 40px;
-            padding: 0px 2px 0px 20px;
+            padding: 0px 2px 0px 10px;
+            padding-right: 80px;
             border: solid 1px #cccccc;
             border-radius: 3px;
             background-color: #ffffff;
@@ -129,7 +130,7 @@
         }
 
         .ai-search-results-tools {
-            margin-left: 30px;
+            margin-left: 15px;
 
             & > img {
                 width: auto;
@@ -147,7 +148,7 @@
     & > article {
         flex-grow: 1;
         overflow: auto;
-        padding: 10px 20px;
+        padding: 10px 0px;
 
         #aiSearchResultsPreloader {
             margin-top: 15px;
@@ -179,15 +180,17 @@
 
     & > aside {
         display: none;
-        margin-top: 20px;
+        
         padding: 10px 20px;
         border-top: solid 1px #cccccc;
+        margin: 0 -20px;
+        margin-top: 20px;
 
         .ai-search-results-title {
             margin-top: 5px;
             margin-bottom: 15px;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 18px;
         }
 
         #aiSearchRelatedArticles {
@@ -201,10 +204,10 @@
 
             & > a {
                 display: block;
-                min-width: 200px;
+                /* min-width: 200px; */
                 margin: 0px 15px 5px 0px;
-                padding: 10px 15px;
-                border-radius: 10px;
+                padding: 12px 15px;
+                border-radius: 3px;
                
                 text-decoration: none;
                 white-space: nowrap;
