@@ -128,8 +128,10 @@ function aiSearchParseResults(data)
 		for(var i=0;i<data.result.articles.length;i++)
 		{			
 			let item = data.result.articles[i];
-			let fullUrl = item.root;
-			fullUrl +=  (item.url[0] == "/")?item.url.substring(1):item.url;
+			// let fullUrl = item.root;
+			// fullUrl +=  (item.url[0] == "/")?item.url.substring(1):item.url;
+			  			
+			let fullUrl = getSiteRoot() + item.url;
 			let placeholder = aiSearchUI.linkTemplate.clone();
 			placeholder
 				.removeAttr("id")
@@ -141,6 +143,12 @@ function aiSearchParseResults(data)
 		aiSearchUI.relatedLinks.show();
 	}
 }
+
+// Function to get the site root URL dynamically
+function getSiteRoot() {
+	const { protocol, host } = window.location;
+	return `${protocol}//${host}/`;
+  }
 
 function aiSearchShowError(jqXHR,textStatus,error)
 {
