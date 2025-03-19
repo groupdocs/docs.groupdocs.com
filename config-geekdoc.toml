@@ -51,6 +51,24 @@ pluralizeListTitles = false
 
     disableSearch           = false
 
+    aiSearchEndpoint        = "https://docsearch.api.aspose.cloud/ask"
+    aiSearchScopes          = [ "annotation_net",  "annotation_java",  
+                                "assembly_net",  "assembly_java", 
+                                "classification_net",
+                                "comparison_net", "comparison_java", "comparison_python-net", "comparison_nodejs-java",
+                                "conversion_net", "conversion_java", "conversion_python-net", "conversion_nodejs-java",
+                                "editor_net",  "editor_java", "editor_nodejs-java",
+                                "merger_net",  "merger_java",
+                                "metadata_net", "metadata_java",
+                                "parser_net", "parser_java",
+                                "redaction_net", "redaction_java",
+                                "search_net", "search_java",
+                                "signature_net", "signature_java",
+                                "viewer_net", "viewer_java", "viewer_python-net", "viewer_nodejs-java",
+                                "watermark_net", "watermark_java", "watermark_python-net", "watermark_nodejs-java",
+                                "total_net",   "total_java"
+                            ]
+
     # Collapse not active menu items by default
     GeekdocCollapseAllSections  = true
     # Disable default Hugo search

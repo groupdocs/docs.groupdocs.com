@@ -1,0 +1,46 @@
+
+{{- $close := resources.Get "icons/close.svg" -}}
+{{- $preloader := resources.Get "icons/preloader.svg" -}}
+
+<div id="aiSearchResultsCurtain" class="ai-search-invisible"></div>
+<div id="aiSearchResultsForm" class="ai-search-invisible">
+	<header>
+		<div class="ai-search-results-prompt">
+			<input id="aiSearchResultsField" type="text" maxlength="150" placeholder="What can I help you with?" autocomplete="off" />
+			<button id="aiSearchResultsButton">Ask AI</button>
+		</div>
+		<div class="ai-search-results-tools">
+			<img id="aiSearchResultsClose" src="/img/close.svg" alt="Close" title="Close" />
+		</div>
+	</header>
+	<article>
+		<div id="aiSearchResultsPreloader">
+			<img src="/img/preloader.svg" alt="Loading" />
+			<p>Analyzing your prompt, please hold on...</p>
+		</div>
+		<p id="aiSearchError">An error occurred while retrieving the results. Please refresh the page and try again.</p>
+		<div id="aiSearchResultsSummary"></div>
+	</article>
+	<aside>
+		<div class="ai-search-results-title">Related articles</div>
+		<div id="aiSearchRelatedArticles">
+			<a id="aiSearchRelatedArticleTemplate" href="#" target="_blank">-</a>
+		</div>
+	</aside>
+</div>
+
+{{ $url := $.RelPermalink }}
+{{ $slittedUrl := split $url "/" }}
+{{ $aiSearchScope := (printf "%s_%s" (index $slittedUrl 1)  (index $slittedUrl 2)) }}
+<script>	
+	const aiSearchScope  = "{{ $aiSearchScope }}";
+	const aiSearchEndpoint = "{{ .Site.Params.aiSearchEndpoint }}";
+</script>
+<script 
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+<script src="/js/showdown.min.js?v=25.2.0"></script>
+<script src="/js/thumbmark.umd.js?v=25.2.0"></script>
+<script src="/js/ai-search.js?v=25.2.1"></script>

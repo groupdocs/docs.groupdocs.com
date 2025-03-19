@@ -1,5 +1,14 @@
 <script src="{{ index (index .Site.Data.assets "main.js") "src" | relURL }}"></script>
 
+
+{{- $scssMain := "scss/main.scss"}}
+{{- $css := resources.Get $scssMain | toCSS  | resources.Minify | fingerprint -}}
+<link rel="preload" href="{{- $css.RelPermalink -}}" as="style">
+<link href="{{- $css.RelPermalink -}}" rel="stylesheet" integrity="{{- $css.Data.integrity -}}">
+
+
+
+
 <link
   rel="preload"
   as="font"
