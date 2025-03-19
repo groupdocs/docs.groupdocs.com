@@ -844,7 +844,7 @@ box-sizing: border-box;
 .gdoc-page {
     min-width: 18rem;
     flex-grow: 1;
-    padding: 1rem 0
+    padding: 0rem 0
 }
 
 .gdoc-page h1,

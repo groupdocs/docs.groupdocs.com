@@ -38,10 +38,20 @@
      
       {{ partial "site-header" . }}
 
+      {{ $aiSearchEnabled := false }}
+      {{ $url := $.RelPermalink }}      
+      {{ $slittedUrl := split $url "/" }}
+      {{ $aiSearchScope := (printf "%s_%s" (index $slittedUrl 1)  (index $slittedUrl 2)) }}            
+      {{ if in .Site.Params.aiSearchScopes $aiSearchScope }}
+        {{ $aiSearchEnabled = true }}        
+      {{ end }}
 
       <main class="container flex flex-even">
         {{ if $navEnabled }}
           <aside class="gdoc-nav">
+             {{- if $aiSearchEnabled -}}
+             {{- partial "ai-search-input" . -}}  
+             {{- end -}}             
             {{ partial "menu" . }}
           </aside>
         {{ end }}
@@ -58,7 +68,11 @@
       </main>
 
       {{ partial "go-top" . }}
-      
+            
+      {{- if $aiSearchEnabled -}}
+      {{- partial "ai-search-result" . -}}
+      {{- end -}}
+
       {{ partial "site-footer" . }}
     </div>
 
