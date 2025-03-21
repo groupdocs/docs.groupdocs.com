@@ -19,3 +19,4 @@ deploy_key
 /.vs
 .DS_Store
 content/viewer/**/
+content/viewer/_index.md
