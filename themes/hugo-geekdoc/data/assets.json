@@ -361,8 +361,8 @@
     "integrity": "sha512-7Q4+KTjgrRJZJVqBXScwm7DwE0J2YX/lC8h9GP3p8Ksu3tSu6epf0LAhkzlD5BRcJqNecp9K8j6utt/ShFYUKQ=="
   },
   "groupdocs.js": {
-    "src": "js/groupdocs-25.3.0.js",
-    "integrity": "sha512-B0TqumnwW7aKdCBiNkvGe9opJlMNjYax68f1a7xJ1mpTSIsP0qkNsTTfLGhZgIRMCc5X0qYntKrbNghMozSKcw=="
+    "src": "js/groupdocs-25.3.1.js",
+    "integrity": "sha512-g3jO2UTQiLwWp+llaINP4elBJRYeZSGe4KfzWncUmSSpFJLXruWFQ2lzU8qpkRkVT421Dkl2D8XZlQjkKzydww=="
   },
   "lib-info.js": {
     "src": "js/lib-info.js",

@@ -1,6 +1,15 @@
 {{- $placeholder := default "Filter rows" (.Get "placeholder" ) }}
+{{- $forumUrl := default "https://forum.groupdocs.com/" (.Get "forumUrl" ) }}
 
 <div class="gdoc-search flex align-center">
     <svg class="gdoc-icon gdoc_search gdoc_search_abs"><use xlink:href="#gdoc_search"></use></svg>
     <input type="text" id="tableFilter" placeholder="{{ $placeholder }}" class="gdoc-search__input"/>
 </div>
+
+<blockquote class="gdoc-hint tip" id="tableFilterTip" style="display: none">
+    <div class="gdoc-hint__header">
+      <i class="gdoc-hint__icon tip" title="Tip"></i>
+      <div class="gdoc-hint__name tip">Tip</div></div> 
+    <div class="gdoc-hint__text"><strong>Can’t find your file format?</strong><br>
+    We’re here to help! Please post a request on our <a class="gdoc-markdown__link" href="{{ $forumUrl }}" rel="nofollow">Free Support Forum</a>, and our team will assist you.</div>
+</blockquote>
