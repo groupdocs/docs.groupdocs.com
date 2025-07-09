@@ -93,6 +93,7 @@ Simply View, Convert, Compress, Resize, Crop & Watermark images without leaving 
     <div class="gdoc-list-app__buttons">
         <a href="/assembly/net" class="gdoc-list-app__button gdoc-list-app__button--net" >.NET</a>
         <a href="/assembly/java" class="gdoc-list-app__button gdoc-list-app__button--java"  >Java</a>
+        <a href="/assembly/python-net" class="gdoc-list-app__button gdoc-list-app__button--python"  >Python</a>
     </div>
 </div>
 
@@ -104,6 +105,8 @@ Simply View, Convert, Compress, Resize, Crop & Watermark images without leaving 
     <div class="gdoc-list-app__buttons">
         <a href="/metadata/net" class="gdoc-list-app__button gdoc-list-app__button--net" >.NET</a>
         <a href="/metadata/java" class="gdoc-list-app__button gdoc-list-app__button--java"  >Java</a>
+		<a href="/metadata/nodejs-java" class="gdoc-list-app__button gdoc-list-app__button--nodejs"  >Node.js</a>
+        <a href="/metadata/python-net" class="gdoc-list-app__button gdoc-list-app__button--python"  >Python</a>
     </div>
 </div>
 
