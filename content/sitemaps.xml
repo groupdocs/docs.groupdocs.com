@@ -3,52 +3,176 @@
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemap.xml</loc>
   </sitemap>
+
+  <!-- GroupDocs.Total -->
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/total.xml</loc>
   </sitemap>
+
+  <!-- GroupDocs.Conversion -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/conversion.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Viewer -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/viewer.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Markdown -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/markdown.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Comparison -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/comparison.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Watermark -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/watermark.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Metadata -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/metadata.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Parser -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/parser.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Merger -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/merger.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Assembly -->
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/assembly-net.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/assembly-java.xml</loc>
   </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/annotation.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/classification-net.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/comparison.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/conversion.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/editor.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/merger.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/metadata.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/parser.xml</loc>
-  </sitemap>
+
+  <!-- GroupDocs.Redaction -->
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/redaction.xml</loc>
   </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/search.xml</loc>
-  </sitemap>
+
+  <!-- GroupDocs.Signature -->
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/signature.xml</loc>
   </sitemap>
+
+  <!-- GroupDocs.Search -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/search.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Editor -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/editor.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Annotation -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/annotation.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Classification -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/classification-net.xml</loc>
+  </sitemap>
+</sitemapindex>
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemap.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Total -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/total.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Conversion -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/conversion.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Viewer -->
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/viewer.xml</loc>
   </sitemap>
+
+  <!-- GroupDocs.Markdown -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/markdown.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Comparison -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/comparison.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Watermark -->
   <sitemap>
     <loc>https://docs.groupdocs.com/sitemaps/watermark.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Metadata -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/metadata.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Parser -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/parser.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Merger -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/merger.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Assembly -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/assembly-net.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/assembly-java.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Redaction -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/redaction.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Signature -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/signature.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Search -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/search.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Editor -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/editor.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Annotation -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/annotation.xml</loc>
+  </sitemap>
+
+  <!-- GroupDocs.Classification -->
+  <sitemap>
+    <loc>https://docs.groupdocs.com/sitemaps/classification-net.xml</loc>
   </sitemap>
 </sitemapindex>

@@ -4,6 +4,8 @@
         <loc>https://docs.groupdocs.com/</loc>
         <priority>0.9</priority>
     </url>
+    
+    <!-- GroupDocs.Total -->
     <url>
         <loc>https://docs.groupdocs.com/total</loc>
         <priority>0.9</priority>
@@ -16,60 +18,94 @@
         <loc>https://docs.groupdocs.com/total/java</loc>
         <priority>0.9</priority>
     </url>
-    <url>
-        <loc>https://docs.groupdocs.com/assembly/</loc>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docs.groupdocs.com/annotation/</loc>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docs.groupdocs.com/classification/</loc>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docs.groupdocs.com/comparison/</loc>
-        <priority>0.9</priority>
-    </url>
+    
+    <!-- GroupDocs.Conversion -->
     <url>
         <loc>https://docs.groupdocs.com/conversion/</loc>
         <priority>0.9</priority>
     </url>
-    <url>
-        <loc>https://docs.groupdocs.com/editor/</loc>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docs.groupdocs.com/merger/</loc>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docs.groupdocs.com/metadata/</loc>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docs.groupdocs.com/parser/</loc>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docs.groupdocs.com/redaction/</loc>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docs.groupdocs.com/search/</loc>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docs.groupdocs.com/signature/</loc>
-        <priority>0.9</priority>
-    </url>
+
+    <!-- GroupDocs.Viewer -->
     <url>
         <loc>https://docs.groupdocs.com/viewer/</loc>
         <priority>0.9</priority>
     </url>
+
+    <!-- GroupDocs.Markdown -->
+    <url>
+        <loc>https://docs.groupdocs.com/markdown/</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- GroupDocs.Comparison -->
+    <url>
+        <loc>https://docs.groupdocs.com/comparison/</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- GroupDocs.Watermark -->
     <url>
         <loc>https://docs.groupdocs.com/watermark/</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- GroupDocs.Metadata -->
+    <url>
+        <loc>https://docs.groupdocs.com/metadata/</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- GroupDocs.Parser -->
+    <url>
+        <loc>https://docs.groupdocs.com/parser/</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- GroupDocs.Merger -->
+    <url>
+        <loc>https://docs.groupdocs.com/merger/</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- GroupDocs.Assembly -->
+    <url>
+        <loc>https://docs.groupdocs.com/assembly/</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- GroupDocs.Redaction -->
+    <url>
+        <loc>https://docs.groupdocs.com/redaction/</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- GroupDocs.Signature -->
+    <url>
+        <loc>https://docs.groupdocs.com/signature/</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- GroupDocs.Search -->
+    <url>
+        <loc>https://docs.groupdocs.com/search/</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- GroupDocs.Editor -->
+    <url>
+        <loc>https://docs.groupdocs.com/editor/</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- GroupDocs.Annotation -->
+    <url>
+        <loc>https://docs.groupdocs.com/annotation/</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- GroupDocs.Classification -->
+    <url>
+        <loc>https://docs.groupdocs.com/classification/</loc>
         <priority>0.9</priority>
     </url>
 </urlset>

@@ -106,3 +106,10 @@ a.gdoc-two-columns__column__link {
     left: .5rem;
     color: var(--control-icons);
 }
+
+/* Index page heading */
+
+.pd-top-5 {
+    padding-top: 5rem;
+}
+
