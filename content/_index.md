@@ -1,7 +1,8 @@
 ---
 id: home
-title: GroupDocs Document Processing SDKs Documentation
-description: "Central documentation index for GroupDocs on-premise products"
+title: "GroupDocs Document Processing SDKs Documentation"
+linkTitle: "GroupDocs Documentation"
+description: "Central documentation index for GroupDocs on-premise document processing SDKs. Explore developer documentation and guides for all product families."
 geekdocSkip: true
 geekdocNav: false
 geekdocAlign: center

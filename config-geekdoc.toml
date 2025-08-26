@@ -1,6 +1,6 @@
 baseURL                     = "https://docs.groupdocs.com/"
 languageCode                = "en"
-title                       = "Documentation"
+title                       = "GroupDocs"
 theme                       = "hugo-geekdoc"
 
 disableKinds                = ["RSS", "sitemap", "categories", "tags", "taxonomy", "taxonomyTerm"]
