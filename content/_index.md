@@ -10,6 +10,7 @@ geekdocAnchor: false
 geekdocBreadcrumb: false
 hideChildren: true
 showFeedbackForm: false
+indexPage: true
 ---
 
 <div class="gdoc-list-descr">

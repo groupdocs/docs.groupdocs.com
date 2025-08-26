@@ -19,7 +19,7 @@
   <article
     class="gdoc-markdown gdoc-markdown__align--{{ default "left" (.Page.Params.GeekdocAlign | lower) }} {{$fullWidthClass}}"
   >
-    <h1 class="{{ if .Page.Params.FullWidth }} pd-top-5 {{ end }}">{{ partial "utils/title" . }}
+    <h1 class="{{ if .Page.Params.indexPage }} pd-top-5 {{ end }}">{{ partial "utils/title" . }}
       {{- if $showFeedbackForm }}
         <a class="gdoc-feedback-link" href="#feedback">
           <svg  class="gdoc-feedback-link__icon">
