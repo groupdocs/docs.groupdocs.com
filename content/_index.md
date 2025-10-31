@@ -27,6 +27,7 @@ Here you’ll find developer documentation for every GroupDocs on-premise produc
     <div class="gdoc-list-app__buttons">
         <a href="/total/net" class="gdoc-list-app__button gdoc-list-app__button--net">.NET</a>
         <a href="/total/java" class="gdoc-list-app__button gdoc-list-app__button--java">Java</a>
+        <a href="/total/python-net" class="gdoc-list-app__button gdoc-list-app__button--python">Python</a>
     </div>
 </div>
 
