@@ -89,3 +89,11 @@ pluralizeListTitles = false
 [Params.Sitemap]
 	changeFreq              = "weekly"
 	priority                = 0.5
+
+# Redirects configuration
+# Temporary redirect: all pages under /parser/python-net/* redirect to /parser/python-net/
+[[redirects]]
+  from = "/parser/python-net/**"
+  to = "/parser/python-net/"
+  status = 302
+  force = false
