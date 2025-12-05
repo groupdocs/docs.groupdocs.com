@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="NET" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#f8cd2e;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#f8cd2e;}
+</style><g id="App"><g id="NET-BG"><circle class="st0" cx="256" cy="256.1" r="242.7"/><path class="st0" d="M256,20.9c129.6,0,235.2,105.4,235.2,235.2S385.6,491.1,256,491.1S20.8,385.7,20.8,255.9S126.1,20.9,256,20.9
+			 M256,6C118.1,6,6.1,117.9,6.1,255.9S117.8,506,256,506s249.9-111.9,249.9-249.9S393.9,6,256,6L256,6z"/><circle cx="256" cy="255.9" r="242.55" fill="none" stroke="#f8cd2e" stroke-width="14.7"/></g></g><path class="st2" d="M256,151.9l-98.2,49.1L256,250l98.2-49.1L256,151.9z M256,274.4l-146.8-73.4L256,127.5l146.8,73.4L256,274.4z
+	 M256,300l117.5-58.7l29.4,14.7L256,329.4L109.2,256l29.4-14.7L256,300z M138.5,296.4L256,355.1l117.5-58.7l29.4,14.7L256,384.5
+	l-146.8-73.4L138.5,296.4z"/></svg>
