@@ -18,5 +18,20 @@ public/
 deploy_key
 /.vs
 .DS_Store
-content/viewer/**/
-content/viewer/_index.md
+# Downloaded product documentation (cloned from separate repos during build)
+content/annotation/
+content/assembly/
+content/classification/
+content/comparison/
+content/conversion/
+content/editor/
+content/markdown/
+content/merger/
+content/metadata/
+content/parser/
+content/redaction/
+content/search/
+content/signature/
+content/total/
+content/viewer/
+content/watermark/

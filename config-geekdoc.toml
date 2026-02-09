@@ -32,7 +32,7 @@ pluralizeListTitles = false
         style               = "github"
 
 [outputs]
-    home                    = [ "HTML", "SITEMAP"]
+    home                    = [ "HTML", "SITEMAP", "JSON"]
     section                 = [ "HTML" ]
     page                    = [ "HTML" ]
 
