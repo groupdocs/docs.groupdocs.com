@@ -1,0 +1,207 @@
+# Reusable workflow: build Hugo site (optionally with product docs) and deploy.
+# Called by publish-prod.yml and publish-qa.yml.
+name: Build and deploy
+
+on:
+  workflow_call:
+    inputs:
+      base_url:
+        description: 'Base URL override (empty = use config default)'
+        type: string
+        default: ''
+      all_products:
+        type: boolean
+        default: false
+      annotation:
+        type: boolean
+        default: false
+      assembly:
+        type: boolean
+        default: false
+      classification:
+        type: boolean
+        default: false
+      comparison:
+        type: boolean
+        default: false
+      conversion:
+        type: boolean
+        default: false
+      editor:
+        type: boolean
+        default: false
+      markdown:
+        type: boolean
+        default: false
+      merger:
+        type: boolean
+        default: false
+      metadata:
+        type: boolean
+        default: false
+      parser:
+        type: boolean
+        default: false
+      redaction:
+        type: boolean
+        default: false
+      search:
+        type: boolean
+        default: false
+      signature:
+        type: boolean
+        default: false
+      total:
+        type: boolean
+        default: false
+      viewer:
+        type: boolean
+        default: false
+      watermark:
+        type: boolean
+        default: false
+    secrets:
+      DOCS_SSH_HOST:
+        required: true
+      DEPLOY_SSH_DIR:
+        required: true
+      DOCS_SSH_USER:
+        required: true
+      DOCS_SSH_KEY:
+        required: true
+
+jobs:
+
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Hugo
+        run: |
+          curl -LO https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Linux-64bit.deb
+          sudo dpkg -i hugo_extended_0.101.0_Linux-64bit.deb
+
+      - name: Download product documentation
+        if: >-
+          ${{
+            inputs.all_products ||
+            inputs.annotation || inputs.assembly || inputs.classification ||
+            inputs.comparison || inputs.conversion || inputs.editor ||
+            inputs.markdown || inputs.merger || inputs.metadata ||
+            inputs.parser || inputs.redaction || inputs.search ||
+            inputs.signature || inputs.total || inputs.viewer || inputs.watermark
+          }}
+        run: |
+          # Full product registry: "key:Name"
+          ALL_PRODUCTS="
+            annotation:Annotation
+            assembly:Assembly
+            classification:Classification
+            comparison:Comparison
+            conversion:Conversion
+            editor:Editor
+            markdown:Markdown
+            merger:Merger
+            metadata:Metadata
+            parser:Parser
+            redaction:Redaction
+            search:Search
+            signature:Signature
+            total:Total
+            viewer:Viewer
+            watermark:Watermark
+          "
+
+          # Build the list of products to download
+          if [[ "${{ inputs.all_products }}" == "true" ]]; then
+            PRODUCTS="$ALL_PRODUCTS"
+            echo "Mode: all products"
+          else
+            PRODUCTS=""
+            for entry in $ALL_PRODUCTS; do
+              key="${entry%%:*}"
+              case "$key" in
+                annotation)     [[ "${{ inputs.annotation }}"     == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                assembly)       [[ "${{ inputs.assembly }}"       == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                classification) [[ "${{ inputs.classification }}" == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                comparison)     [[ "${{ inputs.comparison }}"     == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                conversion)     [[ "${{ inputs.conversion }}"     == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                editor)         [[ "${{ inputs.editor }}"         == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                markdown)       [[ "${{ inputs.markdown }}"       == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                merger)         [[ "${{ inputs.merger }}"         == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                metadata)       [[ "${{ inputs.metadata }}"       == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                parser)         [[ "${{ inputs.parser }}"         == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                redaction)      [[ "${{ inputs.redaction }}"      == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                search)         [[ "${{ inputs.search }}"         == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                signature)      [[ "${{ inputs.signature }}"      == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                total)          [[ "${{ inputs.total }}"          == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                viewer)         [[ "${{ inputs.viewer }}"         == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+                watermark)      [[ "${{ inputs.watermark }}"      == "true" ]] && PRODUCTS="$PRODUCTS $entry" ;;
+              esac
+            done
+            echo "Mode: selected products"
+          fi
+
+          echo "Products to download: $PRODUCTS"
+
+          for entry in $PRODUCTS; do
+            product="${entry%%:*}"
+            product_name="${entry##*:}"
+            repo_url="https://github.com/groupdocs-${product}/GroupDocs.${product_name}-Docs.git"
+
+            echo "::group::Downloading ${product} documentation"
+            echo "Repository: groupdocs-${product}/GroupDocs.${product_name}-Docs"
+
+            git clone --depth 1 "${repo_url}" "temp-${product}" 2>&1 || {
+              echo "::warning::Failed to clone GroupDocs.${product_name}-Docs"
+              echo "::endgroup::"
+              continue
+            }
+
+            # Create content directory for this product
+            mkdir -p "content/${product}"
+
+            # Copy product family index page
+            if [ -f "temp-${product}/_index.md" ]; then
+              cp "temp-${product}/_index.md" "content/${product}/"
+              echo "Copied _index.md"
+            fi
+
+            # Copy platform-specific documentation folders
+            for platform in net java nodejs-java python-net; do
+              if [ -d "temp-${product}/${platform}" ]; then
+                cp -r "temp-${product}/${platform}" "content/${product}/"
+                echo "Copied ${platform}/ folder"
+              fi
+            done
+
+            # Cleanup cloned repo
+            rm -rf "temp-${product}"
+            echo "::endgroup::"
+          done
+
+          echo ""
+          echo "=== Content structure ==="
+          ls -la content/
+
+      - name: Build site
+        run: |
+          HUGO_ARGS="--minify --config config-geekdoc.toml,ignore-total-config.toml"
+          if [ -n "${{ inputs.base_url }}" ]; then
+            HUGO_ARGS="$HUGO_ARGS --baseURL '${{ inputs.base_url }}'"
+          fi
+          eval hugo $HUGO_ARGS
+
+      - name: Move MD files to ugly URLs
+        run: ./move_md_to_ugly_urls.sh
+
+      - name: Deploy artifacts
+        uses: nogsantos/scp-deploy@master
+        with:
+          src: ./public/*
+          host: ${{ secrets.DOCS_SSH_HOST }}
+          remote: ${{ secrets.DEPLOY_SSH_DIR }}
+          user: ${{ secrets.DOCS_SSH_USER }}
+          key: ${{ secrets.DOCS_SSH_KEY }}

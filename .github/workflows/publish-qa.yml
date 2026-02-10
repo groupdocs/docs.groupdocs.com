@@ -1,35 +1,106 @@
-# Build documentation
+# Publish documentation to QA
 name: publish-qa
 
-# Controls when the workflow will run
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      home:
+        description: 'Home (this repository)'
+        type: boolean
+        default: true
+      all_products:
+        description: 'All products (overrides individual selections below)'
+        type: boolean
+        default: false
+      annotation:
+        description: 'Annotation'
+        type: boolean
+        default: false
+      assembly:
+        description: 'Assembly'
+        type: boolean
+        default: false
+      classification:
+        description: 'Classification'
+        type: boolean
+        default: false
+      comparison:
+        description: 'Comparison'
+        type: boolean
+        default: false
+      conversion:
+        description: 'Conversion'
+        type: boolean
+        default: false
+      editor:
+        description: 'Editor'
+        type: boolean
+        default: false
+      markdown:
+        description: 'Markdown'
+        type: boolean
+        default: false
+      merger:
+        description: 'Merger'
+        type: boolean
+        default: false
+      metadata:
+        description: 'Metadata'
+        type: boolean
+        default: false
+      parser:
+        description: 'Parser'
+        type: boolean
+        default: false
+      redaction:
+        description: 'Redaction'
+        type: boolean
+        default: false
+      search:
+        description: 'Search'
+        type: boolean
+        default: false
+      signature:
+        description: 'Signature'
+        type: boolean
+        default: false
+      total:
+        description: 'Total'
+        type: boolean
+        default: false
+      viewer:
+        description: 'Viewer'
+        type: boolean
+        default: false
+      watermark:
+        description: 'Watermark'
+        type: boolean
+        default: false
 
 jobs:
-
-  build:
-    runs-on: self-hosted
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install Hugo
-        run: |
-          curl -LO https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Linux-64bit.deb
-          sudo dpkg -i hugo_extended_0.101.0_Linux-64bit.deb
-          
-      - name: Build site
-        run: |
-          hugo --minify --config config-geekdoc.toml,ignore-total-config.toml --baseURL 'https://docs-qa.groupdocs.com/'
-
-      - name: Move MD files to ugly URLs
-        run: ./move_md_to_ugly_urls.sh
-
-      - name: Deploy artifacts
-        uses: nogsantos/scp-deploy@master
-        with:
-          src: ./public/*
-          host: ${{ secrets.DOCS_SSH_HOST }}
-          remote: ${{ secrets.DOCS_QA_SSH_DIR }}
-          user: ${{ secrets.DOCS_SSH_USER }}
-          key: ${{ secrets.DOCS_SSH_KEY }}
-
+  publish:
+    uses: ./.github/workflows/build-and-deploy.yml
+    with:
+      base_url:        'https://docs-qa.groupdocs.com/'
+      all_products:    ${{ inputs.all_products }}
+      annotation:      ${{ inputs.annotation }}
+      assembly:        ${{ inputs.assembly }}
+      classification:  ${{ inputs.classification }}
+      comparison:      ${{ inputs.comparison }}
+      conversion:      ${{ inputs.conversion }}
+      editor:          ${{ inputs.editor }}
+      markdown:        ${{ inputs.markdown }}
+      merger:          ${{ inputs.merger }}
+      metadata:        ${{ inputs.metadata }}
+      parser:          ${{ inputs.parser }}
+      redaction:       ${{ inputs.redaction }}
+      search:          ${{ inputs.search }}
+      signature:       ${{ inputs.signature }}
+      total:           ${{ inputs.total }}
+      viewer:          ${{ inputs.viewer }}
+      watermark:       ${{ inputs.watermark }}
+    secrets:
+      DOCS_SSH_HOST:   ${{ secrets.DOCS_SSH_HOST }}
+      DEPLOY_SSH_DIR:  ${{ secrets.DOCS_QA_SSH_DIR }}
+      DOCS_SSH_USER:   ${{ secrets.DOCS_SSH_USER }}
+      DOCS_SSH_KEY:    ${{ secrets.DOCS_SSH_KEY }}

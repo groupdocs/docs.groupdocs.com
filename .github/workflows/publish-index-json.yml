@@ -1,5 +1,5 @@
 # Build full-text search index (index.json) from all product documentation repositories
-name: build-search-index
+name: publish-index-json
 
 # This workflow can be triggered independently
 on: workflow_dispatch
