@@ -1,53 +1,68 @@
 # GroupDocs Documentation
 
-This repository contains the source files for generating the official GroupDocs documentation website using [Hugo](https://gohugo.io/) static site generator. The live documentation is available at [https://docs.groupdocs.com/](https://docs.groupdocs.com/).
+This repository contains the source files for the official GroupDocs documentation website built with [Hugo](https://gohugo.io/). The live site is at [https://docs.groupdocs.com/](https://docs.groupdocs.com/).
 
 ## About This Repository
 
-This is a centralized documentation repository for all GroupDocs on-premise document processing SDKs. It provides developer documentation, guides, and API references for the entire GroupDocs product family.
+This is the centralized documentation hub for all GroupDocs on-premise document processing SDKs. It hosts the home page, shared layouts, themes, and build infrastructure. Individual product documentation lives in separate repositories and is pulled in at build time.
 
 ### Documented Products
 
-This repository contains documentation for the following GroupDocs product families:
+| Product | Description |
+|---|---|
+| **GroupDocs.Total** | Complete document manipulation suite |
+| **GroupDocs.Annotation** | Document annotation and collaboration |
+| **GroupDocs.Assembly** | Document generation automation |
+| **GroupDocs.Classification** | Document and text categorization |
+| **GroupDocs.Comparison** | Document comparison |
+| **GroupDocs.Conversion** | Document conversion (7400+ conversion pairs) |
+| **GroupDocs.Editor** | Document editing |
+| **GroupDocs.Markdown** | Markdown export for PDF, Word, Excel, and more |
+| **GroupDocs.Merger** | Document merging and page manipulation |
+| **GroupDocs.Metadata** | Metadata management |
+| **GroupDocs.Parser** | Document parsing and data extraction |
+| **GroupDocs.Redaction** | Document redaction and content removal |
+| **GroupDocs.Search** | Full-text search |
+| **GroupDocs.Signature** | Electronic signatures |
+| **GroupDocs.Viewer** | Document viewing (170+ file formats) |
+| **GroupDocs.Watermark** | Watermark manipulation |
 
-- **GroupDocs.Total** - Complete document manipulation suite
-- **GroupDocs.Conversion** - Document conversion SDK (7400+ conversion pairs)
-- **GroupDocs.Viewer** - Document viewer SDK (100+ file formats)
-- **GroupDocs.Markdown** - Markdown export SDK
-- **GroupDocs.Comparison** - Document comparison SDK
-- **GroupDocs.Watermark** - Watermark manipulation SDK
-- **GroupDocs.Metadata** - Metadata management SDK
-- **GroupDocs.Parser** - Document parsing and data extraction SDK
-- **GroupDocs.Merger** - Document merging and page manipulation SDK
-- **GroupDocs.Assembly** - Document generation automation SDK
-- **GroupDocs.Redaction** - Document redaction and content removal SDK
-- **GroupDocs.Signature** - Electronic signature SDK
-- **GroupDocs.Search** - Full-text search SDK
-- **GroupDocs.Editor** - Document editing SDK
-- **GroupDocs.Annotation** - Document annotation and collaboration SDK
-- **GroupDocs.Classification** - Document and text categorization SDK
-
-Each product family includes documentation for multiple platforms (.NET, Java, Python, Node.js) where applicable.
+Each product supports multiple platforms (.NET, Java, Python, Node.js) where applicable. Product documentation is stored in separate repos following the pattern `groupdocs-{product}/GroupDocs.{Name}-Docs`.
 
 ## Technology Stack
 
-- **Static Site Generator**: [Hugo](https://gohugo.io/) (Extended version 0.101.0+)
-- **Theme**: [hugo-geekdoc](https://github.com/xenonstack/geekdoc) (customized for GroupDocs)
-- **Content Format**: Markdown files with front matter
-- **Build System**: GitHub Actions workflows for automated builds and deployment
+- **Static Site Generator**: [Hugo Extended](https://gohugo.io/) 0.101.0
+- **Theme**: hugo-geekdoc (customized)
+- **Content Format**: Markdown with YAML front matter
+- **Output Formats**: HTML + Markdown (every page is also available as `.md`)
+- **CI/CD**: GitHub Actions with reusable workflows
+- **Deployment**: SCP to target servers
 
 ## Repository Structure
 
 ```
 .
-├── content/              # Markdown documentation source files
-├── data/                 # JSON data files for products and structured data
-├── static/              # Static assets (images, sitemaps, etc.)
-├── themes/              # Hugo themes (hugo-geekdoc, ace-documentation)
-├── config-geekdoc.toml  # Main Hugo configuration (production)
-├── config.toml          # Alternative Hugo configuration
-├── build_docs.cmd       # Local development build script
-└── .github/workflows/   # GitHub Actions CI/CD workflows
+├── .github/workflows/
+│   ├── build-and-deploy.yml      # Reusable workflow (shared build & deploy logic)
+│   ├── publish-prod.yml          # Production deployment (calls build-and-deploy)
+│   ├── publish-qa.yml            # QA deployment (calls build-and-deploy)
+│   └── publish-index-json.yml    # Search index rebuild
+├── content/                      # Markdown content (home page; products added at build time)
+├── data/                         # JSON data files (products, structured data)
+├── layouts/
+│   ├── _default/
+│   │   ├── list.md               # Markdown output template for section pages
+│   │   └── single.md             # Markdown output template for single pages
+│   └── index.json                # Search index template
+├── static/                       # Static assets (images, icons)
+├── themes/
+│   └── hugo-geekdoc/             # Customized Geekdoc theme
+├── config-geekdoc.toml           # Main Hugo configuration
+├── ignore-total-config.toml      # Config overlay that excludes Total product
+├── show-feedback-config.toml     # Config overlay that enables feedback forms
+├── build_docs.cmd                # Local dev server (Windows)
+├── build_search_index.sh         # Local search index build script
+└── move_md_to_ugly_urls.sh       # Post-build: rename index.md → page.md
 ```
 
 ## Local Development
@@ -57,65 +72,91 @@ Each product family includes documentation for multiple platforms (.NET, Java, P
 - [Hugo Extended](https://gohugo.io/installation/) version 0.101.0
 - Git
 
-### Building Locally
+### Running the Dev Server
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/groupdocs/docs.git
-   cd docs
-   ```
+```bash
+# Windows
+build_docs.cmd
 
-2. Run the local development server:
-   ```bash
-   # Windows
-   build_docs.cmd
-   
-   # Or manually
-   hugo server --config config-geekdoc.toml,show-feedback-config.toml
-   ```
+# Or manually on any platform
+hugo server --config config-geekdoc.toml,show-feedback-config.toml
+```
 
-3. Open your browser to `http://localhost:1313/` to view the documentation site.
+Open `http://localhost:1313/` to view the site. Hugo watches for file changes and reloads automatically.
 
 ### Building for Production
 
-To build the static site for production:
-
 ```bash
+# 1. Build the site
 hugo --minify --config config-geekdoc.toml,ignore-total-config.toml
+
+# 2. Move Markdown output to ugly URLs (e.g. /viewer/net/index.md → /viewer/net.md)
+./move_md_to_ugly_urls.sh
 ```
 
 The generated site will be in the `public/` directory.
 
+### Building the Search Index Locally
+
+```bash
+bash build_search_index.sh
+```
+
+This clones all product documentation repos, builds the full site, and generates `public/index.json`.
+
+## Markdown Output Format
+
+Every documentation page is available in both HTML and raw Markdown. Append `.md` to any page URL to get the Markdown version:
+
+| HTML | Markdown |
+|---|---|
+| `https://docs.groupdocs.com/viewer/net/` | `https://docs.groupdocs.com/viewer/net.md` |
+| `https://docs.groupdocs.com/viewer/net/installation/` | `https://docs.groupdocs.com/viewer/net/installation.md` |
+
+This is implemented via:
+- A custom `MD` output format defined in `config-geekdoc.toml`
+- Templates in `layouts/_default/single.md` and `layouts/_default/list.md`
+- A post-build script (`move_md_to_ugly_urls.sh`) that renames `index.md` files to ugly URLs
+
 ## Deployment
 
-This repository uses GitHub Actions workflows for automated deployment:
+Deployment is triggered manually via GitHub Actions **workflow_dispatch**. Both publish workflows present a checkbox UI with three modes:
 
-- **QA Environment**: Manual workflow dispatch to deploy to `https://docs-qa.groupdocs.com/`
-- **Production Environment**: Manual workflow dispatch to deploy to `https://docs.groupdocs.com/`
+| Mode | How to trigger |
+|---|---|
+| **Home only** (default) | Leave all product checkboxes unchecked -- builds only this repository's content |
+| **All products** | Check the "All products" checkbox -- clones and builds all 16 product repos |
+| **Selected products** | Check individual product checkboxes -- clones only the selected repos |
 
-Both workflows:
-1. Checkout the repository
-2. Install Hugo Extended
-3. Build the site with minification
-4. Deploy artifacts via SCP to the target server
+### Workflows
+
+| Workflow | File | Purpose |
+|---|---|---|
+| **publish-prod** | `publish-prod.yml` | Deploy to `https://docs.groupdocs.com/` |
+| **publish-qa** | `publish-qa.yml` | Deploy to `https://docs-qa.groupdocs.com/` |
+| **Build and deploy** | `build-and-deploy.yml` | Reusable workflow with shared build logic (not triggered directly) |
+| **publish-index-json** | `publish-index-json.yml` | Rebuild and deploy the full-text search index (`index.json`) |
+
+The publish-prod and publish-qa workflows are thin wrappers that define the UI inputs and call `build-and-deploy.yml` with environment-specific settings (base URL, deploy target).
+
+### Required Secrets
+
+| Secret | Description |
+|---|---|
+| `DOCS_SSH_HOST` | Deployment server hostname |
+| `DOCS_SSH_DIR` | Production deployment directory |
+| `DOCS_QA_SSH_DIR` | QA deployment directory |
+| `DOCS_SSH_USER` | SSH username |
+| `DOCS_SSH_KEY` | SSH private key |
 
 ## Contributing
 
-This repository is primarily maintained by the GroupDocs documentation team. If you find documentation issues or have suggestions:
+This repository is maintained by the GroupDocs documentation team. If you find issues or have suggestions:
 
 1. Check if an issue already exists
 2. Create a new issue describing the problem or enhancement
-3. For significant changes, consider submitting a pull request
-
-## Repository Purpose
-
-The files in this repository are used to:
-
-- Build and maintain the official GroupDocs documentation website
-- Ensure documentation stays up-to-date with product releases
-- Provide a consistent structure for automated builds and publication
-- Support multiple product families and platforms from a single codebase
+3. For significant changes, submit a pull request
 
 ## License
 
-This repository contains documentation source files and is licensed under the [MIT License](LICENSE).
+Licensed under the [MIT License](LICENSE).
