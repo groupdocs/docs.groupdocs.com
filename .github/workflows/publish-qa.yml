@@ -21,6 +21,9 @@ jobs:
         run: |
           hugo --minify --config config-geekdoc.toml,ignore-total-config.toml --baseURL 'https://docs-qa.groupdocs.com/'
 
+      - name: Move MD files to ugly URLs
+        run: ./move_md_to_ugly_urls.sh
+
       - name: Deploy artifacts
         uses: nogsantos/scp-deploy@master
         with:

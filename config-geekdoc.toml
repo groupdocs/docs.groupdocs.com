@@ -32,9 +32,9 @@ pluralizeListTitles = false
         style               = "github"
 
 [outputs]
-    home                    = [ "HTML", "SITEMAP", "JSON"]
-    section                 = [ "HTML" ]
-    page                    = [ "HTML" ]
+    home                    = [ "HTML", "SITEMAP", "JSON", "MD"]
+    section                 = [ "HTML", "MD" ]
+    page                    = [ "HTML", "MD" ]
 
 [outputFormats.SITEMAP]
     MediaType               = "application/xml"
@@ -43,6 +43,16 @@ pluralizeListTitles = false
     IsPlainText             = true
     noUgly                  = true
     Rel                     = "sitemap"
+
+[mediaTypes."text/markdown"]
+    suffixes                = ["md"]
+
+[outputFormats.MD]
+    mediaType               = "text/markdown"
+    isPlainText             = true
+    isHTML                  = false
+    notAlternative          = true
+    permalinkable           = false
 
 [Params]
     contentDir              = "content"
