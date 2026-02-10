@@ -197,6 +197,10 @@ jobs:
       - name: Move MD files to ugly URLs
         run: ./move_md_to_ugly_urls.sh
 
+      - name: Remove index.json (published separately by publish-index-json workflow)
+        if: ${{ !inputs.all_products }}
+        run: rm -f ./public/index.json
+
       - name: Deploy artifacts
         uses: nogsantos/scp-deploy@master
         with:
