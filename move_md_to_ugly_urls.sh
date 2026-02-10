@@ -16,7 +16,7 @@ output_dir="${1:-public}"
 
 if [ ! -d "$output_dir" ]; then
   echo "Error: directory '$output_dir' does not exist." >&2
-  echo "Run 'hugo --config config-geekdoc.toml' first to generate the site." >&2
+  echo "Run 'hugo' first to generate the site." >&2
   exit 1
 fi
 

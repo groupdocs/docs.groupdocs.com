@@ -1,14 +1,21 @@
 baseURL                     = "https://docs.groupdocs.com/"
-languageCode                = "en-us"
-title                       = "Documentation"
-theme                       = "ace-documentation"
+languageCode                = "en"
+title                       = "GroupDocs"
+theme                       = "hugo-geekdoc"
 
 disableKinds                = ["RSS", "sitemap", "categories", "tags", "taxonomy", "taxonomyTerm"]
 
 
 # (Optional) Set this to true to enable 'Last Modified by' date and git author
 #  information on 'doc' type pages.
-enableGitInfo               = true
+enableGitInfo               = false
+
+
+# Geekdoc required configuration
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+disablePathToLower = true
+pluralizeListTitles = false
 
 
 # Markup configure section
@@ -25,9 +32,9 @@ enableGitInfo               = true
         style               = "github"
 
 [outputs]
-    home                    = [ "HTML", "SITEMAP"]
-    section                 = [ "HTML" ]
-    page                    = [ "HTML" ]
+    home                    = [ "HTML", "SITEMAP", "JSON", "MD"]
+    section                 = [ "HTML", "MD" ]
+    page                    = [ "HTML", "MD" ]
 
 [outputFormats.SITEMAP]
     MediaType               = "application/xml"
@@ -37,6 +44,16 @@ enableGitInfo               = true
     noUgly                  = true
     Rel                     = "sitemap"
 
+[mediaTypes."text/markdown"]
+    suffixes                = ["md"]
+
+[outputFormats.MD]
+    mediaType               = "text/markdown"
+    isPlainText             = true
+    isHTML                  = false
+    notAlternative          = true
+    permalinkable           = false
+
 [Params]
     contentDir              = "content"
     google_tag_manager_id   = "GTM-WZTNN8"
@@ -44,45 +61,52 @@ enableGitInfo               = true
 
     disableSearch           = false
 
+    aiSearchEndpoint        = "https://docsearch.api.aspose.cloud/ask"
+    aiSearchScopes          = [ "annotation_net",  "annotation_java",  
+                                "assembly_net",  "assembly_java", 
+                                "classification_net",
+                                "comparison_net", "comparison_java", "comparison_python-net", "comparison_nodejs-java",
+                                "conversion_net", "conversion_java", "conversion_python-net", "conversion_nodejs-java",
+                                "editor_net",  "editor_java", "editor_nodejs-java",
+                                "merger_net",  "merger_java",
+                                "metadata_net", "metadata_java",
+                                "parser_net", "parser_java",
+                                "redaction_net", "redaction_java",
+                                "search_net", "search_java",
+                                "signature_net", "signature_java",
+                                "viewer_net", "viewer_java", "viewer_python-net", "viewer_nodejs-java",
+                                "watermark_net", "watermark_java", "watermark_python-net", "watermark_nodejs-java",
+                                "total_net",   "total_java"
+                            ]
+
+    # Collapse not active menu items by default
+    GeekdocCollapseAllSections  = true
+    # Disable default Hugo search
+    GeekdocSearch               = false
+    # Show GroupDocs search input
+    showSearchInput             = true
+
+    # Render partial, script and stylesheet for the feedback form
+    showFeedbackForm            = true
+
     # Set source repository location.
     # Used for 'Last Modified' and 'Edit this page' links.
     GitHubRepo              = 'https://github.com/groupdocs/docs'
     
     # Enable 'Edit this page' links for 'doc' page type.
     # Disabled by default. Uncomment to enable. Requires 'GitHubRepo' param.    
-    GitHubEditPath          = 'edit/master'    #https://github.com/groupdocs/docs/blob/master/content/docs/annotation-net/getting-started/supported-document-formats.md
+    GitHubEditPath          = 'edit/master'   
 
     GitHubDateFormat        = 'January 2, 2006'
-
-    ProductFamilies = [ 
-            { Key = "total",            Name = "GroupDocs.Total",           Description = "Manipulate documents from within your own desktop solutions and web apps without requiring any other commercial products." , HideJava = "false" },           
-
-            { Key = "annotation",       Name = "GroupDocs.Annotation",      Description = "Powerful document annotator component that helps you to boost your applications with document annotation, commenting and collaboration features." , HideJava = "false" },           
-            { Key = "assembly",         Name = "GroupDocs.Assembly",        Description = "Automate your document generation process with cross platform automation assembly APIs to boost productivity and accuracy" , HideJava = "false" },           
-            { Key = "classification",   Name = "GroupDocs.Classification",  Description = "Build custom applications to perform documents and text categorization operations using different taxonomies within your applications.", HideJava = "true" },           
-            { Key = "comparison",       Name = "GroupDocs.Comparison",      Description = "Document comparison API that detects document text, styling and formating changes quickly and with a high accuracy." , HideJava = "false" },           
-            { Key = "conversion",       Name = "GroupDocs.Conversion",      Description = "Huge conversion API that supports over 7400 document conversion pairs. With innumerous conversion options you will get hight quality result fast." , HideJava = "false" },           
-            { Key = "editor",           Name = "GroupDocs.Editor",          Description = "Modern document editor API that allows you to edit various documents inside your applications without additional software installed." , HideJava = "false" },           
-            { Key = "merger",           Name = "GroupDocs.Merger",          Description = "Powerful API to merge PDF, Word, Excel, PowerPoint documents and many other formats, move, reorder or remove document pages in different ways and with flexible options." , HideJava = "false" },           
-            { Key = "metadata",         Name = "GroupDocs.Metadata",        Description = "Native .NET API to dynamically read, write, edit and remove meta information from Microsoft Office, PDF, Multimedia, images and various other file formats." , HideJava = "false" },           
-            { Key = "parser",           Name = "GroupDocs.Parser",          Description = "Parse, extract images, raw & formatted text with metadata and perform a lot of operations with it using APIs which work on all popular platforms and supported file formats." , HideJava = "false" },           
-            { Key = "redaction",        Name = "GroupDocs.Redaction",       Description = "Build cross-platform applications that perform operations, such as, redacting, hiding, removing content and metadata from documents, presentations, worksheets and PDF files" , HideJava = "false" },           
-            { Key = "search",           Name = "GroupDocs.Search",          Description = "Transform your document search process with this API for advance full text search capability into any existing or new cross platform application." , HideJava = "false" },           
-            { Key = "signature",        Name = "GroupDocs.Signature",       Description = "Outstanding electronic signature API that allows you to esign your documents with digital certificate, image, text and hand-written signatures, QR-Code or BarCodes and many more!" , HideJava = "false" },           
-            { Key = "viewer",           Name = "GroupDocs.Viewer",          Description = "Excellent file viewer component that empowers your C#, ASP.NET ?and other .NET-based applications with document viewing features across more than 100+ supported file formats!" , HideJava = "false" },           
-            { Key = "watermark",        Name = "GroupDocs.Watermark",       Description = "Watermark manipulation APIs for creating, removing, smart searching, edit locking, and performing other powerful operations across all popular platforms and supported file formats." , HideJava = "false" }
-    ]
-
-    MoreServices = [ 
-            { Name = "API Reference", CssClass = "fas fa-book", Href = "https://apireference.groupdocs.com" },
-            { Name = "Code Samples", CssClass = "fas fa-code", Href = "https://groupdocs.github.io" },
-            { Name = "Live Demos", CssClass = "fas fa-desktop", Href = "https://groupdocsapp.github.io" },
-            { Name = "Free Consulting", CssClass = "fas fa-headset", Href = "https://groupdocs-free-consulting.github.io" },
-            { Name = "Free Support", CssClass = "fas fa-user", Href = "https://forum.groupdocs.com" },
-            { Name = "Paid Support", CssClass = "fas fa-user-tie", Href = "https://helpdesk.groupdocs.com" }
-    ]
-
 
 [Params.Sitemap]
 	changeFreq              = "weekly"
 	priority                = 0.5
+
+# Redirects configuration
+# Temporary redirect: all pages under /parser/python-net/* redirect to /parser/python-net/
+[[redirects]]
+  from = "/parser/python-net/**"
+  to = "/parser/python-net/"
+  status = 302
+  force = false

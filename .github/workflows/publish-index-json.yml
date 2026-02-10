@@ -82,7 +82,7 @@ jobs:
 
       - name: Build site
         run: |
-          hugo --config config-geekdoc.toml
+          hugo
 
       - name: Verify index.json
         run: |

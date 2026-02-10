@@ -82,7 +82,7 @@ ls -la content/
 
 echo ""
 echo "=== Building site ==="
-hugo --config config-geekdoc.toml
+hugo
 
 echo ""
 echo "=== Verifying index.json ==="

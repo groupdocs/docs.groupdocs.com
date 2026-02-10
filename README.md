@@ -57,9 +57,7 @@ Each product supports multiple platforms (.NET, Java, Python, Node.js) where app
 ├── static/                       # Static assets (images, icons)
 ├── themes/
 │   └── hugo-geekdoc/             # Customized Geekdoc theme
-├── config-geekdoc.toml           # Main Hugo configuration
-├── ignore-total-config.toml      # Config overlay that excludes Total product
-├── show-feedback-config.toml     # Config overlay that enables feedback forms
+├── config.toml                   # Hugo configuration
 ├── build_docs.cmd                # Local dev server (Windows)
 ├── build_search_index.sh         # Local search index build script
 └── move_md_to_ugly_urls.sh       # Post-build: rename index.md → page.md
@@ -79,7 +77,7 @@ Each product supports multiple platforms (.NET, Java, Python, Node.js) where app
 build_docs.cmd
 
 # Or manually on any platform
-hugo server --config config-geekdoc.toml,show-feedback-config.toml
+hugo server
 ```
 
 Open `http://localhost:1313/` to view the site. Hugo watches for file changes and reloads automatically.
@@ -88,7 +86,7 @@ Open `http://localhost:1313/` to view the site. Hugo watches for file changes an
 
 ```bash
 # 1. Build the site
-hugo --minify --config config-geekdoc.toml,ignore-total-config.toml
+hugo --minify
 
 # 2. Move Markdown output to ugly URLs (e.g. /viewer/net/index.md → /viewer/net.md)
 ./move_md_to_ugly_urls.sh
@@ -114,7 +112,7 @@ Every documentation page is available in both HTML and raw Markdown. Append `.md
 | `https://docs.groupdocs.com/viewer/net/installation/` | `https://docs.groupdocs.com/viewer/net/installation.md` |
 
 This is implemented via:
-- A custom `MD` output format defined in `config-geekdoc.toml`
+- A custom `MD` output format defined in `config.toml`
 - Templates in `layouts/_default/single.md` and `layouts/_default/list.md`
 - A post-build script (`move_md_to_ugly_urls.sh`) that renames `index.md` files to ugly URLs
 

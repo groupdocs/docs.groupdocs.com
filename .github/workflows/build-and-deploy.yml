@@ -188,7 +188,7 @@ jobs:
 
       - name: Build site
         run: |
-          HUGO_ARGS="--minify --config config-geekdoc.toml,ignore-total-config.toml"
+          HUGO_ARGS="--minify"
           if [ -n "${{ inputs.base_url }}" ]; then
             HUGO_ARGS="$HUGO_ARGS --baseURL '${{ inputs.base_url }}'"
           fi

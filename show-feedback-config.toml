@@ -1,3 +1,0 @@
-[Params]
-    # Render partial, script and stylesheet for the feedback form
-    showFeedbackForm        = true
