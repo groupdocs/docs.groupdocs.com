@@ -1,6 +1,6 @@
 # Reusable workflow: build Hugo site (optionally with product docs) and deploy.
 # Called by publish-prod.yml and publish-qa.yml.
-name: Build and deploy
+name: build-and-deploy
 
 on:
   workflow_call:
