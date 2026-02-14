@@ -204,8 +204,8 @@ jobs:
       - name: Deploy artifacts
         uses: burnett01/rsync-deployments@7.0.1
         with:
-          switches: -vzrt --delete --chmod=D755,F644
-          options: -o ServerAliveInterval=60 -o ServerAliveCountMax=30 -o StrictHostKeyChecking=no
+          switches: -vrt --delete --chmod=D755,F644 --timeout=300
+          rsh: -o ServerAliveInterval=60 -o ServerAliveCountMax=30
           path: public/
           remote_path: ${{ secrets.DEPLOY_SSH_DIR }}
           remote_host: ${{ secrets.DOCS_SSH_HOST }}
