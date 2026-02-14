@@ -1,8 +1,24 @@
-# Build llms.txt from all product documentation repositories
-name: publish-llms-txt
+# Build and deploy index.json and/or llms.txt from all product documentation
+name: publish-assets
 
-# This workflow can be triggered independently
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Asset to publish'
+        type: choice
+        options:
+          - both
+          - index.json
+          - llms.txt
+        default: 'both'
+      environment:
+        description: 'Target environment'
+        type: choice
+        options:
+          - prod
+          - qa
+        default: 'prod'
 
 jobs:
 
@@ -81,10 +97,20 @@ jobs:
           ls -la content/
 
       - name: Build site
+        run: hugo
+
+      - name: Verify index.json
+        if: ${{ inputs.target == 'index.json' || inputs.target == 'both' }}
         run: |
-          hugo
+          if [ ! -f "./public/index.json" ]; then
+            echo "::error::index.json was not generated"
+            exit 1
+          fi
+          echo "index.json size: $(wc -c < ./public/index.json) bytes"
+          echo "Number of entries: $(grep -c '"id"' ./public/index.json || echo 0)"
 
       - name: Verify llms.txt
+        if: ${{ inputs.target == 'llms.txt' || inputs.target == 'both' }}
         run: |
           if [ ! -f "./public/llms.txt" ]; then
             echo "::error::llms.txt was not generated"
@@ -94,11 +120,31 @@ jobs:
           echo "--- llms.txt content ---"
           cat ./public/llms.txt
 
+      - name: Set deploy target
+        id: target
+        run: |
+          if [[ "${{ inputs.environment }}" == "qa" ]]; then
+            echo "remote_dir=${{ secrets.DOCS_QA_SSH_DIR }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "remote_dir=${{ secrets.DOCS_SSH_DIR }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Deploy index.json
+        if: ${{ inputs.target == 'index.json' || inputs.target == 'both' }}
+        uses: nogsantos/scp-deploy@master
+        with:
+          src: ./public/index.json
+          host: ${{ secrets.DOCS_SSH_HOST }}
+          remote: ${{ steps.target.outputs.remote_dir }}
+          user: ${{ secrets.DOCS_SSH_USER }}
+          key: ${{ secrets.DOCS_SSH_KEY }}
+
       - name: Deploy llms.txt
+        if: ${{ inputs.target == 'llms.txt' || inputs.target == 'both' }}
         uses: nogsantos/scp-deploy@master
         with:
           src: ./public/llms.txt
           host: ${{ secrets.DOCS_SSH_HOST }}
-          remote: ${{ secrets.DOCS_SSH_DIR }}
+          remote: ${{ steps.target.outputs.remote_dir }}
           user: ${{ secrets.DOCS_SSH_USER }}
           key: ${{ secrets.DOCS_SSH_KEY }}

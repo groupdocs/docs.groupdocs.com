@@ -1,6 +1,6 @@
 # Reusable workflow: build Hugo site (optionally with product docs) and deploy.
-# Called by publish-prod.yml and publish-qa.yml.
-name: build-and-deploy
+# Called by publish-site.yml and publish-assets.yml.
+name: _reusable-build-deploy
 
 on:
   workflow_call:
@@ -197,7 +197,7 @@ jobs:
       - name: Move MD files to ugly URLs
         run: ./move_md_to_ugly_urls.sh
 
-      - name: Remove index.json (published separately by publish-index-json workflow)
+      - name: Remove index.json (published separately by publish-assets workflow)
         if: ${{ !inputs.all_products }}
         run: rm -f ./public/index.json
 

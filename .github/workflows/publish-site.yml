@@ -1,9 +1,16 @@
-# Publish documentation to QA
-name: publish-qa
+# Publish documentation site to production or QA
+name: publish-site
 
 on:
   workflow_dispatch:
     inputs:
+      environment:
+        description: 'Target environment'
+        type: choice
+        options:
+          - prod
+          - qa
+        default: 'prod'
       home:
         description: 'Home (this repository)'
         type: boolean
@@ -79,9 +86,9 @@ on:
 
 jobs:
   publish:
-    uses: ./.github/workflows/build-and-deploy.yml
+    uses: ./.github/workflows/_reusable-build-deploy.yml
     with:
-      base_url:        'https://docs-qa.groupdocs.com/'
+      base_url:        ${{ inputs.environment == 'qa' && 'https://docs-qa.groupdocs.com/' || '' }}
       all_products:    ${{ inputs.all_products }}
       annotation:      ${{ inputs.annotation }}
       assembly:        ${{ inputs.assembly }}
@@ -101,6 +108,6 @@ jobs:
       watermark:       ${{ inputs.watermark }}
     secrets:
       DOCS_SSH_HOST:   ${{ secrets.DOCS_SSH_HOST }}
-      DEPLOY_SSH_DIR:  ${{ secrets.DOCS_QA_SSH_DIR }}
+      DEPLOY_SSH_DIR:  ${{ inputs.environment == 'qa' && secrets.DOCS_QA_SSH_DIR || secrets.DOCS_SSH_DIR }}
       DOCS_SSH_USER:   ${{ secrets.DOCS_SSH_USER }}
       DOCS_SSH_KEY:    ${{ secrets.DOCS_SSH_KEY }}
