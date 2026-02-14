@@ -8,11 +8,13 @@ GroupDocs provides on-premise document processing SDKs for .NET, Java, Python, a
 ## Product Families
 
 {{ range .Site.Sections -}}
-{{ $product := .File.ContentBaseName -}}
 {{ $title := .Title -}}
 - [{{ $title }}]({{ .Permalink }}) {{ with .Description }}— {{ . }}{{ end }}
 {{ range .Sections -}}
-  - [{{ $title }} for {{ .Title }}]({{ .Permalink }}) ([full content]({{ strings.TrimRight "/" .Permalink }}.md))
+  - [{{ .Title }}]({{ .Permalink }}) ([md]({{ strings.TrimRight "/" .Permalink }}.md))
+{{ range .RegularPagesRecursive -}}
+    - [{{ .Title }}]({{ .Permalink }}) ([md]({{ strings.TrimRight "/" .Permalink }}.md))
+{{ end -}}
 {{ end -}}
 {{ end }}
 ## Developer Resources
