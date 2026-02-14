@@ -205,13 +205,36 @@ jobs:
         if: ${{ !inputs.all_products }}
         run: rm -f ./public/llms.txt
 
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DOCS_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H ${{ secrets.DOCS_SSH_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+
       - name: Deploy artifacts
-        uses: burnett01/rsync-deployments@7.0.1
-        with:
-          switches: -vrt --delete --inplace --chmod=D755,F644 --timeout=300
-          rsh: -o ServerAliveInterval=60 -o ServerAliveCountMax=30
-          path: public/
-          remote_path: ${{ secrets.DEPLOY_SSH_DIR }}
-          remote_host: ${{ secrets.DOCS_SSH_HOST }}
-          remote_user: ${{ secrets.DOCS_SSH_USER }}
-          remote_key: ${{ secrets.DOCS_SSH_KEY }}
+        run: |
+          SSH_OPTS="-i ~/.ssh/deploy_key -o ServerAliveInterval=60 -o ServerAliveCountMax=30"
+          RSYNC_OPTS="-vrt --inplace --chmod=D755,F644 --timeout=300"
+          REMOTE="${{ secrets.DOCS_SSH_USER }}@${{ secrets.DOCS_SSH_HOST }}:${{ secrets.DEPLOY_SSH_DIR }}"
+
+          if [[ "${{ inputs.all_products }}" == "true" ]]; then
+            # Full build: sync everything, remove stale files
+            rsync $RSYNC_OPTS --delete -e "ssh $SSH_OPTS" public/ "$REMOTE"
+          else
+            # Partial build: update root-level files without deleting anything
+            rsync $RSYNC_OPTS -e "ssh $SSH_OPTS" public/ "$REMOTE"
+
+            # Then clean up stale files within each built product directory
+            KNOWN_PRODUCTS="annotation assembly classification comparison conversion editor markdown merger metadata parser redaction search signature total viewer watermark"
+            for product in $KNOWN_PRODUCTS; do
+              if [ -d "public/$product" ]; then
+                echo "Cleaning up stale files in $product/"
+                rsync $RSYNC_OPTS --delete -e "ssh $SSH_OPTS" "public/$product/" "$REMOTE/$product/"
+              fi
+            done
+          fi
+
+      - name: Cleanup SSH key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
