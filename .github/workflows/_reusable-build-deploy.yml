@@ -215,7 +215,7 @@ jobs:
       - name: Deploy artifacts
         run: |
           SSH_OPTS="-i ~/.ssh/deploy_key -o ServerAliveInterval=60 -o ServerAliveCountMax=30"
-          RSYNC_OPTS="-vrt --inplace --chmod=D755,F644 --timeout=300"
+          RSYNC_OPTS="-vrOt --inplace --chmod=D755,F644 --timeout=300"
           REMOTE="${{ secrets.DOCS_SSH_USER }}@${{ secrets.DOCS_SSH_HOST }}:${{ secrets.DEPLOY_SSH_DIR }}"
 
           if [[ "${{ inputs.all_products }}" == "true" ]]; then
