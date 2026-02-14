@@ -1,0 +1,30 @@
+{{- /* llms.txt output template for the home page */ -}}
+# {{ .Site.Title }}
+
+> {{ .Site.Params.description | default .Description }}
+
+GroupDocs provides on-premise document processing SDKs for .NET, Java, Python, and Node.js. This documentation site covers all product families and platforms.
+
+## Product Families
+
+{{ range .Site.Sections -}}
+{{ $product := .File.ContentBaseName -}}
+{{ $title := .Title -}}
+- [{{ $title }}]({{ .Permalink }}) {{ with .Description }}— {{ . }}{{ end }}
+{{ range .Sections -}}
+  - [{{ $title }} for {{ .Title }}]({{ .Permalink }}) ([full content]({{ strings.TrimRight "/" .Permalink }}.md))
+{{ end -}}
+{{ end }}
+## Developer Resources
+
+- [API Reference](https://reference.groupdocs.com/)
+- [Code Samples](https://groupdocs.github.io/)
+- [Free Support Forum](https://forum.groupdocs.com/)
+- [Paid Support Helpdesk](https://helpdesk.groupdocs.com/)
+- [Free Consulting](https://forum.groupdocs.com/c/free-consulting/37)
+- [Online Apps & Demos](https://products.groupdocs.app/)
+
+## Optional
+
+- All documentation pages are available in Markdown format at `{page-path}.md` (e.g. `/viewer/net/` → `/viewer/net.md`).
+- The [product sitemap]({{ "product-sitemap.xml" | absURL }}) lists all available pages.

@@ -32,7 +32,7 @@ pluralizeListTitles = false
         style               = "github"
 
 [outputs]
-    home                    = [ "HTML", "SITEMAP", "JSON", "MD"]
+    home                    = [ "HTML", "SITEMAP", "JSON", "MD", "LLMSTXT"]
     section                 = [ "HTML", "MD" ]
     page                    = [ "HTML", "MD" ]
 
@@ -46,6 +46,12 @@ pluralizeListTitles = false
 
 [mediaTypes."text/markdown"]
     suffixes                = ["md"]
+
+[outputFormats.LLMSTXT]
+    mediaType               = "text/plain"
+    baseName                = "llms"
+    isPlainText             = true
+    notAlternative          = true
 
 [outputFormats.MD]
     mediaType               = "text/markdown"

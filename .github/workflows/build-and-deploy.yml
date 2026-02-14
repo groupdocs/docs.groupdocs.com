@@ -201,6 +201,10 @@ jobs:
         if: ${{ !inputs.all_products }}
         run: rm -f ./public/index.json
 
+      - name: Remove llms.txt (incomplete on partial builds)
+        if: ${{ !inputs.all_products }}
+        run: rm -f ./public/llms.txt
+
       - name: Deploy artifacts
         uses: burnett01/rsync-deployments@7.0.1
         with:

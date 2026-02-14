@@ -1,0 +1,104 @@
+# Build llms.txt from all product documentation repositories
+name: publish-llms-txt
+
+# This workflow can be triggered independently
+on: workflow_dispatch
+
+jobs:
+
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Hugo
+        run: |
+          curl -LO https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_extended_0.101.0_Linux-64bit.deb
+          sudo dpkg -i hugo_extended_0.101.0_Linux-64bit.deb
+
+      - name: Download documentation repositories
+        run: |
+          # Each entry is "product_key:ProductName"
+          # Repo URL pattern: https://github.com/groupdocs-{key}/GroupDocs.{Name}-Docs
+          PRODUCTS="
+            annotation:Annotation
+            assembly:Assembly
+            classification:Classification
+            comparison:Comparison
+            conversion:Conversion
+            editor:Editor
+            markdown:Markdown
+            merger:Merger
+            metadata:Metadata
+            parser:Parser
+            redaction:Redaction
+            search:Search
+            signature:Signature
+            total:Total
+            viewer:Viewer
+            watermark:Watermark
+          "
+
+          for entry in $PRODUCTS; do
+            product="${entry%%:*}"
+            product_name="${entry##*:}"
+            repo_url="https://github.com/groupdocs-${product}/GroupDocs.${product_name}-Docs.git"
+
+            echo "::group::Downloading ${product} documentation"
+            echo "Repository: groupdocs-${product}/GroupDocs.${product_name}-Docs"
+
+            git clone --depth 1 "${repo_url}" "temp-${product}" 2>&1 || {
+              echo "::warning::Failed to clone GroupDocs.${product_name}-Docs"
+              echo "::endgroup::"
+              continue
+            }
+
+            # Create content directory for this product
+            mkdir -p "content/${product}"
+
+            # Copy product family index page
+            if [ -f "temp-${product}/_index.md" ]; then
+              cp "temp-${product}/_index.md" "content/${product}/"
+              echo "Copied _index.md"
+            fi
+
+            # Copy platform-specific documentation folders
+            for platform in net java nodejs-java python-net; do
+              if [ -d "temp-${product}/${platform}" ]; then
+                cp -r "temp-${product}/${platform}" "content/${product}/"
+                echo "Copied ${platform}/ folder"
+              fi
+            done
+
+            # Cleanup cloned repo
+            rm -rf "temp-${product}"
+            echo "::endgroup::"
+          done
+
+          echo ""
+          echo "=== Content structure ==="
+          ls -la content/
+
+      - name: Build site
+        run: |
+          hugo
+
+      - name: Verify llms.txt
+        run: |
+          if [ ! -f "./public/llms.txt" ]; then
+            echo "::error::llms.txt was not generated"
+            exit 1
+          fi
+          echo "llms.txt size: $(wc -c < ./public/llms.txt) bytes"
+          echo "--- llms.txt content ---"
+          cat ./public/llms.txt
+
+      - name: Deploy llms.txt
+        uses: nogsantos/scp-deploy@master
+        with:
+          src: ./public/llms.txt
+          host: ${{ secrets.DOCS_SSH_HOST }}
+          remote: ${{ secrets.DOCS_SSH_DIR }}
+          user: ${{ secrets.DOCS_SSH_USER }}
+          key: ${{ secrets.DOCS_SSH_KEY }}
