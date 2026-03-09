@@ -10,7 +10,7 @@ on:
         options:
           - prod
           - qa
-        default: 'prod'
+        default: 'qa'
       home:
         description: 'Home (this repository)'
         type: boolean

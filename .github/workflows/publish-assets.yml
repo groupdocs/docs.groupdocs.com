@@ -18,7 +18,7 @@ on:
         options:
           - prod
           - qa
-        default: 'prod'
+        default: 'qa'
 
 jobs:
 
