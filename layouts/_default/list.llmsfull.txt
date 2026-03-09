@@ -1,0 +1,14 @@
+{{- /* llms-full.txt: complete section documentation in one file */ -}}
+# {{ .Title }} — Complete Documentation
+{{ with .Description }}
+> {{ . }}
+{{ end }}
+{{ range .RegularPagesRecursive -}}
+---
+
+## {{ .Title }}
+
+Path: {{ .RelPermalink }}
+
+{{ .RawContent }}
+{{ end -}}

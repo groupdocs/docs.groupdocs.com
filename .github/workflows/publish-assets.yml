@@ -1,4 +1,4 @@
-# Build and deploy index.json and/or llms.txt from all product documentation
+# Build and deploy index.json, llms.txt, and/or llms-full.txt from all product documentation
 name: publish-assets
 
 on:
@@ -8,10 +8,11 @@ on:
         description: 'Asset to publish'
         type: choice
         options:
-          - both
+          - all
           - index.json
           - llms.txt
-        default: 'both'
+          - llms-full.txt
+        default: 'all'
       environment:
         description: 'Target environment'
         type: choice
@@ -100,7 +101,7 @@ jobs:
         run: hugo
 
       - name: Verify index.json
-        if: ${{ inputs.target == 'index.json' || inputs.target == 'both' }}
+        if: ${{ inputs.target == 'index.json' || inputs.target == 'all' }}
         run: |
           if [ ! -f "./public/index.json" ]; then
             echo "::error::index.json was not generated"
@@ -110,7 +111,7 @@ jobs:
           echo "Number of entries: $(grep -c '"id"' ./public/index.json || echo 0)"
 
       - name: Verify llms.txt
-        if: ${{ inputs.target == 'llms.txt' || inputs.target == 'both' }}
+        if: ${{ inputs.target == 'llms.txt' || inputs.target == 'all' }}
         run: |
           if [ ! -f "./public/llms.txt" ]; then
             echo "::error::llms.txt was not generated"
@@ -119,6 +120,15 @@ jobs:
           echo "llms.txt size: $(wc -c < ./public/llms.txt) bytes"
           echo "--- llms.txt content ---"
           cat ./public/llms.txt
+
+      - name: Verify llms-full.txt
+        if: ${{ inputs.target == 'llms-full.txt' || inputs.target == 'all' }}
+        run: |
+          if [ ! -f "./public/llms-full.txt" ]; then
+            echo "::error::llms-full.txt was not generated"
+            exit 1
+          fi
+          echo "llms-full.txt size: $(wc -c < ./public/llms-full.txt) bytes"
 
       - name: Set deploy target
         id: target
@@ -130,7 +140,7 @@ jobs:
           fi
 
       - name: Deploy index.json
-        if: ${{ inputs.target == 'index.json' || inputs.target == 'both' }}
+        if: ${{ inputs.target == 'index.json' || inputs.target == 'all' }}
         uses: nogsantos/scp-deploy@master
         with:
           src: ./public/index.json
@@ -140,10 +150,20 @@ jobs:
           key: ${{ secrets.DOCS_SSH_KEY }}
 
       - name: Deploy llms.txt
-        if: ${{ inputs.target == 'llms.txt' || inputs.target == 'both' }}
+        if: ${{ inputs.target == 'llms.txt' || inputs.target == 'all' }}
         uses: nogsantos/scp-deploy@master
         with:
           src: ./public/llms.txt
+          host: ${{ secrets.DOCS_SSH_HOST }}
+          remote: ${{ steps.target.outputs.remote_dir }}
+          user: ${{ secrets.DOCS_SSH_USER }}
+          key: ${{ secrets.DOCS_SSH_KEY }}
+
+      - name: Deploy llms-full.txt
+        if: ${{ inputs.target == 'llms-full.txt' || inputs.target == 'all' }}
+        uses: nogsantos/scp-deploy@master
+        with:
+          src: ./public/llms-full.txt
           host: ${{ secrets.DOCS_SSH_HOST }}
           remote: ${{ steps.target.outputs.remote_dir }}
           user: ${{ secrets.DOCS_SSH_USER }}

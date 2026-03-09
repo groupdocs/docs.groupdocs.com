@@ -1,0 +1,14 @@
+{{- /* llms-full.txt: complete site documentation in one file */ -}}
+# {{ .Site.Title }} — Complete Documentation
+
+> {{ .Site.Params.description | default .Description }}
+
+{{ range .Site.RegularPages -}}
+---
+
+## {{ .Title }}
+
+Path: {{ .RelPermalink }}
+
+{{ .RawContent }}
+{{ end -}}

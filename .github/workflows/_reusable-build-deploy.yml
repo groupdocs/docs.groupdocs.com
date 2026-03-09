@@ -201,9 +201,9 @@ jobs:
         if: ${{ !inputs.all_products }}
         run: rm -f ./public/index.json
 
-      - name: Remove llms.txt (incomplete on partial builds)
+      - name: Remove llms.txt and llms-full.txt (incomplete on partial builds)
         if: ${{ !inputs.all_products }}
-        run: rm -f ./public/llms.txt
+        run: rm -f ./public/llms.txt ./public/llms-full.txt
 
       - name: Setup SSH key
         run: |
