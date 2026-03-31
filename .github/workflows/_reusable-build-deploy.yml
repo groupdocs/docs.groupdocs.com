@@ -220,7 +220,8 @@ jobs:
 
           if [[ "${{ inputs.all_products }}" == "true" ]]; then
             # Full build: sync everything, remove stale files
-            rsync $RSYNC_OPTS --delete -e "ssh $SSH_OPTS" public/ "$REMOTE"
+            # Exclude sitemaps/ — per-product sitemaps are deployed by product repos
+            rsync $RSYNC_OPTS --delete --exclude='sitemaps/' -e "ssh $SSH_OPTS" public/ "$REMOTE"
           else
             # Partial build: update root-level files without deleting anything
             rsync $RSYNC_OPTS -e "ssh $SSH_OPTS" public/ "$REMOTE"
