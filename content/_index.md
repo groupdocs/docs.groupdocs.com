@@ -204,10 +204,13 @@ Here you’ll find developer documentation for every GroupDocs on-premise produc
 </div>
 
 <style>
-.gdoc-ai-section { margin-top: -6rem; }
+.gdoc-ai-section {
+    margin-top: -6rem;
+    margin-bottom: 4rem;
+}
 .gdoc-ai-section h2.gdoc-list-title { margin-bottom: 1.5rem; }
 .gdoc-ai-section .gdoc-list-descr { margin-bottom: 3rem; }
-.gdoc-ai-section .gdoc-list-apps { margin-bottom: 3rem; }
+.gdoc-ai-section .gdoc-list-apps { margin-bottom: 6rem; }
 .gdoc-ai-section .gdoc-list-app { margin-bottom: 0; }
 .gdoc-ai-section .gdoc-list-app__descr { min-height: auto; }
 </style>
