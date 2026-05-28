@@ -203,6 +203,45 @@ Here you’ll find developer documentation for every GroupDocs on-premise produc
 
 </div>
 
+<style>
+.gdoc-ai-section { margin-top: -6rem; }
+.gdoc-ai-section h2.gdoc-list-title { margin-bottom: 1.5rem; }
+.gdoc-ai-section .gdoc-list-descr { margin-bottom: 3rem; }
+.gdoc-ai-section .gdoc-list-apps { margin-bottom: 3rem; }
+.gdoc-ai-section .gdoc-list-app { margin-bottom: 0; }
+.gdoc-ai-section .gdoc-list-app__descr { min-height: auto; }
+</style>
+
+<div class="gdoc-ai-section">
+
+<h2 class="gdoc-list-title">Agents and LLMs</h2>
+
+<div class="gdoc-list-descr">GroupDocs products are built to plug straight into AI agents, LLMs, and automated document pipelines.</div>
+
+<div class="gdoc-list-apps">
+
+<div class="gdoc-list-app">
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#api"></use></svg>
+    <a class="gdoc-list-app__link" rel="nofollow" href="/mcp">MCP Server</a>
+    <div class="gdoc-list-app__descr">Let your AI assistant query GroupDocs documentation on demand through the <a href="/mcp">Model Context Protocol</a> — fewer tokens, more accurate answers.</div>
+</div>
+
+<div class="gdoc-list-app">
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#code-example"></use></svg>
+    <a class="gdoc-list-app__link">AGENTS.md</a>
+    <div class="gdoc-list-app__descr">Every GroupDocs Python package ships an AGENTS.md file, so AI coding assistants like Claude, Cursor, and Copilot discover the API automatically.</div>
+</div>
+
+<div class="gdoc-list-app">
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg>
+    <a class="gdoc-list-app__link" rel="nofollow" href="/llms-full.txt">Machine-Readable Docs</a>
+    <div class="gdoc-list-app__descr">Feed an LLM the whole documentation set as <a href="/llms.txt">llms.txt</a> or <a href="/llms-full.txt">llms-full.txt</a>, available site-wide and per product.</div>
+</div>
+
+</div>
+
+</div>
+
 <h2 class="gdoc-list-title">Developer Resources</h2>
 
 <div class="gdoc-resources">
