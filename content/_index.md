@@ -123,6 +123,8 @@ Here you’ll find developer documentation for every GroupDocs on-premise produc
     <div class="gdoc-list-app__buttons">
         <a href="/merger/net" class="gdoc-list-app__button gdoc-list-app__button--net">.NET</a>
         <a href="/merger/java" class="gdoc-list-app__button gdoc-list-app__button--java">Java</a>
+        <a href="/merger/nodejs-java" class="gdoc-list-app__button gdoc-list-app__button--nodejs">Node.js</a>
+        <a href="/merger/python-net" class="gdoc-list-app__button gdoc-list-app__button--python">Python</a>
     </div>
 </div>
 
