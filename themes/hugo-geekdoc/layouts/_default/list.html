@@ -8,14 +8,20 @@
   {{- $fullWidthClass = "gdoc-markdown__full-width" }}
 {{- end }}
 
+{{/* Render the "On this page" TOC for content pages that opt in (toc) and have headings.
+     Section index pages still keep their child-page list below. */}}
+{{- $tocEnabled := or (and (.Site.Params.toc) (ne .Site.Params.toc false)) (and (.Params.toc) (ne .Params.toc false)) }}
+{{- $hasToc := and $tocEnabled .Page.TableOfContents }}
+
 {{ if $navEnabled }}
   {{ partial "page-header" . }}
 {{ else }}
   <div class="gdoc-list-header">
   {{ partial "page-header" . }}
-  </div> 
+  </div>
 {{ end }}
 
+{{ if $hasToc }}<div class="gdoc-content-cols">{{ end }}
   <article
     class="gdoc-markdown gdoc-markdown__align--{{ default "left" (.Page.Params.GeekdocAlign | lower) }} {{$fullWidthClass}}"
   >
@@ -29,9 +35,12 @@
         </a>
       {{ end }}
     </h1>
-    
+
+    {{ if $hasToc }}{{ partial "toc-mobile" . }}{{ end }}
     {{ partial "utils/content" . }}
     {{ partial "children" . }}
     {{ partial "feedback-form" . }}
   </article>
+  {{ if $hasToc }}{{ partial "toc" . }}{{ end }}
+{{ if $hasToc }}</div>{{ end }}
 {{ end }}
