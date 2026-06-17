@@ -3,4 +3,4 @@
 {{ with .Description }}
 {{ . }}
 {{ end }}
-{{ .RawContent }}
+{{ partial "md/abs-content.txt" . }}

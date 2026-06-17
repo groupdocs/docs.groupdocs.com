@@ -1,0 +1,13 @@
+{{- /* abs-content: return .RawContent with internal root-relative links made absolute.
+       Page links (trailing slash) -> absolute .md sibling; asset links and raw-HTML
+       src/href attributes -> absolute URL (no .md). External / anchor / non-root-relative
+       links are left untouched. Single-language site, so BaseURL is sufficient. */ -}}
+{{- $base := strings.TrimRight "/" .Site.BaseURL -}}
+{{- $c := .RawContent -}}
+{{- /* 1. markdown PAGE links ](/path/) -> ](BASE/path.md) */ -}}
+{{- $c = replaceRE `\]\((/[^)]*?)/\)` (printf "](%s${1}.md)" $base) $c -}}
+{{- /* 2. remaining markdown root-relative links (assets) ](/...) -> ](BASE/...) */ -}}
+{{- $c = replaceRE `\]\(/` (printf "](%s/" $base) $c -}}
+{{- /* 3. raw-HTML attributes src/href="/..." -> "BASE/..." (covers xlink:href too) */ -}}
+{{- $c = replaceRE `(src|href)="/` (printf `${1}="%s/` $base) $c -}}
+{{- $c | safeHTML -}}
