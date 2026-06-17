@@ -2,6 +2,13 @@
 name: publish-site
 
 on:
+  # Auto-publish the home page to QA whenever content/_index.md is committed to master.
+  # This runs a "home only" build (no product docs) and deploys to the QA environment.
+  push:
+    branches:
+      - master
+    paths:
+      - 'content/_index.md'
   workflow_dispatch:
     inputs:
       environment:
@@ -88,26 +95,28 @@ jobs:
   publish:
     uses: ./.github/workflows/_reusable-build-deploy.yml
     with:
-      base_url:        ${{ inputs.environment == 'qa' && 'https://docs-qa.groupdocs.com/' || '' }}
-      all_products:    ${{ inputs.all_products }}
-      annotation:      ${{ inputs.annotation }}
-      assembly:        ${{ inputs.assembly }}
-      classification:  ${{ inputs.classification }}
-      comparison:      ${{ inputs.comparison }}
-      conversion:      ${{ inputs.conversion }}
-      editor:          ${{ inputs.editor }}
-      markdown:        ${{ inputs.markdown }}
-      merger:          ${{ inputs.merger }}
-      metadata:        ${{ inputs.metadata }}
-      parser:          ${{ inputs.parser }}
-      redaction:       ${{ inputs.redaction }}
-      search:          ${{ inputs.search }}
-      signature:       ${{ inputs.signature }}
-      total:           ${{ inputs.total }}
-      viewer:          ${{ inputs.viewer }}
-      watermark:       ${{ inputs.watermark }}
+      # QA for push events and manual qa runs; prod (config default base URL) only for manual prod runs.
+      base_url:        ${{ (github.event_name == 'push' || inputs.environment == 'qa') && 'https://docs-qa.groupdocs.com/' || '' }}
+      # Push events publish home only, so every product flag is forced false; manual runs honor their inputs.
+      all_products:    ${{ github.event_name == 'workflow_dispatch' && inputs.all_products   || false }}
+      annotation:      ${{ github.event_name == 'workflow_dispatch' && inputs.annotation     || false }}
+      assembly:        ${{ github.event_name == 'workflow_dispatch' && inputs.assembly       || false }}
+      classification:  ${{ github.event_name == 'workflow_dispatch' && inputs.classification || false }}
+      comparison:      ${{ github.event_name == 'workflow_dispatch' && inputs.comparison     || false }}
+      conversion:      ${{ github.event_name == 'workflow_dispatch' && inputs.conversion     || false }}
+      editor:          ${{ github.event_name == 'workflow_dispatch' && inputs.editor         || false }}
+      markdown:        ${{ github.event_name == 'workflow_dispatch' && inputs.markdown       || false }}
+      merger:          ${{ github.event_name == 'workflow_dispatch' && inputs.merger         || false }}
+      metadata:        ${{ github.event_name == 'workflow_dispatch' && inputs.metadata       || false }}
+      parser:          ${{ github.event_name == 'workflow_dispatch' && inputs.parser         || false }}
+      redaction:       ${{ github.event_name == 'workflow_dispatch' && inputs.redaction      || false }}
+      search:          ${{ github.event_name == 'workflow_dispatch' && inputs.search         || false }}
+      signature:       ${{ github.event_name == 'workflow_dispatch' && inputs.signature      || false }}
+      total:           ${{ github.event_name == 'workflow_dispatch' && inputs.total          || false }}
+      viewer:          ${{ github.event_name == 'workflow_dispatch' && inputs.viewer         || false }}
+      watermark:       ${{ github.event_name == 'workflow_dispatch' && inputs.watermark      || false }}
     secrets:
       DOCS_SSH_HOST:   ${{ secrets.DOCS_SSH_HOST }}
-      DEPLOY_SSH_DIR:  ${{ inputs.environment == 'qa' && secrets.DOCS_QA_SSH_DIR || secrets.DOCS_SSH_DIR }}
+      DEPLOY_SSH_DIR:  ${{ (github.event_name == 'push' || inputs.environment == 'qa') && secrets.DOCS_QA_SSH_DIR || secrets.DOCS_SSH_DIR }}
       DOCS_SSH_USER:   ${{ secrets.DOCS_SSH_USER }}
       DOCS_SSH_KEY:    ${{ secrets.DOCS_SSH_KEY }}
