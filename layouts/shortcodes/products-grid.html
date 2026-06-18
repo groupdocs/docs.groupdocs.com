@@ -1,0 +1,20 @@
+{{- /* products-grid: render the home page product cards from data/products.toml.
+       Single source of truth — add a product by appending a [[product]] block there.
+       Platform key -> {button label, css suffix}. */ -}}
+{{- $labels  := dict "net" ".NET" "java" "Java" "nodejs-java" "Node.js" "python-net" "Python" -}}
+{{- $classes := dict "net" "net"  "java" "java" "nodejs-java" "nodejs"  "python-net" "python" -}}
+<div class="gdoc-list-apps">
+{{ range sort .Site.Data.products.product "weight" }}
+<div class="gdoc-list-app">
+    <svg class="gdoc-list-app__icon"><use xlink:href="/img/groupdocs-stack.svg#{{ .icon }}"></use></svg>
+    <a class="gdoc-list-app__link" rel="nofollow" href="{{ .url }}">{{ .title }}</a>
+    <div class="gdoc-list-app__descr">{{ .description }}</div>
+    <div class="gdoc-list-app__buttons">
+    {{- $url := .url -}}
+    {{- range .platforms }}
+        <a href="{{ $url }}/{{ . }}" class="gdoc-list-app__button gdoc-list-app__button--{{ index $classes . }}">{{ index $labels . }}</a>
+    {{- end }}
+    </div>
+</div>
+{{ end }}
+</div>

@@ -1,0 +1,157 @@
+# Home page product grid — single source of truth.
+# Rendered by layouts/shortcodes/products-grid.html via {{< products-grid >}} in content/_index.md.
+# To add a product: append a [[product]] block (and ensure /img/groupdocs-stack.svg has a matching
+# <symbol id="{icon}">). Order on the page follows `weight` ascending.
+#
+# Fields:
+#   key         product family key (matches the content section / sprite icon, informational)
+#   title       card heading
+#   url         family landing page (links to {url}/{platform} for each platform button)
+#   icon        <symbol id> in /img/groupdocs-stack.svg (note: search uses "search-app")
+#   weight      display order (ascending)
+#   description card blurb
+#   platforms   subset/order of: net, java, nodejs-java, python-net
+
+[[product]]
+key         = "total"
+title       = "GroupDocs.Total Product Family"
+url         = "/total"
+icon        = "total"
+weight      = 1
+description = "Manipulate documents from within your own desktop solutions and web apps without requiring any other commercial products"
+platforms   = ["net", "java", "python-net"]
+
+[[product]]
+key         = "conversion"
+title       = "GroupDocs.Conversion Product Family"
+url         = "/conversion"
+icon        = "conversion"
+weight      = 2
+description = "Huge conversion API that supports over 7400 document conversion pairs. With innumerous conversion options you will get hight quality result fast"
+platforms   = ["net", "java", "nodejs-java", "python-net"]
+
+[[product]]
+key         = "viewer"
+title       = "GroupDocs.Viewer Product Family"
+url         = "/viewer"
+icon        = "viewer"
+weight      = 3
+description = "Excellent file viewer component that empowers your C#, ASP.NET, and other .NET applications with document viewing features across more than 170+ supported file formats"
+platforms   = ["net", "java", "nodejs-java", "python-net"]
+
+[[product]]
+key         = "markdown"
+title       = "GroupDocs.Markdown Product Family"
+url         = "/markdown"
+icon        = "markdown"
+weight      = 4
+description = "GroupDocs.Markdown is an SDK for exporting PDF, Word, Excel, and other document types to Markdown, making your documents gen AI ready."
+platforms   = ["net", "python-net"]
+
+[[product]]
+key         = "comparison"
+title       = "GroupDocs.Comparison Product Family"
+url         = "/comparison"
+icon        = "comparison"
+weight      = 5
+description = "Document comparison API that detects document text, styling and formating changes quickly and with a high accuracy"
+platforms   = ["net", "java", "nodejs-java", "python-net"]
+
+[[product]]
+key         = "watermark"
+title       = "GroupDocs.Watermark Product Family"
+url         = "/watermark"
+icon        = "watermark"
+weight      = 6
+description = "Watermark manipulation APIs for creating, removing, smart searching, edit locking, and performing other powerful operations across all popular platforms and supported file formats"
+platforms   = ["net", "java", "nodejs-java", "python-net"]
+
+[[product]]
+key         = "metadata"
+title       = "GroupDocs.Metadata Product Family"
+url         = "/metadata"
+icon        = "metadata"
+weight      = 7
+description = "Native .NET API to dynamically read, write, edit and remove meta information from Microsoft Office, PDF, Multimedia, images and various other file formats"
+platforms   = ["net", "java", "nodejs-java", "python-net"]
+
+[[product]]
+key         = "parser"
+title       = "GroupDocs.Parser Product Family"
+url         = "/parser"
+icon        = "parser"
+weight      = 8
+description = "Parse, extract images, raw & formatted text with metadata and perform a lot of operations with it using APIs which work on all popular platforms and supported file formats"
+platforms   = ["net", "java", "python-net"]
+
+[[product]]
+key         = "merger"
+title       = "GroupDocs.Merger Product Family"
+url         = "/merger"
+icon        = "merger"
+weight      = 9
+description = "Powerful API to merge PDF, Word, Excel, PowerPoint documents and many other formats, move, reorder or remove document pages in different ways and with flexible options"
+platforms   = ["net", "java", "nodejs-java", "python-net"]
+
+[[product]]
+key         = "assembly"
+title       = "GroupDocs.Assembly Product Family"
+url         = "/assembly"
+icon        = "assembly"
+weight      = 10
+description = "Automate your document generation process with cross platform automation assembly APIs to boost productivity and accuracy"
+platforms   = ["net", "java", "python-net"]
+
+[[product]]
+key         = "redaction"
+title       = "GroupDocs.Redaction Product Family"
+url         = "/redaction"
+icon        = "redaction"
+weight      = 11
+description = "Build cross-platform applications that perform operations, such as, redacting, hiding, removing content and metadata from documents, presentations, worksheets and PDF files"
+platforms   = ["net", "java"]
+
+[[product]]
+key         = "signature"
+title       = "GroupDocs.Signature Product Family"
+url         = "/signature"
+icon        = "signature"
+weight      = 12
+description = "Outstanding electronic signature API that allows you to design your documents with digital certificate, image, text and hand-written signatures, QR-Code and many more"
+platforms   = ["net", "java"]
+
+[[product]]
+key         = "search"
+title       = "GroupDocs.Search Product Family"
+url         = "/search"
+icon        = "search-app"
+weight      = 13
+description = "Transform your document search process with this API for advance full text search capability into any existing or new cross platform application"
+platforms   = ["net", "java"]
+
+[[product]]
+key         = "editor"
+title       = "GroupDocs.Editor Product Family"
+url         = "/editor"
+icon        = "editor"
+weight      = 14
+description = "Modern document editor API that allows you to edit various documents inside your applications without additional software installed"
+platforms   = ["net", "java", "nodejs-java", "python-net"]
+
+[[product]]
+key         = "annotation"
+title       = "GroupDocs.Annotation Product Family"
+url         = "/annotation"
+icon        = "annotation"
+weight      = 15
+description = "Powerful document annotator component that helps you to boost your applications with document annotation, commenting and collaboration features."
+platforms   = ["net", "java", "python-net"]
+
+[[product]]
+key         = "classification"
+title       = "GroupDocs.Classification Product Family"
+url         = "/classification"
+icon        = "classification"
+weight      = 16
+description = "Build custom applications to perform documents and text categorization operations using different taxonomies within your applications"
+platforms   = ["net"]
