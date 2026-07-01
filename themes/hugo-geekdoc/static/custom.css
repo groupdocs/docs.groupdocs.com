@@ -113,3 +113,137 @@ a.gdoc-two-columns__column__link {
     padding-top: 5rem;
 }
 
+/* ============================ Docs Hub home (gd-home / gd-ai) ============================
+   Homepage redesign: recreates the Claude Design "Docs Hub" mockup with the site's own design
+   tokens, following the reference.groupdocs.com gd-home pattern. Markup in layouts/index.html;
+   product data in data/products.toml. Everything is namespaced (gd-home__*, gd-ai__*, --gd-*),
+   so no rule here touches product pages. The `.gd-home ` prefix on headings out-specifies the
+   theme's global `h1..h6{display:flex}` and `.gdoc-page h1/h2` rules. Chrome variables
+   (--body-font-color, --border-color, --link-color, --info-bg-color, --body-background) come
+   from color-groupdocs.css and already adapt to the theme. */
+:root, :root[color-theme=light] {
+  --gd-surface: #ffffff;                        /* cards, search box */
+  --gd-surface-2: #f6f8fb;                      /* pills, chips, clear button */
+  --gd-accent: var(--link-color, #558fff);      /* icon fills, hover borders */
+  --gd-accent-strong: #0054FA;                  /* Search button */
+  --gd-accent-strong-hover: #003fbd;
+  --gd-accent-soft: #eef3fe;                    /* icon tiles */
+  --gd-muted: #94a3b8;                          /* counter, faint text, icons */
+  --gd-muted-2: #64748b;                        /* descriptions, leads */
+  --gd-muted-3: #475569;                        /* pill labels */
+  --gd-hero: linear-gradient(180deg, #eef3fc 0%, #f6f9ff 55%, #ffffff 100%);
+  /* "Agents and LLMs" panel — intentionally dark in BOTH themes (navy in light, charcoal in dark) */
+  --gd-ai-bg: #0b1220; --gd-ai-border: #1f2a3f; --gd-ai-card: #131c2e; --gd-ai-chip: #1a2740; --gd-ai-chip-fg: #bcd0ff;
+}
+:root[color-theme=dark] {
+  --gd-surface: #282828;
+  --gd-surface-2: #3a3a3a;
+  --gd-accent-strong: #3c77ed;
+  --gd-accent-strong-hover: #2f63cc;
+  --gd-accent-soft: rgba(85, 143, 255, .14);
+  --gd-muted: rgba(255, 255, 255, .5);
+  --gd-muted-2: #ced3d8;
+  --gd-muted-3: #ced3d8;
+  --gd-hero: linear-gradient(180deg, #2d2d2d 0%, #313131 55%, var(--body-background, #333) 100%);
+  --gd-ai-bg: #282828; --gd-ai-border: rgba(255, 255, 255, .09); --gd-ai-card: #333333; --gd-ai-chip: #3a3a3a; --gd-ai-chip-fg: #6c9bff;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([color-theme=light]) {
+    --gd-surface: #282828;
+    --gd-surface-2: #3a3a3a;
+    --gd-accent-strong: #3c77ed;
+    --gd-accent-strong-hover: #2f63cc;
+    --gd-accent-soft: rgba(85, 143, 255, .14);
+    --gd-muted: rgba(255, 255, 255, .5);
+    --gd-muted-2: #ced3d8;
+    --gd-muted-3: #ced3d8;
+    --gd-hero: linear-gradient(180deg, #2d2d2d 0%, #313131 55%, var(--body-background, #333) 100%);
+    --gd-ai-bg: #282828; --gd-ai-border: rgba(255, 255, 255, .09); --gd-ai-card: #333333; --gd-ai-chip: #3a3a3a; --gd-ai-chip-fg: #6c9bff;
+  }
+}
+
+.gd-home { max-width: 75rem; margin: 0 auto; padding-bottom: 3rem; }
+
+/* Hero */
+.gd-home__hero { text-align: center; max-width: 47.5rem; margin: 0 auto; padding: 2.5rem 0 1.5rem; }
+.gd-home__eyebrow { display: inline-flex; align-items: center; gap: .5rem; font-family: "Roboto Mono", monospace; font-size: .75rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--gd-accent); margin-bottom: .9rem; }
+.gd-home__eyebrow-dot { width: .5rem; height: .5rem; border-radius: 50%; background: var(--gd-accent); flex: none; }
+.gd-home .gd-home__title { display: block; margin: 0 0 1rem; font-size: 2.75rem; line-height: 1.08; font-weight: 800; letter-spacing: -.03em; text-align: center; }
+.gd-home__lead { color: var(--gd-muted-2); font-size: 1.1rem; line-height: 1.6; margin: 0 auto 1.75rem; max-width: 38rem; }
+
+/* Hero search (live-filters the product grid below) */
+.gd-home__searchbar { display: flex; align-items: center; gap: .5rem; max-width: 38rem; margin: 0 auto; background: var(--gd-surface); border: 1.5px solid var(--border-color); border-radius: 13px; padding: .4rem .4rem .4rem 1rem; box-shadow: 0 6px 22px rgba(15, 23, 39, .08); transition: border-color .15s ease, box-shadow .15s ease; }
+.gd-home__searchbar:focus-within { border-color: var(--gd-accent); box-shadow: 0 0 0 4px rgba(85, 143, 255, .15); }
+.gd-home__search-icon { color: var(--gd-muted); flex: none; }
+.gd-home__input { flex: 1; min-width: 0; border: none; outline: none; background: transparent; font-family: inherit; font-size: 1rem; color: var(--body-font-color, #0f1727); padding: .45rem 0; }
+.gd-home__clear { flex: none; display: flex; align-items: center; justify-content: center; width: 1.9rem; height: 1.9rem; border: none; border-radius: 8px; background: var(--gd-surface-2); color: var(--gd-muted-2); cursor: pointer; }
+.gd-home__clear[hidden] { display: none; } /* display:flex above would otherwise defeat the hidden attribute */
+.gd-home__clear:hover { color: var(--body-font-color, #0f1727); }
+.gd-home__search-btn { flex: none; border: none; cursor: pointer; background: var(--gd-accent-strong); color: #fff; font-family: inherit; font-size: .95rem; font-weight: 600; padding: .6rem 1.3rem; border-radius: 9px; transition: background-color .15s ease; }
+.gd-home__search-btn:hover { background: var(--gd-accent-strong-hover); }
+
+/* Browse head */
+.gd-home__browse { margin-top: 3rem; }
+.gd-home__browse-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.gd-home .gd-home__h2 { display: block; font-size: 1.4rem; font-weight: 700; letter-spacing: -.02em; margin: 0; line-height: 1.3; }
+.gd-home__count { font-family: "Roboto Mono", monospace; font-size: .8rem; color: var(--gd-muted); flex: none; }
+
+/* Product grid + cards. The card is a div (no nested links): the icon+name row is the family
+   link, stretched over the whole card via ::after; the pills sit above it (position+z). */
+.gd-home__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(22.5rem, 1fr)); gap: .9rem; }
+.gd-home__card { position: relative; display: flex; flex-direction: column; gap: .7rem; padding: 1.15rem 1.25rem; border: 1px solid var(--border-color); border-radius: 15px; background: var(--gd-surface); transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }
+.gd-home__card:hover { border-color: var(--gd-accent); box-shadow: 0 8px 22px rgba(85, 143, 255, .12); transform: translateY(-2px); }
+.gd-home__card-link { display: flex; align-items: center; gap: .8rem; text-decoration: none; }
+.gd-home__card-link::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+.gd-home__icon-box { width: 2.75rem; height: 2.75rem; flex: none; display: flex; align-items: center; justify-content: center; border-radius: 12px; background: var(--gd-accent-soft); }
+.gd-home__icon { width: 1.5rem; height: 1.5rem; fill: var(--gd-accent); }
+.gd-home__card-name { flex: 1; min-width: 0; font-size: 1.05rem; letter-spacing: -.01em; color: var(--body-font-color, #0f1727); font-weight: 700; }
+.gd-home__brand { color: var(--gd-muted); font-weight: 500; }
+.gd-home__card-desc { font-size: .88rem; line-height: 1.5; color: var(--gd-muted-2); min-height: 2.6rem; margin: 0; }
+.gd-home__pills { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: .4rem; border-top: 1px solid var(--border-color); padding-top: .8rem; margin-top: auto; } /* margin-top:auto pins pills to the card bottom across an equal-height grid row */
+.gd-home__pill { display: inline-flex; align-items: center; gap: .4rem; font-size: .75rem; font-weight: 600; color: var(--gd-muted-3); background: var(--gd-surface-2); border: 1px solid var(--border-color); border-radius: 7px; padding: .25rem .6rem; text-decoration: none; transition: border-color .15s ease, color .15s ease; }
+.gd-home__pill:hover { border-color: var(--gd-accent); color: var(--gd-accent); }
+.gd-home__pill-dot { width: .45rem; height: .45rem; border-radius: 50%; flex: none; }
+
+/* Empty state (filter found nothing) */
+.gd-home__empty { grid-column: 1 / -1; text-align: center; border: 1px dashed var(--border-color); border-radius: 15px; padding: 2.5rem 1rem; }
+.gd-home__empty-title { font-size: 1rem; font-weight: 600; color: var(--body-font-color, #0f1727); margin: 0 0 .3rem; }
+.gd-home__empty-hint { font-size: .88rem; color: var(--gd-muted); margin: 0; }
+
+/* "Agents and LLMs" panel — dark in both themes via the --gd-ai-* tokens */
+.gd-ai { margin-top: 3.5rem; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 1.75rem; background: var(--gd-ai-bg); border: 1px solid var(--gd-ai-border); border-radius: 20px; padding: 2.1rem 2.25rem; }
+.gd-ai__intro { max-width: 24rem; }
+.gd-ai__eyebrow { display: inline-flex; align-items: center; gap: .5rem; font-family: "Roboto Mono", monospace; font-size: .75rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: #7aa7ff; margin-bottom: .75rem; }
+.gd-ai__eyebrow-dot { width: .5rem; height: .5rem; border-radius: 50%; background: #3b82f6; flex: none; }
+.gd-ai .gd-ai__title { display: block; color: #fff; font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; line-height: 1.2; margin: 0 0 .6rem; }
+.gd-ai__lead { color: #94a3b8; font-size: .95rem; line-height: 1.6; margin: 0; }
+.gd-ai__cards { flex: 1; min-width: 19rem; display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+.gd-ai__card { display: flex; flex-direction: column; gap: .5rem; background: var(--gd-ai-card); border: 1px solid var(--gd-ai-border); border-radius: 12px; padding: 1rem; text-decoration: none; transition: border-color .15s ease; }
+a.gd-ai__card:hover { border-color: var(--link-color, #558fff); }
+.gd-ai__card--wide { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: .75rem; padding: .85rem 1rem; }
+.gd-ai__chip { align-self: flex-start; flex: none; font-family: "Roboto Mono", monospace; font-size: .8rem; font-weight: 500; color: var(--gd-ai-chip-fg); background: var(--gd-ai-chip); border-radius: 7px; padding: .25rem .6rem; }
+.gd-ai__name { color: #fff; font-size: .95rem; font-weight: 700; }
+.gd-ai__desc { font-size: .82rem; line-height: 1.5; color: #cbd5e1; }
+.gd-ai__desc a { color: #9dc0ff; }
+.gd-ai__desc code { font-family: "Roboto Mono", monospace; color: #fff; background: none; border: 0; padding: 0; }
+
+/* Developer resources */
+.gd-home__res { margin-top: 3.5rem; }
+.gd-home__res .gd-home__h2 { margin-bottom: 1.25rem; }
+.gd-home__res-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: .85rem; }
+.gd-home__res-card { display: flex; align-items: center; gap: .85rem; padding: 1rem 1.2rem; border: 1px solid var(--border-color); border-radius: 12px; background: var(--gd-surface); text-decoration: none; transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }
+.gd-home__res-card:hover { border-color: var(--gd-accent); box-shadow: 0 6px 16px rgba(85, 143, 255, .1); transform: translateY(-2px); }
+.gd-home__res-icon-box { width: 2.6rem; height: 2.6rem; border-radius: 50%; background: var(--info-bg-color, #f1f7ff); display: flex; align-items: center; justify-content: center; flex: none; }
+.gd-home__res-icon { width: 1.25rem; height: 1.25rem; fill: var(--gd-accent); }
+.gd-home__res-label { font-weight: 600; font-size: .95rem; color: var(--body-font-color, #0f1727); }
+
+@media (max-width: 48rem) {
+  .gd-home .gd-home__title { font-size: 1.9rem; }
+  .gd-home__lead { font-size: 1rem; }
+  .gd-ai { padding: 1.4rem; }
+  .gd-ai__cards { grid-template-columns: 1fr; min-width: 0; }
+}
+@media (max-width: 26rem) {
+  .gd-home__grid { grid-template-columns: 1fr; }
+}
+

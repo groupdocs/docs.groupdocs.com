@@ -1,0 +1,148 @@
+{{ define "main" }}
+{{- /* Docs Hub home (gd-home). Recreates the Claude Design "Docs Hub" mockup with the site's
+       own design tokens, following the reference.groupdocs.com gd-home pattern. The hero search
+       live-filters the product grid (no fetch); the grid is driven by data/products.toml. The
+       home sets geekdocNav:false, so baseof renders full-width with the .wrapper-bg band — the
+       page-scoped style below repaints that band with the --gd-hero gradient (home page only;
+       it loads after every stylesheet, so plain source order wins, including over the
+       mobile-groupdocs.css rule that hides the band at small widths). The .md / llms.txt / json
+       outputs come from layouts/index.md, index.llmstxt.txt, index.llmsfull.txt, index.json. */ -}}
+<style>
+  .wrapper-bg {
+    background-image: var(--gd-hero);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 32rem;
+  }
+</style>
+{{- $labels := dict "net" ".NET" "java" "Java" "nodejs-java" "Node.js" "python-net" "Python" -}}
+{{- $dots   := dict "net" "#7c5cff" "java" "#e76f00" "nodejs-java" "#3ea66b" "python-net" "#4b8bd4" -}}
+{{- $products := sort .Site.Data.products.product "weight" -}}
+<article class="gd-home">
+
+  <section class="gd-home__hero">
+    <div class="gd-home__eyebrow"><span class="gd-home__eyebrow-dot"></span>{{ default "Developer documentation" .Params.heroEyebrow }}</div>
+    <h1 class="gd-home__title">{{ default .Title .Params.heroTitle }}</h1>
+    <p class="gd-home__lead">{{ default .Description .Params.heroLead }}</p>
+    <form class="gd-home__searchbar" role="search" autocomplete="off" onsubmit="return false;">
+      <svg class="gd-home__search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+      <input id="gd-home-q" class="gd-home__input" type="text" placeholder="Filter products — try &ldquo;viewer&rdquo; or &ldquo;convert&rdquo;&hellip;" aria-label="Filter product families" aria-controls="gd-home-grid" />
+      <button id="gd-home-clear" class="gd-home__clear" type="button" aria-label="Clear filter" hidden><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+      <button id="gd-home-go" class="gd-home__search-btn" type="button">Search</button>
+    </form>
+  </section>
+
+  <section class="gd-home__browse">
+    <div class="gd-home__browse-head">
+      <h2 class="gd-home__h2">Product families</h2>
+      <span class="gd-home__count" aria-live="polite"><span id="gd-home-count">{{ len $products }}</span> of {{ len $products }}</span>
+    </div>
+    <div class="gd-home__grid" id="gd-home-grid">
+      {{- range $products }}
+      {{- $short := replace .title "GroupDocs." "" | replaceRE " Product Family$" "" }}
+      <div class="gd-home__card" data-search="{{ printf "%s %s %s" $short .title .description | lower }}">
+        <a class="gd-home__card-link" href="{{ .url }}/">
+          <span class="gd-home__icon-box"><svg class="gd-home__icon"><use xlink:href="/img/groupdocs-stack.svg#{{ .icon }}"></use></svg></span>
+          <span class="gd-home__card-name"><span class="gd-home__brand">GroupDocs.</span>{{ $short }}</span>
+        </a>
+        <p class="gd-home__card-desc">{{ .description }}</p>
+        <span class="gd-home__pills">
+          {{- $url := .url }}
+          {{- range .platforms }}
+          <a class="gd-home__pill" href="{{ $url }}/{{ . }}/"><span class="gd-home__pill-dot" style="background:{{ index $dots . }}"></span>{{ index $labels . }}</a>
+          {{- end }}
+        </span>
+      </div>
+      {{- end }}
+      <div class="gd-home__empty" id="gd-home-empty" hidden>
+        <p class="gd-home__empty-title">No products match &ldquo;<span id="gd-home-empty-q"></span>&rdquo;</p>
+        <p class="gd-home__empty-hint">Try &ldquo;viewer&rdquo;, &ldquo;convert&rdquo;, or &ldquo;signature&rdquo;.</p>
+      </div>
+    </div>
+  </section>
+
+  {{/* "Agents and LLMs" panel — dark in BOTH themes (navy in light, charcoal in dark) via the --gd-ai-* tokens. */}}
+  <section class="gd-ai">
+    <div class="gd-ai__intro">
+      <div class="gd-ai__eyebrow"><span class="gd-ai__eyebrow-dot"></span>For AI agents</div>
+      <h2 class="gd-ai__title">Agents and LLMs</h2>
+      <p class="gd-ai__lead">GroupDocs products are built to plug straight into AI agents, LLMs, and automated document pipelines.</p>
+    </div>
+    <div class="gd-ai__cards">
+      <a class="gd-ai__card" href="/mcp" rel="nofollow">
+        <span class="gd-ai__chip">MCP</span>
+        <span class="gd-ai__name">MCP Server</span>
+        <span class="gd-ai__desc">Let your AI assistant query GroupDocs documentation on demand through the Model Context Protocol &mdash; fewer tokens, more accurate answers.</span>
+      </a>
+      <div class="gd-ai__card">
+        <span class="gd-ai__chip">AGENTS.md</span>
+        <span class="gd-ai__name">Agent-ready packages</span>
+        <span class="gd-ai__desc">Every GroupDocs Python package ships an AGENTS.md file, so AI coding assistants like Claude, Cursor, and Copilot discover the API automatically.</span>
+      </div>
+      <div class="gd-ai__card gd-ai__card--wide">
+        <span class="gd-ai__chip">llms-full.txt</span>
+        <span class="gd-ai__desc">Feed an LLM the whole documentation set as <a href="/llms.txt">llms.txt</a> or <a href="/llms-full.txt">llms-full.txt</a>, available site-wide and per product.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="gd-home__res">
+    <h2 class="gd-home__h2">Developer resources</h2>
+    <div class="gd-home__res-cards">
+      {{- $res := slice
+          (dict "url" "https://reference.groupdocs.com/" "icon" "api" "label" "API Reference")
+          (dict "url" "https://groupdocs.github.io/" "icon" "code" "label" "Code Samples")
+          (dict "url" "https://forum.groupdocs.com/c/free-consulting/37" "icon" "consulting" "label" "Free Consulting")
+          (dict "url" "https://forum.groupdocs.com/" "icon" "free-support" "label" "Free Support Forum")
+          (dict "url" "https://helpdesk.groupdocs.com/" "icon" "paid-support" "label" "Paid Support Helpdesk")
+          (dict "url" "https://products.groupdocs.app/" "icon" "demos" "label" "Online Apps") -}}
+      {{- range $res }}
+      <a class="gd-home__res-card" href="{{ .url }}" rel="nofollow" target="_blank">
+        <span class="gd-home__res-icon-box"><svg class="gd-home__res-icon"><use xlink:href="/img/groupdocs-stack.svg#{{ .icon }}"></use></svg></span>
+        <span class="gd-home__res-label">{{ .label }}</span>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+
+</article>
+
+<script>
+/* Live filter — matches the query against each card's data-search (short name + title +
+   description, lowercased), updates the visible count, and toggles the empty state. */
+(function () {
+  var input = document.getElementById("gd-home-q");
+  var clearBtn = document.getElementById("gd-home-clear");
+  var goBtn = document.getElementById("gd-home-go");
+  var grid = document.getElementById("gd-home-grid");
+  var count = document.getElementById("gd-home-count");
+  var empty = document.getElementById("gd-home-empty");
+  var emptyQ = document.getElementById("gd-home-empty-q");
+  if (!input || !grid) return;
+  var cards = grid.querySelectorAll(".gd-home__card");
+
+  function apply() {
+    var q = input.value.trim().toLowerCase();
+    var n = 0;
+    Array.prototype.forEach.call(cards, function (card) {
+      var hit = !q || (card.getAttribute("data-search") || "").indexOf(q) !== -1;
+      card.style.display = hit ? "" : "none";
+      if (hit) n++;
+    });
+    if (count) count.textContent = n;
+    if (empty) {
+      empty.hidden = n !== 0;
+      if (emptyQ) emptyQ.textContent = input.value.trim();
+    }
+    if (clearBtn) clearBtn.hidden = !input.value;
+  }
+
+  input.addEventListener("input", apply);
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") { input.value = ""; apply(); }
+  });
+  if (clearBtn) clearBtn.addEventListener("click", function () { input.value = ""; apply(); input.focus(); });
+  if (goBtn) goBtn.addEventListener("click", function () { apply(); grid.scrollIntoView({ behavior: "smooth", block: "start" }); });
+})();
+</script>
+{{ end }}
