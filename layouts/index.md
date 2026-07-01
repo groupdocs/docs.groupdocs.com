@@ -16,6 +16,7 @@
 
 Machine-readable indexes of the entire documentation, designed for agents and retrieval.
 
+- [MCP server]({{ "mcp" | absURL }}): Query the docs from your AI assistant over the Model Context Protocol.
 - [llms.txt]({{ "llms.txt" | absURL }}): Curated index of every product and platform.
 - [llms-full.txt]({{ "llms-full.txt" | absURL }}): The full documentation in a single file.
 - Markdown: append `.md` to any page URL — e.g. {{ "annotation.md" | absURL }}
