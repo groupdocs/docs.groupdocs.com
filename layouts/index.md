@@ -12,20 +12,19 @@
 - [{{ .title }}]({{ .url | strings.TrimPrefix "/" | absURL | strings.TrimRight "/" }}.md): {{ .description }}
 {{- end }}
 
-## Agents and LLMs
+## For AI agents
 
-GroupDocs products are built to plug straight into AI agents, LLMs, and automated document pipelines.
+Machine-readable indexes of the entire documentation, designed for agents and retrieval.
 
-- [MCP Server]({{ "mcp" | absURL }}): Let your AI assistant query GroupDocs documentation on demand through the Model Context Protocol — fewer tokens, more accurate answers.
-- AGENTS.md: Every GroupDocs Python package ships an AGENTS.md file, so AI coding assistants like Claude, Cursor, and Copilot discover the API automatically.
-- [llms.txt]({{ "llms.txt" | absURL }}) / [llms-full.txt]({{ "llms-full.txt" | absURL }}): The whole documentation set in machine-readable form, available site-wide and per product.
+- [llms.txt]({{ "llms.txt" | absURL }}): Curated index of every product and platform.
+- [llms-full.txt]({{ "llms-full.txt" | absURL }}): The full documentation in a single file.
+- Markdown: append `.md` to any page URL — e.g. {{ "annotation.md" | absURL }}
 
 ## Developer Resources
 
-- [API Reference](https://reference.groupdocs.com/)
-- [Code Samples](https://groupdocs.github.io/)
-- [Free Consulting](https://forum.groupdocs.com/c/free-consulting/37)
-- [Free Support Forum](https://forum.groupdocs.com/)
-- [Paid Support Helpdesk](https://helpdesk.groupdocs.com/)
-- [Online Apps](https://products.groupdocs.app/)
+- [API References](https://reference.groupdocs.com/)
+- [Releases & Downloads](https://releases.groupdocs.com/)
+- [Product Site](https://products.groupdocs.com/)
+- [Blog](https://blog.groupdocs.com/)
+- [Support Forum](https://forum.groupdocs.com/)
 {{- end }}

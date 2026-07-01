@@ -73,27 +73,25 @@
     </div>
   </section>
 
-  {{/* "Agents and LLMs" panel — dark in BOTH themes (navy in light, charcoal in dark) via the --gd-ai-* tokens. */}}
+  {{/* "For AI agents" panel — same block as reference.groupdocs.com; dark in BOTH themes via the --gd-ai-* tokens. */}}
   <section class="gd-ai">
     <div class="gd-ai__intro">
       <div class="gd-ai__eyebrow"><span class="gd-ai__eyebrow-dot"></span>For AI agents</div>
-      <h2 class="gd-ai__title">Agents and LLMs</h2>
-      <p class="gd-ai__lead">GroupDocs products are built to plug straight into AI agents, LLMs, and automated document pipelines.</p>
+      <h2 class="gd-ai__title">Built to be machine-readable</h2>
+      <p class="gd-ai__lead">Machine-readable indexes of the entire documentation, designed for agents and retrieval.</p>
     </div>
     <div class="gd-ai__cards">
-      <a class="gd-ai__card" href="/mcp" rel="nofollow">
-        <span class="gd-ai__chip">MCP</span>
-        <span class="gd-ai__name">MCP Server</span>
-        <span class="gd-ai__desc">Let your AI assistant query GroupDocs documentation on demand through the Model Context Protocol &mdash; fewer tokens, more accurate answers.</span>
+      <a class="gd-ai__card" href="/llms.txt">
+        <span class="gd-ai__chip">/llms.txt</span>
+        <span class="gd-ai__desc">Curated index of every product and platform.</span>
       </a>
-      <div class="gd-ai__card">
-        <span class="gd-ai__chip">AGENTS.md</span>
-        <span class="gd-ai__name">Agent-ready packages</span>
-        <span class="gd-ai__desc">Every GroupDocs Python package ships an AGENTS.md file, so AI coding assistants like Claude, Cursor, and Copilot discover the API automatically.</span>
-      </div>
+      <a class="gd-ai__card" href="/llms-full.txt">
+        <span class="gd-ai__chip">/llms-full.txt</span>
+        <span class="gd-ai__desc">The full documentation in a single file.</span>
+      </a>
       <div class="gd-ai__card gd-ai__card--wide">
-        <span class="gd-ai__chip">llms-full.txt</span>
-        <span class="gd-ai__desc">Feed an LLM the whole documentation set as <a href="/llms.txt">llms.txt</a> or <a href="/llms-full.txt">llms-full.txt</a>, available site-wide and per product.</span>
+        <span class="gd-ai__chip">.md</span>
+        <span class="gd-ai__desc">Append <code>.md</code> to any page URL for Markdown &mdash; e.g. <code>/annotation.md</code></span>
       </div>
     </div>
   </section>
@@ -102,12 +100,11 @@
     <h2 class="gd-home__h2">Developer resources</h2>
     <div class="gd-home__res-cards">
       {{- $res := slice
-          (dict "url" "https://reference.groupdocs.com/" "icon" "api" "label" "API Reference")
-          (dict "url" "https://groupdocs.github.io/" "icon" "code" "label" "Code Samples")
-          (dict "url" "https://forum.groupdocs.com/c/free-consulting/37" "icon" "consulting" "label" "Free Consulting")
-          (dict "url" "https://forum.groupdocs.com/" "icon" "free-support" "label" "Free Support Forum")
-          (dict "url" "https://helpdesk.groupdocs.com/" "icon" "paid-support" "label" "Paid Support Helpdesk")
-          (dict "url" "https://products.groupdocs.app/" "icon" "demos" "label" "Online Apps") -}}
+          (dict "url" "https://reference.groupdocs.com/" "icon" "api" "label" "API References")
+          (dict "url" "https://releases.groupdocs.com/" "icon" "code" "label" "Releases & Downloads")
+          (dict "url" "https://products.groupdocs.com/" "icon" "total" "label" "Product Site")
+          (dict "url" "https://blog.groupdocs.com/" "icon" "editor" "label" "Blog")
+          (dict "url" "https://forum.groupdocs.com/" "icon" "free-support" "label" "Support Forum") -}}
       {{- range $res }}
       <a class="gd-home__res-card" href="{{ .url }}" rel="nofollow" target="_blank">
         <span class="gd-home__res-icon-box"><svg class="gd-home__res-icon"><use xlink:href="/img/groupdocs-stack.svg#{{ .icon }}"></use></svg></span>

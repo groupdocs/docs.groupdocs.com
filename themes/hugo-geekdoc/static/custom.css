@@ -238,7 +238,6 @@ a.gdoc-two-columns__column__link {
 a.gd-ai__card:hover { border-color: var(--link-color, #558fff); }
 .gd-ai__card--wide { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: .75rem; padding: .85rem 1rem; }
 .gd-ai__chip { align-self: flex-start; flex: none; font-family: "Roboto Mono", monospace; font-size: .8rem; font-weight: 500; color: var(--gd-ai-chip-fg); background: var(--gd-ai-chip); border-radius: 7px; padding: .25rem .6rem; }
-.gd-ai__name { color: #fff; font-size: .95rem; font-weight: 700; }
 .gd-ai__desc { font-size: .82rem; line-height: 1.5; color: #cbd5e1; }
 .gd-ai__desc a { color: #9dc0ff; }
 .gd-ai__desc code { font-family: "Roboto Mono", monospace; color: #fff; background: none; border: 0; padding: 0; }
