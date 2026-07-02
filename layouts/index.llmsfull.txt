@@ -1,9 +1,12 @@
-{{- /* llms-full.txt: complete site documentation in one file */ -}}
+{{- /* llms-full.txt: complete site documentation in one file. Include section landing pages
+       (_index.md) as well as regular pages, so product/platform overviews are not dropped —
+       mirrors reference.groupdocs.com's index.llmsfull.txt (where Kind in page|section). */ -}}
+{{- $docs := where .Site.Pages "Kind" "in" (slice "page" "section") -}}
 # {{ .Site.Title }} — Complete Documentation
 
 > {{ .Site.Params.description | default .Description }}
 
-{{ range .Site.RegularPages -}}
+{{ range $docs -}}
 ---
 
 ## {{ .Title }}

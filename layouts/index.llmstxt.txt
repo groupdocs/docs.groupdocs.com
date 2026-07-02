@@ -9,9 +9,9 @@ GroupDocs provides on-premise document processing SDKs for .NET, Java, Python, a
 
 {{ range .Site.Sections -}}
 {{ $title := .Title -}}
-- [{{ $title }}]({{ .Permalink }}) {{ with .Description }}— {{ . }}{{ end }}
+- [{{ $title }}]({{ .Permalink }}){{ with .OutputFormats.Get "llmstxt" }} ([llms.txt]({{ .Permalink }})){{ end }}{{ with .Description }} — {{ . }}{{ end }}
 {{ range .Sections -}}
-  - [{{ .Title }}]({{ .Permalink }}) ([md]({{ strings.TrimRight "/" .Permalink }}.md))
+  - [{{ .Title }}]({{ .Permalink }}) ([md]({{ strings.TrimRight "/" .Permalink }}.md){{ with .OutputFormats.Get "llmstxt" }}, [llms.txt]({{ .Permalink }}){{ end }})
 {{ range .RegularPagesRecursive -}}
     - [{{ .Title }}]({{ .Permalink }}) ([md]({{ strings.TrimRight "/" .Permalink }}.md))
 {{ end -}}

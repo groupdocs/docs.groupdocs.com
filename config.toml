@@ -53,7 +53,7 @@ pluralizeListTitles = false
 
 [outputs]
     home                    = [ "HTML", "SITEMAP", "JSON", "MD", "LLMSTXT", "LLMSFULL"]
-    section                 = [ "HTML", "MD", "LLMSFULL" ]
+    section                 = [ "HTML", "MD", "LLMSTXT", "LLMSFULL" ]
     page                    = [ "HTML", "MD" ]
 
 [outputFormats.SITEMAP]
