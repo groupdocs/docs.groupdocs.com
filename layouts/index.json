@@ -1,12 +1,14 @@
+{{- /* Site search index consumed by the header search (partials/header-search.html).
+       Compact title + href per page — no page body, so the file stays small enough to fetch
+       client-side. (The theme's FlexSearch, which used the old {id,parent,content} schema, is
+       disabled via GeekdocSearch=false, so nothing else reads this file.) */ -}}
 [
-  {{ range $index, $page := .Site.Pages }}
-    {{ if ne $index 0 }},{{ end }}
-    {
-      "id": {{ $index }},
-      "href": "{{ $page.RelPermalink }}",
-      "title": {{ (partial "utils/title" $page) | jsonify }},
-      "parent": {{ with $page.Parent }}{{ (partial "utils/title" .) | jsonify }}{{ else }}""{{ end }},
-      "content": {{ $page.Plain | jsonify }}
-    }
-  {{ end }}
+  {{- $first := true -}}
+  {{- range $page := .Site.Pages -}}
+    {{- $title := partial "utils/title" $page -}}
+    {{- if $title -}}
+      {{- if not $first }},{{ end -}}{{- $first = false -}}
+      { "href": "{{ $page.RelPermalink }}", "title": {{ $title | jsonify }} }
+    {{- end -}}
+  {{- end -}}
 ]

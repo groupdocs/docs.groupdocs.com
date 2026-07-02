@@ -133,6 +133,7 @@ a.gdoc-two-columns__column__link {
   --gd-muted-2: #64748b;                        /* descriptions, leads */
   --gd-muted-3: #475569;                        /* pill labels */
   --gd-border: var(--border-color, #EBEBEC);    /* card/box borders; softer than --border-color in dark */
+  --gd-hi-bg: #fff2a8;                           /* header-search match highlight */
   --gd-hero: linear-gradient(180deg, #eef3fc 0%, #f6f9ff 55%, #ffffff 100%);
   /* "Agents and LLMs" panel — intentionally dark in BOTH themes (navy in light, charcoal in dark) */
   --gd-ai-bg: #0b1220; --gd-ai-border: #1f2a3f; --gd-ai-card: #131c2e; --gd-ai-chip: #1a2740; --gd-ai-chip-fg: #bcd0ff;
@@ -148,6 +149,7 @@ a.gdoc-two-columns__column__link {
   --gd-muted-2: #ced3d8;
   --gd-muted-3: #ced3d8;
   --gd-border: rgba(255, 255, 255, .06);        /* --border-color (rgba(242,244,245,.1)) reads too bright on the dark cards */
+  --gd-hi-bg: rgba(255, 213, 0, .30);
   --gd-hero: linear-gradient(180deg, #2d2d2d 0%, #313131 55%, var(--body-background, #333) 100%);
   --gd-ai-bg: #282828; --gd-ai-border: rgba(255, 255, 255, .09); --gd-ai-card: #333333; --gd-ai-chip: #3a3a3a; --gd-ai-chip-fg: #6c9bff;
 }
@@ -163,6 +165,7 @@ a.gdoc-two-columns__column__link {
     --gd-muted-2: #ced3d8;
     --gd-muted-3: #ced3d8;
     --gd-border: rgba(255, 255, 255, .06);
+    --gd-hi-bg: rgba(255, 213, 0, .30);
     --gd-hero: linear-gradient(180deg, #2d2d2d 0%, #313131 55%, var(--body-background, #333) 100%);
     --gd-ai-bg: #282828; --gd-ai-border: rgba(255, 255, 255, .09); --gd-ai-card: #333333; --gd-ai-chip: #3a3a3a; --gd-ai-chip-fg: #6c9bff;
   }
@@ -261,4 +264,35 @@ a.gd-ai__card:hover { border-color: var(--link-color, #558fff); }
 @media (max-width: 26rem) {
   .gd-home__grid { grid-template-columns: 1fr; }
 }
+
+/* ============================ Header search (local, over /index.json) ============================
+   The header magnifier opens an inline search box (no redirect to search.groupdocs.com). Markup in
+   partials/header-search.html; result rows reuse the .gd-home__result* styles. Reveal is driven by
+   .is-searching on .gdoc-header__content (the search wrapper is display:none by default). */
+.gdoc-header__content { position: relative; }
+.gdoc-header__search { position: relative; }
+.gdoc-header__content.is-searching .gdoc-header__search { display: block; }
+.gdoc-header__content.is-searching .gdoc-header__search .gdoc-search { width: 100%; }
+.gdoc-header__content.is-searching .gdoc-header__menu { display: none; }
+.gdoc-header__content.is-searching #search_toggle { display: none; }
+@media (max-width: 48rem) { .gdoc-header__content.is-searching .gdoc-header__brand { display: none; } }
+
+.gd-hdr-results {
+  position: absolute; top: calc(100% + 8px); left: 0; right: 0; z-index: 60;
+  background: var(--gd-surface); border: 1px solid var(--gd-border); border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(15, 23, 39, .14); overflow: hidden;
+  max-height: 75vh; overflow-y: auto; text-align: left;
+}
+@media (max-width: 48rem) { .gd-hdr-results .gd-home__rpath { display: none; } }
+
+/* Result rows (shared with the home-page search styling vocabulary) */
+.gd-home__result { display: flex; align-items: center; gap: .75rem; padding: .7rem 1rem; text-decoration: none; border-left: 3px solid transparent; cursor: pointer; }
+.gd-home__result.is-active { background: var(--gd-accent-soft); border-left-color: var(--gd-accent); }
+.gd-home__rk { flex: none; font-family: "Roboto Mono", monospace; font-size: .65rem; font-weight: 600; text-transform: uppercase; letter-spacing: .03em; padding: .15rem .45rem; border-radius: 5px; width: 4.4rem; text-align: center; background: var(--gd-surface-2); color: var(--gd-muted-2); }
+.gd-home__rmain { flex: 1; min-width: 0; }
+.gd-home__rname { display: block; font-size: .95rem; color: var(--body-font-color, #0f1727); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.gd-home__rname mark { background: var(--gd-hi-bg); color: inherit; padding: 0 .05em; border-radius: 2px; }
+.gd-home__rpath { display: block; font-family: "Roboto Mono", monospace; font-size: .72rem; color: var(--gd-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.gd-home__more, .gd-home__noresult { padding: .75rem 1rem; font-size: .85rem; color: var(--gd-muted-2); }
+.gd-home__more { border-top: 1px solid var(--gd-border); background: var(--gd-surface-2); }
 
