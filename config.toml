@@ -135,10 +135,8 @@ pluralizeListTitles = false
 	changeFreq              = "weekly"
 	priority                = 0.5
 
-# Redirects configuration
-# Temporary redirect: all pages under /parser/python-net/* redirect to /parser/python-net/
-[[redirects]]
-  from = "/parser/python-net/**"
-  to = "/parser/python-net/"
-  status = 302
-  force = false
+# Redirects: authored as Hugo `aliases:` front-matter on the destination page (this is the
+# de-facto mechanism across the product docs). This Hugo setup does NOT process a
+# Netlify-style redirects table — that syntax was inert here, so it has been removed.
+# Wildcard/pattern redirects (e.g. the former /parser/python-net/* -> /parser/python-net/)
+# and SEO-grade 301s must be configured server-side in nginx on the deploy host.
