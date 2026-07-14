@@ -2,7 +2,7 @@
        Curated, absolute-linked index of this section's subtree. Child sections link to their
        own llms.txt / llms-full.txt only when those formats are generated (.OutputFormats.Get),
        so there are never dead links. Page .md links are ugly-URL siblings to match
-       move_md_to_ugly_urls.sh. */ -}}
+       scripts/move_md_to_ugly_urls.sh. */ -}}
 # {{ .Title }}
 {{ with .Description }}
 > {{ . }}

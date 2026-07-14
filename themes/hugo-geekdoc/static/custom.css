@@ -296,3 +296,55 @@ a.gd-ai__card:hover { border-color: var(--link-color, #558fff); }
 .gd-home__more, .gd-home__noresult { padding: .75rem 1rem; font-size: .85rem; color: var(--gd-muted-2); }
 .gd-home__more { border-top: 1px solid var(--gd-border); background: var(--gd-surface-2); }
 
+/* ============================ 404 page (gd-404) ============================
+   Root layouts/404.html — ports the reference.groupdocs.com 404: hero + live search over
+   /index.json (bar reuses .gd-home__searchbar*, rows the .gd-home__result* styles above) +
+   product directory from data/products.toml + the shared .gd-ai panel. baseof forces
+   navEnabled=false for Kind "404", so the page renders full-width with the .wrapper-bg band
+   (repainted by the template's inline style, like the home page). */
+.gd-404 { max-width: 70rem; margin: 0 auto; padding-bottom: 3rem; }
+
+/* Hero. The `.gd-404 ` prefix out-specifies the theme's `h1..h6 { display: flex }` and
+   `.gdoc-page h2` rules (same trick as .gd-home) so headings center as blocks. */
+.gd-404__hero { text-align: center; max-width: 40rem; margin: 0 auto; padding: 2rem 0 .5rem; }
+.gd-404__eyebrow { font-family: "Roboto Mono", monospace; font-size: .8rem; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--gd-accent-strong); margin-bottom: 1rem; }
+.gd-404__code { font-size: 6.5rem; line-height: .9; font-weight: 800; letter-spacing: -.04em; color: var(--gd-accent-strong); margin-bottom: .75rem; }
+.gd-404 .gd-404__title { display: block; margin: 0 0 .6rem; font-size: 2.3rem; line-height: 1.1; letter-spacing: -.02em; text-align: center; }
+.gd-404__lead { color: var(--gd-muted-2); font-size: 1.05rem; line-height: 1.6; margin: 0 auto; max-width: 32rem; }
+
+/* Search — the bar itself reuses .gd-home__searchbar/input/search-btn; only the wrapper,
+   the dropdown container, and the hint are new. */
+.gd-404__search { max-width: 38rem; margin: 2rem auto 0; position: relative; }
+.gd-404__results { position: absolute; left: 0; right: 0; top: calc(100% + .5rem); z-index: 20; background: var(--gd-surface); border: 1px solid var(--gd-border); border-radius: 12px; box-shadow: 0 12px 32px rgba(15, 23, 39, .12); overflow: hidden; max-height: 26rem; overflow-y: auto; text-align: left; }
+.gd-404__search-hint { text-align: center; margin-top: .9rem; font-size: .9rem; color: var(--gd-muted); }
+.gd-404__search-hint a { color: var(--gd-accent); font-weight: 600; text-decoration: none; }
+.gd-404__search-hint a:hover { text-decoration: underline; }
+
+/* Product directory — compact cards (name + icon + arrow + clamped blurb). */
+.gd-404__dir { margin-top: 3.5rem; }
+.gd-404__dir-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--gd-border); padding-bottom: .85rem; margin-bottom: 1.25rem; }
+.gd-404 .gd-404__h2 { display: block; font-size: 1.3rem; font-weight: 700; letter-spacing: -.02em; margin: 0; line-height: 1.3; }
+.gd-404__count { font-family: "Roboto Mono", monospace; font-size: .8rem; color: var(--gd-muted); }
+.gd-404__cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(16.5rem, 1fr)); gap: .75rem; }
+.gd-404__card { display: flex; flex-direction: column; gap: .5rem; padding: 1rem 1.1rem; border: 1px solid var(--gd-border); border-radius: 12px; background: var(--gd-surface); text-decoration: none; transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }
+.gd-404__card:hover { border-color: var(--gd-accent); box-shadow: 0 6px 18px rgba(85, 143, 255, .12); transform: translateY(-2px); }
+.gd-404__card-top { display: flex; align-items: center; gap: .6rem; }
+.gd-404__icon-box { width: 2rem; height: 2rem; flex: none; display: flex; align-items: center; justify-content: center; border-radius: 9px; background: var(--gd-accent-soft); }
+.gd-404__icon { width: 1.1rem; height: 1.1rem; fill: var(--gd-accent); }
+.gd-404__card-name { flex: 1; min-width: 0; font-size: .95rem; font-weight: 700; color: var(--body-font-color, #0f1727); }
+.gd-404__brand { color: var(--gd-muted); font-weight: 500; }
+.gd-404__card-arrow { color: var(--gd-muted); flex: none; }
+.gd-404__card:hover .gd-404__card-arrow { color: var(--gd-accent); }
+/* The toml blurbs run long — clamp to three lines so the grid rows stay even. */
+.gd-404__card-desc { font-size: .82rem; line-height: 1.45; color: var(--gd-muted-2); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Developer resources — cards reuse the .gd-home__res-* styles above; only the section shell is new. */
+.gd-404__res { margin-top: 4rem; }
+.gd-404__res .gd-404__h2 { margin: 0 0 1.25rem; }
+
+@media (max-width: 48rem) {
+  .gd-404__code { font-size: 4.5rem; }
+  .gd-404 .gd-404__title { font-size: 1.8rem; }
+  .gd-404__results .gd-home__rpath { display: none; }
+}
+

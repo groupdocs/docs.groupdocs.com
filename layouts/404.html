@@ -1,0 +1,206 @@
+{{ define "main" }}
+{{- /* 404 for humans and machines — root override of the theme's standalone 404
+       (themes/hugo-geekdoc/layouts/404.html stays as a shadowed fallback). Ports the
+       reference.groupdocs.com gd-404 pattern with this site's own tokens: hero + live
+       search + product directory (data/products.toml, same source as the home grid) +
+       the shared gd-ai panel. Flows through baseof, which forces navEnabled=false for
+       Kind "404" → full-width with the .wrapper-bg band, repainted below exactly like
+       the home page. The search is the header-search engine (partials/header-search.html)
+       rebound to the on-page bar, over the same /index.json ({href,title}). Links are
+       root-relative absolute so the page works regardless of which build's /404.html
+       nginx serves or what URL was requested. */ -}}
+<style>
+  .wrapper-bg {
+    background-image: var(--gd-hero);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 32rem;
+  }
+</style>
+<article class="gd-404">
+
+  <section class="gd-404__hero">
+    <div class="gd-404__eyebrow">Error 404</div>
+    <div class="gd-404__code">404</div>
+    <h1 class="gd-404__title">This page can&rsquo;t be found</h1>
+    <p class="gd-404__lead">The page may have moved, or the link may be incomplete. Search the documentation or jump straight to a product below.</p>
+  </section>
+
+  {{/* Live type-ahead over /index.json — the bar reuses the home searchbar styles, result rows the .gd-home__result* styles. */}}
+  <section class="gd-404__search">
+    <form class="gd-home__searchbar" role="search" autocomplete="off" onsubmit="return false;">
+      <svg class="gd-home__search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+      <input id="gd404-q" class="gd-home__input" type="text" placeholder="Search the documentation&hellip;" aria-label="Search the documentation" aria-controls="gd404-results" aria-autocomplete="list" autocomplete="off" maxlength="64" />
+      <button id="gd404-go" class="gd-home__search-btn" type="button">Search</button>
+    </form>
+    <div id="gd404-results" class="gd-404__results" role="listbox" hidden></div>
+    <div class="gd-404__search-hint">or <a href="/">go to the homepage</a></div>
+  </section>
+
+  {{/* Product directory — server-rendered from data/products.toml. */}}
+  {{- with .Site.Data.products }}
+  <section class="gd-404__dir">
+    <div class="gd-404__dir-head">
+      <h2 class="gd-404__h2">Jump to a product</h2>
+      <span class="gd-404__count">{{ len .product }} products</span>
+    </div>
+    <div class="gd-404__cards">
+      {{ range sort .product "weight" }}
+      {{- $short := replace .title "GroupDocs." "" | replaceRE " Product Family$" "" -}}
+      <a class="gd-404__card" href="{{ .url }}/">
+        <span class="gd-404__card-top">
+          <span class="gd-404__icon-box"><svg class="gd-404__icon"><use xlink:href="/img/groupdocs-stack.svg#{{ .icon }}"></use></svg></span>
+          <span class="gd-404__card-name"><span class="gd-404__brand">GroupDocs.</span>{{ $short }}</span>
+          <svg class="gd-404__card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+        </span>
+        <span class="gd-404__card-desc">{{ .description }}</span>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
+  {{/* "For AI agents" panel — same block as the home page; styled by .gd-ai in custom.css. */}}
+  <section class="gd-ai">
+    <div class="gd-ai__intro">
+      <div class="gd-ai__eyebrow"><span class="gd-ai__eyebrow-dot"></span>For AI agents</div>
+      <h2 class="gd-ai__title">Built to be machine-readable</h2>
+      <p class="gd-ai__lead">Machine-readable indexes of the entire documentation, designed for agents and retrieval.</p>
+    </div>
+    <div class="gd-ai__cards">
+      <a class="gd-ai__card" href="/mcp">
+        <span class="gd-ai__chip">/mcp</span>
+        <span class="gd-ai__desc">Query the docs from your AI assistant over the Model Context Protocol.</span>
+      </a>
+      <a class="gd-ai__card" href="/llms.txt">
+        <span class="gd-ai__chip">/llms.txt</span>
+        <span class="gd-ai__desc">Curated index of every product and platform.</span>
+      </a>
+      <a class="gd-ai__card" href="/llms-full.txt">
+        <span class="gd-ai__chip">/llms-full.txt</span>
+        <span class="gd-ai__desc">The full documentation in a single file.</span>
+      </a>
+      <div class="gd-ai__card">
+        <span class="gd-ai__chip">.md</span>
+        <span class="gd-ai__desc">Append <code>.md</code> to any page URL for Markdown &mdash; e.g. <code>/annotation.md</code></span>
+      </div>
+    </div>
+  </section>
+
+  {{/* Developer resources — same card row as the home page; cards reuse the .gd-home__res-* styles. */}}
+  <section class="gd-404__res">
+    <h2 class="gd-404__h2">Developer resources</h2>
+    <div class="gd-home__res-cards">
+      {{- $res := slice
+          (dict "url" "https://reference.groupdocs.com/" "icon" "api" "label" "API References")
+          (dict "url" "https://releases.groupdocs.com/" "icon" "code" "label" "Releases & Downloads")
+          (dict "url" "https://products.groupdocs.com/" "icon" "total" "label" "Product Site")
+          (dict "url" "https://blog.groupdocs.com/" "icon" "editor" "label" "Blog")
+          (dict "url" "https://forum.groupdocs.com/" "icon" "free-support" "label" "Support Forum") -}}
+      {{- range $res }}
+      <a class="gd-home__res-card" href="{{ .url }}" rel="nofollow" target="_blank">
+        <span class="gd-home__res-icon-box"><svg class="gd-home__res-icon"><use xlink:href="/img/groupdocs-stack.svg#{{ .icon }}"></use></svg></span>
+        <span class="gd-home__res-label">{{ .label }}</span>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+
+</article>
+
+<script>
+/* 404 live search — the header-search engine (partials/header-search.html) rebound to the
+   on-page bar: lazy /index.json fetch on focus, exact > prefix > substring > URL ranking,
+   MAX 8 rows, arrow/Enter/Escape keyboard nav, outside-click hides the dropdown. */
+(function () {
+  var input = document.getElementById("gd404-q");
+  var goBtn = document.getElementById("gd404-go");
+  var box = document.getElementById("gd404-results");
+  if (!input || !box) return;
+
+  var index = null, loading = false, items = [], active = -1, MAX = 8;
+  function load() {
+    if (index || loading) return;
+    loading = true;
+    fetch("/index.json").then(function (r) { return r.json(); })
+      .then(function (d) { index = d; if (input.value.trim()) run(input.value); })
+      .catch(function () { index = []; });
+  }
+  function platOf(u) {
+    var segs = (u || "").split("/").filter(Boolean);
+    if (segs.indexOf("python-net") !== -1) return "Python";
+    if (segs.indexOf("nodejs-java") !== -1) return "Node.js";
+    if (segs.indexOf("net") !== -1) return ".NET";
+    if (segs.indexOf("java") !== -1) return "Java";
+    return "Docs";
+  }
+  function pathOf(u) { return (u || "").split("/").filter(Boolean).slice(0, -1).join(" / "); }
+  function esc(s) { return (s || "").replace(/[&<>"]/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]; }); }
+  function highlight(t, q) {
+    t = t || "";
+    var i = t.toLowerCase().indexOf(q.toLowerCase());
+    if (i === -1) return esc(t);
+    return esc(t.slice(0, i)) + "<mark>" + esc(t.slice(i, i + q.length)) + "</mark>" + esc(t.slice(i + q.length));
+  }
+  function score(e, q) {
+    var t = (e.title || "").toLowerCase();
+    if (t === q) return 0;
+    if (t.indexOf(q) === 0) return 1;
+    if (t.indexOf(q) !== -1) return 2;
+    if ((e.href || "").toLowerCase().indexOf(q) !== -1) return 3;
+    return 99;
+  }
+  function run(q) {
+    q = q.trim().toLowerCase();
+    if (!q) { hide(); return; }
+    if (!index) { load(); return; }
+    var hits = [];
+    for (var i = 0; i < index.length; i++) { var s = score(index[i], q); if (s < 99) hits.push([s, index[i]]); }
+    hits.sort(function (a, b) { return a[0] - b[0] || (a[1].title || "").length - (b[1].title || "").length; });
+    items = hits.slice(0, MAX).map(function (h) { return h[1]; });
+    render(q, hits.length);
+  }
+  function render(q, total) {
+    if (!items.length) {
+      box.innerHTML = '<div class="gd-home__noresult">No results for <strong>' + esc(q) + '</strong>.</div>';
+      box.hidden = false; active = -1; return;
+    }
+    active = 0;
+    var html = items.map(function (e, i) {
+      return '<a class="gd-home__result' + (i === 0 ? " is-active" : "") + '" role="option" href="' + esc(e.href) + '" data-i="' + i + '">'
+        + '<span class="gd-home__rk gd-home__rk--pg">' + esc(platOf(e.href)) + '</span>'
+        + '<span class="gd-home__rmain"><span class="gd-home__rname">' + highlight(e.title, q) + '</span>'
+        + '<span class="gd-home__rpath">' + esc(pathOf(e.href)) + '</span></span></a>';
+    }).join("");
+    if (total > items.length) html += '<div class="gd-home__more">' + total + ' matches — refine your search to narrow it down</div>';
+    box.innerHTML = html; box.hidden = false;
+    Array.prototype.forEach.call(box.querySelectorAll(".gd-home__result"), function (el) {
+      el.addEventListener("mouseenter", function () { setActive(+el.getAttribute("data-i")); });
+    });
+  }
+  function hide() { box.hidden = true; box.innerHTML = ""; active = -1; }
+  function setActive(i) {
+    var rows = box.querySelectorAll(".gd-home__result");
+    if (!rows.length) return;
+    active = (i + rows.length) % rows.length;
+    Array.prototype.forEach.call(rows, function (el, j) { el.classList.toggle("is-active", j === active); });
+    rows[active].scrollIntoView({ block: "nearest" });
+  }
+  function gotoActive() {
+    var rows = box.querySelectorAll(".gd-home__result");
+    if (rows.length && active >= 0) { window.location.href = rows[active].getAttribute("href"); }
+  }
+  input.addEventListener("focus", load);
+  input.addEventListener("input", function () { run(input.value); });
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") { input.value = ""; hide(); return; }
+    if (box.hidden) return;
+    if (e.key === "ArrowDown") { e.preventDefault(); setActive(active + 1); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); setActive(active - 1); }
+    else if (e.key === "Enter") { e.preventDefault(); gotoActive(); }
+  });
+  goBtn.addEventListener("click", gotoActive);
+  document.addEventListener("click", function (e) { if (!box.contains(e.target) && e.target !== input) hide(); });
+})();
+</script>
+{{ end }}

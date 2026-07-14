@@ -5,10 +5,10 @@ set -e
 # Mirrors the build-search-index.yml workflow (except deploy step).
 #
 # Prerequisites: Hugo v0.101.0+ extended must be installed.
-# Usage: bash build_search_index.sh
+# Usage: bash scripts/build_search_index.sh
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "$SCRIPT_DIR"
+cd "$SCRIPT_DIR/.."   # run from the repo root (this script lives in scripts/)
 
 echo "=== Checking Hugo ==="
 if ! command -v hugo &> /dev/null; then

@@ -54,13 +54,14 @@ Each product supports multiple platforms (.NET, Java, Python, Node.js) where app
 │   │   ├── list.md               # Markdown output template for section pages
 │   │   └── single.md             # Markdown output template for single pages
 │   └── index.json                # Search index template
+├── scripts/
+│   ├── build_search_index.sh     # Local search index build script
+│   └── move_md_to_ugly_urls.sh   # Post-build: rename index.md → page.md
 ├── static/                       # Static assets (images, icons)
 ├── themes/
 │   └── hugo-geekdoc/             # Customized Geekdoc theme
 ├── config.toml                   # Hugo configuration
-├── build_docs.cmd                # Local dev server (Windows)
-├── build_search_index.sh         # Local search index build script
-└── move_md_to_ugly_urls.sh       # Post-build: rename index.md → page.md
+└── build_docs.cmd                # Local dev server (Windows)
 ```
 
 ## Local Development
@@ -89,7 +90,7 @@ Open `http://localhost:1313/` to view the site. Hugo watches for file changes an
 hugo --minify
 
 # 2. Move Markdown output to ugly URLs (e.g. /viewer/net/index.md → /viewer/net.md)
-./move_md_to_ugly_urls.sh
+./scripts/move_md_to_ugly_urls.sh
 ```
 
 The generated site will be in the `public/` directory.
@@ -97,7 +98,7 @@ The generated site will be in the `public/` directory.
 ### Building the Search Index Locally
 
 ```bash
-bash build_search_index.sh
+bash scripts/build_search_index.sh
 ```
 
 This clones all product documentation repos, builds the full site, and generates `public/index.json`.
@@ -114,7 +115,7 @@ Every documentation page is available in both HTML and raw Markdown. Append `.md
 This is implemented via:
 - A custom `MD` output format defined in `config.toml`
 - Templates in `layouts/_default/single.md` and `layouts/_default/list.md`
-- A post-build script (`move_md_to_ugly_urls.sh`) that renames `index.md` files to ugly URLs
+- A post-build script (`scripts/move_md_to_ugly_urls.sh`) that renames `index.md` files to ugly URLs
 
 ## Deployment
 

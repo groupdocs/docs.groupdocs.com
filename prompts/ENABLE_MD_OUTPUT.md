@@ -31,7 +31,7 @@ The `common` submodule must contain the following changes (already applied in th
 - `layouts/_default/single.md` — Markdown template for single pages
 - `layouts/_default/list.md` — Markdown template for section pages
 - `layouts/index.md` — Markdown template for the home page
-- `move_md_to_ugly_urls.sh` — post-build script that renames `index.md` → `page.md`
+- `scripts/move_md_to_ugly_urls.sh` — post-build script that renames `index.md` → `page.md`
 
 ## Step 1: Update the `common` Submodule
 
@@ -82,7 +82,7 @@ Both `publish-prod.yml` and `publish-qa.yml` need a post-build step. The changes
 
     # ── NEW: rename index.md files to ugly URLs ──
     - name: Move MD files to ugly URLs
-      run: common/move_md_to_ugly_urls.sh common/public/${{ env.PRODUCT }}
+      run: common/scripts/move_md_to_ugly_urls.sh common/public/${{ env.PRODUCT }}
 
     - name: Deploy sitemap
       ...
@@ -133,7 +133,7 @@ jobs:
           hugo --source common --minify
 
       - name: Move MD files to ugly URLs
-        run: common/move_md_to_ugly_urls.sh common/public/${{ env.PRODUCT }}
+        run: common/scripts/move_md_to_ugly_urls.sh common/public/${{ env.PRODUCT }}
 
       - name: Deploy sitemap
         uses: nogsantos/scp-deploy@master
@@ -170,12 +170,12 @@ hugo
 cd ..
 
 # Rename MD files
-common/move_md_to_ugly_urls.sh common/public/$PRODUCT
+common/scripts/move_md_to_ugly_urls.sh common/public/$PRODUCT
 ```
 
 ### build_docs.cmd (Windows)
 
-No changes needed — the dev server works as-is. For static builds on Windows, use Git Bash or WSL to run `move_md_to_ugly_urls.sh`.
+No changes needed — the dev server works as-is. For static builds on Windows, use Git Bash or WSL to run `scripts/move_md_to_ugly_urls.sh`.
 
 ## URL Mapping
 

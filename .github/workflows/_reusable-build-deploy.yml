@@ -195,7 +195,7 @@ jobs:
           eval hugo $HUGO_ARGS
 
       - name: Move MD files to ugly URLs
-        run: ./move_md_to_ugly_urls.sh
+        run: ./scripts/move_md_to_ugly_urls.sh
 
       - name: Remove index.json (published separately by publish-assets workflow)
         if: ${{ !inputs.all_products }}
