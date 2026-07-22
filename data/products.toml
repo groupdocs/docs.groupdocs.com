@@ -109,7 +109,7 @@ url         = "/redaction"
 icon        = "redaction"
 weight      = 11
 description = "Build cross-platform applications that perform operations, such as, redacting, hiding, removing content and metadata from documents, presentations, worksheets and PDF files"
-platforms   = ["net", "java"]
+platforms   = ["net", "java", "python-net"]
 
 [[product]]
 key         = "signature"
