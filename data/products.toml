@@ -1,7 +1,9 @@
-# Home page product grid — single source of truth.
-# Rendered by layouts/shortcodes/products-grid.html via {{< products-grid >}} in content/_index.md.
+# Product list — single source of truth. Consumed by:
+#   - home page (layouts/index.html, layouts/index.md, layouts/shortcodes/products-grid.html)
+#   - 404 page (layouts/404.html)
+#   - header "Products" dropdown (themes/hugo-geekdoc/layouts/partials/site-header.html)
 # To add a product: append a [[product]] block (and ensure /img/groupdocs-stack.svg has a matching
-# <symbol id="{icon}">). Order on the page follows `weight` ascending.
+# <symbol id="{icon}">). Order everywhere follows `weight` ascending.
 #
 # Fields:
 #   key         product family key (matches the content section / sprite icon, informational)

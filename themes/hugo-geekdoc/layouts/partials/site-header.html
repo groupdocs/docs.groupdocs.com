@@ -53,36 +53,13 @@
                     <li class="gdoc-menu__item"><a href="https://products.groupdocs.com" >Products</a>
                         
                             <ul class="gdoc-menu__sub gdoc-menu__sub--wide">
-                                <li><a href="https://products.groupdocs.com/total/"><em>GroupDocs.Total <b>Product
-                                Family</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/viewer/"><em>GroupDocs.Viewer <b>Product
-                                Solution</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/annotation/"><em>GroupDocs.Annotation <b>Product
-                                Solution</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/conversion/"><em>GroupDocs.Conversion <b>Product
-                                Solution</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/comparison/"><em>GroupDocs.Comparison <b>Product
-                                Solution</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/signature/"><em>GroupDocs.Signature <b>Product
-                                Solution</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/assembly/"><em>GroupDocs.Assembly <b>Product
-                                Solution</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/metadata/"><em>GroupDocs.Metadata <b>Product
-                                Solution</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/search/"><em>GroupDocs.Search <b>Product
-                                Solution</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/parser/"><em>GroupDocs.Parser <b>Product
-                                Solution</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/watermark/"><em>GroupDocs.Watermark <b>Product
-                                Solution</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/editor/"><em>GroupDocs.Editor <b>Product
-                                Solution</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/merger/"><em>GroupDocs.Merger <b>Product
-                                Solution</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/redaction/"><em>GroupDocs.Redaction <b>Product
-                                Solution</b></em></a></li>
-                                <li><a href="https://products.groupdocs.com/classification/"><em>GroupDocs.Classification
-                            <b>Product Solution</b></em></a></li>
+                                {{- /* Product list comes from data/products.toml (same source as the home grid) —
+                                       add a product there and it appears here automatically. Links go to the
+                                       marketing site; slugs (.key) match products.groupdocs.com. */ -}}
+                                {{- range sort .Site.Data.products.product "weight" }}
+                                {{- $short := replace .title "GroupDocs." "" | replaceRE " Product Family$" "" }}
+                                <li><a href="https://products.groupdocs.com/{{ .key }}/"><em>GroupDocs.{{ $short }} <b>{{ if eq .key "total" }}Product Family{{ else }}Product Solution{{ end }}</b></em></a></li>
+                                {{- end }}
                                 </ul>
                         
                     </li>
