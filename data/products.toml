@@ -46,7 +46,7 @@ url         = "/markdown"
 icon        = "markdown"
 weight      = 4
 description = "GroupDocs.Markdown is an SDK for exporting PDF, Word, Excel, and other document types to Markdown, making your documents gen AI ready."
-platforms   = ["net", "python-net"]
+platforms   = ["net", "java", "python-net"]
 
 [[product]]
 key         = "comparison"
