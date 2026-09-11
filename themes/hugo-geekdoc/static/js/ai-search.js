@@ -128,10 +128,7 @@ function aiSearchParseResults(data)
 		for(var i=0;i<data.result.articles.length;i++)
 		{			
 			let item = data.result.articles[i];
-			// let fullUrl = item.root;
-			// fullUrl +=  (item.url[0] == "/")?item.url.substring(1):item.url;
-			  			
-			let fullUrl = getSiteRoot() + item.url;
+			let fullUrl = aiSearchBuildArticleUrl(item.root, item.url);
 			let placeholder = aiSearchUI.linkTemplate.clone();
 			placeholder
 				.removeAttr("id")
@@ -144,11 +141,14 @@ function aiSearchParseResults(data)
 	}
 }
 
-// Function to get the site root URL dynamically
-function getSiteRoot() {
-	const { protocol, host } = window.location;
-	return `${protocol}//${host}/`;
-  }
+// Combine article root ("/conversion/") and url ("/net/convert/pdf") into an absolute link
+function aiSearchBuildArticleUrl(root, url)
+{
+	let path = `/${root || ""}/${url || ""}`
+		.replace(/\\/g, "/")
+		.replace(/\/{2,}/g, "/");
+	return `${window.location.protocol}//${window.location.host}${path}`;
+}
 
 function aiSearchShowError(jqXHR,textStatus,error)
 {
