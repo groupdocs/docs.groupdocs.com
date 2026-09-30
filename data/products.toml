@@ -102,7 +102,7 @@ url         = "/assembly"
 icon        = "assembly"
 weight      = 10
 description = "Automate your document generation process with cross platform automation assembly APIs to boost productivity and accuracy"
-platforms   = ["net", "java", "python-net"]
+platforms   = ["net", "java", "nodejs-java", "python-net"]
 
 [[product]]
 key         = "redaction"

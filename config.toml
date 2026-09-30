@@ -95,7 +95,7 @@ pluralizeListTitles = false
 
     aiSearchEndpoint        = "https://docsearch.api.aspose.cloud/ask"
     aiSearchScopes          = [ "annotation_net",  "annotation_java",  
-                                "assembly_net",  "assembly_java", 
+                                "assembly_net",  "assembly_java", "assembly_python-net", "assembly_nodejs-java",
                                 "classification_net",
                                 "comparison_net", "comparison_java", "comparison_python-net", "comparison_nodejs-java",
                                 "conversion_net", "conversion_java", "conversion_python-net", "conversion_nodejs-java",
