@@ -109,7 +109,7 @@ pluralizeListTitles = false
                                 "signature_net", "signature_java",
                                 "viewer_net", "viewer_java", "viewer_python-net", "viewer_nodejs-java",
                                 "watermark_net", "watermark_java", "watermark_python-net", "watermark_nodejs-java",
-                                "total_net",   "total_java"
+                                "total_net",   "total_java", "total_python-net", "total_nodejs-java"
                             ]
 
     # Collapse not active menu items by default

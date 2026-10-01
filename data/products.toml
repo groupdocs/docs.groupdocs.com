@@ -21,7 +21,7 @@ url         = "/total"
 icon        = "total"
 weight      = 1
 description = "Manipulate documents from within your own desktop solutions and web apps without requiring any other commercial products"
-platforms   = ["net", "java", "python-net"]
+platforms   = ["net", "java", "nodejs-java", "python-net"]
 
 [[product]]
 key         = "conversion"
