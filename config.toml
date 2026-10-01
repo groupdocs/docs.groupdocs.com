@@ -103,7 +103,7 @@ pluralizeListTitles = false
                                 "markdown_net", "markdown_java", "markdown_python-net",
                                 "merger_net",  "merger_java",
                                 "metadata_net", "metadata_java",
-                                "parser_net", "parser_java",
+                                "parser_net", "parser_java", "parser_python-net", "parser_nodejs-java",
                                 "redaction_net", "redaction_java",
                                 "search_net", "search_java",
                                 "signature_net", "signature_java",

@@ -84,7 +84,7 @@ url         = "/parser"
 icon        = "parser"
 weight      = 8
 description = "Parse, extract images, raw & formatted text with metadata and perform a lot of operations with it using APIs which work on all popular platforms and supported file formats"
-platforms   = ["net", "java", "python-net"]
+platforms   = ["net", "java", "nodejs-java", "python-net"]
 
 [[product]]
 key         = "merger"
