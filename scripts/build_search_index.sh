@@ -64,8 +64,8 @@ for entry in $PRODUCTS; do
     echo "Copied _index.md"
   fi
 
-  # Copy platform-specific documentation folders
-  for platform in net java nodejs-java python-net; do
+  # Copy platform-specific docs plus the cross-platform mcp/ section
+  for platform in net java nodejs-java python-net mcp; do
     if [ -d "temp-${product}/${platform}" ]; then
       cp -r "temp-${product}/${platform}" "content/${product}/"
       echo "Copied ${platform}/ folder"
