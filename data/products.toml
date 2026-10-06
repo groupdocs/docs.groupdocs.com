@@ -120,7 +120,7 @@ url         = "/signature"
 icon        = "signature"
 weight      = 12
 description = "Outstanding electronic signature API that allows you to design your documents with digital certificate, image, text and hand-written signatures, QR-Code and many more"
-platforms   = ["net", "java"]
+platforms   = ["net", "java", "nodejs-java", "python-net"]
 
 [[product]]
 key         = "search"

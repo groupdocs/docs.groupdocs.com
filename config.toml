@@ -106,7 +106,7 @@ pluralizeListTitles = false
                                 "parser_net", "parser_java", "parser_python-net", "parser_nodejs-java",
                                 "redaction_net", "redaction_java",
                                 "search_net", "search_java",
-                                "signature_net", "signature_java",
+                                "signature_net", "signature_java", "signature_python-net", "signature_nodejs-java",
                                 "viewer_net", "viewer_java", "viewer_python-net", "viewer_nodejs-java",
                                 "watermark_net", "watermark_java", "watermark_python-net", "watermark_nodejs-java",
                                 "total_net",   "total_java", "total_python-net", "total_nodejs-java"
