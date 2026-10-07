@@ -15,13 +15,16 @@
     background-size: 100% 32rem;
   }
 </style>
-{{- $labels := dict "net" ".NET" "java" "Java" "nodejs-java" "Node.js" "python-net" "Python" -}}
-{{- $dots   := dict "net" "#7c5cff" "java" "#e76f00" "nodejs-java" "#3ea66b" "python-net" "#4b8bd4" -}}
+{{- /* "mcp" is not a runtime: it marks a family that ships an MCP server for AI agents, and its
+       pill links to {url}/mcp/. See the platforms note in data/products.toml. */ -}}
+{{- $labels := dict "net" ".NET" "java" "Java" "nodejs-java" "Node.js" "python-net" "Python" "mcp" "MCP" -}}
+{{- $dots   := dict "net" "#7c5cff" "java" "#e76f00" "nodejs-java" "#3ea66b" "python-net" "#4b8bd4" "mcp" "#0ea5a4" -}}
 {{- $segments := slice
       (dict "key" "net" "label" ".NET" "dot" "#7c5cff")
       (dict "key" "java" "label" "Java" "dot" "#e76f00")
       (dict "key" "nodejs-java" "label" "Node.js" "dot" "#3ea66b")
-      (dict "key" "python-net" "label" "Python" "dot" "#4b8bd4") -}}
+      (dict "key" "python-net" "label" "Python" "dot" "#4b8bd4")
+      (dict "key" "mcp" "label" "MCP" "dot" "#0ea5a4") -}}
 {{- $products := sort .Site.Data.products.product "weight" -}}
 <article class="gd-home">
 
@@ -81,6 +84,12 @@
       <p class="gd-ai__lead">Machine-readable indexes of the entire documentation, designed for agents and retrieval.</p>
     </div>
     <div class="gd-ai__cards">
+      {{- /* The product MCP servers are a different thing from the /mcp card below: those let an agent
+             process documents locally. Full width and first, so the four cards below keep their 2x2 grid; it opens the product grid filtered to them. */}}
+      <a class="gd-ai__card gd-ai__card--wide" href="#mcp">
+        <span class="gd-ai__chip">MCP servers</span>
+        <span class="gd-ai__desc">Let Claude, Cursor, or Copilot convert, compare, sign, or redact documents locally &mdash; one MCP server per product.</span>
+      </a>
       <a class="gd-ai__card" href="/mcp">
         <span class="gd-ai__chip">/mcp</span>
         <span class="gd-ai__desc">Query the docs from your AI assistant over the Model Context Protocol.</span>
@@ -165,15 +174,30 @@
   });
   if (clearBtn) clearBtn.addEventListener("click", function () { input.value = ""; apply(); input.focus(); });
   if (goBtn) goBtn.addEventListener("click", function () { apply(); grid.scrollIntoView({ behavior: "smooth", block: "start" }); });
+  function select(seg) {
+    Array.prototype.forEach.call(segs, function (s) { s.classList.remove("is-active"); s.setAttribute("aria-pressed", "false"); });
+    seg.classList.add("is-active");
+    seg.setAttribute("aria-pressed", "true");
+    platform = seg.getAttribute("data-platform");
+    apply();
+  }
   Array.prototype.forEach.call(segs, function (seg) {
-    seg.addEventListener("click", function () {
-      Array.prototype.forEach.call(segs, function (s) { s.classList.remove("is-active"); s.setAttribute("aria-pressed", "false"); });
-      seg.classList.add("is-active");
-      seg.setAttribute("aria-pressed", "true");
-      platform = seg.getAttribute("data-platform");
-      apply();
-    });
+    seg.addEventListener("click", function () { select(seg); });
   });
+
+  /* A link to /#mcp (or #net, #java, ...) opens the grid already filtered to that platform —
+     the "MCP servers" card in the AI panel uses it. Unknown hashes are ignored. */
+  function fromHash() {
+    var key = (location.hash || "").replace(/^#/, "");
+    if (!key) return;
+    var match = null;
+    Array.prototype.forEach.call(segs, function (s) { if (s.getAttribute("data-platform") === key) match = s; });
+    if (!match) return;
+    select(match);
+    grid.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  window.addEventListener("hashchange", fromHash);
+  fromHash();
 })();
 </script>
 {{ end }}

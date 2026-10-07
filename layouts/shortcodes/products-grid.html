@@ -1,8 +1,8 @@
 {{- /* products-grid: render the home page product cards from data/products.toml.
        Single source of truth — add a product by appending a [[product]] block there.
        Platform key -> {button label, css suffix}. */ -}}
-{{- $labels  := dict "net" ".NET" "java" "Java" "nodejs-java" "Node.js" "python-net" "Python" -}}
-{{- $classes := dict "net" "net"  "java" "java" "nodejs-java" "nodejs"  "python-net" "python" -}}
+{{- $labels  := dict "net" ".NET" "java" "Java" "nodejs-java" "Node.js" "python-net" "Python" "mcp" "MCP" -}}
+{{- $classes := dict "net" "net"  "java" "java" "nodejs-java" "nodejs"  "python-net" "python" "mcp" "mcp" -}}
 <div class="gdoc-list-apps">
 {{ range sort .Site.Data.products.product "weight" }}
 <div class="gdoc-list-app">

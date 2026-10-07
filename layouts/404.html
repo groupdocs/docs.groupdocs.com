@@ -128,6 +128,7 @@
   }
   function platOf(u) {
     var segs = (u || "").split("/").filter(Boolean);
+    if (segs.indexOf("mcp") !== -1) return "MCP";
     if (segs.indexOf("python-net") !== -1) return "Python";
     if (segs.indexOf("nodejs-java") !== -1) return "Node.js";
     if (segs.indexOf("net") !== -1) return ".NET";

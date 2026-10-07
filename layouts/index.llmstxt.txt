@@ -3,7 +3,7 @@
 
 > {{ .Site.Params.description | default .Description }}
 
-GroupDocs provides on-premise document processing SDKs for .NET, Java, Python, and Node.js. This documentation site covers all product families and platforms.
+GroupDocs provides on-premise document processing SDKs for .NET, Java, Python, and Node.js, and MCP servers that let AI agents (Claude, Cursor, Copilot) process documents locally over the Model Context Protocol. This documentation site covers all product families and platforms; each product's MCP server is documented under /<product>/mcp/.
 
 ## Product Families
 

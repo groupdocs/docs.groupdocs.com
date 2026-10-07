@@ -12,7 +12,10 @@
 #   icon        <symbol id> in /img/groupdocs-stack.svg (note: search uses "search-app")
 #   weight      display order (ascending)
 #   description card blurb
-#   platforms   subset/order of: net, java, nodejs-java, python-net
+#   platforms   subset/order of: net, java, nodejs-java, python-net, mcp
+#               "mcp" is not a runtime: it marks a family that ships an MCP server for AI agents
+#               (Claude, Cursor, Copilot) and links the card to {url}/mcp/. Add it only once that
+#               product's /mcp/ section is published to the environment you deploy, or the pill 404s.
 
 [[product]]
 key         = "total"
@@ -30,7 +33,7 @@ url         = "/conversion"
 icon        = "conversion"
 weight      = 2
 description = "Huge conversion API that supports over 7400 document conversion pairs. With innumerous conversion options you will get hight quality result fast"
-platforms   = ["net", "java", "nodejs-java", "python-net"]
+platforms   = ["net", "java", "nodejs-java", "python-net", "mcp"]
 
 [[product]]
 key         = "viewer"
@@ -39,7 +42,7 @@ url         = "/viewer"
 icon        = "viewer"
 weight      = 3
 description = "Excellent file viewer component that empowers your C#, ASP.NET, and other .NET applications with document viewing features across more than 170+ supported file formats"
-platforms   = ["net", "java", "nodejs-java", "python-net"]
+platforms   = ["net", "java", "nodejs-java", "python-net", "mcp"]
 
 [[product]]
 key         = "markdown"
@@ -48,7 +51,7 @@ url         = "/markdown"
 icon        = "markdown"
 weight      = 4
 description = "GroupDocs.Markdown is an SDK for exporting PDF, Word, Excel, and other document types to Markdown, making your documents gen AI ready."
-platforms   = ["net", "java", "python-net"]
+platforms   = ["net", "java", "python-net", "mcp"]
 
 [[product]]
 key         = "comparison"
@@ -57,7 +60,7 @@ url         = "/comparison"
 icon        = "comparison"
 weight      = 5
 description = "Document comparison API that detects document text, styling and formating changes quickly and with a high accuracy"
-platforms   = ["net", "java", "nodejs-java", "python-net"]
+platforms   = ["net", "java", "nodejs-java", "python-net", "mcp"]
 
 [[product]]
 key         = "watermark"
@@ -66,7 +69,7 @@ url         = "/watermark"
 icon        = "watermark"
 weight      = 6
 description = "Watermark manipulation APIs for creating, removing, smart searching, edit locking, and performing other powerful operations across all popular platforms and supported file formats"
-platforms   = ["net", "java", "nodejs-java", "python-net"]
+platforms   = ["net", "java", "nodejs-java", "python-net", "mcp"]
 
 [[product]]
 key         = "metadata"
@@ -75,7 +78,7 @@ url         = "/metadata"
 icon        = "metadata"
 weight      = 7
 description = "Native .NET API to dynamically read, write, edit and remove meta information from Microsoft Office, PDF, Multimedia, images and various other file formats"
-platforms   = ["net", "java", "nodejs-java", "python-net"]
+platforms   = ["net", "java", "nodejs-java", "python-net", "mcp"]
 
 [[product]]
 key         = "parser"
@@ -84,7 +87,7 @@ url         = "/parser"
 icon        = "parser"
 weight      = 8
 description = "Parse, extract images, raw & formatted text with metadata and perform a lot of operations with it using APIs which work on all popular platforms and supported file formats"
-platforms   = ["net", "java", "nodejs-java", "python-net"]
+platforms   = ["net", "java", "nodejs-java", "python-net", "mcp"]
 
 [[product]]
 key         = "merger"
@@ -93,7 +96,7 @@ url         = "/merger"
 icon        = "merger"
 weight      = 9
 description = "Powerful API to merge PDF, Word, Excel, PowerPoint documents and many other formats, move, reorder or remove document pages in different ways and with flexible options"
-platforms   = ["net", "java", "nodejs-java", "python-net"]
+platforms   = ["net", "java", "nodejs-java", "python-net", "mcp"]
 
 [[product]]
 key         = "assembly"
@@ -111,7 +114,7 @@ url         = "/redaction"
 icon        = "redaction"
 weight      = 11
 description = "Build cross-platform applications that perform operations, such as, redacting, hiding, removing content and metadata from documents, presentations, worksheets and PDF files"
-platforms   = ["net", "java", "python-net"]
+platforms   = ["net", "java", "python-net", "mcp"]
 
 [[product]]
 key         = "signature"
@@ -120,7 +123,7 @@ url         = "/signature"
 icon        = "signature"
 weight      = 12
 description = "Outstanding electronic signature API that allows you to design your documents with digital certificate, image, text and hand-written signatures, QR-Code and many more"
-platforms   = ["net", "java", "nodejs-java", "python-net"]
+platforms   = ["net", "java", "nodejs-java", "python-net", "mcp"]
 
 [[product]]
 key         = "search"
@@ -147,7 +150,7 @@ url         = "/annotation"
 icon        = "annotation"
 weight      = 15
 description = "Powerful document annotator component that helps you to boost your applications with document annotation, commenting and collaboration features."
-platforms   = ["net", "java", "python-net"]
+platforms   = ["net", "java", "python-net", "mcp"]
 
 [[product]]
 key         = "classification"
