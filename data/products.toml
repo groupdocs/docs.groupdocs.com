@@ -132,7 +132,7 @@ url         = "/search"
 icon        = "search-app"
 weight      = 13
 description = "Transform your document search process with this API for advance full text search capability into any existing or new cross platform application"
-platforms   = ["net", "java"]
+platforms   = ["net", "java", "mcp"]
 
 [[product]]
 key         = "editor"
