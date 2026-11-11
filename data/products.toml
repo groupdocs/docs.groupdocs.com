@@ -105,7 +105,7 @@ url         = "/assembly"
 icon        = "assembly"
 weight      = 10
 description = "Automate your document generation process with cross platform automation assembly APIs to boost productivity and accuracy"
-platforms   = ["net", "java", "nodejs-java", "python-net"]
+platforms   = ["net", "java", "nodejs-java", "python-net", "mcp"]
 
 [[product]]
 key         = "redaction"
@@ -141,7 +141,7 @@ url         = "/editor"
 icon        = "editor"
 weight      = 14
 description = "Modern document editor API that allows you to edit various documents inside your applications without additional software installed"
-platforms   = ["net", "java", "nodejs-java", "python-net"]
+platforms   = ["net", "java", "nodejs-java", "python-net", "mcp"]
 
 [[product]]
 key         = "annotation"
