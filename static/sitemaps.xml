@@ -51,10 +51,7 @@
 
   <!-- GroupDocs.Assembly -->
   <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/assembly-net.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/assembly-java.xml</loc>
+    <loc>https://docs.groupdocs.com/sitemaps/assembly.xml</loc>
   </sitemap>
 
   <!-- GroupDocs.Redaction -->
@@ -84,7 +81,7 @@
 
   <!-- GroupDocs.Classification -->
   <sitemap>
-    <loc>https://docs.groupdocs.com/sitemaps/classification-net.xml</loc>
+    <loc>https://docs.groupdocs.com/sitemaps/classification.xml</loc>
   </sitemap>
 </sitemapindex>
 

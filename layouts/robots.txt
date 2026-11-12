@@ -1,0 +1,10 @@
+{{- /* Overrides the theme's robots.txt, which pointed at sitemap.xml (home page only). QA hosts are never
+       indexed; prod points crawlers at the sitemap index (static/sitemaps.xml -> sitemaps/<product>.xml). */ -}}
+User-agent: *
+{{- if in .Site.BaseURL "-qa." }}
+Disallow: /
+{{- else }}
+Disallow: /tags/
+
+Sitemap: {{ "sitemaps.xml" | absURL }}
+{{- end }}

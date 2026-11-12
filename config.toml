@@ -4,6 +4,7 @@ title                       = "GroupDocs"
 theme                       = "hugo-geekdoc"
 
 disableKinds                = ["RSS", "sitemap", "categories", "tags", "taxonomy", "taxonomyTerm"]
+enableRobotsTXT             = true   # layouts/robots.txt: sitemaps.xml index on prod, Disallow on QA
 
 # Module mounts: serve _output_files/ and _sample_files/ as static assets
 # so Hugo never tries to render .md files inside them as pages. Applies to
