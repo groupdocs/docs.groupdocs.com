@@ -3,14 +3,17 @@
        _default/list.html; the home page and 404 have their own layouts and no toolbar.
        - Off site-wide with params.pageActions = false, on one page with front matter `pageActions: false`.
        - "Ask about this page" needs Ask AI on the page (scope listed in params.aiSearchScopes) and
-         params.askAboutPage not set to false. It opens the Ask AI dialog in page mode (ai-search.js).
+         params.askAboutPage = true (everywhere) or "qa" (QA builds only: baseURL contains "-qa.", the
+         same check as layouts/robots.txt). It opens the Ask AI dialog in page mode (ai-search.js).
        - Copy / View use the page's Markdown twin (utils/md-url), which exists only after
          scripts/move_md_to_ugly_urls.sh has run (CI builds; not plain `hugo server`).
        - Set up agent opens partials/agent-setup-dialog.html.
        Behaviour: static/js/page-actions.js. Styles: static/custom.css ("Page actions"). */ -}}
 {{- if and (ne site.Params.pageActions false) (ne .Params.pageActions false) -}}
 {{- $md := partial "utils/md-url" . -}}
-{{- $ask := and (ne site.Params.askAboutPage false) (in site.Params.aiSearchScopes (partial "utils/ai-search-scope" .)) -}}
+{{- $askParam := site.Params.askAboutPage -}}
+{{- $askOn := or (eq $askParam true) (and (eq $askParam "qa") (in site.BaseURL "-qa.")) -}}
+{{- $ask := and $askOn (in site.Params.aiSearchScopes (partial "utils/ai-search-scope" .)) -}}
 <div class="gdoc-page-actions" role="group" aria-label="Page actions">
   {{- if $ask }}
   <button type="button" class="gdoc-page-actions__btn" data-action="ask-page" data-page="{{ .RelPermalink }}" data-title="{{ partial "utils/title" . }}" title="Ask AI a question about this page">

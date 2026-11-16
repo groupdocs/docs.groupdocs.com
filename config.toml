@@ -118,9 +118,11 @@ pluralizeListTitles = false
     # front matter `pageActions: false`.
     pageActions             = true
     # "Ask about this page" opens Ask AI in page mode and sends the page path as `page` with every
-    # question (static/js/ai-search.js). Off until the Ask AI backend (aiSearchEndpoint) supports
-    # `page` (feature request logged with the Ask AI team, 2026-11-16); set to true once it ships.
-    askAboutPage            = false
+    # question (static/js/ai-search.js). true = everywhere, "qa" = QA builds only (baseURL contains
+    # "-qa.", same check as layouts/robots.txt), false = hidden. "qa" while the Ask AI team builds
+    # `page` support (feature request logged 2026-11-16) so they can test on docs-qa; set to true
+    # once it ships.
+    askAboutPage            = "qa"
     # Docs MCP server that the "Set up agent" dialog connects clients to (tabs/commands: data/agents.toml)
     docsMcpUrl              = "https://docs.groupdocs.com/mcp"
 
