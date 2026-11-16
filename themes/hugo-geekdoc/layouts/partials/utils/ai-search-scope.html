@@ -1,7 +1,7 @@
 {{- /* Ask AI scope of a page: "<product>_<platform>" from the first two URL segments, e.g.
-       /viewer/net/render-pdf-documents/ -> "viewer_net". Ask AI is enabled on a page when its scope
-       is listed in .Site.Params.aiSearchScopes. Shared by baseof.html, ai-search-result.html and
-       page-actions.html. Pages with fewer segments (home, /viewer/) yield a scope that is never
-       listed, so Ask AI stays off there. */ -}}
+       /viewer/net/render-pdf-documents/ -> "viewer_net". Whether Ask AI is on for that scope is
+       decided by utils/ai-search-enabled (params.aiSearchScopes / aiSearchScopesQA); the scope itself
+       is also sent with every question (ai-search-result.html). Pages with fewer segments (home,
+       /viewer/) yield a scope that is never listed, so Ask AI stays off there. */ -}}
 {{- $parts := split .RelPermalink "/" -}}
 {{- return printf "%s_%s" (index $parts 1) (index $parts 2) -}}

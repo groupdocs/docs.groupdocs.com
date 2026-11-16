@@ -39,7 +39,7 @@
      
       {{ partial "site-header" . }}
 
-      {{ $aiSearchEnabled := in .Site.Params.aiSearchScopes (partial "utils/ai-search-scope" .) }}
+      {{ $aiSearchEnabled := partial "utils/ai-search-enabled" . }}
 
       <main class="container flex flex-even">
         {{ if $navEnabled }}

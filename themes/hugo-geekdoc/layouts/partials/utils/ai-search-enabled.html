@@ -1,0 +1,10 @@
+{{- /* Is Ask AI on for this page? Its scope (utils/ai-search-scope) must be listed in
+       params.aiSearchScopes, or, on QA builds only (baseURL contains "-qa.", the same check as
+       layouts/robots.txt), in params.aiSearchScopesQA. Used by baseof.html (sidebar box + results
+       dialog) and page-actions.html ("Ask about this page"). */ -}}
+{{- $scope := partial "utils/ai-search-scope" . -}}
+{{- $on := in site.Params.aiSearchScopes $scope -}}
+{{- if and (not $on) (in site.BaseURL "-qa.") -}}
+  {{- with site.Params.aiSearchScopesQA }}{{ $on = in . $scope }}{{ end -}}
+{{- end -}}
+{{- return $on -}}

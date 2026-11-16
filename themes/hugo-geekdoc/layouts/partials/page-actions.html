@@ -4,7 +4,7 @@
        - Off site-wide with params.pageActions = false, on one page with front matter `pageActions: false`,
          and on pages without the docs sidebar (`geekdocNav: false`): the product family landing pages
          (/annotation/, /viewer/, ...), which are hubs rather than documentation pages.
-       - "Ask about this page" needs Ask AI on the page (scope listed in params.aiSearchScopes) and
+       - "Ask about this page" needs Ask AI on the page (utils/ai-search-enabled) and
          params.askAboutPage = true (everywhere) or "qa" (QA builds only: baseURL contains "-qa.", the
          same check as layouts/robots.txt). It opens the Ask AI dialog in page mode (ai-search.js).
        - Copy / View use the page's Markdown twin (utils/md-url), which exists only after
@@ -15,7 +15,7 @@
 {{- $md := partial "utils/md-url" . -}}
 {{- $askParam := site.Params.askAboutPage -}}
 {{- $askOn := or (eq $askParam true) (and (eq $askParam "qa") (in site.BaseURL "-qa.")) -}}
-{{- $ask := and $askOn (in site.Params.aiSearchScopes (partial "utils/ai-search-scope" .)) -}}
+{{- $ask := and $askOn (partial "utils/ai-search-enabled" .) -}}
 <div class="gdoc-page-actions" role="group" aria-label="Page actions">
   {{- if $ask }}
   <button type="button" class="gdoc-page-actions__btn" data-action="ask-page" data-page="{{ .RelPermalink }}" data-title="{{ partial "utils/title" . }}" title="Ask AI a question about this page">

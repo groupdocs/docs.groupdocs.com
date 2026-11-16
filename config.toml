@@ -102,15 +102,26 @@ pluralizeListTitles = false
                                 "conversion_net", "conversion_java", "conversion_python-net", "conversion_nodejs-java",
                                 "editor_net",  "editor_java", "editor_nodejs-java",
                                 "markdown_net", "markdown_java", "markdown_python-net",
-                                "merger_net",  "merger_java",
-                                "metadata_net", "metadata_java",
+                                "merger_net",  "merger_java", "merger_python-net", "merger_nodejs-java",
+                                "metadata_net", "metadata_java", "metadata_python-net", "metadata_nodejs-java",
                                 "parser_net", "parser_java", "parser_python-net", "parser_nodejs-java",
                                 "redaction_net", "redaction_java",
-                                "search_net", "search_java", "search_python-net",
+                                "search_net", "search_java", "search_python-net", "search_nodejs-java",
                                 "signature_net", "signature_java", "signature_python-net", "signature_nodejs-java",
                                 "viewer_net", "viewer_java", "viewer_python-net", "viewer_nodejs-java",
                                 "watermark_net", "watermark_java", "watermark_python-net", "watermark_nodejs-java",
                                 "total_net",   "total_java", "total_python-net", "total_nodejs-java"
+                            ]
+    # Ask AI on QA builds only (baseURL contains "-qa.", the same check as layouts/robots.txt): sections
+    # the Ask AI backend does not index yet. On 2026-11-16 these returned empty answers (HTTP 200, blank
+    # summary, no articles), so they stay off in production. Move a scope up to aiSearchScopes once it
+    # answers on docs-qa. (utils/ai-search-enabled.html applies both lists.)
+    aiSearchScopesQA        = [ "annotation_python-net",
+                                "editor_python-net",
+                                "redaction_python-net", "redaction_nodejs-java",
+                                "annotation_mcp", "assembly_mcp", "comparison_mcp", "conversion_mcp", "editor_mcp",
+                                "markdown_mcp", "merger_mcp", "metadata_mcp", "parser_mcp", "redaction_mcp",
+                                "search_mcp", "signature_mcp", "viewer_mcp", "watermark_mcp"
                             ]
 
     # Page actions toolbar under every page title (themes/hugo-geekdoc/layouts/partials/page-actions.html):
