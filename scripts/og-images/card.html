@@ -1,0 +1,115 @@
+<!doctype html>
+<!-- Social preview card (Open Graph / Twitter), 1200x630. Rendered to JPEG by generate.py with headless
+     Chrome; it fills the @…@ placeholders (fonts, logo, icon sprite) and passes the card text in the query
+     string. Visual language of the docs home page (layouts/index.html): dark "For AI agents" panel colours,
+     product icon tile, "GroupDocs." prefix in muted text, platform pills with the home-page dot colours. -->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: Inter; font-weight: 500; src: url(@INTER_MEDIUM@); }
+@font-face { font-family: Inter; font-weight: 600; src: url(@INTER_SEMIBOLD@); }
+@font-face { font-family: Inter; font-weight: 800; src: url(@INTER_EXTRABOLD@); }
+
+html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+body { position: relative; background: #0b1220; color: #fff; font-family: Inter, sans-serif; -webkit-font-smoothing: antialiased; }
+.bg { position: absolute; inset: 0;
+      background:
+        radial-gradient(760px 480px at 92% -8%, rgba(0, 84, 250, .42), transparent 62%),
+        radial-gradient(640px 420px at -6% 108%, rgba(85, 143, 255, .18), transparent 60%),
+        linear-gradient(160deg, #0b1220 0%, #0f1b33 100%); }
+.grid { position: absolute; inset: 0; opacity: .5;
+        background-image: linear-gradient(rgba(255, 255, 255, .045) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(255, 255, 255, .045) 1px, transparent 1px);
+        background-size: 56px 56px;
+        -webkit-mask-image: radial-gradient(900px 520px at 80% 20%, #000 20%, transparent 75%); }
+
+.top { position: absolute; left: 72px; right: 72px; top: 60px; display: flex; align-items: center; justify-content: space-between; }
+.brand { height: 36px; }
+.pill { padding: 10px 20px; border: 1px solid rgba(85, 143, 255, .4); border-radius: 999px; background: rgba(85, 143, 255, .14);
+        color: #bcd0ff; font-size: 19px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+
+.main { position: absolute; left: 72px; right: 72px; top: 178px; height: 236px; display: flex; align-items: center; gap: 44px; }
+.tile { flex: none; display: flex; align-items: center; justify-content: center; width: 176px; height: 176px; border-radius: 40px;
+        background: rgba(85, 143, 255, .14); border: 1px solid rgba(85, 143, 255, .3); box-shadow: 0 24px 60px rgba(0, 0, 0, .35); }
+.tile svg { width: 104px; height: 104px; fill: #6c9bff; color: #6c9bff; }
+.text { min-width: 0; flex: 1; }
+.name { font-size: 80px; font-weight: 800; letter-spacing: -.025em; line-height: 1.05; white-space: nowrap; }
+.name .prefix { color: #94a3b8; font-weight: 600; }
+.sub { margin-top: 18px; color: #bcd0ff; font-size: 42px; font-weight: 600; line-height: 1.2; }
+.default .name { font-size: 76px; white-space: normal; }
+.default .sub { color: #94a3b8; font-size: 34px; font-weight: 500; }
+
+.bottom { position: absolute; left: 72px; right: 72px; bottom: 56px; display: flex; align-items: center; justify-content: space-between; }
+.site { color: #94a3b8; font-size: 25px; font-weight: 500; }
+.platforms { display: flex; gap: 12px; }
+.platforms span { display: inline-flex; align-items: center; gap: 10px; padding: 9px 16px; border: 1px solid rgba(255, 255, 255, .12); border-radius: 10px;
+                  background: rgba(255, 255, 255, .05); color: #cbd5e1; font-size: 21px; font-weight: 600; }
+.platforms span i { width: 12px; height: 12px; border-radius: 50%; }
+.platforms span.on { border-color: rgba(108, 155, 255, .7); background: rgba(85, 143, 255, .2); color: #fff; }
+
+.sprite { display: none; }
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="grid"></div>
+<div class="sprite">@SPRITE@</div>
+
+<div class="top">
+  <img class="brand" src="@LOGO_WHITE@" alt="GroupDocs">
+  <div class="pill">Documentation</div>
+</div>
+
+<div class="main" id="main">
+  <div class="tile" id="tile"><svg><use id="icon" href=""></use></svg></div>
+  <div class="text">
+    <div class="name" id="name"></div>
+    <div class="sub" id="sub"></div>
+  </div>
+</div>
+
+<div class="bottom">
+  <div class="site">docs.groupdocs.com</div>
+  <div class="platforms" id="platforms"></div>
+</div>
+
+<script>
+// Query string: name, sub, icon (sprite id), platforms (comma list), active (platform key), kind (default|family|platform)
+var q = new URLSearchParams(location.search);
+var LABELS = { "net": ".NET", "java": "Java", "python-net": "Python", "nodejs-java": "Node.js", "mcp": "MCP" };
+var DOTS = { "net": "#7c5cff", "java": "#e76f00", "python-net": "#4b8bd4", "nodejs-java": "#3ea66b", "mcp": "#0ea5a4" };
+
+var name = q.get("name") || "";
+var nameEl = document.getElementById("name");
+if (name.indexOf("GroupDocs.") === 0) {
+  nameEl.innerHTML = '<span class="prefix">GroupDocs.</span>' + name.slice(10).replace(/[<&]/g, "");
+} else {
+  nameEl.textContent = name;
+}
+document.getElementById("sub").textContent = q.get("sub") || "";
+
+if (q.get("kind") === "default") {
+  document.getElementById("main").classList.add("default");
+  document.getElementById("tile").remove();
+} else {
+  document.getElementById("icon").setAttribute("href", "#" + (q.get("icon") || "total"));
+}
+
+var active = q.get("active") || "";
+(q.get("platforms") || "").split(",").filter(Boolean).forEach(function (p) {
+  var s = document.createElement("span");
+  if (p === active) s.className = "on";
+  s.innerHTML = '<i style="background:' + (DOTS[p] || "#94a3b8") + '"></i>' + (LABELS[p] || p);
+  document.getElementById("platforms").appendChild(s);
+});
+
+// Long product names (GroupDocs.Classification) must stay on one line: shrink until they fit.
+var size = parseFloat(getComputedStyle(nameEl).fontSize);
+while (nameEl.scrollWidth > nameEl.clientWidth && size > 40 && getComputedStyle(nameEl).whiteSpace === "nowrap") {
+  size -= 2;
+  nameEl.style.fontSize = size + "px";
+}
+</script>
+</body>
+</html>

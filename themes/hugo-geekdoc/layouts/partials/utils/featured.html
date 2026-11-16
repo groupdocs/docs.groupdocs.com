@@ -1,3 +1,6 @@
+{{- /* Image for social previews and structured data (opengraph.html, twitter_cards.html, schema.html):
+       a page-bundle image named *feature*, *cover* or *thumbnail*, else front matter `images`, else the
+       generated product card (utils/og-card.html). */ -}}
 {{ $img := "" }}
 
 {{ with $source := ($.Resources.ByType "image").GetMatch "{*feature*,*cover*,*thumbnail*}" }}
@@ -6,6 +9,8 @@
 {{ else }}
   {{ with default $.Site.Params.images $.Params.images }}
     {{ $img = index . 0 | absURL }}
+  {{ else }}
+    {{ $img = (partialCached "utils/og-card" $ $.RelPermalink).url }}
   {{ end }}
 {{ end }}
 

@@ -1,16 +1,22 @@
 {{ $isPage := or (and (ne .Type "posts") (in "section page" .Kind )) (and (eq .Type "posts") (eq .Kind "page")) }}
 
-{{- if ne .Kind "home" }}
-  <meta
-    property="og:title"
-    {{ partial "utils/title" . | printf "content=%q" | safeHTMLAttr }}
-  />
-{{- end }}
+<meta
+  property="og:title"
+  {{ partial "utils/title" . | printf "content=%q" | safeHTMLAttr }}
+/>
 {{- with .Site.Title }}
   <meta property="og:site_name" {{ . | printf "content=%q" | safeHTMLAttr }} />
 {{- end }}
 {{- with partial "utils/featured" . }}
   <meta property="og:image" content="{{ . }}" />
+  {{- /* the generated product cards (utils/og-card.html) are all 1200x630 JPEGs */}}
+  {{- $card := partialCached "utils/og-card" $ $.RelPermalink }}
+  {{- if eq . $card.url }}
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="{{ $card.alt }}" />
+  {{- end }}
 {{- end }}
 {{- with partial "utils/description" . }}
   <meta property="og:description" content="{{ . | plainify | htmlUnescape | chomp }}" />

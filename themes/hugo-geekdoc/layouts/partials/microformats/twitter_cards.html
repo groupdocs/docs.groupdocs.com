@@ -5,7 +5,11 @@
 {{- end }}
 <meta name="twitter:title" {{ partial "utils/title" . | printf "content=%q" | safeHTMLAttr }} />
 {{- with partial "utils/featured" . }}
-  <meta property="twitter:image" content="{{ . }}" />
+  <meta name="twitter:image" content="{{ . }}" />
+  {{- $card := partialCached "utils/og-card" $ $.RelPermalink }}
+  {{- if eq . $card.url }}
+  <meta name="twitter:image:alt" content="{{ $card.alt }}" />
+  {{- end }}
 {{- end }}
 {{- with partial "utils/description" . }}
   <meta name="twitter:description" content="{{ . | plainify | htmlUnescape | chomp }}" />
