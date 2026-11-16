@@ -1,7 +1,9 @@
 {{- /* Page actions toolbar under the page title: Ask about this page / Copy for LLM / View as Markdown /
        Set up agent (modelled on docs.stripe.com). Included right after </h1> in _default/single.html and
        _default/list.html; the home page and 404 have their own layouts and no toolbar.
-       - Off site-wide with params.pageActions = false, on one page with front matter `pageActions: false`.
+       - Off site-wide with params.pageActions = false, on one page with front matter `pageActions: false`,
+         and on pages without the docs sidebar (`geekdocNav: false`): the product family landing pages
+         (/annotation/, /viewer/, ...), which are hubs rather than documentation pages.
        - "Ask about this page" needs Ask AI on the page (scope listed in params.aiSearchScopes) and
          params.askAboutPage = true (everywhere) or "qa" (QA builds only: baseURL contains "-qa.", the
          same check as layouts/robots.txt). It opens the Ask AI dialog in page mode (ai-search.js).
@@ -9,7 +11,7 @@
          scripts/move_md_to_ugly_urls.sh has run (CI builds; not plain `hugo server`).
        - Set up agent opens partials/agent-setup-dialog.html.
        Behaviour: static/js/page-actions.js. Styles: static/custom.css ("Page actions"). */ -}}
-{{- if and (ne site.Params.pageActions false) (ne .Params.pageActions false) -}}
+{{- if and (ne site.Params.pageActions false) (ne .Params.pageActions false) (ne .Params.geekdocNav false) -}}
 {{- $md := partial "utils/md-url" . -}}
 {{- $askParam := site.Params.askAboutPage -}}
 {{- $askOn := or (eq $askParam true) (and (eq $askParam "qa") (in site.BaseURL "-qa.")) -}}
