@@ -1,0 +1,8 @@
+{{- /* Replace {key} placeholders in .s with the values of the .vars dict, e.g.
+       (dict "s" "codex mcp add {name} --url {url}" "vars" (dict "name" "groupdocs-docs" "url" "https://...")).
+       Used by agent-setup-dialog.html to fill the command templates from data/agents.toml. */ -}}
+{{- $s := .s -}}
+{{- range $key, $value := .vars -}}
+  {{- $s = replace $s (printf "{%s}" $key) $value -}}
+{{- end -}}
+{{- return $s -}}

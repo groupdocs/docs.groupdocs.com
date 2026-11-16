@@ -25,6 +25,9 @@ const aiSearchConfig = {
 var aiSearchUI;
 var aiSearchMarkdownProcessor;
 var aiSearchFingerprint = "";
+// "Ask about this page" mode: {path, title} of the page the questions are about, or null for all docs.
+// Set by aiSearchOpenForPage() (called from the page-actions toolbar); sent to the backend as `page`.
+var aiSearchPage = null;
 
 $(function(){
 	ThumbmarkJS.getFingerprint().then(function(fp){aiSearchFingerprint=fp;});
@@ -42,8 +45,14 @@ $(function(){
 		relatedLinks: $("#aiSearchResultsForm > aside"),
 		relatedLinksContainer: $("#aiSearchRelatedArticles"),
 		linkTemplate: $("#aiSearchRelatedArticleTemplate"),
-		searchError: $("#aiSearchError")
+		searchError: $("#aiSearchError"),
+		// page mode (absent from HTML built before it existed; jQuery no-ops on empty sets)
+		pageChip: $("#aiSearchPageChip"),
+		pageChipLabel: $("#aiSearchPageChipLabel"),
+		pageChipRemove: $("#aiSearchPageChipRemove"),
+		pageHint: $("#aiSearchPageHint")
 	};
+	aiSearchUI.defaultPlaceholder = aiSearchUI.resultsField.attr("placeholder");
 	// initialize Markdown converter
 	aiSearchMarkdownProcessor = new showdown.Converter(aiSearchConfig.mdProcessorSettings);
 	// event handlers
@@ -52,12 +61,14 @@ $(function(){
 	aiSearchUI.resultsButton.click(aiSearchUpdate);
 	aiSearchUI.resultsField.keypress(function(e){if(e.keyCode == 13) aiSearchUpdate();});
 	aiSearchUI.resultsCloseButton.click(aiSearchClose);
+	aiSearchUI.pageChipRemove.click(function(){aiSearchClearPage(); aiSearchUI.resultsField.focus();});
 	$(document).keyup(function(e){if(e.keyCode == 27) aiSearchClose();});
 });
 
 function aiSearchReset()
 {
 	aiSearchUI.preloader.show();
+	aiSearchUI.pageHint.addClass("ai-search-invisible");
 	aiSearchUI.searchError.hide();
 	aiSearchUI.summary.html("");
 	aiSearchUI.relatedLinks.hide();
@@ -72,6 +83,8 @@ function aiSearchOpen()
 		console.log(`Search query is less than ${aiSearchConfig.searchPromptMinLength} characters`);
 		return false;
 	}
+	// the sidebar box always asks about all docs
+	aiSearchClearPage();
 	// show search results interface
 	aiSearchReset();
 	aiSearchUI.resultsField.val(prompt);
@@ -98,16 +111,46 @@ function aiSearchClose()
 {
 	aiSearchUI.curtain.addClass("ai-search-invisible");
 	aiSearchUI.results.addClass("ai-search-invisible");
+	aiSearchClearPage();
+}
+
+// "Ask about this page": open the results dialog empty, with the page attached as a context chip.
+// Nothing is sent until the user asks; every question then carries `page` (see aiSearchRequest).
+function aiSearchOpenForPage(path, title)
+{
+	if(!aiSearchUI) return false; // called before the ready handler ran
+	aiSearchReset();
+	aiSearchUI.preloader.hide();
+	aiSearchPage = { path: path, title: title };
+	aiSearchUI.pageChipLabel.text(title);
+	aiSearchUI.pageChip.removeClass("ai-search-invisible");
+	aiSearchUI.pageHint.removeClass("ai-search-invisible");
+	aiSearchUI.resultsField.val("").attr("placeholder", "Ask a question about this page");
+	aiSearchUI.curtain.removeClass("ai-search-invisible");
+	aiSearchUI.results.removeClass("ai-search-invisible");
+	aiSearchUI.resultsField.focus();
+	return true;
+}
+
+function aiSearchClearPage()
+{
+	aiSearchPage = null;
+	aiSearchUI.pageChip.addClass("ai-search-invisible");
+	aiSearchUI.pageHint.addClass("ai-search-invisible");
+	aiSearchUI.resultsField.attr("placeholder", aiSearchUI.defaultPlaceholder);
 }
 
 function aiSearchRequest(prompt)
-{	
+{
 	let request = {
 		query: prompt,
 		scope: aiSearchScope,
 		referrer: `${window.location.protocol}//${window.location.host}${window.location.pathname}`,
 		fingerprint: aiSearchFingerprint
 	};
+	// Site-relative path of the page being asked about, e.g. "/viewer/net/render-pdf-documents/".
+	// The backend grounds the answer on that page's Markdown (<path without trailing "/">.md).
+	if(aiSearchPage) request.page = aiSearchPage.path;
 	$.ajax({
 		method: "POST",
 		contentType: "application/json",

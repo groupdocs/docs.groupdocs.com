@@ -1,2 +1,5 @@
 <!-- You can add custom elements to the page header here. -->
-
+{{- /* Point agents and crawlers at the page's Markdown twin (see utils/md-url). */}}
+{{- with partial "utils/md-url" . }}
+<link rel="alternate" type="text/markdown" href="{{ . | absURL }}" title="Markdown" />
+{{- end }}

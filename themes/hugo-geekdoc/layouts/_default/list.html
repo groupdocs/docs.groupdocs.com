@@ -35,6 +35,7 @@
         </a>
       {{ end }}
     </h1>
+    {{ partial "page-actions" . }}
 
     {{ if $hasToc }}{{ partial "toc-mobile" . }}{{ end }}
     {{ partial "utils/content" . }}

@@ -1,0 +1,40 @@
+{{- /* Page actions toolbar under the page title: Ask about this page / Copy for LLM / View as Markdown /
+       Set up agent (modelled on docs.stripe.com). Included right after </h1> in _default/single.html and
+       _default/list.html; the home page and 404 have their own layouts and no toolbar.
+       - Off site-wide with params.pageActions = false, on one page with front matter `pageActions: false`.
+       - "Ask about this page" needs Ask AI on the page (scope listed in params.aiSearchScopes) and
+         params.askAboutPage not set to false. It opens the Ask AI dialog in page mode (ai-search.js).
+       - Copy / View use the page's Markdown twin (utils/md-url), which exists only after
+         scripts/move_md_to_ugly_urls.sh has run (CI builds; not plain `hugo server`).
+       - Set up agent opens partials/agent-setup-dialog.html.
+       Behaviour: static/js/page-actions.js. Styles: static/custom.css ("Page actions"). */ -}}
+{{- if and (ne site.Params.pageActions false) (ne .Params.pageActions false) -}}
+{{- $md := partial "utils/md-url" . -}}
+{{- $ask := and (ne site.Params.askAboutPage false) (in site.Params.aiSearchScopes (partial "utils/ai-search-scope" .)) -}}
+<div class="gdoc-page-actions" role="group" aria-label="Page actions">
+  {{- if $ask }}
+  <button type="button" class="gdoc-page-actions__btn" data-action="ask-page" data-page="{{ .RelPermalink }}" data-title="{{ partial "utils/title" . }}" title="Ask AI a question about this page">
+    <svg class="gdoc-page-actions__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 3l1.7 4.6c.1.3.4.6.7.7L17 10l-4.6 1.7c-.3.1-.6.4-.7.7L10 17l-1.7-4.6c-.1-.3-.4-.6-.7-.7L3 10l4.6-1.7c.3-.1.6-.4.7-.7zm8.5 10l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg>
+    <span class="gdoc-page-actions__label">Ask about this page</span>
+  </button>
+  {{- end }}
+  {{- with $md }}
+  <button type="button" class="gdoc-page-actions__btn" data-action="copy-md" data-md="{{ . }}" data-src="{{ $.Permalink }}" title="Copy page as Markdown">
+    <svg class="gdoc-page-actions__icon copy" aria-hidden="true"><use xlink:href="#gdoc_copy"></use></svg>
+    <svg class="gdoc-page-actions__icon check hidden" aria-hidden="true"><use xlink:href="#gdoc_check"></use></svg>
+    <span class="gdoc-page-actions__label" data-done="Copied" data-fail="Copy failed">Copy for LLM</span>
+  </button>
+  <a class="gdoc-page-actions__btn" href="{{ . }}" target="_blank" rel="noopener nofollow" data-action="view-md" title="Open this page as Markdown">
+    <svg class="gdoc-page-actions__icon gdoc-page-actions__icon--md" viewBox="0 0 208 128" aria-hidden="true"><rect x="6" y="6" width="196" height="116" rx="12" fill="none" stroke="currentColor" stroke-width="12"/><path fill="currentColor" d="M30 98V30h20l20 25 20-25h20v68H90V59L70 84 50 59v39zm125 0l-30-33h20V30h20v35h20z"/></svg>
+    <span class="gdoc-page-actions__label">View as Markdown</span>
+  </a>
+  {{- end }}
+  <button type="button" class="gdoc-page-actions__btn" data-action="setup-agent" aria-haspopup="dialog" aria-controls="gdoc-agent-setup" title="Connect your AI coding agent to the GroupDocs docs">
+    <svg class="gdoc-page-actions__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M7.5 9.5l3 2.5-3 2.5M13 15h3.5"/></svg>
+    <span class="gdoc-page-actions__label">Set up agent</span>
+  </button>
+  <span class="gdoc-page-actions__status" role="status" aria-live="polite"></span>
+</div>
+{{ partial "agent-setup-dialog" . }}
+<script defer src="/js/page-actions.js?v=26.11.0"></script>
+{{- end -}}

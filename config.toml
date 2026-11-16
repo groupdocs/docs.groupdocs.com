@@ -113,6 +113,17 @@ pluralizeListTitles = false
                                 "total_net",   "total_java", "total_python-net", "total_nodejs-java"
                             ]
 
+    # Page actions toolbar under every page title (themes/hugo-geekdoc/layouts/partials/page-actions.html):
+    # Ask about this page / Copy for LLM / View as Markdown / Set up agent. One page can opt out with
+    # front matter `pageActions: false`.
+    pageActions             = true
+    # "Ask about this page" opens Ask AI in page mode and sends the page path as `page` with every
+    # question (static/js/ai-search.js). Off until the Ask AI backend (aiSearchEndpoint) supports
+    # `page` (feature request logged with the Ask AI team, 2026-11-16); set to true once it ships.
+    askAboutPage            = false
+    # Docs MCP server that the "Set up agent" dialog connects clients to (tabs/commands: data/agents.toml)
+    docsMcpUrl              = "https://docs.groupdocs.com/mcp"
+
     # Collapse not active menu items by default
     GeekdocCollapseAllSections  = true
     # Disable default Hugo search

@@ -1,0 +1,83 @@
+# AI clients offered by the "Set up agent" dialog — the last button of the page-actions toolbar
+# under every page title (themes/hugo-geekdoc/layouts/partials/agent-setup-dialog.html).
+# One [[client]] block = one tab, in file order; the first tab is the default.
+#
+# The dialog connects the client to the GroupDocs Docs MCP server (params.docsMcpUrl in config.toml).
+# On a product family that ships its own MCP server ("mcp" in its data/products.toml platforms), each
+# tab also offers that server, which processes documents locally.
+#
+# Placeholders, filled in by the template:
+#   {name}     Docs MCP server name, docsName below          e.g. groupdocs-docs
+#   {url}      Docs MCP server URL, params.docsMcpUrl        e.g. https://docs.groupdocs.com/mcp
+#   {pname}    product MCP server name, groupdocs-<key>      e.g. groupdocs-viewer
+#   {package}  product MCP NuGet package                     e.g. GroupDocs.Viewer.Mcp
+#
+# Fields (all optional except key and label):
+#   key        tab id; also the remembered-tab value and the analytics "client" value
+#   label      tab label
+#   link       one-click install button for the Docs MCP server: "cursor" or "vscode"
+#              (the URL is built in the template from {name} and {url})
+#   note       sentence shown above `code`
+#   code       copyable command or config that adds the Docs MCP server
+#   llms       true: also point clients without MCP support at the section's llms.txt
+#   product    copyable command that adds the product MCP server; tabs without it link to the
+#              product's MCP page (/<product>/mcp/), which has one-click installs and per-client JSON
+#
+# Keep the commands in sync with the product "Register in AI clients" pages
+# (GroupDocs.<Product>-Docs/net/mcp/install-in-ai-clients.md) and test them after editing.
+
+docsName = "groupdocs-docs"
+
+[[client]]
+key     = "claude-code"
+label   = "Claude Code"
+code    = "claude mcp add --transport http {name} {url}"
+product = "claude mcp add {pname} -- dnx {package} --yes"
+
+[[client]]
+key     = "cursor"
+label   = "Cursor"
+link    = "cursor"
+note    = "Or add it to ~/.cursor/mcp.json:"
+code    = '''
+{
+  "mcpServers": {
+    "{name}": { "url": "{url}" }
+  }
+}'''
+
+[[client]]
+key     = "vscode"
+label   = "VS Code"
+link    = "vscode"
+note    = "Or add it to .vscode/mcp.json in your workspace:"
+code    = '''
+{
+  "servers": {
+    "{name}": { "type": "http", "url": "{url}" }
+  }
+}'''
+
+[[client]]
+key     = "codex"
+label   = "Codex"
+code    = "codex mcp add {name} --url {url}"
+product = "codex mcp add {pname} -- dnx {package} --yes"
+
+[[client]]
+key     = "claude-desktop"
+label   = "Claude Desktop"
+note    = "In Claude Desktop or claude.ai, open Settings → Connectors → Add custom connector, and paste this URL:"
+code    = "{url}"
+
+[[client]]
+key     = "other"
+label   = "Other"
+note    = "Any MCP client that supports remote (HTTP) servers:"
+code    = '''
+{
+  "mcpServers": {
+    "{name}": { "url": "{url}" }
+  }
+}'''
+llms    = true

@@ -1,0 +1,105 @@
+{{- /* "Set up your AI agent" dialog, opened by the "Set up agent" button of page-actions.html.
+       One tab per client in data/agents.toml; every tab connects that client to the GroupDocs Docs
+       MCP server (params.docsMcpUrl). On a family that ships its own MCP server ("mcp" in its
+       data/products.toml platforms), every tab also offers that server. Behaviour (open/close, tabs,
+       copy buttons) is in static/js/page-actions.js, which moves the dialog to <body> before the first
+       open so the article's .gdoc-markdown styles do not apply to it. */ -}}
+{{- $agents := site.Data.agents -}}
+{{- $docsName := $agents.docsName -}}
+{{- $docsUrl := site.Params.docsMcpUrl -}}
+{{- $parts := split .RelPermalink "/" -}}
+
+{{- /* The page's product family: first URL segment matched against data/products.toml `key`. */ -}}
+{{- $product := false -}}
+{{- range where site.Data.products.product "key" (index $parts 1) }}{{ $product = . }}{{ end -}}
+{{- $hasProductMcp := and $product (in $product.platforms "mcp") -}}
+{{- $productName := "" -}}
+{{- $pname := "" -}}
+{{- $package := "" -}}
+{{- $productMcpUrl := "" -}}
+{{- if $hasProductMcp -}}
+  {{- $productName = replace $product.title " Product Family" "" -}}  {{/* GroupDocs.Viewer */}}
+  {{- $pname = printf "groupdocs-%s" $product.key -}}                 {{/* groupdocs-viewer */}}
+  {{- $package = printf "%s.Mcp" $productName -}}                      {{/* GroupDocs.Viewer.Mcp (NuGet, run with dnx) */}}
+  {{- $productMcpUrl = printf "%s/mcp/" $product.url -}}
+{{- end -}}
+{{- $vars := dict "name" $docsName "url" $docsUrl "pname" $pname "package" $package -}}
+
+{{- /* llms.txt for clients without MCP: the platform section's (/viewer/net/llms.txt), else the
+       product's (/viewer/llms.txt), else the site-wide one. */ -}}
+{{- $llms := "/llms.txt" -}}
+{{- with .FirstSection }}{{ with .OutputFormats.Get "llmstxt" }}{{ $llms = .RelPermalink }}{{ end }}{{ end -}}
+{{- if gt (len $parts) 3 -}}
+  {{- with site.GetPage (printf "/%s/%s" (index $parts 1) (index $parts 2)) -}}
+    {{- with .OutputFormats.Get "llmstxt" }}{{ $llms = .RelPermalink }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* One-click installs for the Docs MCP server. The query values are encoded here and the result is
+       marked safeURL, so html/template does not encode the % signs a second time. */ -}}
+{{- $oneClick := dict
+      "cursor" (dict
+        "label" "Add to Cursor"
+        "href" (printf "https://cursor.com/en/install-mcp?name=%s&config=%s" $docsName (urlquery (base64Encode (jsonify (dict "url" $docsUrl))))))
+      "vscode" (dict
+        "label" "Install in VS Code"
+        "href" (printf "https://vscode.dev/redirect/mcp/install?name=%s&config=%s" $docsName (urlquery (jsonify (dict "type" "http" "url" $docsUrl))))) -}}
+
+{{- define "gdoc-agent-code" -}}
+<div class="gdoc-agent-code">
+  <pre><code>{{ . }}</code></pre>
+  <button type="button" class="gdoc-agent-code__copy" data-action="copy-code" aria-label="Copy to clipboard" title="Copy">
+    <svg class="gdoc-icon copy" aria-hidden="true"><use xlink:href="#gdoc_copy"></use></svg>
+    <svg class="gdoc-icon check hidden" aria-hidden="true"><use xlink:href="#gdoc_check"></use></svg>
+  </button>
+</div>
+{{- end -}}
+
+<dialog id="gdoc-agent-setup" class="gdoc-agent-dialog" aria-labelledby="gdoc-agent-setup-title">
+{{- /* The dialog itself has no padding, so a click whose target is the <dialog> is a backdrop click. */}}
+<div class="gdoc-agent-dialog__inner">
+  <div class="gdoc-agent-dialog__head">
+    <h2 id="gdoc-agent-setup-title" class="gdoc-agent-dialog__title">Set up your AI agent</h2>
+    <button type="button" class="gdoc-agent-dialog__close" data-action="close-dialog" aria-label="Close" title="Close">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <p class="gdoc-agent-dialog__lead">
+    Give your coding agent live access to the GroupDocs documentation and API reference through the
+    GroupDocs Docs MCP server &mdash; no install, no API key. <a href="/#ai-agents">Learn more</a>
+  </p>
+
+  <div class="gdoc-agent-dialog__tabs" role="tablist" aria-label="AI client">
+    {{- range $i, $c := $agents.client }}
+    <button type="button" role="tab" class="gdoc-agent-dialog__tab" id="gdoc-agent-tab-{{ $c.key }}" data-client="{{ $c.key }}" aria-controls="gdoc-agent-panel-{{ $c.key }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"{{ if ne $i 0 }} tabindex="-1"{{ end }}>{{ $c.label }}</button>
+    {{- end }}
+  </div>
+
+  {{- range $i, $c := $agents.client }}
+  <div class="gdoc-agent-dialog__panel" role="tabpanel" id="gdoc-agent-panel-{{ $c.key }}" data-client="{{ $c.key }}" aria-labelledby="gdoc-agent-tab-{{ $c.key }}"{{ if ne $i 0 }} hidden{{ end }}>
+    {{- with $c.link }}{{ with index $oneClick . }}
+    <a class="gdoc-agent-dialog__install" href="{{ .href | safeURL }}" data-action="one-click">{{ .label }}</a>
+    {{- end }}{{ end }}
+    {{- with $c.note }}
+    <p class="gdoc-agent-dialog__note">{{ . }}</p>
+    {{- end }}
+    {{- with $c.code }}
+    {{ template "gdoc-agent-code" (partial "utils/fill-placeholders" (dict "s" . "vars" $vars)) }}
+    {{- end }}
+    {{- if $c.llms }}
+    <p class="gdoc-agent-dialog__note">No MCP support? Point your agent at <a href="{{ $llms }}">{{ $llms | absURL }}</a> &mdash; every page also has a Markdown version at its URL + <code>.md</code>.</p>
+    {{- end }}
+    {{- if $hasProductMcp }}
+    <div class="gdoc-agent-dialog__product">
+      <p class="gdoc-agent-dialog__product-title">Also process documents locally</p>
+      <p class="gdoc-agent-dialog__note">The {{ $productName }} MCP server lets your agent work with files on your machine; they are never uploaded. It needs the .NET 10 SDK or Docker.</p>
+      {{- with $c.product }}
+      {{ template "gdoc-agent-code" (partial "utils/fill-placeholders" (dict "s" . "vars" $vars)) }}
+      {{- end }}
+      <a class="gdoc-agent-dialog__more" href="{{ $productMcpUrl }}">{{ if $c.product }}Folders, licensing and more{{ else }}Set up the {{ $productName }} MCP server{{ end }} &rarr;</a>
+    </div>
+    {{- end }}
+  </div>
+  {{- end }}
+</div>
+</dialog>

@@ -1,0 +1,14 @@
+{{- /* Site-relative URL of a page's Markdown twin, or "" when the page has no MD output (404 etc.).
+       scripts/move_md_to_ugly_urls.sh moves <dir>/index.md to <dir>.md after the build, so
+       /viewer/net/foo/ -> /viewer/net/foo.md (the same rule layouts/_default/list.llmstxt.txt uses);
+       the home page keeps /index.md. Do not use (.OutputFormats.Get "md").RelPermalink: that is the
+       pre-move .../index.md path, which 404s once the site is deployed. */ -}}
+{{- $url := "" -}}
+{{- if .OutputFormats.Get "md" -}}
+  {{- if .IsHome -}}
+    {{- $url = "/index.md" -}}
+  {{- else -}}
+    {{- $url = printf "%s.md" (strings.TrimRight "/" .RelPermalink) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $url -}}

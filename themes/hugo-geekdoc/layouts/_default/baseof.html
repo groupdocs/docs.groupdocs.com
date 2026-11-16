@@ -39,13 +39,7 @@
      
       {{ partial "site-header" . }}
 
-      {{ $aiSearchEnabled := false }}
-      {{ $url := $.RelPermalink }}      
-      {{ $slittedUrl := split $url "/" }}
-      {{ $aiSearchScope := (printf "%s_%s" (index $slittedUrl 1)  (index $slittedUrl 2)) }}            
-      {{ if in .Site.Params.aiSearchScopes $aiSearchScope }}
-        {{ $aiSearchEnabled = true }}        
-      {{ end }}
+      {{ $aiSearchEnabled := in .Site.Params.aiSearchScopes (partial "utils/ai-search-scope" .) }}
 
       <main class="container flex flex-even">
         {{ if $navEnabled }}
