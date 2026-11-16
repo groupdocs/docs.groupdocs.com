@@ -366,6 +366,17 @@ a.gd-ai__card:hover { border-color: var(--link-color, #558fff); }
 .gdoc-page-actions .gdoc-page-actions__icon.check { fill: currentColor; }
 .gdoc-page-actions .gdoc-page-actions__icon--md { width: 1.3rem; }
 .gdoc-page-actions__status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+/* Short labels are for phones (see the 30rem block at the end). The Copy button stacks its idle, "Copied"
+   and "Failed" labels in one grid cell, so it keeps the width of the longest and nothing after it moves. */
+.gdoc-page-actions__short { display: none; }
+.gdoc-page-actions__stack { display: inline-grid; }
+.gdoc-page-actions__stack > * { grid-area: 1 / 1; }
+.gdoc-page-actions__state-done,
+.gdoc-page-actions__state-failed,
+.gdoc-page-actions__btn.is-done .gdoc-page-actions__state-idle,
+.gdoc-page-actions__btn.is-failed .gdoc-page-actions__state-idle { visibility: hidden; }
+.gdoc-page-actions__btn.is-done .gdoc-page-actions__state-done,
+.gdoc-page-actions__btn.is-failed .gdoc-page-actions__state-failed { visibility: visible; }
 
 .gdoc-agent-dialog { width: min(46rem, calc(100vw - 2rem)); max-height: calc(100vh - 3rem); margin: auto; padding: 0; border: 1px solid var(--gd-border); border-radius: 14px; background: var(--gd-surface); color: var(--body-font-color, #0f1727); box-shadow: 0 24px 64px rgba(15, 23, 39, .28); overflow: auto; font-size: .9rem; line-height: 1.5; }
 .gdoc-agent-dialog::backdrop { background: rgba(15, 23, 39, .55); }
@@ -378,7 +389,7 @@ a.gd-ai__card:hover { border-color: var(--link-color, #558fff); }
 .gdoc-agent-dialog__lead { margin: .4rem 0 1rem; color: var(--gd-muted-2); }
 .gdoc-agent-dialog a { color: var(--link-color, #558fff); }
 .gdoc-agent-dialog__tabs { display: flex; flex-wrap: wrap; gap: 0 .2rem; margin-bottom: 1rem; border-bottom: 1px solid var(--gd-border); }
-.gdoc-agent-dialog__tab { margin: 0 0 -1px; padding: .5rem .7rem; border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: none; color: var(--gd-muted-2); font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer; }
+.gdoc-agent-dialog__tab { flex: none; margin: 0 0 -1px; padding: .5rem .7rem; border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: none; color: var(--gd-muted-2); font: inherit; font-size: .85rem; font-weight: 600; white-space: nowrap; cursor: pointer; }
 .gdoc-agent-dialog__tab:hover { color: var(--body-font-color, #0f1727); }
 .gdoc-agent-dialog__tab[aria-selected="true"] { color: var(--gd-accent); border-bottom-color: var(--gd-accent); }
 .gdoc-agent-dialog__note { margin: 0 0 .5rem; color: var(--gd-muted-2); }
@@ -398,12 +409,48 @@ a.gd-ai__card:hover { border-color: var(--link-color, #558fff); }
 .gdoc-agent-dialog__product-title { margin: 0 0 .25rem; font-weight: 700; }
 .gdoc-agent-dialog__more { font-weight: 600; }
 
+/* Dropdowns used instead of a tab row that does not fit on one line: the "Set up agent" client tabs
+   (page-actions.js toggles .gdoc-agent-dialog--select) and content {{< tabs >}} blocks (gdoc-tabs.js
+   toggles .gdoc-tabs--select). */
+.gdoc-agent-dialog__select,
+.gdoc-tabs__select { display: none; width: 100%; padding: .55rem 2.4rem .55rem .85rem; border: 1px solid var(--gd-border); border-radius: 8px; background: var(--gd-surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right .8rem center / 1rem; color: var(--body-font-color, #0f1727); font: inherit; font-size: .9rem; font-weight: 600; line-height: 1.4; -webkit-appearance: none; appearance: none; cursor: pointer; }
+.gdoc-agent-dialog__select:focus-visible,
+.gdoc-tabs__select:focus-visible { outline: none; border-color: var(--gd-accent); box-shadow: 0 0 0 3px rgba(85, 143, 255, .2); }
+.gdoc-agent-dialog--select .gdoc-agent-dialog__tabs { display: none; }
+.gdoc-agent-dialog--select .gdoc-agent-dialog__select { display: block; margin: 0 0 1rem; }
+.gdoc-tabs .gdoc-tabs__name { white-space: nowrap; }
+.gdoc-tabs--select > .gdoc-tabs__label { display: none; }
+.gdoc-tabs--select > .gdoc-tabs__select { display: block; margin: .75rem 0 1rem; }
+
+/* Small screens: the sidebar is off-canvas, but the Ask AI box above its menu is not part of the sliding
+   <nav>, so the edge of its button peeked in at the left of every page. Hide it while the menu is closed
+   and show it at the top of the menu when the menu is open (mobile-groupdocs.css slides nav by 20rem). */
+@media screen and (max-width: 1024px) {
+  .gdoc-nav .ai-search-form { visibility: hidden; transition: transform .2s ease-in-out, visibility 0s linear .2s; } /* same slide as the nav (main-groupdocs.css); hide only after sliding out */
+  #menu-control:checked ~ main .gdoc-nav .ai-search-form { visibility: visible; transform: translateX(20rem); transition: transform .2s ease-in-out, visibility 0s; }
+}
+
 @media (max-width: 48rem) {
   .gdoc-agent-dialog__inner { padding: 1rem 1rem 1.1rem; }
   .gdoc-agent-dialog__tab { padding: .45rem .5rem; }
+
+  /* Page titles: 2.25rem made long names take three lines; scale down and let long words wrap. */
+  .gdoc-page .gdoc-markdown > h1 { font-size: 1.75rem; line-height: 1.25; overflow-wrap: break-word; }
+
+  /* Platform overview pages (<product>/<platform>/_index.md, 59 pages) open with a floated logo
+     (<img align="left" style="width:110px; margin:0 30px 30px 0">), then badges or a version tag,
+     buttons and the intro. Here: a small logo with the badges stacked beside it, and the buttons as a
+     full-width row underneath. !important beats the logo's inline style. */
+  .gdoc-markdown > img[align="left"] { width: 60px !important; margin: .15rem 1rem .75rem 0 !important; }
+  .gdoc-markdown > img[align="left"] + img,
+  .gdoc-markdown > img[align="left"] + img + img { display: block; margin: 0 0 .35rem; }
+  .gdoc-markdown > img[align="left"] ~ p:has(> .gdoc-button) { clear: left; display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 1.25rem; }
+  .gdoc-markdown > img[align="left"] ~ p:has(> .gdoc-button) > .gdoc-button { flex: 1 1 auto; margin: 0; text-align: center; }
 }
-/* Phones: the toolbar wraps, so drop the separators (one would start the second line) and space by gap. */
+/* Phones: one line of short labels (Ask / Copy / Markdown / Agent) spaced by gap, without separators. */
 @media (max-width: 30rem) {
   .gdoc-page-actions { column-gap: 1.1rem; }
   .gdoc-page-actions .gdoc-page-actions__btn { padding: .1rem 0; border-left: 0; }
+  .gdoc-page-actions__long { display: none; }
+  .gdoc-page-actions__short { display: inline; }
 }

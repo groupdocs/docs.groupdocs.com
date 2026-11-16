@@ -74,6 +74,13 @@
     <button type="button" role="tab" class="gdoc-agent-dialog__tab" id="gdoc-agent-tab-{{ $c.key }}" data-client="{{ $c.key }}" aria-controls="gdoc-agent-panel-{{ $c.key }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"{{ if ne $i 0 }} tabindex="-1"{{ end }}>{{ $c.label }}</button>
     {{- end }}
   </div>
+  {{- /* Shown instead of the tab row when the tabs do not fit on one line (phones); page-actions.js
+         toggles .gdoc-agent-dialog--select and keeps the two in sync. */}}
+  <select class="gdoc-agent-dialog__select" aria-label="AI client">
+    {{- range $agents.client }}
+    <option value="{{ .key }}">{{ .label }}</option>
+    {{- end }}
+  </select>
 
   {{- range $i, $c := $agents.client }}
   <div class="gdoc-agent-dialog__panel" role="tabpanel" id="gdoc-agent-panel-{{ $c.key }}" data-client="{{ $c.key }}" aria-labelledby="gdoc-agent-tab-{{ $c.key }}"{{ if ne $i 0 }} hidden{{ end }}>

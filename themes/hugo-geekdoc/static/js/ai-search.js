@@ -130,6 +130,7 @@ function aiSearchOpenForPage(path, title)
 	aiSearchReset();
 	aiSearchUI.preloader.hide();
 	aiSearchPage = { path: path, title: title };
+	aiSearchUI.results.addClass("ai-search-page-mode"); // phones: the chip gets a row of its own
 	aiSearchUI.pageChipLabel.text(title);
 	aiSearchUI.pageChip.removeClass("ai-search-invisible");
 	aiSearchUI.pageHint.removeClass("ai-search-invisible");
@@ -142,6 +143,7 @@ function aiSearchOpenForPage(path, title)
 function aiSearchClearPage()
 {
 	aiSearchPage = null;
+	aiSearchUI.results.removeClass("ai-search-page-mode");
 	aiSearchUI.pageChip.addClass("ai-search-invisible");
 	aiSearchUI.pageHint.addClass("ai-search-invisible");
 	aiSearchUI.resultsField.attr("placeholder", aiSearchUI.defaultPlaceholder);

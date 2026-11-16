@@ -31,12 +31,12 @@
     window.setTimeout(function () { el.textContent = text; }, 50);
   }
 
-  // Show success (copy icon -> check, label -> data-done) or failure (label -> data-fail) for a moment.
+  // Show success (copy icon -> check) or failure for a moment via is-done / is-failed. The toolbar's
+  // "Copied" / "Failed" labels are stacked in the same grid cell as the idle label and swapped by CSS,
+  // so the button keeps its width and the rest of the toolbar does not move.
   function flash(btn, ok) {
     var copyIcon = btn.querySelector(".copy");
     var checkIcon = btn.querySelector(".check");
-    var label = btn.querySelector("[data-done]");
-    if (label && !label.hasAttribute("data-text")) label.setAttribute("data-text", label.textContent);
     window.clearTimeout(btn.gdocFlashTimer);
 
     btn.classList.toggle("is-done", ok);
@@ -45,7 +45,6 @@
       copyIcon.classList.add("hidden");
       checkIcon.classList.remove("hidden");
     }
-    if (label) label.textContent = label.getAttribute(ok ? "data-done" : "data-fail") || label.getAttribute("data-text");
 
     btn.gdocFlashTimer = window.setTimeout(function () {
       btn.classList.remove("is-done", "is-failed");
@@ -53,7 +52,6 @@
         copyIcon.classList.remove("hidden");
         checkIcon.classList.add("hidden");
       }
-      if (label) label.textContent = label.getAttribute("data-text");
     }, FLASH_MS);
   }
 
@@ -134,10 +132,26 @@
       var panel = document.getElementById(tabs[i].getAttribute("aria-controls"));
       if (panel) panel.hidden = !on;
     }
+    var select = dialog.querySelector(".gdoc-agent-dialog__select");
+    if (select) select.value = tab.getAttribute("data-client");
     if (focus) tab.focus();
     if (remember) {
       try { window.localStorage.setItem(TAB_STORAGE_KEY, tab.getAttribute("data-client")); } catch (e) { /* storage off */ }
     }
+  }
+
+  // Phones: when the client tabs do not fit on one line, show the <select> instead of a wrapped tab row.
+  // Measured with the tab row forced onto one line; runs only while the dialog is open (it has no layout
+  // when closed).
+  function updateTabMode() {
+    if (!dialog || !dialog.open) return;
+    var tablist = dialog.querySelector('[role="tablist"]');
+    if (!tablist) return;
+    dialog.classList.remove("gdoc-agent-dialog--select");
+    tablist.style.flexWrap = "nowrap";
+    var overflow = tablist.scrollWidth > tablist.clientWidth + 1;
+    tablist.style.flexWrap = "";
+    dialog.classList.toggle("gdoc-agent-dialog--select", overflow);
   }
 
   function clientOf(el) {
@@ -188,6 +202,14 @@
     dialog.addEventListener("click", onDialogClick);
     var tablist = dialog.querySelector('[role="tablist"]');
     if (tablist) tablist.addEventListener("keydown", onTabKeydown);
+    var select = dialog.querySelector(".gdoc-agent-dialog__select");
+    if (select) {
+      select.addEventListener("change", function () {
+        var tab = dialog.querySelector('[role="tab"][data-client="' + select.value + '"]');
+        if (tab) selectTab(tab, false, true);
+      });
+    }
+    window.addEventListener("resize", updateTabMode);
 
     var saved = null;
     try { saved = window.localStorage.getItem(TAB_STORAGE_KEY); } catch (e) { /* storage off */ }
@@ -208,8 +230,11 @@
     } else {
       d.setAttribute("open", ""); // very old browsers: shown inline, closed by the close button
     }
+    updateTabMode();
     var selected = d.querySelector('[role="tab"][aria-selected="true"]');
-    if (selected) selected.focus();
+    var select = d.querySelector(".gdoc-agent-dialog__select");
+    if (d.classList.contains("gdoc-agent-dialog--select") && select) select.focus();
+    else if (selected) selected.focus();
     track("setup_agent_open");
   }
 

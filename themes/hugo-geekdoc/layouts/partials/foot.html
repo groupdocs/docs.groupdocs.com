@@ -6,6 +6,8 @@
 {{ end }}
 
 <script defer src="{{ index (index .Site.Data.assets "groupdocs.js") "src" | relURL }}"></script>
+{{- /* {{< tabs >}} blocks: a dropdown instead of wrapped tab labels when they do not fit on one line */}}
+<script defer src="/js/gdoc-tabs.js?v=26.11.0"></script>
 
 <!-- JS scripts -->
 {{ if default true .Params.AddLibInfoScript }}

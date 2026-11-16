@@ -498,18 +498,23 @@
             padding: .85rem .8rem .25rem 1.1rem;
         }
 
-        // let a long page chip take its own line instead of squeezing the input
         .ai-search-results-prompt {
-            flex-wrap: wrap;
             margin: .5rem 1rem .75rem;
         }
 
-        .ai-search-page-chip {
-            max-width: 100%;
+        // "Ask about this page" (ai-search-page-mode, set by ai-search.js): the page chip gets a row of its
+        // own, and the question keeps the full width next to the button on the row below.
+        &.ai-search-page-mode .ai-search-results-prompt {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            align-items: center;
+            row-gap: .4rem;
         }
 
-        #aiSearchResultsField {
-            min-width: 8rem;
+        &.ai-search-page-mode .ai-search-page-chip {
+            grid-column: 1 / -1;
+            justify-self: start;
+            max-width: 100%;
         }
 
         #aiSearchResultsButton {
