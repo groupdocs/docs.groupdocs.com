@@ -61,6 +61,7 @@ $(function(){
 	aiSearchUI.resultsButton.click(aiSearchUpdate);
 	aiSearchUI.resultsField.keypress(function(e){if(e.keyCode == 13) aiSearchUpdate();});
 	aiSearchUI.resultsCloseButton.click(aiSearchClose);
+	aiSearchUI.curtain.click(aiSearchClose);
 	aiSearchUI.pageChipRemove.click(function(){aiSearchClearPage(); aiSearchUI.resultsField.focus();});
 	$(document).keyup(function(e){if(e.keyCode == 27) aiSearchClose();});
 });
@@ -88,8 +89,7 @@ function aiSearchOpen()
 	// show search results interface
 	aiSearchReset();
 	aiSearchUI.resultsField.val(prompt);
-	aiSearchUI.curtain.removeClass("ai-search-invisible");
-	aiSearchUI.results.removeClass("ai-search-invisible");
+	aiSearchShow();
 	// send search request
 	aiSearchRequest(prompt);
 }
@@ -107,10 +107,18 @@ function aiSearchUpdate()
 	aiSearchRequest(prompt);
 }
 
+function aiSearchShow()
+{
+	aiSearchUI.curtain.removeClass("ai-search-invisible");
+	aiSearchUI.results.removeClass("ai-search-invisible");
+	$("html").addClass("ai-search-open"); // stops the page behind from scrolling
+}
+
 function aiSearchClose()
 {
 	aiSearchUI.curtain.addClass("ai-search-invisible");
 	aiSearchUI.results.addClass("ai-search-invisible");
+	$("html").removeClass("ai-search-open");
 	aiSearchClearPage();
 }
 
@@ -126,8 +134,7 @@ function aiSearchOpenForPage(path, title)
 	aiSearchUI.pageChip.removeClass("ai-search-invisible");
 	aiSearchUI.pageHint.removeClass("ai-search-invisible");
 	aiSearchUI.resultsField.val("").attr("placeholder", "Ask a question about this page");
-	aiSearchUI.curtain.removeClass("ai-search-invisible");
-	aiSearchUI.results.removeClass("ai-search-invisible");
+	aiSearchShow();
 	aiSearchUI.resultsField.focus();
 	return true;
 }
@@ -163,14 +170,22 @@ function aiSearchRequest(prompt)
 }
 
 function aiSearchParseResults(data)
-{	
-	let summary = aiSearchMarkdownProcessor.makeHtml(data.result.summary);
-	aiSearchUI.summary.html(summary);
-	if(data.result.articles.length>0)
+{
+	let result = (data && data.result) || {};
+	let articles = result.articles || [];
+	// A scope the backend has not indexed answers with an empty summary and no articles.
+	if(!result.summary && articles.length == 0)
 	{
-		for(var i=0;i<data.result.articles.length;i++)
-		{			
-			let item = data.result.articles[i];
+		aiSearchUI.summary.html('<p class="ai-search-empty">No answer found in this documentation yet. Try rephrasing your question.</p>');
+		return;
+	}
+	let summary = aiSearchMarkdownProcessor.makeHtml(result.summary || "");
+	aiSearchUI.summary.html(summary);
+	if(articles.length>0)
+	{
+		for(var i=0;i<articles.length;i++)
+		{
+			let item = articles[i];
 			let fullUrl = aiSearchBuildArticleUrl(item.root, item.url);
 			let placeholder = aiSearchUI.linkTemplate.clone();
 			placeholder
