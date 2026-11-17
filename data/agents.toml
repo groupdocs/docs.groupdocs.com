@@ -11,6 +11,8 @@
 #   {url}      Docs MCP server URL, params.docsMcpUrl        e.g. https://docs.groupdocs.com/mcp
 #   {pname}    product MCP server name, groupdocs-<key>      e.g. groupdocs-viewer
 #   {package}  product MCP NuGet package                     e.g. GroupDocs.Viewer.Mcp
+#   {image}    product MCP Docker image, for families that ship only that (mcp_image in
+#              data/products.toml)                          e.g. ghcr.io/groupdocs-search/search-net-mcp:latest
 #
 # Fields (all optional except key and label):
 #   key        tab id; also the remembered-tab value and the analytics "client" value
@@ -20,8 +22,11 @@
 #   note       sentence shown above `code`
 #   code       copyable command or config that adds the Docs MCP server
 #   llms       true: also point clients without MCP support at the section's llms.txt
-#   product    copyable command that adds the product MCP server; tabs without it link to the
-#              product's MCP page (/<product>/mcp/), which has one-click installs and per-client JSON
+#   product    copyable command that adds the product MCP server (NuGet package, run with dnx); tabs
+#              without it link to the product's MCP page (/<product>/mcp/), which has one-click
+#              installs and per-client JSON
+#   docker     the same for a family whose server ships only as a Docker image (Parser, Search);
+#              used instead of `product` there
 #
 # Keep the commands in sync with the product "Register in AI clients" pages
 # (GroupDocs.<Product>-Docs/net/mcp/install-in-ai-clients.md) and test them after editing.
@@ -33,6 +38,7 @@ key     = "claude-code"
 label   = "Claude Code"
 code    = "claude mcp add --transport http {name} {url}"
 product = "claude mcp add {pname} -- dnx {package} --yes"
+docker  = "claude mcp add {pname} -- docker run --rm -i -v /path/to/documents:/data {image}"
 
 [[client]]
 key     = "cursor"
@@ -63,6 +69,7 @@ key     = "codex"
 label   = "Codex"
 code    = "codex mcp add {name} --url {url}"
 product = "codex mcp add {pname} -- dnx {package} --yes"
+docker  = "codex mcp add {pname} -- docker run --rm -i -v /path/to/documents:/data {image}"
 
 [[client]]
 key     = "claude-desktop"

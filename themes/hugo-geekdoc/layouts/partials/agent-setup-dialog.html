@@ -17,13 +17,15 @@
 {{- $pname := "" -}}
 {{- $package := "" -}}
 {{- $productMcpUrl := "" -}}
+{{- $image := "" -}}  {{/* set when the server ships only as a Docker image (Parser, Search): no dnx */}}
 {{- if $hasProductMcp -}}
   {{- $productName = replace $product.title " Product Family" "" -}}  {{/* GroupDocs.Viewer */}}
   {{- $pname = printf "groupdocs-%s" $product.key -}}                 {{/* groupdocs-viewer */}}
   {{- $package = printf "%s.Mcp" $productName -}}                      {{/* GroupDocs.Viewer.Mcp (NuGet, run with dnx) */}}
   {{- $productMcpUrl = printf "%s/mcp/" $product.url -}}
+  {{- with $product.mcp_image }}{{ $image = . }}{{ end -}}
 {{- end -}}
-{{- $vars := dict "name" $docsName "url" $docsUrl "pname" $pname "package" $package -}}
+{{- $vars := dict "name" $docsName "url" $docsUrl "pname" $pname "package" $package "image" $image -}}
 
 {{- /* llms.txt for clients without MCP: the platform section's (/viewer/net/llms.txt), else the
        product's (/viewer/llms.txt), else the site-wide one. */ -}}
@@ -99,11 +101,13 @@
     {{- if $hasProductMcp }}
     <div class="gdoc-agent-dialog__product">
       <p class="gdoc-agent-dialog__product-title">Also process documents locally</p>
-      <p class="gdoc-agent-dialog__note">The {{ $productName }} MCP server lets your agent work with files on your machine; they are never uploaded. It needs the .NET 10 SDK or Docker.</p>
-      {{- with $c.product }}
+      {{- $cmd := cond (ne $image "") $c.docker $c.product }}
+      <p class="gdoc-agent-dialog__note">The {{ $productName }} MCP server lets your agent work with files on your machine; they are never uploaded.
+        {{- if $image }} It runs in Docker{{ if $cmd }}: replace <code>/path/to/documents</code> with the folder it may use{{ end }}.{{ else }} It needs the .NET 10 SDK or Docker.{{ end }}</p>
+      {{- with $cmd }}
       {{ template "gdoc-agent-code" (partial "utils/fill-placeholders" (dict "s" . "vars" $vars)) }}
       {{- end }}
-      <a class="gdoc-agent-dialog__more" href="{{ $productMcpUrl }}">{{ if $c.product }}Folders, licensing and more{{ else }}Set up the {{ $productName }} MCP server{{ end }} &rarr;</a>
+      <a class="gdoc-agent-dialog__more" href="{{ $productMcpUrl }}">{{ if $cmd }}Folders, licensing and more{{ else }}Set up the {{ $productName }} MCP server{{ end }} &rarr;</a>
     </div>
     {{- end }}
   </div>

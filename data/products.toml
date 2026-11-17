@@ -16,6 +16,10 @@
 #               "mcp" is not a runtime: it marks a family that ships an MCP server for AI agents
 #               (Claude, Cursor, Copilot) and links the card to {url}/mcp/. Add it only once that
 #               product's /mcp/ section is published to the environment you deploy, or the pill 404s.
+#   mcp_image   only for a family whose MCP server ships solely as a Docker image (no NuGet package,
+#               so no `dnx`): that image. The "Set up agent" dialog then shows the `docker` commands
+#               of data/agents.toml instead of the `dnx` ones. Parser and Search: their engines are
+#               over nuget.org's 250 MB package limit.
 
 [[product]]
 key         = "total"
@@ -88,6 +92,7 @@ icon        = "parser"
 weight      = 8
 description = "Parse, extract images, raw & formatted text with metadata and perform a lot of operations with it using APIs which work on all popular platforms and supported file formats"
 platforms   = ["net", "java", "nodejs-java", "python-net", "mcp"]
+mcp_image   = "ghcr.io/groupdocs-parser/parser-net-mcp:latest"
 
 [[product]]
 key         = "merger"
@@ -133,6 +138,7 @@ icon        = "search-app"
 weight      = 13
 description = "Transform your document search process with this API for advance full text search capability into any existing or new cross platform application"
 platforms   = ["net", "java", "nodejs-java", "python-net", "mcp"]
+mcp_image   = "ghcr.io/groupdocs-search/search-net-mcp:latest"
 
 [[product]]
 key         = "editor"
