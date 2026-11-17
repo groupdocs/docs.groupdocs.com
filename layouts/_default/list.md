@@ -24,6 +24,9 @@ API reference: {{ . }}
 {{- with .releases }}
 Release notes: {{ . }}
 {{- end }}
+{{- with .samples }}
+{{ cond (eq $p.key "mcp") "Source code" "Code samples" }}: {{ . }}
+{{- end }}
 {{- range .sections }}
 
 ### {{ .title }}

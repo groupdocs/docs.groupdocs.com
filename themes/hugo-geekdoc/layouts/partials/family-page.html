@@ -5,11 +5,11 @@
 
          description          meta description; also the lead paragraph unless family.lead is set
          family.lead          lead paragraph, when it should differ from the meta description
-         family.github        GitHub org, linked as "Code samples" in the sidebar
          family.platforms[]   one tab each, in this order:
            key                net | java | nodejs-java | python-net | mcp
            reference          API reference URL (omit when there is none)
-           releases           release notes URL (omit when there is none)
+           releases           release notes URL, e.g. https://releases.groupdocs.com/viewer/net/release-notes/
+           samples            GitHub repo with this platform's examples (for mcp: the server's source)
            sections[]         cards: kind (start | guide | code), title, description, links[] {title, url or ref}
                               (ref: a content path such as /viewer/net/getting-started/installation.md)
            tools[]            companion packages: title, package, description, install, license, runtime, url
@@ -55,7 +55,7 @@
     {{- range $i, $p := $platforms }}
     {{- $label := index $labels $p.key }}
     <div class="gd-family__side-group{{ if eq $i 0 }} is-active{{ end }}" data-platform="{{ $p.key }}">
-      {{- if or $p.reference $p.releases $fam.github }}
+      {{- if or $p.reference $p.releases $p.samples }}
       <div class="gd-family__label">Reference</div>
       <ul class="gd-family__reflist">
         {{- with $p.reference }}
@@ -64,8 +64,8 @@
         {{- with $p.releases }}
         <li><a href="{{ . }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ index $icons "tag" | safeHTML }}</svg><span class="gd-family__ref-text">Release notes</span></a></li>
         {{- end }}
-        {{- with $fam.github }}
-        <li><a href="{{ . }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ index $icons "code" | safeHTML }}</svg><span class="gd-family__ref-text">Code samples</span><span class="gd-family__ref-hint">GitHub</span></a></li>
+        {{- with $p.samples }}
+        <li><a href="{{ . }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ index $icons "code" | safeHTML }}</svg><span class="gd-family__ref-text">{{ cond (eq $p.key "mcp") "Source code" "Code samples" }}</span><span class="gd-family__ref-hint">GitHub</span></a></li>
         {{- end }}
       </ul>
       {{- end }}
