@@ -1,4 +1,8 @@
 {{ define "main" }}
+{{- /* Product family landing page with structured front matter (`family:`): partials/family-page.html */}}
+{{ if .Params.family }}
+  {{ partial "family-page" . }}
+{{ else }}
 {{ $navEnabled := default true .Page.Params.GeekdocNav }}
 {{ $showFeedbackForm := default .Site.Params.showFeedbackForm .Page.Params.showFeedbackForm }}
 
@@ -44,4 +48,5 @@
   </article>
   {{ if $hasToc }}{{ partial "toc" . }}{{ end }}
 {{ if $hasToc }}</div>{{ end }}
+{{ end }}
 {{ end }}

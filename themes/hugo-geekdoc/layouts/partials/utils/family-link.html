@@ -1,0 +1,12 @@
+{{- /* URL of a family-page link ({title, url} or {title, ref}; partials/family-page.html, _default/list.md).
+       `ref` is a content path, e.g. /merger/net/getting-started/installation.md, resolved like the
+       {{< ref >}} shortcode the old hand-written pages used; a missing page is reported as a build warning. */ -}}
+{{- $u := .url -}}
+{{- with .ref -}}
+  {{- with site.GetPage . -}}
+    {{- $u = .RelPermalink -}}
+  {{- else -}}
+    {{- warnf "family page: ref %q not found" . -}}
+  {{- end -}}
+{{- end -}}
+{{- return (default "" $u) -}}

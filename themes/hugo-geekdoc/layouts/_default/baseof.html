@@ -32,7 +32,7 @@
     {{ partial "svg-icon-symbols" . }}
 
     <div
-      class="wrapper {{ if default false .Site.Params.GeekdocDarkModeDim }}dark-mode-dim{{ end }} {{ if  not $navEnabled }}wrapper-bg{{ end }}"
+      class="wrapper {{ if default false .Site.Params.GeekdocDarkModeDim }}dark-mode-dim{{ end }} {{ if and (not $navEnabled) (not .Params.family) }}wrapper-bg{{ end }}"
     >
       <input type="checkbox" class="hidden" id="menu-control" />
       <input type="checkbox" class="hidden" id="menu-header-control" />

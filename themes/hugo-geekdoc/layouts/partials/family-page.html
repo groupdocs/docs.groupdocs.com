@@ -1,0 +1,237 @@
+{{- /* Product family landing page (/viewer/, /conversion/, ...): the Claude Design "Docs Family Page"
+       mockup rebuilt with the site's own tokens (--gd-* in static/custom.css), like the home page.
+       _default/list.html renders it when the page's front matter has a `family:` block; family pages
+       without one keep their old hand-written HTML. The data lives in each product repo's _index.md:
+
+         description          meta description; also the lead paragraph unless family.lead is set
+         family.lead          lead paragraph, when it should differ from the meta description
+         family.github        GitHub org, linked as "Code samples" in the sidebar
+         family.platforms[]   one tab each, in this order:
+           key                net | java | nodejs-java | python-net | mcp
+           reference          API reference URL (omit when there is none)
+           releases           release notes URL (omit when there is none)
+           sections[]         cards: kind (start | guide | code), title, description, links[] {title, url or ref}
+                              (ref: a content path such as /viewer/net/getting-started/installation.md)
+           tools[]            companion packages: title, package, description, install, license, runtime, url
+         family.demos[]       kind (app | docker), title, description, url
+
+       Every platform panel is in the HTML, so the whole page is indexed and readable without JS.
+       static/js/family-page.js turns the panels into tabs (#java, and the old #viewer_java anchors),
+       remembers the last platform, and switches the sidebar and "On this page" lists with the tab.
+       The Markdown twin (/viewer.md) comes from the same data: layouts/_default/list.md. */ -}}
+{{- $fam := .Params.family -}}
+{{- $key := index (split .RelPermalink "/") 1 -}}
+{{- $name := replace .Title " Product Family" "" -}}
+{{- range where site.Data.products.product "key" $key }}{{ $name = replace .title " Product Family" "" }}{{ end -}}
+{{- $short := strings.TrimPrefix "GroupDocs." $name -}}
+{{- $labels := dict "net" ".NET" "java" "Java" "nodejs-java" "Node.js" "python-net" "Python" "mcp" "MCP" -}}
+{{- $longs := dict "net" "for .NET" "java" "for Java" "nodejs-java" "for Node.js via Java" "python-net" "for Python via .NET" "mcp" "MCP server" -}}
+{{- $dots := dict "net" "#7c5cff" "java" "#e76f00" "nodejs-java" "#3ea66b" "python-net" "#4b8bd4" "mcp" "#0ea5a4" -}}
+{{- $icons := dict
+      "start" `<path d="M13 2L3 14h9l-1 8 10-12h-9z"/>`
+      "guide" `<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>`
+      "code" `<path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>`
+      "tools" `<path d="M14.7 6.3a4 4 0 0 0 5 5l-8.9 8.9a2.8 2.8 0 0 1-4-4z"/><path d="M18.5 2.5l3 3-2.3 2.3-3-3z"/>`
+      "app" `<path d="M8 5v14l11-7z"/>`
+      "docker" `<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7L12 12l8.7-5M12 22V12"/>`
+      "book" `<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>`
+      "tag" `<path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/>` -}}
+{{- $chevron := `<svg class="gd-family__chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>` -}}
+{{- $github := `<svg class="gd-family__gh" width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>` -}}
+{{- $platforms := $fam.platforms -}}
+{{- $showFeedback := site.Params.showFeedbackForm -}}
+
+<div class="gd-family" data-family="{{ $key }}">
+
+  {{- /* ---------- left: product, reference links and the platform's docs sections ---------- */}}
+  <nav class="gd-family__side" aria-label="{{ $name }} navigation">
+    <div class="gd-family__label">Products</div>
+    <a class="gd-family__back" href="{{ "/" | relURL }}">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      All products
+    </a>
+    <div class="gd-family__current"><span class="gd-family__current-dot" aria-hidden="true"></span>{{ $name }}</div>
+
+    {{- range $i, $p := $platforms }}
+    {{- $label := index $labels $p.key }}
+    <div class="gd-family__side-group{{ if eq $i 0 }} is-active{{ end }}" data-platform="{{ $p.key }}">
+      {{- if or $p.reference $p.releases $fam.github }}
+      <div class="gd-family__label">Reference</div>
+      <ul class="gd-family__reflist">
+        {{- with $p.reference }}
+        <li><a href="{{ . }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ index $icons "book" | safeHTML }}</svg><span class="gd-family__ref-text">API reference</span><span class="gd-family__ref-hint">{{ $label }}</span></a></li>
+        {{- end }}
+        {{- with $p.releases }}
+        <li><a href="{{ . }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ index $icons "tag" | safeHTML }}</svg><span class="gd-family__ref-text">Release notes</span></a></li>
+        {{- end }}
+        {{- with $fam.github }}
+        <li><a href="{{ . }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ index $icons "code" | safeHTML }}</svg><span class="gd-family__ref-text">Code samples</span><span class="gd-family__ref-hint">GitHub</span></a></li>
+        {{- end }}
+      </ul>
+      {{- end }}
+
+      {{- with site.GetPage (printf "/%s/%s" $key $p.key) }}
+      <div class="gd-family__label">{{ $label }} docs</div>
+      <ul class="gd-family__doclist">
+        {{- range .Pages.GroupBy "Weight" }}
+          {{- range .Pages.ByTitle }}
+            {{- if not .Params.GeekdocHidden }}
+        <li><a href="{{ .RelPermalink }}">{{ partial "utils/short-title" . }}</a></li>
+            {{- end }}
+          {{- end }}
+        {{- end }}
+      </ul>
+      {{- end }}
+    </div>
+    {{- end }}
+  </nav>
+
+  {{- /* ---------- main ---------- */}}
+  <article class="gd-family__main">
+    <ol class="gd-family__crumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="{{ "/" | relURL }}"><span itemprop="name">Docs</span></a><meta itemprop="position" content="1" /></li>
+      <li class="gd-family__crumb-sep" aria-hidden="true">/</li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page"><span itemprop="name">{{ $short }}</span><meta itemprop="position" content="2" /></li>
+    </ol>
+
+    <h1 class="gd-family__title">{{ .Title }}</h1>
+    {{- with $fam.lead | default .Description }}
+    <p class="gd-family__lead">{{ . }}</p>
+    {{- end }}
+
+    {{- if gt (len $platforms) 1 }}
+    <div class="gd-family__tabs" aria-label="Platforms">
+      {{- range $i, $p := $platforms }}
+      <a class="gd-family__tab{{ if eq $i 0 }} is-active{{ end }}" id="gd-family-tab-{{ $p.key }}" href="#{{ $p.key }}" data-platform="{{ $p.key }}"><span class="gd-family__dot" style="background:{{ index $dots $p.key }}" aria-hidden="true"></span>{{ index $labels $p.key }}</a>
+      {{- end }}
+    </div>
+    {{- end }}
+
+    {{- range $i, $p := $platforms }}
+    {{- $label := index $labels $p.key }}
+    {{- $full := printf "%s %s" $name (index $longs $p.key) }}
+    <section class="gd-family__panel{{ if eq $i 0 }} is-active{{ end }}" id="{{ $p.key }}" data-platform="{{ $p.key }}" aria-labelledby="gd-family-h-{{ $p.key }}">
+      <span class="gd-family__anchor" id="{{ $key }}_{{ $p.key }}"></span>{{/* old landing-page anchor, e.g. /viewer/#viewer_java */}}
+      <div class="gd-family__panel-head">
+        <h2 class="gd-family__panel-title" id="gd-family-h-{{ $p.key }}">{{ $full }}</h2>
+        <div class="gd-family__panel-links">
+        {{- with $p.reference }}
+        <a class="gd-family__all gd-family__narrow-only" href="{{ . }}">API reference</a>{{/* the sidebar holding it is hidden on small screens */}}
+        {{- end }}
+        {{- with site.GetPage (printf "/%s/%s" $key $p.key) }}
+        <a class="gd-family__all" href="{{ .RelPermalink }}">All {{ $label }} docs<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        {{- end }}
+        </div>
+      </div>
+
+      {{- range $p.sections }}
+      {{- $kind := default "guide" .kind }}
+      <section class="gd-family__card" id="{{ $p.key }}-{{ anchorize .title }}">
+        <div class="gd-family__card-head">
+          <div class="gd-family__tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ index $icons $kind | default (index $icons "guide") | safeHTML }}</svg></div>
+          <div>
+            <h3 class="gd-family__card-title">{{ .title }}</h3>
+            {{- with .description }}
+            <p class="gd-family__card-desc">{{ . }}</p>
+            {{- end }}
+          </div>
+        </div>
+        {{- if eq $kind "code" }}
+        <ul class="gd-family__repos">
+          {{- range .links }}
+          <li><a href="{{ partial "utils/family-link" . }}">{{ $github | safeHTML }}<span>{{ .title }}</span></a></li>
+          {{- end }}
+        </ul>
+        {{- else }}
+        <ul class="gd-family__links">
+          {{- range .links }}
+          <li><a href="{{ partial "utils/family-link" . }}">{{ $chevron | safeHTML }}<span>{{ .title }}</span></a></li>
+          {{- end }}
+        </ul>
+        {{- end }}
+      </section>
+      {{- end }}
+
+      {{- with $p.tools }}
+      <section class="gd-family__card" id="{{ $p.key }}-tools">
+        <div class="gd-family__card-head">
+          <div class="gd-family__tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ index $icons "tools" | safeHTML }}</svg></div>
+          <div>
+            <h3 class="gd-family__card-title">Tools &amp; integrations</h3>
+            <p class="gd-family__card-desc">Open-source companion packages built on {{ $name }}</p>
+          </div>
+        </div>
+        <div class="gd-family__tools">
+          {{- range . }}
+          <div class="gd-family__tool">
+            <div class="gd-family__tool-head">
+              <div>
+                <a class="gd-family__tool-title" href="{{ .url }}">{{ .title }}</a>
+                <div class="gd-family__tool-pkg">{{ .package }}</div>
+              </div>
+            </div>
+            {{- with .description }}
+            <p class="gd-family__tool-desc">{{ . }}</p>
+            {{- end }}
+            {{- with .install }}
+            <div class="gd-family__install">
+              <code>{{ . }}</code>
+              <button type="button" class="gd-family__copy" data-copy="{{ . }}" aria-label="Copy install command"><span class="gd-family__copy-idle">Copy</span><span class="gd-family__copy-done" aria-hidden="true">Copied</span></button>
+            </div>
+            {{- end }}
+            <div class="gd-family__badges">
+              {{- with .license }}<span class="gd-family__badge">{{ . }}</span>{{ end }}
+              {{- with .runtime }}<span class="gd-family__badge">{{ . }}</span>{{ end }}
+            </div>
+          </div>
+          {{- end }}
+        </div>
+      </section>
+      {{- end }}
+    </section>
+    {{- end }}
+
+    {{- with $fam.demos }}
+    <section class="gd-family__demos" id="live-demos" aria-labelledby="gd-family-demos">
+      <h2 class="gd-family__h2" id="gd-family-demos">Live demos</h2>
+      <div class="gd-family__demo-grid">
+        {{- range . }}
+        <a class="gd-family__demo" href="{{ .url }}"{{ if eq .kind "docker" }} rel="nofollow"{{ end }}>
+          <span class="gd-family__tile gd-family__tile--sm"><svg width="18" height="18" viewBox="0 0 24 24" {{ if eq .kind "docker" }}fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"{{ else }}fill="currentColor"{{ end }} aria-hidden="true">{{ index $icons (cond (eq .kind "docker") "docker" "app") | safeHTML }}</svg></span>
+          <span>
+            <span class="gd-family__demo-title">{{ .title }}</span>
+            {{- with .description }}
+            <span class="gd-family__demo-desc">{{ . }}</span>
+            {{- end }}
+          </span>
+        </a>
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+
+    {{ partial "feedback-form" . }}
+  </article>
+
+  {{- /* ---------- right: "On this page", one list per platform ---------- */}}
+  <nav class="gd-family__toc" aria-label="On this page">
+    <div class="gd-family__label">On this page</div>
+    {{- range $i, $p := $platforms }}
+    <ul class="gd-family__toc-list{{ if eq $i 0 }} is-active{{ end }}" data-platform="{{ $p.key }}">
+      {{- range $p.sections }}
+      <li><a href="#{{ $p.key }}-{{ anchorize .title }}">{{ .title }}</a></li>
+      {{- end }}
+      {{- with $p.tools }}
+      <li><a href="#{{ $p.key }}-tools">Tools &amp; integrations</a></li>
+      {{- end }}
+      {{- with $fam.demos }}
+      <li><a href="#live-demos">Live demos</a></li>
+      {{- end }}
+      {{- if $showFeedback }}
+      <li><a href="#feedback">Feedback</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  </nav>
+</div>
+<script defer src="/js/family-page.js?v=26.11.0"></script>
