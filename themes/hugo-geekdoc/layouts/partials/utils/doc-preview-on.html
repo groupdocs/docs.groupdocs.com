@@ -1,0 +1,22 @@
+{{- /* Is the doc preview on for this page? params.docPreview:
+       - true / false, or the strings "true" / "false", which is what a build-time override such as
+         HUGO_PARAMS_DOCPREVIEW=false passes;
+       - "qa": QA builds only (baseURL contains "-qa.", the same check as layouts/robots.txt);
+       - a list of sections, e.g. ["viewer/net", "viewer/python-net"]: on for the pages whose URL starts with one
+         of them (/viewer/net/...), off everywhere else. This is how the previews roll out product by product.
+       A page opts out with front matter `docPreview: false`, a whole section with `cascade: {docPreview: false}` in
+       its _index.md.
+       Used by baseof.html (data-gdx on <html>: the tab style of every {{< tabs >}} block) and
+       partials/doc-preview.html (the script, on pages that link sample or output files). */ -}}
+{{- $param := site.Params.docPreview -}}
+{{- $on := false -}}
+{{- if reflect.IsSlice $param -}}
+  {{- $url := .RelPermalink -}}
+  {{- range $param -}}
+    {{- if hasPrefix $url (printf "/%s/" (strings.Trim . "/")) -}}{{- $on = true -}}{{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- $on = or (eq $param true) (eq $param "true") (and (eq $param "qa") (in site.BaseURL "-qa.")) -}}
+{{- end -}}
+{{- $page := .Params.docPreview -}}
+{{- return (and $on (ne $page false) (ne $page "false")) -}}

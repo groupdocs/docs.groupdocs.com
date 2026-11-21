@@ -931,6 +931,13 @@ box-sizing: border-box;
     text-transform: capitalize;
 }
 
+/* Breadcrumb titles as written: capitalize turned "for" into "For", "eBooks" into "EBooks" and MCP tool names
+   such as add_annotation into "Add_annotation". Only in the sections rolled out so far ([data-gdx], params.docPreview);
+   drop the scope, and the capitalize above, once every product is rolled out. */
+[data-gdx] .gdoc-page__header {
+    text-transform: none;
+}
+
 .gdoc-page__nav:hover {
     background-image: linear-gradient(var(--link-color), var(--link-color));
     background-position: 0 100%;

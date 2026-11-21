@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Page previews for the code example blocks: renders the sample and output files browsers can't show (DOCX,
+       XLSX, PPTX, MSG...) to PNG pages in GroupDocs.Viewer.UI's static content layout. See README.md. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>doc-preview</AssemblyName>
+    <RootNamespace>DocPreview</RootNamespace>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GroupDocs.Viewer" Version="26.9.0" />
+    <!-- GroupDocs.Viewer 26.9.0 -> GroupDocs.Viewer.Net60 -> System.Security.Cryptography.Pkcs 8.0.0, which has
+         known vulnerabilities (NU1902/NU1903); the patched release, as in GroupDocs.Viewer-for-.NET-UI. -->
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="10.0.13" />
+  </ItemGroup>
+
+</Project>

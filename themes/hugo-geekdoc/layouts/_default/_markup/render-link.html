@@ -1,6 +1,32 @@
 {{- $raw := or (hasPrefix .Text "<img") (hasPrefix .Text "<figure") -}}
 {{- $code := hasPrefix .Text "<code" -}}
 {{- $external := not (hasPrefix .Destination .Page.Site.BaseURL) -}}
+{{- /* A sample or output file that a code example links (/<product>/<platform>/_sample_files/...): its size in
+       bytes, read at build time, for the file facts doc-preview.js shows ("PDF · 608 KB"). The URL path is the
+       content path (content/<product>/<platform>/...), percent-decoded by urls.Parse. */ -}}
+{{- $bytes := 0 -}}
+{{- $preview := false -}}
+{{- /* Only where the code example blocks are on (params.docPreview): elsewhere the links stay exactly as they were. */ -}}
+{{- if and (hasPrefix .Destination "/") (findRE `/(_sample_files|_output_files|sample-files)/` .Destination 1) (partial "utils/doc-preview-on.html" .Page) -}}
+  {{- $path := (urls.Parse .Destination).Path -}}
+  {{- $file := path.Join "content" $path -}}
+  {{- if fileExists $file -}}
+    {{- with os.Stat $file -}}{{- if not .IsDir }}{{ $bytes = .Size }}{{ end -}}{{- end -}}
+  {{- end -}}
+  {{- /* Its page images, if scripts/doc-preview rendered it (a DOCX, XLSX, PPTX...): the platform's
+         _preview/index.json, mounted as data too (config.toml), lists them by the file's path in the platform. */ -}}
+  {{- $parts := split (strings.TrimPrefix "/" $path) "/" -}}
+  {{- if ge (len $parts) 4 -}}
+    {{- $rel := replaceRE `^/[^/]+/[^/]+/` "" $path -}}
+    {{- with index site.Data (index $parts 0) -}}{{- with index . (index $parts 1) -}}{{- with index . "_preview" -}}{{- with .index -}}
+      {{- $prefix := .urlPrefix -}}
+      {{- with index .files $rel -}}
+        {{- /* data-preview: page 1 (page-1.png, or .jpg for a photo); the other pages are in the same folder */ -}}
+        {{- if .pages }}{{ $preview = dict "url" (printf "%s/%s/%s" $prefix .id (.first | default "page-1.png")) "pages" .pages "total" .total "ratio" (div (float .height) .width) }}{{ end -}}
+      {{- end -}}
+    {{- end -}}{{- end -}}{{- end -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
 <a
   class="gdoc-markdown__link{{ if $raw -}}
     --raw
@@ -10,6 +36,8 @@
   href="{{ .Destination | safeURL }}"
   {{- with .Title }}{{ printf "title=\"%s\"" . | safeHTMLAttr }}{{- end }}
   {{- if $external }}{{ printf "rel=\"nofollow\"" | safeHTMLAttr }}{{- end }}
+  {{- if $bytes }}{{ printf "data-bytes=\"%d\"" $bytes | safeHTMLAttr }}{{- end }}
+  {{- with $preview }}{{ printf "data-preview=\"%s\" data-pages=\"%v\" data-total=\"%v\" data-ratio=\"%.4f\"" .url .pages .total .ratio | safeHTMLAttr }}{{- end }}
 >
   {{- .Text | safeHTML -}}
 </a>

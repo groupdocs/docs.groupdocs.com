@@ -113,6 +113,12 @@ a.gdoc-two-columns__column__link {
     padding-top: 5rem;
 }
 
+/* Scrollbars and form controls follow the theme the reader picked. head/meta.html declares color-scheme "light dark",
+   which follows the system: on a dark system, the light theme had dark scrollbars. Auto mode keeps following it.
+   Rolled-out sections only ([data-gdx], params.docPreview) for now. */
+:root[data-gdx][color-theme=light] { color-scheme: light; }
+:root[data-gdx][color-theme=dark] { color-scheme: dark; }
+
 /* ============================ Docs Hub home (gd-home / gd-ai) ============================
    Homepage redesign: recreates the Claude Design "Docs Hub" mockup with the site's own design
    tokens, following the reference.groupdocs.com gd-home pattern. Markup in layouts/index.html;
@@ -594,4 +600,249 @@ a.gd-ai__card:hover { border-color: var(--link-color, #558fff); }
   .gd-family__card { padding: 1.1rem; border-radius: 14px; }
   .gd-family .gd-family__card-title { font-size: 1.0625rem; }
   .gd-family .gd-family__repos a { padding: .6rem .25rem; }
+}
+
+/* ============================ Code example blocks + the tab style ============================
+   Claude Design's "code example block" v2 (folder "docs.groupdocs.com - Design\v2") on the generator's {{< tabs >}}
+   blocks. Everything hangs off html[data-gdx] (baseof.html; switch params.docPreview via utils/doc-preview-on, a page
+   can opt out), so docPreview = false brings back the old look:
+   1. Every {{< tabs >}} block: underline tabs in a bordered box, code edge to edge, the theme's copy button as "Copy".
+   2. Code example blocks (.gdx-example: blocks that link sample or output files, set up by static/js/doc-preview.js):
+      IN / OUT tags and a divider in the tab row; in each file tab (.gdx-file) a bar with the file's facts and actions
+      and, on request, the preview under it; "Expected result" as the block's footer.
+   3. The dialog (one file large, or input and output side by side), which the script moves to <body>.
+   Rules inside the article start with a block class to out-specify the .gdoc-markdown rules; !important only where
+   the theme's global link and button rules would win otherwise. Tokens: --gdx-* on top of the site's --gd-*. */
+html[data-gdx] {
+  --gdx-pad: 12px;                                  /* the box's side padding; tab panes reach past it */
+  --gdx-bg: var(--code-background, #f9fbfc);        /* the box: the same as code */
+  --gdx-surface: var(--gd-surface);                 /* footer, buttons */
+  --gdx-well: #eef1f5;                              /* behind previewed pages */
+  --gdx-border: var(--border-color, #ebebec);
+  --gdx-border-strong: #d1d5db;
+  --gdx-text: var(--body-font-color, #0f1727);
+  --gdx-muted: var(--gd-muted-2);
+  --gdx-faint: var(--gd-muted);
+  --gdx-accent: var(--gd-accent-text);
+  --gdx-accent-soft: var(--gd-accent-soft);
+  --gdx-accent-line: #bfd3fb;
+  --gdx-in: var(--gd-accent-text);
+  --gdx-in-soft: #e8f0fe;
+  --gdx-out: #047857;
+  --gdx-out-soft: #e3f5ee;
+  --gdx-page-shadow: 0 1px 2px rgba(15, 23, 42, .08), 0 4px 16px rgba(15, 23, 42, .06);
+  --gdx-mono: "Roboto Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+  --gdx-collapsed: 360px;                           /* open previews and full text outputs start at this height */
+  --gdx-pdf-height: 560px;                          /* the browser's PDF viewer */
+}
+html[data-gdx][color-theme=dark] {
+  --gdx-border: rgba(255, 255, 255, .08);           /* --border-color is too bright here (lightgrey in auto mode): the box felt closed in */
+  --gdx-well: #1c1c1c;                              /* darker than the box, so white pages read as paper */
+  --gdx-border-strong: rgba(255, 255, 255, .16);
+  --gdx-accent-line: rgba(108, 155, 255, .45);
+  --gdx-in: #6c9bff;
+  --gdx-in-soft: rgba(108, 155, 255, .14);
+  --gdx-out: #34d399;
+  --gdx-out-soft: rgba(52, 211, 153, .14);
+  --gdx-page-shadow: 0 0 0 1px rgba(255, 255, 255, .06), 0 6px 20px rgba(0, 0, 0, .5);
+}
+@media (prefers-color-scheme: dark) {
+  html[data-gdx]:not([color-theme=light]) {
+    --gdx-border: rgba(255, 255, 255, .08);
+    --gdx-well: #1c1c1c;
+    --gdx-border-strong: rgba(255, 255, 255, .16);
+    --gdx-accent-line: rgba(108, 155, 255, .45);
+    --gdx-in: #6c9bff;
+    --gdx-in-soft: rgba(108, 155, 255, .14);
+    --gdx-out: #34d399;
+    --gdx-out-soft: rgba(52, 211, 153, .14);
+    --gdx-page-shadow: 0 0 0 1px rgba(255, 255, 255, .06), 0 6px 20px rgba(0, 0, 0, .5);
+  }
+}
+
+/* 1. Every tab block: a bordered box, a row of underline tabs, panes edge to edge. */
+[data-gdx] .gdoc-tabs { position: relative; column-gap: 2px; row-gap: 0; margin: 1.25rem 0 1.5rem; padding: 0 var(--gdx-pad); border: 1px solid var(--gdx-border); border-radius: 12px; background: var(--gdx-bg); }
+/* The radios stay focusable (off screen): Tab reaches the row and the arrow keys move between tabs. */
+[data-gdx] .gdoc-tabs > .gdoc-tabs__control.hidden { display: block !important; position: absolute; top: 0; left: 0; width: 1px; height: 1px; margin: 0; opacity: 0; pointer-events: none; }
+[data-gdx] .gdoc-tabs--select > .gdoc-tabs__control.hidden { display: none !important; }
+[data-gdx] .gdoc-tabs__label { display: flex; position: relative; z-index: 1; margin: 0 0 -1px; padding: 0; border-bottom: 2px solid transparent; }
+[data-gdx] .gdoc-tabs__name { display: inline-flex; align-items: center; gap: 8px; padding: 14px 12px 12px; border-radius: 0; color: var(--gdx-muted); font-size: .95rem; line-height: 1.4; }
+[data-gdx] .gdoc-tabs__name:hover,
+[data-gdx] .gdoc-tabs__control:checked + .gdoc-tabs__label .gdoc-tabs__name:hover { background: none; color: var(--gdx-text); }
+[data-gdx] .gdoc-tabs__control:checked + .gdoc-tabs__label { border-bottom: 2px solid var(--gdx-accent); }
+[data-gdx] .gdoc-tabs__control:checked + .gdoc-tabs__label .gdoc-tabs__name { color: var(--gdx-text); font-weight: 600; }
+[data-gdx] .gdoc-tabs__control:focus-visible + .gdoc-tabs__label .gdoc-tabs__name { outline: 2px solid var(--gdx-accent); outline-offset: -6px; border-radius: 8px; }
+[data-gdx] .gdoc-tabs--select > .gdoc-tabs__label { display: none; }   /* the dropdown instead (gdoc-tabs.js) */
+[data-gdx] .gdoc-tabs--select > .gdoc-tabs__select { margin: 10px 0; }
+[data-gdx] .gdoc-tabs__content { width: calc(100% + 2 * var(--gdx-pad)); margin: 0 calc(-1 * var(--gdx-pad)); padding: 0; border-top: 1px solid var(--gdx-border); }
+/* Text in a pane keeps a margin; code runs edge to edge. */
+[data-gdx] .gdoc-tabs__content > * { margin-left: 20px; margin-right: 20px; }
+[data-gdx] .gdoc-tabs__content > :first-child { margin-top: 16px; }
+[data-gdx] .gdoc-tabs__content > :last-child { margin-bottom: 16px; }
+[data-gdx] .gdoc-tabs__content > .highlight { margin: 0; }
+[data-gdx] .gdoc-tabs__content > .highlight pre.chroma { margin: 0; border-radius: 0; background: var(--gdx-bg); }
+[data-gdx] .gdoc-tabs__content > .highlight pre code { padding: 18px 20px; font-size: .88rem; line-height: 1.65; }
+/* The theme's copy button (span.gdoc-post__codecopy, added by its main script): "Copy", always shown. */
+[data-gdx] .gdoc-tabs .gdoc-post__codecopy { visibility: visible; top: 10px; right: 10px; gap: 6px; width: auto; height: 32px; padding: 0 10px; border: 0; border-radius: 6px; background: var(--gdx-bg); color: var(--gdx-accent); font-size: .85rem; font-weight: 600; line-height: 1; }
+[data-gdx] .gdoc-tabs .gdoc-post__codecopy::after { content: "Copy"; }
+[data-gdx] .gdoc-tabs .gdoc-post__codecopy:hover { background: var(--gdx-accent-soft); }
+[data-gdx] .gdoc-tabs .gdoc-post__codecopy svg.gdoc-icon { width: 16px; height: 16px; color: currentColor; }
+[data-gdx] .gdoc-tabs .gdoc-post__codecopy--success { color: var(--code-copy-success-color); }
+[data-gdx] .gdoc-tabs .gdoc-post__codecopy--success::after { content: "Copied"; }
+
+/* 2. Code example blocks. Tab row: the divider, IN / OUT tags, language icons. */
+.gdoc-tabs__sep { flex: none; align-self: stretch; width: 1px; margin: 12px 6px; background: var(--gdx-border); }
+.gdoc-tabs--select > .gdoc-tabs__sep { display: none; }
+.gdx-role { display: inline-block; flex: none; padding: 4px 6px; border-radius: 4px; font: 700 .62rem/1 var(--gdx-mono); letter-spacing: .06em; }
+.gdx-role-in { background: var(--gdx-in-soft); color: var(--gdx-in); }
+.gdx-role-out { background: var(--gdx-out-soft); color: var(--gdx-out); }
+.gdx-lang { flex: none; width: 18px; height: 18px; }
+.gdx-sr,
+.gdx-btn-icon > span { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+/* A file tab: the bar first (its line under it is clipped when nothing follows), then what the reader opens. */
+[data-gdx] .gdx-example > .gdx-file { overflow: hidden; }
+[data-gdx] .gdx-example > .gdx-file > .gdx-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; position: relative; z-index: 1; margin: 0; padding: 10px 12px 10px 16px; box-shadow: 0 1px 0 var(--gdx-border); }
+[data-gdx] .gdx-example > .gdx-file > .gdx-pv,
+[data-gdx] .gdx-example > .gdx-file > .gdx-full,
+[data-gdx] .gdx-example > .gdx-file > .gdx-excerpt { margin: 0; }
+.gdx-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; min-width: 0; color: var(--gdx-muted); font-size: .85rem; line-height: 1.4; }
+.gdx-meta b { color: var(--gdx-text); font-weight: 600; overflow-wrap: anywhere; }
+.gdx-actions { display: flex; flex-wrap: wrap; gap: 4px; margin-left: auto; }
+.gdx-btn,
+.gdx-btn:visited { display: inline-flex; align-items: center; justify-content: center; gap: 6px; height: 32px; margin: 0; padding: 0 10px; border: 1px solid transparent !important; border-radius: 6px; background: none !important; color: var(--gdx-accent) !important; font: inherit; font-size: .85rem !important; font-weight: 600 !important; line-height: 1; text-decoration: none !important; white-space: nowrap; cursor: pointer; }
+.gdx-btn:hover,
+.gdx-btn:focus-visible { background: var(--gdx-accent-soft) !important; }
+.gdx-btn:focus-visible { outline: 2px solid var(--gdx-accent); outline-offset: 1px; }
+.gdx-btn svg { flex: none; width: 16px; height: 16px; }
+.gdx-btn-main { border-color: var(--gdx-accent-line) !important; background: var(--gdx-surface) !important; }
+.gdx-btn-main[aria-expanded="true"] { background: var(--gdx-accent-soft) !important; }
+.gdx-btn[aria-busy="true"] { cursor: progress; }
+.gdx-btn[hidden] { display: none !important; }   /* display:inline-flex above would otherwise defeat the hidden attribute */
+.gdx-btn:disabled { border-color: var(--gdx-border) !important; background: none !important; color: var(--gdx-faint) !important; cursor: default; }
+.gdx-btn-icon { padding: 0 8px; }
+.gdx-short { display: none; }
+/* Screen only (print keeps them): the generator's lines the bar replaces ("The following sample file is used…",
+   "Binary file (PDF, 313 KB)", "Download full output") and a text excerpt while its full output shows. */
+@media screen {
+  .gdx-example .gdx-replaced,
+  .gdx-example .gdx-swapped { display: none !important; }
+}
+/* A text output: wrapped, never cut at the right edge; its last line "[TRUNCATED]" is a faint "…". No Copy
+   (the bar has Download). */
+.gdx-example .gdx-excerpt pre,
+.gdx-example .gdx-excerpt code { white-space: pre-wrap; overflow-wrap: anywhere; }
+.gdx-text-cut { color: var(--gdx-faint); }
+.gdx-example .gdx-file .gdoc-post__codecopy { display: none; }
+.gdx-example pre.gdx-text { margin: 0; padding: 14px 20px; border: 0; border-radius: 0; background: none; color: var(--gdx-text); font: .86rem/1.7 var(--gdx-mono); white-space: pre-wrap; overflow-wrap: anywhere; }
+.gdx-note { margin: 0; padding: 16px 20px; color: var(--gdx-muted); font-size: .875rem; line-height: 1.5; }
+/* The preview under the bar: a PDF at a fixed height; HTML pages and images in a well. */
+.gdx-pv[hidden],
+.gdx-full[hidden],
+.gdx-more[hidden] { display: none; }
+.gdx-preview { position: relative; }
+.gdx-pdf { display: block; width: 100%; height: var(--gdx-pdf-height); border: 0; background: #fff; }.gdx-well { display: grid; justify-items: center; gap: 16px; padding: 20px; background: var(--gdx-well); }
+.gdx-well > img { display: block; max-width: min(100%, 760px); height: auto; margin: 0; background: #fff; box-shadow: var(--gdx-page-shadow); }
+.gdx-well > .gdx-frame-box { width: 100%; max-width: 760px; height: 240px; overflow: hidden; background: #fff; box-shadow: var(--gdx-page-shadow); }
+.gdx-well > img.gdx-page { width: 100%; }   /* page images (scripts/doc-preview): their aspect-ratio keeps the place while loading */
+.gdx-well > .gdx-note { margin: 0; }
+.gdx-frame { display: block; width: 100%; height: 100%; border: 0; transform-origin: 0 0; }   /* sized and scaled by doc-preview.js (fitFrame) */
+.gdx-expand { position: absolute; top: 10px; right: 10px; z-index: 2; background: var(--gdx-surface) !important; box-shadow: 0 1px 2px rgba(0, 0, 0, .12); }
+.gdx-expand:hover,
+.gdx-expand:focus-visible { background: var(--gdx-accent-soft) !important; }
+.gdx-expand-low { top: auto; bottom: 12px; right: 18px; }   /* over the PDF viewer, clear of its toolbar */
+/* Collapse: an open preview taller than --gdx-collapsed. Code never collapses; a full text output shows whole. */
+.gdx-body { position: relative; }
+.gdx-body.is-collapsed { max-height: var(--gdx-collapsed); overflow: hidden; }
+.gdx-body.is-collapsed::after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; height: 96px; background: linear-gradient(rgba(255, 255, 255, 0), var(--gdx-bg)); pointer-events: none; }
+.gdx-body.gdx-well-body.is-collapsed::after { background: linear-gradient(rgba(255, 255, 255, 0), var(--gdx-well)); }
+.gdx-more { display: flex; justify-content: center; padding: 8px 0 12px; border-top: 1px solid var(--gdx-border); }
+/* The grid of a tab with several files: a thumbnail for an image, a type tile otherwise. */
+.gdx-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; padding: 16px; background: var(--gdx-well); }
+.gdx-card,
+.gdx-card:visited { display: grid; align-content: start; gap: 6px; min-width: 0; margin: 0; padding: 0; border: 0 !important; border-radius: 8px; background: none !important; color: var(--gdx-text) !important; font: inherit; text-align: left; text-decoration: none !important; cursor: pointer; }
+.gdx-card:focus-visible { outline: none; }
+.gdx-card-art { display: grid; place-items: center; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 6px; background: var(--gdx-surface); box-shadow: var(--gdx-page-shadow); }
+.gdx-card:hover .gdx-card-art,
+.gdx-card:focus-visible .gdx-card-art { outline: 2px solid var(--gdx-accent); outline-offset: 2px; }
+.gdx-card-art img { width: 100%; height: 100%; margin: 0; object-fit: contain; }   /* the whole image: sample images are logos, pages, charts */
+.gdx-card-art img.gdx-card-page { object-fit: cover; object-position: top; background: #fff; }   /* page 1 of a DOCX...: its top, readable */
+.gdx-card-type { padding: 8px 7px; border: 1.5px solid var(--gdx-border-strong); border-radius: 5px; background: var(--gdx-bg); color: var(--gdx-muted); font: 700 .72rem/1 var(--gdx-mono); letter-spacing: .04em; }
+.gdx-card-name { font-size: .82rem; font-weight: 600; line-height: 1.3; overflow-wrap: anywhere; }
+.gdx-card-size { color: var(--gdx-faint); font-size: .75rem; }
+/* Footer: "Expected result" (only where the page has "Expected behavior"), on every tab. */
+[data-gdx] .gdx-example > .gdx-foot { order: 1000; display: flex; align-items: baseline; gap: 10px; width: calc(100% + 2 * var(--gdx-pad)); margin: 0 calc(-1 * var(--gdx-pad)); padding: 12px 16px; border-top: 1px solid var(--gdx-border); background: var(--gdx-surface); color: var(--gdx-muted); font-size: .9rem; line-height: 1.5; }
+.gdx-example > .gdx-foot b { flex: none; color: var(--gdx-text); }
+
+/* 3. Dialog: one file large ("Expand", a grid card) or input and output side by side ("Compare" / "View both"). */
+html.gdoc-preview-open { overflow: hidden; }
+.gdoc-preview-dialog { width: calc(100vw - 2rem); height: calc(100vh - 2rem); height: calc(100dvh - 2rem); max-width: none; max-height: none; margin: auto; padding: 0; border: 1px solid var(--gd-border); border-radius: 14px; background: var(--gd-surface); color: var(--body-font-color, #0f1727); box-shadow: 0 24px 64px rgba(15, 23, 39, .28); overflow: hidden; font-size: .875rem; line-height: 1.5; }
+.gdoc-preview-dialog[open] { display: flex; flex-direction: column; }
+.gdoc-preview-dialog::backdrop { background: rgba(15, 23, 39, .55); }
+.gdoc-preview-dialog__head { display: flex; align-items: center; gap: .75rem; flex: none; padding: .5rem .55rem .5rem 1.1rem; border-bottom: 1px solid var(--gd-border); }
+.gdoc-preview-dialog .gdoc-preview-dialog__title { display: block; flex: 1; min-width: 0; margin: 0; overflow: hidden; color: inherit; font-size: 1rem; font-weight: 700; line-height: 1.4; text-overflow: ellipsis; white-space: nowrap; }
+.gdoc-preview-dialog__switch { display: none; flex: none; padding: .2rem; border-radius: 9px; background: var(--gd-track); }
+.gdoc-preview-dialog__switch button { margin: 0; padding: .3rem .75rem; border: 0; border-radius: 7px; background: none; color: var(--gd-muted-2); font: inherit; font-weight: 600; line-height: 1.4; cursor: pointer; }
+.gdoc-preview-dialog__switch button[aria-pressed="true"] { background: var(--gd-surface); color: var(--body-font-color, #0f1727); box-shadow: 0 1px 2px rgba(15, 23, 39, .15); }
+.gdoc-preview-dialog__close { display: flex; align-items: center; justify-content: center; flex: none; width: 2.25rem; height: 2.25rem; margin: 0; padding: 0; border: 0; border-radius: 8px; background: none; color: var(--gd-muted-2); cursor: pointer; }
+.gdoc-preview-dialog__close:hover,
+.gdoc-preview-dialog__close:focus-visible { background: var(--gd-surface-2); color: var(--body-font-color, #0f1727); }
+.gdoc-preview-dialog__close svg { width: 1.25rem; height: 1.25rem; }
+.gdoc-preview-dialog__panes { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); flex: 1; min-height: 0; }
+.gdoc-preview-dialog[data-mode="single"] .gdoc-preview-dialog__panes { grid-template-columns: minmax(0, 1fr); }
+.gdoc-preview-dialog[data-mode="single"] .gdoc-preview-pane[data-side="right"] { display: none; }
+.gdoc-preview-pane { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.gdoc-preview-pane + .gdoc-preview-pane { border-left: 1px solid var(--gd-border); }
+/* A pane's header: the file picker (IN / OUT tag, name, chevron over a native select), type and size, icons. */
+.gdoc-preview-pane__bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; flex: none; padding: 8px 12px; border-bottom: 1px solid var(--gd-border); font-size: .85rem; line-height: 1.4; }
+.gdx-pick { position: relative; display: inline-flex; align-items: center; gap: 8px; flex: 0 1 auto; min-width: 0; max-width: 100%; height: 34px; margin: 0; padding: 0 8px 0 6px; border: 1px solid var(--gdx-border-strong); border-radius: 8px; background: var(--gdx-surface); color: var(--gdx-text); font-weight: 600; cursor: pointer; }
+.gdx-pick:hover { border-color: var(--gdx-accent); }
+.gdx-pick:focus-within { outline: 2px solid var(--gdx-accent); outline-offset: 1px; }
+.gdx-pick__name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gdx-pick__chevron { display: inline-flex; flex: none; color: var(--gdx-muted); }
+.gdx-pick__chevron svg { width: 16px; height: 16px; }
+.gdx-pick__select { position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0; padding: 0; border: 0; opacity: 0; font-size: 16px; cursor: pointer; -webkit-appearance: none; appearance: none; }
+.gdoc-preview-pane__meta { margin-right: auto; color: var(--gd-muted-2); white-space: nowrap; }
+.gdx-pane-actions { display: inline-flex; gap: 2px; }
+.gdoc-preview-pane__view { position: relative; display: flex; flex: 1; min-height: 0; overflow: auto; background: var(--gdx-well); }
+.gdoc-preview-pane__view > .gdoc-preview__frame { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: #fff; }
+.gdoc-preview-pane__view > .gdoc-preview__img { max-width: 100%; max-height: 100%; margin: auto; object-fit: contain; }
+.gdoc-preview-pane__view > .gdx-well { flex: 1; align-content: start; }   /* page images, without the Viewer app */
+.gdoc-preview-pane__view > .gdoc-preview__text { flex: 1; min-width: 0; margin: 0; }
+.gdoc-preview-pane__view .gdoc-preview__text pre { min-height: 100%; margin: 0; padding: 1rem 1.25rem; border: 0; border-radius: 0; background: var(--code-background); color: var(--code-font-color); font-family: "Roboto Mono", monospace; font-size: .8rem; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
+.gdoc-preview-pane__view .gdoc-preview__text code { padding: 0; border: 0; background: none; color: inherit; font: inherit; }
+.gdoc-preview-pane__view > .gdoc-preview__note { margin: auto; padding: 1.5rem; color: var(--gd-muted-2); text-align: center; }
+.gdoc-preview-pane__view > .gdoc-preview__card { display: flex; flex-direction: column; align-items: center; gap: .6rem; margin: auto; padding: 1.5rem; text-align: center; }
+.gdoc-preview-pane__view > .gdoc-preview__card p { margin: 0; color: var(--gd-muted-2); }
+.gdoc-preview-dialog .gdoc-preview__btn--primary,
+.gdoc-preview-dialog .gdoc-preview__btn--primary:visited { display: inline-flex; align-items: center; padding: .5rem 1rem; border-radius: 7px; background: var(--gd-accent-strong); color: #fff; font-weight: 600; text-decoration: none; }
+
+/* Narrow windows: a full-screen dialog, one pane at a time (Input / Output switch in the header). */
+@media (max-width: 48rem) {
+  .gdoc-preview-dialog { width: 100vw; height: 100vh; height: 100dvh; border: 0; border-radius: 0; }
+  .gdoc-preview-dialog[data-mode="compare"] .gdoc-preview-dialog__switch { display: inline-flex; }
+  .gdoc-preview-dialog__panes { grid-template-columns: minmax(0, 1fr); }
+  .gdoc-preview-dialog__panes[data-active="left"] > [data-side="right"],
+  .gdoc-preview-dialog__panes[data-active="right"] > [data-side="left"] { display: none; }
+  .gdoc-preview-pane + .gdoc-preview-pane { border-left: 0; }
+}
+/* Phones: the actions take the bar's second line, short labels, Open and Download as icons. */
+@media (max-width: 600px) {
+  html[data-gdx] { --gdx-pad: 4px; }
+  [data-gdx] .gdoc-tabs__name { padding: 12px 8px 10px; }
+  [data-gdx] .gdoc-tabs__content > * { margin-left: 16px; margin-right: 16px; }
+  [data-gdx] .gdx-example > .gdx-file > .gdx-bar { padding: 10px 12px; }
+  .gdx-actions { width: 100%; margin-left: 0; }
+  .gdx-long { display: none; }
+  .gdx-short { display: inline; }
+  .gdx-btn-icon-sm { padding: 0 8px; }
+  .gdx-btn-icon-sm > span { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .gdx-well { padding: 12px; }
+  .gdx-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  [data-gdx] .gdx-example > .gdx-foot { flex-direction: column; gap: 2px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .gdx-btn, [data-gdx] .gdoc-tabs__name { transition: background-color .15s, color .15s; }
+}
+@media print {
+  .gdx-bar, .gdx-pv, .gdx-full, .gdx-more, .gdoc-tabs__sep, .gdx-role { display: none !important; }
 }

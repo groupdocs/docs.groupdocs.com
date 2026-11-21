@@ -1,0 +1,27 @@
+{{- /* Code example blocks: the {{< tabs >}} blocks that link sample (input) and output files. Each file tab gets
+       a bar with the file's name, type and size and its actions: Show preview (Show full output for a cut text
+       output, Show files for a tab with several files), Compare / View input and output (side-by-side dialog),
+       Open, Download. Nothing loads with the page; a file loads when a reader opens its tab or asks for it.
+       Behaviour: static/js/doc-preview.js; styles: static/custom.css ("Code example blocks"). Included from
+       partials/foot.html.
+       - params.docPreview (utils/doc-preview-on): true = on, "qa" = QA builds only, false = off, or a list of
+         sections (["viewer/net", ...]) where it is on; a page or section opts out with front matter. The same
+         switch puts data-gdx on <html> (baseof.html), which gives every {{< tabs >}} block the new tab style.
+       - params.docPreviewCompare (data-compare): false = no "Compare / View input and output" dialog.
+         Also takes "true" / "false" strings (HUGO_PARAMS_DOCPREVIEWCOMPARE=false).
+       - params.docPreviewAutoMB (data-auto-mb): files up to this size show as soon as their tab opens; a bigger
+         one waits for "Show preview". 0 or unset = only on request (HUGO_PARAMS_DOCPREVIEWAUTOMB=0).
+       - params.docPreviewViewer (data-viewer): where GroupDocs.Viewer.UI is served as static files, e.g.
+         "/doc-viewer/26.10.0/" (scripts/doc-preview viewer). It shows page images (scripts/doc-preview render) in
+         the dialog and in a new tab, and HTML outputs (render --html) in the dialog. Empty = the dialog lists the
+         page images itself.
+       - The script is only added to pages that link a sample or output file. */ -}}
+{{- if partial "utils/doc-preview-on.html" . -}}
+  {{- $content := .Content -}}
+  {{- if or (strings.Contains $content "/_sample_files/") (strings.Contains $content "/_output_files/") (strings.Contains $content "/sample-files/") -}}
+    {{- $compare := not (or (eq site.Params.docPreviewCompare false) (eq site.Params.docPreviewCompare "false")) }}
+    {{- $auto := 0 }}{{ with site.Params.docPreviewAutoMB }}{{ $auto = . }}{{ end }}
+<script defer src="/js/doc-preview.js?v=26.11.0" data-compare="{{ $compare }}" data-auto-mb="{{ $auto }}"
+  {{- with site.Params.docPreviewViewer }} data-viewer="{{ . }}"{{ end }}></script>
+  {{- end -}}
+{{- end -}}

@@ -13,17 +13,29 @@ enableRobotsTXT             = true   # layouts/robots.txt: sitemaps.xml index on
   [[module.mounts]]
     source = "content"
     target = "content"
-    excludeFiles = ["**/_output_files/**", "**/_sample_files/**"]
+    excludeFiles = ["**/_output_files/**", "**/_sample_files/**", "**/_preview/**"]
 
   [[module.mounts]]
     source = "content"
     target = "static"
-    includeFiles = ["**/_output_files/**", "**/_sample_files/**"]
+    includeFiles = ["**/_output_files/**", "**/_sample_files/**", "**/_preview/**"]
 
   # Re-declare default static mount (replaced above because same target)
   [[module.mounts]]
     source = "static"
     target = "static"
+
+  # Page previews of the sample and output files (scripts/doc-preview): each platform's _preview/index.json is
+  # also data, so a link to a file learns its preview at build time (_markup/render-link.html).
+  [[module.mounts]]
+    source = "content"
+    target = "data"
+    includeFiles = ["**/_preview/index.json"]
+
+  # Re-declare default data mount (replaced above because same target)
+  [[module.mounts]]
+    source = "data"
+    target = "data"
 
 
 # (Optional) Set this to true to enable 'Last Modified by' date and git author
@@ -136,6 +148,35 @@ pluralizeListTitles = false
     askAboutPage            = "qa"
     # Docs MCP server that the "Set up agent" dialog connects clients to (tabs/commands: data/agents.toml)
     docsMcpUrl              = "https://docs.groupdocs.com/mcp"
+
+    # Code example blocks: the {{< tabs >}} blocks that link sample (input) and output files (Claude Design's
+    # "code example block" v2; themes/hugo-geekdoc/layouts/partials/doc-preview.html + static/js/doc-preview.js +
+    # static/custom.css). IN / OUT tags in the tab row; each file tab starts with a bar: name · type · size and
+    # its actions: Show preview (PDF, images, HTML, text; "Show full output" for a truncated text
+    # output, "Show files" for a tab with several files), Compare input and output (side-by-side dialog, when the
+    # block has both; "View input and output" when the two file types differ, e.g. a PDF in, its extracted text
+    # out), Open, Download. The same switch gives every {{< tabs >}} block the new tab style (data-gdx on <html>).
+    # true = on, "qa" = QA builds only (baseURL contains "-qa.", same check as layouts/robots.txt), false = off, or a
+    # list of sections: on for the pages under them only (the URL starts with /<section>/), everywhere else off.
+    # The list rolls the previews out product by product; add a platform once its samples and outputs are ready.
+    # The same list rolls out the other theme changes, which apply in those sections only, so the other products build
+    # and look exactly as before: the automatic "On this page" ToC (utils/toc-enabled), breadcrumb titles as written
+    # (main-groupdocs.css) and scrollbars that follow the theme (custom.css).
+    # Off for one page with front matter `docPreview: false`; for a whole product or platform put
+    # `cascade: {docPreview: false}` in the front matter of its _index.md.
+    docPreview              = ["viewer/net", "viewer/python-net"]
+    # false = no "Compare / View input and output" button and dialog
+    docPreviewCompare       = true
+    # Files up to this size (MB) show as soon as their tab opens; a bigger one waits for "Show preview". Nothing
+    # loads with the page either way. 0 = only when a reader clicks. 1 MB covers almost every file in the docs
+    # (2026-11-19: all text inputs, about 97% of PDFs, 96% of images, 99% of HTML).
+    docPreviewAutoMB        = 1
+    # Page images of DOCX, XLSX, PPTX, MSG... files: scripts/doc-preview renders them into each platform's _preview
+    # folder (found at build time, no setting). This is where GroupDocs.Viewer.UI is served as static files, to show
+    # them in the dialog and a new tab: static/doc-viewer/<version>/, baked from that GroupDocs.Viewer.UI release by
+    # `scripts/doc-preview viewer`. HTML outputs rendered with `render --html` open in it in the dialog too, so a DOCX
+    # and its HTML output look alike. Empty = the dialog lists the page images itself, and HTML stays the browser's.
+    docPreviewViewer        = "/doc-viewer/26.10.0/"
 
     # Collapse not active menu items by default
     GeekdocCollapseAllSections  = true

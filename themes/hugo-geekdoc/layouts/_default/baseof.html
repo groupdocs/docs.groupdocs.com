@@ -2,6 +2,8 @@
 <html
   lang="{{ .Site.Language.Lang }}"
   class="color-toggle-hidden"
+  {{- /* an attribute, not a class: the theme's script replaces the class list (color-toggle-*) */}}
+  {{ if partial "utils/doc-preview-on.html" . }}data-gdx{{ end }}
   {{ if default false .Site.Params.GeekdocDarkModeCode }}code-theme="dark"{{ end }}
 >
   <head>

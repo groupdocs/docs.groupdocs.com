@@ -1,0 +1,21 @@
+{{/* Whether a page shows the "On this page" table of contents (right column, or the collapsible block on narrow screens).
+     In the sections the rollout switch covers (params.docPreview, see utils/doc-preview-on), it is automatic:
+     - `toc` in the page's front matter decides when it is set: `toc: true` shows it, `toc: false` hides it;
+     - otherwise the site's `toc` param decides when it is set;
+     - otherwise it shows when the page has at least two headings in its table of contents.
+     Everywhere else the original rule stays, so other products build exactly as before until they are rolled out:
+     shown only when `toc` is on for the page or for the site.
+     Usage: {{ if partial "utils/toc-enabled" . }}; list.html also checks .TableOfContents, as it always did. */}}
+{{- $on := false }}
+{{- if partial "utils/doc-preview-on.html" . }}
+  {{- if isset .Params "toc" }}
+    {{- $on = and .Params.toc (ne .Params.toc false) }}
+  {{- else if isset .Site.Params "toc" }}
+    {{- $on = and .Site.Params.toc (ne .Site.Params.toc false) }}
+  {{- else }}
+    {{- $on = ge (len (findRE `<li>` .TableOfContents)) 2 }}
+  {{- end }}
+{{- else }}
+  {{- $on = or (and (.Site.Params.toc) (ne .Site.Params.toc false)) (and (.Params.toc) (ne .Params.toc false)) }}
+{{- end }}
+{{- return $on }}

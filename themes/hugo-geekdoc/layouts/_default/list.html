@@ -12,10 +12,9 @@
   {{- $fullWidthClass = "gdoc-markdown__full-width" }}
 {{- end }}
 
-{{/* Render the "On this page" TOC for content pages that opt in (toc) and have headings.
+{{/* Render the "On this page" TOC when utils/toc-enabled says so (automatic in rolled-out sections, else `toc`) and there are headings.
      Section index pages still keep their child-page list below. */}}
-{{- $tocEnabled := or (and (.Site.Params.toc) (ne .Site.Params.toc false)) (and (.Params.toc) (ne .Params.toc false)) }}
-{{- $hasToc := and $tocEnabled .Page.TableOfContents }}
+{{- $hasToc := and (partial "utils/toc-enabled" .) .Page.TableOfContents }}
 
 {{ if $navEnabled }}
   {{ partial "page-header" . }}

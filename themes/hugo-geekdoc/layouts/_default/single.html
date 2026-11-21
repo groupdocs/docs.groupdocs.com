@@ -18,7 +18,7 @@
     </h1>
     {{ partial "page-actions" . }}
     
-    {{- if or (and (.Site.Params.toc) (ne .Site.Params.toc false)) (and (.Params.toc) (ne .Params.toc false)) }}
+    {{- if partial "utils/toc-enabled" . }}
     {{ partial "toc-mobile" . }}
     {{end}}
 
@@ -28,7 +28,7 @@
     {{ partial "feedback-form" . }} 
   </article>
 
-  {{- if or (and (.Site.Params.toc) (ne .Site.Params.toc false)) (and (.Params.toc) (ne .Params.toc false)) }}
+  {{- if partial "utils/toc-enabled" . }}
   {{ partial "toc" . }}
   {{end}}
 
