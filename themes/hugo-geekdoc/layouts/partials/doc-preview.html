@@ -21,7 +21,7 @@
   {{- if or (strings.Contains $content "/_sample_files/") (strings.Contains $content "/_output_files/") (strings.Contains $content "/sample-files/") -}}
     {{- $compare := not (or (eq site.Params.docPreviewCompare false) (eq site.Params.docPreviewCompare "false")) }}
     {{- $auto := 0 }}{{ with site.Params.docPreviewAutoMB }}{{ $auto = . }}{{ end }}
-<script defer src="/js/doc-preview.js?v=26.11.0" data-compare="{{ $compare }}" data-auto-mb="{{ $auto }}"
+<script defer src="/js/doc-preview.js?v=26.11.1" data-compare="{{ $compare }}" data-auto-mb="{{ $auto }}"
   {{- with site.Params.docPreviewViewer }} data-viewer="{{ . }}"{{ end }}></script>
   {{- end -}}
 {{- end -}}

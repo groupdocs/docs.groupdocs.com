@@ -155,7 +155,8 @@ internal static class Program
             foreach (string f in Directory.EnumerateFiles(dir, "*", SearchOption.AllDirectories))
             {
                 string ext = Path.GetExtension(f).TrimStart('.').ToLowerInvariant();
-                if (Extensions.Contains(ext) || (withHtml && ext is "html" or "htm") || (withZips && ext == "zip" && folder == "_output_files"))
+                // --zips: an output zip of pages, and every input zip (its contents as a tree, ZipTree)
+                if (Extensions.Contains(ext) || (withHtml && ext is "html" or "htm") || (withZips && ext == "zip"))
                     files[Path.GetRelativePath(platformDir, f).Replace('\\', '/')] = f;
             }
         }
@@ -166,7 +167,8 @@ internal static class Program
         var started = DateTime.UtcNow;
         foreach (var (rel, full) in files)
         {
-            string id = Id(full, salt);
+            bool input = rel.StartsWith("_sample_files/", StringComparison.Ordinal);
+            string id = Id(full, salt, input);
             if (!byId.TryGetValue(id, out JsonObject? entry))
             {
                 string folder = Path.Combine(outDir, id);
@@ -184,7 +186,7 @@ internal static class Program
                 else
                 {
                     var clock = System.Diagnostics.Stopwatch.StartNew();
-                    entry = RenderFile(full, folder, id, urlPrefix, maxPages, scale);
+                    entry = RenderFile(full, folder, id, urlPrefix, maxPages, scale, input);
                     if (entry["skip"] != null) skipped++; else rendered++;
                     Console.WriteLine((entry["skip"] != null
                         ? $"skipped {rel}: {entry["skip"]}"
@@ -235,7 +237,7 @@ internal static class Program
     // part of it (`salt`), so pages drawn differently (another scale, a license, a new GroupDocs.Viewer) get new URLs:
     // browsers and the server cache never show the old ones. A test on 2026-11-20 showed a licensed page under the
     // evaluation page's URL still drawn from the browser cache.
-    static string Id(string path, byte[] salt)
+    static string Id(string path, byte[] salt, bool input = false)
     {
         using var sha = IncrementalHash.CreateHash(HashAlgorithmName.SHA256);
         using (var stream = File.OpenRead(path))
@@ -247,8 +249,10 @@ internal static class Program
         sha.AppendData(salt);
         string hash = Convert.ToHexString(sha.GetHashAndReset()).ToLowerInvariant()[..16];
         // The Viewer app reads the format from the extension, and the baked app shows ".html" in its HTML mode: a
-        // zip's folder is named after its pages (".html" or ".png"), not ".zip".
+        // zip's folder is named after its pages (".html" or ".png"), not ".zip". An input zip's page is its file tree,
+        // an HTML page.
         string ext = Path.GetExtension(path).ToLowerInvariant();
+        if (ext == ".zip" && input) return hash + ".html";
         return hash + (ext == ".zip" ? ZipKindOf(path) switch { ZipKind.Html => ".html", ZipKind.Images => ".png", _ => ".zip" } : ext);
     }
 
@@ -258,8 +262,9 @@ internal static class Program
 
     // One file -> <folder>/page-N.png (N <= maxPages) + view-data.json (GroupDocs.Viewer.UI static content mode).
     // With --html, an HTML file is its own single page instead (see below).
-    static JsonObject RenderFile(string path, string folder, string id, string urlPrefix, int maxPages, double scale)
+    static JsonObject RenderFile(string path, string folder, string id, string urlPrefix, int maxPages, double scale, bool input = false)
     {
+        int treeFiles = -1; // an input zip: how many files its tree lists
         string temp = folder + ".tmp";
         try
         {
@@ -300,6 +305,15 @@ internal static class Program
                     pages.Add((1, width, height, "page-1.html"));
                     total = 1;
                 }
+            }
+            else if (ext == "zip" && input)
+            {
+                // An input archive (an example opens it): one page, the tree of what is inside.
+                var (html, files, height) = ZipTree(path);
+                File.WriteAllText(Path.Combine(temp, "page-1.html"), ForViewer(html), Utf8);
+                pages.Add((1, TreeWidth, height, "page-1.html"));
+                total = 1;
+                treeFiles = files;
             }
             else if (ext == "zip")
             {
@@ -349,11 +363,13 @@ internal static class Program
             File.WriteAllText(Path.Combine(temp, "view-data.json"), viewData.ToJsonString(JsonOut), Utf8);
             if (Directory.Exists(folder)) Directory.Delete(folder, true);
             Directory.Move(temp, folder);
-            return new JsonObject
+            var result = new JsonObject
             {
                 ["id"] = id, ["pages"] = pages.Count, ["total"] = total, ["first"] = pages[0].Name,
                 ["width"] = pages[0].Width, ["height"] = pages[0].Height,
             };
+            if (treeFiles >= 0) result["files"] = treeFiles; // doc-preview.js says "N files", not "1 page"
+            return result;
         }
         catch (PasswordRequiredException)
         {
@@ -422,6 +438,80 @@ internal static class Program
         }
         File.Delete(jpgPath);
         return name;
+    }
+
+    /* ---------- an input zip: the tree of what is inside (--zips) ---------- */
+
+    // CSS px, the page's width. The Viewer app zooms an HTML page to fit its content's width: a tree only as wide as its
+    // longest line came out at 208% in the dialog, 816 at 95% (and scaled down in the tab); 640 fits the tab unscaled.
+    const int TreeWidth = 640;
+    const int TreeMaxLines = 400;  // a huge archive lists this many lines, then how many more entries there are
+
+    sealed class TreeNode
+    {
+        public bool IsDir;
+        public readonly Dictionary<string, TreeNode> Children = new(StringComparer.Ordinal);
+    }
+
+    // The archive's folders and files as a text tree, the way the `tree` command prints one: folders first, then files,
+    // each sorted by name, a folder with "/" after its name. Only the names: no icons, sizes or dates. Returns the
+    // page, how many files the archive holds and the page height in CSS px.
+    static (string Html, int Files, int Height) ZipTree(string path)
+    {
+        var root = new TreeNode { IsDir = true };
+        int files = 0;
+        using (var zip = ZipFile.OpenRead(path))
+        {
+            foreach (var entry in zip.Entries)
+            {
+                string full = entry.FullName.Replace('\\', '/');
+                var parts = full.Split('/', StringSplitOptions.RemoveEmptyEntries);
+                if (parts.Length == 0) continue;
+                bool isDirEntry = full.EndsWith('/');
+                var node = root;
+                for (int i = 0; i < parts.Length; i++)
+                {
+                    bool dir = i < parts.Length - 1 || isDirEntry;
+                    if (!node.Children.TryGetValue(parts[i], out var child))
+                        node.Children[parts[i]] = child = new TreeNode { IsDir = dir };
+                    else if (dir)
+                        child.IsDir = true;
+                    node = child;
+                }
+                if (!isDirEntry) files++;
+            }
+        }
+
+        var lines = new List<string> { System.Net.WebUtility.HtmlEncode(Path.GetFileName(path)) };
+        void Walk(TreeNode node, string indent)
+        {
+            var kids = node.Children
+                .OrderBy(k => k.Value.IsDir ? 0 : 1)
+                .ThenBy(k => k.Key, StringComparer.OrdinalIgnoreCase)
+                .ToList();
+            for (int i = 0; i < kids.Count; i++)
+            {
+                bool last = i == kids.Count - 1;
+                string name = System.Net.WebUtility.HtmlEncode(kids[i].Key);
+                lines.Add(indent + (last ? "└── " : "├── ") + (kids[i].Value.IsDir ? $"<b>{name}/</b>" : name));
+                if (kids[i].Value.IsDir) Walk(kids[i].Value, indent + (last ? "    " : "│   "));
+            }
+        }
+        Walk(root, "");
+
+        if (lines.Count > TreeMaxLines)
+        {
+            int more = lines.Count - TreeMaxLines;
+            lines = lines.Take(TreeMaxLines).ToList();
+            lines.Add($"<span class=\"more\">… and {more} more</span>");
+        }
+        string title = System.Net.WebUtility.HtmlEncode(Path.GetFileName(path));
+        string html = "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><title>" + title + "</title><style>" +
+            "body{box-sizing:border-box;width:" + TreeWidth + "px;margin:0;padding:20px 24px;background:#fff;color:#1e293b;" +
+            "font:13px/1.4 Consolas,\"Cascadia Mono\",SFMono-Regular,Menlo,\"Liberation Mono\",monospace}" +
+            "pre{margin:0;font:inherit;white-space:pre}b{font-weight:600;color:#0f172a}.more{color:#64748b}" +
+            "</style></head><body><pre>" + string.Join("\n", lines) + "</pre></body></html>";
+        return (html, files, 40 + (int)Math.Ceiling(lines.Count * 18.2));
     }
 
     /* ---------- an output zip of pages (--zips) ---------- */

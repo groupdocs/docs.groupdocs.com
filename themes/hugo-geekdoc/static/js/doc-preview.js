@@ -161,11 +161,13 @@
     return (bytes / MB).toFixed(1).replace(/\.0$/, "") + " MB";
   }
 
-  // "PDF · 608 KB", "DOCX · 48 KB · 3 pages" (an HTML file is one page by construction: no count)
+  // "PDF · 608 KB", "DOCX · 48 KB · 3 pages", "ZIP · 1.8 MB · 12 files" (an HTML file is one page by construction:
+  // no count)
   function metaText(file) {
     var parts = [file.type];
     if (file.size != null) parts.push(fmtSize(file.size));
-    if (file.pages && (file.native !== "html" || splitHtml(file))) parts.push(file.pages.total + (file.pages.total === 1 ? " page" : " pages"));
+    if (file.pages && file.pages.files) parts.push(file.pages.files + (file.pages.files === 1 ? " file" : " files"));
+    else if (file.pages && (file.native !== "html" || splitHtml(file))) parts.push(file.pages.total + (file.pages.total === 1 ? " page" : " pages"));
     return parts.join(" · ");
   }
 
@@ -573,6 +575,7 @@
         count: parseInt(a.getAttribute("data-pages"), 10) || 1,   // page images there are
         total: parseInt(a.getAttribute("data-total"), 10) || 1,   // pages the file has
         ratio: parseFloat(a.getAttribute("data-ratio")) || 0,     // page 1: height / width
+        files: parseInt(a.getAttribute("data-files"), 10) || 0,   // an input archive: its one page is its file tree
         html: /\.html?$/i.test(preview)                             // HTML pages (a zip of an HTML view's pages)
       } : null
     };
@@ -834,7 +837,7 @@
       var zipped = htmlPages(file) || splitHtml(file);
       var n = zipped ? file.pages.count : 1;
       var frame = addFrame(zipped ? file.pages.first : file.url, zipped ? "Page 1 of " + file.name : "Preview of " + file.name);
-      var ch = makeCollapsible(page, n === 1 ? "Show full page" :
+      var ch = makeCollapsible(page, file.pages && file.pages.files ? "Show all files" : n === 1 ? "Show full page" :
         (n < file.pages.total ? "Show " + n + " of " + file.pages.total + " pages" : "Show all " + n + " pages"), true);
       if (n > 1) {
         ch.always = true; // the other pages are behind the button even when page 1 is short

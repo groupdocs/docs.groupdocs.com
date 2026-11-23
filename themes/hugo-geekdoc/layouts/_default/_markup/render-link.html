@@ -22,7 +22,8 @@
       {{- $prefix := .urlPrefix -}}
       {{- with index .files $rel -}}
         {{- /* data-preview: page 1 (page-1.png, or .jpg for a photo); the other pages are in the same folder */ -}}
-        {{- if .pages }}{{ $preview = dict "url" (printf "%s/%s/%s" $prefix .id (.first | default "page-1.png")) "pages" .pages "total" .total "ratio" (div (float .height) .width) }}{{ end -}}
+        {{- /* data-files: an input archive, whose one page is the tree of its files */ -}}
+        {{- if .pages }}{{ $preview = dict "url" (printf "%s/%s/%s" $prefix .id (.first | default "page-1.png")) "pages" .pages "total" .total "ratio" (div (float .height) .width) "files" (.files | default 0) }}{{ end -}}
       {{- end -}}
     {{- end -}}{{- end -}}{{- end -}}{{- end -}}
   {{- end -}}
@@ -37,7 +38,7 @@
   {{- with .Title }}{{ printf "title=\"%s\"" . | safeHTMLAttr }}{{- end }}
   {{- if $external }}{{ printf "rel=\"nofollow\"" | safeHTMLAttr }}{{- end }}
   {{- if $bytes }}{{ printf "data-bytes=\"%d\"" $bytes | safeHTMLAttr }}{{- end }}
-  {{- with $preview }}{{ printf "data-preview=\"%s\" data-pages=\"%v\" data-total=\"%v\" data-ratio=\"%.4f\"" .url .pages .total .ratio | safeHTMLAttr }}{{- end }}
+  {{- with $preview }}{{ printf "data-preview=\"%s\" data-pages=\"%v\" data-total=\"%v\" data-ratio=\"%.4f\"" .url .pages .total .ratio | safeHTMLAttr }}{{ if .files }}{{ printf "data-files=\"%v\"" .files | safeHTMLAttr }}{{ end }}{{- end }}
 >
   {{- .Text | safeHTML -}}
 </a>
