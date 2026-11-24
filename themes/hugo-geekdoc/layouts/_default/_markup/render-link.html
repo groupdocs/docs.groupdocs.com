@@ -1,19 +1,6 @@
 {{- $raw := or (hasPrefix .Text "<img") (hasPrefix .Text "<figure") -}}
 {{- $code := hasPrefix .Text "<code" -}}
-{{- /* rel="nofollow" is for third-party destinations. The host decides, not a comparison with the
-       absolute baseURL: a link written root-relative (/assembly/net/...) carries no host, and a link
-       written with {{< ref >}} reaches this hook as a shortcode placeholder, the real URL being
-       substituted into the output afterwards. Both are ours, and both used to come out as external.
-       So a destination with no scheme is internal, and one with a scheme is external unless its host
-       is ours. */ -}}
-{{- $hostRE := `^[A-Za-z][A-Za-z0-9+.-]*://(?:[^@/?#]*@)?([^:/?#]*).*` -}}
-{{- $external := false -}}
-{{- $dest := cond (hasPrefix .Destination "//") (printf "https:%s" .Destination) .Destination -}}
-{{- if findRE `^[A-Za-z][A-Za-z0-9+.-]*://` $dest 1 -}}
-  {{- $host := lower (replaceRE $hostRE "$1" $dest) -}}
-  {{- $siteHost := lower (replaceRE $hostRE "$1" $.Page.Site.BaseURL) -}}
-  {{- $external = not (or (eq $host $siteHost) (findRE `(^|\.)groupdocs\.com$` $host 1)) -}}
-{{- end -}}
+{{- $external := partial "utils/external-link.html" .Destination -}}
 {{- /* A sample or output file that a code example links (/<product>/<platform>/_sample_files/...): its size in
        bytes, read at build time, for the file facts doc-preview.js shows ("PDF · 608 KB"). The URL path is the
        content path (content/<product>/<platform>/...), percent-decoded by urls.Parse. */ -}}

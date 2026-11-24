@@ -1,0 +1,20 @@
+{{- /* Is this link destination outside our own sites? Decides rel="nofollow" for
+       _markup/render-link.html (every link in page text) and shortcodes/button.html.
+       The host decides, not a comparison with the absolute baseURL. Two kinds of our own links fail
+       that comparison: one written relative or root-relative, which carries no host, and anything
+       written with {{< ref >}}, because a shortcode in a link destination reaches a render hook as a
+       placeholder and the real URL is substituted into the output afterwards.
+       So a destination with no scheme is ours, and one with a scheme is outside unless its host is
+       this site's or groupdocs.com. The host is read with a regular expression rather than
+       urls.Parse, which errors on a malformed URL and would fail the build, and the ownership test
+       uses findRE because hasSuffix does not exist in the Hugo the workflow installs.
+       Usage: {{ if partial "utils/external-link.html" .Destination }} */ -}}
+{{- $hostRE := `^[A-Za-z][A-Za-z0-9+.-]*://(?:[^@/?#]*@)?([^:/?#]*).*` -}}
+{{- $external := false -}}
+{{- $dest := cond (hasPrefix . "//") (printf "https:%s" .) . -}}
+{{- if findRE `^[A-Za-z][A-Za-z0-9+.-]*://` $dest 1 -}}
+  {{- $host := lower (replaceRE $hostRE "$1" $dest) -}}
+  {{- $siteHost := lower (replaceRE $hostRE "$1" site.BaseURL) -}}
+  {{- $external = not (or (eq $host $siteHost) (findRE `(^|\.)groupdocs\.com$` $host 1)) -}}
+{{- end -}}
+{{- return $external -}}

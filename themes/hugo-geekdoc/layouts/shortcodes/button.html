@@ -22,7 +22,7 @@
   {{- $class = . }}
 {{- end }}
 
-{{- $external := not (hasPrefix $ref .Page.Site.BaseURL) -}}
+{{- $external := partial "utils/external-link.html" $ref -}}
 
 <span class="gdoc-button gdoc-button--{{ $size }}{{ with $class }}{{ printf " %s" . }}{{ end }}">
   <a
